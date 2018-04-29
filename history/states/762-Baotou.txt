@@ -1,0 +1,24 @@
+state={
+	id=762
+	name="STATE_762"
+	
+	state_category= pastoral
+	
+	provinces={
+		3427 4986 10451 12706 
+	}
+	
+		history={
+		owner = SHX
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = SHX
+		buildings = {
+			infrastructure = 1
+
+		}
+	}
+		
+	manpower=677400
+	buildings_max_level_factor=1.000
+}

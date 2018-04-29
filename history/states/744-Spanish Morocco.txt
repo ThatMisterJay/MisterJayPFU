@@ -1,0 +1,21 @@
+state={
+	id=744
+	name="STATE_744"
+	manpower = 10000
+	
+	state_category = wasteland
+
+	history={
+		owner = SPR
+		buildings = {
+			12857 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SPR
+	}
+	
+	provinces={
+		12857 
+	}
+}

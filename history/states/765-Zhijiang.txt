@@ -1,0 +1,24 @@
+state={
+	id=765
+	name="STATE_765"
+	
+	state_category = town
+	
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+				victory_points = {
+			4480 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces={
+		1474 4480 4896 7201 7279 7521 7577 7665 10006 10335 10822 12017 12053 
+	}
+	manpower=8134000
+	buildings_max_level_factor=1.000
+}

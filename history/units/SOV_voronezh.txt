@@ -1,0 +1,131 @@
+units = {
+	##### PFU vornonezh #####
+	division= {
+		name = "311. Strelkovaya Diviziya"
+		location = 413
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "312. Strelkovaya Diviziya"
+		location = 6341
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+			division= {
+		name = "601. Strelkovaya Diviziya"
+		location = 6398
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+			division= {
+		name = "464. Strelkovaya Diviziya"
+		location = 3527
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "465. Strelkovaya Diviziya"
+		location = 510
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "1. Gvardiya Diviziya"
+		location = 6494
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.5
+	}
+					division= {
+		name = "2. Gvardiya Diviziya"
+		location = 437
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.5
+	}
+						division= {
+		name = "3. Gvardiya Diviziya"
+		location = 3431
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.5
+	}
+					division= {
+		name = "479. Strelkovaya Diviziya"
+		location = 3431
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+						division= {
+		name = "488. Strelkovaya Diviziya"
+		location = 413
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+							division= {
+		name = "456. Strelkovaya Diviziya"
+		location = 11555
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+							division= {
+		name = "444. Strelkovaya Diviziya"
+		location = 413
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.5
+	}
+								division= {
+		name = "477. Strelkovaya Diviziya"
+		location = 11527
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "435. Strelkovaya Diviziya"
+		location = 6454
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.4
+	}
+								division= {
+		name = "442. Strelkovaya Diviziya"
+		location = 6341
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "447. Strelkovaya Diviziya"
+		location = 6341
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+									division= {
+		name = "441. Strelkovaya Diviziya"
+		location = 3199
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+										division= {
+		name = "388. Strelkovaya Diviziya"
+		location = 3199
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+											division= {
+		name = "381. Strelkovaya Diviziya"
+		location = 6398
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "9. Gvardiya Korpus"
+		location = 413
+		division_template = "Tank Korpus"
+		start_experience_factor = 0.5
+	}
+									division= {
+		name = "4. Gvardiya Korpus"
+		location = 11555
+		division_template = "Tank Korpus"
+		start_experience_factor = 0.5
+	}
+	
+
+}

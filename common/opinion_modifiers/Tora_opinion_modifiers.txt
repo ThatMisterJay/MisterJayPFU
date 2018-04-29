@@ -1,0 +1,19 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	### Japanese focus tree ###
+
+	Tora_Large_Decrease = { value = -100 }
+
+	axis_leanings_focus  = { value = 50 }
+
+}

@@ -1,0 +1,122 @@
+﻿division_template = {
+	name = "Infanteriet Divisjon"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  # Full howitzer regiment
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }   
+	}
+}
+
+
+units = {
+	######## LAND UNITS ########
+	##### Kongelige Norwegan Overkommando #####
+	division = {
+		name = "1. Divisjon"
+		location = 6115
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	division = {
+		name = "2. Divisjon"
+		location = 192
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+
+	division = {
+		name = "3. Divisjon"
+		location = 9296
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	division = {
+		name = "4. Divisjon"
+		location = 122
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	division = {
+		name = "5. Divisjon"
+		location = 3022
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+
+	##### NAVAL UNITS #####
+	navy = {					
+		name = "1. Sjøforsvarsdistrikt"				
+		base = 122
+		location =  122 # Kristiansand
+		ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
+		ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
+		# 1st Submarine Detachment
+		ship = { name = "HNoMS A2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS A3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS A4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		# 2nd Submarine Detachment
+		ship = { name = "HNoMS B2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS B4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS B5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+				ship = { name = "HNoMS Draug" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS Troll" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS Garm" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NOR } } }
+				ship = { name = "HNoMS Eidsvold" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
+		ship = { name = "HNoMS Norge" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = NOR } } }				
+		# Submarine Detachment
+		ship = { name = "HNoMS B1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+		ship = { name = "HNoMS B3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NOR } } }
+	}					
+							
+
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NOR"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 100
+	}
+}

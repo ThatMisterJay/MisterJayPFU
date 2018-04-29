@@ -1,0 +1,16 @@
+
+ai_historical_focus_list_COL = {
+	ai_national_focuses = {
+     army_effort
+	 equipment_effort
+	 motorization_effort
+	 doctrine_effort
+	 equipment_effort_2
+	 doctrine_effort_2
+	 political_effort
+	 liberty_ethos
+	 neutrality_focus
+	 deterrence
+	 continuous_air_production
+	}
+}

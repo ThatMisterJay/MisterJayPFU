@@ -1,0 +1,85 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_jaegers3_medium"
+		texturefile = "gfx/interface/technologies/jaegers3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_jaegers2_medium"
+		texturefile = "gfx/interface/technologies/jaegers2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_jaegers_medium"
+		texturefile = "gfx/interface/technologies/jaegers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_jungletroops3_medium"
+		texturefile = "gfx/interface/technologies/jungletroops3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_jungletroops2_medium"
+		texturefile = "gfx/interface/technologies/jungletroops2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_jungletroops_medium"
+		texturefile = "gfx/interface/technologies/jungletroops.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_desertinfantry_at3_medium"
+		texturefile = "gfx/interface/technologies/desertinfantry3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_desertinfantry_at2_medium"
+		texturefile = "gfx/interface/technologies/desertinfantry2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_desertinfantry_at_medium"
+		texturefile = "gfx/interface/technologies/desertinfantry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_shocktroops3_medium"
+		texturefile = "gfx/interface/technologies/shocktroops3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_shocktroops2_medium"
+		texturefile = "gfx/interface/technologies/shocktroops2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_shocktroops_medium"
+		texturefile = "gfx/interface/technologies/shocktroops.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower4_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower3_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower2_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/tech_flamethrower.dds"
+	}
+
+}

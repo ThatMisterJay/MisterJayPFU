@@ -1,0 +1,9 @@
+units = {
+	##### PFU Nordland #####
+	division= {
+		name = "SS-Nordland"
+		location = 6521
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.4
+	}
+}

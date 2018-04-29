@@ -1,0 +1,348 @@
+﻿###########################
+# Norway Events
+###########################
+
+add_namespace = norway
+
+country_event = {
+	id = norway.1
+	title = norway.1.t
+	desc = norway.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Absolutely!
+		name = norway.1.a
+		hidden_effect = {
+			NOR = { country_event = { days = 1 id = norway.17 } }
+		}
+	}
+}
+
+country_event = {
+	id = norway.17
+	title = norway.17.t
+	desc = norway.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = norway.17.a
+		SWE = {
+			remove_ideas = neutrality_idea
+		}	
+	}
+}
+
+country_event = {
+	id = norway.2
+	title = norway.2.t
+	desc = norway.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Absolutely!
+		name = norway.2.a
+		hidden_effect = {
+			NOR = { country_event = { days = 1 id = norway.14 } }
+		}
+	}
+}
+
+country_event = {
+	id = norway.14
+	title = norway.14.t
+	desc = norway.14.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = norway.14.a
+		NOR = { add_to_faction = SWE }
+	}
+}
+
+country_event = {
+	id = norway.3
+	title = norway.3.t
+	desc = norway.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Absolutely!
+		name = norway.3.a
+		hidden_effect = {
+			NOR = { country_event = { days = 1 id = norway.15 } }
+		}
+	}
+}
+
+country_event = {
+	id = norway.15
+	title = norway.15.t
+	desc = norway.15.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = norway.15.a
+		NOR = { add_to_faction = DEN }
+	}
+}
+
+country_event = {
+	id = norway.4
+	title = norway.4.t
+	desc = norway.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Absolutely!
+		name = norway.4.a
+		hidden_effect = {
+			NOR = { country_event = { days = 1 id = norway.16 } }
+		}
+	}
+}
+
+country_event = {
+	id = norway.16
+	title = norway.16.t
+	desc = norway.16.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = norway.16.a
+		DEN = { release = ICE }
+		NOR = { add_to_faction = ICE }
+	}
+}
+
+# Finland Joins
+country_event = {
+	id = norway.5
+	title = norway.5.t
+	desc = norway.5.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = norway.5.a
+		NOR = { add_to_faction = FIN }
+	}
+}
+
+# Finland rejects offer!
+country_event = {
+	id = norway.6
+	title = norway.6.t
+	desc = norway.6.d
+	picture = GFX_report_event_albanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = norway.6.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FIN
+			generator = { 44 }
+		}
+	}
+}
+
+# Finland Gets an Offer
+country_event = {
+	id = norway.7
+	title = norway.7.t
+	desc = norway.7.d
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes
+	
+	option = { # Yield
+		name = norway.7.a
+		ai_chance = {
+			base = 70
+		}
+		NOR = {
+			country_event = { days = 1 id = norway.5 }
+			effect_tooltip = {
+				NOR = { add_to_faction = FIN }
+			}
+		}
+	}
+	option = { # Resist
+		name = norway.7.b
+		ai_chance = {
+			factor = 20 
+		}
+		NOR = {
+			effect_tooltip = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FIN
+					generator = { 44 }
+				}
+			}
+			country_event = { days = 1 id = norway.6 }
+		}
+	}
+}
+
+# Canada Gets an Offer
+country_event = {
+	id = norway.10
+	title = norway.10.t
+	desc = norway.10.d
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes
+	
+	option = { # Yield
+		name = norway.10.a
+		ai_chance = {
+			base = 70
+		}
+		NOR = {
+			country_event = { days = 1 id = norway.11 }
+			effect_tooltip = {
+				NOR = { add_to_faction = CAN }
+			}
+		}
+	}
+	option = { # Resist
+		name = norway.10.b
+		ai_chance = {
+			factor = 20 
+		}
+		NOR = {
+			effect_tooltip = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = CAN
+					generator = { 44 }
+				}
+			}
+			country_event = { days = 1 id = norway.12 }
+		}
+	}
+}
+
+# Canada Joins
+country_event = {
+	id = norway.11
+	title = norway.11.t
+	desc = norway.11.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = norway.11.a
+		NOR = { add_to_faction = CAN }
+	}
+}
+
+# Canada rejects offer!
+country_event = {
+	id = norway.12
+	title = norway.12.t
+	desc = norway.12.d
+	picture = GFX_report_event_albanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = norway.12.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CAN
+			generator = { 44 }
+		}
+	}
+}
+
+# Comintern gets Norway?
+country_event = {
+	id = norway.20
+	title = norway.20.t
+	desc = norway.20.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Absolutely!
+		name = norway.20.a
+		hidden_effect = {
+			NOR = { country_event = { days = 1 id = norway.21 } }
+		}
+	}
+}
+
+# Norway in Comintern!
+country_event = {
+	id = norway.21
+	title = norway.21.t
+	desc = norway.21.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = norway.21.a
+		SOV = { add_to_faction = NOR }
+	}
+}
+
+# Axis gets Norway?
+country_event = {
+	id = norway.22
+	title = norway.22.t
+	desc = norway.22.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Absolutely!
+		name = norway.22.a
+		hidden_effect = {
+			NOR = { country_event = { days = 1 id = norway.23 } }
+		}
+	}
+}
+
+# Norway in Axis!
+country_event = {
+	id = norway.23
+	title = norway.23.t
+	desc = norway.23.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = norway.23.a
+		GER = { add_to_faction = NOR }
+	}
+}

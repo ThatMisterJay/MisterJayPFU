@@ -1,0 +1,29 @@
+
+state={
+	id=303
+	name="STATE_303" # Lima
+	manpower = 3563249
+
+
+	state_category = large_city
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			12997 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = BRA
+		victory_points = {
+			12997 5
+		}
+
+	}
+
+	provinces={
+		2156 2162 5190 8199 12969 12983 12997
+	}
+}

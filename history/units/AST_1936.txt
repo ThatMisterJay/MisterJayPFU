@@ -1,0 +1,166 @@
+﻿division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 	# (semi-mot) Engineer bn
+		recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+
+division_template = {
+	name = "Armored-Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 2 }
+		light_armor = { x = 3 y = 3 }
+		light_armor = { x = 4 y = 0 }
+		light_armor = { x = 4 y = 1 }
+		light_armor = { x = 4 y = 2 }
+		light_armor = { x = 4 y = 3 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garrison Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+
+	}
+	priority = 0
+}
+
+
+
+units = {
+	##### Royal Australian Army #####
+	division= {
+		name = "5. Infantry Division"
+		location = 1652 # Perth
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# 2nd Military District -- New South Wales
+	division= {
+		name = "1. Infantry Division"
+		location = 12406 # Sydney
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+
+	}
+	division= {
+		name = "2. Infantry Division"
+		location = 7859 # Canberra
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+
+	}
+
+	# 3rd Military District -- New South Wales
+	division= {
+		name = "3. Infantry Division"
+		location = 7798 # Melbourne
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {
+		name = "4. Infantry Division"
+		location = 7798 # Melbourne
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+
+	##### Naval OOB #####
+	navy = {
+		name = "Australian Squadron"
+		base = 12406
+		location = 12406 # Sydney
+		ship = { name = "HMAS Canberra" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } }	}
+		ship = { name = "HMAS Australia" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = AST version_name = "Canberra Class" } } }
+		ship = { name = "HMAS Sydney" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AST } } }
+		ship = { name = "HMAS Adelaide" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = AST } } }
+		# Scrap Iron Flotilla
+		ship = { name = "HMAS Stuart" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+		ship = { name = "HMAS Vampire" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+		ship = { name = "HMAS Vendetta" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+		ship = { name = "HMAS Voyager" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+		ship = { name = "HMAS Waterhen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = AST } } }
+	}
+}
+
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AST"
+		}
+		requested_factories = 1
+		progress = 0.75
+		efficiency = 100
+	}
+}

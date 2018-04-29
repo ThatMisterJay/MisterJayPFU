@@ -1,0 +1,28 @@
+state=
+{
+	id=298
+	name="STATE_298"
+	manpower = 745000
+	
+	state_category = rural
+	
+	resources={
+		rubber=4
+	}
+
+	history= {
+		owner = FRA
+		buildings = {
+			infrastructure = 1
+			7959 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			7959 3
+		}
+	}
+	provinces={
+		7959 8006
+	}
+}

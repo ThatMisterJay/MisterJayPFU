@@ -1,0 +1,391 @@
+division_template = {
+					name = "Militia"
+	
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+					    infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+
+					}
+				}
+
+units = {
+	##### PFU Chinese Militia #####
+	division= {
+		name = "Militia"
+		location = 7965
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 7965
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 12898
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 10863
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 7976
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 1319
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 4559
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 4504
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 4504
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 10819
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Militia"
+		location = 7137
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+			division= {
+		name = "Militia"
+		location = 7137
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Militia"
+		location = 7137
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Militia"
+		location = 7137
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Militia"
+		location = 4177
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Militia"
+		location = 4121
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Militia"
+		location = 10404
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Militia"
+		location = 10404
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Militia"
+		location = 4480
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Militia"
+		location = 12053
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Militia"
+		location = 12407
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+						division= {
+		name = "Militia"
+		location = 7097
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+							division= {
+		name = "Militia"
+		location = 7097
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+							division= {
+		name = "Militia"
+		location = 7097
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+							division= {
+		name = "Militia"
+		location = 7097
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	
+							division= {
+		name = "Militia"
+		location = 7097
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+							division= {
+		name = "Militia"
+		location = 3992
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 3992
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 3992
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 4038
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 7054
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 7007
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 7459
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+								division= {
+		name = "Militia"
+		location = 7940
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+									division= {
+		name = "Militia"
+		location = 7940
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+									division= {
+		name = "Militia"
+		location = 12732
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+										division= {
+		name = "Militia"
+		location = 12732
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+										division= {
+		name = "Militia"
+		location = 12732
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+											division= {
+		name = "Militia"
+		location = 4925
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+												division= {
+		name = "Militia"
+		location = 4925
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+												division= {
+		name = "Militia"
+		location = 4925
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+												division= {
+		name = "Militia"
+		location = 4925
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	
+												division= {
+		name = "Militia"
+		location = 4925
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+												division= {
+		name = "Militia"
+		location = 2045
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+													division= {
+		name = "Militia"
+		location = 2045
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+													division= {
+		name = "Militia"
+		location = 2045
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+													division= {
+		name = "Militia"
+		location = 2045
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+													division= {
+		name = "Militia"
+		location = 2045
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+													division= {
+		name = "Militia"
+		location = 8049
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+														division= {
+		name = "Militia"
+		location = 8049
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+														division= {
+		name = "Militia"
+		location = 8049
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+														division= {
+		name = "Militia"
+		location = 8049
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+														division= {
+		name = "Militia"
+		location = 7418
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+															division= {
+		name = "Militia"
+		location = 7418
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+															division= {
+		name = "Militia"
+		location = 7418
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+																division= {
+		name = "Militia"
+		location = 1053
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+																division= {
+		name = "Militia"
+		location = 1053
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+																	division= {
+		name = "Militia"
+		location = 1918
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+																		division= {
+		name = "Militia"
+		location = 12837
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+																			division= {
+		name = "Militia"
+		location = 12724
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+																				division= {
+		name = "Militia"
+		location = 9966
+		division_template = "Militia"
+		start_experience_factor = 0.3
+	}
+	
+
+}

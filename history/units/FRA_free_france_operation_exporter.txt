@@ -1,0 +1,66 @@
+﻿### OOB ###
+
+division_template = {
+	name = "Division Française Libre"		# Infantry Division with Légion Etrangère Régiments
+
+	regiments = {
+		desertinfantry = { x = 0 y = 0 }
+		desertinfantry = { x = 0 y = 1 }
+		desertinfantry = { x = 0 y = 2 }
+		desertinfantry = { x = 0 y = 3 }
+		desertinfantry = { x = 0 y = 4 }
+		desertinfantry = { x = 1 y = 0 }
+		desertinfantry = { x = 1 y = 1 }
+		desertinfantry = { x = 1 y = 2 }
+		desertinfantry = { x = 1 y = 3 }
+		desertinfantry = { x = 1 y = 4 }
+		desertinfantry = { x = 2 y = 0 }
+		desertinfantry = { x = 2 y = 1 }
+		desertinfantry = { x = 2 y = 2 }
+		desertinfantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division= {
+		name = "Division de Tirailleurs Sénégalais"
+		location = 4111  # Damas
+		division_template = "Division Française Libre"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Division de Tirailleurs Sénégalais 2"
+		location = 4111  # Damas
+		division_template = "Division Française Libre"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Division de Tirailleurs Sénégalais 3"
+		location = 4111  # Damas
+		division_template = "Division Française Libre"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Division de Tirailleurs Sénégalais 4"
+		location = 4111  # Damas
+		division_template = "Division Française Libre"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}

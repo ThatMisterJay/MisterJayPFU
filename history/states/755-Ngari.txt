@@ -1,0 +1,17 @@
+state={
+	id=755
+	name="STATE_755"
+	provinces={
+		1961 2010 5011 5094 8029 8068 10755 10802 12784 12801 
+	}
+	history={
+		owner = TIB
+		add_core_of = TIB
+		add_core_of = CHI
+		add_core_of = PRC
+
+	}
+	manpower=98769
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

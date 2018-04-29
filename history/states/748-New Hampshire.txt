@@ -1,0 +1,22 @@
+state={
+	id=748
+	name="STATE_748"
+	state_category = city
+	history={
+		owner = USA
+	buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+        }
+	
+	add_core_of = USA
+	
+	}
+	
+	
+	provinces={
+		733 3712 3715 10481 
+	}
+	manpower=481000
+	buildings_max_level_factor=1.000
+}

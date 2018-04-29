@@ -1,0 +1,236 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "Dance of the Knights by Prokofiev.ogg"
+	volume = 1.00
+}
+
+# General Peace:
+music = {
+	name = "general_peace_2"
+	file = "Egmont Overture by Beethoven.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_1337"
+	file = "Symphony No. 7 Allegretto 2nd movement by Beethoven.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_6"
+	file = "Blue Danube by Strauss.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_7"
+	file = "Piano Concerto 1 by Tchaikovsky.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_10"
+	file = "La Folia by Vivaldi.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_12"
+	file = "Ride of the Valkyries by Wagner.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_13"
+	file = "Gotterdammerung by Wagner.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_14"
+	file = "Sonata No. 8 1st movement.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_peace_16"
+	file = "Sonata No. 8 3rd movement.ogg"
+	volume = 1.00
+}
+
+# General war:
+music = {
+	name = "general_war_1"
+	file = "Symphony No 5 by Beethoven.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_2"
+	file = "Moonlight Sonata by Beethoven.ogg"
+	volume = 2.00
+}
+music = {
+	name = "general_war_3"
+	file = "general_war_bringforththetanks.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_4"
+	file = "Hungarian Rhapsody No. 2 (Orchestra) by Liszt.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_5"
+	file = "Lacrimosa by Mozart.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_6"
+	file = "Eine Kleine Nachtmusik by Mozart.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_7"
+	file = "The Snowstorm Waltz by Sviridov.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_8"
+	file = "general_war_theattack.ogg"
+	volume = 1.00
+}
+music = {
+	name = "general_war_9"
+	file = "operationbarbarossa.ogg"
+	volume = 1.00
+}
+
+
+
+# Allies Peace:
+
+# Allies War:
+music = {
+	name = "allies_war_1"
+	file = "heavywater.ogg"
+	volume = 1.00
+}
+music = {
+	name = "allies_war_2"
+	file = "Romanian Rhapsody No. 2 by Enescu.ogg"
+	volume = 1.00
+}
+music = {
+	name = "allies_war_3"
+	file = "Carmina Burana O Fortuna by Orff.ogg"
+	volume = 1.00
+}
+music = {
+	name = "allies_war_4"
+	file = "Canon in D by Pachelbel.ogg"
+	volume = 1.00
+}
+music = {
+	name = "allies_war_5"
+	file = "William Tell Overture by Rossini.ogg"
+	volume = 1.00
+}
+
+
+# Axis Peace:
+music = {
+	name = "axis_peace_1"
+	file = "Appassionata 3rd movement.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "axis_peace_2"
+	file = "axistheme.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "axis_peace_4"
+	file = "Swan Lake Waltz by Tchaikovsky.ogg"
+	volume = 1.00
+}
+
+# Axis War:
+music = {
+	name = "axis_war_1"
+	file = "Habanera by Bizet.ogg"
+	volume = 1.00
+}
+music = {
+	name = "axis_war_2"
+	file = "Ungarischer Tanz (Hungarian Dance) No. 5 by Brahms.ogg"
+	volume = 0.50
+}
+music = {
+	name = "axis_war_3"
+	file = "Funeral March by Chopin.ogg"
+	volume = 1.00
+}
+music = {
+	name = "axis_war_4"
+	file = "war_axis_1_daysofthunder.ogg"
+	volume = 1.00
+}
+music = {
+	name = "axis_war_5"
+	file = "Requiem Dies Irae by Mozart.ogg"
+	volume = 1.00
+}
+
+# Comintern Peace:
+
+music = {
+	name = "comintern_peace_1"
+	file = "In The Hall Of The Mountain King by Grieg.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "comintern_peace_2"
+	file = "Morning Mood by Grieg.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "comintern_peace_3"
+	file = "Sarabande by Handel.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "comintern_peace_4"
+	file = "Dance Macabre by Saint-Saens.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "comintern_peace_5"
+	file = "motherrussia.ogg"
+	volume = 1.00
+}
+
+# Comintern War:
+
+music = {
+	name = "comintern_war_4"
+	file = "On The Hills Of Manchuria by Shatrov.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "comintern_war_5"
+	file = "Waltz No. 2 by Shostakovich.ogg"
+	volume = 1.00
+}
+music = {
+	name = "comintern_war_6"
+	file = "thegreatpatrioticwar.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "comintern_war_7"
+	file = "Rule Britannia by Thomson.ogg"
+	volume = 1.00
+}

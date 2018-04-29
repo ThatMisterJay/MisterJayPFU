@@ -1,0 +1,39 @@
+state={
+	id=758
+	name="STATE_758"
+			resources={
+		steel=16.000
+
+	}
+	
+	
+	
+	provinces={
+		1166 4169 4196 7027 
+	}
+	manpower=5434900
+	
+	state_category = large_city
+			
+		
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+						4196 = {
+				naval_base = 4
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+		}
+		victory_points = {
+			4196 3 
+		}
+	}
+		
+	buildings_max_level_factor=1.000
+}

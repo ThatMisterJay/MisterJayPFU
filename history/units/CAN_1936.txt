@@ -1,0 +1,146 @@
+﻿division_template = {
+	name = "Infantry Division"	# For largest Military District Forces (3 brigade forces)
+	# Note: all forces at reserve levels in 1936
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 	# (semi-mot) Engineer bn
+		recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		logistics_company { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Armored-Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 2 }
+		light_armor = { x = 3 y = 3 }
+		light_armor = { x = 4 y = 0 }
+		light_armor = { x = 4 y = 1 }
+		light_armor = { x = 4 y = 2 }
+		light_armor = { x = 4 y = 3 }
+
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+		signal_company { x = 0 y = 2 }
+		logistics_company { x = 0 y = 3 }
+	}
+}
+
+
+units = {
+	##### Royal Canadian Army #####
+	## 1st Infantry Division ##
+	division= {
+		name = "1. Infantry Division"
+		location = 722 # London ONT
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	## 2nd Infantry Division ##
+	division= {
+		name = "2. Infantry Division"
+		location = 3775 # Toronto
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	## 3rd Miltary District ##
+	division= {
+		name = "3. Infantry Division"
+		location = 3605 # Kingston ONT
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+
+
+	##### Naval OOB #####
+	navy = {
+		name = "Atlantic Squadron"
+		base = 7361
+		location = 7361 # Halifax
+		# Scrap Iron Flotilla
+		ship = { name = "HMCS Saguenay" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+		ship = { name = "HMCS Skeena" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = CAN version_name = "Sanguenay Class" } } }
+	}
+}
+
+
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CAN"
+		}
+		requested_factories = 1
+		progress = 0.73
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CAN"
+		}
+		requested_factories = 1
+		progress = 0.85
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CAN"
+		}
+		requested_factories = 1
+		progress = 0.85
+		efficiency = 100
+	}
+}

@@ -1,0 +1,15 @@
+units = {
+	##### PFU nord + eugen #####
+	division= {
+		name = "SS Nord"
+		location = 192
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.5
+	}
+		division= {
+		name = "SS Prinz Eugen"
+		location = 192
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.4
+	}
+}

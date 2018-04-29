@@ -1,0 +1,947 @@
+focus_tree = {
+	id = SLO_generic_focus
+	
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = SLO
+        }
+    }
+	
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = SLO_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 8
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SLO_equipment_effort
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = SLO_army_effort }
+		relative_position_id = SLO_army_effort
+		x = -4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = SLO_mountain_brigades
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = SLO_army_effort }
+		relative_position_id = SLO_army_effort
+		x = -2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = SLO_recon_companies
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SLO_mountain_brigades focus = SLO_motorization_effort}
+		prerequisite = { focus = SLO_mountain_brigades focus = SLO_mountain_brigades}
+		x = -1
+		y = 2
+		relative_position_id = SLO_army_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_motorized_recon_companies
+				bonus = 0.75
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}	
+	focus = {
+		id = SLO_support_bonus
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = SLO_equipment_effort }
+		prerequisite = { focus = SLO_mountain_brigades }
+		x = -3
+		y = 2
+		relative_position_id = SLO_army_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cze_army_upgrades2
+				bonus = 0.5
+				uses = 1
+				category = logistics_tech
+				category = engineers_tech
+			}
+		add_tech_bonus = {
+			name = cze_army_upgrades3
+			bonus = 0.5
+			uses = 1
+			technology = support_weapons2
+			technology = support_weapons3
+			}
+		}
+	}	
+	focus = {
+		id = SLO_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SLO_army_effort }
+		bypass = { has_tech = motorised_infantry }
+		relative_position_id = SLO_army_effort
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = SLO_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = SLO_army_effort }
+		relative_position_id = SLO_army_effort
+		x = 3
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = SLO_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SLO_motorization_effort }
+		relative_position_id = SLO_army_effort
+		x = 1
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}			
+		}
+	}
+	focus = {
+		id = SLO_invite_german_military_mission
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SLO_doctrine_effort }
+		x = 3
+		y = 2
+		relative_position_id = SLO_army_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+			GER = {
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
+			}
+			OR = {
+				SLO = {is_subject_of = GER}
+				is_in_faction_with = GER
+			}
+			has_tech = mobile_warfare
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_supremacy_of_offense
+				bonus = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = SLO_mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = SLO_armor_effort }
+		prerequisite = { focus = SLO_invite_german_military_mission }
+		relative_position_id = SLO_army_effort
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_mechanized_focus
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}	
+
+	focus = {
+		id = SLO_modern_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = SLO_support_bonus }
+		relative_position_id = SLO_army_effort
+		x = -3
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = SLO_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = SLO_recon_companies }
+		relative_position_id = SLO_army_effort
+		x = -1
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+			}
+		}
+	}
+    focus = {
+        id = SLO_committee_for_military_innovations
+        icon = GFX_focus_research
+		prerequisite = { focus = SLO_special_forces }
+		prerequisite = { focus = SLO_modern_artillery }
+		prerequisite = { focus = SLO_mechanization_effort }
+		relative_position_id = SLO_army_effort 
+        x = 0
+        y = 4
+        cost = 10
+		ai_will_do = {
+			factor = 40			
+			}
+		available = {
+			is_in_faction = yes
+			OR = {
+				num_of_factories > 25
+				any_other_country = {
+					is_in_faction_with = ROOT
+					num_of_factories > 50
+				}
+			}
+		}			
+		available_if_capitulated = yes
+        completion_reward = {
+            add_research_slot = 1
+            }
+        }
+
+	focus = {
+		id = SLO_industrial_effort
+		icon = GFX_goal_generic_production
+		x = 16
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	focus = {
+		id = SLO_transslovak_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SLO_industrial_effort }
+		relative_position_id = SLO_industrial_effort
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+            70 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes 
+                }    
+            }
+            71 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes 
+                }    
+            }			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	focus = {
+		id = SLO_extraction_focus
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SLO_transslovak_railways }
+		relative_position_id = SLO_industrial_effort
+		x = 2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = extraction_bonus
+				bonus = 0.5
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+			}
+            add_resource = {
+                type = tungsten
+                amount = 2
+                state = 70
+            }
+            add_resource = {
+                type = steel
+                amount = 2
+                state = 71
+            }			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+    focus = {
+        id = SLO_bratislava_industrial_area
+        icon = GFX_goal_generic_construct_civ_factory
+        relative_position_id = SLO_industrial_effort
+		x = 0
+        y = 2
+		prerequisite = { focus = SLO_transslovak_railways }
+        available = {
+			SLO ={
+				controls_state = 70
+			}
+		70 = { is_owned_by = SLO }
+        }		
+        cost = 10
+		ai_will_do = {
+			factor = 5		
+			}		
+		available_if_capitulated = yes
+        completion_reward = {
+            70 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }			
+        }
+    }
+    focus = {
+        id = SLO_apollo_oil_refinery
+        icon = GFX_goal_generic_oil_refinery
+		relative_position_id = SLO_industrial_effort
+        x = 1
+        y = 3
+        prerequisite = { focus = SLO_bratislava_industrial_area focus = SLO_extraction_focus}
+		available = {
+			SLO ={
+				controls_state = 70
+			}
+		70 = { is_owned_by = SLO }
+        has_tech = synth_oil_experiments
+        }		
+        cost = 10
+		ai_will_do = {
+			factor = 5			
+			}		
+        completion_reward = {
+            70 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = SLO_small_arms_manufacturing
+        icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = SLO_industrial_effort
+        x = -2
+        y = 2
+        prerequisite = { focus = SLO_transslovak_railways }
+        cost = 10
+		ai_will_do = {
+			factor = 15		
+			}		
+        available = {
+			SLO ={
+				controls_state = 70
+			}
+        }		
+        completion_reward = {
+
+            70 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }			
+        }
+    }
+    focus = {
+        id = SLO_zwolen_railway_factory
+        icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = SLO_industrial_effort
+        x = -3
+        y = 3
+        prerequisite = { focus = SLO_small_arms_manufacturing }
+        cost = 10
+		ai_will_do = {
+			factor = 15		
+			}		
+        available = {
+			SLO ={
+				controls_state = 70
+			}
+        }		
+        completion_reward = {
+
+            70 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes 
+                }				
+            }
+        }
+    }
+    focus = {
+        id = SLO_support_innovations
+        icon = GFX_focus_research
+		prerequisite = { focus = SLO_bratislava_industrial_area }
+		prerequisite = { focus = SLO_small_arms_manufacturing  focus = SLO_extraction_focus}
+		relative_position_id = SLO_industrial_effort
+        x = -1
+        y = 3
+        cost = 10
+		ai_will_do = {
+			factor = 30			
+			}		
+		available_if_capitulated = yes
+        completion_reward = {
+            add_research_slot = 1
+            }
+        }
+    focus = {
+        id = SLO_continue_industrialization
+        icon = GFX_goal_generic_construction
+        relative_position_id = SLO_industrial_effort
+		x = -2
+        y = 4
+		prerequisite = { focus = SLO_support_innovations }
+        prerequisite = { focus = SLO_zwolen_railway_factory }
+		available = {
+			SLO ={
+				controls_state = 70
+				controls_state = 71
+			}
+		70 = { is_owned_by = SLO }
+		71 = { is_owned_by = SLO }
+        }		
+        cost = 10
+		ai_will_do = {
+			factor = 5		
+			}		
+		available_if_capitulated = yes
+        completion_reward = {
+            70 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            71 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }			
+        }
+    }
+    focus = {
+        id = SLO_civilian_developpements
+        icon = GFX_goal_generic_construction2
+        relative_position_id = SLO_industrial_effort
+		mutually_exclusive = { focus = SLO_military_developpements }
+		x = -1
+        y = 5
+		prerequisite = { focus = SLO_continue_industrialization }
+        available = {
+
+        }		
+        cost = 10
+		ai_will_do = {
+			factor = 5		
+			}		
+		available_if_capitulated = yes
+        completion_reward = {
+            add_ideas = SLO_civilian_production			
+        }
+    }
+    focus = {
+        id = SLO_military_developpements
+        icon = GFX_goal_generic_production2
+        relative_position_id = SLO_industrial_effort
+		mutually_exclusive = { focus = SLO_civilian_developpements }
+		x = -3
+        y = 5
+		prerequisite = { focus = SLO_continue_industrialization }
+        available = {
+
+        }		
+        cost = 10
+		ai_will_do = {
+			factor = 5		
+			}		
+		available_if_capitulated = yes
+        completion_reward = {
+            add_ideas = SLO_military_production			
+        }
+    }	
+	focus = {
+		id = SLO_uranium_mining
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = SLO_support_innovations }
+		prerequisite = { focus = SLO_extraction_focus }
+		x = 3
+		y = 4
+		relative_position_id = SLO_industrial_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+		}
+
+		available = {
+			has_tech = excavation3
+			date > 1939.06.01
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_uranium_mining
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}	
+		}
+	}	
+	focus = {
+		id = SLO_found_the_nation
+		icon = GFX_goal_SLO_slovak_freedom
+		x = 2
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}	
+	
+	focus = {
+		id = SLO_reinforce_hlinka_guard
+		icon = GFX_goal_SLO_slovak_blackshirts
+		prerequisite = { focus = SLO_found_the_nation }
+		relative_position_id = SLO_found_the_nation
+		available = {
+				has_government = fascism
+			if = {
+				limit = {
+					SLO = { is_subject = yes } 
+				
+				}
+				SLO = { OVERLORD = { has_government = fascism } }
+			}
+		}
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			add_political_power = 40
+			add_ideas = SLO_fascist_repression
+			add_ideas = SLO_nationalism
+		}
+	}	
+	focus = {
+		id = SLO_catholic_dominance
+		icon = GFX_goal_SLO_slovak_birth
+		prerequisite = { focus = SLO_reinforce_hlinka_guard }
+		relative_position_id = SLO_found_the_nation
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			if = {
+				limit = {
+					SLO = { is_subject = yes } 
+				
+				}
+				SLO = { OVERLORD = { has_government = fascism } }
+			}
+		}
+		x = -1
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = CRO_catholic_dominance
+		}
+	}	
+	focus = {
+		id = SLO_militarize_the_hlinka_guard
+		icon = GFX_goal_SLO_slovak_hlinka_guard
+		prerequisite = { focus = SLO_reinforce_hlinka_guard }
+		relative_position_id = SLO_found_the_nation
+		available = {
+				has_government = fascism
+			if = {
+				limit = {
+					SLO = { is_subject = yes } 
+				
+				}
+				SLO = { OVERLORD = { has_government = fascism } }
+			}
+		}
+		x = 1
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = fascism
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					is_historical_focus_on = yes
+					NOT = { has_government = fascism }
+				}
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = neutrality_idea }
+				remove_ideas = neutrality_idea
+			}			
+			add_ideas = SLO_militarism_focus
+			army_experience = 10
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = SLO_hlinka_youth
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = SLO_militarize_the_hlinka_guard focus = SLO_catholic_dominance}
+		relative_position_id = SLO_found_the_nation
+		x = 0
+		y = 3
+		cost = 10
+		available = {
+				has_government = fascism
+			if = {
+				limit = {
+					SLO = { is_subject = yes } 
+				}
+				SLO = { OVERLORD = { has_government = fascism } }
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = military_youth_focus
+		}
+	}
+	focus = {
+		id = SLO_faithful_ally
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = SLO_hlinka_youth }
+		relative_position_id = SLO_found_the_nation
+		x = 1
+		y = 4
+		cost = 10
+		available = {
+			has_dlc = "Together for Victory"
+			has_government = fascism
+			SLO = { 
+				is_subject = yes 
+				OVERLORD = { has_government = fascism }
+				has_war = yes 
+			}
+			has_army_manpower = { size > 90000 }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_autonomy_ratio = {
+				value = 0.9
+				localization = slovak_autonomy
+			}
+		}
+	}	
+	focus = {
+		id = SLO_ideological_fanaticism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SLO_hlinka_youth }
+		relative_position_id = SLO_found_the_nation
+		x = -1
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ideological_fanaticism_focus
+		}
+	}		
+}

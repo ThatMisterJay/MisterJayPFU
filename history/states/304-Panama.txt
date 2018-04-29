@@ -1,0 +1,29 @@
+
+state={
+	id=304
+	name="STATE_304"
+	manpower = 467459
+
+	
+	state_category = town
+	
+	history={
+		owner = NIC
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			7630 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = NIC
+		victory_points = {
+			7630 5 
+		}
+
+	}
+
+	provinces={
+		1633 4611 4624 7630 10482 
+	}
+}

@@ -1,0 +1,46 @@
+spriteTypes = {	
+
+	#### Generic goal icons
+
+	SpriteType = {
+	name = "GFX_goal_france_libre"
+	texturefile = "gfx/interface/goals/goal_france_libre.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_france_libre"
+		texturefile = "gfx/interface/goals/focus_france_libre.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_appel_18_juin"
+		texturefile = "gfx/event_pictures/news_event_appel_18_juin.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_west_africa_sway"
+		texturefile = "gfx/event_pictures/report_event_west_africa_sway.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_syria_sway"
+		texturefile = "gfx/event_pictures/report_event_syria_sway.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_french_resistance"
+		texturefile = "gfx/event_pictures/report_event_french_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_plan_vert"
+		texturefile = "gfx/event_pictures/report_event_plan_vert.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_do_not_give_up"
+		texturefile = "gfx/event_pictures/news_event_do_not_give_up.dds"
+	}
+	
+	spriteType = { name = "GFX_unit_partisan_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_partisan_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_partisan_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_partisan_icon.dds" noOfFrames = 2 }
+
+	
+	
+}

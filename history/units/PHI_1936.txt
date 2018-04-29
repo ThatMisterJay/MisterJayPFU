@@ -1,0 +1,75 @@
+﻿division_template = {
+	name = "Infantry Division"			# Represents both Philippines divisions and U.S. Division as expeditionary force
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	        engineer = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	######## LAND OOB ########
+	##### Philippine High Command #####
+	division = {
+		name = "1st Philippines Division"
+		location = 10265
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "2nd Philippines Division"
+		location = 4241
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "3rd Philippines Division"
+		location = 12118
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "4th Philippines Division"
+		location = 4288
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division = {
+		name = "5th Philippines Division"
+		location = 12213
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+
+	######## Naval OOB ########
+	navy = {
+		name = "OSP 'Mosquito' Fleet"
+		location = 10265 # Manila
+		ship = { name = "PT Q-111 Luzon" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = "PHI" } } }
+		ship = { name = "PT Q-112 Manila" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = "PHI" } } }
+	}
+}
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PHI"
+		}
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 100
+	}
+}

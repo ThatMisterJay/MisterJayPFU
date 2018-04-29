@@ -1,0 +1,304 @@
+﻿###########################
+# FREE FRANCE events
+###########################
+##
+##
+add_namespace = free_france
+
+#Appel du 18 Juin
+news_event = {
+	id = free_france.1
+	title = free_france.1.t
+	desc = free_france.1.desc
+	picture = GFX_news_event_appel_18_juin
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.1.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Military Operations in West Africa
+country_event = {
+	id = free_france.2
+	title = free_france.2.t
+	desc = free_france.2.desc
+	picture = GFX_report_event_west_africa_sway
+
+	is_triggered_only = yes
+
+	#Try to attack
+	option = {
+		name = free_france.2.a
+		ai_chance = {
+			factor = 100
+		}
+		EFR = { country_event = free_france.3 }
+	}
+}
+
+# Vichy defense in West Africa
+country_event = {
+	id = free_france.3
+	title = free_france.3.t
+	desc = free_france.3.desc
+	picture = GFX_report_event_west_africa_sway
+
+	is_triggered_only = yes
+
+	#Repulse them !
+	option = {
+		name = free_france.3.a
+		ai_chance = {
+			factor = 100
+		}
+		FRA = { country_event = free_france.4 }
+	}
+}
+
+# Failure of West Africa
+country_event = {
+	id = free_france.4
+	title = free_france.4.t
+	desc = free_france.4.desc
+	picture = GFX_report_event_west_africa_sway
+
+	is_triggered_only = yes
+
+	#Damn
+	option = {
+		name = free_france.4.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Military Operations in Syria
+country_event = {
+	id = free_france.5
+	title = free_france.5.t
+	desc = free_france.5.desc
+	picture = GFX_report_event_syria_sway
+
+	is_triggered_only = yes
+
+	#Try to attack and ask the british for help
+	option = {
+		name = free_france.5.a
+		ai_chance = {
+			factor = 100
+		}
+		ENG = { country_event = free_france.6 }
+	}
+}
+
+# British response for help in Syria
+country_event = {
+	id = free_france.5
+	title = free_france.5.t
+	desc = free_france.5.desc
+	picture = GFX_report_event_syria_sway
+
+	is_triggered_only = yes
+
+	#Sure boyo
+	option = {
+		name = free_france.5.a
+		ai_chance = {
+			factor = 100
+		}
+		FRA = { country_event = free_france.6 }
+	}
+}
+
+# The British accept
+country_event = {
+	id = free_france.6
+	title = free_france.6.t
+	desc = free_france.6.desc
+	picture = GFX_report_event_syria_sway
+
+	is_triggered_only = yes
+
+	# Très bien !
+	option = {
+		name = free_france.6.a
+		ai_chance = {
+			factor = 100
+		}
+		EFR = { country_event = free_france.7 }
+	}
+}
+
+# Vichy responds to the attack
+country_event = {
+	id = free_france.7
+	title = free_france.7.t
+	desc = free_france.7.desc
+	picture = GFX_report_event_syria_sway
+
+	is_triggered_only = yes
+
+	# Ils nous ont battus les salops
+	option = {
+		name = free_france.7.a
+		ai_chance = {
+			factor = 100
+		}
+		FRA = { transfer_state = 553 }
+		FRA = { transfer_state = 677 }
+		FRA = { transfer_state = 554 }
+		FRA = { transfer_state = 680 }
+		hidden_effect = {
+			FRA = {
+				hidden_effect = { load_oob = FRA_free_france_operation_exporter }
+				custom_effect_tooltip = FRA_free_france_operation_exporter_tt
+				country_event = free_france.71
+			}
+		}
+	}
+}
+
+# Victoire pour l'opération Exporter
+country_event = {
+	id = free_france.71
+	title = free_france.71.t
+	desc = free_france.71.desc
+	picture = GFX_report_event_syria_sway
+
+	is_triggered_only = yes
+
+	# Yay
+	option = {
+		name = free_france.71.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Organize the Resistance in NAF
+country_event = {
+	id = free_france.8
+	title = free_france.8.t
+	desc = free_france.8.desc
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.8.a
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+# Unleash the Resistance in NAF
+country_event = {
+	id = free_france.9
+	title = free_france.9.t
+	desc = free_france.9.desc
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.9.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			set_technology = { partisans = 1 }
+			set_province_controller = 7069
+			set_province_controller = 11943
+			set_province_controller = 10070
+			set_province_controller = 7132
+			set_province_controller = 4116
+			set_province_controller = 11923
+			set_province_controller = 1145
+			set_province_controller = 9964
+			set_province_controller = 11939
+			set_province_controller = 9994
+			set_province_controller = 11969
+			set_province_controller = 4163
+		}
+
+		custom_effect_tooltip = FRA_Torch_historical_tt
+		hidden_effect = { load_oob = FRA_Torch_historical }
+	}
+}
+
+# North Africa Switch
+country_event = {
+	id = free_france.10
+	title = free_france.10.t
+	desc = free_france.10.desc
+	picture = GFX_report_event_french_resistance
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			FRA = {
+				controls_state = 461
+				controls_state = 459
+				controls_state = 462
+			}
+			ENG = {
+				controls_state= 461
+				controls_state= 459
+				controls_state= 462
+			}
+			USA = {
+				controls_state= 461
+				controls_state= 459
+				controls_state= 462
+			}
+		}
+	}
+
+	option = {
+		name = free_france.10.a
+		FRA = { transfer_state = 461 }
+		FRA = { transfer_state = 459 }
+		FRA = { transfer_state = 462 }
+		FRA = { transfer_state = 460 }
+		FRA = { transfer_state = 513 }
+		hidden_effect = { load_oob = FRA_free_france_afn_corps }
+		custom_effect_tooltip = FRA_free_france_afn_corps_tt
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = free_france.11
+	title = free_france.11.t
+	desc = free_france.11.desc
+	picture = GFX_report_event_french_resistance
+
+
+	trigger = {
+		tag = FRA
+		NOT = { has_global_flag = FRA_dontleave }
+	}
+
+	immediate = {
+		set_global_flag = FRA_dontleave
+	}
+
+	option = {
+		name = pfu.10.a
+	}
+	mean_time_to_happen = { days = 30 }
+}

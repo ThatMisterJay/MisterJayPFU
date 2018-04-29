@@ -1,0 +1,99 @@
+ideas = {
+
+	country = {
+		
+		FIN_motitus_tactics = {
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				winter_attrition_factor = -0.8
+				army_speed_factor = 0.2
+				out_of_supply_factor = -0.1
+		
+		}
+		}
+		
+		FIN_white_guard_idea = {
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				conscription = 0.05
+		
+		}
+		}
+	
+		FIN_mannerheim_legacy_idea = {
+		
+		picture = FRA_fortification_focus
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.15
+			}
+		}
+		
+		
+		
+        civilian_kitchens_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		FIN_communism_banned = {
+			picture = anti_soviet_pact
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				communism_drift = -0.15
+			}
+		}
+        
+	}
+}

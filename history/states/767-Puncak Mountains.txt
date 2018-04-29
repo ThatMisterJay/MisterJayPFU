@@ -1,0 +1,16 @@
+state={
+	id=767
+	name="STATE_767"
+			history={
+		owner = HOL
+
+	}
+	
+	provinces={
+		4593 7269 7570 8235 8250 10436 10990 
+	}
+	manpower=31224
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

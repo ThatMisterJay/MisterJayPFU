@@ -1,0 +1,60 @@
+﻿###########################
+# News Events
+###########################
+add_namespace = dumbnews
+
+#China refuses PRC
+news_event = {
+	id = dumbnews.1
+	title = dumbnews.1.t
+	desc = dumbnews.1.d
+	picture = GFX_news_event_nuke
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dumbnews.1.a
+		trigger = {
+			tag = CHI
+		}
+	}
+	
+	option = {
+		name = dumbnews.1.b
+		trigger = {
+			NOT = {
+				tag = CHI
+			}
+		}
+	}
+}
+
+#Romania refuses Bessarabia
+news_event = {
+	id = dumbnews.2
+	title = dumbnews.2.t
+	desc = dumbnews.2.d
+	picture = GFX_news_event_nuke
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dumbnews.2.a
+		trigger = {
+			tag = ROM
+		}
+	}
+	
+	option = {
+		name = dumbnews.2.b
+		trigger = {
+			NOT = {
+				tag = ROM
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=751
+	name="STATE_751" ###Hatay turkey
+
+	history={
+		owner = TUR
+		buildings = {
+        infrastructure = 3
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		12029 
+	}
+	manpower=108247
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

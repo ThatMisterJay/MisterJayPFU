@@ -1,0 +1,12 @@
+﻿# Cruisers sent to New Zealand
+
+units = {
+	navy = {					
+		name = "English Cruisers"				
+		base = 2197
+		location = 2197 # South NZ Island
+		ship = { name = "HMS Achilles" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG creator = ENG } } }			
+		ship = { name = "HMS Leander" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG creator = ENG } } }				
+	}	
+}					
+

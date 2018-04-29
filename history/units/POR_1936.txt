@@ -1,0 +1,125 @@
+﻿division_template = {
+	name = "Divisão de Infanteria"		# Infantry Division
+	# Note: each regiment could also mobilize a 3rd battalion if called up
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  # Full howitzer regiment
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }   
+	}
+}
+
+units = {
+	###### Exército Portugues #####
+	# Governo Militar Portugues #
+	division = {
+		name = "Governo Militar Portugues"
+		location = 11805
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# 1a Distrito Militar #
+	division = {
+		name = "1. Divisão de Infanteria"
+		location = 9817
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# 2a Distrito Militar #
+	division = {
+		name = "2. Divisão de Infanteria"
+		location = 3798
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	# 3a Distrito Militar #
+	division = {
+		name = "3. Divisão de Infanteria"
+		location = 844
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	# 4a Distrito Militar #
+	division = {
+		name = "4. Divisão de Infanteria"
+		location = 9869
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	##### NAVAL UNITS #####
+	navy = {				
+		name = "Marinha de Portugal"			
+		base = 11805
+		location = 11805 # Lisbon
+		# Flotilha 'Viana do Castelo'
+		ship = { name = "NRP Tamega" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
+		ship = { name = "NRP Dão" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
+		ship = { name = "NRP Douro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
+		ship = { name = "NRP Lima" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }	
+		ship = { name = "NRP Vouga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }	
+		ship = { name = "NRP Tejo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }	
+		# Flotilha Delfim
+		ship = { name = "NRP Delfim" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR create_if_missing = yes } } }		
+		ship = { name = "NRP Espadarte" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR create_if_missing = yes } } }	
+		ship = { name = "NRP Golfinho" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR create_if_missing = yes } } }	
+	}				
+
+}
+
+
+### Aeronáutica Militar ###
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

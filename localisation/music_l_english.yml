@@ -1,0 +1,84 @@
+﻿l_english:
+ maintheme:0 "Dance of the Knights by Prokofiev"
+ general_peace_1:0 "Chaconne in D Minor by Bach/Busoni"
+ general_peace_2:0 "Egmont Overture by Beethoven"
+ general_peace_1337:0 "Symphony No. 7 Allegretto 2nd movement by Beethoven"
+ general_peace_4:0 "Mercury by Holst"
+ general_peace_5:0 "Moldau by Smetana"
+ general_peace_6:0 "Blue Danube by Strauss"
+ general_peace_7:0 "Piano Concerto 1 by Tchaikovsky"
+ general_peace_8:0 "Toccata and Fugue in D Minor by Bach"
+ general_peace_9:0 "Four Seasons by Vivaldi"
+ general_peace_10:0 "La Folia by Vivaldi"
+ general_peace_11:0 "Tannhauser Overture by Wagner"
+ general_peace_12:0 "Ride of the Valkyries by Wagner"
+ general_peace_13:0 "Götterdämmerung by Wagner"
+ general_peace_14:0 "Sonata No. 8 "Pathétique" 1st movement by Beethoven"
+ general_peace_15:0 "Sonata No. 8 "Pathétique" 2nd movement by Beethoven"
+ general_peace_16:0 "Sonata No. 8 "Pathétique" 3rd movement by Beethoven"
+ allies_peace_1:0 "Sonata No. 23 "Appassionata" 1st movement by Beethoven"
+ allies_peace_2:0 "Sonata No. 23 "Appassionata" 2nd movement by Beethoven"
+ allies_peace_3:0 "Mars by Holst"
+ axis_peace_1:0 "Sonata No. 23 "Appassionata" 3rd movement by Beethoven"
+ axis_peace_2:0 "9th Symphony Finale by Beethoven"
+ axis_peace_3:0 "Venus by Holst"
+ axis_peace_4:0 "Swan Lake Waltz by Tchaikovsky"
+ general_war_1:0 "Symphony No. 5 by Beethoven"
+ general_war_2:0 "Moonlight Sonata 1st movement by Beethoven"
+ general_war_3:0 "Saturn by Holst"
+ general_war_4:0 "Hungarian Rhapsody No. 2 (Orchestra) by Liszt"
+ general_war_5:0 "Lacrimosa by Mozart"
+ general_war_6:0 "Eine Kleine Nachtmusik by Mozart"
+ general_war_7:0 "The Snowstorm: Waltz by Sviridov"
+ general_war_8:0 "The Attack"
+ general_war_9:0 "Operation Barbarossa"
+ axis_war_1:0 "Habanera by Bizet"
+ axis_war_2:0 "Ungarischer Tanz (Hungarian Dance) No. 5 by Brahms"
+ axis_war_3:0 "Sonata No. 2 "Funeral March" 3rd movement by Chopin"
+ axis_war_4:0 "Arabesque No. 1 by Debussy"
+ axis_war_5:0 "Requiem Dies Irae by Mozart"
+ axis_war_6:0 "Orpheus In The Underworld by Offenbach"
+ axis_war_7:0 "1812 Overture by Tchaikosvky"
+ allies_war_1:0 "New World Symphony by Dvorak"
+ allies_war_2:0 "Romanian Rhapsody No. 2 by Enescu"
+ allies_war_3:0 "Carmina Burana: O Fortuna by Orff"
+ allies_war_4:0 "Canon in D by Pachelbel"
+ allies_war_5:0 "William Tell Overture by Rossini"
+ allies_war_6:0 "Slavonic March by Tchaikovsky"
+ comintern_peace_1:0 "In The Hall Of The Mountain King by Grieg"
+ comintern_peace_2:0 "Morning Mood by Grieg"
+ comintern_peace_3:0 "Sarabande by Handel"
+ comintern_peace_4:0 "Dance Macabre by Saint-Saëns"
+ comintern_peace_5:0 "Mother Russia"
+ comintern_war_1:0 "Neptune by Holst"
+ comintern_war_2:0 "Uranus by Holst"
+ comintern_war_3:0 "Jupiter by Holst"
+ comintern_war_4:0 "On The Hills Of Manchuria by Shatrov"
+ comintern_war_5:0 "Waltz No. 2 by Shostakovich"
+ comintern_war_6:0 "Symphony No. 7 Leningrad 4th Movement by Shostakovich"
+ comintern_war_7:0 "Rule Britannia by Thomson"
+#Music is listed in the music player (from top to bottom) as follows:
+#General peace 1-3
+#Allies peace 1-2
+#Axis peace 1-2
+#General war 1-2
+#Axis war 1-4
+#Allies war 1-2
+#Comintern peace 1-3
+#Comintern war 1-3
+#General peace 4
+#Allies peace 3
+#Axis peace 3
+#General war 3-6
+#Axis war 5-6
+#Allies war 3-5
+#Comintern peace 4
+#Comintern war 4-6
+#General peace 5-6
+#General war 7
+#General peace 7
+#Axis peace 4
+#Axis war 7
+#Allies war 6
+#Comintern war 7
+#General peace 8 - 99
