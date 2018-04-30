@@ -1126,7 +1126,7 @@ focus_tree = {
 		}
 	}
 
-
+	# barbarossa
 	focus = {
 		id = GER_ussr_war_goal
 		icon = GFX_goal_generic_war_with_comintern
@@ -1134,7 +1134,7 @@ focus_tree = {
 	    available = {
 			date > 1941.5.21
 			date < 1941.9.21
-			}
+		}
 
 		x = 9
 		y = 2
@@ -1142,13 +1142,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_timed_idea = { idea = GER_blitzkrieg days = 100 }
+			ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 100 } }
 			GER = {
 				declare_war_on = {
 					target = SOV
 					type = annex_everything
 				}
 			}
-			hidden_effect = { SOV = { remove_ideas = SOV_molotov_ribbentrop_pact } }
+			hidden_effect = {
+				SOV = {
+					remove_ideas = SOV_molotov_ribbentrop_pact
+					add_ideas = shattered_retreat
+				}
+			}
 		}
 	}
 

@@ -909,7 +909,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			navy_experience = 50
@@ -931,7 +931,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 		}
-		cost = 10
+		cost = 5
 		prerequisite = { focus = JAP_Ship_Subtechs }
 
 		completion_reward = {
@@ -952,7 +952,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Navy_Doctrine }
 		x = 8
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -1349,7 +1349,7 @@ focus_tree = {
 		will_lead_to_war_with = USA
 		x = 6
 		y = 5
-		cost = 1
+		cost = 0.15
 
 		historical_ai = {
 			date > 1941.1.1

@@ -130,9 +130,9 @@ focus_tree = {
 	focus = {
 		id = SAF_cape_garrison_artillery
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SAF_emergency_workers }
+		prerequisite = { focus = SAF_reconstitute_the_cape_corps }
 		x = -1
-		y = 2
+		y = 4
 		relative_position_id = SAF_war_measures_act
 
 		cost = 5
@@ -180,9 +180,9 @@ focus_tree = {
 	focus = {
 		id = SAF_reconstitute_the_cape_corps
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = SAF_cape_garrison_artillery}
+		prerequisite = { focus = SAF_emergency_workers}
 		x = -1
-		y = 4
+		y = 2
 		relative_position_id = SAF_war_measures_act
 
 		cost = 10
@@ -210,13 +210,13 @@ focus_tree = {
 	focus = {
 		id = SAF_expand_the_cape_corps
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = SAF_reconstitute_the_cape_corps }
+		prerequisite = { focus = SAF_cape_garrison_artillery }
 		mutually_exclusive = { focus = SAF_outlaw_strikes }
 		x = 0
 		y = 5
 		relative_position_id = SAF_war_measures_act
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -402,7 +402,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -437,7 +437,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -473,7 +473,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1863,7 +1863,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1926,7 +1926,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.8
@@ -1955,7 +1955,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 0.2
@@ -1987,7 +1987,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2064,7 +2064,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2105,7 +2105,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2151,7 +2151,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = SAF_seaward_defence_force
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

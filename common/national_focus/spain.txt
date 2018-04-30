@@ -502,7 +502,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 15
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -539,7 +539,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval }
 		x = 15
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -567,7 +567,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval_2 }
 		x = 13
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -592,7 +592,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval_2 }
 		x = 15
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}
@@ -616,7 +616,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Naval_2 }
 		x = 17
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -641,7 +641,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Capitals focus = SPR_Subs focus = SPR_Screens }
 		x = 15
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}
@@ -666,7 +666,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Carriers }
 		x = 15
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}

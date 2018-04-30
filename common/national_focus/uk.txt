@@ -1134,7 +1134,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 11
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1229,7 +1229,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = 10
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1251,7 +1251,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = 9
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1268,7 +1268,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 12
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1291,7 +1291,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_carrier
 		x = 11
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1317,7 +1317,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		x = 13
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1341,7 +1341,7 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		x = 11
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1973,6 +1973,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.05
 			640 = {
 				if = {
 					limit = {

@@ -1,16 +1,16 @@
 focus_tree = {
    id = siam_focus
-   
+
    country = {
      factor = 0
-	 
+
 	 modifier = {
 	  add = 10
 	  tag = SIA
 	 }
    }
 
-   
+
    focus = {
 		id = SIA_investors
 		icon = GFX_goal_generic_production
@@ -33,10 +33,10 @@ focus_tree = {
 			factor = 3
 		}
 	}
-	
+
    focus = {
        id = SIA_production_effort_1
-       icon = GFX_idea_rice_reforms  
+       icon = GFX_idea_rice_reforms
 		x = 4
 		y = 5
 		cost = 10
@@ -54,7 +54,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -65,7 +65,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -80,7 +80,7 @@ focus_tree = {
 			add_ideas = rice_reforms
 		}
 	}
-	
+
 		focus = {
 		id = SIA_military_effort_1
 		icon = GFX_goal_generic_construct_mil_factory
@@ -93,7 +93,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
 
 		bypass = {
@@ -129,7 +129,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_military_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
@@ -142,7 +142,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
 
 		bypass = {
@@ -178,12 +178,12 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
-	
+
+
+
 	focus = {
        id = SIA_production_effort_2
-       icon = GFX_goal_generic_construct_civ_factory	   
+       icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 2
 		cost = 10
@@ -201,7 +201,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -212,7 +212,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -226,7 +226,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_infrastructure_effort_1
 		icon = GFX_goal_generic_construct_infrastructure
@@ -243,7 +243,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				289 = {			
+				289 = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -269,7 +269,7 @@ focus_tree = {
 			}
 		}
 	}
-   
+
       focus = {
 		id = SIA_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
@@ -285,7 +285,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				    724 = {			
+				    724 = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -311,7 +311,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_military_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
@@ -324,7 +324,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
 
 		bypass = {
@@ -360,12 +360,12 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 		focus = {
        id = SIA_production_effort_3
-       icon = GFX_goal_generic_construct_civ_factory	   
+       icon = GFX_goal_generic_construct_civ_factory
 		x = 1
-		y = 1 
+		y = 1
 		cost = 10
 		prerequisite = { focus = SIA_investors }
 		available_if_capitulated = yes
@@ -381,7 +381,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -392,7 +392,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -406,7 +406,7 @@ focus_tree = {
 			}
 		}
 	}
-   
+
    focus = {
 		id = SIA_oil_industry
 		icon = GFX_goal_generic_oil_refinery
@@ -452,23 +452,23 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = { 
+
+	focus = {
 	 id = SIA_adressing_social_issues
 	 icon = GFX_goal_generic_demand_territory
 	 x=7
 	 y=0
 	 cost = 10
-	 
+
 	 ai_will_do = {
 	  factor = 5
 	 }
 	 available_if_capitulated = yes
 	 completion_reward = {
-       add_political_power = 120	 
+       add_political_power = 120
 	 }
     }
-   
+
    focus = {
     id= SIA_newspapers
 	icon = GFX_goal_generic_production2
@@ -493,19 +493,19 @@ focus_tree = {
 			}
 		}
    }
-   
+
    focus = {
 		id = SIA_elite_schools
 		icon = GFX_goal_generic_scientific_exchange
 		x = 8
 		y = 1
 		cost = 10
-		ai_will_do = { 
-	
+		ai_will_do = {
+
 			factor = 5
 		}
         prerequisite = {
-         focus = SIA_adressing_social_issues		
+         focus = SIA_adressing_social_issues
 		}
 		available_if_capitulated = yes
 
@@ -513,26 +513,26 @@ focus_tree = {
 			add_ideas = elite_schools_focus
 		}
 	}
-   
+
   focus = {
 		id = SIA_suphapburut_group
 		icon = GFX_goal_tfv_generic_tech_sharing
 		x = 7
 		y = 2
 		cost = 10
-        ai_will_do = { 
-		
+        ai_will_do = {
+
 			factor = 5
-		} 
+		}
 		prerequisite = { focus = SIA_elite_schools }
 		prerequisite = { focus = SIA_newspapers }
 		available_if_capitulated = yes
-           
+
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-	  
+
   focus = {
 		id = SIA_heal_the_divide_1
 		icon = GFX_goal_generic_stability
@@ -546,11 +546,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	        remove_ideas = divided_nation_full	
+	        remove_ideas = divided_nation_full
 			add_ideas = divided_nation_half
 		}
 	}
-	
+
   focus = {
 		id = SIA_heal_the_divide_2
 		icon = GFX_goal_anschluss
@@ -567,8 +567,8 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
-	
-	  
+
+
   focus = {
    id = SIA_new_siamese_man
    icon = GFX_goal_generic_demand_territory
@@ -577,7 +577,7 @@ focus_tree = {
    cost = 10
    ai_will_do = {
     factor = 5
-   } 
+   }
    prerequisite = { focus = SIA_heal_the_divide_1 }
     completion_reward = {
 	  hidden_effect = {
@@ -586,10 +586,10 @@ focus_tree = {
 				}
 			}
 	 custom_effect_tooltip = kamikaze_focus_tooltip
-	 
+
 	}
   }
-  
+
   focus = {
 		id = SIA_radar
 		prerequisite = { focus = SIA_suphapburut_group }
@@ -613,7 +613,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_nuclear
 		icon = GFX_focus_wonderweapons
@@ -641,7 +641,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_synth_oil_focus
 		prerequisite = { focus = SIA_infrastructure_effort_2 }
@@ -664,7 +664,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_tech_slot
 		icon = GFX_focus_research
@@ -685,20 +685,20 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-   
-   focus = { 
+
+   focus = {
 	 id = SIA_adressing_political_issues
 	 icon = GFX_goal_generic_demand_territory
 	 x=11
 	 y=0
 	 cost = 10
-	 
+
 	 ai_will_do = {
 	  factor = 5
 	 }
 	 available_if_capitulated = yes
 	 completion_reward = {
-       add_political_power = 120	 
+       add_political_power = 120
 	 }
     }
 
@@ -722,7 +722,7 @@ focus_tree = {
 			#Increase in fascism Support
 		}
 	}
-	
+
 	focus = {
    id = SIA_strenghten_rel_jap
    icon = GFX_focus_SIA_japan_siam_deal
@@ -735,10 +735,10 @@ focus_tree = {
 		}
     available_if_capitulated = yes
 	completion_reward = {
-	 add_opinion_modifier = { target = JAP modifier = offered_support } 
-	}  
+	 add_opinion_modifier = { target = JAP modifier = offered_support }
+	}
   }
-  
+
   focus = {
    id = SIA_strenghten_rel_ger
    icon = GFX_focus_SIA_thai_germany
@@ -751,17 +751,17 @@ focus_tree = {
 		}
     available_if_capitulated = yes
 	completion_reward = {
-	 add_opinion_modifier = { target = GER modifier = offered_support } 
-	}  
+	 add_opinion_modifier = { target = GER modifier = offered_support }
+	}
   }
-  
+
   focus = {
       id= SIA_fascist_nation
 	  icon = GFX_focus_SIA_thailand_fascist
 	  x = 11
 	  y = 3
 	  cost = 10
-	  ai_will_do = { factor = 5 }	
+	  ai_will_do = { factor = 5 }
 	  prerequisite = { focus = SIA_strenghten_rel_jap }
 	  prerequisite = { focus = SIA_strenghten_rel_ger }
 		available_if_capitulated = yes
@@ -778,13 +778,13 @@ focus_tree = {
 				 ideology = democratic
 				 popularity = -0.1
 				}
-			
+
 			add_ideas = fascist_leanings
 		}
 
     }
-	
-	
+
+
 	focus = {
 		id = SIA_militarism
 		icon = GFX_goal_generic_political_pressure
@@ -795,7 +795,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {			
+		completion_reward = {
 			add_ideas = fascist_military
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
@@ -816,7 +816,7 @@ focus_tree = {
 			add_ideas = SIA_paramilitarism
 		}
 	}
-	
+
 	focus = {
 		id = SIA_japanese_ships
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -838,7 +838,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_german_equipment
 		icon = GFX_goal_generic_small_arms
@@ -860,7 +860,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_austerity
 		icon = GFX_goal_generic_consumer_goods
@@ -880,7 +880,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = SIA_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
@@ -900,7 +900,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_equipment_effort
 		icon = GFX_goal_generic_army_artillery2
@@ -921,7 +921,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_equipment_effort_2
 		icon = GFX_goal_generic_small_arms
@@ -941,7 +941,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_motorized
 		icon = GFX_goal_generic_army_motorized
@@ -961,7 +961,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_tanks
 		icon = GFX_goal_generic_build_tank
@@ -981,7 +981,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_doctrine_inf_1
 		icon = GFX_goal_generic_army_doctrines
@@ -1001,7 +1001,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_doctrine_inf_2
 		icon = GFX_goal_generic_army_doctrines
@@ -1022,7 +1022,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_doctrine_inf_3
 		icon = GFX_goal_generic_army_doctrines
@@ -1042,7 +1042,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_aviation_effort
 		icon = GFX_goal_generic_build_airforce
@@ -1061,13 +1061,13 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}			
+			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 0.5
 				uses = 1
 				category = air_doctrine
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -1125,7 +1125,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_air_force
 		icon = GFX_goal_generic_CAS
@@ -1148,7 +1148,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_tactical_air
 		icon = GFX_goal_generic_air_bomber
@@ -1173,7 +1173,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_heavy_air
 		icon = GFX_goal_generic_air_naval_bomber
@@ -1194,15 +1194,15 @@ focus_tree = {
 				technology = strategic_bomber1
 				technology = strategic_bomber2
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SIA_rocket_effort
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = SIA_heavy_air focus = SIA_tactical_air }
-		
+
 		x = 20
 		y = 3
 		cost = 10
@@ -1223,7 +1223,7 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	
+
 	focus = {
 		id = SIA_air_doct_1
 		icon = GFX_goal_generic_air_doctrine
@@ -1262,13 +1262,13 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_navy_funds
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 25
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1287,9 +1287,9 @@ focus_tree = {
 				instant_build = yes
 			}
 			navy_experience = 25
-			
+
 		}
-		
+
 		completion_reward = {
 		        navy_experience = 25
 				724 = {
@@ -1300,11 +1300,11 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				
+
 			}
-			
+
 	}
-	
+
 	focus = {
 		id = SIA_navy_doc_1
 		icon = GFX_goal_generic_navy_battleship
@@ -1312,7 +1312,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_navy_doc_2 }
 		x = 24
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1325,7 +1325,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_navy_doc_2
 		icon = GFX_goal_generic_wolf_pack
@@ -1333,7 +1333,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_navy_doc_1 }
 		x = 26
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1346,14 +1346,14 @@ focus_tree = {
 			}
 		}
 	}
-		
+
 	focus = {
 		id = SIA_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = SIA_navy_doc_1 focus = SIA_navy_doc_2}
 		x = 26
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1380,15 +1380,15 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SIA_destroyer_effort
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = SIA_navy_doc_1 focus = SIA_navy_doc_2}
 		x = 24
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1415,14 +1415,14 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_big_ship_effort
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = SIA_destroyer_effort focus = SIA_submarine_effort }
 		x = 25
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1452,14 +1452,14 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SIA_naval_doctrine_1
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = SIA_big_ship_effort }
 		x = 25
 		y = 4
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1486,11 +1486,7 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
-  
+
+
+
 }
-
-
-
-

@@ -1007,7 +1007,7 @@ focus = {
 
 		x = 21
 		y = 0
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1054,7 +1054,7 @@ focus = {
 
 		x = 22
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1080,7 +1080,7 @@ focus = {
 
 		x = 23
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1106,7 +1106,7 @@ focus = {
 
 		x = 20
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1131,7 +1131,7 @@ focus = {
 		prerequisite = { focus = PHI_import_submarine_techology }
 		x = 19
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1157,7 +1157,7 @@ focus = {
 
 		x = 21
 		y = 2
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1183,7 +1183,7 @@ focus = {
 		mutually_exclusive = { focus = PHI_strike_force }
 		x = 22
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1215,7 +1215,7 @@ focus = {
 		mutually_exclusive = { focus = PHI_island_defense }
 		x = 20
 		y = 3
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1247,7 +1247,7 @@ focus = {
 
 		x = 21
 		y = 4
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1445,8 +1445,3 @@ focus = {
 	 }
  }
 }
-
-
-
-
-

@@ -1,15 +1,15 @@
 focus_tree = {
 	id = norway_focus
-	
+
 	country = {
 		factor = 1
-		
+
 		modifier = {
 			add = 10
 			original_tag = NOR
 		}
 	}
-	
+
 	default = yes
 	reset_on_civilwar = no
 
@@ -24,7 +24,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			army_experience = 25
 			add_ideas = NOR_recruitment_drive
@@ -46,7 +46,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
@@ -68,7 +68,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 
 			add_tech_bonus = {
@@ -91,7 +91,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = NOR_support
@@ -112,7 +112,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -132,7 +132,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -152,7 +152,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -174,7 +174,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			army_experience = 10
 			add_ideas = NOR_recruitment_special
@@ -188,8 +188,8 @@ focus_tree = {
 				technology = paratroopers2
 			}
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = NOR_MJK
 		icon = GFX_goal_generic_amphibious_assault
@@ -202,7 +202,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			army_experience = 10
 			add_ideas = NOR_recruitment_special
@@ -222,7 +222,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_war_academia
 		icon = GFX_focus_research
@@ -233,12 +233,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_research_slot = 1
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = NOR_atomic
 		icon = GFX_focus_wonderweapons
@@ -250,7 +250,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
@@ -258,8 +258,8 @@ focus_tree = {
 				category = nuclear
 			}
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = NOR_rocket
 		icon = GFX_focus_rocketry
@@ -271,15 +271,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				ahead_reduction = 0.25
 				category = rocketry
 			}
 		}
-	}	
-	
+	}
+
 ### NAVY ###
 
 	focus = {
@@ -297,7 +297,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_Karljohansvern
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -307,17 +307,17 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			# Vestlandet
-			142 = { 
+			142 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
 					level = 2
 					instant_build = yes
-				} 
+				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_Fredriksvern
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -327,17 +327,17 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			# Vestlandet
-			142 = { 
+			142 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_flexible_navy
 		icon = GFX_goal_generic_build_navy
@@ -434,7 +434,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_amphibious_doctrine
 		icon = GFX_goal_generic_amphibious_assault
@@ -442,7 +442,7 @@ focus_tree = {
 		x = 6
 		y = 3
 		cost = 10
-		
+
 		completion_reward = {
 			navy_experience = 20
 			add_tech_bonus = {
@@ -483,7 +483,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_nationalize_KVF
 		icon = GFX_goal_generic_construct_mil_factory
@@ -491,15 +491,15 @@ focus_tree = {
 		x = 11
 		y = 1
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Akershus
-			110 = { 
-				add_extra_state_shared_building_slots = 1 
+			110 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -516,15 +516,15 @@ focus_tree = {
 		x = 11
 		y = 2
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Tr�nderlag
-			143 = { 
-				add_extra_state_shared_building_slots = 1 
+			143 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -533,7 +533,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_invest_raufoss # Raufoss Patronfabrik
 		icon = GFX_goal_generic_construct_mil_factory
@@ -541,15 +541,15 @@ focus_tree = {
 		x = 11
 		y = 3
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Nord-Norge
-			144 = { 
-				add_extra_state_shared_building_slots = 1 
+			144 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -558,7 +558,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_invest_hydro
 		icon = GFX_goal_generic_construct_civ_factory
@@ -566,15 +566,15 @@ focus_tree = {
 		x = 13
 		y = 1
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Vestlandet
-			142 = { 
-				add_extra_state_shared_building_slots = 1 
+			142 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -583,7 +583,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_norlandsbanen
 		icon = GFX_goal_generic_construct_infrastructure
@@ -591,14 +591,14 @@ focus_tree = {
 		x = 13
 		y = 2
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Tr�nderlag
-			143 = { 
+			143 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -607,7 +607,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_invest_elkem # Elektrokemisk
 		icon = GFX_goal_generic_construct_civ_factory
@@ -615,15 +615,15 @@ focus_tree = {
 		x = 13
 		y = 3
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Tr�nderlag
-			143 = { 
-				add_extra_state_shared_building_slots = 1 
+			143 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -631,8 +631,8 @@ focus_tree = {
 				}
 			}
 			# �stlandet
-			110 = { 
-				add_extra_state_shared_building_slots = 1 
+			110 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -641,7 +641,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_ind_academia
 		icon = GFX_goal_generic_scientific_exchange
@@ -649,11 +649,11 @@ focus_tree = {
 		x = 12
 		y = 4
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
@@ -663,7 +663,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_research_slot1
 		icon = GFX_focus_research
@@ -671,16 +671,16 @@ focus_tree = {
 		x = 12
 		y = 5
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
 		id = NOR_oil
 		icon = GFX_goal_generic_oil_refinery
@@ -695,13 +695,13 @@ focus_tree = {
 		x = 11
 		y = 6
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
-			# 
+			#
 			add_resource = {
 				type = oil
 				amount = 14
@@ -714,7 +714,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_NorskJernverk
 		icon = GFX_goal_generic_production2
@@ -723,13 +723,13 @@ focus_tree = {
 		x = 13
 		y = 6
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
-			# 
+			#
 			random_owned_state = {
 				add_resource = {
 					type = steel
@@ -750,7 +750,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_fortify
 		icon = GFX_goal_generic_defence
@@ -762,7 +762,7 @@ focus_tree = {
 			add_ideas = NOR_forts
 		}
 	}
-	
+
 	focus = {
 		id = NOR_land_forts1
 		icon = GFX_goal_generic_fortify_city
@@ -771,14 +771,14 @@ focus_tree = {
 		x = 15
 		y = 2
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Akershus
-			110 = { 
+			110 = {
 				add_building_construction = {
 					type = bunker
 					level = 4
@@ -811,12 +811,12 @@ focus_tree = {
 				}
 			}
 			# Nord-Norge 1
-			144 = { 
-				
+			144 = {
+
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_land_forts2
 		icon = GFX_goal_generic_fortify_city
@@ -824,14 +824,14 @@ focus_tree = {
 		x = 15
 		y = 3
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Nord-Norge
-			144 = { 
+			144 = {
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -877,7 +877,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_coastal_forts1
 		icon = GFX_goal_generic_construct_military
@@ -886,14 +886,14 @@ focus_tree = {
 		x = 17
 		y = 2
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Akershus
-			110 = { 
+			110 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 2
@@ -914,7 +914,7 @@ focus_tree = {
 				}
 			}
 			# Vestlandet
-			142 = { 
+			142 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 3
@@ -934,10 +934,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = NOR_coastal_forts2
 		icon = GFX_goal_generic_construct_military
@@ -945,14 +945,14 @@ focus_tree = {
 		x = 17
 		y = 3
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			# Akershus
-			110 = { 
+			110 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 2
@@ -973,7 +973,7 @@ focus_tree = {
 				}
 			}
 			# Vestlandet
-			142 = { 
+			142 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 2
@@ -993,10 +993,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = NOR_heimevernet
 		icon = GFX_goal_generic_defence
@@ -1004,17 +1004,17 @@ focus_tree = {
 		x = 16
 		y = 4
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_ideas = NOR_hv_rec
 			add_ideas = NOR_hv_inf
 		}
 	}
-	
+
 ### AIR ###
 
 	focus = {
@@ -1032,7 +1032,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_encourage_kjeller
 		icon = GFX_goal_generic_air_fighter
@@ -1053,13 +1053,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NOR_kjeller_medium_bomber
 				bonus = 0.5
-				uses = 1				
+				uses = 1
 				technology = tactical_bomber1
 				technology = tactical_bomber2
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_develop_kjeller
 		icon = GFX_goal_generic_air_production
@@ -1070,16 +1070,16 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 10
 			# Oslo
-			110 = { 
+			110 = {
 				add_building_construction = {
 					type = air_base
 					level = 4
 					instant_build = yes
-				} 
+				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_encourage_FBF
 		icon = GFX_goal_generic_air_naval_bomber
@@ -1099,13 +1099,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NOR_kjeller_medium_bomber
 				bonus = 0.5
-				uses = 1				
+				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_develop_FBF
 		icon = GFX_goal_generic_air_production
@@ -1115,36 +1115,36 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			# Vestlandet
-			142 = { 
+			142 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 4
 					instant_build = yes
-				} 
+				}
 
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
-				} 
+				}
 			}
 			# Tr�nderlag
-			143 = { 
+			143 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 2
 					instant_build = yes
-				} 
+				}
 
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
-				} 
+				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_air_modernisations_programme
 		icon = GFX_goal_generic_air_doctrine
@@ -1163,10 +1163,10 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = air_doctrine
-			}			
+			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_jet_research
 		icon = GFX_focus_rocketry
@@ -1183,7 +1183,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_air_support
 		icon = GFX_goal_generic_air_fighter2
@@ -1204,7 +1204,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 ### POLITICAL ###
 
 	focus = {
@@ -1217,7 +1217,7 @@ focus_tree = {
 			add_political_power = 120
 		}
 	}
-	
+
 	focus = {
 		id = NOR_democrat
 		icon = GFX_goal_support_democracy
@@ -1226,16 +1226,16 @@ focus_tree = {
 		x = 23
 		y = 1
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_ideas = NOR_strengthen_dem
 		}
 	}
-	
+
 
 	focus = {
 		id = NOR_court_allies
@@ -1251,27 +1251,27 @@ focus_tree = {
 			has_government = democratic
 		}
 		completion_reward = {
-			ENG = { 
-				add_opinion_modifier = { 
-					target = ROOT 
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = NOR_courtship
-				} 
+				}
 			}
-			FRA = { 
-				add_opinion_modifier = { 
-					target = ROOT 
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = NOR_courtship
-				} 
+				}
 			}
-			USA = { 
-				add_opinion_modifier = { 
-					target = ROOT 
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = NOR_courtship
-				} 
-			}	
+				}
+			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_join_allies
 		icon = GFX_goal_anschluss
@@ -1291,10 +1291,10 @@ focus_tree = {
 		completion_reward = {
 			ENG = {
 				country_event = { id = norway.1 }
-			}	
+			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_def_ger
 		icon = GFX_goal_generic_defence
@@ -1308,7 +1308,7 @@ focus_tree = {
 		completion_reward = {
 			# Jutland
 			DEN = {
-				99 = { 
+				99 = {
 					add_building_construction = {
 						type = bunker
 						level = 4
@@ -1325,7 +1325,7 @@ focus_tree = {
 			}
 			# Scania
 			SWE = {
-				138 = { 
+				138 = {
 					add_building_construction = {
 						type = bunker
 						level = 3
@@ -1342,8 +1342,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = NOR_abdicate_king
 		icon = GFX_goal_generic_forceful_treaty
@@ -1352,15 +1352,18 @@ focus_tree = {
 		x = 25
 		y = 1
 		cost = 10
+		available = {
+			is_ai = no
+		}
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		completion_reward = {
 			remove_ideas = NOR_haakon_vii
 			add_ideas = NOR_chaotic_gov
 		}
 	}
-	
+
 	focus = {
 		id = NOR_fascist
 		icon = GFX_goal_support_fascism
@@ -1368,16 +1371,16 @@ focus_tree = {
 		x = 26
 		y = 2
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_ideas = NOR_fasc_drift
 		}
 	}
-	
+
 	focus = {
 		id = NOR_hirden
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1388,17 +1391,17 @@ focus_tree = {
 		x = 27
 		y = 3
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_ideas = NOR_hird_eff
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = NOR_court_axis
 		icon = GFX_goal_molotov_ribbentrop_pact
@@ -1409,33 +1412,33 @@ focus_tree = {
 		x = 25
 		y = 3
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
-			GER = { 
-				add_opinion_modifier = { 
-					target = ROOT 
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = NOR_courtship
-				} 
+				}
 			}
-			ITA = { 
-				add_opinion_modifier = { 
-					target = ROOT 
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = NOR_courtship
-				} 
+				}
 			}
-			JAP = { 
-				add_opinion_modifier = { 
-					target = ROOT 
+			JAP = {
+				add_opinion_modifier = {
+					target = ROOT
 					modifier = NOR_courtship
-				} 
-			}	
+				}
+			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_join_axis
 		icon = GFX_goal_anschluss
@@ -1458,10 +1461,10 @@ focus_tree = {
 		completion_reward = {
 			GER = {
 				country_event = { id = norway.22 }
-			}	
+			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_nazi_claims
 		icon = GFX_goal_generic_dangerous_deal
@@ -1479,18 +1482,18 @@ focus_tree = {
 			add_state_core = 38 # Norrland
 			add_state_core = 666 # Lappland
 			create_wargoal = {
-				type = take_claimed_state 
+				type = take_claimed_state
 				target = DEN
 				generator = { 337 100 }
 			}
 			create_wargoal = {
-				type = take_claimed_state 
+				type = take_claimed_state
 				target = SWE
 				generator = { 140 38 666 }
 			}
 		}
 	}
-	
+
 	focus = {
 		id = NOR_viking_warriors
 		icon = GFX_goal_generic_major_war
@@ -1505,7 +1508,7 @@ focus_tree = {
 			add_ideas = NOR_vikings_eff
 		}
 	}
-	
+
 	focus = {
 		id = NOR_ger_tank_coop
 		icon = GFX_goal_generic_army_tanks
@@ -1520,10 +1523,10 @@ focus_tree = {
 			add_ideas = NOR_gertanks_eff
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	focus = {
 		id = NOR_frikorps
 		icon = GFX_goal_generic_build_tank
@@ -1538,8 +1541,8 @@ focus_tree = {
 			add_ideas = NOR_frikorps_eff
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = NOR_stifle_press
 		icon = GFX_goal_generic_propaganda
@@ -1547,16 +1550,16 @@ focus_tree = {
 		x = 28
 		y = 5
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			add_stability = 0.05
 		}
 	}
-	
+
 	focus = {
 		id = NOR_new_constitution
 		icon = GFX_goal_generic_forceful_treaty
@@ -1564,11 +1567,11 @@ focus_tree = {
 		x = 28
 		y = 6
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		completion_reward = {
 			remove_ideas = NOR_chaotic_gov
 			add_ideas = NOR_new_constitution_eff

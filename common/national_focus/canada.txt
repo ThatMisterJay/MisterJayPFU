@@ -2779,7 +2779,7 @@ focus_tree = {
 		x = 24
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2843,7 +2843,7 @@ focus_tree = {
 		y = 1
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2884,7 +2884,7 @@ focus_tree = {
 		y = 2
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2925,7 +2925,7 @@ focus_tree = {
 		y = 2
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2967,7 +2967,7 @@ focus_tree = {
 		y = 3
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3012,7 +3012,7 @@ focus_tree = {
 		x = 25
 		y = 3
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3053,7 +3053,7 @@ focus_tree = {
 		y = 4
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3088,7 +3088,7 @@ focus_tree = {
 		y = 4
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3121,7 +3121,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_trade_fleet focus = CAN_degauss_ship_hulls }
 		x = 24
 		y = 5
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25

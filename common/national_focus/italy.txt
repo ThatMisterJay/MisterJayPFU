@@ -1065,7 +1065,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_mare_nostrum }
 		x = 7
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1090,7 +1090,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_mare_nostrum }
 		x = 9
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1185,7 +1185,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_capital_ships }
 		x = 8
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1215,7 +1215,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_atlantic_fleet }
 		x = 8
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1296,7 +1296,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		x = 10
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1331,7 +1331,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_light_ship_effort }
 		x = 11
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1366,7 +1366,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_light_ship_effort }
 		x = 10
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1401,7 +1401,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_german_millitary_cooperation }
 		x = 9
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

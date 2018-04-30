@@ -1138,7 +1138,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1196,7 +1196,7 @@ focus_tree = {
 	 	prerequisite = { focus = FRA_navy_focus }
 		x = 13
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1219,7 +1219,7 @@ focus_tree = {
 	 	prerequisite = { focus = FRA_navy_focus }
 		x = 12
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1241,7 +1241,7 @@ focus_tree = {
 	 	prerequisite = { focus = FRA_navy_focus }
 		x = 14
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1265,7 +1265,7 @@ focus_tree = {
 	 	}
 		x = 13
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

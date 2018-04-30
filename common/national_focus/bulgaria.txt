@@ -1373,14 +1373,12 @@ focus_tree = {
 		x = 19
 		y = 3
 
-		cost = 15
+		cost = 5
 
 		available = {
 			BUL = {
 				OR = {
 					controls_state = 731
-				}
-				OR = {
 					controls_state = 184
 				}
 			}
@@ -1413,7 +1411,7 @@ focus_tree = {
 		x = 18
 		y = 4
 
-		cost = 10
+		cost = 5
 
 		available = {BUL = { controls_state = 184 }}
 
@@ -1436,7 +1434,7 @@ focus_tree = {
 		x = 18
 		y = 5
 
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			navy_experience = 25
@@ -1458,7 +1456,7 @@ focus_tree = {
 		x = 20
 		y = 4
 
-		cost = 10
+		cost = 5
 
 		available = {
 			BUL = {
@@ -1485,7 +1483,7 @@ focus_tree = {
 		x = 20
 		y = 5
 
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			navy_experience = 25
@@ -1509,14 +1507,12 @@ focus_tree = {
 		x = 19
 		y = 6
 
-		cost = 10
+		cost = 5
 
 		available = {
 			BUL = {
 				OR = {
 					controls_state = 731
-				}
-				OR = {
 					controls_state = 184
 				}
 			}

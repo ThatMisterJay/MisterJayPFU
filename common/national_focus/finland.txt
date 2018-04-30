@@ -1055,7 +1055,7 @@ focus = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 22
 		y = 0
-		cost = 10
+		cost = 5
 
 		available = {
 			any_state = {
@@ -1180,7 +1180,7 @@ focus = {
 		prerequisite = { focus = FIN_naval_effort }
 		x = 22
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1211,17 +1211,17 @@ focus = {
 		}
 	}
 
-    	focus = {
+	focus = {
 		id = FIN_fortress_aland
 		prerequisite = { focus = FIN_large_navy }
-        		available = {
+		available = {
 			FIN = {
 				controls_state = 145
 			}
 		}
 		x = 22
 		y = 2
-		cost = 10
+		cost = 5
 		icon = GFX_goal_generic_fortify_city
 		ai_will_do = {
 			factor = 1
@@ -1250,13 +1250,13 @@ focus = {
 		}
 	}
 
-    	focus = {
+	focus = {
 		id = FIN_marines_and_landing_craft
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = FIN_fortress_aland }
 		x = 22
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
