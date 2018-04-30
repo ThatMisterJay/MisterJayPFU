@@ -631,315 +631,32 @@ country_event = {
 	desc = china.100.d
 	picture = GFX_report_event_chinese_officers
 
-	fire_only_once = yes
-
-	trigger = {
-		tag = CHI
-		has_war_with = JAP
-		JAP = { has_offensive_war = yes }
-		has_defensive_war = yes
-		NOT = { owns_state = 622 }
-		NOT = { has_global_flag = CHI_unite }
-		NOT = { has_global_flag = CHI_no_national_front_flag }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		ai_chance = { factor = 100 }
 		name = china.100.a
+		news_event = { id = news.288 }
 		create_faction = chinese_united_front
-		#load_oob = "CHI_united_front"
-		set_global_flag = CHI_unite
-
-	}
-	#option = {
-	#	name = china.100.b
-	#	#Nothing
-	#}
-}
-
-# Japan attacks - Chinese Popular Front forms
-country_event = {
-	id = china.101
-	title = china.101.t
-	desc = china.101.d
-	picture = GFX_report_event_chinese_officers
-
-	trigger = {
-		NOT = { has_country_flag = china.101_fired }
-		has_global_flag = CHI_unite
-		OR = {
-			tag = GXC
-			tag = YUN
-			tag = XSM
-		}
-		CHI = {
-			has_war_with = JAP
-			has_defensive_war = yes
-		}
-		JAP = { has_offensive_war = yes }
-
-		is_puppet = no
-		NOT = { has_war_with = CHI }
-		AND = {
-			has_war = no
-			is_in_faction = no
-		}
-	}
-
-	immediate = {
-		set_country_flag = china.101_fired
-	}
-
-	mean_time_to_happen = {
-		days = 14
-	}
-
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.101.a
-		effect_tooltip = {
-			CHI = {
-				annex_country = { target = ROOT transfer_troops = yes }
-			}
-		}
-		custom_effect_tooltip = GAME_OVER_TT
+		PRC = { add_opinion_modifier = { target = CHI modifier = unstable_alliance } }
+		CHI = { add_opinion_modifier = { target = PRC modifier = unstable_alliance } }
 		hidden_effect = {
-			CHI = { country_event = china.103 }
-		}
-	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = china.101.b
-		CHI = {
-			add_to_faction = ROOT
-			country_event = china.106
-		}
-		#Nothing
-	}
-}
-
-# Japan attack - Sinkiang can join if they want to
-country_event = {
-	id = china.102
-	title = china.102.t
-	desc = china.102.d
-	picture = GFX_report_event_chinese_officers
-
-	fire_only_once = yes
-
-	trigger = {
-		has_global_flag = CHI_unite
-		tag = SIK
-		GER = { has_war_with = SOV }
-		CHI = {
-			has_war_with = JAP
-			has_defensive_war = yes
-		}
-		NOT = { has_war_with = CHI }
-		JAP = { has_offensive_war = yes }
-
-		is_puppet = no
-		AND = {
-			has_war = no
-			is_in_faction = no
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-
-	option = {
-		name = china.102.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
+			if = {
+				limit = { country_exists = PRC }
+				add_to_faction = PRC
 			}
-		}
-		effect_tooltip = {
-			CHI = {
-				annex_country = { target = ROOT transfer_troops = yes }
-			}
-		}
-		custom_effect_tooltip = GAME_OVER_TT
-		hidden_effect = {
-			CHI = { country_event = china.103 }
-		}
-	}
-	option = {
-		name = china.102.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
-				is_in_faction = no
-			}
-		}
-		CHI = { add_to_faction = ROOT }
-	}
-	option = {
-		ai_chance = {
-			factor = 10
-		}
-		name = china.102.c
-		#Nothing
-	}
-}
-
-# FROM joins China (annex)
-country_event = {
-	id = china.103
-	title = china.103.t
-	desc = china.103.d
-	picture = GFX_report_event_chinese_army_training
-
-	is_triggered_only = yes
-
-	option = {
-		name = china.103.a
-		set_global_flag = CHI_unite_PRC
-		annex_country = { target = FROM transfer_troops = yes }
-	}
-}
-
-# PRC option to join China faction
-country_event = {
-	id = china.104
-	title = china.104.t
-	desc = china.104.d
-	picture = GFX_report_event_chinese_army_training
-
-	fire_only_once = yes
-
-	trigger = {
-		has_global_flag = CHI_unite_PRC
-		tag = PRC
-		CHI = {
-			has_war_with = JAP
-			has_defensive_war = yes
-		}
-		JAP = { has_offensive_war = yes }
-		CHI = { is_faction_leader = yes }
-		NOT = {
-			has_war_with = CHI
-			is_puppet = yes
-		}
-
-		NOT = {
-			AND = {
-				has_war = yes
-				is_in_faction = yes
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.104.a
-		set_country_flag = PRC_joined_CHI_against_JAP
-		CHI = {
-			country_event = china.106
-			add_to_faction = ROOT
-			PRC = { add_opinion_modifier = { target = CHI modifier = unstable_alliance } }
-			CHI = { add_opinion_modifier = { target = PRC modifier = unstable_alliance } }
-		}
-		add_to_war = {
-			targeted_alliance = CHI
-			enemy = JAP
-		}
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						SHX = { is_puppet_of = JAP }
-						SHX = { is_in_faction_with = JAP}
-					}
-				}
-			}
-			SHX = { country_event = china.105 }
-		}
-		if = {
-			limit = { NOT = { has_war_with = SOV } }
-			custom_effect_tooltip = china.104_PRC_SOV_reinforcements
-		}
-		hidden_effect = {
-			news_event = { id = news.288 hours = 6 }
+			annex_country = { target = GXC transfer_troops = yes }
+			annex_country = { target = XSM transfer_troops = yes }
+			annex_country = { target = YUN transfer_troops = yes }
 			if = {
 				limit = {
-					NOT = { has_war_with = SOV }
-					any_country = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-						has_full_control_of_state = 621
-					}
+					country_exists = SHX
+					country_exists = PRC
 				}
-				load_oob = "PRC_SOV_reinforcements"
+				PRC = { annex_country = { target = SHX transfer_troops = yes } }
 			}
 		}
 	}
-
-}
-
-# PRC annexs SHX (puppet option for player)
-country_event = {
-	id = china.105
-	title = china.105.t
-	desc = china.105.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.105.a
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
-		custom_effect_tooltip = GAME_OVER_TT
-	}
-
-	#Nothing
-	option = {
-		ai_chance = { factor = 0 }
-		FROM = { puppet = ROOT }
-		name = china.105.b
-	}
-}
-
-# China - Info that PRX has joined faction
-country_event = {
-	id = china.106
-	title = china.106.t
-	desc = china.106.d
-	picture = GFX_report_event_chinese_army_training
-
-	is_triggered_only = yes
-
-	option = {
-		name = china.106.a
-	}
-
 }
 
 # China and Japan no longer at war - Break up faction and Mao claims his part of China

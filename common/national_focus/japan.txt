@@ -125,6 +125,9 @@ focus_tree = {
 			}
 			hidden_effect ={
 				news_event = { hours = 6 id = news.231 }
+				CHI = {
+					country_event = { id = china.100 }
+				}
 			}
 		}
 	}
