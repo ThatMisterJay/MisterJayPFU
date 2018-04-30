@@ -166,6 +166,5 @@ set_convoys = 0
 add_ideas = {
 	closed_economy
 	undisturbed_isolation
-	scraping_the_barrel
 	trade_unionism
 }
