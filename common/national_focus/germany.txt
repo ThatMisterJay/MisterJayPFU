@@ -105,6 +105,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		available = { has_completed_focus = GER_rhineland }
 
 		completion_reward = {
 			custom_effect_tooltip = GER_autobahn_tt
@@ -437,6 +438,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = { has_completed_focus = GER_rhineland }
 
 		available_if_capitulated = yes
 
@@ -644,6 +646,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = { has_completed_focus = GER_rhineland }
 
 		available_if_capitulated = yes
 
@@ -2229,6 +2232,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = { has_completed_focus = GER_rhineland }
 
 		available_if_capitulated = yes
 
