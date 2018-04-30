@@ -215,7 +215,6 @@ ideas = {
 				army_defence_factor = 0.2
 				consumer_goods_factor = -0.05
 			}
-
 		}
 
 		GER_blitzkrieg = {
@@ -243,6 +242,30 @@ ideas = {
 			}
 		}
 
+		GER_blitzkrieg_romania = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_attack_factor = 0.15
+				army_org_Factor = 0.15
+				army_morale_factor = 0.10
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.30
+				army_bonus_air_superiority_factor = 0.10
+				air_interception_attack_factor = 0.10
+				air_air_superiority_attack_factor = 0.10
+				air_close_air_support_attack_factor = 0.10
+			}
+		}
 
 		GER_atlantikwall_idea = {
 
