@@ -24,7 +24,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.1
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -49,7 +49,7 @@ technologies = {
 		special_forces_cap = 0.15
 		special_forces_training_time_factor = -0.3
 
-		research_cost = 0.1
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -82,7 +82,7 @@ technologies = {
 
 		special_forces_training_time_factor = 0.1
 
-		research_cost = 0.1
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -143,7 +143,7 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.30
 		}
 
-		research_cost = 0.1
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -191,7 +191,7 @@ technologies = {
 			breakthrough = 0.03
 		}
 
-		research_cost = 0.1
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -293,7 +293,7 @@ technologies = {
 
 		special_forces_cap = 0.25
 
-		research_cost = 0.1
+		research_cost = 0.5
 		start_year = 1936
 
 		folder = {
