@@ -104,12 +104,12 @@ units = {
 	}
 	division = {
 		name = "17a Brigada Legionario"
-		location = 7183  # Sevilla
+		location = 11756  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 	division = {
 		name = "18a Brigada Legionario"
-		location = 7183  # Sevilla
+		location = 794  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -134,23 +134,23 @@ units = {
 	}
 	division = {
 		name = "23a Brigada Legionario"
-		location = 7183  # Sevilla
+		location = 3874  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 
 	division = {
 		name = "24a Brigada Legionario"
-		location = 7183  # Sevilla
+		location = 9800  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 	division = {
 		name = "25a Brigada Legionario"
-		location = 7183  # Sevilla
+		location = 3820  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 	division = {
 		name = "26a Brigada Legionario"
-		location = 7183  # Sevilla
+		location = 11806  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 	division = {
