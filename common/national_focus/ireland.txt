@@ -881,7 +881,7 @@ focus_tree = {
 
 	focus = {
 		id = IRE_iraban
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		cost = 10
 		prerequisite = {
 			focus = IRE_emergency

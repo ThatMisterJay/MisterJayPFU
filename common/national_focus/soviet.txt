@@ -972,7 +972,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_socialist_science
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = SOV_progress_cult }
 		x = 6
 		y = 3

@@ -60,7 +60,7 @@ focus_tree = {
 		}
 		focus = {
 		id = CHI_educational_funding
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		x = 1
 		y = 0
 		cost = 10
@@ -420,11 +420,11 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-		threat > 0.02
+			threat > 0.02
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		x = 12
+		x = 13
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -441,7 +441,9 @@ focus_tree = {
 		id = CHI_the_big_rear_concept
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = CHI_national_defense_council }
-		x = 12
+		relative_position_id = CHI_national_defense_council
+
+		x = 0
 		y = 1
 		cost = 4.3
 						ai_will_do = {
@@ -502,7 +504,8 @@ focus_tree = {
 		id = CHI_lure_them_in_strategy
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = CHI_the_big_rear_concept }
-				ai_will_do = {
+		relative_position_id = CHI_the_big_rear_concept
+		ai_will_do = {
 			factor = 10
 		}
 		available = {
@@ -520,13 +523,11 @@ focus_tree = {
 			}
 
 		bypass = {
-				CHI = {
-	    owns_state = 716
-					}
-			}
+			CHI = { owns_state = 716 }
+		}
 		continue_if_invalid = yes
-		x = 12
-		y = 2
+		x = 0
+		y = 1
 		cost = 4.3
 
 		completion_reward = {
@@ -555,27 +556,100 @@ focus_tree = {
 			}
 		}
 	}
+
+
+	focus = {
+		id = CHI_scorched_earth_tactics
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = CHI_lure_them_in_strategy }
+		x = 3
+		y = 1
+		relative_position_id = CHI_lure_them_in_strategy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			has_war = yes
+			surrender_progress > 0.30
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = CHI_scorched_earth_tactics
+		}
+	}
+
+	focus = {
+		id = CHI_war_of_anti_imperialism
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = CHI_scorched_earth_tactics }
+		x = 0
+		y = 1
+		relative_position_id = CHI_scorched_earth_tactics
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				has_war_with = JAP
+				has_war_with = MAN
+			}
+			has_country_flag = CHI_lessons_of_war_completed
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = CHI_war_of_anti_imperialism
+		}
+	}
+
+
 	focus = {
 		id = CHI_centralizing_power
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = CHI_lure_them_in_strategy }
-		x = 12
-		y = 3
+		relative_position_id = CHI_lure_them_in_strategy
+		x = 0
+		y = 1
 		cost = 10
 		completion_reward = {
 			add_political_power = -150
 		}
 	}
+
 	focus = {
 		id = CHI_prc_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = CHI_centralizing_power }
-				available = {
+		relative_position_id = CHI_centralizing_power
+		available = {
 			has_war = yes
 			has_war_with = JAP
 		}
-		x = 11
-		y = 4
+		x = -1
+		y = 1
 		cost = 10
 		completion_reward = {
 	    add_stability = -0.05
@@ -587,14 +661,13 @@ focus_tree = {
 		id = CHI_sinkiang_friend
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = CHI_centralizing_power }
-				available = {
+		relative_position_id = CHI_centralizing_power
+		available = {
 			has_war_with = JAP
-							CHI = {
-	    owns_state = 605
-					}
+			CHI = { owns_state = 605 }
 		}
-		x = 13
-		y = 4
+		x = 1
+		y = 1
 		cost = 21.5
 		completion_reward = {
 		add_stability = -0.05
@@ -602,24 +675,49 @@ focus_tree = {
 		}
 
 	}
-		focus = {
+	focus = {
 		id = CHI_tibet_friend
 		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = CHI_sinkiang_friend }
-		prerequisite = { focus = CHI_prc_friend }
+		prerequisite = { focus = CHI_army_reform }
+		relative_position_id = CHI_army_reform
+
 		available = {
-				CHI = {
-	    owns_state = 716
-					}
+			CHI = { owns_state = 716 }
 		}
-		x = 12
-		y = 5
+		x = 0
+		y = 1
 		cost = 10
 		completion_reward = {
-		annex_country = { target = TIB transfer_troops = yes }
+			annex_country = { target = TIB transfer_troops = yes }
+		}
+	}
+
+
+
+	focus = {
+		id = CHI_army_reform
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = CHI_prc_friend }
+		prerequisite = { focus = CHI_sinkiang_friend }
+		x = 1
+		y = 1
+		relative_position_id = CHI_prc_friend
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
 		}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_category_tooltip = CHI_army_reform
+		}
 	}
+
 	focus = {
 		id = CHI_increase_funding_of_german_weaponary
 		icon = GFX_goal_generic_axis_build_infantry
@@ -696,11 +794,13 @@ focus_tree = {
 			}
 		}
 	}
+
  	focus = {
 		id = CHI_air_base_expansion
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = CHI_national_defense_council }
-		x = 14
+		relative_position_id = CHI_national_defense_council
+		x = 5
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -762,12 +862,14 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = CHI_air_effort
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = CHI_air_base_expansion }
-		x = 14
-		y = 2
+		relative_position_id = CHI_air_base_expansion
+		x = 0
+		y = 1
 		cost = 10
 
 		completion_reward = {
@@ -784,12 +886,13 @@ focus_tree = {
 		id = CHI_air_reform
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = CHI_air_effort }
+		relative_position_id = CHI_air_effort
 			available = {
 			has_war = yes
 			has_war_with = JAP
 		}
-		x = 14
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
 
 		completion_reward = {
@@ -799,13 +902,16 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = air_doctrine
-				}
-				}
+			}
+			set_global_flag = CHI_flying_tigers
+			custom_effect_tooltip = CHI_flying_tigers_tt
+		}
 	}
-		focus = {
+
+	focus = {
 		id = CHI_political_effort
 		icon = GFX_goal_generic_propaganda
-		x = 17
+		x = 21
 		y = 0
 		cost = 10
 
@@ -817,20 +923,20 @@ focus_tree = {
 		id = CHI_strengthen_the_republic
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = CHI_political_effort }
-		x = 17
+		x = 21
 		y = 1
 		cost = 10
 		completion_reward = {
            add_political_power = 150
-			}
 		}
+	}
 
 	focus = {
 		id = CHI_neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = CHI_strengthen_the_republic }
 		mutually_exclusive = { focus = CHI_join_Allies }
-		x = 17
+		x = 21
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -847,7 +953,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = CHI_strengthen_the_republic }
 		mutually_exclusive = { focus = CHI_neutrality_focus }
-		x = 19
+		x = 23
 		y = 2
 		cost = 0.2
 
@@ -867,11 +973,11 @@ focus_tree = {
 		id = CHI_deterrence
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = CHI_neutrality_focus }
-		x = 17
+		x = 21
 		y = 3
 		cost = 10
 		completion_reward = {
 			add_ideas = deterrence
 		}
 	}
-    }
+}

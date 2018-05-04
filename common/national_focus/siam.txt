@@ -535,7 +535,7 @@ focus_tree = {
 
   focus = {
 		id = SIA_heal_the_divide_1
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		x = 6
 		y = 3
 		cost = 10

@@ -2331,7 +2331,7 @@ focus_tree = {
 
 	focus = {
 		id = AST_invest_in_victory
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = AST_national_security_act }
 		x = 0
 		y = 2

@@ -416,7 +416,7 @@ focus_tree = {
 				threat > 0.75
 			#}
 		}
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		x = 4
 		y = 2
 		cost = 10

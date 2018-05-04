@@ -988,7 +988,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_initiate_government_reform
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 
 		x = 10
 		y = 0

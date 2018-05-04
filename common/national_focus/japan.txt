@@ -1531,7 +1531,7 @@ focus_tree = {
 
 	focus = {
 		id = student_movement_focus
-		icon = GFX_goal_generic_stability
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = spiritual_mobilization_focus }
 		x = 23
 		y = 1
