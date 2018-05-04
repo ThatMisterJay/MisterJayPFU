@@ -324,6 +324,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_Alan_Brooke.dds"
 	traits = { offensive_doctrine defensive_doctrine fast_planner}
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -331,6 +335,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
 	traits = { logistics_wizard offensive_doctrine inspirational_leader thorough_planner }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -338,6 +346,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
 	traits = {  }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -345,6 +357,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Neil_Ritchie.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -352,6 +368,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Alan_Cunningham.dds"
 	traits = { trickster }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -359,6 +379,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_William_Slim.dds"
 	traits = { trickster jungle_rat trait_engineer }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -366,6 +390,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Richard_OConnor.dds"
 	traits = { panzer_leader desert_fox trickster }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -373,6 +401,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_William_Platt.dds"
 	traits = { trait_engineer }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -380,6 +412,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_George_Giffard.dds"
 	traits = { defensive_doctrine inspirational_leader }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -387,6 +423,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_Harold_Alexander.dds"
 	traits = { defensive_doctrine inspirational_leader }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -401,6 +441,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -408,6 +452,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_Arthur_Percival.dds"
 	traits = {   }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -415,6 +463,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
 	traits = { commando }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -422,6 +474,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Henry_Pownall.dds"
 	traits = { }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -429,6 +485,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_John_Vereker.dds"
 	traits = { inspirational_leader }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -436,6 +496,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -443,6 +507,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_William_Gott.dds"
 	traits = { panzer_leader }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -450,6 +518,10 @@ create_corps_commander = {
 		picture = "Portrait_Britain_Jock_Campbell.dds"
 	traits = { panzer_leader desert_fox }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -457,6 +529,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Oliver_Leese.dds"
 	traits = { panzer_leader }
 	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -464,6 +540,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Miles_Dempsey.dds"
 	traits = { naval_invader }
 	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -471,7 +551,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Brian_Horrocks.dds"
 	traits = { panzer_leader }
 	skill = 4
-
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -479,6 +562,10 @@ create_field_marshal = {
 	picture = "Portrait_Britain_Archibald_Wavell.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_navy_leader = {

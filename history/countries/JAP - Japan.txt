@@ -258,6 +258,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
 	traits = {trickster trait_engineer}
 	skill = 5
+	attack_skill = 5
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -265,6 +269,10 @@ create_field_marshal = {
 	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
 	traits = { offensive_doctrine }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -272,6 +280,10 @@ create_field_marshal = {
 		picture = "Portrait_Japan_Shunroku_Hata.dds"
 	traits = { offensive_doctrine }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -279,6 +291,10 @@ create_field_marshal = {
 		picture = "Portrait_Japan_Iwane_Matsui.dds"
 	traits = { offensive_doctrine old_guard }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -286,6 +302,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Akira_Muto.dds"
 	traits = {   }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -293,6 +313,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Kanji_Ishiwara.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -300,6 +324,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
 	traits = { trickster }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -314,6 +342,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Toshizo_Nishio.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -321,6 +353,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Rikichi_Ando.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -328,6 +364,10 @@ create_corps_commander = {
 	picture = "Portrait_Japan_Naruhiko_Higashikuni.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -335,6 +375,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Seishiro_Itagaki.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -342,6 +386,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Takashi_Sakai.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -349,6 +397,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Kenji_Doihara.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -356,6 +408,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Nobuyoshi_Muto.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -363,6 +419,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Kenkichi_Ueda.dds"
 	traits = {  }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -370,6 +430,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Shigeru_Honjo.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -377,6 +441,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Yoshijiro_Umezu.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -384,6 +452,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Otozo_Yamada.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -391,6 +463,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Hatazo_Adachi.dds"
 	traits = { trickster }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -398,12 +474,20 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Iwane_Matsui.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Sadao Araki"
 		picture = "Portrait_Japan_Sadao_Araki.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -411,12 +495,20 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Keisuke_Fujie.dds"
 	traits = { fortress_buster }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Kiichiro Higuchi"
 		picture = "Portrait_Japan_Kiichiro_Higuchi.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -424,6 +516,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Masaharu_Homma.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -431,6 +527,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Harukichi_Hyakutake.dds"
 	traits = {  }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -438,6 +538,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Jo_Iimura.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -445,6 +549,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Hitoshi_Imamura.dds"
 	traits = {  commando }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -452,6 +560,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Masatane_Kanda.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -459,6 +571,10 @@ create_corps_commander = {
 		picture = "Portrait_Japan_Kuniaki_Koiso.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_navy_leader = {

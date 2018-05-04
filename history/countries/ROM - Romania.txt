@@ -295,6 +295,10 @@ create_corps_commander = {
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
 	traits = { hill_fighter }
 	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
 }
 
 if = {
@@ -307,6 +311,10 @@ if = {
 		gfx = GFX_Portrait_romania_gheorghe_avramescu
 		traits = { }
 		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
 	}
 
 	create_navy_leader = {

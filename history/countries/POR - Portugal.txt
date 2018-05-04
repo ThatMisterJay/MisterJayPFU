@@ -8,7 +8,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -22,7 +22,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -33,7 +33,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "POR_1939"
 	set_technology = {
 		interwar_artillery = 1
@@ -85,21 +85,21 @@ set_politics = {
 		fascism = {
 			popularity = 5
 		}
-		
+
 		communism = {
 			popularity = 5
 		}
-		
+
 		neutrality = {
 			popularity = 90
 		}
 	}
-	
+
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
-	
+
 
 }
 
@@ -114,21 +114,21 @@ set_politics = {
 			fascism = {
 				popularity = 0
 			}
-			
+
 			communism = {
 				popularity = 0
 			}
-			
+
 			neutrality = {
 				popularity = 100
 			}
 		}
-		
+
 		ruling_party = neutrality
 		last_election = "1938.10.30"
 		election_frequency = 48
 		elections_allowed = yes
-		
+
 	}
 }
 
@@ -176,5 +176,8 @@ create_corps_commander = {
 	traits = {  }
 	skill = 3
 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
-

@@ -193,7 +193,10 @@ create_field_marshal = {
 	picture = "Portrait_Finland_Carl_Gustaf_Mannerheim.tga"
 	traits = { defensive_doctrine logistics_wizard }
 	skill = 4
-
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -201,7 +204,10 @@ create_field_marshal = {
 	picture = "Portrait_Finland_Aksel_Airo.tga"
 	traits = { thorough_planner }
 	skill = 3
-
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -210,6 +216,10 @@ create_field_marshal = {
 	traits = { offensive_doctrine }
 	skill = 3
 
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -218,6 +228,10 @@ create_corps_commander = {
 	traits = { trickster ranger }
 	skill = 5
 
+    attack_skill = 5
+    defense_skill = 6
+    planning_skill = 4
+    logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -226,6 +240,10 @@ create_corps_commander = {
 	traits = { trickster panzer_leader }
 	skill = 4
 
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -234,6 +252,10 @@ create_corps_commander = {
 	traits = { winter_specialist }
 	skill = 4
 
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 4
+    logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -242,6 +264,10 @@ create_corps_commander = {
 	traits = { commando }
 	skill = 3
 
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -249,7 +275,10 @@ create_corps_commander = {
 	picture = "Portrait_Finland_Erik_Heinrichs.tga"
 	traits = { trait_engineer }
 	skill = 3
-
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -257,7 +286,10 @@ create_corps_commander = {
 	picture = "Portrait_Finland_Harald_Ohquist.tga"
 	traits = { hill_fighter }
 	skill = 3
-
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -265,7 +297,10 @@ create_corps_commander = {
 	picture = "Portrait_Finland_Niilo_Hersalo.tga"
 	traits = { }
 	skill = 3
-
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -273,7 +308,10 @@ create_corps_commander = {
 	picture = "Portrait_Finland_Ernst_Linder.tga"
 	traits = { commando winter_specialist }
 	skill = 2
-
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -281,7 +319,10 @@ create_corps_commander = {
 	picture = "Portrait_Finland_Harry_Alfthan.tga"
 	traits = { }
 	skill = 2
-
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -289,7 +330,10 @@ create_corps_commander = {
 	picture = "Portrait_Finland_Hugo_Osterman.tga"
 	traits = { ranger }
 	skill = 2
-
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -298,6 +342,10 @@ create_corps_commander = {
 	traits = { }
 	skill = 2
 
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_navy_leader = {

@@ -262,6 +262,10 @@ create_corps_commander = {
 	traits = {  trickster panzer_leader }
 	skill = 5
 
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 6
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -270,6 +274,10 @@ create_field_marshal = {
 	traits = { offensive_doctrine }
 	skill = 4
 
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -278,6 +286,10 @@ create_field_marshal = {
 	traits = { logistics_wizard offensive_doctrine thorough_planner inspirational_leader }
 	skill = 5
 
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 6
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -286,6 +298,10 @@ create_corps_commander = {
 	traits = { panzer_leader }
 	skill = 2
 
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -294,6 +310,10 @@ create_corps_commander = {
 	traits = { trait_engineer naval_invader hill_fighter }
 	skill = 3
 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -302,6 +322,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 3
 
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -311,6 +335,10 @@ create_field_marshal = {
 	traits = { defensive_doctrine offensive_doctrine }
 	skill = 4
 
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -319,6 +347,10 @@ create_corps_commander = {
 	traits = { trickster naval_invader jungle_rat }
 	skill = 3
 
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -327,6 +359,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 1
 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -335,6 +371,10 @@ create_corps_commander = {
 	traits = { old_guard }
 	skill = 2
 
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -342,6 +382,10 @@ create_corps_commander = {
 		picture = "Portrait_USA_Jonathan_Wainwright.dds"
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -350,6 +394,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 1
 	rank = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -357,6 +405,10 @@ create_corps_commander = {
 	picture = "Portrait_USA_Leonard_T_Gerow.dds"
 	traits = { commando }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -364,6 +416,10 @@ create_corps_commander = {
 		picture = "Portrait_USA_Edward_Brooks.dds"
 	traits = { panzer_leader }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -371,6 +427,10 @@ create_corps_commander = {
 		picture = "Portrait_USA_Clarence_Huebner.dds"
 	traits = { trait_engineer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -379,6 +439,10 @@ create_corps_commander = {
 	traits = { commando }
 	skill = 4
 
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -387,6 +451,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 3
 
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -395,6 +463,10 @@ create_corps_commander = {
 	traits = { trickster }
 	skill = 3
 
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -403,6 +475,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 3
 
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -410,6 +486,10 @@ create_field_marshal = {
 		picture = "Portrait_USA_Joseph_Stilwell.dds"
 	traits = { logistics_wizard offensive_doctrine }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -417,6 +497,10 @@ create_corps_commander = {
 		picture = "Portrait_USA_Oscar_Griswold.dds"
 	traits = { jungle_rat }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -424,6 +508,10 @@ create_corps_commander = {
 		picture = "Portrait_USA_Maurice_Rose.dds"
 	traits = { panzer_leader }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_navy_leader = {

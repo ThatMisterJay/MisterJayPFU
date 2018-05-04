@@ -203,6 +203,10 @@ create_corps_commander = {
 	traits = { old_guard }
 	skill = 2
 	rank = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -211,6 +215,10 @@ create_corps_commander = {
 	traits = { panzer_leader trickster }
 	skill = 4
 	rank = 1
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -218,6 +226,10 @@ create_corps_commander = {
 	picture = "portrait_italy_italo_balbo.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -225,6 +237,10 @@ create_corps_commander = {
 	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -232,6 +248,10 @@ create_corps_commander = {
 	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
 	traits = {  }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
@@ -239,6 +259,10 @@ create_field_marshal = {
 	picture = "portrait_italy_radolfo_graziani.dds"
 	traits = { offensive_doctrine }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_navy_leader = {

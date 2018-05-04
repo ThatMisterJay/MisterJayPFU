@@ -207,12 +207,16 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 	}
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Tu Yu-ming"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	traits = { defensive_doctrine }
 	traits = { logistics_wizard }
 	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -220,6 +224,10 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
 	traits = { offensive_doctrine }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -227,6 +235,10 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	traits = {  offensive_doctrine }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -234,4 +246,8 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	traits = { defensive_doctrine }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }

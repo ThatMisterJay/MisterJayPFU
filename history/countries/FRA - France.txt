@@ -236,6 +236,10 @@ create_field_marshal = {
 	traits = { defensive_doctrine old_guard }
 	id = 800
 	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -244,6 +248,10 @@ create_field_marshal = {
 	traits = { defensive_doctrine old_guard }
 	id = 801
 	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -252,6 +260,10 @@ create_field_marshal = {
 	traits = { defensive_doctrine old_guard }
 	id = 802
 	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 #create_corps_commander = {
@@ -274,6 +286,10 @@ create_corps_commander = {
 	traits = {  trickster }
 	id = 803
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -282,6 +298,10 @@ create_corps_commander = {
 	traits = { old_guard }
 	id = 804
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 

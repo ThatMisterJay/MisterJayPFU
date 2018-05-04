@@ -10,7 +10,7 @@ set_research_slots = 3
 	infantry_weapons1 = 1
 	infantry_weapons2 = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	motorised_infantry = 1
@@ -141,7 +141,7 @@ set_research_slots = 3
 		fighter_baiting = 1
 		low_echelon_support = 1
 		dispersed_fighting = 1
-		
+
 			grand_battle_plan = 1
 
 		trench_warfare = 1
@@ -182,19 +182,19 @@ set_stability = 0.4
 set_politics = {
 
 	parties = {
-		democratic = { 
+		democratic = {
 			popularity = 30
 		}
 
 		fascism = {
 			popularity = 60
 		}
-		
+
 		communism = {
 			popularity = 10
 		}
 	}
-	
+
 	ruling_party = fascism
 	last_election = "1932.5.1"
 	election_frequency = 48
@@ -218,7 +218,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = 	stalinism
 	traits = {
-		
+
 	}
 }
 
@@ -229,7 +229,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+
 	}
 }
 
@@ -238,6 +238,10 @@ create_corps_commander = { ##available at the beginning - imprisonned when south
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
 	traits = { trickster }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 #create_corps_commander = { #in prison until freed by focus
@@ -259,6 +263,10 @@ create_field_marshal = {
 	picture = "Portrait_France_Maxime_Weygand.dds"
 	traits = { defensive_doctrine old_guard }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 #create_field_marshal = { ## Retired in 1940 due to age limit
@@ -281,6 +289,10 @@ create_corps_commander = {
 	picture = "portrait_france_charles_huntziger.dds"
 	traits = { old_guard }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 
@@ -372,7 +384,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Aurore Class"
 		type = submarine_2

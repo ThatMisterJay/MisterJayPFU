@@ -224,6 +224,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = {  }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -231,6 +235,10 @@ create_field_marshal = {
 	gfx = "GFX_CAN_charles_foulkes"
 	traits = { }
 	skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -238,18 +246,30 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { }
 	skill = 3
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Bert Hoffmeister"
 	gfx = "GFX_CAN_bert_hoffmeister"
 	traits = { hill_fighter }
 	skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
 }
 create_corps_commander = {
 	name = "Lauren Southern"
 	portrait_path = "gfx/leaders/CAN/Portrait_CAN_Lauren_Southern.dds"
 	traits = { winter_specialist ranger trickster  }
 	skill = 4
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 4
+		logistics_skill = 2
 }
 
 create_navy_leader = {

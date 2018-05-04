@@ -315,6 +315,10 @@ create_field_marshal = {
 	traits = { defensive_doctrine offensive_doctrine }
 	skill = 4
 	id = 1
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -323,6 +327,10 @@ create_field_marshal = {
 	traits = {  offensive_doctrine }
 	skill = 3
 	id = 2
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_field_marshal = {
@@ -331,6 +339,10 @@ create_field_marshal = {
 	traits = { thorough_planner logistics_wizard offensive_doctrine }
 	skill = 3
 	id = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -339,6 +351,10 @@ create_corps_commander = {
 	traits = { trickster panzer_leader trait_engineer desert_fox }
 	skill = 4
 	id = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -347,6 +363,10 @@ create_field_marshal = {
 	traits = { offensive_doctrine thorough_planner fast_planner organisational_leader inspirational_leader }
 	skill = 5
 	id = 5
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_field_marshal = {
@@ -355,6 +375,10 @@ create_field_marshal = {
 	traits = { inspirational_leader }
 	skill = 5
 	id = 45
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -363,6 +387,10 @@ create_corps_commander = {
 	traits = { trickster panzer_leader ranger trait_engineer }
 	skill = 5
 	id = 6
+	attack_skill = 4
+	defense_skill = 6
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -371,6 +399,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 4
 	id = 7
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -380,6 +412,10 @@ create_corps_commander = {
 	traits = { panzer_leader }
 	skill = 4
 	id = 8
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -388,6 +424,10 @@ create_field_marshal = {
 	traits = { offensive_doctrine }
 	skill = 4
 	id = 9
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_field_marshal = {
@@ -396,6 +436,10 @@ create_field_marshal = {
 	traits = { inspirational_leader defensive_doctrine fast_planner organisational_leader }
 	skill = 5
 	id = 10
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -404,6 +448,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 4
 	id = 11
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -412,6 +460,10 @@ create_field_marshal = {
 	traits = { offensive_doctrine }
 	skill = 4
 	id = 13
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -420,6 +472,10 @@ create_corps_commander = {
 	traits = { panzer_leader }
 	skill = 3
 	id = 14
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -428,6 +484,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 2
 	id = 15
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -436,6 +496,10 @@ create_corps_commander = {
 	traits = { commando hill_fighter }
 	skill = 4
 	id = 16
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -444,6 +508,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 4
 	id = 17
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -452,6 +520,10 @@ create_corps_commander = {
 	traits = { panzer_leader  }
 	skill = 4
 	id = 18
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -460,6 +532,10 @@ create_field_marshal = {
 	traits = { organisational_leader }
 	skill = 3
 	id = 19
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -468,6 +544,10 @@ create_corps_commander = {
 	traits = {  panzer_leader trickster  }
 	skill = 4
 	id = 20
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -476,6 +556,10 @@ create_corps_commander = {
 	traits = { ranger }
 	skill = 2
 	id = 21
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -484,6 +568,10 @@ create_corps_commander = {
 	traits = { ranger }
 	skill = 4
 	id = 22
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -492,6 +580,10 @@ create_field_marshal = {
 	traits = { fast_planner }
 	skill = 2
 	id = 23
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -500,6 +592,10 @@ create_corps_commander = {
 	traits = { panzer_leader }
 	skill = 1
 	id = 24
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -508,6 +604,10 @@ create_corps_commander = {
 	traits = { panzer_leader ranger hill_fighter }
 	skill = 3
 	id = 25
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -516,6 +616,10 @@ create_field_marshal = {
 	traits = { defensive_doctrine }
 	skill = 4
 	id = 32
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -523,6 +627,10 @@ create_corps_commander = {
 	picture = "Portrait_Germany_Gotthard_Heinrici.dds"
 	traits = {  fortress_buster trickster }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 
 	id = 33
 }
@@ -533,6 +641,10 @@ create_corps_commander = {
 	traits = { winter_specialist }
 	skill = 3
 	id = 34
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_navy_leader = {
