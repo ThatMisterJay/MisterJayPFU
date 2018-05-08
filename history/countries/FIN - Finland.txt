@@ -28,6 +28,7 @@ add_ideas = {
 	sisu
 	FIN_communism_banned
 	extensive_conscription
+    no_finnish_justification
 }
 
 1939.1.1 = {
