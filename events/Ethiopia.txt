@@ -26,7 +26,7 @@ country_event = {
 		}
 
 		ITA = {
-			set_state_controller = 271
+			annex_country = { target = ETH transfer_troops = yes }
 			news_event = ethiopia.2
 		}
 	}

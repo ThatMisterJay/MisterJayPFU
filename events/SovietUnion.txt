@@ -1106,26 +1106,11 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		tag = SOV
-		FROM = { tag = FIN }
-		NOT = { has_country_flag = karjala_demand }
-		146 = {
-			is_claimed_by = SOV
-			is_owned_by = FIN
-		}
-	}
-
 	immediate = { set_country_flag = karjala_demand }
 
 	option = {
 		name = soviet.31.a
 		FIN = { country_event = { days = 2 id = finland.1 } }
-	}
-	option = {
-		name = soviet.31.b
-		ai_chance = { factor = 0 }
-		#
 	}
 }
 

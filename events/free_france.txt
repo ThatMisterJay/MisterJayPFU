@@ -162,6 +162,12 @@ country_event = {
 				custom_effect_tooltip = FRA_free_france_operation_exporter_tt
 				country_event = free_france.71
 			}
+			EFR = {
+				add_state_claim = 553
+				add_state_claim = 677
+				add_state_claim = 554
+				add_state_claim = 680
+			}
 		}
 	}
 }

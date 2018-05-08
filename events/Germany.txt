@@ -170,13 +170,35 @@ country_event = {
 		add_state_claim = 96
 		add_state_claim = 97
 		add_state_claim = 80
-		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
+		hidden_effect =  {
+			add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 }
+			SOV = {
+				country_event = { days = 3 id = soviet.4 }
+				country_event = { days = 1 id = soviet.6 }
+				country_event = { days = 1 id = soviet.8 }
+				country_event = { days = 1 id = soviet.10 }
+				country_event = { days = 5 id = soviet.31 }
+			}
+
+			POL = {
+				remove_state_core = 78
+				remove_state_core = 89
+				remove_state_core = 91
+				remove_state_core = 93
+				remove_state_core = 94
+				remove_state_core = 95
+				remove_state_core = 96
+				remove_state_core = 80
+				remove_state_core = 73
+			}
+		}
 		GER = {
 			country_event = { days = 1 id = germany.12 }
 			effect_tooltip = {
 				add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
 			}
 		}
+		add_named_threat = { threat = 5 name = SOV_molotov_ribbentrop_tension }
 		set_global_flag = sov_yes_pact
 	}
 }
@@ -400,7 +422,7 @@ country_event = {
 			}
 			SOV = { transfer_state = 89 }
 		}
-				if = {
+		if = {
 			limit = {
 				751 = {
 					OR = {
@@ -744,79 +766,9 @@ country_event = {
 				factor = 0
 			}
 		}
-		trigger = {
-			NOT = { has_war_with = GER }
-			is_puppet = no # can't do anything if puppet
-		}
 		FRA = { country_event = germany.41 }
 		CZE = {
 			add_opinion_modifier = { target = ENG modifier = western_betrayal }
-		}
-	}
-	option = { # Support the Czechs
-		name = germany.40.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_in_faction_with = GER
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 3
-				has_government = communism
-				CZE = { has_government = communism }
-			}
-		}
-		if = {
-			limit = {
-				is_in_faction_with = GER
-				is_faction_leader = yes
-			}
-			remove_from_faction = GER
-		}
-		if = {
-			limit = {
-				is_in_faction_with = GER
-				is_faction_leader = no
-			}
-			GER = { remove_from_faction = ENG }
-		}
-		add_political_power = -200
-		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		effect_tooltip = {
-			GER = {
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 69 }
-				}
-			}
-		}
-		if = {
-			limit = { CZE = { is_in_faction = no } }
-			add_to_faction = CZE
-		}
-		CZE = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 200
-			}
-		}
-		if = {
-			limit = {
-				FRA = {
-					NOT = { has_war_with = CZE }
-				}
-			}
-			FRA = { country_event = germany.42 }
-		}
-		CZE = {
-			add_opinion_modifier = { target = ENG modifier = offered_support }
 		}
 	}
 }
@@ -1202,35 +1154,6 @@ country_event = {
 			}
 		}
 		GER = { country_event = germany.50 }
-	}
-	option = { # Refuse anyway
-		name = germany.46.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-					tag = GER
-					ratio < 0.5
-				}
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		GER = {
-			add_opinion_modifier = { target = ROOT modifier = GER_demand_sudetenland_rejected }
-			set_global_flag = CZE_refused_sudetenland
-			country_event = germany.49
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state_focus
-					target = CZE
-					generator = { 69 74 }
-				}
-			}
-		}
 	}
 }
 
@@ -1619,7 +1542,8 @@ country_event = {
 			}
 			SLO = {
 				load_oob = SLO_1939
-				add_manpower = 9876
+				add_manpower = 50000
+				add_political_power = 600
 			}
 		}
 	}
@@ -2149,10 +2073,10 @@ country_event = {
 	option = {
 		name = germany.78.a
 		add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = radar_tech
-			}
+			bonus = 0.5
+			uses = 1
+			category = radar_tech
+		}
 	}
 }
 
@@ -2495,28 +2419,6 @@ country_event = {
 
 	trigger = {
 		NOT = { has_war_with = GER }
-	}
-
-	option = {
-		name = germany.86.a
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		GER = { country_event = { id = germany.87 days = 1 } }
-		effect_tooltip = {
-			GER = {
-				transfer_state = 85
-				remove_state_claim = 86
-			}
-		}
-		country_event = { id = poland.1 days = 7 }
-		hidden_effect = {
-			news_event = { id = news.203 hours = 6 }
-		}
 	}
 
 	option = {
@@ -3328,69 +3230,14 @@ country_event = {
 country_event = {
 	id = germany.104
 	title = germany.104.t
-	desc = { text = germany.104.d_Savoy 					trigger = { has_global_flag = ITA_claims_on_france_735 } }
-	desc = { text = germany.104.d_Corsica 				trigger = { has_global_flag = ITA_claims_on_france_1 } }
+	desc = { text = germany.104.d_Savoy 			trigger = { has_global_flag = ITA_claims_on_france_735 } }
+	desc = { text = germany.104.d_Corsica 			trigger = { has_global_flag = ITA_claims_on_france_1 } }
 	desc = { text = germany.104.d_Savoy_Corsica 	trigger = { has_global_flag = ITA_claims_on_france_735 has_global_flag = ITA_claims_on_france_1 } }
 
 
 	picture = GFX_report_event_german_italian_pact
 
 	is_triggered_only = yes
-
-	# Italy gets 1 state Savoy
-	# option = {
-		# ai_chance = { factor = 0 }
-		# name = germany.104.a
-		# trigger = {
-			# has_global_flag = ITA_claims_on_france_735
-			# has_global_flag = ITA_claims_on_france_1
-		# }
-		# clr_global_flag = ITA_claims_on_france_1
-		# random_other_country = {
-			# limit = {
-				# original_tag = EFR
-				# has_government = fascism
-			# }
-			# country_event = france.27
-		# }
-		# ITA = { country_event = { id = italy.16 hours = 2 } }
-	# }
-
-	# Italy gets 1 state Corsica
-	# option = {
-		# ai_chance = { factor = 0 }
-		# name = germany.104.b
-		# trigger = {
-			# NOT = { has_global_flag = ITA_claims_on_france_735 }
-			# has_global_flag = ITA_claims_on_france_1
-		# }
-		# random_other_country = {
-			# limit = {
-				# original_tag = EFR
-				# has_government = fascism
-			# }
-			# country_event = france.27
-		# }
-		# ITA = { country_event = { id = italy.15 hours = 2 } }
-	# }
-
-	# Italy gets Savoy
-	# option = {
-		# ai_chance = { factor = 0 }
-		# name = germany.104.c
-		# trigger = {
-			# has_global_flag = ITA_claims_on_france_735
-			# NOT = { has_global_flag = ITA_claims_on_france_1 }
-		# }
-		# random_other_country = {
-			# limit = {
-				# original_tag = EFR
-				# has_government = fascism
-			# }
-			# country_event = france.27
-		# }
-		# ITA = { country_event = { id = italy.15 hours = 2 } }
-	# }
 
 	# Italy gets Savoy and Corsica
 	option = {
