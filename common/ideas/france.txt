@@ -1070,7 +1070,7 @@ ideas = {
 
 		}
 
-		somua = {
+		somua1 = {
 
 			allowed = {
 				OR = {

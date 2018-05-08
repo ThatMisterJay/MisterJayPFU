@@ -229,8 +229,12 @@ ideas = {
 
 			picture = generic_morale_bonus
 
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.3
+			}
+
 			modifier = {
-				army_attack_factor = 0.3
 				army_org_Factor = 0.30
 				army_morale_factor = 0.2
 				army_speed_factor = 0.15
@@ -254,8 +258,12 @@ ideas = {
 
 			picture = generic_morale_bonus
 
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.15
+			}
+
 			modifier = {
-				army_attack_factor = 0.15
 				army_org_Factor = 0.15
 				army_morale_factor = 0.10
 				army_speed_factor = 0.05
@@ -318,9 +326,12 @@ ideas = {
 			}
 
 			picture = generic_morale_bonus
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.2
+			}
 
 			modifier = {
-				army_attack_factor = 0.2
 				army_org_Factor = 0.20
 				army_morale_factor = 0.1
 				army_speed_factor = 0.10
@@ -340,9 +351,13 @@ ideas = {
 
 			picture = generic_morale_bonus
 
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+
 			modifier = {
-				army_attack_factor = 0.15
-				army_defence_factor = 0.15
 				army_org_Factor = 0.15
 				army_morale_factor = 0.1
 				army_speed_factor = 0.10
