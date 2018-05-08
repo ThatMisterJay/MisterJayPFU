@@ -6,11 +6,6 @@ state={
 
 	state_category = town
 
-	resources={
-		steel=10
-	}
-
-
 	history={
 		owner = SWE
 		buildings = {

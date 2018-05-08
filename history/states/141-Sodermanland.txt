@@ -5,11 +5,6 @@ state={
 	manpower = 1
 	state_category = city
 
-	resources={
-		steel=40
-		aluminium=4
-	}
-
 	history={
 		owner = SWE
 		buildings = {

@@ -3,7 +3,7 @@ state= {
 	name="STATE_341"
 	manpower = 1
 	resources={
-		chromium=45 # was: 84
+		chromium=310 # was: 84
 		steel = 10 # was: 20
 	}
 
@@ -16,6 +16,9 @@ state= {
 			industrial_complex = 1
 			arms_factory = 4
 			dockyard = 2
+			11829 = {
+				naval_base = 10
+			}
 		}
 	}
 	provinces={
