@@ -13,14 +13,14 @@ SOV_industry_relocation = {
 
 		highlight_states = {
 			state = 219
-		}	
+		}
 
 		available = {
 			219 = { #Moscow
 				is_owned_and_controlled_by = SOV
 				arms_factory > 5
 				industrial_complex > 1
-			} 
+			}
 			573 = { is_owned_and_controlled_by = SOV } #Zlatoust
 			582 = { is_owned_and_controlled_by = SOV } #Magnitogorsk
 		}
@@ -31,7 +31,7 @@ SOV_industry_relocation = {
 		days_remove = 15
 
 		modifier = {
-			
+
 		}
 
 		ai_will_do = {
@@ -102,7 +102,7 @@ SOV_industry_relocation = {
 						level = 1
 						instant_build = yes
 					}
-	
+
 					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.3 }
 						damage_building = { type = industrial_complex damage = 0.1 }
@@ -120,7 +120,7 @@ SOV_industry_relocation = {
 						level = 1
 						instant_build = yes
 					}
-				
+
 					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.3 }
 						damage_building = { type = industrial_complex damage = 0.1 }
@@ -156,7 +156,7 @@ SOV_industry_relocation = {
 		days_remove = 15
 
 		modifier = {
-			
+
 		}
 
 		ai_will_do = {
@@ -211,7 +211,7 @@ SOV_industry_relocation = {
 						level = 1
 					}
 				}
-	
+
 				573 = { #Zlatoust
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
@@ -219,8 +219,8 @@ SOV_industry_relocation = {
 						level = 3
 						instant_build = yes
 					}
-	
-					hidden_effect = {			
+
+					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.3 }
 					}
 				}
@@ -236,8 +236,8 @@ SOV_industry_relocation = {
 						level = 1
 						instant_build = yes
 					}
-	
-					hidden_effect = {			
+
+					hidden_effect = {
 						damage_building = { type = arms_factory damage = 0.2 }
 						damage_building = { type = industrial_complex damage = 0.1 }
 					}
@@ -271,7 +271,7 @@ SOV_industry_relocation = {
 		days_remove = 15
 
 		modifier = {
-			
+
 		}
 
 		ai_will_do = {
@@ -327,14 +327,14 @@ SOV_industry_relocation = {
 					}
 				}
 				573 = { #Zlatoust
-					add_extra_state_shared_building_slots = 1				
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
-	
-					hidden_effect = {			
+
+					hidden_effect = {
 						damage_building = { type = industrial_complex damage = 0.1 }
 					}
 				}
@@ -345,7 +345,7 @@ SOV_industry_relocation = {
 						level = 1
 						instant_build = yes
 					}
-				
+
 					hidden_effect = {
 						damage_building = { type = industrial_complex damage = 0.1 }
 					}
@@ -358,7 +358,7 @@ SOV_industry_relocation = {
 	move_leningrad_aluminium_plant = { #195
 
 		icon = aluminium
-		
+
 		highlight_states = {
 			state = 195
 		}
@@ -370,7 +370,7 @@ SOV_industry_relocation = {
 		available = {
 			has_full_control_of_state = 195
 			has_full_control_of_state = 569
-			
+
 		}
 
 		visible = {
@@ -386,7 +386,7 @@ SOV_industry_relocation = {
 		days_remove = 15
 
 		modifier = {
-			
+
 		}
 
 		ai_will_do = {
@@ -431,7 +431,7 @@ SOV_industry_relocation = {
 					add_resource = {
 						type = aluminium
 						amount = -12
-					}				
+					}
 				}
 				569 = {
 					add_resource = {
@@ -560,7 +560,7 @@ SOV_great_patriotic_war = {
 				189 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -571,7 +571,7 @@ SOV_great_patriotic_war = {
 				11 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -582,7 +582,7 @@ SOV_great_patriotic_war = {
 				190 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -593,7 +593,7 @@ SOV_great_patriotic_war = {
 				12 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -604,7 +604,7 @@ SOV_great_patriotic_war = {
 				191 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -615,7 +615,7 @@ SOV_great_patriotic_war = {
 				13 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -660,7 +660,7 @@ SOV_great_patriotic_war = {
 				}
 				damage_building = {
 					type = infrastructure
-					damage = 3
+					damage = 2
 				}
 			}
 		}
@@ -708,7 +708,7 @@ SOV_great_patriotic_war = {
 				}
 				damage_building = {
 					type = infrastructure
-					damage = 3
+					damage = 2
 				}
 			}
 		}
@@ -762,7 +762,7 @@ SOV_great_patriotic_war = {
 				229 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -773,7 +773,7 @@ SOV_great_patriotic_war = {
 				230 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -784,7 +784,7 @@ SOV_great_patriotic_war = {
 				231 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -795,7 +795,7 @@ SOV_great_patriotic_war = {
 				232 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -806,7 +806,7 @@ SOV_great_patriotic_war = {
 				233 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -817,7 +817,7 @@ SOV_great_patriotic_war = {
 				234 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -828,7 +828,7 @@ SOV_great_patriotic_war = {
 				235 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -881,7 +881,7 @@ SOV_great_patriotic_war = {
 				245 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -892,7 +892,7 @@ SOV_great_patriotic_war = {
 				217 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -903,7 +903,7 @@ SOV_great_patriotic_war = {
 				218 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -914,7 +914,7 @@ SOV_great_patriotic_war = {
 				238 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -925,7 +925,7 @@ SOV_great_patriotic_war = {
 				237 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -936,7 +936,7 @@ SOV_great_patriotic_war = {
 				236 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -947,7 +947,7 @@ SOV_great_patriotic_war = {
 				265 = {
 					damage_building = {
 						type = infrastructure
-						damage = 3
+						damage = 2
 					}
 				}
 			}
@@ -1004,18 +1004,16 @@ SOV_great_patriotic_war = {
 					is_controlled_by = SOV
 				}
 				damage_building = {
-						type = infrastructure
-						damage = 3
-					}
+					type = infrastructure
+					damage = 2
+				}
 			}
-			
 		}
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
-
 }
 
 SOV_great_patriotic_war = {
@@ -1063,16 +1061,16 @@ SOV_great_patriotic_war = {
 		timeout_effect = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			217 = { save_event_target_as = state }			
+			217 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.1
 		}
 		#Fail
 		complete_effect = {
-			217 = { save_event_target_as = state }			
+			217 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.2
 		}
 	}
-	
+
 	#195 "Leningrad"
 	SOV_hold_leningrad = {
 
@@ -1205,7 +1203,7 @@ operations = {
 			create_wargoal = {
 				target = MAN
 				type = annex_everything
-			}			
+			}
 		}
 
 		ai_will_do = {
@@ -1261,7 +1259,7 @@ political_actions = {
 		}
 
 		complete_effect = {
-			PRC = { 
+			PRC = {
 				transfer_state = 609
 				transfer_state = 610
 				transfer_state = 716
@@ -1270,7 +1268,7 @@ political_actions = {
 				transfer_state = 717
 				transfer_state = 714
 				country_event = { id = wtt_japan.125 }
-			}		
+			}
 		}
 
 		ai_will_do = {
@@ -1292,7 +1290,7 @@ political_actions = {
 		icon = generic_political_actions
 
 		available = {
-			
+
 		}
 
 		ai_will_do = {
@@ -1316,7 +1314,7 @@ political_actions = {
 					608 = { is_controlled_by = FROM }
 					613 = { is_controlled_by = FROM }
 					614 = { is_controlled_by = FROM }
-					620 = { is_controlled_by = FROM }				
+					620 = { is_controlled_by = FROM }
 				}
 			}
 
@@ -1348,7 +1346,7 @@ political_actions = {
 				country_event = { id = wtt_warlord_vs_prc.21 }
 				custom_effect_tooltip = if_they_accept
 				effect_tooltip = {
-					PRC_soviet_tribute_level_up = yes	
+					PRC_soviet_tribute_level_up = yes
 				}
 			}
 		}
@@ -1359,7 +1357,7 @@ political_actions = {
 		icon = generic_civil_support
 
 		allowed = {
-			tag = SOV			
+			tag = SOV
 		}
 
 		icon = generic_political_actions
@@ -1425,6 +1423,6 @@ political_actions = {
 		complete_effect = {
 			FROM = { country_event = { id = wtt_warlord_vs_prc.31 } }
 		}
-	}	
+	}
 
 }
