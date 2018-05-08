@@ -13,7 +13,7 @@ focus_tree = {
 	############################
 	#### PUPPET NON-PLAYERS ####
 	############################
- 
+
 	focus = {
 		id = JAP_puppet_siam
 		icon = GFX_goal_generic_military_deal
@@ -168,7 +168,7 @@ focus_tree = {
 		x = 13
 		y = 4
 		prerequisite = { focus = oust_germans_focus }
-		cost = 3
+		cost = 5
 		icon = GFX_goal_generic_construct_military
 		ai_will_do = {
 			factor = 15
@@ -414,7 +414,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		prerequisite = { focus = JAP_Northern }
-		cost = 8
+		cost = 10
 		icon = GFX_goal_generic_construct_infrastructure
 		ai_will_do = {
 			factor = 5
@@ -720,7 +720,7 @@ focus_tree = {
 		x = -1
 		y = 6
 		icon = GFX_goal_generic_army_doctrines
-		cost = 4
+		cost = 5
 		prerequisite = { focus = JAP_Draft }
 		ai_will_do = {
 			factor = 5
@@ -768,16 +768,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAP_Draft }
 		available = {
-			date > 1941.10.1
+			date > 1942.1.1
 		}
 		will_lead_to_war_with = SOV
 
 		completion_reward = {
 			add_timed_idea = { idea = for_the_emperor_idea_sov days = 150 }
-			create_wargoal = {
-				target = SOV
-				type = annex_everything
-			}
 		}
 	}
 
@@ -1369,6 +1365,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = japan.15
+			custom_effect_tooltip = JAP_subvert_india_tt
 		}
 	}
 
@@ -1423,7 +1420,7 @@ focus_tree = {
 
 	focus = {
 		id = demand_indochina_focus
-		prerequisite = { focus = siamese_puppet_focus focus = JAP_North_Ports}
+		prerequisite = { focus = siamese_puppet_focus }
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } }
 			EFR = { exists = yes }
@@ -1854,7 +1851,7 @@ focus_tree = {
 
 	focus = {
 		id = siamese_puppet_focus
-		prerequisite = { focus = JAP_Southern }
+		prerequisite = { focus = JAP_Southern focus = JAP_Northern }
 		available = {
 			is_puppet = no
 			country_exists = SIA

@@ -443,7 +443,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Instalaza }
 		x = 4
 		y = 4
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -1284,7 +1284,7 @@ focus_tree = {
 		prerequisite = { focus = SPR_Expand }
 		x = 9
 		y = 2
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
