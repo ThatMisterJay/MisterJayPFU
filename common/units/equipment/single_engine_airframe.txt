@@ -24,7 +24,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 8
 		
-		build_cost_ic = 22
+		build_cost_ic = 44
 		resources = {
 			oil = 1
 			aluminium = 2
@@ -70,7 +70,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
@@ -80,7 +80,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 8
 		
-		build_cost_ic = 22
+		build_cost_ic = 44
 		resources = {
 			oil = 1
 			aluminium = 2
@@ -114,7 +114,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 		
 		# Air vs Ground
@@ -124,7 +124,7 @@ equipments = {
 		naval_strike_attack = 3
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 24
+		build_cost_ic = 48
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -159,7 +159,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 		
 		# Air vs Ground
@@ -169,7 +169,7 @@ equipments = {
 		naval_strike_attack = 4
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 24
+		build_cost_ic = 48
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -203,14 +203,14 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 15
 		naval_strike_targetting = 7.5
 		
-		build_cost_ic = 26
+		build_cost_ic = 52
 		resources = {
 			oil = 1
 			aluminium = 2
@@ -246,14 +246,14 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 45
 		naval_strike_targetting = 7.5
 		
-		build_cost_ic = 26
+		build_cost_ic = 52
 		resources = {
 			oil = 1
 			aluminium = 2
@@ -287,14 +287,14 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
 		naval_strike_attack = 5
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 30
+		build_cost_ic = 60
 		resources = {
 			oil = 3
 			aluminium = 2
@@ -338,7 +338,7 @@ equipments = {
 		air_defence = 10
 		
 				
-		build_cost_ic = 24
+		build_cost_ic = 48
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -364,7 +364,7 @@ equipments = {
 		air_defence = 12		
 
 				
-		build_cost_ic = 26
+		build_cost_ic = 52
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -390,7 +390,7 @@ equipments = {
 		air_defence = 14	
 		
 				
-		build_cost_ic = 28
+		build_cost_ic = 56
 		resources = {
 			oil = 2
 			aluminium = 4
@@ -431,7 +431,7 @@ equipments = {
 		air_attack = 40
 		air_defence = 18
 
-		build_cost_ic = 32
+		build_cost_ic = 64
 		resources = {
 			oil = 3
 			aluminium = 3
@@ -453,7 +453,7 @@ equipments = {
 		air_attack = 9
 		air_defence = 8
 		
-		build_cost_ic =	26.4 # cv_version costs 20% more of base archetype
+		build_cost_ic =	52.8 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 6
 		naval_strike_targetting = 10
@@ -473,7 +473,7 @@ equipments = {
 		air_attack = 18
 		air_defence = 11
 		
-		build_cost_ic = 28.4 # cv_version costs 20% more of base archetype
+		build_cost_ic = 56.8 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -498,7 +498,7 @@ equipments = {
 		air_attack = 27
 		air_defence = 13
 
-		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
+		build_cost_ic = 60.8 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 2
@@ -522,7 +522,7 @@ equipments = {
 		air_attack = 32
 		air_defence = 15
 		
-		build_cost_ic = 32.4 # cv_version costs 20% more of base archetype
+		build_cost_ic = 64.8 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -543,9 +543,9 @@ equipments = {
 		air_range = 700
 		maximum_speed = 390 
 		air_agility = 35
-		air_attack = 6
+		air_attack = 8
 		air_defence = 14
-		air_ground_attack = 12
+		air_ground_attack = 15
 
 		naval_strike_attack = 3
 		naval_strike_targetting = 10		
@@ -562,11 +562,11 @@ equipments = {
 		air_range = 1000
 		maximum_speed = 450
 		air_agility = 39
-		air_attack = 10
+		air_attack = 12
 		air_defence = 16
-		air_ground_attack = 18
+		air_ground_attack = 20
 		
-		build_cost_ic = 26
+		build_cost_ic = 52
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -588,11 +588,11 @@ equipments = {
 		air_range = 1200
 		maximum_speed = 550
 		air_agility = 44
-		air_attack = 14
+		air_attack = 16
 		air_defence = 20
 		air_ground_attack = 25
 		
-		build_cost_ic = 28
+		build_cost_ic = 56
 		resources = {
 			oil = 2
 			aluminium = 4
@@ -614,11 +614,11 @@ equipments = {
 		air_range = 400
 		maximum_speed =	351
 		air_agility = 35
-		air_attack = 6
+		air_attack = 8
 		air_defence = 14
-		air_ground_attack = 12
+		air_ground_attack = 15
 		
-		build_cost_ic = 28.4 # cv_version costs 20% more of base archetype
+		build_cost_ic = 56.8 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 4
 		naval_strike_targetting = 10
@@ -635,11 +635,11 @@ equipments = {
 		air_range = 640
 		maximum_speed =	405
 		air_agility = 39
-		air_attack = 10
+		air_attack = 12
 		air_defence = 16
-		air_ground_attack = 18
+		air_ground_attack = 20
 		
-		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
+		build_cost_ic = 60.8 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -661,11 +661,11 @@ equipments = {
 		air_range = 800
 		maximum_speed =	495
 		air_agility = 44
-		air_attack = 14
+		air_attack = 16
 		air_defence = 20
 		air_ground_attack = 25
 		
-		build_cost_ic = 32.4 # cv_version costs 20% more of base archetype
+		build_cost_ic = 64.8 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -686,7 +686,7 @@ equipments = {
 		air_range = 850
 		maximum_speed = 230 
 		air_agility = 30
-		air_attack = 6
+		air_attack = 10
 		air_defence = 12
 
 	}
@@ -701,12 +701,12 @@ equipments = {
 		air_range = 930
 		maximum_speed = 300 
 		air_agility = 35
-		air_attack = 10
+		air_attack = 12
 		air_defence = 14
 		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 28
+		build_cost_ic = 56
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -725,12 +725,12 @@ equipments = {
 		air_range = 1100
 		maximum_speed = 400
 		air_agility = 40
-		air_attack = 14
+		air_attack = 16
 		air_defence = 16
 		naval_strike_attack = 25
 		naval_strike_targetting = 12.5
 	
-		build_cost_ic = 30
+		build_cost_ic = 60
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -749,10 +749,10 @@ equipments = {
 		air_range = 680
 		maximum_speed =	207
 		air_agility = 30
-		air_attack = 6
+		air_attack = 10
 		air_defence = 13
 		
-		build_cost_ic = 31.2 # cv_version costs 20% more of base archetype
+		build_cost_ic = 62.4 # cv_version costs 20% more of base archetype
 	}
 	# Improved Carrier nav_bomber
 	cv_nav_bomber_equipment_2 = {
@@ -766,11 +766,11 @@ equipments = {
 		air_range = 744
 		maximum_speed =	270
 		air_agility = 35
-		air_attack = 10
+		air_attack = 12
 		air_defence = 15
 		naval_strike_attack = 60
 		naval_strike_targetting = 10
-		build_cost_ic = 33.2 # cv_version costs 20% more of base archetype
+		build_cost_ic = 66.4 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -789,11 +789,11 @@ equipments = {
 		air_range = 880
 		maximum_speed =	360
 		air_agility = 40
-		air_attack = 14
+		air_attack = 16
 		air_defence = 17
 		naval_strike_attack = 75
 		naval_strike_targetting = 12.5
-		build_cost_ic = 35.2 # cv_version costs 20% more of base archetype
+		build_cost_ic = 70.4 # cv_version costs 20% more of base archetype
 		resources = {
 			oil = 2
 			aluminium = 3
@@ -831,7 +831,7 @@ equipments = {
 			rubber = 1
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 
 		naval_strike_attack = 5
 		naval_strike_targetting = 10
@@ -851,7 +851,7 @@ equipments = {
 		air_defence = 5		
 		reliability = 0.3
 		
-		build_cost_ic = 16
+		build_cost_ic = 32
 		resources = {
 			aluminium = 3
 			tungsten = 2
@@ -895,7 +895,7 @@ equipments = {
 		air_attack = 60
 		air_defence = 10	
 		reliability = 0.8
-		build_cost_ic = 20
+		build_cost_ic = 40
 		resources = {
 			aluminium = 3
 			tungsten = 3
@@ -923,14 +923,14 @@ equipments = {
 		upgrades = {
 		}
 
-		build_cost_ic = 14
+		build_cost_ic = 30
 		resources = {
 			aluminium = 2
 			tungsten = 2
 			rubber = 1
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 
 		naval_strike_attack = 5
 		naval_strike_targetting = 10

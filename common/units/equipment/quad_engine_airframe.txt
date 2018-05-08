@@ -24,7 +24,7 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
@@ -34,7 +34,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 60
+		build_cost_ic = 120
 		resources = {
 			oil = 1
 			aluminium = 3
@@ -68,14 +68,14 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
-		air_superiority = 1
+		air_superiority = 2
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
 		naval_strike_attack = 1.5
 		naval_strike_targetting = 0.6
 		
-		build_cost_ic = 80
+		build_cost_ic = 150
 		resources = {
 			oil = 3
 			aluminium = 3
@@ -99,8 +99,9 @@ equipments = {
 		air_attack = 50
 		air_defence = 30
 		air_bombing = 30
+		air_ground_attack = 3
 		
-		# build_cost_ic = 36
+		# build_cost_ic = 72
 	}
 
 	# Improved strat_bomber
@@ -117,8 +118,9 @@ equipments = {
 		air_attack = 100
 		air_defence = 45
 		air_bombing = 45
+		air_ground_attack = 4
 		
-		build_cost_ic = 62
+		build_cost_ic = 124
 		resources = {
 			oil = 1
 			aluminium = 4
@@ -140,8 +142,9 @@ equipments = {
 		air_attack = 150
 		air_defence = 60
 		air_bombing = 60
+		air_ground_attack = 5
 		
-		build_cost_ic = 64
+		build_cost_ic = 128
 		resources = {
 			oil = 1
 			aluminium = 5
@@ -162,6 +165,7 @@ equipments = {
 		air_attack = 100
 		air_defence = 54
 		air_bombing = 64
+		air_ground_attack = 5
 	}
 
 	# Transport plane ##########################
