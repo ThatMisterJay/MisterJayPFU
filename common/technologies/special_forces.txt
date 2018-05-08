@@ -218,54 +218,53 @@ technologies = {
 
 	special_forces_3b = {
 
-		mountaineers = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-		paratrooper = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-		marine = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-		jaeger = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-		jungletroop = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-		desertinfantry = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-		shocktroop = {
-			river = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-
 		category_special_forces = {
 			max_organisation = 5
 			defense = 0.05
 		}
-		custom_effect_tooltip = special_forces_3b_tt
+
+		on_research_complete = {
+			custom_effect_tooltip = special_forces_3b_tt
+		}
+
+		hidden_effect = {
+			mountaineers = {
+				mountain = {
+					attack = 0.05
+					movement = 0.1
+				}
+			}
+			marine = {
+				river = {
+					attack = 0.05
+					movement = 0.1
+				}
+			}
+			jaeger = {
+				forest = {
+					attack = 0.05
+					movement = 0.1
+				}
+			}
+			jungletroop = {
+				jungle = {
+					attack = 0.05
+					movement = 0.1
+				}
+			}
+			desertinfantry = {
+				desert = {
+					attack = 0.05
+					movement = 0.1
+				}
+			}
+			shocktroop = {
+				fort = {
+					attack = 0.05
+					movement = 0.1
+				}
+			}
+		}
 
 		special_forces_training_time_factor = 0.3
 
