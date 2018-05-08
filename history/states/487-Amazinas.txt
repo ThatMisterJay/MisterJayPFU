@@ -2,13 +2,12 @@
 state={
 	id=487
 	name="STATE_487"
-	manpower = 334500
+	manpower = 1
 
 	state_category = pastoral
 
 	history={
 		owner = BRA
-		add_core_of = BRA
 	}
 
 	provinces={

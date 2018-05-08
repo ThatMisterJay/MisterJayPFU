@@ -2,18 +2,12 @@
 state={
 	id=496
 	name="STATE_496" # Minas Gerais
-	manpower = 4603600
+	manpower = 1
 
 	state_category = rural
 
 	history={
 		owner = BRA
-		buildings = {
-			11002 = {
-				naval_base = 1
-			}
-		}
-		add_core_of = BRA
 	}
 
 	provinces={

@@ -1,0 +1,17 @@
+
+state={
+	id=475
+	name="STATE_475"
+	manpower = 1
+
+	state_category = rural
+
+	history={
+		owner = BRA
+	}
+
+	provinces={
+		1900 12753 12867
+	}
+
+}
