@@ -14,7 +14,7 @@ focus_tree = {
 
 	############################
 	#### PUPPET NON-PLAYERS ####
-	############################
+	############################ 
 
 	focus = {
 		id = GER_puppet_bulgaria
@@ -1071,6 +1071,7 @@ focus_tree = {
 			add_political_power = 120
 			army_experience = 10
 			add_named_threat = { threat = 4 name = GER_rhineland }
+			add_war_support = 0.1
 			if = {
 				limit = { FRA = { is_puppet = no } }
 				FRA = {
@@ -1155,7 +1156,7 @@ focus_tree = {
 			hidden_effect = {
 				SOV = {
 					remove_ideas = SOV_molotov_ribbentrop_pact
-					add_ideas = shattered_retreat
+					add_timed_idea = { idea = shattered_retreat days = 120 }
 				}
 			}
 		}
@@ -1584,6 +1585,7 @@ focus_tree = {
 					}
 				#}
 			}
+			has_completed_focus = GER_mol_rib_pact
 		}
 
 		bypass = {
@@ -1720,7 +1722,7 @@ focus_tree = {
 		}
 		x = 16
 		y = 5
-		cost = 4
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1805,7 +1807,7 @@ focus_tree = {
 		will_lead_to_war_with = FRA
 		x = 14
 		y = 5
-		cost = 4
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2003,7 +2005,7 @@ focus_tree = {
 			}
 		}
 
-		x = 14
+		x = 15
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2079,18 +2081,14 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					HUN = {
-						has_government = fascism
-						is_friend_or_potential_friend_of_GER = yes
-					}
 					ROM = {
 						controls_state = 76
 						NOT = { has_war_with = HUN }
 					}
 				}
-							HUN = {
-			add_state_core = 76
-			}
+				HUN = {
+					add_state_core = 76
+				}
 				country_event = { id = germany.20 }
 			}
 		}

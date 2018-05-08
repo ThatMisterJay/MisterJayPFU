@@ -18,10 +18,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction2
 		x = 5
 		y = 0
-		cost = 1000
-		available = {
-			num_of_factories > 100
-		}
+		cost = 10000
 
 		available_if_capitulated = yes
 
