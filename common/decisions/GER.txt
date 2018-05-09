@@ -544,6 +544,37 @@ GER_reichskommissariats = {
 }
 
 political_actions = {
+	force_soviet_peacedeal = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			SOV = {
+				surrender_progress > 0.70 #almost capitulate but not really
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+
+		visible = {
+			SOV = {
+				surrender_progress > 0.50
+			}
+		}
+
+		complete_effect = {
+			GER = { country_event = { id = JFU_germany.2 days = 1 } }
+		}
+	}
 
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {
@@ -849,14 +880,8 @@ special_projects = {
 		}
 		visible = {
 			#has_war = yes
+			NOT = { tag = FRA }
 			controls_state = 28
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
-				}
-				controls_state = 18
-				controls_state = 29
-			}
 		}
 		days_remove = 180
 		modifier = {

@@ -218,6 +218,20 @@ ideas = {
 			}
 		}
 
+		surrender_100 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				forced_surrender_limit = -1.0
+			}
+		}
+
 		soviet_german_friendship = {
 			allowed = {
 				always = no
@@ -1183,7 +1197,7 @@ ideas = {
 				NOT = {
 					AND = {
 						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
-						
+
 					}
 				}
 			}
