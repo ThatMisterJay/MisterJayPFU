@@ -10,28 +10,28 @@ country_event = {
 	title = france.1.t
 	desc = france.1.d
 	picture = GFX_report_event_japan_army_mountainside
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = france.1.a
 		ai_chance = {
-			factor = 25 
+			factor = 25
 			modifier = {
 				factor = 50
 				has_war = yes
 				any_enemy_country = {
-					strength_ratio = { 
-						tag = ROOT 
+					strength_ratio = {
+						tag = ROOT
 						ratio < 0.4
 					}
 				}
 			}
 			modifier = {
 				factor = 75
-				16 = { NOT = { is_controlled_by = FRA } } #Paris	
+				16 = { NOT = { is_controlled_by = FRA } } #Paris
 			}
-		} 
+		}
 		JAP = {
 			country_event = { days = 5 id = japan.6 }
 		}
@@ -44,9 +44,9 @@ country_event = {
 	title = france.2.t
 	desc = france.2.d
 	picture = GFX_report_event_bunker_01
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.2.a
 		18 = {
@@ -106,7 +106,7 @@ country_event = {
 	picture = GFX_report_event_bunker_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.3.a
 		735 = {
@@ -164,9 +164,9 @@ country_event = {
 	title = france.10.t
 	desc = france.10.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = FRA
 		has_war_with = GER
@@ -181,7 +181,7 @@ country_event = {
 			has_civil_war = yes
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -189,7 +189,7 @@ country_event = {
 	immediate = {
 		set_global_flag = achievement_france_surrender
 	}
-	
+
 
 	option = { # Become Free French
 		name = france.10.b
@@ -208,9 +208,9 @@ country_event = {
 	title = france.11.t
 	desc = france.11.d
 	picture = GFX_report_event_degaulle_churchill
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Refuse Union
 		name = france.11.a
 		ai_chance = {
@@ -237,9 +237,9 @@ country_event = {
 	title = france.12.t
 	desc = france.12.d
 	picture = GFX_report_event_chamberlain_announce
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.12.a
 		# Franco-British Union created
@@ -259,7 +259,7 @@ country_event = {
 		}
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {
-			GER = { 
+			GER = {
 				country_event = { hours = 6 id = news.35 }
 			}
 		}
@@ -272,9 +272,9 @@ country_event = {
 	title = france.13.t
 	desc = france.13.d
 	picture = GFX_report_event_pierre_laval
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Become Vichy
 		name = france.13.a
 		trigger = { is_ai = no }
@@ -298,9 +298,9 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Agree
 		name = france.14.a
 		ai_chance = {
@@ -448,11 +448,11 @@ country_event = {
 								state = 680
 								state = 677
 								state = 458
-							}						
+							}
 						}
-					}					
+					}
 				}
-			}		
+			}
 			##add checks if general exists
 			remove_unit_leader = 801
 			remove_unit_leader = 802
@@ -470,25 +470,41 @@ country_event = {
 				picture = "Portrait_France_Charles_De_Gaulle.dds"
 				traits = { panzer_leader }
 				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
 			}
 			create_corps_commander = {
 				name = "Philippe Leclerc"
 				picture = "portrait_france_philippe_leclerc.dds"
 				traits = { panzer_leader }
 				skill = 3
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
 			}
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				picture = "Portrait_France_Marie_Pierre_Koenig.dds"
 				traits = { trickster }
 				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
 			}
 			create_corps_commander = {
 				name = "Edgard de Larminat"
 				picture = "Portrait_France_Generic_land_4.dds"
 				traits = { desert_fox }
 				skill = 1
-			}			
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
 			create_navy_leader = {
 				name = "Émile Muselier"
 				picture = "Portrait_France_Emile_Muselier.dds"
@@ -548,14 +564,14 @@ country_event = {
 						set_state_controller = 31
 					}
 			}
-			
+
 		}
 		random_other_country = {
 			limit = { original_tag = FRA has_government = fascism }
-			EFR = { 
+			EFR = {
 				annex_country = { target = PREV transfer_troops = no }
 			}
-		}		
+		}
 		EFR = {
 			transfer_state = 26
 			transfer_state = 21
@@ -620,15 +636,15 @@ country_event = {
 				picture = "Portrait_France_Generic_land_3.dds" ##looks like the generic portrait is really him
 				traits = { }
 				skill = 1
-			}				
-			every_state = { 
+			}
+			every_state = {
 				limit = {
 					is_core_of = FRA
 					is_controlled_by = EFR
 				}
 				add_core_of = EFR
 			}
-			every_state = { 
+			every_state = {
 				limit = {
 					NOT = {
 						is_core_of = FRA
@@ -636,7 +652,7 @@ country_event = {
 					is_controlled_by = EFR
 				}
 				add_claim_by  = FRA
-			}			
+			}
 			28 = {
 				remove_core_of = EFR
 			}
@@ -655,7 +671,7 @@ country_event = {
 						type = infantry_equipment
 						amount = 22000
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { infantry_equipment > 20500 } }
@@ -664,8 +680,8 @@ country_event = {
 								type = infantry_equipment
 								amount = 19000
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { infantry_equipment > 19000 } }
@@ -674,7 +690,7 @@ country_event = {
 										type = infantry_equipment
 										amount = 17500
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { infantry_equipment > 17500 } }
@@ -683,7 +699,7 @@ country_event = {
 												type = infantry_equipment
 												amount = 15000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { infantry_equipment > 13500 } }
@@ -701,7 +717,7 @@ country_event = {
 																type = infantry_equipment
 																amount = 10500
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { infantry_equipment > 10500 } }
@@ -710,7 +726,7 @@ country_event = {
 																		type = infantry_equipment
 																		amount = 9000
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { infantry_equipment > 9000 } }
@@ -719,7 +735,7 @@ country_event = {
 																				type = infantry_equipment
 																				amount = 7500
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { infantry_equipment > 7500 } }
@@ -728,7 +744,7 @@ country_event = {
 																						type = infantry_equipment
 																						amount = 6000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { infantry_equipment > 6000 } }
@@ -737,7 +753,7 @@ country_event = {
 																								type = infantry_equipment
 																								amount = 4500
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { infantry_equipment > 4500 } }
@@ -746,7 +762,7 @@ country_event = {
 																										type = infantry_equipment
 																										amount = 3000
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { infantry_equipment > 3000 } }
@@ -772,14 +788,14 @@ country_event = {
 																																target = GER
 																																type = infantry_equipment
 																																	amount = 350
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { infantry_equipment > 500 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = infantry_equipment
-																																		amount = 250							
+																																		amount = 250
 																																	}
 																																}
 																															}
@@ -792,8 +808,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -809,9 +825,9 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
-		}		
+		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
 			limit = { has_equipment = { support_equipment > 3000 } }
 			send_equipment = {
@@ -827,7 +843,7 @@ country_event = {
 						type = support_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { support_equipment > 2600 } }
@@ -836,8 +852,8 @@ country_event = {
 								type = support_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { support_equipment > 2400 } }
@@ -846,7 +862,7 @@ country_event = {
 										type = support_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { support_equipment > 2200 } }
@@ -855,7 +871,7 @@ country_event = {
 												type = support_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { support_equipment > 2000 } }
@@ -873,7 +889,7 @@ country_event = {
 																type = support_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { support_equipment > 1600 } }
@@ -882,7 +898,7 @@ country_event = {
 																		type = support_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { support_equipment > 1400 } }
@@ -891,7 +907,7 @@ country_event = {
 																				type = support_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { support_equipment > 1200 } }
@@ -900,7 +916,7 @@ country_event = {
 																						type = support_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { support_equipment > 1000 } }
@@ -909,7 +925,7 @@ country_event = {
 																								type = support_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { support_equipment > 800 } }
@@ -918,7 +934,7 @@ country_event = {
 																										type = support_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { support_equipment > 600 } }
@@ -944,14 +960,14 @@ country_event = {
 																																target = GER
 																																type = support_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { support_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = support_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -964,8 +980,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -981,7 +997,7 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
@@ -999,7 +1015,7 @@ country_event = {
 						type = light_tank_equipment
 						amount = 2600
 					}
-					
+
 						else = {
 							if = {
 								limit = { has_equipment = { light_tank_equipment > 2600 } }
@@ -1008,8 +1024,8 @@ country_event = {
 									type = light_tank_equipment
 									amount = 2400
 								}
-							
-				
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { light_tank_equipment > 2400 } }
@@ -1018,7 +1034,7 @@ country_event = {
 										type = light_tank_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { light_tank_equipment > 2200 } }
@@ -1027,7 +1043,7 @@ country_event = {
 												type = light_tank_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { light_tank_equipment > 2000 } }
@@ -1045,7 +1061,7 @@ country_event = {
 																type = light_tank_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { light_tank_equipment > 1600 } }
@@ -1054,7 +1070,7 @@ country_event = {
 																		type = light_tank_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { light_tank_equipment > 1400 } }
@@ -1063,7 +1079,7 @@ country_event = {
 																				type = light_tank_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { light_tank_equipment > 1200 } }
@@ -1072,7 +1088,7 @@ country_event = {
 																						type = light_tank_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { light_tank_equipment > 1000 } }
@@ -1081,7 +1097,7 @@ country_event = {
 																								type = light_tank_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { light_tank_equipment > 800 } }
@@ -1090,7 +1106,7 @@ country_event = {
 																										type = light_tank_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { light_tank_equipment > 600 } }
@@ -1116,14 +1132,14 @@ country_event = {
 																																target = GER
 																																type = light_tank_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { light_tank_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = light_tank_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -1136,8 +1152,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -1153,9 +1169,9 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
-		}		
+		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
 			limit = { has_equipment = { motorized_equipment > 3000 } }
 			send_equipment = {
@@ -1171,7 +1187,7 @@ country_event = {
 						type = motorized_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { motorized_equipment > 2600 } }
@@ -1180,8 +1196,8 @@ country_event = {
 								type = motorized_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { motorized_equipment > 2400 } }
@@ -1190,7 +1206,7 @@ country_event = {
 										type = motorized_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { motorized_equipment > 2200 } }
@@ -1199,7 +1215,7 @@ country_event = {
 												type = motorized_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { motorized_equipment > 2000 } }
@@ -1217,7 +1233,7 @@ country_event = {
 																type = motorized_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { motorized_equipment > 1600 } }
@@ -1226,7 +1242,7 @@ country_event = {
 																		type = motorized_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { motorized_equipment > 1400 } }
@@ -1235,7 +1251,7 @@ country_event = {
 																				type = motorized_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { motorized_equipment > 1200 } }
@@ -1244,7 +1260,7 @@ country_event = {
 																						type = motorized_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { motorized_equipment > 1000 } }
@@ -1253,7 +1269,7 @@ country_event = {
 																								type = motorized_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { motorized_equipment > 800 } }
@@ -1262,7 +1278,7 @@ country_event = {
 																										type = motorized_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { motorized_equipment > 600 } }
@@ -1288,14 +1304,14 @@ country_event = {
 																																target = GER
 																																type = motorized_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { motorized_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = motorized_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -1308,8 +1324,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -1325,7 +1341,7 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
@@ -1343,7 +1359,7 @@ country_event = {
 						type = mechanized_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { mechanized_equipment > 2600 } }
@@ -1352,8 +1368,8 @@ country_event = {
 								type = mechanized_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { mechanized_equipment > 2400 } }
@@ -1362,7 +1378,7 @@ country_event = {
 										type = mechanized_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { mechanized_equipment > 2200 } }
@@ -1371,7 +1387,7 @@ country_event = {
 												type = mechanized_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { mechanized_equipment > 2000 } }
@@ -1389,7 +1405,7 @@ country_event = {
 																type = mechanized_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { mechanized_equipment > 1600 } }
@@ -1398,7 +1414,7 @@ country_event = {
 																		type = mechanized_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { mechanized_equipment > 1400 } }
@@ -1407,7 +1423,7 @@ country_event = {
 																				type = mechanized_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { mechanized_equipment > 1200 } }
@@ -1416,7 +1432,7 @@ country_event = {
 																						type = mechanized_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { mechanized_equipment > 1000 } }
@@ -1425,7 +1441,7 @@ country_event = {
 																								type = mechanized_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { mechanized_equipment > 800 } }
@@ -1434,7 +1450,7 @@ country_event = {
 																										type = mechanized_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { mechanized_equipment > 600 } }
@@ -1460,14 +1476,14 @@ country_event = {
 																																target = GER
 																																type = mechanized_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { mechanized_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = mechanized_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -1480,8 +1496,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -1497,9 +1513,9 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
-		}		
+		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
 			limit = { has_equipment = { artillery_equipment > 3000 } }
 			send_equipment = {
@@ -1515,7 +1531,7 @@ country_event = {
 						type = artillery_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { artillery_equipment > 2600 } }
@@ -1524,8 +1540,8 @@ country_event = {
 								type = artillery_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { artillery_equipment > 2400 } }
@@ -1534,7 +1550,7 @@ country_event = {
 										type = artillery_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { artillery_equipment > 2200 } }
@@ -1543,7 +1559,7 @@ country_event = {
 												type = artillery_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { artillery_equipment > 2000 } }
@@ -1561,7 +1577,7 @@ country_event = {
 																type = artillery_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { artillery_equipment > 1600 } }
@@ -1570,7 +1586,7 @@ country_event = {
 																		type = artillery_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { artillery_equipment > 1400 } }
@@ -1579,7 +1595,7 @@ country_event = {
 																				type = artillery_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { artillery_equipment > 1200 } }
@@ -1588,7 +1604,7 @@ country_event = {
 																						type = artillery_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { artillery_equipment > 1000 } }
@@ -1597,7 +1613,7 @@ country_event = {
 																								type = artillery_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { artillery_equipment > 800 } }
@@ -1606,7 +1622,7 @@ country_event = {
 																										type = artillery_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { artillery_equipment > 600 } }
@@ -1632,14 +1648,14 @@ country_event = {
 																																target = GER
 																																type = artillery_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { artillery_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = artillery_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -1652,8 +1668,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -1669,7 +1685,7 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
@@ -1687,7 +1703,7 @@ country_event = {
 						type = anti_air_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { anti_air_equipment > 2600 } }
@@ -1696,8 +1712,8 @@ country_event = {
 								type = anti_air_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { anti_air_equipment > 2400 } }
@@ -1706,7 +1722,7 @@ country_event = {
 										type = anti_air_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { anti_air_equipment > 2200 } }
@@ -1715,7 +1731,7 @@ country_event = {
 												type = anti_air_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { anti_air_equipment > 2000 } }
@@ -1733,7 +1749,7 @@ country_event = {
 																type = anti_air_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { anti_air_equipment > 1600 } }
@@ -1742,7 +1758,7 @@ country_event = {
 																		type = anti_air_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { anti_air_equipment > 1400 } }
@@ -1751,7 +1767,7 @@ country_event = {
 																				type = anti_air_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { anti_air_equipment > 1200 } }
@@ -1760,7 +1776,7 @@ country_event = {
 																						type = anti_air_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { anti_air_equipment > 1000 } }
@@ -1769,7 +1785,7 @@ country_event = {
 																								type = anti_air_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { anti_air_equipment > 800 } }
@@ -1778,7 +1794,7 @@ country_event = {
 																										type = anti_air_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { anti_air_equipment > 600 } }
@@ -1804,14 +1820,14 @@ country_event = {
 																																target = GER
 																																type = anti_air_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { anti_air_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = anti_air_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -1824,8 +1840,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -1841,7 +1857,7 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
 		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
@@ -1859,7 +1875,7 @@ country_event = {
 						type = anti_tank_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { anti_tank_equipment > 2600 } }
@@ -1868,8 +1884,8 @@ country_event = {
 								type = anti_tank_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { anti_tank_equipment > 2400 } }
@@ -1878,7 +1894,7 @@ country_event = {
 										type = anti_tank_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { anti_tank_equipment > 2200 } }
@@ -1887,7 +1903,7 @@ country_event = {
 												type = anti_tank_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { anti_tank_equipment > 2000 } }
@@ -1905,7 +1921,7 @@ country_event = {
 																type = anti_tank_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { anti_tank_equipment > 1600 } }
@@ -1914,7 +1930,7 @@ country_event = {
 																		type = anti_tank_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { anti_tank_equipment > 1400 } }
@@ -1923,7 +1939,7 @@ country_event = {
 																				type = anti_tank_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { anti_tank_equipment > 1200 } }
@@ -1932,7 +1948,7 @@ country_event = {
 																						type = anti_tank_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { anti_tank_equipment > 1000 } }
@@ -1941,7 +1957,7 @@ country_event = {
 																								type = anti_tank_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { anti_tank_equipment > 800 } }
@@ -1950,7 +1966,7 @@ country_event = {
 																										type = anti_tank_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { anti_tank_equipment > 600 } }
@@ -1976,14 +1992,14 @@ country_event = {
 																																target = GER
 																																type = anti_tank_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { anti_tank_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = anti_tank_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -1996,8 +2012,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -2013,9 +2029,9 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
-		}	
+		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
 			limit = { has_equipment = { medium_tank_equipment > 3000 } }
 			send_equipment = {
@@ -2031,7 +2047,7 @@ country_event = {
 						type = medium_tank_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { medium_tank_equipment > 2600 } }
@@ -2040,8 +2056,8 @@ country_event = {
 								type = medium_tank_equipment
 								amount = 2400
 							}
-						
-			
+
+
 							else = {
 								if = {
 									limit = { has_equipment = { medium_tank_equipment > 2400 } }
@@ -2050,7 +2066,7 @@ country_event = {
 										type = medium_tank_equipment
 										amount = 2200
 									}
-					
+
 									else = {
 										if = {
 											limit = { has_equipment = { medium_tank_equipment > 2200 } }
@@ -2059,7 +2075,7 @@ country_event = {
 												type = medium_tank_equipment
 												amount = 2000
 											}
-						
+
 											else = {
 												if = {
 													limit = { has_equipment = { medium_tank_equipment > 2000 } }
@@ -2077,7 +2093,7 @@ country_event = {
 																type = medium_tank_equipment
 																amount = 1600
 															}
-									
+
 															else = {
 																if = {
 																	limit = { has_equipment = { medium_tank_equipment > 1600 } }
@@ -2086,7 +2102,7 @@ country_event = {
 																		type = medium_tank_equipment
 																		amount = 1400
 																	}
-				
+
 																	else = {
 																		if = {
 																			limit = { has_equipment = { medium_tank_equipment > 1400 } }
@@ -2095,7 +2111,7 @@ country_event = {
 																				type = medium_tank_equipment
 																				amount = 1200
 																			}
-				
+
 																			else = {
 																				if = {
 																					limit = { has_equipment = { medium_tank_equipment > 1200 } }
@@ -2104,7 +2120,7 @@ country_event = {
 																						type = medium_tank_equipment
 																						amount = 1000
 																					}
-				
+
 																					else = {
 																						if = {
 																							limit = { has_equipment = { medium_tank_equipment > 1000 } }
@@ -2113,7 +2129,7 @@ country_event = {
 																								type = medium_tank_equipment
 																								amount = 800
 																							}
-				
+
 																							else = {
 																								if = {
 																									limit = { has_equipment = { medium_tank_equipment > 800 } }
@@ -2122,7 +2138,7 @@ country_event = {
 																										type = medium_tank_equipment
 																										amount = 600
 																									}
-				
+
 																									else = {
 																										if = {
 																											limit = { has_equipment = { medium_tank_equipment > 600 } }
@@ -2148,14 +2164,14 @@ country_event = {
 																																target = GER
 																																type = medium_tank_equipment
 																																	amount = 50
-																															}	
+																															}
 																															else = {
 																																if = {
 																																	limit = { has_equipment = { medium_tank_equipment > 100 } }
 																																	send_equipment = {
 																																		target = GER
 																																		type = medium_tank_equipment
-																																		amount = 25							
+																																		amount = 25
 																																	}
 																																}
 																															}
@@ -2168,8 +2184,8 @@ country_event = {
 																								}
 																							}
 																						}
-																					}	
-																				}										
+																					}
+																				}
 																			}
 																		}
 																	}
@@ -2185,9 +2201,9 @@ country_event = {
 							}
 						}
 					}
-				}	
+				}
 			}
-		}		
+		}
 		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
 			limit = { has_equipment = { heavy_tank_equipment > 3000 } }
 			send_equipment = {
@@ -2203,7 +2219,7 @@ country_event = {
 						type = heavy_tank_equipment
 						amount = 2600
 					}
-					
+
 					else = {
 						if = {
 							limit = { has_equipment = { heavy_tank_equipment > 2600 } }
@@ -2212,7 +2228,7 @@ country_event = {
 								type = heavy_tank_equipment
 								amount = 2400
 							}
-						
+
 							else = {
 								if = {
 									limit = { has_equipment = { heavy_tank_equipment > 2400 } }
@@ -2221,7 +2237,7 @@ country_event = {
 										type = heavy_tank_equipment
 										amount = 2200
 									}
-						
+
 									else = {
 										if = {
 											limit = { has_equipment = { heavy_tank_equipment > 2200 } }
@@ -2230,7 +2246,7 @@ country_event = {
 												type = heavy_tank_equipment
 												amount = 2000
 											}
-							
+
 											else = {
 												if = {
 													limit = { has_equipment = { heavy_tank_equipment > 2000 } }
@@ -2248,7 +2264,7 @@ country_event = {
 																type = heavy_tank_equipment
 																amount = 1600
 															}
-										
+
 																else = {
 																	if = {
 																		limit = { has_equipment = { heavy_tank_equipment > 1600 } }
@@ -2257,7 +2273,7 @@ country_event = {
 																			type = heavy_tank_equipment
 																			amount = 1400
 																		}
-					
+
 																		else = {
 																			if = {
 																				limit = { has_equipment = { heavy_tank_equipment > 1400 } }
@@ -2266,7 +2282,7 @@ country_event = {
 																					type = heavy_tank_equipment
 																					amount = 1200
 																				}
-					
+
 																				else = {
 																					if = {
 																						limit = { has_equipment = { heavy_tank_equipment > 1200 } }
@@ -2275,7 +2291,7 @@ country_event = {
 																							type = heavy_tank_equipment
 																							amount = 1000
 																						}
-					
+
 																						else = {
 																							if = {
 																								limit = { has_equipment = { heavy_tank_equipment > 1000 } }
@@ -2284,7 +2300,7 @@ country_event = {
 																									type = heavy_tank_equipment
 																									amount = 800
 																								}
-					
+
 																								else = {
 																									if = {
 																										limit = { has_equipment = { heavy_tank_equipment > 800 } }
@@ -2293,7 +2309,7 @@ country_event = {
 																											type = heavy_tank_equipment
 																											amount = 600
 																										}
-					
+
 																										else = {
 																											if = {
 																												limit = { has_equipment = { heavy_tank_equipment > 600 } }
@@ -2319,14 +2335,14 @@ country_event = {
 																																	target = GER
 																																	type = heavy_tank_equipment
 																																		amount = 50
-																																}	
+																																}
 																																else = {
 																																	if = {
 																																		limit = { has_equipment = { heavy_tank_equipment > 100 } }
 																																		send_equipment = {
 																																			target = GER
 																																			type = heavy_tank_equipment
-																																			amount = 25							
+																																			amount = 25
 																																		}
 																																	}
 																																}
@@ -2339,8 +2355,8 @@ country_event = {
 																									}
 																								}
 																							}
-																						}	
-																					}										
+																						}
+																					}
 																				}
 																			}
 																		}
@@ -2356,9 +2372,9 @@ country_event = {
 								}
 							}
 			}
-					}	
+					}
 		}
-			}	
+			}
 		random_other_country = {
 				limit = { original_tag = EFR has_government = fascism }
 			# ROOT = { puppet = PREV }
@@ -2367,9 +2383,9 @@ country_event = {
 				ruling_party = fascism
 				elections_allowed = no
 				parties = {
-					democratic = { 
+					democratic = {
 							popularity = 18
-						}	
+						}
 					fascism = {
 							popularity = 70
 					}
@@ -2380,7 +2396,7 @@ country_event = {
 							popularity = 10
 				}
 			}
-				}			
+				}
 			# FRA Player Switches to Vichy
 			if = {
 				limit = { FRA = { has_country_flag = become_vichy } }
@@ -2391,7 +2407,7 @@ country_event = {
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
 		}
-		}	
+		}
 	}
 	# option = { # Conquer everything!
 		# name = france.14.b
@@ -2410,9 +2426,9 @@ country_event = {
 	title = france.15.t
 	desc = france.15.d
 	picture = GFX_report_event_french_resistance_01
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.15.a
 	}
@@ -2432,7 +2448,7 @@ country_event = {
 		16 = { controller = { NOT = { TAG = FRA } } }
 		#16 = { is_owned_by = FRA }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 4
 	}
@@ -2451,9 +2467,9 @@ country_event = {
 	title = france.17.t
 	desc = france.17.d
 	picture = GFX_report_event_worried_french
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.17.a
 		ai_chance = { factor = 90 }
@@ -2481,9 +2497,9 @@ country_event = {
 	title = france.18.t
 	desc = france.18.d
 	picture = GFX_report_event_soldiers_in_france
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.18.a
 		effect_tooltip = {
@@ -2498,9 +2514,9 @@ country_event = {
 	title = france.19.t
 	desc = france.19.d
 	picture = GFX_report_event_finnish_letter
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.19.a
 	}
@@ -2512,9 +2528,9 @@ country_event = {
 	title = france.20.t
 	desc = france.20.d
 	picture = GFX_report_event_degaulle_churchill
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
@@ -2531,7 +2547,7 @@ country_event = {
 	title = france.21.t
 	desc = france.21.d
 	picture = GFX_report_event_worker_protests
-	
+
 	trigger = {
 		NOT = { has_government = communism }
 		tag = FRA
@@ -2540,7 +2556,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {	days = 60	}
 
 	option = {
@@ -2566,7 +2582,7 @@ country_event = {
 		add_popularity = {
 			ideology = communism
 			popularity = 0.07
-		}		
+		}
 	}
 }
 # Revoke Worker rights
@@ -2575,7 +2591,7 @@ country_event = {
 	title = france.22.t
 	desc = france.22.d
 	picture = GFX_report_event_airplane_factory
-	
+
 	trigger = {
 		NOT = { has_government = communism }
 		has_idea = FRA_matignon_agreements
@@ -2594,7 +2610,7 @@ country_event = {
 	}
 	option = {
 		name = france.22.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 0
@@ -2606,7 +2622,7 @@ country_event = {
 			ideology = communism
 			popularity = 0.05
 		}
-	}	
+	}
 }
 # Strikes are over
 country_event = {
@@ -2622,7 +2638,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {	days = 2	}
 
 	option = {
@@ -2647,7 +2663,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {	days = 2	}
 
 	option = {
@@ -2664,9 +2680,9 @@ country_event = {
 			target = SOV
 			modifier = FRA_ban_communism
 		}
-		
+
 		every_other_country = {
-			limit = { 
+			limit = {
 				has_government = communism
 			}
 			add_opinion_modifier = {
@@ -2692,7 +2708,7 @@ country_event = {
 	desc = france.25.d
 	picture = GFX_report_event_hitler_croatia_handshake
 
-	is_triggered_only	= yes	
+	is_triggered_only	= yes
 	option = { # Follow Britain's lead
 		name = france.25.a
 		ai_chance = {
@@ -2703,10 +2719,10 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				ITA = {
 					OR = {
-						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
+						NOT = { has_completed_focus = ITA_yugoslavia_friend }
 						is_in_faction_with = GER
 					}
 				}
@@ -2714,10 +2730,10 @@ country_event = {
 			YUG = {
 				add_opinion_modifier = { target = FRA modifier = western_betrayal }
 				country_event = { id = yugoslavia.5 hours = 6 }
-			}			
+			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				ITA = {
 					has_completed_focus = ITA_yugoslavia_friend
 					NOT = { is_in_faction_with = GER }
@@ -2738,7 +2754,7 @@ country_event = {
 		}
 		add_political_power = -200
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		YUG = { 
+		YUG = {
 			country_event = { id = yugoslavia.4 days = 1 }
 			add_opinion_modifier = { target = FRA modifier = offered_support }
 		}
@@ -2754,14 +2770,14 @@ country_event = {
 		}
 		if = {
 			limit = { is_in_faction_with = ENG }
-			ENG = { 
+			ENG = {
 				country_event = { id = britain.15 hours = 6 }
 				remove_from_faction = FRA
 			}
 		}
 		if = {
 			limit = { is_in_faction_with = GER }
-			GER = { 
+			GER = {
 				remove_from_faction = FRA
 			}
 		}
@@ -2844,7 +2860,7 @@ country_event = {
 			}
 		}
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		YUG = { 
+		YUG = {
 			country_event = { id = yugoslavia.3 days = 1 }
 			add_opinion_modifier = { target = FRA modifier = offered_support }
 		}
@@ -2857,7 +2873,7 @@ country_event = {
 					generator = { 102 }
 				}
 			}
-		}		
+		}
 	}
 
 	#Abandon
@@ -2870,15 +2886,15 @@ country_event = {
 			country_event = { id = yugoslavia.3 hours = 6 }
 			add_opinion_modifier = { target = FRA modifier = western_betrayal }
 		}
-	}	
+	}
 }
 
 # Vichy France: Germany is handing over some of our land
 country_event = {
 	id = france.27
 	title = france.27.t
-	desc = { 
-		text = france.27.d_1_state 
+	desc = {
+		text = france.27.d_1_state
 		trigger = {
 			OR = {
 				NOT = { has_global_flag = ITA_claims_on_france_735 }
@@ -2888,14 +2904,14 @@ country_event = {
 				has_global_flag = ITA_claims_on_france_735
 				NOT = { has_global_flag = ITA_claims_on_france_1 }
 			}
-		} 
+		}
 	}
-	desc = { 
+	desc = {
 		text = france.27.d_both
-		trigger = { 
-			has_global_flag = ITA_claims_on_france_735 
+		trigger = {
+			has_global_flag = ITA_claims_on_france_735
 			has_global_flag = ITA_claims_on_france_1
-		} 
+		}
 	}
 	picture = GFX_report_event_worried_french
 
@@ -2903,7 +2919,7 @@ country_event = {
 
 	option = {
 		name = france.27.a
-		
+
 		effect_tooltip = {
 			if = {
 				limit = { has_global_flag = ITA_claims_on_france_735 }
@@ -2914,7 +2930,7 @@ country_event = {
 				ITA = { transfer_state = 1 }
 			}
 		}
-		
+
 		#Italy always get Tunisia
 		if = {
 					limit = { ROOT = { owns_state = 458 } }
@@ -2924,8 +2940,8 @@ country_event = {
 					limit = { ROOT = { owns_state = 665 } }
 					ITA = { transfer_state = 665 }
 		}
-		
-		
+
+
 		if = {
 			limit = {
 				has_global_flag = ITA_claims_on_france_735
@@ -3012,15 +3028,15 @@ country_event = {
     title = france.31.t
     desc = france.31.d
     picture = GFX_report_event_german_parade_paris
- 
+
     fire_only_once = yes
- 
+
     trigger = {
         original_tag = FRA
         has_government = democratic
         has_global_flag = fall_of_france
         NOT = { has_country_flag = france_de_gaulle }
-    } 
+    }
 
     mean_time_to_happen = {
         days = 7

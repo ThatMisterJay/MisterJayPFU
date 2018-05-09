@@ -171,6 +171,10 @@ country_event = {
                 portrait_path = "gfx/leaders/SPA/SPR_Portrait_Vicente_Lluch.dds"
                 traits = { offensive_doctrine  }
                 skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 5
             }
 	}
 }

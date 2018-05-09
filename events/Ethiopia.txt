@@ -27,7 +27,8 @@ country_event = {
 
 		ITA = {
 			annex_country = { target = ETH transfer_troops = yes }
-			news_event = ethiopia.2
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1500 producer = ETH }
+			news_event = { id = ethiopia.2 days = 1 }
 		}
 	}
 }

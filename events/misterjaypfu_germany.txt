@@ -1,0 +1,217 @@
+﻿###########################
+# Baltic Events
+###########################
+
+add_namespace = JFU_germany
+
+#Norway
+country_event = {
+	id = JFU_germany.1
+	title = JFU_germany.1.t
+	desc = JFU_germany.1.d
+	picture = GFX_report_event_german_troops
+
+	trigger = {
+		tag = NOR
+		110 = { NOT = { is_controlled_by = NOR } }
+		142 = { NOT = { is_controlled_by = NOR } }
+	}
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = JFU_germany.1.a
+		add_ideas = surrender_100
+	}
+}
+
+#Soviet
+country_event = {
+	id = JFU_germany.2
+	title = JFU_germany.2.t
+	desc = JFU_germany.2.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_germany.2.a
+		SOV = {	country_event = { id = JFU_germany.7 days = 1 } }
+	}
+
+	option = {
+		name = JFU_germany.2.b
+	}
+}
+
+#Baltics
+country_event = {
+	id = JFU_germany.3
+	title = JFU_germany.3.t
+	desc = JFU_germany.3.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = JFU_germany.3.a
+		GER = {
+			transfer_state = 189 #Lithuania
+			transfer_state = 11
+			transfer_state = 190 #Latvia
+			transfer_state = 12
+			transfer_state = 191 #Estonia
+			transfer_state = 13
+		}
+		country_event = { id = JFU_germany.4 days = 1}
+	}
+}
+
+#Finland
+country_event = {
+	id = JFU_germany.4
+	title = JFU_germany.4.t
+	desc = JFU_germany.4.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = JFU_germany.4.a
+		FIN = {
+			transfer_state = 215 #Onega
+			transfer_state = 213 #Murmansk
+			transfer_state = 771 #Nivankyul
+			transfer_state = 216 #Olonets
+		}
+		country_event = { id = JFU_germany.5 days = 1}
+	}
+}
+
+#Romania
+country_event = {
+	id = JFU_germany.5
+	title = JFU_germany.5.t
+	desc = JFU_germany.5.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = JFU_germany.5.a
+		ROM = {
+			transfer_state = 137 #Crimea
+			transfer_state = 192 #Odessa
+			transfer_state = 196 #Kherson
+			transfer_state = 197 #Mykolaiv
+			transfer_state = 198 #Vinnytsia
+			transfer_state = 200 #Zaporozhe
+			transfer_state = 203 #Cherkasy
+			transfer_state = 226 #Dnipropetrovsk
+			transfer_state = 259 #Poltava
+		}
+		country_event = { id = JFU_germany.6 days = 1}
+	}
+}
+
+#Germany
+country_event = {
+	id = JFU_germany.6
+	title = JFU_germany.6.t
+	desc = JFU_germany.6.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = JFU_germany.6.a
+		GER = {
+			transfer_state = 89 #Stanislawow
+			transfer_state = 91 #Lwow
+			transfer_state = 93 #Wolyn
+			transfer_state = 94 #Polesie
+			transfer_state = 95 #Nowogrodek
+			transfer_state = 96 #Wilno
+			transfer_state = 194 #Pink Marshes
+			transfer_state = 195 #Leningrad
+			transfer_state = 199 #Khmelnytskyi
+			transfer_state = 201 #Zhytomyr
+			transfer_state = 202 #Kiev
+			transfer_state = 204 #Bobruysk
+			transfer_state = 206 #Minsk
+			transfer_state = 207 #Vitebsk
+			transfer_state = 208 #Luga
+			transfer_state = 209 #Pskov
+			transfer_state = 210 #Nevel
+			transfer_state = 263 #Novgorod
+			transfer_state = 244 #Volkhov
+		}
+		#news_event = { id = JFU_germany.6 days = 1}
+	}
+}
+
+#Soviet reply
+country_event = {
+	id = JFU_germany.7
+	title = JFU_germany.7.t
+	desc = JFU_germany.7.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = JFU_germany.7.a
+		GER = {
+			white_peace = {
+				tag = SOV
+				message = FIN_agree_peace
+			}
+			white_peace = {
+				tag = MON
+				message = FIN_agree_peace
+			}
+		}
+		GER = {
+			country_event = { id = JFU_germany.3 days = 2 }
+			country_event = { id = JFU_germany.8 days = 1 }
+		}
+	}
+
+	option = {
+		ai_chance = { factor = 0 }
+		name = JFU_germany.7.b
+		GER = { country_event = { id = JFU_germany.9 days = 1 } }
+	}
+}
+
+#Yes
+country_event = {
+	id = JFU_germany.8
+	title = JFU_germany.8.t
+	desc = JFU_germany.8.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_germany.8.a
+	}
+}
+
+#No
+country_event = {
+	id = JFU_germany.9
+	title = JFU_germany.9.t
+	desc = JFU_germany.9.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_germany.9.a
+	}
+}

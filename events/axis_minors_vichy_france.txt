@@ -11,7 +11,7 @@ country_event = {
 	title = axis_minors_vichy_france.1.t
 	desc = axis_minors_vichy_france.1.desc
 	picture = GFX_report_event_pierre_laval
-	
+
 	trigger = {
 		OR = {
 			tag = D01
@@ -35,20 +35,20 @@ country_event = {
 		FRA = { has_civil_war = yes }
 		has_war_with = FRA
 		has_global_flag = fall_of_france
-		has_country_leader = { ruling_only = no name = "Philippe Pétain" } 
+		has_country_leader = { ruling_only = no name = "Philippe Pétain" }
 	}
 	mean_time_to_happen = {
 			days = 2
 		}
-	fire_only_once = yes	
+	fire_only_once = yes
 	option = {
 		name = axis_minors_vichy_france.1.a
 		ai_chance = {
 			factor = 100
 		}
-		set_cosmetic_tag = FRA_VIC	
+		set_cosmetic_tag = FRA_VIC
 		set_country_flag = is_vichy_france
-	}	
+	}
 }
 
 country_event = { #ensure that Free France has the right territories
@@ -56,18 +56,18 @@ country_event = { #ensure that Free France has the right territories
 	title = axis_minors_vichy_france.2.t
 	desc = axis_minors_vichy_france.2.desc
 	picture = GFX_report_event_french_liberation
-	
+
 	trigger = {
 		tag = FRA
 		has_global_flag = fall_of_france
 		has_capitulated = yes
 		has_global_flag = fall_of_france
-		has_country_leader = { ruling_only = no name = "Charles de Gaulle" } 
+		has_country_leader = { ruling_only = no name = "Charles de Gaulle" }
 	}
 	mean_time_to_happen = {
 			days = 2
 		}
-	fire_only_once = yes	
+	fire_only_once = yes
 	option = {
 		name = axis_minors_vichy_france.2.a
 		ai_chance = {
@@ -77,48 +77,48 @@ country_event = { #ensure that Free France has the right territories
 		set_state_controller = 660
 		set_state_controller = 539
 		set_capital = 539
-	}	
+	}
 }
 country_event = { #annexation of EFR by FRA if liberation
 	id = axis_minors_vichy_france.3
 	title = axis_minors_vichy_france.3.t
 	desc = axis_minors_vichy_france.3.desc
 	picture = GFX_report_event_french_liberation
-	
+
 	trigger = {
 		tag = FRA
-		
+
 		has_global_flag = fall_of_france
-		
+
 		EFR = {
 			has_capitulated = yes
-		} 
+		}
 	}
 	mean_time_to_happen = {
 			days = 2
 		}
-	fire_only_once = yes	
+	fire_only_once = yes
 	option = {
 		name = axis_minors_vichy_france.3.a
 		ai_chance = {
 			factor = 100
 		}
-		annex_country = { target = EFR } 
-		every_state = { 
+		annex_country = { target = EFR }
+		every_state = {
 			limit = {
 				is_core_of = EFR
 			}
 			remove_core_of = EFR
-			}		
+			}
 		set_capital = 16
-	}	
+	}
 }
 country_event = { #Juin defects
 	id = axis_minors_vichy_france.4
 	title = axis_minors_vichy_france.4.t
 	desc = axis_minors_vichy_france.4.desc
 	picture = GFX_report_event_french_liberation
-	
+
 	trigger = {
 		tag = FRA
 		EFR = {
@@ -128,12 +128,12 @@ country_event = { #Juin defects
 				controls_state = 461
 			}
 		}
-		has_global_flag = fall_of_france 
+		has_global_flag = fall_of_france
 	}
 	mean_time_to_happen = {
 			days = 270
 		}
-	fire_only_once = yes	
+	fire_only_once = yes
 	option = {
 		name = axis_minors_vichy_france.4.a
 		ai_chance = {
@@ -145,28 +145,33 @@ country_event = { #Juin defects
 			traits = { panzer_leader  }
 			id = 799
 			skill = 4
-		}		
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+
+		}
 		EFR = {
-			country_event = { id = axis_minors_vichy_france.5 } 
+			country_event = { id = axis_minors_vichy_france.5 }
 		}
 
-	}	
+	}
 }
 country_event = { #Tell EFR Juin defects
 	id = axis_minors_vichy_france.5
 	title = axis_minors_vichy_france.5.t
 	desc = axis_minors_vichy_france.5.desc
 	picture = GFX_report_event_french_liberation
-	
+
 	is_triggered_only = yes
-	fire_only_once = yes	
+	fire_only_once = yes
 	option = {
 		name = axis_minors_vichy_france.5.a
 		ai_chance = {
 			factor = 100
-		}		
-		EFR = {
-			remove_unit_leader = 799 
 		}
-	}	
+		EFR = {
+			remove_unit_leader = 799
+		}
+	}
 }
