@@ -592,7 +592,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 2
+			army_experience = 20
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
 				bonus = 0.35

@@ -2182,7 +2182,6 @@ focus_tree = {
 		available = {
 			tag = USA
 			EFR = { exists = yes }
-			EFR = { is_in_faction = no }
 			is_in_faction_with = ENG
 			GER = { has_war_with = SOV }
 		}
