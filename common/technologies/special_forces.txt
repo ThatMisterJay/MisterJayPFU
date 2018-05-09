@@ -227,44 +227,43 @@ technologies = {
 			custom_effect_tooltip = special_forces_3b_tt
 		}
 
-		hidden_effect = {
-			mountaineers = {
-				mountain = {
-					attack = 0.05
-					movement = 0.1
-				}
-			}
-			marine = {
-				river = {
-					attack = 0.05
-					movement = 0.1
-				}
-			}
-			jaeger = {
-				forest = {
-					attack = 0.05
-					movement = 0.1
-				}
-			}
-			jungletroop = {
-				jungle = {
-					attack = 0.05
-					movement = 0.1
-				}
-			}
-			desertinfantry = {
-				desert = {
-					attack = 0.05
-					movement = 0.1
-				}
-			}
-			shocktroop = {
-				fort = {
-					attack = 0.05
-					movement = 0.1
-				}
+		mountaineers = {
+			mountain = {
+				attack = 0.05
+				movement = 0.1
 			}
 		}
+		marine = {
+			river = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		jaeger = {
+			forest = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		jungletroop = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		desertinfantry = {
+			desert = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		shocktroop = {
+			fort = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
 
 		special_forces_training_time_factor = 0.3
 
