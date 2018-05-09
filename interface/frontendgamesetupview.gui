@@ -1126,74 +1126,74 @@ guiTypes = {
 		}
 	}
 
-	#containerWindowType = {
-	#	name ="custom_settings_item"
-	#	position = { x=0 y =0 }
-	#	size = { width = 280 height = 50 }
-	#	clipping = no
-	#
-	#	background = {
-	#		name = "Background"
-	#		quadTextureSprite ="GFX_changed_slider_indicator"
-	#		position = { x= 8 y = 10 }
-	#	}
-	#
-	#	instantTextboxType = {
-	#		name = "custom_difficulty_name"
-	#		position = { x = 34 y = 10 }
-	#		font = "hoi_18mbs"
-	#		text = "0"
-	#		maxWidth = 300
-	#		maxHeight = 18
-	#		format = left
-	#	}
-	#
-	#	extendedScrollbarType = {
-	#		name = "difficulty_slider"
-	#		position = { x = 228 y = 10 }
-	#		size = { width = 201 height = 18 }
-	#		tileSize = { width = 12 height = 12 }
-	#		maxValue = 1
-	#		minValue = 0
-	#		stepSize = 1
-	#		startValue = 0
-	#		horizontal = yes
-	#		clickonly = yes
-	#
-	#		background = {
-	#			name = "Background"
-	#			quadTextureSprite = "GFX_custom_setting_slider_bg"
-	#			position = { x= -1 y = -4 }
-	#		}
-	#
-	#		slider = {
-	#			name = "Slider"
-	#			quadTextureSprite = "GFX_scroll_drager"
-	#			position = { x=0 y = 1 }
-	#		}
-	#
-	#		track = {
-	#			name = "Track"
-	#			quadTextureSprite = ""
-	#			position = { x=0 y = 3 }
-	#			alwaystransparent = yes
-	#		}
-	#
-	#		decreaseButton = {
-	#			name = "Decrease"
-	#			quadTextureSprite = "yearslider_leftbutton"
-	#			position = { x=3 y = 1 }
-	#			clicksound = click_scroll
-	#		}
-	#
-	#		increaseButton = {
-	#			name = "Increase"
-	#			quadTextureSprite = "yearslider_rightbutton"
-	#			position = { x=-23 y = -17 }
-	#			clicksound = click_scroll
-	#		}
-	#	}
-	#}
+	containerWindowType = {
+		name ="custom_settings_item"
+		position = { x=1500 y =0 }
+		size = { width = 280 height = 50 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_changed_slider_indicator"
+			position = { x= 8 y = 10 }
+		}
+
+		instantTextboxType = {
+			name = "custom_difficulty_name"
+			position = { x = 34 y = 10 }
+			font = "hoi_18mbs"
+			text = "0"
+			maxWidth = 300
+			maxHeight = 18
+			format = left
+		}
+
+		extendedScrollbarType = {
+			name = "difficulty_slider"
+			position = { x = 228 y = 10 }
+			size = { width = 201 height = 18 }
+			tileSize = { width = 12 height = 12 }
+			maxValue = 1
+			minValue = 0
+			stepSize = 1
+			startValue = 0
+			horizontal = yes
+			clickonly = yes
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_custom_setting_slider_bg"
+				position = { x= -1 y = -4 }
+			}
+
+			slider = {
+				name = "Slider"
+				quadTextureSprite = "GFX_scroll_drager"
+				position = { x=0 y = 1 }
+			}
+
+			track = {
+				name = "Track"
+				quadTextureSprite = ""
+				position = { x=0 y = 3 }
+				alwaystransparent = yes
+			}
+
+			decreaseButton = {
+				name = "Decrease"
+				quadTextureSprite = "yearslider_leftbutton"
+				position = { x=3 y = 1 }
+				clicksound = click_scroll
+			}
+
+			increaseButton = {
+				name = "Increase"
+				quadTextureSprite = "yearslider_rightbutton"
+				position = { x=-23 y = -17 }
+				clicksound = click_scroll
+			}
+		}
+	}
 
 	containerWindowType = {
 		name ="gamesetup_custom_gameplay_settings_window"
@@ -1264,12 +1264,12 @@ guiTypes = {
 			quadTextureSprite = "GFX_lobby_lower_right_sidepanel_bg"
 		}
 
-		#buttonType = {
-		#	name = "custom_settings_btn"
-		#	position = { x = 439 y = 12 }
-		#	quadTextureSprite ="GFX_custom_set_button"
-		#	pdx_tooltip = FE_CUSTOM_DIFFUCULTY
-		#}
+		buttonType = {
+			name = "custom_settings_btn"
+			position = { x = 1500 y = 12 } #needs to be offscreen to not give errors
+			quadTextureSprite ="GFX_custom_set_button"
+			pdx_tooltip = FE_CUSTOM_DIFFUCULTY
+		}
 
 		instantTextBoxType={
 			position = {x = 135 y = 12 }
@@ -1291,60 +1291,108 @@ guiTypes = {
 			buttonFont = "hoi_20b"
 		}
 
-		#instantTextBoxType={
-		#	position = {x=32 y=53 }
-		#	name = "beginner_text"
-		#	font = "hoi_20b"
-		#	borderSize = {x = 0 y = 0}
-		#	maxWidth = 210
-		#	maxHeight = 16
-		#	text = "FE_DIFFICULTY_EASY"
-		#	format = left
-		#	alwaystransparent = yes
-		#}
+		checkboxType = {
+			name = "very_easy_cb"
+			position = { x=1500 y=47} #Needs to be offscreen for errors
+			quadTextureSprite ="GFX_difficulty_button_civilian"
+			buttonText = "FE_DIFFICULTY_EASY"
+			buttonFont = "hoi_20b"
+			clicksound = click_checkbox
+		}
+
+		checkboxType = {
+			name = "easy_cb"
+			position = { x=1700 y=47} #Needs to be offscreen for errors
+			quadTextureSprite ="GFX_difficulty_button_recruit"
+			buttonText = "FE_DIFFICULTY_EASY"
+			buttonFont = "hoi_20b"
+			clicksound = click_checkbox
+		}
+
+		checkboxType = {
+			name = "hard_cb"
+			position = { x=1500 y=47} #Needs to be offscreen because of errors
+			quadTextureSprite ="GFX_difficulty_button_veteran"
+			buttonText = "FE_DIFFICULTY_HARD"
+			buttonFont = "hoi_20b"
+			clicksound = click_checkbox
+		}
+
+		checkboxType = {
+			name = "very_hard_cb"
+			position = { x=1700 y=47} #Needs to be offscreen because of errors
+			quadTextureSprite ="GFX_difficulty_button_elite"
+			buttonText = "FE_DIFFICULTY_VERY_HARD"
+			buttonFont = "hoi_20b"
+			clicksound = click_checkbox
+		}
 
 		instantTextBoxType={
-			position = {x=187 y=53 }
-			name = "normal_text"
+			position = {x=1500 y=53 }#Needs to be offscreen because of errors
+			name = "civilian_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 210
+			maxWidth = 115
 			maxHeight = 16
-			text = "FE_DIFFICULTY_NORMAL"
-			format = left
+			text = "FE_DIFFICULTY_VERY_EASY"
+			format = centre
 			alwaystransparent = yes
 		}
 
-		#instantTextBoxType={
-		#	position = {x=342 y=53 }
-		#	name = "hard_text"
-		#	font = "hoi_20b"
-		#	borderSize = {x = 0 y = 0}
-		#	maxWidth = 210
-		#	maxHeight = 16
-		#	text = "FE_DIFFICULTY_HARD"
-		#	format = left
-		#	alwaystransparent = yes
-		#}
+		instantTextBoxType={
+			position = {x=1500 y=53 }
+			name = "beginner_text"
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 115
+			maxHeight = 16
+			text = "FE_DIFFICULTY_EASY"
+			format = centre
+			alwaystransparent = yes
+		}
 
-		#instantTextBoxType={
-		#	position = {x = 30 y = 103 }
-		#	name = "ironman_text"
-		#	font = "hoi_24header"
-		#	maxWidth = 370
-		#	maxHeight = 16
-		#	text = "FE_IRONMAN"
-		#	pdx_tooltip = "FE_IRONMAN_TOOLTIP"
-		#	format = left
-		#	fixedsize = yes
-		#}
+		instantTextBoxType={
+			position = {x=1500 y=53 }
+			name = "normal_text"
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 115
+			maxHeight = 16
+			text = "FE_DIFFICULTY_NORMAL"
+			format = centre
+			alwaystransparent = yes
+		}
 
-		#checkboxType = {
-		#	name = "ironman_cb"
-		#	position = { x=405 y =101}
-		#	quadTextureSprite ="GFX_generic_checkbox"
-		#	clicksound = click_checkbox
-		#}
+		instantTextBoxType={
+			position = {x=1500 y=53 }
+			name = "hard_text"
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 115
+			maxHeight = 16
+			text = "FE_DIFFICULTY_HARD"
+			format = centre
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType={
+			position = {x = 1500 y = 103 }
+			name = "ironman_text"
+			font = "hoi_24header"
+			maxWidth = 370
+			maxHeight = 16
+			text = "FE_IRONMAN"
+			pdx_tooltip = "FE_IRONMAN_TOOLTIP"
+			format = left
+			fixedsize = yes
+		}
+
+		checkboxType = {
+			name = "ironman_cb"
+			position = { x=1500 y =101}
+			quadTextureSprite ="GFX_generic_checkbox"
+			clicksound = click_checkbox
+		}
 
 		instantTextBoxType={
 			position = {x = 30 y = 103 }
@@ -1637,12 +1685,12 @@ guiTypes = {
 				shortcut = "o"
 			}
 
-			#iconType = {
-			#	name = "enabled_achievement_icons"
-			#	position = { x = -382 y = -115 }
-			#	quadTextureSprite ="GFX_enabled_achievement_icons"
-			#	Orientation = "LOWER_RIGHT"
-			#}
+			iconType = {
+				name = "enabled_achievement_icons"
+				position = { x = 1500 y = -115 }
+				quadTextureSprite ="GFX_enabled_achievement_icons"
+				Orientation = "LOWER_RIGHT"
+			}
 
 			ButtonType = {
 				name = "play_button"
