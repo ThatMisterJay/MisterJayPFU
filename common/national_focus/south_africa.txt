@@ -522,7 +522,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no 
+		available_if_capitulated = no
 
 		completion_reward = {
 			if = {
@@ -542,7 +542,7 @@ focus_tree = {
 				transfer_state = 545
 			}
 			if = {
-				limit = { 542 = { is_owned_and_controlled_by = ENG } }
+				limit = { 546 = { is_owned_and_controlled_by = ENG } }
 				transfer_state = 546
 			}
 			if = {

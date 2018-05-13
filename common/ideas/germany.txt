@@ -231,11 +231,11 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.3
+				attack_bonus_against = 0.2
 			}
 
 			modifier = {
-				army_org_Factor = 0.30
+				army_org_Factor = 0.20
 				army_morale_factor = 0.2
 				army_speed_factor = 0.15
 				supply_consumption_factor = -0.20
@@ -328,11 +328,11 @@ ideas = {
 			picture = generic_morale_bonus
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.15
 			}
 
 			modifier = {
-				army_org_Factor = 0.20
+				army_org_Factor = 0.15
 				army_morale_factor = 0.1
 				army_speed_factor = 0.10
 			}

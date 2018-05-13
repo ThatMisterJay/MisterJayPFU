@@ -552,7 +552,7 @@ political_actions = {
 
 		available = {
 			SOV = {
-				surrender_progress > 0.70 #almost capitulate but not really
+				surrender_progress > 0.50 #almost capitulate but not really
 			}
 		}
 
@@ -567,7 +567,7 @@ political_actions = {
 
 		visible = {
 			SOV = {
-				surrender_progress > 0.50
+				surrender_progress > 0.40
 			}
 		}
 
