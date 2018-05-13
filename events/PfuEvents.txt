@@ -451,7 +451,7 @@ country_event = {
 			load_oob = SOV_moscow
 		}
 	}
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 5 }
 }
 
 country_event = {
@@ -489,7 +489,7 @@ country_event = {
 			load_oob = SOV_voronezh
 		}
 	}
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 5 }
 }
 
 country_event = {
@@ -1006,4 +1006,43 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = { days = 30 }
+}
+
+country_event = {
+	id = pfu.34
+	title = pfu.34.t
+	desc = pfu.34.d
+	picture = GFX_report_event_voronezh
+
+	trigger = {
+		tag = SOV
+		date > 1941.8.1
+		SOV = {
+			controls_state = 236
+		}
+		OR = {
+			NOT = { SOV = { controls_state = 217 } }
+			NOT = { SOV = { controls_state = 237 } }
+			NOT = { SOV = { controls_state = 232 } }
+			NOT = { SOV = { controls_state = 265 } }
+		}
+
+		NOT = {
+			has_global_flag = SOV_caucasus
+		}
+	}
+
+	immediate = {
+		set_global_flag = SOV_caucasus
+	}
+
+	option = {
+		name = pfu.34.a
+		custom_effect_tooltip = pfu.34.a.tt
+		hidden_effect = {
+			add_manpower = -180000
+			load_oob = SOV_caucuses
+		}
+	}
+	mean_time_to_happen = { days = 5 }
 }
