@@ -2172,40 +2172,29 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		if = {
-			limit = {
-				OR = {
-					527 = { is_owned_and_controlled_by = ROOT }
-					525 = { is_owned_and_controlled_by = ROOT }
+		527 = {
+			CONTROLLER = {
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = { 527 }
+					}
 				}
 			}
-			activate_mission_tooltip = CHI_release_korea
 		}
-		else = {
-			527 = {
+		#Don't give wargoal on same country twice
+		if = {
+			limit = {
+				NOT = { 525 = { CONTROLLER = { controls_state = 527 } } }
+			}
+			525 = {
 				CONTROLLER = {
 					ROOT = {
 						create_wargoal = {
 							type = take_state_focus
 							target = PREV
-							generator = { 527 }
-						}
-					}
-				}
-			}
-			#Don't give wargoal on same country twice
-			if = {
-				limit = {
-					NOT = { 525 = { CONTROLLER = { controls_state = 527 } } }
-				}
-				525 = {
-					CONTROLLER = {
-						ROOT = {
-							create_wargoal = {
-								type = take_state_focus
-								target = PREV
-								generator = { 525 }
-							}
+							generator = { 525 }
 						}
 					}
 				}
@@ -2402,7 +2391,6 @@ shared_focus = {
 				}
 			}
 		}
-		activate_mission_tooltip = CHI_overlordship_over_indochina
 		hidden_effect = {
 			news_event = { id = wtt_news.47 days = 3}
 		}

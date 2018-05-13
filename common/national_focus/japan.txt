@@ -138,12 +138,9 @@ focus_tree = {
 			factor = 10
 			modifier = {
 				factor = 0
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						is_major = yes
-					}
-					has_war_with_amount > 2
+				any_other_country = {
+					has_war_with = ROOT
+					is_major = yes
 				}
 			}
 		}
@@ -841,34 +838,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = axis_leanings_focus
-		prerequisite = { focus = JAP_Draft }
-		available = {
-			country_exists = GER
-		}
-		x = 3
-		y = 6
-		cost = 5
-		icon = GFX_goal_molotov_ribbentrop_pact
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = axis_leanings_focus }
-			GER = {
-				add_opinion_modifier = { target = JAP modifier = axis_leanings_focus }
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.212 }
-			}
-			GER = {
-				add_to_faction = ROOT
-			}
-		}
-	}
-
 	focus = {
 		id = JAP_Ports
 		x = 10
@@ -1300,12 +1269,9 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						is_major = yes
-					}
-					has_war_with_amount > 1
+				any_other_country = {
+					has_war_with = ROOT
+					is_major = yes
 				}
 			}
 		}
@@ -1399,7 +1365,6 @@ focus_tree = {
 						has_war_with = ROOT
 						is_major = yes
 					}
-					has_war_with_amount > 1
 					AND = {
 						has_war = yes
 						is_in_faction = no

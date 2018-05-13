@@ -1266,4 +1266,14 @@ focus_tree = {
 
 		completion_reward = { }
 	}
+
+	focus = {
+		id = MAN_bolster_nationalism
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
 }

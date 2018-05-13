@@ -74,7 +74,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				great_war_hero
 			}
 		}
 		hidden_effect = {
@@ -221,7 +220,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				anti_democrat imperial_connections
 			}
 		}
 		hidden_effect = { news_event = { id = wtt_news.3 hours = 6 } }
@@ -264,7 +262,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				popular_figurehead2
 			}
 		}
 		custom_effect_tooltip = wtt_germany.5_tt
@@ -292,7 +289,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				anti_democrat imperial_connections
 			}
 		}
 		hidden_effect = { news_event = { id = wtt_news.4 hours = 6 } }
@@ -351,7 +347,6 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_ideas = GER_preparing_ITA_coup
 		GER = {
 			country_event = { id = wtt_germany.9 days = 1 random = 2 }
 		}
@@ -413,10 +408,6 @@ country_event = {
 		name = wtt_germany.11.a
 		set_politics = { ruling_party = neutrality elections_allowed = no }
 		add_popularity = { ideology = neutrality popularity = 0.1 }
-		swap_ideas = {
-			remove_idea = GER_preparing_ITA_coup
-			add_idea = GER_preparing_ITA_coup2
-		}
 		remove_ideas = victor_emmanuel
 		create_country_leader = {
 			name = "Victor Emmanuel III"
@@ -618,9 +609,6 @@ country_event = {
 	# Oh dear
 	option = {
 		name = wtt_germany.17.a
-		effect_tooltip = {
-			add_ideas = GER_communist_refugees
-		}
 	}
 }
 
@@ -673,8 +661,6 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		add_named_threat = { threat = 10 name = GER_soviet_military_exercises }
-		add_timed_idea = { idea = GER_soviet_military_exercises days = 365 }
 		army_experience = 50
 		add_political_power = 100
 		hidden_effect = { news_event = { id = wtt_news.9 hours = 6 } }
@@ -710,7 +696,6 @@ country_event = {
 			factor = 90
 		}
 		add_named_threat = { threat = 5 name = GER_soviet_reiterated_claims }
-		add_timed_idea = { idea = GER_soviet_protect_our_sphere days = 365 }
 		add_political_power = 100
 		add_state_claim = 722
 		add_state_claim = 147
@@ -891,7 +876,6 @@ country_event = {
 	# Oh dear
 	option = {
 		name = wtt_germany.24.a
-		effect_tooltip = { add_ideas = GER_the_great_red_menace }
 	}
 }
 
@@ -941,7 +925,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				popular_figurehead2
 			}
 		}
 	}
@@ -979,7 +962,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				popular_figurehead2
 			}
 		}
 	}
@@ -1517,10 +1499,6 @@ country_event = {
 			}
 		}
 		white_peace = HOL
-		add_timed_idea = {
-			idea = kaiser_challenge_met
-			days = 183
-		}
 	}
 }
 
@@ -2144,7 +2122,6 @@ country_event = {
 							}
 						}
 						ARG = {
-							add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
 							country_event = { id = wtt_germany.1004 days = 1095 random = 365 }
 						}
 					}
@@ -2975,8 +2952,6 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				kaiserin_of_the_people
-				victoria_iii # Third Victoria counting from Queen Victoria hurr durr
 			}
 		}
 		hidden_effect = { set_global_flag = hindenburg_destroyed }
@@ -3032,7 +3007,6 @@ country_event = {
 			ideology = nazism
 			traits = {
 				dictator
-				incognito
 			}
 		}
 	}
