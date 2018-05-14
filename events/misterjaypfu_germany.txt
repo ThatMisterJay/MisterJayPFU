@@ -170,11 +170,130 @@ country_event = {
 		GER = {
 			white_peace = {
 				tag = SOV
-				message = FIN_agree_peace
+				message = SOV_agree_peace
 			}
 			white_peace = {
 				tag = MON
-				message = FIN_agree_peace
+				message = SOV_agree_peace
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { ROM = { has_war_with = SOV } }
+				ROM = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { BUL = { has_war_with = SOV } }
+				BUL = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { ITA = { has_war_with = SOV } }
+				ITA = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { SPR = { has_war_with = SOV } }
+				SPR = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { HUN = { has_war_with = SOV } }
+				HUN = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { CRO = { has_war_with = SOV } }
+				CRO = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { SLO = { has_war_with = SOV } }
+				SLO = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { EFR = { has_war_with = SOV } }
+				EFR = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
+			}
+			if = {
+				limit = { ROM = { has_war_with = SOV } }
+				ROM = {
+					white_peace = {
+						tag = SOV
+						message = SOV_agree_peace
+					}
+					white_peace = {
+						tag = MON
+						message = SOV_agree_peace
+					}
+				}
 			}
 		}
 		GER = {
