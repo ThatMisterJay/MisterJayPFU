@@ -661,6 +661,11 @@ sound =
 	name = "ambient_town_entites_01"
 	file = "animations/ambient_town_entites_01.wav"
 }
+
+sound = {
+	name = "air_mission_select_01"
+	file = "menu/air_mission_select_01.wav"
+}
 #################################################################
 #################### PEACE CONFERENCE ###########################
 #################################################################

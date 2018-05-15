@@ -923,6 +923,15 @@ soundeffect =
 		sound = convoy_transport_unit_01
 	}
 }
+soundeffect = {
+	name = "air_mission_select"
+	volume = 0.5
+	sounds = {
+		sound = "air_mission_select_01"
+	}
+	max_audible = 2
+	max_audible_behaviour = fail
+}
 soundeffect =
 {
 	name = select_aircraft
