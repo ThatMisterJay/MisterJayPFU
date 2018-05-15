@@ -17,7 +17,7 @@ category = {
 	enemy_declare_war
 	horse_walking
 	tutorial_objective_done
-	
+
 	######## INGAME ALERT - topbar
 	# simple sound effect. at least important and less important
 	alert_is_observer_sound #5
@@ -52,7 +52,7 @@ category = {
 	alert_paused_diplomatic_actions_sound # 3
 	alert_no_equipment_production_sound #4
 	alert_port_strike_results_sound
-	
+
 	######## INGAME ALERT - sidebar
 	# important and less so by type (naval/air/land)
 	alert_hostile_troops_sound #1
@@ -67,7 +67,7 @@ category = {
 	alert_expensive_ships_low_str_sound #2
 	alert_resistance_sound # 3
 	alert_battleplans_with_no_divs_sound # 5
-	
+
 	####### SHIPS
 	ship_idle_battleship
 	ship_idle_destroyer
@@ -91,7 +91,7 @@ category = {
 	order_invalid_effect
 	orders_disband
 	order_convoy_transport
-	
+
 	###### OTHER
 	nuke
 	distance_nuke
@@ -100,12 +100,22 @@ category = {
 	building_bombed
 	ambient_town_entites
 	building_sabotaged
-	
+
+	###### DECISIONS
+ 	decisions_ui_checkbox
+ 	decisions_ui_tab
+ 	decisions_ui_button
+
+
+	####### TRAIT
+ 	traits_ui_click
+ 	traits_ui_over
+
 	####### TEST
 	pause_button
 	time_down
 	time_up
-	
+
 	####### WEATHER
 	weather_cloud_winds
 	weather_lightning_storm
@@ -117,8 +127,8 @@ category = {
 	ambient_ocean
 	amb_battle_distant
  }
- 
- compressor = 
+
+ compressor =
  {
 	enabled = yes
 	pregain = 3.0
@@ -156,7 +166,7 @@ category = {
 	ITA_infantry_rifle_attack
 	USA_mechanized_units_mg_fire
 	GER_mechanized_units_mg_fire
-	
+
 	ship_hit_big_effect
 	ship_miss_big_effect
 	ship_hit_small_effect
@@ -172,7 +182,6 @@ category = {
 	ships_destroyer_attacked
 	ship_destroyer_damaged_defending_01
 	ship_destroyer_damaged_attacking_01
-	ships_destroyer_damage_defend
 	ships_destroyer_death
 	ships_heavy_cruiser_attack
 	ships_heavy_cruiser_death
@@ -184,7 +193,7 @@ category = {
 	ships_light_cruiser_attacked
 	light_cruiser_attack_damaged
 	light_cruiser_defend_damaged_01
-	
+
 	distance_mechanized_units_mg_fire
 	distance_artillery_unit_fire_01
 
@@ -202,7 +211,6 @@ category = {
 	distance_ships_destroyer_attacked
 	distance_ship_destroyer_damaged_defending_01
 	distance_ship_destroyer_damaged_attacking_01
-	distance_ships_destroyer_damage_defend
 	distance_ships_destroyer_death
 	distance_ships_heavy_cruiser_attack
 	distance_ships_heavy_cruiser_death
@@ -214,7 +222,7 @@ category = {
 	distance_ships_light_cruiser_attacked
 	distance_light_cruiser_attack_damaged
 	distance_light_cruiser_defend_damaged_01
-	
+
 	airplane_bomb
 	airplane_crash
 	airplane_light_fire
@@ -224,7 +232,7 @@ category = {
 	airplane_heavy_idle_01
 	airplane_jet_idle
 	GER_stuka
-	
+
 	distance_airplane_bomb
 	distance_airplane_crash
 	distance_airplane_light_fire
@@ -233,10 +241,10 @@ category = {
 	distance_airplane_medium_idle_01
 	distance_airplane_heavy_idle_01
 	distance_airplane_jet_idle
-	
+
  }
- 
- compressor = 
+
+ compressor =
  {
 	enabled = yes
 	pregain = 6.0
@@ -256,7 +264,7 @@ category = {
 	click_ok
 	click_checkbox
 	click_scroll
-	click_chat 
+	click_chat
 	click_battleplan
 	click_action
 	click_send
@@ -288,8 +296,8 @@ category = {
 	assign_unit_frontline
 	edit_naval_orders
  }
- 
- compressor = 
+
+ compressor =
  {
 	enabled = yes
 	pregain = 3.0

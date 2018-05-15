@@ -709,7 +709,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			load_focus_tree = china_nationalist_focus
+			load_focus_tree = china
 			set_cosmetic_tag = CHI_warlord_leader
 			every_state = {
 				limit = {

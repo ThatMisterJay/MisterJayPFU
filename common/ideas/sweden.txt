@@ -655,29 +655,6 @@ ideas = {
 			}
 		}
 
-		pansarskepp = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_navy_bonus
-
-			equipment_bonus = {
-				coastal_defense_ship = {
-					#anti_air_attack = 0.2	instant = yes
-					fire_range = 0.1		instant = yes
-					attack = 0.3			instant = yes
-					#build_cost_ic = 0.1		instant = yes
-				}
-			}
-		}
-
 
 		SWE_small_arms_finland = {
 			allowed = {
@@ -1585,7 +1562,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				category_artillery = {
+				artillery = {
 					reliability = 0.20
 				}
 			}

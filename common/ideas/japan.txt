@@ -382,40 +382,9 @@ ideas = {
 				can_create_factions = no
 			}
 		}
-		japanese_liscense_cost_int_one = {
-			picture = generic_production_bonus
-			allowed = {
-				always = no
-			}
-
-			equipment_bonus = {
-				jap_fighter = {
-					build_cost_ic = 0.05 instant = yes
-				}
-				jap_ijn_land_fighter = {
-					build_cost_ic = 0.05 instant = yes
-				}
-			}
-		}
-
-		japanese_liscense_cost_int_two = {
-			picture = generic_production_bonus
-			allowed = {
-				always = no
-			}
-
-			equipment_bonus = {
-				jap_fighter = {
-					build_cost_ic = 0.1 instant = yes
-				}
-				jap_ijn_land_fighter = {
-					build_cost_ic = 0.1 instant = yes
-				}
-			}
-		}
 	}
 
-		political_advisor = {
+	political_advisor = {
 
 		kingoro_hashimoto = {
 

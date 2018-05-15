@@ -87,7 +87,7 @@ set_technology = {
 	complete_national_focus = industrial_effort_focus2
 	declare_war_on = {
 		target = CHI
-		type = puppet_focus
+		type = annex_everything
 	}
 	#declare_war_on = {
 	#	target = GXC

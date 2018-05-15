@@ -1191,7 +1191,7 @@ ideas = {
 					hard_attack = 0.1
 					ap_attack = 0.05
 					maximum_speed = -0.15
-			}
+				}
 				heavy_tank_artillery_equipment = {
 					armor_value = 0.10
 					breakthrough = 0.05
@@ -1208,15 +1208,13 @@ ideas = {
 					hard_attack = 0.1
 					ap_attack = 0.05
 				}
-				light_artillery_equipment = {
+				light_tank_artillery_equipment = {
 					maximum_speed = 0.1
 					reliability = 0.1
 					soft_attack = 0.05
+				}
+			}
 		}
-	}
-		}
-
-
 	}
 
 	theorist = {

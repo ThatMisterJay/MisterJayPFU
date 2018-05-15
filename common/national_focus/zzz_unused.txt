@@ -68,6 +68,16 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_ally_the_shade
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
 		id = GER_tackle_the_communist_threat
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -1038,6 +1048,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_align_hungary
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = GER_align_romania
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
 		id = GER_turkey_friend
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -1096,6 +1126,17 @@ focus_tree = {
 
 		completion_reward = { }
 	}
+
+	focus = {
+		id = CZE_faction_tech_sharing
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
 
 	focus = {
 		id = JAP_strike_on_the_southern_resource_area
@@ -1178,6 +1219,16 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
 		id = CHI_united_front
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -1188,7 +1239,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_assasinate_mussolini
+		id = GER_assassinate_mussolini
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 0
@@ -1269,6 +1320,166 @@ focus_tree = {
 
 	focus = {
 		id = MAN_bolster_nationalism
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = CHI_60_divisions_plan
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = CHI_foreign_threats
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = MAN_five_people_armies
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = MAN_local_arms_procurement
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = MAN_purge_the_general_affairs_council
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = MAN_five_equal_peoples
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = MAN_request_control_of_the_railways
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = AST_the_singapore_strategy
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = CAN_rowell_sirois_commission
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = CHI_dare_to_die_corps
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = JAP_warrior_spirit
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = CHI_war_of_national_liberation
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = RAJ_chindits
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = northern_expansion_focus
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = axis_leanings_focus
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = HUN_naval_warfare
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 0

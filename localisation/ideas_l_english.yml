@@ -1,4 +1,7 @@
 ﻿l_english:
+received_attache:0 "Received attaché"
+received_attache_desc:0 "Foreign military attachés residing in our country."
+ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the following effects:"
  operation_citadel:0 "Operation Citadel"
  operation_citadel_desc:0 "We've lost the battle for the oil fields and the Caucuses, however the war is not lost. We still control large portions of the Soviet union, enough to fight a staggered retreat across the front to wear down the Soviets, but before we can begin defensive operations we must make one more offensive to stabalize the frontline."
  pfu.citadel.tt:0 "Deploys 3 mechanized, and 2 heavy tank divisions in Kiev and gain some infantry equipment."

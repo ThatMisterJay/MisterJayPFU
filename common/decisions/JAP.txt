@@ -249,65 +249,6 @@ foreign_politics = {
 }
 
 #Category allowed for JAP
-#Not visible if puppet
-JAP_southern_expansion = {
-
-	JAP_pressure_france = {
-
-		available = {
-			16 = { NOT = { is_controlled_by = FRA } }
-			custom_trigger_tooltip = {
-				tooltip = demand_indochina_focus_tt
-				NOT = { has_war_with = FRA }
-				NOT = { is_in_faction_with = FRA }
-				OR = {
-					286 = { is_fully_controlled_by = FRA }
-					670 = { is_fully_controlled_by = FRA }
-					671 = { is_fully_controlled_by = FRA }
-				}
-			}
-		}
-
-		visible = {
-			has_completed_focus = JAP_strike_south_doctrine
-		}
-
-		fire_only_once = yes
-
-
-		modifier = {
-
-		}
-
-		cost = 75
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				FRA = { has_war = no }
-			}
-			modifier = {
-				factor = 3
-				FRA = { has_war = yes }
-				OR = {
-					16 = { NOT = { is_controlled_by = FRA } } #Paris
-					strength_ratio = {
-						tag = FRA
-						ratio > 0.9
-					}
-				}
-			}
-		}
-
-		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
-		}
-
-	}
-}
-
-#Category allowed for JAP
 #Visible when has completed JAP_pacific_guardian focus.
 #Visible if independent
 JAP_pacific_guardian = {
@@ -677,7 +618,6 @@ political_actions = {
 		}
 
 		visible = {
-			has_idea = JAP_the_london_naval_treaty
 			has_completed_focus = JAP_join_the_london_naval_treaty
 		}
 
@@ -698,7 +638,6 @@ political_actions = {
 		}
 
 		complete_effect = {
-			remove_ideas = JAP_the_london_naval_treaty
 			FRA = { add_opinion_modifier = { target = ROOT modifier = JAP_broke_the_london_naval_treaty } }
 			USA = { add_opinion_modifier = { target = ROOT modifier = JAP_broke_the_london_naval_treaty } }
 			ENG = { add_opinion_modifier = { target = ROOT modifier = JAP_broke_the_london_naval_treaty } }

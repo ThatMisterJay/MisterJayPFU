@@ -193,42 +193,23 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
-3612;9603;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3612;778;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3612;611;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3612;11570;impassable;-1;-1;-1;-1;-1;;swiss mountains
-9587;11570;impassable;-1;-1;-1;-1;-1;;swiss mountains
-9587;6635;impassable;-1;-1;-1;-1;-1;;swiss mountains
-636;6635;impassable;-1;-1;-1;-1;-1;;swiss mountains
-9600;607;impassable;-1;-1;-1;-1;-1;;swiss mountains
-9600;9584;impassable;-1;-1;-1;-1;-1;;swiss mountains
-9600;6661;impassable;-1;-1;-1;-1;-1;;swiss mountains
-658;6661;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3662;6661;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3662;11587;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3660;11587;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3660;6675;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3660;9633;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3660;6678;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3660;6680;impassable;-1;-1;-1;-1;-1;;swiss mountains
-3641;607;impassable;-1;-1;-1;-1;-1;;swiss mountains
-4318;12789;impassable;-1;-1;-1;-1;-1;;burma 
-4996;12789;impassable;-1;-1;-1;-1;-1;;burma 
-4996;12898;impassable;-1;-1;-1;-1;-1;;burma 
-4996;10863;impassable;-1;-1;-1;-1;-1;;burma 
-10920;10863;impassable;-1;-1;-1;-1;-1;;burma 
-12363;10863;impassable;-1;-1;-1;-1;-1;;burma 
+4318;12789;impassable;-1;-1;-1;-1;-1;;burma
+4996;12789;impassable;-1;-1;-1;-1;-1;;burma
+4996;12898;impassable;-1;-1;-1;-1;-1;;burma
+4996;10863;impassable;-1;-1;-1;-1;-1;;burma
+10920;10863;impassable;-1;-1;-1;-1;-1;;burma
+12363;10863;impassable;-1;-1;-1;-1;-1;;burma
 4210;10863;impassable;-1;-1;-1;-1;-1;;burma
-4210;7976;impassable;-1;-1;-1;-1;-1;;burma 
+4210;7976;impassable;-1;-1;-1;-1;-1;;burma
 4210;5009;impassable;-1;-1;-1;-1;-1;;burma
 4210;10413;impassable;-1;-1;-1;-1;-1;;burma
-7400;10413;impassable;-1;-1;-1;-1;-1;;burma 
-7909;10413;impassable;-1;-1;-1;-1;-1;;burma 
+7400;10413;impassable;-1;-1;-1;-1;-1;;burma
+7909;10413;impassable;-1;-1;-1;-1;-1;;burma
 7909;10776;impassable;-1;-1;-1;-1;-1;;burma
-4568;10776;impassable;-1;-1;-1;-1;-1;;burma  
-12433;10776;impassable;-1;-1;-1;-1;-1;;burma 
-12392;10776;impassable;-1;-1;-1;-1;-1;;burma 
-12392;1522;impassable;-1;-1;-1;-1;-1;;burma 
+4568;10776;impassable;-1;-1;-1;-1;-1;;burma
+12433;10776;impassable;-1;-1;-1;-1;-1;;burma
+12392;10776;impassable;-1;-1;-1;-1;-1;;burma
+12392;1522;impassable;-1;-1;-1;-1;-1;;burma
 12319;1522;impassable;-1;-1;-1;-1;-1;;burma
 12319;1114;impassable;-1;-1;-1;-1;-1;;burma
 12008;1196;impassable;-1;-1;-1;-1;-1;;burma

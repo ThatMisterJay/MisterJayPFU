@@ -609,7 +609,7 @@ focus_tree = {
 				has_war_with = JAP
 				has_war_with = MAN
 			}
-			has_country_flag = CHI_lessons_of_war_completed
+			has_country_flag = CHI_army_reform_completed
 		}
 
 		bypass = {
