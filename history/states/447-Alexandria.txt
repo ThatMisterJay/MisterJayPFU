@@ -6,19 +6,19 @@ state={
 	resources={
 		oil=12
 	}
-	
+
 	state_category = town
 
 	history={
 		owner = ENG
-		
+
 		victory_points = {
-			4076 10 
+			4076 10
 		}
-		
+
 		victory_points = {
-			1071 1 
-		}		
+			1071 1
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
@@ -28,11 +28,9 @@ state={
 				naval_base = 8
 			}
 		}
-
-		add_core_of = EGY
 	}
 
 	provinces={
-		1071 4076 4145 7091 7164 10073 11964  
+		1071 4076 4145 7091 7164 10073 11964
 	}
 }

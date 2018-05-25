@@ -1,0 +1,16 @@
+state={
+	id=772
+	name="STATE_772"
+	provinces={
+		102 3059 3093 6114 6136 6184 6204 6216 9032 9047 9135 9170 9227 11037 11101 11113 11198 11206
+	}
+	manpower=1
+	impassable = yes
+	buildings_max_level_factor=1.000
+	history={
+		owner = NOR
+		add_core_of = NOR
+	}
+
+	state_category=wasteland
+}

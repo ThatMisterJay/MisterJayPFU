@@ -7,7 +7,7 @@ state={
 		oil=14
 		aluminium=12
 	}
-	
+
 	state_category = large_city
 
 	history={
@@ -18,7 +18,6 @@ state={
 		buildings = {
 			infrastructure = 7
 			arms_factory = 3
-			industrial_complex = 3
 			air_base = 8
 		}
 		add_core_of = SOV
@@ -31,6 +30,6 @@ state={
 	}
 
 	provinces={
-		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557
 	}
 }
