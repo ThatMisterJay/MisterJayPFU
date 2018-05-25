@@ -57,6 +57,7 @@ country_event = {
 			}
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
+			add_named_threat = { threat = 2 name = SPR_civil_war_threat }
 
 			load_oob = "SPA_Civil_War"
 			set_equipment_fraction = 0.5
@@ -72,51 +73,6 @@ country_event = {
 		}
 		custom_effect_tooltip = nationalists_chosen
 	}
-	# option = { # Support Republicans
-		# name = spain.1.b
-				# ai_chance = {
-			# base = 0
-		# }
-		# hidden_effect = {
-			# start_civil_war = {
-				# ideology = fascism
-				# size = 0.5
-				# capital = 176
-				# states = { 166 699 178 290 169 170 176 174 171 177 297 }
-			# }
-			# random_other_country = {
-				# limit = {
-					# original_tag = SPR
-					# has_government = fascism
-				# }
-				# set_equipment_fraction = 0.5
-				# set_stability = 0.9
-				# country_event = { id = spain.2 days = 1 }
-				# load_oob = "SPA_Civil_War"
-			# }
-			# news_event = { hours = 6 id = news.63 }
-			# set_global_flag = spanish_civil_war
-
-			# set_politics = {
-				# ruling_party = communism
-				# elections_allowed = no
-			# }
-			# add_popularity = {
-				# ideology = communism
-				# popularity = 0.5
-			# }
-			# add_popularity = {
-				# ideology = fascism
-				# popularity = -1
-			# }
-			# load_oob = "SPR_Civil_War"
-			# set_equipment_fraction = 0.5
-			# set_stability = 0.9
-
-			# country_event = { id = spain.3 days = 7 }
-		# }
-		# custom_effect_tooltip = republicans_chosen
-	# }
 }
 
 # Nationalists: Seek Support

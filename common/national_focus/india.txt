@@ -244,7 +244,7 @@ focus_tree = {
 
 		completion_reward = {
 			RAJ = { add_timed_idea = { idea = RAJ_cost_of_ceylon days = 120 } }
-			RAJ = { add_timed_idea = { idea = RAJ_protect_ceylon days = 365 } }
+			RAJ = { add_timed_idea = { idea = RAJ_protect_ceylon days = 120 } }
 			ENG = { add_timed_idea = { idea = ENG_colonial_trade days = 80 } }
 
 			custom_effect_tooltip = RAJ_protect_ceylon_tt
@@ -841,18 +841,30 @@ focus_tree = {
 					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
 					traits = { }
 					skill = 4
+					attack_skill = 5
+					defense_skill = 4
+					planning_skill = 4
+					logistics_skill = 5
 				}
 				create_corps_commander = {
 					name = "Kodendera Subayya Thimayya"
 					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
 					traits = { jungle_rat }
 					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 4
 				}
 				create_corps_commander = {
 					name = "Jayanto Nath Chaudhuri"
 					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
 					traits = { panzer_leader }
 					skill = 3
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 3
 				}
 			}
 		}

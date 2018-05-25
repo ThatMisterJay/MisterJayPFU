@@ -10,7 +10,10 @@ country_event = {
 	trigger = {
 		tag = ETH
 		has_war_with = ITA
-		has_stability < 0.10
+		OR = {
+			has_stability < 0.10
+			surrender_progress > 0.75
+		}
 	}
 
 	mean_time_to_happen = {
@@ -26,10 +29,16 @@ country_event = {
 		}
 
 		ITA = {
-			annex_country = { target = ETH transfer_troops = yes }
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1500 producer = ETH }
+			annex_country = { target = ETH transfer_troops = no }
 			news_event = { id = ethiopia.2 days = 1 }
 		}
+		hidden_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1500 producer = ETH }
+			271 = {
+				remove_core_of = ETH
+			}
+		}
+		add_threat = -2
 	}
 }
 

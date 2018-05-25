@@ -27,8 +27,7 @@ focus_tree = {
 		}
 
 		available = {
-			SIA = { is_ai = yes }
-			date > 1941.1.1
+			date > 1940.1.1
 		}
 
 		cancel_if_invalid = yes
@@ -145,16 +144,33 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = CHI
-				generator = { 608 }
-			}
-			hidden_effect ={
-				news_event = { hours = 6 id = news.231 }
-				CHI = {
-					country_event = { id = china.100 }
+			declare_war_on = { target = CHI type = puppet_wargoal_focus }
+			declare_war_on = { target = PRC type = puppet_wargoal_focus }
+			hidden_effect = {
+				add_named_threat = { threat = -3 name = JAP_war_with_china }
+				MAN = {
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = CHI
+					}
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = PRC
+					}
 				}
+
+				MEN = {
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = CHI
+					}
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = PRC
+					}
+				}
+				news_event = { hours = 6 id = news.231 }
+				CHI = { country_event = { id = china.100 } }
 			}
 		}
 	}

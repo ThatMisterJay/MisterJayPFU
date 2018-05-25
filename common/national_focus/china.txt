@@ -670,29 +670,11 @@ focus_tree = {
 		y = 1
 		cost = 21.5
 		completion_reward = {
-		add_stability = -0.05
-		annex_country = { target = SIK transfer_troops = yes }
-		}
-
-	}
-	focus = {
-		id = CHI_tibet_friend
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = CHI_army_reform }
-		relative_position_id = CHI_army_reform
-
-		available = {
-			CHI = { owns_state = 716 }
-		}
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = {
-			annex_country = { target = TIB transfer_troops = yes }
+			add_stability = -0.05
+			annex_country = { target = SIK transfer_troops = yes }
+			remove_country_leader_trait = stubborn_surrender
 		}
 	}
-
-
 
 	focus = {
 		id = CHI_army_reform

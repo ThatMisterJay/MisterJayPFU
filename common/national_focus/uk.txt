@@ -1668,7 +1668,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		x = 22
 		y = 0
-		cost = 8.6
+		cost = 10
 
 		available_if_capitulated = yes
 

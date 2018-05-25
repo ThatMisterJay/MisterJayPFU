@@ -343,7 +343,13 @@ country_event = {
 	desc = soviet.13.d
 	picture = GFX_report_event_soviet_tanks_snow
 
-	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		has_global_flag = soviet_demand
+		NOT = { has_global_flag = finland_refuse }
+	}
+	mean_time_to_happen = { days = 5 }
 
 	option = {
 		name = soviet.13.a
@@ -352,6 +358,7 @@ country_event = {
 			target = FIN
 			generator = { 146 }
 		}
+		set_global_flag = finland_refuse
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.12 }
@@ -1104,13 +1111,14 @@ country_event = {
 	desc = soviet.31.d
 	picture = GFX_report_event_stalin_propaganda
 
-	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		tag = SOV
-		num_of_factories > 2000
+		has_global_flag = finland_flag
+		NOT = { has_country_flag = karjala_demand }
 	}
+	mean_time_to_happen = { days = 5 }
 
 	immediate = { set_country_flag = karjala_demand }
 

@@ -14,7 +14,7 @@ focus_tree = {
 
 	############################
 	#### PUPPET NON-PLAYERS ####
-	############################ 
+	############################
 
 	focus = {
 		id = GER_puppet_bulgaria
@@ -31,6 +31,7 @@ focus_tree = {
 		available = {
 			BUL = { is_ai = yes }
 			date > 1939.1.1
+			NOT = { BUL = { is_puppet_of = GER } }
 		}
 
 		cancel_if_invalid = yes
@@ -53,6 +54,7 @@ focus_tree = {
 		available = {
 			HUN = { is_ai = yes }
 			date > 1939.1.1
+			NOT = { BUL = { is_puppet_of = HUN } }
 		}
 
 		ai_will_do = {
@@ -78,9 +80,8 @@ focus_tree = {
 
 		available = {
 			country_exists = EFR
-			EFR = {
-				is_in_faction_with = GER
-			}
+			EFR = { is_in_faction_with = GER }
+			NOT = { EFR = { is_puppet_of = GER } }
 		}
 
 		ai_will_do = {
@@ -1144,6 +1145,10 @@ focus_tree = {
 		y = 2
 		cost = 0.2
 
+		bypass = {
+			date > 1941.9.21
+		}
+
 		completion_reward = {
 			add_timed_idea = { idea = GER_blitzkrieg days = 100 }
 			ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 100 } }
@@ -1688,6 +1693,9 @@ focus_tree = {
 					country_event = { id = germany.113 days = 1 }
 				}
 				custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
+			}
+			hidden_effect = {
+				ENG = { add_to_faction = POL }
 			}
 		}
 	}

@@ -25,12 +25,12 @@ equipments = {
 		anti_air_attack = 0.5
 
 		armor_value = 0
-		evasion = 60
+		evasion = 75
 
 		surface_detection = 30
 		sub_detection = 0
 		surface_visibility = 8
-		sub_visibility = 30
+		sub_visibility = 20
 		naval_speed = 20
 		reliability = 0.60
 
@@ -80,12 +80,12 @@ equipments = {
 		anti_air_attack = 1
 
 		armor_value = 0
-		evasion = 65
+		evasion = 77.5
 
 		surface_detection = 40
 		sub_detection = 0
 		surface_visibility = 8
-		sub_visibility = 25
+		sub_visibility = 15
 		naval_speed = 25
 		reliability = 0.70
 
@@ -120,12 +120,12 @@ equipments = {
 		anti_air_attack = 1.5
 
 		armor_value = 0
-		evasion = 70
+		evasion = 80
 
 		surface_detection = 50
 		sub_detection = 0
 		surface_visibility = 8
-		sub_visibility = 15
+		sub_visibility = 12.5
 		naval_speed = 27
 		reliability = 0.75
 
@@ -160,7 +160,7 @@ equipments = {
 		anti_air_attack = 1.5
 
 		armor_value = 0
-		evasion = 75
+		evasion = 82.5
 
 		surface_detection = 70
 		sub_detection = 0

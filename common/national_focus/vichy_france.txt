@@ -434,6 +434,10 @@ focus_tree = {
 				traits = { panzer_leader  }
 				id = 799
 				skill = 4
+				attack_skill = 3
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 4
 			}
 		}
 	}

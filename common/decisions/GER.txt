@@ -139,6 +139,37 @@ political_actions = {
 		}
 	}
 
+	capitulate_to_allies = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			GER = { has_war_with = SOV }
+			SOV = { surrender_progress < 0.80 }
+			date > 1941.10.1
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+
+		visible = {
+			GER = { has_war_with = SOV }
+			SOV = { surrender_progress < 0.80 }
+		}
+
+		complete_effect = {
+			GER = { country_event = { id = JFU_germany.18 days = 1 } }
+		}
+	}
+
 	# Reinstate Wilhelm IV into the line of succession
 	reinstate_wilhelm_iv_succession_rights = {
 

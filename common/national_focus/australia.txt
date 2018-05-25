@@ -58,6 +58,35 @@ focus_tree = {
 #	}
 
 	############################
+	#### Annex NON-PLAYERS ####
+	############################
+
+	focus = {
+		id = AST_annex_new_zealand
+		icon = GFX_goal_generic_military_deal
+		x = 22
+		y = 6
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			NZL = { is_ai = yes }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			annex_country = { target = NZL transfer_troops = yes }
+		}
+	}
+
+	############################
 	####### ARMY SECTION #######
 	############################
 
@@ -2241,7 +2270,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2368,7 +2397,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
