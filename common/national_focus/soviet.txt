@@ -428,18 +428,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		 cancel_if_invalid = no
+		cancel_if_invalid = no
 		continue_if_invalid = yes
 		completion_reward = {
-						create_field_marshal = {
-	name = "Georgy Zhukov"
-	id = 410
-		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { defensive_doctrine offensive_doctrine thorough_planner organisational_leader logistics_wizard }
-	skill = 7
-
-
-}
+			create_field_marshal = {
+				name = "Georgy Zhukov"
+				id = 410
+				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+				traits = { defensive_doctrine offensive_doctrine thorough_planner organisational_leader logistics_wizard }
+				skill = 7
+				attack_skill = 7
+				defense_skill = 6
+				planning_skill = 7
+				logistics_skill = 7
+			}
 			add_ideas = general_winter_idea
 			add_ideas = great_patriotic_war
 
