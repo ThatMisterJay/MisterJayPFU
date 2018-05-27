@@ -1,0 +1,23 @@
+#formable_nations = {
+#
+#	icon = generic_formable_nations
+#
+#	allowed = {
+#		has_dlc = "Waking the Tiger"
+#	}
+#}
+
+music_selection = {
+
+	icon = GFX_music_decision
+
+	picture = GFX_music_decision
+
+	allowed = {
+		NOT = { has_country_flag = hide_music_selection }
+	}
+
+	visible = {
+		NOT = { has_country_flag = hide_music_selection }
+	}
+}

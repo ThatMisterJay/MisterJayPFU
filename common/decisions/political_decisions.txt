@@ -1688,7 +1688,7 @@ political_actions = {
 			factor = 0
 		}
     }
-    
+
 	ban_fascist_party = {
 
 		icon = generic_civil_support
@@ -1929,6 +1929,29 @@ political_actions = {
 
 		days_remove = 360
 		cost = 150
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	show_music_selection = {
+
+		icon = GFX_music_decision
+
+		allowed = {
+		}
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = hide_music_selection
+		}
+
+		complete_effect = {
+			clr_country_flag = hide_music_selection
+		}
 
 		ai_will_do = {
 			factor = 0

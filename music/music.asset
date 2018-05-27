@@ -7,27 +7,32 @@ music = {
 }
 
 # General Peace:
-music = {
+music = { # UNUSED
+	name = "general_peace_1"
+	file = "intro.ogg"
+	volume = 1.00
+}
+music = { # LONG USED
 	name = "general_peace_2"
 	file = "Egmont Overture by Beethoven.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_1337"
 	file = "Symphony No. 7 Allegretto 2nd movement by Beethoven.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_6"
 	file = "Blue Danube by Strauss.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_7"
 	file = "Piano Concerto 1 by Tchaikovsky.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_10"
 	file = "La Folia by Vivaldi.ogg"
 	volume = 1.00
@@ -37,20 +42,32 @@ music = {
 	file = "Ride of the Valkyries by Wagner.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_13"
 	file = "Gotterdammerung by Wagner.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_14"
 	file = "Sonata No. 8 1st movement.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_peace_16"
 	file = "Sonata No. 8 3rd movement.ogg"
 	volume = 1.00
+}
+
+music = {
+	name = "general_peace_17"
+	file = "Scott Joplin - The Entertainer.ogg"
+	volume = 1.10
+}
+
+music = {
+	name = "general_peace_18"
+	file = "Scott Joplin - Maple Leaf Rag.ogg"
+	volume = 1.10
 }
 
 # General war:
@@ -69,7 +86,7 @@ music = {
 	file = "general_war_bringforththetanks.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "general_war_4"
 	file = "Hungarian Rhapsody No. 2 (Orchestra) by Liszt.ogg"
 	volume = 1.00
@@ -99,6 +116,11 @@ music = {
 	file = "operationbarbarossa.ogg"
 	volume = 1.00
 }
+music = {
+	name = "general_war_10"
+	file = "achtungpanzer.ogg"
+	volume = 1.00
+}
 
 
 
@@ -110,7 +132,7 @@ music = {
 	file = "heavywater.ogg"
 	volume = 1.00
 }
-music = {
+music = { # LONG USED
 	name = "allies_war_2"
 	file = "Romanian Rhapsody No. 2 by Enescu.ogg"
 	volume = 1.00
@@ -125,7 +147,7 @@ music = {
 	file = "Canon in D by Pachelbel.ogg"
 	volume = 1.00
 }
-music = {
+music = { #LONG USED
 	name = "allies_war_5"
 	file = "William Tell Overture by Rossini.ogg"
 	volume = 1.00
@@ -133,7 +155,7 @@ music = {
 
 
 # Axis Peace:
-music = {
+music = { # LONG USED
 	name = "axis_peace_1"
 	file = "Appassionata 3rd movement.ogg"
 	volume = 1.00
@@ -145,7 +167,7 @@ music = {
 	volume = 1.00
 }
 
-music = {
+music = { # LONG USED
 	name = "axis_peace_4"
 	file = "Swan Lake Waltz by Tchaikovsky.ogg"
 	volume = 1.00
@@ -162,7 +184,7 @@ music = {
 	file = "Ungarischer Tanz (Hungarian Dance) No. 5 by Brahms.ogg"
 	volume = 0.50
 }
-music = {
+music = { # LONG USED
 	name = "axis_war_3"
 	file = "Funeral March by Chopin.ogg"
 	volume = 1.00
@@ -198,7 +220,7 @@ music = {
 	volume = 1.00
 }
 
-music = {
+music = { # LONG USED
 	name = "comintern_peace_4"
 	file = "Dance Macabre by Saint-Saens.ogg"
 	volume = 1.00
@@ -233,4 +255,84 @@ music = {
 	name = "comintern_war_7"
 	file = "Rule Britannia by Thomson.ogg"
 	volume = 1.00
+}
+
+# Rock music
+
+music = {
+	name = "seven_nation_army"
+	file = "The White Stripes - Seven Nation Army.ogg"
+	volume = 1.45
+}
+
+music = {
+	name = "do_i_wanna_know"
+	file = "Arctic Monkeys - Do I Wanna Know.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "run"
+	file = "AWOLNATION - Run.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "sail"
+	file = "AWOLNATION - Sail.ogg"
+	volume = 1.30
+}
+
+music = {
+	name = "machines"
+	file = "All Good Things - Machines.ogg"
+	volume = 0.80
+}
+
+music = {
+	name = "get_up"
+	file = "All Good Things - Get Up.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "fight"
+	file = "All Good Things - Fight.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "i_have_the_power"
+	file = "All Good Things - I Have The Power.ogg"
+	volume = 0.80
+}
+
+music = {
+	name = "eye_of_the_storm"
+	file = "All Good Things - Eye Of The Storm.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "uprise"
+	file = "All Good Things - Uprise.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "run_to_the_hills"
+	file = "Iron Maiden - Run To The Hills.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "going_nuclear"
+	file = "Nik Ammar - Nuclear.ogg"
+	volume = 1.10
+}
+
+music = {
+	name = "cant_go_to_hell"
+	file = "Sin Shake Sin - Can't Go To Hell.ogg"
+	volume = 0.85
 }

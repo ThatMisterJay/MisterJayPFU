@@ -1,6 +1,6 @@
 ﻿l_english:
  maintheme:0 "Dance of the Knights by Prokofiev"
- general_peace_1:0 "Chaconne in D Minor by Bach/Busoni"
+ general_peace_1:0 "Overture by Andreas Waldetoft"
  general_peace_2:0 "Egmont Overture by Beethoven"
  general_peace_1337:0 "Symphony No. 7 Allegretto 2nd movement by Beethoven"
  general_peace_4:0 "Mercury by Holst"
@@ -16,6 +16,8 @@
  general_peace_14:0 "Sonata No. 8 "Pathétique" 1st movement by Beethoven"
  general_peace_15:0 "Sonata No. 8 "Pathétique" 2nd movement by Beethoven"
  general_peace_16:0 "Sonata No. 8 "Pathétique" 3rd movement by Beethoven"
+ general_peace_17:0 "Scott Joplin - The Entertainer"
+ general_peace_18:0 "Scott Joplin - Maple Leaf Rag"
  allies_peace_1:0 "Sonata No. 23 "Appassionata" 1st movement by Beethoven"
  allies_peace_2:0 "Sonata No. 23 "Appassionata" 2nd movement by Beethoven"
  allies_peace_3:0 "Mars by Holst"
@@ -32,6 +34,7 @@
  general_war_7:0 "The Snowstorm: Waltz by Sviridov"
  general_war_8:0 "The Attack"
  general_war_9:0 "Operation Barbarossa"
+ general_war_9:0 "Achtung Panzer"
  axis_war_1:0 "Habanera by Bizet"
  axis_war_2:0 "Ungarischer Tanz (Hungarian Dance) No. 5 by Brahms"
  axis_war_3:0 "Sonata No. 2 "Funeral March" 3rd movement by Chopin"
@@ -57,6 +60,21 @@
  comintern_war_5:0 "Waltz No. 2 by Shostakovich"
  comintern_war_6:0 "Symphony No. 7 Leningrad 4th Movement by Shostakovich"
  comintern_war_7:0 "Rule Britannia by Thomson"
+
+ # ROCK MUSIC
+ seven_nation_army:0 "The White Stripes - Seven Nation Army"
+ do_i_wanna_know:0 "Arctic Monkeys - Do I wanna Know"
+ run:0 "Awolnation - Run"
+ sail:0 "Awolnation - Sail"
+ machines:0 "All Good Things - Machines"
+ get_up:0 "All Good Things - Get Up"
+ fight:0 "All Good Things - Fight"
+ i_have_the_power:0 "All Good Things - I Have The Power"
+ eye_of_the_storm:0 "All Good Things - Eye Of The Storm"
+ uprise:0 "All Good Things - Uprise"
+ run_to_the_hills:0 "Iron Maiden - Run To The Hills"
+ going_nuclear:0 "Nik Ammar - Nuclear"
+ cant_go_to_hell:0 "Sin Shake Sin - Can't Go To Hell"
 #Music is listed in the music player (from top to bottom) as follows:
 #General peace 1-3
 #Allies peace 1-2
