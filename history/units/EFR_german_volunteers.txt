@@ -39,7 +39,6 @@ units = {
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
-		start_equipment_factor = 1
 	}
 
 	division= {
@@ -48,7 +47,6 @@ units = {
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
-		start_equipment_factor = 1
 	}
 
 	division= {
@@ -57,7 +55,6 @@ units = {
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
-		start_equipment_factor = 1
 	}
 
 	division= {
@@ -66,7 +63,6 @@ units = {
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
-		start_equipment_factor = 1
 	}
 
 	division= {
@@ -75,7 +71,6 @@ units = {
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
-		start_equipment_factor = 1
 	}
 
 	division= {
@@ -84,6 +79,5 @@ units = {
 		division_template = "Division d'Allemagne"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 1
-		start_equipment_factor = 1
 	}
 }
