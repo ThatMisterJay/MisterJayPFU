@@ -2559,3 +2559,5 @@ ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the
  swiss_neutrality_desc:0 "Self-imposed, permanent, and armed, designed to ensure external security. Switzerland is the oldest neutral country in the world since 1815; it has not fought a foreign war since its neutrality was established by the Treaty of Paris in 1815."
  GER_blitzkrieg:0 "Blitzkrieg"
  GER_blitzkrieg_desc:0 "We have won quick victorys in France and Poland using innovative 'Blitzkrieg' tactics combing both speed and armor breakthrough. We now have the oppurtunity to exploit this in the early stages of Operation Barbarossa."
+ GER_barbarossa:0 "Unternehmen Barbarossa"
+ GER_dismantle_maginot:0 "Dismantle the Maginot Line"
