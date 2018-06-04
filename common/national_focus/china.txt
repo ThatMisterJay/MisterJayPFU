@@ -57,8 +57,8 @@ focus_tree = {
 				set_state_flag = CHI_industrial_reform
 			}
         }
-		}
-		focus = {
+	}
+	focus = {
 		id = CHI_educational_funding
 		icon = GFX_goal_generic_national_unity
 		x = 1
@@ -74,7 +74,7 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = CHI_peking_university
 		icon = GFX_focus_research
 		prerequisite = { focus = CHI_educational_funding }
@@ -127,8 +127,8 @@ focus_tree = {
 				}
 			}
 		}
-		}
-		focus = {
+	}
+	focus = {
 		id = CHI_coastal_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CHI_industrial_reform }
@@ -369,6 +369,7 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 10
+		cancel_if_invalid = no
 		ai_will_do = {
 			factor = 5
 		}
@@ -446,7 +447,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 4.3
-						ai_will_do = {
+		ai_will_do = {
 			factor = 10
 		}
 		available = {
@@ -461,7 +462,6 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
-			CHI = { transfer_state = 615 }
 			if = {
 				limit = {
 					608 = {

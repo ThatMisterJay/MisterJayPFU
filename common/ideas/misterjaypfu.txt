@@ -4,14 +4,7 @@ ideas = {
 			allowed = { always = yes }
 			picture = ast_volunteer_defence_corps
 			removal_cost = -1
-			modifier = { special_forces_cap = 0.50 }
-		}
-
-		JAP_cg_defense_state = {
-			allowed = { always = no }
-			picture = generic_goods_red_bonus
-			removal_cost = -1
-			modifier = { consumer_goods_factor = -0.03 }
+			modifier = { special_forces_cap = 0.25 }
 		}
 
 		generic_neutral_country = {
@@ -29,6 +22,76 @@ ideas = {
 				ai_get_ally_desire_factor = -200
 				political_power_factor = -2.00
 				consumer_goods_factor = 1.00
+			}
+		}
+
+		annex_canada_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		annex_british_raj_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		annex_south_africa_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = -0.03
+			}
+		}
+
+		annex_australia_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = -0.03
+			}
+		}
+
+		annex_new_zealand_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_factor = -0.01
+			}
+		}
+
+		annex_bulgaria_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = -0.01
+			}
+		}
+
+		annex_hungary_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.03
 			}
 		}
 	}

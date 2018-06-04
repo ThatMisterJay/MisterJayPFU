@@ -3231,9 +3231,18 @@ country_event = {
 country_event = {
 	id = germany.104
 	title = germany.104.t
-	desc = { text = germany.104.d_Savoy 			trigger = { has_global_flag = ITA_claims_on_france_735 } }
-	desc = { text = germany.104.d_Corsica 			trigger = { has_global_flag = ITA_claims_on_france_1 } }
-	desc = { text = germany.104.d_Savoy_Corsica 	trigger = { has_global_flag = ITA_claims_on_france_735 has_global_flag = ITA_claims_on_france_1 } }
+	desc = {
+		text = germany.104.d_Savoy
+		trigger = { has_global_flag = ITA_claims_on_france_735 }
+	}
+	desc = {
+		text = germany.104.d_Corsica
+		trigger = { has_global_flag = ITA_claims_on_france_1 }
+	}
+	desc = {
+		text = germany.104.d_Savoy_Corsica
+		trigger = { has_global_flag = ITA_claims_on_france_735 has_global_flag = ITA_claims_on_france_1 }
+	}
 
 
 	picture = GFX_report_event_german_italian_pact

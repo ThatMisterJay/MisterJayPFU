@@ -188,6 +188,8 @@ country_event = {
 
 	immediate = {
 		set_global_flag = achievement_france_surrender
+		set_global_flag = fall_of_france
+		GER = { country_event = france.14 }
 	}
 
 
@@ -196,8 +198,6 @@ country_event = {
 		ai_chance = {
 			factor = 85
 		}
-		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
 	}
 }
@@ -356,6 +356,7 @@ country_event = {
 			set_state_controller = 19
 		}
 		# Italian Occupation Zone (if they did well)
+		ITA = { transfer_state = 735 }
 		if = {
 			limit = {
 				AND = {
@@ -385,17 +386,6 @@ country_event = {
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
 					}
-				}
-			}
-			ITA = { transfer_state = 735 }
-		}
-		if = {
-			limit = {
-				AND = {
-					735 = { #Savoy
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
 					21 = { #Savoy
 						owner = { original_tag = FRA }
 						is_controlled_by = ITA
@@ -408,18 +398,6 @@ country_event = {
 			}
 			ITA = { transfer_state = 32 }
 		}
-		#Spanish occupation zone
-		if = {
-			limit = {
-				31 = { #Midi-Pyrinees
-					owner = { original_tag = FRA }
-					is_controlled_by = SPR
-				}
-			}
-			SPR = {
-				transfer_state = 31
-			}
-		}
 		FRA = {
 			start_civil_war = {
 				ideology = fascism
@@ -429,7 +407,6 @@ country_event = {
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {
-
 						# lets not involve syria or tunisia in civil war flip if occupied by other party
 						AND = {
 							OR = {
@@ -514,57 +491,48 @@ country_event = {
 			set_country_flag = free_france
 			set_capital = 539
 			hidden_effect = {
-					set_state_controller = 26
-					set_state_controller = 22
-					set_state_controller = 25
-					set_state_controller = 20
-					set_state_controller = 33
-					set_state_controller = 677
-					set_state_controller = 680
-					set_state_controller = 554
-					set_state_controller = 458
-					if = {
-						limit = {
-							1 = {
-								owner = { original_tag = FRA }
-							}
+				set_state_controller = 26
+				set_state_controller = 22
+				set_state_controller = 25
+				set_state_controller = 20
+				set_state_controller = 33
+				set_state_controller = 677
+				set_state_controller = 680
+				set_state_controller = 554
+				set_state_controller = 458
+				if = {
+					limit = {
+						1 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 1
 					}
-					if = {
-						limit = {
-							32 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 1
+				}
+				if = {
+					limit = {
+						32 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 32
 					}
-					if = {
-						limit = {
-							735 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 32
+				}
+				if = {
+					limit = {
+						21 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 735
 					}
-					if = {
-						limit = {
-							21 = {
-								owner = { original_tag = FRA }
-							}
+					set_state_controller = 21
+				}
+				if = {
+					limit = {
+						31 = {
+							owner = { original_tag = FRA }
 						}
-						set_state_controller = 21
 					}
-					if = {
-						limit = {
-							31 = {
-								owner = { original_tag = FRA }
-							}
-						}
-						set_state_controller = 31
-					}
+					set_state_controller = 31
+				}
 			}
-
 		}
 		random_other_country = {
 			limit = { original_tag = FRA has_government = fascism }
@@ -582,12 +550,6 @@ country_event = {
 			transfer_state = 32
 			transfer_state = 33
 			transfer_state = 1
-			if = {
-						limit = {
-							NOT = { 735 = { is_controlled_by = ITA } }
-						}
-						transfer_state = 735
-					}
 
 			transfer_state = 677
 			transfer_state = 680

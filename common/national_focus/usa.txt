@@ -1382,7 +1382,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.35
 				uses = 2
 				category = bb_tech
 			}

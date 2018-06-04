@@ -18,6 +18,30 @@ music_selection = {
 		ai_will_do = { factor = 0 }
 	}
 
+	only_rock_music_on = {
+		icon = GFX_music_decision
+
+		visible = {
+			has_country_flag = rock_music_enabled
+			NOT = { has_country_flag = only_rock_music }
+		}
+
+		complete_effect = { set_country_flag = only_rock_music }
+		ai_will_do = { factor = 0 }
+	}
+ 
+	only_rock_music_off = {
+		icon = GFX_music_decision
+
+		visible = {
+			has_country_flag = rock_music_enabled
+			has_country_flag = only_rock_music
+		}
+
+		complete_effect = { clr_country_flag = only_rock_music }
+		ai_will_do = { factor = 0 }
+	}
+
 	rock_music_on = {
 		icon = GFX_music_decision
 
@@ -32,7 +56,10 @@ music_selection = {
 
 		visible = { has_country_flag = rock_music_enabled }
 
-		complete_effect = { clr_country_flag = rock_music_enabled }
+		complete_effect = {
+			clr_country_flag = rock_music_enabled
+			clr_country_flag = only_rock_music
+		}
 		ai_will_do = { factor = 0 }
 	}
 

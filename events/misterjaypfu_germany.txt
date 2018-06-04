@@ -82,10 +82,13 @@ country_event = {
 	option = {
 		name = JFU_germany.4.a
 		FIN = {
+			transfer_state = 146 #Olonets
 			transfer_state = 215 #Onega
 			transfer_state = 213 #Murmansk
 			transfer_state = 771 #Nivankyul
 			transfer_state = 216 #Olonets
+			transfer_state = 147 #Olonets
+			transfer_state = 770 #Olonets
 		}
 		country_event = { id = JFU_germany.5 days = 1}
 	}
@@ -104,6 +107,8 @@ country_event = {
 	option = {
 		name = JFU_germany.5.a
 		ROM = {
+			transfer_state = 78 #Bessarabai
+			transfer_state = 80 #Bucovina
 			transfer_state = 137 #Crimea
 			transfer_state = 192 #Odessa
 			transfer_state = 196 #Kherson
@@ -133,10 +138,12 @@ country_event = {
 		GER = {
 			transfer_state = 89 #Stanislawow
 			transfer_state = 91 #Lwow
+			transfer_state = 92 #Lublin
 			transfer_state = 93 #Wolyn
 			transfer_state = 94 #Polesie
 			transfer_state = 95 #Nowogrodek
 			transfer_state = 96 #Wilno
+			transfer_state = 97 #Wilno
 			transfer_state = 194 #Pink Marshes
 			transfer_state = 195 #Leningrad
 			transfer_state = 199 #Khmelnytskyi

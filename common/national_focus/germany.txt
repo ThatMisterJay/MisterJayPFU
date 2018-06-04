@@ -12,91 +12,6 @@ focus_tree = {
 
 	default = no
 
-	############################
-	#### PUPPET NON-PLAYERS ####
-	############################
-
-	focus = {
-		id = GER_puppet_bulgaria
-		icon = GFX_goal_generic_military_deal
-		x = 9
-		y = 6
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			BUL = { is_ai = yes }
-			date > 1939.1.1
-			NOT = { BUL = { is_puppet_of = GER } }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			puppet = BUL
-		}
-	}
-
-	focus = {
-		id = GER_puppet_hungary
-		icon = GFX_goal_generic_military_deal
-		x = 11
-		y = 6
-
-		cost = 0
-
-		available = {
-			HUN = { is_ai = yes }
-			date > 1939.1.1
-			NOT = { BUL = { is_puppet_of = HUN } }
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			puppet = HUN
-		}
-	}
-
-	focus = {
-		id = GER_puppet_vichy
-		icon = GFX_goal_generic_military_deal
-		x = 10
-		y = 7
-
-		cost = 0
-
-		available = {
-			country_exists = EFR
-			EFR = { is_in_faction_with = GER }
-			NOT = { EFR = { is_puppet_of = GER } }
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			puppet = EFR
-		}
-	}
-
 	focus = {
 		id = GER_autobahn
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1071,7 +986,7 @@ focus_tree = {
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 10
-			add_named_threat = { threat = 4 name = GER_rhineland }
+			add_named_threat = { threat = 5 name = GER_rhineland }
 			add_war_support = 0.1
 			if = {
 				limit = { FRA = { is_puppet = no } }
@@ -2426,7 +2341,6 @@ focus_tree = {
 				name = bb_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_battleship
 				technology = improved_battleship
 				technology = advanced_battleship
 				technology = heavy_battleship
@@ -2564,14 +2478,15 @@ focus_tree = {
 				uses = 1
 				category = naval_equipment
 			}
-
 		}
 	}
-
 
 	focus = {
 		id = GER_improve_national_spirit
 		prerequisite = { focus = GER_rhineland }
+		x = 12
+		y = 1
+		cost = 5
 		icon = GFX_goal_support_fascism
 		available = {
 			custom_trigger_tooltip = {
@@ -2610,9 +2525,6 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 13
-		y = 1
-		cost = 5
 		ai_will_do = {
 			factor = 10
 		}

@@ -474,7 +474,7 @@ SOV_great_patriotic_war = {
 		days_remove = 720
 
 		modifier = {
-			army_core_defence_factor = 0.25
+			army_core_defence_factor = 0.05
 		}
 
 		ai_will_do = {
@@ -1017,9 +1017,6 @@ SOV_great_patriotic_war = {
 }
 
 SOV_great_patriotic_war = {
-
-
-
 	#217 "Stalingrad"
 	SOV_hold_stalingrad = {
 
@@ -1059,8 +1056,8 @@ SOV_great_patriotic_war = {
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.025
+			add_war_support = 0.025
 			217 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.1
 		}
@@ -1110,8 +1107,8 @@ SOV_great_patriotic_war = {
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.025
+			add_war_support = 0.025
 			195 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.3
 		}
@@ -1161,8 +1158,8 @@ SOV_great_patriotic_war = {
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.025
+			add_war_support = 0.025
 			219 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.5
 		}
@@ -1223,6 +1220,38 @@ operations = {
 }
 
 political_actions = {
+
+	force_soviet_peacedeal = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV = {
+				surrender_progress > 0.50 #almost capitulate but not really
+			}
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+
+		visible = {
+			SOV = {
+				surrender_progress > 0.40
+			}
+		}
+
+		complete_effect = {
+			GER = { country_event = { id = JFU_germany.2 days = 1 } }
+		}
+	}
 
 	SOV_return_manchuria = {
 

@@ -1598,14 +1598,10 @@ ideas = {
 		}
 
 		okmo = {
-
-
 			allowed = {
 				original_tag = SOV
 			}
-
-
-
+			
 			research_bonus = {
 				armor = 0.10
 			}
@@ -1613,29 +1609,24 @@ ideas = {
 			equipment_bonus = {
 				heavy_tank_equipment = {
 					reliability = 0.05
-					armor_value = 0.1
+					armor_value = 0.05
 					hard_attack = 0.05
 					ap_attack = 0.05
-					build_cost_ic = -0.15
-			}
+					build_cost_ic = -0.05
+				}
 				heavy_tank_destroyer_equipment = {
 					reliability = 0.05
 					armor_value = 0.05
-					hard_attack = 0.10
+					hard_attack = 0.05
 					ap_attack = 0.05
 				}
 				heavy_tank_artillery_equipment = {
 					reliability = 0.05
 					armor_value = 0.05
 					soft_attack = 0.1
-
 				}
-		}
-
-
-
-			modifier = {
 			}
+			modifier = {}
 		}
 	}
 

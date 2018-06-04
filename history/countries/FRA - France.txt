@@ -190,6 +190,7 @@ create_country_leader = {
 	ideology = socialism
 	traits = {
 		stout_defender
+		easy_surrender
 	}
 }
 

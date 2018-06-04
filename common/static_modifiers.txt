@@ -2,7 +2,7 @@
 # Effects are fully scriptable here.
 # These names can NOT be removed or changes, as the code uses them....
 
-weather_rain_light = { # on Region 
+weather_rain_light = { # on Region
 	air_detection = -0.2
 	naval_detection = -0.2
 	naval_hit_chance = -0.10
@@ -13,7 +13,7 @@ weather_rain_light = { # on Region
 
 	local_org_regain = -0.05
 }
-weather_rain_heavy = { # on Region 
+weather_rain_heavy = { # on Region
 	air_detection = -0.4
 	naval_detection = -0.4
 	naval_hit_chance = -0.2
@@ -24,7 +24,7 @@ weather_rain_heavy = { # on Region
 	local_org_regain = -0.4
 	air_mission_efficiency = -0.4
 }
-weather_snow = { # on Region 
+weather_snow = { # on Region
 	local_supplies = -0.05
 	air_detection = -0.15
 	naval_detection = -0.15
@@ -35,7 +35,7 @@ weather_snow = { # on Region
 	local_org_regain = -0.05
 	air_mission_efficiency = -0.1
 }
-weather_blizzard = { # on Region 
+weather_blizzard = { # on Region
 	local_supplies = -0.35
 	air_detection = -0.6
 	naval_detection = -0.3
@@ -46,7 +46,7 @@ weather_blizzard = { # on Region
 	local_org_regain = -0.12
 	air_mission_efficiency = -0.2
 }
-weather_blizzard = { # on Region 
+weather_blizzard = { # on Region
 	air_detection = -0.6
 	naval_detection = -0.6
 	naval_hit_chance = -0.2
@@ -57,7 +57,7 @@ weather_blizzard = { # on Region
 	local_org_regain = -0.6
 	air_mission_efficiency = -0.6
 }
-weather_sandstorm = { # on Region 
+weather_sandstorm = { # on Region
 	local_supplies = -0.2
         air_detection = -1.8
 	air_accidents = 1.2
@@ -73,14 +73,17 @@ weather_mud = { # on Province
 }
 weather_extreme_cold = { # on Province
 	local_supplies = -0.2
-        winter_attrition = 0.4
+    winter_attrition = 0.4
 	dig_in_speed_factor = -1
 	local_org_regain = -0.1
-	army_attack_factor = -0.2
+	army_attack_factor = -0.3
+	army_speed_factor = -0.2
 }
 weather_very_cold = { # on Province
 	winter_attrition = 0.2
 	dig_in_speed_factor = -0.6
+	army_attack_factor = -0.2
+	army_speed_factor = -0.1
 }
 weather_very_hot = { # on Province
 	heat_attrition = 0.2
@@ -157,7 +160,7 @@ lacking_consumer_goods = {
 
 gain_focus = {
 	political_power_cost = 1
-} 
+}
 
 #license production
 
@@ -171,7 +174,7 @@ ROM_license_german_equipment = {
 	license_purchase_cost = 0 #base cost reduction
 	ai_license_acceptance = 20 #more to AI acceptance value.
 	license_production_speed = 0.25 #speed  increase for being a license
-	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level 
+	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
 ROM_foreign_motor_company = {
@@ -184,7 +187,7 @@ ROM_foreign_motor_company = {
 	license_purchase_cost = 0 #base cost reduction
 	ai_license_acceptance = 20 #more to AI acceptance value.
 	license_production_speed = 0.1 #speed  increase for being a license
-	license_tech_difference_speed = 0.1 #less cost increase for each tech level between the license and own tech level 
+	license_tech_difference_speed = 0.1 #less cost increase for each tech level between the license and own tech level
 }
 
 HUN_dynastic_ties_license = {
@@ -229,7 +232,7 @@ ROM_military_modernization = {
 	license_purchase_cost = 0 #base cost reduction
 	ai_license_acceptance = 60 #more to AI acceptance value.
 	license_production_speed = 0.25 #speed  increase for being a license
-	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level 
+	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 }
 
 free_license = {
@@ -299,4 +302,3 @@ diff_strong_ai_generic = {
 	experience_gain_army_unit_factor = 0.10
 	experience_gain_navy_unit_factor = 0.10
 }
-

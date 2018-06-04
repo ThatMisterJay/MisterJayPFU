@@ -812,7 +812,6 @@ country_event = {
 			controls_state = 325
 			controls_state = 605
 			controls_state = 763
-			controls_state = 765
 		}
 		NOT = { has_global_flag = jap_southern }
 	}

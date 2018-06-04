@@ -626,7 +626,7 @@ leader_traits = {
 		gain_xp = {
 			OR = {
 				temperature < -10
-				temperature > 24
+				temperature > 26
 				has_combat_modifier = paradrop
 				has_combat_modifier = amphibious_attack
 			}

@@ -170,7 +170,10 @@ focus_tree = {
 					}
 				}
 				news_event = { hours = 6 id = news.231 }
-				CHI = { country_event = { id = china.100 } }
+				CHI = {
+					country_event = { id = china.100 }
+				 	transfer_state = 615
+				}
 			}
 		}
 	}

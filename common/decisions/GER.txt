@@ -107,35 +107,55 @@ GER_case_anton_category = {
 }
 
 political_actions = {
-	force_soviet_peacedeal = {
 
-		allowed = {
-			original_tag = GER
-		}
-
-		available = {
-			SOV = {
-				surrender_progress > 0.50 #almost capitulate but not really
-			}
-		}
-
-		cost = 15
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 0
-		}
-		days_remove = 30
+	annex_bulgaria = {
+		ai_will_do = { factor = 0 }
+		cost = 20
 
 		visible = {
-			SOV = {
-				surrender_progress > 0.40
-			}
+			tag = GER
+			BUL = { is_ai = yes }
+			country_exists = BUL
 		}
 
 		complete_effect = {
-			GER = { country_event = { id = JFU_germany.2 days = 1 } }
+			GER = {
+				annex_country = { target = BUL transfer_troops = yes }
+				add_ideas = annex_bulgaria_idea
+			}
+		}
+	}
+
+	annex_hungary = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+
+		visible = {
+			tag = GER
+			HUN = { is_ai = yes }
+			country_exists = HUN
+		}
+
+		complete_effect = {
+			GER = {
+				annex_country = { target = BUL transfer_troops = yes }
+				add_ideas = annex_hungary_idea
+			}
+		}
+	}
+
+	puppet_vichy_france = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+
+		visible = {
+			tag = GER
+			country_exists = EFR
+			date > 1941.1.1
+		}
+
+		complete_effect = {
+			GER = { puppet = EFR }
 		}
 	}
 

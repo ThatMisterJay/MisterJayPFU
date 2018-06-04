@@ -239,6 +239,95 @@ political_actions = {
 		}
 	}
 
+	annex_canada = {
+		ai_will_do = { factor = 0 }
+		cost = 50
+
+		visible = {
+			tag = ENG
+			CAN = { is_ai = yes }
+			country_exists = CAN
+		}
+
+		complete_effect = {
+			ENG = {
+				annex_country = { target = CAN transfer_troops = yes }
+				add_ideas = annex_canada_idea
+			}
+		}
+	}
+
+	annex_british_raj = {
+		ai_will_do = { factor = 0 }
+		cost = 50
+
+		visible = {
+			tag = ENG
+			RAJ = { is_ai = yes }
+			country_exists = RAJ
+		}
+
+		complete_effect = {
+			ENG = {
+				annex_country = { target = RAJ transfer_troops = yes }
+				add_ideas = annex_british_raj_idea
+			}
+		}
+	}
+
+	annex_south_africa = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+
+		visible = {
+			tag = ENG
+			SAF = { is_ai = yes }
+			country_exists = SAF
+		}
+
+		complete_effect = {
+			ENG = {
+				annex_country = { target = SAF transfer_troops = yes }
+				add_ideas = annex_south_africa_idea
+			}
+		}
+	}
+
+	annex_australia = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+
+		visible = {
+			tag = ENG
+			AST = { is_ai = yes }
+			country_exists = AST
+		}
+
+		complete_effect = {
+			ENG = {
+				annex_country = { target = AST transfer_troops = yes }
+				add_ideas = annex_australia_idea
+			}
+		}
+	}
+
+	annex_new_zealand = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+
+		visible = {
+			tag = ENG
+			NZL = { is_ai = yes }
+			country_exists = NZL
+		}
+
+		complete_effect = {
+			ENG = {
+				annex_country = { target = NZL transfer_troops = yes }
+				add_ideas = annex_new_zealand_idea
+			}
+		}
+	}
 }
 
 operations = {

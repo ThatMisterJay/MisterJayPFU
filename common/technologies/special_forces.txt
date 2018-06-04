@@ -165,31 +165,17 @@ technologies = {
 
 	special_forces_2b = {
 
-		XOR = {
-			special_forces_2a
-		}
+		XOR = { special_forces_2a }
 
-		mountaineers = {
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			breakthrough = 0.03
-		}
-		marine = {
-			breakthrough = 0.03
-		}
-		jaeger = {
-			breakthrough = 0.03
-		}
-		jungletroop = {
-			breakthrough = 0.03
-		}
-		desertinfantry = {
-			breakthrough = 0.03
-		}
-		shocktroop = {
-			breakthrough = 0.03
-		}
+		mountaineers = { breakthrough = 0.03 }
+		paratrooper = { breakthrough = 0.03 }
+		marine = { breakthrough = 0.03 }
+		jaeger = { breakthrough = 0.03 }
+		jungletroop = { breakthrough = 0.03 }
+		desertinfantry = { breakthrough = 0.03 }
+		shocktroop = { breakthrough = 0.03 }
+
+		special_forces_cap = 0.15
 
 		research_cost = 1
 		start_year = 1936
@@ -211,9 +197,7 @@ technologies = {
 			para_tech
 		}
 
-		ai_will_do = {
-			factor = 2
-		}
+		ai_will_do = { factor = 2 }
 	}
 
 	special_forces_3b = {
