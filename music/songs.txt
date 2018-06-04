@@ -734,11 +734,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -748,11 +752,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -762,11 +770,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -776,11 +788,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -790,11 +806,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -804,11 +824,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -818,11 +842,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -832,11 +860,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -852,6 +884,10 @@ music = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
 		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
 	}
 }
 
@@ -860,11 +896,33 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "never_die"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -874,11 +932,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -888,11 +950,15 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }
@@ -902,11 +968,411 @@ music = {
 
 	chance = {
 		modifier = {
-			factor = 0.75
+			factor = 1
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "we_will_rock_you"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "sweet_child_o_mine"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "smells_like_teen_spirit"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "nothing_else_matters"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "its_my_life"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "livin_on_a_prayer"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "you_give_love_a_bad_name"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "god_save_the_queen"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "i_cant_dance"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "invisible_touch"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "land_of_confusion"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "boulevard_of_broken_dreams"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "in_the_end"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "new_divide"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "numb"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "rock_and_roll_all_night"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "me_in_me"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "youre_gonna_go_far_kid"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "rockstar"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "satisfaction"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "its_a_good_day_to_die"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
+		}
+	}
+}
+
+music = {
+	song = "walk_this_way"
+
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = -100000
+			NOT = { has_country_flag = rock_music_enabled }
+		}
+		modifier = {
+			factor = 100000
+			has_country_flag = only_rock_music
 		}
 	}
 }

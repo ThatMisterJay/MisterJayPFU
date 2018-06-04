@@ -284,6 +284,24 @@ music = {
 }
 
 music = {
+	name = "jailbreak"
+	file = "AWOLNATION - Jailbreak.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "guilty_filthy_soul"
+	file = "AWOLNATION - Guilty Filthy Soul.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "wake_up"
+	file = "AWOLNATION - Wake Up.ogg"
+	volume = 1.00
+}
+
+music = {
 	name = "machines"
 	file = "All Good Things - Machines.ogg"
 	volume = 0.80
@@ -320,6 +338,12 @@ music = {
 }
 
 music = {
+	name = "never_die"
+	file = "All Good Things - Never Die.ogg"
+	volume = 1.00
+}
+
+music = {
 	name = "run_to_the_hills"
 	file = "Iron Maiden - Run To The Hills.ogg"
 	volume = 1.00
@@ -334,5 +358,137 @@ music = {
 music = {
 	name = "cant_go_to_hell"
 	file = "Sin Shake Sin - Can't Go To Hell.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "we_will_rock_you"
+	file = "Queen - We Will Rock You.ogg"
+	volume = 1.30
+}
+
+music = {
+	name = "sweet_child_o_mine"
+	file = "Guns n roses - Sweet Child O mine.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "smells_like_teen_spirit"
+	file = "Nirvana - Smells Like Teen Spirit.ogg"
+	volume = 1.75
+}
+
+music = {
+	name = "nothing_else_matters"
+	file = "Metallica - Nothing Else Matters.ogg"
+	volume = 1.20
+}
+
+music = {
+	name = "its_my_life"
+	file = "Bon Jovi - Its My Life.ogg"
 	volume = 0.85
+}
+
+music = {
+	name = "livin_on_a_prayer"
+	file = "Bon Jovi - Livin on a Prayer.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "you_give_love_a_bad_name"
+	file = "Bon Jovi - You give love a bad name.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "god_save_the_queen"
+	file = "Sex Pistols - God Save the Queen.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "i_cant_dance"
+	file = "Genesis - I Cant Dance.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "invisible_touch"
+	file = "Genesis - Invisible Touch.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "land_of_confusion"
+	file = "Genesis - Land of Confusion.ogg"
+	volume = 1.05
+}
+
+music = {
+	name = "boulevard_of_broken_dreams"
+	file = "Green Day - Boulevard of Broken Dreams.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "in_the_end"
+	file = "Linkin Park - In The End.ogg"
+	volume = 1.50
+}
+
+music = {
+	name = "new_divide"
+	file = "Linkin Park - New Divide.ogg"
+	volume = 1.25
+}
+
+music = {
+	name = "numb"
+	file = "Linkin Park - Numb.ogg"
+	volume = 1.30
+}
+
+music = {
+	name = "rock_and_roll_all_night"
+	file = "KISS - Rock And Roll All Night.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "me_in_me"
+	file = "WattWhite - Me in Me.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "youre_gonna_go_far_kid"
+	file = "The Offspring - Youre Gonna Go Far Kid.ogg"
+	volume = 1.40
+}
+
+music = {
+	name = "rockstar"
+	file = "DI-RECT - ROCKSTAR.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "satisfaction"
+	file = "The Rolling Stones - Satisfaction.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "its_a_good_day_to_die"
+	file = "Starship Troopers 3 - Its A Good Day To Die.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "walk_this_way"
+	file = "Aerosmith & RUN-DMC - Walk This Way.ogg"
+	volume = 0.90
 }
