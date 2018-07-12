@@ -487,6 +487,9 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = no
+		available = {
+			731 = { is_controlled_by = BUL }
+		}
 
 		completion_reward = {
 			add_state_core = 731
@@ -1498,7 +1501,7 @@ focus_tree = {
 			}
 		}
 	}
- 
+
 	focus = {
 		id = BUL_modernize_navy
 		icon = GFX_goal_generic_build_navy

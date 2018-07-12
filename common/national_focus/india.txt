@@ -258,13 +258,13 @@ focus_tree = {
 
 				add_resource = {
 					type = rubber
-					amount = -80
+					amount = -50
 					state = 422
 				}
 
 				add_resource = {
 					type = rubber
-					amount = 80
+					amount = 50
 					state = 126
 				}
 			}
@@ -350,7 +350,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = RAJ_two_nation_theory_effect
 			swap_ideas = {
 				add_idea = RAJ_marginalized_muslim_community_happy
 				remove_idea = RAJ_marginalized_muslim_community_angry
@@ -538,7 +537,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -581,7 +580,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_army_support
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -736,7 +735,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -878,7 +877,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_indianisation_of_army
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -1064,7 +1063,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -1105,7 +1104,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -1225,8 +1224,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_modernizing_army
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = RAJ_revive_the_screw_guns }
-		prerequisite = { focus = RAJ_indian_armor }
+		prerequisite = { focus = RAJ_revive_the_screw_guns focus = RAJ_indian_armor }
 		x = 1
 		y = 3
 		relative_position_id = RAJ_the_bangalore_torpedo
@@ -1237,21 +1235,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1336,7 +1322,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = RAJ_british_pilot_training
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -1351,7 +1337,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_british_pilot_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2162,6 +2148,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_technology = {
+				early_destroyer = 1
+				early_submarine = 1
+			}
 			add_tech_bonus = {
 				name = RAJ_royal_indian_navy
 				bonus = 0.5
@@ -2204,10 +2194,27 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_screening_effort
-				bonus = 0.6
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = dd_tech
 				category = cl_tech
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -2245,10 +2252,27 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_cruiser_effort
-				bonus = 0.6
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = bc_tech
 				category = ca_tech
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -2286,8 +2310,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_submarine_effort
-				bonus = 0.6
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = ss_tech
 			}
 		}
@@ -2326,8 +2350,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_capital_ship_effort
-				bonus = 0.6
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = cv_tech
 				category = bb_tech
 			}
@@ -2640,7 +2664,7 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = no
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2739,7 +2763,7 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = no
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {
@@ -2838,7 +2862,7 @@ focus_tree = {
 		}
 
 		cancel_if_invalid = no
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		complete_tooltip = {

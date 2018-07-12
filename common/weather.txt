@@ -9,6 +9,7 @@ terrain_modifiers = {
     terrain = { type = "plains" value = 0.5 }
     terrain = { type = "marsh" value = 0.8 }
     terrain = { type = "desert" value = 0.5 }
+    terrain = { type = "urban" value = -1.0 }
   }
   rain_light = {
   }

@@ -288,3 +288,153 @@ country_event = {
 		}
 	}
 }
+
+# Industry #1
+country_event = {
+	id = baltic.8
+	title = baltic.8.t
+	desc = baltic.8.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	trigger = {
+		date > 1937.1.1
+		tag = LIT
+	}
+
+	option = {
+		name = baltic.8.a
+		188 = {
+			add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		11 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		189 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Industry #2
+country_event = {
+	id = baltic.9
+	title = baltic.9.t
+	desc = baltic.9.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	trigger = {
+		date > 1938.1.1
+		tag = LIT
+	}
+
+	option = {
+		name = baltic.9.a
+		190 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		12 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+# Industry #3
+country_event = {
+	id = baltic.10
+	title = baltic.10.t
+	desc = baltic.10.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+	trigger = {
+		date > 1939.1.1
+		tag = LIT
+	}
+
+	option = {
+		name = baltic.10.a
+		191 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		13 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}

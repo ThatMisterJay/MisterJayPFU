@@ -1,0 +1,33 @@
+#scripted_gui = {
+
+	#resistance_options = {
+		#context_type = player_context
+
+		#window_name = "resistance_options_container"
+
+		#visible = {
+		#	country_has_resistance = yes
+		#	check_variable = { show_resistance_options > 0.0 }
+		#}
+
+		#effects = {
+		#	resistance_PP_payment_click = {
+		#		add_political_power = -200
+		#		subtract_from_variable = { resistance_variable = 150 }
+		#	}
+		#	resistance_stability_payment_click = {
+		#		add_stability = -0.05
+		#		subtract_from_variable = { resistance_variable = 200 }
+		#	}
+		#}
+
+		#triggers = {
+		#	resistance_PP_payment_click_enabled = {
+		#		check_variable = { resistance_variable > 149.99 }
+		#	}
+		#	resistance_stability_payment_click_enabled = {
+		#		check_variable = { resistance_variable > 199.99 }
+		#	}
+		#}
+	#}
+#}

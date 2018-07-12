@@ -12,8 +12,6 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-
 		}
 		1939.1.1 = {
 			buildings = {
@@ -26,16 +24,16 @@ state={
 
 		}
 		victory_points = {
-			7101 10 
+			7101 10
 		}
 		victory_points = {
-			7097 5 
+			7097 5
 		}
 
 	}
 
 	provinces={
-		1448 1640 4125 7097 7101 7159 7434 7502 9982 9999 10377 10517 11918 12310 12350 12378 12483 13140 13143 
+		1448 1640 4125 7097 7101 7159 7434 7502 9982 9999 10377 10517 11918 12310 12350 12378 12483 13140 13143
 	}
 	manpower=28293700
 	buildings_max_level_factor=1.000

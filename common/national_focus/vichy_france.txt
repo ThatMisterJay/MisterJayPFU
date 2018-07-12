@@ -351,7 +351,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -387,7 +387,7 @@ focus_tree = {
 		relative_position_id = EFR_patrie_focus
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1356,7 +1356,11 @@ focus_tree = {
 
 		available = {
 			country_exists = GER
-			is_ai = no
+		}
+
+
+		ai_will_do = {
+			factor = 3
 		}
 
 		completion_reward = {
@@ -1397,6 +1401,11 @@ focus_tree = {
 			}
 		}
 
+
+		ai_will_do = {
+			factor = 10
+		}
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -1430,6 +1439,10 @@ focus_tree = {
 			EFR = {
 				is_puppet_of = GER
 			}
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 
 		completion_reward = {
@@ -1470,7 +1483,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 
 		completion_reward = {
@@ -1525,7 +1538,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 5
 		}
 
 		completion_reward = {

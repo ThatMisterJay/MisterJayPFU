@@ -42,12 +42,6 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.5
 	}
-						division= {
-		name = "3. Gvardiya Diviziya"
-		location = 3431
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.5
-	}
 					division= {
 		name = "479. Strelkovaya Diviziya"
 		location = 3431
@@ -66,12 +60,6 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.3
 	}
-							division= {
-		name = "444. Strelkovaya Diviziya"
-		location = 413
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.5
-	}
 								division= {
 		name = "477. Strelkovaya Diviziya"
 		location = 11527
@@ -83,12 +71,6 @@ units = {
 		location = 6454
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.4
-	}
-								division= {
-		name = "442. Strelkovaya Diviziya"
-		location = 6341
-		division_template = "Strelkovaya Diviziya"
-		start_experience_factor = 0.3
 	}
 								division= {
 		name = "447. Strelkovaya Diviziya"
@@ -126,6 +108,6 @@ units = {
 		division_template = "Tank Korpus"
 		start_experience_factor = 0.5
 	}
-	
+
 
 }

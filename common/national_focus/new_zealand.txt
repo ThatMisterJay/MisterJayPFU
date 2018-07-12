@@ -54,11 +54,6 @@ focus_tree = {
 #		}
 #	}
 
-
-
-
-
-
 	############################
 	###### NAVY SECTION ########
 	############################
@@ -171,12 +166,7 @@ focus_tree = {
 				limit = {
 					has_state_flag = NZL_expand_devonport_naval_base_DY
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
+				add_extra_state_shared_building_slots = 4
 			}
 		}
 
@@ -321,7 +311,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_destroyer_effort
 				bonus = 0.5
-				ahead_reduction = 1
+				ahead_reduction = 0.75
 				uses = 1
 				category = dd_tech
 			}
@@ -363,7 +353,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_submarine_effort
 				bonus = 0.5
-				ahead_reduction = 1
+				ahead_reduction = 0.75
 				uses = 1
 				category = ss_tech
 			}
@@ -404,7 +394,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_light_cruiser_effort
 				bonus = 0.5
-				ahead_reduction = 1
+				ahead_reduction = 0.75
 				uses = 1
 				category = cl_tech
 			}
@@ -445,7 +435,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = NZL_capital_ship_effort
 				bonus = 0.5
-				ahead_reduction = 1
+				ahead_reduction = 0.75
 				uses = 1
 				category = bb_tech
 				category = cv_tech
@@ -1017,7 +1007,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1071,7 +1061,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}

@@ -38,7 +38,7 @@ country_event = {
 				remove_core_of = ETH
 			}
 		}
-		add_threat = -2
+		add_threat = -1
 	}
 }
 

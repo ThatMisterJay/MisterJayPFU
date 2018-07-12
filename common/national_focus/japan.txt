@@ -27,7 +27,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1940.1.1
+			date > 1940.3.1
 		}
 
 		cancel_if_invalid = yes
@@ -1272,7 +1272,11 @@ focus_tree = {
 		y = 3
 		cost = 5
 
-		available = { date > 1940.11.25 }
+		available = {
+			date > 1940.11.25
+
+			NOT = { has_global_flag = JAP_capitulate }
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -1354,6 +1358,7 @@ focus_tree = {
 		prerequisite = { focus = southern_expansion_focus }
 		available = {
 			date > 1941.1.1
+			NOT = { has_global_flag = JAP_capitulate }
 		}
 		will_lead_to_war_with = USA
 		x = 6

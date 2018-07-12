@@ -563,7 +563,8 @@ focus_tree = {
 				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
-				category = tactical_bomber
+				technology = tactical_bomber1
+				technology = tactical_bomber2
 			}
 		}
 	}

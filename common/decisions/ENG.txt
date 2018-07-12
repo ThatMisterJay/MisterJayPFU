@@ -434,10 +434,7 @@ operations = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
-			any_country = {
-				original_tag = FRA
-				has_government = fascism
-			}
+			country_exists = EFR
 		}
 
 		cost = 100
@@ -458,19 +455,13 @@ operations = {
 					is_in_faction_with = FRA
 					FRA = { surrender_progress > 0.2 }
 				}
-				any_country = {
-					original_tag = FRA
-					has_government = fascism
-				}
+				country_exists = EFR
 			}
 		}
 
 		complete_effect = {
 			random_other_country = {
-				limit = {
-					original_tag = FRA
-					has_government = fascism
-				}
+				original_tag = EFR
 				country_event = { id = wtt_britain.25 hours = 5 }
 			}
 		}

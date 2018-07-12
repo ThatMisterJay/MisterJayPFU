@@ -1,0 +1,81 @@
+ideas = {
+	country = {
+		JAP_resistance_0 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.025
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		JAP_resistance_1 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.025
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.10
+				defense_bonus_against = -0.10
+			}
+		}
+		JAP_resistance_2 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.05
+				army_morale_factor = -0.05
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.2
+				defense_bonus_against = -0.2
+			}
+		}
+		JAP_resistance_3 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.10
+				army_morale_factor = -0.05
+			}
+		}
+
+		CHI_resistance_1 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				conscription = 0.01
+			}
+		}
+
+		CHI_resistance_2 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
+				conscription = 0.02
+			}
+		}
+	}
+}

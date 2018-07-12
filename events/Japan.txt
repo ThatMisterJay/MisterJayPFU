@@ -583,11 +583,23 @@ country_event = {
 				ruling_party = democratic
 				elections_allowed = yes
 			}
+			set_autonomy = {
+				target = SIA
+				autonomy_state = autonomy_free
+			}
 			add_popularity = { ideology = democratic popularity = 1 }
+		}
+		JAP = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_popularity = { ideology = neutrality popularity = 1 }
 		}
 		ENG = {
 			add_to_faction = SIA
 		}
+		set_global_flag = JAP_capitulate
 	}
 
 	option = { #peacedeal

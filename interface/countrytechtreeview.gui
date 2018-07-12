@@ -534,8 +534,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
-
 		}
 
 		containerWindowType = {
@@ -1418,7 +1416,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
 		}
 
 		containerWindowType = {
@@ -3213,7 +3210,6 @@ guiTypes = {
 				format = "UP"
 
 			}
-
 		}
 
 		containerWindowType = {
@@ -3230,7 +3226,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_window_2b_border"
 			}
 
-		containerWindowType = {
+			containerWindowType = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
@@ -3256,7 +3252,6 @@ guiTypes = {
 				size = { width = 130 height = 100% }
 				orientation = upper_left
 			}
-
 		}
 
 		gridboxtype = {
@@ -3297,6 +3292,7 @@ guiTypes = {
 				frame = 1
 				clicksound = click_default
 			}
+
 			buttonType = {
 				name = "armour_folder_tab"
 				position = { x = 200 y = 0 }
@@ -3344,6 +3340,7 @@ guiTypes = {
 				frame = 1
 				clicksound = click_default
 			}
+
 			buttonType = {
 				name = "air_techs_folder_tab"
 				position = { x = 705 y = 0 }
@@ -3382,7 +3379,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
 				clicksound = click_default
-
 			}
 
 			iconType = {
@@ -3394,13 +3390,6 @@ guiTypes = {
 			}
 
 ###------> Etat Folder Tabs <><> <><> <><> <><> <><>
-
-			#buttonType = {
-			#	position = { x = 1121 y = 0 }
-			#	name = "etat_folder_tab"
-			#	quadTextureSprite = "GFX_left_side_special_forces_tab"
-			#	clicksound = click_default
-			#}
 
 			buttonType = {
 				name = "etat_folder_tab"
@@ -4295,7 +4284,7 @@ guiTypes = {
 		iconType = {
 			name = "Icon"
 			position = { x=89 y=50 }
-			spriteType = "GFX_technology_medium"
+			spriteType = "GFX_technology_small"
 			centerposition = yes
 			alwaystransparent = yes
 		}
@@ -4502,7 +4491,6 @@ guiTypes = {
 			max_slots_horizontal = 5
 			format = "UPPER_LEFT"
 		}
-
 	}
 
 	containerWindowType = {

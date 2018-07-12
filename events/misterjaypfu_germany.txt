@@ -728,3 +728,30 @@ country_event = {
 		name = JFU_germany.22.a
 	}
 }
+
+#Blitzkrieg idea added
+country_event = {
+	id = JFU_germany.23
+	title = JFU_germany.23.t
+	desc = JFU_germany.23.d
+	picture = GFX_report_event_german_troops
+
+	trigger = {
+		tag = GER
+		GER = { has_war_with = SOV }
+		NOT = { 78 = { is_controlled_by = SOV } }
+		NOT = { 94 = { is_controlled_by = SOV } }
+	}
+
+	immediate = {
+		GER = { add_timed_idea = { idea = GER_blitzkrieg days = 120 } }
+		ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 120 } }
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = JFU_germany.23.a
+	}
+}

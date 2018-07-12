@@ -94,5 +94,31 @@ ideas = {
 				stability_factor = -0.03
 			}
 		}
+
+		baltics_debuff = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				enemy_justify_war_goal_time = 5.0
+				join_faction_tension = 2.00
+				send_volunteers_tension = 2.00
+				guarantee_tension = 2.0
+				ai_get_ally_desire_factor = -200
+				political_power_factor = -2.00
+				production_speed_arms_factory_factor = -0.80
+				production_speed_industrial_complex_factor = -0.80
+                research_time_factor = 1000
+			}
+		}
+
+		soviet_justification = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				enemy_justify_war_goal_time = 5.0
+			}
+		}
 	}
 }

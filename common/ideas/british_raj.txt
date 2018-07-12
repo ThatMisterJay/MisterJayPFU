@@ -944,7 +944,6 @@ ideas = {
 			traits = { atlantic_fleet_naval_manufacturer }
 
 		}
-
 	}
 
 	aircraft_manufacturer = {
@@ -969,8 +968,8 @@ ideas = {
 			modifier = {
 			}
 		}
-
 	}
+
 	materiel_manufacturer = {
 
 		designer = yes
@@ -1010,6 +1009,39 @@ ideas = {
 			traits = { artillery_manufacturer }
 
 			modifier = {
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		designer = yes
+
+		RAJ_tank_designer = {
+			cost = 150
+			allowed = {
+				original_tag = RAJ
+			}
+
+			research_bonus = {
+				armor = 0.10
+			}
+
+			equipment_bonus = {
+				medium_tank_equipment = {
+					reliability = 0.10
+					ap_attack = 0.10
+				}
+				medium_tank_destroyer_equipment = {
+					reliability = 0.1
+					defense = 0.1
+				}
+				medium_tank_aa_equipment = {
+					reliability = 0.1
+				}
+				medium_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+				}
 			}
 		}
 	}

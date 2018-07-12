@@ -1052,21 +1052,19 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = GER_anti_comitern_pact }
 	    available = {
-			date > 1941.5.21
+			date > 1941.4.1
 			date < 1941.9.21
 		}
 
 		x = 9
 		y = 2
-		cost = 0.2
+		cost = 1.43
 
 		bypass = {
 			date > 1941.9.21
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = GER_blitzkrieg days = 100 }
-			ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 100 } }
 			GER = {
 				declare_war_on = {
 					target = SOV

@@ -789,14 +789,6 @@ country_event = {
 		}
 		create_wargoal = {
 			type = annex_everything
-			target = EST
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = LAT
-		}
-		create_wargoal = {
-			type = annex_everything
 			target = LIT
 		}
 		hidden_effect = { news_event = { id = wtt_news.11 hours = 6 } }
@@ -832,14 +824,6 @@ country_event = {
 		}
 		add_named_threat = { threat = 10 name = GER_soviet_securing_sphere }
 		add_political_power = 100
-		create_wargoal = {
-			type = annex_everything
-			target = EST
-		}
-		create_wargoal = {
-			type = annex_everything
-			target = LAT
-		}
 		create_wargoal = {
 			type = annex_everything
 			target = LIT

@@ -917,7 +917,7 @@ ideas = {
 		generic_communist_revolutionary = {
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = NZL tag = PHI tag = IRE tag = DEN tag = BEL tag = SWI tag = CZE tag = PER tag = IRQ tag = AFG tag = MEX tag = NIC tag = CUB tag = HAI tag = COL tag = CHI tag = ARG tag = URG tag = BOL tag = BRA tag = SAU tag = HOL tag = SIA tag = GRE tag = ROM tag = HUN tag = YUG tag = POR tag = NOR tag = FIN tag = POL tag = MAN tag = MEN tag = BUL tag = LIT tag = LAT tag = EST tag = EFR tag = SLO tag = CRO
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = NZL tag = PHI tag = IRE tag = DEN tag = BEL tag = SWI tag = CZE tag = PER tag = IRQ tag = AFG tag = MEX tag = NIC tag = CUB tag = HAI tag = COL tag = CHI tag = ARG tag = URG tag = BOL tag = BRA tag = SAU tag = HOL tag = SIA tag = GRE tag = ROM tag = HUN tag = YUG tag = POR tag = NOR tag = FIN tag = POL tag = MAN tag = MEN tag = BUL tag = LIT tag = EFR tag = SLO tag = CRO
 				} }
 				NOT = {
 					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }

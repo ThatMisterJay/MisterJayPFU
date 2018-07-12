@@ -2,35 +2,37 @@
 ai_historical_focus_list_GER = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
-		GER_around_maginot
-
 		GER_rhineland
-		GER_ussr_war_goal
 		GER_autobahn
 		GER_west_wall
 		GER_industrial_effort
-		GER_anti_comitern_pact
 		GER_industrial_effort_2
 		GER_army_innovation
 		GER_soviet_treaty
-		GER_air_innovation
-		GER_tactical_air_effort
-		GER_anschluss
 		GER_air_innovation_2
-		GER_army_innovation_2
-		GER_demand_sudetenland
-		GER_first_vienna_award
-		GER_demand_memel
-		GER_end_of_czechoslovakia
-		GER_mol_rib_pact
-		GER_danzig_or_war
-		GER_weserubung
 		GER_rocketry_focus
 		GER_extra_tech_slot
+		GER_anschluss
+		GER_demand_sudetenland
+		GER_army_innovation_2
+		GER_first_vienna_award
+		GER_end_of_czechoslovakia
+		GER_demand_memel
+		GER_mol_rib_pact
+		GER_danzig_or_war
+		GER_around_maginot
+		GER_weserubung
 		GER_war_with_france
-		GER_second_vienna_award
 		GER_italy_ally
-		GER_japan_friend
+		GER_nationalist_spain_ally
+		GER_air_innovation
+		GER_tactical_air_effort
+
+		GER_second_vienna_award
+		GER_anti_comitern_pact
+		GER_ussr_war_goal
+		GER_fall_blau
+		GER_Operation_Citadel
 		GER_naval_air_effort
 		GER_naval_rearmament
 		GER_naval_effort
@@ -40,7 +42,7 @@ ai_historical_focus_list_GER = {
 
 ai_focus_defense_GER = {
 	research = {
-		defensive = 5.0	
+		defensive = 5.0
 		radar_tech = 1.0
 		construction_tech = 2.0
 		artillery = 2.0
@@ -61,7 +63,7 @@ ai_focus_war_production_GER = {
 		industry = 10.0
 		construction_tech = 2.0
 		electronics = 2.0
-		computing_tech = 2.0		
+		computing_tech = 2.0
 	}
 }
 
@@ -130,7 +132,7 @@ ai_focus_aviation_GER = {
 		light_air = 10.0
 		light_fighter = 3.0
 		jet_technology = 20.0
-		cas_bomber = 10.0		
+		cas_bomber = 10.0
 		medium_air = 3.0
 		tactical_bomber = 5.0
 		heavy_air = 3.0

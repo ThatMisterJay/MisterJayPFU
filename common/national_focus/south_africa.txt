@@ -1971,6 +1971,9 @@ focus_tree = {
 				uses = 2
 				category = convoy_defense_tree
 			}
+			set_technology = {
+				early_destroyer = 1
+			}
 		}
 	}
 
@@ -2003,6 +2006,9 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = cat_trade_interdiction
+			}
+			set_technology = {
+				early_submarine = 1
 			}
 		}
 	}

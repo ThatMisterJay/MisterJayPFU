@@ -129,5 +129,4 @@ spriteTypes = {
 		name = "GFX_special_forces_1c_medium"
 		texturefile = "gfx/interface/technologies/tech_extreme_environment_training.dds"
 	}
-
 }

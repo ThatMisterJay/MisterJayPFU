@@ -24,17 +24,17 @@ default = {
 ###############################################################
 GER = {
 	male = {
-		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
 		}
 	}
 	female = {
 		names = { Jessica Emma Hanna Sofia Marie }
 	}
-	surnames = { 
-		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
-		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
-		Beisswenger Duttmann Wilbs Berglen Behrmann 
+	surnames = {
+		Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm
+		Beisswenger Duttmann Wilbs Berglen Behrmann
 		}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
@@ -57,42 +57,42 @@ ENG = {
 			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
 			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
 			Smith Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood Leiper Roberts
-			
+
 		}
 	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
 }
 
 SOV = {
 	male = {
-		names = { Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
-                                 Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim 
-                                 Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei 
+		names = { Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady
+                                 Giorgi Grigoriy Igor Ilya Ivan Kirill Konstantin Lavr Leonid Lev Maxim
+                                 Mikhail Nikita Nikolai Oleg Pavel Pyotr Roman Semyon Sergei
                                  Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yuri
 		}
 	}
 	female = {
 		names = { Jelena Ludmila }
 	}
-	surnames = { 
-			Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin 
-                        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov 
-                        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov 
-                        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev 
+	surnames = {
+			Alexseyev Antonov Azarov Badanov Brusilov Budyonny Chibisov Denikin
+                        Dragomirov Frolov Golivin Grishin Gurko Ivanov Ivannikov Konev Konstantinov Kornilov
+                        Kolchak Kuropatkin Lazarev Makarov Menshikov Nakhimov Nebogatov
+                        Nikolaevich Nikitin Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
                         Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko
-	
+
 	}
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
 FRA = {
 	male = {
-		names = {  
+		names = {
 		Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
 		Charles Daniel Denis Édouard Elie Éttiene Eugène Félicien Félix Fernand
 		François Frédéric Georges Guillaume Gustave Henri Hubert Hugo Jacques Jean
 		Joseph Jules Julien Lazare Léopold Leroy Louis Lucien Matthieu Michel
 		Napoléon Nicolas Patrice Paul Philippe Pierre Robert Thibaut Thierry Thomas
-		
+
 		 }
 	}
 	female = {
@@ -100,7 +100,7 @@ FRA = {
 	}
 	surnames = {
 		Anthoine "Baraguey d'Hilliers" Bazaine Billot Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki
-		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau" 
+		Bugeaud Caillard Canrobert Courbet Cousin-Mountauban Davout "de Castellane" "de Castelnau"
 		"de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d'Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans
 		Foch Forey "Franchet d'Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert
 		Jaurès Joffre Lebouef Lyautey Murat "Ney d'Elchingen" Nivelle Péllissier Petain Vaillant
@@ -110,13 +110,13 @@ FRA = {
 
 ITA = {
 	male = {
-		names = { 
+		names = {
 			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
 			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
 			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
 			Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
 			Raffaele Roberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
-		
+
 		  }
 	}
 	female = {
@@ -125,46 +125,46 @@ ITA = {
 	surnames = {
 		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
 		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia"
-		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti 
+		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti
 		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
 		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
-	
+
 	 }
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
 }
 
 USA = {
 	male = {
-		names = { 
-		
-			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
+		names = {
+
+			Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses
 			Joseph Charles Russell Benjamin Robert Christopher Richard Chester Lafayette Nathaniel Francis James Donald Cyrus Ambrose
 			Edward Eugene Augustus Norton Abner Isaac Amos Thomas Randolph
-			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard 
-			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre 
+			Robert Jesse James Nathan George Joseph John Patrick Albert Braxton William Ambrose Jubal Richard
+			Lewis Edmund Leonida Benjamin Wade Daniel Thomas Jonathan Stonewall Lemual Sterling Raphael Kirby Pierre
 			Jonas Frank Charles Peter Rand Leslie Howard Malvin Oscar Henry Simon Edward Gideon Isaac Evander Jerome Alfred Cadmus
-			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin 
+			Carnot Ezra Wilton Hamilton Matthew Richard Hiram Thomas Elkanah John William James Albert Wilburn Walter Hinchie Samuel Benjamin
 			Henry Allison Horace Felix Jerome Lawrence Alexander Louis Steven Zach
-		
+
 		  }
 	}
 	female = {
 		names = { Mary Jane }
 	}
-	surnames = { 
+	surnames = {
 		Smith Washington Grant Sherman Chamberlain Powell Clemens Abbott Abercrombie Allen Ames Anderson Barkhauer Andrews Appleton
-		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates 
+		Armstrong Arthur Atkins Asboth Babcock Baker Pope Banks Barnard Barnes Barnum Barry Barstow Bartlett Bates
 		Baxter Beatty Belknap Benton Blair Blunt Bradley Brown Buell Buford Burnside Butler Caldwell Campbell Carr
-		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth 
+		Chapman Chipman Clayton Coburn Connor Conrad Cook Cooper Crittenden Custer Davies Davis Doubleday Ewing Farnsworth
 		Ford Forsyth Foster Franklin Fry Gilbert Gregg Griffin Halleck Hamlin Hancock Harrison Hatch Hayes Heintzelman
 		Hooker Howard Hunter Jackson Johnson Jones Keyes Kimball Lyon McArthur McClellan McCook McDowell Meade Mitchell
 		Morgan Paine Phelps Porter Potter Reynolds Rice Rhodes Robinson Rosencrans Saloman Schenck Schofield Scott Sedgwick
 		Seward Sheridan Sickles Sprague Stevens Stevenson Stone Sullivan Taylor Tyler Wade Wadsworth Wallace Ward Warner
-		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg 
-		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price 
-		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth 
-		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer 
-		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore 
+		Wilson Wright Young Lee Jackson Johnson Beauregard Stuart Longstreet Forrest Pickett Mosby Cleburne Hood Breckenridge Bragg
+		Barksdale Early Hill Ewell Morgan Armistead Semmes Smith Hampton Polk Cheatham Wheeler Pemberton Gordon Hardee Floyd Price
+		Wise "Van Dorn" Loring Buckner Taylor Williams French Gibbs Hindman Anderson Sibley Garnett Magruder Pillow McLaws Rodes Heth
+		Pender Trimble Kershaw Wofford Kemper Law Robertson Benning Hays Walker Iverson Wilcox Mahone Wright Pettigrew Archer
+		Davis Lane Posey Scales Warner Imboden Jenkins Bee Ector Gano Granbury Green Greer Gregg Hardeman Harrison Hood Johnston King Lane Mabry Maxey McCulloch Moore
 		Nelson Randal Robertson Ross Rosser Scurry Steele Terrell Waterhouse Waul Wharton Whitfield Wigfall Young Bowie Travis Houston
 		Wells Holmgren
 
@@ -174,7 +174,7 @@ USA = {
 
 JAP = {
 	male = {
-		names = { 
+		names = {
 		Aritomo
 		Goro Gentaro Gonnohyoe
 		Heihachiro Hiroshi Hikonojo Hyoe Hayao
@@ -192,7 +192,7 @@ JAP = {
 	female = {
 		names = { Aimi Asami Asuka }
 	}
-	surnames = { 
+	surnames = {
 		Arisugawa Arichi Akiyama Araki
 		Dewa
 		Enomoto
@@ -206,7 +206,7 @@ JAP = {
 		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
 		Uehara Uryu Ugaki Ueda
 		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
-	
+
 	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
 }
@@ -222,14 +222,14 @@ JAP = {
 
 SWE = {
 	male = {
-		names = { Dan David Fredrik Gustav Johan Martin Olof Nils Peter Per Dennis Alexander Felix Magnus 
+		names = { Dan David Fredrik Gustav Johan Martin Olof Nils Peter Per Dennis Alexander Felix Magnus
 		Tobias Erik Niklas Björn Emil Robin Jonas John Rikard Daniel Anton Andreas
 		}
 	}
 	female = {
 		names = { Anna Linda Sara Caroline Eira }
 	}
-	
+
 	surnames = { Andersson Anward Björk Johansson Kiby Lind Norrevik Palmqvist Zetterman Wester Cornelius
 			Hasselström Knubb Sjöman Dahlberg Borg Wendel Sparrhult Oltner Hemmingsson Jenelius
 			Nisshagen Karlsson Bodlund Elgerot Lundström Blomberg Viklund Lindgren Lagerqvist
@@ -244,7 +244,7 @@ NOR = {
 			Harald Haakon Olaf Paul Petter Carl  Christian Kaare Jacob Søren Wilhelm Tryggve Daniel
 		 }
 	}
-	
+
 	female = {
 		names = { Trine Kajsa }
 	}
@@ -258,11 +258,11 @@ NOR = {
 
 FIN = {
 	male = {
-		names = { 
+		names = {
 			Lauri Pekka Mauno Jussi Alpo Petri Kari Juha Risto Viljo Paavo Eino Arvo Ville Mikko Petteri Aleksi Allu Ahti Ahto Erikki Eero Jani Jarno Johannes Kauko Kalevi Ilkka Eljas Erkki Auno Ilmo Kaarle
 		 }
 	}
-	
+
 	female = {
 		names = { Anna }
 	}
@@ -282,11 +282,11 @@ DEN = {
 	female = {
 		names = { Karen Alma Elsa Else Monica }
 	}
-	surnames = { 
+	surnames = {
 		Ahlefeldt Asp-Persson Berger Bonde Carlsen Dannemand Danneskjold-Samso  Eberlin Falsen
 		Folsach Güntelberg Gyldenfeldt Haack Hambro Haxthausen Juul Klauman Krogh Laessoe Hansen Have
 		Leuenbach Lovenbalk Michaelsen Mylius Neergaard Obelitz Oxholm Reventlow Rosenkrantz Schack-Schackenborg
-		Stemman Suenson Thygeson Trampe Urne  Wadenstierna Wedel-Heinen Zytphen-Adeler 
+		Stemman Suenson Thygeson Trampe Urne  Wadenstierna Wedel-Heinen Zytphen-Adeler
 		}
 	callsigns = { }
 }
@@ -328,51 +328,6 @@ LIT = {
 	callsigns = { }
 }
 
-EST = {
-	male = {
-		names = { Aadu Alar Aleksander Andrus Artur August Bernard Dmitri Eduard Eerik
-		Elmar Ernst Georg Gustav Haman Harri Heino Hendrik Hjalmar Ivari
-		Jaan Jakob Johannes Joosep Juhan Julius Jüri Kaarel Kalev Konstantin
-		Lennart Ludvig Madis Mart Mikhel Nigul Olev Paavo Peeter Pent
-		Ragnar Siiri Sven Tarmo Tõnis Toomas Uno Valmar Villwm Voldemar
-		}
-	}
-	female = {
-		names = { Anna }
-	}
-	surnames = {
-		Aamisepp Aavik Adams Anvel Barbarus Bornhöhe Eenpalu Hint Hurt Jaakson
-		Kangro Kint Klaasen Koern Kõiv Kotli Kumari Kupine Kuusik Leppik
-		Lipping Lohk Mäe Männil Moora Natus Nurkse Nurmekund Õkva Öpik
-		Orkivu Päts Perna Piiper Poska Puusepp Ränk Rei Reinman Siinmaa
-		Sikkar Sirk Tõnisson Uluots Vaga Veske Vilbaste Vilms "von Uexküll" Warma
-	
-	 }
-	callsigns = { }
-}
-
-LAT = {
-	male = {
-		names = { Aaron Abrams Alberts Aleksandrs Aloisz Andrejs Arkadij Armands Arnolds Atis
-		Brunis Bruno Eduards Eliass Elmars Emils Evgenijs Filips Fricis Gustavs
-		Heinrihs Hermanis Izaks Janis Jazeps Jekabs Johans Juris Karlis Krisjanis
-		Leo Mark Martins Mihails Mikelis Nikolajs Oskars Pauls Peteris Rihards
-		Roberts Romans Sandis Sergejs Valdemars Valerians Valter Vilis Vladimirs Zigfrids
-		  }
-	}
-	female = {
-		names = { Anna }
-	}
-	surnames = { 
-		Abakovskis Apsenieks Balodis Baumanis Berkis Berzin Betins Braons Caks Cakste
-		Caps Celmins Dalins Dambitis Darzins Desslers Eizenteins Goppers Halsmans
-		Irbitis Kalnins Kalpaks Kucis Kovalevskis Krogzems Kronvalds Kuks Kviesis Lacis
-		Leiko Loskis Maters Matisons Meierovics Mihelssons Milenbahs Millers Needra Ozolins
-		Petrovs Plieksans Pumpurs Rothko Simanis Stucka Tumins Ulmanis Veidenbaums
-	}
-	callsigns = { }
-}
-
 
 
 ###############################################################
@@ -403,7 +358,7 @@ ROM = {
 
 YUG = {
 	male = {
-		names = {  
+		names = {
 			Alaksandar Blagoje Bozidar Branko Danilo Dejan Djordje Dragan Dragisa Dragoljub
 			Dragutin Draza Dusan Gavrilo Goran Janko Jovan Koca Kosta Krsto
 			Ljubisa Mihailo Milan Miliutin Milivoje Milojko Milos Miodrag Mirko Miroslav
@@ -426,7 +381,7 @@ YUG = {
 
 SER = {
 	male = {
-		names = {  
+		names = {
 			Alaksandar Blagoje Bozidar Branko Danilo Dejan Djordje Dragan Dragisa Dragoljub
 			Dragutin Draza Dusan Gavrilo Goran Janko Jovan Koca Kosta Krsto
 			Ljubisa Mihailo Milan Miliutin Milivoje Milojko Milos Miodrag Mirko Miroslav
@@ -449,7 +404,7 @@ SER = {
 
 GRE = {
 	male = {
-		names = { 
+		names = {
 			Adamantios Alexandros Anastasios Andreas Antonios Aristidis Athanasios Augustinos Benizelos Charalambos
 			Charilaos Dimitrios Diomidis Eleftherios Emmanouil Epameinontas Evripidis Gennaios Georgios Ilias
 			Ionnis Kitsos Konstantinos Kyriakos Kyriakoulis Leonidas Makarios Markos Mikhael Militiadis
@@ -464,7 +419,7 @@ GRE = {
 		Altanis Charalambis Christakis-Zografos Danglis Dousmanis Foumis Gonatas Hatzianestis Kallergis Kanaris Katsimiros
 		Kolokotronis Kondylis Kountouriotis Kriezis Makriyannis Manos Mavrocordatos Mavrovouniotis Metaxas Mouskos
 		Nider Othonaios Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas
-		Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas 
+		Plastiras Sapountzakis Sarafis Smolenskis Sofoulis Soutsos Spyromilios Staikopoulos Stanotas
 		Trikoupis Tsakalotos Tsolakoglou  Tzavelas Vassos Venizelos Voulgaris Zaimis Zymvrakakis
 	 }
 	callsigns = { }
@@ -472,7 +427,7 @@ GRE = {
 
 ALB = {
 	male = {
-		names = { 
+		names = {
 			Ahmet Ali Azem Bajram Behxhet Davud Ekrem Elez Enver Eqrem
 			Esad Fatmir Fejzi Fiqri Gjergj Gjon Hasan Hashim Ibrahim Idhomene
 			Iliaz Ishak Ismail Izet Kara Kastriot Koçi Köpryly Kostaq Lekë
@@ -483,7 +438,7 @@ ALB = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Ahmeti al-Albani Bardha Bazna "Bej Alizoti" "Bej Biçakçiu" "Bej Delvina" "Bej Frashëri" "Bej Libohova" "Bej Ndroque"
 		"Bej Prishtina" "Bej Verlaci" "Bej Vrioni" "Bej Ypi" "Bej Zogu" Belishi Burbank Bushati Buza Çabej
 		Çeku Dine Dragoti Dukagiini Dushku Evangjeli Feza Hoxha Islami Kadare
@@ -495,19 +450,19 @@ ALB = {
 
 BUL = {
 	male = {
-		names = { 
+		names = {
 			Aleksandar Andrey Asen Atanas Atila Bogdan Boncho Boris Damyan Dimitar
 			Dobri Ferdinand Georgi Hristo Ilya Ivan Kalin Kardam Kimon Kiril
 			Kliment Konstantin Krastyu Leonid Mihail Nikifor Niloa Pencho Petar Petko
 			Petur Pravoslav Racho Radko Radoy Sava Simeon Sotir Stanislav Stanko
-			Stefan Stiliyan Stoyu Teodosi Todor Trifon Valko Vasil Velizar Vulko	
-		
+			Stefan Stiliyan Stoyu Teodosi Todor Trifon Valko Vasil Velizar Vulko
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Agura Balabanov Balkanski Battemberg Blaskov Boyadzhiev Bradistilov Charakchiev Daskalov Dikov
 		Dimitriev Draganov Fichev Georgiev Hesapchiev Ilyev Ivanov Kirkov Kovachev Krayonski
 		Kutinchev Lazarov Lukov Marinkov Marinov Mutkorov Naydenov Nazlamov Nikiforov Nikolaev
@@ -519,7 +474,7 @@ BUL = {
 
 HUN = {
 	male = {
-		names = { 
+		names = {
 			Alajos Albert Álmos Anasztáz András Arisztid Aurél Béla Benedek Béni
 			Bertalan Dániel Dávid Edvárd Éliás Erno Ferencz Gábor Gábriel Gáspár
 			György Gyula Ignác Imre István Izidor János József Kálmán
@@ -530,10 +485,10 @@ HUN = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Vajlok Andrássy Apponyi Aulich Bacher Baross Batthyány Beöthy Bothmer Damjanich Dessewffy
 		Egressy Farkas Goldziher Gungl Hauszmann Heller Horthy Izsó
-		Joseffy Katona Kaufman Kéler Kiss Knezich Kogutowicz Lahner Lázár 
+		Joseffy Katona Kaufman Kéler Kiss Knezich Kogutowicz Lahner Lázár
 		Liszt Mikszáth Molnár Nagy-Sándor Österreicher Ottinger Perczel Poeltenberg Reményi
 		Rohr Schweidel Széchenyi Szemere Szlávic Tersztyansky Török Varga Vécsey
 	}
@@ -542,7 +497,7 @@ HUN = {
 
 CRO = {
 	male = {
-		names = { 
+		names = {
 			Mario Andrija Antun Bazilije Breno Dragutin Dzivo Filip Franjo Gaspar Ivan
 			Janko Jero Jerolim Josip Juraj Karlo Kresimir Krsto Ljudevit Lucijan
 			Luka Marijan Marin Matej Matko Maximiliam Medo Mihajlo Mirko Miroslav
@@ -559,7 +514,7 @@ CRO = {
 		Gucetic Gundulic Haulik Jelacic Kabuzic Keglevic Kostrencic Krstulovic Lagimja Mazuranic
 		Mihailovic Mohorovicic Mrazovic Natali Nazor Njegovan Palecek Pejacevic Philippovic Preradovic
 		Pucic Ranjina Sarkotic Sokcevic Sorkocevic Stankovaci Tomasic Tomlejnovic Vakanovic Vlasic
-	
+
 	 }
 	callsigns = { }
 }
@@ -580,10 +535,10 @@ SLO = {
 POL = {
 	male = {
 		names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz
-			 Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor 
+			 Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor
 			 Leszek
 		}
-		surnames = { 
+		surnames = {
 			Nowak Kowalski Wiśniewski Kamiński Lewandowski Zieliński Szymański
 		 	Dąbrowski Kozłowski Jankowski Kwiatkowski Wojciechowski Piotrowski Grabowski
 		 	Aleksandrowicz Koter
@@ -601,11 +556,11 @@ POL = {
 ###############################################################
 LUX = {
 	male = {
-		names = { 
-			Albert Alexandre Alexis Alphonse André Antoine Auguste Barthélémy Baudouin Blaise Camille Clément Charles Constant 
-			Damien David Désiré Didier Edmond Édouard Emmanuel Émile Etienne Eugène Félix Fernand Feullien Florent François Frédéric Georges 
-			Gérard Gilles Guillaume Gustave Henri Hercule Hubert Ignace Isidore Jacques Jean Jean-Baptiste Jean-François Jean-Louis 
-			Jean-Jacques Joseph Jules Lambert Laurent Léon Léonard Léopold Louis Lucien Mathieu Maxime Maximilien Nicolas Olivier 
+		names = {
+			Albert Alexandre Alexis Alphonse André Antoine Auguste Barthélémy Baudouin Blaise Camille Clément Charles Constant
+			Damien David Désiré Didier Edmond Édouard Emmanuel Émile Etienne Eugène Félix Fernand Feullien Florent François Frédéric Georges
+			Gérard Gilles Guillaume Gustave Henri Hercule Hubert Ignace Isidore Jacques Jean Jean-Baptiste Jean-François Jean-Louis
+			Jean-Jacques Joseph Jules Lambert Laurent Léon Léonard Léopold Louis Lucien Mathieu Maxime Maximilien Nicolas Olivier
 			Pascal Patrice Paul Philippe Philippe-Joseph Pierre Pierre-Guillaume Sébastien Sylvain Théophile Victor Vincent Werner
 		}
 	}
@@ -613,62 +568,62 @@ LUX = {
 		names = { Marie }
 	}
 	surnames = {
-		Allard Barbanson Barthélémy Baugniet Beaucarne Berger Berthels Beyts Biver Blargnies Brialmont Bredart Cauvin Collet 
-		Cols Claus Clerix Coquilhat d'Arenberg d'Huart d'Omalius d'Oreye d'Oultremont David Davignon "de Baillet" "de Beaufort" 
+		Allard Barbanson Barthélémy Baugniet Beaucarne Berger Berthels Beyts Biver Blargnies Brialmont Bredart Cauvin Collet
+		Cols Claus Clerix Coquilhat d'Arenberg d'Huart d'Omalius d'Oreye d'Oultremont David Davignon "de Baillet" "de Beaufort"
 		"de Behr" "de Bocarmé" "de Bousies" "de Brouckère" "de Broqueville" "de Burlet" "de Celles" "de Chasteler" "de Coppin de Falaen"
-		"de Croÿ" "de Decker" "de Dixmude" "de Gerlache" "de Grez" "de Hemptinne" "de Labbeville" "de Lannoy" "de Ligne" "de Leuze" "de Melin" 
-		"de Mérode" "de Pelichy" "de Quarre" "de Riquet" "de Robaulx" "de Rouille" "de Sauvage" "de Sécus" "de Selys Longchamps" 
-		"de Stassart" "de Stockem" "de Theux de Meylandt" "de Trazegnies" "de Trooz" "de Viron" "de Waha" Defacqz Deguise Delacroix 
+		"de Croÿ" "de Decker" "de Dixmude" "de Gerlache" "de Grez" "de Hemptinne" "de Labbeville" "de Lannoy" "de Ligne" "de Leuze" "de Melin"
+		"de Mérode" "de Pelichy" "de Quarre" "de Riquet" "de Robaulx" "de Rouille" "de Sauvage" "de Sécus" "de Selys Longchamps"
+		"de Stassart" "de Stockem" "de Theux de Meylandt" "de Trazegnies" "de Trooz" "de Viron" "de Waha" Defacqz Deguise Delacroix
 		"Desmanet de Biesme" Destriveaux Dethier Devaux Deville Dewandre Dhanis Dreze "du Bois" "du Bus" "du Pont" "du Val de Beaulieu" Dumont
-		Fallon Fendius Figeys Fleury-Dubay Fleussu Forgeur Frison Fuchs Gendebien Goffint Henry "Huysman d'Annecroix" Jacques Joos Jottrand 
-		Lahure Lardinois "le Cocq" "le Hon" Lebeau Leclercq Lefebvre Leman Malou Marcq Marlet Masbourg Nagelmackers Nalinne Nothomb 
+		Fallon Fendius Figeys Fleury-Dubay Fleussu Forgeur Frison Fuchs Gendebien Goffint Henry "Huysman d'Annecroix" Jacques Joos Jottrand
+		Lahure Lardinois "le Cocq" "le Hon" Lebeau Leclercq Lefebvre Leman Malou Marcq Marlet Masbourg Nagelmackers Nalinne Nothomb
 		Orban Pétillon Picquet Pirmez Pirson Raikem Roeser Rogier Rouen Rouppe Seron Thonus Thorn "van Snick" Wahis Wangermée Wyvekens Zoude
-	
+
 	 }
 	callsigns = { }
 }
 BEL = {
 	male = {
-		names = { 
-			Albert Alexandre Alexis Alphonse André Antoine Auguste Barthélémy Baudouin Blaise Camille Clément Charles Constant 
-			Damien David Désiré Didier Edmond Édouard Emmanuel Émile Etienne Eugène Félix Fernand Feullien Florent François Frédéric Georges 
-			Gérard Gilles Guillaume Gustave Henri Hercule Hubert Ignace Isidore Jacques Jean Jean-Baptiste Jean-François Jean-Louis 
-			Jean-Jacques Joseph Jules Lambert Laurent Léon Léonard Léopold Louis Lucien Mathieu Maxime Maximilien Nicolas Olivier 
+		names = {
+			Albert Alexandre Alexis Alphonse André Antoine Auguste Barthélémy Baudouin Blaise Camille Clément Charles Constant
+			Damien David Désiré Didier Edmond Édouard Emmanuel Émile Etienne Eugène Félix Fernand Feullien Florent François Frédéric Georges
+			Gérard Gilles Guillaume Gustave Henri Hercule Hubert Ignace Isidore Jacques Jean Jean-Baptiste Jean-François Jean-Louis
+			Jean-Jacques Joseph Jules Lambert Laurent Léon Léonard Léopold Louis Lucien Mathieu Maxime Maximilien Nicolas Olivier
 			Pascal Patrice Paul Philippe Philippe-Joseph Pierre Pierre-Guillaume Sébastien Sylvain Théophile Victor Vincent Werner
-		
+
 		  }
 	}
 	female = {
 		names = { Marie }
 	}
 	surnames = {
-		Allard Barbanson Barthélémy Baugniet Beaucarne Berger Berthels Beyts Biver Blargnies Brialmont Bredart Cauvin Collet 
-		Cols Claus Clerix Coquilhat d'Arenberg d'Huart d'Omalius d'Oreye d'Oultremont David Davignon "de Baillet" "de Beaufort" 
+		Allard Barbanson Barthélémy Baugniet Beaucarne Berger Berthels Beyts Biver Blargnies Brialmont Bredart Cauvin Collet
+		Cols Claus Clerix Coquilhat d'Arenberg d'Huart d'Omalius d'Oreye d'Oultremont David Davignon "de Baillet" "de Beaufort"
 		"de Behr" "de Bocarmé" "de Bousies" "de Brouckère" "de Broqueville" "de Burlet" "de Celles" "de Chasteler" "de Coppin de Falaen"
-		"de Croÿ" "de Decker" "de Dixmude" "de Gerlache" "de Grez" "de Hemptinne" "de Labbeville" "de Lannoy" "de Ligne" "de Leuze" "de Melin" 
-		"de Mérode" "de Pelichy" "de Quarre" "de Riquet" "de Robaulx" "de Rouille" "de Sauvage" "de Sécus" "de Selys Longchamps" 
-		"de Stassart" "de Stockem" "de Theux de Meylandt" "de Trazegnies" "de Trooz" "de Viron" "de Waha" Defacqz Deguise Delacroix 
+		"de Croÿ" "de Decker" "de Dixmude" "de Gerlache" "de Grez" "de Hemptinne" "de Labbeville" "de Lannoy" "de Ligne" "de Leuze" "de Melin"
+		"de Mérode" "de Pelichy" "de Quarre" "de Riquet" "de Robaulx" "de Rouille" "de Sauvage" "de Sécus" "de Selys Longchamps"
+		"de Stassart" "de Stockem" "de Theux de Meylandt" "de Trazegnies" "de Trooz" "de Viron" "de Waha" Defacqz Deguise Delacroix
 		"Desmanet de Biesme" Destriveaux Dethier Devaux Deville Dewandre Dhanis Dreze "du Bois" "du Bus" "du Pont" "du Val de Beaulieu" Dumont
-		Fallon Fendius Figeys Fleury-Dubay Fleussu Forgeur Frison Fuchs Gendebien Goffint Henry "Huysman d'Annecroix" Jacques Joos Jottrand 
-		Lahure Lardinois "le Cocq" "le Hon" Lebeau Leclercq Lefebvre Leman Malou Marcq Marlet Masbourg Nagelmackers Nalinne Nothomb 
+		Fallon Fendius Figeys Fleury-Dubay Fleussu Forgeur Frison Fuchs Gendebien Goffint Henry "Huysman d'Annecroix" Jacques Joos Jottrand
+		Lahure Lardinois "le Cocq" "le Hon" Lebeau Leclercq Lefebvre Leman Malou Marcq Marlet Masbourg Nagelmackers Nalinne Nothomb
 		Orban Pétillon Picquet Pirmez Pirson Raikem Roeser Rogier Rouen Rouppe Seron Thonus Thorn "van Snick" Wahis Wangermée Wyvekens Zoude
-	
+
 	 }
 	callsigns = { }
 }
 
 HOL = {
 	male = {
-		names = { 
+		names = {
 			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
 		 }
 	}
-	
+
 	female = {
 		names = { Coba Corrie Frieda Hannie Helena Ina Jet Joke Miep Reina Truus }
 	}
 
-	surnames = { 
+	surnames = {
 	Boers "'t Mannetje" Best "Bischoff van Heemskerk" "de Visser" "den Hollander" "den Ouden" "Jacometti" "van den Bent" "van den Briel" "van den Hof" "van der Bijl" "van Helsdingen" "van Liempd" "van Setten" "van Voorst tot Voorst" "van Zinnicq Bergmann" "Wittert van Hoogland" Bosch Bruggink Bruinier Buijs Buurman Carstens "den Breejen" Elias Folmer Giesen Ham Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Leegstra Lukkien Maas Migchelbrink Reijnierse Rijnders Roelofsen Sandberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman
 	  }
 }
@@ -690,41 +645,41 @@ CZE = {
 
 AUS = {
 	male = {
-		names = {  Ezekiel Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
+		names = {  Ezekiel Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl  }
 	}
 	female = {
 		names = { Sandra }
 	}
-	surnames = { Lugmair Neudinger Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn 
-		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm 
-		Beisswenger Duttmann Wilbs Berglen Behrmann 
+	surnames = { Lugmair Neudinger Muller Schmidt Schneider Fischer Meyer Weber Schulz Wagner Hartmann Rall Barkhorn
+		Becker Hoffmann Graf Erhler Hafner Lipfert Brendel Stotz Kirschner Lang Sturm
+		Beisswenger Duttmann Wilbs Berglen Behrmann
 	}
 	callsigns = { }
 }
 
 POR = {
 	male = {
-		names = { 
-			Abel Adriano Afonso Alberto Alexandre Alfredo Álvaro André António Aquilino 
+		names = {
+			Abel Adriano Afonso Alberto Alexandre Alfredo Álvaro André António Aquilino
 			Artur Augusto Bartolomeu Bernardo Bruno Caetano Cândido Carlos Christovão Cláudio
-			Damião Daniel David Dinis Diogo Duarte Ernesto Estêvão Eugénio Fernando 
+			Damião Daniel David Dinis Diogo Duarte Ernesto Estêvão Eugénio Fernando
 			Filipe Francisco Gastão Hermenegildo Ignácio JErónimo João Joaquim Jorge
-			José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando 
-			Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago 
+			José Júlio Leopoldo Luís Manuel Mário Miguel Nicolau Nuno Orlando
+			Óscar Pascoal Paulo Pedro Rafael Raul Roberto Rodrigo Rui Santiago
 			Sebastião Teodoro Teófilo Tiago Tomé Urbano Vasco Vicente Vitorino Vitório
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Amaral Barreto Bleck Braga Cabral Capelo Carmona Coelho Correia Coutinho
-		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de Bragança" "de Bragança-Coburgo" "de Carvalho" 
+		"da Costa" "da Cunha" "da Silva" "de Albuquerque" "de Almeida" "de Arriaga" "de Bragança" "de Bragança-Coburgo" "de Carvalho"
 		"de Castro" "de Gusmão" "de Lacerda" "de Mesquita" "de Moura" "de Noronha" "de Oliveira" "de Paiva" "de Sousa" "de Vasconcelos"
 		Dias "dos Reis" "dos Santos" Fernandes Ferreira Figueira "Freire de Andrade" Gago Gil Gomes
-		Herculano Ivens Keil Lopes Machado Magalhães Mendes Moniz Mouzinho Nogueira 
+		Herculano Ivens Keil Lopes Machado Magalhães Mendes Moniz Mouzinho Nogueira
 		Nunes Ortigão Pereira Pinheiro Pinto Pires Pomar Pulido Queiroz Quintanilha
 		Ribeiro Rodrigues Salazar Sampaio Sérgio Silveira Tavares Teixeira Vidigal Vieira
 	 }
@@ -749,18 +704,18 @@ IRE = {
 }
 SWI = {
 	male = {
-		names = { 
+		names = {
 			Adolf Alexander Eduard Ernst Franz Hans Johann Josef Konstantin Martin
 			Melchior Robert Rudolf Ulrich Wilhelm Augusto Enrico Flavio Giuseppe Vincenzo
 			Antoine Charles Emmanuel Guillaume Gustave Henri Hugo Louis Marc Paul
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
 	surnames = {
-		Brenner Deucher Funk Haab Herzog Knüsel Munzinger Näff Schneider 
+		Brenner Deucher Funk Haab Herzog Knüsel Munzinger Näff Schneider
 		"von Donatz" "von Salis-Soglio" "von Steiger" "von Tavel" Wille Celio Cotti Fogliardi Motta Zeni
 		Ador Calonder Chaudet Comtesse "de Prangins" Dufour Fornerod Guisan Ruchet Ruchonnet
 	 }
@@ -769,30 +724,30 @@ SWI = {
 
 SPR = {
 	male = {
-		names = { 
+		names = {
 			Agustín Alberto Alejandro Alfonso Álvaro Antonio Arsenio Augusto Baldomero
 			Baltasar Benito Bernardino Bernardo Calixto Carlos Celestino Claudio Cristobal Dámaso
 			Diego Dionisio Eduardo Emilio Estanislao Federico Felipe Félix Fernando Francisco
 			Gabino Gabriel Gaspar Genaro Gonzalo Ignacio Isidro Jacobo Jaime
-			Joaquín José  Juan Julio Leopoldo Lorenzo 
+			Joaquín José  Juan Julio Leopoldo Lorenzo
 			Luis Manuel Marcelo Mariano Mateo Melchor Miguel Nicolás Pablo Pascual
-			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente 
+			Pedro Rafael Raimundo Ramón Ricardo Santiago Sebastián Segismundo Valeriano Vicente
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Blázquez
 		Acuña Aguirre Allendesalazar Alonso Álvarez  Aranda  Asensio
-		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz" 
-		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández   Franco 
-		García  González Heredia Hernández Herrera Hevia  Linares López 
-		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz 
-		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz 
+		Aznar Barradas Bugallal Cabrera Cano Cervera "de Albornoz"
+		"de Carvajal" "de la Fuente" "de Orleans" Díaz Espartero Fernández   Franco
+		García  González Heredia Hernández Herrera Hevia  Linares López
+		Maroto Márquez Martínez-Campos Maura Menéndez Miaja Millán-Astray Mina Mola Muñoz
+		Narváez O'Donnell Ortega Pavía Pérez  Rodríguez Rojo Ruiz
 		Sanjurjo Serrano Silvestre Topete Valdés Varela Villapol Villar Weyler Yagüe
-	
-	
+
+
 	}
 	callsigns = { }
 }
@@ -802,12 +757,12 @@ SPR = {
 ###############################################################
 AFG = {
 	male = {
-		names = { 
+		names = {
 			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram   Ayyub
 			Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil
 			Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar
 			Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman
-		
+
 		 }
 	}
 	female = {
@@ -818,57 +773,57 @@ AFG = {
 }
 IRQ = {
 	male = {
-		names = { Karim 
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid 
+		names = { Karim
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		 }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { Muammar "al-Baghdadi" "al-Basri" "al-Ghazzawi" "al-Halabi" "al-Hamawi" "al-Himsi" 
-			"al-Mawsili" "al-Nablusi" "al-Qudsi" "al-Shami"  
+	surnames = { Muammar "al-Baghdadi" "al-Basri" "al-Ghazzawi" "al-Halabi" "al-Hamawi" "al-Himsi"
+			"al-Mawsili" "al-Nablusi" "al-Qudsi" "al-Shami"
 			"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"   
-			"ibn Umar" "ibn Uthman" "ibn Yusuf" 
-	
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+
 	}
 	callsigns = { }
 }
 OMA = {
 	male = {
 		names = {
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid 
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		 }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { "al-Baghdadi" "al-Basri" "al-Ghazzawi" "al-Halabi" "al-Hamawi" "al-Himsi" 
-			"al-Mawsili" "al-Nablusi" "al-Qudsi" "al-Shami"  
+	surnames = { "al-Baghdadi" "al-Basri" "al-Ghazzawi" "al-Halabi" "al-Hamawi" "al-Himsi"
+			"al-Mawsili" "al-Nablusi" "al-Qudsi" "al-Shami"
 			"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"   
-			"ibn Umar" "ibn Uthman" "ibn Yusuf" 
-	
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
+			"ibn Umar" "ibn Uthman" "ibn Yusuf"
+
 	}
 	callsigns = { }
 }
 PER = {
 	male = {
 		names = { Aziz Shams Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
-			Fazlollah Hamzeh Hasan Karim Mahmoud  Mohammad Murad Muhsin  Nosret Reza  
+			Fazlollah Hamzeh Hasan Karim Mahmoud  Mohammad Murad Muhsin  Nosret Reza
 			Afshin  Ardashir Aria Arshad Arman Armand Ammar Amir Arash Arvin Atash
 			Bijan Babak Bardia Basir Dalir Dariush Derafsh Ebrahim Ervin Ehsan Esmail Izad
-			Farhad Farbod Farrokh Farshid Hamid Hassan Hossein Hormuzd Jamshid Kamran Kasra Khashayar 
-			Kourosh Khosrow Mazdak Mazdan Maziar Mehran Manuchehr Massoud Mehrdad Marzban Mehdi Milad Mir 
-			Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Rostam Sadegh Sassan Sepehr 
+			Farhad Farbod Farrokh Farshid Hamid Hassan Hossein Hormuzd Jamshid Kamran Kasra Khashayar
+			Kourosh Khosrow Mazdak Mazdan Maziar Mehran Manuchehr Massoud Mehrdad Marzban Mehdi Milad Mir
+			Omid Papak Parsa Parviz Payam Pedram Piruz Pouria Ramin Rexa Rostam Sadegh Sassan Sepehr
 			Shahin Shapour Shahryar Shervin Sohrab Soroush Turan Vahid Vandad Yousef Zand Zartosh Zurvan
 		}
 	}
@@ -876,188 +831,188 @@ PER = {
 		names = { Mehrnaz Farnaz }
 	}
 	surnames = {
-		Faghihinejad Jorjani Airom Ansari Ayrum Buzarjomehri Davallu Farhani Jahanbani Kashani 
-		Khuzai Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti Tahmasebi Abed Ahura 
+		Faghihinejad Jorjani Airom Ansari Ayrum Buzarjomehri Davallu Farhani Jahanbani Kashani
+		Khuzai Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti Tahmasebi Abed Ahura
 		Ebrahimi Esfahani Esfandiari Farrokhzad Farahmand Ghorbani Ghademi Homayoun Hooshang
 		Jahandar jahangir Jahanshah Jamshidi Kavoosi Khadem Khiabni Khorasani Khorram-din Lajani Madani
-		Mazdaki Mazdani Mehregan Mazandarani Mokri Mohsen Paria Parsi Pouran Rahbar Rajavi Rezaei Rostamian 
+		Mazdaki Mazdani Mehregan Mazandarani Mokri Mohsen Paria Parsi Pouran Rahbar Rajavi Rezaei Rostamian
 		Sassani Shamshiri Shir-Del Shirazi Tehrani Turani Tabrizi Zahedi
 	}
 	callsigns = { }
 }
 SAU = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 	callsigns = { }
 }
 TUR = {
 	male = {
-		names = {  
-			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
-			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
+		names = {
+			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif
+			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver
 			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev
 			Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi
-			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa 
-			Namik Nazim Nurettin Nuri Numan Omar Osman 
-			Pertev Rauf Receb Reshad Refet Rifat Riza 
-			Sabaheddin Said Selim Shevket Shukru Suleyman 
+			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa
+			Namik Nazim Nurettin Nuri Numan Omar Osman
+			Pertev Rauf Receb Reshad Refet Rifat Riza
+			Sabaheddin Said Selim Shevket Shukru Suleyman
 			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
 		 }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Altay Karabekir Cakmak Gürman Orbay Subasi Erkilet Koval Omurtak Özsü Atli Gökberk
-	
+
 	}
 	callsigns = { }
 }
 YEM = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 }
 EGY = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 	callsigns = { }
 }
 SYR = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 	callsigns = { }
 }
 LEB = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 	callsigns = { }
 }
 JOR = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 	callsigns = { }
 }
 LBA = {
 	male = {
-		names = {  
-			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
-			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid 
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
 			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
-			Tawfiq Umar Uthman Yahya Yusuf Zafir 		
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
-			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid" 
-			"ibn Muhammad" "ibn Mustafa" "ibn Salim"  
+			"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+			"ibn Muhammad" "ibn Mustafa" "ibn Salim"
 			"ibn Umar" "ibn Uthman" "ibn Yusuf"
-			"al-Najdi" "al-Hijazi"   
-	
+			"al-Najdi" "al-Hijazi"
+
 	}
 	callsigns = { }
 }
@@ -1067,7 +1022,7 @@ LBA = {
 ###############################################################
 AST = {
 	male = {
-		names = {  
+		names = {
 			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
 		 }
 	}
@@ -1076,7 +1031,7 @@ AST = {
 	}
 	surnames = {
 		Blamey Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
-	
+
 	 }
 	callsigns = { }
 
@@ -1119,7 +1074,7 @@ AST = {
 }
 NZL = {
 	male = {
-		names = {  
+		names = {
 			John Alf Adrian Louis Hallam Henry Shane Stafford William Frederick Thomas Ronald Lawrence Bruce Ray Stuart Brian Bob Scott Guy
 		 }
 	}
@@ -1128,23 +1083,23 @@ NZL = {
 	}
 	surnames = {
 		Hope Tennyson Northcote War Thesinger Denman Forster Baird Issac Stewart Fisher Cook Davis Armstrong Anderson Mitchell MacKenzie
-	
+
 	 }
 	callsigns = { }
 }
 
 INS_HOL = {
 	male = {
-		names = { 
+		names = {
 			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
 		 }
 	}
-	
+
 	female = {
 		names = { Coba Corrie Frieda Hannie Helena Ina Jet Joke Miep Reina Truus }
 	}
 
-	surnames = { 
+	surnames = {
 	Boers "'t Mannetje" Best "Bischoff van Heemskerk" "de Visser" "den Hollander" "den Ouden" "Jacometti" "van den Bent" "van den Briel" "van den Hof" "van der Bijl" "van Helsdingen" "van Liempd" "van Setten" "van Voorst tot Voorst" "van Zinnicq Bergmann" "Wittert van Hoogland" Bosch Bruggink Bruinier Buijs Buurman Carstens "den Breejen" Elias Folmer Giesen Ham Harberts Hilberdink Hoogewerff Hoving Jaapies Janssen Jolles Kaak Kraak Krouwel Kuiper Landzaat Leegstra Lukkien Maas Migchelbrink Reijnierse Rijnders Roelofsen Sandberg Scherpenhuijzen Schippers Steen Tebrunsvelt Varwijk Verhoef Visscher Vos Winkelman
 	  }
 }
@@ -1210,7 +1165,7 @@ RAJ_UK = {
 			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
 			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
 			Smith Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood Leiper Roberts
-			
+
 		}
 	callsigns = { }
 }
@@ -1232,21 +1187,21 @@ MAL_UK = {
 			Hamilton Hardinge Havelock Hope Jellicoe Kitchener Lyons Madden Milne Montgomery
 			Moresby Mundy Napier Plummer Ragland Roberts Seaton Seymour Collin
 			Smith Stewart Thesiger Tyron Tyrwhitt Williams Windsor Wolseley Wood Leiper Roberts
-			
+
 		}
 	callsigns = { }
 }
 
 RAJ = {
 	male = {
-		names = { 
+		names = {
 			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
 		  }
 	}
 	female = {
 		names = { Indira }
 	}
-	surnames = { 
+	surnames = {
 		Neru Ghandi Modi Singh Suhag Rawat Hira Saha Sharma Nimbhorkar Talwar Thoge Hooda Bakshi Negi Hariz Chand Soni Verma Reddy Gupta Cheema Prasad Bharali Shivane Unni Sarin Patyal Chakravarty Bali Datta Naravane Chavan Chandra Bandyopadhyay Krishna Pannu Ambre Ahir Varadarajan Wangchuk Yadav
 		}
 	callsigns = { }
@@ -1254,14 +1209,14 @@ RAJ = {
 
 PAK = {
 	male = {
-		names = { 
+		names = {
 			Syad Ahmad Muhammed Aga Nawab Maulvi Karamat Abdul Nasir Maulana Ibraheem Bhai Hussain Malik Raees Choudhry Rahmat
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 			Khan Ali Malik Nabiullah Sadiq Shafi Pirbhai Ahmed Baig Johar
 	}
 	callsigns = { }
@@ -1281,7 +1236,7 @@ PHI = {
 }
 SIA = {
 	male = {
-		names = { 
+		names = {
 			Nangklao Mongkut Rama Chulalongkorn Chao Vajiravudh Prajadhipok Naritsaranuwatiwong Phya Plaek
 		  }
 	}
@@ -1290,7 +1245,7 @@ SIA = {
 	}
 	surnames = {
 		Suriyawongse Saovabha Chichalerm Nitithada Phonphayuhasena
-	
+
 	 }
 	callsigns = { }
 }
@@ -1432,9 +1387,9 @@ MAL = {
 ###############################################################
 LIB = {
 	male = {
-		names = {  
+		names = {
 			Aaron Alexander Andre Benton Caesar Cathay Charles Colin Ebenezer Edgar
-			Edward Frederick George Henry James Joseph Lewis Lloyd Matin Michael 
+			Edward Frederick George Henry James Joseph Lewis Lloyd Matin Michael
 			Milton Osborne  Robert Samuel Stewart Thomas William Wilson
 		 }
 	}
@@ -1464,7 +1419,7 @@ ETH = {
 }
 ANG = {
 	male = {
-		names = { 
+		names = {
 			José Eduardo Henrique Alberto Joaquim Dinho Demosthenes Amos Kafundanga Jeremias Valdemar Mendes Rodrigues Agostinho Viriato Nito
 		   }
 	}
@@ -1478,7 +1433,7 @@ ANG = {
 }
 BOT = {
 	male = {
-		names = { 
+		names = {
 			Seretse Goitsebeng Maphiri Sekgoma Quett Ketumile Joni Ian Tebogo Dikgakgamatso
 		   }
 	}
@@ -1492,7 +1447,7 @@ BOT = {
 }
 COG = {
 	male = {
-		names = { 
+		names = {
 			 Mobutu Joseph Patrice Antoine Laurent Albert Moise Etienne Nzimbi Ngbale Jérôme
 		   }
 	}
@@ -1506,7 +1461,7 @@ COG = {
 }
 KEN = {
 	male = {
-		names = { 
+		names = {
 			Uhuru William Ekwee Justin Githu Dedan Jomo Warũhiũ Koitalel Kango Onyango Musa
 		   }
 	}
@@ -1520,7 +1475,7 @@ KEN = {
 }
 MZB = {
 	male = {
-		names = { 
+		names = {
 			José Eduardo Henrique Alberto Joaquim Dinho Demosthenes Amos Kafundanga Jeremias Valdemar Mendes Rodrigues Agostinho Viriato Nito
 		   }
 	}
@@ -1534,7 +1489,7 @@ MZB = {
 }
 ZIM = {
 	male = {
-		names = { 
+		names = {
 			Desmond Abel Kadungure Sekuru Robert Lobengula Joshua Dumiso Leopold Joseph Gabriel Mqabuko Nyongolo Thomas Letswansto Ndabaningi
 		   }
 	}
@@ -1548,7 +1503,7 @@ ZIM = {
 }
 SAF = {
 	male = {
-		names = { 
+		names = {
 			Sarel Rudolf Andries Hendrik Piet Racheltjie Dirkie Siener Koos Danie Christiaan Louis Petrus Paul Eugene Joubert
 		  }
 	}
@@ -1564,24 +1519,24 @@ SAF = {
 ###############################################################
 CAN = {
 	male = {
-		names = { 
-			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert 
-			Albert Victor Julian Francis James  
+		names = {
+			Charles John Frederick Douglas Patrick Leonard Henry Arthur Alexander Campbell Gilbert
+			Albert Victor Julian Francis James
 		}
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
-			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle 
-			Hastings Blackwood MacDougall 
+	surnames = {
+			Grey Elliot Hamilton Gordon Stanley Campbell Ross Petty-Fitzmaurice Windham Young Doyle
+			Hastings Blackwood MacDougall
 	}
 	callsigns = { }
 }
 
 MEX = {
 	male = {
-		names = { 
+		names = {
 			David Adrián Agustín Álvaro Anastasio Andrés Ángel Antonio Bernardo Emiliano Emilio
 			Enrique Ernesto Felipe Félix Francisco "Francisco Javier" Gabriel Gaspar Gregorio Ignacio
 			Jerónimo Joaquín José "José Manuel" "José María" Juan "Juan Bautista" Justo Lázaro Manuel
@@ -1592,19 +1547,19 @@ MEX = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Martinez Almonte Álvarez Arista Barragán Bocanegra Bravo Bustamante Canalizo Carranza Caserta
 		Cervantes Corona Corra "de Ampudia" "de Cos" "de Itúrbide" Díaz Echeverría Escandón Escobedo
 		Fagoaga "Fernández del Valle" Flores Gómez González Guerrero Huerta Kosterlitzky "López de Santa Ana" Lozada
 		"Martínez del Río" Mejía Miramón Múzquiz Obregón Pedraza Pimentel Reyes "Rincón Gallardo" Robles
-		Ruíz Salas Sánchez "Sarmaniego del Castillo" "Vázquez de la Cadena" Villa Woll Zapata Zaragoza Zuloaga		
+		Ruíz Salas Sánchez "Sarmaniego del Castillo" "Vázquez de la Cadena" Villa Woll Zapata Zaragoza Zuloaga
 	}
 	callsigns = { }
 }
 
 COS = {
 	male = {
-		names = { 
+		names = {
 			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
 			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
 			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
@@ -1615,7 +1570,7 @@ COS = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
 		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
 		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
@@ -1626,7 +1581,7 @@ COS = {
 }
 ELS = {
 	male = {
-		names = { 
+		names = {
 			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
 			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
 			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
@@ -1637,7 +1592,7 @@ ELS = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
 		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
 		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
@@ -1648,7 +1603,7 @@ ELS = {
 }
 GUA = {
 	male = {
-		names = { 
+		names = {
 			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
 			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
 			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
@@ -1659,7 +1614,7 @@ GUA = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
 		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
 		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
@@ -1670,7 +1625,7 @@ GUA = {
 }
 HON = {
 	male = {
-		names = { 
+		names = {
 			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
 			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
 			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
@@ -1681,7 +1636,7 @@ HON = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
 		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
 		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
@@ -1693,7 +1648,7 @@ HON = {
 
 NIC = {
 	male = {
-		names = { 
+		names = {
 			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
 			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
 			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
@@ -1704,7 +1659,7 @@ NIC = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
 		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
 		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
@@ -1715,7 +1670,7 @@ NIC = {
 }
 PAN = {
 	male = {
-		names = { 
+		names = {
 			Alejandro Andrés Aniceto Arturo Bartolomé Basilio Benito Benjamín Bernardo Carlos
 			Daniel Diego Doroteo Eduardo Eugenio Felipe Félix Fermín Fernando Francisco
 			Fruto Jacobo Jesús Joaquín Jorge "José Francisco" "José María" Juan "Juan Antonio" "Juan Pablo"
@@ -1726,7 +1681,7 @@ PAN = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguilar Andino Araujo Arbenz Barahona Barillas Barrios Cabañas Cárdenas Carrera
 		Castellanos Chamorro Chávez Corral Escalón Esquivel Estrada Ezeta Fernández Ferrera
 		Figueroa Garrigó Guzmán Hernández Jerez Jiménez Leiva López Machado Martínez
@@ -1737,19 +1692,19 @@ PAN = {
 }
 CUB = {
 	male = {
-		names = { 
+		names = {
 			Alberto Alejandro Alfredo Ambrosio Anselmo Antonio Arturo Benigno Buenaventura Calixto
 			Carlos Ceferino Cesáreo Demetrio Desiderio Dionisio Domingo Eugenio Federico Felipe
 			Fernando Fidel Fulgencio Gerardo Gregorio Guillermo Horacio Ignacio Jacinto Jacobo
 			Jesús Joaquín José "José Miguel" Juan "Juan Bautista" Manuel Mariano Mario Máximo
 			Osvaldo Pablo Pedro Rafael Ramón Raúl Salvador Romás Ulises Wenceslao
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Acosta Alfau Báez Batista Bayo Cabral Carmona Castillo Castro Cisneros
 		"de Céspedes" "de la Rosa" "de Meriño" "de Rojas" Espaillat Estrada Estrella Fernández Figuereo García
 		Gil Gómez Gonzáles González Grau Guillermo Henríquez Herrera Hevia Laredo
@@ -1760,20 +1715,20 @@ CUB = {
 }
 DOM = {
 	male = {
-		names = {  
+		names = {
 			Alberto Alejandro Alfredo Ambrosio Anselmo Antonio Arturo Benigno Buenaventura Calixto
 			Carlos Ceferino Cesáreo Demetrio Desiderio Dionisio Domingo Eugenio Federico Felipe
 			Fernando Fidel Fulgencio Gerardo Gregorio Guillermo Horacio Ignacio Jacinto Jacobo
 			Jesús Joaquín José "José Miguel" Juan "Juan Bautista" Manuel Mariano Mario Máximo
 			Osvaldo Pablo Pedro Rafael Ramón Raúl Salvador Romás Ulises Wenceslao
-		
-		
+
+
 		 }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Acosta Alfau Báez Batista Bayo Cabral Carmona Castillo Castro Cisneros
 		"de Céspedes" "de la Rosa" "de Meriño" "de Rojas" Espaillat Estrada Estrella Fernández Figuereo García
 		Gil Gómez Gonzáles González Grau Guillermo Henríquez Herrera Hevia Laredo
@@ -1784,7 +1739,7 @@ DOM = {
 }
 HAI = {
 	male = {
-		names = {  
+		names = {
 			Alexis André Anténor Antoine Augustin Balthazar Beaubrun Céligny Charlemagne Charles
 			Cincinnatus Dantès Demesvar Denys Emmanuel Eugène Fabre Faustin Florvil François
 			Guillaume Hannibal Henri Jacques Jean Jean-Baptiste Jean-Louis Jean-Pierre Jonathas Joseph
@@ -1801,7 +1756,7 @@ HAI = {
 		Iginac Janvier Jeune Lafontant Laleau Leconte Légitime Legouaze Léon Lhérisson
 		Madiou Péralte Pierrot Planchet Price Price-Mars Riché Rigaud Rivière-Hérard Roumain
 		Roy Saget Salnave Salomon Sam Simon Soulouque Théodore Vincent Zamor
-	
+
 	}
 	callsigns = { }
 }
@@ -1812,7 +1767,7 @@ HAI = {
 ###############################################################
 BRA = {
 	male = {
-		names = { 
+		names = {
 			Afonso Antônio Artur Augusto Aurélio Benjamin Cândido Carlos Celso Custódio
 			Delfim Deodoro Eduardo Emílio Epitácio Ernesto Fábio Fernando Filipe Floriano
 			"Francisco de Paula" "Francisco Xavier" Federico Gaspar Gastão Getúlio Henrique Hermes Humberto Isaías
@@ -1823,7 +1778,7 @@ BRA = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Barreto Bernardes Bittencourt Brandão Bras "Cabral da Silva" Caldwell Constant Costa "da Camara"
 		"da Costa" "da Fonseca" "de Aguiar" "de Barros" "de Beaurepaire-Rohan" "de Bragança" "de Carvalho" "de Itapevi" "de Lima e Silva" "de Melo"
 		"de Noronha" "de Oliveira" "de Orleans" "de Souza Neto" "de Suruf" Dutra Fragoso Frontin Galvão Jordão
@@ -1836,7 +1791,7 @@ BRA = {
 
 ARG = {
 	male = {
-		names = { 
+		names = {
 			Agustín Antonio Atanasio Baltasar Bartolomé Bernardino Bernardo Cándido Carlos Cecilio
 			Cirilo Claudio Domingo Emiliano Esteban Eugenio Evaristo Facundo Faustino Feliciano
 			Félix Francisco Fructuoso Gabriel Gaspar Guillermo Hipólito Ignacio José "Juan José"
@@ -1847,163 +1802,163 @@ ARG = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguirre Avellaneda Báez Balcarce Bareiro Berro Brown Caballero Cruz "de Alvear"
 		"de la Plaza" "de Rosas" "de Urquiza" Derqui Díaz Ellauri Escobar Flores González Jovellanos
 		Juárez Justo Latorre López Machaín Maza Meza Mitre Paz Pedernera
 		Pellegrini Pereira Quintana Rivarola Rivera Roca "Rodríguez de Francia" Rojas Rondeau Sáenz
 		Santos Sarmineto Solano Tajes Uriburu Viamonte Vidal Williman Wisner Yrigoyen
-	
+
 	}
 	callsigns = { }
 }
 CHL = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
 COL = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Aureliano Arcadio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
-		
+
 		  }
 	}
 	female = {
 		names = { Amaranta Úrsula Rebeca Remedios Sofía }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Buendía Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte Iguarán "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
 BOL = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás "del Carpio"
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
 ECU = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
 PAR = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
 PRU = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
 URG = {
 	male = {
-		names = { 
+		names = {
 			Agustín Antonio Atanasio Baltasar Bartolomé Bernardino Bernardo Cándido Carlos Cecilio
 			Cirilo Claudio Domingo Emiliano Esteban Eugenio Evaristo Facundo Faustino Feliciano
 			Félix Francisco Fructuoso Gabriel Gaspar Guillermo Hipólito Ignacio José "Juan José"
@@ -2014,38 +1969,37 @@ URG = {
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Aguirre Avellaneda Báez Balcarce Bareiro Berro Brown Caballero Cruz "de Alvear"
 		"de la Plaza" "de Rosas" "de Urquiza" Derqui Díaz Ellauri Escobar Flores González Jovellanos
 		Juárez Justo Latorre López Machaín Maza Meza Mitre Paz Pedernera
 		Pellegrini Pereira Quintana Rivarola Rivera Roca "Rodríguez de Francia" Rojas Rondeau Sáenz
 		Santos Sarmineto Solano Tajes Uriburu Viamonte Vidal Williman Wisner Yrigoyen
-	
+
 	}
 	callsigns = { }
 }
 VEN = {
 	male = {
-		names = { 
+		names = {
 			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
 			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
 			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
 			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis Manuel Mariano Miguel Narciso
 			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
-		
+
 		  }
 	}
 	female = {
 		names = { }
 	}
-	surnames = { 
+	surnames = {
 		Abaroa Ágreda Altamirano Arteaga Ballivián Baquedano Belzú Blanche Blanco Bulnes
 		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
 		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
 		Guilarte "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
 		Pezet Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zañartu Zapata
-	
+
 	}
 	callsigns = { }
 }
-

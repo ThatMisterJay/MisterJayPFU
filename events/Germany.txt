@@ -175,8 +175,6 @@ country_event = {
 			add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 }
 			SOV = {
 				country_event = { days = 3 id = soviet.4 }
-				country_event = { days = 1 id = soviet.6 }
-				country_event = { days = 1 id = soviet.8 }
 				country_event = { days = 1 id = soviet.10 }
 				#country_event = { days = 5 id = soviet.31 }
 			}

@@ -245,8 +245,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6763;3711;impassable;-1;-1;-1;-1;-1;;Caucasus
 6763;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
 11645;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
-4135;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
-4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
+13205;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
+13205;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 1920;4924;impassable;-1;-1;-1;-1;-1;;Yemen
 10840;4924;impassable;-1;-1;-1;-1;-1;;Yemen
 -1;-1;;-1;-1;-1;-1;-1;-1;

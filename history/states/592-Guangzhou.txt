@@ -17,6 +17,7 @@ state={
 			infrastructure = 3
 			arms_factory = 3
 			industrial_complex = 4
+			dockyard = 1
 			air_base = 3
 			1047 = {
 				naval_base = 5
@@ -27,7 +28,7 @@ state={
 
 		}
 		victory_points = {
-			1047 5 
+			1047 5
 		}
 		1938.10.25 = {
 			remove_core_of = GXC
@@ -45,7 +46,7 @@ state={
 	}
 
 	provinces={
-		1047 1202 4092 7108 7152 11941 12095 
+		1047 1202 4092 7108 7152 11941 12095
 	}
 	manpower=17835200
 	buildings_max_level_factor=1.000

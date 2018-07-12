@@ -999,19 +999,20 @@ music = {
 	}
 }
 
+#TEMP DISABLED
 music = {
 	song = "sweet_child_o_mine"
 
 	chance = {
 		modifier = {
-			factor = 1
+			factor = 0
 		}
 		modifier = {
 			factor = -100000
 			NOT = { has_country_flag = rock_music_enabled }
 		}
 		modifier = {
-			factor = 100000
+			factor = 0
 			has_country_flag = only_rock_music
 		}
 	}
@@ -1053,23 +1054,23 @@ music = {
 	}
 }
 
-music = {
-	song = "its_my_life"
-
-	chance = {
-		modifier = {
-			factor = 1
-		}
-		modifier = {
-			factor = -100000
-			NOT = { has_country_flag = rock_music_enabled }
-		}
-		modifier = {
-			factor = 100000
-			has_country_flag = only_rock_music
-		}
-	}
-}
+#music = {
+#	song = "its_my_life"
+#
+#	chance = {
+#		modifier = {
+#			factor = 1
+#		}
+#		modifier = {
+#			factor = -100000
+#			NOT = { has_country_flag = rock_music_enabled }
+#		}
+#		modifier = {
+#			factor = 100000
+#			has_country_flag = only_rock_music
+#		}
+#	}
+#}
 
 music = {
 	song = "livin_on_a_prayer"

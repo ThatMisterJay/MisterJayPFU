@@ -294,7 +294,7 @@ foreign_support = {
 	CHI_flying_tigers = {
 		icon = generic_air
 		available = {
-			has_equipment = { fighter_equipment <500 }
+			has_equipment = { fighter_equipment < 1000 }
 		}
 		visible = {
 			has_country_flag = CHI_flying_tigers

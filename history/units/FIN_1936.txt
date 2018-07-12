@@ -29,6 +29,11 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -75,7 +80,7 @@ units = {
 		location = 197 # Salla
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -83,7 +88,7 @@ units = {
 		location = 11156 # Uimaharju
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 
@@ -109,7 +114,7 @@ units = {
 		location = 6153 # Suojärvi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 
@@ -145,22 +150,13 @@ units = {
 		division_template = "Divisioona"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
-
-	}
-	division = {
-		name = "Ratsuväkiprikaati"
-		location = 6082 # Lappeenranta
-		division_template = "Ratsuväkiprikaati"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
-
 	}
 	division = {
 		name = "Lipolan Ryhmä"
 		location = 9176 # Salmi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -168,7 +164,7 @@ units = {
 		location = 3061 # Kotka
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -176,7 +172,7 @@ units = {
 		location = 9176 # Salmi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 	# III Corps
@@ -201,7 +197,7 @@ units = {
 		location = 9181 # Ilomantsi
 		division_template = "Erillinen Prikaati"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.3
 
 	}
 

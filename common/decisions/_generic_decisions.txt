@@ -71,7 +71,7 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.025
+			consumer_goods_factor = 0.03
 			industrial_capacity_factory = -0.05
 		}
 
