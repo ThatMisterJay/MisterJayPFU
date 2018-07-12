@@ -838,6 +838,32 @@ on_actions = {
 					}
 				}
 
+				if = {
+					limit = {
+						JAP = { has_war_with = ENG }
+						NOT = { has_country_flag = set_resistance_after_uk_war }
+					}
+					subtract_from_variable = { resistance_variable = 15 }
+					set_country_flag = set_resistance_after_uk_war
+				}
+
+				if = {
+					limit = {
+						JAP = { has_war_with = ENG }
+						NOT = { has_country_flag = removed_resistance_after_uk_war }
+						OR = {
+							AND = {
+								336 = { is_controlled_by = JAP }
+								724 = { is_controlled_by = SIA }
+								289 = { is_controlled_by = SIA }
+							}
+							date > 1942.3.1
+						}
+					}
+					add_to_variable = { resistance_variable = 15 }
+					set_country_flag = removed_resistance_after_uk_war
+				}
+
                 clamp_variable = { var = resistance_variable min = 0 max = resistance_max }
 			}
 		}
