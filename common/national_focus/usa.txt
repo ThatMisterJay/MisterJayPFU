@@ -176,7 +176,7 @@ focus_tree = {
 		available = { has_government = democratic }
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -193,7 +193,7 @@ focus_tree = {
 		prerequisite = { focus = USA_manifest_destiny }
 		x = 1
 		y = 4
-		cost = 15
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
