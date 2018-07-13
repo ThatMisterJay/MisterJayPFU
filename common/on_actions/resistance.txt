@@ -822,7 +822,10 @@ on_actions = {
 				}
 
 				if = {
-					limit = { NOT = { country_exists = CHI } }
+					limit = {
+						check_variable = { resistance_variable > 24 }
+						NOT = { country_exists = CHI }
+					}
 					add_ideas = JAP_resistance_3
 					if = {
 						limit = { has_idea = JAP_resistance_0 }
