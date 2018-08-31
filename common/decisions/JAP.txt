@@ -1154,6 +1154,137 @@ operations = {
 			GER = { country_event = { id = wtt_japan.115 hours = 6 } }
 		}
 	}
+
+	JAP_war_with_uk = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		visible = {
+			JAP = {
+				has_completed_focus = southern_expansion_focus
+			}
+		}
+
+		fire_only_once = yes
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RAJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = AST
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NZL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IRQ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = IRQ
+				type = annex_everything
+			}
+			SIA = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = ENG
+				}
+			}
+			MAN = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = ENG
+				}
+			}
+			MEN = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = ENG
+				}
+			}
+		}
+	}
+
+	JAP_war_with_usa = {
+
+		icon = generic_ignite_civil_war
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		visible = {
+			JAP = {
+				has_completed_focus = southern_expansion_focus
+				has_war_with = ENG
+			}
+			NOT = { has_war_with = SOV }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 0
+		days_re_enable = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PHI
+				type = annex_everything
+			}
+			add_timed_idea = { idea = for_the_emperor_idea days = 100 }
+		}
+	}
 }
 
 prospect_for_resources = {

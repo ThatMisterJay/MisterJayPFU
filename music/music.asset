@@ -338,6 +338,18 @@ music = {
 }
 
 music = {
+	name = "born_ready"
+	file = "All Good Things - Born Ready.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "ready_for_this"
+	file = "All Good Things - Ready For This.ogg"
+	volume = 0.90
+}
+
+music = {
 	name = "never_die"
 	file = "All Good Things - Never Die.ogg"
 	volume = 1.00
@@ -491,4 +503,52 @@ music = {
 	name = "walk_this_way"
 	file = "Aerosmith & RUN-DMC - Walk This Way.ogg"
 	volume = 0.90
+}
+
+music = {
+	name = "wild_thing"
+	file = "Jaxson Gamble - Wild Thing.ogg"
+	volume = 0.80
+}
+
+music = {
+	name = "out_for_blood"
+	file = "Valley of Wolves - Out For Blood.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "last_one_standing"
+	file = "WattWhite - Last One Standing.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "hero"
+	file = "Tommee Profitt - Hero.ogg"
+	volume = 1.10
+}
+
+music = {
+	name = "live_like_giants"
+	file = "Extreme Music - Live Like Giants.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "show_your_heart"
+	file = "Music House - Show Your Heart.ogg"
+	volume = 0.90
+}
+
+music = {
+	name = "lions_inside"
+	file = "Valley Of Wolves - Lions Inside.ogg"
+	volume = 1.10
+}
+
+music = {
+	name = "bad_things"
+	file = "Summer Kennedy - Bad Things.ogg"
+	volume = 1.00
 }

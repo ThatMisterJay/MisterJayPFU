@@ -1081,7 +1081,7 @@ focus_tree = {
 		id = MAN_vassalize_mengukuo
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = MAN_chinese_leadership }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = MAN_chinese_leadership
 
@@ -1119,55 +1119,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MAN_national_cooperation_government
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = MAN_chinese_leadership }
-		x = 1
-		y = 1
-		relative_position_id = MAN_chinese_leadership
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			597 = { add_core_of = ROOT }
-			608 = { add_core_of = ROOT }
-			609 = { add_core_of = ROOT }
-			611 = { add_core_of = ROOT }
-			612 = { add_core_of = ROOT }
-			614 = { add_core_of = ROOT }
-			615 = { add_core_of = ROOT }
-			621 = { add_core_of = ROOT }
-			622 = { add_core_of = ROOT }
-			743 = { add_core_of = ROOT }
-			746 = { add_core_of = ROOT }
-		}
-	}
-
-	focus = {
 		id = MAN_the_two_emperors
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = MAN_vassalize_mengukuo }
-		prerequisite = { focus = MAN_national_cooperation_government }
 		x = 0
 		y = 2
 		relative_position_id = MAN_chinese_leadership

@@ -2397,6 +2397,51 @@ country_event = {
 			type = take_state
 			generator = { 85 }
 		}
+		ENG = {
+			add_to_faction = POL
+			add_to_war = {
+				targeted_alliance = POL
+				enemy = GER
+			}
+		}
+		hidden_effect = {
+			CAN = {
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+			AST = {
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+			SAF = {
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+			RAJ = {
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+			IRQ = {
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+			NZL = {
+				add_to_war = {
+					targeted_alliance = POL
+					enemy = GER
+				}
+			}
+		}
 	}
 }
 

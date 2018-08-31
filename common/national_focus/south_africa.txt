@@ -1135,8 +1135,8 @@ focus_tree = {
 			num_of_factories > 35
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
+		cancel_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = { add_research_slot = 1 }

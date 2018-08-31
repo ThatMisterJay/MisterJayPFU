@@ -78,15 +78,17 @@ focus_tree = {
 		id = CHI_peking_university
 		icon = GFX_focus_research
 		prerequisite = { focus = CHI_educational_funding }
-		 available = {
-		 num_of_factories > 30
-		 }
+		available = {
+			num_of_factories > 30
+		}
+		continue_if_invalid = yes
+		cancel_if_invalid = no
 		x = 1
 		y = 2
 		cost = 10
         completion_reward = {
 			add_research_slot = 1
-		   }
+	   }
 	}
 
 	focus = {

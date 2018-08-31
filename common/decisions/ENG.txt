@@ -460,8 +460,7 @@ operations = {
 		}
 
 		complete_effect = {
-			random_other_country = {
-				original_tag = EFR
+			EFR = {
 				country_event = { id = wtt_britain.25 hours = 5 }
 			}
 		}

@@ -249,4 +249,35 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13205;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 1920;4924;impassable;-1;-1;-1;-1;-1;;Yemen
 10840;4924;impassable;-1;-1;-1;-1;-1;;Yemen
+1172;4656;impassable;-1;-1;-1;-1;-1;;China Protection
+1172;10459;impassable;-1;-1;-1;-1;-1;;China Protection
+1172;1625;impassable;-1;-1;-1;-1;-1;;China Protection
+1653;1625;impassable;-1;-1;-1;-1;-1;;China Protection
+7606;4192;impassable;-1;-1;-1;-1;-1;;China Protection
+7606;1884;impassable;-1;-1;-1;-1;-1;;China Protection
+7446;4192;impassable;-1;-1;-1;-1;-1;;China Protection
+1319;4192;impassable;-1;-1;-1;-1;-1;;China Protection
+1319;12841;impassable;-1;-1;-1;-1;-1;;China Protection
+531;7256;impassable;-1;-1;-1;-1;-1;;China Protection
+531;4295;impassable;-1;-1;-1;-1;-1;;China Protection
+7911;4295;impassable;-1;-1;-1;-1;-1;;China Protection
+7911;2006;impassable;-1;-1;-1;-1;-1;;China Protection
+1933;10733;impassable;-1;-1;-1;-1;-1;;China Protection
+1647;10733;impassable;-1;-1;-1;-1;-1;;China Protection
+1647;517;impassable;-1;-1;-1;-1;-1;;China Protection
+5025;517;impassable;-1;-1;-1;-1;-1;;China Protection
+5025;4939;impassable;-1;-1;-1;-1;-1;;China Protection
+3745;4939;impassable;-1;-1;-1;-1;-1;;China Protection
+3745;10880;impassable;-1;-1;-1;-1;-1;;China Protection
+8081;4986;impassable;-1;-1;-1;-1;-1;;China Protection
+1625;7606;impassable;-1;-1;-1;-1;-1;;China Protection
+8081;10880;impassable;-1;-1;-1;-1;-1;;China Protection
+1933;2006;impassable;-1;-1;-1;-1;-1;;China Protection
+
+5042;4973;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+5042;8112;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+5042;1970;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+10821;7519;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+10821;1970;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+10821;5087;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
 -1;-1;;-1;-1;-1;-1;-1;-1;

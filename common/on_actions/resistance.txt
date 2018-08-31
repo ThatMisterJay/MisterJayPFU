@@ -749,8 +749,33 @@ on_actions = {
 				########################################################
 
 				if = {
+					limit = { check_variable = { resistance_variable < 10 } }
+					add_ideas = JAP_resistance_00
+					if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+				}
+
+				if = {
 					limit = { check_variable = { resistance_variable > 9 } }
 					add_ideas = JAP_resistance_0
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
 					if = {
 						limit = { has_idea = JAP_resistance_1 }
 						remove_ideas = JAP_resistance_1
@@ -768,6 +793,10 @@ on_actions = {
 				if = {
 					limit = { check_variable = { resistance_variable > 19 } }
 					add_ideas = JAP_resistance_1
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
 					if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0
@@ -801,6 +830,10 @@ on_actions = {
 					limit = { check_variable = { resistance_variable > 24 } }
 					add_ideas = JAP_resistance_2
 					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0
 					}
@@ -827,6 +860,10 @@ on_actions = {
 						NOT = { country_exists = CHI }
 					}
 					add_ideas = JAP_resistance_3
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
 					if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0

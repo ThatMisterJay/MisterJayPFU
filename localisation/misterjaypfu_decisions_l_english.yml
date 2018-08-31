@@ -24,3 +24,5 @@
     annex_hungary_desc:0 "Only to be used when no replacement player can be found for Hungary."
     puppet_vichy_france:0 "Puppet Vichy France"
     puppet_vichy_france_desc:0 "Use this when something goes wrong and Vichy France does not end up as a puppet or if Vichy France is a player."
+    JAP_war_with_uk:0 "War with the United Kingdom"
+    JAP_war_with_usa:0 "War with the United States of America"

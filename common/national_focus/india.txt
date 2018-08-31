@@ -243,9 +243,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			RAJ = { add_timed_idea = { idea = RAJ_cost_of_ceylon days = 120 } }
-			RAJ = { add_timed_idea = { idea = RAJ_protect_ceylon days = 120 } }
-			ENG = { add_timed_idea = { idea = ENG_colonial_trade days = 80 } }
+			RAJ = { add_timed_idea = { idea = RAJ_cost_of_ceylon days = 90 } }
+			RAJ = { add_timed_idea = { idea = RAJ_protect_ceylon days = 70 } }
+			ENG = { add_timed_idea = { idea = ENG_colonial_trade days = 70 } }
 
 			custom_effect_tooltip = RAJ_protect_ceylon_tt
 
@@ -1268,9 +1268,9 @@ focus_tree = {
 			num_of_factories > 60
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = no
+		continue_if_invalid = yes
+		cancel_if_invalid = no
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1952,8 +1952,8 @@ focus_tree = {
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
+		cancel_if_invalid = no
 		available_if_capitulated = no
 
 		complete_tooltip = {

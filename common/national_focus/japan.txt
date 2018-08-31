@@ -995,7 +995,7 @@ focus_tree = {
 		id = naval_air_innovations_focus_2
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = carrier_focus }
-		x = 10
+		x = 9
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -1064,7 +1064,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = JAP_DMZ }
 		x = 3
-		y = 5
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 2
@@ -1294,19 +1294,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = ENG
-				generator = { 336 333 }
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = HOL
-				generator = { 334 672}
-			}
 			hidden_effect = {
 				news_event = { hours = 6 id = toranews.210 }
 			}
+			custom_effect_tooltip = JAP_southern_expansion_tt
 		}
 		select_effect = {
 			diplomatic_relation = {
@@ -1339,8 +1330,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 8
-		y = 5
+		x = 5
+		y = 4
 		cost = 5
 		icon = GFX_goal_generic_military_sphere
 		ai_will_do = {
@@ -1349,55 +1340,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = japan.15
 			custom_effect_tooltip = JAP_subvert_india_tt
-		}
-	}
-
-	focus = {
-		id = strike_usa_focus
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = southern_expansion_focus }
-		available = {
-			date > 1941.1.1
-			NOT = { has_global_flag = JAP_capitulate }
-		}
-		will_lead_to_war_with = USA
-		x = 6
-		y = 5
-		cost = 0.15
-
-		historical_ai = {
-			date > 1941.1.1
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				date < 1941.10.1
-			}
-
-			modifier = {
-				factor = 0
-				OR = {
-					any_other_country = {
-						has_war_with = ROOT
-						is_major = yes
-					}
-					AND = {
-						has_war = yes
-						is_in_faction = no
-					}
-				}
-			}
-		}
-		completion_reward = {
-		JAP = {
-				declare_war_on = {
-					target = USA
-					type = annex_everything
-			}
-		}
-			add_timed_idea = { idea = for_the_emperor_idea days = 100 }
 		}
 	}
 
@@ -1818,10 +1760,10 @@ focus_tree = {
 
 	focus = {
 		id = jap_improved_sprit_focus
-		prerequisite = { focus = strike_usa_focus focus = subvert_india_focus  }
+		prerequisite = { focus = southern_expansion_focus }
 		available = { has_war = yes }
-		x = 7
-		y = 6
+		x = 3
+		y = 4
 		cost = 10
 		icon = GFX_goal_generic_demand_territory
 		ai_will_do = {

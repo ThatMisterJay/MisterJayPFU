@@ -739,8 +739,13 @@ country_event = {
 	trigger = {
 		tag = GER
 		GER = { has_war_with = SOV }
-		NOT = { 78 = { is_controlled_by = SOV } }
-		NOT = { 94 = { is_controlled_by = SOV } }
+		OR = {
+			AND = {
+				NOT = { 78 = { is_controlled_by = SOV } }
+				NOT = { 94 = { is_controlled_by = SOV } }
+			}
+			date > 1942.3.1
+		}
 	}
 
 	immediate = {
