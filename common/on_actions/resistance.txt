@@ -893,9 +893,9 @@ on_actions = {
 						NOT = { has_country_flag = removed_resistance_after_uk_war }
 						OR = {
 							AND = {
-								336 = { is_controlled_by = JAP }
-								724 = { is_controlled_by = SIA }
-								289 = { is_controlled_by = SIA }
+								336 = { CONTROLLER = { is_in_faction_with = JAP } }
+								724 = { CONTROLLER = { is_in_faction_with = JAP } }
+								289 = { CONTROLLER = { is_in_faction_with = JAP } }
 							}
 							date > 1942.3.1
 						}

@@ -14,11 +14,5 @@
 #
 
 country_has_resistance = {
-	AND = {
-		tag = JAP
-		or = {
-			has_war_with = CHI
-			NOT = { country_exists = CHI }
-		}
-	}
+	tag = JAP
 }
