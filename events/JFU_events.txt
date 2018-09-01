@@ -1,0 +1,54 @@
+﻿###########################
+# Baltic Events
+###########################
+
+add_namespace = JFU
+
+#Italy joins axis 1 month after fall of paris
+country_event = {
+	id = JFU.1
+	title = JFU.1.t
+	desc = JFU.1.d
+	picture = GFX_report_event_german_troops
+
+	mean_time_to_happen = { days = 35 }
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		16 = { NOT = { is_controlled_by = FRA } }
+	}
+
+    immediate = {
+        GER = { add_to_faction = ITA }
+        ITA = {
+            add_to_war = {
+                targeted_alliance = GER
+                enemy = ENG
+            }
+        }
+    }
+
+	option = {
+		name = JFU.1.a
+	}
+}
+
+#Italy explanation
+country_event = {
+	id = JFU.2
+	title = JFU.2.t
+	desc = JFU.2.d
+	picture = GFX_report_event_german_troops
+
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+	}
+
+	option = {
+		name = JFU.2.a
+	}
+}
