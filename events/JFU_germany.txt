@@ -622,6 +622,7 @@ country_event = {
 		}
 		ROM = {
 			transfer_state = 77
+			transfer_state = 76
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
