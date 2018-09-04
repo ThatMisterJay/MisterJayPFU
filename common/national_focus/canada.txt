@@ -1121,7 +1121,7 @@ focus_tree = {
 		x = 2
 		y = 4
 
-		cost = 12.9
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1663,7 +1663,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = CAN_army_modernization
 
-		cost = 8
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -1784,7 +1784,7 @@ focus_tree = {
 		y = 6
 		relative_position_id = CAN_army_modernization
 
-		cost = 12
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
