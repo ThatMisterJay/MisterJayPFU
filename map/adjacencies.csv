@@ -280,4 +280,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10821;7519;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
 10821;1970;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
 10821;5087;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+
+13004;3501;impassable;-1;-1;-1;-1;-1;;Dover
+13004;11446;impassable;-1;-1;-1;-1;-1;;Dover
+2895;6489;impassable;-1;-1;-1;-1;-1;;Dover
+2895;3422;impassable;-1;-1;-1;-1;-1;;Dover
+2824;13070;impassable;-1;-1;-1;-1;-1;;Dover
+4370;3422;impassable;-1;-1;-1;-1;-1;;Dover
+4370;3463;impassable;-1;-1;-1;-1;-1;;Dover
 -1;-1;;-1;-1;-1;-1;-1;-1;

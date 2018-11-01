@@ -173,17 +173,16 @@ country_event = {
 		16 = { is_controlled_by = GER }
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
-		surrender_progress > 0.9
-		GER = {
-			is_faction_leader = yes
+		OR = {
+			has_capitulated = yes
+			surrender_progress > 0.9
 		}
-		NOT = {
-			has_civil_war = yes
-		}
+		GER = { is_faction_leader = yes }
+		NOT = { has_civil_war = yes }
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = `1`
 	}
 
 	immediate = {
@@ -3014,8 +3013,9 @@ country_event = {
         	expire = "1965.1.1"
         	ideology = liberalism
         	traits = {
-        	      }
-            }
+				easy_surrender2
+        	}
+        }
         set_country_flag = daladier_resigned
-      }
+    }
 }
