@@ -182,6 +182,7 @@ foreign_politics = {
 			}
 		}
 	}
+
 	JAP_sue_for_peace_nuke_mission = {
 		available = {
 			has_global_flag = JAP_nuke_1
@@ -1171,7 +1172,7 @@ operations = {
 
 		fire_only_once = yes
 
-		days_remove = 0
+		days_remove = 180
 		days_re_enable = 0
 
 		cost = 0
@@ -1185,64 +1186,33 @@ operations = {
 				target = ENG
 				type = annex_everything
 			}
-			declare_war_on = {
-				target = RAJ
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = AST
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = NZL
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = SAF
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = CAN
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = FRA
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = IRQ
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = HOL
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = BEL
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = IRQ
-				type = annex_everything
-			}
-			SIA = {
+			every_country = {
+				limit = { is_in_faction_with = ENG }
 				add_to_war = {
-					targeted_alliance = JAP
-					enemy = ENG
+					targeted_alliance = ENG
+					enemy = JAP
 				}
 			}
+
 			MAN = {
 				add_to_war = {
 					targeted_alliance = JAP
 					enemy = ENG
 				}
 			}
+
 			MEN = {
 				add_to_war = {
 					targeted_alliance = JAP
 					enemy = ENG
 				}
 			}
+			set_variable = { temp_resistance = resistance_variable }
+			subtract_from_variable = { resistance_variable = resistance_variable }
+		}
+
+		remove_effect = {
+			country_event = { id = japan.20 }
 		}
 	}
 

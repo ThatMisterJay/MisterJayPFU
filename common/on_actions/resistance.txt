@@ -791,7 +791,7 @@ on_actions = {
 				}
 
 				if = {
-					limit = { check_variable = { resistance_variable > 19 } }
+					limit = { check_variable = { resistance_variable > 14 } }
 					add_ideas = JAP_resistance_1
 					if = {
 						limit = { has_idea = JAP_resistance_00 }
@@ -827,7 +827,7 @@ on_actions = {
 				}
 
 				if = {
-					limit = { check_variable = { resistance_variable > 24 } }
+					limit = { check_variable = { resistance_variable > 19 } }
 					add_ideas = JAP_resistance_2
 					if = {
 						limit = { has_idea = JAP_resistance_00 }
@@ -856,8 +856,10 @@ on_actions = {
 
 				if = {
 					limit = {
-						check_variable = { resistance_variable > 24 }
-						NOT = { country_exists = CHI }
+						OR = {
+							check_variable = { resistance_variable > 24 }
+							NOT = { country_exists = CHI }
+						}
 					}
 					add_ideas = JAP_resistance_3
 					if = {
@@ -876,32 +878,6 @@ on_actions = {
 						limit = { has_idea = JAP_resistance_2 }
 						remove_ideas = JAP_resistance_2
 					}
-				}
-
-				if = {
-					limit = {
-						JAP = { has_war_with = ENG }
-						NOT = { has_country_flag = set_resistance_after_uk_war }
-					}
-					subtract_from_variable = { resistance_variable = 15 }
-					set_country_flag = set_resistance_after_uk_war
-				}
-
-				if = {
-					limit = {
-						JAP = { has_war_with = ENG }
-						NOT = { has_country_flag = removed_resistance_after_uk_war }
-						OR = {
-							AND = {
-								336 = { CONTROLLER = { is_in_faction_with = JAP } }
-								724 = { CONTROLLER = { is_in_faction_with = JAP } }
-								289 = { CONTROLLER = { is_in_faction_with = JAP } }
-							}
-							date > 1942.3.1
-						}
-					}
-					add_to_variable = { resistance_variable = 15 }
-					set_country_flag = removed_resistance_after_uk_war
 				}
 
                 clamp_variable = { var = resistance_variable min = 0 max = resistance_max }

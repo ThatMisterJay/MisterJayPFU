@@ -606,3 +606,18 @@ country_event = {
 		name = japan.19.a
 	}
 }
+
+# event to add resistance
+country_event = {
+	id = japan.20
+	title = japan.20.t
+	desc = japan.20.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+	immediate = { add_to_variable = { resistance_variable = temp_resistance } }
+
+	option = {
+		name = japan.20.a
+	}
+}

@@ -11,15 +11,17 @@ state=
 		buildings = {
 			infrastructure = 3
 			air_base = 3
-			
+
 			arms_factory = 6
 			industrial_complex = 2
 
 		}
-		
+
 		victory_points = {
 			7197 10
 		}
+
+		add_extra_state_shared_building_slots = 1
 	}
 	provinces={
 		4094 4179 7046 7197 9965 11997 12028
