@@ -1597,6 +1597,7 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.075
+			add_to_variable = { cheat_anti_fascist_raids = 1 }
 		}
 
 		remove_effect = {
@@ -1647,6 +1648,7 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.075
+			add_to_variable = { cheat_anti_democratic_raids = 1 }
 		}
 
 		remove_effect = {
@@ -1679,6 +1681,7 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.075
+			add_to_variable = { cheat_anti_communist_raids = 1 }
 		}
 
 		remove_effect = {

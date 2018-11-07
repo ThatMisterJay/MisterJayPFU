@@ -966,6 +966,7 @@ war_measures = {
 		}
 
 		complete_effect = {
+			add_to_variable = { cheat_war_bonds = 1 }
 			if = {
 				limit = {
 					NOT = {

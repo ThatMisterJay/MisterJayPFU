@@ -15,7 +15,7 @@ CHI_army_reform = {
 		ai_will_do = {
 			factor = 500
 		}
-		days_remove = 90
+		days_remove = 60
 
 		visible = {
 			OR = {

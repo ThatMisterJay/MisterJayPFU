@@ -52,3 +52,92 @@ country_event = {
 		name = JFU.2.a
 	}
 }
+
+#Italy explanation
+country_event = {
+	id = JFU.3
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		every_country = {
+			set_variable = { cheat_anti_democratic_raids = 0 }
+			set_variable = { cheat_anti_communist_raids = 0 }
+			set_variable = { cheat_anti_fascist_raids = 0 }
+			set_variable = { cheat_war_bonds = 0 }
+		}
+	}
+}
+
+# cheat detection
+country_event = {
+	id = JFU.31
+	title = JFU.31.t
+	desc = JFU.31.d
+	picture = GFX_news_event_500
+
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+		any_country = {
+			OR = {
+				check_variable = { cheat_anti_democratic_raids > 5 }
+				check_variable = { cheat_anti_communist_raids > 5 }
+				check_variable = { cheat_anti_fascist_raids > 5 }
+				check_variable = { cheat_war_bonds > 10 }
+			}
+			NOT = { has_country_flag = cheater }
+		}
+		NOT = { has_global_flag = cheater_timer }
+	}
+
+	immediate = { set_global_flag = cheater_timer }
+
+	option = {
+		name = JFU.31.b
+		random_country = {
+			limit = {
+				OR = {
+					check_variable = { cheat_anti_democratic_raids > 5 }
+					check_variable = { cheat_anti_communist_raids > 5 }
+					check_variable = { cheat_anti_fascist_raids > 5 }
+					check_variable = { cheat_war_bonds > 10 }
+				}
+				NOT = { has_country_flag = cheater }
+			}
+			save_global_event_target_as = CHEATER
+			set_country_flag = cheater
+		}
+		news_event = { id = JFU.4 }
+		hidden_effect = { country_event = { id = JFU.32 days = 5 } }
+	}
+}
+
+#Italy explanation
+country_event = {
+	id = JFU.32
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		clr_global_flag = cheater_timer
+	}
+}
+
+# cheat detection
+news_event = {
+	id = JFU.4
+	title = JFU.4.t
+	desc = JFU.4.d
+	picture = GFX_news_event_500
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.4.a
+	}
+}
