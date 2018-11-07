@@ -1,18 +1,18 @@
 state={
 	id=760
 	name="STATE_760"
-			resources={
+	resources={
 		aluminium=8
 
 	}
-	
+
 	provinces={
-		1055 7086 
+		1055 7086
 	}
 	manpower=1934900
-	
+
 	state_category = city
-	
+
 	history={
 		owner = CHI
 		add_core_of = CHI
@@ -23,13 +23,17 @@ state={
 				naval_base = 1
 				coastal_bunker = 1
 				bunker = 1
-
+			}
+			1055 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
 			}
 		}
-				victory_points = {
-			1055 1 
+		victory_points = {
+			1055 1
 		}
 	}
-	
+
 	buildings_max_level_factor=1.000
 }

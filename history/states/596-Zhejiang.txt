@@ -23,21 +23,12 @@ state={
 				naval_base = 3
 				coastal_bunker = 1
 				bunker = 1
-
 			}
 			9974 = {
 				naval_base = 2
 				coastal_bunker = 1
 				bunker = 1
-
 			}
-			1055 = {
-				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
-
-			}
-
 		}
 		1938.10.25 = {
 			JAP = {
@@ -49,11 +40,8 @@ state={
 				set_province_controller = 10014
 				set_province_controller = 10101
 				set_province_controller = 11991
-
 			}
-
 		}
-
 	}
 
 	provinces={

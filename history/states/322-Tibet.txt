@@ -4,7 +4,7 @@ state={
 	name="STATE_322"
 
 	history={
-		owner = BRA
+		 
 	}
 
 	provinces={

@@ -21,8 +21,9 @@ state={
 			industrial_complex = 2
 
 			5007 = { bunker = 2 }
+			10733 = { bunker = 2 }
+			12156 = { bunker = 2 }
 		}
-
 	}
 
 	provinces={

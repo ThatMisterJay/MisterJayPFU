@@ -8,7 +8,7 @@ state=
 
 
 	history={
-		owner = BRA
+		 
 	}
 	provinces={
 		4598 7632 7660 10484

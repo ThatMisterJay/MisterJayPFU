@@ -5,7 +5,7 @@ state=
 	state_category = tiny_island
 	manpower=1
 	history={
-		owner = BRA
+		 
 	}
 	provinces= { 5023 }
 }

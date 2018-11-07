@@ -6,7 +6,7 @@ state=
 
 	state_category = enclave
 	history={
-		owner = BRA
+		 
 	}
 	provinces= { 2077 }
 }
