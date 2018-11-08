@@ -642,7 +642,7 @@ focus_tree = {
 		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty }
 		x = 4
 		y = 3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -835,7 +835,7 @@ focus_tree = {
 		prerequisite = { focus = GER_air_innovation_2 }
 		x = 2
 		y = 4
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
