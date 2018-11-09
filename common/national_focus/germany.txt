@@ -657,7 +657,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 0.5
-				uses = 1
+				uses = 1z
 				category = radar_tech
 			}
 		}
@@ -1162,6 +1162,25 @@ focus_tree = {
    				add_manpower = -50000
 				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 15000 producer = GER }
    	        }
+    	}
+	}
+
+	focus = {
+   		id = GER_endsieg
+   		icon = GFX_goal_generic_axis_build_infantry
+   		prerequisite = { focus = GER_Operation_Citadel }
+		relative_position_id = GER_Operation_Citadel
+   	    available = {
+   			date > 1943.1.10
+   			surrender_progress > 0.5
+   		}
+
+   		x = 0
+   		y = 1
+   		cost = 0.2
+
+   		completion_reward = {
+   			add_timed_idea = { idea = endsieg days = 130 }
     	}
 	}
 

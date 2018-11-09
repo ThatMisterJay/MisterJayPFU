@@ -16,3 +16,7 @@
     easy_surrender2:0 "Quick Surrender"
     varna_shipyard:0 "Varna Shipyard"
     soviet_justification:0 "No Justification"
+
+    endsieg:0 "Endsieg"
+    GER_endsieg:0 "Endsieg"
+    GER_endsieg_desc:0 "The final fight has arrived. We shall overcome this."

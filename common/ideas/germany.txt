@@ -364,6 +364,31 @@ ideas = {
 			}
 		}
 
+		endsieg = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_org_Factor = 0.8
+				army_morale_factor = 0.8
+				army_attack_factor = 0.8
+				army_defence_factor = 0.8
+				supply_consumption_factor = -0.8
+				army_speed_factor = 0.3
+				industrial_capacity_factory = 0.5
+				industrial_capacity_dockyard = 0.5
+				consumer_goods_factor = -0.5
+			}
+		}
+
 		GER_autarky_idea = {
 
 			allowed = {
