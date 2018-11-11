@@ -56,3 +56,7 @@
     JFU.4.t:0 "CHEATER DETECTED"
     JFU.4.d:0 "It has been detected that [CHEATER.GetName] has probably been cheating! The person playing the country has possibly abused the decisions system! If the game has gone on for a long time, this might give false results and you can ignore this message. If the game hasn't been going on for a long time: shame on you. SHAME."
     JFU.4.a:0 "Horrible!"
+
+    JFU_France.1.t:0 "A Wild Sithben arrives!"
+    JFU_France.1.d:0 "On this day a days, we have been blessed by a new hero. Upon finishing the building in France, the Lord has blessed us with a new light. He is to be called Sithben, and he will save us from the Lichner threat."
+    JFU_France.1.a:0 "A Sithben is never late, nor is he early, he arrives precisely when he means to."

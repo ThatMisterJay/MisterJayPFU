@@ -1,0 +1,22 @@
+﻿l_english:
+    usa_special_forces:0 "USA Special Forces"
+    usa_special_forces_desc:0 "USA is a nation heavily dependent on special forces, and for this reason the cap was highered."
+    JAP_cg_defense_state:0 "National Defense State"
+
+    generic_neutral_country:0 "Neutral Country"
+    generic_neutral_country_desc:0 "This country is not supposed to be played OR conquered and thus is neutral."
+    shattered_retreat:0 "Shattered retreat"
+    shattered_retreat_desc:0 "The surprise attack of Germany has left our army in a bad state."
+    GER_blitzkrieg_romania:0 "Blitzkrieg"
+    CHI_warlord_cliques2:0 "Warlord Cliques"
+    CHI_warlord_cliques3:0 "Warlord Cliques"
+    no_finnish_justification:0 "No Justification"
+    no_finnish_justification_desc:0 "Finland is not supposed to attack anyone, and for this this idea was added."
+    easy_surrender:0 "Quick Surrender"
+    easy_surrender2:0 "Quick Surrender"
+    varna_shipyard:0 "Varna Shipyard"
+    soviet_justification:0 "No Justification"
+
+    endsieg:0 "Endsieg"
+    GER_endsieg:0 "Endsieg"
+    GER_endsieg_desc:0 "The final fight has arrived. We shall overcome this."
