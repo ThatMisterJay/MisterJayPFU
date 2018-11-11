@@ -761,3 +761,38 @@ country_event = {
 		name = JFU_germany.23.a
 	}
 }
+
+#who gets german air
+country_event = {
+	id = JFU_germany.24
+	title = JFU_germany.24.t
+	desc = JFU_germany.24.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_germany.24.a
+		GER = { add_ideas = GER_ace_idea }
+	}
+
+	option = {
+		name = JFU_germany.24.b
+		HUN = { add_ideas = GER_ace_idea }
+	}
+
+	option = {
+		name = JFU_germany.24.c
+		ROM = { add_ideas = GER_ace_idea }
+	}
+
+	option = {
+		name = JFU_germany.24.dee
+		BUL = { add_ideas = GER_ace_idea }
+	}
+
+	option = {
+		name = JFU_germany.24.e
+		ITA = { add_ideas = GER_ace_idea }
+	}
+}
