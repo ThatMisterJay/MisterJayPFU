@@ -1515,7 +1515,7 @@ focus_tree = {
 
 		completion_reward = {
 			create_navy_leader = {
-				name = "diamondkey1"
+				name = "Diamond the Blind"
 				picture = "diamond.dds"
 				traits = { air_controller fly_swatter }
 				skill = 3

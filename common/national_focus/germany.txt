@@ -652,8 +652,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 50
 
-			add_ideas = GER_ace_idea
-			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
+			country_event = { id = JFU_germany.24 days = 1 }
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 0.5
@@ -1162,25 +1161,6 @@ focus_tree = {
    				add_manpower = -50000
 				add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 15000 producer = GER }
    	        }
-    	}
-	}
-
-	focus = {
-   		id = GER_endsieg
-   		icon = GFX_goal_generic_axis_build_infantry
-   		prerequisite = { focus = GER_Operation_Citadel }
-		relative_position_id = GER_Operation_Citadel
-   	    available = {
-   			date > 1943.1.10
-   			surrender_progress > 0.5
-   		}
-
-   		x = 0
-   		y = 1
-   		cost = 0.2
-
-   		completion_reward = {
-   			add_timed_idea = { idea = endsieg days = 130 }
     	}
 	}
 
@@ -2501,7 +2481,7 @@ focus_tree = {
 	focus = {
 		id = GER_improve_national_spirit
 		prerequisite = { focus = GER_rhineland }
-		x = 12
+		x = 13
 		y = 1
 		cost = 5
 		icon = GFX_goal_support_fascism
@@ -2548,6 +2528,25 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = sour_loser
 			add_ideas = triumphant_will
+		}
+	}
+
+	focus = {
+		id = GER_endsieg
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = GER_rhineland }
+		relative_position_id = GER_rhineland
+		available = {
+			surrender_progress > 0.3
+			date > 1942.6.1
+		}
+
+		x = -1
+		y = 1
+		cost = 0.2
+
+		completion_reward = {
+			add_timed_idea = { idea = endsieg days = 130 }
 		}
 	}
 }
