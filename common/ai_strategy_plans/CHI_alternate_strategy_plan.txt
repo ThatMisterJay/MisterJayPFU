@@ -31,14 +31,12 @@ CHI_alternate_plan_1 = {
 		CHI_mission_to_germany = 15
 		CHI_closer_ties_with_germany = 15
 		CHI_purchase_tanks = 5
-		CHI_give_falkenhausen_citizenship = 5
 		CHI_anti_communism = 5
 		CHI_financial_policy = 15
 		CHI_mining_commission = 5
 		CHI_bureau_of_investigation_and_statistics = 5
 		CHI_experimental_mechanised_unit = 5
 		CHI_chinese_general_staff = 5
-		CHI_chinese_panzers = 5
 		CHI_develop_the_hanyan_arsenal = 5
 		CHI_taiyuan_arsenal = 5
 		CHI_price_controls = 5
@@ -56,7 +54,6 @@ CHI_alternate_plan_1 = {
 		CHI_republicanism = 5
 		CHI_inter_party_coordination_council = 5
 		CHI_judicial_yuan = 5
-		CHI_combined_arms_warfare = 5
 		CHI_renegotiate_the_unequal_treaties = 5
 	}
 
@@ -99,15 +96,9 @@ CHI_alternate_plan_2 = {
 	}
 
 	focus_factors = {
-		CHI_mission_to_germany = 5
-		CHI_closer_ties_with_germany = 10
-		CHI_purchase_tanks = 5
-		CHI_give_falkenhausen_citizenship = 5
 		CHI_anti_communism = 5
 		CHI_experimental_mechanised_unit = 5
 		CHI_chinese_general_staff = 5
-		CHI_chinese_panzers = 5
-		CHI_combined_arms_warfare = 5
 	}
 
 	research = {

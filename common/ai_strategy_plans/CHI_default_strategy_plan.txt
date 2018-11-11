@@ -235,46 +235,6 @@ CHI_befriend_France = {
 		}
 	}
 }
-CHI_befriend_Soviet = {
-	name = "Befirend Soviet"
-	desc = "Teaches the AI to make friends with Soviet to progress further down the tree"
-
-	enable = {
-		has_completed_focus = CHI_mission_to_the_soviet_union
-	}
-	abort = {
-		has_completed_focus = CHI_combined_arms_warfare #they have served their purpose
-	}
-	focus_factors = {
-		CHI_the_soviet_volunteer_group = 20
-		CHI_rapprochement_with_soviet_union = 20
-		CHI_purchase_tanks = 20
-		CHI_experimental_mechanised_unit = 20
-		CHI_invite_soviet_advisers = 20
-		CHI_heavy_weapons = 20
-	}
-
-	research = {
-		motorized_equipment = 15.0 #needed to progress
-	}
-
-	ideas = {
-	}
-	ai_strategy = {
-		type = befriend
-		id = "SOV"
-		value = 200
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1
-		modifier = {
-			factor = 1.0
-		}
-	}
-}
 
 CHI_european_allies = { #used to make minor European nations like Axis more
 	name = "Minor European Countries"

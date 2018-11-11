@@ -32,7 +32,6 @@ save_global_event_target_as = WTT_communist_china
 		complete_national_focus = PRC_infiltration
 		complete_national_focus = PRC_revolutionary_military_commission
 		complete_national_focus = PRC_literacy_programs
-		complete_national_focus = CHI_mission_to_the_soviet_union
 		complete_national_focus = PRC_ban_the_opium_trade
 		complete_national_focus = PRC_military_intelligence_department
 		complete_national_focus = PRC_prepare_for_war_with_japan

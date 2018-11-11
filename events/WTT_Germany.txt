@@ -1622,65 +1622,6 @@ country_event = {
 
 #China
 
-# Germans demand return of Tsingtao
-country_event = {
-	id = wtt_germany.38
-	title = wtt_germany.38.t
-	desc = wtt_germany.38.desc
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	# Demand continued support of Von Falkenhausen in return
-	option = {
-		name = wtt_germany.38.a
-		ai_chance = {
-			factor = 80
-		}
-		trigger = {
-			event_target:WTT_current_china_leader = {
-				OR = {
-					has_idea = german_advisors
-					has_completed_focus = CHI_give_falkenhausen_citizenship
-				}
-			}
-		}
-		GER = { country_event = { id = wtt_germany.39 days = 1 } }
-	}
-
-	# Accept
-	option = {
-		name = wtt_germany.38.b
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_war_with = JAP
-			}
-		}
-		effect_tooltip = {
-			GER = { transfer_state = 743 }
-			743 = { set_state_name = "Tsingtao" }
-			set_province_name = { id = 10000 name = "Tsingtao" }
-		}
-		GER = { country_event = { id = wtt_germany.48 days = 1 } }
-		hidden_effect = { news_event = { id = wtt_news.16 hours = 30 } }
-	}
-
-	# No!
-	option = {
-		name = wtt_germany.38.c
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_war_with = JAP
-			}
-		}
-		GER = { country_event = { id = wtt_germany.40 days = 1 } }
-	}
-}
-
 # China demands continued support of Von Falkenhausen in return
 country_event = {
 	id = wtt_germany.39
