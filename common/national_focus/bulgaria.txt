@@ -1413,7 +1413,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = BUL_naval_warfare }
 		mutually_exclusive = { focus = BUL_macedonia_dockyard_construction }
-		x = 18
+		x = 17
 		y = 4
 
 		cost = 5
@@ -1436,8 +1436,8 @@ focus_tree = {
 		id = BUL_improved_raiding
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = BUL_thrace_dockyard_construction }
-		x = 18
-		y = 5
+		x = 17
+		y = 6
 
 		cost = 5
 
@@ -1458,7 +1458,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = BUL_naval_warfare }
 		mutually_exclusive = { focus = BUL_thrace_dockyard_construction }
-		x = 20
+		x = 21
 		y = 4
 
 		cost = 5
@@ -1485,8 +1485,8 @@ focus_tree = {
 		id = BUL_improved_screening
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = BUL_macedonia_dockyard_construction }
-		x = 20
-		y = 5
+		x = 21
+		y = 6
 
 		cost = 5
 
@@ -1505,11 +1505,31 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_modernize_navy
-		icon = GFX_goal_generic_build_navy
+		id = BUL_recruit_new_admirals
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = BUL_naval_warfare }
 		x = 19
-		y = 6
+		y = 5
+
+		cost = 1.43
+
+		completion_reward = {
+			create_navy_leader = {
+				name = "diamondkey1"
+				picture = "diamond.dds"
+				traits = { air_controller fly_swatter }
+				skill = 3
+				id = 2001
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_modernize_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = BUL_recruit_new_admirals }
+		x = 19
+		y = 7
 
 		cost = 5
 
