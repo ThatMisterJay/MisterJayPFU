@@ -940,10 +940,10 @@ focus_tree = {
 		mutually_exclusive = { focus = CHI_neutrality_focus }
 		x = 23
 		y = 2
-		cost = 0.2
+		cost = 0.15
 
 		available = {
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 
 		completion_reward = {

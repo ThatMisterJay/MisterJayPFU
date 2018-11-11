@@ -1056,21 +1056,9 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
@@ -1078,12 +1066,38 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MAN_vassalize_mengukuo
-		icon = GFX_goal_generic_forceful_treaty
+		id = MAN_national_cooperation_government
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = MAN_chinese_leadership }
 		x = 0
 		y = 1
 		relative_position_id = MAN_chinese_leadership
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_state = {
+				limit = { is_core_of = CHI }
+				add_core_of = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = MAN_vassalize_mengukuo
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = MAN_national_cooperation_government }
+		x = 0
+		y = 1
+		relative_position_id = MAN_national_cooperation_government
 
 		cost = 10
 
@@ -1124,7 +1138,7 @@ focus_tree = {
 		prerequisite = { focus = MAN_vassalize_mengukuo }
 		x = 0
 		y = 2
-		relative_position_id = MAN_chinese_leadership
+		relative_position_id = MAN_national_cooperation_government
 
 		cost = 10
 
