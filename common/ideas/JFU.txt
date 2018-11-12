@@ -30,7 +30,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.075
 				stability_factor = -0.10
 				industrial_capacity_factory = -0.075
 			}
@@ -41,7 +40,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.075
 				stability_factor = -0.10
 				industrial_capacity_factory = -0.075
 			}
@@ -52,7 +50,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.03
 				stability_factor = -0.05
 				industrial_capacity_factory = -0.05
 			}
@@ -63,7 +60,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.03
 				stability_factor = -0.05
 				industrial_capacity_factory = -0.05
 			}
@@ -74,7 +70,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.03
 				stability_factor = -0.03
 				industrial_capacity_factory = -0.03
 			}
@@ -85,9 +80,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.05
 				stability_factor = -0.05
-				industrial_capacity_factory = -0.05
+				industrial_capacity_factory = -0.03
 			}
 		}
 
@@ -96,7 +90,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.05
 				stability_factor = -0.05
 				industrial_capacity_factory = -0.05
 			}
