@@ -62,7 +62,7 @@ focus_tree = {
 		id = CHI_educational_funding
 		icon = GFX_goal_generic_national_unity
 		x = 1
-		y = 0
+		y = 1
 		cost = 10
 		completion_reward = {
  			add_stability = 0.1
@@ -111,8 +111,7 @@ focus_tree = {
 		id = CHI_inland_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CHI_industrial_reform }
-		mutually_exclusive = { focus = CHI_coastal_infrastructure }
-		x = 3
+		x = 4
 		y = 1
 		cost = 10
 
@@ -131,40 +130,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_coastal_infrastructure
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CHI_industrial_reform }
-		mutually_exclusive = { focus = CHI_inland_infrastructure }
-		x = 5
-		y = 1
-		cost = 10
-
-		ai_will_do = {
-			factor = 70
-		}
-
-		completion_reward = {
-			613 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			598 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
 		id = CHI_inland_industrialization
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = CHI_inland_infrastructure }
-		x = 3
+		x = 4
 		y = 2
 		cost = 10
 
@@ -188,7 +157,7 @@ focus_tree = {
 		id = CHI_seizure_of_land
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = CHI_inland_industrialization }
-		x = 3
+		x = 4
 		y = 3
 		cost = 10
 
@@ -285,58 +254,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CHI_trade_ports
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = CHI_coastal_infrastructure }
-		x = 5
-		y = 2
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		completion_reward = {
-			    613 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CHI_trade_ports
-			}
-		}
-	}
-	focus = {
-		id = CHI_coastal_industrialization
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = CHI_trade_ports }
-		x = 5
-		y = 3
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		completion_reward = {
-			#	Adds a civilian Factory
-			    596 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = CHI_coastal_industrialization
-			}
-		}
-	}
-	focus = {
 		id = CHI_national_resources_commission
 		icon = GFX_goal_generic_more_territorial_claims
-        prerequisite = { focus = CHI_coastal_industrialization focus = CHI_seizure_of_land}
+        prerequisite = { focus = CHI_seizure_of_land}
 		available = {
 			controls_state = 602
 			controls_state = 605
@@ -368,7 +288,7 @@ focus_tree = {
 			controls_state = 600
 			threat > 0.05
 		}
-		x = 7
+		x = 6
 		y = 2
 		cost = 10
 		cancel_if_invalid = no
@@ -396,7 +316,7 @@ focus_tree = {
 				is_controlled_by = CHI
 			}
 		}
-		x = 7
+		x = 6
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -721,7 +641,7 @@ focus_tree = {
 	focus = {
 		id = CHI_revive_hanyang_armory
 		icon = GFX_goal_generic_production2
-		x = 7
+		x = 6
 		y = 1
 		cost = 10
 		prerequisite = { focus = CHI_industrial_reform }
@@ -896,7 +816,7 @@ focus_tree = {
 	focus = {
 		id = CHI_political_effort
 		icon = GFX_goal_generic_propaganda
-		x = 21
+		x = 22
 		y = 0
 		cost = 10
 
@@ -908,7 +828,7 @@ focus_tree = {
 		id = CHI_strengthen_the_republic
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = CHI_political_effort }
-		x = 21
+		x = 22
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -957,8 +877,8 @@ focus_tree = {
 	focus = {
 		id = CHI_deterrence
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = CHI_neutrality_focus }
-		x = 21
+		prerequisite = { focus = CHI_neutrality_focus focus = CHI_join_Allies }
+		x = 22
 		y = 3
 		cost = 10
 		completion_reward = {
