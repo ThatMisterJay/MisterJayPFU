@@ -831,9 +831,11 @@ focus_tree = {
 		available = {
 			ENG = { has_war = yes }
 			GER = { has_war = yes }
-			JAP = { has_war = yes }
 			DEN = { has_war = yes }
-			NOT = { has_government = fascism }
+			OR = {
+				JAP = { has_war = yes }
+				NOT = { country_exists = CHI }
+			}
 		}
 
 		continue_if_invalid = yes
