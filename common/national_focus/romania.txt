@@ -1473,14 +1473,6 @@ focus_tree = {
 			factor = 9
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1494,7 +1486,7 @@ focus_tree = {
 				name = ROM_air_superiority
 				bonus = 0.5
 				uses = 2
-				category = strategic_destruction_tree
+				category = air_doctrine
 			}
 		}
 	}
@@ -1653,29 +1645,17 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_heavy_bombers
 				bonus = 0.5
 				uses = 1
-				technology = strategic_bomber1
 				technology = strategic_bomber2
+				technology = strategic_bomber3
 			}
 		}
 	}
@@ -1692,14 +1672,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
