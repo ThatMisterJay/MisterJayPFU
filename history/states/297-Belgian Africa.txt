@@ -1,13 +1,11 @@
-state=
-{
+state={
 	id=297
 	name="STATE_297" # Equatorial Guinea
 	manpower = 185000
-	
+
 	state_category = enclave
-	
-	history=
-	{
+
+	history={
 		owner = SPR
 		buildings = {
 			infrastructure = 1
@@ -18,9 +16,8 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = SPR
 	}
-	provinces=
-	{
-1903 8244 	}
+	provinces= {
+		1903 8244
+	}
 }

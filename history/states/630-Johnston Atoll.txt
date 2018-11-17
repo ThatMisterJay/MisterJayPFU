@@ -12,10 +12,9 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = USA
 	}
-	
+
 	provinces={
-		13051 	
+		13051
 	}
 }

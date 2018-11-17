@@ -3,7 +3,7 @@ state={
 	name="STATE_726"
 	manpower=123214
 	state_category = small_island
-						resources={
+	resources={
 		oil=1
 	}
 
@@ -15,9 +15,8 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = USA
 	}
 	provinces={
-		7290 13080 
+		7290 13080
 	}
 }

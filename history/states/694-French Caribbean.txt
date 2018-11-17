@@ -17,10 +17,9 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = FRA
 	}
-	
+
 	provinces={
-		177 9377 13084 
+		177 9377 13084
 	}
 }

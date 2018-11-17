@@ -5,7 +5,7 @@ state={
 	resources={
 		oil=16
 	}
-	
+
 	state_category = rural
 
 
@@ -17,8 +17,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = ENG
 	}
-	
+
 	provinces={ 3284 13012 }
 }
