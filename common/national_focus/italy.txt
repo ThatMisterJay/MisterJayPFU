@@ -1212,9 +1212,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_naval_air_effort
 				bonus = 0.5
-				uses = 1
-				technology = naval_bomber1
+				uses = 2
 				technology = naval_bomber2
+				technology = naval_bomber3
 			}
 		}
 	}
