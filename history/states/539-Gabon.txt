@@ -2,9 +2,6 @@
 state={
 	id=539
 	name="STATE_539"
-	manpower = 2564000
-	
-	state_category = rural
 
 	history={
 		owner = FRA
@@ -20,11 +17,16 @@ state={
 			5139 = {
 				naval_base = 1
 			}
+			8244 = {
+				naval_base = 1
+			}
 		}
-
 	}
 
 	provinces={
-		2080 2192 3109 5036 5054 5139 6008 6039 8193 8207 9137 10948 11012 12975 
+		2080 2192 3109 5036 5054 5139 6008 6039 8193 8207 8244 9137 10948 11012 12975
 	}
+	manpower=2564000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }
