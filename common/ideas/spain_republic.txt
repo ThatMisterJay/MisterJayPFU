@@ -182,7 +182,7 @@ ideas = {
 
 		SPR_fransisco_franco = {
 
-			picture = GFX_idea_francisco_franco
+			picture = francisco_franco
 
 			allowed = {
 				original_tag = SPR

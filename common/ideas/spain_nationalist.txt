@@ -19,7 +19,7 @@ ideas = {
 				consumer_goods_factor = 0.2
 				justify_war_goal_time = 5.00
 				join_faction_tension = 2
-				stability_factor = -0.4 
+				stability_factor = -0.4
 			}
 		}
 
@@ -118,40 +118,40 @@ ideas = {
 
 	theorist = {
 
-	SPA_jose_enrique_varela = {
+		SPA_jose_enrique_varela = {
 
 
-		allowed = {
-			original_tag = SPR
-			has_government = fascism
+			allowed = {
+				original_tag = SPR
+				has_government = fascism
+			}
+
+			picture = generic_army_europe_3
+
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+
+			traits = { military_theorist }
 		}
 
-		picture = generic_army_europe_3
+		SPA_emilio_herrera = {
 
-		research_bonus = {
-			land_doctrine = 0.07
+
+			allowed = {
+				original_tag = SPR
+				has_government = fascism
+			}
+
+			picture = generic_air_europe_3
+
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+
+			traits = { air_warfare_theorist }
 		}
-
-		traits = { military_theorist }
 	}
-
-	SPA_emilio_herrera = {
-
-
-		allowed = {
-			original_tag = SPR
-			has_government = fascism
-		}
-
-		picture = generic_air_europe_3
-
-		research_bonus = {
-			air_doctrine = 0.07
-		}
-
-		traits = { air_warfare_theorist }
-	}
-}
 	# MILITARY
 	army_chief = {
 
