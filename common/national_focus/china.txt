@@ -808,7 +808,7 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
-			set_global_flag = CHI_flying_tigers
+			set_country_flag = CHI_flying_tigers
 			custom_effect_tooltip = CHI_flying_tigers_tt
 		}
 	}
