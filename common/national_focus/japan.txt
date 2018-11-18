@@ -533,7 +533,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		prerequisite = { focus = JAP_North_Infra_2 }
-		cost = 5
+		cost = 10
 		icon = GFX_goal_generic_construct_naval_dockyard
 		ai_will_do = {
 			factor = 5
@@ -541,6 +541,12 @@ focus_tree = {
 
 		completion_reward = {
 			715 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = naval_base
 					province = 4056
@@ -550,13 +556,18 @@ focus_tree = {
 			}
 			527 = {
 				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = naval_base
 					province = 4052
 					level = 3
 					instant_build = yes
 				}
 			}
-
 		}
 	}
 
@@ -659,15 +670,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_Tanks_Bonus
-				uses = 1
+				uses = 2
 				bonus = 0.5
 				category = armor
-				}
-			add_tech_bonus = {
-				name = JAP_Tanks_Light_Bonus
-				uses = 1
-				bonus = 0.5
-				category = cat_light_armor
 			}
 		}
 	}
@@ -764,6 +769,8 @@ focus_tree = {
 				bonus = 0.5
 				category = infantry_weapons
 			}
+			subtract_from_variable = { resistance_variable = 10 }
+			custom_effect_tooltip = JAP_lower_resistance
 		}
 	}
 
@@ -1033,9 +1040,9 @@ focus_tree = {
 	focus = {
 		id = army_air_innovations_focus
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = JAP_DMZ }
-		x = -1
-		y = 5
+		prerequisite = { focus = JAP_North_Tech_2 focus = JAP_North_Infra_2}
+		x = -2
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1054,7 +1061,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				technology = tactical_bomber1
-				technology = tactical_bomber2
 			}
 		}
 	}
@@ -1065,7 +1071,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_DMZ }
 		x = 3
 		y = 6
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -1075,8 +1081,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2
+				technology = tactical_bomber2
 			}
 		}
 	}
