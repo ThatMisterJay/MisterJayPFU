@@ -1091,7 +1091,7 @@ focus_tree = {
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
@@ -1181,69 +1181,6 @@ focus_tree = {
 				country = TUR
 				relation = guarantee
 				active = no
-			}
-		}
-	}
-
-	focus = {
-		id = ROM_iron_guard
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = ROM_flexible_foreign_policy }
-		x = 1
-		y = 1
-		relative_position_id = ROM_flexible_foreign_policy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			if = {
-				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
-				swap_ideas = {
-					add_idea = ROM_iron_guard
-					remove_idea = ROM_the_sentinel_of_the_motherland
-				}
-				else = {
-					remove_ideas = ROM_the_sentinel_of_the_motherland
-					add_ideas = ROM_iron_guard
-				}
-			}
-			#Remove ideas or display tooltip warning that it will happen
-			if = {
-				limit = {
-					has_idea = ROM_securitate
-				}
-				remove_ideas = ROM_securitate
-				else = {
-					if = {
-						limit = {
-							has_idea = ROM_constitutional_guarantees
-						}
-						remove_ideas = ROM_constitutional_guarantees
-						else = {
-							custom_effect_tooltip = ROM_appoint_german_friendly_government_tooltip
-						}
-					}
-				}
 			}
 		}
 	}
