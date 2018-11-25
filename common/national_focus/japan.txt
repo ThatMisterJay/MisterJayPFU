@@ -390,6 +390,7 @@ focus_tree = {
 				}
 				CHI = { surrender_progress > 0.85 }
 			}
+			NOT = { MAN = { is_ai = no } }
 		}
 		prerequisite = { focus = chinese_war_focus }
 		x = 11

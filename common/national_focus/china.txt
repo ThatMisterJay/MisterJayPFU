@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	shared_focus = CHI_invite_foreign_investors
 	focus = {
 		id = CHI_industrial_reform
 		icon = GFX_goal_generic_construct_civ_factory
