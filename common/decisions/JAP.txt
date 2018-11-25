@@ -650,6 +650,43 @@ political_actions = {
 			remove_opinion_modifier = { target = ENG modifier = JAP_join_the_london_naval_treaty }
 		}
 	}
+
+	puppet_siam = {
+		ai_will_do = { factor = 0 }
+		cost = 50
+
+		visible = {
+			tag = JAP
+			country_exists = SIA
+			date > 1940.3.1
+			NOT = { SIA = { is_puppet_of = JAP } }
+		}
+
+		complete_effect = {
+			JAP = {
+				puppet = SIA
+			}
+		}
+	}
+
+	annex_siam = {
+		ai_will_do = { factor = 0 }
+		cost = 50
+
+		visible = {
+			tag = JAP
+			SIA = { is_ai = yes }
+			country_exists = SIA
+			SIA = { is_puppet_of = JAP }
+		}
+
+		complete_effect = {
+			JAP = {
+				annex_country = { target = SIA transfer_troops = yes }
+				add_ideas = annex_siam_idea
+			}
+		}
+	}
 }
 
 operations = {

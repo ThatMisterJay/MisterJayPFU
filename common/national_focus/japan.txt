@@ -15,31 +15,6 @@ focus_tree = {
 	############################
 
 	focus = {
-		id = JAP_puppet_siam
-		icon = GFX_goal_generic_military_deal
-		x = 15
-		y = 6
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			date > 1940.3.1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			puppet = SIA
-		}
-	}
-
-	focus = {
 		id = test_the_ussr_focus
 		x = 13
 		y = 0
@@ -1786,6 +1761,10 @@ focus_tree = {
 			is_puppet = no
 			country_exists = SIA
 			date > 1940.1.1
+		}
+		bypass = {
+			NOT = { country_exists = SIA }
+			SIA = { is_puppet_of = JAP }
 		}
 		x = 4
 		y = 1
