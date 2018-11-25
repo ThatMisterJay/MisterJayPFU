@@ -114,7 +114,7 @@
  CRO_infrastructure_effort_desc:0 "A country without proper infrastructure cannot pursue advanced projects or constructions."
  CRO_infrastructure_effort_tt:0 "Not enough building slots for §YInfrastructure§!"
  CRO_coal_mines:0 "Fully Exploit the Limburg Coal Mines"
- CRO_coal_mines_desc:0 "Coal is our main ressources and we must absolutely maximize its extraction." 
+ CRO_coal_mines_desc:0 "Coal is our main resources and we must absolutely maximize its extraction." 
  CRO_synth_oil_effort_tt:0 "Not enough building slots for §YSynthetic Refinery§!"
  CRO_infrastructure_effort_2:0 "Infrastructure Effort II"
  CRO_infrastructure_effort_2_desc:0 "Extending our infrastructure further will enable the transports and communications necessary for high-tech clandestine projects."
