@@ -49,7 +49,6 @@ set_technology = {
 
 	#adding ministers
 	add_ideas = {
-		FRA_charles_tillon
 		francois_darlan
 		philippe_fequant
 		famh
