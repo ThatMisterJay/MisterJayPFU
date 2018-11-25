@@ -7,8 +7,6 @@ set_technology = {
 
 }
 add_ideas = {
-	sik_neutrality
-    neutrality_idea
 }
 
 1939.1.1 = {
