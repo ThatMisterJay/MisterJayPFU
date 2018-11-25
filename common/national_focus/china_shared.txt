@@ -2037,7 +2037,6 @@ shared_focus = {
 	id = CHI_closer_ties_with_germany
 	icon = GFX_goal_generic_improve_relations
 	prerequisite = { focus = CHI_mission_to_germany }
-	mutually_exclusive = { focus = CHI_rapprochement_with_soviet_union }
 	x = 1
 	y = 1
 	relative_position_id = CHI_mission_to_germany
@@ -2068,7 +2067,7 @@ shared_focus = {
 shared_focus = {
 	id = CHI_purchase_tanks
 	icon = GFX_goal_generic_army_tanks
-	prerequisite = { focus = CHI_closer_ties_with_germany focus = CHI_rapprochement_with_soviet_union }
+	prerequisite = { focus = CHI_closer_ties_with_germany }
 	x = 1
 	y = 1
 	relative_position_id = CHI_closer_ties_with_germany

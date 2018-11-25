@@ -1189,7 +1189,6 @@ focus_tree = {
 		id = ROM_force_abdication
 		icon = GFX_focus_rom_abdicate
 	    prerequisite = { focus = ROM_appoint_german_friendly_government }
-		prerequisite = { focus = ROM_iron_guard }
 		x = 0
 		y = 2
 		relative_position_id = ROM_flexible_foreign_policy
@@ -1264,7 +1263,7 @@ focus_tree = {
 				remove_idea = ROM_king_carol_ii_hedonist
 			}
 			remove_ideas = ROM_the_sentinel_of_the_motherland
-			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 45 }
+			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 90 }
 			hidden_effect = {
 				news_event = { id = news.323 days = 1 }
 			}
