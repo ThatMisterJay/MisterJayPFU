@@ -856,6 +856,7 @@ war_measures = {
         }
 
         available = {
+			NOT = { has_country_flag = women_in_the_workforce_flag }
             has_war = yes
             has_idea = tot_economic_mobilisation
             OR = {
@@ -896,7 +897,12 @@ war_measures = {
         ai_will_do = {
 			factor = 1
 		}
+
+		remove_effect = {
+			clr_country_flag = women_in_the_workforce_flag
+		}
 		complete_effect = {
+			set_country_flag = women_in_the_workforce_flag
 			if = {
 				limit = {
 					tag = CAN
@@ -916,6 +922,7 @@ war_measures = {
 
         available = {
             has_war = yes
+			NOT = { has_country_flag = war_bonds_flag }
             OR = {
                 AND = {
                     has_government = democratic
@@ -962,11 +969,11 @@ war_measures = {
 		}
 
 		remove_effect = {
-
+			clr_country_flag = war_bonds_flag
 		}
 
 		complete_effect = {
-			add_to_variable = { cheat_war_bonds = 1 }
+			set_country_flag = war_bonds_flag
 			if = {
 				limit = {
 					NOT = {

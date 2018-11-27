@@ -1585,6 +1585,7 @@ political_actions = {
 
 		available = {
             fascism > 0.1
+			NOT = { has_country_flag = fascist_raids_flag }
         }
 
 		modifier = {
@@ -1597,10 +1598,11 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.075
-			add_to_variable = { cheat_anti_fascist_raids = 1 }
+			set_country_flag = fascist_raids_flag
 		}
 
 		remove_effect = {
+			clr_country_flag = fascist_raids_flag
 		}
 
 		ai_will_do = {
@@ -1636,6 +1638,7 @@ political_actions = {
 
 		available = {
             democratic > 0.1
+			NOT = { has_country_flag = democratic_raids_flag }
         }
 
 		modifier = {
@@ -1648,10 +1651,11 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.075
-			add_to_variable = { cheat_anti_democratic_raids = 1 }
+			set_country_flag = democratic_raids_flag
 		}
 
 		remove_effect = {
+			clr_country_flag = democratic_raids_flag
 		}
 
 		ai_will_do = {
@@ -1669,6 +1673,7 @@ political_actions = {
 
 		available = {
             communism > 0.1
+			NOT = { has_country_flag = communist_raids_flag }
         }
 
 		modifier = {
@@ -1681,10 +1686,11 @@ political_actions = {
 
 		complete_effect = {
 			add_stability = -0.075
-			add_to_variable = { cheat_anti_communist_raids = 1 }
+			set_country_flag = communist_raids_flag
 		}
 
 		remove_effect = {
+			clr_country_flag = communist_raids_flag
 		}
 
 		ai_will_do = {
