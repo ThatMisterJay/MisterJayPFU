@@ -280,4 +280,30 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10821;7519;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
 10821;1970;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
 10821;5087;impassable;-1;-1;-1;-1;-1;;Sinkiang border India
+
+1984;2088;impassable;-1;-1;-1;-1;-1;;Ethiopia
+1984;12862;impassable;-1;-1;-1;-1;-1;;Ethiopia
+2040;12862;impassable;-1;-1;-1;-1;-1;;Ethiopia
+2040;4918;impassable;-1;-1;-1;-1;-1;;Ethiopia
+2040;12887;impassable;-1;-1;-1;-1;-1;;Ethiopia
+2009;12887;impassable;-1;-1;-1;-1;-1;;Ethiopia
+2009;12800;impassable;-1;-1;-1;-1;-1;;Ethiopia
+7912;12800;impassable;-1;-1;-1;-1;-1;;Ethiopia
+7912;10877;impassable;-1;-1;-1;-1;-1;;Ethiopia
+7912;10859;impassable;-1;-1;-1;-1;-1;;Ethiopia
+8019;11145;impassable;-1;-1;-1;-1;-1;;Ethiopia
+8019;10859;impassable;-1;-1;-1;-1;-1;;Ethiopia
+8019;2066;impassable;-1;-1;-1;-1;-1;;Ethiopia
+8062;2066;impassable;-1;-1;-1;-1;-1;;Ethiopia
+8062;8133;impassable;-1;-1;-1;-1;-1;;Ethiopia
+
+12812;1905;impassable;-1;-1;-1;-1;-1;;Somaliland
+12757;1905;impassable;-1;-1;-1;-1;-1;;Somaliland
+12757;5068;impassable;-1;-1;-1;-1;-1;;Somaliland
+12714;5068;impassable;-1;-1;-1;-1;-1;;Somaliland
+12714;10777;impassable;-1;-1;-1;-1;-1;;Somaliland
+7980;10777;impassable;-1;-1;-1;-1;-1;;Somaliland
+7980;8124;impassable;-1;-1;-1;-1;-1;;Somaliland
+5041;8124;impassable;-1;-1;-1;-1;-1;;Somaliland
+5041;4985;impassable;-1;-1;-1;-1;-1;;Somaliland
 -1;-1;;-1;-1;-1;-1;-1;-1;
