@@ -26,9 +26,4 @@ spriteTypes = {
         legacy_lazy_load = no
         noOfFrames = 1
     }
-
-	spriteType = {
-        name = "GFX_music_decision"
-        texturefile = "gfx/music_decision.dds"
-    }
 }
