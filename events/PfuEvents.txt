@@ -527,7 +527,7 @@ country_event = {
 		name = pfu.16.a
 		custom_effect_tooltip = pfu.16.a.tt
 		hidden_effect = {
-			set_technology = { strategic_bomber1 = 1 }
+			set_technology = { tactical_bomber2 = 1 }
 			add_manpower = -12000
 			load_oob = USA_bombers
 		}
