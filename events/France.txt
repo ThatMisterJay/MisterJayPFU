@@ -173,10 +173,7 @@ country_event = {
 		16 = { is_controlled_by = GER }
 		is_in_faction_with = ENG
 		ENG = { has_war_with = GER }
-		OR = {
-			has_capitulated = yes
-			surrender_progress > 0.9
-		}
+		has_capitulated = yes
 		GER = { is_faction_leader = yes }
 		NOT = { has_civil_war = yes }
 	}
