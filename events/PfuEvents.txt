@@ -330,7 +330,7 @@ country_event = {
 			load_oob = SOV_tihkvin
 		}
 	}
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 1 }
 }
 
 news_event = {
@@ -437,7 +437,7 @@ country_event = {
 			load_oob = SOV_moscow
 		}
 	}
-	mean_time_to_happen = { days = 3 }
+	mean_time_to_happen = { days = 1 }
 }
 
 country_event = {
@@ -474,7 +474,7 @@ country_event = {
 			load_oob = SOV_voronezh
 		}
 	}
-	mean_time_to_happen = { days = 3 }
+	mean_time_to_happen = { days = 1 }
 }
 
 country_event = {
@@ -1006,5 +1006,5 @@ country_event = {
 			load_oob = SOV_caucuses
 		}
 	}
-	mean_time_to_happen = { days = 3 }
+	mean_time_to_happen = { days = 1 }
 }
