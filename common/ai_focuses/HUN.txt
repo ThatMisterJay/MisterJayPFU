@@ -21,18 +21,14 @@ ai_historical_focus_list_HUN = {
 		HUN_trade_deal_with_germany
 		HUN_army_maneuvers
 		HUN_mobile_focus
-		HUN_license_foreign_designs
 		HUN_demand_transylvania
 		HUN_joint_aluminum_mining_company
 		HUN_join_axis
 		HUN_expand_the_manfred_weiss_steel_works
-		HUN_fighter_competition
 		HUN_develop_tanks
 		HUN_armored_warfare
-		HUN_bomber_competition
 		HUN_expand_the_technical_university_of_budapest
 		HUN_mobile_corps_doctrine
 		HUN_expand_the_aluminum_industry
-		HUN_joint_tank_procurement
 	}
 }

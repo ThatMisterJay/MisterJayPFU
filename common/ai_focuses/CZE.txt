@@ -7,7 +7,6 @@ ai_historical_focus_list_CZE = {
 		CZE_political_direction
 		CZE_sudeten_2
 		CZE_democratic_bastion
-		CZE_strategy_decisions
 		CZE_trust_in_the_west
 		CZE_sudeten_3
 		CZE_arms_exports_1
