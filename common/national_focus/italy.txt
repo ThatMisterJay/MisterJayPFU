@@ -1153,7 +1153,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = bc_bonus
-				bonus = 0.35
+				bonus = 0.50
 				uses = 1
 				technology = basic_battlecruiser
 			}
