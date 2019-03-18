@@ -325,6 +325,22 @@ ideas = {
 
 			traits = { compassionate_gentleman }
 		}
+
+		CHI_soong_mei_ling = {
+
+			picture = GFX_idea_chi_soong_mei_ling
+
+			available = {
+				has_country_leader = { ruling_only = yes name = "Chiang Kai-Shek" }
+			}
+
+			allowed = {
+				original_tag = CHI
+				has_dlc = "Waking the Tiger"
+			}
+
+			traits = { first_lady }
+		}
 	}
 
 	army_chief = {
