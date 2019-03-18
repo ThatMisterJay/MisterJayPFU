@@ -45,7 +45,6 @@ ai_historical_focus_list_RAJ = {
 		RAJ_submarine_effort								#1940
 		RAJ_capital_ship_effort								#1940
 		RAJ_chindits										#1943
-		RAJ_jungle_training									#1942
 		RAJ_modernizing_navy								#1942
 		RAJ_strengthen_ties_with_british_investors			#1942
 		RAJ_british_rail_investors							#1942

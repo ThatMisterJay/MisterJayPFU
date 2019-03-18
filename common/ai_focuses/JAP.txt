@@ -1,9 +1,6 @@
 
 ai_historical_focus_list_JAP = {
 	ai_national_focuses = {
-		army_primancy_focus
-		navy_primancy_focus
-		naval_expansion_focus
 		advanced_torpedoes_focus
 		shbb_focus
 		naval_innovations_focus
@@ -14,12 +11,9 @@ ai_historical_focus_list_JAP = {
 		oust_germans_focus
 		industrial_effort_focus
 		industrial_effort_focus2
-		infra_effort_focus
 		test_the_ussr_focus
 		fortress_japan_focus
 		naval_innovations_focus
-		naval_air_innovations_focus
-		convoy_protection_focus
 		naval_base_focus
 		carrier_focus
 		student_movement_focus
