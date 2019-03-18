@@ -2914,7 +2914,7 @@ leader_traits = {
 		}
 	}
 
-	
+
 	navy_chief_naval_aviation_1 = {
 		sprite = 1
 		navy_carrier_air_attack_factor = 0.03
@@ -3315,13 +3315,13 @@ leader_traits = {
 				carrier_size = -0.2 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.5
 			}
 			capital_ship = {
-				armor_value = 0.2 attack = 0.1 naval_speed = 0.1 naval_range = -0.5
+				armor_value = 0.2 hg_attack = 0.1 naval_speed = 0.1 naval_range = -0.5
 			}
-			screen_ship = {
-				attack = 0.1 naval_speed = 0.1 naval_range = -0.5
+			destroyer = {
+				lg_attack = 0.1 naval_speed = 0.1 naval_range = -0.5
 			}
 			submarine = {
-				attack = 0.1 naval_speed = 0.1 naval_range = -0.5
+				torpedo_attack = 0.1 naval_speed = 0.1 naval_range = -0.5
 			}
 		}
 
