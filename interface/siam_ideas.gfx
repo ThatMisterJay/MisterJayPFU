@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_rice_reforms"
+		texturefile = "gfx/interface/ideas/rice_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_siam_flag"
+		texturefile = "gfx/interface/ideas/siam_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_garuda"
+		texturefile = "gfx/interface/ideas/garuda.dds"
+	}
+}

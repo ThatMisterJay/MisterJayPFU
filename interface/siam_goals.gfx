@@ -1,0 +1,51 @@
+	spriteTypes = {	
+	
+	SpriteType = { 
+		name = "GFX_focus_SIA_garuda"
+		texturefile = "gfx/interface/goals/focus_generic_garuda.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thailand_fascist"
+		texturefile = "gfx/interface/goals/thailand_fascist.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_fascism_leanings"
+		texturefile = "gfx/interface/goals/fascism_leanings.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_commie_fist"
+		texturefile = "gfx/interface/goals/commie_fist.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thailand_commie_flag"
+		texturefile = "gfx/interface/goals/thailand_commie_flag.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_greater_siam"
+		texturefile = "gfx/interface/goals/greater_siam.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_japan_siam_deal"
+		texturefile = "gfx/interface/goals/japan_siam_deal.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thai_germany"
+		texturefile = "gfx/interface/goals/thai_germany.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thai_france"
+		texturefile = "gfx/interface/goals/thai_france.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thai_uk"
+		texturefile = "gfx/interface/goals/thai_uk.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thai_sov"
+		texturefile = "gfx/interface/goals/thai_sov.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SIA_thai_mao"
+		texturefile = "gfx/interface/goals/thai_mao.dds"
+	}
+ }

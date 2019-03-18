@@ -1,0 +1,91 @@
+guiTypes = {
+	containerWindowType = {
+		name = "resistance_container"
+		position = { x = 1460 y = 4 }
+
+		buttonType ={
+			name ="resistance_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+
+		iconType = {
+			name ="resistance_icon"
+			spriteType = "GFX_resistance"
+			position = { x= 35 y = -3 }
+		}
+
+		instantTextBoxType = {
+			name ="resistance_text"
+			position = { x= 0 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?resistance_variable]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+
+			pdx_tooltip = "RESISTANCE_TOOLTIP"
+			pdx_tooltip_delayed = "RESISTANCE_TOOLTIP_DELAYED"
+		}
+	}
+
+	#containerWindowType = {
+		#	name = "resistance_options_container"
+		#	position = { x = 1200 y = 50 }
+		#	size = { width=450 height=300 }
+
+		#	fade_time = 300
+		#	fade_type = linear
+		#	moveable = yes
+
+		#	background = {
+		#		name = "Background"
+		#		spriteType = "GFX_BPT_areadef_conf_bg"
+		#	}
+
+		#	instantTextboxType = {
+		#		name = "resistance_options_headline"
+		#		position = {x=25 y=30}
+		#		font = "hoi_18mbs"
+		#		text = "resistance_OPTIONS"
+		#		maxWidth = 250
+		#		maxHeight = 50
+		#		format = left
+		#	}
+
+		#	buttonType = {
+		#		name = "resistance_PP_payment"
+		#		position = {x=18 y=83}
+		#		spriteType = "GFX_manpower_icon"
+		#	}
+
+		#	instantTextboxType = {
+		#		name = "resistance_option_PP_payment"
+		#		position = {x=53 y=80}
+		#		font = "hoi_18mbs"
+		#		text = "resistance_OPTION_PP_PAYMENT"
+		#		maxWidth = 300
+		#		maxHeight = 200
+		#		format = left
+		#	}
+
+		#	buttonType = {
+		#		name = "resistance_stability_payment"
+		#		position = {x=18 y=133}
+		#		spriteType = "GFX_pol_power_icon"
+		#		scale = 1.1
+		#	}
+
+		#	instantTextboxType = {
+		#		name = "resistance_option_stability_payment"
+		#		position = {x=53 y=130}
+		#		font = "hoi_18mbs"
+		#		text = "resistance_OPTION_STABILITY_PAYMENT"
+		#		maxWidth = 300
+		#		maxHeight = 200
+		#		format = left
+		#	}
+	#}
+}
