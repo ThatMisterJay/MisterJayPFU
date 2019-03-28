@@ -56,8 +56,8 @@ units = {
 	navy = {
 		name = "OSP 'Mosquito' Fleet"
 		location = 10265 # Manila
-		ship = { name = "PT Q-111 Luzon" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = "PHI" } } }
-		ship = { name = "PT Q-112 Manila" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = "PHI" } } }
+		ship = { name = "PT Q-111 Luzon" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = "PHI" } } }
+		ship = { name = "PT Q-112 Manila" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = "PHI" } } }
 	}
 }
 

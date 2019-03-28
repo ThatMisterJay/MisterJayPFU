@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infantry Division"		
+	name = "Infantry Division"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -22,7 +22,7 @@ units = {
 	division = {
 		name = "1st Division"
 		location = 7408
-		division_template = "Infantry Division"		
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -30,7 +30,7 @@ units = {
 	division = {
 		name = "2nd Division"
 		location = 7236
-		division_template = "Infantry Division"		
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -38,7 +38,7 @@ units = {
 	division = {
 		name = "3rd Division"
 		location = 7292
-		division_template = "Infantry Division"		
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -46,19 +46,22 @@ units = {
 	division = {
 		name = "4th Division"
 		location = 12264
-		division_template = "Infantry Division"		
+		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 
 	######## NAVAL OOB ########
-	navy = {				
-		name = "Royal Siamese Navy"			
-		base = 7408
-		location = 7408 # Bangkok
-		ship = { name = "HTMS Phra Ruang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SIA } } }
-	}				
+	fleet = {
+		name = "Royal Siamese Navy"
+		naval_base = 7408 # Bangkok
+		task_force = {
+			name = "Royal Siamese Navy"
+			location = 7408 # Bangkok
+			ship = { name = "HTMS Phra Ruang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIA version_name = "Phra Ruang Class" } } }
+		}
+	}		
 }
 
 air_wings = {

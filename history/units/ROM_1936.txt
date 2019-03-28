@@ -24,8 +24,8 @@
 
 	}
 	support = {
-		engineer = { x = 0 y = 0 } 	
-		recon = { x = 0 y = 1 } 		
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 	}
 }
@@ -81,12 +81,12 @@ division_template = {
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
 		motorized = { x = 0 y = 3 }
-		
+
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 		motorized = { x = 1 y = 3 }
-	    
+
 		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
@@ -104,7 +104,7 @@ division_template = {
 	support = {
         engineer = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
-		logistics_company { x = 0 y = 2 } 
+		logistics_company { x = 0 y = 2 }
 
 	}
 }
@@ -371,15 +371,18 @@ units = {
 
 
 	##### NAVAL UNITS #####
-	navy = {				
-		name = "Flota Romania de Mare"			
-		base = 657 
-		location = 657 # Constanta
-		ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
-		ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
-		ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
-		ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
-	}				
+	fleet = {
+		name = "Flota Romania de Mare"
+		naval_base = 657 # Constanta
+		task_force = {
+			name = "Flota Romania de Mare"
+			location = 657 # Constanta
+			ship = { name = "NMS Marasti" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Marasti Class" } } }
+			ship = { name = "NMS Marasesti" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Marasti Class" } } }
+			ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+			ship = { name = "NMS Regina Maria" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+		}
+	}			
 }
 
 
@@ -388,7 +391,7 @@ air_wings = {
 	46 = {
 		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
 		fighter_equipment_0 = {
-			owner = "ROM" 
+			owner = "ROM"
 			amount = 80
 		}
 	}
