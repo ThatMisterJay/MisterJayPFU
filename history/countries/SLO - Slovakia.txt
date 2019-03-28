@@ -40,7 +40,7 @@ oob = "SLO_1939"
 		trade_interdiction = 1
 		formation_flying = 1
 		synth_oil_experiments = 1
-		transport = 1
+		mtg_transport = 1
 
 		#doctrines
 		delay = 1

@@ -16,9 +16,11 @@ set_technology = {
 	basic_light_tank = 1
 	early_fighter = 1
 	early_bomber = 1
-	transport = 1
+	mtg_transport = 1
 	motorised_infantry = 1
 	trench_warfare = 1
+	fuel_silos = 1
+	fuel_refining = 1
 
 }
 
