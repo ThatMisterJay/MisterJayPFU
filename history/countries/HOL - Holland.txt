@@ -32,13 +32,6 @@ if = {
 }
 
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = { bicycle_infantry = 1 }
-}
-
-if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_submarine = 1
