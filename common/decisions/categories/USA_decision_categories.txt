@@ -23,7 +23,10 @@ USA_aid_britain = {
 }
 USA_foreign_support = {
 	allowed = {
+		OR = {
 		original_tag = USA
+			original_tag = CSA
+	}
 	}
 	visible = {
 		OR = {

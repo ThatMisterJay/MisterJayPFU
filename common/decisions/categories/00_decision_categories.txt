@@ -67,7 +67,16 @@ fascism_on_the_rise = {
 	icon = generic_fascism
 
 	allowed = {
-		always = yes
+		NOT = {
+			AND = {
+				has_dlc = "Man the Guns"
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = ENG
+				}
+			}
+		}
 	}
 
 	#visible = {
@@ -93,7 +102,16 @@ communism_on_the_rise = {
 	icon = generic_communism
 
 	allowed = {
-		always = yes
+		NOT = {
+			AND = {
+				has_dlc = "Man the Guns"
+				OR = {
+					original_tag = USA
+					original_tag = MEX
+					original_tag = ENG
+				}
+			}
+		}
 	}
 
 	#visible = {
@@ -107,8 +125,10 @@ crisis = {
 	priority = 100
 
 	visible = {
+		OR = {
 		has_country_flag = crisis_in_progress
 			has_civil_war = yes
+		}
 	}
 }
 

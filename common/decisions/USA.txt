@@ -26,6 +26,9 @@ war_measures = {
 
 		visible = {
 			has_defensive_war = yes
+			CSA = {
+				exists = no
+			}
 		}
 
 		complete_effect = {
@@ -2681,6 +2684,7 @@ USA_decolonisation = {
 			}
 			controls_state = 523
 			controls_state = 737
+			controls_state = 782
 		}
 		cost = 25
 		ai_will_do = {
@@ -2692,6 +2696,7 @@ USA_decolonisation = {
 			PNG = {
 				transfer_state = 523
 				transfer_state = 737
+				transfer_state = 782
 			}
 		}
 	}
