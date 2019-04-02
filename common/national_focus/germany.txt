@@ -897,7 +897,7 @@ focus_tree = {
 		prerequisite = { focus = GER_extra_tech_slot }
 		x = 2
 		y = 6
-		cost = 15
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -911,13 +911,13 @@ focus_tree = {
 			set_technology = { jet_engines = 1 }
 			add_tech_bonus = {
 				name = ta152_bonus
-				bonus = 1
+				bonus = 2
 				uses = 1
 				technology = fighter3
 			}
 			add_tech_bonus = {
 				name = me262_bonus
-				bonus = 1.5
+				bonus = 2
 				uses = 1
 				technology = jet_fighter1
 			}
