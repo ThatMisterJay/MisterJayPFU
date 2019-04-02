@@ -94,12 +94,15 @@ focus_tree = {
 	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
+		prerequisite = { focus = USA_arsenal_of_democracy }
 		x = -2
 		y = 1
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		relative_position_id = USA_arsenal_of_democracy
 
 		available_if_capitulated = yes
 		available = {
@@ -867,177 +870,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = USA_gold_standard
 			USA_congress_small_opposition = yes
-		}
-	}
-	focus = {
-		id = USA_adjusted_compensation_act
-		icon = GFX_goal_generic_consumer_goods
-		x = 1
-		y = 1
-		prerequisite = { focus = USA_reestablish_the_gold_standard }
-		relative_position_id = USA_reestablish_the_gold_standard
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			congress_medium_support_trigger = yes
-			has_government = democratic
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_timed_idea = { idea = USA_adjusted_compensation_payment days = 180 }
-			USA_great_depression_level_down = yes
-			if = {
-				limit = {
-					not = { congress_medium_support_trigger = yes }
-				}
-				USA_congress_small_opposition = yes
-			}
-		}
-	}
-	focus = {
-		id = USA_labour_management_relations_act
-		icon = GFX_focus_generic_military_academy
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_adjusted_compensation_act }
-		relative_position_id = USA_adjusted_compensation_act
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			congress_medium_support_trigger = yes
-			has_government = democratic
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = USA_labour_management_relations_act
-			if = {
-				limit = {
-					communism < 0.1
-				}
-				USA_congress_small_opposition = yes
-			}
-			else = {
-				USA_congress_medium_opposition = yes
-			}
-		}
-	}
-	focus = {
-		id = USA_protectionist_tariffs
-		icon = GFX_goal_generic_defence
-		x = 0
-		y = 2
-		prerequisite = { focus = USA_labour_management_relations_act }
-		relative_position_id = USA_adjusted_compensation_act
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_government = democratic
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			USA_great_depression_level_down = yes
-			if = {
-				limit = {
-					has_idea = free_trade
-				}
-				add_ideas = export_focus
-			}
-		}
-	}
-	focus = {
-		id = USA_income_tax_reform
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 0
-		y = 4
-		prerequisite = { focus = USA_protectionist_tariffs }
-		relative_position_id = USA_adjusted_compensation_act
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			congress_high_support_trigger = yes
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			USA_great_depression_level_down = yes
-			USA_congress_medium_opposition = yes
-			unlock_decision_tooltip = { decision = USA_give_tax_break show_effect_tooltip = yes }
-		}
-	}
-	focus = {
-		id = USA_institute_of_american_sciences
-		icon = GFX_focus_research
-		x = 0
-		y = 6
-		prerequisite = { focus = USA_income_tax_reform }
-		relative_position_id = USA_adjusted_compensation_act
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_research_slot = 1
 		}
 	}
 

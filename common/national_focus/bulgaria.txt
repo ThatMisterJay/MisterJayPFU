@@ -1448,8 +1448,7 @@ focus_tree = {
 				name = BUL_submarine_effort
 				bonus = 1
 				uses = 2
-				technology = basic_submarine
-				technology = improved_submarine
+				category = ss_tech
 			}
 		}
 	}
@@ -1497,10 +1496,8 @@ focus_tree = {
 				name = BUL_screen_effort
 				bonus = 1
 				uses = 2
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = early_light_cruiser
-				technology = basic_light_cruiser
+				category = dd_tech
+				category = cl_tech
 			}
 		}
 	}
@@ -1556,11 +1553,8 @@ focus_tree = {
 				name = BUL_screen_effort
 				bonus = 1
 				ahead_reduction = 2
-				uses = 2
-				technology = improved_destroyer
-				technology = advanced_destroyer
-				technology = improved_submarine
-				technology = advanced_submarine
+				uses = 1
+				category = ss_tech
 			}
 		}
 	}
@@ -1589,7 +1583,7 @@ focus_tree = {
 				name = BUL_capital_ship_effort
 				bonus = 1
 				ahead_reduction = 2
-				uses = 2
+				uses = 1
 				category = bb_tech
 				category = bc_tech
 				category = cv_tech

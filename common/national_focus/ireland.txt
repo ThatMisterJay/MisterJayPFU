@@ -741,10 +741,8 @@ focus_tree = {
 				bonus = 1
 				ahead_reduction = 2
 				uses = 1
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
+				category = cl_tech
+				category = ca_tech
 			}
 		}
 	}
@@ -785,10 +783,7 @@ focus_tree = {
 				bonus = 1
 				ahead_reduction = 2
 				uses = 1
-				technology = early_submarine
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
 		}
 	}
