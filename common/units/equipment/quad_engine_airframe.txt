@@ -36,12 +36,13 @@ equipments = {
 
 		build_cost_ic = 100
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 2
 		}
 
 		manpower = 80
+		fuel_consumption = 0.8
 	}
 
 	jet_strat_bomber_equipment = {
@@ -79,10 +80,12 @@ equipments = {
 		resources = {
 			oil = 3
 			aluminium = 3
+			tungsten = 3
 			rubber = 1
 		}
 
 		manpower = 160
+		fuel_consumption = 1.6
 	}
 
 
@@ -122,7 +125,7 @@ equipments = {
 
 		build_cost_ic = 124
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 4
 			rubber = 2
 		}
@@ -146,7 +149,7 @@ equipments = {
 
 		build_cost_ic = 128
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 5
 			rubber = 2
 		}
@@ -195,12 +198,13 @@ equipments = {
 
 		build_cost_ic = 180
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 2
 		}
 
 		manpower = 80
+		fuel_consumption = 0
 	}
 
 

@@ -13,6 +13,7 @@ equipments = {
 		air_map_icon_frame = 6
 
 		manpower = 40
+		fuel_consumption = 1
 
 		interface_category = interface_category_air
 
@@ -42,6 +43,7 @@ equipments = {
 			aluminium = 2
 			rubber = 1
 		}
+		fuel_consumption = 0.36
 	}
 
 	jet_tac_bomber_equipment = {
@@ -84,6 +86,7 @@ equipments = {
 		}
 
 		manpower = 80
+		fuel_consumption = 0.72
 	}
 
 	heavy_fighter_equipment = {
@@ -122,12 +125,13 @@ equipments = {
 
 		build_cost_ic = 56
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 
 		manpower = 40
+		fuel_consumption = 0.26
 	}
 
 
@@ -170,7 +174,7 @@ equipments = {
 
 		build_cost_ic = 37
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -196,7 +200,7 @@ equipments = {
 
 		build_cost_ic = 39
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 4
 			rubber = 1
 		}
@@ -222,7 +226,7 @@ equipments = {
 
 		build_cost_ic = 41
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 5
 			rubber = 1
 		}
@@ -266,8 +270,8 @@ equipments = {
 
 		build_cost_ic = 48
 		resources = {
-			oil = 3
 			aluminium = 3
+			tungsten = 3
 			rubber = 1
 		}
 	}
@@ -308,7 +312,7 @@ equipments = {
 
 		build_cost_ic = 60
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 3
 			rubber = 1
 		}
@@ -332,7 +336,7 @@ equipments = {
 
 		build_cost_ic = 64
 		resources = {
-			oil = 1
+			#oil = 1
 			aluminium = 4
 			rubber = 1
 		}
