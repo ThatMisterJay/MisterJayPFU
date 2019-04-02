@@ -208,6 +208,22 @@ focus_tree = {
    			USA_congress_medium_opposition = yes
    			custom_effect_tooltip = USA_great_depression_cooldown_tt
    			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
    		}
    	}
    	focus = {
@@ -248,6 +264,38 @@ focus_tree = {
    			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
    			custom_effect_tooltip = USA_great_depression_cooldown_tt
    			USA_congress_medium_opposition = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
    		}
    	}
    	focus = {
@@ -351,6 +399,54 @@ focus_tree = {
    				add_extra_state_shared_building_slots = 1
    				set_state_flag = USA_federal_housing_act
    			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+					is_core_of = USA
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
    		}
    	}
    	focus = {
@@ -416,6 +512,178 @@ focus_tree = {
 #    #  #   #  #   #  #   #  #      #  #  #  #  #   #  #  # #  #   #  #  #   #  #  # #  #
 ### ### #   # ###  #  ### ###      ### #  #  #  ### #  #   #   ### #  #  #  ###  ##  #  #
 
+focus = {
+	id = USA_neutrality_act
+	icon = GFX_goal_generic_neutrality_focus
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_continue_the_new_deal }
+	relative_position_id = USA_continue_the_new_deal
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		congress_low_support_trigger = yes
+		democratic > 0.95
+		NOT = { has_idea_with_trait = fascist_demagogue }
+		NOT = { has_idea_with_trait = communist_revolutionary }
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = yes
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 200
+		add_ideas = USA_neutrality_act
+		add_war_support = -0.05
+		if = {
+			limit = {
+				has_war_support < 0.4
+			}
+			USA_congress_small_support = yes
+		}
+		custom_effect_tooltip = USA_lend_lease_act_neutrality_tt
+		hidden_effect = {
+			news_event = { id = mtg_news.3 days = 3 random = 5 }
+		}
+	}
+}
+focus = {
+	id = USA_arsenal_of_democracy
+	icon = GFX_goal_support_democracy
+	prerequisite = { focus = USA_neutrality_act }
+	x = 0
+	y = 2
+	relative_position_id = USA_neutrality_act
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		democratic > 0.95
+	}
+	bypass = {
+		AND = {
+			custom_trigger_tooltip =  {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}
+				}
+			}
+			custom_trigger_tooltip =  {
+				tooltip = naval_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = dockyard
+						size < 3
+						include_locked = yes
+					}
+				}
+			}
+		}
+	}
+	complete_tooltip = {
+		air_experience = 50
+		navy_experience = 50
+		army_experience = 10
+		every_state = {
+			limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	completion_reward = {
+		navy_experience = 50
+		army_experience = 50
+		air_experience = 10
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			set_state_flag = USA_arsenal_of_democracy_3AF
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				free_building_slots = {
+					building = arms_factory
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			set_state_flag = USA_arsenal_of_democracy_3AF
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				dockyard > 0
+				free_building_slots = {
+					building = dockyard
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			set_state_flag = USA_arsenal_of_democracy_3AF
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				dockyard > 0
+				free_building_slots = {
+					building = dockyard
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			set_state_flag = USA_arsenal_of_democracy_3AF
+		}
+	}
+}
 
 	focus = {
 		id = USA_scientist_haven
@@ -465,50 +733,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = nuclear
-			}
-		}
-	}
-	focus = {
-		id = USA_neutrality_act
-		icon = GFX_goal_generic_neutrality_focus
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal }
-		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			congress_low_support_trigger = yes
-			democratic > 0.95
-			NOT = { has_idea_with_trait = fascist_demagogue }
-			NOT = { has_idea_with_trait = communist_revolutionary }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 200
-			add_ideas = USA_neutrality_act
-			add_war_support = -0.05
-			if = {
-				limit = {
-					has_war_support < 0.4
-				}
-				USA_congress_small_support = yes
-			}
-			custom_effect_tooltip = USA_lend_lease_act_neutrality_tt
-			hidden_effect = {
-				news_event = { id = mtg_news.3 days = 3 random = 5 }
 			}
 		}
 	}
@@ -616,134 +840,6 @@ focus_tree = {
 			}
 			else = {
 				USA_congress_medium_opposition = yes
-			}
-		}
-	}
-	focus = {
-		id = USA_arsenal_of_democracy
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = USA_neutrality_act }
-		x = 0
-		y = 2
-		relative_position_id = USA_neutrality_act
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			democratic > 0.95
-		}
-		bypass = {
-			AND = {
-				custom_trigger_tooltip =  {
-					tooltip = production_effort_tt
-					all_owned_state = {
-						free_building_slots = {
-							building = industrial_complex
-							size < 3
-							include_locked = yes
-						}
-					}
-				}
-				custom_trigger_tooltip =  {
-					tooltip = naval_effort_tt
-					all_owned_state = {
-						free_building_slots = {
-							building = dockyard
-							size < 3
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-		complete_tooltip = {
-			air_experience = 50
-			navy_experience = 50
-			army_experience = 10
-			every_state = {
-				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		completion_reward = {
-			navy_experience = 50
-			army_experience = 50
-			air_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
 		}
 	}
@@ -2014,8 +2110,7 @@ focus_tree = {
 		id = USA_air_support
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = USA_air_war_plans_division }
-		mutually_exclusive = { focus = USA_strategic_bombing }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
@@ -2028,27 +2123,6 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
-		}
-	}
-
-	focus = {
-		id = USA_strategic_bombing
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = USA_air_war_plans_division }
-		mutually_exclusive = { focus = USA_air_support }
-		x = 1
-		y = 1
-		relative_position_id = USA_air_war_plans_division
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 25
-			add_ideas = strategic_bombing_focus
 		}
 	}
 
@@ -2072,7 +2146,7 @@ focus_tree = {
 				name = USA_TAC
 				uses = 1
 				bonus = 1.0
-				category = tactical_bomber
+				technology = tactical_bomber2
 			}
 		}
 	}
@@ -2082,7 +2156,7 @@ focus_tree = {
 		text = CAS_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = USA_air_support }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = USA_air_support
 		cost = 10
@@ -2097,45 +2171,8 @@ focus_tree = {
 				name = CAS_effort
 				uses = 1
 				bonus = 1.0
-				category = cas_bomber
+				technology = CAS2
 			}
-		}
-	}
-
-	focus = {
-		id = USA_combined_bomber_offensive
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = USA_strategic_bombing }
-		available = {
-			has_war = yes
-			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = JAP
-				is_in_faction_with = ITA
-				is_in_faction_with = SOV
-				is_in_faction_with = FRA
-				is_in_faction_with = ENG
-			}
-		}
-		x = 0
-		y = 2
-		relative_position_id = USA_strategic_bombing
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = USA_combined_bomber_offensive
-				bonus = 1.0
-				uses = 1
-				category = heavy_air
-			}
-			add_ideas = combined_bomber_offensive
 		}
 	}
 	focus = {
@@ -2143,7 +2180,7 @@ focus_tree = {
 		icon = GFX_focus_usa_escort_fighters
 		x = 0
 		y = 2
-		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
+		prerequisite = { focus = USA_air_support }
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
 
@@ -2170,14 +2207,13 @@ focus_tree = {
 				uses = 1
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				technology = heavy_fighter3
 			}
 		}
 	}
 	focus = {
 		id = USA_us_army_airforce
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = -1
+		x = 0
 		y = 4
 		prerequisite = { focus = USA_TAC }
 		relative_position_id = USA_air_war_plans_division
@@ -2211,10 +2247,10 @@ focus_tree = {
 	focus = {
 		id = USA_us_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 1
-		y = 4
-		prerequisite = { focus = USA_combined_bomber_offensive }
-		relative_position_id = USA_air_war_plans_division
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_escort_fighters }
+		relative_position_id = USA_escort_fighters
 		cost = 10
 
 		ai_will_do = {

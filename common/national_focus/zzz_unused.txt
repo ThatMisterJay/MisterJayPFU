@@ -1719,26 +1719,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_suspend_the_presecution
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-
-	focus = {
-		id = USA_reach_out_to_the_ware_group
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-
-	focus = {
 		id = USA_america_first
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -1820,16 +1800,6 @@ focus_tree = {
 
 	focus = {
 		id = USA_ally_with_the_silver_shirts
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-
-	focus = {
-		id = USA_agricultural_adjustment_act
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 0
@@ -2050,16 +2020,6 @@ focus_tree = {
 
 	focus = {
 		id = USA_voter_registration_act
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-
-	focus = {
-		id = USA_wpa      
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 0
