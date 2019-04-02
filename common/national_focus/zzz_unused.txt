@@ -1587,4 +1587,144 @@ focus_tree = {
 
 		completion_reward = { }
 	}
+
+	focus = {
+		id = ENG_the_kings_party
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_organize_the_blackshirts
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_concessions_to_the_trade_unions
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_appeal_to_imperial_loyalists
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_bring_the_dominions_back_into_the_fold
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_concessions_to_the_trade_unions
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_move_to_secure_the_dominions
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_imperial_conference
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_enforce_the_naval_treaties
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_unite_the_anglosphere
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = JAP_intervene_in_china
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_decolonization
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_a_change_in_course
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = ENG_the_three_nation_solution 
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
 }
