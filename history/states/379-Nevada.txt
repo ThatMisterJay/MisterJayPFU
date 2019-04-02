@@ -3,9 +3,9 @@ state={
 	id=379
 	name="STATE_379"
 	manpower = 91057
-	
+
 	state_category = town
-	
+
 	resources={
 		steel=136
 		tungsten=62
@@ -16,12 +16,12 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 4
+			industrial_complex = 1
 		}
 		add_core_of = USA
 	}
 
 	provinces={
-		1862 4521 4607 4736 4799 4816 7756 7827 7879 10422 10591 12134 12399 12425 
+		1862 4521 4607 4736 4799 4816 7756 7827 7879 10422 10591 12134 12399 12425
 	}
 }

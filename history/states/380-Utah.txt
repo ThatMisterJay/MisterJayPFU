@@ -2,9 +2,9 @@ state= {
 	id=380
 	name="STATE_380"
 	manpower = 507846
-	
+
 	state_category = town
-	
+
 	resources={
 		tungsten=106
 	}
@@ -13,11 +13,11 @@ state= {
 		owner = USA
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 4
+			industrial_complex = 2
 		}
 		add_core_of = USA
 		victory_points = {
-			4865 1 
+			4865 1
 		}
 	}
 	provinces={
