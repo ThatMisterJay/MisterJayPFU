@@ -1189,19 +1189,9 @@ ideas = {
 				original_tag = "USA"
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_suspend_the_presecution
-					not = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
-					not = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_government = communist
 			}
+			visible = { num_of_factories > 2000 }
 
 
 			traits = { communist_revolutionary }
