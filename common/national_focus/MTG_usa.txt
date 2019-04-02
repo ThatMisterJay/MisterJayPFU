@@ -94,10 +94,8 @@ focus_tree = {
 	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
-		prerequisite = {focus = USA_arsenal_of_democracy }
 		x = -2
 		y = 1
-		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -147,7 +145,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
-		mutually_exclusive = { focus = USA_limited_intervention }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
 
@@ -1292,7 +1289,6 @@ focus_tree = {
 	focus = {
 		id = USA_defense_of_the_pacific
 		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = USA_war_plan_yellow }
 		prerequisite = { focus = USA_war_plan_orange }
 		available = {
 			JAP = {

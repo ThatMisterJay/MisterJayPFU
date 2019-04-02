@@ -1639,16 +1639,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_concessions_to_the_trade_unions
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-
-	focus = {
 		id = ENG_move_to_secure_the_dominions
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -1719,7 +1709,357 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_the_three_nation_solution 
+		id = ENG_the_three_nation_solution
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_suspend_the_presecution
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_reach_out_to_the_ware_group
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_america_first
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_empower_the_huac
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_send_lindbergh_to_germany
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_focus_on_europe
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_focus_on_asia
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_reinforce_monroe_doctrine
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_honor_the_confederacy
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_pacific_decolonisation
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_ally_with_the_silver_shirts
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_agricultural_adjustment_act
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_reintegration
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_union_representation_act
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_recruit_the_free_corps
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_limited_intervention
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_invite_foreign_support
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_communal_property_act
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_anti_bolshevist_aid
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_unholy_alliance
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_green
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_red
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_ruby
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_scarlet_garnet
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_yellow
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_crimson
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_gray
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_gold
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_war_plan_white
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_democratic_socialism
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_work_with_the_bund
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_national_prosperity_program
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_guarantee_the_american_dream
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_voter_registration_act
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_wpa      
 		icon = GFX_goal_generic_construction
 		x = 0
 		y = 0

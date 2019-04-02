@@ -1521,7 +1521,7 @@ focus_tree = {
 				name = cv_bonus
 				bonus = 1
 				uses = 1
-				technology = cv_tech
+				category = cv_tech
 			}
 		}
 	}
