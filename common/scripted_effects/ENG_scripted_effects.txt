@@ -567,7 +567,7 @@ AST_enforce_loyalty = {
 		}
 		remove_ideas = AST_direct_support
 	}
-	
+
 }
 
 NZL_enforce_loyalty = {
@@ -595,11 +595,5 @@ NZL_enforce_loyalty = {
 			is_in_tech_sharing_group = comintern_research
 		}
 		remove_from_tech_sharing_group = comintern_research
-	}
-	if = {
-		limit = {
-			has_idea = NZL_the_workers_party_2
-		}
-		remove_ideas = NZL_the_workers_party_2
 	}
 }
