@@ -26,7 +26,7 @@ focus_tree = {
 			army_experience = 15
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -47,7 +47,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -67,7 +67,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -107,7 +107,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_motorized_recon_companies
-				bonus = 0.75
+				bonus = 1.5
 				uses = 1
 				category = recon_tech
 			}
@@ -147,14 +147,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cze_army_upgrades2
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = logistics_tech
 				category = engineers_tech
 			}
 		add_tech_bonus = {
 			name = cze_army_upgrades3
-			bonus = 0.5
+			bonus = 1
 			uses = 1
 			technology = support_weapons2
 			technology = support_weapons3
@@ -176,7 +176,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.75
+				bonus = 1.5
 				technology = motorised_infantry
 			}
 		}
@@ -197,7 +197,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -217,7 +217,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = armor
 			}			
@@ -265,7 +265,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = YUG_supremacy_of_offense
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = cat_mobile_warfare
 			}
@@ -286,7 +286,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -307,8 +307,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				ahead_reduction = 1
-				bonus = 0.5
+				ahead_reduction = 2
+				bonus = 1
 				uses = 1
 				category = artillery
 			}
@@ -331,7 +331,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
@@ -383,7 +383,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -439,7 +439,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = extraction_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = excavation1
 				technology = excavation2
@@ -712,7 +712,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_uranium_mining
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = nuclear
 			}	

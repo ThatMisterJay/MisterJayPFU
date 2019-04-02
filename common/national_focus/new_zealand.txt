@@ -128,7 +128,7 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = NZL_form_the_rnzn
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = naval_doctrine
 			}
@@ -310,8 +310,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_destroyer_effort
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -352,8 +352,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_submarine_effort
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}
@@ -393,8 +393,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_light_cruiser_effort
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
 			}
@@ -434,8 +434,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_capital_ship_effort
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
 				category = bb_tech
 				category = cv_tech
@@ -542,7 +542,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = NZL_expand_the_nzpaf
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -566,7 +566,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = NZL_expand_the_nzpaf
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -607,7 +607,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_fighter_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = fighter1
 				technology = fighter2
@@ -649,7 +649,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_bomber_focus
-				bonus = 0.50
+				bonus = 1.0
 				uses = 1
 				technology = tactical_bomber1
 				technology = tactical_bomber2
@@ -692,7 +692,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_defend_our_islands
-				bonus = 0.50
+				bonus = 1.0
 				uses = 2
 				category = naval_air
 			}
@@ -733,7 +733,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_modern_fighters
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = early_fighter
 				technology = fighter1
@@ -777,7 +777,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_heavy_bombers
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				technology = strategic_bomber1
 				technology = strategic_bomber2
@@ -1321,7 +1321,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_project_seal
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = nuclear
 			}
@@ -1436,7 +1436,7 @@ focus_tree = {
 			army_experience = 25
 			add_tech_bonus = {
 				name = NZL_army_reforms
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -1480,7 +1480,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_charlton_automatic_rifle
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1521,7 +1521,7 @@ focus_tree = {
 			add_ideas = NZL_bob_semple_tank
 			add_tech_bonus = {
 				name = NZL_bob_semple_tank
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = basic_light_tank
 			}
@@ -1626,7 +1626,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_schofield_tank
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_light_armor
 			}
@@ -1666,7 +1666,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_long_range_patrol
-				bonus = 0.50
+				bonus = 1.0
 				uses = 2
 				category = marine_tech
 			}
@@ -1706,7 +1706,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_artillery_focus
-				bonus = 0.50
+				bonus = 1.0
 				uses = 2
 				category = artillery
 			}
@@ -1784,8 +1784,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_big_bob_tank
-				ahead_reduction = 1
-				bonus = 0.5
+				ahead_reduction = 2
+				bonus = 1
 				uses = 1
 				technology = super_heavy_tank
 			}
@@ -2183,7 +2183,7 @@ focus_tree = {
 		completion_reward = {
 			modify_tech_sharing_bonus = {
 			  	id = commonwealth_research
-			   	bonus = 0.05
+			   	bonus = 0.10
 			}
 			add_political_power = 100
 			add_opinion_modifier = { target = ENG modifier = NZL_strengthen_ties }
@@ -2264,7 +2264,7 @@ focus_tree = {
 		completion_reward = {
 			modify_tech_sharing_bonus = {
  				id = commonwealth_research
- 				bonus = 0.05  # we get 20% higher bonus from this group
+ 				bonus = 0.10  # we get 20% higher bonus from this group
 			}
 		}
 	}

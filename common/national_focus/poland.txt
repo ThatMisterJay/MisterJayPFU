@@ -34,7 +34,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_central_region_strategy
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -294,7 +294,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_the_four_year_plan
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = construction_tech
 			}
@@ -516,7 +516,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_the_bombe
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = computing_tech
 			}
@@ -540,7 +540,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_the_cyclometer
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = encryption_tech
 				category = decryption_tech
@@ -565,7 +565,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_atomic_physics_institute
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = nuclear
 			}
@@ -617,7 +617,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_prepare_for_the_next_war
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -643,7 +643,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_the_defence_of_poland
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -669,7 +669,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_romanian_bridgehead_strategy
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -786,7 +786,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_standardisation_of_equipment
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -812,7 +812,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_modernising_the_cavalry
-				bonus = 0.75
+				bonus = 1.5
 				uses = 1
 				category = motorized_equipment
 			}
@@ -838,7 +838,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_study_foreign_tanks
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = armor
 			}
@@ -864,7 +864,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_cruiser_tank_experiments
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = basic_medium_tank
 			}
@@ -890,7 +890,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_artillery_modernisation
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = artillery
 			}
@@ -916,7 +916,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_anti_tank_guns
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_anti_tank
 			}
@@ -942,7 +942,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_army_modernisation
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1020,7 +1020,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_fighter_modernisation
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = light_fighter
 			}
@@ -1048,7 +1048,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_air_innovations
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1074,7 +1074,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_heavy_fighter_concept
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_heavy_fighter
 			}
@@ -1100,7 +1100,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_naval_bomber_experiments
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_bomber
 			}
@@ -1127,7 +1127,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_medium_bomber_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = tactical_bomber
 			}
@@ -1154,7 +1154,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_light_bomber_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cas_bomber
 			}
@@ -1180,7 +1180,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_air_modernisations_programme
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -1207,7 +1207,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_rocket_development
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = jet_technology
 				category = rocketry
@@ -1286,7 +1286,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_study_foreign_built_ships
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = dd_tech
 			}
@@ -1312,7 +1312,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_a_cruiser_navy
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cl_tech
 			}
@@ -1338,7 +1338,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_import_submarine_technology
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ss_tech
 			}
@@ -1363,7 +1363,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_commerce_attack
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = submarine_doctrine
 			}
@@ -1389,7 +1389,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_the_twin_threats
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1415,13 +1415,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_coastal_defense
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ss_tech
 			}
 			add_tech_bonus = {
 				name = POL_coastal_defense
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = dd_tech
 			}
@@ -1447,13 +1447,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_strike_force
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cl_tech
 			}
 			add_tech_bonus = {
 				name = POL_strike_force
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ca_tech
 			}
@@ -1479,7 +1479,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = POL_baltic_navy
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}

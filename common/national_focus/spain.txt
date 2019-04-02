@@ -59,7 +59,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = electronics
 			}
@@ -216,7 +216,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -274,7 +274,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = HUN_synthetic_industry
-				bonus = 0.75
+				bonus = 1.5
 				uses = 1
 				category = synth_resources
 			}
@@ -410,7 +410,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = weapons_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -546,7 +546,7 @@ focus_tree = {
 		navy_experience = 10
 				add_tech_bonus = {
 				name = SPR_Nav_Doc
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = naval_doctrine
 			}
@@ -569,11 +569,10 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SRP_Ship_Bonus
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
-				technology = improved_destroyer
-				technology = advanced_destroyer
+				category = dd_tech
 			}
 		}
 	}
@@ -595,12 +594,10 @@ focus_tree = {
 		navy_experience = 25
 			add_tech_bonus = {
 				name = SRP_Sub_bonus
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
 		}
 	}
@@ -620,12 +617,10 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = SRP_Ship_Bonus
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
+				category = bb_tech
 			}
 		}
 	}
@@ -645,13 +640,10 @@ focus_tree = {
 		navy_experience = 10
 			add_tech_bonus = {
 				name = SRP_Carrier_Bonus
-				bonus = 0.5
-				ahead_reduction = 0.75
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
+				category = cv_tech
 			}
 		}
 	}
@@ -670,13 +662,13 @@ focus_tree = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = SPR_Nav_Air_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_bomber
 			}
 			add_tech_bonus = {
 				name = SPR_Nav_Doc
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}
@@ -697,7 +689,7 @@ focus_tree = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = SPR_Air_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -746,7 +738,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Fighters
-				bonus = 0.5
+				bonus = 1
 				technology = fighter1
 				technology = fighter2
 			}
@@ -769,7 +761,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_CAS_Bonus
-				bonus = 0.5
+				bonus = 1
 				technology = CAS1
 				technology = CAS2
 				technology = CAS3
@@ -793,7 +785,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Tac_Bonus
-				bonus = 0.5
+				bonus = 1
 				technology = tactical_bomber1
 				technology = tactical_bomber2
 				category = naval_bomber
@@ -817,7 +809,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Tac_Bonus
-				bonus = 0.5
+				bonus = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
 				technology = strategic_bomber3
@@ -840,7 +832,7 @@ focus_tree = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = SPR_Air_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = battlefield_support_tree
 			}
@@ -862,7 +854,7 @@ focus_tree = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = SPR_Air_bonus_2
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = operational_integrity_tree
 			}
@@ -884,7 +876,7 @@ focus_tree = {
 		air_experience = 10
 			add_tech_bonus = {
 				name = SPR_Air_bonus_3
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = strategic_destruction_tree
 			}
@@ -1077,7 +1069,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Nuclear_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = nuclear
 				category = rocketry
@@ -1103,7 +1095,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -1126,7 +1118,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SPR_eq_bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = infantry_weapons
 				category = artillery
 			}
@@ -1149,7 +1141,7 @@ focus_tree = {
 		army_experience = 5
 			add_tech_bonus = {
 				name = SPR_Mot
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = motorised_infantry
 			}
@@ -1170,7 +1162,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Mot
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = cat_light_armor
 				category = cat_mechanized_equipment
@@ -1193,7 +1185,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Tanks
-				bonus = 0.35
+				bonus = 0.70
 				uses = 1
 				category = armor
 				}
@@ -1224,7 +1216,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Tanks
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = armor
 			}
@@ -1244,7 +1236,7 @@ focus_tree = {
 			army_experience = 30
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus_4
-				bonus = 0.35
+				bonus = 0.70
 				uses = 1
 				category = land_doctrine
 			}
@@ -1266,7 +1258,7 @@ focus_tree = {
 		army_experience = 5
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -1428,7 +1420,7 @@ focus_tree = {
 		army_experience = 5
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
@@ -1449,7 +1441,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Art_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = artillery
 				category = cat_anti_tank
@@ -1471,14 +1463,14 @@ focus_tree = {
 			completion_reward = {
 			add_tech_bonus = {
 				name = SPR_Comb_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 				category = artillery
 				}
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus_3
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 				}

@@ -673,7 +673,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = mech_army_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = motorised_infantry
 				technology = mechanised_infantry
@@ -699,7 +699,7 @@ focus_tree = {
 		completion_reward = {
 				add_tech_bonus = {
 				name = naval_doc_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}
@@ -937,7 +937,7 @@ focus_tree = {
 		add_tech_bonus = {
 			name = JAP_Inf_Equip_Bonus
 			uses = 1
-			bonus = 0.50
+			bonus = 1
 			category = infantry_weapons
 			category = artillery
 			}
@@ -963,7 +963,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Tanks_Bonus
 				uses = 2
-				bonus = 0.5
+				bonus = 1
 				category = armor
 			}
 		}
@@ -983,13 +983,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Arty_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = artillery
 				}
 			add_tech_bonus = {
 				name = JAP_AT_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = cat_anti_tank
 			}
 		}
@@ -1010,13 +1010,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Doc_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = land_doctrine
 				}
 			add_tech_bonus = {
 				name = JAP_Sup_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = support_tech
 			}
 		}
@@ -1052,13 +1052,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Doc_Bonus
 				uses = 2
-				bonus = 0.5
+				bonus = 1
 				category = land_doctrine
 				}
 			add_tech_bonus = {
 				name = JAP_Inf_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = infantry_weapons
 			}
 			subtract_from_variable = { resistance_variable = 10 }
@@ -1226,9 +1226,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Navy_Subtech_Bonus
 				uses = 1
-				bonus = 0.5
-				technology = basic_destroyer
-				technology = improved_destroyer
+				bonus = 1
+				category = dd_tech
 			}
 		}
 	}
@@ -1249,7 +1248,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Navy_Doc_Bonus
 				uses = 3
-				bonus = 0.5
+				bonus = 1
 				category = naval_doctrine
 			}
 		}
@@ -1270,19 +1269,19 @@ focus_tree = {
 			navy_experience = 50
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cl_tech
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ca_tech
 			}
 			#add_tech_bonus = {
 			#	name = cv_bonus
-			#	bonus = 0.5
+			#	bonus = 1
 			#	uses = 1
 			#	category = cv_tech
 			#}
@@ -1304,25 +1303,25 @@ focus_tree = {
 		air_experience = 25
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = fighter2
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = cv_fighter2
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = CAS2
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = naval_bomber2
 			}
@@ -1344,13 +1343,13 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = fighter2
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = tactical_bomber1
 			}
@@ -1371,7 +1370,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				technology = tactical_bomber2
 			}
@@ -1499,9 +1498,9 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = bb_bonus
-				ahead_reduction = 1
+				ahead_reduction = 2
 				uses = 1
-				category = shbb_tech
+				technology = ship_hull_super_heavy
 			}
 		}
 	}
@@ -1520,9 +1519,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cv_bonus
-				bonus = 0.50
+				bonus = 1
 				uses = 1
-				technology = improved_carrier
+				technology = cv_tech
 			}
 		}
 	}
@@ -1540,13 +1539,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = bb_bonus
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = bb_tech
 			}
 			add_tech_bonus = {
 				name = bb_bonus
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = bc_tech
 			}
@@ -1687,12 +1686,12 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_Riku_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				technology = marines2
 				technology = jungletroops
 				category = support_tech
-				technology = landing_craft
+				technology = mtg_landing_craft
 			}
 		}
 	}
@@ -1822,7 +1821,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = synth_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = synth_resources
 			}
@@ -1843,19 +1842,19 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = ss_tech
 			}
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = rocketry
 			}
@@ -1890,7 +1889,7 @@ focus_tree = {
 		completion_reward = {
 		add_tech_bonus = {
 			name = JAP_Industry_Bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = industry
 			}
@@ -1998,7 +1997,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Arty_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = artillery
 			}
 		}
@@ -2027,7 +2026,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_Tanks_Light_Bonus
 				uses = 1
-				bonus = 0.5
+				bonus = 1
 				category = cat_light_armor
 			}
 		}
@@ -2048,7 +2047,7 @@ focus_tree = {
 			air_experience = 20
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = air_doctrine
 			}
