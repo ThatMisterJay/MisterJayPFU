@@ -445,7 +445,7 @@ units = {
 		task_force = {
 			name = "Cruiser Division 3"
 			base = 1562
-			location 1562 1562 # San Diego
+			location = 1562 # San Diego
 			ship = { name = "USS Trenton" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
 			ship = { name = "USS Concord" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Omaha Class" } } }
 			# Minlayer Division #
@@ -670,7 +670,7 @@ units = {
 		# ATLANTIC RESERVES #
 		task_force = {
 			name = "Atlantic Reserve Destroyers"		# Decommissioned ships docked in Philadelphia
-			location 1562 6845 # Philadelphia
+			location = 1562 # Philadelphia
 			ship = { name = "USS Allen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }
 			ship = { name = "USS Colhoun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }
 			ship = { name = "USS Gregory" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }
@@ -859,7 +859,8 @@ instant_effect = {
 	### Under Construction Notes ###
 	add_equipment_production = {
 		equipment = {
-			type = light_cruiser_2
+			type = ship_hull_cruiser_1
+			version_name = "Omaha Class"
 			creator = "USA"
 		}
 		requested_factories = 15
@@ -870,9 +871,9 @@ instant_effect = {
 	# CA: Quincy (New Orleans class, Comm. 9-Jun, 1936)
 	add_equipment_production = {
 		equipment = {
-			type = heavy_cruiser_1
+			type = ship_hull_cruiser_2
 			creator = "USA"
-			version_name = "Portland Class"
+			version_name = "New Orleans Class"
 		}
 		requested_factories = 8
 		progress = 0.85

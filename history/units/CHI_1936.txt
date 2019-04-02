@@ -41,10 +41,10 @@ division_template = {
 		infantry = { x = 3 y = 3 }
 		infantry = { x = 3 y = 4 }
 	}
-			
-	support = {     
+
+	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 } 		
+		recon = { x = 0 y = 1 }
 	}
 }
 
@@ -480,13 +480,13 @@ units = {
 		name = "Di 1 Jiandui"
 		base = 7014
 		location = 7014 #Shanghai
-		ship = { name = "Yingrui" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Ninghai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Hairong" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Zhaohe" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Haiqi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Dadong" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Zejiang" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Yingrui" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+		ship = { name = "Ninghai" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+		ship = { name = "Hairong" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+		ship = { name = "Zhaohe" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+		ship = { name = "Haiqi" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = CHI version_name = "Hairong Class" } } }
+		ship = { name = "Dadong" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = CHI version_name = "Jianwei Class" } } }
+		ship = { name = "Zejiang" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = CHI version_name = "Jianwei Class" } } }
 	}
 }
 
@@ -495,7 +495,7 @@ units = {
 air_wings = {
 # Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
 	# Beijing
-	608 = { 
+	608 = {
 		fighter_equipment_0 = { owner = "CHI" amount = 30 }				# 3rd PG - Fiat CR.32
 	}
 	#Shanghai
@@ -517,13 +517,14 @@ instant_effect = {
 		progress = 0.55
 		efficiency = 100
 	}
-	
+
 #Under Construction in Shanghai
-	# Light Cruiser 
+	# Light Cruiser
 	add_equipment_production = { 		# "Pinghai"
 		equipment = {
-			type = light_cruiser_1
-			creator = "CHI" 
+			type = ship_hull_cruiser_coastal_defense_ship
+			version_name = "Hairong Class"
+			creator = "CHI"
 		}
 		requested_factories = 1
 		progress = 0.33

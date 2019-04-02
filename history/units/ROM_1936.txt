@@ -382,7 +382,7 @@ units = {
 			ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
 			ship = { name = "NMS Regina Maria" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
 		}
-	}			
+	}
 }
 
 
@@ -430,7 +430,8 @@ instant_effect = {
 	# SS: Delfinul class (x1) ("NMS Delfinul")
 	add_equipment_production = {
 		equipment = {
-			type = submarine_1
+			type = ship_hull_submarine_2
+			version_name = "Delfinul Class"
 			creator = "ROM"
 		}
 		requested_factories = 1

@@ -322,7 +322,8 @@ instant_effect = {
 	# DD: Churucca class (x3) ("ARE Almirante Miranda" "ARE Gravina" "ARE Escaño" "ARE Císcar" "ARE Jorge Juan" "ARE Ulloa")
 	add_equipment_production = {
 		equipment = {
-			type = destroyer_2
+			type = ship_hull_light_2
+			version_name = "Churucca Class"
 			creator = "SPR"
 		}
 		requested_factories = 1
@@ -332,7 +333,8 @@ instant_effect = {
 	# CA: ARE Canarias (Canarias class, comm. 1-Oct, 1936), ARE Baleares (Canarias class, comm. 28-Dec, 1936)
 	add_equipment_production = {
 		equipment = {
-			type = heavy_cruiser_2
+			type = ship_hull_cruiser_2
+			version_name = "Canarias Class"
 			creator = "SPR"
 		}
 		requested_factories = 2

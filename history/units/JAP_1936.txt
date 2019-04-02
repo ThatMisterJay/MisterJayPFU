@@ -1131,7 +1131,8 @@ instant_effect =
 ### Ongoing Naval Production Jan 1 1936 ###
 		add_equipment_production = {				# "Hiei"
 			equipment = {
-				type = battleship_2
+				type = ship_hull_heavy_1
+				version_name = "Kongo Class"
 				creator = "JAP"
 			}
 			requested_factories = 5
@@ -1140,8 +1141,8 @@ instant_effect =
 		}
 		add_equipment_production = {				# "Soryu"
 			equipment = {
-				type = carrier_2
-
+				type = ship_hull_carrier_1
+				version_name = "Soryu Class"
 				creator = "JAP"
 			}
 			requested_factories = 5
@@ -1151,8 +1152,8 @@ instant_effect =
 		}
 		add_equipment_production = {				# "Suzuya"
 			equipment = {
-				type = heavy_cruiser_2
-
+				type = ship_hull_cruiser_2
+				version_name = "Tone Class"
 				creator = "JAP"
 			}
 			requested_factories = 3
@@ -1161,7 +1162,7 @@ instant_effect =
 		}
 		add_equipment_production = {				# "Shiratsuyu" "Shigure" "Murasame" "Harusame" "Samidare"
 			equipment = {
-				type = destroyer_1
+				type = ship_hull_light_1
 				creator = "JAP"
 				version_name = "Fubuki Class"
 			}
