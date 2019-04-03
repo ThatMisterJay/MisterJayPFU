@@ -85,5 +85,6 @@ country_event = {
 
 	option = {
 		GER = { complete_national_focus = GER_ussr_war_goal }
+		GER = { declare_war_on = { target = SOV type = annex_everything } }
 	}
 }
