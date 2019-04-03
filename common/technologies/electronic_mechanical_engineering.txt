@@ -13,6 +13,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		enable_equipment_modules = {
+			ship_fire_control_system_0
+		}
+
 		research_cost = 1
 		start_year = 1936
 		folder = {
@@ -114,7 +118,9 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1938
-
+		enable_equipment_modules = {
+			ship_radar_1
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 6 }
@@ -141,6 +147,10 @@ technologies = {
 		enable_building = {
 			building = radar_station
 			level = 3
+		}
+
+		enable_equipment_modules = {
+			ship_radar_2
 		}
 
 		path = {
@@ -174,6 +184,12 @@ technologies = {
 			level = 4
 		}
 
+		enable_equipment_modules = {
+			ship_radar_3
+		}
+
+		static_anti_air_hit_chance_factor = 0.2
+
 		path = {
 			leads_to_tech = improved_centimetric_radar
 			research_cost_coeff = 1
@@ -205,6 +221,10 @@ technologies = {
 			level = 5
 		}
 
+
+
+		static_anti_air_hit_chance_factor = 0.2
+
 		path = {
 			leads_to_tech = advanced_centimetric_radar
 			research_cost_coeff = 1
@@ -235,6 +255,12 @@ technologies = {
 			building = radar_station
 			level = 6
 		}
+
+		enable_equipment_modules = {
+			ship_radar_4
+		}
+
+		static_anti_air_hit_chance_factor = 0.2
 
 		research_cost = 2.5
 		start_year = 1942
@@ -739,6 +765,9 @@ technologies = {
 		rocket_artillery_brigade = {
 			soft_attack = 0.05
 		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
 		}
@@ -791,6 +820,9 @@ technologies = {
 		rocket_artillery_brigade = {
 			soft_attack = 0.05
 		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.05
 		}
@@ -832,6 +864,9 @@ technologies = {
 			soft_attack = 0.05
 		}
 		rocket_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		mot_rocket_artillery_brigade = {
 			soft_attack = 0.05
 		}
 		motorized_rocket_brigade = {
