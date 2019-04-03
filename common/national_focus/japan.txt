@@ -2079,8 +2079,10 @@ focus_tree = {
 			date > 1940.1.1
 		}
 		bypass = {
-			NOT = { country_exists = SIA }
-			SIA = { is_puppet_of = JAP }
+			OR = {
+				NOT = { country_exists = SIA }
+				SIA = { is_puppet_of = JAP }
+			}
 		}
 		x = 4
 		y = 1
