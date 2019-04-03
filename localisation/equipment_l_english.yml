@@ -1,130 +1,130 @@
 ﻿l_english:
 
     #####Custom
-    
+
     SWE_gw_tank_equipment:0 "Stridsvagn m/21"
     SWE_gw_tank_equipment_short:0 "Strv. m/21"
-    
+
     SWE_light_tank_equipment_1:0 "Stridsvagn m/31"
     SWE_light_tank_equipment_1_short:0 "Strv. m/31"
-    
+
     SWE_light_tank_aa_equipment_1:0 "Luftvärnskanonvagn 31"
     SWE_light_tank_aa_equipment_1_short:0 "Lvkv/31"
     SWE_light_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn 31"
     SWE_light_tank_destroyer_equipment_1_short:0 "Pvkv/31"
     SWE_light_tank_artillery_equipment_1:0 "Stormartillerivagn 31"
     SWE_light_tank_artillery_equipment_1_short:0 "Sav/31"
-    
+
     SWE_light_tank_equipment_2:0 "Stridsvagn m/38"
     SWE_light_tank_equipment_2_short:0 "Strv. m/38"
-    
+
     SWE_light_tank_aa_equipment_2:0 "Luftvärnskanonvagn 38"
     SWE_light_tank_aa_equipment_2_short:0 "Lvkv/38"
     SWE_light_tank_destroyer_equipment_2:0 "Pansarvärnskanonvagn 38"
     SWE_light_tank_destroyer_equipment_2_short:0 "Pvkv/38"
     SWE_light_tank_artillery_equipment_2:0 "Stormartillerivagn 38"
     SWE_light_tank_artillery_equipment_2_short:0 "Sav/38"
-    
-    
+
+
     SWE_light_tank_equipment_3:0 "Stridsvagn m/40"
     SWE_light_tank_equipment_3_short:0 "Strv. m/40"
-    
+
     SWE_light_tank_aa_equipment_3:0 "Luftvärnskanonvagn 40"
     SWE_light_tank_aa_equipment_3_short:0 "Lvkv/40"
     SWE_light_tank_destroyer_equipment_3:0 "Pansarvärnskanonvagn 40"
     SWE_light_tank_destroyer_equipment_3_short:0 "Pvkv/40"
     SWE_light_tank_artillery_equipment_3:0 "Stormartillerivagn 40"
     SWE_light_tank_artillery_equipment_3_short:0 "Sav/40"
-    
+
     SWE_medium_tank_equipment_1:0 "Landsverk Lago"
     SWE_medium_tank_equipment_1_short:0 "Strv. Lago"
-    
+
     SWE_medium_tank_aa_equipment_1:0 "Luftvärnskanonvagn Lago"
     SWE_medium_tank_aa_equipment_1_short:0 "Lvkv/Lago"
     SWE_medium_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn Lago"
     SWE_medium_tank_destroyer_equipment_1_short:0 "Pvkv/Lago"
     SWE_medium_tank_artillery_equipment_1:0 "Stormartillerivagn Lago"
     SWE_medium_tank_artillery_equipment_1_short:0 "Sav/Lago"
-    
+
     SWE_medium_tank_equipment_2:0 "Stridsvagn m/41"
     SWE_medium_tank_equipment_2_short:0 "Strv. m/41"
-    
+
     SWE_medium_tank_aa_equipment_2:0 "Luftvärnskanonvagn 41"
     SWE_medium_tank_aa_equipment_2_short:0 "Lvkv/41"
     SWE_medium_tank_destroyer_equipment_2:0 "Pansarvärnskanonvagn 41"
     SWE_medium_tank_destroyer_equipment_2_short:0 "Pvkv/41"
     SWE_medium_tank_artillery_equipment_2:0 "Stormartillerivagn 41"
     SWE_medium_tank_artillery_equipment_2_short:0 "Sav/41"
-    
+
     SWE_medium_tank_equipment_3:0 "Stridsvagn m/42"
     SWE_medium_tank_equipment_3_short:0 "Strv. m/42"
-    
+
     SWE_medium_tank_aa_equipment_3:0 "Luftvärnskanonvagn 42"
     SWE_medium_tank_aa_equipment_3_short:0 "Lvkv/42"
     SWE_medium_tank_destroyer_equipment_3:0 "Pansarvärnskanonvagn 42"
     SWE_medium_tank_destroyer_equipment_3_short:0 "Pvkv/42"
     SWE_medium_tank_artillery_equipment_3:0 "Stormartillerivagn 42"
     SWE_medium_tank_artillery_equipment_3_short:0 "Sav/42"
-    
-    
-    
+
+
+
     SWE_heavy_tank_equipment_1:0 "Stortraktorn Landsverk-Gutehoffnungshütte"
     SWE_heavy_tank_equipment_1_short:0 "Stortraktorn"
-    
+
     SWE_heavy_tank_aa_equipment_1:0 "Luftvärnskanonvagn St."
     SWE_heavy_tank_aa_equipment_1_short:0 "Lvkv St."
     SWE_heavy_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn St."
     SWE_heavy_tank_destroyer_equipment_1_short:0 "Pvkv St."
     SWE_heavy_tank_artillery_equipment_1:0 "Stormartillerivagn St."
     SWE_heavy_tank_artillery_equipment_1_short:0 "Sav St."
-    
+
     SWE_heavy_tank_equipment_2:0 "Stridsvagn m/43"
     SWE_heavy_tank_equipment_2_short:0 "Strv. m/43"
-    
+
     SWE_heavy_tank_aa_equipment_2:0 "Luftvärnskanonvagn 43"
     SWE_heavy_tank_aa_equipment_2_short:0 "Lvkv/43"
     SWE_heavy_tank_destroyer_equipment_2:0 "Pansarvärnskanonvagn 43"
     SWE_heavy_tank_destroyer_equipment_2_short:0 "Pvkv/43"
     SWE_heavy_tank_artillery_equipment_2:0 "Stormartillerivagn 43"
     SWE_heavy_tank_artillery_equipment_2_short:0 "Sav/43"
-    
+
     SWE_heavy_tank_equipment_3:0 "Trätoffelvagnen m/44"
     SWE_heavy_tank_equipment_3_short:0 "Strv. m/44"
-    
+
     SWE_heavy_tank_aa_equipment_3:0 "Luftvärnskanonvagn 44"
     SWE_heavy_tank_aa_equipment_3_short:0 "Lvkv/44"
     SWE_heavy_tank_destroyer_equipment_3:0 "Pansarvärnskanonvagn 44"
     SWE_heavy_tank_destroyer_equipment_3_short:0 "Pvkv/44"
     SWE_heavy_tank_artillery_equipment_3:0 "Stormartillerivagn 44"
     SWE_heavy_tank_artillery_equipment_3_short:0 "Sav/44"
-    
+
     SWE_super_heavy_tank_equipment_1:0 "Kanonanvagn 150"
     SWE_super_heavy_tank_equipment_1_short:0 "Kv/150"
-    
+
     SWE_super_heavy_tank_aa_equipment_1:0 "Luftvärnskanonvagn 150"
     SWE_super_heavy_tank_aa_equipment_1_short:0 "Lvkv/150"
     SWE_super_heavy_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn 150"
     SWE_super_heavy_tank_destroyer_equipment_1_short:0 "Pvkv/150"
     SWE_super_heavy_tank_artillery_equipment_1:0 "Artillerikanonvagn 150"
     SWE_super_heavy_tank_artillery_equipment_1_short:0 "Akv/150"
-    
+
     SWE_modern_tank_equipment_1:1 "Landsverk Leo"
     SWE_modern_tank_equipment_1_short:1 "Strv. Leo"
-    
+
     SWE_modern_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn Leo"
     SWE_modern_tank_destroyer_equipment_1_short:0 "Pvkv/Leo"
     SWE_modern_tank_aa_equipment_1:0 "Luftvärnskanonvagn 8Leo"
     SWE_modern_tank_aa_equipment_1_short:0 "Lvkv/Leo"
     SWE_modern_tank_artillery_equipment_1:0 "Stormartillerivagn Leo"
     SWE_modern_tank_artillery_equipment_1_short:0 "Sav/Leo"
-    
-    
+
+
     SWE_mechanized_equipment_1:0 "Pansarbil m/31"
     SWE_mechanized_equipment_1_short:0 "PB m/31"
-    
+
     SWE_mechanized_equipment_2:0 "Pansarbil Lynx"
     SWE_mechanized_equipment_2_short:0 "PB Lynx"
-    
+
     SWE_mechanized_equipment_3:0 "Terrängbil m/42 KP"
     SWE_mechanized_equipment_3_short:0 "KP m/42"
 
@@ -218,7 +218,7 @@
  GER_EQUIPMENT_VERSION_14:0 "N"
  GER_EQUIPMENT_VERSION_15:0 "O"
  GER_EQUIPMENT_VERSION_16:0 "P"
- 
+
  CHI_EQUIPMENT_VERSION_1:0 "A"
  CHI_EQUIPMENT_VERSION_2:0 "B"
  CHI_EQUIPMENT_VERSION_3:0 "C"
@@ -235,7 +235,7 @@
  CHI_EQUIPMENT_VERSION_14:0 "N"
  CHI_EQUIPMENT_VERSION_15:0 "O"
  CHI_EQUIPMENT_VERSION_16:0 "P"
- 
+
  SOV_EQUIPMENT_VERSION_1:0 "A"
  SOV_EQUIPMENT_VERSION_2:0 "A-1"
  SOV_EQUIPMENT_VERSION_3:0 "A-2"
@@ -252,7 +252,7 @@
  SOV_EQUIPMENT_VERSION_14:0 "D-1"
  SOV_EQUIPMENT_VERSION_15:0 "D-2"
  SOV_EQUIPMENT_VERSION_16:0 "DM"
- 
+
  USA_EQUIPMENT_VERSION_1:0 "A1"
  USA_EQUIPMENT_VERSION_2:0 "A2"
  USA_EQUIPMENT_VERSION_3:0 "A3"
@@ -266,7 +266,7 @@
  USA_EQUIPMENT_VERSION_11:0 "A9A2"
  USA_EQUIPMENT_VERSION_12:0 "A9A3"
  USA_EQUIPMENT_VERSION_13:0 "A9A4"
- 
+
  ENG_EQUIPMENT_VERSION_1:0 "Mk. I"
  ENG_EQUIPMENT_VERSION_2:0 "Mk. II"
  ENG_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -280,7 +280,7 @@
  ENG_EQUIPMENT_VERSION_11:0 "Mk. XI"
  ENG_EQUIPMENT_VERSION_12:0 "Mk. XII"
  ENG_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
+
  CAN_EQUIPMENT_VERSION_1:0 "Mk. I"
  CAN_EQUIPMENT_VERSION_2:0 "Mk. II"
  CAN_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -294,7 +294,7 @@
  CAN_EQUIPMENT_VERSION_11:0 "Mk. XI"
  CAN_EQUIPMENT_VERSION_12:0 "Mk. XII"
  CAN_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
+
  AST_EQUIPMENT_VERSION_1:0 "Mk. I"
  AST_EQUIPMENT_VERSION_2:0 "Mk. II"
  AST_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -308,7 +308,7 @@
  AST_EQUIPMENT_VERSION_11:0 "Mk. XI"
  AST_EQUIPMENT_VERSION_12:0 "Mk. XII"
  AST_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
+
  NZL_EQUIPMENT_VERSION_1:0 "Mk. I"
  NZL_EQUIPMENT_VERSION_2:0 "Mk. II"
  NZL_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -350,7 +350,7 @@
  RAJ_EQUIPMENT_VERSION_11:0 "Mk. XI"
  RAJ_EQUIPMENT_VERSION_13:0 "Mk. XIII"
  RAJ_EQUIPMENT_VERSION_12:0 "Mk. XII"
- 
+
  FRA_EQUIPMENT_VERSION_1:0 "série A"
  FRA_EQUIPMENT_VERSION_2:0 "série B"
  FRA_EQUIPMENT_VERSION_3:0 "série C"
@@ -364,7 +364,7 @@
  FRA_EQUIPMENT_VERSION_11:0 "série K"
  FRA_EQUIPMENT_VERSION_12:0 "série L"
  FRA_EQUIPMENT_VERSION_13:0 "série M"
- 
+
  ITA_EQUIPMENT_VERSION_1:0 "I serie"
  ITA_EQUIPMENT_VERSION_2:0 "II serie"
  ITA_EQUIPMENT_VERSION_3:0 "III serie"
@@ -378,7 +378,7 @@
  ITA_EQUIPMENT_VERSION_11:0 "XI serie"
  ITA_EQUIPMENT_VERSION_12:0 "XII serie"
  ITA_EQUIPMENT_VERSION_13:0 "XIII serie"
- 
+
  SWE_EQUIPMENT_VERSION_1:0 "S I"
  SWE_EQUIPMENT_VERSION_2:0 "S II"
  SWE_EQUIPMENT_VERSION_3:0 "S III"
@@ -397,7 +397,7 @@
 
  ARG_medium_tank_equipment_2:0 "Nahuel D.L. 43"
  ARG_medium_tank_equipment_2_short:0 "Nahuel"
- 
+
  AST_gw_tank_equipment:0 "Mark V"
  AST_gw_tank_equipment_short:0 "Mark V"
  AST_light_tank_equipment_1:0 "Vickers Medium Mark II"
@@ -480,7 +480,7 @@
  AST_modern_tank_aa_equipment_1_short:0 "Centurion Marksman"
  AST_super_heavy_tank_destroyer_equipment_1:0 "Iron Duke"
  AST_super_heavy_tank_destroyer_equipment_1_short:0 "Iron Duke"
- 
+
  BEL_light_tank_destroyer_equipment_1:0 "SA F.R.C. 47mm"
  BEL_light_tank_destroyer_equipment_1_short:0 "SA 47mm"
  BEL_light_tank_artillery_equipment_1:0 "SA F.R.C. 76mm"
@@ -493,7 +493,7 @@
  BEL_medium_tank_destroyer_equipment_1_short:0 "T13 B3"
  BEL_medium_tank_equipment_1:0 "ACG-1"
  BEL_medium_tank_equipment_1_short:0 "ACG-1"
- 
+
  CAN_medium_tank_equipment_1:0 "Crusader Local Pattern"
  CAN_medium_tank_equipment_1_short:0 "Crusader LP"
  CAN_medium_tank_artillery_equipment_2:0 "Sexton"
@@ -576,7 +576,7 @@
  CAN_modern_tank_aa_equipment_1_short:0 "Centurion Marksman"
  CAN_super_heavy_tank_destroyer_equipment_1:0 "Iron Duke"
  CAN_super_heavy_tank_destroyer_equipment_1_short:0 "Iron Duke"
- 
+
  CHI_light_tank_equipment_1:0 "Type 34 Xiao"
  CHI_light_tank_equipment_1_short:0 "Type 34"
  CHI_light_tank_equipment_2:0 "Type 36 Xiao"
@@ -597,7 +597,7 @@
  CHI_heavy_tank_equipment_3_short:0 "Type 43 Dà"
  CHI_modern_tank_equipment_1:0 "Type 59"
  CHI_modern_tank_equipment_1_short:0 "Type 59"
- 
+
  CZE_light_tank_equipment_1:0 "LT vz. 34"
  CZE_light_tank_equipment_1_short:0 "LT vz. 34"
  CZE_light_tank_equipment_2:0 "LT vz. 35"
@@ -942,10 +942,10 @@
  FRA_medium_tank_destroyer_equipment_1_short:0 "W15 TCC"
  FRA_medium_tank_artillery_equipment_1:0 "ARL V39"
  FRA_medium_tank_artillery_equipment_1_short:0 "ARL V39"
- 
+
  GER_heavy_tank_artillery_equipment_2:0 "Sturmtiger"
  GER_heavy_tank_artillery_equipment_2_short:0 "Sturmtiger"
- 
+
  HUN_medium_tank_equipment_1:0 "Turán I"
  HUN_medium_tank_equipment_1_short:0 "Turán I"
  HUN_medium_tank_artillery_equipment_1:0 "Zrínyi I"
@@ -964,7 +964,7 @@
  HUN_heavy_tank_equipment_2_short:0 "44M Tas"
  HUN_heavy_tank_destroyer_equipment_2:0 "44M Tas Rohamlöveg"
  HUN_heavy_tank_destroyer_equipment_2_short:0 "44M Tas Rohamlöveg"
- 
+
  ITA_light_tank_destroyer_equipment_1:0 "L3 controcarro"
  ITA_light_tank_destroyer_equipment_1_short:0 "L3 cc"
  ITA_light_tank_destroyer_equipment_2:0 "Semovente 47/32"
@@ -981,7 +981,7 @@
  ITA_medium_tank_artillery_equipment_3_short:0 "Semovente M42L 105/25"
  ITA_heavy_tank_artillery_equipment_2:0 "Semovente da 149/40"
  ITA_heavy_tank_artillery_equipment_2_short:0 "Semovente da 149/40"
- 
+
  JAP_gw_tank_equipment:0 "Ko-Gata Sensha"
  JAP_gw_tank_equipment_short:0 "Ko-Gata"
  JAP_medium_tank_destroyer_equipment_1:0 "Type 1 Ho-Ni I"
@@ -1010,7 +1010,7 @@
  JAP_heavy_tank_destroyer_equipment_1_short:0 "Ka-To"
  JAP_heavy_tank_destroyer_equipment_2:0 "Type 5 Ho-Ri"
  JAP_heavy_tank_destroyer_equipment_2_short:0 "Ho-Ri"
- 
+
  NOR_gw_tank_equipment:0 "Stridsvogn FT-17"
  NOR_gw_tank_equipment_short:0 "Strv. FT-17"
  NOR_light_tank_equipment_1:0 "Stridsvogn m/34"
@@ -1033,7 +1033,7 @@
  NOR_heavy_tank_equipment_3_short:0 "Stv. m/43"
  NOR_super_heavy_tank_equipment_1:0 "Tung Stormvogn m/44 'Isbjorn'"
  NOR_super_heavy_tank_equipment_1_short:0 "Tstv. m/44"
- 
+
  ROM_gw_tank_equipment:0 "Renault FT-17"
  ROM_gw_tank_equipment_short:0 "FT-17"
  ROM_light_tank_equipment_1:0 "Renault R-35"
@@ -1064,7 +1064,7 @@
  ROM_medium_tank_destroyer_equipment_3_short:0 "Maresal"
  ROM_medium_tank_aa_equipment_3:0 "Maresal 37mm TA"
  ROM_medium_tank_aa_equipment_3_short:0 "Maresal 37mm TA"
- 
+
  SPR_gw_tank_equipment:0 "Trubia A4"
  SPR_gw_tank_equipment_short:0 "Trubia A4"
  SPR_light_tank_equipment_1:0 "Trubia Naval"
@@ -1073,7 +1073,7 @@
  SPR_light_tank_equipment_2_short:0 "Verdeja 1"
  SPR_light_tank_equipment_3:0 "Verdeja 2"
  SPR_light_tank_equipment_3_short:0 "Verdeja 2"
- 
+
  SPA_gw_tank_equipment:0 "Trubia A4"
  SPA_gw_tank_equipment_short:0 "Trubia A4"
  SPA_light_tank_equipment_1:0 "Trubia Naval"
@@ -1082,8 +1082,8 @@
  SPA_light_tank_equipment_2_short:0 "Verdeja 1"
  SPA_light_tank_equipment_3:0 "Verdeja 2"
  SPA_light_tank_equipment_3_short:0 "Verdeja 2"
- 
- 
+
+
  USA_light_tank_destroyer_equipment_1:0 "M6 Gun Motor Carriage"
  USA_light_tank_destroyer_equipment_1_short:0 "M6 GMC"
  USA_light_tank_artillery_equipment_2:0 "M8 Howitzer Motor Carriage"
@@ -1113,7 +1113,7 @@
  GER_gw_tank_equipment_desc:0 "The Leichttraktor was a German experimental tank. After the first world war, Germany was restricted in military development by the Versailles Treaty but a secret program under the name cover 'Traktor' was developing armored military vehicles and artillery."
  ENG_gw_tank_equipment:0 "Mark V"
  ENG_gw_tank_equipment_short:0 "Mark V"
- 
+
  SOV_gw_tank_equipment:0 "T-18"
  SOV_gw_tank_equipment_short:0 "T-18"
  ITA_gw_tank_equipment:0 "Fiat 3000"
@@ -1185,7 +1185,7 @@
  GER_light_tank_artillery_equipment_3:0 "Waffentrager Leopard"
  GER_light_tank_artillery_equipment_3_short:0 "WT Leopard"
  GER_light_tank_artillery_equipment_3_desc:0 "The Waffentrager Leopard was a planned self-propelled artillery vehicle based on the planned VK1602 Leopard chassis."
- 
+
  SOV_light_tank_artillery_equipment_1:0 "SU-76-26"
  SOV_light_tank_artillery_equipment_1_short:0 "SU-76-26"
  #SOV_light_tank_artillery_equipment_1_desc:0 ""
@@ -1195,7 +1195,7 @@
  SOV_light_tank_artillery_equipment_3:0 "SU-76"
  SOV_light_tank_artillery_equipment_3_short:0 "SU-76"
  #SOV_light_tank_artillery_equipment_3_desc:0 ""
- 
+
  ENG_light_tank_equipment_3:0 "Valentine"
  ENG_light_tank_equipment_3_short:0 "Valentine"
  USA_light_tank_equipment_3:0 "Chaffee"
@@ -1687,61 +1687,61 @@
  USA_mechanized_equipment_2_short:0 "M3 Half-Track"
  USA_mechanized_equipment_3:0 "M5 Half-Track"
  USA_mechanized_equipment_3_short:0 "M5 Half-Track"
- 
+
  JAP_mechanized_equipment_1:0 "Type 1 Ho-Ki"
  JAP_mechanized_equipment_1_short:0 "Type 1 Ho-Ki"
  JAP_mechanized_equipment_2:0 "Type 1 Ho-Ha"
  JAP_mechanized_equipment_2_short:0 "Type 1 Ho-Ha"
- 
+
  FRA_mechanized_equipment_1:0 "Citroen P107"
  FRA_mechanized_equipment_1_short:0 "Citroen P107"
  FRA_mechanized_equipment_2:0 "SOMUA MCG"
  FRA_mechanized_equipment_2_short:0 "SOMUA MCG"
  FRA_mechanized_equipment_3:0 "AMX-VCI"
  FRA_mechanized_equipment_3_short:0 "AMX-VCI"
- 
+
  NOR_mechanized_equipment_1:0 "Stormpanservogn I"
  NOR_mechanized_equipment_1_short:0 "Stpv. I"
  NOR_mechanized_equipment_2:0 "Stormpanservogn II"
  NOR_mechanized_equipment_2_short:0 "Stpv. II"
  NOR_mechanized_equipment_3:0 "Stormpanservogn III"
  NOR_mechanized_equipment_3_short:0 "Stpv. III"
- 
+
  POL_mechanized_equipment_1:0 "C4P"
  POL_mechanized_equipment_1_short:0 "C4P"
  POL_mechanized_equipment_2:0 "C2P"
  POL_mechanized_equipment_2_short:0 "C2P"
  POL_mechanized_equipment_3:0 "C7P"
  POL_mechanized_equipment_3_short:0 "C7P"
- 
+
  SOV_mechanized_equipment_1:0 "BTR M1941"
  SOV_mechanized_equipment_1_short:0 "BTR M1941"
  SOV_mechanized_equipment_2:0 "BTR M1943"
  SOV_mechanized_equipment_2_short:0 "BTR M1943"
  SOV_mechanized_equipment_3:0 "BTR-152"
  SOV_mechanized_equipment_3_short:0 "BTR-152"
- 
+
  CAN_mechanized_equipment_1:0 "Stuart Kangaroo"
  CAN_mechanized_equipment_1_short:0 "Stuart Kangaroo"
  CAN_mechanized_equipment_2:0 "Ram Kangaroo"
  CAN_mechanized_equipment_2_short:0 "Ram Kangaroo"
  CAN_mechanized_equipment_3:0 "Churchill Kangaroo"
  CAN_mechanized_equipment_3_short:0 "Churchill Kangaroo"
- 
+
  ENG_mechanized_equipment_1:0 "Bren Carrier"
  ENG_mechanized_equipment_1_short:0 "Bren Carrier"
  ENG_mechanized_equipment_2:0 "Universal Carrier"
  ENG_mechanized_equipment_2_short:0 "Universal Carrier"
  ENG_mechanized_equipment_3:0 "Churchill Kangaroo"
  ENG_mechanized_equipment_3_short:0 "Churchill Kangaroo"
- 
+
  RAJ_mechanized_equipment_1:0 "Bren Carrier"
  RAJ_mechanized_equipment_1_short:0 "Bren Carrier"
  RAJ_mechanized_equipment_2:0 "Universal Carrier"
  RAJ_mechanized_equipment_2_short:0 "Universal Carrier"
  RAJ_mechanized_equipment_3:0 "Windsor Carrier"
  RAJ_mechanized_equipment_3_short:0 "Windsor Carrier"
- 
+
  AST_mechanized_equipment_1:0 "Bren Carrier LP"
  AST_mechanized_equipment_1_short:0 "Bren Carrier"
  AST_mechanized_equipment_2:0 "Universal Carrier LP"
@@ -1755,14 +1755,14 @@
  SAF_mechanized_equipment_2_short:0 "Universal Carrier"
  SAF_mechanized_equipment_3:0 "Windsor Carrier LP"
  SAF_mechanized_equipment_3_short:0 "Windsor Carrier"
- 
+
  NZL_mechanized_equipment_1:0 "Bren Carrier LP"
  NZL_mechanized_equipment_1_short:0 "Bren Carrier"
  NZL_mechanized_equipment_2:0 "Universal Carrier LP"
  NZL_mechanized_equipment_2_short:0 "Universal Carrier"
  NZL_mechanized_equipment_3:0 "Windsor Carrier LP"
  NZL_mechanized_equipment_3_short:0 "Windsor Carrier"
- 
+
  ITA_mechanized_equipment_1:0 "Fiat 2800"
  ITA_mechanized_equipment_1_short:0 "Fiat 2800"
  ITA_mechanized_equipment_2:0 "Fiat 727"
@@ -1782,31 +1782,31 @@
  FRA_anti_tank_equipment_1_short:0 "Canon de 25 mm"
  FRA_anti_tank_equipment_2:0 "47mm SA 37"
  FRA_anti_tank_equipment_3:0 "Canon de 76 mm modèle 1943"
- 
+
  CZE_anti_tank_equipment_1:0 "3,7cm KPÚV vz. 34"
  CZE_anti_tank_equipment_1_short:0 "3,7cm KPÚV vz. 34"
  CZE_anti_tank_equipment_2:0 "4,7cm KPÚV vz. 38"
- 
+
  ENG_anti_tank_equipment_1:0 "QF 2-pounder"
  ENG_anti_tank_equipment_1_short:0 "QF 2-pounder"
  ENG_anti_tank_equipment_2:0 "QF 6-pounder"
  ENG_anti_tank_equipment_3:0 "QF 17-pounder"
- 
+
  RAJ_anti_tank_equipment_1:0 "QF 2-pounder"
  RAJ_anti_tank_equipment_1_short:0 "QF 2-pounder"
  RAJ_anti_tank_equipment_2:0 "QF 6-pounder"
  RAJ_anti_tank_equipment_3:0 "QF 17-pounder"
- 
+
  CAN_anti_tank_equipment_1:0 "QF 2-pounder"
  CAN_anti_tank_equipment_1_short:0 "QF 2-pounder"
  CAN_anti_tank_equipment_2:0 "QF 6-pounder"
  CAN_anti_tank_equipment_3:0 "QF 17-pounder"
- 
+
  AST_anti_tank_equipment_1:0 "QF 2-pounder"
  AST_anti_tank_equipment_1_short:0 "QF 2-pounder"
  AST_anti_tank_equipment_2:0 "QF 6-pounder"
  AST_anti_tank_equipment_3:0 "QF 17-pounder"
- 
+
  NZL_anti_tank_equipment_1:0 "QF 2-pounder"
  NZL_anti_tank_equipment_1_short:0 "QF 2-pounder"
  NZL_anti_tank_equipment_2:0 "QF 6-pounder"
@@ -1816,67 +1816,67 @@
  SAF_anti_tank_equipment_1_short:0 "QF 2-pounder"
  SAF_anti_tank_equipment_2:0 "QF 6-pounder"
  SAF_anti_tank_equipment_3:0 "QF 17-pounder"
- 
+
  GER_anti_tank_equipment_1:0 "3,7 cm PaK 36"
  GER_anti_tank_equipment_1_short:0 "3,7 cm PaK 36"
  GER_anti_tank_equipment_2:0 "7,5 cm PaK 40"
  GER_anti_tank_equipment_3:0 "12,8 cm PaK 44"
- 
+
  USA_anti_tank_equipment_1:0 "37 mm Gun M3"
  USA_anti_tank_equipment_1_short:0 "37 mm Gun M3"
  USA_anti_tank_equipment_2:0 "57 mm Gun M1"
  USA_anti_tank_equipment_3:0 "3-inch Gun M5"
- 
+
  JAP_anti_tank_equipment_1:0 "Type 94 37 mm"
  JAP_anti_tank_equipment_1_short:0 "Type 94"
  JAP_anti_tank_equipment_2:0 "Type 1 47 mm"
  JAP_anti_tank_equipment_3:0 "Type 4 75 mm"
- 
+
  SOV_anti_tank_equipment_1:0 "M 1930 37 mm"
  SOV_anti_tank_equipment_1_short:0 "M1930"
  SOV_anti_tank_equipment_2:0 "M 42 45 mm"
  SOV_anti_tank_equipment_3:0 "76.2 mm ZiS-3"
- 
+
  ITA_anti_tank_equipment_1:0 "Solothurn S-18/1000"
  ITA_anti_tank_equipment_1_short:0 "Solothurn S-18/1000"
  ITA_anti_tank_equipment_2:0 "Cannone da 47/32"
  ITA_anti_tank_equipment_3:0 "Cannone da 75/46"
- 
+
  POL_anti_tank_equipment_1:0 "Armata ppanc. 37mm wz. 36"
  POL_anti_tank_equipment_1_short:0 "37mm wz. 36"
  POL_anti_tank_equipment_2:0 "Armata ppanc. 47mm wz. 39"
  POL_anti_tank_equipment_3:0 "Armata ppanc. 76mm wz. 43"
- 
+
  DEN_anti_tank_equipment_1:0 "37mm Fodfolkskanon m1937"
  DEN_anti_tank_equipment_1_short:0 "37mm m1937"
  DEN_anti_tank_equipment_2:0 "47mm Fodfolkskanon m1940"
  DEN_anti_tank_equipment_3:0 "75mm Fodfolkskanon m1943"
- 
+
  SWE_anti_tank_equipment_1:0 "Bofors 37mm pansarvärnskanon"
  SWE_anti_tank_equipment_1_short:0 "Bofors 37mm"
  SWE_anti_tank_equipment_2:0 "57mm pansarvärnskanon"
  SWE_anti_tank_equipment_2_short:0 "57mm pvkan."
  SWE_anti_tank_equipment_3:0 "75mm pansarvärnskanon m/43"
  SWE_anti_tank_equipment_3_short:0 "75mm pvkan m/43"
- 
+
  NOR_anti_tank_equipment_1:0 "Bofors 37mm panservernkanon"
  NOR_anti_tank_equipment_1_short:0 "Bofors 37mm"
  NOR_anti_tank_equipment_2:0 "47mm panservernkanon"
  NOR_anti_tank_equipment_3:0 "76mm panservernkanon"
- 
+
  FIN_anti_tank_equipment_1:0 "37 PstK/36"
  FIN_anti_tank_equipment_1_short:0 " 37 PstK/36"
- 
+
  AUS_anti_tank_equipment_2:0 "47mm Böhler Modell 35"
- 
+
  BEL_anti_tank_equipment_1:0 "47mm Model 1931"
  BEL_anti_tank_equipment_1_short:0 "47mm Model 1931"
- 
+
  ROM_anti_tank_equipment_1:0 "47 mm Schneider-Concordia 1936"
  ROM_anti_tank_equipment_1_short:0 "47mm Schneider 36"
  ROM_anti_tank_equipment_2:0 "75 mm Schneider 97/38"
  ROM_anti_tank_equipment_3:0 "75 mm Resita Model 1943"
- 
+
  CHI_anti_tank_equipment_1:0 "37 mm Type 14"
  CHI_anti_tank_equipment_1_short:0 "37mm Type 14"
  CHI_anti_tank_equipment_2:0 "37 mm Type 30"
@@ -1885,43 +1885,43 @@
  anti_air_equipment_1:0 "Towed Anti-Air"
  anti_air_equipment_1_short:0 "Anti-Air"
  anti_air_equipment_1_desc:0 "Anti-air artillery is primarily designed to shoot down hostile planes, although the rapid fire cannons can also be effective against ground targets."
- 
+
 #anti-air
  FRA_anti_air_equipment_1:0 "Hotchkiss 25mm"
  FRA_anti_air_equipment_1_short:0 "Hotchkiss 25 mm"
  FRA_anti_air_equipment_2:0 "Schneider 37 mm"
  FRA_anti_air_equipment_3:0 "Canon de 75 CA modèle 1940"
- 
+
  GER_anti_air_equipment_1:0 "2 cm FlaK 30"
  GER_anti_air_equipment_1_short:0 "2 cm FlaK 30"
  GER_anti_air_equipment_2:0 "2 cm Flakvierling 38"
  GER_anti_air_equipment_3:0 "8.8 cm Flak 41"
- 
+
  JAP_anti_air_equipment_1:0 "Type 98 20 mm"
  JAP_anti_air_equipment_1_short:0 "Type 98 20 mm"
  JAP_anti_air_equipment_2:0 "Type 2 20 mm"
  JAP_anti_air_equipment_3:0 "Type 3  80 mm"
- 
+
  ENG_anti_air_equipment_1:0 "QF 3-inch 20 cwt"
  ENG_anti_air_equipment_1_short:0 "QF 3-inch"
  ENG_anti_air_equipment_2:0 "QF 40 mm Bofors"
  ENG_anti_air_equipment_3:0 "QF 3.7-inch"
- 
+
  RAJ_anti_air_equipment_1:0 "QF 3-inch 20 cwt"
  RAJ_anti_air_equipment_1_short:0 "QF 3-inch"
  RAJ_anti_air_equipment_2:0 "QF 40 mm Bofors"
  RAJ_anti_air_equipment_3:0 "QF 3.7-inch"
- 
+
  CAN_anti_air_equipment_1:0 "QF 3-inch 20 cwt"
  CAN_anti_air_equipment_1_short:0 "QF 3-inch"
  CAN_anti_air_equipment_2:0 "QF 40 mm Bofors"
  CAN_anti_air_equipment_3:0 "QF 3.7-inch"
- 
+
  AST_anti_air_equipment_1:0 "QF 3-inch 20 cwt"
  AST_anti_air_equipment_1_short:0 "QF 3-inch"
  AST_anti_air_equipment_2:0 "QF 40 mm Bofors"
  AST_anti_air_equipment_3:0 "QF 3.7-inch"
- 
+
  NZL_anti_air_equipment_1:0 "QF 3-inch 20 cwt"
  NZL_anti_air_equipment_1_short:0 "QF 3-inch"
  NZL_anti_air_equipment_2:0 "QF 40 mm Bofors"
@@ -1931,47 +1931,47 @@
  SAF_anti_air_equipment_1_short:0 "QF 3-inch"
  SAF_anti_air_equipment_2:0 "QF 40 mm Bofors"
  SAF_anti_air_equipment_3:0 "QF 3.7-inch"
- 
+
  ITA_anti_air_equipment_1:0 "Breda Model 35"
  ITA_anti_air_equipment_1_short:0 "Breda Model 35"
  ITA_anti_air_equipment_2:0 "Cannone-Mitragliera da 37/54"
  ITA_anti_air_equipment_3:0 "Cannone da 90/53"
- 
+
  USA_anti_air_equipment_1:0 "37 mm Gun M1"
  USA_anti_air_equipment_1_short:0 "37 mm Gun M1"
  USA_anti_air_equipment_2:0 "40 mm M1"
  USA_anti_air_equipment_3:0 "90 mm Gun M3"
- 
+
  SOV_anti_air_equipment_1:0 "M1939 37 mm AA"
  SOV_anti_air_equipment_1_short:0 "M1939 37 mm AA"
  SOV_anti_air_equipment_2:0 "M1940 25 mm AA"
  SOV_anti_air_equipment_3:0 "KS-19 100 mm"
- 
+
  POL_anti_air_equipment_1:0 "Armata plot. 40mm wz. 36 Bofors"
  POL_anti_air_equipment_1_short:0 "40mm wz. 36"
  POL_anti_air_equipment_2:0 "Armata plot. 75mm wz. 36"
- 
+
  SWE_anti_air_equipment_1:0 "20 mm maskinkanon m/40"
  SWE_anti_air_equipment_1_short:0 "20mm m/40"
  SWE_anti_air_equipment_2:0 "40 mm lvakan m/36"
  SWE_anti_air_equipment_3:0 "8 cm luftvärnskanon m/30"
- 
+
  CZE_anti_air_equipment_1:0 "ZB vz. 60"
  CZE_anti_air_equipment_1_short:0 "ZB vz. 60"
  CZE_anti_air_equipment_2:0 "7.5 cm kanon PL vz. 37"
  CZE_anti_air_equipment_3:0 "9 cm kanon Pl vz. 12/20"
- 
+
  DEN_anti_air_equipment_1:0 "20 mm Madsen M/38"
  DEN_anti_air_equipment_1_short:0 "20 mm M/38"
- 
+
  ROM_anti_air_equipment_1:0 "TA calibru 37mm model 1939"
  ROM_anti_air_equipment_1_short:0 "Astra Rheinmetall 37mm"
  ROM_anti_air_equipment_2:0 "75mm Vickers-Resita M1936"
  ROM_anti_air_equipment_3:0 "9cm Skoda 12/30"
- 
+
  FIN_anti_air_equipment_1:0 "7,62 ITKK 31 VKT"
  FIN_anti_air_equipment_1_short:0 "31 VKT"
- 
+
  NOR_anti_air_equipment_1:0 "Colt mitraljöse m/29"
  NOR_anti_air_equipment_2:0 "40mm maskinkanon m/36"
  NOR_anti_air_equipment_3:0 "7.5 cm luftvernkanon m/32"
@@ -1982,43 +1982,43 @@
  artillery_equipment:0 "Towed Artillery"
  artillery_equipment_short:0 "Artillery"
  artillery_equipment_desc:0 "Artillery refers to large-caliber weapons, such as cannons and howitzers that are operated by crews, which can project munitions far beyond the effective range of personal weapons."
- 
+
  #artillery
  FRA_artillery_equipment_1:0 "Canon de 75 modèle 1897"
  FRA_artillery_equipment_1_short:0 "Canon de 75 modèle 1897"
  FRA_artillery_equipment_2:0 "Canon de 105 L mle 1936"
  FRA_artillery_equipment_3:0 "Canon de 155mm GPF"
- 
+
  CZE_artillery_equipment_1:0 "8 cm kanon vz. 30"
  CZE_artillery_equipment_1_short:0 "8 cm kanon vz. 30"
  CZE_artillery_equipment_2:0 "10.5 cm hruby kanon vz. 35"
  CZE_artillery_equipment_3:0 "15 cm hrubá houfnice vzor 37"
- 
+
  GER_artillery_equipment_1:0 "10.5 cm Leichte Feldhaubitze 18"
  GER_artillery_equipment_1_short:0 "10.5 cm LeFH 18"
  GER_artillery_equipment_2:0 "15 cm sFH 18"
  GER_artillery_equipment_3:0 "15 cm Kanone 18"
- 
+
  ENG_artillery_equipment_1:0 "QF 18-pounder"
  ENG_artillery_equipment_1_short:0 "QF 18-pounder"
  ENG_artillery_equipment_2:0 "QF 25-pounder"
  ENG_artillery_equipment_3:0 "BL 5.5-inch Medium Gun"
- 
+
  RAJ_artillery_equipment_1:0 "QF 18-pounder"
  RAJ_artillery_equipment_1_short:0 "QF 18-pounder"
  RAJ_artillery_equipment_2:0 "QF 25-pounder"
  RAJ_artillery_equipment_3:0 "BL 5.5-inch Medium Gun"
- 
+
  CAN_artillery_equipment_1:0 "QF 18-pounder"
  CAN_artillery_equipment_1_short:0 "QF 18-pounder"
  CAN_artillery_equipment_2:0 "QF 25-pounder"
  CAN_artillery_equipment_3:0 "BL 5.5-inch Medium Gun"
- 
+
  AST_artillery_equipment_1:0 "QF 18-pounder"
  AST_artillery_equipment_1_short:0 "QF 18-pounder"
  AST_artillery_equipment_2:0 "QF 25-pounder"
  AST_artillery_equipment_3:0 "BL 5.5-inch Medium Gun"
- 
+
  NZL_artillery_equipment_1:0 "QF 18-pounder"
  NZL_artillery_equipment_1_short:0 "QF 18-pounder"
  NZL_artillery_equipment_2:0 "QF 25-pounder"
@@ -2028,75 +2028,75 @@
  SAF_artillery_equipment_1_short:0 "QF 18-pounder"
  SAF_artillery_equipment_2:0 "QF 25-pounder"
  SAF_artillery_equipment_3:0 "BL 5.5-inch Medium Gun"
- 
+
  USA_artillery_equipment_1:0 "75 mm Gun M1897"
  USA_artillery_equipment_1_short:0 "75 mm Gun M1897"
  USA_artillery_equipment_2:0 "105 mm M101A1"
  USA_artillery_equipment_3:0 "155 mm M114"
- 
+
  SOV_artillery_equipment_1:0 "M1936 76 mm"
  SOV_artillery_equipment_1_short:0 "M1936 76 mm"
  SOV_artillery_equipment_2:0 "M1940 107 mm"
  SOV_artillery_equipment_3:0 "M1943 152 mm"
- 
+
  ITA_artillery_equipment_1:0 "Cannone da 75/27 modello 06"
  ITA_artillery_equipment_1_short:0 "Cannone da 75/27"
  ITA_artillery_equipment_2:0 "Cannone da 149/40 modello 35"
  ITA_artillery_equipment_2_short:0 "Cannone da 149/40 m/35"
  ITA_artillery_equipment_3:0 "Obice da 210/22 modello 35"
- 
+
  JAP_artillery_equipment_1:0 "Type 95 75 mm"
  JAP_artillery_equipment_1_short:0 "Type 95 75 mm"
  JAP_artillery_equipment_2:0 "Type 91 10 cm"
  JAP_artillery_equipment_3:0 "Type 96 15 cm"
- 
+
  NOR_artillery_equipment_1:0 "Kongsberg M.27 75 mm"
  NOR_artillery_equipment_1_short:0 "M.27 75 mm"
  NOR_artillery_equipment_2:0 "12 cm felthaubits/m09"
  NOR_artillery_equipment_3:0 "12 cm felthaubits/m32"
- 
+
  POL_artillery_equipment_1:0 "Armata 75mm wz. 31 St."
  POL_artillery_equipment_1_short:0 "75mm wz. 31"
  POL_artillery_equipment_2:0 "Haubica 100mm wz. 38 St."
  POL_artillery_equipment_3:0 "Armata 155mm wz. 40"
- 
+
  SWE_artillery_equipment_1:0 "10,5 cm kanon m/34"
  SWE_artillery_equipment_1_short:0 "10.5 cm m/34"
  SWE_artillery_equipment_2:0 "10,5 cm Haubits m/40"
  SWE_artillery_equipment_3:0 "12 cm Haubits m/14"
- 
+
  AUS_artillery_equipment_1:0 "7,5 cm Gebirgskanone M. 15"
  AUS_artillery_equipment_1_short:0 "7,5 cm M. 15"
  AUS_artillery_equipment_2:0 "15 cm schwere Feldhaubitze M. 15"
  AUS_artillery_equipment_3:0 "15 cm Autokanone M. 15/16"
- 
+
  HOL_artillery_equipment_1:0 "7,5 cm Siderius Model 02/04"
  HOL_artillery_equipment_1_short:0 "7,5 cm M 02/04"
  HOL_artillery_equipment_2:0 "10,5 cm 10-veld"
  HOL_artillery_equipment_3:0 "12 cm 12 lang 14"
- 
+
  BEL_artillery_equipment_1:0 "Canon de 75 mle TR"
  BEL_artillery_equipment_1_short:0 "Canon de 75"
  BEL_artillery_equipment_2:0 "Canon de 75 mle GP III"
  BEL_artillery_equipment_3:0 "Canon de 120mm L mle 1931"
- 
+
  ROM_artillery_equipment_1:0 "105mm Schneider M1913"
  ROM_artillery_equipment_1_short:0 "105mm Schneider 13"
  ROM_artillery_equipment_2:0 "150mm Skoda M1934"
  ROM_artillery_equipment_3:0 "155mm Schneider M1917"
- 
+
  CHI_artillery_equipment_1:0 "75mm Type 10 Gan"
  CHI_artillery_equipment_1_short:0 "75mm Type 10"
  CHI_artillery_equipment_2:0 "105mm Type 16 Jin"
  CHI_artillery_equipment_3:0 "150mm Type 14/19"
- 
+
  HUN_artillery_equipment_1:0 "1905 ös mintáju 8 cm"
  HUN_artillery_equipment_1_short:0 "8 cm M1905"
 
  rocket_artillery_equipment:0 "Towed Rocket Artillery"
  rocket_artillery_equipment_short:0 "Rocket Artillery"
  rocket_artillery_equipment_desc:0 "Rocket artillery is less accurate and has a much lower sustained rate of fire than batteries of traditional artillery guns. However, they have the capability of simultaneously hitting a target with multiple rockets with devastating effect."
- 
+
  GER_rocket_artillery_equipment_1:0 "28/32 cm Nebelwerfer 41"
  GER_rocket_artillery_equipment_1_short:0 "Nebelwerfer 41"
  GER_rocket_artillery_equipment_2:0 "21 cm Nebelwerfer 42"
@@ -2157,9 +2157,9 @@
  infantry_equipment_3:0 "Infantry Equipment III"
  infantry_equipment_3_short:0 "Weapons III"
  infantry_equipment_3_desc:0 "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Further modernized to include personal Assault Rifles and anti-tank rockets."
- 
+
  # small arms
- 
+
  GER_infantry_equipment_0:0 "Gewehr 98"
  GER_infantry_equipment_0_short:0 "Gewehr 98"
  GER_infantry_equipment_1:0 "Karabiner 98k"
@@ -2373,7 +2373,7 @@
  SWI_infantry_equipment_2_short:0 "Hispano-Suiza MP43/44"
  SWI_infantry_equipment_3:0 "SIG MP46"
  SWI_infantry_equipment_3_short:0 "SIG MP46"
- 
+
  SPR_infantry_equipment_0:0 "Mauser M93"
  SPR_infantry_equipment_0_short:0 "Mauser M93"
  SPR_infantry_equipment_1:0 "Destroyer Carbine"
@@ -2712,3 +2712,107 @@
  USA_motorized_rocket_equipment:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1:0 "T27 Xylophone"
  USA_motorized_rocket_equipment_1_short:0 "Xylophone"
+ACTUAL_EQUIPMENT_HEADER:0 "\n\nEquipment:\n"
+ACTUAL_EQUIPMENT_ENTRY:0 " - $NUM|Y0$ of $NAME|Y$"
+ACTUAL_EQUIPMENT_ENTRY_STRING:0 " - $NUM|Y$ of $NAME|Y$"
+ACTUAL_EQUIPMENT_ENTRY_PERCENT:0 " - $NUM|Y0%$ from their production of $NAME|Y$"
+REQUESTED_REINFORCEMENT_DELIVERING_TO:0 "\nDelivering to $UNIT|Y$ ($PROG|G%$):"
+REQUESTED_REINFORCEMENT_DELIVERING_TO_BLOCKED:1 "\nDelivering to $UNIT|Y$ ($PROG|G%$ §RBlocked: no supply from capital§! ):"
+REQUESTED_REINFORCEMENT_DELIVERING_TO_ENTRY:0 "\n    $NUM|Y0$ of $EQ|Y$"
+REQUESTED_REINFORCEMENT_DELIVERING_TO_MORE_ENTRIES:1 "\nAnd $COUNT|H$ requests more..."
+REQUESTED_REINFORCEMENT_HEADER:0 "Reinforcement requests:"
+UPGRADE_REINFORCEMENT_HEADER:0 "Upgrade requests:"
+TIMED_ACTIVITY_HEADER:0 "Activity request:"
+REQUESTED_REINFORCEMENT_COLLECTING:0 " - Waiting for equipment to be §Hproduced§!:"
+REQUESTED_REINFORCEMENT_DELIVERY:0 " - Waiting for equipment to be §Hdelivered§! ($PROG|H%$):"
+REQUESTED_REINFORCEMENT_COLLECTING_BLOCKED:0 " - §RReinforcement blocked: no supply from capital§!"
+REQUESTED_REINFORCEMENT_COLLECTING_AND_DELIVERY:0 " - Waiting for equipment to be §Hproduced§! and §Hdelivered§!:"
+REQUESTED_REINFORCEMENT_DELIVERY_NO_PROGRESS:0 " - Waiting for equipment to be §Hdelivered§!:"
+REQUESTED_REINFORCEMENT_COLLECTING_ENTRY:0 "   - $NUM|Y0$/$MAX|Y0$ of $NAME|Y$"
+REQUESTED_REINFORCEMENT_DELIVERY_ENTRY:0 "   - $NUM|Y0$ of $NAME|Y$"
+REQUESTED_TIMED_ACTIVITY_COLLECTING_ENTRY:0 "   - $NUM|Y0$/$MAX|Y0$ of $NAME|Y$"
+REQUESTED_MANPOWER_DETAILS:0 "Next $NUM|Y$ of manpower will arrive in $HR|Y$ hours.\nFull manpower reinforcement roughly in $D|Y$ days."
+NOT_ENOUGH_MANPOWER_TO_REINFORCE:0 "Not enough manpower to reinforce."
+MANPOWER_REINFORCEMENT_NOT_POSSIBLE:0 "§RManpower reinforcement is not possible at the current location.§!"
+ARCHETYPE_DESC_ENTRY:0 "    - $COUNT|0$ $NAME|H$"
+OUTDATED_EQ:1 "Show §Houtdated equipment§!"
+guided_missile_equipment:0 "Guided Missile"
+guided_missile_equipment_1:0 "Basic Guided Missile"
+guided_missile_equipment_1_short:0 "Guided Missile I"
+guided_missile_equipment_1_desc:0 "Unmanned flying bomb"
+guided_missile_equipment_2:0 "Improved Guided Missile"
+guided_missile_equipment_2_short:0 "Guided Missile II"
+guided_missile_equipment_2_desc:0 "Better unmanned flying bomb"
+guided_missile_equipment_3:0 "Advanced Guided Missile"
+guided_missile_equipment_3_short:0 "Guided Missile III"
+guided_missile_equipment_3_desc:0 "Best unmanned flying bomb"
+artillery_equipment_2:0 "Improved Artillery"
+artillery_equipment_2_desc:0 "New howitzer designs, taking advantage of new hydraulic recoil devices and longer barrels."
+artillery_equipment_3:0 "Advanced Artillery"
+artillery_equipment_3_desc:0 "Light-weight artillery capable of being broken down for transport, making it possible to bring artillery support to areas previously difficult to reach."
+anti_air_equipment_2:0 "Improved Anti-Air"
+anti_air_equipment_2_desc:0 "Anti-air guns with longer cartridges and barrels, able to target high-flying aircraft."
+anti_air_equipment_3:0 "Advanced Anti-Air"
+anti_air_equipment_3_desc:1 "An advanced mobile flak gun with greater reach and firing capacity, to combat even the fastest and highest-flying enemy aircraft."
+rocket_artillery_equipment_2:0 "Advanced Rocket Artillery"
+rocket_artillery_equipment_2_desc:0 "Spin-stabilized rockets, increasing the range of lighter artillery batteries."
+anti_tank_equipment_2:0 "Improved Anti-Tank"
+anti_tank_equipment_2_desc:0 "Larger caliber guns to combat heavier tanks with sloped armor."
+anti_tank_equipment_3:0 "Advanced Anti-Tank"
+anti_tank_equipment_3_desc:0 "Combining different kinds of new ammunition technology with guns with higher muzzle velocities, these anti-tank guns are prepared for whatever new armor our enemies may develop."
+motorized_rocket_equipment:0 "Motorized Rocket Artillery"
+motorized_rocket_equipment_short:0 "Mot. R. Artillery"
+motorized_rocket_equipment_desc:0 "Multiple rocket launchers such as these deliver explosives to a target area more quickly than conventional artillery, but with lower accuracy and requiring a longer time to reload. Being mounted on trucks, this version is able to launch attacks and change positions before the enemy can return fire."
+motorized_rocket_equipment_1:0 "Motorized Rocket Artillery"
+motorized_rocket_equipment_1_short:0 "Mot. R. Artillery"
+motorized_rocket_equipment_1_desc:0 "Multiple rocket launchers such as these deliver explosives to a target area more quickly than conventional artillery, but with lower accuracy and requiring a longer time to reload. Being mounted on trucks, this version is able to launch attacks and change positions before the enemy can return fire."
+SOV_motorized_rocket_equipment_1:0 "BM-13 Katyusha"
+SOV_motorized_rocket_equipment_1_short:0 "Katyusha"
+USA_motorized_rocket_equipment:0 "T27 Xylophone"
+USA_motorized_rocket_equipment_1:0 "T27 Xylophone"
+USA_motorized_rocket_equipment_1_short:0 "Xylophone"
+amphibious_mechanized_equipment:0 "Amphibious Landing Vehicles"
+amphibious_mechanized_equipment_short:0 "Amtracs"
+amphibious_mechanized_equipment_desc:0 "Amphibious Tractors, or Amtracs, allow Marines to be landed on a beach under armored protection. However, this comes at the cost of poor fuel efficiency."
+amphibious_mechanized_equipment_1:0 "Basic Amphibious Tractor"
+amphibious_mechanized_equipment_1_short:0 "Basic Amtrac"
+amphibious_mechanized_equipment_1_desc:0 "Amphibious Tractors, or Amtracs, allow Marines to be landed on a beach under armored protection. However, this comes at the cost of poor fuel efficiency."
+amphibious_mechanized_equipment_2:0 "Improved Amphibious Tractor"
+amphibious_mechanized_equipment_2_short:0 "Improved Amtrac"
+amphibious_mechanized_equipment_2_desc:0 "These Amtracs feature several improvements over the base version, such as a rear loading ramp for easier unloading on the beach."
+amphibious_tank_equipment:0 "Amphibious Tanks"
+amphibious_tank_equipment_short:0 "Amphib. Tanks"
+amphibious_tank_equipment_1:0 "Basic Amphibious Tank"
+amphibious_tank_equipment_2:0 "Improved Amphibious Tank"
+amphibious_tank_equipment_desc:0 "Tanks that were modified to allow them to move through water. They do much better in amphibious landings and river crossings than other tanks, but require more fuel."
+amphibious_tank_equipment_1_desc:0 "Essentially a light tank modified to float, this vehicle offers fire support to units establishing a beachhead."
+amphibious_tank_equipment_2_desc:0 "A medium tank modified to move through water. The added versatility and mobility comes at the cost of reduced fuel efficiency."
+GER_amphibious_tank_equipment_1:0 "Schwimmpanzer II"
+GER_amphibious_tank_equipment_2:0 "Tauchpanzer III"
+GER_amphibious_mechanized_equipment_1:0 "Land-Wasser-Schlepper"
+GER_amphibious_mechanized_equipment_1_short:0 "LWS"
+GER_amphibious_mechanized_equipment_2:0 "Land-Wasser-Schlepper II"
+GER_amphibious_mechanized_equipment_2_short:0 "LWS II"
+USA_amphibious_tank_equipment_1:0 "LVT-1(A)"
+USA_amphibious_tank_equipment_2:0 "Sherman DD"
+USA_amphibious_mechanized_equipment_1:0 "LVT-2"
+USA_amphibious_mechanized_equipment_1_short:0 "LVT-2"
+USA_amphibious_mechanized_equipment_2:0 "LVT-4 Buffalo"
+USA_amphibious_mechanized_equipment_2_short:0 "LVT-4"
+JAP_amphibious_tank_equipment_1:0 "Type 2 Ka-Mi"
+JAP_amphibious_tank_equipment_2:0 "Type 3 Ka-Chi"
+JAP_amphibious_mechanized_equipment_1:0 "Type 4 Ka-Tsu"
+JAP_amphibious_mechanized_equipment_1_short:0 "Ka-Tsu"
+JAP_amphibious_mechanized_equipment_2:0 "Type 6 Ka-Tsu Kai"
+JAP_amphibious_mechanized_equipment_2_short:0 "Ka-Tsu Kai"
+ENG_amphibious_tank_equipment_1:0 "Valentine DD"
+ENG_amphibious_tank_equipment_2:0 "Cromwell DD"
+ENG_amphibious_mechanized_equipment_1:0 "Terrapin"
+ENG_amphibious_mechanized_equipment_1_short:0 "Terrapin"
+SOV_amphibious_tank_equipment_1:0 "T-40"
+SOV_amphibious_tank_equipment_2:0 "PT-76"
+HOL_amphibious_mechanized_equipment_1:1 "DAF MC-139 Amfibie"
+HOL_amphibious_mechanized_equipment_1_short:1 "DAF MC-139"
+HOL_amphibious_mechanized_equipment_2:1 "DAF MC-143 Amfibie"
+HOL_amphibious_mechanized_equipment_2_short:1 "DAF MC-143"
+EQUIPMENT_MODULE_NOT_ALLOWED:0 "§RUnavailable§!"
