@@ -1783,7 +1783,7 @@ equipment_modules = {
 
 		add_stats = {
 			surface_detection = 7
-			sub_detection = 3.5
+			sub_detection = 2.5
 			build_cost_ic = 150
 		}
 	}
@@ -1805,7 +1805,7 @@ equipment_modules = {
 ###  ###  ##  # #      ## ###   ##   ##  ###
 #  # #   #  # # #     #   #  # #  # #  # #
 #  # ##  #    ##       #  ###  #### #    ##
-#  # #   #  # # #       # #    #  # #  # #
+#  # #   #  # # #       # #    #  # #  # #   
 ###  ###  ##  # #     ##  #    #  #  ##  ###
 	ship_deck_space = {
 		category = ship_deck_space
