@@ -35,6 +35,8 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 
+		can_host_government_in_exile = yes
+
 		war_impact_on_world_tension = 0.0
 		faction_impact_on_world_tension = 0.1
 
