@@ -31,6 +31,7 @@ technologies = {
 			building = coastal_bunker
 			level = 5
 		}
+		convoy_escort_efficiency = 1
 
 		path = {
 			leads_to_tech = infantry_weapons1
