@@ -72,7 +72,6 @@ focus_tree = {
 			}
 			USA = {
 				has_government = ROOT
-				has_war = no
 				NOT = {
 					OR = {
 						has_idea = undisturbed_isolation
