@@ -1098,6 +1098,10 @@ focus_tree = {
 		y = 3
 		cost = 0.2
 
+		bypass = {
+			date > 1942.10.10
+		}
+
 		completion_reward = {
 			add_timed_idea = { idea = fall_blau days = 80 }
 			custom_effect_tooltip = GER_fall_blau_tt
