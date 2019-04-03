@@ -1649,16 +1649,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_imperial_conference
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-
-	focus = {
 		id = ENG_enforce_the_naval_treaties
 		icon = GFX_goal_generic_construction
 		x = 0

@@ -48,6 +48,33 @@ focus_tree = {
 #	}
 
 	focus = {
+		id = USA_preemptive_intervention
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = USA_intervention_in_europe }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = democratic
+			}
+		}
+		relative_position_id = USA_intervention_in_europe
+		available = {
+			date > 1938.1.1
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = 3
+				name = USA_preemptive_intervention
+			}
+			puppet = VEN
+		}
+	}
+
+	focus = {
 		id = USA_continue_the_new_deal
 		icon = GFX_focus_generic_self_management
 		x = 0
@@ -1447,7 +1474,7 @@ focus = {
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
-		x = 2
+		x = 3
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
