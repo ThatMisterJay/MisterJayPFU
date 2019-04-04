@@ -2057,14 +2057,4 @@ focus_tree = {
 
 		completion_reward = { }
 	}
-
-	focus = {
-		id = USA_voter_registration_act
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
 }

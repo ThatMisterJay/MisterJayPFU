@@ -15,6 +15,13 @@ political_actions = {
 			NOT = { has_idea = race_for_the_bomb }
 		}
 
+		#VPI by Yard1
+		target_root_trigger = {
+            has_tech = atomic_research
+            NOT = { has_global_flag = first_nuke_dropped }
+            NOT = { has_idea = race_for_the_bomb }
+		}
+
 		#If this trigger matches a country.
 		target_trigger = {
 			#Target is FROM
@@ -165,9 +172,10 @@ economy_decisions = {
 		}
 
 		visible = {
-			any_state = {
-				is_owned_by = FRA
-				is_controlled_by = ROOT
+			FRA = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+				}
 			}
 			NOT = { is_in_faction_with = FRA }
 		}
@@ -260,7 +268,6 @@ propaganda_efforts = {
 			}
 		}
 	}
-
 	#Propaganda campaign against a country in offensive that has caused a lot of tension and started a war
 	war_propaganda_against_warmonger = {
 
@@ -270,127 +277,104 @@ propaganda_efforts = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			FROM = {
 				OR = {
-					has_offensive_war = yes
 					is_justifying_wargoal_against = ROOT
+					AND = {
+						has_war_with = ROOT
+						is_neighbor_of = ROOT
+					}
+					has_offensive_war = yes
 				}
 			}
 		}
 
 		visible = {
-			FROM = { NOT = { has_government = ROOT } }
 			FROM = {
-				NOT = { is_neighbor_of = ROOT }
 				OR = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-						has_added_tension_amount > 30
-					}
 					is_justifying_wargoal_against = ROOT
-					has_offensive_war_with = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_neighbor_of = ROOT
+					}
+					set_temp_variable = { war_propaganda_cost = 50 }
 				}
 			}
 		}
 
 		target_trigger = {
 			FROM = {
-				NOT = { is_neighbor_of = ROOT }
 				OR = {
+					is_justifying_wargoal_against = ROOT
 					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-						has_added_tension_amount > 30
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
 					}
-					is_justifying_wargoal_against = ROOT
-					has_offensive_war_with = ROOT
-				}
-			}
-		}
-
-		days_remove = 90
-
-		fire_only_once = yes
-
-		cost = 75
-
-		modifier = {
-			war_support_weekly = 0.01
-		}
-
-		complete_effect = {
-			set_country_flag = war_propaganda_campaign_running
-		}
-		remove_effect = {
-			clr_country_flag = war_propaganda_campaign_running
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	#Propaganda campaign against a neighbor
-	war_propaganda_against_warmonger_neighbor = {
-
-		icon = generic_prepare_civil_war
-
-		available = {
-			NOT = { has_country_flag = war_propaganda_campaign_running }
-			FROM = {
-				OR = {
-					has_offensive_war = yes
-					is_justifying_wargoal_against = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		visible = {
-			FROM = { NOT = { has_government = ROOT } }
-			FROM = {
-				is_neighbor_of = ROOT
-				OR = {
 					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
 					}
-					is_justifying_wargoal_against = ROOT
-					has_war_with = ROOT
 				}
-				has_added_tension_amount > 5
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				is_neighbor_of = ROOT
-				OR = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-					}
-					is_justifying_wargoal_against = ROOT
-					has_war_with = ROOT
-				}
-				has_added_tension_amount > 5
 			}
 		}
 
 		days_remove = 90
 		days_re_enable = 180
 
-		cost = 50
+		fire_only_once = yes
+
+		cost = var:war_propaganda_cost?75
 
 		modifier = {
 			war_support_weekly = 0.01
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger"
 			set_country_flag = war_propaganda_campaign_running
 		}
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger"
 			clr_country_flag = war_propaganda_campaign_running
 		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -409,42 +393,10 @@ operations = {
 
 		available = {
             num_of_factories > 1000
-			OR = {
-				has_full_control_of_state = 446
-				has_full_control_of_state = 453
-			}
-			OR = {
-				NOT = {
-					owns_state = 446
-					owns_state = 453
-				}
-				any_country = {
-					has_war_with = ROOT
-					OR = {
-						controls_state = 452
-						controls_state = 447
-						controls_state = 446
-						controls_state = 456
-						controls_state = 457
-						controls_state = 453
-						controls_state = 454
-						controls_state = 455
-					}
-				}
-			}
 		}
 
 		visible = {
             num_of_factories > 1000
-			has_war = yes
-			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
-			any_state = {
-				is_controlled_by = ROOT
-				OR = {
-					region = 28
-					region = 128
-				}
-			}
 		}
 
 		fire_only_once = no
@@ -458,83 +410,13 @@ operations = {
 		}
 
 		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							owns_state = 446
-							owns_state = 453
-						}
-					}
-					random_country = {
-						limit = {
-							owns_state = 446
-							owns_state = 453
-						}
-						country_event = { id = generic.12 days = 1 }
-					}
-				}
-			}
+
 		}
 
 		remove_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_full_control_of_state = 446
-						has_full_control_of_state = 453
-					}
-				}
-				set_country_flag = blew_up_suez
-				set_global_flag = SUEZ_CANAL_BLOCKED
-				country_event = { id = wtt_news.40 hours = 6}
-			}
-			effect_tooltip = {
-				if = {
-					limit = {
-						ENG = {
-							owns_state = 446
-							owns_state = 453
-						}
-					}
-					add_war_support = -0.05
-					add_stability = -0.05
-				}
-			}
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				any_country = {
-					is_in_faction_with = ROOT
-					NOT = {
-						OR = {
-							has_full_control_of_state = 457
-							has_full_control_of_state = 456
-						}
-						has_full_control_of_state = 551
-					}
-					OR = {
-						divisions_in_state = { state = 550 size > 0 }
-						divisions_in_state = { state = 268 size > 0 }
-						divisions_in_state = { state = 269 size > 0 }
-						divisions_in_state = { state = 559 size > 0 }
-					}
-				}
-			}
-			modifier = {
-				factor = 200
-				OR = {
-					has_full_control_of_state = 118
-					any_other_country = {
-						is_in_faction_with = ROOT
-						has_full_control_of_state = 118
-					}
-				}
-				has_war = yes
-				NOT = { tag = ENG }
-			}
+			factor = 0
 		}
 	}
 
@@ -544,29 +426,10 @@ operations = {
 
 		available = {
             num_of_factories > 1000
-			OR = {
-				has_full_control_of_state = 685
-				AND = {
-					has_full_control_of_state = 304
-					any_country = {
-						has_war_with = ROOT
-						owns_state = 685
-					}
-				}
-			}
 		}
 
 		visible = {
             num_of_factories > 1000
-			has_war = yes
-			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
-			any_state = {
-				is_controlled_by = ROOT
-				OR = {
-					region = 34
-					region = 124
-				}
-			}
 		}
 
 		fire_only_once = no
@@ -580,47 +443,12 @@ operations = {
 		}
 
 		complete_effect = {
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							owns_state = 685
-						}
-					}
-					random_country = {
-						limit = {
-							owns_state = 685
-						}
-						country_event = { id = generic.13 days = 1 }
-					}
-				}
-			}
 		}
 
 		remove_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_full_control_of_state = 685
-						has_full_control_of_state = 304
-					}
-				}
-				set_country_flag = blew_up_panama
-				set_global_flag = PANAMA_CANAL_BLOCKED
-				country_event = { id = wtt_news.41 hours = 6}
-			}
-			effect_tooltip = {
-				if = {
-					limit = {
-						USA = { owns_state = 685 }
-					}
-					add_war_support = -0.05
-					add_stability = -0.05
-				}
-			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }
@@ -652,45 +480,10 @@ special_projects = {
 		}
 
 		remove_effect = {
-			if = {
-				limit = {
-					has_full_control_of_state = 446
-					has_full_control_of_state = 453
-				}
-				set_country_flag = rebuilt_suez
-				clr_global_flag = SUEZ_CANAL_BLOCKED
-				country_event = { id = wtt_news.42 hours = 6}
-			}
 		}
 
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_navy_size = { size < 100 }
-			}
-			modifier = {
-				factor = 200
-				NOT = {
-					OR = {
-						has_full_control_of_state = 118
-						any_other_country = {
-							is_in_faction_with = ROOT
-							has_full_control_of_state = 118
-						}
-					}
-				}
-				OR = {
-					ITA = { surrender_progress < 0.1 }
-					NOT = { tag = ENG }
-				}
-				has_full_control_of_state = 447
-				has_full_control_of_state = 454
-				has_full_control_of_state = 452
-				has_full_control_of_state = 456
-				has_full_control_of_state = 457
-				NOT = { has_country_flag = blew_up_suez }
-			}
+			factor = 0
 		}
 	}
 
@@ -700,12 +493,6 @@ special_projects = {
 
 		available = {
 			has_full_control_of_state = 685
-			NOT = {
-				any_country = {
-					has_war_with = ROOT
-					controls_state = 304
-				}
-			}
 			num_of_civilian_factories > 80
 		}
 
@@ -724,31 +511,9 @@ special_projects = {
 		}
 
 		remove_effect = {
-			if = {
-				limit = {
-					has_full_control_of_state = 685
-					NOT = {
-						any_country = {
-							has_war_with = ROOT
-							controls_state = 304
-						}
-					}
-				}
-				set_country_flag = rebuilt_panama
-				clr_global_flag = PANAMA_CANAL_BLOCKED
-				country_event = { id = wtt_news.43 hours = 6}
-			}
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_navy_size = { size < 100 }
-			}
-			modifier = {
-				factor = 0
-				has_country_flag = blew_up_panama
-			}
+			factor = 0
 		}
 	}
 }
@@ -764,8 +529,7 @@ war_measures = {
 		}
 
 		visible = {
-			has_defensive_war = yes
-			has_offensive_war = no
+			has_war = yes
 		}
 
 		fire_only_once = no
@@ -775,36 +539,24 @@ war_measures = {
 		cost = 100
 
 		complete_effect = {
+
 			replace_civ_with_arms_factories = yes
-			add_war_support = -0.05
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 
-	emergency_factory_conversion_offensive = {
+			if = {
+				limit = {
+					has_defensive_war = yes
+					has_offensive_war = no
+				}
+				add_war_support = -0.05
+			}
+			else_if = {
+				limit = {
+					has_offensive_war = yes
+				}
+				add_war_support = -0.05
+				add_stability = -0.03
 
-		icon = generic_industry
-
-		available = {
-			num_of_civilian_factories > 5 #Change this if amount of factories change
-		}
-
-		visible = {
-			has_offensive_war = yes
-		}
-
-		fire_only_once = no
-
-		days_re_enable = 90
-
-		cost = 100
-
-		complete_effect = {
-			replace_civ_with_arms_factories = yes
-			add_war_support = -0.05
-			add_stability = -0.03
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1455,19 +1207,6 @@ foreign_support = {
 		}
 	}
 
-	#   ### ###   ##      ###   ##   ##  ###
-	#   #   #  # #  #     #  # #  # #  # #  #
-	#   ##  #  # #  #     ###  #  # #### #  #
-	#   #   #  # #  #     #  # #  # #  # #  #
-	### ### ###   ##      #  #  ##  #  # ###
-
-
-	 ##  #    ##   ## ###
-	#  # #   #  # #   #
-	#    #   #  #  #  ##
-	#  # #   #  #   # #
-	 ##  ###  ##  ##  ###
-
 	CHI_close_ledo_road = {
 
 		allowed = {
@@ -1570,11 +1309,6 @@ foreign_support = {
 		}
 	}
 
-	###  ###  ##  ###  ### #  #
-	#  # #   #  # #  # #   ## #
-	###  ##  #  # ###  ##  # ##
-	#  # #   #  # #    #   #  #
-	#  # ###  ##  #    ### #  #
 	CHI_reopen_ledo_road = {
 
 		allowed = {
@@ -1699,17 +1433,6 @@ foreign_support = {
 		}
 	}
 
-	### #  # ###     #  # #  # #   # ###
-	 #  #  # #       #  # #  # ## ## #  #
-	 #  #### ##      #### #  # # # # ###
-	 #  #  # #       #  # #  # #   # #
-	 #  #  # ###     #  #  ##  #   # #
-
-	 ##  #    ##   ## ###
-	#  # #   #  # #   #
-	#    #   #  #  #  ##
-	#  # #   #  #   # #
-	 ##  ###  ##  ##  ###
  	CHI_close_the_hump = {
 
  		allowed = {
@@ -1812,11 +1535,6 @@ foreign_support = {
  		}
  	}
 
- 	###  ###  ##  ###  ### #  #
- 	#  # #   #  # #  # #   ## #
- 	###  ##  #  # ###  ##  # ##
- 	#  # #   #  # #    #   #  #
- 	#  # ###  ##  #    ### #  #
  	CHI_reopen_the_hump = {
 
  		allowed = {
@@ -1940,19 +1658,6 @@ foreign_support = {
  			}
  		}
  	}
-
-
-	#  #  ##  #  #  ##  ###     ###   ##  #  # ### ###
-	#  # #  # ## # #  #  #      #  # #  # #  #  #  #
-	#### #### # ## #  #  #      ###  #  # #  #  #  ##
-	#  # #  # #  # #  #  #      #  # #  # #  #  #  #
-	#  # #  # #  #  ##  ###     #  #  ##   ##   #  ###
-
-	 ##  #    ##   ## ###
-	#  # #   #  # #   #
-	#    #   #  #  #  ##
-	#  # #   #  #   # #
-	 ##  ###  ##  ##  ###
 
 	CHI_close_hanoi_route = {
 
