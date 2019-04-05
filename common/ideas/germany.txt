@@ -600,8 +600,8 @@ ideas = {
 			}
 
 			research_bonus = {
-				rocketry = 0.40
-				jet_technology = 0.10
+				rocketry = 0.60
+				jet_technology = 0.20
 			}
 
 			picture = generic_research_bonus
