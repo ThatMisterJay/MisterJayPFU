@@ -490,9 +490,13 @@ focus_tree = {
    		y = 2
    		relative_position_id = USA_wpa
    		cost = 10
-   		#ai_will_do = {
-   		#	factor = 1
-   		#}
+		available = {
+			NOT = {
+				ENG = {
+					controls_state = 336
+				}
+			}
+		}
    		completion_reward = {
    			add_tech_bonus = {
    				name = USA_rubber_reserve_company
@@ -503,6 +507,11 @@ focus_tree = {
    				technology = advanced_rubber_processing
    				technology = modern_rubber_processing
    			}
+				add_resource = {
+					type = rubber
+					amount = 90
+					state = 369 #Kentucky
+				}
    		}
    	}
 
@@ -690,7 +699,7 @@ focus = {
 		icon = GFX_focus_research
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		x = -2
-		y = 1
+		y = 2
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -712,7 +721,7 @@ focus = {
 		prerequisite = { focus = USA_scientist_haven }
 
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = USA_scientist_haven
 		cost = 10
 		#ai_will_do = {
@@ -929,7 +938,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
@@ -1339,10 +1348,86 @@ focus = {
 	}
 
 	focus = {
+		id = USA_vichy_ultimatum
+		icon = GFX_goal_generic_position_armies
+		x = 2
+		y = 1
+		cost = 4.3
+
+		available = {
+			tag = USA
+			EFR = { exists = yes }
+			is_in_faction_with = ENG
+			GER = { has_war_with = SOV }
+		}
+
+		prerequisite = { focus = USA_intervention_in_europe }
+		relative_position_id = USA_intervention_in_europe
+
+		completion_reward = {
+			country_event = { days = 1 id = vichy.1 }
+			EFR = { country_event = { days = 1 id = vichy.2 } }
+			custom_effect_tooltip = USA_operation_torch_effect_1
+			hidden_effect = {
+				load_oob = USA_Torch_historical
+				ENG = { load_oob = ENG_Torch_historical }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_operation_torch
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_vichy_ultimatum }
+		x = 0
+		y = 1
+		cost = 4.3
+
+		completion_reward = {
+			declare_war_on = {
+				target = EFR
+				type = annex_everything
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { USA = { has_tech = basic_medium_art } } }
+					USA = { set_technology = { basic_medium_art = 1 }	}
+				}
+				if = {
+					limit = { NOT = { USA = { has_tech = mechanised_infantry } } }
+					USA = { set_technology = { mechanised_infantry = 1 }	}
+				}
+				if = {
+					limit = { NOT = { USA = { has_tech = basic_medium_tank } } }
+					USA = { set_technology = { basic_medium_tank = 1 }	}
+				}
+				if = {
+					limit = { NOT = { ENG = { has_tech = basic_medium_tank } } }
+					ENG = { set_technology = { basic_medium_tank = 1 }	}
+				}
+				if = {
+					limit = { NOT = { ENG = { has_tech = basic_heavy_tank } } }
+					ENG = { set_technology = { basic_heavy_tank = 1 }	}
+				}
+				if = {
+					limit = { NOT = { ENG = { has_tech = basic_medium_art } } }
+					ENG = { set_technology = { basic_medium_art = 1 }	}
+				}
+			}
+			hidden_effect = {
+				GER = { puppet = EFR }
+				load_oob = USA_torch
+			}
+			custom_effect_tooltip = USA_operation_torch_effect_3
+		}
+		relative_position_id = USA_vichy_ultimatum
+	}
+
+	focus = {
 		id = USA_preemptive_intervention
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = USA_intervention_in_europe }
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1367,7 +1452,7 @@ focus = {
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
 		mutually_exclusive = { }
@@ -1404,7 +1489,7 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = USA_intervention_in_europe
 		cost = 10
@@ -1474,7 +1559,7 @@ focus = {
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
-		x = 3
+		x = 4
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -1642,7 +1727,7 @@ focus = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 12
+		x = 14
 		y = 0
 		relative_position_id = USA_war_plans_division
 		cost = 10
