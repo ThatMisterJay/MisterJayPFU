@@ -148,7 +148,7 @@ theorist = {
 		}
 
 		research_bonus = {
-			land_doctrine = 0.07
+			land_doctrine = 0.10
 		}
 
 		traits = { military_theorist }
@@ -163,7 +163,7 @@ theorist = {
 		}
 
 		research_bonus = {
-			air_doctrine = 0.07
+			air_doctrine = 0.10
 		}
 
 		traits = { air_warfare_theorist }

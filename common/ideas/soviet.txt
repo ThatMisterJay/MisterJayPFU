@@ -354,9 +354,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.10
-				naval_doctrine = -0.10
-				air_doctrine = -0.10
+				land_doctrine = -0.15
+				naval_doctrine = -0.15
+				air_doctrine = -0.15
 			}
 
 			modifier = {
@@ -401,9 +401,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.09
-				naval_doctrine = -0.09
-				air_doctrine = -0.09
+				land_doctrine = -0.14
+				naval_doctrine = -0.14
+				air_doctrine = -0.14
 			}
 
 			modifier = {
@@ -447,9 +447,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.08
-				naval_doctrine = -0.08
-				air_doctrine = -0.08
+				land_doctrine = -0.13
+				naval_doctrine = -0.13
+				air_doctrine = -0.13
 			}
 
 			modifier = {
@@ -493,9 +493,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.07
-				naval_doctrine = -0.07
-				air_doctrine = -0.07
+				land_doctrine = -0.12
+				naval_doctrine = -0.12
+				air_doctrine = -0.12
 			}
 
 			modifier = {
@@ -539,9 +539,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.06
-				naval_doctrine = -0.06
-				air_doctrine = -0.06
+				land_doctrine = -0.11
+				naval_doctrine = -0.11
+				air_doctrine = -0.11
 			}
 
 			modifier = {
@@ -585,9 +585,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.05
-				naval_doctrine = -0.05
-				air_doctrine = -0.05
+				land_doctrine = -0.10
+				naval_doctrine = -0.10
+				air_doctrine = -0.10
 			}
 
 			modifier = {
@@ -630,9 +630,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.04
-				naval_doctrine = -0.04
-				air_doctrine = -0.04
+				land_doctrine = -0.08
+				naval_doctrine = -0.08
+				air_doctrine = -0.08
 			}
 
 			modifier = {
@@ -675,9 +675,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.03
-				naval_doctrine = -0.03
-				air_doctrine = -0.03
+				land_doctrine = -0.06
+				naval_doctrine = -0.06
+				air_doctrine = -0.06
 			}
 
 			modifier = {
@@ -720,9 +720,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.02
-				naval_doctrine = -0.02
-				air_doctrine = -0.02
+				land_doctrine = -0.04
+				naval_doctrine = -0.04
+				air_doctrine = -0.04
 			}
 
 			modifier = {
@@ -766,9 +766,9 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = -0.01
-				naval_doctrine = -0.01
-				air_doctrine = -0.01
+				land_doctrine = -0.02
+				naval_doctrine = -0.02
+				air_doctrine = -0.02
 			}
 
 			modifier = {
@@ -1930,7 +1930,7 @@ ideas = {
 
 
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 
 			traits = { military_theorist }
@@ -1975,7 +1975,7 @@ ideas = {
 			cost = 150
 
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 
 			traits = { naval_theorist }
@@ -2028,7 +2028,7 @@ ideas = {
 
 
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 
 			traits = { air_warfare_theorist }
