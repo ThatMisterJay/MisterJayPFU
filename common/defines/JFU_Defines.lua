@@ -148,6 +148,7 @@ NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.30
 NDefines.NNavy.ANTI_AIR_TARGETING = 5.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 7
 NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -0.10
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0 -- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NAI.DIVISION_UPGRADE_MIN_XP = 400
 NDefines.NAI.DIVISION_CREATE_MIN_XP = 500
 NDefines.NAI.VARIANT_UPGRADE_MIN_XP = 500
