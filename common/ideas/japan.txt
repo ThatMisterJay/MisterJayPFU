@@ -802,7 +802,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { atlantic_fleet_naval_manufacturer } # built Yamato
@@ -816,7 +816,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { pacific_fleet_naval_manufacturer } #built best CVs
@@ -833,7 +833,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { convoy_escort_naval_manufacturer } #destroyer R&D
@@ -850,7 +850,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { coastal_defence_naval_manufacturer } #used for many repairs and conversions
@@ -874,7 +874,7 @@ ideas = {
 			removal_cost = 10
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { mitsubishi_aircraft_manufacturer }
@@ -892,7 +892,7 @@ ideas = {
 			removal_cost = 10
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { aichi_aircraft_manufacturer }
@@ -907,7 +907,7 @@ ideas = {
 			removal_cost = 10
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { nakajima_aircraft_manufacturer }
@@ -926,7 +926,7 @@ ideas = {
 			removal_cost = 10
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { yokosuka_aircraft_manufacturer }
@@ -941,7 +941,7 @@ ideas = {
 			removal_cost = 10
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { kawasaki_aircraft_manufacturer }
@@ -958,7 +958,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 
 			traits = { industrial_concern }
@@ -972,7 +972,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 
 			traits = { electronics_concern }
@@ -990,8 +990,8 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.1
+				industry = 0.10
+				synth_resources = 0.15
 			}
 
 			traits = { refinery_concern }
@@ -1009,7 +1009,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { infantry_equipment_manufacturer }
@@ -1022,7 +1022,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 			research_bonus = {
 				mechanized_equipment = 0.10
@@ -1046,7 +1046,7 @@ ideas = {
 				date > 1941.1.1
 			}
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			equipment_bonus = {
 				medium_tank_equipment = {
@@ -1078,7 +1078,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			equipment_bonus = {
@@ -1107,7 +1107,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			equipment_bonus = {
@@ -1132,7 +1132,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				cat_grand_battle_plan = 0.15
 			}
 
 			traits = { grand_battle_plan_expert }
@@ -1145,7 +1145,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 
 			traits = { military_theorist }
@@ -1160,7 +1160,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_base_strike = 0.10
+				cat_base_strike = 0.15
 			}
 
 			traits = { naval_aviation_pioneer }
@@ -1173,7 +1173,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_doctrine = 0.10
+				naval_doctrine = 0.15
 			}
 
 			traits = { naval_theorist }
@@ -1188,7 +1188,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_operational_integrity = 0.10
+				cat_operational_integrity = 0.15
 			}
 
 			traits = { assault_avaition }
@@ -1201,7 +1201,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }
@@ -1217,7 +1217,7 @@ ideas = {
 
 
 			research_bonus = {
-				nuclear = 0.10
+				nuclear = 0.15
 			}
 
 			traits = { nuclear_scientist }
@@ -1233,7 +1233,7 @@ ideas = {
 
 
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 
 			traits = { rocket_scientist }

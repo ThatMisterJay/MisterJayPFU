@@ -272,7 +272,7 @@ ideas = {
 
 			picture = man_five_year_plan_air
 
-			research_bonus = { air_equipment = 0.1 }
+			research_bonus = { air_equipment = 0.15 }
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
@@ -295,7 +295,7 @@ ideas = {
 
 			picture = man_five_year_plan_tank
 
-			research_bonus = { armor = 0.05 }
+			research_bonus = { armor = 0.075 }
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
@@ -317,7 +317,7 @@ ideas = {
 
 			picture = man_five_year_plan_industry
 
-			research_bonus = { industry = 0.05 }
+			research_bonus = { industry = 0.10 }
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
 			}
@@ -587,7 +587,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 
 			traits = { military_theorist }
@@ -602,7 +602,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }
@@ -626,7 +626,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { light_aircraft_manufacturer }
@@ -652,7 +652,7 @@ ideas = {
 			cost = 75
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { light_aircraft_manufacturer }
@@ -677,7 +677,7 @@ ideas = {
 			cost = 75
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { medium_aircraft_manufacturer }
@@ -702,7 +702,7 @@ ideas = {
 			cost = 75
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { heavy_aircraft_manufacturer }

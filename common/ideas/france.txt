@@ -1036,7 +1036,7 @@ ideas = {
 			}
 			cost = 50
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			equipment_bonus = {
@@ -1059,7 +1059,7 @@ ideas = {
 			}
 			cost = 150
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			equipment_bonus = {
@@ -1087,7 +1087,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			equipment_bonus = {
 				light_tank_equipment = {
@@ -1114,7 +1114,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 			research_bonus = {
 				mechanized_equipment = 0.10
@@ -1134,7 +1134,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { infantry_equipment_manufacturer }
@@ -1150,7 +1150,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				artillery = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { artillery_manufacturer }
@@ -1173,7 +1173,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { morane_saulnier_aircraft_manufacturer }
@@ -1194,7 +1194,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { bloch_aircraft_manufacturer }
@@ -1212,7 +1212,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { amiot_aircraft_manufacturer }
@@ -1229,7 +1229,7 @@ ideas = {
 			}
 			cost = 150
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { latecoere_aircraft_manufacturer }
@@ -1245,7 +1245,7 @@ ideas = {
 			}
 			cost = 150
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { dewoitine_aircraft_manufacturer }
@@ -1266,7 +1266,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { naval_manufacturer }
@@ -1285,7 +1285,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 
 			traits = { industrial_concern }
@@ -1303,7 +1303,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				cat_grand_battle_plan = 0.15
 			}
 
 			traits = { grand_battle_plan_expert }
@@ -1327,7 +1327,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 
 			ai_will_do = {
@@ -1353,7 +1353,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_fleet_in_being = 0.10
+				cat_fleet_in_being = 0.15
 			}
 
 			traits = { grand_fleet_proponent }
@@ -1371,7 +1371,7 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 			research_bonus = {
-				naval_doctrine = 0.10
+				naval_doctrine = 0.15
 			}
 
 			traits = { naval_theorist }
@@ -1400,7 +1400,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_operational_integrity = 0.10
+				cat_operational_integrity = 0.15
 			}
 
 			traits = { assault_avaition }
@@ -1419,7 +1419,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }
@@ -1438,7 +1438,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				nuclear = 0.10
+				nuclear = 0.15
 			}
 
 			traits = { nuclear_scientist }

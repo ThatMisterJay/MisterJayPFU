@@ -328,7 +328,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_grand_battle_plan = 0.10
+				cat_grand_battle_plan = 0.15
 			}
 
 			traits = { grand_battle_plan_expert }
@@ -354,7 +354,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }

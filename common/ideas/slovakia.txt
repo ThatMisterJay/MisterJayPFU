@@ -370,7 +370,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 			
 			traits = { military_theorist }
@@ -385,7 +385,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 			
 			traits = { air_warfare_theorist }
@@ -593,8 +593,8 @@ ideas = {
 				70 = { is_owned_by = ROOT }				
 			}			
 			research_bonus = {
-				industry = 0.05
-				synth_resources = 0.1
+				industry = 0.10
+				synth_resources = 0.15
 			}
 			
 			traits = { refinery_concern }

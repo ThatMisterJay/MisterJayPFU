@@ -768,7 +768,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 			
 			traits = { military_theorist }
@@ -783,7 +783,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 			
 			traits = { air_warfare_theorist }
@@ -804,7 +804,7 @@ ideas = {
 
 			
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 			
 			traits = { medium_tank_manufacturer }

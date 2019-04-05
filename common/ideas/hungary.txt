@@ -244,7 +244,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 		}
 
@@ -574,7 +574,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 			
 			traits = { military_theorist }
@@ -589,7 +589,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 			
 			traits = { air_warfare_theorist }
@@ -611,7 +611,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -647,7 +647,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { naval_manufacturer }
@@ -668,7 +668,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 			
 			traits = { industrial_concern }
@@ -691,7 +691,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			traits = { infantry_equipment_manufacturer }

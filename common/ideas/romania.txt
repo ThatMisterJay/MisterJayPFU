@@ -782,7 +782,7 @@ ideas = {
 			picture = generic_army_europe_2
 
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 
 			traits = { military_theorist }
@@ -798,7 +798,7 @@ ideas = {
 			picture = generic_air_europe_1
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }
@@ -998,7 +998,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			traits = { tank_manufacturer }
@@ -1031,7 +1031,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				armor = 0.05
+				armor = 0.075
 			}
 
 			traits = { tank_manufacturer }
@@ -1073,7 +1073,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 
 			}
 
@@ -1097,7 +1097,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			equipment_bonus = {
@@ -1125,7 +1125,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			equipment_bonus = {
@@ -1162,7 +1162,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			equipment_bonus = {
@@ -1205,7 +1205,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -1238,7 +1238,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -1268,7 +1268,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -1285,7 +1285,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { infantry_equipment_manufacturer }
@@ -1302,7 +1302,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				artillery = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { artillery_manufacturer }
@@ -1325,7 +1325,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 
 			equipment_bonus = {
@@ -1359,7 +1359,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 
 			traits = { light_aircraft_manufacturer }
@@ -1394,7 +1394,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_equipment = 0.05
+				air_equipment = 0.075
 			}
 
 			equipment_bonus = {

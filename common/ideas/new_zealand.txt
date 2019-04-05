@@ -259,7 +259,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 
 			traits = { military_theorist }
@@ -274,7 +274,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }
@@ -290,7 +290,7 @@ ideas = {
 			picture = generic_political_advisor_europe_1
 
 			research_bonus = {
-				naval_doctrine = 0.10
+				naval_doctrine = 0.15
 			}
 
 			traits = { naval_theorist }
@@ -536,7 +536,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { convoy_escort_naval_manufacturer }
@@ -555,7 +555,7 @@ ideas = {
 
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { pacific_fleet_naval_manufacturer }
@@ -577,7 +577,7 @@ ideas = {
 
 
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 			}
 
 			traits = { industrial_concern }
@@ -604,7 +604,7 @@ ideas = {
 
 
 			research_bonus = {
-				motorized_equipment = 0.10
+				infantry_weapons = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -628,7 +628,7 @@ ideas = {
 
 
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			traits = { fast_tank_manufacturer }
@@ -649,7 +649,7 @@ ideas = {
 
 
 			research_bonus = {
-				armor = 0.10
+				armor = 0.15
 			}
 
 			traits = { heavy_tank_manufacturer }

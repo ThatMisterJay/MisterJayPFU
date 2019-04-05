@@ -129,7 +129,7 @@ ideas = {
 			picture = generic_army_europe_3
 
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 
 			traits = { military_theorist }
@@ -146,7 +146,7 @@ ideas = {
 			picture = generic_air_europe_3
 
 			research_bonus = {
-				air_doctrine = 0.10
+				air_doctrine = 0.15
 			}
 
 			traits = { air_warfare_theorist }
@@ -388,7 +388,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 
 			traits = { raiding_fleet_naval_manufacturer }
