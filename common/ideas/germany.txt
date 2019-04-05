@@ -577,9 +577,9 @@ ideas = {
 			picture = FRA_army_of_aggression_focus
 
 			modifier = {
-			naval_torpedo_range_factor = 0.5
-			navy_submarine_attack_factor = 0.2
-		    navy_submarine_defence_factor = 0.2
+				naval_torpedo_screen_penetration_factor = 0.1
+				navy_submarine_attack_factor = 0.2
+			    navy_submarine_defence_factor = 0.2
 			}
 
 			equipment_bonus = {
