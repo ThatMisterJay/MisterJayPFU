@@ -1394,7 +1394,6 @@ guiTypes = {
 				buttonText = "DIPLOMACY_SEND"
 				pdx_tooltip = "DIPLOMACY_SEND"
 				clicksound = click_send
-				shortcut = "RETURN"
 			}
 
 			buttonType = {
@@ -1667,7 +1666,6 @@ guiTypes = {
 				Orientation = "LOWER_LEFT"
 				buttonText = "DIPLOMACY_SEND"
 				clicksound = click_send
-				shortcut = "RETURN"
 			}
 
 			buttonType = {
