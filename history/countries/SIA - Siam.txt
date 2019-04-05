@@ -109,6 +109,7 @@ create_country_leader = {
 create_equipment_variant = {
 	name = "Phra Ruang Class" #collection of various WWI and early interwar ships with similiar capabilities
 	type = ship_hull_light_1
+		name_group = SIA_DD_HISTORICAL
 	parent_version = 0
 	modules = {
 		fixed_ship_battery_slot = ship_light_battery_1
@@ -117,8 +118,8 @@ create_equipment_variant = {
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = light_ship_engine_1
 		fixed_ship_torpedo_slot = ship_torpedo_1
-		mid_1_custom_slot = ship_torpedo_1
-		rear_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
 	}
 	obsolete = no
 }

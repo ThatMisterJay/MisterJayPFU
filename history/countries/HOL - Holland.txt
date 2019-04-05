@@ -133,24 +133,73 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Izaak Reijnders"
+	id = 980
+	gfx = "GFX_portrait_hol_izaak_reijnders"
+	traits = { old_guard inflexible_strategist trait_reckless }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+
 create_corps_commander = {
 	name = "Petrus Wilhelmus Best"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { panzer_leader fortress_buster }
+	gfx = "GFX_portrait_hol_petrus_wilhelmus_best"
+	traits = { organizer skilled_staffer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Godfried van Voorst tot Voorst"
+	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+	traits = { brilliant_strategist career_officer armor_officer politically_connected }
 	skill = 4
-	attack_skill = 6
+	attack_skill = 3
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_navy_leader = {
 	name = "Johannes Theodorus Furstner"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { blockade_runner superior_tactician }
-	skill = 4
+	gfx = "GFX_portrait_hol_johannes_theodorus_furstner"
+	traits = { caustic_personality fly_swatter blockade_runner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
 
+create_navy_leader = {
+	name = "Conrad Helfrich"
+	gfx = "GFX_portrait_hol_conrad_helfrich"
+	traits = { seawolf superior_tactician bold navy_career_officer }
+	id = 981
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Karel Doorman"
+	gfx = "GFX_portrait_hol_karel_doorman"
+	traits = { fleet_protector naval_lineage bold }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
 
 ### Ship Variants ###
 

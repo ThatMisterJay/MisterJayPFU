@@ -173,37 +173,34 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Maurice Gamelin"
 	picture = "Portrait_France_Maurice_Gamelin.dds"
-	traits = { defensive_doctrine old_guard }
-	id = 800
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
 	skill = 2
-	attack_skill = 2
+	attack_skill = 1
 	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Maxime Weygand"
 	picture = "Portrait_France_Maxime_Weygand.dds"
-	traits = { defensive_doctrine old_guard }
-	id = 801
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 1
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
 	logistics_skill = 2
 }
 
 create_field_marshal = {
 	name = "Alphonse Georges"
 	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-	traits = { defensive_doctrine old_guard }
-	id = 802
+	traits = { defensive_doctrine old_guard trait_cautious }
 	skill = 3
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 1
-	logistics_skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
 }
 
 #create_corps_commander = {
@@ -223,69 +220,83 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Henri Giraud"
 	picture = "portrait_france_henri_giraud.dds"
-	traits = {  trickster }
-	id = 803
+	traits = {  trickster trait_cautious career_officer infantry_officer }
 	skill = 3
-	attack_skill = 3
+	attack_skill = 2
 	defense_skill = 2
-	planning_skill = 3
+	planning_skill = 4
 	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_charles_huntziger.dds"
-	traits = { old_guard }
-	id = 804
+	traits = { old_guard infantry_officer }
 	skill = 3
 	attack_skill = 3
-	defense_skill = 3
+	defense_skill = 1
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 
 create_navy_leader = {
 	name = "François Darlan"
 		picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { superior_tactician }
-	id = 805
+	traits = { naval_lineage bold superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Jean-Marie Charles Abrial"
 		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
-	traits = { superior_tactician }
-	id = 806
+	traits = { chief_engineer superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Jean-Pierre Esteva"
 		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
-	traits = { seawolf }
-	id = 807
+	traits = { aviation_enthusiast }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "René-Émile Godfroy" #FFL if Giraud is in charge
 		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
-	traits = { old_guard_navy spotter }
-	id = 808
+	traits = { gentlemanly battleship_adherent old_guard_navy spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Jean de Laborde"
 	picture = "Portrait_France_Jean_de_Laborde.dds"
-	id = 809
-	traits = {  }
+	traits = { naval_lineage aviation_enthusiast }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 
-### Ship Variants ###
+### VARIANTS ###
+# 1936 Start #
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
@@ -395,7 +406,6 @@ if = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_torpedo_sub_1
 		}
-		obsolete = yes
 	}
 	create_equipment_variant = {
 		name = "Surcouf Class"				# cruiser submarine
@@ -636,6 +646,26 @@ if = {
 			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
+	# Battleships #
+		create_equipment_variant = {
+			name = "Richelieu Class"
+			type = ship_hull_heavy_2
+			name_group = FRA_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_2
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_heavy_battery_2
+				mid_1_custom_slot = ship_secondaries_2
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
 	# Carriers #
 	create_equipment_variant = {
 		name = "Béarn Class"

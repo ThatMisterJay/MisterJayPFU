@@ -234,6 +234,10 @@ create_navy_leader = {
 		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
 	traits = { seawolf }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -241,6 +245,10 @@ create_navy_leader = {
 		picture = "Portrait_France_Francois_Darlan.dds"
 	traits = { superior_tactician }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 

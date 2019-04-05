@@ -132,14 +132,19 @@ if = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
+		fuel_silos = 1
 		oil_processing = 1
-		rubber_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
+		basic_light_battery = 1
+		sonar = 1
+		improved_sonar = 1
+		improved_depth_charges = 1
 	}
 }
 
@@ -244,10 +249,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = {  }
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 5
 }
 
 create_field_marshal = {
@@ -255,10 +260,10 @@ create_field_marshal = {
 	gfx = "GFX_CAN_charles_foulkes"
 	traits = { }
 	skill = 4
-		attack_skill = 3
-		defense_skill = 4
-		planning_skill = 3
-		logistics_skill = 5
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -266,30 +271,20 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { }
 	skill = 3
-		attack_skill = 2
-		defense_skill = 3
-		planning_skill = 4
-		logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Bert Hoffmeister"
-	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { hill_fighter }
-	skill = 4
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 4
-		logistics_skill = 4
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 5
 }
 create_corps_commander = {
 	name = "Lauren Southern"
 	portrait_path = "gfx/leaders/CAN/Portrait_CAN_Lauren_Southern.dds"
-	traits = { winter_specialist ranger trickster  }
+	traits = { hill_fighter  }
 	skill = 4
-		attack_skill = 5
-		defense_skill = 5
-		planning_skill = 4
-		logistics_skill = 2
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
 }
 
 create_navy_leader = {
@@ -297,6 +292,10 @@ create_navy_leader = {
 	gfx = "GFX_CAN_leonard_warren_murray"
 	traits = { }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
@@ -304,18 +303,30 @@ create_navy_leader = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
 	traits = { spotter }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
 }
 create_navy_leader = {
 	name = "James D. Prentice"
 	gfx = "GFX_CAN_james_prentice"
 	traits = { spotter }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 create_navy_leader = {
 	name = "Harry DeWolf"
 	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician }
+	traits = { superior_tactician bold }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 5
 }
 
 ### Ship Variants ###

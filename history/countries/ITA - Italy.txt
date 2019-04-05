@@ -36,40 +36,29 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		basic_depth_charges = 1
-		basic_torpedo = 1
-		basic_battery = 1
-		basic_secondary_battery = 1
-		basic_cruiser_armor_scheme = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		mtg_transport = 1
-		coastal_defense_ships = 1
-	}
+set_technology = {
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	basic_depth_charges = 1
+	basic_torpedo = 1
+	basic_battery = 1
+	basic_secondary_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_battery = 1
+	basic_medium_battery = 1
+	basic_light_battery = 1
+	improved_secondary_battery = 1
+	basic_heavy_armor_scheme = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
+	mtg_transport = 1
+	coastal_defense_ships = 1
 }
 
 # DIPLOMACY / WAR 36
@@ -215,21 +204,29 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Emilio De Bono"
 	picture = "portrait_italy_emilio_de_bono.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard politically_connected trait_cautious }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Ugo Cavallero"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
-	traits = { old_guard }
+	traits = {  old_guard trait_cautious career_officer }
 	skill = 2
 	rank = 1
 	attack_skill = 2
@@ -241,7 +238,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Giovanni Messe"
 	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = { panzer_leader trickster }
+	traits = {  armor_officer war_hero }
 	skill = 4
 	rank = 1
 	attack_skill = 4
@@ -253,7 +250,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Italo Balbo"
 	picture = "portrait_italy_italo_balbo.dds"
-	traits = {  }
+	traits = { career_officer politically_connected }
 	skill = 1
 	attack_skill = 2
 	defense_skill = 2
@@ -264,7 +261,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Sebastiano Visconti Prasca"
 	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
-	traits = {  }
+	traits = { career_officer inflexible_strategist }
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
@@ -275,10 +272,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ubaldo Soddu"
 	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
-	traits = {  }
+	traits = { career_officer trait_cautious }
 	skill = 1
 	attack_skill = 1
-	defense_skill = 2
+	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
 }
@@ -286,47 +283,67 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Rodolfo Graziani"
 	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine }
+	traits = { offensive_doctrine politically_connected trait_cautious }
 	skill = 2
 	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_navy_leader = {
 	name = "Inigo Campioni"
 		picture = "Portrait_Italy_Inigo_Campioni.dds"
-	traits = { superior_tactician spotter }
-	skill = 2
+	traits = { battleship_adherent superior_tactician spotter }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
 
 create_navy_leader = {
 	name = "Alberto Da Zara"
 		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
-	traits = { superior_tactician }
+	traits = { gentlemanly superior_tactician }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Giuseppe Fioravanzo"
 		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	traits = { superior_tactician }
+	traits = { aviation_enthusiast blockade_runner }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 4
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Carlo Bergamini"
 		picture = "Portrait_Italy_Carlo_Bergamini.dds"
-	traits = { superior_tactician }
+	traits = { battleship_adherent gunnery_expert ironside }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
 }
 
 create_navy_leader = {
 	name = "Angelo Iachino"
 		picture = "Portrait_Italy_Angelo_Iachino.dds"
-	traits = { superior_tactician spotter }
+	traits = { bold navy_career_officer superior_tactician spotter }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 1
 }
 
 ### Ship Variants ###
@@ -590,6 +607,26 @@ if = {
 			rear_1_custom_slot = ship_light_medium_battery_2
 		}
 	}
+
+	### Light Cruiser Variants
+	create_equipment_variant = {
+		name = "Duca degli Abruzzi Class"
+		type = ship_hull_cruiser_2
+		name_group = ITA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_2
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}
 	### Destroyer Variants
 	create_equipment_variant = {
 		name = "Curatone Class" 		#Represents the following WWI/1920s DDs/DEs: Curatone, Sauro/Sella, Turbine, Pilo, Audace, Siritori, La Masa, Palestro, Cantore
@@ -641,6 +678,25 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+	create_equipment_variant = {
+			name = "Littorio Class"
+			type = ship_hull_heavy_2
+			name_group = ITA_BB_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_secondaries_slot = ship_secondaries_2
+				fixed_ship_armor_slot = ship_armor_bb_2
+				front_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_secondaries_2
+				mid_2_custom_slot = ship_airplane_launcher_2
+				rear_1_custom_slot = ship_heavy_battery_2
+			}
+		}
 	### Submarine Variants
 	create_equipment_variant = {
 		name = "Mameli Class"

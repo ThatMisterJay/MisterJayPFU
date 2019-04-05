@@ -98,6 +98,7 @@ add_ideas = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
+		fuel_silos = 1
 		oil_processing = 1
 		rubber_processing = 1
 		construction1 = 1
@@ -210,11 +211,12 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Carl Gustaf Mannerheim"
 	picture = "Portrait_Finland_Carl_Gustaf_Mannerheim.tga"
-	traits = { defensive_doctrine logistics_wizard }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
+	traits = { inflexible_strategist war_hero trait_cautious defensive_doctrine trickster winter_specialist logistics_wizard }
+	skill = 5
+	id = 58
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 5
 	logistics_skill = 3
 }
 
@@ -372,6 +374,10 @@ create_navy_leader = {
 	picture = "Portrait_Finland_Vaino_Valve.tga"
 	traits = { superior_tactician }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
 }
 
 create_navy_leader = {
@@ -379,6 +385,10 @@ create_navy_leader = {
 	picture = "Portrait_Finland_Eero_Rahola.tga"
 	traits = { spotter }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 1
 }
 
 create_navy_leader = {
@@ -386,6 +396,10 @@ create_navy_leader = {
 	picture = "Portrait_Finland_Svante_Sundman.tga"
 	traits = { seawolf }
 	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

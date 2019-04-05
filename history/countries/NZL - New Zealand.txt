@@ -241,7 +241,7 @@ create_corps_commander = {
 	gfx = "GFX_NZL_bernard_freyberg"
 	traits = {  }
 	skill = 4
-	attack_skill = 4
+	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 3
@@ -253,9 +253,9 @@ create_corps_commander = {
 	traits = { naval_invader }
 	skill = 3
 	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -263,10 +263,10 @@ create_corps_commander = {
 	gfx = "GFX_NZL_william_stevens"
 	traits = {  }
 	skill = 4
-	attack_skill = 4
+	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 3
+	logistics_skill = 4
 }
 
 create_navy_leader = {
@@ -274,13 +274,21 @@ create_navy_leader = {
 	gfx = "GFX_NZL_edmund_drummond"
 	traits = { }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Peter Phipps"
 	gfx = "GFX_NZL_peter_phipps"
-	traits = { }
+	traits = { navy_career_officer }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
 
 ### Ship Variants ###

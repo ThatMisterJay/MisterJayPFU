@@ -147,19 +147,23 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {  trickster winter_specialist trait_mountaineer }
+	traits = {  trickster winter_specialist }
 	skill = 4
-	attack_skill = 4
+	attack_skill = 3
 	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_navy_leader = {
 	name = "Elias Corneliussen"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
+	traits = { navy_career_officer inshore_fighter spotter }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -169,7 +173,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "A & B Class"						
+		name = "A & B Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {

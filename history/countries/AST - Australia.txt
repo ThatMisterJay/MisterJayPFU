@@ -137,6 +137,7 @@ if = {
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
+		fuel_refining = 1
 		synth_oil_experiments = 1
 		oil_processing = 1
 		rubber_processing = 1
@@ -258,11 +259,10 @@ create_corps_commander = {
 	gfx = "GFX_AST_leslie_morshead"
 	traits = { }
 	skill = 4
-
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 5
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 2
 }
 
 
@@ -273,29 +273,29 @@ create_corps_commander = {
 	traits = { }
 	skill = 4
 	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 5
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Henry Wynter"
 	gfx = "GFX_AST_henry_wynter"
 	traits = { }
 	skill = 4
-	attack_skill = 4
+    attack_skill = 3
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 4
+    logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Alan Vasey"
 	gfx = "GFX_AST_alan_vasey"
 	traits = { hill_fighter }
 	skill = 3
-	attack_skill = 3
+    attack_skill = 2
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 3
+    logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Horace Robertson"
@@ -303,32 +303,40 @@ create_corps_commander = {
 	traits = { desert_fox }
 	skill = 3
 	attack_skill = 3
-	defense_skill = 2
+    defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "John Northcott"
 	gfx = "GFX_AST_john_northcott"
-	traits = { panzer_leader}
+	traits = { armor_officer}
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
-	planning_skill = 2
+	planning_skill = 1
 	logistics_skill = 1
 }
 create_navy_leader = {
 	name = "Harold Farncomb"
 	gfx = "GFX_AST_harold_farncomb"
-	traits = { air_controller }
+	traits = { aviation_enthusiast naval_lineage }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 4
 }
 
 create_navy_leader = {
 	name = "Victor Crutchley"
 	gfx = "GFX_AST_victor_crutchley"
-	traits = { }
+	traits = { bold }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 ### Ship Variants ###
