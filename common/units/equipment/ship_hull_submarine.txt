@@ -64,7 +64,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 25
+		sub_visibility = 35
 		naval_speed = 14
 		reliability = 0.60
 
@@ -115,7 +115,7 @@ equipments = {
 		default_modules = {
 			rear_1_custom_slot = empty
 		}
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 14
 		reliability = 0.70
 
@@ -167,7 +167,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 15
+		sub_visibility = 25
 		naval_speed = 15
 		reliability = 0.75
 
@@ -217,7 +217,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 10
+		sub_visibility = 20
 		naval_speed = 16
 		reliability = 0.80
 
@@ -278,7 +278,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 11
 		reliability = 0.75
 
