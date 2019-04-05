@@ -746,113 +746,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = USA_lend_lease_act
-		icon = GFX_focus_generic_treaty
-		x = -1
-		y = 1
-		prerequisite = { focus = USA_neutrality_act }
-		relative_position_id = USA_neutrality_act
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			if = {
-				limit = {
-					has_war_support > 0.4
-				}
-				congress_medium_support_trigger = yes
-			}
-			else = {
-				congress_high_support_trigger = yes
-			}
-			democratic > 0.95
-			custom_trigger_tooltip = {
-				tooltip = USA_lend_lease_act_neutrality_tt
-			}
-			if = {
-				limit = {
-					has_completed_focus = USA_neutrality_act
-				}
-				any_other_country = {
-					is_major = yes
-					has_government = ROOT
-					has_war = yes
-					surrender_progress > 0
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-					is_major = yes
-					has_government = ROOT
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = support
-						id = PREV
-						value = 200
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = USA_limited_intervention
-				}
-				swap_ideas = {
-					remove_idea = USA_limited_intervention
-					add_idea = USA_lend_lease_act_li
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = USA_neutrality_act }
-				swap_ideas = {
-					remove_idea = USA_neutrality_act
-					add_idea = USA_lend_lease_act_na
-				}
-			}
-			else = {
-				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
-			}
-			if = {
-				limit = {
-					has_war_support > 0.6
-					has_war = no
-				}
-				USA_congress_small_support = yes
-			}
-			else_if = {
-				limit = {
-					has_war_support > 0.4
-					has_war = no
-				}
-				USA_congress_small_opposition = yes
-			}
-			else_if = {
-				limit = {
-					has_war_support < 0.4
-					has_war = no
-				}
-				USA_congress_large_opposition = yes
-			}
-			else = {
-				USA_congress_medium_opposition = yes
-			}
-		}
-	}
-	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
@@ -1503,6 +1396,185 @@ focus = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
+
+	focus = {
+		id = USA_lend_lease_act
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_war_plan_black }
+		relative_position_id = USA_war_plan_black
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			if = {
+				limit = {
+					has_war_support > 0.4
+				}
+				congress_medium_support_trigger = yes
+			}
+			else = {
+				congress_high_support_trigger = yes
+			}
+			democratic > 0.95
+			custom_trigger_tooltip = {
+				tooltip = USA_lend_lease_act_neutrality_tt
+			}
+			if = {
+				limit = {
+					has_completed_focus = USA_neutrality_act
+				}
+				any_other_country = {
+					is_major = yes
+					has_government = ROOT
+					has_war = yes
+					surrender_progress > 0
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			122 = {
+				add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 7
+						province = 377
+						instant_build = yes
+					}
+					add_resource = {
+						type = oil
+						amount = 15
+					}
+					add_resource = {
+						type = aluminium
+						amount = 10
+					}
+					add_resource = {
+						type = steel
+						amount = 20
+					}
+				}
+			338 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 6378
+					instant_build = yes
+				}
+			}
+
+			if = {
+				limit = {
+					has_completed_focus = USA_limited_intervention
+				}
+				swap_ideas = {
+					remove_idea = USA_limited_intervention
+					add_idea = USA_lend_lease_act_li
+				}
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_neutrality_act }
+				swap_ideas = {
+					remove_idea = USA_neutrality_act
+					add_idea = USA_lend_lease_act_na
+				}
+			}
+			else = {
+				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
+			}
+			if = {
+				limit = {
+					has_war_support > 0.6
+					has_war = no
+				}
+				USA_congress_small_support = yes
+			}
+			else_if = {
+				limit = {
+					has_war_support > 0.4
+					has_war = no
+				}
+				USA_congress_small_opposition = yes
+			}
+			else_if = {
+				limit = {
+					has_war_support < 0.4
+					has_war = no
+				}
+				USA_congress_large_opposition = yes
+			}
+			else = {
+				USA_congress_medium_opposition = yes
+			}
+		}
+	}
+
+	focus = {
+		id = USA_lend_soviet
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = USA_lend_lease_act }
+		available = {
+			is_puppet = no
+			has_war_with = GER
+			SOV = { has_war_with = GER }
+		}
+		x = 0
+		y = 1
+		cost = 4.30
+		relative_position_id = USA_lend_lease_act
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = USA_lend_soviet_tt
+
+			hidden_effect = {
+				if = {
+					limit = { USA = { has_tech = improved_infantry_weapons } }
+					SOV = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 25000 producer = USA } }
+					else = { SOV = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 25000 producer = USA } } }
+				}
+				if = {
+					limit = { USA = { has_tech = artillery1 } }
+					SOV = { add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 2000 producer = USA } }
+					else = { SOV = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2000 producer = USA } } }
+				}
+				if = {
+					limit = { USA = { has_tech = fighter2 } }
+					SOV = { add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 500 producer = USA } }
+					else = {
+						if = {
+							limit = { USA = { has_tech = fighter1 } }
+							SOV = { add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 500 producer = USA } }
+							else = { SOV = { add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 500 producer = USA } } }
+						}
+					}
+				}
+				add_timed_idea = { idea = lend_lease_soviet days = 120 }
+				SOV = { country_event = { id = usa.1001 hours = 6 } }
+			}
+		}
+	}
+
+
 	focus = {
 		id = USA_destroyers_for_bases
 		icon = GFX_goal_generic_navy_cruiser
@@ -1531,7 +1603,7 @@ focus = {
 			ENG = { exists = no }
 		}
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = USA_war_plan_black
 		cost = 10
@@ -1539,10 +1611,6 @@ focus = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			ENG = {
-				custom_effect_tooltip = needs_approval
-				country_event = { id = usa.4 days = 1 }
-			}
 
 			effect_tooltip = {
 				custom_effect_tooltip = USA_destroyers_for_bases_tt
@@ -1552,7 +1620,96 @@ focus = {
 				transfer_state = 693
 				transfer_state = 689
 				transfer_state = 691
+			}
 
+			hidden_effect = {
+				ENG = {	load_oob = "ENG_destroyers_for_bases_mtg" }
+				CAN = { load_oob = "CAN_destroyers_for_bases_mtg" }
+
+				ENG = {
+					if = { limit = { 696 = { is_controlled_by = ENG } }
+						remove_state_core = 696
+					}
+					if = { limit = { 331 = { is_controlled_by = ENG } }
+						remove_state_core = 331
+					}
+					if = { limit = { 693 = { is_controlled_by = ENG } }
+						remove_state_core = 693
+					}
+					if = { limit = { 689 = { is_controlled_by = ENG } }
+						remove_state_core = 689
+					}
+
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = destroyers_for_bases_opinion
+					}
+				}
+				DEN = {
+					if = { limit = { 101 = { is_controlled_by = DEN } }
+						remove_state_core = 101
+					}
+					if = { limit = { 100 = { is_controlled_by = DEN } }
+						remove_state_core = 100
+					}
+					if = { limit = { 337 = { is_controlled_by = DEN } }
+						remove_state_core = 337
+					}
+				}
+				CAN = {
+					if = { limit = { 331 = { is_controlled_by = ENG } }
+						add_state_core = 331
+					}
+					if = { limit = { 332 = { is_controlled_by = ENG } }
+						add_state_core = 332
+					}
+				}
+			}
+
+			ENG = {
+				country_event = { id = usa.4 days = 1 }
+
+				if = { limit = { 337 = { is_controlled_by = DEN } }
+					transfer_state = 337
+				}
+			}
+
+			CAN = {
+				if = { limit = { 331 = { is_controlled_by = ENG } }
+					transfer_state = 331
+				}
+				if = { limit = { 332 = { is_controlled_by = ENG } }
+					transfer_state = 332
+				}
+			}
+
+			USA = {
+				if = { limit = { 696 = { is_controlled_by = ENG } }
+					transfer_state = 696
+				}
+				if = { limit = { 693 = { is_controlled_by = ENG } }
+					transfer_state = 693
+				}
+				if = { limit = { 689 = { is_controlled_by = ENG } }
+					transfer_state = 689
+				}
+				if = { limit = { 690 = { is_controlled_by = ENG } }
+					transfer_state = 690
+				}
+
+				if = { limit = { 101 = { is_controlled_by = ENG } }
+					transfer_state = 101
+				}
+				if = { limit = { 100 = { is_controlled_by = ENG } }
+					transfer_state = 100
+				}
+
+				if = { limit = { 101 = { is_controlled_by = DEN } }
+					transfer_state = 101
+				}
+				if = { limit = { 100 = { is_controlled_by = DEN } }
+					transfer_state = 100
+				}
 			}
 		}
 	}
