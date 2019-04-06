@@ -637,17 +637,7 @@ country_event = {
 	desc = political.18.d
 	picture = GFX_report_event_fascist_gathering
 
-	trigger = {
-		fascism > 0.5
-		NOT = { has_government = fascism }
-		NOT = { has_idea = fascist_revolutionaries }
-		NOT = { has_idea = reign_of_terror }
-		is_puppet = no
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = political.18.a
