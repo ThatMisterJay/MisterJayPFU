@@ -37,14 +37,14 @@ units = {
 	##### PFU Mechanized #####
 	division= {
 		name = "10. Panzergrenadier-Division"
-		location = 525
+		location = 11370
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.4
 	}
 
 	division= {
 		name = "15. Panzergrenadier-Division"
-		location = 525
+		location = 11370
 		division_template = "Panzergrenadier-Division"
 		start_experience_factor = 0.4
 	}
