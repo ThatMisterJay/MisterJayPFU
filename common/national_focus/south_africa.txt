@@ -526,43 +526,57 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { 544 = { is_owned_and_controlled_by = POR } }
+				limit = {
+					544 = {
+						OR = {
+							CONTROLLER = { is_in_faction_with = ROOT }
+							is_owned_and_controlled_by = POR
+						}
+					}
+				}
 				transfer_state = 544
 			}
 			if = {
-				limit = { 540 = { is_owned_and_controlled_by = POR } }
+				limit = {
+					540 = {
+						OR = {
+							CONTROLLER = { is_in_faction_with = ROOT }
+							is_owned_and_controlled_by = POR
+						}
+					}
+				}
 				transfer_state = 540
 			}
 			if = {
-				limit = { 542 = { is_owned_and_controlled_by = ENG } }
+				limit = { 542 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 542
 			}
 			if = {
-				limit = { 545 = { is_owned_and_controlled_by = ENG } }
+				limit = { 545 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 545
 			}
 			if = {
-				limit = { 546 = { is_owned_and_controlled_by = ENG } }
+				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 546
 			}
 			if = {
-				limit = { 547 = { is_owned_and_controlled_by = ENG } }
+				limit = { 547 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 547
 			}
 			if = {
-				limit = { 548 = { is_owned_and_controlled_by = ENG } }
+				limit = { 548 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 548
 			}
 			if = {
-				limit = { 295 = { is_owned_and_controlled_by = BEL } }
+				limit = { 295 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 295
 			}
 			if = {
-				limit = { 538 = { is_owned_and_controlled_by = BEL } }
+				limit = { 538 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 538
 			}
 			if = {
-				limit = { 718 = { is_owned_and_controlled_by = BEL } }
+				limit = { 718 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 718
 			}
 
