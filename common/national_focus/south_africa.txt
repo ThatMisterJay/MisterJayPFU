@@ -1971,7 +1971,7 @@ focus_tree = {
 				category = convoy_defense_tree
 			}
 			set_technology = {
-				early_destroyer = 1
+				early_ship_hull_light = 1
 			}
 		}
 	}
@@ -2007,7 +2007,8 @@ focus_tree = {
 				category = cat_trade_interdiction
 			}
 			set_technology = {
-				early_submarine = 1
+				basic_torpedo = 1
+				early_ship_hull_submarine = 1
 			}
 		}
 	}
