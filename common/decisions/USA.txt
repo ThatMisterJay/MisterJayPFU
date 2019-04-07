@@ -248,13 +248,13 @@ foreign_support = {
 
 		allowed = {
 			original_tag = USA
+		}
+
+		available = {
 			OR = {
 				has_completed_focus = USA_limited_intervention
 				has_completed_focus = USA_lend_lease_act
 			}
-		}
-
-		available = {
 			NOT = {
 				has_global_flag = USA_support_the_anti_fascist_war_flag
 			}
