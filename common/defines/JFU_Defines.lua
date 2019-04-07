@@ -168,3 +168,9 @@ NDefines.NAI.MAX_VOLUNTEER_ARMY_FRACTION = 0.0001
 NDefines.NGraphics.BORDER_WIDTH = 0.8
 
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
+
+
+
+NDefines.NCountry.MAX_CONVOYS_BEING_RAIDED_WEEKLY_WAR_SUPPORT_PENALTY = -0.020,	-- Max penalty that will gained per week from trade convoy raided
+NDefines.NCountry.CONVOYS_BEING_RAIDED_WEEKLY_WAR_SUPPORT_PENALTY_DECAY = 0.005,	-- Weekly decay of trade convoy raided war support penalty
+NDefines.NCountry.MAX_CONVOYS_BEING_RAIDED_WAR_SUPPORT_IMPACT = -0.3,				-- Max total penalty from trade convoy raided
