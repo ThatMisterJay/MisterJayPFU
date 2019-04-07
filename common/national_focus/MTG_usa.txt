@@ -2052,7 +2052,7 @@ focus = {
 		}
 
 		available = {
-
+			GER = { has_war_with = SOV }
 		}
 
 		bypass = {
@@ -2065,6 +2065,25 @@ focus = {
 
 		completion_reward = {
 			add_ideas = USA_airborne_divisions
+			if = {
+				limit = { NOT = { has_tech = paratroopers } }
+				set_technology = { paratroopers = 1 }
+			}
+			else_if = {
+				limit = { NOT = { has_tech = paratroopers2 } }
+				set_technology = { paratroopers2 = 1 }
+			}
+			else_if = {
+				limit = { NOT = { has_tech = paratroopers3 } }
+				set_technology = { paratroopers3 = 1 }
+			}
+
+			custom_effect_tooltip = USA_load_paratroopers_tt
+
+			hidden_effect = {
+				add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 25 producer = USA }
+				load_oob = "USA_paratroopers"
+			}
 		}
 	}
 	focus = {
