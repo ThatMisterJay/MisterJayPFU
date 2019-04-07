@@ -228,7 +228,7 @@ focus_tree = {
 	focus = {
 		id = CAN_war_bonds
 		icon = GFX_goal_generic_consumer_goods
-		x = 3
+		x = -2
 		y = 0
 		relative_position_id = CAN_defence_of_canada_regulations
 
