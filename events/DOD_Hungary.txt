@@ -1250,7 +1250,7 @@ country_event = {
 				transfer_state = 76
 			}
 		}
-		add_threat = -1
+		add_threat = 1
 		if = {
 			limit = {
 				has_idea = HUN_war_preparation
