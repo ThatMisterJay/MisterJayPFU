@@ -1225,9 +1225,9 @@ political_actions = {
 		}
 
 		available = {
-			SOV = {
-				surrender_progress > 0.70 #almost capitulate but not really
-			}
+			#SOV = {
+			#	surrender_progress > 0.70 #almost capitulate but not really
+			#}
 		}
 
 		cost = 15
@@ -1240,9 +1240,9 @@ political_actions = {
 		days_remove = 10
 
 		visible = {
-			SOV = {
-				surrender_progress > 0.40
-			}
+			#SOV = {
+			#	surrender_progress > 0.40
+			#}
 		}
 
 		complete_effect = {
