@@ -75,7 +75,7 @@ set_politics = {
 
 	parties = {
 		democratic = {
-			popularity = 10 #shared between all parties, should add to 100
+			popularity = 11 #shared between all parties, should add to 100
 		}
 
 		fascism = {
@@ -83,7 +83,7 @@ set_politics = {
 		}
 
 		communism = {
-			popularity = 88
+			popularity = 87
 		}
 	}
 
