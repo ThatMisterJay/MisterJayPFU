@@ -2,12 +2,11 @@
 state={
 	id=617
 	name="STATE_617"
-	
 	resources={
-		aluminium=2
-		chromium=3
+		aluminium=2.000
+		chromium=3.000
 	}
-	
+
 	history={
 		owner = SIK
 		add_core_of = SIK
@@ -20,13 +19,13 @@ state={
 
 		}
 		victory_points = {
-			4709 10
+			4709 10 
 		}
 
 	}
 
 	provinces={
-		1698 1703 1838 4682 4704 4709 4770 4843 4947 7702 7732 7792 7850 10545 10614 10839 12524 12526 12598 12601 12656 12671 
+		1703 1838 4682 4704 4709 4770 4843 7702 7732 7792 7850 10545 10614 10839 12524 12526 12598 12601 12656 12671 
 	}
 	manpower=2980500
 	buildings_max_level_factor=1.000
