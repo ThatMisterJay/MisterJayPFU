@@ -20,3 +20,5 @@
     endsieg:0 "Endsieg"
     GER_endsieg:0 "Endsieg"
     GER_endsieg_desc:0 "The final fight has arrived. We shall overcome this."
+
+    mechanized_equipment_research:2 "Mechanization Research Speed"

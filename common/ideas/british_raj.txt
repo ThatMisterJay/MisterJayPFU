@@ -1003,7 +1003,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				artillery = 0.15
 			}
 
 			traits = { artillery_manufacturer }
