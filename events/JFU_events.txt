@@ -104,6 +104,7 @@ country_event = {
 		SOV = { controls_state = 238 }
 		SOV = { controls_state = 234 }
 		date > 1942.10.10
+		date < 1943.1.1
 	}
 	hidden = yes
 
