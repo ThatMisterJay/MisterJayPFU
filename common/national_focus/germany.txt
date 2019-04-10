@@ -1072,7 +1072,7 @@ focus_tree = {
 			hidden_effect = {
 				SOV = {
 					remove_ideas = SOV_molotov_ribbentrop_pact
-					add_timed_idea = { idea = shattered_retreat days = 120 }
+					add_timed_idea = { idea = shattered_retreat days = 115 }
 				}
 
 				GER = {
