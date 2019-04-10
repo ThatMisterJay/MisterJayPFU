@@ -1060,7 +1060,6 @@ focus_tree = {
 		cost = 1.43
 
 		bypass = {
-			date > 1941.9.21
 		}
 
 		completion_reward = {
@@ -1099,7 +1098,6 @@ focus_tree = {
 		cost = 0.2
 
 		bypass = {
-			date > 1942.10.10
 		}
 
 		completion_reward = {
