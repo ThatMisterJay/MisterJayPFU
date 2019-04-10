@@ -568,15 +568,36 @@ focus_tree = {
 				transfer_state = 548
 			}
 			if = {
-				limit = { 295 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				limit = {
+					295 = {
+						OR = {
+							CONTROLLER = { is_in_faction_with = ROOT }
+							is_owned_and_controlled_by = BEL
+						}
+					}
+				}
 				transfer_state = 295
 			}
 			if = {
-				limit = { 538 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				limit = {
+					538 = {
+						OR = {
+							CONTROLLER = { is_in_faction_with = ROOT }
+							is_owned_and_controlled_by = BEL
+						}
+					}
+				}
 				transfer_state = 538
 			}
 			if = {
-				limit = { 718 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				limit = {
+					718 = {
+						OR = {
+							CONTROLLER = { is_in_faction_with = ROOT }
+							is_owned_and_controlled_by = BEL
+						}
+					}
+				}
 				transfer_state = 718
 			}
 
