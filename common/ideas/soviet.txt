@@ -1859,9 +1859,9 @@ ideas = {
 
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				motorized_equipment = 0.15
 				mot_rockets = 0.50
-				mechanized_equipment = 0.10
+				mechanized_equipment = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }

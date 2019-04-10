@@ -1205,7 +1205,8 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				motorized_equipment = 0.15
+				mechanized_equipment = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -1238,7 +1239,8 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				motorized_equipment = 0.15
+				mechanized_equipment = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -1268,7 +1270,8 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				motorized_equipment = 0.15
+				mechanized_equipment = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -1325,7 +1328,8 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				motorized_equipment = 0.15
+				mechanized_equipment = 0.15
 			}
 
 			equipment_bonus = {

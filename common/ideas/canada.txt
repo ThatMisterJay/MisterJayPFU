@@ -1058,7 +1058,7 @@ ideas = {
 
 
 			research_bonus = {
-				support_tech = 0.10
+				support_tech = 0.15
 			}
 
 			traits = { support_equipment_manufacturer }

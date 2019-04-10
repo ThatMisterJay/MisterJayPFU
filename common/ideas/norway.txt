@@ -709,10 +709,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				infantry_weapons = 0.15
-			}
-
-			equipment_bonus = {
+				motorized_equipment = 0.15
 			}
 
 			traits = { motorized_equipment_manufacturer }
