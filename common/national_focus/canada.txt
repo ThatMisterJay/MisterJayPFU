@@ -495,17 +495,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 2
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 471 472 683 }
-				limit = {
-					is_in_home_area = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 2
+					amount = 10
 				}
 			}
 			random_owned_controlled_state = {
@@ -515,7 +505,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = chromium
-					amount = 3
+					amount = 10
 				}
 			}
 		}
