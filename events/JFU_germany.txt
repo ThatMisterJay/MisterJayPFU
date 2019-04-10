@@ -740,8 +740,8 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		GER = { add_timed_idea = { idea = GER_blitzkrieg days = 120 } }
-		ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 120 } }
+		GER = { add_timed_idea = { idea = GER_blitzkrieg days = 100 } }
+		ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 100 } }
 	}
 
 	option = {
