@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_slot_general_rules"
+		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_template_rules"
+		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_diplomacy_rules"
+		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_combat_rules"
+		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_volunteer_rules"
+		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_country_rules"
+		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}
+}

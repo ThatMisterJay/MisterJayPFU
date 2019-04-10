@@ -1,0 +1,160 @@
+ideas = {
+	general_rules = {
+		general_rules_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.1 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	template_rules = {
+		template_rules_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.2 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	diplomacy_rules = {
+		diplomacy_rules_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.3 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	combat_rules = {
+		combat_rules_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.4 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	volunteer_rules = {
+		volunteer_rules_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.5 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	country_rules = {
+		country_rules_germany_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.6 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_italy_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.7 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_japan_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.8 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_spain_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.9 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_finland_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.10 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_siam_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.11 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_vichy_france_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.12 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+
+		country_rules_usa_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.13 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_france_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.14 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_china_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.15 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		country_rules_soviet_idea = {
+			picture = closed_economy
+			on_add = {
+				country_event = { id = JFU_rules.16 }
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
