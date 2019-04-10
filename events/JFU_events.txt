@@ -34,25 +34,6 @@ country_event = {
 	}
 }
 
-#Italy explanation
-country_event = {
-	id = JFU.2
-	title = JFU.2.t
-	desc = JFU.2.d
-	picture = GFX_report_event_german_troops
-
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
-
-	trigger = {
-		tag = ITA
-	}
-
-	option = {
-		name = JFU.2.a
-	}
-}
-
 #Japan gains resistance after china dies
 country_event = {
 	id = JFU.5

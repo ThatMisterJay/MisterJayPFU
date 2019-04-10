@@ -7,6 +7,7 @@ country_event = {
 	picture = GFX_report_event_generic_usa_treaty
 
 	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
 
 	trigger = {
 		tag = USA
@@ -29,7 +30,6 @@ country_event = {
 		}
 		news_event = { hours = 6 id = pfunews.1 }
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -49,6 +49,9 @@ country_event = {
 		}
 		NOT = { has_global_flag = sino_jap_peace }
 	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
 
 	immediate = {
 		set_global_flag = sino_jap_peace
@@ -71,7 +74,6 @@ country_event = {
 	    	diplomatic_relation = { country = JAP relation = non_aggression_pact }
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -88,6 +90,9 @@ country_event = {
 		YUG = { has_capitulated = yes}
 		NOT = { has_global_flag = yugo_historical_split }
 	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
 
 	immediate = { set_global_flag = yugo_historical_split }
 
@@ -130,7 +135,6 @@ country_event = {
 		}
 		GER = { puppet = CRO }
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -150,6 +154,9 @@ country_event = {
 	immediate = {
 		set_global_flag = yugo_historical_split
 	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
 
 	option = {
 		name = pfu.4.a
@@ -189,7 +196,6 @@ country_event = {
 		}
 		GER = { puppet = CRO }
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -205,6 +211,9 @@ country_event = {
 		NOT = { has_country_flag = elite_mech_div }
     }
 
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
     immediate = {
         set_country_flag = elite_mech_div
     }
@@ -217,7 +226,6 @@ country_event = {
             load_oob = GER_Grosdeutschland
         }
     }
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -232,6 +240,9 @@ country_event = {
 		NOT = { has_global_flag = ss_lssah }
 	}
 
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
 	immediate = {
 		set_global_flag = ss_lssah
 	}
@@ -244,7 +255,6 @@ country_event = {
 			load_oob = GER_LSSAH
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -259,6 +269,9 @@ country_event = {
 		NOT = { has_global_flag = ss_dasreich }
 	}
 
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
 	immediate = {
 		set_global_flag = ss_dasreich
 	}
@@ -271,7 +284,6 @@ country_event = {
 			load_oob = GER_dasreich
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -286,6 +298,9 @@ country_event = {
 		NOT = { has_global_flag = ss_totenkopf }
 	}
 
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
 	immediate = {
 		set_global_flag = ss_totenkopf
 	}
@@ -298,7 +313,6 @@ country_event = {
 			load_oob = GER_totenkopf
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -318,6 +332,9 @@ country_event = {
 		NOT = { has_global_flag = sov_tihkvin }
 	}
 
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
 	immediate = {
 		set_global_flag = sov_tihkvin
 	}
@@ -330,52 +347,6 @@ country_event = {
 			load_oob = SOV_tihkvin
 		}
 	}
-	mean_time_to_happen = { days = 1 }
-}
-
-news_event = {
-	id = pfu.10
-	title = pfu.10.t
-	desc = pfu.10.d
-	picture = GFX_report_event_warningger
-
-	trigger = {
-		tag = GER
-		date > 1936.1.1
-
-		NOT = { has_global_flag = ger_warning }
-	}
-
-	immediate = {
-		set_global_flag = ger_warning
-	}
-
-	option = {
-		name = pfu.10.a
-	}
-	mean_time_to_happen = { days = 30 }
-}
-
-news_event = {
-	id = pfu.11
-	title = pfu.11.t
-	desc = pfu.11.d
-	picture = GFX_report_event_warningsov
-
-	trigger = {
-		tag = SOV
-		date > 1936.1.1
-		NOT = { has_global_flag = sov_warning }
-	}
-
-	immediate = {
-		set_global_flag = sov_warning
-	}
-
-	option = {
-		name = pfu.11.a
-	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {

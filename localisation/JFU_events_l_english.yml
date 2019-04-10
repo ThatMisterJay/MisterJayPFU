@@ -57,10 +57,6 @@
     JFU.1.d:0 "It is time to join the war."
     JFU.1.a:0 "Here we go."
 
-    JFU.2.t:0 "Italy in JFU"
-    JFU.2.d:0 "As Italy, you will join the Axis and the war a month after Paris is taken. Make sure you are ready by then."
-    JFU.2.a:0 "Thank you for the heads up!"
-
     JFU.4.t:0 "CHEATER DETECTED"
     JFU.4.d:0 "It has been detected that [CHEATER.GetName] has probably been cheating! The person playing the country has possibly abused the decisions system! If the game has gone on for a long time, this might give false results and you can ignore this message. If the game hasn't been going on for a long time: shame on you. SHAME."
     JFU.4.a:0 "Horrible!"
