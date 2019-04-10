@@ -1074,6 +1074,10 @@ focus_tree = {
 					remove_ideas = SOV_molotov_ribbentrop_pact
 					add_timed_idea = { idea = shattered_retreat days = 120 }
 				}
+
+				GER = {
+					country_event = { id = JFU_germany.23 days = 15 }
+				}
 			}
 		}
 	}
