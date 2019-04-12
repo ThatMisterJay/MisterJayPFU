@@ -1185,7 +1185,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		x = 13
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1206,7 +1206,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		x = 15
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
