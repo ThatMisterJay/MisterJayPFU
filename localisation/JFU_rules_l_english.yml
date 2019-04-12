@@ -78,6 +78,7 @@
     country_rules_france_idea:0 "France"
     country_rules_china_idea:0 "China"
     country_rules_soviet_idea:0 "Soviet Union"
+    country_rules_afghanistan_idea:0 "Afghanistan"
 
     JFU_rules.1.t:0 "General Rules"
     JFU_rules.1.d:0 "1. Hour requirements do not mean a thing. If you play like a retard expect to be treated like one \n\n2. No autism, stupid behaviour or using of exploits, 1 time is forgivable if not aware of an exploit, 2nd time will result in a permanent ban \n\n3. Hosts discretion is final, do not argue with the host, if you do and it is seen as illegitimate whining, you will be banned, for how long depends on hosts discretion. \n\n4.No factory boosting/depressing. \n\n5.No deleting factories."
@@ -96,7 +97,7 @@
     JFU_rules.4.a:0 "I should follow these!"
 
     JFU_rules.5.t:0 "Volunteer Rules"
-    JFU_rules.5.d:0 "1. Only Spain may receive volunteers AND air volunteers, and they can only be infantry and aircraft. No one else can receive (air) volunteers. \n\n2. Spain can only receive volunteers from the Soviet Union, Germany, Italy and Japan."
+    JFU_rules.5.d:0 "1. The only country allowed to receive volunteers is Spain. \n\n2. Volunteers can only be sent once. \n\n3. Volunteers are only allowed to be Infantry and Air Volunteers. \n\n4. Only the Soviet Union, Germany, Italy and Japan can send volunteers."
     JFU_rules.5.a:0 "I should follow these!"
 
     JFU_rules.6.t:0 "Rules for Germany"
@@ -144,3 +145,7 @@
     JFU_rules.16.t:0 "Rules for the Soviet Union"
     JFU_rules.16.d:0 "1. Cannot expand beyond the Molotov-Ribbentrop pact sphere until 1940. \n\n2. Only firearms and 500 aircraft can be sent to Nationalist China."
     JFU_rules.16.a:0 "I should follow these!"
+
+    JFU_rules.17.t:0 "Rules for Afghanistan"
+    JFU_rules.17.d:0 "1. Can only join the Comintern. \n\n2. Can not attack any other nation. \n\n3. If AI, Soviet can annex Afghanistan after Molotov Ribbentrop pact (either through war or through decision)."
+    JFU_rules.17.a:0 "I should follow these!"
