@@ -528,6 +528,8 @@ ideas = {
 			}
 
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 	}
 

@@ -11,6 +11,8 @@ ideas = {
 				original_tag = AFG
 			}
 
+			cost = 200
+
 			traits = { ideological_crusader }
 		}
 

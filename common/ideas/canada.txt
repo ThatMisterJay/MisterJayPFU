@@ -619,6 +619,8 @@ ideas = {
 			}
 
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 
 		CAN_leo_richer_lafleche = {

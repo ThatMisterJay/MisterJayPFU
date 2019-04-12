@@ -222,6 +222,8 @@ ideas = {
 
 			}
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 		CRO_vjekoslav_vrancic = {
 

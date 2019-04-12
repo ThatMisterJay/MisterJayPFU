@@ -913,6 +913,8 @@ ideas = {
 			}
 
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 
 		SOV_vyacheslav_molotov = {

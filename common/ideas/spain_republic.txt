@@ -62,6 +62,8 @@ ideas = {
 			}
 
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 
 		SPR_francisco_largo_caballero = {

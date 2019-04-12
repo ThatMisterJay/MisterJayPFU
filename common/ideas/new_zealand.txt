@@ -223,6 +223,8 @@ ideas = {
 			}
 
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 
 		NZL_w_a_veitch_milne = {

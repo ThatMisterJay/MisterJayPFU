@@ -53,6 +53,8 @@ ideas = {
 			}
 
 			traits = { ideological_crusader }
+
+			cost = 200
 		}
 
 		FIN_ake_henrik_gartz = {
