@@ -982,9 +982,8 @@ leader_traits = {
 
 	prince_of_terror = {
 		sprite = 13
-		enemy_partisan_effect = -0.25
-		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.02
+		enemy_partisan_effect = -0.05
+		non_core_manpower = 0.10
 
 		ai_will_do = {
 			factor = 1
@@ -994,7 +993,8 @@ leader_traits = {
 	compassionate_gentleman = {
 		random = yes
 		sprite = 13
-		opinion_gain_monthly_factor = 0.15
+		stability_factor = 0.05
+		political_power_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -1003,8 +1003,8 @@ leader_traits = {
 
 	backroom_backstabber = {
 		sprite = 13
-		political_power_factor = 0.05
-		drift_defence_factor = 0.15
+		political_power_factor = 0.20
+		stability_factor = -0.05
 
 		ai_will_do = {
 			factor = 1
@@ -1014,7 +1014,7 @@ leader_traits = {
 	smooth_talking_charmer = {
 		random = yes
 		sprite = 13
-		trade_opinion_factor = 0.10
+		local_resources_factor = 0.10
 
 		ai_will_do = {
 			factor = 1
@@ -1024,7 +1024,8 @@ leader_traits = {
 	ideological_crusader = {
 		random = yes
 		sprite = 13
-		opinion_gain_monthly_same_ideology_factor = 1.0
+		stability_weekly = 0.001
+
 
 		ai_will_do = {
 			factor = 0.2
