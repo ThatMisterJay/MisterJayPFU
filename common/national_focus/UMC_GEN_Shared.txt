@@ -286,55 +286,26 @@
 			num_of_controlled_states > 1
 		}
 
-		complete_tooltip = {
-			random_owned_controlled_state = {
-				limit = {
-					has_state_flag = GEN_Excavation_1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-				}
-				set_state_flag = GEN_Excavation_1
-			}
-			random_owned_controlled_state = {
-				limit = {
-					has_state_flag = GEN_Excavation_2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-				}
-				set_state_flag = GEN_Excavation_2
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-				}
+			add_resource = {
+				type = tungsten
+				amount = 40
+				state = 267
 			}
-
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-				}
+			add_resource = {
+				type = oil
+				amount = 20
+				state = 267
+			}
+			add_resource = {
+				type = chromium
+				amount = 15
+				state = 267
 			}
 			add_tech_bonus = {
 				name = excavation_tech_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = excavation_tech
 			}
 		}
@@ -359,31 +330,53 @@
 			factor = 10
 		}
 
-		bypass = {
+		complete_tooltip = {
+
+			add_tech_bonus = {
+				name = JAP_coal_liquification
+				bonus = 1.5
+				uses = 1
+				category = synth_resources
+			}
 		}
 
-		available = {
-			ROOT = { has_tech = synth_oil_experiments }
+		completion_reward = {
+
+			add_tech_bonus = {
+				name = JAP_coal_liquification
+				bonus = 1.5
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
+
+
+	shared_focus = {
+		id = GEN_Refinery_2
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GEN_Refinery }
+
+		x = 0
+		y = 1
+		relative_position_id = GEN_Refinery
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
 		}
 
 		complete_tooltip = {
-			random_owned_controlled_state = {
-				limit = {
-					has_state_flag = GEN_Refinery_1
-				}
+			267 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
 					level = 1
 					instant_build = yes
 				}
-			}
-
-			add_tech_bonus = {
-				name = JAP_coal_liquification
-				bonus = 1
-				uses = 1
-				category = synth_resources
 			}
 		}
 
@@ -395,13 +388,6 @@
 					level = 1
 					instant_build = yes
 				}
-			}
-
-			add_tech_bonus = {
-				name = JAP_coal_liquification
-				bonus = 1
-				uses = 1
-				category = synth_resources
 			}
 		}
 	}

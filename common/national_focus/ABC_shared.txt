@@ -208,7 +208,8 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
-				bonus = 1
+				ahead_reduction = 2
+				bonus = 2
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -398,7 +399,7 @@
 			}
 		}
 	}
-	
+
 	shared_focus = {
 		id = ABC_modern_logistics
 		icon = GFX_goal_ammunitions
