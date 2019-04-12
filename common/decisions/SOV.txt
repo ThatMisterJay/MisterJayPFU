@@ -1203,6 +1203,48 @@ operations = {
 		}
 	}
 
+	SOV_annex_afghanistan = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			has_completed_focus = SOV_diplomatic_effort
+            AFG = {
+                OR = {
+                    is_subject_of = SOV
+                    is_in_faction_with = SOV
+                }
+                is_ai = yes
+            }
+		}
+
+		cost = 25
+		fire_only_once = yes
+		visible = {
+            country_exists = AFG
+			has_completed_focus = SOV_diplomatic_effort
+            AFG = {
+                OR = {
+                    is_subject_of = SOV
+                    is_in_faction_with = SOV
+                }
+                is_ai = yes
+            }
+		}
+
+		complete_effect = {
+            annex_country = { target = AFG transfer_troops = yes }
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
 	SOV_seize_manchuria = {
 
 		icon = generic_operation

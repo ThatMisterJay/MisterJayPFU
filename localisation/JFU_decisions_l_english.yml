@@ -34,3 +34,7 @@
     fascist_raids_flag:0 "Already running a Fascist Raids campaign"
     democratic_raids_flag:0 "Already running a Democratic Raids campaign"
     communist_raids_flag:0 "Already running a Communist Raids campaign"
+
+
+    SOV_puppet_afghanistan:0 "Puppet Afghanistan"
+    SOV_annex_afghanistan:0 "Annex Afghanistan"
