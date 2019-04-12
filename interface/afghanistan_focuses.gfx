@@ -1,0 +1,80 @@
+spriteTypes = {
+	SpriteType = {
+	    name = "GFX_goal_manpower"
+	    texturefile = "gfx/interface/goals/r56_goal_generic_manpower.dds"
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_wargaming"
+	    texturefile = "gfx/interface/goals/r56_goal_generic_wargaming.dds"
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_generic_modernizing_the_cavalry"
+	    texturefile = "gfx/interface/goals/r56_goal_generic_modernizing_the_cavalry.dds"
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_mechanized_offensive"
+	    texturefile = "gfx/interface/goals/r56_goal_generic_mechanized_offensive.dds"
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_medicine"
+	    texturefile = "gfx/interface/goals/r56_goal_generic_medicine.dds"
+	}
+
+	SpriteType = {
+	    name = "GFX_goal_ammunitions"
+	    texturefile = "gfx/interface/goals/r56_goal_generic_ammunitions.dds"
+	}
+
+	#
+
+	SpriteType = {
+		name = "GFX_goal_fighters_uk"
+		texturefile = "gfx/interface/goals/r56_goal_generic_uk_plane.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_fighters_usa"
+		texturefile = "gfx/interface/goals/r56_goal_generic_us_plane.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_fighters_soviet"
+		texturefile = "gfx/interface/goals/r56_goal_generic_ussr_plane.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_zero_blue"
+		texturefile = "gfx/interface/goals/r56_goal_generic_zero_blue.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_manufacturers_cooperation"
+		texturefile = "gfx/interface/goals/r56_goal_generic_manufacturers_cooperation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_pp"
+		texturefile = "gfx/interface/goals/r56_goal_generic_pp.dds"
+	}
+
+	#
+
+	SpriteType = {
+		name = "GFX_goal_communist_factories"
+		texturefile = "gfx/interface/goals/r56_goal_generic_communist_factories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_eye_focus_army"
+		texturefile = "gfx/interface/goals/r56_goal_generic_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_r56_focus_army_elite"
+		texturefile = "gfx/interface/goals/r56_goal_generic_army_elite.dds"
+	}
+}

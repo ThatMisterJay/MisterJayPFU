@@ -1,6 +1,7 @@
 ﻿l_english:
 
     #####Custom
+    signal_company_tech:0 "Signal Companies"
 
     SWE_gw_tank_equipment:0 "Stridsvagn m/21"
     SWE_gw_tank_equipment_short:0 "Strv. m/21"
