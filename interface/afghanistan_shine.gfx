@@ -185,7 +185,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_fighters_usa_shine"
-		texturefile = "gfx/interface/goals/chi/r56_goal_CHI_fighters_usa.dds"
+		texturefile = "gfx/interface/goals/r56_goal_generic_us_plane.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/chi/r56_goal_CHI_fighters_usa.dds"
@@ -215,7 +215,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_fighters_soviet_shine"
-		texturefile = "gfx/interface/goals/prc/r56_goal_PRC_fighters_soviet.dds"
+		texturefile = "gfx/interface/goals/r56_goal_generic_ussr_plane.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/prc/r56_goal_PRC_fighters_soviet.dds"

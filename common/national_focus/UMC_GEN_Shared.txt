@@ -40,16 +40,9 @@
 	shared_focus = {
 		id = GEN_Industrial_Start
 		icon = GFX_goal_generic_production
-		x = 22
+		x = 21
 		y = 0
 		cost = 10
-		offset = {
-		x = -18
-		y = 0
-		trigger = {
-			tag = SOV
-			}
-		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -262,12 +255,6 @@
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SOV_poorly_educated_population
-					}
-					remove_ideas = SOV_poorly_educated_population
-			}
 			add_research_slot = 1
 		}
 	}
@@ -446,28 +433,6 @@
 
 		completion_reward = {
 			add_ideas = GEN_Autarky_I
-			#Banana Republic removal
-			if = {
-				limit = {
-					original_tag = GUA
-					has_idea =	GUA_banana_republic
-				}
-			remove_ideas = GUA_banana_republic
-			}
-			if = {
-				limit = {
-					has_idea =	ELS_banana_republic
-					original_tag = ELS
-				}
-			remove_ideas = ELS_banana_republic
-			}
-			if = {
-				limit = {
-					original_tag = NIC
-					has_idea =	NIC_banana_republic
-				}
-			remove_ideas = NIC_banana_republic
-			}
 		}
 	}
 
@@ -721,52 +686,60 @@
 
 		complete_tooltip = {
 			267 = {
-				limit = {
-					is_owned_and_controlled_by = AFG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = AFG
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 
 			415 = {
-				limit = {
-					is_owned_and_controlled_by = AFG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = AFG
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
 
 		completion_reward = {
 			267 = {
-				limit = {
-					is_owned_and_controlled_by = AFG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = AFG
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 
 			415 = {
-				limit = {
-					is_owned_and_controlled_by = AFG
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				if = {
+					limit = {
+						is_owned_and_controlled_by = AFG
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -854,7 +827,7 @@
 	shared_focus = {
 		id = GEN_Aviation_Effort
 		icon = GFX_goal_generic_build_airforce
-		x = 13
+		x = 12
 		y = 0
 		cost = 10
 
@@ -1341,7 +1314,7 @@
 	shared_focus = {
 		id = GEN_State_Matter
 		icon = GFX_focus_generic_self_management
-		x = 30
+		x = 29
 		y = 0
 		cost = 10
 
@@ -1403,33 +1376,9 @@
 
 
 	shared_focus = {
-		id = GEN_Organise_Youth
-		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = internationalism_focus }
-
-		x = -1
-		y = 1
-		relative_position_id = internationalism_focus
-
-		cost = 10
-
-		available_if_capitulated = yes
-
-		available = {
-			has_government = communism
-		}
-
-		completion_reward = {
-			add_ideas = GEN_Organise_Youth_Com_I
-		}
-	}
-
-
-	shared_focus = {
 		id = internationalism_focus
 		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = GEN_Collectivist_Ethos }
-		mutually_exclusive = { focus = nationalism_focus }
 
 		allow_branch = {
 			NOT = {
@@ -1480,6 +1429,29 @@
 
 		completion_reward = {
 			add_timed_idea = { idea = internationalism days = 365 }
+		}
+	}
+
+
+	shared_focus = {
+		id = GEN_Organise_Youth
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = internationalism_focus }
+
+		x = -1
+		y = 1
+		relative_position_id = internationalism_focus
+
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism
+		}
+
+		completion_reward = {
+			add_ideas = GEN_Organise_Youth_Com_I
 		}
 	}
 
@@ -1562,7 +1534,7 @@
 	shared_focus = {
 		id = GEN_Conquer
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = militarism focus = GEN_Collectivist_Propaganda }
+		prerequisite = { focus = GEN_Collectivist_Propaganda }
 		mutually_exclusive = { focus = GEN_Isolated }
 
 		x = -1
@@ -1587,7 +1559,7 @@
 	shared_focus = {
 		id = GEN_Isolated
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = militarism focus = GEN_Collectivist_Propaganda }
+		prerequisite = { focus = GEN_Collectivist_Propaganda }
 		mutually_exclusive = { focus = GEN_Conquer }
 
 		x = 1
@@ -1676,13 +1648,46 @@
 		available_if_capitulated = yes
 
 		available = {
-			OR = {
-				has_government = fascism
-				has_government = communism
-			}
+			has_government = communism
 		}
 
 		completion_reward = {
 			add_ideas = ideological_fanaticism_focus
 		}
 	}
+
+
+	shared_focus = {
+		id = GEN_University
+		icon = GFX_focus_research
+		prerequisite = { focus = GEN_Fanaticism }
+
+		x = 0
+		y = 1
+		relative_position_id = GEN_Fanaticism
+
+		cost = 10
+
+		available_if_capitulated = yes
+		continue_if_invalid = yes
+		cancel_if_invalid = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+		}
+
+		available = {
+			num_of_factories > 15
+		}
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+}

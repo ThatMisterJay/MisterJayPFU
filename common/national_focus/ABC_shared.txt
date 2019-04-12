@@ -38,7 +38,7 @@
 	shared_focus = {
 		id = ABC_establish_a_general_staff
 		icon = GFX_focus_generic_military_mission
-		x = 3
+		x = 2
 		y = 0
 
 		cost = 5
@@ -215,61 +215,15 @@
 			}
 		}
 	}
-	shared_focus = {
-		id = ABC_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = ABC_equipment_effort }
-		x = -1
-		y = 1
-		relative_position_id = ABC_equipment_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	shared_focus = {
-		id = ABC_equipment_effort_3
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = ABC_equipment_effort }
-		x = 1
-		y = 1
-		relative_position_id = ABC_equipment_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
 
 	shared_focus = {
 		id = ABC_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = ABC_equipment_effort_3 }
-		prerequisite = { focus = ABC_doctrine_effort_2 }
-		prerequisite = { focus = ABC_equipment_effort_2 }
-		x = -1
+		prerequisite = { focus = ABC_equipment_effort }
+		prerequisite = { focus = ABC_doctrine_effort }
+		x = 1
 		y = 1
-		relative_position_id = ABC_equipment_effort_3
+		relative_position_id = ABC_equipment_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -283,47 +237,6 @@
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 				technology = tech_mountaineers3
-			}
-		}
-	}
-	shared_focus = {
-		id = ABC_signal_companies
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = ABC_motorization_effort }
-		x = -2
-		y = 1
-		relative_position_id = ABC_motorization_effort
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = radio
-			has_tech = motorised_infantry
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1
-				uses = 1
-				category = signal_company_tech
-			}
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1
-				uses = 1
-				category = signal_company_tech
 			}
 		}
 	}
@@ -370,7 +283,6 @@
 	shared_focus = {
 		id = ABC_mechanization_effort
 		icon = GFX_goal_mechanized_offensive
-		prerequisite = { focus = ABC_establish_a_armor_corp }
 		prerequisite = { focus = ABC_motorization_effort }
 		x = 3
 		y = 3
@@ -445,6 +357,48 @@
 			}
 		}
 	}
+	shared_focus = {
+		id = ABC_signal_companies
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = ABC_motorization_effort }
+		x = -2
+		y = 1
+		relative_position_id = ABC_motorization_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_tech = radio
+			has_tech = motorised_infantry
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+	}
+	
 	shared_focus = {
 		id = ABC_modern_logistics
 		icon = GFX_goal_ammunitions
