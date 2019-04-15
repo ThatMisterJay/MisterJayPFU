@@ -4,7 +4,7 @@ oob = "BUL_1936"
 
 set_research_slots = 3
 set_stability = 0.4
-set_war_support = 0.6
+set_war_support = 0.62
 
 add_ideas = {
 	limited_conscription
