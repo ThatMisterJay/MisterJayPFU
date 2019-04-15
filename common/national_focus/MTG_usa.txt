@@ -2306,7 +2306,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2335,7 +2335,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2444,7 +2444,7 @@ focus = {
 		text = CAS_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = USA_air_support }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = USA_air_support
 		cost = 10
@@ -2466,7 +2466,7 @@ focus = {
 	focus = {
 		id = USA_escort_fighters
 		icon = GFX_focus_usa_escort_fighters
-		x = 0
+		x = 1
 		y = 2
 		prerequisite = { focus = USA_air_support }
 		relative_position_id = USA_air_war_plans_division
@@ -2535,7 +2535,7 @@ focus = {
 	focus = {
 		id = USA_us_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 2
+		x = 1
 		y = 1
 		prerequisite = { focus = USA_escort_fighters }
 		relative_position_id = USA_escort_fighters

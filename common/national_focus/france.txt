@@ -1481,10 +1481,11 @@ focus_tree = {
 
 	focus = {
 		id = FRA_france_libre
-		icon = GFX_focus_france_libre
-		x = 30
+		icon = GFX_goal_france_libre
+		x = 9
 		y = 0
 		cost = 5
+		relative_position_id = FRA_air_focus
 
 		available_if_capitulated = yes
 
@@ -1511,7 +1512,7 @@ focus_tree = {
 		relative_position_id = FRA_france_libre
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1524,7 +1525,7 @@ focus_tree = {
 		id = FRA_gold_reserve
 		icon = GFX_focus_usa_reestablish_the_gold_standard
         prerequisite = { focus = FRA_sway_west_africa }
-		x = -6
+		x = -5
 		y = 2
 		cost = 5
 		relative_position_id = FRA_sway_west_africa
@@ -1566,7 +1567,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_gold_reserve }
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_gold_reserve
 
 		available_if_capitulated = yes
@@ -1574,14 +1575,14 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy_1
-				amount = 60
+				amount = 100
 				producer = FRA
 			}
 			539 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -1595,16 +1596,16 @@ focus_tree = {
 		relative_position_id = FRA_gold_reserve
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			539 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 			}
@@ -1615,9 +1616,9 @@ focus_tree = {
 		id = FRA_sway_syria
 		icon = GFX_france_nine
 		prerequisite = { focus = FRA_sway_west_africa }
-		x = -2
+		x = -1
 		y = 3
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_france_libre
 
 		available_if_capitulated = yes
@@ -1634,7 +1635,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_sway_west_africa }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_sway_west_africa
 
 		available_if_capitulated = yes
@@ -1648,9 +1649,9 @@ focus_tree = {
 		id = FRA_decision_unlock_indian_ocean
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FRA_sway_west_africa }
-		x = 2
+		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_sway_west_africa
 
 		available_if_capitulated = yes
@@ -1769,7 +1770,7 @@ focus_tree = {
 		id = FRA_request_uk_territory
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
 		prerequisite = { focus = FRA_sway_west_africa }
-		x = -4
+		x = -3
 		y = 2
 		cost = 10
 		relative_position_id = FRA_france_libre
@@ -1815,7 +1816,7 @@ focus_tree = {
         id = FRA_reform_our_doctrine
         icon = GFX_france_six
         prerequisite = { focus = FRA_france_libre }
-        x = 4
+        x = 3
         y = 1
         cost = 10
 
