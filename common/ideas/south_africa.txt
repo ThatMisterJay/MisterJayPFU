@@ -3,7 +3,7 @@ ideas = {
 
 	country = {
 
-		SAF_ossewabrandwag = { 
+		SAF_ossewabrandwag = {
 			allowed = {
 				always = no
 			}
@@ -21,7 +21,7 @@ ideas = {
 				industrial_capacity_factory = -0.10
 				industrial_capacity_dockyard = -0.10
 			}
-		}		
+		}
 
 		SAF_ossewabrandwag_2 = {
 			allowed = {
@@ -62,7 +62,7 @@ ideas = {
 			}
 		}
 
-		SAF_history_of_segregation = { 
+		SAF_history_of_segregation = {
 			allowed = {
 				always = no
 			}
@@ -462,7 +462,7 @@ ideas = {
 		}
 
 		SAF_joint_air_training_scheme = {
-			
+
 			allowed = {
 				always = no
 			}
@@ -474,7 +474,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_air_bonus
-			
+
 			equipment_bonus = {
 				fighter_equipment = {
 					air_range = 0.1
@@ -536,26 +536,26 @@ ideas = {
 	political_advisor = {
 
 		SAF_sir_patrick_duncan = {
-			
+
 			allowed = {
 				original_tag = SAF
-				
+
 			}
 
 			picture = generic_democratic_reformer_western_european_2d
-			
+
 			traits = { democratic_reformer }
-		
+
 			on_add = {
 				country_event = political.13
 			}
-		
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -570,19 +570,21 @@ ideas = {
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { captain_of_industry }
 		}
 
 		SAF_d_f_malan = {
 
 			picture = generic_political_advisor_europe_1
-				
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { backroom_backstabber }
+
+			cost = 200
 			ai_will_do = {
 				factor = 0
 			}
@@ -591,11 +593,11 @@ ideas = {
 		SAF_e_g_jansen = {
 
 			picture = generic_political_advisor_europe_3
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { silent_workhorse }
 		}
 	}
@@ -604,13 +606,13 @@ ideas = {
 
 		SAF_james_mitchell_baker = {
 			picture = generic_army_europe_3
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-						
+
 			traits = { army_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -618,13 +620,13 @@ ideas = {
 
 		SAF_leonard_beyers = {
 			picture = generic_army_europe_4
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { army_chief_defensive_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -636,13 +638,13 @@ ideas = {
 
 		SAF_adolf_malan = {
 			picture = generic_air_europe_3
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { air_chief_all_weather_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -650,13 +652,13 @@ ideas = {
 
 		SAF_pierre_van_ryneveld = {
 			picture = generic_air_europe_2
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { air_chief_ground_support_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -668,13 +670,13 @@ ideas = {
 
 		SAF_pierre_oliver_knoll = {
 			picture = generic_navy_europe_2
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { navy_chief_maneuver_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -682,13 +684,13 @@ ideas = {
 
 		SAF_cornelis_van_zuigenbrogge = {
 			picture = generic_navy_europe_1
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { navy_chief_commerce_raiding_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -698,30 +700,30 @@ ideas = {
 	high_command = {
 
 		SAF_robert_palmer = {
-			
+
 			picture = generic_army_europe_1
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { army_regrouping_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-		
+
 		SAF_c_de_weenburg_du_toit = {
 
 			picture = generic_army_europe_5
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { army_armored_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -730,13 +732,13 @@ ideas = {
 		SAF_marinus_van_osterkamp = {
 
 			picture = generic_air_europe_3
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { air_naval_strike_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -745,47 +747,47 @@ ideas = {
 		SAF_jeannot_de_la_tourier = {
 
 			picture = generic_navy_europe_2
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			traits = { navy_screen_2 }
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
-	}	
+	}
 
 	theorist = {
 		SAF_j_f_van_rensburg = {
-			
+
 			picture = generic_army_europe_2
 
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			research_bonus = {
 				land_doctrine = 0.15
 			}
-			
+
 			traits = { military_theorist }
 		}
-		
+
 		SAF_s_p_le_roux = {
-			
+
 			picture = generic_air_europe_1
-			
+
 			allowed = {
 				original_tag = SAF
 			}
-			
+
 			research_bonus = {
 				air_doctrine = 0.15
 			}
-			
+
 			traits = { air_warfare_theorist }
 		}
 
@@ -793,22 +795,22 @@ ideas = {
 
 	tank_manufacturer = {
 		iscor = {
-			
+
 			picture = generic_tank_manufacturer_3
 
 			allowed = {
 				original_TAG = SAF
 				has_dlc = "Together for Victory"
 			}
-			
 
-			
+
+
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			traits = { medium_tank_manufacturer }
-			
+
 			modifier = {
 			}
 		}

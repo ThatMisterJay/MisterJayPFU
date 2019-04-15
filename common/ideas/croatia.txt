@@ -181,6 +181,8 @@ ideas = {
 				}
 			}
 			traits = { backroom_backstabber }
+
+			cost = 200
 		}
 		CRO_ante_vokic = {
 
@@ -211,6 +213,8 @@ ideas = {
 				}
 			}
 			traits = { backroom_backstabber }
+
+			cost = 200
 		}
 		CRO_milan_budak = {
 

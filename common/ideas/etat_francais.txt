@@ -284,6 +284,8 @@ ideas = {
 				}
 			}
 			traits = { backroom_backstabber }
+
+			cost = 200
 		}
 		EFR_rene_belin = {
 

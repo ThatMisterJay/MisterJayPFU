@@ -900,6 +900,8 @@ ideas = {
 			}
 
 			traits = { backroom_backstabber }
+
+			cost = 200
 		}
 
 		SWE_thorwald_bergquist = {

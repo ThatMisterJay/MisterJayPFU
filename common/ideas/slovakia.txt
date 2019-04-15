@@ -324,6 +324,8 @@ ideas = {
 #				has_government = fascism
 #			}
 #			traits = { backroom_backstabber }
+#
+#			cost = 200
 #		}
 		SLO_fritz_gejza = { # Minister of justice of slovakia..move above?
 
@@ -336,6 +338,8 @@ ideas = {
 				has_government = fascism
 			}
 			traits = { backroom_backstabber }
+
+			cost = 200
 		}
 		SLO_ferdinand_durcansky = { #foreign affairs, nazi lover
 

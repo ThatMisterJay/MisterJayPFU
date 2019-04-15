@@ -89,6 +89,8 @@ ideas = {
 			}
 
 			traits = { backroom_backstabber }
+
+			cost = 200
 			ai_will_do = {
 				factor = 0
 			}

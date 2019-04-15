@@ -500,6 +500,8 @@ ideas = {
 			}
 
 			traits = { backroom_backstabber }
+
+			cost = 200
 		}
 
 		AST_ben_chifley = {
