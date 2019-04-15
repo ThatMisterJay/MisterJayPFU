@@ -874,7 +874,14 @@ ideas = {
 			}
 
 			research_bonus = {
-				electronics = 0.125
+				electronics = 0.10
+			}
+
+			research_bonus = {
+				industry = 0.05
+			}
+			modifier = {
+				fuel_gain_from_states = 0.2
 			}
 
 			cost = 75
