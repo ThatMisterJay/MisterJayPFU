@@ -3,7 +3,35 @@
 ################
 
 FRA_vichy_france = {
-	
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_west_africa = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_syria = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_america = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_indian_ocean = {
+
 	allowed = {
 		original_tag = FRA
 	}

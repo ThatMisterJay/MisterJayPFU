@@ -95,3 +95,610 @@ FRA_vichy_france = {
 		}
 	}
 }
+
+FRA_free_france_west_africa = {
+
+	FRA_french_west_africa_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 556 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_west_africa
+			NOT = { 556 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			556 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				35 = { country_event = { id = free_france.13 days = 1 } }
+				65 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_liberia_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 298 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_west_africa
+			NOT = { 298 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			298 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				60 = { country_event = { id = free_france.13 days = 1 } }
+				40 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_senegal_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 272 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_west_africa
+			NOT = { 272 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			272 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				75 = { country_event = { id = free_france.13 days = 1 } }
+				25 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_southern_sahara_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 515 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_west_africa
+			NOT = { 515 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			515 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				90 = { country_event = { id = free_france.13 days = 1 } }
+				10 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+			add_manpower = -1000
+		}
+	}
+
+	FRA_mauritania_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 557 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_west_africa
+			NOT = { 557 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			557 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				90 = { country_event = { id = free_france.13 days = 1 } }
+				10 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+			add_manpower = -1000
+		}
+	}
+}
+
+FRA_free_france_syria = {
+
+	FRA_lebanon_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 553 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 553 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 30
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			553 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				60 = {
+					country_event = { id = free_france.13 days = 1 }
+					hidden_effect = { load_oob = FRA_free_france_operation_exporter }
+				}
+				40 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -750 }
+			add_manpower = -5000
+		}
+	}
+
+	FRA_aleppo_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 677 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 677 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			677 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				75 = { country_event = { id = free_france.13 days = 1 } }
+				25 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_damascus_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 554 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 554 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			554 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				75 = { country_event = { id = free_france.13 days = 1 } }
+				25 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_deir_az_zur_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 680 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 680 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			680 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				90 = { country_event = { id = free_france.13 days = 1 } }
+				10 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+			add_manpower = -1000
+		}
+	}
+}
+
+FRA_free_france_america = {
+
+	FRA_suriname_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 310 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 310 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 30
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			310 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				60 = { country_event = { id = free_france.13 days = 1 } }
+				40 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_french_caribbean_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 694 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 694 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 10
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			694 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				75 = { country_event = { id = free_france.13 days = 1 } }
+				25 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+			add_manpower = -500
+		}
+	}
+
+	FRA_st_pierre_miquelon_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 730 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 730 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			730 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				90 = { country_event = { id = free_france.13 days = 1 } }
+				10 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+			add_manpower = -500
+		}
+	}
+}
+
+FRA_free_france_indian_ocean = {
+
+	FRA_madagascar_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 543 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 543 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 30
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			543 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				35 = { country_event = { id = free_france.13 days = 1 } }
+				65 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 }
+			add_manpower = -7500
+		}
+	}
+
+	FRA_comoro_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 708 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 708 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			708 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				90 = { country_event = { id = free_france.13 days = 1 } }
+				10 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_reunion_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 706 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 706 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			706 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				90 = { country_event = { id = free_france.13 days = 1 } }
+				10 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
+			add_manpower = -2500
+		}
+	}
+
+	FRA_french_somaliland_mission = {
+
+		available = {
+			TAG = FRA
+			NOT = { 268 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_country_flag = attacking_state }
+			NOT = { has_war_with = EFR }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			NOT = { 268 = { is_owned_and_controlled_by = FRA } }
+			NOT = { has_war_with = EFR }
+		}
+
+		cost = 15
+
+		complete_effect = {
+			hidden_effect = { set_country_flag = attacking_state }
+		}
+
+		fire_only_once = no
+		days_remove = 3
+		fixed_random_seed = no
+
+		remove_effect = {
+			268 = {
+				save_event_target_as = FRA_attacked_state
+			}
+			random_list = {
+				50 = { country_event = { id = free_france.13 days = 1 } }
+				50 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -250 }
+			add_manpower = -2500
+		}
+	}
+}

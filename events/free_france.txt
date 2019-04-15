@@ -293,18 +293,59 @@ country_event = {
 	desc = free_france.11.desc
 	picture = GFX_report_event_french_resistance
 
-
 	trigger = {
 		tag = FRA
-		NOT = { has_global_flag = FRA_dontleave }
 	}
+	mean_time_to_happen = { days = 5 }
 
-	immediate = {
-		set_global_flag = FRA_dontleave
-	}
+	fire_only_once = yes
 
 	option = {
-		name = pfu.10.a
+		name = free_france.11.a
 	}
-	mean_time_to_happen = { days = 30 }
+}
+
+
+
+country_event = {
+	id = free_france.12
+	title = free_france.12.t
+	desc = free_france.12.desc
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.12.a
+		
+	}
+}
+
+country_event = {
+	id = free_france.13
+	title = free_france.13.t
+	desc = free_france.13.desc
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.13.a
+		hidden_effect = { FRA = { transfer_state = event_target:FRA_attacked_state } }
+		clr_country_flag = attacking_state
+	}
+}
+
+country_event = {
+	id = free_france.14
+	title = free_france.14.t
+	desc = free_france.14.desc
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.14.a
+		clr_country_flag = attacking_state
+	}
 }

@@ -33,7 +33,7 @@ division_template = {
 units = {
 	division= {
 		name = "Division de Tirailleurs Sénégalais"
-		location = 4111  # Damas
+		location = 792 #Beirut
 		division_template = "Division Française Libre"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -41,7 +41,7 @@ units = {
 	}
 	division= {
 		name = "Division de Tirailleurs Sénégalais 2"
-		location = 4111  # Damas
+		location = 792 #Beirut
 		division_template = "Division Française Libre"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -49,7 +49,7 @@ units = {
 	}
 	division= {
 		name = "Division de Tirailleurs Sénégalais 3"
-		location = 4111  # Damas
+		location = 792 #Beirut
 		division_template = "Division Française Libre"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
@@ -57,7 +57,7 @@ units = {
 	}
 	division= {
 		name = "Division de Tirailleurs Sénégalais 4"
-		location = 4111  # Damas
+		location = 792 #Beirut
 		division_template = "Division Française Libre"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3

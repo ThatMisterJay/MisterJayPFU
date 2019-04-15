@@ -1482,9 +1482,9 @@ focus_tree = {
 	focus = {
 		id = FRA_france_libre
 		icon = GFX_focus_france_libre
-		x = 24
+		x = 30
 		y = 0
-		cost = 3.5
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1508,25 +1508,66 @@ focus_tree = {
 		id = FRA_sway_west_africa
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = FRA_france_libre }
-		x = 24
+		relative_position_id = FRA_france_libre
+		x = 0
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { days = 1 id = free_france.2 }
-			custom_effect_tooltip = west_africa_sway_tt
+			unlock_decision_category_tooltip = FRA_free_france_west_africa
+		}
+	}
+
+	focus = {
+		id = FRA_gold_reserve
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+        prerequisite = { focus = FRA_sway_west_africa }
+		x = -6
+		y = 2
+		cost = 5
+		relative_position_id = FRA_sway_west_africa
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_FREE_gold_reserves
+		}
+	}
+
+	focus = {
+		id = FRA_rebuild_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FRA_gold_reserve }
+		x = 0
+		y = 1
+		cost = 5
+
+		relative_position_id = FRA_gold_reserve
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			539 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = FRA_revive_naval_construction
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = FRA_france_libre }
-		x = 22
+		prerequisite = { focus = FRA_gold_reserve }
+		x = 2
 		y = 1
 		cost = 10
+		relative_position_id = FRA_gold_reserve
 
 		available_if_capitulated = yes
 
@@ -1550,9 +1591,10 @@ focus_tree = {
 	focus = {
 		id = FRA_revive_civilian_construction
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = FRA_revive_naval_construction }
-		x = 22
-		y = 3
+		prerequisite = { focus = FRA_gold_reserve }
+		relative_position_id = FRA_gold_reserve
+		x = -2
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1571,18 +1613,50 @@ focus_tree = {
 
 	focus = {
 		id = FRA_sway_syria
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = FRA_france_libre }
+		icon = GFX_france_nine
 		prerequisite = { focus = FRA_sway_west_africa }
-		x = 25
-		y = 2
+		x = -2
+		y = 3
 		cost = 10
+		relative_position_id = FRA_france_libre
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = { days = 1 id = free_france.5 }
+			unlock_decision_category_tooltip = FRA_free_france_syria
 			custom_effect_tooltip = syria_sway_tt
+		}
+	}
+
+	focus = {
+		id = FRA_decision_unlock_america
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_sway_west_africa }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FRA_sway_west_africa
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_category_tooltip = FRA_free_france_america
+		}
+	}
+
+	focus = {
+		id = FRA_decision_unlock_indian_ocean
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_sway_west_africa }
+		x = 2
+		y = 2
+		cost = 10
+		relative_position_id = FRA_sway_west_africa
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			unlock_decision_category_tooltip = FRA_free_france_indian_ocean
 		}
 	}
 
@@ -1591,9 +1665,10 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FRA_sway_syria }
 		prerequisite = { focus = FRA_sway_west_africa }
-		x = 25
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
+		relative_position_id = FRA_sway_syria
 
 		available_if_capitulated = yes
 
@@ -1607,9 +1682,11 @@ focus_tree = {
 		id = FRA_unleash_the_resistance_1
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FRA_organize_the_resistance }
-		x = 25
-		y = 4
+		x = -1
+		y = 1
 		cost = 1.5
+
+		relative_position_id = FRA_organize_the_resistance
 
 		available = {
 			has_war_with = EFR
@@ -1628,11 +1705,13 @@ focus_tree = {
 
 	focus = {
 		id = FRA_unleash_the_resistance_2
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_france_four
 		prerequisite = { focus = FRA_organize_the_resistance }
-		x = 27
-		y = 4
+		x = 1
+		y = 1
 		cost = 5
+
+		relative_position_id = FRA_organize_the_resistance
 
 		available = {
 			is_ai = no
@@ -1651,13 +1730,32 @@ focus_tree = {
 		id = FRA_unleash_the_resistance_3
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = FRA_unleash_the_resistance_1 }
-		x = 25
-		y = 5
+		x = 0
+		y = 1
 		cost = 5
+
+		relative_position_id = FRA_unleash_the_resistance_1
 
 		available = {
 			is_ai = no
 			date > 1942.6.1
+			OR = {
+				FRA = {
+					controls_state = 461
+					controls_state = 459
+					controls_state = 462
+				}
+				ENG = {
+					controls_state= 461
+					controls_state= 459
+					controls_state= 462
+				}
+				USA = {
+					controls_state= 461
+					controls_state= 459
+					controls_state= 462
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1670,11 +1768,11 @@ focus_tree = {
 	focus = {
 		id = FRA_request_uk_territory
 		icon = GFX_goal_tfv_saf_secure_interests_in_africa
-		prerequisite = { focus = FRA_france_libre }
 		prerequisite = { focus = FRA_sway_west_africa }
-		x = 23
+		x = -4
 		y = 2
 		cost = 10
+		relative_position_id = FRA_france_libre
 
 		available_if_capitulated = yes
 
@@ -1712,4 +1810,187 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+        id = FRA_reform_our_doctrine
+        icon = GFX_france_six
+        prerequisite = { focus = FRA_france_libre }
+        x = 4
+        y = 1
+        cost = 10
+
+		relative_position_id = FRA_france_libre
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = FRA_army_reform
+                bonus = 1.0
+                uses = 2
+                category = land_doctrine
+            }
+
+        }
+    }
+
+    focus = {
+        id = FRA_reequip_our_forces
+        icon = GFX_france_seven
+        prerequisite = { focus = FRA_reform_our_doctrine }
+        x = 0
+        y = 1
+        cost = 10
+
+		relative_position_id = FRA_reform_our_doctrine
+
+        available_if_capitulated = yes
+
+        completion_reward = {
+            add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = FRA }
+            add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 600 producer = FRA }
+            add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 producer = FRA }
+            add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 300 producer = FRA }
+            add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 300 producer = FRA }
+            add_equipment_to_stockpile = { type = motorized_equipment amount = 150 producer = FRA }
+        }
+    }
+
+    focus = {
+        id = FRA_colonial_recruitment
+        icon = GFX_france_eight
+        prerequisite = { focus = FRA_reequip_our_forces }
+        x = 0
+        y = 1
+        cost = 10
+
+        available_if_capitulated = yes
+
+		relative_position_id = FRA_reequip_our_forces
+
+        completion_reward = {
+            add_ideas = FRA_colonial_conscription
+        }
+    }
+	focus = {
+        id = FRA_modernize_our_equipment
+        icon = GFX_goal_generic_small_arms
+        prerequisite = { focus = FRA_colonial_recruitment }
+        x = -1
+        y = 1
+        cost = 10
+
+        available_if_capitulated = yes
+
+		relative_position_id = FRA_colonial_recruitment
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = FRA_artillery_focus
+                bonus = 1.00
+                uses = 1
+                technology = tech_logistics_company3
+                technology = tech_logistics_company4
+            }
+            add_tech_bonus = {
+                name = FRA_artillery_focus
+                bonus = 1.00
+                uses = 1
+                category = infantry_weapons
+            }
+        }
+    }
+
+    focus = {
+        id = FRA_modernize_our_armor_force
+        icon = GFX_goal_generic_army_tanks
+        prerequisite = { focus = FRA_colonial_recruitment }
+        x = 1
+        y = 1
+        cost = 10
+
+        available_if_capitulated = yes
+
+		relative_position_id = FRA_colonial_recruitment
+
+        completion_reward = {
+            add_tech_bonus = {
+                name = FRA_armor
+                bonus = 1.00
+                uses = 1
+                category = armor
+            }
+        }
+    }
+
+
+	focus = {
+		id = FRA_develop_our_resources
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = FRA_rebuild_military_production }
+		prerequisite = { focus = FRA_revive_civilian_construction }
+		prerequisite = { focus = FRA_revive_naval_construction }
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = FRA_revive_civilian_construction
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			539 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
+				}
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_viva_la_france
+		icon = GFX_france_five
+		prerequisite = { focus = FRA_unleash_the_resistance_2 }
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		available = {
+			14 = { is_controlled_by = FRA }
+		}
+
+		relative_position_id = FRA_unleash_the_resistance_2
+		completion_reward = {
+			add_ideas = FRA_FREE_viva_la_france
+		}
+	}
+	focus = {
+		id = FRA_research_efforts
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = FRA_rebuild_military_production }
+		prerequisite = { focus = FRA_revive_civilian_construction }
+		prerequisite = { focus = FRA_revive_naval_construction }
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = FRA_revive_civilian_construction
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_FREE_research_efforts
+		}
+	}
 }
+
+#Decisions for: Syria, West Africa, North Africa (declare war if not at war, unlocks if at war with vichy), Guyana, French Caribbean, St Pierre and Miquelon, Madagascar, Comoro Islands, Reunion, Kerguelen
+#Focus to spawn divisions in every controlled territory gained through decision and Gabon

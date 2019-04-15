@@ -302,129 +302,42 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		# German Occupation Zone
-		if = {
-			limit = { 28 = { owner = { original_tag = FRA } } }
-			set_state_controller = 28
-		}
-		if = {
-			limit = { 17 = { owner = { original_tag = FRA } } }
-			set_state_controller = 17
-		}
-		if = {
-			limit = { 27 = { owner = { original_tag = FRA } } }
-			set_state_controller = 27
-		}
-		if = {
-			limit = { 18 = { owner = { original_tag = FRA } } }
-			set_state_controller = 18
-		}
-		if = {
-			limit = { 29 = { owner = { original_tag = FRA } } }
-			set_state_controller = 29
-		}
-		if = {
-			limit = { 15 = { owner = { original_tag = FRA } } }
-			set_state_controller = 15
-		}
-		if = {
-			limit = { 16 = { owner = { original_tag = FRA } } }
-			set_state_controller = 16
-		}
-		if = {
-			limit = { 24 = { owner = { original_tag = FRA } } }
-			set_state_controller = 24
-		}
-		if = {
-			limit = { 30 = { owner = { original_tag = FRA } } }
-			set_state_controller = 30
-		}
-		if = {
-			limit = { 14 = { owner = { original_tag = FRA } } }
-			set_state_controller = 14
-		}
-		if = {
-			limit = { 23 = { owner = { original_tag = FRA } } }
-			set_state_controller = 23
-		}
-		if = {
-			limit = { 19 = { owner = { original_tag = FRA } } }
-			set_state_controller = 19
-		}
+		# German Occupation
+		set_state_controller = 28
+		set_state_controller = 17
+		set_state_controller = 27
+		set_state_controller = 18
+		set_state_controller = 29
+		set_state_controller = 15
+		set_state_controller = 16
+		set_state_controller = 24
+		set_state_controller = 30
+		set_state_controller = 14
+		set_state_controller = 23
+		set_state_controller = 19
 		# Italian Occupation Zone (if they did well)
 		ITA = { transfer_state = 735 }
 		if = {
-			limit = {
-				AND = {
-					21 = { #Provence
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
+			limit = { 21 = { is_controlled_by = ITA } }
 			ITA = { transfer_state = 21 }
 		}
 		if = {
 			limit = {
-				AND = {
-					1 = { #Corsica
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
-			}
-			ITA = { transfer_state = 1 }
-		}
-		if = {
-			limit = {
-				AND = {
-					735 = { #Savoy
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-					21 = { #Savoy
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-					32 = { #Alpes
-						owner = { original_tag = FRA }
-						is_controlled_by = ITA
-					}
-				}
+				21 = { is_controlled_by = ITA }
+				32 = { is_controlled_by = ITA }
 			}
 			ITA = { transfer_state = 32 }
+		}
+		if = {
+			limit = { 1 = { is_controlled_by = ITA } }
+			ITA = { transfer_state = 1 }
 		}
 		FRA = {
 			start_civil_war = {
 				ideology = fascism
 				size = 0.9
-				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 }
-				states_filter = {
-					owner = { original_tag = FRA }
-					OR = {
-						# lets not involve syria or tunisia in civil war flip if occupied by other party
-						AND = {
-							OR = {
-								state = 554
-								state = 680
-								state = 677
-								state = 458
-							}
-							controller = { # FRA not controller
-								original_tag = FRA
-							}
-						}
-						NOT = {
-							OR = {
-								state = 554
-								state = 680
-								state = 677
-								state = 458
-							}
-						}
-					}
-				}
+				capital = 713
+				states = { 713 32 21}
 			}
 			##add checks if general exists
 			remove_unit_leader = 801
@@ -497,35 +410,19 @@ country_event = {
 				set_state_controller = 554
 				set_state_controller = 458
 				if = {
-					limit = {
-						1 = {
-							owner = { original_tag = FRA }
-						}
-					}
+					limit = { 1 = { owner = { original_tag = FRA } } }
 					set_state_controller = 1
 				}
 				if = {
-					limit = {
-						32 = {
-							owner = { original_tag = FRA }
-						}
-					}
+					limit = { 32 = { owner = { original_tag = FRA } } }
 					set_state_controller = 32
 				}
 				if = {
-					limit = {
-						21 = {
-							owner = { original_tag = FRA }
-						}
-					}
+					limit = { 21 = { owner = { original_tag = FRA } } }
 					set_state_controller = 21
 				}
 				if = {
-					limit = {
-						31 = {
-							owner = { original_tag = FRA }
-						}
-					}
+					limit = { 31 = { owner = { original_tag = FRA } } }
 					set_state_controller = 31
 				}
 			}
@@ -536,46 +433,83 @@ country_event = {
 				annex_country = { target = PREV transfer_troops = no }
 			}
 		}
-		EFR = {
-			transfer_state = 26
-			transfer_state = 21
-			transfer_state = 22
-			transfer_state = 31
-			transfer_state = 25
-			transfer_state = 20
-			transfer_state = 32
-			transfer_state = 33
-			transfer_state = 1
+		random_other_country = {
+			limit = { original_tag = EFR has_government = fascism }
+			# ROOT = { puppet = PREV }
+			set_capital = 26
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				parties = {
+					democratic = { popularity = 18 }
+					fascism = { popularity = 70 }
+					communism = { popularity = 2 }
+					neutrality = { popularity = 10 }
+				}
+			}
+			# FRA Player Switches to Vichy
+			if = {
+				limit = { FRA = { has_country_flag = become_vichy } }
+				change_tag_from = FRA
+			}
+		}
 
-			transfer_state = 677
-			transfer_state = 680
-			transfer_state = 554
+
+		EFR = {
+			#Europe
+			if = {
+				limit = { FRA = { owns_state = 1 } }
+				transfer_state = 1
+			}
+			transfer_state = 20
+			transfer_state = 22
+			transfer_state = 25
+			transfer_state = 26
+			transfer_state = 31
+			transfer_state = 33
+
+			#North Africa
 			transfer_state = 458
 			transfer_state = 459
 			transfer_state = 460
 			transfer_state = 461
 			transfer_state = 462
 			transfer_state = 514
-
 			transfer_state = 665
+			transfer_state = 513
+			transfer_state = 515
+
+			#Syria
+			transfer_state = 553
+			transfer_state = 677
+			transfer_state = 554
+			transfer_state = 680
+
+			#West Africa
 			transfer_state = 557
 			transfer_state = 272
-			transfer_state = 556
+			transfer_state = 298
+
+			#Indochina
+			transfer_state = 741
 			transfer_state = 671
 			transfer_state = 670
-			transfer_state = 741
+			transfer_state = 556
 			transfer_state = 286
-			transfer_state = 513
 
-			transfer_state = 553
+			#Madagascar
 			transfer_state = 543
 			transfer_state = 708
 			transfer_state = 706
-			transfer_state = 268
-			transfer_state = 713
-			transfer_state = 730
-			transfer_state = 515
-			transfer_state = 298
+
+			transfer_state = 268 #Somaliland
+			transfer_state = 713 #Kerguelen
+			transfer_state = 730 #St Pierre
+
+			#Caribbean
+			transfer_state = 310 #Guyana
+			transfer_state = 694 #French Caribbean
+
 			set_capital = 26
 			add_ideas = idea_EFR_neutrality
 			diplomatic_relation = { country = ENG relation = non_aggression_pact }
@@ -614,1692 +548,317 @@ country_event = {
 			28 = {
 				remove_core_of = EFR
 			}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { infantry_equipment > 25000 } }
-			send_equipment = {
-				target = GER
-				type = infantry_equipment
-				amount = 23500
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { infantry_equipment > 23500 } }
-					send_equipment = {
-						target = GER
-						type = infantry_equipment
-						amount = 22000
-					}
-
-					else = {
-						if = {
-							limit = { has_equipment = { infantry_equipment > 20500 } }
-							send_equipment = {
-								target = GER
-								type = infantry_equipment
-								amount = 19000
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { infantry_equipment > 19000 } }
-									send_equipment = {
-										target = GER
-										type = infantry_equipment
-										amount = 17500
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { infantry_equipment > 17500 } }
-											send_equipment = {
-												target = GER
-												type = infantry_equipment
-												amount = 15000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { infantry_equipment > 13500 } }
-													send_equipment = {
-														target = GER
-														type = infantry_equipment
-														amount = 12000
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { infantry_equipment > 12000 } }
-															send_equipment = {
-																target = GER
-																type = infantry_equipment
-																amount = 10500
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { infantry_equipment > 10500 } }
-																	send_equipment = {
-																		target = GER
-																		type = infantry_equipment
-																		amount = 9000
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { infantry_equipment > 9000 } }
-																			send_equipment = {
-																				target = GER
-																				type = infantry_equipment
-																				amount = 7500
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { infantry_equipment > 7500 } }
-																					send_equipment = {
-																						target = GER
-																						type = infantry_equipment
-																						amount = 6000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { infantry_equipment > 6000 } }
-																							send_equipment = {
-																								target = GER
-																								type = infantry_equipment
-																								amount = 4500
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { infantry_equipment > 4500 } }
-																									send_equipment = {
-																										target = GER
-																										type = infantry_equipment
-																										amount = 3000
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { infantry_equipment > 3000 } }
-																											send_equipment = {
-																												target = GER
-																												type = infantry_equipment
-																												amount = 1500
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { infantry_equipment > 1500 } }
-																													send_equipment = {
-																														target = GER
-																														type = infantry_equipment
-																														amount = 500
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { infantry_equipment > 1000 } }
-																															send_equipment = {
-																																target = GER
-																																type = infantry_equipment
-																																	amount = 350
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { infantry_equipment > 500 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = infantry_equipment
-																																		amount = 250
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { infantry_equipment > 25000 } }
+				send_equipment = {
+					target = GER
+					type = infantry_equipment
+					amount = 23500
 				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { support_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = support_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { support_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = support_equipment
-						amount = 2600
-					}
-
-					else = {
-						if = {
-							limit = { has_equipment = { support_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = support_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { support_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = support_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { support_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = support_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { support_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = support_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { support_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = support_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { support_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = support_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { support_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = support_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { support_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = support_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { support_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = support_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { support_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = support_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { support_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = support_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { support_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = support_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { support_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = support_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { support_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = support_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
+				else = {
+					if = {
+						limit = { has_equipment = { infantry_equipment > 23500 } }
+						send_equipment = {
+							target = GER
+							type = infantry_equipment
+							amount = 22000
 						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { light_tank_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = light_tank_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { light_tank_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = light_tank_equipment
-						amount = 2600
-					}
 
 						else = {
 							if = {
-								limit = { has_equipment = { light_tank_equipment > 2600 } }
+								limit = { has_equipment = { infantry_equipment > 20500 } }
 								send_equipment = {
 									target = GER
-									type = light_tank_equipment
+									type = infantry_equipment
+									amount = 19000
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { infantry_equipment > 19000 } }
+										send_equipment = {
+											target = GER
+											type = infantry_equipment
+											amount = 17500
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { infantry_equipment > 17500 } }
+												send_equipment = {
+													target = GER
+													type = infantry_equipment
+													amount = 15000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { infantry_equipment > 13500 } }
+														send_equipment = {
+															target = GER
+															type = infantry_equipment
+															amount = 12000
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { infantry_equipment > 12000 } }
+																send_equipment = {
+																	target = GER
+																	type = infantry_equipment
+																	amount = 10500
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { infantry_equipment > 10500 } }
+																		send_equipment = {
+																			target = GER
+																			type = infantry_equipment
+																			amount = 9000
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { infantry_equipment > 9000 } }
+																				send_equipment = {
+																					target = GER
+																					type = infantry_equipment
+																					amount = 7500
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { infantry_equipment > 7500 } }
+																						send_equipment = {
+																							target = GER
+																							type = infantry_equipment
+																							amount = 6000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { infantry_equipment > 6000 } }
+																								send_equipment = {
+																									target = GER
+																									type = infantry_equipment
+																									amount = 4500
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { infantry_equipment > 4500 } }
+																										send_equipment = {
+																											target = GER
+																											type = infantry_equipment
+																											amount = 3000
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { infantry_equipment > 3000 } }
+																												send_equipment = {
+																													target = GER
+																													type = infantry_equipment
+																													amount = 1500
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { infantry_equipment > 1500 } }
+																														send_equipment = {
+																															target = GER
+																															type = infantry_equipment
+																															amount = 500
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { infantry_equipment > 1000 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = infantry_equipment
+																																		amount = 350
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { infantry_equipment > 500 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = infantry_equipment
+																																			amount = 250
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { support_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = support_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { support_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = support_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { support_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = support_equipment
 									amount = 2400
 								}
 
 
-							else = {
-								if = {
-									limit = { has_equipment = { light_tank_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = light_tank_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { light_tank_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = light_tank_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { light_tank_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = light_tank_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { light_tank_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = light_tank_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { light_tank_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = light_tank_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { light_tank_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = light_tank_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { light_tank_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = light_tank_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { light_tank_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = light_tank_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { light_tank_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = light_tank_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { light_tank_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = light_tank_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { light_tank_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = light_tank_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { light_tank_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = light_tank_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { light_tank_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = light_tank_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
+								else = {
+									if = {
+										limit = { has_equipment = { support_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = support_equipment
+											amount = 2200
 										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { motorized_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = motorized_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { motorized_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = motorized_equipment
-						amount = 2600
-					}
 
-					else = {
-						if = {
-							limit = { has_equipment = { motorized_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = motorized_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { motorized_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = motorized_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { motorized_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = motorized_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { motorized_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = motorized_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { motorized_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = motorized_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { motorized_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = motorized_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { motorized_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = motorized_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { motorized_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = motorized_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { motorized_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = motorized_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { motorized_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = motorized_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { motorized_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = motorized_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { motorized_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = motorized_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { motorized_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = motorized_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { motorized_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = motorized_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
+										else = {
+											if = {
+												limit = { has_equipment = { support_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = support_equipment
+													amount = 2000
 												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { mechanized_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = mechanized_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { mechanized_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = mechanized_equipment
-						amount = 2600
-					}
 
-					else = {
-						if = {
-							limit = { has_equipment = { mechanized_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = mechanized_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { mechanized_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = mechanized_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { mechanized_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = mechanized_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { mechanized_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = mechanized_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { mechanized_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = mechanized_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { mechanized_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = mechanized_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { mechanized_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = mechanized_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { mechanized_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = mechanized_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { mechanized_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = mechanized_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { mechanized_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = mechanized_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { mechanized_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = mechanized_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { mechanized_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = mechanized_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { mechanized_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = mechanized_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { mechanized_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = mechanized_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
+												else = {
+													if = {
+														limit = { has_equipment = { support_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = support_equipment
+															amount = 1800
 														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { artillery_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = artillery_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { artillery_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = artillery_equipment
-						amount = 2600
-					}
 
-					else = {
-						if = {
-							limit = { has_equipment = { artillery_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = artillery_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { artillery_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = artillery_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { artillery_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = artillery_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { artillery_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = artillery_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { artillery_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = artillery_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { artillery_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = artillery_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { artillery_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = artillery_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { artillery_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = artillery_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { artillery_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = artillery_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { artillery_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = artillery_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { artillery_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = artillery_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { artillery_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = artillery_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { artillery_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = artillery_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { artillery_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = artillery_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
+														else = {
+															if = {
+																limit = { has_equipment = { support_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = support_equipment
+																	amount = 1600
 																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { anti_air_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = anti_air_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { anti_air_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = anti_air_equipment
-						amount = 2600
-					}
-
-					else = {
-						if = {
-							limit = { has_equipment = { anti_air_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = anti_air_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { anti_air_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = anti_air_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { anti_air_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = anti_air_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { anti_air_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = anti_air_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { anti_air_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = anti_air_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { anti_air_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = anti_air_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { anti_air_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = anti_air_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { anti_air_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = anti_air_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { anti_air_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = anti_air_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { anti_air_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = anti_air_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { anti_air_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = anti_air_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { anti_air_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = anti_air_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { anti_air_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = anti_air_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { anti_air_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = anti_air_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { anti_tank_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = anti_tank_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { anti_tank_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = anti_tank_equipment
-						amount = 2600
-					}
-
-					else = {
-						if = {
-							limit = { has_equipment = { anti_tank_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = anti_tank_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { anti_tank_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = anti_tank_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { anti_tank_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = anti_tank_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { anti_tank_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = anti_tank_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { anti_tank_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = anti_tank_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { anti_tank_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = anti_tank_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { anti_tank_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = anti_tank_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { anti_tank_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = anti_tank_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { anti_tank_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = anti_tank_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { anti_tank_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = anti_tank_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { anti_tank_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = anti_tank_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { anti_tank_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = anti_tank_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { anti_tank_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = anti_tank_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { anti_tank_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = anti_tank_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { medium_tank_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = medium_tank_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { medium_tank_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = medium_tank_equipment
-						amount = 2600
-					}
-
-					else = {
-						if = {
-							limit = { has_equipment = { medium_tank_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = medium_tank_equipment
-								amount = 2400
-							}
-
-
-							else = {
-								if = {
-									limit = { has_equipment = { medium_tank_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = medium_tank_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { medium_tank_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = medium_tank_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { medium_tank_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = medium_tank_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { medium_tank_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = medium_tank_equipment
-																amount = 1600
-															}
-
-															else = {
-																if = {
-																	limit = { has_equipment = { medium_tank_equipment > 1600 } }
-																	send_equipment = {
-																		target = GER
-																		type = medium_tank_equipment
-																		amount = 1400
-																	}
-
-																	else = {
-																		if = {
-																			limit = { has_equipment = { medium_tank_equipment > 1400 } }
-																			send_equipment = {
-																				target = GER
-																				type = medium_tank_equipment
-																				amount = 1200
-																			}
-
-																			else = {
-																				if = {
-																					limit = { has_equipment = { medium_tank_equipment > 1200 } }
-																					send_equipment = {
-																						target = GER
-																						type = medium_tank_equipment
-																						amount = 1000
-																					}
-
-																					else = {
-																						if = {
-																							limit = { has_equipment = { medium_tank_equipment > 1000 } }
-																							send_equipment = {
-																								target = GER
-																								type = medium_tank_equipment
-																								amount = 800
-																							}
-
-																							else = {
-																								if = {
-																									limit = { has_equipment = { medium_tank_equipment > 800 } }
-																									send_equipment = {
-																										target = GER
-																										type = medium_tank_equipment
-																										amount = 600
-																									}
-
-																									else = {
-																										if = {
-																											limit = { has_equipment = { medium_tank_equipment > 600 } }
-																											send_equipment = {
-																												target = GER
-																												type = medium_tank_equipment
-																												amount = 400
-																											}
-
-																											else = {
-																												if = {
-																													limit = { has_equipment = { medium_tank_equipment > 400 } }
-																													send_equipment = {
-																														target = GER
-																														type = medium_tank_equipment
-																														amount = 200
-																													}
-
-																													else = {
-																														if = {
-																															limit = { has_equipment = { medium_tank_equipment > 150 } }
-																															send_equipment = {
-																																target = GER
-																																type = medium_tank_equipment
-																																	amount = 50
-																															}
-																															else = {
-																																if = {
-																																	limit = { has_equipment = { medium_tank_equipment > 100 } }
-																																	send_equipment = {
-																																		target = GER
-																																		type = medium_tank_equipment
-																																		amount = 25
-																																	}
-																																}
-																															}
-																														}
-																													}
-																												}
-																											}
-																										}
-																									}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
-			limit = { has_equipment = { heavy_tank_equipment > 3000 } }
-			send_equipment = {
-				target = GER
-				type = heavy_tank_equipment
-				amount = 2800
-			}
-			else = {
-				if = {
-					limit = { has_equipment = { heavy_tank_equipment > 2800 } }
-					send_equipment = {
-						target = GER
-						type = heavy_tank_equipment
-						amount = 2600
-					}
-
-					else = {
-						if = {
-							limit = { has_equipment = { heavy_tank_equipment > 2600 } }
-							send_equipment = {
-								target = GER
-								type = heavy_tank_equipment
-								amount = 2400
-							}
-
-							else = {
-								if = {
-									limit = { has_equipment = { heavy_tank_equipment > 2400 } }
-									send_equipment = {
-										target = GER
-										type = heavy_tank_equipment
-										amount = 2200
-									}
-
-									else = {
-										if = {
-											limit = { has_equipment = { heavy_tank_equipment > 2200 } }
-											send_equipment = {
-												target = GER
-												type = heavy_tank_equipment
-												amount = 2000
-											}
-
-											else = {
-												if = {
-													limit = { has_equipment = { heavy_tank_equipment > 2000 } }
-													send_equipment = {
-														target = GER
-														type = heavy_tank_equipment
-														amount = 1800
-													}
-
-													else = {
-														if = {
-															limit = { has_equipment = { heavy_tank_equipment > 1800 } }
-															send_equipment = {
-																target = GER
-																type = heavy_tank_equipment
-																amount = 1600
-															}
 
 																else = {
 																	if = {
-																		limit = { has_equipment = { heavy_tank_equipment > 1600 } }
+																		limit = { has_equipment = { support_equipment > 1600 } }
 																		send_equipment = {
 																			target = GER
-																			type = heavy_tank_equipment
+																			type = support_equipment
 																			amount = 1400
 																		}
 
 																		else = {
 																			if = {
-																				limit = { has_equipment = { heavy_tank_equipment > 1400 } }
+																				limit = { has_equipment = { support_equipment > 1400 } }
 																				send_equipment = {
 																					target = GER
-																					type = heavy_tank_equipment
+																					type = support_equipment
 																					amount = 1200
 																				}
 
 																				else = {
 																					if = {
-																						limit = { has_equipment = { heavy_tank_equipment > 1200 } }
+																						limit = { has_equipment = { support_equipment > 1200 } }
 																						send_equipment = {
 																							target = GER
-																							type = heavy_tank_equipment
+																							type = support_equipment
 																							amount = 1000
 																						}
 
 																						else = {
 																							if = {
-																								limit = { has_equipment = { heavy_tank_equipment > 1000 } }
+																								limit = { has_equipment = { support_equipment > 1000 } }
 																								send_equipment = {
 																									target = GER
-																									type = heavy_tank_equipment
+																									type = support_equipment
 																									amount = 800
 																								}
 
 																								else = {
 																									if = {
-																										limit = { has_equipment = { heavy_tank_equipment > 800 } }
+																										limit = { has_equipment = { support_equipment > 800 } }
 																										send_equipment = {
 																											target = GER
-																											type = heavy_tank_equipment
+																											type = support_equipment
 																											amount = 600
 																										}
 
 																										else = {
 																											if = {
-																												limit = { has_equipment = { heavy_tank_equipment > 600 } }
+																												limit = { has_equipment = { support_equipment > 600 } }
 																												send_equipment = {
 																													target = GER
-																													type = heavy_tank_equipment
+																													type = support_equipment
 																													amount = 400
 																												}
 
 																												else = {
 																													if = {
-																														limit = { has_equipment = { heavy_tank_equipment > 400 } }
+																														limit = { has_equipment = { support_equipment > 400 } }
 																														send_equipment = {
 																															target = GER
-																															type = heavy_tank_equipment
+																															type = support_equipment
 																															amount = 200
 																														}
 
 																														else = {
 																															if = {
-																																limit = { has_equipment = { heavy_tank_equipment > 150 } }
+																																limit = { has_equipment = { support_equipment > 150 } }
 																																send_equipment = {
 																																	target = GER
-																																	type = heavy_tank_equipment
+																																	type = support_equipment
 																																		amount = 50
 																																}
 																																else = {
 																																	if = {
-																																		limit = { has_equipment = { heavy_tank_equipment > 100 } }
+																																		limit = { has_equipment = { support_equipment > 100 } }
 																																		send_equipment = {
 																																			target = GER
-																																			type = heavy_tank_equipment
+																																			type = support_equipment
 																																			amount = 25
 																																		}
 																																	}
@@ -2329,53 +888,1288 @@ country_event = {
 									}
 								}
 							}
-			}
-					}
-		}
-			}
-		random_other_country = {
-				limit = { original_tag = EFR has_government = fascism }
-			# ROOT = { puppet = PREV }
-			set_capital = 26
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-				parties = {
-					democratic = {
-							popularity = 18
 						}
-					fascism = {
-							popularity = 70
 					}
-					communism = {
-						popularity = 2
-					}
-						neutrality = {
-							popularity = 10
 				}
 			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { light_tank_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = light_tank_equipment
+					amount = 2800
 				}
-			# FRA Player Switches to Vichy
-			if = {
-				limit = { FRA = { has_country_flag = become_vichy } }
-				change_tag_from = FRA
+				else = {
+					if = {
+						limit = { has_equipment = { light_tank_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = light_tank_equipment
+							amount = 2600
+						}
+
+							else = {
+								if = {
+									limit = { has_equipment = { light_tank_equipment > 2600 } }
+									send_equipment = {
+										target = GER
+										type = light_tank_equipment
+										amount = 2400
+									}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { light_tank_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = light_tank_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { light_tank_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = light_tank_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { light_tank_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = light_tank_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { light_tank_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = light_tank_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { light_tank_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = light_tank_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { light_tank_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = light_tank_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { light_tank_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = light_tank_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { light_tank_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = light_tank_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { light_tank_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = light_tank_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { light_tank_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = light_tank_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { light_tank_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = light_tank_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { light_tank_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = light_tank_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { light_tank_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = light_tank_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { motorized_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = motorized_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { motorized_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = motorized_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { motorized_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = motorized_equipment
+									amount = 2400
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { motorized_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = motorized_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { motorized_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = motorized_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { motorized_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = motorized_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { motorized_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = motorized_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { motorized_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = motorized_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { motorized_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = motorized_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { motorized_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = motorized_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { motorized_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = motorized_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { motorized_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = motorized_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { motorized_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = motorized_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { motorized_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = motorized_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { motorized_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = motorized_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { motorized_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = motorized_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { mechanized_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = mechanized_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { mechanized_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = mechanized_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { mechanized_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = mechanized_equipment
+									amount = 2400
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { mechanized_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = mechanized_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { mechanized_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = mechanized_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { mechanized_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = mechanized_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { mechanized_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = mechanized_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { mechanized_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = mechanized_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { mechanized_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = mechanized_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { mechanized_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = mechanized_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { mechanized_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = mechanized_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { mechanized_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = mechanized_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { mechanized_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = mechanized_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { mechanized_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = mechanized_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { mechanized_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = mechanized_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { mechanized_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = mechanized_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { artillery_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = artillery_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { artillery_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = artillery_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { artillery_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = artillery_equipment
+									amount = 2400
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { artillery_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = artillery_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { artillery_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = artillery_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { artillery_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = artillery_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { artillery_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = artillery_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { artillery_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = artillery_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { artillery_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = artillery_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { artillery_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = artillery_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { artillery_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = artillery_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { artillery_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = artillery_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { artillery_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = artillery_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { artillery_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = artillery_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { artillery_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = artillery_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { artillery_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = artillery_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { anti_air_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = anti_air_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { anti_air_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = anti_air_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { anti_air_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = anti_air_equipment
+									amount = 2400
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { anti_air_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = anti_air_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { anti_air_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = anti_air_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { anti_air_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = anti_air_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { anti_air_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = anti_air_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { anti_air_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = anti_air_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { anti_air_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = anti_air_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { anti_air_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = anti_air_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { anti_air_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = anti_air_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { anti_air_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = anti_air_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { anti_air_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = anti_air_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { anti_air_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = anti_air_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { anti_air_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = anti_air_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { anti_air_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = anti_air_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { anti_tank_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = anti_tank_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { anti_tank_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = anti_tank_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { anti_tank_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = anti_tank_equipment
+									amount = 2400
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { anti_tank_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = anti_tank_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { anti_tank_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = anti_tank_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { anti_tank_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = anti_tank_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { anti_tank_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = anti_tank_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { anti_tank_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = anti_tank_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { anti_tank_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = anti_tank_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { anti_tank_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = anti_tank_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { anti_tank_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = anti_tank_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { anti_tank_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = anti_tank_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { anti_tank_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = anti_tank_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { anti_tank_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = anti_tank_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { anti_tank_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = anti_tank_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { anti_tank_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = anti_tank_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { medium_tank_equipment > 3000 } }
+				send_equipment = {
+					target = GER
+					type = medium_tank_equipment
+					amount = 2800
+				}
+				else = {
+					if = {
+						limit = { has_equipment = { medium_tank_equipment > 2800 } }
+						send_equipment = {
+							target = GER
+							type = medium_tank_equipment
+							amount = 2600
+						}
+
+						else = {
+							if = {
+								limit = { has_equipment = { medium_tank_equipment > 2600 } }
+								send_equipment = {
+									target = GER
+									type = medium_tank_equipment
+									amount = 2400
+								}
+
+
+								else = {
+									if = {
+										limit = { has_equipment = { medium_tank_equipment > 2400 } }
+										send_equipment = {
+											target = GER
+											type = medium_tank_equipment
+											amount = 2200
+										}
+
+										else = {
+											if = {
+												limit = { has_equipment = { medium_tank_equipment > 2200 } }
+												send_equipment = {
+													target = GER
+													type = medium_tank_equipment
+													amount = 2000
+												}
+
+												else = {
+													if = {
+														limit = { has_equipment = { medium_tank_equipment > 2000 } }
+														send_equipment = {
+															target = GER
+															type = medium_tank_equipment
+															amount = 1800
+														}
+
+														else = {
+															if = {
+																limit = { has_equipment = { medium_tank_equipment > 1800 } }
+																send_equipment = {
+																	target = GER
+																	type = medium_tank_equipment
+																	amount = 1600
+																}
+
+																else = {
+																	if = {
+																		limit = { has_equipment = { medium_tank_equipment > 1600 } }
+																		send_equipment = {
+																			target = GER
+																			type = medium_tank_equipment
+																			amount = 1400
+																		}
+
+																		else = {
+																			if = {
+																				limit = { has_equipment = { medium_tank_equipment > 1400 } }
+																				send_equipment = {
+																					target = GER
+																					type = medium_tank_equipment
+																					amount = 1200
+																				}
+
+																				else = {
+																					if = {
+																						limit = { has_equipment = { medium_tank_equipment > 1200 } }
+																						send_equipment = {
+																							target = GER
+																							type = medium_tank_equipment
+																							amount = 1000
+																						}
+
+																						else = {
+																							if = {
+																								limit = { has_equipment = { medium_tank_equipment > 1000 } }
+																								send_equipment = {
+																									target = GER
+																									type = medium_tank_equipment
+																									amount = 800
+																								}
+
+																								else = {
+																									if = {
+																										limit = { has_equipment = { medium_tank_equipment > 800 } }
+																										send_equipment = {
+																											target = GER
+																											type = medium_tank_equipment
+																											amount = 600
+																										}
+
+																										else = {
+																											if = {
+																												limit = { has_equipment = { medium_tank_equipment > 600 } }
+																												send_equipment = {
+																													target = GER
+																													type = medium_tank_equipment
+																													amount = 400
+																												}
+
+																												else = {
+																													if = {
+																														limit = { has_equipment = { medium_tank_equipment > 400 } }
+																														send_equipment = {
+																															target = GER
+																															type = medium_tank_equipment
+																															amount = 200
+																														}
+
+																														else = {
+																															if = {
+																																limit = { has_equipment = { medium_tank_equipment > 150 } }
+																																send_equipment = {
+																																	target = GER
+																																	type = medium_tank_equipment
+																																		amount = 50
+																																}
+																																else = {
+																																	if = {
+																																		limit = { has_equipment = { medium_tank_equipment > 100 } }
+																																		send_equipment = {
+																																			target = GER
+																																			type = medium_tank_equipment
+																																			amount = 25
+																																		}
+																																	}
+																																}
+																															}
+																														}
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			if = { ### send rifles (minus 200) to germany the rest will be used in the armistice army.
+				limit = { has_equipment = { heavy_tank_equipment > 3000 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 2800 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 2800 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 2600 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 2600 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 2400 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 2400 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 2200 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 2200 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 2000 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 2000 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 1800 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 1800 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 1600 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 1600 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 1400 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 1400 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 1200 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 1200 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 1000 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 1000 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 800 }
+			}
+
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 800 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 600 }
+			}
+
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 600 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 400 }
+			}
+
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 400 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 200 }
+			}
+
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 150 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 50 }
+			}
+			else_if = {
+				limit = { has_equipment = { heavy_tank_equipment > 100 } }
+				send_equipment = { target = GER type = heavy_tank_equipment amount = 25 }
 			}
 		}
 		country_event = { hours = 6 id = news.34 }
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
 		}
-		}
 	}
-	# option = { # Conquer everything!
-		# name = france.14.b
-		# ai_chance = {
-			# factor = 0
-		# }
-		# FRA = {
-			# country_event = { hours = 6 id = france.15 }
-		# }
-	# }
 }
 
 # Germany refuses armistice! (France)

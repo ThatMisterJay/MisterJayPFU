@@ -15,3 +15,9 @@ JAP_homeland_tt:0 "Spawns 16 coastguard divisions to defend against naval invasi
 JAP_southern_expansion_tt:0 "This focus will unlock a decision to go to war with the UK and their allies, and after you are at war with the UK a decision to go to war with the USA."
 JAP_lower_resistance:0 "This focus will lower the Chinese resistance by 10.\n"
 USA_load_paratroopers_tt:0 "This focus will give you the next level of Paratrooper tech, and spawn 6 paratrooper divisions in Washington."
+
+attacking_state:0 "Attacking a French State"
+
+FRA_free_france_effect_1:0 "Will gain a division of desert troops in Alexandria."
+FRA_free_france_operation_exporter_tt:0 "Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
+syria_sway_tt:0 "Will attempt to retake Syria from the traitors in Vichy. Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
