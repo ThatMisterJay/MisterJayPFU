@@ -284,23 +284,6 @@ country_event = {
 	}
 }
 
-
-
-country_event = {
-	id = free_france.11
-	title = free_france.11.t
-	desc = free_france.11.desc
-	picture = GFX_report_event_french_resistance
-
-	is_triggered_only = yes
-
-	option = {
-		name = free_france.11.a
-	}
-}
-
-
-
 country_event = {
 	id = free_france.12
 	title = free_france.12.t

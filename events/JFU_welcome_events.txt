@@ -45,6 +45,32 @@ country_event = {
 	}
 }
 
+#France
+country_event = {
+	id = JFU_welcome.4
+	title = JFU_welcome.4.t
+	desc = JFU_welcome.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_welcome.4.a
+	}
+}
+
+#UK
+country_event = {
+	id = JFU_welcome.5
+	title = JFU_welcome.5.t
+	desc = JFU_welcome.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU_welcome.5.a
+	}
+}
+
 #Axis
 #Spain
 country_event = {
