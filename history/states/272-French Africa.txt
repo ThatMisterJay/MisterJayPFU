@@ -6,13 +6,13 @@ state={
 	resources={
 		steel=4
 	}
-	
+
 	state_category = pastoral
 
 	history={
 		owner = FRA
 		victory_points = {
-			4948 5 
+			4948 5
 		}
 		buildings = {
 			infrastructure = 1
@@ -21,9 +21,10 @@ state={
 				naval_base = 3
 			}
 		}
+		add_extra_state_shared_building_slots = 1
 	}
 
 	provinces={
-		2100 4948 7972 8015 12710 12834 
+		2100 4948 7972 8015 12710 12834
 	}
 }

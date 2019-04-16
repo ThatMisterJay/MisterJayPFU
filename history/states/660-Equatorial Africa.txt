@@ -3,8 +3,8 @@ state={
 	id=660
 	name="STATE_660"
 	manpower = 2572456
-	
-	state_category = wasteland
+
+	state_category = rural
 	resources={
 		rubber=4
 	}
