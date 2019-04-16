@@ -199,4 +199,31 @@ ideas = {
 		}
 	}
 
+	naval_manufacturer = {
+
+		designer = yes	
+
+		free_french_fleet = {
+
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_revive_naval_construction
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			traits = { free_france_fleet }
+
+			modifier = {
+			}
+		}
+    }
+
 }

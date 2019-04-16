@@ -34,3 +34,7 @@
     FRA_colonial_military_west_africa_desc:0 "For our economy to flourish we need to disperse it in case of an attack. Our colonies our the perfect place for this."
     FRA_colonial_military_indian_ocean:0 "Military Industry in Indian Ocean"
     FRA_colonial_military_indian_ocean_desc:0 "For our economy to flourish we need to disperse it in case of an attack. Our colonies our the perfect place for this."
+
+    #French naval designer
+    free_french_fleet:0 "Free French Designer"
+    free_france_fleet:0 "Jack Of All Trades"
