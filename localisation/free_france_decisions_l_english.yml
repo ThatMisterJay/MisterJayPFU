@@ -1,12 +1,12 @@
 ﻿l_english:
     FRA_free_france_indian_ocean:0 "Operations in the Indian Ocean"
-    FRA_free_france_indian_ocean_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once they are needed."
+    FRA_free_france_indian_ocean_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once we call on them. We should make sure we use this carefully as it can only be done once."
     FRA_free_france_america:0 "Operations in the Americas"
-    FRA_free_france_america_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once they are needed."
+    FRA_free_france_america_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once we call on them. We should make sure we use this carefully as it can only be done once."
     FRA_free_france_syria:0 "Operations in Syria"
-    FRA_free_france_syria_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once they are needed."
+    FRA_free_france_syria_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once we call on them. We should make sure we use this carefully as it can only be done once."
     FRA_free_france_west_africa:0 "Operations in West Africa"
-    FRA_free_france_west_africa_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once they are needed."
+    FRA_free_france_west_africa_desc:0 "Doing these operations will result in divisions rising up for every conquered territory once we call on them. We should make sure we use this carefully as it can only be done once."
 
     FRA_french_west_africa_mission:0 "Mission to French West Africa"
     FRA_french_west_africa_mission_desc:0 "Now is the time to strike the Vichy Regime. We will fight to take back our territory."
@@ -40,3 +40,8 @@
     FRA_reunion_mission_desc:0 "Now is the time to strike the Vichy Regime. We will fight to take back our territory."
     FRA_french_somaliland_mission:0 "Mission to French Somaliland"
     FRA_french_somaliland_mission_desc:0 "Now is the time to strike the Vichy Regime. We will fight to take back our territory."
+
+    FRA_rise_up_west_africa_mission:0 "Call for Volunteers in West Africa"
+    FRA_rise_up_syria_mission:0 "Call for Volunteers in Syria"
+    FRA_rise_up_americas_mission:0 "Call for Volunteers in the Americas"
+    FRA_rise_up_indian_ocean_mission:0 "Call for Volunteers in the Indian Ocean"

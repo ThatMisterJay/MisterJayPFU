@@ -158,7 +158,6 @@ country_event = {
 		FRA = { transfer_state = 680 }
 		hidden_effect = {
 			FRA = {
-				hidden_effect = { load_oob = FRA_free_france_operation_exporter }
 				custom_effect_tooltip = FRA_free_france_operation_exporter_tt
 				country_event = free_france.71
 			}
@@ -317,7 +316,7 @@ country_event = {
 
 	option = {
 		name = free_france.12.a
-		
+
 	}
 }
 
@@ -333,6 +332,58 @@ country_event = {
 		name = free_france.13.a
 		hidden_effect = { FRA = { transfer_state = event_target:FRA_attacked_state } }
 		clr_country_flag = attacking_state
+		if = {
+			limit = {
+				event_target:FRA_attacked_state = {
+					OR = {
+						state = 515
+						state = 556
+						state = 272
+						state = 298
+						state = 557
+					}
+				}
+			}
+			add_to_variable = { attacked_state_west_africa = 1 }
+		}
+		else_if = {
+			limit = {
+				event_target:FRA_attacked_state = {
+					OR = {
+						state = 310
+						state = 694
+						state = 730
+					}
+				}
+			}
+			add_to_variable = { attacked_state_america = 1 }
+		}
+		else_if = {
+			limit = {
+				event_target:FRA_attacked_state = {
+					OR = {
+						state = 553
+						state = 554
+						state = 677
+						state = 680
+					}
+				}
+			}
+			add_to_variable = { attacked_state_syria = 1 }
+		}
+		else_if = {
+			limit = {
+				event_target:FRA_attacked_state = {
+					OR = {
+						state = 268
+						state = 543
+						state = 706
+						state = 708
+					}
+				}
+			}
+			add_to_variable = { attacked_state_indian_ocean = 1 }
+		}
 	}
 }
 

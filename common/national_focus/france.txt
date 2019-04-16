@@ -173,19 +173,15 @@ focus_tree = {
 		id = FRA_algerie_france
 		icon = GFX_goal_generic_construct_civilian
 		available = {
-		16 = {
-				is_owned_and_controlled_by = FRA
-				arms_factory > 5
-				industrial_complex > 6
-			}
+			has_completed_focus = FRA_military_factories
 			NOT = {
 				EFR = { exists = yes }
 			}
 
 		}
-		x = 2
+		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.2
 		}
@@ -199,7 +195,7 @@ focus_tree = {
 					any_owned_state = {
 						free_building_slots = {
 							building = infrastructure
-							size > 1
+							size > 2
 						}
 						NOT = { is_on_continent = europe }
 					}
@@ -207,181 +203,19 @@ focus_tree = {
 			}
 		}
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = FRA_algerie_france_2Inf }
+		completion_reward = {
+			539 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 			}
-			every_state = {
-				limit = { has_state_flag = FRA_algerie_france_4Inf }
+			660 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 4
+					level = 2
 					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							459 = {
-								free_building_slots = {
-									building = infrastructure
-									size > 1
-								}
-							}
-							460 = {
-								free_building_slots = {
-									building = infrastructure
-									size > 1
-								}
-							}
-						}
-					}
-					AND = {
-						NOT ={
-							459 = {
-								free_building_slots = {
-									building = infrastructure
-									size > 3
-								}
-							}
-						}
-						460 = {
-							NOT = {
-								free_building_slots = {
-									building = infrastructure
-									size > 3
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit =  {
-						free_building_slots = {
-							building = infrastructure
-							size > 1
-						}
-						NOT = { is_on_continent = europe }
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_algerie_france_2Inf
-				}
-				random_owned_controlled_state = {
-					limit =  {
-						free_building_slots = {
-							building = infrastructure
-							size > 1
-						}
-						NOT = { is_on_continent = europe }
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_algerie_france_2Inf
-				}
-			}
-
-			if = {
-				limit = {
-					OR = {
-						NOT = {
-							459 = {
-								free_building_slots = {
-									building = infrastructure
-									size > 1
-								}
-							}
-						}
-						NOT = {
-							460 = {
-								free_building_slots = {
-									building = infrastructure
-									size > 1
-								}
-							}
-						}
-					}
-					OR = {
-						459 = {
-							free_building_slots = {
-								building = infrastructure
-								size > 3
-							}
-						}
-						460 = {
-							free_building_slots = {
-								building = infrastructure
-								size > 3
-							}
-						}
-					}
-				}
-				every_owned_state = {
-					limit = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = infrastructure
-							size > 3
-						}
-						OR = {
-							state = 459
-							state = 460
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 4
-						instant_build = yes
-					}
-					set_state_flag = FRA_algerie_france_4Inf
-				}
-			}
-
-			if = {
-				limit = {
-					459 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 1
-						}
-					}
-					460 = {
-						free_building_slots = {
-							building = infrastructure
-							size > 1
-						}
-					}
-				}
-				459 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = FRA_algerie_france_2Inf
-				}
-				460 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = FRA_algerie_france_2Inf
 				}
 			}
 		}
@@ -390,14 +224,13 @@ focus_tree = {
 	focus = {
 		id = FRA_colonial_industry
 		icon = GFX_goal_generic_construct_civ_factory
-		available = {
-		}
 		prerequisite = { focus = FRA_algerie_france }
-		x = 2
+		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
+		available = { NOT = { country_exists = EFR } }
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -416,92 +249,23 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = FRA_colonial_industry_4IC }
-				add_extra_state_shared_building_slots = 4
+			539 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = FRA_colonial_industry_2IC }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						539 = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 3
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_owned_controlled_state =  {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { is_on_continent = europe }
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_industry_2IC
-				}
-				random_owned_controlled_state =  {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						NOT = { is_on_continent = europe }
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_industry_2IC
-				}
-			}
-			if = {
-				limit = {
-					539 = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 3
-							include_locked = yes
-						}
-					}
-				}
-				539 = {
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_industry_4IC
+			539 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -510,12 +274,11 @@ focus_tree = {
 	focus = {
 		id = FRA_colonial_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
-		available = {
-		}
-		prerequisite = { focus = FRA_colonial_industry }
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
+		available = { NOT = { country_exists = EFR } }
+		prerequisite = { focus = FRA_colonial_industry }
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -539,92 +302,234 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = FRA_colonial_military_factories_4MF }
-				add_extra_state_shared_building_slots = 4
+			539 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-			every_state = {
-				limit = { has_state_flag = FRA_colonial_military_factories_2MF }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						539 = {
-							free_building_slots = {
-								building = arms_factory
-								size > 3
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_owned_controlled_state =  {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-						NOT = { is_on_continent = europe }
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_military_factories_2MF
-				}
-				random_owned_controlled_state =  {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-						NOT = { is_on_continent = europe }
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_military_factories_2MF
+			539 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
 				}
 			}
-			if = {
+		}
+	}
+
+	focus = {
+		id = FRA_colonial_industry_america
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = FRA_algerie_france }
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		relative_position_id = FRA_algerie_france
+		available = { NOT = { country_exists = EFR } }
+
+		completion_reward = {
+			every_state = {
 				limit = {
-					539 = {
-						free_building_slots = {
-							building = arms_factory
-							size > 3
-							include_locked = yes
-						}
+					OR = {
+						is_on_continent = south_america
+						is_on_continent = north_america
 					}
+					is_owned_and_controlled_by = FRA
 				}
-				539 = {
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
-					set_state_flag = FRA_colonial_military_factories_4MF
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_colonial_industry_indian_ocean
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = FRA_algerie_france }
+		x = 1
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+		relative_position_id = FRA_algerie_france
+		available = { NOT = { country_exists = EFR } }
+
+		completion_reward = {
+			543 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			706 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			708 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			268 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_colonial_military_indian_ocean
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FRA_colonial_industry_indian_ocean }
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		relative_position_id = FRA_colonial_industry_indian_ocean
+		available = { NOT = { country_exists = EFR } }
+
+		mutually_exclusive = { focus = FRA_colonial_military_west_africa }
+
+		completion_reward = {
+			543 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			706 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			708 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			268 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_colonial_industry_west_africa
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = FRA_algerie_france }
+		x = -1
+		y = 2
+		cost = 5
+
+		available_if_capitulated = yes
+		relative_position_id = FRA_algerie_france
+		available = { NOT = { country_exists = EFR } }
+
+		completion_reward = {
+			556 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			298 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			272 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_colonial_military_west_africa
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FRA_colonial_industry_west_africa }
+		x = 0
+		y = 1
+		cost = 5
+
+		available_if_capitulated = yes
+		relative_position_id = FRA_colonial_industry_west_africa
+		available = { NOT = { country_exists = EFR } }
+
+		mutually_exclusive = { focus = FRA_colonial_military_indian_ocean }
+
+		completion_reward = {
+			556 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			298 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			272 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -734,7 +639,7 @@ focus_tree = {
 		id = FRA_defensive_focus
 		icon = GFX_goal_generic_defence
 		mutually_exclusive = { focus = FRA_aggressive_focus }
-		x = 6
+		x = 11
 		y = 0
 		cost = 10
 
@@ -754,9 +659,10 @@ focus_tree = {
 		id = FRA_fortification_focus
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = FRA_defensive_focus }
-		x = 4
+		x = -2
 		y = 1
 		cost = 10
+		relative_position_id = FRA_defensive_focus
 
 		available_if_capitulated = yes
 
@@ -768,9 +674,10 @@ focus_tree = {
 		id = FRA_alpine_forts
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = FRA_fortification_focus }
-		x = 4
-		y = 2
+		x = 0
+		y = 1
 		cost = 10
+		relative_position_id = FRA_fortification_focus
 
 		available = {
 			735 = { is_controlled_by = FRA }
@@ -790,9 +697,10 @@ focus_tree = {
 		id = FRA_extend_the_maginot_line
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = FRA_alpine_forts }
-		x = 4
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
+		relative_position_id = FRA_alpine_forts
 
 		available = {
 			18 = { is_controlled_by = FRA }
@@ -816,9 +724,10 @@ focus_tree = {
 		id = FRA_infantry_focus
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = FRA_defensive_focus }
-		x = 6
+		x = 0
 		y = 1
 		cost = 10
+		relative_position_id = FRA_defensive_focus
 
 		available_if_capitulated = yes
 
@@ -831,11 +740,12 @@ focus_tree = {
 		id = FRA_artillery_focus
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = FRA_infantry_focus }
-		x = 6
-		y = 2
+		x = 0
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+		relative_position_id = FRA_infantry_focus
 
 		completion_reward = {
 			army_experience = 5
@@ -851,11 +761,12 @@ focus_tree = {
 		id = FRA_heavy_armor_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FRA_artillery_focus }
-		x = 6
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+		relative_position_id = FRA_artillery_focus
 
 		completion_reward = {
 			army_experience = 5
@@ -887,11 +798,12 @@ focus_tree = {
 		id = FRA_aggressive_focus
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = FRA_defensive_focus }
-		x = 8
+		x = 2
 		y = 0
 		cost = 10
 
 		available_if_capitulated = yes
+		relative_position_id = FRA_defensive_focus
 
 		ai_will_do = {
 			factor = 0.2
@@ -906,11 +818,12 @@ focus_tree = {
 		id = FRA_motorized_focus
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = FRA_aggressive_focus }
-		x = 8
+		x = 0
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+		relative_position_id = FRA_aggressive_focus
 
 		completion_reward = {
 			army_experience = 5
@@ -920,10 +833,13 @@ focus_tree = {
 	focus = {
 		id = FRA_mechanized_focus
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = FRA_motorized_focus }
-		x = 8
-		y = 2
+		x = 0
+		y = 1
 		cost = 10
+		prerequisite = { focus = FRA_motorized_focus }
+
+		relative_position_id = FRA_motorized_focus
+
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -938,11 +854,13 @@ focus_tree = {
 		id = FRA_light_medium_armor
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FRA_mechanized_focus }
-		x = 8
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_mechanized_focus
 
 		completion_reward = {
 			army_experience = 5
@@ -962,9 +880,11 @@ focus_tree = {
 			focus = FRA_light_medium_armor
 			focus = FRA_heavy_armor_focus
 		}
-		x = 7
-		y = 4
+		x = 1
+		y = 1
 		cost = 10
+
+		relative_position_id = FRA_heavy_armor_focus
 
 		available_if_capitulated = yes
 
@@ -990,7 +910,7 @@ focus_tree = {
 		id = FRA_initiate_government_reform
 		icon = GFX_goal_generic_national_unity
 
-		x = 10
+		x = 2
 		y = 0
 		cost = 10
 		#ai_will_do = {
@@ -998,6 +918,8 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_aggressive_focus
 
 		completion_reward = {
 			add_political_power = 120
@@ -1007,12 +929,12 @@ focus_tree = {
 	focus = {
 		id = FRA_support_status_quo
 		icon = GFX_goal_support_democracy
-		available = {
-		}
-	 	prerequisite = { focus = FRA_initiate_government_reform }
-		x = 10
+		x = 0
 		y = 1
 		cost = 10
+		prerequisite = { focus = FRA_initiate_government_reform }
+
+		relative_position_id = FRA_initiate_government_reform
 
 		available_if_capitulated = yes
 
@@ -1036,6 +958,9 @@ focus_tree = {
 	focus = {
 		id = FRA_go_with_britain
 		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+		cost = 10
 		available = {
 			is_puppet = no
 			has_government = democratic
@@ -1052,9 +977,8 @@ focus_tree = {
 			}
 		}
 	 	prerequisite = { focus = FRA_support_status_quo }
-		x = 10
-		y = 2
-		cost = 10
+
+		relative_position_id = FRA_support_status_quo
 
 		available_if_capitulated = yes
 
@@ -1083,16 +1007,14 @@ focus_tree = {
 	focus = {
 		id = FRA_strengthen_government_support
 		icon = GFX_goal_generic_demand_territory
-		available = {
-		}
-	 	prerequisite = {
-	 		focus = FRA_go_with_britain
-	 	}
-		x = 10
-		y = 3
+		x = 0
+		y = 1
 		cost = 10
+	 	prerequisite = { focus = FRA_go_with_britain }
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_go_with_britain
 
 		#ai_will_do = {
 		#	factor = 1
@@ -1117,9 +1039,11 @@ focus_tree = {
 			}
 		}
 	 	prerequisite = { focus = FRA_strengthen_government_support }
-		x = 10
-		y = 4
-		cost = 10
+		x = 0
+		y = 1
+		cost = 5
+
+		relative_position_id = FRA_strengthen_government_support
 
 		available_if_capitulated = yes
 
@@ -1136,11 +1060,13 @@ focus_tree = {
 	focus = {
 		id = FRA_navy_focus
 		icon = GFX_goal_generic_build_navy
-		x = 13
+		x = 3
 		y = 0
 		cost = 5
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_initiate_government_reform
 
 		complete_tooltip = {
 			navy_experience = 25
@@ -1194,11 +1120,13 @@ focus_tree = {
 		id = FRA_improved_screen_ships
 		icon = GFX_goal_generic_navy_cruiser
 	 	prerequisite = { focus = FRA_navy_focus }
-		x = 13
+		x = 0
 		y = 1
 		cost = 5
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_navy_focus
 
 		completion_reward = {
 			navy_experience = 25
@@ -1217,11 +1145,13 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 	 	mutually_exclusive = { focus = FRA_carrier_focus }
 	 	prerequisite = { focus = FRA_navy_focus }
-		x = 12
+		x = -1
 		y = 2
 		cost = 5
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_navy_focus
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1239,11 +1169,13 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_carrier
 	 	mutually_exclusive = { focus = FRA_capital_ship_focus }
 	 	prerequisite = { focus = FRA_navy_focus }
-		x = 14
+		x = 1
 		y = 2
 		cost = 5
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_navy_focus
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1263,11 +1195,13 @@ focus_tree = {
 	 		focus = FRA_capital_ship_focus
 	 		focus = FRA_improved_screen_ships
 	 	}
-		x = 13
-		y = 3
+		x = 0
+		y = 2
 		cost = 5
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_improved_screen_ships
 
 		completion_reward = {
 			navy_experience = 25
@@ -1281,37 +1215,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_cas_focus
-		icon = GFX_goal_generic_CAS
-	 	prerequisite = {
-	 		focus = FRA_fighter_focus
-	 	}
-		x = 16
-		y = 2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_cas_focus
-				bonus = 1
-				uses = 1
-				category = cas_bomber
-			}
-		}
-	}
-
-	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-	 	prerequisite = {
-	 	}
-		x = 18
+		x = 5
 		y = 0
 		cost = 10
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_navy_focus
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -1392,11 +1304,13 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		mutually_exclusive = { focus = FRA_bomber_focus }
 	 	prerequisite = { focus = FRA_air_focus }
-		x = 17
+		x = -1
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_air_focus
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1410,15 +1324,39 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		mutually_exclusive = { focus = FRA_fighter_focus }
-	 	prerequisite = { focus = FRA_air_focus }
-		x = 19
+		id = FRA_cas_focus
+		icon = GFX_goal_generic_CAS
+	 	prerequisite = { focus = FRA_fighter_focus }
+		x = -1
 		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_fighter_focus
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_cas_focus
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		mutually_exclusive = { focus = FRA_fighter_focus }
+	 	prerequisite = { focus = FRA_air_focus }
+		x = 1
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		relative_position_id = FRA_air_focus
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1437,11 +1375,13 @@ focus_tree = {
 	 		focus = FRA_fighter_focus
 	 		focus = FRA_bomber_focus
 	 	}
-		x = 18
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_fighter_focus
 
 		completion_reward = {
 			air_experience = 50
@@ -1459,11 +1399,13 @@ focus_tree = {
 		id = FRA_heavy_bomber_focus
 		icon = GFX_goal_generic_occupy_start_war
 	 	prerequisite = { focus = FRA_bomber_focus }
-		x = 20
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 
 		available_if_capitulated = yes
+
+		relative_position_id = FRA_bomber_focus
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1507,7 +1449,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_sway_west_africa
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_france_three
 		prerequisite = { focus = FRA_france_libre }
 		relative_position_id = FRA_france_libre
 		x = 0
@@ -1551,10 +1493,10 @@ focus_tree = {
 
 		completion_reward = {
 			539 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1579,10 +1521,10 @@ focus_tree = {
 				producer = FRA
 			}
 			539 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 6
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1602,10 +1544,10 @@ focus_tree = {
 
 		completion_reward = {
 			539 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 3
 					instant_build = yes
 				}
 			}

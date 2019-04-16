@@ -127,8 +127,8 @@ FRA_free_france_west_africa = {
 				save_event_target_as = FRA_attacked_state
 			}
 			random_list = {
-				35 = { country_event = { id = free_france.13 days = 1 } }
-				65 = { country_event = { id = free_france.14 days = 1 } }
+				50 = { country_event = { id = free_france.13 days = 1 } }
+				50 = { country_event = { id = free_france.14 days = 1 } }
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -282,6 +282,63 @@ FRA_free_france_west_africa = {
 			add_manpower = -1000
 		}
 	}
+
+	FRA_rise_up_west_africa_mission = {
+
+		available = {
+			TAG = FRA
+			check_variable = { attacked_state_west_africa > 0 }
+			556 = { is_owned_and_controlled_by = FRA }
+			539 = { is_owned_and_controlled_by = FRA }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_west_africa
+			check_variable = { attacked_state_west_africa > 0 }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 15
+		fixed_random_seed = no
+
+		remove_effect = {
+			if = {
+				limit = {
+					not = { has_template = "Légion étrangère" }
+				}
+				division_template = {
+					name = "Légion étrangère"
+					priority = 0
+					regiments = {
+						desertinfantry = { x = 0 y = 0 }
+						desertinfantry = { x = 0 y = 1 }
+						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 1 y = 0 }
+						desertinfantry = { x = 1 y = 1 }
+						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+						artillery_brigade = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				end = attacked_state_west_africa
+				539 = {
+					create_unit = {
+						division = "name = \"Légion étrangère\" division_template = \"Légion étrangère\" start_experience_factor = 0.4"
+						owner = ROOT
+					}
+				}
+				add = 1
+			}
+		}
+	}
 }
 
 FRA_free_france_syria = {
@@ -317,7 +374,6 @@ FRA_free_france_syria = {
 			random_list = {
 				60 = {
 					country_event = { id = free_france.13 days = 1 }
-					hidden_effect = { load_oob = FRA_free_france_operation_exporter }
 				}
 				40 = { country_event = { id = free_france.14 days = 1 } }
 			}
@@ -436,6 +492,73 @@ FRA_free_france_syria = {
 			add_manpower = -1000
 		}
 	}
+
+	FRA_rise_up_syria_mission = {
+
+		available = {
+			TAG = FRA
+			check_variable = { attacked_state_syria > 0 }
+			553 = { is_owned_and_controlled_by = FRA }
+		}
+		visible = {
+			has_completed_focus = FRA_sway_syria
+			check_variable = { attacked_state_syria > 0 }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 15
+		fixed_random_seed = no
+
+		remove_effect = {
+			if = {
+				limit = {
+					not = { has_template = "Division Française Libre" }
+				}
+				division_template = {
+					name = "Division Française Libre"
+					priority = 0
+					regiments = {
+						desertinfantry = { x = 0 y = 0 }
+						desertinfantry = { x = 0 y = 1 }
+						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 0 y = 3 }
+						desertinfantry = { x = 0 y = 4 }
+						desertinfantry = { x = 1 y = 0 }
+						desertinfantry = { x = 1 y = 1 }
+						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 1 y = 3 }
+						desertinfantry = { x = 1 y = 4 }
+						desertinfantry = { x = 2 y = 0 }
+						desertinfantry = { x = 2 y = 1 }
+						desertinfantry = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+					}
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				end = attacked_state_syria
+				553 = {
+					create_unit = {
+						division = "name = \"Légion étrangère\" division_template = \"Légion étrangère\" start_experience_factor = 0.4"
+						owner = ROOT
+					}
+				}
+				add = 1
+			}
+		}
+	}
 }
 
 FRA_free_france_america = {
@@ -548,6 +671,62 @@ FRA_free_france_america = {
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
 			add_manpower = -500
+		}
+	}
+
+	FRA_rise_up_americas_mission = {
+
+		available = {
+			TAG = FRA
+			check_variable = { attacked_state_america > 0 }
+			310 = { is_owned_and_controlled_by = FRA }
+		}
+		visible = {
+			has_completed_focus = FRA_decision_unlock_america
+			check_variable = { attacked_state_america > 0 }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 15
+		fixed_random_seed = no
+
+		remove_effect = {
+			if = {
+				limit = {
+					not = { has_template = "Légion étrangère" }
+				}
+				division_template = {
+					name = "Légion étrangère"
+					priority = 0
+					regiments = {
+						desertinfantry = { x = 0 y = 0 }
+						desertinfantry = { x = 0 y = 1 }
+						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 1 y = 0 }
+						desertinfantry = { x = 1 y = 1 }
+						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+						artillery_brigade = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				end = attacked_state_america
+				310 = {
+					create_unit = {
+						division = "name = \"Légion étrangère\" division_template = \"Légion étrangère\" start_experience_factor = 0.4"
+						owner = ROOT
+					}
+				}
+				add = 1
+			}
 		}
 	}
 }
@@ -699,6 +878,62 @@ FRA_free_france_indian_ocean = {
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -250 }
 			add_manpower = -2500
+		}
+	}
+
+	FRA_rise_up_indian_ocean_mission = {
+
+		available = {
+			TAG = FRA
+			check_variable = { attacked_state_indian_ocean > 0 }
+			543 = { is_owned_and_controlled_by = FRA }
+		}
+		visible = {
+			has_completed_focus = FRA_decision_unlock_indian_ocean
+			check_variable = { attacked_state_indian_ocean > 0 }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+		days_remove = 15
+		fixed_random_seed = no
+
+		remove_effect = {
+			if = {
+				limit = {
+					not = { has_template = "Légion étrangère" }
+				}
+				division_template = {
+					name = "Légion étrangère"
+					priority = 0
+					regiments = {
+						desertinfantry = { x = 0 y = 0 }
+						desertinfantry = { x = 0 y = 1 }
+						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 1 y = 0 }
+						desertinfantry = { x = 1 y = 1 }
+						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 2 y = 1 }
+						artillery_brigade = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				end = attacked_state_indian_ocean
+				543 = {
+					create_unit = {
+						division = "name = \"Légion étrangère\" division_template = \"Légion étrangère\" start_experience_factor = 0.4"
+						owner = ROOT
+					}
+				}
+				add = 1
+			}
 		}
 	}
 }

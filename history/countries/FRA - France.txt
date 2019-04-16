@@ -73,6 +73,11 @@ if = {
 	}
 }
 
+set_variable = { attacked_state_west_africa = 0 }
+set_variable = { attacked_state_america = 0 }
+set_variable = { attacked_state_indian_ocean = 0 }
+set_variable = { attacked_state_syria = 0 }
+
 set_convoys = 300
 set_stability = 0.5
 set_war_support = 0.15
