@@ -654,6 +654,7 @@ on_actions = {
 			ITA = { country_event = { id = JFU_welcome.22 } }
 			GER = { country_event = { id = JFU_welcome.23 } }
 			SOV = { country_event = { id = JFU_welcome.50 } }
+			FRA = { country_event = { id = free_france.11 } }
 		}
 	}
 
