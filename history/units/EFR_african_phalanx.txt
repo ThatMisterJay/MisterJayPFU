@@ -36,7 +36,7 @@ units = {
 	division= {
 		name = "1. Phalange Africaine"
 		location = 7069  # casablanca
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -45,7 +45,7 @@ units = {
 	division= {
 		name = "2. Phalange Africaine"
 		location = 7069  # casablanca
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -54,7 +54,7 @@ units = {
 	division= {
 		name = "3. Phalange Africaine"
 		location = 7132  # algiers
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -63,7 +63,7 @@ units = {
 	division= {
 		name = "4. Phalange Africaine"
 		location = 7132  # algiers
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -72,7 +72,7 @@ units = {
 	division= {
 		name = "5. Phalange Africaine"
 		location = 7132  # algiers
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -81,7 +81,7 @@ units = {
 	division= {
 		name = "6. Phalange Africaine"
 		location = 7132  # algiers
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -90,7 +90,7 @@ units = {
 	division= {
 		name = "7. Phalange Africaine"
 		location = 7132  # algiers
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.85
@@ -99,7 +99,7 @@ units = {
 	division= {
 		name = "8. Phalange Africaine"
 		location = 7132  # algiers
-		division_template = "Régiment d'Infanterie Vichy"
+		division_template = "Régiment d'Infanterie Afrique"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.85

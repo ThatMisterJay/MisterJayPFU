@@ -38,7 +38,7 @@ focus_tree = {
 		relative_position_id = EFR_marechal_nous_voila
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -260,7 +260,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -423,7 +423,7 @@ focus_tree = {
 		relative_position_id = EFR_chantiers_de_la_jeunesse
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -431,7 +431,7 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Alphonse Juin"
 				picture = "Portrait_France_Alphonse_Juin.dds"
-				traits = { panzer_leader  }
+				traits = { panzer_leader }
 				id = 799
 				skill = 4
 				attack_skill = 3
@@ -448,7 +448,7 @@ focus_tree = {
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 		available = {
@@ -475,7 +475,7 @@ focus_tree = {
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1372,17 +1372,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-					}
-				EFR = {
-					add_autonomy_ratio = {
-						value = -0.05
-						localization = EFR_collaboration
-					}
-				}
-			}
 		}
 	}
 
@@ -1396,9 +1385,8 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			GER = {
-				has_war_with = SOV
-			}
+			GER = { has_war_with = SOV }
+			is_subject_of = GER
 		}
 
 
@@ -1407,22 +1395,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-					}
-				EFR = {
-					add_autonomy_ratio = {
-						value = 0.05
-						localization = EFR_collaboration
-					}
-				}
+			add_autonomy_ratio = {
+				value = 0.05
+				localization = EFR_collaboration
 			}
-
-			add_timed_idea = {idea = EFR_war_repairs days = 80}
-			GER = {add_timed_idea = {idea = EFR_german_war_repairs days = 140}}
-
+			add_timed_idea = { idea = EFR_war_repairs days = 80 }
+			GER = { add_timed_idea = { idea = EFR_german_war_repairs days = 140 } }
 		}
+
 	}
 
 	focus = {

@@ -89,7 +89,7 @@
  EFR_french_volunteer_army_1_desc:0 "The French have sent a volunteer army. This will greatly help our war efforts, but there is some resistance to the volunteers - mainly their language."
  EFR_french_volunteer_army_2:0 "French Volunteer Army"
  EFR_french_volunteer_army_2_desc:0 "The French have sent a volunteer army. This will greatly help our war efforts, but there is some resistance to the volunteers - mainly their language."
- EFR_economic_help:0 "Economic Help"
+ EFR_economic_help:0 "Economic Cooperation"
  EFR_economic_help_desc:0 "After the Armistice our industry had some issues. Maybe the Germans can help with this."
  EFR_German_war_reparations:0 "German War Reparations"
  EFR_German_war_reparations_desc:0 "As an ally of Germany, it is our duty to help in the war. This way, our people will reinforce the German industry."
@@ -141,8 +141,8 @@
  idea_EFR_secret_military_researches:0 "Secret Military Researches"
  idea_EFR_rationning:0 "War Rationing"
  idea_EFR_recycling:0 "War Recycling"
- EFR_war_repairs:0 "War Repairs"
- EFR_german_war_repairs:0 "French War Repairs"
+ EFR_war_repairs:0 "War Reparations"
+ EFR_german_war_repairs:0 "French War Reparations"
 
  autonomy_collabo:0 "Collaboration"
 
