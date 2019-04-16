@@ -100,3 +100,7 @@ free_france.13.a:0 "Huzzah!"
 free_france.14.t:0 "The Aftermath of the Battle"
 free_france.14.desc:0 "We have been defeated, but have done so with honour. We will return, and we shall overcome! Vive la France!"
 free_france.14.a:0 "Huzzah!"
+
+free_france.15.t:0 "The Invasion of [FRA_attacked_state.getName]"
+free_france.15.desc:0 "The Free French attack on [FRA_attacked_state.getName] has pushed us out of the region. We will have to sit by while those bastards claim it as their territory..."
+free_france.15.a:0 "Thats too bad."

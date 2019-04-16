@@ -362,6 +362,9 @@ country_event = {
 			}
 			add_to_variable = { attacked_state_indian_ocean = 1 }
 		}
+		hidden_effect = {
+			EFR = { country_event = { id = free_france.15 } }
+		}
 	}
 }
 
@@ -376,5 +379,18 @@ country_event = {
 	option = {
 		name = free_france.14.a
 		clr_country_flag = attacking_state
+	}
+}
+
+country_event = {
+	id = free_france.15
+	title = free_france.15.t
+	desc = free_france.15.desc
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.15.a
 	}
 }
