@@ -248,18 +248,8 @@ focus_tree = {
 			}
 		}
 
-		complete_tooltip = {
-			539 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			539 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -301,18 +291,8 @@ focus_tree = {
 			}
 		}
 
-		complete_tooltip = {
-			539 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			539 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -337,6 +317,7 @@ focus_tree = {
 		available = { NOT = { country_exists = EFR } }
 
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			every_state = {
 				limit = {
 					OR = {
@@ -368,6 +349,7 @@ focus_tree = {
 		available = { NOT = { country_exists = EFR } }
 
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			543 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -418,6 +400,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_colonial_military_west_africa }
 
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			543 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -466,6 +449,7 @@ focus_tree = {
 		available = { NOT = { country_exists = EFR } }
 
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			556 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -508,6 +492,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_colonial_military_indian_ocean }
 
 		completion_reward = {
+			add_timed_idea = { idea = FRA_colonial_construction days = 35 }
 			556 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
