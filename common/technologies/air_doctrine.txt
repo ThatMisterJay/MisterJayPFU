@@ -243,6 +243,9 @@ technologies = {
 			leads_to_tech = logistical_bombing
 			research_cost_coeff = 1
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.20
+		}
 
 		doctrine = yes
 		research_cost = 2
@@ -539,7 +542,7 @@ technologies = {
 
 		# EFFECT ########
 		air_strategic_bomber_bombing_factor = 0.2
-		port_strike = 0.25
+		port_strike = 0.30
 		###########
 
 		doctrine = yes
@@ -618,6 +621,9 @@ technologies = {
 		# EFFECT ########
 		air_cas_efficiency = 0.20
 		###########
+		modifier = {
+			naval_strike_targetting_factor = 0.15
+		}
 
 		path = {
 			leads_to_tech = direct_ground_support
@@ -888,6 +894,9 @@ technologies = {
 		# EFFECT ########
 		tac_bomber = {
 			air_bombing = 0.10
+		}
+		modifier = {
+			naval_strike_targetting_factor = 0.20
 		}
 		###########
 
@@ -1217,6 +1226,9 @@ technologies = {
 		# EFFECT ########
 		army_bonus_air_superiority_factor = 0.15
 		###########
+		modifier = {
+			naval_strike_targetting_factor = 0.20
+		}
 
 		path = {
 			leads_to_tech = fighter_veteran_initiative
@@ -1482,6 +1494,9 @@ technologies = {
 		# EFFECT ########
 		air_strategic_bomber_defence_factor = 0.2
 		###########
+		modifier = {
+			naval_strike_targetting_factor = 0.20
+		}
 
 
 		doctrine = yes
