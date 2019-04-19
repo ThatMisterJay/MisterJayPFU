@@ -1509,22 +1509,23 @@ political_actions = {
             }
         }
 
-	visible = {
+		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
         }
-        cost = 100
-        fire_only_once = yes
+        cost = 50
+        fire_only_once = no
 
-        days_remove = -1
+        days_remove = 180
+		days_re_enable = 120
 
         available = {
             GER = { NOT = { has_government = ROOT } }
         }
 
         modifier = {
-            research_speed_factor = 0.03
-            stability_factor = -0.05
+            research_speed_factor = 0.08
+            stability_factor = -0.10
         }
 
         remove_trigger = {
@@ -1556,23 +1557,25 @@ political_actions = {
                 original_tag = FRA
                 original_tag = CAN
             }
-	}
+		}
 
-	visible = {
+		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
         }
-        cost = 100
-        fire_only_once = yes
-        days_remove = -1
+        cost = 50
+        fire_only_once = no
+
+        days_remove = 180
+		days_re_enable = 120
 
         available = {
             ITA = { NOT = { has_government = ROOT } }
         }
 
         modifier = {
-            research_speed_factor = 0.03
-            stability_factor = -0.05
+            research_speed_factor = 0.08
+            stability_factor = -0.10
         }
 
         remove_trigger = {
