@@ -539,6 +539,7 @@ technologies = {
 
 		# EFFECT ########
 		air_strategic_bomber_bombing_factor = 0.2
+		port_strike = 0.25
 		###########
 
 		doctrine = yes
@@ -962,7 +963,6 @@ technologies = {
 
 		# EFFECT ########
 		air_nav_efficiency = 0.1
-		port_strike = 0.25
 		###########
 
 		path = {
