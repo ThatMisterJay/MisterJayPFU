@@ -188,7 +188,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-						400 = {
+			400 = {
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = arms_factory
@@ -227,7 +227,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-						590 = {
+			590 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -253,7 +253,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-						236 = {
+			236 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -266,7 +266,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									214 = {
+			214 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
@@ -279,7 +279,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-												351 = {
+			351 = {
 				add_extra_state_shared_building_slots = 9
 				add_building_construction = {
 					type = arms_factory
@@ -292,7 +292,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-						566 = {
+			566 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -305,7 +305,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									251 = {
+			251 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -318,7 +318,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									249 = {
+			249 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -331,7 +331,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									239 = {
+			239 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -344,7 +344,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									229 = {
+			229 = {
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = arms_factory
@@ -357,7 +357,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									230 = {
+			230 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -370,7 +370,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									231 = {
+			231 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -383,7 +383,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									232 = {
+			232 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
@@ -396,7 +396,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-									568 = {
+			568 = {
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = arms_factory
@@ -410,8 +410,6 @@ focus_tree = {
 				}
 			}
 		}
-
-			# REVISIT Consider implementing as events
 		}
 	}
 
