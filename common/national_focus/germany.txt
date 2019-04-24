@@ -1330,6 +1330,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 20
+			add_named_threat = { threat = 10 name = germany.4.t }
+			add_political_power = 75
 			if = {
 				limit = {
 					country_exists = AUS

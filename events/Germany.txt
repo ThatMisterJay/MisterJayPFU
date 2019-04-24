@@ -35,10 +35,8 @@ country_event = {
 		}
 
 		annex_country = { target = AUS transfer_troops = yes }
-		add_political_power = 75
 		hidden_effect = {
 			load_oob = GER_austria
-			add_named_threat = { threat = 10 name = germany.4.t }
 			set_country_flag = AUS_annexed
 			news_event = { hours = 6 id = news.36 }
 		}

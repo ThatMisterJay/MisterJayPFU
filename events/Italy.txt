@@ -16,7 +16,6 @@ country_event = {
 	option = {
 		name = italy.1.a
 		annex_country = { target = ALB }
-		add_named_threat = { threat = 2 name = ITA_albania_war_goal }
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
 		}
@@ -56,59 +55,11 @@ country_event = {
 	
 	option = { # Yield
 		name = italy.3.a
-		ai_chance = {
-			base = 40
-			modifier = {
-				factor = 0				
-				any_other_country = {
-					is_major = yes
-					NOT = { tag = ITA }
-					OR = {
-						has_guaranteed = ALB
-						is_in_faction_with = ALB
-					}
-				}
-			}
-		}
+		ai_chance = { factor = 100 }
 		ITA = {
 			country_event = { days = 1 id = italy.1 }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-	}
-	option = { # Resist
-		name = italy.3.b
-		ai_chance = {
-			factor = 20 
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_in_faction_with = ITA
-						ITA = { is_faction_leader = yes }
-					}
-					is_historical_focus_on = yes
-					AND = {
-						is_in_faction = no 
-						NOT = {
-							any_other_country = {
-								NOT = { tag = ITA }
-								has_guaranteed = ALB
-							} 
-						}
-					}
-				}
-			}
-		}
-		ITA = {
-			effect_tooltip = {
-				create_wargoal = {
-					type = take_state_focus
-					target = ALB
-					generator = { 44 }
-				}
-			}
-			country_event = { days = 1 id = italy.2 }
-		}
 	}
 }
 
