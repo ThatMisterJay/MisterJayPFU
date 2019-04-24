@@ -204,15 +204,7 @@ country_event = {
     desc = pfu.5.d
     picture = GFX_report_event_Großdeutschland
 
-    trigger = {
-        tag = GER
-        date > 1941.5.5
-
-		NOT = { has_country_flag = elite_mech_div }
-    }
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 30 }
+    is_triggered_only = yes
 
     immediate = {
         set_country_flag = elite_mech_div
@@ -234,14 +226,7 @@ country_event = {
 	desc = pfu.6.d
 	picture = GFX_report_event_lssah
 
-	trigger = {
-		tag = GER
-		date > 1939.10.1
-		NOT = { has_global_flag = ss_lssah }
-	}
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 30 }
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ss_lssah
@@ -263,14 +248,7 @@ country_event = {
 	desc = pfu.7.d
 	picture = GFX_report_event_dasreich
 
-	trigger = {
-		tag = GER
-		date > 1940.9.1
-		NOT = { has_global_flag = ss_dasreich }
-	}
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 30 }
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ss_dasreich
@@ -292,14 +270,7 @@ country_event = {
 	desc = pfu.8.d
 	picture = GFX_report_event_totenkopf
 
-	trigger = {
-		tag = GER
-		date > 1941.2.1
-		NOT = { has_global_flag = ss_totenkopf }
-	}
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 30 }
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ss_totenkopf
@@ -363,6 +334,9 @@ country_event = {
 		NOT = { has_global_flag = heavy_tank_div }
 	}
 
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
 	immediate = {
 		set_global_flag = heavy_tank_div
 	}
@@ -376,9 +350,6 @@ country_event = {
 			load_oob = GER_heavytank
 		}
 	}
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -460,12 +431,12 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		ENG = {
-			controls_state = 447
-		}
+		ENG = { controls_state = 447 }
 		has_tech = basic_medium_tank
-		NOT = { has_global_flag = ENG_tank }
 	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 
 	immediate = {
 		set_global_flag = ENG_tank
@@ -479,7 +450,6 @@ country_event = {
 			load_oob = ENG_tank
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -491,8 +461,9 @@ country_event = {
 	trigger = {
 		tag = USA
 		date > 1942.1.1
-		NOT = { has_global_flag = USA_bombers }
 	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
 
 	immediate = {
 		set_global_flag = USA_bombers
@@ -507,7 +478,6 @@ country_event = {
 			load_oob = USA_bombers
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -516,11 +486,7 @@ country_event = {
     desc = pfu.17.d
     picture = GFX_report_event_wiking
 
-    trigger = {
-        tag = GER
-        date > 1941.8.1
-		NOT = { has_country_flag = ss_wiking }
-    }
+    is_triggered_only = yes
 
     immediate = {
         set_country_flag = ss_wiking
@@ -534,7 +500,6 @@ country_event = {
             load_oob = GER_wiking
         }
     }
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -546,13 +511,12 @@ country_event = {
 	trigger = {
 		tag = GER
 		OR = {
-			GER = {
-				controls_state = 16
-			}
+			GER = { controls_state = 16 }
 			date > 1940.2.1
 		}
-		NOT = { has_global_flag = short_war }
 	}
+
+	fire_only_once = yes
 
 	immediate = {
 		set_global_flag = short_war
@@ -574,12 +538,14 @@ country_event = {
 
 	trigger = {
 		tag = GER
-		date > 1941.2.1
-		GER = {
-			controls_state = 144
+		date > 1941.2.1`
+		OR = {
+			GER = { controls_state = 144 }
+			GER = { controls_state = 143 }
 		}
-		NOT = { has_global_flag = GER_nord }
 	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 
 	immediate = {
 		set_global_flag = GER_nord
@@ -593,7 +559,6 @@ country_event = {
 			load_oob = GER_nord
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -605,11 +570,10 @@ country_event = {
 	trigger = {
 		tag = ENG
 		date > 1939.1.1
-		GER = {
-			controls_state = 16
-		}
+		GER = { controls_state = 16 }
 		NOT = { has_global_flag = ENG_finesthour }
 	}
+	fire_only_once = yes
 
 	immediate = {
 		set_global_flag = ENG_finesthour
@@ -628,11 +592,7 @@ country_event = {
 	desc = pfu.21.d
 	picture = GFX_report_event_totalwar
 
-	trigger = {
-		date > 1942.6.1
-		tag = GER
-		NOT = { has_global_flag = total_war }
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = total_war
@@ -643,7 +603,6 @@ country_event = {
 		remove_ideas = GER_short_war
 		add_ideas = GER_total_war
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -659,8 +618,9 @@ country_event = {
 		has_tech = improved_medium_tank
 		has_tech = improved_medium_td
 		has_tech = improved_medium_art
-		NOT = { has_global_flag = ss_nordland }
 	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 
 	immediate = {
 		set_global_flag = ss_nordland
@@ -674,7 +634,6 @@ country_event = {
 			load_oob = GER_nordland
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -683,11 +642,7 @@ country_event = {
 	desc = pfu.23.d
 	picture = GFX_report_event_hohenstaufen
 
-	trigger = {
-		tag = GER
-		date > 1943.1.1
-		NOT = { has_global_flag = ss_hohenstaufen }
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ss_hohenstaufen
@@ -701,7 +656,6 @@ country_event = {
 			load_oob = GER_hohenstaufen
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -710,11 +664,7 @@ country_event = {
 	desc = pfu.24.d
 	picture = GFX_report_event_frundsberg
 
-	trigger = {
-		tag = GER
-		date > 1943.2.1
-		NOT = { has_global_flag = ss_frundsberg }
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ss_frundsberg
@@ -728,7 +678,6 @@ country_event = {
 			load_oob = GER_frundsberg
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -737,11 +686,7 @@ country_event = {
 	desc = pfu.25.d
 	picture = GFX_report_event_hitlerjugend
 
-	trigger = {
-		tag = GER
-		date > 1943.12.1
-		NOT = { has_global_flag = ss_hitlerjugend }
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ss_hitlerjugend
@@ -755,7 +700,6 @@ country_event = {
 			load_oob = GER_hitlerjugend
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -764,12 +708,7 @@ country_event = {
 	desc = pfu.26.d
 	picture = GFX_report_event_jap_southern
 
-	trigger = {
-		tag = JAP
-		date > 1940.10.1
-	}
-
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = pfu.26.a
@@ -779,7 +718,6 @@ country_event = {
 			load_oob = JAP_southern
 		}
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 country_event = {
@@ -788,12 +726,7 @@ country_event = {
 	desc = pfu.27.d
 	picture = GFX_report_event_jap_southern
 
-	trigger = {
-		tag = JAP
-		date > 1940.10.1
-	}
-
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = pfu.27.a
@@ -802,7 +735,6 @@ country_event = {
 			load_oob = JAP_homeland
 		}
 	}
-	mean_time_to_happen = { days = 1 }
 }
 
 country_event = {
@@ -811,11 +743,7 @@ country_event = {
 	desc = pfu.28.d
 	picture = GFX_report_event_JAP_warning
 
-	trigger = {
-		tag = JAP
-		date > 1936.1.2
-		NOT = { has_global_flag = JAP_warning }
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = JAP_warning
@@ -824,7 +752,6 @@ country_event = {
 	option = {
 		name = pfu.10.a
 	}
-	mean_time_to_happen = { days = 30 }
 }
 
 
@@ -928,12 +855,13 @@ country_event = {
 		date > 1939.5.1
 		ENG = { controls_state = 447 }
 		has_tech = basic_heavy_tank
-		NOT = { has_global_flag = ENG_royalarmor }
 	}
 
 	immediate = {
 		set_global_flag = ENG_royalarmor
 	}
+
+	fire_only_once = yes
 
 	option = {
 		name = pfu.33.a
@@ -943,7 +871,7 @@ country_event = {
 			load_oob = ENG_royalarmor
 		}
 	}
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 1 }
 }
 
 country_event = {
