@@ -654,8 +654,24 @@ on_actions = {
 			}
 			BUL = { country_event = { id = JFU_welcome.21 } }
 			ITA = { country_event = { id = JFU_welcome.22 } }
-			GER = { country_event = { id = JFU_welcome.23 } }
+			GER = { 
+				country_event = { id = JFU_welcome.23 } 
+				country_event = { id = pfu.6 days = 1370 }
+				country_event = { id = pfu.7 days = 1706 }
+				country_event = { id = pfu.5 days = 1952 }
+				country_event = { id = pfu.8 days = 1859 }
+				country_event = { id = pfu.17 days = 2040 }
+				country_event = { id = pfu.21 days = 2344 }
+				country_event = { id = pfu.23 days = 2558 }
+				country_event = { id = pfu.24 days = 2589 }
+				country_event = { id = pfu.25 days = 2892 }
+			}
 			SOV = { country_event = { id = JFU_welcome.50 } }
+			JAP = {
+				country_event = { id = pfu.28 }
+				country_event = { id = pfu.26 days = 1746 }
+				country_event = { id = pfu.27 days = 1736 }
+			}
 		}
 	}
 
