@@ -572,7 +572,7 @@ FRA_free_france_america = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_america
 			NOT = { 310 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -609,7 +609,7 @@ FRA_free_france_america = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_america
 			NOT = { 694 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -646,7 +646,7 @@ FRA_free_france_america = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_america
 			NOT = { 730 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -742,7 +742,7 @@ FRA_free_france_indian_ocean = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_indian_ocean
 			NOT = { 543 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -779,7 +779,7 @@ FRA_free_france_indian_ocean = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_indian_ocean
 			NOT = { 708 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -816,7 +816,7 @@ FRA_free_france_indian_ocean = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_indian_ocean
 			NOT = { 706 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -853,7 +853,7 @@ FRA_free_france_indian_ocean = {
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_sway_syria
+			has_completed_focus = FRA_decision_unlock_indian_ocean
 			NOT = { 268 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
