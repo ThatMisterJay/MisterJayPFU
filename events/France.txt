@@ -461,6 +461,14 @@ country_event = {
 				limit = { FRA = { owns_state = 1 } }
 				transfer_state = 1
 			}
+			if = {
+				limit = { FRA = { owns_state = 32 } }
+				transfer_state = 32
+			}
+			if = {
+				limit = { FRA = { owns_state = 21 } }
+				transfer_state = 21
+			}
 			transfer_state = 20
 			transfer_state = 22
 			transfer_state = 25
