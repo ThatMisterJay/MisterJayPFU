@@ -15,13 +15,11 @@ ai_historical_focus_list_HUN = {
 		HUN_establish_the_air_force
 		HUN_renounce_the_treaty_of_trianon
 		HUN_reaffirm_territorial_claims
-		HUN_demand_southern_slovakia
 		HUN_civilian_industry
 		HUN_invite_foreign_investors
 		HUN_trade_deal_with_germany
 		HUN_army_maneuvers
 		HUN_mobile_focus
-		HUN_demand_transylvania
 		HUN_joint_aluminum_mining_company
 		HUN_join_axis
 		HUN_expand_the_manfred_weiss_steel_works
