@@ -339,7 +339,7 @@ ideas = {
 			}
 			traits = { backroom_backstabber }
 
-			cost = 200
+			cost = 175
 		}
 		SLO_ferdinand_durcansky = { #foreign affairs, nazi lover
 
@@ -351,7 +351,7 @@ ideas = {
 			}
 			traits = { ideological_crusader }
 
-			cost = 200
+			cost = 175
 		}
 #		SLO_jaroslav_kratochvil = {  # A guy from the Bohemia Moravia Protectorate...
 #			picture = generic_political_advisor_europe_2

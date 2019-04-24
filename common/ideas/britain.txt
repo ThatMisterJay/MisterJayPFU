@@ -1937,7 +1937,7 @@ ideas = {
 
 			traits = { backroom_backstabber }
 
-			cost = 200
+			cost = 175
 		}
 
 		ENG_maxwell_aitken = {
