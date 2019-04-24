@@ -240,7 +240,7 @@ focus_tree = {
 		id = ROM_german_romanian_oil_exploitation_company
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_join_axis }
-		x = -1
+		x = 0
 		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
@@ -277,44 +277,6 @@ focus_tree = {
 						amount = 10
 					}
 				}
-			}
-		}
-	}
-
-	focus = {
-		id = ROM_demand_transnistria
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = ROM_join_axis }
-		x = 1
-		y = 3
-		relative_position_id = ROM_trade_treaty_with_germany
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			192 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
-			}
-			198 = {
-				is_owned_by = SOV
-				is_controlled_by = SOV
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = SOV
-				generator = { 192 198 }
 			}
 		}
 	}
