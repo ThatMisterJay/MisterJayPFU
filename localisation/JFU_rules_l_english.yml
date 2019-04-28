@@ -131,7 +131,7 @@
     JFU_rules.12.a:0 "I should follow these!"
 
     JFU_rules.13.t:0 "Rules for USA"
-    JFU_rules.13.d:0 "1. Cannot join the Allies or go to war until 1941 or if any of the following occur: \n- Axis takes a port in UK \n- Operation Barbarossa occurs \n- Invasion of South American European Colonies \n\n2. Cannot lend lease the allies until June 1940 or France falls."
+    JFU_rules.13.d:0 "1. Cannot join the Allies or go to war until 1941 or if any of the following occur: \n- Axis takes a port in UK \n- Operation Barbarossa occurs \n- Invasion of South American European Colonies \n\n2. Cannot lend lease the allies until June 1940 or France falls (Fuel allowed)."
     JFU_rules.13.a:0 "I should follow these!"
 
     JFU_rules.14.t:0 "Rules for France"
