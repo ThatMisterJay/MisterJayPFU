@@ -304,6 +304,8 @@ technologies = {
 			position = { x = 4 y = 2 }
 		}
 
+		allow = { NOT = { has_tech = dispersed_industry } }
+
 		ai_will_do = {
 			factor = 25
 
@@ -371,6 +373,8 @@ technologies = {
 			name = industry_folder
 			position = { x = 4 y = 4 }
 		}
+
+		allow = { NOT = { has_tech = dispersed_industry } }
 
 		ai_will_do = {
 			factor = 20
@@ -527,6 +531,8 @@ technologies = {
 			concentrated_industry
 		}
 
+		allow = { NOT = { has_tech = dispersed_industry } }
+
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 2 }
@@ -602,6 +608,8 @@ technologies = {
 			name = industry_folder
 			position = { x = 6 y = 4 }
 		}
+
+		allow = { NOT = { has_tech = dispersed_industry } }
 
 		ai_will_do = {
 			factor = 20

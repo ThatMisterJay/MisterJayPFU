@@ -6,11 +6,18 @@ technologies = {
 		air_superiority_detect_factor = 0.1
 		###########
 
-	xor = { force_rotation formation_flying }
+		xor = { force_rotation formation_flying }
 
 		path = {
 			leads_to_tech = infrastructure_destruction
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			NOT = {
+				has_tech = formation_flying
+				has_tech = force_rotation
+			}
 		}
 
 		path = {
@@ -54,6 +61,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = formation_flying
+				has_tech = force_rotation
+			}
+		}
+
 		doctrine = yes
 		research_cost = 2
 
@@ -88,6 +102,13 @@ technologies = {
 		path = {
 			leads_to_tech = naval_strike_tactics
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			NOT = {
+				has_tech = formation_flying
+				has_tech = force_rotation
+			}
 		}
 
 		doctrine = yes
@@ -587,6 +608,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = air_superiority
+				has_tech = force_rotation
+			}
+		}
+
 		doctrine = yes
 		research_cost = 1.5
 
@@ -628,6 +656,13 @@ technologies = {
 		path = {
 			leads_to_tech = direct_ground_support
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			NOT = {
+				has_tech = air_superiority
+				has_tech = force_rotation
+			}
 		}
 
 		doctrine = yes
@@ -1089,6 +1124,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = air_superiority
+				has_tech = formation_flying
+			}
+		}
+
 		doctrine = yes
 		research_cost = 1.5
 
@@ -1123,6 +1165,13 @@ technologies = {
 		path = {
 			leads_to_tech = low_echelon_support
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			NOT = {
+				has_tech = air_superiority
+				has_tech = formation_flying
+			}
 		}
 
 		doctrine = yes

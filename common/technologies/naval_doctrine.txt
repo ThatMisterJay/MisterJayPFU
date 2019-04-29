@@ -34,6 +34,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = trade_interdiction
+				has_tech = base_strike
+			}
+		}
+
 		doctrine = yes
 		research_cost = 1
 
@@ -87,6 +94,13 @@ technologies = {
 			naval_doctrine
 			fleet_in_being_tree
 			cat_fleet_in_being
+		}
+
+		allow = {
+			NOT = {
+				has_tech = trade_interdiction
+				has_tech = base_strike
+			}
 		}
 
 		folder = {
@@ -337,6 +351,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = trade_interdiction
+				has_tech = base_strike
+			}
+		}
+
 		doctrine = yes
 		research_cost = 1
 
@@ -519,6 +540,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = trade_interdiction
+				has_tech = base_strike
+			}
+		}
+
 		doctrine = yes
 		research_cost = 1
 
@@ -699,6 +727,13 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = base_strike
+			}
+		}
+
 		doctrine = yes
 		research_cost = 1
 
@@ -749,6 +784,13 @@ technologies = {
 			trade_interdiction_tree
 			submarine_doctrine
 			cat_trade_interdiction
+		}
+
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = base_strike
+			}
 		}
 
 		folder = {
@@ -1015,6 +1057,13 @@ technologies = {
 			cat_trade_interdiction
 		}
 
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = base_strike
+			}
+		}
+
 		folder = {
 			name = naval_doctrine_folder
 			position = { x = -2 y = 2 }
@@ -1230,6 +1279,13 @@ technologies = {
 			cat_trade_interdiction
 		}
 
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = base_strike
+			}
+		}
+
 		folder = {
 			name = naval_doctrine_folder
 			position = { x = 0 y = 2 }
@@ -1404,6 +1460,13 @@ technologies = {
 			cat_base_strike
 		}
 
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = trade_interdiction
+			}
+		}
+
 		folder = {
 			name = naval_doctrine_folder
 			position = { x = 0 y = 0 }
@@ -1444,6 +1507,13 @@ technologies = {
 			naval_doctrine
 			base_strike_main
 			cat_base_strike
+		}
+
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = trade_interdiction
+			}
 		}
 
 		folder = {
@@ -1749,6 +1819,13 @@ technologies = {
 			cat_base_strike
 		}
 
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = trade_interdiction
+			}
+		}
+
 		folder = {
 			name = naval_doctrine_folder
 			position = { x = 0 y = 2 }
@@ -1888,6 +1965,13 @@ technologies = {
 		path = {
 			leads_to_tech = escort_patrols
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			NOT = {
+				has_tech = fleet_in_being
+				has_tech = trade_interdiction
+			}
 		}
 
 		doctrine = yes
