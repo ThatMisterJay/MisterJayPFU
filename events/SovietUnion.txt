@@ -728,18 +728,6 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		name = soviet.25.a
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = mikhail_kalinin
-		set_country_flag = purged_kalinin
-		hidden_effect = {
-			remove_ideas = mikhail_kalinin
-		}
-	}
-	option = {
-		ai_chance = {
-			factor = 30
-		}
 		name = soviet.25.b
 		custom_effect_tooltip = remove_political_advisor
 		show_ideas_tooltip = nikita_khrushchev
@@ -747,14 +735,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = nikita_khrushchev
 		}
-	}
-	option = {
-		ai_chance = {
-			factor = 30
-		}
-		name = soviet.25.c
-		add_political_power = -75
-		set_country_flag = purged_party_members
 	}
 }
 
@@ -867,7 +847,7 @@ country_event = {
 		show_ideas_tooltip = SOV_nikolai_yezhov
 		custom_effect_tooltip = remove_chief_of_airforce
 		show_ideas_tooltip = yakov_smushkevich
-		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = konstantin_vershinin
 		show_ideas_tooltip = alexander_novikov
 		custom_effect_tooltip = remove_military_high_command
 		show_ideas_tooltip = gordey_levchenko
@@ -890,7 +870,7 @@ country_event = {
 		custom_effect_tooltip = remove_chief_of_navy
 		show_ideas_tooltip = nikolay_kuznetsov
 		custom_effect_tooltip = remove_chief_of_airforce
-		show_ideas_tooltip = konstantin_vershinin
+		show_ideas_tooltip = pavel_rychagov
 		custom_effect_tooltip = remove_military_high_command
 		show_ideas_tooltip = sergei_khudyakov
 		show_ideas_tooltip = aleksandr_vasilevsky
