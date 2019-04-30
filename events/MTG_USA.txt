@@ -3140,10 +3140,7 @@ country_event = {
 			OR = {
 				JAP = { has_war_with = USA }
 				JAP = { has_war_with = ENG }
-				CHI = { has_war_with = USA }
-				CHI = { has_war_with = ENG }
 			}
-			USA = { has_war_with = ENG }
 		}
 	}
 
@@ -3230,36 +3227,6 @@ country_event = {
 		hidden_effect = { JAP = { country_event = { id = panay_incident.3 days = 2 } } } #Delay added so events are spaced out - historically it took months to get JAP to agree to compensation, but that'd be a bit hard to follow in-game, so timelines compressed.
 		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
 	}
-	option = { #War
-		name = panay_incident.2.c
-		custom_effect_tooltip = panay_incident.2.c.tt
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0
-				USA_is_on_historical_plan_trigger = yes
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = USA_neutrality_act
-			}
-			add_war_support = -0.1
-			add_stability = -0.3
-		}
-		add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
-		create_wargoal = {
-				target = JAP
-				type = topple_government
-			}
-		add_state_claim = 633
-		add_state_claim = 684
-		add_state_claim = 645
-		add_state_claim = 646
-		add_state_claim = 647
-		add_state_claim = 648
-		hidden_effect = { news_event = { id = news.335 } } #Triggers news event for war between JAP and USA
-	}
 }
 
 #Panay Incident - JAP gets demand for compensation
@@ -3276,19 +3243,6 @@ country_event = {
 		ai_chance = { factor = 70 }
 		add_political_power = -100
 		hidden_effect = { USA = { country_event = { id = panay_incident.4 days = 2 } } } #Delay added to space things out
-	}
-	option = { #We shall never bw down to the western Imperialists!
-		name = panay_incident.3.b
-		custom_effect_tooltip = panay_incident.3.b.tt
-		ai_chance = {
-			factor = 30
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		add_political_power = 100
-		hidden_effect = { USA = { country_event = { id = panay_incident.5 days = 2 } } } #Delay added here and in earlier event so rest of the world doesn't get Panay Incident one day and War the next, unless US is particularly gung-ho in response to initial event.
 	}
 }
 
