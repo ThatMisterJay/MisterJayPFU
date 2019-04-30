@@ -142,6 +142,21 @@ add_namespace = {
 	type = unit_leader
 }
 
+#Discord people
+
+
+create_corps_commander = {
+	name = "Swarshik"
+	picture = "Swarshik.dds"
+	traits = { cavalry_officer }
+	skill = 3
+	id = 900
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
 
 create_corps_commander = {
 	name = "Konstantin Rokossovsky"
@@ -271,17 +286,6 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Issa Pliyev"
-		picture = "Portrait_Soviet_Issa_Pliyev.dds"
-	traits = { cavalry_officer }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
 }
 
 create_field_marshal = {
