@@ -153,6 +153,7 @@ political_actions = {
 			tag = GER
 			country_exists = EFR
 			date > 1941.1.1
+			GER = { has_war_with = SOV }
 		}
 
 		complete_effect = {
