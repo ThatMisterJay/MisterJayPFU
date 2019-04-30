@@ -85,7 +85,7 @@
     JFU_rules.1.a:0 "I should follow these!"
 
     JFU_rules.2.t:0 "Template Rules"
-    JFU_rules.2.d:0 "1. 20 Combat width minimum (MP allowed to be 10 width) and 40 width maximum. \n\n2. No disabling equipment on divisions \n\n3. Minimum Airwing size: 100. \n\n4.No going around Special Forces capacity limit by spawning small templates then converting them to large templates with no equipment. Just do the research in the Special Forces tree. \n\n5. No mixing tanks with leg infantry."
+    JFU_rules.2.d:0 "1. 20 Combat width minimum (MP allowed to be 10 width) and 40 width maximum. \n\n2. No disabling equipment on divisions \n\n3. Minimum Airwing size: 100. \n\n4.No going around Special Forces capacity limit by spawning small templates then converting them to large templates with no equipment. Just do the research in the Special Forces tree. \n\n5. No mixing tanks with leg infantry. \n\n6. Starting and spawn-in templates can not have their equipment category changed. This goes for every battalion. That means infantry can not be converted to motorized or tanks, and Light tanks can not be changed to medium or heavy (and of course the other way around too). You are not allowed to go over 40 width."
     JFU_rules.2.a:0 "I should follow these!"
 
     JFU_rules.3.t:0 "Diplomacy Rules"
