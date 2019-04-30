@@ -601,6 +601,21 @@ focus_tree = {
 				transfer_state = 718
 			}
 
+			if = {
+				limit = {
+					FRA = { is_ai = yes }
+					539 = { is_owned_and_controlled_by = FRA }
+					660 = { is_owned_and_controlled_by = FRA }
+				}
+				transfer_state = 660
+				transfer_state = 539
+
+				if = {
+					limit = { 549 = { is_owned_and_controlled_by = ENG } }
+					transfer_state = 549
+				}
+			}
+
 			hidden_effect = {
 				news_event = { id = news.260 hours = 6 }
 			}
