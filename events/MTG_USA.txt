@@ -3241,7 +3241,7 @@ country_event = {
 	option = { #Pay compensation
 		name = panay_incident.3.a
 		ai_chance = { factor = 70 }
-		add_political_power = -100
+		add_political_power = 100
 		hidden_effect = { USA = { country_event = { id = panay_incident.4 days = 2 } } } #Delay added to space things out
 	}
 }
