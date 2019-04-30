@@ -362,16 +362,6 @@ country_event = {
 				logistics_skill = 3
 			}
 			create_corps_commander = {
-				name = "Philippe Leclerc"
-				picture = "portrait_france_philippe_leclerc.dds"
-				traits = { panzer_leader }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				picture = "Portrait_France_Marie_Pierre_Koenig.dds"
 				traits = { trickster }
