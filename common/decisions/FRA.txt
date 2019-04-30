@@ -122,6 +122,8 @@ FRA_free_france_west_africa = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 10 }
+
 		remove_effect = {
 			556 = {
 				save_event_target_as = FRA_attacked_state
@@ -158,6 +160,8 @@ FRA_free_france_west_africa = {
 		fire_only_once = no
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = { factor = 5 }
 
 		remove_effect = {
 			298 = {
@@ -196,6 +200,8 @@ FRA_free_france_west_africa = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 15 }
+
 		remove_effect = {
 			272 = {
 				save_event_target_as = FRA_attacked_state
@@ -232,6 +238,8 @@ FRA_free_france_west_africa = {
 		fire_only_once = no
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = { factor = 1 }
 
 		remove_effect = {
 			515 = {
@@ -270,6 +278,8 @@ FRA_free_france_west_africa = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 3 }
+
 		remove_effect = {
 			557 = {
 				save_event_target_as = FRA_attacked_state
@@ -301,6 +311,30 @@ FRA_free_france_west_africa = {
 		fire_only_once = yes
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 0.5
+				556 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 1
+				272 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 0.5
+				298 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 0.1
+				557 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 0.1
+				515 = { is_owned_and_controlled_by = FRA }
+			}
+		}
 
 		remove_effect = {
 			if = {
@@ -367,6 +401,8 @@ FRA_free_france_syria = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 20 }
+
 		remove_effect = {
 			553 = {
 				save_event_target_as = FRA_attacked_state
@@ -406,6 +442,8 @@ FRA_free_france_syria = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 10 }
+
 		remove_effect = {
 			677 = {
 				save_event_target_as = FRA_attacked_state
@@ -442,6 +480,8 @@ FRA_free_france_syria = {
 		fire_only_once = no
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = { factor = 10 }
 
 		remove_effect = {
 			554 = {
@@ -480,6 +520,8 @@ FRA_free_france_syria = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 10 }
+
 		remove_effect = {
 			680 = {
 				save_event_target_as = FRA_attacked_state
@@ -510,6 +552,26 @@ FRA_free_france_syria = {
 		fire_only_once = yes
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 5
+				553 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 1
+				554 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 1
+				677 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 1
+				680 = { is_owned_and_controlled_by = FRA }
+			}
+		}
 
 		remove_effect = {
 			if = {
@@ -583,6 +645,10 @@ FRA_free_france_america = {
 			hidden_effect = { set_country_flag = attacking_state }
 		}
 
+		ai_will_do = {
+			factor = 10
+		}
+
 		fire_only_once = no
 		days_remove = 15
 		fixed_random_seed = no
@@ -624,6 +690,8 @@ FRA_free_france_america = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 1 }
+
 		remove_effect = {
 			694 = {
 				save_event_target_as = FRA_attacked_state
@@ -652,6 +720,8 @@ FRA_free_france_america = {
 		}
 
 		cost = 15
+
+		ai_will_do = { factor = 1 }
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
@@ -691,6 +761,8 @@ FRA_free_france_america = {
 		fire_only_once = yes
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = { factor = 1 }
 
 		remove_effect = {
 			if = {
@@ -749,6 +821,8 @@ FRA_free_france_indian_ocean = {
 
 		cost = 30
 
+		ai_will_do = { factor = 15 }
+
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
 		}
@@ -785,6 +859,8 @@ FRA_free_france_indian_ocean = {
 		}
 
 		cost = 15
+
+		ai_will_do = { factor = 1 }
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
@@ -831,6 +907,8 @@ FRA_free_france_indian_ocean = {
 		days_remove = 15
 		fixed_random_seed = no
 
+		ai_will_do = { factor = 1 }
+
 		remove_effect = {
 			706 = {
 				save_event_target_as = FRA_attacked_state
@@ -863,6 +941,8 @@ FRA_free_france_indian_ocean = {
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
 		}
+
+		ai_will_do = { factor = 5 }
 
 		fire_only_once = no
 		days_remove = 15
@@ -898,6 +978,26 @@ FRA_free_france_indian_ocean = {
 		fire_only_once = yes
 		days_remove = 15
 		fixed_random_seed = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 5
+				543 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 0.5
+				708 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 1
+				706 = { is_owned_and_controlled_by = FRA }
+			}
+			modifier = {
+				add = 1
+				268 = { is_owned_and_controlled_by = FRA }
+			}
+		}
 
 		remove_effect = {
 			if = {
