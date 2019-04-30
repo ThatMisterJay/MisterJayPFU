@@ -397,6 +397,17 @@ country_event = {
 				traits = { spotter }
 				skill = 3
 			}
+			create_corps_commander = {
+				name = "Darth Sithben"
+				picture = "Sithben_General_1.dds"
+				traits = { old_guard cavalry_leader commando }
+				id = 2000
+				skill = 9
+				attack_skill = 6
+				defense_skill = 1
+				planning_skill = 5
+				logistics_skill = 3
+			}
 			set_country_flag = free_france
 			set_capital = 539
 			hidden_effect = {
