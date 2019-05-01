@@ -308,7 +308,10 @@ foreign_support = {
 		complete_effect = {
 			random_country = {
 				limit = {
-					has_completed_focus = CHI_invite_the_flying_tigers
+					OR = {
+						has_completed_focus = CHI_invite_the_flying_tigers
+						has_completed_focus CHI_flying_tigers
+					}
 				}
 				custom_effect_tooltip = flying_tigers_tt
 				hidden_effect = {
