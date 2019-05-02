@@ -13,14 +13,6 @@ technologies = {
 			breakthrough = 0.20
 		}
 
-		allow = {
-			NOT = {
-				has_tech = superior_firepower
-				has_tech = trench_warfare
-				has_tech = mass_assault
-			}
-		}
-
 		planning_speed = 0.5
 		army_speed_factor = 0.10
 		enable_tactic = tactic_unexpected_thrust
@@ -681,14 +673,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		allow = {
-			NOT = {
-				has_tech = mobile_warfare
-				has_tech = trench_warfare
-				has_tech = mass_assault
-			}
-		}
-
 		category_front_line = {
 			 soft_attack = 0.2
 		}
@@ -1321,14 +1305,6 @@ technologies = {
 			cat_grand_battle_plan
 		}
 
-		allow = {
-			NOT = {
-				has_tech = mobile_warfare
-				has_tech = superior_firepower
-				has_tech = mass_assault
-			}
-		}
-
 
 		folder = {
 			name = land_doctrine_folder
@@ -1946,14 +1922,6 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_mass_assault
-		}
-
-		allow = {
-			NOT = {
-				has_tech = mobile_warfare
-				has_tech = superior_firepower
-				has_tech = trench_warfare
-			}
 		}
 
 

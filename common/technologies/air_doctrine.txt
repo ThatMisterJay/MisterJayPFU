@@ -13,13 +13,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		allow = {
-			NOT = {
-				has_tech = formation_flying
-				has_tech = force_rotation
-			}
-		}
-
 		path = {
 			leads_to_tech = home_defence
 			research_cost_coeff = 1
@@ -608,13 +601,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		allow = {
-			NOT = {
-				has_tech = air_superiority
-				has_tech = force_rotation
-			}
-		}
-
 		doctrine = yes
 		research_cost = 1.5
 
@@ -1122,13 +1108,6 @@ technologies = {
 		path = {
 			leads_to_tech = fighter_baiting
 			research_cost_coeff = 1
-		}
-
-		allow = {
-			NOT = {
-				has_tech = air_superiority
-				has_tech = formation_flying
-			}
 		}
 
 		doctrine = yes
