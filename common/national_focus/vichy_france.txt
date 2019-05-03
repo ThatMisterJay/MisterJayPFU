@@ -236,6 +236,9 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -645,6 +648,8 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 
 		available = {
 			num_of_factories > 30
