@@ -11,13 +11,9 @@ country_event = {
 	desc = JFU.1.d
 	picture = GFX_report_event_german_troops
 
-	mean_time_to_happen = { days = 35 }
-	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ITA
-		16 = { NOT = { is_controlled_by = FRA } }
-	}
+	fire_only_once = yes
 
     immediate = {
         GER = { add_to_faction = ITA }
@@ -31,23 +27,6 @@ country_event = {
 
 	option = {
 		name = JFU.1.a
-	}
-}
-
-#Japan gains resistance after china dies
-country_event = {
-	id = JFU.5
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	trigger = {
-		NOT = { country_exists = CHI }
-		tag = JAP
-	}
-	hidden = yes
-
-	option = {
-		set_variable = { resistance_variable = 30 }
 	}
 }
 
