@@ -750,7 +750,7 @@ country_event = {
 	}
 
 	option = {
-		name = pfu.10.a
+		name = pfu.28.a
 	}
 }
 

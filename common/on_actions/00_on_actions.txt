@@ -477,13 +477,6 @@ on_actions = {
 				}
 				remove_ideas = YUG_idea_economic_aid
 			}
-
-			if = {
-				limit = {
-					ROOT = { tag = CHI }
-					JAP = { set_variable = { resistance_variable = 30 } }
-				}
-			}
 		}
 	}
 
@@ -643,7 +636,12 @@ on_actions = {
 	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
 	on_annex = {
 		effect = {
-
+			if = {
+				limit = {
+					FROM = { tag = CHI }
+				}
+				JAP = { country_event = { id = JFU.5 } }
+			}
 		}
 	}
 

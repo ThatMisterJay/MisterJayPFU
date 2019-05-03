@@ -30,6 +30,17 @@ country_event = {
 	}
 }
 
+#Japan gains resistance after china dies
+country_event = {
+	id = JFU.5
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		set_variable = { resistance_variable = 30 }
+	}
+}
+
 #germany goes to war if 21 september
 country_event = {
 	id = JFU.6
