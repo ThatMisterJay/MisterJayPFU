@@ -694,7 +694,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			#Adds Six Land Forts to Ankara 
+			#Adds Six Land Forts to Ankara
 		}
 	}
 
@@ -1378,12 +1378,6 @@ focus_tree = {
 				uses = 1
 				category = cl_tech
 			}
-			add_tech_bonus = {
-				name = TUR_strike_force
-				bonus = 1
-				uses = 1
-				category = ca_tech
-			}
 			#1x50% research bonus to Light Cruisers & 1x50% bonus to Heavy Cruisers
 		}
 	}
@@ -1444,7 +1438,7 @@ focus_tree = {
 		completion_reward = {
             add_political_power = 150
 		}
-	}	
+	}
 	focus = {
 		id = TUR_sun_language_theory
 		icon = GFX_goal_generic_defence

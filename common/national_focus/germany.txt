@@ -2254,7 +2254,6 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = cl_tech
-				category = ca_tech
 			}
 
 	        add_tech_bonus = {
@@ -2295,7 +2294,6 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = cl_tech
-				category = ca_tech
 			}
 			add_tech_bonus = {
 				name = naval_doc_bonus

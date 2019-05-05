@@ -2750,7 +2750,7 @@ focus_tree = {
 				name = YUG_heavy_cruiser_project
 				bonus = 1
 				uses = 1
-				category = ca_tech
+				category = cl_tech
 			}
 		}
 	}

@@ -2513,7 +2513,7 @@ focus_tree = {
 				name = ROM_capital_ships
 				bonus = 1
 				uses = 2
-				category = ca_tech
+				category = cl_tech
 				category = bb_tech
 				category = bc_tech
 			}

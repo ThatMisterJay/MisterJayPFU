@@ -2870,7 +2870,7 @@ focus_tree = {
 		id = CAN_light_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = CAN_destroyer_effort }
-		x = 23
+		x = 24
 		y = 2
 
 
@@ -2903,47 +2903,6 @@ focus_tree = {
 				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
-			}
-		}
-	}
-
-	focus = {
-		id = CAN_heavy_cruiser_effort
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = CAN_destroyer_effort }
-		x = 25
-		y = 2
-
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_heavy_cruiser_effort
-				bonus = 1
-				ahead_reduction = 2
-				uses = 1
-				category = ca_tech
 			}
 		}
 	}

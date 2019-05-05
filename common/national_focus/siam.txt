@@ -1447,7 +1447,6 @@ focus_tree = {
 				uses = 1
 				category = bc_tech
 				category = bb_tech
-				category = ca_tech
 				category = cl_tech
 			}
 		}

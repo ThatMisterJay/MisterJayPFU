@@ -1,15 +1,15 @@
 focus_tree = {
 	id = swe_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = SWE
 		}
 	}
-	
+
 	default = no
 	continuous_focus_position = { x = 50 y = 900 }
 ####
@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 			id = SWE_army_effort
 			icon = GFX_goal_generic_allies_build_infantry
-			
+
 			x = 22
 			y = 0
 			cost = 10
@@ -46,7 +46,7 @@ focus_tree = {
 			add_ideas = skidor
 		}
 	}
-	
+
 	focus = {
 		id = SWE_armor_effort
 		icon = GFX_goal_generic_army_tanks
@@ -63,7 +63,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_mechanization_effort
 		icon = GFX_goal_generic_build_tank
@@ -84,7 +84,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_equipment_effort
 		icon = GFX_goal_generic_small_arms
@@ -101,7 +101,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
@@ -137,7 +137,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
@@ -159,7 +159,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_doctrine_effort_3
 		icon = GFX_goal_generic_army_doctrines
@@ -182,86 +182,86 @@ focus_tree = {
 	}
 
 
-	
-########Defence Policy 
-		
+
+########Defence Policy
+
 	focus = {
 		id = SWE_lottorna
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = SWE_forsvarsbeslutet }
-				
+
 		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = {
 				factor = 15
 				}
-	
+
 		completion_reward = {
 			add_ideas = lottorna
-		}	
+		}
 	}
-	
+
 	focus = {
 		id = SWE_hemvarnet
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = SWE_ransonering }	
-		
+		prerequisite = { focus = SWE_ransonering }
+
 		x = 0
 		y = 2
 		cost = 10
-	
+
 		ai_will_do = {
 				factor = 10
 				}
-	
+
 		completion_reward = {
 			add_ideas = hemvarnet
-		}	
+		}
 	}
 
-		
-		
+
+
 	focus = {
 		id = SWE_forsvarsbeslutet
 		#icon = GFX_goal_generic_forceful_treaty
 		icon = GFX_goal_generic_position_armies
 		#prerequisite = { focus = SWE_ransonering }
-		
+
 		x = 3
 		y = 0
-		
+
 		cost = 10
 		completion_reward = {
 			#add_ideas = domestic_production
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SWE_per_edvin_skold
-			
+
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SWE_undk
 		icon = GFX_goal_generic_radar
 		#icon = GFX_goal_generic_military_deal
 		#prerequisite = { focus = SWE_forsvarsbeslutet }
 		prerequisite = { focus = SWE_ransonering }
-		
+
 		x = 2
 		y = 2
 		cost = 10
 		completion_reward = {
-			add_ideas = undk	
+			add_ideas = undk
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SWE_ransonering
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = SWE_forsvarsbeslutet }
-		
+
 		available = {
 			OR = {
 				threat > 0.05
@@ -281,7 +281,7 @@ focus_tree = {
 			add_ideas = ransonering
 		}
 	}
-	
+
 	focus = {
 		id = SWE_production_effort_I
 		icon = GFX_goal_generic_construct_mil_factory
@@ -290,8 +290,8 @@ focus_tree = {
 		x = 8
 		y = 4
 		cost = 10
-	
-	
+
+
 		completion_reward = {
 				140 = {
 				add_extra_state_shared_building_slots = 1
@@ -311,18 +311,18 @@ focus_tree = {
 				}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_production_effort_II
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SWE_forsvarsbeslutet }
 		#prerequisite = { focus = SWE_construction_effort_I }
-		
+
 		x = 6
 		y = 2
 		cost = 10
-	
-	
+
+
 		completion_reward = {
 				140 = {
 				add_extra_state_shared_building_slots = 1
@@ -334,7 +334,7 @@ focus_tree = {
 				}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_bofors_nobelkrut
 
@@ -349,21 +349,21 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
-		completion_reward = {		
+		}
+		completion_reward = {
 			add_ideas = nobelkrut
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SWE_axel_wennergren
 		}
 	}
-	
-	
+
+
 		focus = {
 			id = SWE_nuclear_effort
 			icon = GFX_focus_wonderweapons
-			
+
 			prerequisite = { focus = SWE_extra_tech_slot_2 }
-			
+
 			x = 3
 			y = 4
 			cost = 10
@@ -376,7 +376,7 @@ focus_tree = {
 					category = nuclear
 				}
 			}
-		
+
 			ai_will_do = {
 				factor = 1
 				modifier = {
@@ -385,7 +385,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 	focus = {
 		id = SWE_extra_tech_slot_2
 		icon = GFX_focus_research
@@ -403,13 +403,13 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
 		id = SWE_war_bonds
-		
+
 		prerequisite = { focus = SWE_ransonering }
 		continue_if_invalid = yes
-		
+
 		available = {
 			#OR = {
 			#	has_war = yes
@@ -422,19 +422,19 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_ideas = war_bonds
 		}
 	}
-	
+
 		focus = {
 		id = SWE_scania_rubber
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = SWE_war_bonds }
 		prerequisite = { focus = SWE_production_effort_II }
 		available = {
-			SWE = { 
+			SWE = {
 				controls_state = 138
 			}
 		}
@@ -443,14 +443,14 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 
 			add_resource = {
 				type = rubber
 				amount = 4
 				state = 138
-			}	
+			}
 			138 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -461,7 +461,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_air_defence
 		icon = GFX_goal_generic_construct_military
@@ -470,11 +470,11 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		
+
 		available = {
 			has_tech = radio_detection
 		}
-		
+
 		completion_reward = {
 			140 = {
 				add_building_construction = {
@@ -501,10 +501,10 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}			
+			}
 		}
 	}
-	
+
 		focus = {
 		id = SWE_fortify_scania
 		icon = GFX_goal_generic_fortify_city
@@ -519,7 +519,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 
-		
+
 		completion_reward = {
 			138 = {
 				add_building_construction = {
@@ -548,12 +548,12 @@ focus_tree = {
 				}
 
 			}
-			
+
 		}
 	}
-	
-	
-	
+
+
+
 ##########Industry
 
 	focus = {
@@ -576,8 +576,8 @@ focus_tree = {
 				}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SWE_support_the_industry
 		icon = GFX_goal_generic_construct_infrastructure
@@ -598,9 +598,9 @@ focus_tree = {
 #					level = 1
 #					instant_build = yes
 #				}
-#				
+#
 #			}
-				
+
 
 			38 = { # Norrland
 				add_building_construction = {
@@ -616,11 +616,11 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 				}
 			}
 		}
-		
+
 	focus = {
 		id = SWE_southern_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
@@ -641,7 +641,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				
+
 			}
 			138 = { # skåne
 				add_building_construction = {
@@ -652,9 +652,9 @@ focus_tree = {
 			}
 			}
 		}
-		
-		
-		
+
+
+
 
 	focus = {
 		id = SWE_planned_expansion
@@ -679,11 +679,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SWE_saltsjobad
 		icon = GFX_goal_generic_intelligence_exchange
@@ -699,39 +699,39 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SWE_planned_expansion_II
 		icon = GFX_goal_generic_construction
 		#icon = GFX_goal_generic_production2
-		
+
 		prerequisite = { focus = SWE_support_the_industry }
-		
+
 		x = 10
 		y = 1
 		cost = 10
-	
-	
+
+
 		ai_will_do = {
 			factor = 10
 		}
-	
+
 		completion_reward = {
-			139 = { 
-			add_extra_state_shared_building_slots = 1	
+			139 = {
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
-			}			
+			}
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SWE_industry_research
 		icon = GFX_focus_research
@@ -741,23 +741,23 @@ focus_tree = {
 		x = 10
 		y = 5
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 10
 		}
 
 		completion_reward = {
-				add_research_slot = 1			
+				add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
 		id = SWE_mining
 		icon = GFX_goal_generic_construction2
 		#icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = SWE_saltsjobad }
 		prerequisite = { focus = SWE_production_effort_I }
-		
+
 		x = 8
 		y = 5
 		cost = 10
@@ -776,16 +776,16 @@ focus_tree = {
 	}
 
 
-		
+
 ########Navy
-	
+
 	focus = {
 		id = SWE_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 13
 		y = 0
 		cost = 10
-	
+
 		completion_reward = {
 			navy_experience = 100
 			141 = {
@@ -797,19 +797,19 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 
-		
+
 	focus = {
 		id = SWE_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = SWE_naval_effort }
-		
+
 		x = 12
 		y = 1
 		cost = 10
 
-	
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
@@ -818,8 +818,8 @@ focus_tree = {
 				category = fleet_in_being_tree
 			}
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = SWE_capital_ships
 		icon = GFX_goal_generic_navy_battleship
@@ -829,30 +829,29 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = SWE_capital_ships
 				bonus = 1
 				uses = 1
-				category = ca_tech
 				category = cl_tech
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SWE_sea_wolves
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = SWE_convoy_focus }
-		
+
 		x = 13
 		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = SWE_sea_wolves
@@ -863,7 +862,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_fortify_skargard
 		icon = GFX_goal_generic_fortify_city
@@ -873,7 +872,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 
-		
+
 		completion_reward = {
 		custom_effect_tooltip = SWE_coastal_defence_tt
 			hidden_effect = {
@@ -884,7 +883,7 @@ focus_tree = {
 						province = 6050
 						instant_build = yes
 					}
-	
+
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -921,7 +920,7 @@ focus_tree = {
 						province = 11380
 						instant_build = yes
 					}
-				}	
+				}
 				124 = {
 					add_building_construction = {
 						type = coastal_bunker
@@ -929,7 +928,7 @@ focus_tree = {
 						province = 408
 						instant_build = yes
 					}
-				}	
+				}
 				138 = {
 					add_building_construction = {
 						type = coastal_bunker
@@ -937,23 +936,23 @@ focus_tree = {
 						province = 9279
 						instant_build = yes
 					}
-				}	
+				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_amfss
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = SWE_fortify_skargard }
-		
+
 		x = 14
 		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
-	
+
 		completion_reward = {
 			add_tech_bonus = {
 				#ahead_reduction = 2
@@ -965,7 +964,7 @@ focus_tree = {
 				}
 			}
 		}
-	
+
 	focus = {
 		id = SWE_destroyer_effort
 		icon = GFX_goal_generic_navy_cruiser
@@ -973,7 +972,7 @@ focus_tree = {
 		x = 12
 		y = 2
 		cost = 10
-	
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = SWE_destroyer_effort
@@ -984,11 +983,11 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_convoy_focus
 		prerequisite = { focus = SWE_destroyer_effort focus = SWE_amfss }
-		 
+
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 13
 		y = 3
@@ -1007,23 +1006,23 @@ focus_tree = {
 ######Political
 
 
-	
+
 	focus = {
 		id = SWE_claim_aland
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SWE_abandon_neutrality }
-		
+
 		bypass = {
 			OR = {
 				controls_state = 145
 				NOT = { country_exists = FIN }
 				}
 		}
-	
+
 		x = 29
 		y = 1
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1031,7 +1030,7 @@ focus_tree = {
 				factor = 0
 			}
 		}
-			
+
 		completion_reward = {
 			145 = { add_claim_by = SWE }
 			if = {
@@ -1052,7 +1051,7 @@ focus_tree = {
 			}if = {
 			limit = { has_government = democratic }
 			hidden_effect = {
-				SWE = { 
+				SWE = {
 						remove_opinion_modifier = { target = FIN modifier = SWE_aland_convention }
 					}
 				}
@@ -1061,23 +1060,23 @@ focus_tree = {
 				limit = { FIN = {exists = yes	} }
 					hidden_effect = {
 						FIN = {
-						remove_opinion_modifier = { target = SWE modifier = SWE_aland_convention } 
+						remove_opinion_modifier = { target = SWE modifier = SWE_aland_convention }
 						}
-					}	
+					}
 			}
 			hidden_effect = {
 				news_event = { id = news.906 hours = 12 }
 				}
 		}
 	}
-	
+
 		focus = {
 		id = SWE_polistrupper_focus
 		#icon = GFX_goal_generic_improve_relations
 		icon = GFX_goal_polistrupp
 		prerequisite = { focus = SWE_crypto_bomb_focus focus = SWE_kalix_line }
 		#prerequisite = { focus = SWE_foreign_expeditions }
-		
+
 		x = 26
 		y = 5
 		cost = 10
@@ -1093,18 +1092,18 @@ focus_tree = {
 		completion_reward = {
 
 
-			
+
 			custom_effect_tooltip = SWE_polistrupper
 			hidden_effect = {
-				SWE = { country_event = { id = exileunits.2 days = 1 } 
+				SWE = { country_event = { id = exileunits.2 days = 1 }
 				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_crypto_bomb_focus
-				
+
 		icon = GFX_goal_poland_goal
 		prerequisite = { focus = SWE_liberty_ethos }
 		x = 27
@@ -1117,13 +1116,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = SWE_arne_beurling	
-			custom_effect_tooltip = SWE_stellapolaris_tooltip			
+			show_ideas_tooltip = SWE_arne_beurling
+			custom_effect_tooltip = SWE_stellapolaris_tooltip
 		}
 	}
-	
+
 	focus = {
 		id = SWE_hansson_3
 		icon = GFX_goal_generic_intelligence_exchange
@@ -1131,7 +1130,7 @@ focus_tree = {
 		x = 26
 		y = 1
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1146,8 +1145,8 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-	
-	
+
+
 		focus = {
 		id = SWE_foreign_expeditions
 		icon = GFX_goal_rhineland
@@ -1160,11 +1159,11 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = SWE_motti_warfare_focus_tt
-			hidden_effect = 
-			{ 
-				set_technology = { 
-					motti_warfare = 1 
-				} 
+			hidden_effect =
+			{
+				set_technology = {
+					motti_warfare = 1
+				}
 			}
 
 			add_ideas = frivilligkaren_norden
@@ -1191,11 +1190,11 @@ focus_tree = {
 			add_ideas = swe_fin_production
 		}
 	}
-	
+
 #	focus = {
 #		id = SWE_beredskap
 #		prerequisite = { focus = SWE_liberty_ethos }
-#		
+#
 #		icon = GFX_goal_generic_demand_territory
 #		x = 28
 #		y = 4
@@ -1220,12 +1219,12 @@ focus = {
 		x = 25
 		y = 4
 		cost = 10
-		
+
 		ai_will_do = {
 				factor = 1
 			}
 
-		
+
 		completion_reward = {
 			666 = {
 				add_building_construction = {
@@ -1253,19 +1252,19 @@ focus = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 			id = SWE_neutrality_focus
 			icon = GFX_goal_generic_neutrality_focus
-			
+
 			mutually_exclusive = { focus = SWE_abandon_neutrality }
 			x = 27
 			y = 0
 			cost = 10
-			
+
 			ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1273,7 +1272,7 @@ focus = {
 				factor = 10
 			}
 		}
-			
+
 			completion_reward = {
 			if = {
 				limit = { NOT = { has_idea = neutrality_idea_sweden } }
@@ -1293,8 +1292,8 @@ focus = {
 			}
 			}
 		}
-		
-	
+
+
 	focus = {
 		id = SWE_abandon_neutrality
 		icon = GFX_goal_generic_occupy_states_ongoing_war
@@ -1303,14 +1302,14 @@ focus = {
 		x = 29
 		y = 0
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
 			}
-		}	
+		}
 
 		available_if_capitulated = yes
 
@@ -1327,7 +1326,7 @@ focus = {
 				limit = { has_idea = volunteer_only }
 				add_ideas = limited_conscription
 			}
-		
+
 #			add_ideas = limited_conscription
 			if = {
 				limit = { has_idea = neutrality_idea_sweden }
@@ -1340,48 +1339,48 @@ focus = {
 			add_stability = -0.05
 		}
 	}
-		
+
 	focus = {
 		id = SWE_norway_war_goal
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = SWE_nationalism_focus }
-		
-		available = {	
+
+		available = {
 			has_government = fascism
 		}
-		
+
 		x = 29
 		y = 5
 		cost = 10
-		
+
 		bypass = {
 			OR = {
 				has_war_with = NOR
-				NOR = { exists = no }	
-			}	
+				NOR = { exists = no }
+			}
 		}
 		ai_will_do = {
 			factor = 0
 		}
-			
+
 		completion_reward = {
 			create_wargoal = {
 				target = NOR
 				type = annex_everything
-			}			
+			}
 		}
 	}
-	
 
-	
 
-		
-			
+
+
+
+
 	focus = {
 		id = SWE_nationalism_focus
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = SWE_claim_aland }
-	
+
 		x = 29
 		y = 2
 		cost = 10
@@ -1404,20 +1403,20 @@ focus = {
 			add_ideas = nationalism
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = SWE_osterbotten
 		icon = GFX_goal_swedenfication
 		prerequisite = { focus = SWE_nationalism_focus }
-		
+
 		x = 29
 		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
-		available = {			
+		available = {
 			has_government = fascism
 			}
 
@@ -1426,7 +1425,7 @@ focus = {
 			custom_effect_tooltip = SWE_forsvenskning_tt
 			}
 		}
-		
+
 	focus = {
 		id = SWE_axis_leanings_focus
 		prerequisite = { focus = SWE_osterbotten }
@@ -1437,11 +1436,11 @@ focus = {
 		y = 4
 		cost = 10
 		icon = GFX_goal_molotov_ribbentrop_pact
-		
+
 		bypass = {
 			is_in_faction_with = GER
 		}
-		
+
 		completion_reward = {
 			add_opinion_modifier = { target = GER modifier = axis_leanings_focus }
 			GER = {
@@ -1449,20 +1448,20 @@ focus = {
 			}
 		}
 	}
-	
-	
+
+
 ###############Aviation
-	
+
 	focus = {
 		id = SWE_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		
+
 		x = 17
 		y = 0
 		cost = 10
-		
 
-		completion_reward = {	
+
+		completion_reward = {
 			air_experience = 15
 			add_tech_bonus = {
 				name = air_doc_bonus
@@ -1478,7 +1477,7 @@ focus = {
 		icon = GFX_goal_generic_air_production
 		#icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = SWE_aviation_effort }
-	
+
 		x = 16
 		y = 1
 		cost = 10
@@ -1518,7 +1517,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = SWE_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
@@ -1528,17 +1527,17 @@ focus = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1
 				uses = 1
 				category = naval_bomber
 			}
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = SWE_CAS_effort
 		icon = GFX_goal_generic_CAS
@@ -1560,16 +1559,16 @@ focus = {
 			}
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	focus = {
 		id = SWE_ornen
 		prerequisite = { focus = SWE_bomber_focus focus = SWE_fighter_focus }
 		icon = GFX_goal_molotov_ribbentrop_pact
-		
-		
+
+
 		x = 17
 		y = 2
 		cost = 10
@@ -1583,10 +1582,10 @@ focus = {
 				uses = 1
 				category = air_doctrine
 			}
-		
+
 		}
 	}
-	
+
 #	focus = {
 #		id = SWE_bulltofta
 #		prerequisite = { focus = SWE_ornen }
@@ -1597,7 +1596,7 @@ focus = {
 #				controls_state = 666
 #				}
 #		}
-#		
+#
 #		x = 17
 #		y = 3
 #		cost = 10
@@ -1620,13 +1619,13 @@ focus = {
 #			}
 #		}
 #	}
-	
+
 	focus = {
 		id = SWE_jet_fighter_focustree
 		prerequisite = { focus = SWE_CAS_effort focus = SWE_NAV_effort }
 		#prerequisite = { focus = SWE_bomber_focus }
 		icon = GFX_goal_generic_air_doctrine
-		
+
 		x = 17
 		y = 5
 		cost = 5
@@ -1637,13 +1636,12 @@ focus = {
 				bonus = 1
 				uses = 2
 				category = jet_technology
-			}		
+			}
 		}
 	}
-	
-	
 
-	
-	
+
+
+
+
 }
-	

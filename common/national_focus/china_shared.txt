@@ -1493,10 +1493,10 @@ shared_focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = CHI_heavy_cruiser_project
+			name = CHI_light_cruiser_project
 			bonus = 1
 			uses = 1
-			category = ca_tech
+			category = cl_tech
 		}
 	}
 }
