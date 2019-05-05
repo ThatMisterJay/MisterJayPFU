@@ -2536,6 +2536,8 @@ focus_tree = {
 		available = {
 			surrender_progress > 0.3
 			date > 1942.6.1
+			NOT = { has_idea = fall_blau }
+			NOT = { has_idea = operation_citadel }
 		}
 
 		x = -1
