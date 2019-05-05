@@ -686,7 +686,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Southern
-		x = 8
+		x = 7
 		y = 0
 		cost = 10
 		icon = GFX_goal_generic_navy_carrier
@@ -1152,26 +1152,38 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Ports
-		x = 10
+		x = 1
 		y = 1
+
+		relative_position_id = JAP_Southern
+
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = JAP_Southern }
 		ai_will_do = {
 			factor = 4
 		}
-		cost = 4.3
+		cost = 5
 		completion_reward = {
-			684 = {
+			645 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = naval_base
 					province = 2489
 					level = 3
 					instant_build = yes
 				}
-			}
-			684 = {
 				add_building_construction = {
 					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
 					level = 3
 					instant_build = yes
 				}
@@ -1181,7 +1193,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Nagasaki_Shipyards
-		x = 6
+		x = -1
 		y = 1
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = JAP_Southern }
@@ -1189,6 +1201,8 @@ focus_tree = {
 			factor = 6
 		}
 		cost = 4.3
+
+		relative_position_id = JAP_Southern
 
 		completion_reward = {
 			navy_experience = 20
@@ -1212,14 +1226,16 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Ship_Subtechs
-		x = 8
-		y = 1
+		x = 0
+		y = 2
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = JAP_Southern }
 		ai_will_do = {
 			factor = 5
 		}
 		cost = 5
+
+		relative_position_id = JAP_Southern
 
 		completion_reward = {
 			navy_experience = 50
@@ -1234,7 +1250,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Navy_Doctrine
-		x = 8
+		x = 0
 		y = 2
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		ai_will_do = {
@@ -1242,6 +1258,8 @@ focus_tree = {
 		}
 		cost = 5
 		prerequisite = { focus = JAP_Ship_Subtechs }
+
+		relative_position_id = JAP_Ship_Subtechs
 
 		completion_reward = {
 		navy_experience = 50
@@ -1259,9 +1277,11 @@ focus_tree = {
 		id = naval_innovations_focus
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = JAP_Navy_Doctrine }
-		x = 8
-		y = 3
+		x = 0
+		y = 1
 		cost = 5
+
+		relative_position_id = JAP_Navy_Doctrine
 		ai_will_do = {
 			factor = 4
 		}
@@ -1288,17 +1308,72 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = carrier_focus
+		icon = GFX_goal_generic_navy_carrier
+		mutually_exclusive = { focus = battleship_focus }
+		prerequisite = { focus = naval_innovations_focus }
+		x = 1
+		y = 1
+
+		relative_position_id = naval_innovations_focus
+
+		cost = 5
+		ai_will_do = {
+			factor = 0.25
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = battleship_focus
+		icon = GFX_goal_generic_navy_battleship
+		mutually_exclusive = { focus = carrier_focus }
+		prerequisite = { focus = naval_innovations_focus }
+		x = -1
+		y = 1
+
+		relative_position_id = naval_innovations_focus
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1
+				uses = 1
+				category = bc_tech
+			}
+		}
+	}
+
 
 	focus = {
 		id = naval_air_innovations_focus_2
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = carrier_focus }
-		x = 9
-		y = 5
+		x = 0
+		y = 1
 		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
+
+		relative_position_id = carrier_focus
 		completion_reward = {
 		air_experience = 25
 			add_tech_bonus = {
@@ -1399,47 +1474,76 @@ focus_tree = {
 	focus = {
 		id = naval_base_focus
 		prerequisite = { focus = JAP_Ports }
-		x = 10
-		y = 2
-		cost = 4.3
+		prerequisite = { focus = JAP_Rikusentai }
+		x = 1
+		y = 1
+
+		relative_position_id = JAP_Ports
+
+		cost = 10
 		icon = GFX_goal_generic_occupy_states_coastal
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			navy_experience = 25
-			528 = {
+			custom_effect_tooltip = JAP_ports_tt
+			hidden_effect = {
+				528 = {
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						province = 9950
+						instant_build = yes
+					}
+				}
+
+				526 = {
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						province = 11932
+						instant_build = yes
+					}
+				}
+
+				524 = {
+					add_building_construction = {
+						type = naval_base
+						level = 4
+						province = 12068
+						instant_build = yes
+					}
+				}
+
+				if = {
+					limit = { 289 = { CONTROLLER = { is_in_faction_with = JAP } } }
+					289 = {
+						add_building_construction = {
+							type = naval_base
+							level = 4
+							province = 7408
+							instant_build = yes
+						}
+					}
+				}
+			}
+			524 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = naval_base
-					level = 4
-					province = 9950
+					type = dockyard
+					level = 2
 					instant_build = yes
 				}
 			}
 
-			633 = {
-				add_building_construction = {
-					type = naval_base
-					level = 4
-					province = 13041
-					instant_build = yes
-				}
-			}
-
-			648 = {
-				add_building_construction = {
-					type = naval_base
-					level =4
-					province = 13026
-					instant_build = yes
-				}
-			}
+			526 = { add_resource = { type = oil amount = 10 } }
 		}
 	}
 
 	focus = {
 		id = JAP_Kawasaki_Docks
-		x = 6
+		x = 0
 		y = 2
 		prerequisite = { focus = JAP_Nagasaki_Shipyards }
 		cost = 4.3
@@ -1447,6 +1551,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+
+		relative_position_id = JAP_Nagasaki_Shipyards
 
 		completion_reward = {
 		navy_experience = 20
@@ -1501,53 +1607,6 @@ focus_tree = {
 				ahead_reduction = 2
 				uses = 1
 				technology = ship_hull_super_heavy
-			}
-		}
-	}
-
-	focus = {
-		id = carrier_focus
-		icon = GFX_goal_generic_navy_carrier
-		mutually_exclusive = { focus = battleship_focus }
-		prerequisite = { focus = naval_innovations_focus }
-		x = 9
-		y = 4
-		cost = 5
-		ai_will_do = {
-			factor = 0.25
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 1
-				uses = 1
-				category = cv_tech
-			}
-		}
-	}
-	focus = {
-		id = battleship_focus
-		icon = GFX_goal_generic_navy_battleship
-		mutually_exclusive = { focus = carrier_focus }
-		prerequisite = { focus = naval_innovations_focus }
-		x = 7
-		y = 4
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1
-				uses = 1
-				category = bb_tech
-			}
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1
-				uses = 1
-				category = bc_tech
 			}
 		}
 	}
@@ -1678,20 +1737,30 @@ focus_tree = {
 	focus = {
 		id = JAP_Rikusentai
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = naval_base_focus }
-		x = 10
-		y = 3
+		prerequisite = { focus = JAP_Southern }
+		x = 3
+		y = 1
 		cost = 10
+
+		relative_position_id = JAP_Southern
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_Riku_Bonus
 				bonus = 1
 				uses = 2
-				technology = marines2
+				category = marine_tech
 				technology = jungletroops
-				category = support_tech
+				technology = jungletroops2
+				technology = jungletroops3
+			}
+			add_tech_bonus = {
+				name = tp_bonus
+				bonus = 1
+				uses = 1
+				technology = mtg_transport
 				technology = mtg_landing_craft
+				technology = mtg_tank_landing_craft
 			}
 		}
 	}
