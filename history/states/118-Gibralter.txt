@@ -1,5 +1,4 @@
-state=
-{
+state={
 	id=118
 	name="STATE_118"
 	manpower=21372
@@ -13,6 +12,10 @@ state=
 			air_base = 2
 			4135 = {
 				naval_base = 5
+				coastal_bunker = 2
+			}
+			13205 = {
+				naval_base = 3
 				coastal_bunker = 2
 			}
 		}
