@@ -21,3 +21,10 @@ attacking_state:0 "Attacking a French State"
 FRA_free_france_effect_1:0 "Will gain a division of desert troops in Alexandria."
 FRA_free_france_operation_exporter_tt:0 "Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
 syria_sway_tt:0 "Will attempt to retake Syria from the traitors in Vichy. Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
+
+
+pfu.33.a.tt:0 "Spawns an elite Royal Guards armoured division in Egypt."
+pfu.urals.tt:0 "§RDO THIS FOCUS AS FAST AS YOU CAN!§! Moves industrial capacity in the west from places like Moscow and Leningrad, and brings it eastward along with §Gmassive§! construction of new military factories in and around the Urals."
+pfu.14.a.tt:0 "Spawns 11 infantry divisions and 1 tank division along the Wolga river"
+
+JAP_ports_tt:0 "Constructs 5 ports per state in §GKyushu§!, §GOkinawa§!, §GTaiwan§! and §GSiam§! if controlled by the Japanese faction.\n"
