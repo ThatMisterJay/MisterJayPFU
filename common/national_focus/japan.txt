@@ -1293,18 +1293,15 @@ focus_tree = {
 				uses = 1
 				category = cl_tech
 			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1
-				uses = 1
-				category = ca_tech
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				set_technology = { torpedo_cruiser = 1 }
 			}
-			#add_tech_bonus = {
-			#	name = cv_bonus
-			#	bonus = 1
-			#	uses = 1
-			#	category = cv_tech
-			#}
+			else = {
+				set_technology = { torpedo_cruiser_mtg = 1 }
+			}
 		}
 	}
 
@@ -1604,7 +1601,6 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = bb_bonus
-				ahead_reduction = 2
 				bonus = 1
 				uses = 1
 				technology = ship_hull_super_heavy
