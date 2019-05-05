@@ -31,3 +31,7 @@ JAP_ports_tt:0 "Constructs 4 ports per state in §GKyushu§!, §GOkinawa§!, §G
 
 JAP_capitulate:0 "Japan has capitulated to the Allies."
 JAP_korea_tt:0 "Spawns twelve 14/4 divisions in §GKorea§!."
+
+operation_husky_spawn_mixed:0 "Spawns 3 §GMarines§! and 3 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
+operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
+operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparation for §GOperation Husky§!.\n"

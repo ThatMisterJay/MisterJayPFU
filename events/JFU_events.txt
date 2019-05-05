@@ -83,3 +83,199 @@ country_event = {
 		GER = { complete_national_focus = GER_fall_blau }
 	}
 }
+
+#Operation husky spawns
+country_event = {
+	id = JFU.8
+	title = JFU.8.t
+	desc = JFU.8.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.8.a
+		hidden_effect = {
+			load_oob = "Husky_paratroopers"
+		}
+		custom_effect_tooltip = operation_husky_spawn_airborne
+		if = {
+			limit = { NOT = { TAG = USA } }
+			save_event_target_as = operation_husky_commonwealth
+		}
+		add_ideas = USA_husky
+	}
+
+	option = {
+		name = JFU.8.b
+		hidden_effect = {
+			load_oob = "Husky_mixed"
+		}
+		custom_effect_tooltip = operation_husky_spawn_mixed
+		if = {
+			limit = { NOT = { TAG = USA } }
+			save_event_target_as = operation_husky_commonwealth
+		}
+		add_ideas = USA_husky
+	}
+
+	option = {
+		name = JFU.8.c
+		hidden_effect = {
+			load_oob = "Husky_marines"
+		}
+		custom_effect_tooltip = operation_husky_spawn_marines
+		if = {
+			limit = { NOT = { TAG = USA } }
+			save_event_target_as = operation_husky_commonwealth
+		}
+		add_ideas = USA_husky
+	}
+
+	option = {
+		name = JFU.8.d
+		trigger = { NOT = { tag = USA } }
+		ENG = { country_event = { id = JFU.9 } }
+	}
+}
+
+#Operation husky choose who gets spawns
+country_event = {
+	id = JFU.9
+	title = JFU.9.t
+	desc = JFU.9.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.9.a
+		ENG = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.9.b
+		trigger = {
+			FRA = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		FRA = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.9.c
+		trigger = {
+			SAF = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		SAF = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.9.d
+		country_event = { id = JFU.10 }
+		#next page
+	}
+}
+
+#Operation husky choose who gets spawns page 2
+country_event = {
+	id = JFU.10
+	title = JFU.10.t
+	desc = JFU.10.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.10.a
+		trigger = {
+			AST = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		AST = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.10.b
+		trigger = {
+			RAJ = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		RAJ = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.10.c
+		trigger = {
+			NZL = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		NZL = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.10.d
+		country_event = { id = JFU.11 }
+		#next page
+	}
+}
+
+#Operation husky choose who gets spawns page 3
+country_event = {
+	id = JFU.11
+	title = JFU.11.t
+	desc = JFU.11.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			CAN = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		name = JFU.11.a
+		CAN = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.11.b
+		trigger = {
+			IRE = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		IRE = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.11.c
+		trigger = {
+			IRQ = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		IRQ = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.11.d
+		country_event = { id = JFU.9 }
+		#first page
+	}
+}

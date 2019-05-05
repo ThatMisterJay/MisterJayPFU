@@ -7,6 +7,38 @@ ideas = {
 			modifier = { special_forces_cap = 0.25 }
 		}
 
+		USA_husky = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			#targeted_modifier = {
+			#	tag = ITA
+			#	attack_bonus_against = 0.2
+			#	defense_bonus_against = 0.2
+			#}
+
+			modifier = {
+				army_org_Factor = 0.2
+				army_morale_factor = 0.2
+
+				#naval_invasion_penalty = -1 #invasion attack debuff, doesnt work? province modifier
+				invasion_preparation = -0.5 #-50% invasion prep time
+				amphibious_invasion = 0.3 #Invasion speed 30%
+				amphibious_invasion_defence = 0.30 #Defence on invasion (in sea)
+				naval_invasion_capacity = 6 #capacity
+
+				supply_consumption_factor = -0.20
+			}
+		}
+
 		generic_neutral_country = {
 			allowed = { always = yes }
 			removal_cost = -1

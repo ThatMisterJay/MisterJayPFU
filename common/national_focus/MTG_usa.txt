@@ -70,10 +70,6 @@ focus_tree = {
 			has_government = democratic
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -99,10 +95,6 @@ focus_tree = {
 			has_dlc = "Man the Guns"
 		}
 		available = {
-
-		}
-
-		bypass = {
 
 		}
 
@@ -132,10 +124,6 @@ focus_tree = {
 			not = {
 				has_government = communism
 			}
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1219,14 +1207,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1250,14 +1230,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1272,7 +1244,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		x = 2
 		y = 1
-		cost = 4.3
+		cost = 5
 
 		available = {
 			tag = USA
@@ -1300,8 +1272,8 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_vichy_ultimatum }
 		x = 0
-		y = 1
-		cost = 4.3
+		y = 2
+		cost = 5
 
 		completion_reward = {
 			declare_war_on = {
@@ -1344,6 +1316,37 @@ focus = {
 	}
 
 	focus = {
+		id = USA_operation_husky_preparations
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_intervention_in_europe }
+		x = 3
+		y = 2
+		cost = 5
+
+		relative_position_id = USA_intervention_in_europe
+
+		completion_reward = {
+			country_event = { id = JFU.8 }
+			ENG = { country_event = { id = JFU.9 } }
+		}
+	}
+
+	focus = {
+		id = USA_operation_husky
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_operation_husky_preparations }
+		x = 0
+		y = 2
+		cost = 5
+
+		relative_position_id = USA_operation_husky_preparations
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = USA_preemptive_intervention
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = USA_intervention_in_europe }
@@ -1377,18 +1380,10 @@ focus = {
 		prerequisite = { focus = USA_intervention_in_europe }
 		mutually_exclusive = { }
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1403,8 +1398,6 @@ focus = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = USA_intervention_in_europe }
-		available = {
-		}
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1412,7 +1405,7 @@ focus = {
 		x = -1
 		y = 2
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1462,10 +1455,6 @@ focus = {
 					surrender_progress > 0
 				}
 			}
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = no
@@ -1565,7 +1554,7 @@ focus = {
 		}
 		x = 0
 		y = 1
-		cost = 4.30
+		cost = 50
 		relative_position_id = USA_lend_lease_act
 		ai_will_do = {
 			factor = 10
@@ -1743,7 +1732,7 @@ focus = {
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
-		x = 4
+		x = 6
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -1751,14 +1740,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1791,7 +1772,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1818,7 +1799,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1911,21 +1892,13 @@ focus = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 14
+		x = 15
 		y = 0
 		relative_position_id = USA_war_plans_division
 		cost = 10
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1960,10 +1933,6 @@ focus = {
 			else = {
 				congress_low_support_trigger = yes
 			}
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = no
@@ -2043,14 +2012,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2080,10 +2041,6 @@ focus = {
 
 		available = {
 			GER = { has_war_with = SOV }
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2126,14 +2083,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2157,10 +2106,6 @@ focus = {
 
 		available = {
 			congress_medium_support_trigger = yes
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2209,14 +2154,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2244,14 +2181,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2275,14 +2204,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2303,14 +2224,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2339,14 +2252,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2366,14 +2271,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2503,14 +2400,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2538,14 +2427,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2570,14 +2451,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2621,10 +2494,6 @@ focus = {
 			}
 			controls_state = 378
 			controls_state = 358
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = no
@@ -2708,14 +2577,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2826,14 +2687,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2930,14 +2783,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3011,14 +2856,6 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3050,14 +2887,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
