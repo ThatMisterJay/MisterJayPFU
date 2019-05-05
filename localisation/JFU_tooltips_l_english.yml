@@ -30,3 +30,4 @@ pfu.14.a.tt:0 "Spawns 11 infantry divisions and 1 tank division along the Wolga 
 JAP_ports_tt:0 "Constructs 4 ports per state in §GKyushu§!, §GOkinawa§!, §GTaiwan§! and §GSiam§! if controlled by the Japanese faction.\n"
 
 JAP_capitulate:0 "Japan has capitulated to the Allies."
+JAP_korea_tt:0 "Spawns twelve 14/4 divisions in §GKorea§!."
