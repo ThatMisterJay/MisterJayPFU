@@ -28,3 +28,5 @@ pfu.urals.tt:0 "§RDO THIS FOCUS AS FAST AS YOU CAN!§! Moves industrial capacit
 pfu.14.a.tt:0 "Spawns 11 infantry divisions and 1 tank division along the Wolga river"
 
 JAP_ports_tt:0 "Constructs 4 ports per state in §GKyushu§!, §GOkinawa§!, §GTaiwan§! and §GSiam§! if controlled by the Japanese faction.\n"
+
+JAP_capitulate:0 "Japan has capitulated to the Allies."
