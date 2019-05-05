@@ -478,9 +478,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			add_autonomy_ratio = {
-				value = 0.79168
-				localization = MAN_the_two_emperors
+			if = {
+				limit = { is_ai = no }
+				add_autonomy_ratio = {
+					value = 0.79168
+					localization = MAN_the_two_emperors
+				}
 			}
 		}
 	}
