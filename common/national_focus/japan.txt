@@ -1801,7 +1801,7 @@ focus_tree = {
 		prerequisite = { focus = warrior_traditions_focus }
 		x = 25
 		y = 3
-		cost = 4.3
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1834,7 +1834,7 @@ focus_tree = {
 		prerequisite = { focus = secret_weapon_focus}
 		x = 24
 		y = 5
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1904,7 +1904,7 @@ focus_tree = {
 		prerequisite = { focus = synth_oil_focus }
 		x = 23
 		y = 4
-		cost = 6
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
