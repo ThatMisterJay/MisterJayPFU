@@ -1605,6 +1605,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = bb_bonus
 				ahead_reduction = 2
+				bonus = 1
 				uses = 1
 				technology = ship_hull_super_heavy
 			}
