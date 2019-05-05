@@ -10,6 +10,8 @@ focus_tree = {
 		}
 	}
 
+	continuous_focus_position = { x = 0 y = 1400 }
+
 	############################
 	#### Japan support man  ####
 	############################
@@ -535,6 +537,7 @@ focus_tree = {
 				}
 			}
 			################################
+			custom_effect_tooltip = JAP_korea_tt
 			hidden_effect = {
 				division_template = {
 					name = "Korean Defense Force"
@@ -1400,12 +1403,95 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = JAP_fighter_3s
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = naval_air_innovations_focus_2 focus = army_air_innovations_focus }
+		x = -5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			date > 1943.1.1
+
+			NOT = { has_global_flag = JAP_capitulate }
+		}
+
+		relative_position_id = naval_air_innovations_focus_2
+		completion_reward = {
+			air_experience = 50
+
+			if = {
+				limit = { has_country_flag = Five_Ministers_South }
+
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 2
+					uses = 1
+					technology = fighter3
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					technology = fighter3
+				}
+			}
+
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1
+				uses = 1
+				technology = cv_fighter3
+			}
+		}
+	}
+
+
+	focus = {
+		id = JAP_jet_fighters
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = JAP_fighter_3s }
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			date > 1944.1.1
+
+			NOT = { has_global_flag = JAP_capitulate }
+			has_country_flag = Five_Ministers_South
+		}
+
+		relative_position_id = JAP_fighter_3s
+		completion_reward = {
+
+			set_technology = { jet_engines = 1 }
+
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2
+				uses = 1
+				technology = jet_fighter1
+			}
+		}
+	}
+
 	focus = {
 		id = army_air_innovations_focus
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = JAP_North_Tech_2 focus = JAP_North_Infra_2}
 		x = -2
-		y = 3
+		y = 7
 		cost = 10
 		ai_will_do = {
 			factor = 1
