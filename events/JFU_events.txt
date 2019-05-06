@@ -101,9 +101,8 @@ country_event = {
 		custom_effect_tooltip = operation_husky_spawn_airborne
 		if = {
 			limit = { NOT = { TAG = USA } }
-			save_event_target_as = operation_husky_commonwealth
+			save_global_event_target_as = operation_husky_commonwealth
 		}
-		add_ideas = USA_husky
 	}
 
 	option = {
@@ -114,9 +113,8 @@ country_event = {
 		custom_effect_tooltip = operation_husky_spawn_mixed
 		if = {
 			limit = { NOT = { TAG = USA } }
-			save_event_target_as = operation_husky_commonwealth
+			ROOT = { save_global_event_target_as = operation_husky_commonwealth }
 		}
-		add_ideas = USA_husky
 	}
 
 	option = {
@@ -127,9 +125,8 @@ country_event = {
 		custom_effect_tooltip = operation_husky_spawn_marines
 		if = {
 			limit = { NOT = { TAG = USA } }
-			save_event_target_as = operation_husky_commonwealth
+			save_global_event_target_as = operation_husky_commonwealth
 		}
-		add_ideas = USA_husky
 	}
 
 	option = {

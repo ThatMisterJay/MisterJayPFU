@@ -1161,7 +1161,7 @@ focus_tree = {
    			SOV = { controls_state = 229 }
    		}
 
-   		x = 9
+   		x = 10
    		y = 4
    		cost = 0.2
 
@@ -1300,6 +1300,36 @@ focus_tree = {
 		        }
 		    }
 		}
+	}
+
+	focus = {
+   		id = GER_counter_operation_husky
+   		icon = GFX_goal_generic_territory_or_war
+   		prerequisite = { focus = GER_atlantic_wall }
+   	    available = {
+			ITA = { is_in_faction_with = GER }
+			115 = {
+				OR = {
+					is_fully_controlled_by = USA
+					is_fully_controlled_by = event_target:operation_husky_commonwealth
+				}
+			}
+			date > 1942.1.1
+   		}
+
+   		x = 1
+   		y = 2
+   		cost = 10
+
+		relative_position_id = GER_atlantic_wall
+
+   		completion_reward = {
+			USA = { add_timed_idea = { idea = USA_counter_husky_enemy days = 80 } }
+
+			event_target:operation_husky_commonwealth = {
+				add_timed_idea = { idea = USA_counter_husky_enemy days = 80 }
+			}
+    	}
 	}
 
 	focus = {

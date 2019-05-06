@@ -1325,6 +1325,12 @@ focus = {
 
 		relative_position_id = USA_intervention_in_europe
 
+		available = {
+			458 = { CONTROLLER = { is_in_faction_with = ENG } }
+			has_war_with = ITA
+			date > 1942.1.1
+		}
+
 		completion_reward = {
 			country_event = { id = JFU.8 }
 			ENG = { country_event = { id = JFU.9 } }
@@ -1342,7 +1348,15 @@ focus = {
 		relative_position_id = USA_operation_husky_preparations
 
 		completion_reward = {
+			unlock_decision_tooltip = USA_operation_husky
+			custom_effect_tooltip = empty_line
 
+			add_ideas = USA_husky
+			custom_effect_tooltip = empty_line
+
+			event_target:operation_husky_commonwealth = {
+				add_ideas = USA_husky
+			}
 		}
 	}
 
