@@ -30,4 +30,7 @@
     FRA_FREE_viva_la_france:0 "Vive la France"
     FRA_FREE_research_efforts:0 "Renewed Research Efforts"
     FRA_colonial_construction:0 "Colonial Construction"
+
     USA_husky:0 "Operation Husky"
+    USA_husky_failed:0 "Operation Husky Failed"
+    USA_counter_husky_enemy:0 "Operation Husky Countered"

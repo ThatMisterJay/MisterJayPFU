@@ -35,3 +35,5 @@ JAP_korea_tt:0 "Spawns twelve 14/4 divisions in §GKorea§!."
 operation_husky_spawn_mixed:0 "Spawns 3 §GMarines§! and 3 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
 operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
 operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparation for §GOperation Husky§!.\n"
+
+empty_line:0 "\n\n"
