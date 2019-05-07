@@ -1676,20 +1676,73 @@ focus_tree = {
 	focus = {
 		id = shbb_focus
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = advanced_torpedoes_focus }
-		x = 19
-		y = 3
+		prerequisite = { focus = naval_base_focus }
+		x = 0
+		y = 1
+
+		relative_position_id = naval_base_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
+
+		available = { date > 1942.1.1 }
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
-				name = bb_bonus
-				bonus = 1
-				uses = 1
-				technology = ship_hull_super_heavy
+			if = {
+				limit = {
+					not = { has_tech = ship_hull_super_heavy }
+				}
+				set_technology = {
+					ship_hull_super_heavy = 1
+				}
+			}
+			create_equipment_variant = {
+				name = "Yamato Class"
+				type = ship_hull_super_heavy_jap
+				name_group = JAP_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = ship_anti_air_1
+					front_2_custom_slot = empty
+					mid_1_custom_slot = empty
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_secondaries_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_airplane_launcher_1
+				}
+			}
+			custom_effect_tooltip = JAP_yamato_JFU_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_jap
+						creator = "JAP"
+						version_name = "Yamato Class"
+					}
+					name = "Yamato"
+					requested_factories = 5
+					progress = 0.75
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_jap
+						creator = "JAP"
+						version_name = "Yamato Class"
+					}
+					name = "Musashi"
+					requested_factories = 5
+					progress = 0.5
+					amount = 1
+				}
 			}
 		}
 	}

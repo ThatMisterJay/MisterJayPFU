@@ -37,3 +37,5 @@ operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in prep
 operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparation for §GOperation Husky§!.\n"
 
 empty_line:0 "\n\n"
+
+JAP_yamato_JFU_tt:0 "Adds two §YYamato-Class Super Battleships§! to the production queue, at 75% and 50% complete. \n§GGlorious Nippon Steel§! means our ships can be built at half the production cost of conventional §YSuperheavy Battleships§!. We should produce our own. \n"

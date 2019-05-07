@@ -227,4 +227,10 @@ spriteTypes = {
 		name = "GFX_JAP_advanced_submarine_medium"
 		texturefile = "gfx/interface/technologies/JAP_advanced_submarine.dds"
 	}
+
+
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_super_heavy_jap_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_battleship.dds"
+	}
 }
