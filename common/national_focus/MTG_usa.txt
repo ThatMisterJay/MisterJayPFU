@@ -2336,7 +2336,8 @@ focus = {
 		id = USA_air_support
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = USA_air_war_plans_division }
-		x = 0
+		mutually_exclusive = { focus = USA_strategic_bombing }
+		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
@@ -2349,6 +2350,27 @@ focus = {
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
+		}
+	}
+
+	focus = {
+		id = USA_strategic_bombing
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = USA_air_war_plans_division }
+		mutually_exclusive = { focus = USA_air_support }
+		x = 1
+		y = 1
+		relative_position_id = USA_air_war_plans_division
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+			add_ideas = strategic_bombing_focus
 		}
 	}
 
@@ -2372,7 +2394,7 @@ focus = {
 				name = USA_TAC
 				uses = 1
 				bonus = 1.0
-				technology = tactical_bomber2
+				category = tactical_bomber
 			}
 		}
 	}
@@ -2397,16 +2419,53 @@ focus = {
 				name = CAS_effort
 				uses = 1
 				bonus = 1.0
-				technology = CAS2
+				category = cas_bomber
 			}
+		}
+	}
+
+	focus = {
+		id = USA_combined_bomber_offensive
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = USA_strategic_bombing }
+		available = {
+			has_war = yes
+			OR = {
+				is_in_faction_with = GER
+				is_in_faction_with = JAP
+				is_in_faction_with = ITA
+				is_in_faction_with = SOV
+				is_in_faction_with = FRA
+				is_in_faction_with = ENG
+			}
+		}
+		x = 0
+		y = 2
+		relative_position_id = USA_strategic_bombing
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = USA_combined_bomber_offensive
+				bonus = 1.0
+				uses = 1
+				category = heavy_air
+			}
+			add_ideas = combined_bomber_offensive
 		}
 	}
 	focus = {
 		id = USA_escort_fighters
 		icon = GFX_focus_usa_escort_fighters
-		x = 1
+		x = 0
 		y = 2
-		prerequisite = { focus = USA_air_support }
+		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
 
@@ -2425,17 +2484,18 @@ focus = {
 				uses = 1
 				technology = heavy_fighter1
 				technology = heavy_fighter2
+				technology = heavy_fighter3
 			}
 		}
 	}
 	focus = {
 		id = USA_us_army_airforce
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = 0
+		x = -1
 		y = 4
-		prerequisite = { focus = USA_TAC }
+		prerequisite = { focus = USA_TAC focus = USA_combined_bomber_offensive }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2458,10 +2518,10 @@ focus = {
 		id = USA_us_air_force
 		icon = GFX_goal_generic_build_airforce
 		x = 1
-		y = 1
-		prerequisite = { focus = USA_escort_fighters }
-		relative_position_id = USA_escort_fighters
-		cost = 10
+		y = 4
+		prerequisite = { focus = USA_TAC focus = USA_combined_bomber_offensive }
+		relative_position_id = USA_air_war_plans_division
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
