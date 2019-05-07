@@ -306,4 +306,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7980;8124;impassable;-1;-1;-1;-1;-1;;Somaliland
 5041;8124;impassable;-1;-1;-1;-1;-1;;Somaliland
 5041;4985;impassable;-1;-1;-1;-1;-1;;Somaliland
+
+10383;1631;impassable;-1;-1;-1;-1;-1;;Syria
+12316;1631;impassable;-1;-1;-1;-1;-1;;Syria
+12316;12413;impassable;-1;-1;-1;-1;-1;;Syria
+2013;12413;impassable;-1;-1;-1;-1;-1;;Syria
+2013;12372;impassable;-1;-1;-1;-1;-1;;Syria
+901;12372;impassable;-1;-1;-1;-1;-1;;Syria
+901;1938;impassable;-1;-1;-1;-1;-1;;Syria
+10882;1938;impassable;-1;-1;-1;-1;-1;;Syria
+10882;10804;impassable;-1;-1;-1;-1;-1;;Syria
+1549;10804;impassable;-1;-1;-1;-1;-1;;Syria
+1549;10811;impassable;-1;-1;-1;-1;-1;;Syria
 -1;-1;;-1;-1;-1;-1;-1;-1;
