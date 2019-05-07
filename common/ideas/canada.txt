@@ -729,7 +729,7 @@ ideas = {
 		}
 		CAN_robert_leckie = {
 
-			picture = generic_air_europe_2
+			picture = generic_navy_europe_1
 
 			allowed = {
 				original_tag = CAN
@@ -737,10 +737,10 @@ ideas = {
 			}
 
 			research_bonus = {
-				air_doctrine = 0.15
+				naval_doctrine = 0.15
 			}
 
-			traits = { air_warfare_theorist }
+			traits = { naval_theorist }
 		}
 	}
 	# MILITARY
