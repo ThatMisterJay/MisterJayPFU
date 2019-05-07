@@ -1909,15 +1909,14 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
+			available =	{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
 
 			cost = 250
 
 			research_bonus = {
-				cat_mass_assault = 0.15
+				cat_mass_assault = 0.20
 			}
 
 			# PURGED
@@ -1958,7 +1957,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_mass_assault = 0.15
+				cat_mass_assault = 0.20
 			}
 
 			traits = { mass_assault_expert }
@@ -1971,8 +1970,7 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
+			available =	{
 				NOT = { has_country_flag = counter_purge }
 			}
 
@@ -1995,7 +1993,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_fleet_in_being = 0.15
+				cat_fleet_in_being = 0.20
 			}
 
 			traits = { grand_fleet_proponent}
@@ -2008,15 +2006,14 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
+			available =	{
 				NOT = { has_country_flag = counter_purge }
 			}
 
 			cost = 250
 
 			research_bonus = {
-				cat_battlefield_support = 0.15
+				cat_battlefield_support = 0.20
 			}
 
 			traits = { close_air_support_proponent }

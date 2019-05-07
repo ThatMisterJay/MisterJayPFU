@@ -1443,7 +1443,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				land_doctrine = 0.15
+				land_doctrine = 0.20
 			}
 
 
@@ -1460,7 +1460,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_mobile_warfare = 0.15
+				cat_mobile_warfare = 0.20
 			}
 
 
@@ -1477,7 +1477,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_battlefield_support = 0.15
+				cat_battlefield_support = 0.20
 			}
 
 			traits = { close_air_support_proponent }

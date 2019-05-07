@@ -3180,7 +3180,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_grand_battle_plan = 0.15
+				cat_grand_battle_plan = 0.20
 			}
 
 			traits = { grand_battle_plan_expert }
@@ -3210,7 +3210,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_fleet_in_being = 0.15
+				cat_fleet_in_being = 0.20
 			}
 
 			traits = { grand_fleet_proponent }
@@ -3255,7 +3255,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_strategic_destruction = 0.15
+				cat_strategic_destruction = 0.20
 			}
 
 			traits = { victory_through_airpower }

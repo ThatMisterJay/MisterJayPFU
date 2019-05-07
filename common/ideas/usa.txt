@@ -2512,7 +2512,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_superior_firepower = 0.15
+				cat_superior_firepower = 0.20
 			}
 
 			traits = { superior_firepower_expert }
@@ -2528,7 +2528,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_mobile_warfare = 0.15
+				cat_mobile_warfare = 0.20
 			}
 
 			traits = { mobile_warfare_expert }
@@ -2560,7 +2560,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_base_strike = 0.15
+				cat_base_strike = 0.20
 			}
 
 			traits = { naval_aviation_pioneer }
@@ -2576,7 +2576,7 @@ ideas = {
 			cost = 250
 
 			research_bonus = {
-				cat_strategic_destruction = 0.15
+				cat_strategic_destruction = 0.20
 			}
 
 			traits = { victory_through_airpower }
