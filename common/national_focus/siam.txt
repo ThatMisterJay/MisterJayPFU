@@ -16,7 +16,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 2
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -81,7 +81,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = SIA_military_effort_1
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SIA_infrastructure_effort_2 }
@@ -136,7 +136,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_military_effort_3 }
 		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -186,7 +186,7 @@ focus_tree = {
        icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 2
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SIA_production_effort_3 }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -318,7 +318,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_investors }
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -366,7 +366,7 @@ focus_tree = {
        icon = GFX_goal_generic_construct_civ_factory
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SIA_investors }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -546,8 +546,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-	        remove_ideas = divided_nation_full
-			add_ideas = divided_nation_half
+	        swap_ideas = { add_idea = divided_nation_half remove_idea = divided_nation_full }
 		}
 	}
 
@@ -556,7 +555,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		x = 6
 		y = 5
-		cost = 15
+		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
@@ -625,7 +624,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_infrastructure_effort_2 }
 		x = 0
 		y = 5
-		cost = 10
+		cost = 5
 		icon = GFX_goal_generic_oil_refinery
 		ai_will_do = {
 			factor = 1
@@ -636,7 +635,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = synth_bonus
-				bonus = 1
+				bonus = 2
 				uses = 1
 				category = synth_resources
 			}
@@ -687,7 +686,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_adressing_political_issues }
 		x = 11
 		y = 1
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -701,44 +700,29 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-   id = SIA_strenghten_rel_jap
-   icon = GFX_focus_SIA_japan_siam_deal
-   prerequisite = { focus = SIA_fascism_support }
-   x = 10
-   y = 2
-   cost = 5
-    ai_will_do = {
-			factor = 5
-		}
-    available_if_capitulated = yes
-	completion_reward = {
-	 add_opinion_modifier = { target = JAP modifier = offered_support }
-	}
-  }
-
-  focus = {
-   id = SIA_strenghten_rel_ger
-   icon = GFX_focus_SIA_thai_germany
-   prerequisite = { focus = SIA_fascism_support }
-   x = 12
-   y = 2
-   cost = 5
-    ai_will_do = {
-			factor = 5
-		}
-    available_if_capitulated = yes
-	completion_reward = {
-	 add_opinion_modifier = { target = GER modifier = offered_support }
-	}
-  }
+    focus = {
+        id = SIA_strenghten_rel_jap
+        icon = GFX_focus_SIA_japan_siam_deal
+        prerequisite = { focus = SIA_fascism_support }
+        x = 11
+        y = 2
+        cost = 5
+        ai_will_do = {
+            factor = 5
+        }
+        available_if_capitulated = yes
+        completion_reward = {
+            add_opinion_modifier = { target = JAP modifier = offered_support }
+            add_ideas = license_equipment_faster_production
+        }
+    }
 
   focus = {
       id= SIA_fascist_nation
 	  icon = GFX_focus_SIA_thailand_fascist
 	  x = 11
 	  y = 3
-	  cost = 10
+	  cost = 5
 	  ai_will_do = { factor = 5 }
 	  prerequisite = { focus = SIA_strenghten_rel_jap }
 	  prerequisite = { focus = SIA_strenghten_rel_ger }
@@ -830,7 +814,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SIA_german_equipment
-				bonus = 0.3
+				bonus = 1
 				uses = 1
 				category = infantry_weapons
 				category = land_doctrine
@@ -871,10 +855,10 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			add_tech_bonus = {
-				name = land_doc_bonus
+				name = infantry_weapons_bonus
 				bonus = 1
 				uses = 1
-				category = land_doctrine
+				category = infantry_weapons
 			}
 		}
 	}
@@ -953,7 +937,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = tanks_bonus
-				bonus = 1
+				bonus = 2
 				uses = 1
 				category = armor
 			}
@@ -987,7 +971,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_equipment_effort_2 focus = SIA_tanks }
 		x = 16
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1007,7 +991,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_doctrine_inf_2 }
 		x = 16
 		y = 4
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1458,12 +1442,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = naval_doctrine
 			}
 		}
 	}
-
-
-
 }

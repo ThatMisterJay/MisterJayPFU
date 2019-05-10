@@ -117,6 +117,22 @@ ideas = {
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 
+		license_equipment_faster_production = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+
+			modifier = {
+				license_production_speed = 0.25
+			}
+		}
+
 		nationalism = {
 
 			allowed = {
