@@ -2020,7 +2020,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2075,11 +2075,11 @@ focus = {
 				limit = { NOT = { has_tech = paratroopers3 } }
 				set_technology = { paratroopers3 = 1 }
 			}
+			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 25 producer = USA }
 
 			custom_effect_tooltip = USA_load_paratroopers_tt
 
 			hidden_effect = {
-				add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 25 producer = USA }
 				load_oob = "USA_paratroopers"
 			}
 		}
@@ -2091,7 +2091,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2223,8 +2223,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = detroit_arsenal
+			add_ideas = detroit_arsenal
 		}
 	}
 	focus = {
