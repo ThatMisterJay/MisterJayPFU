@@ -560,35 +560,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-        prerequisite = { focus = SIA_new_siamese_man }
+        prerequisite = { focus = SIA_heal_the_divide_1 }
 		available_if_capitulated = yes
 		completion_reward = {
 	        remove_ideas = divided_nation_half
 			add_political_power = 120
 		}
 	}
-
-
-  focus = {
-   id = SIA_new_siamese_man
-   icon = GFX_goal_generic_demand_territory
-   x=6
-   y=4
-   cost = 10
-   ai_will_do = {
-    factor = 5
-   }
-   prerequisite = { focus = SIA_heal_the_divide_1 }
-    completion_reward = {
-	  hidden_effect = {
-	  set_rule = {
-	  can_use_kamikaze_pilots = yes
-				}
-			}
-	 custom_effect_tooltip = kamikaze_focus_tooltip
-
-	}
-  }
 
   focus = {
 		id = SIA_radar
