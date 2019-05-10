@@ -514,7 +514,7 @@ technologies = {
 		industrial_capacity_dockyard = 0.15
 		line_change_production_efficiency_factor = 0.05
 		production_factory_start_efficiency_factor = 0.10
-		equipment_conversion_speed = 0.20
+		equipment_conversion_speed = 0.10
 		industry_air_damage_factor = -0.15
 		global_building_slots_factor = 0.20
 
