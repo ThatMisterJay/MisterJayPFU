@@ -725,7 +725,6 @@ focus_tree = {
 	  cost = 5
 	  ai_will_do = { factor = 5 }
 	  prerequisite = { focus = SIA_strenghten_rel_jap }
-	  prerequisite = { focus = SIA_strenghten_rel_ger }
 		available_if_capitulated = yes
 		completion_reward = {
 				add_popularity = {
