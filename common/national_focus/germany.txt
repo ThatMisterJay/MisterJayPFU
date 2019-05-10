@@ -2089,9 +2089,11 @@ focus_tree = {
 		completion_reward = {
 			ITA = {
 				add_opinion_modifier = { target = GER modifier = ger_ita_alliance_focus }
+	            add_ideas = license_equipment_faster_production
 			}
 			GER = {
 				add_to_faction = ITA
+	            add_ideas = license_equipment_faster_production
 			}
 		}
 	}
@@ -2139,6 +2141,7 @@ focus_tree = {
 				}
 				remove_ideas = SPA_recovering_from_civil_war
 				add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+	            add_ideas = license_equipment_faster_production
 			}
 			GER = {
 				add_to_faction = SPR

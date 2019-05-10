@@ -2699,30 +2699,35 @@ focus_tree = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 				}
+	            add_ideas = license_equipment_faster_production
 			}
 			AST = {
 				if = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 				}
+	            add_ideas = license_equipment_faster_production
 			}
 			RAJ = {
 				if = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 				}
+	            add_ideas = license_equipment_faster_production
 			}
 			NZL = {
 				if = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 				}
+	            add_ideas = license_equipment_faster_production
 			}
 			SAF = {
 				if = {
 					limit = { is_in_faction_with = ENG }
 					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 				}
+	            add_ideas = license_equipment_faster_production
 			}
 		}
 	}
