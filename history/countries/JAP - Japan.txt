@@ -106,11 +106,11 @@ if = {
 	}
 	set_autonomy = {
 		target = MEN
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_wtt_imperial_protectorate
 	}
 	set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_colony
 	}
 	else = {
 		set_autonomy = {
