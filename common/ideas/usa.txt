@@ -1205,30 +1205,6 @@ ideas = {
 
 
     political_advisor = {
-		earl_browder = {
-
-
-			allowed = {
-				original_tag = "USA"
-			}
-			available = {
-				has_government = communist
-			}
-			visible = { num_of_factories > 2000 }
-
-
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			ai_will_do = {
-				factor = 10
-			}
-		}
 		harry_white = {
 
 			picture = USA_harry_white
@@ -1402,41 +1378,6 @@ ideas = {
 			}
 		}
 
-		charles_coughlin = {
-
-
-			allowed = {
-				original_tag = "USA"
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_america_first
-					not = { focus_progress = { focus = USA_neutrality_act progress > 0 } }
-					not = { focus_progress = { focus = USA_limited_intervention progress > 0 } }
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-
-			traits = { fascist_demagogue }
-
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-
-			ai_will_do = {
-				factor = 10
-			}
-		}
-
 		USA_robert_taft = {
 
 			picture = generic_political_advisor_europe_1
@@ -1446,18 +1387,6 @@ ideas = {
 			}
 
 			traits = { silent_workhorse }
-		}
-		USA_joseph_mccarthy = {
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = USA
-			}
-			available = {
-				has_completed_focus = USA_empower_the_huac
-			}
-
-			traits = { anti_communist_crusader }
 		}
 
 		USA_john_winant = {
