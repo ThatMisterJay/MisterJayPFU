@@ -78,6 +78,27 @@ set_variable = { attacked_state_america = 0 }
 set_variable = { attacked_state_indian_ocean = 0 }
 set_variable = { attacked_state_syria = 0 }
 
+
+set_variable = { counter_french_west_africa_attacked = 0 }
+set_variable = { counter_liberia_attacked = 0 }
+set_variable = { counter_senegal_attacked = 0 }
+set_variable = { counter_southern_sahara_attacked = 0 }
+set_variable = { counter_mauritania_attacked = 0 }
+
+set_variable = { counter_lebanon_attacked = 0 }
+set_variable = { counter_aleppo_attacked = 0 }
+set_variable = { counter_damascus_attacked = 0 }
+set_variable = { counter_deir_az_zur_attacked = 0 }
+
+set_variable = { counter_guyana_attacked = 0 }
+set_variable = { counter_french_caribbean_attacked = 0 }
+set_variable = { counter_st_pierre_miquelon_attacked = 0 }
+
+set_variable = { counter_madagascar_attacked = 0 }
+set_variable = { counter_comoro_attacked = 0 }
+set_variable = { counter_reunion_attacked = 0 }
+set_variable = { counter_french_somaliland_attacked = 0 }
+
 set_convoys = 300
 set_stability = 0.5
 set_war_support = 0.15

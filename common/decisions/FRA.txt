@@ -116,10 +116,11 @@ FRA_free_france_west_africa = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_french_west_africa_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -128,9 +129,16 @@ FRA_free_france_west_africa = {
 			556 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				50 = { country_event = { id = free_france.13 days = 1 } }
-				50 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_french_west_africa_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					50 = { country_event = { id = free_france.13 days = 1 } }
+					50 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -155,10 +163,11 @@ FRA_free_france_west_africa = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_liberia_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 5 }
@@ -167,9 +176,16 @@ FRA_free_france_west_africa = {
 			298 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				60 = { country_event = { id = free_france.13 days = 1 } }
-				40 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_liberia_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					60 = { country_event = { id = free_france.13 days = 1 } }
+					40 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -194,10 +210,11 @@ FRA_free_france_west_africa = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_senegal_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 15 }
@@ -206,9 +223,16 @@ FRA_free_france_west_africa = {
 			272 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				75 = { country_event = { id = free_france.13 days = 1 } }
-				25 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_senegal_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { country_event = { id = free_france.13 days = 1 } }
+					25 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -233,10 +257,11 @@ FRA_free_france_west_africa = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_southern_sahara_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -245,9 +270,16 @@ FRA_free_france_west_africa = {
 			515 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				90 = { country_event = { id = free_france.13 days = 1 } }
-				10 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_southern_sahara_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					90 = { country_event = { id = free_france.13 days = 1 } }
+					10 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
 			add_manpower = -1000
@@ -272,10 +304,11 @@ FRA_free_france_west_africa = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_mauritania_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 3 }
@@ -284,9 +317,16 @@ FRA_free_france_west_africa = {
 			557 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				90 = { country_event = { id = free_france.13 days = 1 } }
-				10 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_mauritania_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					90 = { country_event = { id = free_france.13 days = 1 } }
+					10 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
 			add_manpower = -1000
@@ -309,7 +349,7 @@ FRA_free_france_west_africa = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = {
@@ -395,10 +435,11 @@ FRA_free_france_syria = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_lebanon_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 20 }
@@ -407,11 +448,16 @@ FRA_free_france_syria = {
 			553 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				60 = {
+			if = {
+				limit = { check_variable = { counter_lebanon_attacked > 2 } }
 					country_event = { id = free_france.13 days = 1 }
 				}
-				40 = { country_event = { id = free_france.14 days = 1 } }
+			}
+			else = {
+				random_list = {
+					60 = { country_event = { id = free_france.13 days = 1 } }
+					40 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -750 }
 			add_manpower = -5000
@@ -436,10 +482,11 @@ FRA_free_france_syria = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_aleppo_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -448,9 +495,16 @@ FRA_free_france_syria = {
 			677 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				75 = { country_event = { id = free_france.13 days = 1 } }
-				25 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_aleppo_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { country_event = { id = free_france.13 days = 1 } }
+					25 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -475,10 +529,11 @@ FRA_free_france_syria = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_damascus_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -487,9 +542,16 @@ FRA_free_france_syria = {
 			554 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				75 = { country_event = { id = free_france.13 days = 1 } }
-				25 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_damascus_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { country_event = { id = free_france.13 days = 1 } }
+					25 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -514,10 +576,11 @@ FRA_free_france_syria = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_deir_az_zur_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -526,9 +589,16 @@ FRA_free_france_syria = {
 			680 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				90 = { country_event = { id = free_france.13 days = 1 } }
-				10 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_deir_az_zur_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { country_event = { id = free_france.13 days = 1 } }
+					25 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
 			add_manpower = -1000
@@ -550,7 +620,7 @@ FRA_free_france_syria = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = {
@@ -643,6 +713,7 @@ FRA_free_france_america = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_guyana_attacked = 1 }
 		}
 
 		ai_will_do = {
@@ -650,16 +721,23 @@ FRA_free_france_america = {
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		remove_effect = {
 			310 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				60 = { country_event = { id = free_france.13 days = 1 } }
-				40 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_guyana_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					60 = { country_event = { id = free_france.13 days = 1 } }
+					40 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -684,10 +762,11 @@ FRA_free_france_america = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_french_caribbean_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -696,9 +775,16 @@ FRA_free_france_america = {
 			694 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				75 = { country_event = { id = free_france.13 days = 1 } }
-				25 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_french_caribbean_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					75 = { country_event = { id = free_france.13 days = 1 } }
+					25 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
 			add_manpower = -500
@@ -725,19 +811,27 @@ FRA_free_france_america = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_st_pierre_miquelon_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		remove_effect = {
 			730 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				90 = { country_event = { id = free_france.13 days = 1 } }
-				10 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_st_pierre_miquelon_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					90 = { country_event = { id = free_france.13 days = 1 } }
+					10 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
 			add_manpower = -500
@@ -759,7 +853,7 @@ FRA_free_france_america = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -825,19 +919,27 @@ FRA_free_france_indian_ocean = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_madagascar_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		remove_effect = {
 			543 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				35 = { country_event = { id = free_france.13 days = 1 } }
-				65 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_madagascar_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					35 = { country_event = { id = free_france.13 days = 1 } }
+					65 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -1000 }
 			add_manpower = -7500
@@ -864,19 +966,27 @@ FRA_free_france_indian_ocean = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_comoro_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		remove_effect = {
 			708 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				90 = { country_event = { id = free_france.13 days = 1 } }
-				10 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_comoro_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					90 = { country_event = { id = free_france.13 days = 1 } }
+					10 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -901,10 +1011,11 @@ FRA_free_france_indian_ocean = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_reunion_attacked = 1 }
 		}
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -913,9 +1024,16 @@ FRA_free_france_indian_ocean = {
 			706 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				90 = { country_event = { id = free_france.13 days = 1 } }
-				10 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_reunion_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					90 = { country_event = { id = free_france.13 days = 1 } }
+					10 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
 			add_manpower = -2500
@@ -940,21 +1058,29 @@ FRA_free_france_indian_ocean = {
 
 		complete_effect = {
 			hidden_effect = { set_country_flag = attacking_state }
+			add_to_variable = { counter_french_somaliland_attacked = 1 }
 		}
 
 		ai_will_do = { factor = 5 }
 
 		fire_only_once = no
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		remove_effect = {
 			268 = {
 				save_event_target_as = FRA_attacked_state
 			}
-			random_list = {
-				50 = { country_event = { id = free_france.13 days = 1 } }
-				50 = { country_event = { id = free_france.14 days = 1 } }
+			if = {
+				limit = { check_variable = { counter_french_somaliland_attacked > 2 } }
+					country_event = { id = free_france.13 days = 1 }
+				}
+			}
+			else = {
+				random_list = {
+					50 = { country_event = { id = free_france.13 days = 1 } }
+					50 = { country_event = { id = free_france.14 days = 1 } }
+				}
 			}
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -250 }
 			add_manpower = -2500
@@ -976,7 +1102,7 @@ FRA_free_france_indian_ocean = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 15
+		days_remove = 1
 		fixed_random_seed = no
 
 		ai_will_do = {
