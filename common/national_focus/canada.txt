@@ -1149,8 +1149,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_factories > 50
-			is_subject = no
+			num_of_factories > 80
 		}
 
 		continue_if_invalid = yes
