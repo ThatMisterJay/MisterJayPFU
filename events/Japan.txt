@@ -542,51 +542,90 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	immediate = {
-		JAP = {
-			white_peace = ENG
-			white_peace = USA
-			white_peace = CHI
-			white_peace = SIK
-			white_peace = PRC
-			white_peace = CHI
-		}
+		hidden_effect = {
+			JAP = {
+				white_peace = ENG
+				white_peace = USA
+				white_peace = CHI
+				white_peace = SIK
+				white_peace = PRC
+				white_peace = CHI
+			}
 
-		USA = {
-			transfer_state = 647
-			transfer_state = 684
-			transfer_state = 646
-			transfer_state = 638
-			transfer_state = 633
-			transfer_state = 743
-			transfer_state = 648
-			transfer_state = 645
-			transfer_state = 555
-			transfer_state = 526
-		}
+			USA = {
+				transfer_state = 647
+				transfer_state = 684
+				transfer_state = 646
+				transfer_state = 638
+				transfer_state = 633
+				transfer_state = 743
+				transfer_state = 648
+				transfer_state = 645
+				transfer_state = 555
+				transfer_state = 526
+			}
 
-		FRA = {
-			transfer_state = 286
-			transfer_state = 741
-			transfer_state = 671
-			transfer_state = 670
-		}
+			FRA = {
+				transfer_state = 286
+				transfer_state = 741
+				transfer_state = 671
+				transfer_state = 670
+			}
 
-		PRC = {
-			transfer_state = 611
-			transfer_state = 753
-			transfer_state = 612
-			transfer_state = 610
-			transfer_state = 715
-			transfer_state = 716
-			transfer_state = 328
-			transfer_state = 714
-			transfer_state = 717
-		}
+			PRC = {
+				transfer_state = 611
+				transfer_state = 753
+				transfer_state = 612
+				transfer_state = 610
+				transfer_state = 715
+				transfer_state = 716
+				transfer_state = 328
+				transfer_state = 714
+				transfer_state = 717
+			}
 
-		CHI = {
-			transfer_state = 609
-			transfer_state = 524
+			CHI = {
+				transfer_state = 609
+				transfer_state = 524
+				transfer_state = 621
+				transfer_state = 762
+				transfer_state = 752
+				transfer_state = 616
+				transfer_state = 604
+				transfer_state = 283
+				transfer_state = 622
+				transfer_state = 761
+				transfer_state = 605
+				transfer_state = 601
+				transfer_state = 325
+				transfer_state = 603
+				transfer_state = 615
+				transfer_state = 608
+				transfer_state = 614
+				transfer_state = 597
+				transfer_state = 598
+				transfer_state = 763
+				transfer_state = 602
+				transfer_state = 765
+				transfer_state = 599
+				transfer_state = 594
+				transfer_state = 591
+				transfer_state = 593
+				transfer_state = 595
+				transfer_state = 764
+				transfer_state = 600
+				transfer_state = 606
+				transfer_state = 607
+				transfer_state = 620
+				transfer_state = 592
+				transfer_state = 759
+				transfer_state = 758
+				transfer_state = 760
+				transfer_state = 596
+				transfer_state = 613
+			}
 		}
+		leave_faction = yes
 		SIA = {
 			set_politics = {
 				ruling_party = democratic
@@ -603,12 +642,20 @@ country_event = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
+
 			add_popularity = { ideology = neutrality popularity = 1 }
 		}
 		ENG = {
 			add_to_faction = SIA
 		}
 		set_global_flag = JAP_capitulate
+
+		diplomatic_relation = { country = ENG relation = non_aggression_pact }
+		diplomatic_relation = { country = USA relation = non_aggression_pact }
+		diplomatic_relation = { country = PRC relation = non_aggression_pact }
+		diplomatic_relation = { country = CHI relation = non_aggression_pact }
+		diplomatic_relation = { country = SOV relation = non_aggression_pact }
+		diplomatic_relation = { country = RAJ relation = non_aggression_pact }
 	}
 
 	option = { #peacedeal
