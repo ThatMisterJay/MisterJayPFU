@@ -120,7 +120,7 @@ FRA_free_france_west_africa = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -166,7 +166,7 @@ FRA_free_france_west_africa = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 5 }
@@ -212,7 +212,7 @@ FRA_free_france_west_africa = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 15 }
@@ -258,7 +258,7 @@ FRA_free_france_west_africa = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -304,7 +304,7 @@ FRA_free_france_west_africa = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 3 }
@@ -344,7 +344,7 @@ FRA_free_france_west_africa = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = {
@@ -434,7 +434,7 @@ FRA_free_france_syria = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 20 }
@@ -480,7 +480,7 @@ FRA_free_france_syria = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -526,7 +526,7 @@ FRA_free_france_syria = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -572,7 +572,7 @@ FRA_free_france_syria = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 10 }
@@ -611,7 +611,7 @@ FRA_free_france_syria = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = {
@@ -712,7 +712,7 @@ FRA_free_france_america = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		remove_effect = {
@@ -756,7 +756,7 @@ FRA_free_france_america = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -804,7 +804,7 @@ FRA_free_france_america = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		remove_effect = {
@@ -841,7 +841,7 @@ FRA_free_france_america = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -911,7 +911,7 @@ FRA_free_france_indian_ocean = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		remove_effect = {
@@ -957,7 +957,7 @@ FRA_free_france_indian_ocean = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		remove_effect = {
@@ -1001,7 +1001,7 @@ FRA_free_france_indian_ocean = {
 		}
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = { factor = 1 }
@@ -1049,7 +1049,7 @@ FRA_free_france_indian_ocean = {
 		ai_will_do = { factor = 5 }
 
 		fire_only_once = no
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		remove_effect = {
@@ -1086,7 +1086,7 @@ FRA_free_france_indian_ocean = {
 		cost = 50
 
 		fire_only_once = yes
-		days_remove = 1
+		days_remove = 15
 		fixed_random_seed = no
 
 		ai_will_do = {
