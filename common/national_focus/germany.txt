@@ -1315,11 +1315,25 @@ focus_tree = {
 				}
 			}
 			date > 1942.1.1
+
+			19 = { CONTROLLER = { is_in_faction_with = GER } }
+			23 = { CONTROLLER = { is_in_faction_with = GER } }
+			30 = { CONTROLLER = { is_in_faction_with = GER } }
+			14 = { CONTROLLER = { is_in_faction_with = GER } }
+			15 = { CONTROLLER = { is_in_faction_with = GER } }
+			29 = { CONTROLLER = { is_in_faction_with = GER } }
+			6 = { CONTROLLER = { is_in_faction_with = GER } }
+			7 = { CONTROLLER = { is_in_faction_with = GER } }
+			36 = { CONTROLLER = { is_in_faction_with = GER } }
+			56 = { CONTROLLER = { is_in_faction_with = GER } }
+			59 = { CONTROLLER = { is_in_faction_with = GER } }
+			58 = { CONTROLLER = { is_in_faction_with = GER } }
+			99 = { CONTROLLER = { is_in_faction_with = GER } }
    		}
 
    		x = 1
    		y = 2
-   		cost = 10
+   		cost = 5
 
 		relative_position_id = GER_atlantic_wall
 

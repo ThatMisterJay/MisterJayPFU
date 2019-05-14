@@ -769,6 +769,9 @@ USA_war_plans = {
 			event_target:operation_husky_commonwealth = {
 				remove_ideas = USA_husky
 			}
+			hidden_effect = {
+				GER = { country_event = { id = JFU_germany.25 days = 100 } }
+			}
 		}
 
 		timeout_effect = {

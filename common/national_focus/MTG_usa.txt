@@ -1328,6 +1328,7 @@ focus = {
 		available = {
 			458 = { CONTROLLER = { is_in_faction_with = ENG } }
 			has_war_with = ITA
+			115 = { is_fully_controlled_by = ITA }
 			date > 1942.1.1
 		}
 
@@ -1346,6 +1347,10 @@ focus = {
 		cost = 5
 
 		relative_position_id = USA_operation_husky_preparations
+		available = {
+			458 = { CONTROLLER = { is_in_faction_with = ENG } }
+			115 = { is_fully_controlled_by = ITA }
+		}
 
 		completion_reward = {
 			unlock_decision_tooltip = USA_operation_husky

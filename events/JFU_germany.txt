@@ -783,3 +783,19 @@ country_event = {
 		ITA = { add_ideas = GER_ace_idea }
 	}
 }
+
+#who gets german air
+country_event = {
+	id = JFU_germany.25
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = JFU_germany.25.a
+		if = {
+			limit = { NOT = { has_completed_focus = GER_counter_operation_husky } }
+			complete_national_focus = GER_counter_operation_husky
+		}
+	}
+}
