@@ -1921,6 +1921,33 @@ focus_tree = {
 			add_ideas = FRA_FREE_research_efforts
 		}
 	}
+	focus = {
+		id = FRA_joint_refinery
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = {
+			focus = FRA_research_efforts
+			focus = FRA_develop_our_resources
+		}
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = FRA_revive_civilian_construction
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_joint_french_and_russian_rubber_refinery_program
+			add_tech_bonus = {
+				name = USA_rubber_reserve_company
+				bonus = 0.25
+				uses = 1
+				technology = rubber_processing
+				technology = improved_rubber_processing
+				technology = advanced_rubber_processing
+				technology = modern_rubber_processing
+			}
+		}
+	}
 }
 
 #Decisions for: Syria, West Africa, North Africa (declare war if not at war, unlocks if at war with vichy), Guyana, French Caribbean, St Pierre and Miquelon, Madagascar, Comoro Islands, Reunion, Kerguelen

@@ -34,6 +34,8 @@
     FRA_colonial_military_west_africa_desc:0 "For our economy to flourish we need to disperse it in case of an attack. Our colonies our the perfect place for this."
     FRA_colonial_military_indian_ocean:0 "Military Industry in Indian Ocean"
     FRA_colonial_military_indian_ocean_desc:0 "For our economy to flourish we need to disperse it in case of an attack. Our colonies our the perfect place for this."
+    FRA_joint_refinery:0 "Joint French-Soviet Synth Program"
+    FRA_joint_refinery_desc:0 "We will work with the Soviets to become indepentant on rubber."
 
     #French naval designer
     free_french_fleet:0 "Free French Designer"

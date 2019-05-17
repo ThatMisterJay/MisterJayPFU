@@ -43,6 +43,26 @@ ideas = {
 				non_core_manpower = 0.30
 			}
 		}
+		
+		FRA_joint_french_and_russian_rubber_refinery_program = {
+		
+		    picture = generic_goods_red_bonus
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
 
 
 		FRA_FREE_research_efforts = {

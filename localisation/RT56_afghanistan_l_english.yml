@@ -366,8 +366,8 @@
 
     GEN_american_ship_production_methods:0 "American Ship Production Methods"
 
-    GEN_refinery_2:0 "Expanding the Refineries"
-    GEN_refinery_2_desc:0 ""
+    GEN_Refinery_2:0 "Expanding the Refineries"
+    GEN_Refinery_2_desc:0 ""
 
     collectivist_ethos_focus:0 "Collectivist Ethos"
     collectivist_ethos_focus_desc:0 ""
