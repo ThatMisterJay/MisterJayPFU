@@ -23,35 +23,6 @@
 
     mechanized_equipment_research:2 "Mechanization Research Speed"
 
-
-    #Rules
-    rules:0 "Rules"
-    general_rules:0 "General Rules"
-    template_rules:0 "Template Rules"
-    diplomacy_rules:0 "Diplomacy Rules"
-    combat_rules:0 "Combat Rules"
-    volunteer_rules:0 "Volunteer Rules"
-    country_rules:0 "Country Rules"
-
-    general_rules_idea:0 "General Rules"
-    template_rules_idea:0 "Template Rules"
-    diplomacy_rules_idea:0 "Diplomacy Rules"
-    combat_rules_idea:0 "Combat Rules"
-    volunteer_rules_idea:0 "Volunteer Rules"
-
-    country_rules_germany_idea:0 "Germany"
-    country_rules_italy_idea:0 "Italy"
-    country_rules_japan_idea:0 "Japan"
-    country_rules_spain_idea:0 "Spain"
-    country_rules_finland_idea:0 "Finland"
-    country_rules_siam_idea:0 "Siam"
-    country_rules_vichy_france_idea:0 "Vichy France"
-    country_rules_usa_idea:0 "USA"
-    country_rules_france_idea:0 "France"
-    country_rules_china_idea:0 "China"
-    country_rules_soviet_idea:0 "Soviet Union"
-
-
     #Rules
     rules:0 "Rules"
     general_rules:0 "General Rules"
@@ -93,25 +64,25 @@
     JFU_rules.3.a:0 "I should follow these!"
 
     JFU_rules.4.t:0 "Combat Rules"
-    JFU_rules.4.d:0 "1. Fleets cannot be on 'do not engage' \n\n2. Divisions cannot be deleted or have their templates changed when at war unless in an allied capital.  \n\n3. Encircled capitals must be taken as soon as possible. (If you encircle a capital you have to constantly attack it) \n\n4. Naval superiority must be maintained to carry out a naval invasion in the Channel (If you lose naval superiority you must stop moving your invading forces) \n\n5. Soviets can choose the game speed once Operation Barbarossa occurs, until Winter where it is resumed to speed 3. \n\n6. No more than 4 carriers per nation may participate on one side in a naval battle. \n\n7. All subjects must be called into war. \n\n8. No cheesing wargoals. You must declare on a nation you have a war goal with. (Ie, not declaring on Netherlands once 'Around Maginot' focus is complete. \n\n9.No mine-laying sea zones bordering future enemy countries prior to war. \n\n10.Mine-laying is banned while at war with AI."
+    JFU_rules.4.d:0 "1. Fleets cannot be on 'do not engage' \n\n2. Divisions cannot be deleted or have their templates changed when at war unless in an allied capital.  \n\n3. Encircled capitals must be taken as soon as possible. (If you encircle a capital you have to constantly attack it) \n\n4. Naval superiority must be maintained to carry out a naval invasion in the Channel (If you lose naval superiority you must stop moving your invading forces) \n\n5. Soviets can choose the game speed once Operation Barbarossa occurs, until Winter where it is resumed to speed 3. \n\n6. No more than 4 carriers per nation may participate on one side in a naval battle. \n\n7. All subjects must be called into war. \n\n8. No cheesing wargoals. You must declare on a nation you have a war goal with. (Ie, not declaring on Netherlands once 'Around Maginot' focus is complete. \n\n9.No mine-laying sea zones bordering future enemy countries prior to war. \n\n10.Mine-laying is banned while at war with AI. \n\n11.Mine-laying is banned."
     JFU_rules.4.a:0 "I should follow these!"
 
     JFU_rules.5.t:0 "Volunteer Rules"
-    JFU_rules.5.d:0 "1. The only country allowed to receive volunteers is Spain. \n\n2. Volunteers can only be sent once. \n\n3. Volunteers are only allowed to be Infantry and Air Volunteers. \n\n4. Only the Soviet Union, Germany, Italy and Japan can send volunteers."
+    JFU_rules.5.d:0 "1. Volunteers can only be sent to Spain. \n\n2. Volunteers can only be sent once. \n\n3. Volunteers are only allowed to be Infantry and Air Volunteers. \n\n4. Only the Soviet Union, Germany, Italy and Japan can send volunteers."
     JFU_rules.5.a:0 "I should follow these!"
 
     JFU_rules.6.t:0 "Rules for Germany"
-    JFU_rules.6.d:0 "1. Must finish the Molotov-Ribbentrop pact prior to the war with allies. \n\n2. Cannot declare war on the Benelux until Poland has capitulated. \n\n3. First war must be against Poland and through Danzig focus \n\n4. Can only declare war on Soviet Union through Focus."
+    JFU_rules.6.d:0 "1. Cannot declare war on the Benelux until Poland has capitulated. \n\n2. First war must be against Poland and through Danzig focus \n\n4. Can only declare war on Soviet Union through Focus."
     JFU_rules.6.a:0 "I should follow these!"
 
 
 
     JFU_rules.7.t:0 "Rules for Italy"
-    JFU_rules.7.d:0 "1. Cannot declare war on Greece or Yugoslavia before Germany is at war (Tip: Declare war whilst Germany is at war but prior to joining the axis.) \n\n2. Not a rule, but Italy joins 1 month after the fall of Paris \n\n3. Cannot send navy out of the med without taking Gibraltar."
+    JFU_rules.7.d:0 "1. Cannot declare war on Greece or Yugoslavia before Germany is at war (Tip: Declare war whilst Germany is at war but prior to joining the axis.) \n\n2. Not a rule, but Italy joins 1 month after the fall of Paris \n\n3. Cannot send navy out of the med without taking Gibraltar or Suez."
     JFU_rules.7.a:0 "I should follow these!"
 
     JFU_rules.8.t:0 "Rules for Japan"
-    JFU_rules.8.d:0 "1. Must declare war on China before 1938. \n\n2. Must form Co-Prosperity Sphere and stay in it. \n\n3. Cannot go to war with the Allies, through either justification or focus, until 1941. \n\n4. Japan has to declare war on allies before June 1941.  \n\n5. Can go to war with the Soviet Union after all the rubber islands are occupied or after 1943 and went Northern Doctrine. \n\n6. May not give land to Manchukuo during the war, but if China is annexed, Japan is free to give Manchukuo land. \n\n7. May only kamikaze in South China Sea and around the main islands."
+    JFU_rules.8.d:0 "1. Must declare war on China before 1938. \n\n2. Must form Co-Prosperity Sphere and stay in it. \n\n3. Cannot go to war with the Allies, through either justification or focus, until 1941. \n\n4. Japan has to declare war on allies before June 1941. \n\n5. May not give land to Manchukuo during the war, but if China is annexed, Japan is free to give Manchukuo land. \n\n6. May only kamikaze in South China Sea and around the main islands."
     JFU_rules.8.a:0 "I should follow these!"
 
     JFU_rules.9.t:0 "Rules for Spain"
@@ -135,11 +106,11 @@
     JFU_rules.13.a:0 "I should follow these!"
 
     JFU_rules.14.t:0 "Rules for France"
-    JFU_rules.14.d:0 "1. Cannot have more than 10 divisions outside of France before capitulation (Expedition these 10 units to another country prior to capitulation otherwise you will lose these units). \n\n2. May not send any lend lease other than planes until capitulation."
+    JFU_rules.14.d:0 "1. Cannot have more than 10 divisions outside of France before capitulation (Expedition these 10 units to another country prior to capitulation otherwise you will lose these units). \n\n2. May not send any lend lease other than planes until capitulation. \n\n3. No building ports in Metropolitan France."
     JFU_rules.14.a:0 "I should follow these!"
 
     JFU_rules.15.t:0 "Rules for China"
-    JFU_rules.15.d:0 "1. May only change faction by focus, or when the focus requirements are met. \n\n2. Allied countries may not have troops inside China, unless it began through a naval invasion or China is dead \n\n3. May not receive licence productions from any nation. \n\n4. China may not join a faction until 1942 which it may join the allies, no Chinese troops outside china till Beijing is retaken, but may accept allied lend lease from 1942 onwards \n\n5. China cannot convoy raid Japan in areas he cannot reach	"
+    JFU_rules.15.d:0 "1. May only change faction by focus, or when the focus requirements are met. \n\n2. Allied countries may not have troops inside China, unless it began through a naval invasion or China is dead. \n\n3. May not receive licence productions from any nation. \n\n4. No Chinese troops are allowed outside China until Beijing is retaken, but may accept allied lend lease from 1942 onwards. \n\n5. China cannot convoy raid Japan in areas he cannot reach."
     JFU_rules.15.a:0 "I should follow these!"
 
     JFU_rules.16.t:0 "Rules for the Soviet Union"
