@@ -285,8 +285,7 @@ country_event = {
 
 	trigger = {
 		tag = ENG
-		#date > 1939.5.1
-		date > 1936.1.6
+		date > 1939.5.1
 		ENG = {
 			controls_state = 681
 			controls_state = 447
