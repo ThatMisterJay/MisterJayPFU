@@ -217,14 +217,22 @@ ideas = {
 			}
 		}
 
-
-
 		JFU_generic_bonus_research = {
 
 			picture = generic_air_research
 
 			research_bonus = {
 				air_equipment = 0.15
+			}
+		}
+
+		JFU_generic_refinery_and_army_recovery = {
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.10
+				army_morale_factor = 0.05
 			}
 		}
 	}

@@ -712,6 +712,13 @@ on_actions = {
 					annex_country = { target = HUN transfer_troops = yes }
 				}
 			}
+
+			if = {
+				limit = { SPR = { is_ai = yes } }
+				GER = {
+					add_ideas = JFU_generic_refinery_and_army_recovery
+				}
+			}
 		}
 	}
 
