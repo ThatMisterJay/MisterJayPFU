@@ -1293,64 +1293,6 @@ ideas = {
 				factor = 0
 			}
 		}
-		USA_joseph_patterson = {
-
-			picture = generic_political_advisor_europe_1
-			allowed = {
-				original_tag = "USA"
-			}
-			allowed_civil_war = {
-				not = { has_government = communism }
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_america_first
-				}
-			}
-
-
-			traits = { editor }
-			cost = 50
-			do_effect = {
-
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		USA_william_regnery = {
-
-			picture = generic_political_advisor_europe_2
-			allowed = {
-				original_tag = "USA"
-			}
-			allowed_civil_war = {
-				not = { has_government = communism }
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = USA_america_first
-				}
-			}
-
-
-			traits = { captain_of_industry }
-			cost = 50
-			do_effect = {
-
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		harold_ickes = {
 
 
@@ -1580,6 +1522,9 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
+				has_completed_focus = USA_send_lindbergh_to_germany
+			}
+			visible = {
 				has_completed_focus = USA_send_lindbergh_to_germany
 			}
 
