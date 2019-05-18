@@ -1307,7 +1307,10 @@ focus = {
 				}
 			}
 			hidden_effect = {
-				GER = { puppet = EFR }
+				if = {
+					limit = { EFR = { NOT = { is_subject_of = GER } } }
+					GER = { puppet = EFR }
+				}
 				load_oob = USA_torch
 			}
 			custom_effect_tooltip = USA_operation_torch_effect_3

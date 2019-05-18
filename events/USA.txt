@@ -1020,7 +1020,7 @@ country_event = {
 	trigger = {
 		tag = USA
 		date > 1942.9.8
-		#1942.9.8
+		NOT = { has_war_with = EFR }
 		country_exists = EFR
 	}
 	fire_only_once = yes
@@ -1063,8 +1063,9 @@ country_event = {
 		}
 
 		hidden_effect = {
-			GER = {
-				puppet = EFR
+			if = {
+				limit = { EFR = { NOT = { is_subject_of = GER } } }
+				GER = { puppet = EFR }
 			}
 		}
 		custom_effect_tooltip = USA_operation_torch_effect_2
