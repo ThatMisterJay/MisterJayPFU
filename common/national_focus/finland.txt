@@ -533,10 +533,6 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				set_rule = { can_create_factions = yes }
-			}
 			add_ideas = why_we_fight_focus
 		}
 	}
