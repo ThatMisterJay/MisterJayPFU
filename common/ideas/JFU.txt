@@ -213,7 +213,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				enemy_justify_war_goal_time = 5.0
+				enemy_justify_war_goal_time = 10.0
 			}
 		}
 

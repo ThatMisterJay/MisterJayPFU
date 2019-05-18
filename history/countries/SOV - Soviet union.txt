@@ -102,6 +102,7 @@ add_ideas = {
 	trotskyite_plot
 	home_of_revolution
 	production_targets_idea
+	soviet_justification
 }
 
 create_country_leader = {
