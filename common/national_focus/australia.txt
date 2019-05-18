@@ -688,10 +688,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 0.30
+				bonus = 0.75
 				uses = 1
-				technology = strategic_bomber1
-				technology = strategic_bomber2
 				technology = tactical_bomber1
 				technology = tactical_bomber2
 				technology = naval_bomber1
@@ -699,7 +697,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AST_cac_woomera
-				bonus = 0.3
+				bonus = 0.75
 				uses = 1
 				technology = strategic_bomber1
 				technology = strategic_bomber2
@@ -1073,7 +1071,7 @@ focus_tree = {
 		id = AST_womens_auxilliary_australian_air_force
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = AST_volunteer_air_observers_corps focus = AST_naval_bombers }
-		x = 0
+		x = 1
 		y = 4
 		relative_position_id = AST_expand_the_raaf
 
