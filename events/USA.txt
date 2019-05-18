@@ -1032,10 +1032,6 @@ country_event = {
 		}
 		hidden_effect = {
 			if = {
-				limit = { NOT = { USA = { has_tech = basic_medium_art } } }
-				USA = { set_technology = { basic_medium_art = 1 }	}
-			}
-			if = {
 				limit = { NOT = { USA = { has_tech = mechanised_infantry } } }
 				USA = { set_technology = { mechanised_infantry = 1 }	}
 			}
