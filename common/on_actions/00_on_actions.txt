@@ -700,6 +700,14 @@ on_actions = {
 					add_ideas = JFU_generic_bonus_research
 				}
 			}
+
+			if = {
+				limit = { HUN = { is_ai = yes } }
+				GER = {
+					add_ideas = JFU_generic_bonus_research
+					annex_country = { target = HUN transfer_troops = yes }
+				}
+			}
 		}
 	}
 
