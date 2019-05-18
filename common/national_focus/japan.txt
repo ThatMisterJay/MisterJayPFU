@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 0 y = 1400 }
+	continuous_focus_position = { x = 0 y = 1600 }
 
 	############################
 	#### Japan support man  ####
@@ -1070,19 +1070,41 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_Banzai
-		x = 1
-		y = 6
+		id = JAP_soviet_war_northern
+		x = 2
+		y = 8
 		icon = GFX_goal_generic_major_war
-		cost = 0.2
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
 		prerequisite = { focus = JAP_Draft }
 		available = {
-			date > 1942.1.1
+			date > 1943.1.1
+			NOT = { has_global_flag = JAP_capitulate }
+			714 = { CONTROLLER = { is_in_faction_with = JAP } }
+			717 = { CONTROLLER = { is_in_faction_with = JAP } }
+			612 = { CONTROLLER = { is_in_faction_with = JAP } }
+			527 = { CONTROLLER = { is_in_faction_with = JAP } }
+			525 = { CONTROLLER = { is_in_faction_with = JAP } }
 		}
 		will_lead_to_war_with = SOV
+
+		completion_reward = {
+			declare_war_on = { target = SOV type = annex_everything }
+		}
+	}
+
+	focus = {
+		id = JAP_Banzai
+		x = 2
+		y = 10
+		icon = GFX_goal_generic_major_war
+		cost = 0.2
+		ai_will_do = {
+			factor = 3
+		}
+		prerequisite = { focus = JAP_soviet_war_northern }
 
 		completion_reward = {
 			add_timed_idea = { idea = for_the_emperor_idea_sov days = 150 }
@@ -1306,6 +1328,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = JAP_soviet_war_southern
+		x = -3
+		y = 3
+		relative_position_id = naval_innovations_focus
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		prerequisite = { focus = naval_innovations_focus }
+		available = {
+			date > 1943.1.1
+			NOT = { has_global_flag = JAP_capitulate }
+			336 = { CONTROLLER = { is_in_faction_with = JAP } }
+			672 = { CONTROLLER = { is_in_faction_with = JAP } }
+			335 = { CONTROLLER = { is_in_faction_with = JAP } }
+			334 = { CONTROLLER = { is_in_faction_with = JAP } }
+			333 = { CONTROLLER = { is_in_faction_with = JAP } }
+			673 = { CONTROLLER = { is_in_faction_with = JAP } }
+			667 = { CONTROLLER = { is_in_faction_with = JAP } }
+			668 = { CONTROLLER = { is_in_faction_with = JAP } }
+			669 = { CONTROLLER = { is_in_faction_with = JAP } }
+			523 = { CONTROLLER = { is_in_faction_with = JAP } }
+			737 = { CONTROLLER = { is_in_faction_with = JAP } }
+		}
+		will_lead_to_war_with = SOV
+
+		completion_reward = {
+			declare_war_on = { target = SOV type = annex_everything }
+		}
+	}
+
+	focus = {
 		id = carrier_focus
 		icon = GFX_goal_generic_navy_carrier
 		mutually_exclusive = { focus = battleship_focus }
@@ -1406,7 +1461,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = naval_air_innovations_focus_2 focus = army_air_innovations_focus }
 		x = -5
-		y = 1
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 2
@@ -1456,7 +1511,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = JAP_fighter_3s }
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 2
