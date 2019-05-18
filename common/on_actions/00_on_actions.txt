@@ -693,6 +693,13 @@ on_actions = {
 					add_building_construction = { type = naval_base province = 7408 level = 5 instant_build = yes }
 				}
 			}
+
+			if = {
+				limit = { MAN = { is_ai = yes } }
+				JAP = {
+					add_ideas = JFU_generic_bonus_research
+				}
+			}
 		}
 	}
 

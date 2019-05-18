@@ -39,3 +39,5 @@
     japan_superheavy_bb_production:0 "Superheavy Battleship Effort"
 
     license_equipment_faster_production:0 "Faster License Production"
+    JFU_generic_bonus_research:0 "Increased Air Research"
+    JFU_generic_bonus_research_desc:0 "One of the countries in our faction that is normally a player is AI. This is why we have received bonus Air Research Speed."
