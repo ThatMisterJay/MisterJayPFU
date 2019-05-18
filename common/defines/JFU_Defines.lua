@@ -183,3 +183,16 @@ NDefines.NCountry.MAX_HEROES_BEING_KILLED_WEEKLY_WAR_SUPPORT_PENALTY = -0.03		--
 NDefines.NCountry.MAX_CONVOYS_BEING_RAIDED_WEEKLY_WAR_SUPPORT_PENALTY = -0.020	-- Max penalty that will gained per week from trade convoy raided
 NDefines.NCountry.CONVOYS_BEING_RAIDED_WEEKLY_WAR_SUPPORT_PENALTY_DECAY = 0.005	-- Weekly decay of trade convoy raided war support penalty
 NDefines.NCountry.MAX_CONVOYS_BEING_RAIDED_WAR_SUPPORT_IMPACT = -0.3				-- Max total penalty from trade convoy raided
+
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
+    0.0, -- HOLD
+    1.0, -- PATROL
+    0.2, -- STRIKE FORCE
+    0.5, -- CONVOY RAIDING
+    0.5, -- CONVOY ESCORT
+    0.2, -- MINES PLANTING	
+    0.3, -- MINES SWEEPING
+    0.0, -- TRAIN
+    0.0, -- RESERVE_FLEET
+    1.0, -- NAVAL_INVASION_SUPPORT
+}
