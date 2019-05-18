@@ -276,3 +276,36 @@ country_event = {
 		#first page
 	}
 }
+
+
+country_event = {
+	id = JFU.12
+	title = JFU.12.t
+	desc = JFU.12.desc
+	picture = GFX_report_event_royalarmor
+
+	trigger = {
+		tag = ENG
+		#date > 1939.5.1
+		date > 1936.1.6
+		ENG = {
+			controls_state = 681
+			controls_state = 447
+		}
+		NOT = { country_exists = SAF }
+		has_country_flag = SAF_annexed
+		has_tech = basic_heavy_tank
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = JFU.12.a
+		custom_effect_tooltip = JFU.12.tt
+		hidden_effect = {
+			add_manpower = -12000
+			load_oob = ENG_south_african_tank
+		}
+	}
+}

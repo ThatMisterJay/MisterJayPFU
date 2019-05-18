@@ -677,6 +677,14 @@ on_actions = {
 				country_event = { id = pfu.26 days = 1746 }
 				country_event = { id = pfu.27 days = 1736 }
 			}
+
+			if = {
+				limit = { SAF = { is_ai = yes } }
+				ENG = {
+					set_country_flag = SAF_annexed
+					annex_country = { target = SAF transfer_troops = yes }
+				}
+			}
 		}
 	}
 
