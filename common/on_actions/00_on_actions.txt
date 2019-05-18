@@ -692,6 +692,10 @@ on_actions = {
 					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
 					add_building_construction = { type = naval_base province = 7408 level = 5 instant_build = yes }
 				}
+				JAP = {
+					add_resource = { type = rubber amount = -70 state = 724 }
+					add_resource = { type = rubber amount = 65 state = 527 }
+				}
 			}
 
 			if = {

@@ -277,7 +277,6 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = JFU.12
 	title = JFU.12.t
