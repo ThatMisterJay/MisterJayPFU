@@ -685,6 +685,14 @@ on_actions = {
 					annex_country = { target = SAF transfer_troops = yes }
 				}
 			}
+
+			if = {
+				limit = { SIA = { is_ai = yes } }
+				289 = {
+					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
+					add_building_construction = { type = naval_base province = 7408 level = 5 instant_build = yes }
+				}
+			}
 		}
 	}
 

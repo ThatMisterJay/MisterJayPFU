@@ -302,9 +302,9 @@ country_event = {
 
 	option = {
 		name = JFU.12.a
+		add_manpower = -15000
 		custom_effect_tooltip = JFU.12.tt
 		hidden_effect = {
-			add_manpower = -12000
 			load_oob = ENG_south_african_tank
 		}
 	}
