@@ -2674,17 +2674,6 @@ focus_tree = {
 				NZL = { is_in_faction_with = ENG }
 			}
 		}
-		bypass = {
-			NOT = {
-				AND = {
-					CAN = { is_in_faction_with = ENG }
-					SAF = { is_in_faction_with = ENG }
-					RAJ = { is_in_faction_with = ENG }
-					AST = { is_in_faction_with = ENG }
-					NZL = { is_in_faction_with = ENG }
-				}
-			}
-		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 3
 		y = 1
