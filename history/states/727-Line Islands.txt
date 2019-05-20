@@ -4,12 +4,13 @@ state={
 	manpower=5367
 	state_category = small_island
 	resources={
-		oil=1
+		oil=10
 	}
 
 	history={
 		owner = USA
 		buildings = {
+			infrastructure = 1
 			13048 = {
 				naval_base = 1
 			}

@@ -2,10 +2,10 @@ state=
 {
 	id=631
 	name="STATE_631"
-	manpower=2159	
+	manpower=2159
 	state_category = tiny_island
 		resources={
-		oil=1
+		oil=10
 	}
 	history={
 		owner = USA
@@ -20,8 +20,8 @@ state=
 			13052 1
 		 }
 	}
-	
+
 	provinces={
-		13052 	
+		13052
 	}
 }
