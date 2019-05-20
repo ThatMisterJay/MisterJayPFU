@@ -1548,6 +1548,10 @@ focus_tree = {
 			183 = { is_controlled_by = ENG }
 		}
 
+		ai_will_do = {
+			factor = 0
+		}
+
 		completion_reward = {
 			ENG = { add_timed_idea = { idea = ENG_colonial_trade days = 80 } }
 			GRE = { add_timed_idea = { idea = GRE_cyprus_cost days = 80 } }
