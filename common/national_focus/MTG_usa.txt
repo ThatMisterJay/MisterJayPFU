@@ -743,6 +743,7 @@ focus = {
 				has_war_support > 0.3
 			}
 			democratic > 0.95
+			threat > 0.30
 		}
 		continue_if_invalid = yes
 		x = 0
