@@ -5,6 +5,9 @@ state={
 	manpower = 52556
 
 	state_category = wasteland
+	resources={
+		oil=10
+	}
 
 	history={
 		owner = ENG

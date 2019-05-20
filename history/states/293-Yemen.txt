@@ -3,13 +3,13 @@ state={
 	id=293
 	name="STATE_293"
 	resources={
-		oil=1.000
+		oil=8.000
 	}
 
 	history={
 		owner = ENG
 		victory_points = { 5074 1 }
-		victory_points = { 10840 3  }
+		victory_points = { 10840 3 }
 		buildings = {
 			5074 = { naval_base = 3 }
 			infrastructure = 1
