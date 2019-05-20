@@ -1007,7 +1007,7 @@
     fleet_in_being_bonus:0 "Fleet in Being doctrines bonus"
     industrial_bonus:0 "Industrial bonus"
     nuclear_bonus:0 "Nuclear Bonus"
-    SOV_nkvd_upgrade_tooltip:1 "§YThe NKVD§! is now more tightly integrated in our army, making sure soldier morale and faith in the Party is high.\n'§YNKVD§!' also grants 30% Reinforce Rate!\n"
+    SOV_nkvd_upgrade_tooltip_mod:0 "§YThe NKVD§! is now more tightly integrated in our army, making sure soldier morale and faith in the Party is high. §YNKVD§! also grants 30% Reinforce Rate!\n"
     ger_sov_buddies_tooltip_2:0 "This will disband [Root.GetFactionName] and create the §YBerlin-Moscow§! faction.\n"
     ger_sov_buddies_tooltip:0 "§RIf the Soviets accept our offer we will suffer some loss of National Unity due to this change of policy. Needless to say, our fellow Fascists and the Democratic powers will also be upset by this turn of events.§!\n"
     purged_kalinin:0 " Purged by Stalin"

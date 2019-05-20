@@ -1998,7 +1998,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip
+			custom_effect_tooltip = SOV_nkvd_upgrade_tooltip_mod
 
 			hidden_effect = {
 				remove_ideas = nkvd
