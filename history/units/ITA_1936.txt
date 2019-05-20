@@ -813,58 +813,119 @@ instant_effect = {
 		}
 
 
-		### Under Contruction Notes ###
-		# BB: RM Conte di Cavour (BB_2: Caio Duilio Class) (Refit, Recomm. 1-Jun, 1937)
+		##### Ships #####
+		# BB: "RN Conte di Cavour" (Refitted & Recommissioned: 1-Jun, 1937)
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_heavy_1
-				version_name = "Conte Di Cavour Class"
 				creator = "ITA"
+				version_name = "Conte Di Cavour Class"
 			}
-			requested_factories = 3
+			name = "RN Conte di Cavour"
+			requested_factories = 2
 			progress = 0.20
 			amount = 1
 		}
-		# BB: RM Giulio Cesare (BB_2: Caio Duilio Class) (Refit, Recomm. 3-Jun, 1937)
+
+		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_heavy_1
-				version_name = "Conte Di Cavour Class"
 				creator = "ITA"
+				version_name = "Conte Di Cavour Class"
 			}
-			requested_factories = 3
+			name = "RN Giulio Cesare"
+			requested_factories = 2
 			progress = 0.20
 			amount = 1
 		}
-		# CL: RM Eugenio di Savoia (Montecuccoli variant) (Comm. 16-Jan, 1936)
+		# BB: "Littorio"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "ITA"
+				version_name = "Littorio Class"
+			}
+			requested_factories = 2
+			progress = 0.20
+			amount = 1
+		}
+		# BB: Vittoria Veneto
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "ITA"
+				version_name = "Littorio Class"
+			}
+			requested_factories = 2
+			progress = 0.20
+			amount = 1
+		}
+
+		# CL: "RI Eugenio di Savoia" (Commissioned: 16-Jan, 1936)
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_cruiser_2
 				creator = "ITA"
 				version_name = "Montecuccoli Class"
 			}
-			requested_factories = 2
+			requested_factories = 1
 			progress = 0.95
 			amount = 1
 		}
-		# DD: Maestrale variant (x2) ("Perseo" "Sirio")
+		# CL: "Duca degli Abruzzi"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "ITA"
+				version_name = "Duca degli Abruzzi Class"
+			}
+			requested_factories = 1
+			progress = 0.5
+			amount = 1
+		}
+		# CL: Giuseppe Garibaldi
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				creator = "ITA"
+				version_name = "Duca degli Abruzzi Class"
+			}
+			requested_factories = 1
+			progress = 0.45
+			amount = 1
+		}
+
+		# DD: "RCT Perseo", "RCT Sirio"
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_1
 				creator = "ITA"
 				version_name = "Maestrale Class"
 			}
-			requested_factories = 2
+			requested_factories = 1
 			progress = 0.70
-			amount = 2
+			amount = 1
 		}
-		# SS: Sirena variant (x1) ("Enrico Tazzoli")
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_submarine_1
-				version_name = "Bandiera Class"
+				type = ship_hull_light_1
 				creator = "ITA"
+				version_name = "Maestrale Class"
 			}
+			requested_factories = 1
+			progress = 0.60
+			amount = 1
+		}
+
+		# SS: "RSmg Enrico Tazzoli"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_2
+				creator = "ITA"
+				version_name = "Calvi Class"
+			}
+			name = "RSmg Enrico Tazzoli"
 			requested_factories = 1
 			progress = 0.50
 			amount = 1
