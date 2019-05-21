@@ -43,3 +43,6 @@
     JFU_generic_bonus_research_desc:0 "One of the countries in our faction that is normally a player is AI. This is why we have received bonus Air Research Speed."
     JFU_generic_refinery_and_army_recovery:0 "Increased Refinery Construction and Army Recovery Rate"
     JFU_generic_refinery_and_army_recovery_desc:0 "One of the countries in our faction that is normally a player is AI. This is why we have received bonus Refinery Construction and Army Recovery rate."
+
+    generic_cas_aircraft_manufacturer:0 "CAS Aircraft Company"
+    cas_aircraft_manufacturer:0 "CAS Aircraft Designer"

@@ -1630,6 +1630,27 @@ leader_traits = {
 		}
 	}
 
+	cas_aircraft_manufacturer = {
+		random = no
+
+		equipment_bonus = {
+			CAS_equipment = {
+				air_range = 0.1
+				air_ground_attack = 0.05
+				instant = yes
+			}
+			cv_CAS_equipment = {
+				air_range = 0.1
+				air_ground_attack = 0.05
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	light_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {

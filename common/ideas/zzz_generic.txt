@@ -1322,6 +1322,21 @@ ideas = {
 
 		designer = yes
 
+		generic_cas_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				OR = { tag = CAN tag = AFG tag = HUN tag = ROM tag = MAN }
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { cas_aircraft_manufacturer }
+		}
+
 		generic_light_aircraft_manufacturer = {
 
 			picture = generic_air_manufacturer_1
