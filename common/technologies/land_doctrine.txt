@@ -2178,9 +2178,14 @@ technologies = {
 
 		supply_consumption_factor = -0.10
 
-		infantry = {
-			combat_width = -0.4
-		}
+		infantry = { combat_width = -0.4 }
+		marine = { combat_width = -0.2 }
+		mountaineers = { combat_width = -0.2 }
+		jaeger = { combat_width = -0.2 }
+		jungletroop = { combat_width = -0.2 }
+		shocktroop = { combat_width = -0.2 }
+		desertinfantry = { combat_width = -0.2 }
+		paratrooper = { combat_width = -0.2 }
 
 
 		enable_tactic = tactic_overwhelming_fire
@@ -2456,9 +2461,14 @@ technologies = {
 
 		conscription = 0.03
 
-		infantry = {
-			combat_width = -0.4
-		}
+		infantry = { combat_width = -0.4 }
+		marine = { combat_width = -0.2 }
+		mountaineers = { combat_width = -0.2 }
+		jaeger = { combat_width = -0.2 }
+		jungletroop = { combat_width = -0.2 }
+		shocktroop = { combat_width = -0.2 }
+		desertinfantry = { combat_width = -0.2 }
+		paratrooper = { combat_width = -0.2 }
 
 
 
