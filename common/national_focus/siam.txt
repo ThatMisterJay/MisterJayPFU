@@ -736,31 +736,22 @@ focus_tree = {
     }
 
   focus = {
-      id= SIA_fascist_nation
-	  icon = GFX_focus_SIA_thailand_fascist
-	  x = 11
-	  y = 3
-	  cost = 5
-	  ai_will_do = { factor = 5 }
-	  prerequisite = { focus = SIA_strenghten_rel_jap }
-		available_if_capitulated = yes
-		completion_reward = {
-				add_popularity = {
-					ideology = fascism
-					popularity = +0.1
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.1
-				}
-				add_popularity = {
-				 ideology = democratic
-				 popularity = -0.1
-				}
+        id= SIA_fascist_nation
+        icon = GFX_focus_SIA_thailand_fascist
+        x = 11
+        y = 3
+        cost = 5
+        ai_will_do = { factor = 5 }
+        prerequisite = { focus = SIA_strenghten_rel_jap }
+        available_if_capitulated = yes
+        completion_reward = {
+            add_popularity = { ideology = fascism popularity = 0.1 }
+            add_popularity = { ideology = communism popularity = -0.1 }
+            add_popularity = { ideology = democratic popularity = -0.1 }
+            set_politics = { ruling_party = fascism }
 
-			add_ideas = fascist_leanings
-		}
-
+            add_ideas = fascist_leanings
+        }
     }
 
 
