@@ -16,7 +16,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				max_command_power = 5
+				max_command_power = 25
 			}
 		}
 
@@ -54,7 +54,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				special_forces_cap = 0.02
+				special_forces_cap = 0.05
 			}
 		}
 
@@ -149,7 +149,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				special_forces_cap = 0.02
+				special_forces_cap = 0.05
 			}
 		}
 
