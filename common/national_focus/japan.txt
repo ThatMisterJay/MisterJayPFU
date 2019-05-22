@@ -1027,7 +1027,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Doc_2
-		x = -1
+		x = 0
 		y = 6
 		icon = GFX_goal_generic_army_doctrines
 		cost = 5
@@ -1071,7 +1071,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_soviet_war_northern
-		x = 2
+		x = 1
 		y = 8
 		icon = GFX_goal_generic_major_war
 		cost = 5
@@ -1097,7 +1097,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Banzai
-		x = 2
+		x = 1
 		y = 10
 		icon = GFX_goal_generic_major_war
 		cost = 0.2
@@ -1291,6 +1291,14 @@ focus_tree = {
 				bonus = 1
 				category = naval_doctrine
 			}
+			add_tech_bonus = {
+				name = JAP_battery_bonus
+				uses = 2
+				bonus = 0.50
+				ahead_reduction = 0.5
+				technology = improved_secondary_battery
+				technology = dp_secondary_battery
+			}
 		}
 	}
 
@@ -1329,7 +1337,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_soviet_war_southern
-		x = -3
+		x = -4
 		y = 3
 		relative_position_id = naval_innovations_focus
 		icon = GFX_goal_generic_major_war
@@ -1337,7 +1345,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
-		prerequisite = { focus = naval_innovations_focus }
+		prerequisite = { focus = naval_air_innovations_focus_2 }
 		available = {
 			date > 1943.1.1
 			NOT = { has_global_flag = JAP_capitulate }
@@ -1381,6 +1389,10 @@ focus_tree = {
 				uses = 1
 				category = cv_tech
 			}
+			if = {
+				limit = { NOT = { has_tech = improved_airplane_launcher } }
+				set_technology = { improved_airplane_launcher = 1 }
+			}
 		}
 	}
 	focus = {
@@ -1410,6 +1422,14 @@ focus_tree = {
 				uses = 1
 				category = bc_tech
 			}
+			add_tech_bonus = {
+				name = JAP_heavy_battery_bonus
+				uses = 2
+				bonus = 0.50
+				ahead_reduction = 0.5
+				technology = improved_heavy_battery
+				technology = advanced_heavy_battery
+			}
 		}
 	}
 
@@ -1417,8 +1437,8 @@ focus_tree = {
 	focus = {
 		id = naval_air_innovations_focus_2
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = carrier_focus }
-		x = 0
+		prerequisite = { focus = carrier_focus focus = battleship_focus}
+		x = -1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1542,7 +1562,7 @@ focus_tree = {
 		id = army_air_innovations_focus
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = JAP_North_Tech_2 focus = JAP_North_Infra_2}
-		x = -2
+		x = -1
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -1569,8 +1589,8 @@ focus_tree = {
 	focus = {
 		id = JAP_Army_Air_Strat
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = JAP_DMZ }
-		x = 3
+		prerequisite = { focus = JAP_Draft }
+		x = 2
 		y = 6
 		cost = 5
 		ai_will_do = {
@@ -1949,6 +1969,13 @@ focus_tree = {
 				technology = mtg_transport
 				technology = mtg_landing_craft
 				technology = mtg_tank_landing_craft
+			}
+			add_tech_bonus = {
+				name = JAP_Riku_Bonus
+				bonus = 1
+				uses = 1
+				technology = amphibious_tank
+				technology = amphibious_tank_2
 			}
 		}
 	}
