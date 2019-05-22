@@ -175,7 +175,7 @@ NDefines.NGraphics.BORDER_WIDTH = 0.8
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
 
 NDefines.NCountry.HEROES_BEING_KILLED_WEEKLY_WAR_SUPPORT_PENALTY_DECAY = 0.001 -- Weekly decay of war heroes manpower lost war support penalty
-NDefines.NCountry.MAX_HEROES_BEING_KILLED_WAR_SUPPORT_IMPACT = -0.2				-- Max total penalty from war heroes manpower lost
+NDefines.NCountry.MAX_HEROES_BEING_KILLED_WAR_SUPPORT_IMPACT = -0.1				-- Max total penalty from war heroes manpower lost
 
 
 NDefines.NCountry.MAX_HEROES_BEING_KILLED_WEEKLY_WAR_SUPPORT_PENALTY = -0.03		-- Max penalty that will gained per week from war heroes manpower lost
