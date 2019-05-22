@@ -1352,7 +1352,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1940
 		folder = {
 			name = infantry_folder
@@ -1392,7 +1392,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1941
 		folder = {
 			name = infantry_folder
@@ -1454,7 +1454,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.75
 		start_year = 1942
 		folder = {
 			name = infantry_folder
