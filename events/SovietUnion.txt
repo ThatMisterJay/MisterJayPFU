@@ -42,16 +42,6 @@ country_event = {
 			}
 		}
 	}
-	option = { # Yield
-		name = soviet.1.b
-		ai_chance = { factor = 25 }
-		JAP = {
-			effect_tooltip = {
-				add_stability = 0.05
-			}
-			country_event = { days = 1 id = japan.5 }
-		}
-	}
 }
 
 # Successful Raid
