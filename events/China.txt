@@ -123,81 +123,13 @@ country_event = {
 		name = china.6.a
 		effect_tooltip = {
 			custom_effect_tooltip = china.6.tt
-			random_list = {
-				70 = {
-					country_event = { id = china.9 days = 1 }
-					add_political_power = 200
-					add_manpower = -10000
-				}
-				30 = {
-					country_event = { id = china.10 days = 1 }
-					add_political_power = -100
-					add_manpower = -50000
-				}
-			}
-			custom_effect_tooltip = china.6.tt_2
-			country_event = { id = china.8 days = 1 }
+			country_event = { id = china.9 days = 1 }
 			add_political_power = 100
+			add_manpower = -25000
 		}
 		hidden_effect = {
 			PRC = {
 				set_country_flag = CCW_major_attack
-				country_event = { id = china.7 days = 1 }
-			}
-		}
-	}
-
-	option = {
-		name = china.6.b
-		effect_tooltip = {
-			custom_effect_tooltip = china.6.tt
-			random_list = {
-				50 = {
-					country_event = { id = china.9 days = 1 }
-					add_political_power = 100
-					add_manpower = -1000
-				}
-				50 = {
-					country_event = { id = china.10 days = 1 }
-					add_political_power = -50
-					add_manpower = -5000
-				}
-			}
-			custom_effect_tooltip = china.6.tt_2
-			country_event = { id = china.8 days = 1 }
-			add_political_power = 50
-		}
-		hidden_effect = {
-			PRC = {
-				set_country_flag = CCW_medium_attack
-				country_event = { id = china.7 days = 1 }
-			}
-		}
-	}
-
-	option = {
-		name = china.6.c
-		effect_tooltip = {
-			custom_effect_tooltip = china.6.tt
-			random_list = {
-				30 = {
-					country_event = { id = china.9 days = 1 }
-					add_political_power = 50
-					add_manpower = -100
-				}
-				70 = {
-					country_event = { id = china.10 days = 1 }
-					add_political_power = -25
-					add_manpower = -500
-				}
-			}
-			custom_effect_tooltip = china.6.tt_2
-			country_event = { id = china.8 days = 1 }
-			add_political_power = 25
-		}
-		hidden_effect = {
-			PRC = {
-				set_country_flag = CCW_minor_attack
 				country_event = { id = china.7 days = 1 }
 			}
 		}
@@ -216,67 +148,15 @@ country_event = {
 		name = china.7.a
 		ai_chance = { factor = 80 }
 		effect_tooltip = {
-			random_list = {
-				50 = {
-					country_event = { id = china.11 }
-					add_political_power = -75
-					add_manpower = -5000
-				}
-				50 = {
-					country_event = { id = china.12 }
-					add_political_power = 150
-					add_manpower = -1000
-				}
-			}
+			country_event = { id = china.11 }
+			add_political_power = -75
+			add_manpower = -5000
 		}
 		hidden_effect = {
-			if = {
-				limit = { has_country_flag = CCW_major_attack }
-				CHI = {
-					random_list = {
-						70 = {
-							country_event = { id = china.9 }
-						}
-						30 = {
-							country_event = { id = china.10 }
-						}
-					}
-				}
-			}
-			if = {
-				limit = { has_country_flag = CCW_medium_attack }
-				CHI = {
-					random_list = {
-						50 = {
-							country_event = { id = china.9 }
-						}
-						50 = {
-							country_event = { id = china.10 }
-						}
-					}
-				}
-			}
-			if = {
-				limit = { has_country_flag = CCW_minor_attack }
-				CHI = {
-					random_list = {
-						30 = {
-							country_event = { id = china.9 }
-						}
-						70 = {
-							country_event = { id = china.10 }
-						}
-					}
-				}
+			CHI = {
+				country_event = { id = china.9 }
 			}
 		}
-	}
-
-	option = {
-		name = china.7.b
-		ai_chance = { factor = 20 }
-		CHI = { country_event = { id = china.8 days = 1 } }
-		add_political_power = -50
 	}
 }
 
@@ -320,21 +200,8 @@ country_event = {
 
 	option = {
 		name = china.9.a
-		if = {
-			limit = { PRC = { has_country_flag = CCW_major_attack } }
-			add_political_power = 200
-			add_manpower = -10000
-		}
-		if = {
-			limit = { PRC = { has_country_flag = CCW_medium_attack } }
-			add_political_power = 100
-			add_manpower = -1000
-		}
-		if = {
-			limit = { PRC = { has_country_flag = CCW_minor_attack } }
-			add_political_power = 50
-			add_manpower = -100
-		}
+		add_political_power = 100
+		add_manpower = -10000
 		PRC = {
 			country_event = { id = china.11 }
 			clr_country_flag = CCW_major_attack
