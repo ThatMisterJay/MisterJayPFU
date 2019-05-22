@@ -25,7 +25,7 @@ shared_focus = {
 		}
 	}
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -39,17 +39,9 @@ shared_focus = {
 
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_offsite_building = { type = industrial_complex level = 2 }
@@ -65,7 +57,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_invite_foreign_investors
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -82,17 +74,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		FRA = {
@@ -132,7 +116,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -142,17 +126,9 @@ shared_focus = {
 		FRA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -172,7 +148,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_small_arms_expertise
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 2
@@ -192,17 +168,9 @@ shared_focus = {
 		FRA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_ideas = CHI_elite_mountaineers
@@ -249,7 +217,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_small_arms_expertise
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -263,17 +231,9 @@ shared_focus = {
 		FRA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -294,7 +254,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -329,17 +289,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		671 = { #Tonkin
@@ -361,7 +313,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_guarantee_the_hanoi_route
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -374,17 +326,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_ideas = CHI_construction_battalions
@@ -405,7 +349,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -415,17 +359,9 @@ shared_focus = {
 		FRA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		air_experience = 25
@@ -504,7 +440,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -514,17 +450,9 @@ shared_focus = {
 		FRA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		every_army_leader = {
@@ -542,7 +470,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_french_drill
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -559,17 +487,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		every_army_leader = {
@@ -601,7 +521,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_reach_out_to_france
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -622,17 +542,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		ENG = {
@@ -672,7 +584,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -727,17 +639,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		288 = { #Burma
@@ -763,7 +667,7 @@ shared_focus = {
 	y = 5
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -818,17 +722,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		432 = { #Assam
@@ -853,7 +749,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -876,17 +772,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		custom_effect_tooltip = CHI_purchase_fighters_tt
@@ -925,7 +813,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_fighter_purchases
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -946,20 +834,11 @@ shared_focus = {
 				USA_will_support = yes
 			}
 		}
-		is_subject = no
-	}
-
-	bypass = {
-
 	}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
@@ -976,7 +855,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_fighter_purchases
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -986,17 +865,9 @@ shared_focus = {
 		has_idea = CHI_camco_1
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
@@ -1012,7 +883,7 @@ shared_focus = {
 	y = 1
 	relative_position_id =  CHI_local_fighter_production
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1022,17 +893,9 @@ shared_focus = {
 		has_idea = CHI_camco_2
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		custom_effect_tooltip = available_designer
@@ -1049,7 +912,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_fighter_purchases
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1104,17 +967,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		434 = { #Arunachal Pradesh
@@ -1136,7 +991,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_the_hump
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1154,17 +1009,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		USA = {
@@ -1181,7 +1028,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_camco
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1195,17 +1042,9 @@ shared_focus = {
 		NOT = { has_tech = fighter3 }
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1225,7 +1064,7 @@ shared_focus = {
 	mutually_exclusive = { focus = CHI_collaboration_with_the_japanese }
 	relative_position_id = CHI_british_cooperation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1246,17 +1085,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		USA = {
@@ -1298,7 +1129,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1313,17 +1144,9 @@ shared_focus = {
 		is_subject = no
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		custom_effect_tooltip = available_theorist
@@ -1341,7 +1164,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_hire_chennault
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1356,17 +1179,9 @@ shared_focus = {
 		is_subject = no
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		USA = {
@@ -1383,7 +1198,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_hire_chennault
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1397,17 +1212,9 @@ shared_focus = {
 		USA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1429,7 +1236,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1439,17 +1246,9 @@ shared_focus = {
 		USA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1469,7 +1268,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_light_cruiser_project
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1479,17 +1278,9 @@ shared_focus = {
 		USA_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1509,7 +1300,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_heavy_cruiser_project
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1522,17 +1313,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1553,7 +1336,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_naval_aviation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1566,17 +1349,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1596,7 +1371,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1658,7 +1433,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_investment_into_shipbuilding
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1671,17 +1446,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1701,7 +1468,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_investment_into_shipbuilding
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1714,17 +1481,9 @@ shared_focus = {
 		}
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_ideas = CHI_train_marines
@@ -1746,7 +1505,7 @@ shared_focus = {
 	y = 0
 	relative_position_id = CHI_mission_to_the_us
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1756,17 +1515,9 @@ shared_focus = {
 		TAG = MAN
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		JAP = {
@@ -1807,7 +1558,7 @@ shared_focus = {
 	y = 3
 	relative_position_id = CHI_collaboration_with_the_japanese
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1817,17 +1568,9 @@ shared_focus = {
 		JAP_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1847,7 +1590,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_modern_submarines
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1857,17 +1600,9 @@ shared_focus = {
 		JAP_will_support = yes
 	}
 
-	bypass = {
-
-	}
-
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_tech_bonus = {
@@ -1888,7 +1623,7 @@ shared_focus = {
 	x = -9
 	y = 1
 	relative_position_id = CHI_invite_foreign_investors
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1909,10 +1644,6 @@ shared_focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		GER = {
@@ -1952,7 +1683,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_germany
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -1986,7 +1717,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_give_falkenhausen_citizenship
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2012,7 +1743,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_chinese_general_staff
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2041,7 +1772,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_mission_to_germany
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2060,7 +1791,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_offsite_building = { type = industrial_complex level = 1 }
+		add_offsite_building = { type = industrial_complex level = 2 }
 	}
 }
 
@@ -2072,7 +1803,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_closer_ties_with_germany
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2091,6 +1822,13 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		add_tech_bonus = {
+			bonus = 2
+			uses = 1
+			name = mech_army_bonus
+			technology = basic_medium_tank
+			technology = improved_medium_tank
+		}
 		custom_effect_tooltip = CHI_purchase_tanks_tt
 		hidden_effect = {
 			if = {
@@ -2120,7 +1858,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2154,7 +1892,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2207,7 +1945,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -2231,7 +1969,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		custom_effect_tooltip = CHI_experimental_mechanised_unit_effect
+		custom_effect_tooltip = CHI_experimental_mechanised_unit_effect_tt
 		hidden_effect = {
 			if = {
 				limit = {
@@ -2244,11 +1982,15 @@ shared_focus = {
 					regiments = {
 						light_armor = { x = 0 y = 0 }
 						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 0 y = 2 }
+						light_armor = { x = 0 y = 3 }
+						light_armor = { x = 0 y = 4 }
 
 						motorized = { x = 1 y = 0 }
 						motorized = { x = 1 y = 1 }
 						motorized = { x = 1 y = 2 }
 						motorized = { x = 1 y = 3 }
+						motorized = { x = 1 y = 4 }
 					}
 					support = {
 
@@ -2273,7 +2015,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = CHI_purchase_tanks
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1

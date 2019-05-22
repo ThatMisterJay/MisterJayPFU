@@ -40,3 +40,5 @@ operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparatio
 empty_line:0 "\n\n"
 
 JAP_yamato_JFU_tt:0 "Adds two §YYamato-Class Super Battleships§! to the production queue, at 75% and 50% complete. \n§GGlorious Nippon Steel§! means our ships can be built at half the production cost of conventional §YSuperheavy Battleships§!. We should produce our own. \n"
+
+CHI_experimental_mechanised_unit_effect_tt:0 "Gain a Division with 5 §YLight Tank§! and 5 §YMotorised§! battalions\n"
