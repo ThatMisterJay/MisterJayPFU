@@ -845,7 +845,7 @@ country_event = {
 	fire_only_once = yes
 
 	hidden = yes
-
+z
 	trigger = {
 		tag = ENG
 		NOT = { has_country_flag = east_indies }
@@ -870,6 +870,7 @@ country_event = {
 		}
 		HOL = { controls_state = 673 }
 		HOL = { controls_state = 667 }
+
 	}
 
 	mean_time_to_happen = { days = 30 }
@@ -877,7 +878,7 @@ country_event = {
 	option = {
 		name = britain.32.a
 
-		hidden_effect = { HOL = { country_event = { id = britain.33 hours = 1 } } }
+		hidden_effect = { country_event = { id = britain.33 } }
 		set_country_flag = east_indies
 	}
 }
@@ -897,8 +898,6 @@ country_event = {
 
 		hidden_effect = {
 			ENG = { transfer_state = 927 }
-			ENG = { transfer_state = 669 }
-			ENG = { transfer_state = 668 }
 			ENG = { transfer_state = 667 }
 			ENG = { transfer_state = 334 }
 			ENG = { transfer_state = 335 }
@@ -906,8 +905,11 @@ country_event = {
 			ENG = { transfer_state = 673 }
 			ENG = { transfer_state = 738 }
 			ENG = { transfer_state = 766 }
-			ENG = { transfer_state = 767 }
 			ENG = { transfer_state = 721 }
+
+			AST = { transfer_state = 767 }
+			AST = { transfer_state = 669 }
+			AST = { transfer_state = 668 }
 		}
 		set_country_flag = east_indies_II
 	}
