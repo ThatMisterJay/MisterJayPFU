@@ -38,5 +38,6 @@ units = {
 		location = 4076
 		division_template = "South African Armoured Division"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.75
 	}
 }
