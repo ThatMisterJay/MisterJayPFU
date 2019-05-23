@@ -4,7 +4,7 @@ state={
 	name="STATE_105"
 	resources={
 		chromium=36.000
-		aluminium=112.000
+		aluminium=64.000
 	}
 
 	history={
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		833 867 937 3922 6913 6940 9809 9821 9849 11858 
+		833 867 937 3922 6913 6940 9809 9821 9849 11858
 	}
 	manpower=895500
 	buildings_max_level_factor=1.000

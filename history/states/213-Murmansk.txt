@@ -5,12 +5,13 @@ state={
 	resources={
 		steel=28.000
 		chromium=24.000
+		aluminium=55.000
 	}
 
 	history={
 		owner = SOV
 		victory_points = {
-			3134 5 
+			3134 5
 		}
 		buildings = {
 			infrastructure = 1
