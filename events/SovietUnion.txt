@@ -1557,18 +1557,7 @@ country_event = {
 	desc = soviet.48.d
 	picture = GFX_report_event_soviet_purge_politicians
 
-	trigger = {
-		has_government = communism
-		tag = SOV
-		has_global_flag = SOV_fourth_international_fired
-		NOT = { has_completed_focus = SOV_great_purge }
-	}
-
-	mean_time_to_happen = {
-		days = 90
-	}
-
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	#Don't invite trotsky
 	option = {
