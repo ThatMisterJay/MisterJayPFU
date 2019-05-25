@@ -579,7 +579,10 @@ ideas = {
 
 
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
 
 
@@ -611,9 +614,11 @@ ideas = {
 
 
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
-
 
 
 			traits = { air_chief_all_weather_1 }
@@ -695,9 +700,11 @@ ideas = {
 
 
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
-
 
 
 			traits = { air_naval_strike_1 }
@@ -711,9 +718,11 @@ ideas = {
 
 
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
-
 
 
 			traits = { air_air_combat_training_3 }
