@@ -6,16 +6,16 @@ state={
 	resources={
 		steel=4
 		chromium=22
-		aluminium=58
+		aluminium=32
 		tungsten = 20
 	}
-	
+
 	state_category = city
 
 	history={
 		owner = GRE
 		victory_points = {
-			4109 20 
+			4109 20
 		}
 		buildings = {
 			infrastructure = 5
@@ -33,6 +33,6 @@ state={
 	}
 
 	provinces={
-		863 976 1109 3864 3973 3988 4109 6930 7127 
+		863 976 1109 3864 3973 3988 4109 6930 7127
 	}
 }
