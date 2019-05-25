@@ -695,6 +695,7 @@ on_actions = {
 				JAP = {
 					add_resource = { type = rubber amount = -70 state = 724 }
 					add_resource = { type = rubber amount = 65 state = 527 }
+					add_ideas = export_focus
 				}
 			}
 
