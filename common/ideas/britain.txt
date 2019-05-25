@@ -2523,10 +2523,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.05
-			}
-			modifier = {
-				fuel_gain_from_states = 0.2
+				industry = 0.10
 			}
 
 			traits = { electronics_concern }
