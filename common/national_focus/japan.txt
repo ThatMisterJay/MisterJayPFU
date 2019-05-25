@@ -656,7 +656,7 @@ focus_tree = {
 		id = JAP_Northern
 		x = 1
 		y = 0
-		cost = 10
+		cost = 5
 		icon = GFX_goal_generic_political_pressure
 		ai_will_do = {
 			factor = 6
@@ -691,7 +691,7 @@ focus_tree = {
 		id = JAP_Southern
 		x = 7
 		y = 0
-		cost = 10
+		cost = 5
 		icon = GFX_goal_generic_navy_carrier
 		ai_will_do = {
 			factor = 6
@@ -1222,7 +1222,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 6
 		}
-		cost = 4.3
+		cost = 5
 
 		relative_position_id = JAP_Southern
 
@@ -1267,6 +1267,14 @@ focus_tree = {
 				bonus = 1
 				category = dd_tech
 			}
+			add_tech_bonus = {
+				name = JAP_battery_bonus
+				uses = 2
+				bonus = 1
+				ahead_reduction = 0.5
+				technology = improved_secondary_battery
+				technology = dp_secondary_battery
+			}
 		}
 	}
 
@@ -1290,14 +1298,6 @@ focus_tree = {
 				uses = 3
 				bonus = 1
 				category = naval_doctrine
-			}
-			add_tech_bonus = {
-				name = JAP_battery_bonus
-				uses = 2
-				bonus = 0.50
-				ahead_reduction = 0.5
-				technology = improved_secondary_battery
-				technology = dp_secondary_battery
 			}
 		}
 	}
@@ -1425,7 +1425,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_heavy_battery_bonus
 				uses = 2
-				bonus = 0.50
+				bonus = 1
 				ahead_reduction = 0.5
 				technology = improved_heavy_battery
 				technology = advanced_heavy_battery
@@ -1701,7 +1701,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		prerequisite = { focus = JAP_Nagasaki_Shipyards }
-		cost = 4.3
+		cost = 5
 		icon = GFX_goal_generic_construct_naval_dockyard
 		ai_will_do = {
 			factor = 5
@@ -1948,7 +1948,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Southern }
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		relative_position_id = JAP_Southern
 
