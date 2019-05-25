@@ -218,7 +218,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7518;1172;impassable;-1;-1;-1;-1;-1;;burma
 7518;4656;impassable;-1;-1;-1;-1;-1;;burma
 12065;4656;impassable;-1;-1;-1;-1;-1;;burma
-12065;1469;impassable;-1;-1;-1;-1;-1;;burma
 12065;4121;impassable;-1;-1;-1;-1;-1;;burma
 9948;4121;impassable;-1;-1;-1;-1;-1;;burma
 7093;4121;impassable;-1;-1;-1;-1;-1;;burma
