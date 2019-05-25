@@ -3374,7 +3374,7 @@ leader_traits = {
 			factor = 3
 		}
 	}
-		med_fleet_naval_manufacturer = {
+	med_fleet_naval_manufacturer = {
 		random = no
 		equipment_bonus = {
 			carrier = {
@@ -3383,7 +3383,7 @@ leader_traits = {
 			capital_ship = {
 				armor_value = 0.2 hg_attack = 0.1 naval_speed = 0.1 naval_range = -0.5
 			}
-			destroyer = {
+			screen_ship = {
 				lg_attack = 0.1 naval_speed = 0.1 naval_range = -0.5
 			}
 			submarine = {

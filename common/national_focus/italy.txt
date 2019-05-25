@@ -1384,7 +1384,7 @@ focus_tree = {
 				name = ITA_escort_effort
 				bonus = 1
 				uses = 1
-				category = dd_tech
+				category = cl_tech
 			}
 			add_tech_bonus = {
 				name = ITA_escort_effort
