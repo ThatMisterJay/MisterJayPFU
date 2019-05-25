@@ -16,7 +16,6 @@ country_event = {
 	option = { # Push back
 		name = soviet.1.a
 		ai_chance = { factor = 75 }
-		add_political_power = -25
 		hidden_effect = {
 			random_list = {
 				60 = {
