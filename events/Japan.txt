@@ -359,7 +359,7 @@ country_event = {
 		trigger = { is_ai = yes }
 		JAP = {
 			country_event = { id = japan.13 }
-			set_autonomy = { target = SIA autonomy_state = imperial_protectorate }
+			set_autonomy = { target = SIA autonomy_state = autonomy_integrated_puppet }
 		}
 	}
 
