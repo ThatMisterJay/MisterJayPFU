@@ -163,6 +163,114 @@ war_measures = {
 	}
 }
 
+CHI_resistance_category = {
+
+	CHI_resistance_organise = {
+		icon = border_conflicts
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war_with = JAP
+			custom_trigger_tooltip = {
+				tooltip = CHI_at_least_10_tt
+				JAP = { check_variable = { resistance_variable > 10 } }
+			}
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			tag = CHI
+			has_war_with = JAP
+		}
+
+		days_re_enable = 45
+
+		complete_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -5000 }
+			add_manpower = -100000
+			add_to_variable = { CHI_resistance_level = 1 }
+			custom_effect_tooltip = CHI_organising_resistance_tt
+		}
+	}
+
+	CHI_resistance_rise_up = {
+		icon = border_conflicts
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war_with = JAP
+			custom_trigger_tooltip = {
+				tooltip = CHI_at_least_15_tt
+				JAP = { check_variable = { resistance_variable > 15 } }
+			}
+		}
+
+		cost = 50
+
+		#days_re_enable = 180
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			tag = CHI
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					not = { has_template = "Chinese Resistance" }
+				}
+				division_template = {
+					name = "Chinese Resistance"
+					priority = 0
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+					}
+				}
+			}
+			custom_effect_tooltip = CHI_will_spawn_divisions_tt
+			hidden_effect = {
+				CHI = {
+					for_loop_effect = {
+						start = 0
+						end = CHI_resistance_level
+						random_owned_state = {
+							limit = { is_fully_controlled_by = JAP }
+							CHI = { set_state_controller = PREV }
+							create_unit = {
+								division = "name = \"Chinese Resistance\" division_template = \"Chinese Resistance\" start_experience_factor = 0"
+								owner = ROOT
+							}
+							JAP = { set_state_controller = PREV }
+						}
+						add = 1
+					}
+					set_variable = { CHI_resistance_level = 0 }
+				}
+			}
+		}
+	}
+}
+
 
 ### #  # ###  #  #  ### ### ###  #   #    #### #   #  ##   ##  #  #  ##  ### ###  ##  #  #
  #  ## # #  # #  # #     #  #  #  # #     #    #   # #  # #  # #  # #  #  #   #  #  # ## #

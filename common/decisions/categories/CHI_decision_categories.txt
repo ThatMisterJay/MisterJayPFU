@@ -203,3 +203,12 @@ CHI_political_power_struggle = {
 		NOT = { has_completed_focus = CHI_opposition }
 	}
 }
+
+
+CHI_resistance_category = {
+	picture = generic_border_conflicts
+	icon = border_conflicts
+	allowed = {
+		original_tag = CHI
+	}
+}
