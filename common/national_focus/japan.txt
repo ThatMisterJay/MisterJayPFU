@@ -1498,7 +1498,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1943.1.1
+			date > 1942.10.1
 
 			NOT = { has_global_flag = JAP_capitulate }
 		}
@@ -1548,7 +1548,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1944.1.1
+			date > 1943.10.1
 
 			NOT = { has_global_flag = JAP_capitulate }
 			has_country_flag = Five_Ministers_South
