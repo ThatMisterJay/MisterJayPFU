@@ -269,6 +269,73 @@ CHI_resistance_category = {
 			}
 		}
 	}
+
+	CHI_train_army = {
+		icon = border_conflicts
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war_with = JAP
+			custom_trigger_tooltip = {
+				tooltip = CHI_at_least_20_tt
+				JAP = { check_variable = { resistance_variable > 20 } }
+			}
+		}
+
+		cost = 25
+
+		#days_re_enable = 45
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			tag = CHI
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			add_to_variable = { CHI_resistance_training = 0.05 }
+		}
+	}
+
+	CHI_start_offensive = {
+		icon = border_conflicts
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			has_war_with = JAP
+			custom_trigger_tooltip = {
+				tooltip = CHI_at_least_20_tt
+				JAP = { check_variable = { resistance_variable > 20 } }
+			}
+			#check_variable = { CHI_resistance_training > 0 }
+		}
+
+		cost = 25
+
+		#days_re_enable = 45
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			tag = CHI
+			has_war_with = JAP
+		}
+
+		complete_effect = {
+			add_dynamic_modifier = {
+			    scope = CHI
+			    days = 60
+				modifier = CHI_offensive_dynamic_modifier
+			}
+		}
+	}
 }
 
 
