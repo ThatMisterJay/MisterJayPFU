@@ -72,17 +72,9 @@ focus_tree = {
 			is_subject = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_political_power = 100
@@ -115,17 +107,9 @@ focus_tree = {
 			is_subject = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_autonomy_ratio = {
@@ -156,17 +140,9 @@ focus_tree = {
 			is_subject = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = RAJ_quit_india_movement
@@ -183,7 +159,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = RAJ_quit_india_movement }
 		x = 0
-		y = 2
+		y = 3
 
 		cost = 10
 
@@ -224,7 +200,7 @@ focus_tree = {
 		icon = GFX_focus_RAJ_indianisation_of_army
 		prerequisite = { focus = RAJ_request_ports }
 		x = 0
-		y = 3
+		y = 5
 
 		cost = 15
 
@@ -281,7 +257,7 @@ focus_tree = {
 		id = RAJ_cripps_mission
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = RAJ_indian_national_congress }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
@@ -295,17 +271,9 @@ focus_tree = {
 			is_subject = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -323,8 +291,8 @@ focus_tree = {
 		id = RAJ_two_nation_theory
 		icon = GFX_focus_RAJ_two_nation_theory
 		prerequisite = { focus = RAJ_cripps_mission }
-		x = 0
-		y = 2
+		x = -1
+		y = 3
 		relative_position_id = RAJ_indian_national_congress
 
 		cost = 10
@@ -337,17 +305,9 @@ focus_tree = {
 			is_subject = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -361,8 +321,8 @@ focus_tree = {
 		id = RAJ_princely_state_donations
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = RAJ_indian_national_congress }
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = RAJ_indian_national_congress
 
 		cost = 10
@@ -371,21 +331,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -400,7 +348,7 @@ focus_tree = {
 		icon = GFX_focus_generic_commonwealth_build_infantry
 		prerequisite = { focus =  RAJ_princely_state_donations }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = RAJ_princely_state_donations
 
 		cost = 10
@@ -413,17 +361,9 @@ focus_tree = {
 			is_subject = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -442,8 +382,8 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = RAJ_imperial_service_troops }
 		x = -1
-		y = 2
-		relative_position_id = RAJ_princely_state_donations
+		y = 1
+		relative_position_id = RAJ_imperial_service_troops
 
 		cost = 5
 
@@ -459,17 +399,9 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			country_event = { id = tfv_raj.1 }
@@ -481,8 +413,8 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = RAJ_imperial_service_troops }
 		x = 1
-		y = 2
-		relative_position_id = RAJ_princely_state_donations
+		y = 1
+		relative_position_id = RAJ_imperial_service_troops
 
 		cost = 5
 
@@ -494,17 +426,9 @@ focus_tree = {
 			has_tech = basic_light_cruiser
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
@@ -533,7 +457,7 @@ focus_tree = {
 		id = RAJ_british_army_support
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = RAJ_indian_national_congress }
-		x = 4
+		x = 1
 		y = 1
 		relative_position_id = RAJ_indian_national_congress
 
@@ -547,17 +471,9 @@ focus_tree = {
 			is_subject_of = ENG
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_jungle_training_effect
@@ -577,7 +493,7 @@ focus_tree = {
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = RAJ_british_army_support }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = RAJ_british_army_support
 
 		cost = 5
@@ -586,21 +502,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 		custom_effect_tooltip = RAJ_create_unit_red_eagles_tt
@@ -652,7 +556,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_lessons_of_the_great_war
 		icon = GFX_goal_generic_small_arms
-		x = 13
+		x = 8
 		y = 0
 
 		cost = 10
@@ -661,21 +565,9 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -695,7 +587,7 @@ focus_tree = {
 		id = RAJ_indianisation_of_army
 		icon = GFX_focus_RAJ_indianisation_of_army
 		prerequisite = { focus = RAJ_lessons_of_the_great_war }
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
@@ -705,21 +597,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_political_power = 100
@@ -749,17 +629,9 @@ focus_tree = {
 			has_tech = tech_mountaineers
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = RAJ_indian_gurkhas
@@ -816,21 +688,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_indian_sandhurst_tt
@@ -872,10 +732,10 @@ focus_tree = {
 	focus = {
 		id = RAJ_lions_of_the_great_war
 		icon = GFX_focus_RAJ_lions_of_the_great_war
-		prerequisite = { focus = RAJ_indianisation_of_army }
-		x = 1
+		prerequisite = { focus = RAJ_indian_gurkhas }
+		x = 0
 		y = 2
-		relative_position_id = RAJ_indianisation_of_army
+		relative_position_id = RAJ_indian_gurkhas
 
 		cost = 5
 
@@ -883,21 +743,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = RAJ_lions_of_the_great_war
@@ -953,17 +801,9 @@ focus_tree = {
 			compare_autonomy_state > autonomy_colony
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = RAJ_indian_gentlemen_officers
@@ -989,21 +829,9 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1029,21 +857,9 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1069,21 +885,9 @@ focus_tree = {
 			factor = 30
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			army_experience = 10
@@ -1110,21 +914,9 @@ focus_tree = {
 			factor = 30
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1154,21 +946,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = RAJ_revive_the_screw_guns_effect
@@ -1194,21 +974,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1290,7 +1058,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1298,10 +1066,6 @@ focus_tree = {
 				factor = 2
 				has_completed_focus = RAJ_industrial_expansion
 			}
-		}
-
-		available = {
-
 		}
 
 		bypass = {
@@ -1312,10 +1076,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			air_experience = 25
@@ -1341,14 +1101,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1426,21 +1178,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1470,21 +1210,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1520,21 +1248,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			air_experience = 25
@@ -1566,17 +1282,9 @@ focus_tree = {
 			compare_autonomy_state > autonomy_colony
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1597,21 +1305,13 @@ focus_tree = {
 	focus = {
 		id = RAJ_great_indian_peninsula_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 24
+		x = 19
 		y = 0
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 7
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1714,14 +1414,6 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1783,17 +1475,9 @@ focus_tree = {
 			controls_state = 429
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			429 = {
@@ -1813,7 +1497,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 8.6
+		cost = 10
 
 		ai_will_do = {
 			factor = 20
@@ -1827,17 +1511,9 @@ focus_tree = {
 			controls_state = 640
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			640 = {
@@ -1864,21 +1540,9 @@ focus_tree = {
 			factor = 50
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1893,31 +1557,25 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
 			show_ideas_tooltip = RAJ_homi_j_bhabha
+			add_tech_bonus = {
+				name = RAJ_the_smiling_buddha
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 
@@ -1948,17 +1606,9 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-
-		}
-
 		continue_if_invalid = yes
 		cancel_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -2131,21 +1781,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			set_technology = {
@@ -2176,21 +1814,9 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2234,21 +1860,9 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2292,21 +1906,9 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2332,21 +1934,9 @@ focus_tree = {
 			factor = 20
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2377,10 +1967,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_modernizing_navy
@@ -2400,7 +1986,7 @@ focus_tree = {
 		id = RAJ_east_india_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = RAJ_great_indian_peninsula_railway
 
@@ -2408,14 +1994,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2483,7 +2061,7 @@ focus_tree = {
 		id = RAJ_integrate_princely_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = -1
+		x = 2
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
@@ -2558,7 +2136,7 @@ focus_tree = {
 		id = RAJ_ishapore_arsenal
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = RAJ_east_india_railways }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
@@ -2630,10 +2208,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			remove_ideas = RAJ_risk_of_famine
 			add_ideas = CAN_war_bonds_1
@@ -2644,7 +2218,7 @@ focus_tree = {
 		id = RAJ_strengthen_ties_with_british_investors
 		icon = GFX_focus_RAJ_british_investors
 		prerequisite = { focus = RAJ_british_rail_investors }
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = RAJ_ishapore_arsenal
 
@@ -2658,10 +2232,6 @@ focus_tree = {
 			compare_autonomy_progress_ratio > 0.3
 			compare_autonomy_state > autonomy_puppet
 			is_subject_of = ENG
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = no
@@ -2759,10 +2329,6 @@ focus_tree = {
 			is_subject_of = ENG
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -2842,7 +2408,7 @@ focus_tree = {
 		id = RAJ_british_arms_investors
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = RAJ_british_rail_investors }
-		x = 1
+		x = 2
 		y = 2
 		relative_position_id = RAJ_ishapore_arsenal
 
@@ -2856,10 +2422,6 @@ focus_tree = {
 			compare_autonomy_progress_ratio > 0.3
 			compare_autonomy_state > autonomy_puppet
 			is_subject_of = ENG
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = no
