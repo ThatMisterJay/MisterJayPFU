@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = USA_suspend_the_presecution
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = -7
+		x = -5
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
@@ -145,7 +145,7 @@ focus_tree = {
    		icon = GFX_goal_generic_production
    		prerequisite = { focus = USA_continue_the_new_deal }
    		relative_position_id = USA_continue_the_new_deal
-   		x = -5
+   		x = -3
    		y = 1
    		cost = 10
    		#ai_will_do = {
@@ -161,7 +161,7 @@ focus_tree = {
    	focus = {
    		id = USA_agricultural_adjustment_act
    		icon = GFX_goal_generic_consumer_goods
-   		x = 0
+   		x = -1
    		y = 1
    		prerequisite = { focus = USA_wpa }
    		relative_position_id = USA_wpa
@@ -217,7 +217,7 @@ focus_tree = {
    	focus = {
    		id = USA_fair_labour_standards_act
    		icon = GFX_focus_eng_concessions_to_the_trade_unions
-   		x = 0
+   		x = -1
    		y = 2
    		prerequisite = { focus = USA_agricultural_adjustment_act }
    		relative_position_id = USA_wpa
@@ -440,7 +440,7 @@ focus_tree = {
    	focus = {
    		id = USA_office_of_scientific_research_and_development
    		icon = GFX_focus_research
-   		x = 2
+   		x = 1
    		y = 1
    		prerequisite = { focus = USA_wpa }
    		relative_position_id = USA_wpa
@@ -474,7 +474,7 @@ focus_tree = {
    		available = {
 
    		}
-   		x = 2
+   		x = 1
    		y = 2
    		relative_position_id = USA_wpa
    		cost = 10
@@ -1746,7 +1746,7 @@ focus = {
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
-		x = 6
+		x = 4
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -1811,7 +1811,7 @@ focus = {
 		}
 		will_lead_to_war_with = JAP
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = USA_intervention_in_asia
 		cost = 5
 		#ai_will_do = {
@@ -1906,7 +1906,7 @@ focus = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 15
+		x = 13
 		y = 0
 		relative_position_id = USA_war_plans_division
 		cost = 10
@@ -2683,8 +2683,8 @@ focus = {
 	focus = {
 		id = USA_bureau_of_ships
 		icon = GFX_goal_generic_build_navy
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		cost = 5
 		#ai_will_do = {
 		#	factor = 1
@@ -2974,7 +2974,7 @@ focus = {
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 7
+		x = 3
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5
@@ -2999,7 +2999,7 @@ focus = {
 		id = USA_expand_the_USMC
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_fund_the_navy }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = USA_fund_the_navy
 		cost = 5
@@ -3023,10 +3023,10 @@ focus = {
 	focus = {
 		id = USA_amphibious_operations
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = USA_expand_the_USMC }
-		x = 0
+		prerequisite = { focus = USA_fund_the_navy }
+		x = 1
 		y = 1
-		relative_position_id = USA_expand_the_USMC
+		relative_position_id = USA_fund_the_navy
 		cost = 5
 		#ai_will_do = {
 		#	factor = 1
