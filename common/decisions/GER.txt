@@ -113,6 +113,8 @@ political_actions = {
 		ai_will_do = { factor = 0 }
 		cost = 20
 
+		allowed = { tag = GER }
+
 		visible = {
 			tag = GER
 			BUL = { is_ai = yes }
@@ -137,6 +139,8 @@ political_actions = {
 		ai_will_do = { factor = 0 }
 		cost = 30
 
+		allowed = { tag = GER }
+
 		visible = {
 			tag = GER
 			HUN = { is_ai = yes }
@@ -160,6 +164,8 @@ political_actions = {
 	puppet_vichy_france = {
 		ai_will_do = { factor = 0 }
 		cost = 25
+
+		allowed = { tag = GER }
 
 		visible = {
 			tag = GER
