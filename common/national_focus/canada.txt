@@ -82,21 +82,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_political_power = 120
@@ -197,17 +185,9 @@ focus_tree = {
 			date > 1936.8.1
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
@@ -242,17 +222,9 @@ focus_tree = {
 			has_war = yes
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_war_bonds_1
@@ -273,10 +245,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 50
-		}
-
-		available = {
-
 		}
 
 		bypass = {
@@ -375,10 +343,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = CAN_national_resources_mobilization_act
 		}
@@ -401,10 +365,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_wartime_prices_and_trade_board
@@ -532,10 +492,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -1232,21 +1188,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			army_experience = 20
@@ -1274,21 +1218,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			remove_ideas = CAN_conscription_crisis
@@ -1313,21 +1245,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -1345,7 +1265,7 @@ focus_tree = {
 	focus = {
 		id = CAN_army_modernization
 		icon = GFX_goal_generic_army_doctrines
-		x = 12
+		x = 11
 		y = 0
 
 		cost = 10
@@ -1354,21 +1274,9 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			army_experience = 5
@@ -1395,21 +1303,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1436,21 +1332,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1477,21 +1361,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1526,21 +1398,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1566,21 +1426,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1607,7 +1455,7 @@ focus_tree = {
 		id = CAN_red_deer_training_camp
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = CAN_royal_regiment_of_canadian_artillery focus = CAN_a_motorized_army }
-		x = -2
+		x = -1
 		y = 4
 		relative_position_id = CAN_army_modernization
 
@@ -1617,21 +1465,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			army_experience = 5
@@ -1658,21 +1494,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1688,7 +1512,7 @@ focus_tree = {
 		id = CAN_the_black_devils
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = CAN_red_deer_training_camp }
-		x = -1
+		x = 0
 		y = 5
 		relative_position_id = CAN_army_modernization
 
@@ -1698,21 +1522,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1729,7 +1541,7 @@ focus_tree = {
 		id = CAN_the_rocky_mountain_rangers
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = CAN_red_deer_training_camp }
-		x = 1
+		x = 2
 		y = 5
 		relative_position_id = CAN_army_modernization
 
@@ -1739,21 +1551,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1809,7 +1609,7 @@ focus_tree = {
 	focus = {
 		id = CAN_strengthen_the_commonwealth_ties
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 17
+		x = 16
 		y = 0
 
 		cost = 10
@@ -1827,17 +1627,9 @@ focus_tree = {
 			is_in_tech_sharing_group = commonwealth_research
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
    			modify_tech_sharing_bonus = {
@@ -1995,17 +1787,9 @@ focus_tree = {
 			is_in_tech_sharing_group = commonwealth_research
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			CAN = {
@@ -2035,21 +1819,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_the_plan
@@ -2074,21 +1846,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2116,21 +1876,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2166,17 +1914,9 @@ focus_tree = {
 			controls_state = 468
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			682 = {
@@ -2218,17 +1958,9 @@ focus_tree = {
 			controls_state = 470
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			470 = {
@@ -2246,21 +1978,13 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 20
+		x = 19
 		y = 0
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2317,31 +2041,21 @@ focus_tree = {
 		id = CAN_we_have_the_hurricane
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = CAN_rcaf_station_borden }
-		x = 19
+		x = -1
 		y = 1
 
 
 		cost = 10
 
+		relative_position_id = CAN_rcaf_station_borden
+
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2359,11 +2073,13 @@ focus_tree = {
 		id = CAN_the_pacific_coast_air_defence_radar_system
 		icon = GFX_goal_generic_radar
 		prerequisite = { focus = CAN_rcaf_station_borden }
-		x = 21
+		x = 1
 		y = 1
 
 
 		cost = 10
+
+		relative_position_id = CAN_rcaf_station_borden
 
 		ai_will_do = {
 			factor = 25
@@ -2371,10 +2087,6 @@ focus_tree = {
 
 		available = {
 			has_tech = radio
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2553,7 +2265,7 @@ focus_tree = {
 		id = CAN_commonwealth_air_training_plan
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = CAN_the_pacific_coast_air_defence_radar_system focus = CAN_we_have_the_hurricane }
-		x = 20
+		x = 0
 		y = 2
 
 
@@ -2563,13 +2275,7 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
+		relative_position_id = CAN_rcaf_station_borden
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2624,11 +2330,13 @@ focus_tree = {
 		id = CAN_fund_fairchilds_development
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = CAN_commonwealth_air_training_plan }
-		x = 19
+		x = -1
 		y = 3
 
 
 		cost = 10
+
+		relative_position_id = CAN_rcaf_station_borden
 
 		ai_will_do = {
 			factor = 25
@@ -2638,21 +2346,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2673,11 +2369,13 @@ focus_tree = {
 		id = CAN_cookie_carriers
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = CAN_commonwealth_air_training_plan }
-		x = 21
+		x = 1
 		y = 3
 
 
 		cost = 10
+
+		relative_position_id = CAN_rcaf_station_borden
 
 		ai_will_do = {
 			factor = 25
@@ -2687,21 +2385,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2720,8 +2406,10 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = CAN_cookie_carriers }
 		prerequisite = { focus = CAN_fund_fairchilds_development }
-		x = 20
+		x = 0
 		y = 4
+
+		relative_position_id = CAN_rcaf_station_borden
 
 
 		cost = 10
@@ -2730,21 +2418,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2765,21 +2441,13 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 24
+		x = 23
 		y = 0
 
 		cost = 5
 
 		ai_will_do = {
 			factor = 9
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2828,8 +2496,10 @@ focus_tree = {
 		id = CAN_destroyer_effort
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = CAN_halifax_shipyards }
-		x = 24
+		x = 0
 		y = 1
+
+		relative_position_id = CAN_halifax_shipyards
 
 
 		cost = 5
@@ -2838,21 +2508,9 @@ focus_tree = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2869,31 +2527,21 @@ focus_tree = {
 		id = CAN_light_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = CAN_destroyer_effort }
-		x = 24
+		x = 0
 		y = 2
 
 
 		cost = 5
 
+		relative_position_id = CAN_halifax_shipyards
+
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2911,11 +2559,13 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = CAN_light_cruiser_effort }
 		mutually_exclusive = { focus = CAN_fleet_in_being }
-		x = 23
+		x = -1
 		y = 3
 
 
 		cost = 5
+
+		relative_position_id = CAN_halifax_shipyards
 
 		ai_will_do = {
 			factor = 25
@@ -2925,21 +2575,9 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			navy_experience = 25
@@ -2957,30 +2595,20 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = CAN_light_cruiser_effort }
 		mutually_exclusive = { focus = CAN_escort_fleet }
-		x = 25
+		x = 1
 		y = 3
 
 		cost = 5
+
+		relative_position_id = CAN_halifax_shipyards
 
 		ai_will_do = {
 			factor = 25
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			navy_experience = 25
@@ -2997,31 +2625,21 @@ focus_tree = {
 		id = CAN_degauss_ship_hulls
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = CAN_escort_fleet focus = CAN_fleet_in_being }
-		x = 23
+		x = -1
 		y = 4
 
 
 		cost = 5
 
+		relative_position_id = CAN_halifax_shipyards
+
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_degauss_ship_hulls
@@ -3032,31 +2650,21 @@ focus_tree = {
 		id = CAN_trade_fleet
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = CAN_escort_fleet focus = CAN_fleet_in_being }
-		x = 25
+		x = 1
 		y = 4
 
 
 		cost = 5
 
+		relative_position_id = CAN_halifax_shipyards
+
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = CAN_trade_fleet
@@ -3067,20 +2675,14 @@ focus_tree = {
 		id = CAN_united_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = CAN_trade_fleet focus = CAN_degauss_ship_hulls }
-		x = 24
+		x = 0
 		y = 5
 		cost = 5
 
+		relative_position_id = CAN_halifax_shipyards
+
 		ai_will_do = {
 			factor = 25
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
