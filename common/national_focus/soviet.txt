@@ -1751,7 +1751,7 @@ focus_tree = {
 			has_government = communism
 			date > 1937.5.1
 		}
-		x = 21
+		x = 18
 		y = 0
 		cost = 30
 		ai_will_do = {
@@ -1871,44 +1871,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_permanent_revolution
-		icon = GFX_goal_support_fourth_int
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_permanent_revolution_tt
-				has_country_flag = counter_purge
-			}
-			has_government = communism
-			has_civil_war = no
-		}
-		x = 18
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = { has_country_flag = counter_purge }
-				remove_country_leader_trait = permanent_revolutionary
-				add_country_leader_trait = triumphant_revolutionary
-			}
-			if = {
-				limit = { NOT = { has_country_flag = counter_purge } }
-				custom_effect_tooltip = SOV_permanent_revolution_tt2
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = SOV_great_purge focus = SOV_permanent_revolution }
+		prerequisite = { focus = SOV_great_purge }
 		mutually_exclusive = { focus = SOV_nkvd_primacy }
-		x = 19
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1919,6 +1886,8 @@ focus_tree = {
 				has_war = yes
 			}
 		}
+
+		relative_position_id = SOV_great_purge
 
 		available_if_capitulated = yes
 
@@ -1931,9 +1900,11 @@ focus_tree = {
 		id = SOV_military_reorganization
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SOV_rehabilitated_military }
-		x = 19
+		x = -1
 		y = 2
 		cost = 10
+
+		relative_position_id = SOV_great_purge
 		ai_will_do = {
 			factor = 0.25
 			modifier = {
@@ -1960,9 +1931,11 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_great_purge }
 		mutually_exclusive = { focus = SOV_rehabilitated_military }
-		x = 21
+		x = 1
 		y = 1
 		cost = 10
+
+		relative_position_id = SOV_great_purge
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1983,9 +1956,11 @@ focus_tree = {
 		id = SOV_nkvd_divisions
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = SOV_nkvd_primacy }
-		x = 21
+		x = 1
 		y = 2
 		cost = 10
+
+		relative_position_id = SOV_great_purge
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2017,8 +1992,10 @@ focus_tree = {
 				has_country_flag = SOV_war_since_purge
 			}
 		}
-		x = 20
+		x = 0
 		y = 3
+
+		relative_position_id = SOV_great_purge
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2055,9 +2032,11 @@ focus_tree = {
 		available = {
 
 		}
-		x = 20
+		x = 0
 		y = 4
 		cost = 10
+
+		relative_position_id = SOV_great_purge
 		ai_will_do = {
 			factor = 1
 		}
@@ -2107,8 +2086,10 @@ focus_tree = {
 		bypass = {
 			NOT = { has_idea = trotskyite_plot_purged }
 		}
-		x = 23
+		x = 3
 		y = 1
+
+		relative_position_id = SOV_great_purge
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2126,9 +2107,11 @@ focus_tree = {
 		id = SOV_partisan_suppression
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = SOV_smersh }
-		x = 23
+		x = 3
 		y = 2
 		cost = 10
+
+		relative_position_id = SOV_great_purge
 		ai_will_do = {
 			factor = 1
 		}
