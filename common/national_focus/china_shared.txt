@@ -11,14 +11,14 @@ shared_focus = {
 		}
 	}
 	offset = {
-		x = -18
+		x = -19
 		y = 0
 		trigger = {
 			tag = MAN
 		}
 	}
 	offset = {
-		x = -3
+		x = -12
 		y = 0
 		trigger = {
 			tag = CHI

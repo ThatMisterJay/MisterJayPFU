@@ -12,9 +12,10 @@ focus_tree = {
 	focus = {
 		id = CHI_industrial_reform
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 5
+		x = 3
 		y = 0
 		cost = 10
+		relative_position_id = CHI_educational_funding
 		ai_will_do = {
 			factor = 5
 		}
@@ -62,8 +63,8 @@ focus_tree = {
 	focus = {
 		id = CHI_educational_funding
 		icon = GFX_goal_generic_national_unity
-		x = 1
-		y = 1
+		x = 0
+		y = 0
 		cost = 10
 		completion_reward = {
  			add_stability = 0.1
@@ -79,13 +80,14 @@ focus_tree = {
 		id = CHI_peking_university
 		icon = GFX_focus_research
 		prerequisite = { focus = CHI_educational_funding }
+		relative_position_id = CHI_educational_funding
 		available = {
 			num_of_factories > 30
 		}
 		continue_if_invalid = yes
 		cancel_if_invalid = no
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		cost = 10
         completion_reward = {
 			add_research_slot = 1
@@ -99,8 +101,9 @@ focus_tree = {
 		available = {
 			num_of_factories > 60
 		}
-		x = 1
-		y = 3
+		relative_position_id = CHI_educational_funding
+		x = 0
+		y = 2
 		cost = 40
         completion_reward = {
 			remove_ideas = public_iliteracy
@@ -112,7 +115,8 @@ focus_tree = {
 		id = CHI_inland_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = CHI_industrial_reform }
-		x = 4
+		relative_position_id = CHI_industrial_reform
+		x = -1
 		y = 1
 		cost = 10
 
@@ -137,9 +141,10 @@ focus_tree = {
 		id = CHI_inland_industrialization
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = CHI_inland_infrastructure }
-		x = 4
+		x = -1
 		y = 2
 		cost = 10
+		relative_position_id = CHI_industrial_reform
 
 		ai_will_do = {
 			factor = 80
@@ -164,9 +169,10 @@ focus_tree = {
 		id = CHI_seizure_of_land
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = CHI_inland_industrialization }
-		x = 4
+		x = -1
 		y = 3
 		cost = 10
+		relative_position_id = CHI_industrial_reform
 
 		ai_will_do = {
 			factor = 80
@@ -195,8 +201,9 @@ focus_tree = {
 			controls_state = 605
 		}
 
-		x = 3
+		x = -2
 		y = 4
+		relative_position_id = CHI_industrial_reform
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -270,8 +277,9 @@ focus_tree = {
 			controls_state = 602
 			controls_state = 605
 		}
-		x = 5
+		x = 0
 		y = 4
+		relative_position_id = CHI_industrial_reform
 		cost = 10
 		ai_will_do = {
 			factor = 70
@@ -297,8 +305,9 @@ focus_tree = {
 			controls_state = 600
 			threat > 0.05
 		}
-		x = 6
+		x = 1
 		y = 2
+		relative_position_id = CHI_industrial_reform
 		cost = 10
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -325,8 +334,9 @@ focus_tree = {
 				is_controlled_by = CHI
 			}
 		}
-		x = 6
+		x = 1
 		y = 3
+		relative_position_id = CHI_industrial_reform
 		cost = 10
 		completion_reward = {
 				add_tech_bonus = {
@@ -357,7 +367,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		x = 13
+		x = 8
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -494,8 +504,8 @@ focus_tree = {
 		id = CHI_scorched_earth_tactics
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = CHI_lure_them_in_strategy }
-		x = 3
-		y = 1
+		x = 2
+		y = 3
 		relative_position_id = CHI_lure_them_in_strategy
 
 		cost = 5
@@ -636,9 +646,10 @@ focus_tree = {
 		id = CHI_increase_funding_of_german_weaponary
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = CHI_national_defense_council }
-		x = 10
+		x = -2
 		y = 1
 		cost = 10
+		relative_position_id = CHI_national_defense_council
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -650,7 +661,8 @@ focus_tree = {
 	focus = {
 		id = CHI_revive_hanyang_armory
 		icon = GFX_goal_generic_production2
-		x = 6
+		relative_position_id = CHI_industrial_reform
+		x = 1
 		y = 1
 		cost = 10
 		prerequisite = { focus = CHI_industrial_reform }
@@ -672,9 +684,10 @@ focus_tree = {
 		id = CHI_modernize_army
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = CHI_increase_funding_of_german_weaponary }
-		x = 10
+		x = -2
 		y = 2
 		cost = 10
+		relative_position_id = CHI_national_defense_council
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -689,10 +702,11 @@ focus_tree = {
 	focus = {
 		id = CHI_special_force_training
 		icon = GFX_goal_generic_special_forces
-		x = 10
+		x = -2
 		y = 3
 		cost = 10
 		prerequisite = { focus = CHI_modernize_army }
+		relative_position_id = CHI_national_defense_council
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -717,7 +731,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = CHI_national_defense_council }
 		relative_position_id = CHI_national_defense_council
-		x = 5
+		x = 3
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -828,9 +842,10 @@ focus_tree = {
 	focus = {
 		id = CHI_political_effort
 		icon = GFX_goal_generic_propaganda
-		x = 22
+		x = 6
 		y = 0
 		cost = 10
+		relative_position_id = CHI_national_defense_council
 
 		completion_reward = {
 			add_political_power = 150
@@ -840,7 +855,8 @@ focus_tree = {
 		id = CHI_strengthen_the_republic
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = CHI_political_effort }
-		x = 22
+		relative_position_id = CHI_political_effort
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -853,7 +869,8 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = CHI_strengthen_the_republic }
 		mutually_exclusive = { focus = CHI_join_Allies }
-		x = 21
+		relative_position_id = CHI_political_effort
+		x = -1
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -870,9 +887,10 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = CHI_strengthen_the_republic }
 		mutually_exclusive = { focus = CHI_neutrality_focus }
-		x = 23
+		x = 1
 		y = 2
 		cost = 0.15
+		relative_position_id = CHI_political_effort
 
 		available = {
 			date > 1942.1.1
@@ -890,9 +908,10 @@ focus_tree = {
 		id = CHI_deterrence
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = CHI_neutrality_focus focus = CHI_join_Allies }
-		x = 22
+		x = 0
 		y = 3
 		cost = 10
+		relative_position_id = CHI_political_effort
 		completion_reward = {
 			add_ideas = deterrence
 		}
