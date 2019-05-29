@@ -19,8 +19,10 @@ focus_tree = {
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
-		x = 30
-		y = 0
+		x = 0
+		y = 4
+
+		relative_position_id = JAP_Zaibatsu
 
 		cost = 5
 
@@ -60,7 +62,7 @@ focus_tree = {
 		id = JAP_expand_the_showa_steel_works
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = JAP_the_manchurian_project }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
@@ -99,7 +101,7 @@ focus_tree = {
 		id = JAP_develop_aluminum_sources
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = JAP_expand_the_showa_steel_works }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = JAP_expand_the_showa_steel_works
 
@@ -138,7 +140,7 @@ focus_tree = {
 		id = JAP_expand_manchurian_railways
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = JAP_the_manchurian_project }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
@@ -334,7 +336,7 @@ focus_tree = {
 
 	focus = {
 		id = test_the_ussr_focus
-		x = 13
+		x = 12
 		y = 0
 		cost = 4
 		icon = GFX_goal_generic_construction2
@@ -362,7 +364,8 @@ focus_tree = {
 		available = { is_puppet = no }
 		prerequisite = { focus = test_the_ussr_focus }
 		bypass = { NOT = { country_exists = CHI } }
-		x = 13
+		relative_position_id = test_the_ussr_focus
+		x = 0
 		y = 1
 		cost = 5
 		will_lead_to_war_with = CHI
@@ -395,7 +398,8 @@ focus_tree = {
 			NOT = { MAN = { is_ai = no } }
 		}
 		prerequisite = { focus = chinese_war_focus }
-		x = 11
+		relative_position_id = test_the_ussr_focus
+		x = -2
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -411,6 +415,7 @@ focus_tree = {
 		id = chinese_war_focus
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = test_the_chinese_focus }
+		relative_position_id = test_the_ussr_focus
 		available = {
 			NOT = { CHI = { is_puppet_of = JAP } }
 			date > 1937.6.1
@@ -424,7 +429,7 @@ focus_tree = {
 		will_lead_to_war_with = CHI
 		will_lead_to_war_with = PRC
 		will_lead_to_war_with = SHX
-		x = 13
+		x = 0
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -475,8 +480,9 @@ focus_tree = {
 
 	focus = {
 		id = defence_of_korea
-		x = 13
+		x = 0
 		y = 4
+		relative_position_id = test_the_ussr_focus
 		prerequisite = { focus = oust_germans_focus }
 		cost = 5
 		icon = GFX_goal_generic_construct_military
@@ -630,8 +636,9 @@ focus_tree = {
 		id = oust_germans_focus
 		prerequisite = { focus = chinese_war_focus }
 		bypass = { NOT = { country_exists = CHI } }
-		x = 13
+		x = 0
 		y = 3
+		relative_position_id = test_the_ussr_focus
 		cost = 5
 		icon = GFX_goal_generic_dangerous_deal
 		ai_will_do = {
@@ -1113,13 +1120,14 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Zaibatsu
-		x = 17
+		x = 4
 		y = 0
 		icon = GFX_goal_generic_production
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
+		relative_position_id = test_the_ussr_focus
 
 		completion_reward = {
 			add_timed_idea = { idea = Zaibatsu_Idea days = 900 }
@@ -1128,10 +1136,11 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Mitsui
-		x = 16
+		x = -1
 		y = 1
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = JAP_Zaibatsu }
+		relative_position_id = JAP_Zaibatsu
 		cost = 10
 		ai_will_do = {
 			factor = 7
@@ -1151,8 +1160,9 @@ focus_tree = {
 
 	focus = {
 		id = JAP_Mitsubishi
-		x = 18
+		x = 1
 		y = 1
+		relative_position_id = JAP_Zaibatsu
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = JAP_Zaibatsu }
 		cost = 10
@@ -1612,9 +1622,10 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = JAP_Mitsui }
 		prerequisite = { focus = JAP_Mitsubishi }
-		x = 17
+		x = 0
 		y = 2
 		cost = 10
+		relative_position_id = JAP_Zaibatsu
 		ai_will_do = {
 			factor = 4
 		}
@@ -1733,9 +1744,10 @@ focus_tree = {
 		id = advanced_torpedoes_focus
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = JAP_Mitsubishi }
-		x = 19
+		x = 2
 		y = 2
 		cost = 10
+		relative_position_id = JAP_Zaibatsu
 		ai_will_do = {
 			factor = 1
 		}
@@ -1983,9 +1995,10 @@ focus_tree = {
 	focus = {
 		id = spiritual_mobilization_focus
 		icon = GFX_goal_generic_propaganda
-		x = 23
+		x = 6
 		y = 0
 		cost = 5
+		relative_position_id = JAP_Zaibatsu
 		ai_will_do = {
 			factor = 1
 		}
@@ -1998,9 +2011,10 @@ focus_tree = {
 		id = warrior_traditions_focus
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = spiritual_mobilization_focus }
-		x = 25
+		x = 2
 		y = 1
 		cost = 5
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2014,9 +2028,10 @@ focus_tree = {
 		id = divine_wind_focus
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = warrior_traditions_focus }
-		x = 25
+		x = 2
 		y = 3
 		cost = 5
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2047,9 +2062,10 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = divine_wind_focus }
 		prerequisite = { focus = secret_weapon_focus}
-		x = 24
+		x = 2
 		y = 5
 		cost = 5
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2065,9 +2081,10 @@ focus_tree = {
 		id = student_movement_focus
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = spiritual_mobilization_focus }
-		x = 23
+		x = 0
 		y = 1
 		cost = 10
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2080,9 +2097,10 @@ focus_tree = {
 		text = extra_tech_slot
 		prerequisite = { focus = student_movement_focus }
 		#available = { }
-		x = 23
+		x = 0
 		y = 2
 		cost = 10
+		relative_position_id = spiritual_mobilization_focus
 		icon = GFX_focus_research
 		ai_will_do = {
 			factor = 1
@@ -2095,9 +2113,10 @@ focus_tree = {
 		id = synth_oil_focus
 		prerequisite = { focus = extra_tech_focus }
 		prerequisite = { focus = industrial_effort_focus2 }
-		x = 23
+		x = 0
 		y = 3
 		cost = 10
+		relative_position_id = spiritual_mobilization_focus
 		icon = GFX_goal_generic_oil_refinery
 		ai_will_do = {
 			factor = 1
@@ -2117,9 +2136,10 @@ focus_tree = {
 		id = secret_weapon_focus
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = synth_oil_focus }
-		x = 23
+		x = 0
 		y = 4
 		cost = 5
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2149,9 +2169,10 @@ focus_tree = {
 		id = industrial_effort_focus
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = spiritual_mobilization_focus }
-		x = 21
+		x = -2
 		y = 1
 		cost = 10
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2164,9 +2185,10 @@ focus_tree = {
 		id = industrial_effort_focus2
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = industrial_effort_focus }
-		x = 21
+		x = -2
 		y = 2
 		cost = 10
+		relative_position_id = spiritual_mobilization_focus
 		ai_will_do = {
 			factor = 1
 		}
@@ -2184,15 +2206,15 @@ focus_tree = {
 	focus = {
 		id = fortress_japan_focus
 		prerequisite = { focus = industrial_effort_focus2 }
-		x = 21
+		x = -2
 		y = 3
-		cost = 10
+		cost = 5
+		relative_position_id = spiritual_mobilization_focus
 		icon = GFX_goal_generic_construct_military
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-
 			282 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -2271,8 +2293,9 @@ focus_tree = {
 		id = JAP_Arty
 		prerequisite = { focus = JAP_Mitsui }
 		icon = GFX_goal_generic_army_artillery
-		x = 15
+		x = -2
 		y = 2
+		relative_position_id = JAP_Zaibatsu
 		cost = 10
 		ai_will_do = {
 			factor = 2
@@ -2291,8 +2314,9 @@ focus_tree = {
 		id = JAP_Tanks
 		prerequisite = { focus = JAP_Arty }
 		icon = GFX_goal_generic_army_tanks
-		x = 15
+		x = -2
 		y = 3
+		relative_position_id = JAP_Zaibatsu
 		cost = 10
 		ai_will_do = {
 			factor = 2
@@ -2320,9 +2344,10 @@ focus_tree = {
 		id = JAP_Air
 		prerequisite = { focus = JAP_Research }
 		icon = GFX_goal_generic_build_airforce
-		x = 17
+		x = 0
 		y = 3
 		cost = 10
+		relative_position_id = JAP_Zaibatsu
 		ai_will_do = {
 			factor = 2
 		}
