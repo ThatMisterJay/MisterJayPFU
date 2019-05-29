@@ -2,18 +2,12 @@
 ENG_burma_road_tt:0 "Will increase the opinion of China and the Yunnan Clique, but will decrease Japan's opinion of us.\n"
 ENG_commonwealth_focus_tt:0 "Increases opinion with all of the commonwealth.\n"
 FRA_request_uk_territory_tt:0 "Request the transfer of all UK territory in south-west Africa. We will have to pay a price for this deal."
-GER_fall_blau_tt:0 "The Soviet Union will gain a large amount of Oil in the Caucasus, though we will gain 2 mechanized divisions."
 RAJ_protect_ceylon_tt:0 "Transfers the state of Ceylon to us. We will have to pay for the transport of the majority of the rubber to London.\n"
 RAJ_request_ports_tt:0 "Transfers the states of Goa and French India to us. We will have to pay a price for this deal.\n"
 CHI_flying_tigers_tt:0 "This will allow the USA to send us fighters if we have a short supply of them."
 stubborn_surrender:0 "Stubborn Defender"
 special_forces_3b_tt:0 "Will increase effectiveness of all Special Forces by 5% (i.e.Marines gain attack on River, Shock Troops on forts)"
-JAP_subvert_india_tt:0 "Will spawn 2 divisions made from Indian freedom fighters."
 SPR_civil_war_threat:0 "Spanish Civil War"
-JAP_war_with_china:0 "Counterweight for Japanese War"
-JAP_homeland_tt:0 "Spawns 16 coastguard divisions to defend against naval invasions."
-JAP_southern_expansion_tt:0 "This focus will unlock a decision to go to war with the UK and their allies, and after you are at war with the UK a decision to go to war with the USA."
-JAP_lower_resistance:0 "This focus will lower the Chinese resistance by 10.\n"
 USA_load_paratroopers_tt:0 "This focus will give you the next level of Paratrooper tech, and spawn 6 paratrooper divisions in Washington."
 
 attacking_state:0 "Attacking a French State"
@@ -29,9 +23,14 @@ pfu.urals.tt:0 "§RDO THIS FOCUS AS FAST AS YOU CAN!§! Moves industrial capacit
 pfu.14.a.tt:0 "Spawns 11 infantry divisions and 1 tank division along the Wolga river"
 
 JAP_ports_tt:0 "Constructs 4 ports per state in §GKyushu§!, §GOkinawa§!, §GTaiwan§! and §GSiam§! if controlled by the Japanese faction.\n"
-
 JAP_capitulate:0 "Japan has capitulated to the Allies."
 JAP_korea_tt:0 "Spawns twelve 14/4 divisions in §GKorea§!."
+JAP_subvert_india_tt:0 "Will spawn 2 divisions made from Indian freedom fighters."
+JAP_southern_expansion_tt:0 "This focus will unlock a decision to go to war with the UK and their allies, and after you are at war with the UK a decision to go to war with the USA."
+JAP_lower_resistance:0 "This focus will lower the Chinese resistance by 10.\n"
+JAP_yamato_JFU_tt:0 "Adds two §YYamato-Class Super Battleships§! to the production queue, at 75% and 50% complete. \n§GGlorious Nippon Steel§! means our ships can be built at half the production cost of conventional §YSuperheavy Battleships§!. We should produce our own. \n"
+JAP_war_with_china:0 "Counterweight for Japanese War"
+JAP_homeland_tt:0 "Spawns 16 coastguard divisions to defend against naval invasions."
 
 operation_husky_spawn_mixed:0 "Spawns 3 §GMarines§! and 3 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
 operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
@@ -39,11 +38,13 @@ operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparatio
 
 empty_line:0 "\n\n"
 
-JAP_yamato_JFU_tt:0 "Adds two §YYamato-Class Super Battleships§! to the production queue, at 75% and 50% complete. \n§GGlorious Nippon Steel§! means our ships can be built at half the production cost of conventional §YSuperheavy Battleships§!. We should produce our own. \n"
-
 CHI_experimental_mechanised_unit_effect_tt:0 "Gain a Division with 5 §YLight Tank§! and 5 §YMotorised§! battalions\n"
 CHI_at_least_10_tt:0 "Japan needs to have occupied at least 10 Chinese States."
 CHI_at_least_15_tt:0 "Japan needs to have occupied at least 15 Chinese States."
 
 CHI_organising_resistance_tt:0 "Will organise the §Glocal resistance§! in a random state in §YOccupied China§!. You can call these states to rise up with the decision §YRise My Minions§!."
 CHI_will_spawn_divisions_tt:0 "Will spawn divisions in random states in §YOccupied China§!. This effect is more potent the longer you have organised the §Glocal resistance§!.\n"
+
+
+GER_fall_blau_tt:0 "The Soviet Union will gain a large amount of Oil in the Caucasus, though we will gain 2 mechanized divisions."
+GER_counter_husky_tt:0 "The Axis has control of the entire Westwall"
