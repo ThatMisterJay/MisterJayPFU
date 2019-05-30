@@ -46,3 +46,8 @@
 
     generic_cas_aircraft_manufacturer:0 "CAS Aircraft Company"
     cas_aircraft_manufacturer:0 "CAS Aircraft Designer"
+
+    CHI_resistance_training_1:0 "Resistance Training"
+    CHI_resistance_training_2:0 "Resistance Training"
+    CHI_resistance_training_3:0 "Resistance Training"
+    CHI_resistance_training_4:0 "Resistance Training"

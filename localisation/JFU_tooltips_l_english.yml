@@ -31,6 +31,7 @@ JAP_lower_resistance:0 "This focus will lower the Chinese resistance by 10.\n"
 JAP_yamato_JFU_tt:0 "Adds two §YYamato-Class Super Battleships§! to the production queue, at 75% and 50% complete. \n§GGlorious Nippon Steel§! means our ships can be built at half the production cost of conventional §YSuperheavy Battleships§!. We should produce our own. \n"
 JAP_war_with_china:0 "Counterweight for Japanese War"
 JAP_homeland_tt:0 "Spawns 16 coastguard divisions to defend against naval invasions."
+JAP_resistance_training_tt:0 "Trains the Resistance Army to fight against the Japanese invaders. Will increase the bonus attack and defense gained from §GStart the Offensive§!."
 
 operation_husky_spawn_mixed:0 "Spawns 3 §GMarines§! and 3 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
 operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
@@ -43,7 +44,7 @@ CHI_at_least_10_tt:0 "Japan needs to have occupied at least 10 Chinese States."
 CHI_at_least_15_tt:0 "Japan needs to have occupied at least 15 Chinese States."
 CHI_at_least_20_tt:0 "Japan needs to have occupied at least 20 Chinese States."
 
-CHI_organising_resistance_tt:0 "Will organise the §Glocal resistance§! in a random state in §YOccupied China§!. You can call these states to rise up with the decision §YRise My Minions§!."
+CHI_organising_resistance_tt:0 "\nWill organise the §Glocal resistance§! in a random state in §YOccupied China§!. You can call these states to rise up with the decision §YRise My Minions§!.\n"
 CHI_will_spawn_divisions_tt:0 "Will spawn divisions in random states in §YOccupied China§!. This effect is more potent the longer you have organised the §Glocal resistance§!.\n"
 
 

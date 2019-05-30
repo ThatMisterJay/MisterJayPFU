@@ -190,8 +190,9 @@ CHI_resistance_category = {
 		}
 
 		days_re_enable = 45
+		days_remove = 20
 
-		complete_effect = {
+		remove_effect = {
 			add_equipment_to_stockpile = { type = infantry_equipment amount = -5000 }
 			add_manpower = -100000
 			add_to_variable = { CHI_resistance_level = 1 }
@@ -210,11 +211,13 @@ CHI_resistance_category = {
 				tooltip = CHI_at_least_15_tt
 				JAP = { check_variable = { resistance_variable > 15 } }
 			}
+			check_variable = { CHI_resistance_level > 0 }
 		}
 
 		cost = 50
 
-		#days_re_enable = 180
+		days_re_enable = 180
+		days_remove = 60
 
 		ai_will_do = {
 			factor = 1
@@ -225,7 +228,7 @@ CHI_resistance_category = {
 			has_war_with = JAP
 		}
 
-		complete_effect = {
+		remove_effect = {
 			if = {
 				limit = {
 					not = { has_template = "Chinese Resistance" }
@@ -249,6 +252,7 @@ CHI_resistance_category = {
 			}
 			custom_effect_tooltip = CHI_will_spawn_divisions_tt
 			hidden_effect = {
+				JAP = { country_event = { id = japan.21 days = 1 } }
 				CHI = {
 					for_loop_effect = {
 						start = 0
@@ -279,13 +283,14 @@ CHI_resistance_category = {
 			has_war_with = JAP
 			custom_trigger_tooltip = {
 				tooltip = CHI_at_least_20_tt
-				JAP = { check_variable = { resistance_variable > 20 } }
+				#JAP = { check_variable = { resistance_variable > 20 } }
 			}
 		}
 
 		cost = 25
 
-		#days_re_enable = 45
+		days_re_enable = 45
+		days_remove = 20
 
 		ai_will_do = {
 			factor = 1
@@ -294,10 +299,12 @@ CHI_resistance_category = {
 		visible = {
 			tag = CHI
 			has_war_with = JAP
+			check_variable = { CHI_resistance_training < 4 }
 		}
 
-		complete_effect = {
-			add_to_variable = { CHI_resistance_training = 0.05 }
+		remove_effect = {
+			custom_effect_tooltip = JAP_resistance_training_tt
+			add_to_variable = { CHI_resistance_training = 1 }
 		}
 	}
 
@@ -312,12 +319,13 @@ CHI_resistance_category = {
 				tooltip = CHI_at_least_20_tt
 				JAP = { check_variable = { resistance_variable > 20 } }
 			}
-			#check_variable = { CHI_resistance_training > 0 }
+			check_variable = { CHI_resistance_training > 0 }
 		}
 
-		cost = 25
+		cost = 50
 
-		#days_re_enable = 45
+		days_re_enable = 365
+		days_remove = 60
 
 		ai_will_do = {
 			factor = 1
@@ -328,12 +336,26 @@ CHI_resistance_category = {
 			has_war_with = JAP
 		}
 
-		complete_effect = {
-			add_dynamic_modifier = {
-			    scope = CHI
-			    days = 60
-				modifier = CHI_offensive_dynamic_modifier
+		complete_effect = { hidden_effect = { JAP = { country_event = { id = japan.21 days = 1 } } } }
+
+		remove_effect = {
+			if = {
+				limit = { check_variable = { CHI_resistance_training = 1 } }
+				add_timed_idea = { idea = CHI_resistance_training_1 days = 75 }
 			}
+			else_if = {
+				limit = { check_variable = { CHI_resistance_training = 2 } }
+				add_timed_idea = { idea = CHI_resistance_training_2 days = 75 }
+			}
+			else_if = {
+				limit = { check_variable = { CHI_resistance_training = 3 } }
+				add_timed_idea = { idea = CHI_resistance_training_3 days = 75 }
+			}
+			else_if = {
+				limit = { check_variable = { CHI_resistance_training = 4 } }
+				add_timed_idea = { idea = CHI_resistance_training_4 days = 75 }
+			}
+			set_variable = { CHI_resistance_training = 0 }
 		}
 	}
 }

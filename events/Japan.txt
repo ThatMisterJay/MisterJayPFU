@@ -677,3 +677,31 @@ country_event = {
 		name = japan.20.a
 	}
 }
+
+#Event that notifies China is starting an uprising
+country_event = {
+	id = japan.21
+	title = japan.21.t
+	desc = japan.21.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.21.a
+	}
+}
+
+#Event that notifies China is starting an offensive
+country_event = {
+	id = japan.22
+	title = japan.22.t
+	desc = japan.22.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.22.a
+	}
+}
