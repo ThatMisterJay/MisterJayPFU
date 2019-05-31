@@ -308,7 +308,7 @@ CHI_resistance_category = {
 		}
 	}
 
-	CHI_start_offensive = {
+	CHI_start_offensive = { 
 		icon = border_conflicts
 		allowed = {
 			original_tag = CHI
