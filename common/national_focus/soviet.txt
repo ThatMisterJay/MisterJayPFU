@@ -1796,6 +1796,7 @@ focus_tree = {
 				}
 				hidden_effect = {
 					country_event = { id = soviet.37 days = 146 }
+					AFG = { country_event = { id = soviet.37 days = 146 } }
 				}
 				hidden_effect = {
 					news_event = { hours = 6 id = news.219 }
@@ -1838,6 +1839,7 @@ focus_tree = {
 				}
 				hidden_effect = {
 					country_event = { id = soviet.40 days = 146 }
+					AFG = { country_event = { id = soviet.40 days = 146 } }
 				}
 			}
 
@@ -1863,6 +1865,7 @@ focus_tree = {
 				}
 				hidden_effect = {
 					country_event = { id = soviet.43 days = 146 }
+					AFG = { country_event = { id = soviet.43 days = 146 } }
 				}
 			}
 			remove_ideas = trotskyite_plot
