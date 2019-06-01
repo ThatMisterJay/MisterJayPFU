@@ -329,47 +329,6 @@ adjacency_rule
 	name = "DOVER_STRAIT"
 }
 
-#Bab-el-Mandeb Strait (Djibouti -Yemen) - 21 km
-adjacency_rule
-{
-	contested =
-	{
-		army = no
-		navy = yes
-		submarine = yes
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-
-	required_provinces = { 4985 5074 10752 }
-
-	icon = 2776
-	offset = { -15 0 14 }
-
-
-	name = "BAB-EL-MANDEB_STRAIT"
-}
-
 #Malacca Strait/Singapore Strait - 16 km
 adjacency_rule
 {
