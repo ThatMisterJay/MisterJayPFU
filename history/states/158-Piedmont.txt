@@ -7,7 +7,7 @@ state={
 	state_category = metropolis
 	resources={
 		steel=40
-		aluminium=28
+		aluminium=12
 		chromium = 4
 		tungsten = 2
 	}
