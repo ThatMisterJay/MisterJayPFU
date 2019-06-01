@@ -275,6 +275,7 @@ shared_focus = {
 					tag = ROOT
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
+					tag = YUN
 				}
 			}
 		}
@@ -284,6 +285,7 @@ shared_focus = {
 				OR = {
 					original_tag = FRA
 					is_subject_of = FRA
+					tag = YUN
 				}
 			}
 		}
@@ -616,6 +618,7 @@ shared_focus = {
 					tag = ROOT
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
+					tag = YUN
 				}
 			}
 		}
@@ -699,6 +702,7 @@ shared_focus = {
 					tag = ROOT
 					is_subject_of = ROOT
 					is_in_faction_with = ROOT
+					tag = YUN
 				}
 			}
 		}
