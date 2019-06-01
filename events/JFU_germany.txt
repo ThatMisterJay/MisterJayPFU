@@ -741,6 +741,7 @@ country_event = {
 
 	immediate = {
 		GER = { add_timed_idea = { idea = GER_blitzkrieg days = 100 } }
+		HUN = { add_timed_idea = { idea = GER_blitzkrieg days = 100 } }
 		ROM = { add_timed_idea = { idea = GER_blitzkrieg_romania days = 100 } }
 	}
 
