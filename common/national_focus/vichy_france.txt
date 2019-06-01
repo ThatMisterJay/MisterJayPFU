@@ -18,7 +18,7 @@ focus_tree = {
 		icon = GFX_FRA_VIC_Petain
 		x = 4
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -64,7 +64,7 @@ focus_tree = {
 		relative_position_id = EFR_travail
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -134,7 +134,7 @@ focus_tree = {
 		relative_position_id = EFR_recycling
 		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -208,7 +208,7 @@ focus_tree = {
 			controls_state = 26
 			26 = { is_owned_by = EFR }
         }
-        cost = 10
+        cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -232,7 +232,7 @@ focus_tree = {
 		relative_position_id = EFR_gazogenes_and_michelin_tires
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -298,7 +298,7 @@ focus_tree = {
 		relative_position_id = EFR_marechal_nous_voila
 		x = -2
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -411,7 +411,7 @@ focus_tree = {
 		relative_position_id = EFR_armistice_army
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -493,7 +493,7 @@ focus_tree = {
 		relative_position_id = EFR_milice_francaise
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -508,7 +508,7 @@ focus_tree = {
 		relative_position_id = EFR_milice_francaise
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -537,7 +537,7 @@ focus_tree = {
 		relative_position_id = EFR_armistice_army
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -557,7 +557,7 @@ focus_tree = {
 		relative_position_id = EFR_negociate_the_release_of_officers
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -573,7 +573,7 @@ focus_tree = {
 		relative_position_id = EFR_secret_military_researches
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -594,7 +594,7 @@ focus_tree = {
 		relative_position_id = EFR_secret_military_researches
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -617,7 +617,7 @@ focus_tree = {
 		relative_position_id = EFR_industrial_advisory_comitee
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -645,7 +645,7 @@ focus_tree = {
 		relative_position_id = EFR_famille
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 		cancel_if_invalid = no
@@ -666,7 +666,7 @@ focus_tree = {
 		relative_position_id = EFR_patrie_focus
 		x = 4
 		y = -1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -752,7 +752,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -778,7 +778,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -802,7 +802,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -889,7 +889,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = -1
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -910,7 +910,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -941,7 +941,7 @@ focus_tree = {
 		relative_position_id = EFR_aviation_effort
 		x = 1
 		y = 3
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1357,7 +1357,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 18
 		y = 0
-		cost = 10
+		cost = 5
 
 		available = {
 			country_exists = GER
@@ -1460,7 +1460,7 @@ focus_tree = {
 		prerequisite = {focus = EFR_economic_help}
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = no
 		available = {
@@ -1515,7 +1515,7 @@ focus_tree = {
 		relative_position_id = EFR_STO
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = no
 		available = {
