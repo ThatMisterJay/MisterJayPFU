@@ -1,13 +1,9 @@
 
 state={
 	id=547
-	name="STATE_547" #Kenya
-	manpower = 3392000
-
-	state_category = rural
-
+	name="STATE_547"
 	resources={
-		chromium=70
+		chromium=70.000
 	}
 
 	history={
@@ -17,14 +13,20 @@ state={
 			industrial_complex = 1
 			5210 = {
 				naval_base = 2
+
 			}
+
 		}
 		victory_points = {
-			5210 1
+			5210 1 
 		}
+
 	}
 
 	provinces={
-		1939 2066 5079 5160 5196 5210 6020 8133 10761 10860 10962 10976 11145 12927 13135
+		1939 2066 5079 5196 5210 6020 8133 10761 10962 10976 11145 12927 13135 
 	}
+	manpower=3392000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

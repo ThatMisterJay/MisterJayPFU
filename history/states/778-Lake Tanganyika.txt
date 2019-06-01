@@ -1,0 +1,15 @@
+state={
+	id=778
+	name="STATE_778"
+	provinces={
+		2176 4171 8144 10932 11017
+	}
+	manpower=1
+
+	history = {
+		owner = ENG
+	}
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

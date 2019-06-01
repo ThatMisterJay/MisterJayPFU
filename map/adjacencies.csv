@@ -317,4 +317,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10882;10804;impassable;-1;-1;-1;-1;-1;;Syria
 1549;10804;impassable;-1;-1;-1;-1;-1;;Syria
 1549;10811;impassable;-1;-1;-1;-1;-1;;Syria
+
+12944;2202;impassable;-1;-1;-1;-1;-1;;Tanganyika
+8201;2202;impassable;-1;-1;-1;-1;-1;;Tanganyika
+8201;10972;impassable;-1;-1;-1;-1;-1;;Tanganyika
+10845;10972;impassable;-1;-1;-1;-1;-1;;Tanganyika
+
+8219;10968;impassable;-1;-1;-1;-1;-1;;Angola
+8219;12925;impassable;-1;-1;-1;-1;-1;;Angola
+8219;12945;impassable;-1;-1;-1;-1;-1;;Angola
+8219;10025;impassable;-1;-1;-1;-1;-1;;Angola
+12981;10025;impassable;-1;-1;-1;-1;-1;;Angola
+7548;10025;impassable;-1;-1;-1;-1;-1;;Angola
+7548;4128;impassable;-1;-1;-1;-1;-1;;Angola
 -1;-1;;-1;-1;-1;-1;-1;-1;

@@ -560,6 +560,22 @@ focus_tree = {
 				transfer_state = 546
 			}
 			if = {
+				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				transfer_state = 778
+			}
+			if = {
+				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				transfer_state = 777
+			}
+			if = {
+				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				transfer_state = 775
+			}
+			if = {
+				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				transfer_state = 774
+			}
+			if = {
 				limit = { 547 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 547
 			}
