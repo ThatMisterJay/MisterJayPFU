@@ -81,6 +81,7 @@ set_research_slots = 3
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
+		mechanised_infantry = 1
 	}
 
 
