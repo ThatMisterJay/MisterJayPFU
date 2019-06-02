@@ -560,20 +560,12 @@ focus_tree = {
 				transfer_state = 546
 			}
 			if = {
-				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				limit = { 778 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 778
 			}
 			if = {
-				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
+				limit = { 777 = { CONTROLLER = { is_in_faction_with = ROOT } } }
 				transfer_state = 777
-			}
-			if = {
-				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
-				transfer_state = 775
-			}
-			if = {
-				limit = { 546 = { CONTROLLER = { is_in_faction_with = ROOT } } }
-				transfer_state = 774
 			}
 			if = {
 				limit = { 547 = { CONTROLLER = { is_in_faction_with = ROOT } } }
@@ -625,10 +617,15 @@ focus_tree = {
 				}
 				transfer_state = 660
 				transfer_state = 539
+				transfer_state = 774
 
 				if = {
 					limit = { 549 = { is_owned_and_controlled_by = ENG } }
 					transfer_state = 549
+				}
+				if = {
+					limit = { 775 = { is_owned_and_controlled_by = ENG } }
+					transfer_state = 775
 				}
 			}
 
