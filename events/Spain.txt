@@ -301,6 +301,7 @@ country_event = {
 				popularity = 1
 			}
 
+			ITA = { country_event = { id = ethiopia.1 days = 1 } }
 		}
 		custom_effect_tooltip = nationalists_chosen
 	}
