@@ -1087,7 +1087,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = JAP_Draft }
 		available = {
-			date > 1943.1.1
+			date > 1942.1.1
 			NOT = { has_global_flag = JAP_capitulate }
 			714 = { CONTROLLER = { is_in_faction_with = JAP } }
 			717 = { CONTROLLER = { is_in_faction_with = JAP } }
