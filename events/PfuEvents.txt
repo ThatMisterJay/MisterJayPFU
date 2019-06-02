@@ -22,10 +22,10 @@ country_event = {
 	option = {
 		name = pfu.1.a
 		USA = {
-			transfer_state = 100
 			transfer_state = 101
 		}
 		ENG = {
+			transfer_state = 100
 			transfer_state = 337
 		}
 		news_event = { hours = 6 id = pfunews.1 }
