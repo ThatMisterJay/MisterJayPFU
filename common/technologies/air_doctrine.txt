@@ -1068,6 +1068,12 @@ technologies = {
 		# EFFECT ########
 		air_interception_detect_factor = 0.15
 		###########
+		category_fighter = {
+			air_agility = 0.05
+		}
+		category_heavy_fighter = {
+			air_agility = 0.05
+		}
 
 		doctrine = yes
 		research_cost = 2
@@ -1297,10 +1303,10 @@ technologies = {
 
 		# EFFECT ########
 			category_fighter = {
-				air_agility = 0.2
+				air_agility = 0.15
 			}
 			category_heavy_fighter = {
-				air_agility = 0.2
+				air_agility = 0.15
 			}
 		###########
 
