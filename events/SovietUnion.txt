@@ -322,13 +322,7 @@ country_event = {
 	desc = soviet.13.d
 	picture = GFX_report_event_soviet_tanks_snow
 
-	fire_only_once = yes
-	trigger = {
-		tag = SOV
-		has_global_flag = soviet_demand
-		NOT = { has_global_flag = finland_refuse }
-	}
-	mean_time_to_happen = { days = 5 }
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.13.a
@@ -337,7 +331,9 @@ country_event = {
 			target = FIN
 			generator = { 146 }
 		}
+		declare_war_on = { target = FIN type = annex_everything }
 		set_global_flag = finland_refuse
+		add_ideas = eth_failing_state
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.12 }

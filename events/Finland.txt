@@ -26,6 +26,7 @@ country_event = {
 					generator = { 146 }
 				}
 			}
+			country_event = { id = soviet.13 days = 3}
 		}
 	}
 }
@@ -295,6 +296,7 @@ country_event = {
 			transfer_state = 770
 		}
 		GER = { add_to_faction = FIN }
+		SOV = { remove_ideas = eth_failing_state }
 	}
 }
 
