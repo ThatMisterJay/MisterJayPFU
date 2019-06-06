@@ -395,12 +395,21 @@ FRA_free_france_west_africa = {
 						desertinfantry = { x = 0 y = 0 }
 						desertinfantry = { x = 0 y = 1 }
 						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 0 y = 3 }
+						desertinfantry = { x = 0 y = 4 }
 						desertinfantry = { x = 1 y = 0 }
 						desertinfantry = { x = 1 y = 1 }
 						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 1 y = 3 }
+						desertinfantry = { x = 1 y = 4 }
 						desertinfantry = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 1 }
+						desertinfantry = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
@@ -888,12 +897,21 @@ FRA_free_france_america = {
 						desertinfantry = { x = 0 y = 0 }
 						desertinfantry = { x = 0 y = 1 }
 						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 0 y = 3 }
+						desertinfantry = { x = 0 y = 4 }
 						desertinfantry = { x = 1 y = 0 }
 						desertinfantry = { x = 1 y = 1 }
 						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 1 y = 3 }
+						desertinfantry = { x = 1 y = 4 }
 						desertinfantry = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 1 }
+						desertinfantry = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
@@ -1161,12 +1179,21 @@ FRA_free_france_indian_ocean = {
 						desertinfantry = { x = 0 y = 0 }
 						desertinfantry = { x = 0 y = 1 }
 						desertinfantry = { x = 0 y = 2 }
+						desertinfantry = { x = 0 y = 3 }
+						desertinfantry = { x = 0 y = 4 }
 						desertinfantry = { x = 1 y = 0 }
 						desertinfantry = { x = 1 y = 1 }
 						desertinfantry = { x = 1 y = 2 }
+						desertinfantry = { x = 1 y = 3 }
+						desertinfantry = { x = 1 y = 4 }
 						desertinfantry = { x = 2 y = 0 }
-						artillery_brigade = { x = 2 y = 1 }
-						artillery_brigade = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 1 }
+						desertinfantry = { x = 2 y = 2 }
+						desertinfantry = { x = 2 y = 3 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
