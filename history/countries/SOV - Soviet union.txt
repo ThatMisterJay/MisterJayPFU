@@ -72,25 +72,16 @@ set_stability = 0.52
 set_war_support = 0.8
 
 set_politics = {
-
-	parties = {
-		democratic = {
-			popularity = 11 #shared between all parties, should add to 100
-		}
-
-		fascism = {
-			popularity = 2
-		}
-
-		communism = {
-			popularity = 87
-		}
-	}
-
 	ruling_party = communism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 11
+    fascism = 2
+    communism = 87
 }
 
 create_faction = Comintern

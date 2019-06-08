@@ -126,29 +126,17 @@ if = {
 
 
 set_politics = {
-
-	parties = {
-		democratic = {
-			popularity = 24
-		}
-
-		fascism = {
-			popularity = 45
-		}
-
-		communism = {
-			popularity = 5
-			#banned = no #default is no
-		}
-		neutrality = {
-			popularity = 26
-		}
-	}
-
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 24
+    fascism = 45
+    communism = 5
+    neutrality = 26
 }
 create_faction = "Daitoa Kyoeiken"
 add_to_faction = MAN

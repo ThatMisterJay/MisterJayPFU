@@ -111,57 +111,33 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = {
-			popularity = 12
-		}
-
-		fascism = {
-			popularity = 13
-		}
-
-		communism = {
-			popularity = 1
-		}
-
-		neutrality = {
-			popularity = 74
-		}
-	}
-
 	ruling_party = neutrality
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
+set_popularities = {
+    democratic = 12
+    fascism = 13
+    communism = 1
+    neutrality = 74
+}
+
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			democratic = {
-				popularity = 12
-			}
-
-			fascism = {
-				popularity = 13
-			}
-
-			communism = {
-				popularity = 1
-			}
-
-			neutrality = {
-				popularity = 74
-			}
-		}
-
 		ruling_party = democratic
 		last_election = "1939.7.1"
 		election_frequency = 36
 		elections_allowed = yes
-	}
+}
+
+    set_popularities = {
+        democratic = 12
+        fascism = 13
+        communism = 1
+        neutrality = 74
+    }
 }
 create_country_leader = {
 	name = "Risto Heikki Ryti"

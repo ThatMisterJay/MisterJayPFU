@@ -440,14 +440,14 @@ country_event = {
 			set_capital = 26
 			set_politics = {
 				ruling_party = fascism
-				elections_allowed = no
-				parties = {
-					democratic = { popularity = 18 }
-					fascism = { popularity = 70 }
-					communism = { popularity = 2 }
-					neutrality = { popularity = 10 }
-				}
-			}
+				elections_allowed = no        }
+
+            set_popularities = {
+                democratic = 18
+                fascism = 70
+                communism = 2
+                neutrality = 10
+            }
 			# FRA Player Switches to Vichy
 			if = {
 				limit = { FRA = { has_country_flag = become_vichy } }

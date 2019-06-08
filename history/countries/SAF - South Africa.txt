@@ -40,25 +40,16 @@ set_stability = 0.6
 set_war_support = 0.1
 
 set_politics = {
-
-	parties = {
-		democratic = {
-			popularity = 75
-		}
-
-		fascism = {
-			popularity = 20
-		}
-
-		communism = {
-			popularity = 5
-		}
-	}
-
 	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 75
+    fascism = 20
+    communism = 5
 }
 
 
