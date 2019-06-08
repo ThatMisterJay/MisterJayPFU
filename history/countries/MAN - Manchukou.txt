@@ -11,6 +11,7 @@ set_technology = {
 	fleet_in_being = 1
 
 }
+set_rule = { can_send_volunteers = no }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
