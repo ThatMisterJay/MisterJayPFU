@@ -1421,6 +1421,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 150
 			country_event = { days = 1 id = free_france.1 }
 			hidden_effect = {
 				set_technology = { desertinfantry_at = 1 }
