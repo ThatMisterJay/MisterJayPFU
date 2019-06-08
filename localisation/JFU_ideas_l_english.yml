@@ -51,3 +51,6 @@
     CHI_resistance_training_2:0 "Resistance Training"
     CHI_resistance_training_3:0 "Resistance Training"
     CHI_resistance_training_4:0 "Resistance Training"
+
+    afghanistan_defensive:0 "Defensive Tank Designer"
+    afghanistan_offensive:0 "Offensive Tank Designer"
