@@ -1569,7 +1569,7 @@ focus_tree = {
 		id = CAN_the_valentine_tank
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = CAN_red_deer_training_camp }
-		x = 0
+		x = 1
 		y = 6
 		relative_position_id = CAN_army_modernization
 
