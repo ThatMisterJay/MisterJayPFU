@@ -1639,6 +1639,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
+			navy_experience = 25
 			random_state = {
 				limit = {
 					has_state_flag = RAJ_expand_mazagon_dock
@@ -1662,6 +1663,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			navy_experience = 25
 			random_owned_controlled_state = {
 				prioritize = { 429 }
 				limit = {
