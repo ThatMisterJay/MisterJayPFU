@@ -1254,7 +1254,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = AST tag = SAF tag = NZL tag = CAN }
+						OR = { tag = NZL }
 						has_dlc = "Together for Victory"
 					}
 				}
