@@ -917,9 +917,19 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
 			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {
