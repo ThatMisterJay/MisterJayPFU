@@ -395,62 +395,6 @@ ideas = {
 	# POLITICAL
 	political_advisor = {
 
-
-		leon_blum = {
-
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			available = {
-				NOT = {has_country_flag = free_france}
-			}
-
-			traits = { democratic_reformer }
-
-			on_add = {
-				country_event = political.13
-			}
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		FRA_FREE_rene_cassin = {
-
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			available = {
-				has_country_flag = free_france
-			}
-
-			traits = { democratic_reformer }
-
-			on_add = {
-				country_event = political.13
-			}
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
 		FRA_gaston_henry_haye = {
 
 			allowed = {
@@ -459,6 +403,8 @@ ideas = {
 			available = {
 				NOT = {has_country_flag = free_france}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 
 			picture = generic_political_advisor_europe_5
@@ -522,6 +468,8 @@ ideas = {
 			available = {
 				has_country_flag = free_france
 			}
+
+			visible = { has_country_flag = free_france }
 			picture = generic_army_europe_5
 
 			traits = { war_industrialist }
@@ -566,6 +514,8 @@ ideas = {
 			available = {
 				NOT = {has_country_flag = free_france}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 			picture = generic_political_advisor_europe_3
 
 			traits = { quartermaster_general }
@@ -597,6 +547,8 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 			cost = 50
 
 			traits = { army_chief_offensive_2 }
@@ -610,23 +562,24 @@ ideas = {
 
 
 			allowed = {
-					AND = {
-				original_tag = FRA
-						NOT = {has_country_flag = become_vichy}
-					}
-
+				AND = {
+					original_tag = FRA
+					NOT = {has_country_flag = become_vichy}
+				}
 			}
 			available = {
 				OR = {
 					AND = {
 						original_tag = FRA
-				has_completed_focus = FRA_defensive_focus
+						has_completed_focus = FRA_defensive_focus
 						NOT = {has_country_flag = free_france}
 					}
 					original_tag = EFR
 				}
-
 			}
+
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 			cost = 50
 
@@ -648,6 +601,8 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 
 			traits = { army_chief_offensive_1 }
 
@@ -667,6 +622,8 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 
 			traits = { army_chief_defensive_1 }
 
@@ -684,6 +641,8 @@ ideas = {
 			available = {
 				NOT = {has_country_flag = free_france}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 
 			traits = { army_chief_maneuver_1 }
@@ -715,6 +674,8 @@ ideas = {
 				}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 			traits = { navy_chief_decisive_battle_2 }
 
 			ai_will_do = {
@@ -741,6 +702,8 @@ ideas = {
 					original_tag = EFR
 				}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 			traits = { navy_chief_naval_aviation_1 }
 
@@ -769,6 +732,8 @@ ideas = {
 				}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 
 
 			traits = { navy_chief_commerce_raiding_2 }
@@ -792,6 +757,8 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 
 
 			traits = { air_chief_ground_support_1 }
@@ -813,6 +780,8 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 			traits = { air_chief_all_weather_1 }
 
 			ai_will_do = {
@@ -831,6 +800,8 @@ ideas = {
 				original_tag = FRA
 				NOT = {has_country_flag = free_france}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 			traits = { air_chief_reform_2 }
 
@@ -854,6 +825,8 @@ ideas = {
 				NOT = {has_country_flag = free_france}
 			}
 
+			visible = { NOT = { has_country_flag = free_france } }
+
 			traits = { army_cavalry_2 }
 
 			ai_will_do = {
@@ -874,12 +847,14 @@ ideas = {
 			available = {
 				OR = {
 					AND = {
-				original_tag = FRA
+						original_tag = FRA
 						NOT = {has_country_flag = free_france}
 					}
 					original_tag = EFR
 				}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 
 
@@ -902,6 +877,8 @@ ideas = {
 				has_country_flag = free_france
 			}
 
+			visible = { has_country_flag = free_france }
+
 			traits = { army_commando_2 }
 
 			ai_will_do = {
@@ -920,6 +897,8 @@ ideas = {
 				original_tag = FRA
 				NOT = {has_country_flag = free_france}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 			traits = { air_air_combat_training_2 }
 
@@ -949,7 +928,7 @@ ideas = {
 
 			allowed = {
 				OR = {
-				original_tag = FRA
+					original_tag = FRA
 					original_tag = EFR
 				}
 			}
@@ -963,6 +942,8 @@ ideas = {
 					original_tag = EFR
 				}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 			traits = { air_tactical_bombing_2 }
 
@@ -984,12 +965,14 @@ ideas = {
 			available = {
 				OR = {
 					AND = {
-				original_tag = FRA
+						original_tag = FRA
 						NOT = {has_country_flag = free_france}
 					}
 					original_tag = EFR
 				}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 
 
@@ -1026,6 +1009,8 @@ ideas = {
 				original_tag = FRA
 				NOT = {has_country_flag = free_france}
 			}
+
+			visible = { NOT = { has_country_flag = free_france } }
 
 
 			traits = { navy_screen_2 }

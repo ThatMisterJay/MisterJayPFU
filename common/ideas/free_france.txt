@@ -43,11 +43,11 @@ ideas = {
 				non_core_manpower = 0.30
 			}
 		}
-		
+
 		FRA_joint_french_and_russian_rubber_refinery_program = {
-		
+
 		    picture = generic_goods_red_bonus
-			
+
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -58,7 +58,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
                 production_speed_synthetic_refinery_factor = 0.1
 			}
@@ -140,6 +140,8 @@ ideas = {
 				has_country_flag = free_france
 			}
 
+			visible = { has_country_flag = free_france }
+
 			traits = { efficient_colonial_administrator }
 
 			ai_will_do = {
@@ -157,6 +159,8 @@ ideas = {
 			available = {
 				has_country_flag = free_france
 			}
+
+			visible = { has_country_flag = free_france }
 			traits = { army_chief_morale_3 }  ##maybe reform
 
 			ai_will_do = {
@@ -172,6 +176,8 @@ ideas = {
 			available = {
 				has_country_flag = free_france
 			}
+
+			visible = { has_country_flag = free_france }
 			traits = { army_chief_maneuver_2 }
 
 			ai_will_do = {
@@ -190,6 +196,8 @@ ideas = {
 			available = {
 				has_country_flag = free_france
 			}
+
+			visible = { has_country_flag = free_france }
 			traits = { air_chief_safety_2 }
 
 			ai_will_do = {
@@ -211,6 +219,8 @@ ideas = {
 				has_country_flag = free_france
 			}
 
+			visible = { has_country_flag = free_france }
+
 			traits = { army_logistics_2 }
 
 			ai_will_do = {
@@ -221,7 +231,7 @@ ideas = {
 
 	naval_manufacturer = {
 
-		designer = yes	
+		designer = yes
 
 		free_french_fleet = {
 
