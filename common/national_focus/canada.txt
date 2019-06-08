@@ -425,7 +425,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_defence_of_canada_regulations
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -455,7 +455,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 20
 				}
 			}
 			random_owned_controlled_state = {
@@ -465,7 +465,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = chromium
-					amount = 10
+					amount = 20
 				}
 			}
 		}
