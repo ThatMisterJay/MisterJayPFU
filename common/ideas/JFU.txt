@@ -208,15 +208,6 @@ ideas = {
 			}
 		}
 
-		soviet_justification = {
-			allowed = { always = yes }
-			removal_cost = -1
-			picture = generic_goods_red_bonus
-			modifier = {
-				enemy_justify_war_goal_time = 10.0
-			}
-		}
-
 		JFU_generic_bonus_research = {
 
 			picture = generic_air_research

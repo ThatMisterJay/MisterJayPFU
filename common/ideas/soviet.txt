@@ -307,6 +307,8 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.5
 				global_building_slots_factor = 0.10
+				send_volunteer_size = 2
+				enemy_justify_war_goal_time = 10.0
 			}
 		}
 
