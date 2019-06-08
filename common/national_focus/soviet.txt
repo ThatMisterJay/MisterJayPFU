@@ -1790,10 +1790,8 @@ focus_tree = {
 						has_country_flag = purge_2_group_b
 					}
 				}
-				add_timed_idea = {
-					idea = officers_purged
-					days = 2200
-				}
+				add_timed_idea = { idea = officers_purged days = 2200 }
+				AFG = { add_timed_idea = { idea = officers_purged days = 2200 } }
 				hidden_effect = {
 					country_event = { id = soviet.37 days = 146 }
 					AFG = { country_event = { id = soviet.37 days = 146 } }
