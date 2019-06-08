@@ -361,10 +361,9 @@ focus_tree = {
 		complete_tooltip = {
 			air_experience = 25
 			add_tech_bonus = {
-				name = air_sup_bonus
 				bonus = 1
-				uses = 2
-				category = battlefield_support_tree
+				uses = 3
+				category = air_doctrine
 			}
 			every_state = {
 				limit = { has_state_flag = GER_air_innovation_2air }
@@ -389,16 +388,15 @@ focus_tree = {
 		completion_reward = {
 		    air_experience = 25
             add_tech_bonus = {
-			name = Fallschirmjäger
-			bonus = 1
-			uses = 1
-			category = para_tech
+				name = Fallschirmjäger
+				bonus = 1
+				uses = 1
+				category = para_tech
 			}
 			add_tech_bonus = {
-				name = air_sup_bonus
 				bonus = 1
-				uses = 2
-				category = battlefield_support_tree
+				uses = 3
+				category = air_doctrine
 			}
 
 			if = {
@@ -485,7 +483,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = op_dest_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = battlefield_support_tree
 			}
 			add_tech_bonus = {
@@ -541,7 +539,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = strat_dest_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = strategic_destruction_tree
 			}
 			add_tech_bonus = {
