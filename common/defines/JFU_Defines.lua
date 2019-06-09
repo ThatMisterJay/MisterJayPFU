@@ -154,7 +154,6 @@ NDefines.NNavy.ANTI_AIR_TARGETING = 5.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 7
 NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -0.10
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0 -- this screen ratio to num capital/carriers is needed for full screening beyond screen line
-NDefines.NAI.BASE_RELUCTANCE = -100
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 200
 NDefines.NAI.DIVISION_UPGRADE_MIN_XP = 400
 NDefines.NAI.DIVISION_CREATE_MIN_XP = 500
