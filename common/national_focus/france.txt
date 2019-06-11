@@ -626,7 +626,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 		x = 11
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -646,7 +646,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_defensive_focus }
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_defensive_focus
 
 		available_if_capitulated = yes
@@ -661,7 +661,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_fortification_focus }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_fortification_focus
 
 		available = {
@@ -684,7 +684,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_alpine_forts }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_alpine_forts
 
 		available = {
@@ -711,7 +711,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_defensive_focus }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_defensive_focus
 
 		available_if_capitulated = yes
@@ -727,7 +727,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_infantry_focus }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		relative_position_id = FRA_infantry_focus
@@ -785,7 +785,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_defensive_focus }
 		x = 2
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		relative_position_id = FRA_defensive_focus
@@ -805,7 +805,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_aggressive_focus }
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		relative_position_id = FRA_aggressive_focus
@@ -820,7 +820,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_tank
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = FRA_motorized_focus }
 
 		relative_position_id = FRA_motorized_focus
