@@ -333,6 +333,26 @@ country_event = {
 			ITA = { transfer_state = 1 }
 		}
 		FRA = {
+			destroy_ships = {
+				type = ship_hull_light
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_cruiser
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_heavy
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_carrier
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_submarine
+				count = all
+			}
 			start_civil_war = {
 				ideology = fascism
 				size = 0.9
@@ -440,7 +460,9 @@ country_event = {
 			set_capital = 26
 			set_politics = {
 				ruling_party = fascism
-				elections_allowed = no        }
+				elections_allowed = no
+			}
+			load_oob = "EFR_fleet"
 
             set_popularities = {
                 democratic = 18
