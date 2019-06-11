@@ -3891,6 +3891,7 @@ focus_tree = {
 		id = ENG_operation_catapult
 		available = {
 			FRA = { has_legitimacy > 20 }
+			EFR = { has_navy_size = { size > 25 } }
 		}
 
 		available_if_capitulated = yes
