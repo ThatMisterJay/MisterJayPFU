@@ -2693,40 +2693,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			CAN = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-				}
-	            add_ideas = license_equipment_faster_production
-			}
-			AST = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-				}
-	            add_ideas = license_equipment_faster_production
-			}
-			RAJ = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-				}
-	            add_ideas = license_equipment_faster_production
-			}
-			NZL = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-				}
-	            add_ideas = license_equipment_faster_production
-			}
-			SAF = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-				}
-	            add_ideas = license_equipment_faster_production
+			ENG = { add_ideas = license_equipment_faster_production }
+			CAN = { add_ideas = license_equipment_faster_production }
+			AST = { add_ideas = license_equipment_faster_production }
+			RAJ = { add_ideas = license_equipment_faster_production }
+			NZL = { add_ideas = license_equipment_faster_production }
+			SAF = { add_ideas = license_equipment_faster_production }
+
+			hidden_effect = {
+				CAN = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
+				AST = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
+				RAJ = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
+				NZL = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
+				SAF = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
 			}
 		}
 	}
