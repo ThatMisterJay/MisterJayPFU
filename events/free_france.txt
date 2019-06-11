@@ -279,6 +279,11 @@ country_event = {
 		FRA = { transfer_state = 459 }
 		FRA = { transfer_state = 462 }
 		hidden_effect = { load_oob = FRA_free_france_afn_corps }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = FRA }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = USA }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = EFR }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = EFR }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 2000 producer = USA }
 		custom_effect_tooltip = FRA_free_france_afn_corps_tt
 		ai_chance = {
 			factor = 100

@@ -22,37 +22,16 @@ division_template = {
 		artillery_brigade = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
 	}
-	support = {  
+	support = {
 		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
 		recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 	}
 }
 
-division_template = {
-	name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
-
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-	}
-}
-
-division_template = {
-	name = "Régiment d'Infanterie AFN"			# Infantry Brigade	
-
-	regiments = {
-		desertinfantry = { x = 0 y = 0 }
-		desertinfantry = { x = 0 y = 1 }
-		desertinfantry = { x = 0 y = 2 }
-	}
-}
-
 units = {
 	##### Previously Vichy Div #####
-	
+
 	#Afrique du Nord
 	# MAROC
 	division = {
@@ -91,24 +70,15 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
-	
+
 	division = {
 		name = "8ème Régiment de Tirailleurs Marocains"
 		location = 1145  # Algers
-		division_template = "Régiment d'Infanterie AFN"
+		division_template = "Division d'Infanterie AFN"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.8
 	}
-	division = {
-		name = "15ème Régiment de Tirailleurs Sénégalais"
-		location = 1145  # Algers
-		division_template = "Régiment d'Infanterie AFN"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
-	}
-	
 	#XIX Corps D'Armée Algérie et Tunis
 	division = {
 		name = "Division de Marche d'Algers"
@@ -118,22 +88,6 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.8
 
-	}
-	division = {
-		name = "13ème Régiment de Tirailleurs Sénégalais"
-		location = 1145  # Algers
-		division_template = "Régiment d'Infanterie AFN"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
-	}
-	division = {
-		name = "1er Régiment de Zouaves"
-		location = 1145  # Algers
-		division_template = "Régiment d'Infanterie AFN"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
 	}
 	division = {
 		name = "Division de Marche de Constantine"
@@ -152,23 +106,6 @@ units = {
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.8
 	}
-	
-	division = {
-		name = "4ème Régiment de Tirailleurs Sénégalais"
-		location = 1145  # Algers
-		division_template = "Régiment d'Infanterie AFN"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
-	}
-	division = {
-		name = "2ème Régiments de Marche Mixtes de Zouaves et de Tirailleurs"
-		location = 1145  # Algers
-		division_template = "Régiment d'Infanterie AFN"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "FRA" } }
-		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
-	}
 	division = {
 		name = "Division de Marche de Tunis"
 		location = 1145  # Algers
@@ -179,32 +116,4 @@ units = {
 
 	}
 
-}
-
-instant_effect = {
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_0
-			amount = 1000
-			producer = FRA
-		}
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_1
-			amount = 10000
-			producer = USA
-		}
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_0
-			amount = 1000
-			producer = EFR
-		}
-	add_equipment_to_stockpile = {
-		type = infantry_equipment_0
-			amount = 1000
-			producer = EFR
-		}	
-	add_equipment_to_stockpile = {
-		type = support_equipment_1
-			amount = 5000
-			producer = USA
-	}
 }
