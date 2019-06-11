@@ -769,6 +769,8 @@
     uk_convoy_focus_desc:0 "It cannot be stressed enough, our convoys are our lifeblood. We must do everything in our power to protect them and to replace lost tonnage quickly."
     uk_waves_focus:0 "Britannia Rules the Waves"
     uk_waves_focus_desc:0 "In the long shadow of the Royal Navy, other naval powers are forced to come up with innovative new doctrines to compensate. We must not grow complacent and rely solely on the quantity and quality of individual ships."
+    ENG_operation_catapult:0 "Operation Catapult"
+    ENG_operation_catapult_desc:0 "With the French fleet mostly in the hands of our enemies, we must strike to take it back!"
     uk_carrier_focus:0 "Carrier Focus"
     uk_carrier_focus_desc:0 "There is an intense argument among naval theorists about the continued viability of the battleship. There are those who argue that modern air power will come to dominate naval power, and that the aircraft carrier will replace the battleship as the king of the oceans."
     uk_spain_focus:0 "Coerce Spain"

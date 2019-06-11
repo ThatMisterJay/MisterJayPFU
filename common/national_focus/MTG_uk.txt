@@ -3907,6 +3907,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = ENG_operation_catapult_tt
 			EFR = {
 				if = {
 					limit = { FRA = { has_legitimacy > 90 } }
