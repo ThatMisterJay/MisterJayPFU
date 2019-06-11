@@ -2397,6 +2397,33 @@ focus = {
 			}
 		}
 	}
+	focus = {
+		id = USA_extreme_heavy_fighter_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		x = -1
+		y = 2
+		prerequisite = { focus = USA_TAC }
+		available = { date > 1941.10.1 }
+		relative_position_id = USA_TAC
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_escort_fighters
+				bonus = 2.0
+				uses = 1
+				technology = heavy_fighter3
+			}
+		}
+	}
 
 	focus = {
 		id = USA_CAS
@@ -2454,11 +2481,43 @@ focus = {
 				name = USA_combined_bomber_offensive
 				bonus = 1.0
 				uses = 1
-				category = heavy_air
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
 			}
 			add_ideas = combined_bomber_offensive
 		}
 	}
+
+	focus = {
+		id = USA_extreme_strategic_bomber_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 1
+		y = 2
+		prerequisite = { focus = USA_combined_bomber_offensive }
+		available = { date > 1941.10.1 }
+		relative_position_id = USA_combined_bomber_offensive
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_escort_fighters
+				bonus = 2.0
+				uses = 1
+				technology = strategic_bomber3
+			}
+		}
+	}
+
 	focus = {
 		id = USA_escort_fighters
 		icon = GFX_focus_usa_escort_fighters
@@ -2479,11 +2538,10 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_escort_fighters
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				technology = heavy_fighter1
 				technology = heavy_fighter2
-				technology = heavy_fighter3
 			}
 		}
 	}
@@ -2544,7 +2602,7 @@ focus = {
 	focus = {
 		id = USA_two_ocean_navy_act
 		icon = GFX_focus_generic_navy_battleship2
-		x = 8
+		x = 9
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
