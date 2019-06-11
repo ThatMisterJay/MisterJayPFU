@@ -1702,6 +1702,12 @@ focus = {
 				if = { limit = { 337 = { is_controlled_by = DEN } }
 					transfer_state = 337
 				}
+				if = { limit = { 100 = { is_controlled_by = ENG } }
+					transfer_state = 100
+				}
+				if = { limit = { 100 = { is_controlled_by = DEN } }
+					transfer_state = 100
+				}
 			}
 
 			CAN = {
@@ -1730,15 +1736,9 @@ focus = {
 				if = { limit = { 101 = { is_controlled_by = ENG } }
 					transfer_state = 101
 				}
-				if = { limit = { 100 = { is_controlled_by = ENG } }
-					transfer_state = 100
-				}
 
 				if = { limit = { 101 = { is_controlled_by = DEN } }
 					transfer_state = 101
-				}
-				if = { limit = { 100 = { is_controlled_by = DEN } }
-					transfer_state = 100
 				}
 			}
 		}
