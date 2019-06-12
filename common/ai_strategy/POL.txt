@@ -33,6 +33,12 @@ fearful_against_germany = {
 		id = "LAT"
 		value = 200
 	}
+
+	ai_strategy = {
+		type = conquer
+		id = "GER"
+		value = 100000
+	}
 }
 
 british_help_against_germany = {
