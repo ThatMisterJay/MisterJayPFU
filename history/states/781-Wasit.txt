@@ -4,8 +4,10 @@ state={
 
 	history={
 		owner = IRQ
+		victory_points = { 7977 5 } #Kut
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = IRQ
 	}
@@ -14,4 +16,5 @@ state={
 	}
 	manpower=238915
 	buildings_max_level_factor=1.000
+	state_category=town
 }
