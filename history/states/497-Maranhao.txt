@@ -2,15 +2,15 @@
 state={
 	id=497
 	name="STATE_497"
-	manpower = 1
-
-	state_category = rural
 
 	history={
-		 
+
 	}
 
 	provinces={
-		2150 2214 2228 5153 5204 5218 5220 10874 10984 12853 12913 12933 12947 12999
+		2150 2214 5220 10874 10984 12853 12913 12947 12999 
 	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
 }
