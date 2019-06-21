@@ -1,9 +1,17 @@
 state={
 	id=781
 	name="STATE_781"
-	provinces={
-		78 2004 7977 7994 12726 12855 
+
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = IRQ
 	}
-	manpower=0
+	provinces={
+		78 2004 7977 7994 12726 12855
+	}
+	manpower=238915
 	buildings_max_level_factor=1.000
 }

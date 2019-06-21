@@ -9,10 +9,10 @@ state={
 	history={
 		owner = IRQ
 		victory_points = {
-			2097 5 
+			2097 5
 		}
 		victory_points = {
-			2089 1 
+			2089 1
 		}
 		buildings = {
 			infrastructure = 3
@@ -30,9 +30,9 @@ state={
 	}
 
 	provinces={
-		2097 12046 
+		2097 12046
 	}
-	manpower=2044165
+	manpower=1324165 #2044165
 	buildings_max_level_factor=1.000
 	state_category=town
 }
