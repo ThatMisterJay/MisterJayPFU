@@ -7,12 +7,14 @@ state={
 		owner = IRQ
 		buildings = {
 			infrastructure = 3
+
 		}
 		add_core_of = IRQ
 
 	}
+
 	provinces={
-		1446 1524 5182 7561 8001 10345 12879
+		1446 1524 5182 7561 8001 8242 10345 12879 
 	}
 	manpower=56293
 	buildings_max_level_factor=1.000

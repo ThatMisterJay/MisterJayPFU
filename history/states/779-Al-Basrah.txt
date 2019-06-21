@@ -4,11 +4,12 @@ state={
 
 	history={
 		owner = IRQ
+		victory_points = { 2089 1 }
 		buildings = {
 			infrastructure = 3
+			2227 = { naval_base = 1 }
 		}
 		add_core_of = IRQ
-
 	}
 	provinces={
 		2089 2227 5107 5168 8179 10967
