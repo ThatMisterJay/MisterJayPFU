@@ -317,6 +317,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1549;10804;impassable;-1;-1;-1;-1;-1;;Syria
 1549;10811;impassable;-1;-1;-1;-1;-1;;Syria
 
+2164;901;impassable;-1;-1;-1;-1;-1;;Syria
+2164;10882;impassable;-1;-1;-1;-1;-1;;Syria
+
 12944;2202;impassable;-1;-1;-1;-1;-1;;Tanganyika
 8201;2202;impassable;-1;-1;-1;-1;-1;;Tanganyika
 8201;10972;impassable;-1;-1;-1;-1;-1;;Tanganyika
