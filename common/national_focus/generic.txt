@@ -834,6 +834,7 @@ focus_tree = {
 			OR = {
 				num_of_factories > 1
 				TAG = MEN
+				TAG = MON
 			}
 		}
 		available_if_capitulated = yes
@@ -852,7 +853,10 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1
-				NOT = { TAG = MEN }
+				NOT = {
+					TAG = MEN
+					TAG = MON
+				}
 				OR = {
 					# we dont want chinese minors to go crazy on slots early since they get eaten
 					tag = GXC
@@ -870,7 +874,10 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 100
-				tag = MEN
+				OR = {
+					tag = MEN
+					TAG = MON
+				}
 			}
 		}
 	}
