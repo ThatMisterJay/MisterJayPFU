@@ -1237,6 +1237,14 @@ focus_tree = {
 		relative_position_id = JAP_Southern
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = "Conversion Tech"
+				uses = 1
+				bonus = 1
+				technology = improved_equipment_conversion
+				technology = advanced_equipment_conversion
+			}
+
 			navy_experience = 20
 			528 = {
 				add_extra_state_shared_building_slots = 2
@@ -1721,8 +1729,15 @@ focus_tree = {
 		relative_position_id = JAP_Nagasaki_Shipyards
 
 		completion_reward = {
-		navy_experience = 20
-		531 = {
+			add_tech_bonus = {
+				name = "Conversion Tech"
+				uses = 1
+				bonus = 1
+				technology = improved_equipment_conversion
+				technology = advanced_equipment_conversion
+			}
+			navy_experience = 20
+			531 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
