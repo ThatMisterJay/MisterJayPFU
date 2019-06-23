@@ -46,9 +46,6 @@ technologies = {
 		research_cost = 0.01
 
 		categories = {
-			naval_doctrine
-			fleet_in_being_tree
-			cat_fleet_in_being
 		}
 
 		folder = {
@@ -838,7 +835,7 @@ technologies = {
 	trade_interdiction = {
 		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and Battleships, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
 
-		
+
 
 		# EFFECT ##############
 		submarine = {
@@ -880,10 +877,6 @@ technologies = {
 		research_cost = 0.01
 
 		categories = {
-			naval_doctrine
-			trade_interdiction_tree
-			submarine_doctrine
-			cat_trade_interdiction
 		}
 
 		folder = {
@@ -1655,7 +1648,7 @@ technologies = {
 	base_strike = {
 		#This tree is primarily focused on Carriers. It should have the best Carriers, Battleships that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
 
-		
+
 
 		# EFFECT ##############
 		carrier = {
@@ -1684,8 +1677,6 @@ technologies = {
 		research_cost = 0.01
 
 		categories = {
-			naval_doctrine
-			cat_base_strike
 		}
 
 		folder = {
