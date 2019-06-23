@@ -216,28 +216,28 @@ adjacency_rule
 		army = no
 		navy = no
 		submarine = no
-		trade = no
+		trade = yes
 	}
 	enemy =
 	{
 		army = no
 		navy = no
 		submarine = no
-		trade = no
+		trade = yes
 	}
 	friend =
 	{
 		army = yes
 		navy = yes
 		submarine = yes
-		trade = no
+		trade = yes
 	}
 	neutral =
 	{
 		army = no
 		navy = no
 		submarine = no
-		trade = no
+		trade = yes
 	}
 
 	required_provinces = { 9833 11829 }
