@@ -588,6 +588,18 @@ technologies = {
 
 
 		conscription = 0.005
+		motorized = {
+			maximum_speed = 0.1
+			default_morale = 0.05
+		}
+		mechanized = {
+			maximum_speed = 0.1
+			default_morale = 0.05
+		}
+		amphibious_mechanized = {
+			maximum_speed = 0.1
+			default_morale = 0.05
+		}
 
 		path = {
 			leads_to_tech = nd_conscription
@@ -621,6 +633,7 @@ technologies = {
 	nd_conscription = {
 
 		conscription = 0.01
+		non_core_manpower = 0.2
 
 		path = {
 			leads_to_tech = werwolf_guerillas
