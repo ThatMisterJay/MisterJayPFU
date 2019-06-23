@@ -436,6 +436,7 @@ country_event = {
 			tag = CAN
 		}
 		ENG = { controls_state = 447 }
+		date > 1939.5.1
 		has_tech = basic_medium_tank
 	}
 
@@ -449,6 +450,7 @@ country_event = {
 	option = {
 		name = pfu.15.a
 		custom_effect_tooltip = pfu.15.a.tt
+		trigger = { ENG = { has_tech = basic_medium_tank } }
 		hidden_effect = {
 			ENG = {
 				add_manpower = -12000
@@ -460,6 +462,7 @@ country_event = {
 	option = {
 		name = pfu.15.b
 		custom_effect_tooltip = pfu.15.a.tt
+		trigger = { SAF = { has_tech = basic_medium_tank } }
 		hidden_effect = {
 			SAF = {
 				add_manpower = -12000
@@ -471,6 +474,7 @@ country_event = {
 	option = {
 		name = pfu.15.c
 		custom_effect_tooltip = pfu.15.a.tt
+		trigger = { CAN = { has_tech = basic_medium_tank } }
 		hidden_effect = {
 			CAN = {
 				add_manpower = -12000
@@ -898,6 +902,7 @@ country_event = {
 	option = {
 		name = pfu.33.a
 		custom_effect_tooltip = pfu.33.a.tt
+		trigger = { ENG = { has_tech = basic_heavy_tank } }
 		hidden_effect = {
 			ENG = {
 				add_manpower = -12000
@@ -909,6 +914,7 @@ country_event = {
 	option = {
 		name = pfu.15.b
 		custom_effect_tooltip = pfu.33.a.tt
+		trigger = { CAN = { has_tech = basic_heavy_tank } }
 		hidden_effect = {
 			CAN = {
 				add_manpower = -12000
@@ -920,8 +926,9 @@ country_event = {
 	option = {
 		name = pfu.15.c
 		custom_effect_tooltip = pfu.33.a.tt
+		trigger = { SAF = { has_tech = basic_heavy_tank } }
 		hidden_effect = {
-			CAN = {
+			SAF = {
 				add_manpower = -12000
 				load_oob = ENG_royalarmor
 			}
