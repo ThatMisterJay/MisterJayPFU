@@ -67,7 +67,7 @@ focus_tree = {
 		x = 2
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -277,7 +277,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -396,7 +396,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = AST_additional_militia_training
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
