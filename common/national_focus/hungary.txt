@@ -1277,7 +1277,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -1300,7 +1300,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
