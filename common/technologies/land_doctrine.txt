@@ -2476,7 +2476,7 @@ technologies = {
 	human_wave_offensive = {
 
 
-		conscription = 0.03
+		conscription = 0.02
 
 		infantry = { combat_width = -0.4 }
 		marine = { combat_width = -0.2 }
