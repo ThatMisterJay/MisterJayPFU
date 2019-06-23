@@ -1139,6 +1139,33 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = SAF_tank_variant_tt
+			if = {
+				limit = { has_tech = basic_medium_tank }
+				create_equipment_variant = {
+					name = "V2. Crusader Local Pattern"
+					type = medium_tank_equipment_1
+					parent_version = 0
+					upgrades = {
+						tank_gun_upgrade = 3
+						tank_armor_upgrade = 1
+						tank_engine_upgrade = 1
+					}
+				}
+			}
+			if = {
+				limit = { has_tech = basic_heavy_tank }
+				create_equipment_variant = {
+					name = "V2. Matilda II Local Pattern"
+					type = heavy_tank_equipment_1
+					parent_version = 0
+					upgrades = {
+						tank_gun_upgrade = 3
+						tank_armor_upgrade = 1
+						tank_engine_upgrade = 1
+					}
+				}
+			}
 			army_experience = 10
 			add_tech_bonus = {
 				name = SAF_special_service_battalion
