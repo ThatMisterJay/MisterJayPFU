@@ -1758,7 +1758,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1769,10 +1769,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = AST_expand_the_northern_railway_Inf
-				}
+			521 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1782,20 +1779,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 520 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
+			521 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = AST_expand_the_northern_railway_Inf
 			}
 		}
 	}
