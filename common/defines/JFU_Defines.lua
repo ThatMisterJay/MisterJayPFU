@@ -214,10 +214,10 @@ NDefines.NCountry.MAX_BOMBING_WAR_SUPPORT_IMPACT = -0.2
 
 
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
-    500,     -- do not engage
-    15,   -- low
-    3.0,   -- medium
-    1.0,   -- high
+    500,     -- do not engage, from 1000
+    5,   -- low, from 15
+    1.0,   -- medium, from 3
+    0.5,   -- high, from 1
     0.1,   -- I am death incarnate!
 },
 
