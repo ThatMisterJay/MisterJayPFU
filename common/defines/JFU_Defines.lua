@@ -210,3 +210,16 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4
 NDefines.NCountry.MAX_BOMBING_WEEKLY_WAR_SUPPORT_PENALTY = -0.01
 NDefines.NCountry.BOMBING_WEEKLY_WAR_SUPPORT_PENALTY_DECAY = 0.005
 NDefines.NCountry.MAX_BOMBING_WAR_SUPPORT_IMPACT = -0.2
+
+
+
+NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
+    500,     -- do not engage
+    15,   -- low
+    3.0,   -- medium
+    1.0,   -- high
+    0.1,   -- I am death incarnate!
+},
+
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 30,		-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24,		-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
