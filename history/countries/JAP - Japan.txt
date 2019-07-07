@@ -1,4 +1,4 @@
-﻿capital = 282
+capital = 282
 
 oob = "JAP_1936"
 
@@ -15,6 +15,13 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 	Jap_Coup
+}
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	add_ideas = {
+		JAP_interservice_rivalry_balanced		
+	}
 }
 
 set_technology = {
