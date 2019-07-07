@@ -1,0 +1,150 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			JAP = {
+				set_variable = { resistance_variable = 0 }
+				set_variable = { resistance_state = 1 }
+				set_variable = { resistance_max = 38 }
+			}
+		}
+	}
+
+    on_daily = {
+		effect = {
+            if = {
+				limit = { country_has_resistance = yes }
+
+				if = {
+					limit = { check_variable = { resistance_variable < 8 } }
+					add_ideas = JAP_resistance_00
+					if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+				}
+
+				if = {
+					limit = { check_variable = { resistance_variable > 8 } }
+					add_ideas = JAP_resistance_0
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+				}
+
+				if = {
+					limit = { check_variable = { resistance_variable > 10 } }
+					add_ideas = JAP_resistance_1
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+					if = {
+						limit = {
+							NOT = {
+								CHI = {
+									OR = {
+										has_idea = CHI_resistance_1
+										has_idea = CHI_resistance_2
+									}
+								}
+							}
+						}
+						CHI = {
+							add_ideas = CHI_resistance_1
+						}
+					}
+				}
+
+				if = {
+					limit = { check_variable = { resistance_variable > 12 } }
+					add_ideas = JAP_resistance_2
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+					if = {
+						limit = { NOT = {  CHI = { has_idea = CHI_resistance_2 } } }
+						CHI = {
+							add_ideas = CHI_resistance_2
+							remove_ideas = CHI_resistance_1
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = { resistance_variable > 14 }
+					}
+					add_ideas = JAP_resistance_3
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+				}
+
+                clamp_variable = { var = resistance_variable min = 0 max = resistance_max }
+			}
+		}
+	}
+}

@@ -1,0 +1,1472 @@
+on_actions = {
+	# country
+	on_new_term_election = {
+		random_events = {
+			100 = usa.6
+			100 = usa.7
+			100 = usa.8
+			100 = usa.9
+			100 = usa.10
+			100 = usa.11
+			100 = usa.12
+		}
+		random_events = {
+			100 = spain.9
+		}
+		random_events = {
+			100 = election.2
+			100 = election.3
+			100 = election.4
+			100 = election.5
+			100 = election.6
+			100 = election.11
+			100 = election.12
+			100 = election.13
+			100 = election.14
+			100 = election.15
+		}
+	}
+
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+
+	# During justifying wargoals
+	# triggered daily, so make sure there is a sink somewhere not firing events
+	# country, FROM = target nation
+	on_justifying_wargoal_pulse = {
+
+		random_events = {
+			100 = war_justification.1
+			100 = war_justification.2
+			100 = war_justification.3
+			100 = war_justification.4
+			100 = war_justification.5
+			100 = war_justification.6
+			100 = war_justification.7
+			100 = war_justification.8
+			100 = war_justification.9
+			100 = war_justification.10
+			100 = war_justification.11
+			100 = war_justification.12
+			100 = war_justification.13
+			100 = war_justification.14
+			100 = war_justification.15
+			100 = war_justification.16
+			100 = war_justification.17
+			100 = war_justification.18
+			100 = war_justification.19
+			17000 = 0
+			#Soviet demands
+			1000 = soviet.30
+			1000 = soviet.31
+			1000 = soviet.32
+			1000 = soviet.33
+			1000 = soviet.34
+		}
+	}
+
+	on_wargoal_expire = {
+		random_events = {
+			100 = war_justification.301
+		}
+	}
+
+	on_nuke_drop = {
+
+		effect = {
+			if = {
+				limit = { NOT = { has_country_flag = achievement_has_dropped_nuke } }
+				goto_state = FROM
+				set_country_flag = achievement_has_dropped_nuke
+			}
+			if = {
+				limit = {
+					FROM = { state = 378 }
+				}
+				set_country_flag = achievement_has_nuked_california
+			}
+			if = {
+				limit = {
+					FROM = { is_core_of = AST }
+				}
+				set_country_flag = achievement_AST_nuke_self
+			}
+			if = {
+				limit = {
+					tag = SWE
+					FROM = {
+						is_owned_by = DEN
+						is_core_of = DEN
+					}
+				}
+				set_country_flag = achievement_med_plutonium
+			}
+			news_event = { id = nuke_dropped.2 days = 1}
+			news_event = { id = nuke_dropped.3 days = 1}
+			news_event = { id = nuke_dropped.4 days = 1}
+			news_event = { id = nuke_dropped.5 days = 1}
+			news_event = { id = nuke_dropped.6 days = 1}
+			news_event = { id = nuke_dropped.7 days = 1}
+			news_event = { id = nuke_dropped.8 days = 1}
+			news_event = { id = nuke_dropped.9 days = 1}
+			news_event = { id = nuke_dropped.10 days = 1}
+			news_event = { id = nuke_dropped.11 days = 1}
+			news_event = { id = nuke_dropped.12 days = 1}
+			news_event = { id = nuke_dropped.13 days = 1}
+		}
+		random_events = {
+			100 = nuke_dropped.0
+		}
+	}
+
+	# country random events
+	#on_bi_yearly_pulse = {
+	#
+	#}
+
+	#on_five_year_pulse = {
+	#
+	#}
+
+	on_border_war_lost = {
+		effect = {
+			owner = {
+				country_event = { id = china.14 }
+				country_event = { id = china.16 }
+			}
+		}
+	}
+
+	on_leave_faction = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						tag = CAN
+						NOT = { has_dlc = "Together for Victory" }
+					}
+				}
+				drop_cosmetic_tag = yes
+			}
+			FROM = {
+				add_opinion_modifier = {
+					modifier = faction_traitor
+					target = ROOT
+					days = 365
+				}
+
+				add_opinion_modifier = {
+					modifier = faction_traitor_trade
+					target = ROOT
+					days = 365
+				}
+			}
+		}
+	}
+
+	#FROM is the one that joins the faction
+	on_create_faction = {
+		effect = {
+			# Sunset invasion check
+			if = {
+				limit = {
+					FROM = { is_puppet = no }
+					OR = {
+						AND = {
+							tag = MEX
+							FROM = {
+								capital_scope = {
+									NOT = { is_on_continent = south_america }
+								}
+							}
+						}
+						AND = {
+							FROM = {
+								tag = MEX
+							}
+							capital_scope = {
+								NOT = { is_on_continent = south_america }
+							}
+						}
+					}
+				}
+				set_country_flag = achievement_failed_sunset_invasion
+			}
+		}
+	}
+
+	#FROM is country getting invited.
+	on_offer_join_faction = {
+		effect = {
+			#Give achievement to nation joining a faction, but not in one from game start
+			if = {
+				limit = {
+					date > 1936.01.02
+				}
+				FROM = {
+					if = {
+						limit = {
+							is_faction_leader = no
+						}
+						set_country_flag = achievement_has_joined_faction
+					}
+				}
+			}
+			#Remove anti_soviet_pact if joining commie Soviet in faction
+			if = {
+				limit = {
+					original_tag = SOV
+					has_government = communism
+					FROM = {
+						has_idea = anti_soviet_pact
+					}
+				}
+				FROM = {
+					remove_ideas = anti_soviet_pact
+				}
+			}
+
+			# Sunset invasion check
+			if = {
+				limit = {
+					is_puppet = no
+					OR = {
+						AND = {
+							tag = MEX
+							FROM = {
+								capital_scope = {
+									NOT = { is_on_continent = south_america }
+								}
+							}
+						}
+						AND = {
+							FROM = {
+								tag = MEX
+							}
+							capital_scope = {
+								NOT = { is_on_continent = south_america }
+							}
+						}
+					}
+				}
+				set_country_flag = achievement_failed_sunset_invasion
+			}
+		}
+	}
+
+	#FROM is faction leader on join faction requests.
+	on_join_faction = {
+		effect = {
+			set_country_flag = achievement_has_joined_faction
+			#Remove anti_soviet_pact if joining commie Soviet in faction
+			if = {
+				limit = {
+					has_idea = anti_soviet_pact
+					FROM = {
+						original_tag = SOV
+						has_government = communism
+					}
+				}
+				remove_ideas = anti_soviet_pact
+			}
+
+			# Sunset invasion check
+			if = {
+				limit = {
+					is_puppet = no
+					OR = {
+						AND = {
+							tag = MEX
+							FROM = {
+								capital_scope = {
+									NOT = { is_on_continent = south_america }
+								}
+							}
+						}
+						AND = {
+							FROM = {
+								tag = MEX
+							}
+							capital_scope = {
+								NOT = { is_on_continent = south_america }
+							}
+						}
+					}
+				}
+				set_country_flag = achievement_failed_sunset_invasion
+			}
+		}
+	}
+
+	#FROM is war target
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							has_idea = american_protection_drift_democratic
+							has_idea = american_protection_drift_communism
+							has_idea = american_protection_drift_fascism
+							has_idea = american_protection_defence_democratic
+							has_idea = american_protection_defence_communism
+							has_idea = american_protection_defence_fascism
+						}
+					}
+					NOT = {
+						tag = USA
+						is_in_faction_with = USA # I guess USA will not go to war with someone they are in faction with
+						has_war_with = USA
+						#USA = { has_war_with = FROM } Should USA enforce peace in a nation it is already at war with?
+					}
+					OR = {
+						has_idea = american_protection_drift_democratic
+						has_idea = american_protection_drift_communism
+						has_idea = american_protection_drift_fascism
+						has_idea = american_protection_defence_democratic
+						has_idea = american_protection_defence_communism
+						has_idea = american_protection_defence_fascism
+					}
+				}
+				FROM = { country_event = { id = usa.16 days = 1 } }
+			}
+
+			## Soviet defensive war while having purge penalty
+			if = {
+				limit = {
+					FROM = {
+						tag = SOV
+						OR = {
+							has_idea = officers_purged
+							has_idea = officers_purged_2
+							has_idea = officers_purged_3
+							has_idea = officers_purged_4
+							has_idea = officers_purged_5
+							has_idea = officers_purged_6
+							has_idea = officers_purged_7
+							has_idea = officers_purged_8
+							has_idea = officers_purged_9
+							has_idea = officers_purged_10
+						}
+						NOT = { has_idea = great_patriotic_war }
+					}
+					ROOT = { is_major = yes }
+				}
+				SOV = { country_event = { id = soviet.46 days = 2 } }
+			}
+
+			## Soviet war after purge
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = SOV }
+						ROOT = { tag = SOV }
+					}
+					SOV = {
+						NOT = { has_country_flag = SOV_war_since_purge }
+						has_completed_focus = SOV_great_purge
+					}
+				}
+				SOV = { set_country_flag = SOV_war_since_purge }
+			}
+
+			# Remove pact opinion modifiers if at war with Germany
+			if = {
+				limit = {
+					tag = GER
+					FROM = {
+						OR = {
+							has_opinion_modifier = anti_comintern_pact_opinion
+							has_opinion_modifier = tripartite_pact_opinion
+							has_idea = anti_soviet_pact
+						}
+					}
+				}
+				FROM = {
+					remove_opinion_modifier = { target = GER modifier = anti_comintern_pact_opinion }
+					remove_opinion_modifier = { target = GER modifier = tripartite_pact_opinion }
+					remove_ideas = anti_soviet_pact
+				}
+			}
+			#Germany has started a war - allies should try to contain Germany
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					NOT = {
+						has_global_flag = GER_has_started_war
+					}
+				}
+				set_global_flag = GER_has_started_war
+			}
+
+
+
+			#Call Anti-Soviet pact members to war
+			if = {
+				limit = {
+					ROOT = { tag = SOV }
+					FROM = { has_idea = anti_soviet_pact }
+				}
+				FROM = {
+					country_event = { id = germany.84 days = 1 }
+				}
+			}
+		}
+	}
+
+	# When a new faction is formed
+	on_faction_formed = {
+		effect = {
+			news_event = { id = news.159 }
+		}
+	}
+
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			news_event = { id = country_capitulated.0 days = 0 }
+			if = {
+				limit = {
+					original_tag = POL
+					has_government = neutrality
+				}
+				retire_country_leader = yes
+			}
+			if = {
+				limit = {
+					original_tag = YUG
+				}
+				remove_ideas = YUG_idea_economic_aid
+			}
+		}
+	}
+
+	# ROOT is previously capitulated country
+	on_uncapitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+					has_government = democratic
+					is_puppet = no
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+
+	on_government_change = {
+		effect = {
+			#Make sure Soviet can always create factions
+			if = {
+				limit = {
+					original_tag = SOV
+					NOT = { has_government = communism }
+				}
+				set_rule = { can_create_factions = yes }
+			}
+			if = {
+				limit = { has_government = democratic }
+				if = {
+					limit = { has_idea = democratic_opposition_voicing_protests }
+					remove_ideas = democratic_opposition_voicing_protests
+				}
+				if = {
+					limit = { has_idea = democratic_revolutionaries }
+					remove_ideas = democratic_revolutionaries
+				}
+				if = {
+					limit = { has_idea = reign_of_terror }
+					remove_ideas = reign_of_terror
+				}
+			}
+			if = {
+				limit = { has_government = communism }
+				if = {
+					limit = { TAG = SAF }
+					set_cosmetic_tag = SAF_COM
+				}
+				if = {
+					limit = { has_idea = communist_partisans_recruiting }
+					remove_ideas = communist_partisans_recruiting
+				}
+				if = {
+					limit = { has_idea = communist_revolutionaries }
+					remove_ideas = communist_revolutionaries
+				}
+				if = {
+					limit = { has_idea = communism_defeated }
+					remove_ideas = communism_defeated
+				}
+
+				#Remove anti_soviet_pact
+				if = {
+					limit = { has_idea = anti_soviet_pact }
+					remove_ideas = anti_soviet_pact
+				}
+			}
+			if = {
+				limit = { has_government = fascism }
+				if = {
+					limit = { has_idea = fascist_assault_divisions }
+					remove_ideas = fascist_assault_divisions
+				}
+				if = {
+					limit = { has_idea = fascist_revolutionaries }
+					remove_ideas = fascist_revolutionaries
+				}
+				if = {
+					limit = { has_idea = fascism_defeated }
+					remove_ideas = fascism_defeated
+				}
+				if = {
+					limit = { has_idea = anti_nazi_coup }
+					remove_ideas = anti_nazi_coup
+				}
+			}
+			#Replace the following two with events for SOV if they are not communist.
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			has_idea = trotskyite_plot
+			#			has_idea = trotskyite_plot_purged
+			#		}
+			#		NOT = {
+			#			has_civil_war = yes
+			#		}
+			#	}
+			#	country_event = { id = soviet.54 }
+			#}
+		}
+	}
+
+	on_coup_succeeded = {
+		effect = {
+			#Turn elections on for democracies created from coup
+			random_other_country = {
+				limit = {
+					has_government = democratic
+					original_tag = ROOT
+				}
+				set_politics = {
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+
+			#End of SCW
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+					ROOT = {
+						original_tag = SPR
+						has_government = fascism
+					}
+				}
+				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 3650 }
+			}
+			#End of SCW
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+				}
+				ROOT = {
+					set_country_flag = achievement_won_spanish_civil_war
+				}
+			}
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				set_politics = {
+					elections_allowed = yes
+				}
+			}
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = CHI }
+				}
+				JAP = { country_event = { id = JFU.5 } }
+			}
+		}
+	}
+
+	#Not run on a specific country.
+	on_startup = {
+		effect = {
+			RAJ = { country_event = { id = JFU_welcome.1 } }
+			SAF = { country_event = { id = JFU_welcome.2 } }
+			CAN = { country_event = { id = JFU_welcome.3 } }
+			FRA = { country_event = { id = JFU_welcome.4 } }
+			ENG = { country_event = { id = JFU_welcome.5 } }
+			SPR = {
+				country_event = { id = spain.10 days = 198 }
+				country_event = { id = JFU_welcome.20 }
+			}
+			BUL = { country_event = { id = JFU_welcome.21 } }
+			ITA = { country_event = { id = JFU_welcome.22 } }
+			GER = {
+				country_event = { id = JFU_welcome.23 }
+				country_event = { id = pfu.6 days = 1370 }
+				country_event = { id = pfu.7 days = 1706 }
+				country_event = { id = pfu.5 days = 1952 }
+				country_event = { id = pfu.8 days = 1859 }
+				country_event = { id = pfu.17 days = 2040 }
+				country_event = { id = pfu.21 days = 2344 }
+				country_event = { id = pfu.23 days = 2558 }
+				country_event = { id = pfu.24 days = 2589 }
+				country_event = { id = pfu.25 days = 2892 }
+			}
+			SOV = { country_event = { id = JFU_welcome.50 } }
+			JAP = {
+				country_event = { id = pfu.28 }
+				country_event = { id = pfu.27 days = 1736 }
+				country_event = { id = Jfujap.4 days = 553}
+			}
+
+			if = {
+				limit = { SAF = { is_ai = yes } }
+				ENG = {
+					set_country_flag = SAF_annexed
+					annex_country = { target = SAF transfer_troops = yes }
+				}
+			}
+
+			if = {
+				limit = { SIA = { is_ai = yes } }
+				289 = {
+					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
+					add_building_construction = { type = naval_base province = 7408 level = 5 instant_build = yes }
+				}
+				JAP = {
+					add_resource = { type = rubber amount = -70 state = 724 }
+					add_resource = { type = rubber amount = 65 state = 527 }
+					add_ideas = export_focus
+				}
+			}
+
+			if = {
+				limit = { MAN = { is_ai = yes } }
+				JAP = {
+					add_ideas = JFU_generic_bonus_research
+				}
+			}
+
+			if = {
+				limit = { HUN = { is_ai = yes } }
+				GER = {
+					add_ideas = JFU_generic_bonus_research
+					annex_country = { target = HUN transfer_troops = yes }
+				}
+			}
+
+			if = {
+				limit = { SPR = { is_ai = yes } }
+				GER = {
+					add_ideas = JFU_generic_refinery_and_army_recovery
+				}
+			}
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 16
+						CONTROLLER = { is_in_faction_with = GER }
+					}
+				}
+				ITA = { country_event = { id = JFU.1 days = 30 } }
+			}
+
+			########################################################
+			# CHECKING CHINESE STATES
+			########################################################
+
+			JAP = {
+				if = {
+					limit = {
+						608 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_608_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_608_taken
+				}if = {
+					limit = {
+						597 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_597_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_597_taken
+				}
+
+				if = {
+					limit = {
+						598 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_598_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_598_taken
+				}
+
+				if = {
+					limit = {
+						613 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_613_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_613_taken
+				}
+
+				if = {
+					limit = {
+						596 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_596_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_596_taken
+				}
+
+				if = {
+					limit = {
+						595 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_595_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_595_taken
+				}
+
+				if = {
+					limit = {
+						760 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_760_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_760_taken
+				}
+
+				if = {
+					limit = {
+						758 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_758_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_758_taken
+				}
+
+				if = {
+					limit = {
+						759 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_759_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_759_taken
+				}
+
+				if = {
+					limit = {
+						593 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_593_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_593_taken
+				}
+
+				if = {
+					limit = {
+						592 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_592_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_592_taken
+				}
+
+				if = {
+					limit = {
+						594 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_594_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_594_taken
+				}
+
+				if = {
+					limit = {
+						591 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_591_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_591_taken
+				}
+
+				if = {
+					limit = {
+						599 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_599_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_599_taken
+				}
+
+				if = {
+					limit = {
+						325 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_325_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_325_taken
+				}
+
+				if = {
+					limit = {
+						603 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_603_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_603_taken
+				}
+
+				if = {
+					limit = {
+						765 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_765_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_765_taken
+				}
+
+				if = {
+					limit = {
+						602 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_602_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_602_taken
+				}
+
+				if = {
+					limit = {
+						764 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_764_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_764_taken
+				}
+
+				if = {
+					limit = {
+						600 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_600_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_600_taken
+				}
+
+				if = {
+					limit = {
+						606 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_606_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_606_taken
+				}
+
+				if = {
+					limit = {
+						614 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_614_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_614_taken
+				}
+
+				if = {
+					limit = {
+						607 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_607_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_607_taken
+				}
+
+				if = {
+					limit = {
+						620 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_620_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_620_taken
+				}
+
+				if = {
+					limit = {
+						763 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_763_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_763_taken
+				}
+
+				if = {
+					limit = {
+						761 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_761_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_761_taken
+				}
+
+				if = {
+					limit = {
+						605 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_605_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_605_taken
+				}
+
+				if = {
+					limit = {
+						601 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_601_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_601_taken
+				}
+
+				if = {
+					limit = {
+						283 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_283_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_283_taken
+				}
+
+				if = {
+					limit = {
+						604 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_604_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_604_taken
+				}
+
+				if = {
+					limit = {
+						287 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_287_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_287_taken
+				}
+
+				if = {
+					limit = {
+						617 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_617_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_617_taken
+				}
+
+				if = {
+					limit = {
+						618 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_618_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_618_taken
+				}
+
+				if = {
+					limit = {
+						619 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_619_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_619_taken
+				}
+
+				if = {
+					limit = {
+						622 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_622_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_622_taken
+				}
+
+				if = {
+					limit = {
+						615 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_615_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_615_taken
+				}
+
+				if = {
+					limit = {
+						621 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_621_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_621_taken
+				}
+
+				if = {
+					limit = {
+						762 = { is_controlled_by = JAP }
+						NOT = { has_country_flag = state_762_taken }
+					}
+					add_to_variable = { resistance_variable = 1 }
+					set_country_flag = state_762_taken
+				}
+			########################################################
+
+			########################################################
+			# CLEARING
+			########################################################
+
+				if = {
+					limit = {
+						has_country_flag = state_608_taken
+						608 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_608_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_597_taken
+						597 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_597_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_598_taken
+						598 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_598_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_613_taken
+						613 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_613_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_596_taken
+						596 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_596_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_595_taken
+						595 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_595_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_760_taken
+						760 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_760_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_758_taken
+						758 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_758_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_759_taken
+						759 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_759_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_593_taken
+						593 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_593_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_592_taken
+						592 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_592_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_594_taken
+						594 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_594_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_591_taken
+						591 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_591_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_599_taken
+						599 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_599_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_325_taken
+						325 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_325_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_603_taken
+						603 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_603_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_765_taken
+						765 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_765_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_602_taken
+						602 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_602_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_764_taken
+						764 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_764_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_600_taken
+						600 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_600_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_606_taken
+						606 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_606_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_614_taken
+						614 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_614_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_607_taken
+						607 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_607_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_620_taken
+						620 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_620_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_763_taken
+						763 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_763_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_761_taken
+						761 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_761_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_605_taken
+						605 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_605_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_601_taken
+						601 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_601_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_283_taken
+						283 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_283_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_604_taken
+						604 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_604_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_287_taken
+						287 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_287_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_617_taken
+						617 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_617_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_618_taken
+						618 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_618_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_619_taken
+						619 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_619_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_622_taken
+						622 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_622_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_615_taken
+						615 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_615_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_621_taken
+						621 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_621_taken
+				}
+
+				if = {
+					limit = {
+						has_country_flag = state_762_taken
+						762 = { NOT = { is_controlled_by = JAP } }
+					}
+
+					subtract_from_variable = { resistance_variable = 1 }
+					clr_country_flag = state_762_taken
+				}
+			########################################################
+			}
+		}
+	}
+}
