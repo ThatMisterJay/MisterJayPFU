@@ -1,0 +1,920 @@
+focus_tree = {
+	id = china
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	shared_focus = CHI_invite_foreign_investors
+	focus = {
+		id = CHI_industrial_reform
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 0
+		cost = 5
+		relative_position_id = CHI_educational_funding
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_industrial_reform
+				bonus = 1
+				uses = 1
+				category = industry
+				}
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = CHI_industrial_reform
+			}
+        }
+	}
+	focus = {
+		id = CHI_educational_funding
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 0
+		cost = 10
+		completion_reward = {
+ 			add_stability = 0.1
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = CHI_peking_university
+		icon = GFX_focus_research
+		prerequisite = { focus = CHI_educational_funding }
+		relative_position_id = CHI_educational_funding
+		available = {
+			num_of_factories > 30
+		}
+		continue_if_invalid = yes
+		cancel_if_invalid = no
+		x = 0
+		y = 1
+		cost = 10
+        completion_reward = {
+			add_research_slot = 1
+	   }
+	}
+
+	focus = {
+		id = CHI_educational_reform
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = CHI_peking_university }
+		available = {
+			num_of_factories > 60
+		}
+		relative_position_id = CHI_educational_funding
+		x = 0
+		y = 2
+		cost = 40
+        completion_reward = {
+			remove_ideas = public_iliteracy
+	    }
+		cancel_if_invalid = yes
+	}
+
+	focus = {
+		id = CHI_inland_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CHI_industrial_reform }
+		relative_position_id = CHI_industrial_reform
+		x = -1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+			605 = { is_owned_and_controlled_by = CHI }
+		}
+
+		completion_reward = {
+			605 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHI_inland_industrialization
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = CHI_inland_infrastructure }
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = CHI_industrial_reform
+
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			605 = { is_owned_and_controlled_by = CHI }
+		}
+
+		completion_reward = {
+		    605 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = CHI_inland_industrialization
+			}
+		}
+	}
+	focus = {
+		id = CHI_seizure_of_land
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = CHI_inland_industrialization }
+		x = -1
+		y = 3
+		cost = 10
+		relative_position_id = CHI_industrial_reform
+
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			605 = { is_owned_and_controlled_by = CHI }
+		}
+
+		completion_reward = {
+		    605 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = CHI_seizure_of_land
+			}
+		}
+	}
+	focus = {
+		id = CHI_fortification
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = CHI_seizure_of_land }
+		available = {
+			controls_state = 605
+		}
+
+		x = -2
+		y = 4
+		relative_position_id = CHI_industrial_reform
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			605 = {
+
+				add_building_construction = {
+					type = bunker
+					province = 6999
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 12705
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 11972
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6729
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4431
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4141
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 1893
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 7240
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 4925
+					level = 2
+					instant_build = yes
+				}
+			}
+			#Adds multiple Land Forts to Chonqing province
+		}
+	}
+	focus = {
+		id = CHI_national_resources_commission
+		icon = GFX_goal_generic_more_territorial_claims
+        prerequisite = { focus = CHI_seizure_of_land}
+		available = {
+			controls_state = 602
+			controls_state = 605
+		}
+		x = 0
+		y = 4
+		relative_position_id = CHI_industrial_reform
+		cost = 10
+		ai_will_do = {
+			factor = 70
+		}
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 25
+				state = 602 #Hunan
+			}
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 605 #Sichuan
+			}
+		}
+	}
+	focus = {
+		id = CHI_armament_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CHI_revive_hanyang_armory }
+		available = {
+			controls_state = 605
+			threat > 0.05
+		}
+		x = 1
+		y = 2
+		relative_position_id = CHI_industrial_reform
+		cost = 10
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			605 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHI_expand_the_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = CHI_armament_effort }
+		available = {
+			613 = {
+				is_controlled_by = CHI
+			}
+		}
+		x = 1
+		y = 3
+		relative_position_id = CHI_industrial_reform
+		cost = 10
+		completion_reward = {
+				add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 2
+				category = naval_equipment
+			}
+			613 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = CHI_national_defense_council
+		icon = GFX_goal_generic_position_armies
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			threat > 0.02
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 8
+		y = 0
+		cost = 10
+		completion_reward = {
+			army_experience = 20
+		    		add_tech_bonus = {
+					name = land_doc_bonus
+					uses = 1
+					bonus = 1.0
+					category = cat_mass_assault
+				}
+		}
+	}
+	focus = {
+		id = CHI_the_big_rear_concept
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = CHI_national_defense_council }
+		relative_position_id = CHI_national_defense_council
+
+		x = 0
+		y = 1
+		cost = 4.3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_war = yes
+			has_war_with = JAP
+		}
+
+
+		cancel = {
+		}
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			army_experience = 25
+			if = {
+				limit = {
+					608 = {
+						is_controlled_by = CHI
+						arms_factory > 1
+						industrial_complex > 0
+					}
+				}
+				608 = {
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				608 = {
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				605 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			add_ideas = rear
+		}
+	}
+	focus = {
+		id = CHI_lure_them_in_strategy
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = CHI_the_big_rear_concept }
+		relative_position_id = CHI_the_big_rear_concept
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_war = yes
+			OR = {
+				surrender_progress > 0.20
+				}
+				AND = {
+					608 = {
+						controller = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+
+		bypass = {
+			CHI = { owns_state = 716 }
+		}
+		continue_if_invalid = yes
+		x = 0
+		y = 1
+		cost = 4.3
+
+		completion_reward = {
+			add_ideas = lure_them_in
+			if = {
+				limit = {
+					surrender_progress > 19
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					uses = 2
+					bonus = 1.5
+					category = cat_mass_assault
+				}
+			}
+			if = {
+				limit = {
+					surrender_progress < 20
+				}
+				add_tech_bonus = {
+					name = land_doc_bonus
+					uses = 2
+					bonus = 1
+					category = cat_mass_assault
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = CHI_scorched_earth_tactics
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = CHI_lure_them_in_strategy }
+		x = 2
+		y = 3
+		relative_position_id = CHI_lure_them_in_strategy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			has_war = yes
+			surrender_progress > 0.30
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = CHI_scorched_earth_tactics
+		}
+	}
+
+	focus = {
+		id = CHI_war_of_anti_imperialism
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = CHI_scorched_earth_tactics }
+		x = 0
+		y = 1
+		relative_position_id = CHI_scorched_earth_tactics
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				has_war_with = JAP
+				has_war_with = MAN
+			}
+			date > 1943.1.1
+			has_country_flag = CHI_army_reform_completed
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = CHI_war_of_anti_imperialism
+		}
+	}
+
+
+	focus = {
+		id = CHI_centralizing_power
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CHI_lure_them_in_strategy }
+		relative_position_id = CHI_lure_them_in_strategy
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_political_power = -150
+		}
+	}
+
+	focus = {
+		id = CHI_prc_friend
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = CHI_centralizing_power }
+		relative_position_id = CHI_centralizing_power
+		available = {
+			has_war = yes
+			has_war_with = JAP
+		}
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = {
+	    add_stability = -0.05
+		annex_country = { target = PRC transfer_troops = yes }
+		}
+
+	}
+	focus = {
+		id = CHI_sinkiang_friend
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = CHI_centralizing_power }
+		relative_position_id = CHI_centralizing_power
+		available = {
+			has_war_with = JAP
+			CHI = { owns_state = 605 }
+		}
+		x = 1
+		y = 1
+		cost = 21.5
+		completion_reward = {
+			add_stability = -0.05
+			annex_country = { target = SIK transfer_troops = yes }
+			remove_country_leader_trait = stubborn_surrender
+		}
+	}
+
+	focus = {
+		id = CHI_army_reform
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = CHI_prc_friend }
+		prerequisite = { focus = CHI_sinkiang_friend }
+		x = 1
+		y = 1
+		relative_position_id = CHI_prc_friend
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_category_tooltip = CHI_army_reform
+		}
+	}
+
+	focus = {
+		id = CHI_increase_funding_of_german_weaponary
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = CHI_national_defense_council }
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = CHI_national_defense_council
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = CHI_revive_hanyang_armory
+		icon = GFX_goal_generic_production2
+		relative_position_id = CHI_industrial_reform
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = CHI_industrial_reform }
+		available = {
+			605 = { is_owned_and_controlled_by = CHI }
+		}
+		completion_reward = {
+			605 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = CHI_modernize_army
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = CHI_increase_funding_of_german_weaponary }
+		x = -2
+		y = 2
+		cost = 10
+		relative_position_id = CHI_national_defense_council
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+				category = armor
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = CHI_special_force_training
+		icon = GFX_goal_generic_special_forces
+		x = -2
+		y = 3
+		cost = 10
+		prerequisite = { focus = CHI_modernize_army }
+		relative_position_id = CHI_national_defense_council
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CHI_special_forces_bonus
+				bonus = 1
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = paratroopers3
+				technology = marines
+				technology = marines2
+				technology = marines3
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_mountaineers3
+			}
+		}
+	}
+
+ 	focus = {
+		id = CHI_air_base_expansion
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = CHI_national_defense_council }
+		relative_position_id = CHI_national_defense_council
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					is_controlled_by = CHI
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					is_controlled_by = CHI
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					is_controlled_by = CHI
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+					is_controlled_by = CHI
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_air_effort
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = CHI_air_base_expansion }
+		relative_position_id = CHI_air_base_expansion
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = CHI_air_reform
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = CHI_air_effort }
+		relative_position_id = CHI_air_effort
+			available = {
+			has_war = yes
+			has_war_with = JAP
+		}
+		x = 0
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = air_doctrine_bonus
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+			set_country_flag = CHI_flying_tigers
+			custom_effect_tooltip = CHI_flying_tigers_tt
+		}
+	}
+
+	focus = {
+		id = CHI_political_effort
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 0
+		cost = 10
+		relative_position_id = CHI_national_defense_council
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = CHI_strengthen_the_republic
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = CHI_political_effort }
+		relative_position_id = CHI_political_effort
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = {
+           add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = CHI_neutrality_focus
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = CHI_strengthen_the_republic }
+		mutually_exclusive = { focus = CHI_join_Allies }
+		relative_position_id = CHI_political_effort
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = CHI_join_Allies
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = CHI_strengthen_the_republic }
+		mutually_exclusive = { focus = CHI_neutrality_focus }
+		x = 1
+		y = 2
+		cost = 0.15
+		relative_position_id = CHI_political_effort
+
+		available = {
+			date > 1942.1.1
+		}
+
+		completion_reward = {
+			ENG = {
+				add_to_faction = ROOT
+			}
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = CHI_deterrence
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = CHI_neutrality_focus focus = CHI_join_Allies }
+		x = 0
+		y = 3
+		cost = 10
+		relative_position_id = CHI_political_effort
+		completion_reward = {
+			add_ideas = deterrence
+		}
+	}
+}
