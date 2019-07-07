@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	resistance = {
+		context_type = player_context
+
+		window_name = "resistance_container"
+
+		visible = { country_has_resistance = yes }
+
+		effects = {
+			resistance_bg_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_resistance_options }
+				set_variable = { show_resistance_options = show }
+			}
+		}
+	}
+}
