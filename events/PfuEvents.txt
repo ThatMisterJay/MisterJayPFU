@@ -1,0 +1,1003 @@
+﻿add_namespace = pfu
+
+country_event = {
+	id = pfu.1
+	title = pfu.1.t
+	desc = pfu.1.d
+	picture = GFX_report_event_generic_usa_treaty
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
+	trigger = {
+		tag = USA
+		DEN = {
+			controls_state = 100
+			controls_state = 101
+			controls_state = 337
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = pfu.1.a
+		USA = {
+			transfer_state = 101
+		}
+		ENG = {
+			transfer_state = 100
+			transfer_state = 337
+		}
+		news_event = { hours = 6 id = pfunews.1 }
+	}
+}
+
+country_event = {
+	id = pfu.2
+	title = pfu.2.t
+	desc = pfu.2.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	trigger = {
+		tag = CHI
+		CHI = {
+			controls_state = 611
+			controls_state = 610
+			controls_state = 716
+			controls_state = 613
+
+		}
+		NOT = { has_global_flag = sino_jap_peace }
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
+	immediate = {
+		set_global_flag = sino_jap_peace
+	}
+
+	option = {
+		name = pfu.2.a
+        annex_country = { target = MEN }
+		annex_country = { target = MAN }
+		CHI = {	transfer_state = 609}
+
+		CHI = {white_peace = JAP}
+
+		PRC = {white_peace = JAP}
+		CHI = {
+			diplomatic_relation = { country = JAP relation = non_aggression_pact }
+		}
+
+		PRC = {
+	    	diplomatic_relation = { country = JAP relation = non_aggression_pact }
+		}
+	}
+}
+
+country_event = {
+	id = pfu.3
+	title = pfu.3.t
+	desc = pfu.3.d
+	picture = GFX_report_event_yugoslavian_split
+
+	trigger = {
+		date > 1938.1.1
+		tag = GER
+		YUG = { NOT = {	is_in_faction_with = GER } }
+
+		YUG = { has_capitulated = yes}
+		NOT = { has_global_flag = yugo_historical_split }
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
+	immediate = { set_global_flag = yugo_historical_split }
+
+	option = {
+		name = pfu.3.a
+		GER = {
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 102
+		}
+		if = {
+			limit = { country_exists = HUN }
+			HUN = { transfer_state = 45 }
+		}
+		if = {
+			limit = { NOT = { country_exists = HUN } }
+			GER = { transfer_state = 45 }
+		}
+		if = {
+			limit = { country_exists = BUL }
+
+			BUL = { transfer_state = 106 }
+		}
+		if = {
+			limit = { NOT = { country_exists = BUL } }
+			GER = { transfer_state = 106 }
+		}
+	    ITA = {
+			transfer_state = 757
+			transfer_state = 105
+			transfer_state = 103
+		}
+		CRO = {
+			transfer_state = 109
+			transfer_state = 104
+		}
+		CRO = {
+			declare_war_on = { target = YUG }
+			load_oob = "CRO_1939"
+		}
+		GER = { puppet = CRO }
+	}
+}
+
+country_event = {
+	id = pfu.4
+	title = pfu.4.t
+	desc = pfu.4.d
+	picture = GFX_report_event_yugoslavian_split
+
+	trigger = {
+		date > 1938.12.1
+		tag = GER
+		NOT = {country_exists = YUG}
+
+		NOT = { has_global_flag = yugo_historical_split }
+	}
+
+	immediate = {
+		set_global_flag = yugo_historical_split
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 30 }
+
+	option = {
+		name = pfu.4.a
+		GER = {
+			transfer_state = 107
+			transfer_state = 108
+			transfer_state = 102
+		}
+		if = {
+			limit = { country_exists = HUN }
+			HUN = { transfer_state = 45 }
+		}
+		if = {
+			limit = { NOT = { country_exists = HUN } }
+			GER = { transfer_state = 45 }
+		}
+		if = {
+			limit = { country_exists = BUL }
+
+			BUL = { transfer_state = 106 }
+		}
+		if = {
+			limit = { NOT = { country_exists = BUL } }
+			GER = { transfer_state = 106 }
+		}
+	    ITA = {
+			transfer_state = 757
+			transfer_state = 105
+			transfer_state = 103
+		}
+		CRO = {
+			transfer_state = 109
+			transfer_state = 104
+		}
+		CRO = {
+			load_oob = "CRO_1939"
+		}
+		GER = { puppet = CRO }
+	}
+}
+
+country_event = {
+    id = pfu.5
+    title = pfu.5.t
+    desc = pfu.5.d
+    picture = GFX_report_event_Großdeutschland
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = elite_mech_div
+    }
+
+    option = {
+        name = pfu.5.a
+        custom_effect_tooltip = pfu.5.a.tt
+        hidden_effect = {
+            add_manpower = -15000
+            load_oob = GER_Grosdeutschland
+        }
+    }
+}
+
+country_event = {
+	id = pfu.6
+	title = pfu.6.t
+	desc = pfu.6.d
+	picture = GFX_report_event_lssah
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ss_lssah
+	}
+
+	option = {
+		name = pfu.6.a
+		custom_effect_tooltip = pfu.6.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_LSSAH
+		}
+	}
+}
+
+country_event = {
+	id = pfu.7
+	title = pfu.7.t
+	desc = pfu.7.d
+	picture = GFX_report_event_dasreich
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ss_dasreich
+	}
+
+	option = {
+		name = pfu.5.a
+		custom_effect_tooltip = pfu.6.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_dasreich
+		}
+	}
+}
+
+country_event = {
+	id = pfu.8
+	title = pfu.8.t
+	desc = pfu.8.d
+	picture = GFX_report_event_totenkopf
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ss_totenkopf
+	}
+
+	option = {
+		name = pfu.5.a
+		custom_effect_tooltip = pfu.6.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_totenkopf
+		}
+	}
+}
+
+country_event = {
+	id = pfu.9
+	title = pfu.9.t
+	desc = pfu.9.d
+	picture = GFX_report_event_tihkvin
+
+	trigger = {
+		tag = SOV
+		date > 1941.8.1
+		OR = {
+			NOT = { SOV = { controls_state = 209 } }
+			NOT = { SOV = { controls_state = 12 } }
+			NOT = { SOV = { controls_state = 195 } }
+		}
+		NOT = { has_global_flag = sov_tihkvin }
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = sov_tihkvin
+	}
+
+	option = {
+		name = pfu.9.a
+		custom_effect_tooltip = pfu.9.a.tt
+		hidden_effect = {
+			add_manpower = -200000
+			load_oob = SOV_tihkvin
+		}
+	}
+}
+
+country_event = {
+	id = pfu.12
+	title = pfu.12.t
+	desc = pfu.12.d
+	picture = GFX_report_event_heavytank
+
+	trigger = {
+		tag = GER
+		date > 1941.7.1
+		has_tech = mechanised_infantry
+		has_tech = improved_heavy_tank
+		NOT = { has_global_flag = heavy_tank_div }
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = heavy_tank_div
+	}
+
+	option = {
+		name = pfu.12.a
+		custom_effect_tooltip = pfu.12.a.tt
+		hidden_effect = {
+			set_technology = { tech_signal_company = 1 }
+			add_manpower = -12000
+			load_oob = GER_heavytank
+		}
+	}
+}
+
+country_event = {
+	id = pfu.13
+	title = pfu.13.t
+	desc = pfu.13.d
+	picture = GFX_report_event_moscow
+
+	trigger = {
+		tag = SOV
+		OR = {
+			NOT = { SOV = { controls_state = 205 } }
+			NOT = { SOV = { controls_state = 246 } }
+			NOT = { SOV = { controls_state = 219 } }
+		}
+		NOT = { has_global_flag = sov_moscow }
+	}
+
+	immediate = {
+		set_global_flag = sov_moscow
+	}
+	fire_only_once = yes
+
+	option = {
+		name = pfu.13.a
+		custom_effect_tooltip = pfu.13.a.tt
+		hidden_effect = {
+			add_manpower = -300000
+			load_oob = SOV_moscow
+		}
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+}
+
+country_event = {
+	id = pfu.14
+	title = pfu.14.t
+	desc = pfu.14.d
+	picture = GFX_report_event_voronezh
+
+	trigger = {
+		tag = SOV
+		SOV = {
+			controls_state = 260
+		}
+		OR = {
+			NOT = { SOV = { controls_state = 220 } }
+			NOT = { SOV = { controls_state = 221 } }
+			NOT = { SOV = { controls_state = 227 } }
+		}
+
+		NOT = {
+			has_global_flag = SOV_voronezh
+		}
+	}
+
+	immediate = {
+		set_global_flag = SOV_voronezh
+	}
+
+	option = {
+		name = pfu.14.a
+		custom_effect_tooltip = pfu.14.a.tt
+		hidden_effect = {
+			add_manpower = -180000
+			load_oob = SOV_voronezh
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+}
+
+country_event = {
+	id = pfu.15
+	title = pfu.15.t
+	desc = pfu.15.d
+	picture = GFX_report_event_ratstobruk
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = SAF
+			tag = CAN
+		}
+		ENG = { controls_state = 447 }
+		date > 1939.5.1
+		has_tech = basic_medium_tank
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = ENG_tank
+	}
+
+	option = {
+		name = pfu.15.a
+		custom_effect_tooltip = pfu.15.a.tt
+		trigger = { ENG = { has_tech = basic_medium_tank } }
+		hidden_effect = {
+			ENG = {
+				add_manpower = -12000
+				load_oob = ENG_tank
+			}
+		}
+	}
+
+	option = {
+		name = pfu.15.b
+		custom_effect_tooltip = pfu.15.a.tt
+		trigger = { SAF = { has_tech = basic_medium_tank } }
+		hidden_effect = {
+			SAF = {
+				add_manpower = -12000
+				load_oob = ENG_tank
+			}
+		}
+	}
+
+	option = {
+		name = pfu.15.c
+		custom_effect_tooltip = pfu.15.a.tt
+		trigger = { CAN = { has_tech = basic_medium_tank } }
+		hidden_effect = {
+			CAN = {
+				add_manpower = -12000
+				load_oob = ENG_tank
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pfu.16
+	title = pfu.16.t
+	desc = pfu.16.d
+	picture = GFX_report_event_stratbombers
+
+	trigger = {
+		tag = USA
+		date > 1942.1.1
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = USA_bombers
+	}
+
+	option = {
+		name = pfu.16.a
+		custom_effect_tooltip = pfu.16.a.tt
+		hidden_effect = {
+			set_technology = { tactical_bomber2 = 1 }
+			add_manpower = -12000
+			load_oob = USA_bombers
+		}
+	}
+}
+
+country_event = {
+    id = pfu.17
+    title = pfu.17.t
+    desc = pfu.17.d
+    picture = GFX_report_event_wiking
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = ss_wiking
+    }
+
+    option = {
+        name = pfu.17.a
+        custom_effect_tooltip = pfu.17.a.tt
+        hidden_effect = {
+            add_manpower = -15000
+            load_oob = GER_wiking
+        }
+    }
+}
+
+country_event = {
+	id = pfu.18
+	title = pfu.18.t
+	desc = pfu.18.d
+	picture = GFX_report_event_shortwar
+
+	trigger = {
+		tag = GER
+		OR = {
+			GER = { controls_state = 16 }
+			date > 1940.2.1
+		}
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = short_war
+	}
+
+	option = {
+		name = pfu.18.a
+	    add_timed_idea = { idea = GER_short_war days = 1160 }
+		add_ideas = war_economy
+	}
+	mean_time_to_happen = { days = 30 }
+}
+
+country_event = {
+	id = pfu.19
+	title = pfu.19.t
+	desc = pfu.19.d
+	picture = GFX_report_event_nord
+
+	trigger = {
+		tag = GER
+		date > 1941.2.1`
+		OR = {
+			GER = { controls_state = 144 }
+			GER = { controls_state = 143 }
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = GER_nord
+	}
+
+	option = {
+		name = pfu.19.a
+		custom_effect_tooltip = pfu.19.a.tt
+		hidden_effect = {
+			add_manpower = -35000
+			load_oob = GER_nord
+		}
+	}
+}
+
+country_event = {
+	id = pfu.20
+	title = pfu.20.t
+	desc = pfu.20.d
+	picture = GFX_report_event_finesthour
+
+	trigger = {
+		tag = ENG
+		date > 1939.1.1
+		GER = { controls_state = 16 }
+		NOT = { has_global_flag = ENG_finesthour }
+	}
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = ENG_finesthour
+	}
+
+	option = {
+		name = pfu.20.a
+		add_timed_idea = { idea = finest_hour days = 360 }
+	}
+	mean_time_to_happen = { days = 30 }
+}
+
+country_event = {
+	id = pfu.21
+	title = pfu.21.t
+	desc = pfu.21.d
+	picture = GFX_report_event_totalwar
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = total_war
+	}
+
+	option = {
+		name = pfu.21.a
+		remove_ideas = GER_short_war
+		add_ideas = GER_total_war
+	}
+}
+
+country_event = {
+	id = pfu.22
+	title = pfu.22.t
+	desc = pfu.22.d
+	picture = GFX_report_event_nordland
+
+	trigger = {
+		tag = GER
+		date > 1943.5.1
+		has_tech = mechanised_infantry
+		has_tech = improved_medium_tank
+		has_tech = improved_medium_td
+		has_tech = improved_medium_art
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = ss_nordland
+	}
+
+	option = {
+		name = pfu.22.a
+		custom_effect_tooltip = pfu.22.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_nordland
+		}
+	}
+}
+
+country_event = {
+	id = pfu.23
+	title = pfu.23.t
+	desc = pfu.23.d
+	picture = GFX_report_event_hohenstaufen
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ss_hohenstaufen
+	}
+
+	option = {
+		name = pfu.5.a
+		custom_effect_tooltip = pfu.22.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_hohenstaufen
+		}
+	}
+}
+
+country_event = {
+	id = pfu.24
+	title = pfu.24.t
+	desc = pfu.24.d
+	picture = GFX_report_event_frundsberg
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ss_frundsberg
+	}
+
+	option = {
+		name = pfu.5.a
+		custom_effect_tooltip = pfu.22.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_frundsberg
+		}
+	}
+}
+
+country_event = {
+	id = pfu.25
+	title = pfu.25.t
+	desc = pfu.25.d
+	picture = GFX_report_event_hitlerjugend
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = ss_hitlerjugend
+	}
+
+	option = {
+		name = pfu.5.a
+		custom_effect_tooltip = pfu.22.a.tt
+		hidden_effect = {
+			add_manpower = -15000
+			load_oob = GER_hitlerjugend
+		}
+	}
+}
+
+country_event = {
+	id = pfu.26
+	title = pfu.26.t
+	desc = pfu.26.d
+	picture = GFX_report_event_jap_southern
+
+	trigger = {
+		tag = JAP
+		any_country = {
+		is_in_faction_with = CHI
+			OR = {
+			has_full_control_of_state = 605
+			has_full_control_of_state = 325
+			has_full_control_of_state = 602
+			has_full_control_of_state = 603
+			has_full_control_of_state = 763
+			}
+		}
+		any_country = {
+		is_in_faction_with = JAP
+			OR = {
+			has_full_control_of_state = 592
+			has_full_control_of_state = 613
+			has_full_control_of_state = 608
+			}
+		date > 1940.7.1
+		JAP = {
+			has_war_with = CHI
+			}
+
+		}
+	}
+	
+	mean_time_to_happen = { days = 7 }
+
+	option = {
+		name = pfu.26.a
+		custom_effect_tooltip = pfu.26.a.tt
+		hidden_effect = {
+			set_technology = { interwar_antiair = 1 }
+			load_oob = JAP_southern
+		}
+	}
+}
+
+country_event = {
+	id = pfu.27
+	title = pfu.27.t
+	desc = pfu.27.d
+	picture = GFX_report_event_jap_southern
+
+	is_triggered_only = yes
+
+	option = {
+		name = pfu.27.a
+		custom_effect_tooltip = JAP_homeland_tt
+		hidden_effect = {
+			load_oob = JAP_homeland
+		}
+	}
+}
+
+country_event = {
+	id = pfu.28
+	title = pfu.28.t
+	desc = pfu.28.d
+	picture = GFX_report_event_JAP_warning
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = JAP_warning
+	}
+
+	option = {
+		name = pfu.28.a
+	}
+}
+
+
+news_event = {
+	id = pfu.29
+	title = pfu.29.t
+	desc = pfu.29.d
+	picture = GFX_report_event_vichy_negotiations
+
+	is_triggered_only = yes
+
+	option = {
+		name = pfu.10.a
+	}
+}
+
+news_event = {
+	id = pfu.30
+	title = pfu.30.t
+	desc = pfu.30.desc
+	picture = GFX_news_event_vichy_neutral
+
+    is_triggered_only = yes
+
+	option = {
+		name = pfu.10.a
+	}
+}
+
+news_event = {
+	id = pfu.31
+	title = pfu.31.t
+	desc = pfu.31.desc
+	picture = GFX_news_event_do_not_give_up
+
+	trigger = {
+		tag = FRA
+		FRA = { has_capitulated = yes }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = pfu.10.a
+	}
+}
+
+# Plan Vert
+country_event = {
+	id = pfu.32
+	title = pfu.32.t
+	desc = pfu.32.desc
+	picture = GFX_report_event_plan_vert
+
+	is_triggered_only = yes
+
+	option = {
+		name = pfu.32.a
+		14 = {
+			damage_building = { type = air_base damage = 3 }
+			damage_building = { type = infrastructure damage = 2 }
+		}
+		15 = {
+			damage_building = { type = infrastructure damage = 2 }
+			damage_building = { type = air_base damage = 3 }
+		}
+		29 = {
+			damage_building = { type = infrastructure damage = 2 }
+			damage_building = { type = air_base damage = 3 }
+		}
+
+		remove_building = {
+			type = bunker
+			level = 2
+			province = 6449
+		}
+		remove_building = {
+			type = bunker
+			level = 2
+			province = 3552
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = pfu.33
+	title = pfu.33.t
+	desc = pfu.33.d
+	picture = GFX_report_event_royalarmor
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = SAF
+			tag = CAN
+		}
+		date > 1939.5.1
+		ENG = { controls_state = 447 }
+		has_tech = basic_heavy_tank
+	}
+
+	immediate = {
+		set_global_flag = ENG_royalarmor
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = pfu.33.a
+		custom_effect_tooltip = pfu.33.a.tt
+		trigger = { ENG = { has_tech = basic_heavy_tank } }
+		hidden_effect = {
+			ENG = {
+				add_manpower = -12000
+				load_oob = ENG_royalarmor
+			}
+		}
+	}
+
+	option = {
+		name = pfu.15.b
+		custom_effect_tooltip = pfu.33.a.tt
+		trigger = { CAN = { has_tech = basic_heavy_tank } }
+		hidden_effect = {
+			CAN = {
+				add_manpower = -12000
+				load_oob = ENG_royalarmor
+			}
+		}
+	}
+
+	option = {
+		name = pfu.15.c
+		custom_effect_tooltip = pfu.33.a.tt
+		trigger = { SAF = { has_tech = basic_heavy_tank } }
+		hidden_effect = {
+			SAF = {
+				add_manpower = -12000
+				load_oob = ENG_royalarmor
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+}
+
+country_event = {
+	id = pfu.34
+	title = pfu.34.t
+	desc = pfu.34.d
+	picture = GFX_report_event_voronezh
+
+	trigger = {
+		tag = SOV
+		SOV = {
+			controls_state = 236
+		}
+		OR = {
+			NOT = { SOV = { controls_state = 217 } }
+			NOT = { SOV = { controls_state = 237 } }
+			NOT = { SOV = { controls_state = 232 } }
+			NOT = { SOV = { controls_state = 265 } }
+		}
+
+		NOT = {
+			has_global_flag = SOV_caucasus
+		}
+	}
+
+	immediate = {
+		set_global_flag = SOV_caucasus
+	}
+
+	option = {
+		name = pfu.34.a
+		custom_effect_tooltip = pfu.34.a.tt
+		hidden_effect = {
+			add_manpower = -180000
+			load_oob = SOV_caucuses
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+}

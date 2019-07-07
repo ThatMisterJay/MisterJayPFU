@@ -1,0 +1,195 @@
+﻿add_namespace = Jfujap
+
+
+country_event = {
+	id = Jfujap.1
+	title = Jfujap.1.t
+	desc = Jfujap.1.d
+	picture = GFX_report_event_american_hunger_march
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = Jfujap.1.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.3
+		}
+		remove_ideas = JAP_Coup
+		533 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		534 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = Jfujap.2
+	title = Jfujap.2.t 
+	desc = Jfujap.2.d 
+	picture = GFX_report_event_japanese_parade
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = Jfujap.2.a 
+
+	}
+}
+
+country_event = { 
+	id = Jfujap.4
+	title = Jfujap.4.t 
+	desc = Jfujap.4.d 
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+
+	option = { 
+		name = Jfujap.4.a
+		news_event = { hours = 6 id = news.1 }
+		declare_war_on = { target = CHI type = puppet_wargoal_focus }
+		declare_war_on = { target = PRC type = puppet_wargoal_focus }
+			hidden_effect = {
+				add_named_threat = { threat = -4 name = JAP_war_with_china }
+				MAN = {
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = CHI
+					}
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = PRC
+					}
+				}
+
+				MEN = {
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = CHI
+					}
+					add_to_war = {
+						targeted_alliance = JAP
+						enemy = PRC
+					}
+				}
+			}
+		
+		CHI = {
+					country_event = { id = china.100 }
+				 	transfer_state = 615
+				}
+	}
+}
+	
+##Stolen From GDU <3##
+news_event = {  
+	id = Jfujap.3
+	title = Jfujap.3.t
+	desc = Jfujap.3.d
+	picture = GFX_news_event_french_fleet_scuttled
+	is_triggered_only = yes 
+	
+	major = yes 
+	
+	option = {
+		name = Jfujap.3.usa 
+		trigger = { 
+			tag = USA 
+		}
+		custom_effect_tooltip = gdunews.6.usa_tt 
+	}
+	option = {
+		name = Jfujap.3.ger
+		trigger = { 
+			tag = GER
+		}
+	}
+	option = {
+		name = Jfujap.3.jap
+		trigger = { 
+			tag = JAP 
+		}
+	}
+	option = {
+		name = Jfujap.3.general
+		trigger = { 
+			NOT = {
+				tag = USA  
+				tag = GER 
+				tag = JAP 
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = Jfujap.5
+	title = Jfujap.5.t 
+	desc = Jfujap.5.d 
+	picture = GFX_report_event_nationalist_china_machinegun_firing
+
+	trigger = {
+		tag = JAP
+		any_country = {
+		is_in_faction_with = JAP
+			OR = {
+			has_full_control_of_state = 605
+			has_full_control_of_state = 325
+			has_full_control_of_state = 602
+			has_full_control_of_state = 603
+			has_full_control_of_state = 763
+			}
+		}
+		NOT = {has_completed_focus = JAP_second_wind_china}
+	}
+	mean_time_to_happen = { days = 7 }
+
+	
+	option = { 
+		name = Jfujap.5.a
+		add_ideas = china_annexed
+	}
+}
+
+country_event = { 
+	id = Jfujap.6
+	title = Jfujap.6.t 
+	desc = Jfujap.6.d 
+	picture = GFX_report_event_japanese_soldiers_02
+
+	trigger = {
+		tag = JAP
+		any_country = {
+		is_in_faction_with = CHI
+			OR = {
+			has_full_control_of_state = 605
+			has_full_control_of_state = 325
+			has_full_control_of_state = 602
+			has_full_control_of_state = 603
+			has_full_control_of_state = 763
+			}
+		}
+		JAP = { has_idea = china_annexed}
+	}
+	mean_time_to_happen = { days = 7 }
+
+	
+	option = { 
+		name = Jfujap.6.a
+		remove_ideas = china_annexed
+	}
+}
