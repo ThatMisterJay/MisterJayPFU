@@ -1,0 +1,72 @@
+ideas = {
+	country = {
+
+		JAP_resistance_00 = {
+			allowed = {always = yes }
+			picture = jap_ichi_go
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		JAP_resistance_0 = {
+			allowed = { always = yes }
+			picture = jap_ichi_go
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		JAP_resistance_1 = {
+			allowed = { always = yes }
+			picture = chi_war_of_resistance
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.1
+			}
+		}
+		JAP_resistance_2 = {
+			allowed = { always = yes }
+			picture = chi_war_of_resistance2
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.20
+			}
+		}
+		JAP_resistance_3 = {
+			allowed = { always = yes }
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.4
+			}
+		}
+
+		CHI_resistance_1 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				conscription = 0.01
+			}
+		}
+
+		CHI_resistance_2 = {
+			allowed = { always = yes }
+			picture = tfv_can_conscription_crisis
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
+				conscription = 0.02
+			}
+		}
+	}
+}
