@@ -1,0 +1,12 @@
+﻿l_english:
+    JAP_resistance_00:0 "Chinese Resistance"
+    JAP_resistance_0:0 "Chinese Resistance"
+    JAP_resistance_1:0 "Chinese Resistance"
+    JAP_resistance_2:0 "Chinese Resistance"
+    JAP_resistance_3:0 "Chinese Resistance"
+    CHI_resistance_0:0 "China United"
+    CHI_resistance_0_desc:0 "Our people have finally come together, both warlords and the nationalist government are fighting alongside eachother. We have mobilized people from every walk of life, many have even volunteered from rural areas to rid the Japanese dogs from our homeland."
+    CHI_resistance_1:0 "China United"
+    CHI_resistance_1_desc:0 "Our people have finally come together, both warlords and the nationalist government are fighting alongside eachother. We have mobilized people from every walk of life, many have even volunteered from rural areas to rid the Japanese dogs from our homeland."
+    RESISTANCE_TOOLTIP:0 "§YOccupied Chinese States§!"
+    RESISTANCE_TOOLTIP_DELAYED:0 "The more states you occupy, the heavier your debuff will be. Strategise around this. NOTE: This only applies to Chinese states. The attack and defence modifiers noted below are for China only.\n\nThe debuff levels are as follows:\n§Y8 states:§!       §R0%§! £sub_tech_strip_w_bg§ \n\n§Y10 states:§!      §R10%§!  £sub_tech_strip_w_bg§   \n\n§Y12 states:§!  §R20%§!  £sub_tech_strip_w_bg§   \n\n§Y14 states:§!  §R40%§!  £sub_tech_strip_w_bg§"
