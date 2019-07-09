@@ -219,7 +219,7 @@ NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy 
     1.0,   -- medium, from 3
     0.5,   -- high, from 1
     0.1,   -- I am death incarnate!
-},
+}
 
-NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 30,		-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
-NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24,		-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 30 -- Amount of in-game-hours that takes the submarine (with position unrevealed) to hide.
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24 -- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
