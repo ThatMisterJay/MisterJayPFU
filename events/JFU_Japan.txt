@@ -154,6 +154,7 @@ country_event = {
 			has_full_control_of_state = 763
 			}
 		}
+		NOT = has_country_flag = china_overextended
 		NOT = {has_completed_focus = JAP_second_wind_china}
 	}
 	mean_time_to_happen = { days = 7 }
@@ -162,6 +163,7 @@ country_event = {
 	option = { 
 		name = Jfujap.5.a
 		add_ideas = china_annexed
+		set_country_flag = china_overextended
 	}
 }
 
@@ -175,15 +177,14 @@ country_event = {
 		tag = JAP
 		any_country = {
 		is_in_faction_with = CHI
-			OR = {
 			has_full_control_of_state = 605
 			has_full_control_of_state = 325
 			has_full_control_of_state = 602
 			has_full_control_of_state = 603
 			has_full_control_of_state = 763
-			}
 		}
 		JAP = { has_idea = china_annexed}
+		has_country_flag = china_overextended
 	}
 	mean_time_to_happen = { days = 7 }
 
@@ -191,5 +192,6 @@ country_event = {
 	option = { 
 		name = Jfujap.6.a
 		remove_ideas = china_annexed
+		clr_country_flag = china_overextended
 	}
 }
