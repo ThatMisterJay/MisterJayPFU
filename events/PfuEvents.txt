@@ -739,7 +739,7 @@ country_event = {
 	title = pfu.26.t
 	desc = pfu.26.d
 	picture = GFX_report_event_jap_southern
-
+	fire_only_once = yes
 	trigger = {
 		tag = JAP
 		any_country = {
