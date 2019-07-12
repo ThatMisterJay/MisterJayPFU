@@ -1,4 +1,4 @@
-﻿add_namespace = Jfujap
+add_namespace = Jfujap
 
 
 country_event = {
@@ -141,6 +141,7 @@ country_event = {
 	title = Jfujap.5.t 
 	desc = Jfujap.5.d 
 	picture = GFX_report_event_nationalist_china_machinegun_firing
+	mean_time_to_happen = { days = 7 }
 
 	trigger = {
 		tag = JAP
@@ -154,16 +155,15 @@ country_event = {
 			has_full_control_of_state = 763
 			}
 		}
-		NOT = has_country_flag = china_overextended
 		NOT = {has_completed_focus = JAP_second_wind_china}
+		NOT = {has_country_flag = china_fuckup}
+		
 	}
-	mean_time_to_happen = { days = 7 }
-
-	
 	option = { 
 		name = Jfujap.5.a
 		add_ideas = china_annexed
-		set_country_flag = china_overextended
+		set_country_flag = china_fuckup
+		
 	}
 }
 
@@ -172,26 +172,25 @@ country_event = {
 	title = Jfujap.6.t 
 	desc = Jfujap.6.d 
 	picture = GFX_report_event_japanese_soldiers_02
-
+	mean_time_to_happen = { days = 7 }
 	trigger = {
 		tag = JAP
 		any_country = {
 		is_in_faction_with = CHI
+			OR = {
 			has_full_control_of_state = 605
 			has_full_control_of_state = 325
 			has_full_control_of_state = 602
 			has_full_control_of_state = 603
 			has_full_control_of_state = 763
+			}
 		}
 		JAP = { has_idea = china_annexed}
-		has_country_flag = china_overextended
 	}
-	mean_time_to_happen = { days = 7 }
 
-	
 	option = { 
 		name = Jfujap.6.a
 		remove_ideas = china_annexed
-		clr_country_flag = china_overextended
+		clr_country_flag = china_fuckup
 	}
 }
