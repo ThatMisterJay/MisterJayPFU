@@ -177,13 +177,11 @@ country_event = {
 		tag = JAP
 		any_country = {
 		is_in_faction_with = CHI
-			OR = {
 			has_full_control_of_state = 605
 			has_full_control_of_state = 325
 			has_full_control_of_state = 602
 			has_full_control_of_state = 603
 			has_full_control_of_state = 763
-			}
 		}
 		JAP = { has_idea = china_annexed}
 	}
