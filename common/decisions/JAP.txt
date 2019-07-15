@@ -658,24 +658,6 @@ political_actions = {
 		}
 	}
 
-	puppet_siam = {
-		ai_will_do = { factor = 0 }
-		cost = 50
-
-		visible = {
-			tag = JAP
-			country_exists = SIA
-			date > 1940.3.1
-			NOT = { SIA = { is_puppet_of = JAP } }
-		}
-
-		complete_effect = {
-			JAP = {
-				puppet = SIA
-			}
-		}
-	}
-
 	annex_siam = {
 		ai_will_do = { factor = 0 }
 		cost = 50

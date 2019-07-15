@@ -192,3 +192,24 @@ country_event = {
 		clr_country_flag = china_fuckup
 	}
 }
+
+news_event = {  
+	id = Jfujap.7
+	title = Jfujap.7.t
+	desc = Jfujap.7.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes 
+	
+	option = {
+		name = Jfujap.7.jap
+		trigger = { 
+			tag = JAP 
+		}
+	}
+	option = {
+		name = Jfujap.7.a
+		trigger = { 
+			NOT = { tag = JAP }
+		}
+	}
+}

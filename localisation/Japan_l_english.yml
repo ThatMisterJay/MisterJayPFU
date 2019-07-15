@@ -270,6 +270,8 @@
  JAP_naval_bomber_effort:0 "Naval Bomber Effort"
  JAP_naval_bomber_effort_desc:0 "Naval bombers are important to the dominance of the sea, if Japan wishes to gain naval superiority naval bomber pursuits will help greatly"
  china_annexed:0 "The Chinese Ulcer"
+ JAP_research_unit:0 "Army Research in Manchuria"
+ JAP_research_unit_desc:0 "Expand the organisation our the research group of the Kwantung Army. Many in the civilian government have been unaware of its true activities."
  ##events
  Jfujap.1.t:0 "February 26 Incident"
  Jfujap.1.d:0 "On the 26th of February, a group of young military officers attempted a coup d'état. The radical Kōdō-ha faction in the military assassinated several promiment politicans, but failed to assassinate the Prime Minister. The coup failed, and unlike in the aftermath of the previous attempted coup, the surviving perpetrators were given secret trials and shot."
@@ -286,6 +288,10 @@
  Jfujap.6.t:0 "The Chinese Front Stabilised"
  Jfujap.6.d:0 "Withdrawal out of inner China has freed up much needed forces and equipment from constant guerilla war against the Chinese."
  Jfujap.6.a:0 "Finally some stability!"
+ Jfujap.7.t:0 "International Military Tribunal for the Far East"
+ Jfujap.7.d:0 "The conclusion of the Tokyo Trial today as the sentences have been handed down for numerous cases of waging of aggressive war, ordering, authorizing, permitting inhumane treatment of prisoners of war/others and deliberately and recklessly disregarded their duty to take adequate steps to prevent atrocities. All evidence has been submitted in fifteen phases and a final judgement has been made following the drafting of an 1,781 page opinion.""
+ Jfujap.7.a:0 "Justice finally in the east!"
+ Jfujap.7.jap:0 "A shameful day for the"
  ##flags
  kodoha_purge:0 "Kodoha Faction Purged"
  marco_polo_fired:0 "Marco Polo Bridge Incident Occured"

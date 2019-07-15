@@ -2647,45 +2647,43 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			336 = {
+			523 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 7409
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 12931
 					instant_build = yes
 				}
 
-				#Fortify entire coastline
 				add_building_construction = {
 					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-
-				#border inland bunker
-				add_building_construction = {
-					type = bunker
-					province = 4310
+					province = 4317
 					level = 4
 					instant_build = yes
 				}
 
 				add_building_construction = {
 					type = bunker
-					province = 7342
-					level = 2
+					province = 7362
+					level = 3
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = bunker
+					province = 7349
+					level = 3
 					instant_build = yes
 				}
 
@@ -2711,47 +2709,6 @@ focus_tree = {
 
 			}
 
-			333 = {
-				#Fortify entire coastline
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-
-				#Extra fort on naval bases
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
