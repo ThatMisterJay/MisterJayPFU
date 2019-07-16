@@ -213,3 +213,17 @@ news_event = {
 		}
 	}
 }
+
+country_event = { 
+	id = Jfujap.8
+	title = Jfujap.8.t 
+	desc = Jfujap.8.d
+	picture = GFX_report_event_japanese_reply
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = Jfujap.8.a 
+
+	}
+}
