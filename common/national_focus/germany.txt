@@ -650,7 +650,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 50
 
-			country_event = { id = JFU_germany.24 days = 1 }
+			add_ideas = GER_ace_idea
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1
@@ -1701,7 +1701,7 @@ focus_tree = {
 			}
 		}
 		x = 16
-		y = 5
+		y = 4
 		cost = 4.3
 		ai_will_do = {
 			factor = 10
@@ -1755,14 +1755,12 @@ focus_tree = {
 	focus = {
 		id = GER_around_maginot
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_danzig_or_war }
+		prerequisite = { focus = GER_weserubung }
 
 		available = {
-			OR = {
-				NOT = { HOL = { is_in_faction_with = GER } }
-				NOT = { BEL = { is_in_faction_with = GER } }
-				NOT = { LUX = { is_in_faction_with = GER } }
-			}
+			GER = { controls_state = 37 }
+			GER = { controls_state = 110 }
+
 		}
 
 		bypass = {
@@ -1785,7 +1783,7 @@ focus_tree = {
 		will_lead_to_war_with = HOL
 		will_lead_to_war_with = LUX
 		will_lead_to_war_with = FRA
-		x = 14
+		x = 16
 		y = 5
 		cost = 4.3
 		ai_will_do = {
@@ -1985,7 +1983,7 @@ focus_tree = {
 			}
 		}
 
-		x = 15
+		x = 14
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2164,13 +2162,13 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_war_with_france
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
+		icon = GFX_focus_attack_france
+		prerequisite = { focus = GER_around_maginot}
 		available = {
 			is_puppet = no
 			NOT = { is_in_faction_with = FRA }
 		}
-		x = 15
+		x = 16
 		y = 6
 		cost = 0.2
 		bypass = {
@@ -2196,11 +2194,47 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = { threat = 3 name = GER_war_with_france_threat }
- 			create_wargoal = {
- 				type = take_state_focus
- 				target = FRA
- 				generator = { 28 }
- 			}
+ 			GER = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			 }
+		}
+	}
+	focus = {
+		id = GER_lessons_from_france
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus =  GER_war_with_france }
+		available = {
+			is_puppet = no
+			country_exists = EFR
+		}
+		x = 16
+		y = 7
+		cost = 10
+		bypass = {
+		}
+		historical_ai = {
+			date > 1939.1.1
+			NOT = {
+				any_neighbor_country = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.05
+				date < 1939.1.1
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
+			army_experience = 50
+			air_experience = 25
+
 		}
 	}
 
