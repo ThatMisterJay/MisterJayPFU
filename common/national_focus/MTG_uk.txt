@@ -95,6 +95,7 @@ focus_tree = {
 			USA = {
 				country_event = britain.1
 			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
