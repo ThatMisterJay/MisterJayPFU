@@ -700,13 +700,6 @@ on_actions = {
 			}
 
 			if = {
-				limit = { MAN = { is_ai = yes } }
-				JAP = {
-					add_ideas = JFU_generic_bonus_research
-				}
-			}
-
-			if = {
 				limit = { HUN = { is_ai = yes } }
 				GER = {
 					add_ideas = JFU_generic_bonus_research
