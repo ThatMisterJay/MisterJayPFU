@@ -168,6 +168,12 @@ country_event = {
 			uses = 1
 			category = synth_resources
 		}
+		add_tech_bonus = {
+				name = armored_divisions
+				bonus = 1.0
+				uses = 1
+				category = armor	
+			}
 		ITA = {
 			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
 		}
