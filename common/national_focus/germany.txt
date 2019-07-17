@@ -650,7 +650,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 50
 
-			add_ideas = GER_ace_idea
+			country_event = { id = JFU_germany.24 days = 1 }
 			add_tech_bonus = {
 				name = radar_tech_bonus
 				bonus = 1
