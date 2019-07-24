@@ -140,6 +140,9 @@
     usa.25.d:0 "With Vichy refusing to join our cause and the French troops in North Africa seemingly ready to fight us, we must be ready to fight..."
     usa.25.a:0 "Destroy them!"
     SOV_molotov_ribbentrop_tension:0 "Molotov Ribbentrop Claims"
+    JFUinfralimiter.1.t:0 "Infrastructure Limit Reached"
+    JFUinfralimiter.1.d:0 "You have reached the cap on infrastructure in the province you have built in. Please cancel any following infrastructure. This is done to help simulate more realistic and balanced supplies in Africa."
+    JFUinfralimiter.1.a:0 "At least its not Campaign For North Africa"
 
     JFU_germany.1.t:0 ""
     JFU_germany.1.d:0 ""
