@@ -17,7 +17,7 @@ state={
 				naval_base = 2
 			}
 			infrastructure = 3
-			air_base = 3
+			air_base = 5
 
 		}
 

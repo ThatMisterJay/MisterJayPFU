@@ -364,6 +364,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = sumitomo
+			add_political_power = 150
 		}
 	}
 	
@@ -587,7 +588,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JAP_national_defense_state
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -603,6 +604,21 @@ focus_tree = {
 				technology = excavation4
 				technology = excavation5
 			}
+
+			add_tech_bonus = {
+				name = JAP_coal_liquification
+				bonus = 1.0 
+				uses = 2
+				category = synth_resources	
+			}
+
+			add_tech_bonus = {
+				name = JAP_coal_liquification
+				bonus = 1.0  
+				uses = 1
+				technology = fuel_refining	
+			}
+
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = JAP_idemitsu_kosan
 		}
@@ -2242,8 +2258,8 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_Riku_Bonus
-				bonus = 1
-				uses = 2
+				bonus = 3
+				uses = 4
 				category = marine_tech
 				technology = jungletroops
 				technology = jungletroops2
@@ -2251,7 +2267,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = tp_bonus
-				bonus = 1
+				bonus = 3
 				uses = 1
 				technology = mtg_transport
 				technology = mtg_landing_craft
