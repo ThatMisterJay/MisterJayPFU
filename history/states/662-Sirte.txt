@@ -5,6 +5,10 @@ state={
 	
 	state_category = wasteland
 	
+	resources={
+		oil=10
+		rubber=4
+	}
 	
 	history={
 		owner = ITA

@@ -4,6 +4,10 @@ state={
 	name="STATE_273" # Libyan Desert
 	manpower = 42633
 
+	resources={
+		oil=12
+	}
+	
 	state_category = wasteland
 	impassable = yes
 
