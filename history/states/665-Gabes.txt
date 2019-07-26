@@ -3,13 +3,13 @@ state={
 	name="STATE_665"
 
 	resources={
-		aluminium=10
+		aluminium=13
 	}
 
 	history={
 		owner = FRA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = FRA
