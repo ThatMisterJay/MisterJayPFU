@@ -743,23 +743,31 @@ political_actions = {
 		cost = 30
 
 		visible = {
-			tag = ENG
+			OR = {
+				tag = NZL
+				tag = ENG
+				tag = RAJ
+			}
 			AST = { is_ai = yes }
 			country_exists = AST
 		}
 
 		allowed = {
-			tag = ENG
+			OR = {
+				tag = NZL
+				tag = ENG
+				tag = RAJ
+			}
 		}
 
 		complete_effect = {
 			AST = {
 				every_owned_state = {
 					limit = { is_core_of = AST }
-					add_core_of = ENG
+					add_core_of = ROOT
 				}
 			}
-			ENG = {
+			ROOT = {
 				annex_country = { target = AST transfer_troops = yes }
 				add_ideas = annex_australia_idea
 			}
