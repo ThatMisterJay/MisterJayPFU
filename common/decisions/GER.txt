@@ -90,10 +90,18 @@ political_actions = {
 		ai_will_do = { factor = 0 }
 		cost = 20
 
-		allowed = { tag = GER }
+		allowed = {
+			OR = {
+				tag = GER
+				tag = ROM
+			}
+		}
 
 		visible = {
-			tag = GER
+			OR = {
+				tag = GER
+				tag = ROM
+			}
 			BUL = { is_ai = yes }
 			country_exists = BUL
 		}
@@ -108,6 +116,33 @@ political_actions = {
 			GER = {
 				annex_country = { target = BUL transfer_troops = yes }
 				add_ideas = annex_bulgaria_idea
+			}
+		}
+	}
+
+	annex_romania = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+
+		allowed = { tag = GER }
+
+		visible = {
+			tag = GER
+			ROM = { is_ai = yes }
+			country_exists = ROM
+			date > 1940.1.1
+		}
+
+		complete_effect = {
+			ROM = {
+				every_owned_state = {
+					limit = { is_core_of = ROM }
+					add_core_of = GER
+				}
+			}
+			GER = {
+				annex_country = { target = ROM transfer_troops = yes }
+				add_ideas = annex_romania_idea
 			}
 		}
 	}

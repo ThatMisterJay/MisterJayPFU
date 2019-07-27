@@ -7,6 +7,7 @@
     annex_new_zealand_idea:0 "Annexed New Zealand"
     annex_bulgaria_idea:0 "Annexed Bulgaria"
     annex_hungary_idea:0 "Annexed Hungary"
+    annex_romania_idea:0 "Annexed Romania"
     annex_siam_idea:0 "Annexed Siam"
 
     annex_canada:0 "Annex Canada"
@@ -23,6 +24,8 @@
     annex_bulgaria_desc:0 "Only to be used when no replacement player can be found for Bulgaria."
     annex_hungary:0 "Annex Hungary"
     annex_hungary_desc:0 "Only to be used when no replacement player can be found for Hungary."
+    annex_romania:0 "Annex Romania"
+    annex_romania_desc:0 "Only to be used when no replacement player can be found for Hungary."
     puppet_vichy_france:0 "Puppet Vichy France"
     puppet_vichy_france_desc:0 "Use this when something goes wrong and Vichy France does not end up as a puppet or if Vichy France is a player."
     JAP_war_with_uk:0 "War with the United Kingdom"

@@ -181,6 +181,16 @@ ideas = {
 			}
 		}
 
+		annex_romania_idea = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
 		annex_siam_idea = {
 			allowed = { always = yes }
 			removal_cost = -1
