@@ -1386,7 +1386,6 @@ country_event = {
 			limit = { country_exists = CZE }
 			annex_country = { target = CZE }
 		}
-		puppet = SLO
 		if = {
 			limit = {
 				72 = {
@@ -1428,6 +1427,10 @@ country_event = {
 				load_oob = "SLO_1939"
 				add_manpower = 50000
 				add_political_power = 600
+			}
+			every_state = {
+				limit = { is_core_of = CZE }
+				remove_core_of = CZE
 			}
 		}
 	}

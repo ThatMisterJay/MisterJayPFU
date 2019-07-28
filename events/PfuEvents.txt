@@ -120,6 +120,10 @@ country_event = {
 
 			load_oob = "CRO_1939"
 		}
+		every_state = {
+			limit = { is_core_of = YUG }
+			remove_core_of = YUG
+		}
 	}
 }
 
