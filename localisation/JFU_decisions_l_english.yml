@@ -1,3 +1,4 @@
+
 ﻿l_english:
     force_soviet_peacedeal:0 "Make a Peacedeal with the Germans"
     annex_canada_idea:0 "Annexed Canada"
@@ -43,6 +44,16 @@
     SOV_annex_afghanistan:0 "Annex Afghanistan"
 
     USA_operation_husky:0 "Operation Husky"
+
+    USA_Pacific_Campaign:0 "Pacific Campaign"
+    pacific_campaign:0 "Campaign Active"
+    USA_Solomans_Campaign:0 "Solomans Campaign"
+    USA_Marshall_Islands_Campaign:0 "Marshall Islands Campaign"
+    USA_Saipan_Campaign:0 "Saipan Campaign"
+    USA_Palau_Campaign:0 "Palau Campaign"
+    USA_Philippines_Campaign:0 "Philippines Campaign"
+    USA_Iwo_Jima_Campaign:0 "Iwo Jima Campaign"
+    USA_Okinawa_Campaign:0 "Okinawa Campaign"
 
     CHI_resistance_organise:0 "Organise the Resistance"
     CHI_resistance_rise_up:0 "Rise My Minions!"

@@ -3,7 +3,7 @@ ideas = {
 
 		JAP_resistance_00 = {
 			allowed = { always = yes }
-			picture = tfv_can_conscription_crisis
+			picture = jap_ichi_go
 			removal_cost = -1
 
 			targeted_modifier = {
@@ -14,36 +14,58 @@ ideas = {
 		}
 		JAP_resistance_0 = {
 			allowed = { always = yes }
-			picture = tfv_can_conscription_crisis
+			picture = jap_ichi_go
 			removal_cost = -1
 			modifier = {
 			}
 		}
 		JAP_resistance_1 = {
 			allowed = { always = yes }
-			picture = tfv_can_conscription_crisis
+			picture = jap_ichi_go
 			removal_cost = -1
-			modifier = {
-				army_attack_factor = -0.10
-				army_defence_factor = -0.10
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.1
 			}
 		}
 		JAP_resistance_2 = {
 			allowed = { always = yes }
-			picture = tfv_can_conscription_crisis
+			picture = jap_ichi_go
 			removal_cost = -1
-			modifier = {
-				army_attack_factor = -0.20
-				army_defence_factor = -0.20
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.20
 			}
 		}
 		JAP_resistance_3 = {
 			allowed = { always = yes }
-			picture = tfv_can_conscription_crisis
+			picture = jap_ichi_go
 			removal_cost = -1
-			modifier = {
-				army_attack_factor = -0.30
-				army_defence_factor = -0.30
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.4
+			}
+		}
+		JAP_resistance_4 = {
+			allowed = { always = yes }
+			picture = jap_ichi_go
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.4
+				industrial_capacity_factory = -0.1
+				conscription = -0.005
+			}
+		}
+		JAP_resistance_5 = {
+			allowed = { always = yes }
+			picture = jap_ichi_go
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.4
+				industrial_capacity_factory = -0.2
+				conscription = -0.01
 			}
 		}
 

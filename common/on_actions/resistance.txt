@@ -15,65 +15,89 @@ on_actions = {
 				limit = { country_has_resistance = yes }
 
 				if = {
-					limit = { check_variable = { resistance_variable < 10 } }
+					limit = { check_variable = { resistance_variable < 8 } }
 					add_ideas = JAP_resistance_00
 					if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_1 }
 						remove_ideas = JAP_resistance_1
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_2 }
 						remove_ideas = JAP_resistance_2
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_3 }
 						remove_ideas = JAP_resistance_3
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_4 }
+						remove_ideas = JAP_resistance_4
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_5 }
+						remove_ideas = JAP_resistance_5
 					}
 				}
 
 				if = {
-					limit = { check_variable = { resistance_variable > 9 } }
+					limit = { check_variable = { resistance_variable > 7 } }
 					add_ideas = JAP_resistance_0
 					if = {
 						limit = { has_idea = JAP_resistance_00 }
 						remove_ideas = JAP_resistance_00
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_1 }
 						remove_ideas = JAP_resistance_1
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_2 }
 						remove_ideas = JAP_resistance_2
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_3 }
 						remove_ideas = JAP_resistance_3
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_4 }
+						remove_ideas = JAP_resistance_4
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_5 }
+						remove_ideas = JAP_resistance_5
 					}
 				}
 
 				if = {
-					limit = { check_variable = { resistance_variable > 14 } }
+					limit = { check_variable = { resistance_variable > 9 } }
 					add_ideas = JAP_resistance_1
 					if = {
 						limit = { has_idea = JAP_resistance_00 }
 						remove_ideas = JAP_resistance_00
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_2 }
 						remove_ideas = JAP_resistance_2
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_3 }
 						remove_ideas = JAP_resistance_3
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_4 }
+						remove_ideas = JAP_resistance_4
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_5 }
+						remove_ideas = JAP_resistance_5
 					}
 					if = {
 						limit = {
@@ -93,23 +117,31 @@ on_actions = {
 				}
 
 				if = {
-					limit = { check_variable = { resistance_variable > 19 } }
+					limit = { check_variable = { resistance_variable > 11 } }
 					add_ideas = JAP_resistance_2
 					if = {
 						limit = { has_idea = JAP_resistance_00 }
 						remove_ideas = JAP_resistance_00
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_1 }
 						remove_ideas = JAP_resistance_1
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_3 }
 						remove_ideas = JAP_resistance_3
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_4 }
+						remove_ideas = JAP_resistance_4
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_5 }
+						remove_ideas = JAP_resistance_5
 					}
 					if = {
 						limit = { NOT = {  CHI = { has_idea = CHI_resistance_2 } } }
@@ -122,24 +154,94 @@ on_actions = {
 
 				if = {
 					limit = {
-						check_variable = { resistance_variable > 24 }
+						check_variable = { resistance_variable > 13 }
 					}
 					add_ideas = JAP_resistance_3
 					if = {
 						limit = { has_idea = JAP_resistance_00 }
 						remove_ideas = JAP_resistance_00
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_0 }
 						remove_ideas = JAP_resistance_0
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_1 }
 						remove_ideas = JAP_resistance_1
 					}
-					if = {
+					else_if = {
 						limit = { has_idea = JAP_resistance_2 }
 						remove_ideas = JAP_resistance_2
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_4 }
+						remove_ideas = JAP_resistance_4
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_5 }
+						remove_ideas = JAP_resistance_5
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = { resistance_variable > 19 }
+					}
+					add_ideas = JAP_resistance_4
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_5 }
+						remove_ideas = JAP_resistance_5
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = { resistance_variable > 24 }
+					}
+					add_ideas = JAP_resistance_5
+					if = {
+						limit = { has_idea = JAP_resistance_00 }
+						remove_ideas = JAP_resistance_00
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_0 }
+						remove_ideas = JAP_resistance_0
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_1 }
+						remove_ideas = JAP_resistance_1
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_2 }
+						remove_ideas = JAP_resistance_2
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_3 }
+						remove_ideas = JAP_resistance_3
+					}
+					else_if = {
+						limit = { has_idea = JAP_resistance_4 }
+						remove_ideas = JAP_resistance_4
 					}
 				}
 

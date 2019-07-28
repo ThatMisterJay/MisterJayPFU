@@ -1067,14 +1067,7 @@ country_event = {
 	desc = soviet.31.d
 	picture = GFX_report_event_stalin_propaganda
 
-	fire_only_once = yes
-
-	trigger = {
-		tag = SOV
-		has_global_flag = finland_flag
-		NOT = { has_country_flag = karjala_demand }
-	}
-	mean_time_to_happen = { days = 5 }
+	is_triggered_only = yes
 
 	immediate = { set_country_flag = karjala_demand }
 

@@ -678,8 +678,8 @@ on_actions = {
 			}
 			JAP = {
 				country_event = { id = pfu.28 }
-				country_event = { id = pfu.26 days = 1746 }
 				country_event = { id = pfu.27 days = 1736 }
+				country_event = { id = Jfujap.4 days = 553}
 			}
 
 			if = {

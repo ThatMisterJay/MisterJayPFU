@@ -551,6 +551,7 @@ focus_tree = {
 				has_war_with = JAP
 				has_war_with = MAN
 			}
+			date > 1943.1.1
 			has_country_flag = CHI_army_reform_completed
 		}
 
