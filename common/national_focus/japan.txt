@@ -1,6 +1,6 @@
 focus_tree = {
 	id = japan_focus
-	
+
 	country = {
 		factor = 0
 
@@ -9,7 +9,7 @@ focus_tree = {
 			tag = JAP
 		}
 	}
-	
+
 	focus = {
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_goal_generic_major_war
@@ -26,23 +26,15 @@ focus_tree = {
 			factor = 10
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			set_country_flag = kodoha_purge
 			add_political_power = 150
 			JAP = { country_event = { id = Jfujap.1 days = 1 } }
-			
+
 		}
 	}
 
@@ -55,13 +47,9 @@ focus_tree = {
 		y = 1
 
 		cost = 10
-		
+
 		ai_will_do = {
 			factor = 2
-		}
-
-		available = {
-
 		}
 
 		bypass = {
@@ -77,7 +65,7 @@ focus_tree = {
 				add_ideas = war_economy
 		}
 	}
-	
+
 	focus = {
 		id = JAP_national_spiritual_mobilization_movement
 		icon = GFX_focus_jap_spiritual_mobilization
@@ -91,14 +79,6 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -107,7 +87,7 @@ focus_tree = {
 			add_ideas = spiritual_mobilization_idea
 		}
 	}
-	
+
 	focus = {
 		id = JAP_national_service_draft_ordinance
 		icon = GFX_focus_generic_little_entente
@@ -121,14 +101,6 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -137,7 +109,7 @@ focus_tree = {
 			add_ideas = extensive_conscription
 		}
 	}
-	
+
 	focus = {
 		id = JAP_national_research_policy
 		icon = GFX_focus_research
@@ -151,14 +123,6 @@ focus_tree = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -168,7 +132,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
 		id = JAP_zaibatsus_integration
 		icon = GFX_focus_jap_zaibatsu
@@ -185,10 +149,6 @@ focus_tree = {
 			factor = 3
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -202,7 +162,7 @@ focus_tree = {
 			}
 			}
 		}
-	
+
 	focus = {
 		id = JAP_yasuda
 		icon = GFX_goal_generic_construct_civ_factory
@@ -219,10 +179,6 @@ focus_tree = {
 
 		available = {
 			has_civil_war = no
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -261,7 +217,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_mitsui
 		x = -2
@@ -285,7 +241,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_mitsubishi
 		x = 0
@@ -310,7 +266,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_sumitomo 
+		id = JAP_sumitomo
 		x = 0
 		y = -1
 		relative_position_id = JAP_mitsui
@@ -326,7 +282,7 @@ focus_tree = {
 			show_ideas_tooltip = sumitomo
 		}
 	}
-	
+
 	focus = {
 		id = JAP_totalist_economic_reform
 		x = 0
@@ -335,7 +291,7 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = JAP_mitsubishi }
 		prerequisite = { focus = JAP_mitsui }
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -346,7 +302,7 @@ focus_tree = {
 			add_ideas = JAP_Zaibatsu_Idea_Bonus
 		}
 	}
-	
+
 	focus = {
 		id = JAP_national_defense_state
 		icon = GFX_focus_jap_pacific_guardian
@@ -372,10 +328,6 @@ focus_tree = {
 
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -394,7 +346,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = fortress_japan_focus
 		prerequisite = { focus = JAP_national_defense_state }
@@ -480,7 +432,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_warrior_spirit
 		icon = GFX_focus_generic_japanese_imperial_glory
@@ -503,26 +455,18 @@ focus_tree = {
 			}
 		}
 
-		available = { 
+		available = {
 			OR = {
 					JAP = { surrender_progress > 0.05 }
 					date > 1943.1.1
 				}
 				has_war_with = USA
-			
-		}
-
-		bypass = {
 
 		}
 
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			hidden_effect = {
@@ -531,15 +475,15 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = kamikaze_focus_tooltip
-			if = { 
+			if = {
 				limit = {
 					has_dlc = "Waking the Tiger"
 				}
-				custom_effect_tooltip = cost_reduced_last_stand 
+				custom_effect_tooltip = cost_reduced_last_stand
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_autarky
 		icon = GFX_goal_generic_oil_refinery
@@ -551,7 +495,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_autarky
@@ -567,7 +511,7 @@ focus_tree = {
 			show_ideas_tooltip = JAP_idemitsu_kosan
 		}
 	}
-	
+
 	focus = {
 		id = JAP_military_adventurism
 		icon = GFX_goal_generic_more_territorial_claims
@@ -583,14 +527,6 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -599,10 +535,10 @@ focus_tree = {
 			army_experience = 30
 			air_experience = 30
 			navy_experience = 30
-			
+
 		}
 	}
-	
+
 	focus = {
 		id = test_the_ussr_focus
 		x = -3
@@ -630,7 +566,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_develop_chinese_resources
 		icon = GFX_focus_generic_aluminum
@@ -648,10 +584,6 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 758
 			has_full_control_of_state = 597
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -717,17 +649,17 @@ focus_tree = {
 		}
 		ai_will_do = {
 		}
-		
+
 		completion_reward = {
 			custom_effect_tooltip = JAP_china_defense_tt
 			if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = JAP
 							is_in_faction_with = JAP
 						}
-						has_full_control_of_state = 760 
+						has_full_control_of_state = 760
 					}
 				}
 				hidden_effect = {
@@ -749,15 +681,15 @@ focus_tree = {
 				}
 				}
 			}
-			
+
 			if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = JAP
 							is_in_faction_with = JAP
 						}
-						has_full_control_of_state = 758 
+						has_full_control_of_state = 758
 					}
 				}
 				hidden_effect = {
@@ -795,15 +727,15 @@ focus_tree = {
 				}
 			}
 			}
-			
+
 			if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = JAP
 							is_in_faction_with = JAP
 						}
-						has_full_control_of_state = 759 
+						has_full_control_of_state = 759
 					}
 				}
 				hidden_effect = {
@@ -825,15 +757,15 @@ focus_tree = {
 				}
 			}
 			}
-			
+
 			if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = JAP
 							is_in_faction_with = JAP
 						}
-						has_full_control_of_state = 592 
+						has_full_control_of_state = 592
 					}
 				}
 			hidden_effect = {
@@ -895,15 +827,15 @@ focus_tree = {
 				}
 			}
 			}
-			
+
 			if = {
-				limit = { 
+				limit = {
 					any_country = {
 						OR = {
 							tag = JAP
 							is_in_faction_with = JAP
 						}
-						has_full_control_of_state = 592 
+						has_full_control_of_state = 592
 					}
 				}
 			hidden_effect = {
@@ -919,7 +851,7 @@ focus_tree = {
 		}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_second_wind_china
 		x = 0
@@ -945,7 +877,7 @@ focus_tree = {
 			subtract_from_variable = { resistance_variable = resistance_variable }
 		}
 	}
-	
+
 	focus = {
 		id = defence_of_korea
 		x = 0
@@ -1099,7 +1031,7 @@ focus_tree = {
 			################################
 		}
 	}
-	
+
 	focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_army_doctrines
@@ -1119,14 +1051,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1139,7 +1063,7 @@ focus_tree = {
 				bonus = 1
 				category = land_doctrine
 				}
-			
+
 		}
 	}
 
@@ -1161,14 +1085,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1179,7 +1095,7 @@ focus_tree = {
 				name = JAP_small_arms_modernization
 				bonus = 1.0
 				uses = 1
-				category = infantry_weapons	
+				category = infantry_weapons
 			}
 		}
 	}
@@ -1198,14 +1114,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1216,7 +1124,7 @@ focus_tree = {
 				name = JAP_modern_artillery
 				bonus = 1.0
 				uses = 2
-				category = artillery	
+				category = artillery
 			}
 		}
 	}
@@ -1235,14 +1143,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1253,7 +1153,7 @@ focus_tree = {
 				name = JAP_armored_divisions
 				bonus = 1.0
 				uses = 1
-				category = armor	
+				category = armor
 			}
 		}
 	}
@@ -1276,14 +1176,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1295,7 +1187,7 @@ focus_tree = {
 		}
 	}
 
-	
+
 		focus = {
 		id = JAP_supremacy_of_will
 		icon = GFX_goal_demand_sudetenland
@@ -1314,14 +1206,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1331,7 +1215,7 @@ focus_tree = {
 			add_ideas = JAP_superior_will
 		}
 	}
-	
+
 	focus = {
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
@@ -1347,14 +1231,6 @@ focus_tree = {
 			factor = 2
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1363,7 +1239,7 @@ focus_tree = {
 			add_ideas = JAP_liaison_conference
 		}
 	}
-	
+
 	focus = {
 		id = JAP_strike_south_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -1382,14 +1258,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1399,12 +1267,12 @@ focus_tree = {
 				name = JAP_strike_south_doctrine
 				bonus = 1.0
 				uses = 1
-				category = naval_doctrine	
+				category = naval_doctrine
 			}
 			unlock_decision_tooltip = JAP_pressure_france
 		}
 	}
-	
+
 	focus = {
 		id = siamese_puppet_focus
 		prerequisite = { focus = JAP_strike_south_doctrine }
@@ -1456,17 +1324,17 @@ focus = {
 
 		available = {
 			date > 1940.12.5
-			
-				
+
+
 		}
-		
-		will_lead_to_war_with = USA 
-		will_lead_to_war_with = ENG 
-		
-		bypass = { 
-			OR = { 
-				has_war_with = ENG 
-				has_war_with = USA 
+
+		will_lead_to_war_with = USA
+		will_lead_to_war_with = ENG
+
+		bypass = {
+			OR = {
+				has_war_with = ENG
+				has_war_with = USA
 			}
 		}
 
@@ -1479,11 +1347,11 @@ focus = {
 		completion_reward = {
 			JAP = { country_event = { id = Jfujap.2 } }
 			unlock_decision_tooltip = JAP_tora_tora_tora
-			
-		
+
+
 		}
 	}
-	
+
 	focus = {
 		id = JAP_coal_liquification
 		icon = GFX_goal_generic_oil_refinery
@@ -1502,43 +1370,35 @@ focus = {
 			528 = { is_fully_controlled_by = ROOT }
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 		MAN = { set_technology = { synth_oil_experiments = 1 }
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 2
-				category = synth_resources	
+				category = synth_resources
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				ahead_reduction = 3  
+				ahead_reduction = 3
 				uses = 1
-				technology = fuel_refining3	
+				technology = fuel_refining3
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				ahead_reduction = 3  
+				ahead_reduction = 3
 				uses = 1
-				technology = fuel_refining4	
+				technology = fuel_refining4
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				ahead_reduction = 3  
+				ahead_reduction = 3
 				uses = 1
-				technology = fuel_refining5	
+				technology = fuel_refining5
 			}
 		}
 			528 = {
@@ -1551,31 +1411,31 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 2
-				category = synth_resources	
+				category = synth_resources
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				ahead_reduction = 3  
+				ahead_reduction = 3
 				uses = 1
-				technology = fuel_refining3	
+				technology = fuel_refining3
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				ahead_reduction = 3  
+				ahead_reduction = 3
 				uses = 1
-				technology = fuel_refining4	
+				technology = fuel_refining4
 			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
-				ahead_reduction = 3  
+				ahead_reduction = 3
 				uses = 1
-				technology = fuel_refining5	
+				technology = fuel_refining5
 			}
 		}
 	}
-		
+
 	focus = {
 		id = JAP_exploit_the_southern_resource_area
 		icon = GFX_goal_generic_construction2
@@ -1600,17 +1460,9 @@ focus = {
 			has_full_control_of_state = 671
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			336 = {
@@ -1666,7 +1518,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_fighter_modernization
 		icon = GFX_goal_generic_air_fighter2
@@ -1686,28 +1538,16 @@ focus = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 3
-				category = air_doctrine 	
+				category = air_doctrine
 			}
 		}
 	}
@@ -1726,21 +1566,9 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -1766,21 +1594,9 @@ focus = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -1819,10 +1635,6 @@ focus = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = { set_technology = { cv_fighter2 = 1 } }
@@ -1843,29 +1655,17 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 1
 				category = cas_bomber
-				category = tactical_bomber					
+				category = tactical_bomber
 			}
 		}
 	}
@@ -1884,21 +1684,9 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1922,7 +1710,7 @@ focus = {
 		prerequisite = { focus = JAP_the_zero }
 		x = 18
 		y = 5
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 2
@@ -1943,7 +1731,7 @@ focus = {
 				}
 			}
 	}
-	
+
 	focus = {
 		id = JAP_jet_prototypes
 		icon = GFX_goal_generic_build_airforce
@@ -1962,28 +1750,20 @@ focus = {
 			date > 1943.10.1
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_jet_prototypes
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 2
 				category = jet_technology
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_new_naval_estimates
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -2003,10 +1783,6 @@ focus = {
 
 		available = {has_country_flag = kodoha_purge }
 
-
-		bypass = {
-
-		}
 
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -2063,7 +1839,7 @@ focus = {
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT					
+					is_core_of = ROOT
 					free_building_slots = {
 						building = dockyard
 						size > 1
@@ -2099,21 +1875,9 @@ focus = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2124,14 +1888,14 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = JAP_carrier_warfare_experiments
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 1
 				category = cv_tech
 			}
 			navy_experience = 50
 		}
 	}
-	
+
 	focus = {
 		id = JAP_expand_the_snlf
 		icon = GFX_goal_generic_amphibious_assault
@@ -2150,21 +1914,9 @@ focus = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2212,21 +1964,9 @@ focus = {
 			}
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = JAP_first_air_fleet
@@ -2248,28 +1988,16 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_escorts
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 1
-				category = dd_tech	
+				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = JAP_battery_bonus
@@ -2281,7 +2009,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_Nagasaki_Shipyards
 		x = -3
@@ -2322,7 +2050,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = JAP_Kawasaki_Docks
 		x = 0
@@ -2362,7 +2090,7 @@ focus = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = naval_base_focus
 		prerequisite = { focus = JAP_Kawasaki_Docks }
@@ -2431,7 +2159,7 @@ focus = {
 			526 = { add_resource = { type = oil amount = 10 } }
 		}
 	}
-	
+
 	focus = {
 		id = JAP_supremacy_of_the_battlefleet
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -2446,26 +2174,14 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
-				bonus = 1.0 
+				bonus = 1.0
 				uses = 1
 				category = bb_tech
 			}
@@ -2488,21 +2204,9 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
@@ -2513,7 +2217,7 @@ focus = {
 					name = JAP_the_ultimate_battleship
 					bonus = 3.0
 					uses = 1
-					category = shbb_tech	
+					category = shbb_tech
 				}
 			}
 			else = {
@@ -2552,10 +2256,10 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_1
-							creator = "JAP" 
+							creator = "JAP"
 							version_name = "Yamato Class"
 						}
-						name = "Yamato" 
+						name = "Yamato"
 						requested_factories = 1
 						progress = 0.7
 						amount = 1
@@ -2563,10 +2267,10 @@ focus = {
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_1
-							creator = "JAP" 
+							creator = "JAP"
 							version_name = "Yamato Class"
 						}
-						name = "Musashi" 
+						name = "Musashi"
 						requested_factories = 1
 						progress = 0.5
 						amount = 1
@@ -2590,34 +2294,22 @@ focus = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
 				bonus = 1
-				uses = 1	
-				category = ca_tech	
+				uses = 1
+				category = ca_tech
 			}
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
 				bonus = 1
 				uses = 1
-				category = cl_tech	
+				category = cl_tech
 			}
 		}
 	}
@@ -2636,27 +2328,15 @@ focus = {
 			factor = 4
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = the_long_lance
 		}
 	}
-	
+
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
@@ -2887,10 +2567,6 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			715 = {
 				add_extra_state_shared_building_slots = 2
@@ -2974,7 +2650,7 @@ focus = {
 			328 = { add_extra_state_shared_building_slots = 3 }
 		}
 	}
-	
+
 	focus = {
 		id = JAP_torpedo_cruisers
 		icon = GFX_goal_generic_navy_cruiser
@@ -2987,14 +2663,6 @@ focus = {
 
 		ai_will_do = {
 			factor = 2
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes

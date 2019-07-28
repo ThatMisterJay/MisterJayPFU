@@ -11,7 +11,7 @@ state={
 		victory_points = { 8123 5 } #Erbil
 		victory_points = { 10106 10 }
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 
 			arms_factory = 1
 			industrial_complex = 2

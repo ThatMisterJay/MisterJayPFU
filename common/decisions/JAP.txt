@@ -307,7 +307,7 @@ JAP_interservice_rivalry = {
 			factor = 1
 		}
 		modifier = {
-			special_forces_attack_factor = 0.05 
+			special_forces_attack_factor = 0.05
 			special_forces_defence_factor = 0.05
 		}
 		complete_effect = {
@@ -325,40 +325,40 @@ JAP_interservice_rivalry = {
 				has_country_flag = JAP_war_conferences_cd
 			}
 			AND = {
-				OR = { 
-					has_country_flag = JAP_raiding_regiments 
+				OR = {
+					has_country_flag = JAP_raiding_regiments
 					has_country_flag = JAP_special_air_landing_force
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_everybody_serves
 					has_country_flag = JAP_draft_exemptions
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_prioritize_naval_aircraft_construction
 					has_country_flag = JAP_prioritize_army_aircraft_construction
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_steel_for_guns
 					has_country_flag = JAP_steel_for_ships
 				}
 			}
-			
+
 		}
 		visible = {
 			AND = {
-				OR = { 
-					has_country_flag = JAP_raiding_regiments 
+				OR = {
+					has_country_flag = JAP_raiding_regiments
 					has_country_flag = JAP_special_air_landing_force
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_everybody_serves
 					has_country_flag = JAP_draft_exemptions
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_prioritize_naval_aircraft_construction
 					has_country_flag = JAP_prioritize_army_aircraft_construction
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_steel_for_guns
 					has_country_flag = JAP_steel_for_ships
 				}
@@ -369,7 +369,7 @@ JAP_interservice_rivalry = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			JAP_interservice_rivalry_towards_army = yes
@@ -379,45 +379,45 @@ JAP_interservice_rivalry = {
 
 		icon = generic_naval
 
-		available = { 
+		available = {
 			NOT = {
 				has_country_flag = JAP_war_conferences_cd
 			}
 			AND = {
-				OR = { 
-					has_country_flag = JAP_raiding_regiments 
+				OR = {
+					has_country_flag = JAP_raiding_regiments
 					has_country_flag = JAP_special_air_landing_force
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_everybody_serves
 					has_country_flag = JAP_draft_exemptions
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_prioritize_naval_aircraft_construction
 					has_country_flag = JAP_prioritize_army_aircraft_construction
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_steel_for_guns
 					has_country_flag = JAP_steel_for_ships
 				}
 			}
-			
+
 		}
 		visible = {
 			AND = {
-				OR = { 
-					has_country_flag = JAP_raiding_regiments 
+				OR = {
+					has_country_flag = JAP_raiding_regiments
 					has_country_flag = JAP_special_air_landing_force
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_everybody_serves
 					has_country_flag = JAP_draft_exemptions
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_prioritize_naval_aircraft_construction
 					has_country_flag = JAP_prioritize_army_aircraft_construction
 				}
-				OR = { 
+				OR = {
 					has_country_flag = JAP_steel_for_guns
 					has_country_flag = JAP_steel_for_ships
 				}
@@ -428,7 +428,7 @@ JAP_interservice_rivalry = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		complete_effect = {
 			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
 			JAP_interservice_rivalry_towards_navy = yes
@@ -655,24 +655,6 @@ political_actions = {
 			remove_opinion_modifier = { target = FRA modifier = JAP_join_the_london_naval_treaty }
 			remove_opinion_modifier = { target = USA modifier = JAP_join_the_london_naval_treaty }
 			remove_opinion_modifier = { target = ENG modifier = JAP_join_the_london_naval_treaty }
-		}
-	}
-
-	puppet_siam = {
-		ai_will_do = { factor = 0 }
-		cost = 50
-
-		visible = {
-			tag = JAP
-			country_exists = SIA
-			date > 1940.3.1
-			NOT = { SIA = { is_puppet_of = JAP } }
-		}
-
-		complete_effect = {
-			JAP = {
-				puppet = SIA
-			}
 		}
 	}
 
@@ -1255,7 +1237,7 @@ prospect_for_resources = {
 
 JAP_southern_expansion = {
 
-	JAP_pressure_france = { 
+	JAP_pressure_france = {
 
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } }
@@ -1282,17 +1264,17 @@ JAP_southern_expansion = {
 
 		}
 
-		cost = 75
+		cost = 0
 
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				factor = 0
 				FRA = { has_war = no }
-			}			
+			}
 			modifier = {
 				factor = 3
-				FRA = { has_war = yes } 
+				FRA = { has_war = yes }
 				OR = {
 					16 = { NOT = { is_controlled_by = FRA } } #Paris
 					strength_ratio = {
@@ -1308,73 +1290,73 @@ JAP_southern_expansion = {
 		}
 
 	}
-	
-	JAP_tora_tora_tora = { 
-	
+
+	JAP_tora_tora_tora = {
+
 		icon = generic_operation
 		fire_only_once = yes
-		
-		allowed = { 
-			tag = JAP 
+
+		allowed = {
+			tag = JAP
 		}
-	
-		available = { 
+
+		available = {
 			has_completed_focus = JAP_strike_on_the_southern_resource_area
-			NOT = { has_war_with = USA } 
-			NOT = { has_war_with = ENG } 
-		}	
-	
+			NOT = { has_war_with = USA }
+			NOT = { has_war_with = ENG }
+		}
+
 		cost = 0
-		
+
 		days_remove = 1
-		
+
 		ai_will_do = {
 			factor = 0
-			
+
 		}
-		
-		visible = { 
-			has_completed_focus = JAP_strike_on_the_southern_resource_area  
+
+		visible = {
+			has_completed_focus = JAP_strike_on_the_southern_resource_area
 		}
-		
+
 		complete_effect = {
-		    ENG = { 
+		    ENG = {
 				annex_country = {
-					target = INS  
-					transfer_troops = yes 
+					target = INS
+					transfer_troops = yes
 				}
 			}
 			333 = { set_demilitarized_zone = no }
 		}
-		
+
 		remove_effect = {
-			USA = { country_event = Jfujap.3 } 
-			USA = { 
-				add_timed_idea = { 
+			USA = { country_event = Jfujap.3 }
+			USA = {
+				add_timed_idea = {
 					idea = USA_fleet_in_chaos
 					days = 120
 				}
 			}
-			JAP = { 
-				add_timed_idea = { 
-					idea = JAP_surprise_attack 
-					days = 120 
+			JAP = {
+				add_timed_idea = {
+					idea = JAP_surprise_attack
+					days = 120
 				}
 			}
 			declare_war_on = {
-				target = USA 
+				target = USA
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = PHI 
+				target = PHI
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = ENG 
+				target = ENG
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = FRA 
+				target = FRA
 				type = annex_everything
 			}
 			declare_war_on = {
@@ -1390,15 +1372,14 @@ JAP_southern_expansion = {
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = NZL 
+				target = NZL
 				type = annex_everything
 			}
 			declare_war_on = {
-				target = SAF 
+				target = SAF
 				type = annex_everything
 			}
 		}
-	
+
 	}
-}
 }

@@ -1,0 +1,168 @@
+on_actions = {
+    on_startup = {
+		effect = {
+
+            if = { 
+			limit = { 
+				NOT = { has_global_flag = impassable_infra_list_created } 
+			}
+			set_global_flag = impassable_infra_list_created 
+			
+			###0 Infra states### 
+			
+			add_to_array = { global.impassable_infra_list = 767 } #South Darfur, Sahara Desert
+			add_to_array = { global.impassable_infra_list = 552 } #Western Desert, Sahara Desert
+			add_to_array = { global.impassable_infra_list = 273 } #Borkou-Ennedi-Tibesti, Sahara Desert
+			add_to_array = { global.impassable_infra_list = 457 } #Eastern Desert, Egypt
+            add_to_array = { global.impassable_infra_list = 515 } #Southern Sahara, Sahara Desert
+			add_to_array = { global.impassable_infra_list = 514 } #Algerian Desert, Sahara Desert
+            add_to_array = { global.impassable_infra_list = 552 } #Western Desert, Egypt
+            add_to_array = { global.impassable_infra_list = 661 } #Tripolitania, Libya
+            add_to_array = { global.impassable_infra_list = 656 } #Kuwait, Iraq
+            add_to_array = { global.impassable_infra_list = 662 } #Sirte, Libya
+            add_to_array = { global.impassable_infra_list = 776 } #East Khartoum, Sudan Desert
+            add_to_array = { global.impassable_infra_list = 775 } #Darfur, Sudan Desert
+			add_to_array = { global.impassable_infra_list = 782 } #Tombouctou, Sahara Desert
+			add_to_array = { global.impassable_infra_list = 786 } #Mauritanian Desert, Sahara Desert
+
+		}
+
+        if = { 
+			limit = { 
+				NOT = { has_global_flag = two_infra_list_created } 
+			}
+			set_global_flag = impassable_two_list_created 
+			
+			###2 Infra States### 
+			
+            add_to_array = { global.two_infra_list = 663 } #Cyrenica
+            add_to_array = { global.two_infra_list = 451 } #Derna
+            add_to_array = { global.two_infra_list = 453 } #Sinai
+            add_to_array = { global.two_infra_list = 454 } #Palestine
+            add_to_array = { global.two_infra_list = 455 } #Jordan
+            add_to_array = { global.two_infra_list = 553 } #Lebanon
+            add_to_array = { global.two_infra_list = 554 } #Damascus
+            add_to_array = { global.two_infra_list = 680 } #Deir-az-zur
+            add_to_array = { global.two_infra_list = 677 } #Aleppo
+            add_to_array = { global.two_infra_list = 675 } #Al Hajara
+            add_to_array = { global.two_infra_list = 676 } #Mosul
+            add_to_array = { global.two_infra_list = 291 } #Baghdad
+            add_to_array = { global.two_infra_list = 781 } #Wasit
+            add_to_array = { global.two_infra_list = 780 } #Al-Muthanna
+            add_to_array = { global.two_infra_list = 779 } #Al- Basrah  
+            add_to_array = { global.two_infra_list = 456 } #Aswan
+            add_to_array = { global.two_infra_list = 551 } #Khartoum
+            add_to_array = { global.two_infra_list = 268 } #F Somaliland
+            add_to_array = { global.two_infra_list = 269 } #B Somaliland
+            add_to_array = { global.two_infra_list = 665 } #Gabes
+            add_to_array = { global.two_infra_list = 513 } #Tlemcen
+            add_to_array = { global.two_infra_list = 460 } #Constantine
+            add_to_array = { global.two_infra_list = 459 } #Algiers
+            add_to_array = { global.two_infra_list = 462 } #Marrakech       
+
+		}
+
+        if = { 
+			limit = { 
+				NOT = { has_global_flag = three_infra_list_created } 
+			}
+			set_global_flag = impassable_three_list_created 
+			
+			###3 Infra States### 
+            add_to_array = { global.three_infra_list = 448 } #Tripoli
+            add_to_array = { global.three_infra_list = 450 } #Benghasi
+			add_to_array = { global.three_infra_list = 446 } #Cairo
+            add_to_array = { global.three_infra_list = 447 } #Alexandria
+			add_to_array = { global.three_infra_list = 449 } # El Agheila
+            add_to_array = { global.three_infra_list = 452 } #Masa Matruh
+            add_to_array = { global.three_infra_list = 779 } #Al-Basrah
+            add_to_array = { global.three_infra_list = 550 } #Eritrea
+            add_to_array = { global.three_infra_list = 559 } #Somaliland
+            add_to_array = { global.three_infra_list = 458 } #Tunisia
+            add_to_array = { global.three_infra_list = 461 } #Casablanca
+
+		}
+
+
+        }
+	}		
+
+    #THIS IS THE INFRASTRUCTURE LIMITER. 
+	on_daily = { 
+		effect = {
+			 if = {
+                limit = { NOT = { has_global_flag = infra_limiter_ran } }
+				for_each_scope_loop = {
+					array = global.impassable_infra_list
+					if = {
+						limit = { 
+							infrastructure > 0 
+						}
+						remove_building = { 
+							type = infrastructure 
+							level = 1 
+						}
+						controller = { 
+							PREV = { save_event_target_as = JFU_badinfra1 } 
+							country_event = { id = JFUinfralimiter.1 }
+						}
+					}
+			
+				}
+				set_global_flag = { flag = infra_limiter_ran value = 1 days = 1 }
+			}	
+		}
+	}		
+
+    #THIS IS THE INFRASTRUCTURE LIMITER. 
+	on_daily = { 
+		effect = {
+			 if = {
+                limit = { NOT = { has_global_flag = infra_limiterthree_ran } }
+				for_each_scope_loop = {
+					array = global.three_infra_list
+					if = {
+						limit = { 
+							infrastructure > 3 
+						}
+						remove_building = { 
+							type = infrastructure 
+							level = 1 
+						}
+						controller = { 
+							PREV = { save_event_target_as = JFU_badinfra1 } 
+							country_event = { id = JFUinfralimiter.1 }
+						}
+					}
+			
+				}
+				set_global_flag = { flag = infra_limiterthree_ran value = 1 days = 1 }
+			}	
+		}
+	}	
+
+    on_daily = { 
+		effect = {
+			 if = {
+                limit = { NOT = { has_global_flag = infra_limitertwo_ran } }
+				for_each_scope_loop = {
+					array = global.two_infra_list
+					if = {
+						limit = { 
+							infrastructure > 2 
+						}
+						remove_building = { 
+							type = infrastructure 
+							level = 1 
+						}
+						controller = { 
+							PREV = { save_event_target_as = JFU_badinfra1 } 
+							country_event = { id = JFUinfralimiter.1 }
+						}
+					}
+			
+				}
+				set_global_flag = { flag = infra_limitertwo_ran value = 1 days = 1 }
+			}	
+		}
+	}	

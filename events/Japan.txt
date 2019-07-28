@@ -639,11 +639,11 @@ country_event = {
 		}
 		JAP = {
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = democratic
 				elections_allowed = no
 			}
 
-			add_popularity = { ideology = neutrality popularity = 1 }
+			add_popularity = { ideology = democratic popularity = 1 }
 		}
 		ENG = {
 			add_to_faction = SIA
@@ -660,6 +660,8 @@ country_event = {
 
 	option = { #peacedeal
 		name = japan.19.a
+		news_event = { hours = 62 id = Jfujap.7 }
+		
 	}
 }
 

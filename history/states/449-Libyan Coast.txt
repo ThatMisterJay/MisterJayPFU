@@ -5,6 +5,9 @@ state={
 	manpower = 40431
 	
 	state_category = enclave
+	resources={
+		
+	}
 
 	history={
 		owner = ITA
@@ -13,7 +16,7 @@ state={
 		}
 		
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 					1198 ={
 			bunker = 5
 			}
@@ -23,6 +26,6 @@ state={
 	}
 
 	provinces={
-		1041 1198 4047 4057 10046 10117 12088 
+		1041 1198 4047 4057 10046 10117 12088 1127
 	}
 }

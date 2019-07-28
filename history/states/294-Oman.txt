@@ -2,9 +2,6 @@
 state={
 	id=294
 	name="STATE_294"
-	resources={
-		oil=2.000
-	}
 
 	history={
 		owner = ENG
@@ -17,13 +14,17 @@ state={
 
 		}
 		victory_points = {
-			10760 3 
+			10760 3
 		}
 
 	}
 
+	resources={
+		oil=6.000
+	}
+
 	provinces={
-		1947 2018 2059 4993 5049 8002 8020 10760 
+		1947 2018 2059 4993 5049 8002 8020 10760
 	}
 	manpower=369000
 	buildings_max_level_factor=1.000

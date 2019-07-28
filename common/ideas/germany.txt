@@ -117,6 +117,44 @@ ideas = {
 			}
 		}
 
+		GER_ace_idea_minors = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_air_bonus
+
+			research_bonus = {
+				}
+			modifier = {
+				air_ace_generation_chance_factor = 0.25
+			}
+				equipment_bonus = {
+				fighter_equipment = {
+					air_agility = 0.05
+					air_attack = 0.05
+					air_defence = 0.05
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = 0.05
+					air_ground_attack = 0.05
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					reliability = 0.10
+					air_ground_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+
+
 		GER_ukrainian_army = {
 			removal_cost = -1
 			allowed = {
