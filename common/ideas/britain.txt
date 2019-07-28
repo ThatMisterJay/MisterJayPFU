@@ -2441,10 +2441,17 @@ ideas = {
 				original_TAG = ENG
 			}
 
-
+			cost = 50
+			removal_cost = 0
 
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_weapons = 0.10
+			}
+
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 
 			traits = { infantry_equipment_manufacturer }
@@ -2459,11 +2466,21 @@ ideas = {
 				original_TAG = ENG
 			}
 
-
+			cost = 50
+			removal_cost = 0
 
 			research_bonus = {
-				motorized_equipment = 0.15
-				mechanized_equipment = 0.15
+				motorized_equipment = 0.10
+				mechanized_equipment = 0.10
+			}
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 
 			traits = { motorized_equipment_manufacturer }
@@ -2478,11 +2495,18 @@ ideas = {
 				original_TAG = ENG
 			}
 
-
-
 			research_bonus = {
-				artillery = 0.15
+				artillery = 0.10
 			}
+
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+
+			cost = 50
+			removal_cost = 0
 
 			traits = { artillery_manufacturer }
 

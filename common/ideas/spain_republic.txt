@@ -447,8 +447,17 @@ ideas = {
 
 			picture = FRA_scw_intervention_nationalists_focus
 
+			cost = 50
+			removal_cost = 0
+
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_weapons = 0.10
+			}
+
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 
 			traits = { infantry_equipment_manufacturer }

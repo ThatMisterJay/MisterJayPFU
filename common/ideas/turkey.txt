@@ -6,25 +6,25 @@ country = {
 			allowed = {
 				always = no
 			}
-			
+
 			allowed_civil_war = {
 				has_government = democratic
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_pp_unity_bonus
-			
+
 
 			modifier = {
             enemy_justify_war_goal_time = 5.0
 			}
 		}
-	
-	
 
-	
-	
+
+
+
+
 	TUR_ideological_fanaticism_focus = {
 
 
@@ -447,12 +447,17 @@ country = {
 				original_tag = TUR
 			}
 
+			cost = 50
+			removal_cost = 0
+
 			research_bonus = {
-				infantry_weapons = 0.15
+				infantry_weapons = 0.10
 			}
 
 			equipment_bonus = {
-				# rifles and pistols
+				infantry_weapons = {
+					build_cost_ic = -0.05 instant = yes
+				}
 			}
 
 			traits = { infantry_equipment_manufacturer }
