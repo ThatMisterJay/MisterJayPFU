@@ -1344,7 +1344,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 70 }
+			HUN = { transfer_state = 70 }
 		}
 		if = {
 			limit = {
@@ -1355,38 +1355,20 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 71 }
+			HUN = { transfer_state = 71 }
 		}
+
+
 		if = {
 			limit = {
-				154 = { is_owned_by = HUN }
-				HUN = {
-					is_friend_or_potential_friend_of_GER = yes
-				}
 				73 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
 					}
 				}
-				country_exists = HUN
 			}
 			HUN = { transfer_state = 73 }
-		}
-
-
-		if = {
-			limit = {
-				NOT = { 154 = { is_owned_by = HUN } }
-				HUN = { is_friend_or_potential_friend_of_GER = no }
-				73 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			SLO = { transfer_state = 73 }
 		}
 
 		if = {
@@ -1398,7 +1380,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = { transfer_state = 664 }
+			HUN = { transfer_state = 664 }
 		}
 		if = {
 			limit = { country_exists = CZE }
@@ -1428,7 +1410,7 @@ country_event = {
 				}
 				NOT = { country_exists = POL }
 			}
-			SLO = { transfer_state = 72 } # Give Slovakia Zaolzie
+			HUN = { transfer_state = 72 } # Give Slovakia Zaolzie
 		}
 
 		if = {
@@ -1438,14 +1420,12 @@ country_event = {
 
 		hidden_effect = {
 			country_event = { hours = 6 id = news.60 }
-			every_state = {
-				limit = {
-					is_owned_by = SLO
-				}
-				add_core_of = SLO
-			}
-			SLO = {
-				load_oob = SLO_1939
+			70 = { add_core_of = HUN }
+			664 = { add_core_of = HUN }
+			71 = { add_core_of = HUN }
+			73 = { add_core_of = HUN }
+			HUN = {
+				load_oob = "SLO_1939"
 				add_manpower = 50000
 				add_political_power = 600
 			}

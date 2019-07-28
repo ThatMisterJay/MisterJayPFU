@@ -58,7 +58,7 @@ division_template = {
 		logistics_company = { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
 		anti_tank = { x = 0 y = 4 }
-		
+
 	}
 }
 
@@ -84,31 +84,28 @@ units = {
 		start_experience_factor = 0.3
 	}
 				division = {
-		name = "16. Pesadijska Divizija"
+		name = "16. Svjetlo Divizija"
 		location = 11581
-		division_template = "Pesadijska Divizija"
+		division_template = "Svjetlo Divizija"
 		start_experience_factor = 0.3
 	}
 					division = {
-		name = "3. Pesadijska Divizija"
+		name = "3. Svjetlo Divizija"
 		location = 11581
-		division_template = "Pesadijska Divizija"
+		division_template = "Svjetlo Divizija"
 		start_experience_factor = 0.3
 	}
 					division = {
-		name = "4. Pesadijska Divizija"
+		name = "4. Svjetlo Divizija"
 		location = 11581
-		division_template = "Pesadijska Divizija"
+		division_template = "Svjetlo Divizija"
 		start_experience_factor = 0.3
 	}
 					division = {
-		name = "11. Pesadijska Divizija"
+		name = "11. Svjetlo Divizija"
 		location = 11581
-		division_template = "Pesadijska Divizija"
+		division_template = "Svjetlo Divizija"
 		start_experience_factor = 0.3
 	}
 
 }
-
-
-

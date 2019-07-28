@@ -476,6 +476,7 @@ on_actions = {
 					original_tag = YUG
 				}
 				remove_ideas = YUG_idea_economic_aid
+				GER = { country_event = pfu.3 }
 			}
 		}
 	}
