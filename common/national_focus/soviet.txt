@@ -1222,7 +1222,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			date > 1938.1.1
+			date > 1938.6.1
 		}
 
 		available_if_capitulated = yes
