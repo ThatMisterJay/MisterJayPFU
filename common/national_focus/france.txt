@@ -1766,7 +1766,10 @@ focus_tree = {
                 uses = 2
                 category = land_doctrine
             }
-
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				add_to_tech_sharing_group = commonwealth_research
+			}
         }
     }
 
