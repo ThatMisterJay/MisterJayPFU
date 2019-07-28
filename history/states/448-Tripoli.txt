@@ -14,7 +14,7 @@ state={
 		owner = ITA
 
 		victory_points = {
-			1149 80
+			1149 10
 		}
 		buildings = {
 			infrastructure = 3
