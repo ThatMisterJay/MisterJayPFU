@@ -672,7 +672,10 @@ on_actions = {
 				country_event = { id = pfu.24 days = 2589 }
 				country_event = { id = pfu.25 days = 2892 }
 			}
-			SOV = { country_event = { id = JFU_welcome.50 } }
+			SOV = {
+				country_event = { id = JFU_welcome.50 }
+				country_event = { id = soviet.31 days = 1425 }
+			}
 			JAP = {
 				country_event = { id = pfu.28 }
 				country_event = { id = pfu.26 days = 1746 }
