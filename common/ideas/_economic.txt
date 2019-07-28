@@ -323,9 +323,9 @@ ideas = {
 			removal_cost = -1
 
 			available = {
-			NOT = { tag = POR }
-		    NOT = { tag = ROM }
-			NOT = { tag = SWE }
+				NOT = { tag = POR }
+			    NOT = { tag = ROM }
+				NOT = { tag = SWE }
 			}
 
 			modifier = {
@@ -347,6 +347,8 @@ ideas = {
 			available = {
 				NOT = { tag = POR }
 				NOT = { tag = ROM }
+				NOT = { tag = TUR }
+				NOT = { tag = SPR }
 				OR = {
 					AND = {
 						has_government = democratic
