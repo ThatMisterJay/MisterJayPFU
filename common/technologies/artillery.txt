@@ -596,7 +596,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		### DD'S ADDITION
-		motorized_anti_air_brigade = {
+		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
 
@@ -669,7 +669,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		### DD'S ADDITION
-		motorized_anti_air_brigade = {
+		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
 
@@ -707,7 +707,7 @@ technologies = {
 			air_attack = 0.1
 		}
 		### DD'S ADDITION
-		motorized_anti_air_brigade = {
+		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
 
@@ -822,7 +822,7 @@ technologies = {
 			ap_attack = 0.2
 		}
 		### DD'S ADDITION
-		motorized_anti_tank_brigade = {
+		mot_anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.2
 		}
@@ -926,7 +926,7 @@ technologies = {
 			ap_attack = 0.1
 		}
 		### DD'S ADDITION
-		motorized_anti_tank_brigade = {
+		mot_anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
@@ -981,7 +981,7 @@ technologies = {
 			ap_attack = 0.1
 		}
 		### DD'S ADDITION
-		motorized_anti_tank_brigade = {
+		mot_anti_tank_brigade = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}

@@ -1,10 +1,10 @@
 sub_units = {
 
-	light_armor = {
-		sprite = light_armor
+	super_heavy_armor = {
+		sprite = heavy_armor
 		map_icon_category = armored
-		priority = 2501
-		ai_priority = 2000
+		priority = 2520
+		ai_priority = 2520
 		active = yes
 
 		type = {
@@ -20,48 +20,55 @@ sub_units = {
 			category_army
 		}
 
-        recon = 0.2
 		combat_width = 2
 
 		need = {
-			light_tank_equipment = 60
+			super_heavy_tank_equipment = 15
 		}
+
 		manpower = 500
 		max_organisation = 10
 		default_morale = 0.3
-		training_time = 180
 		max_strength = 2
-		weight = 1
-		supply_consumption = 0.29
+		training_time = 180
+		weight = 1.75
+
+		supply_consumption = 0.55
 
 		#Tanks are awesome
 		soft_attack = 0.5
 
 		forest = {
-		    attack = -0.2
+		    attack = -0.5
 			movement = -0.4
 		}
+		hills = {
+		    attack = -0.3
+		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.4
 		}
 		jungle = {
-		    attack = -0.3
+		    attack = -0.7
 			movement = -0.4
 		}
 		marsh = {
-		    attack = -0.1
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = {
-			attack = -0.2
+		    attack = -0.5
 			movement = -0.2
 		}
+		urban = {
+			attack = -0.6
+			defence = -0.2
+		}
+		river = {
+			attack = -0.5
+			movement = -0.5
+		}
 		amphibious = {
-			attack = -0.4
+			attack = -1.0
+		}
+		fort = {
+			attack = 0.5
 		}
 	}
 }
