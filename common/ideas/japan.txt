@@ -16,7 +16,7 @@ ideas = {
 				ai_get_ally_desire_factor = 50
 			}
 		}
-		
+
 		JAP_first_air_fleet = {
 
 			allowed = {
@@ -26,19 +26,19 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_navy_carrier_bonus
-			
+
 			modifier = {
 				sortie_efficiency = 0.1
 			}
 		}
-		
+
 		JAP_prioritize_army_aircraft_construction = {
 			removal_cost = -1
-			
+
 			allowed = {
 				always = no # Added via focus
 			}
@@ -46,10 +46,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = generic_air_research
-			
-			
+
+
 
 			equipment_bonus = {
 				CAS_equipment = {
@@ -62,7 +62,7 @@ ideas = {
 		}
 		JAP_prioritize_naval_aircraft_construction = {
 			removal_cost = -1
-			
+
 			allowed = {
 				always = no # Added via focus
 			}
@@ -70,10 +70,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = generic_air_research
-			
-			
+
+
 
 			equipment_bonus = {
 				cv_fighter_equipment = {
@@ -90,7 +90,7 @@ ideas = {
 				}
 			}
 		}
-		
+
 		state_shintoism = {
 			allowed = {
 				always = no
@@ -112,7 +112,7 @@ ideas = {
 				economy_cost_factor = 0.5
 			}
 		}
-		
+
 		china_annexed = {
 			allowed = {
 				always = no
@@ -123,7 +123,7 @@ ideas = {
 					has_government = democratic
 				}
 			}
-			
+
 			picture = chi_chinese_support
 
 
@@ -135,7 +135,7 @@ ideas = {
 
 			}
 		}
-		
+
 		JAP_liaison_conference = {
 			allowed = {
 				always = no
@@ -144,16 +144,16 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_army_war_college
-			
+
 			modifier = {
 				army_leader_start_planning_level = 1
 			}
 		}
-		
+
 		JAP_Coup = {
 			allowed = {
 				always = no
@@ -174,7 +174,7 @@ ideas = {
 				political_power_gain = -0.5
 			}
 		}
-		
+
 
 		JAP_Zaibatsu_Idea = {
 			allowed = {
@@ -214,7 +214,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				local_resources_factor = 0.1
-				
+
 			}
 		}
 		spiritual_mobilization_idea = {
@@ -277,22 +277,22 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_army_dominant
-			
+
 			research_bonus = {
 				naval_doctrine = 0.0
 				land_doctrine = 0.10
 				air_doctrine = 0.05
 			}
-			
+
 			modifier = {
 				production_speed_arms_factory_factor = 0.07
 				production_speed_dockyard_factor = 0.00
-			}			
-			
+			}
+
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
@@ -309,7 +309,7 @@ ideas = {
 				heavy_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.0175
-				}					
+				}
 
 				armor = {
 					instant = yes
@@ -334,7 +334,7 @@ ideas = {
 				support_equipment   = {
 					build_cost_ic = -0.07
 					instant = yes
-				}	
+				}
 				anti_air_equipment = {
 					instant = yes
 					build_cost_ic = -0.07
@@ -354,7 +354,7 @@ ideas = {
 				CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.07
-				}				
+				}
 				tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.07
@@ -378,7 +378,7 @@ ideas = {
 				guided_missile_equipment = {
 					instant = yes
 					build_cost_ic = -0.07
-				}				
+				}
 			}
 		}
 
@@ -390,22 +390,22 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_army_strengthened
-			
+
 			research_bonus = {
 				naval_doctrine = 0.04
 				land_doctrine = 0.09
 				air_doctrine = 0.065
-			}			
-			
+			}
+
 			modifier = {
 				production_speed_arms_factory_factor = 0.065
 				production_speed_dockyard_factor = 0.03
 			}
-			
+
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
@@ -422,8 +422,8 @@ ideas = {
 				heavy_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.02375
-				}		
-				
+				}
+
 				carrier = {
 					instant = yes
 					build_cost_ic = -0.03
@@ -459,7 +459,7 @@ ideas = {
 				nav_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
-				}				
+				}
 
 				armor = {
 					instant = yes
@@ -484,7 +484,7 @@ ideas = {
 				support_equipment   = {
 					build_cost_ic = -0.065
 					instant = yes
-				}	
+				}
 				anti_air_equipment = {
 					instant = yes
 					build_cost_ic = -0.065
@@ -504,7 +504,7 @@ ideas = {
 				CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.065
-				}				
+				}
 				tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.065
@@ -528,7 +528,7 @@ ideas = {
 				guided_missile_equipment = {
 					instant = yes
 					build_cost_ic = -0.065
-				}				
+				}
 			}
 		}
 
@@ -540,22 +540,22 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_balanced
-			
+
 			research_bonus = {
 				naval_doctrine = 0.08
 				land_doctrine = 0.08
 				air_doctrine = 0.08
-			}				
-			
+			}
+
 			modifier = {
 				production_speed_arms_factory_factor = 0.06
 				production_speed_dockyard_factor = 0.06
 			}
-			
+
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
@@ -572,8 +572,8 @@ ideas = {
 				heavy_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
-				}		
-				
+				}
+
 				carrier = {
 					instant = yes
 					build_cost_ic = -0.06
@@ -609,7 +609,7 @@ ideas = {
 				nav_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.06
-				}				
+				}
 
 				armor = {
 					instant = yes
@@ -634,7 +634,7 @@ ideas = {
 				support_equipment   = {
 					build_cost_ic = -0.06
 					instant = yes
-				}	
+				}
 				anti_air_equipment = {
 					instant = yes
 					build_cost_ic = -0.06
@@ -654,7 +654,7 @@ ideas = {
 				CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.06
-				}				
+				}
 				tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.06
@@ -678,11 +678,11 @@ ideas = {
 				guided_missile_equipment = {
 					instant = yes
 					build_cost_ic = -0.06
-				}				
+				}
 			}
-			
+
 		}
-		
+
 		JAP_interservice_rivalry_navy_strengthened = {
 			allowed = {
 				always = no
@@ -691,22 +691,22 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_navy_strengthened
-			
+
 			research_bonus = {
 				naval_doctrine = 0.09
 				land_doctrine = 0.04
 				air_doctrine = 0.065
-			}				
-			
+			}
+
 			modifier = {
 				production_speed_arms_factory_factor = 0.03
 				production_speed_dockyard_factor = 0.065
 			}
-			
+
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
@@ -723,8 +723,8 @@ ideas = {
 				heavy_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.02375
-				}		
-				
+				}
+
 				carrier = {
 					instant = yes
 					build_cost_ic = -0.065
@@ -760,7 +760,7 @@ ideas = {
 				nav_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.065
-				}				
+				}
 
 				armor = {
 					instant = yes
@@ -785,7 +785,7 @@ ideas = {
 				support_equipment   = {
 					build_cost_ic = -0.03
 					instant = yes
-				}	
+				}
 				anti_air_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
@@ -805,7 +805,7 @@ ideas = {
 				CAS_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
-				}				
+				}
 				tac_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
@@ -829,7 +829,7 @@ ideas = {
 				guided_missile_equipment = {
 					instant = yes
 					build_cost_ic = -0.03
-				}				
+				}
 			}
 		}
 
@@ -841,11 +841,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = jap_interservice_rivalry_navy_dominant
-			
+
 			research_bonus = {
 				naval_doctrine = 0.10
 				land_doctrine = 0.00
@@ -856,7 +856,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.0
 				production_speed_dockyard_factor = 0.07
 			}
-			
+
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
@@ -873,8 +873,8 @@ ideas = {
 				heavy_fighter_equipment = {
 					instant = yes
 					build_cost_ic = -0.0175
-				}				
-				
+				}
+
 				carrier = {
 					instant = yes
 					build_cost_ic = -0.07
@@ -910,13 +910,13 @@ ideas = {
 				nav_bomber_equipment = {
 					instant = yes
 					build_cost_ic = -0.07
-				}									
-			}			
-		}		
-		
+				}
+			}
+		}
+
 		imperial_austerity_idea = {
-			
-			
+
+
 			allowed = {
 				always = no
 			}
@@ -924,17 +924,17 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_goods_red_bonus
-			
+
 			modifier = {
 				min_export = -0.25
 				local_resources_factor = 0.05
 			}
 		}
-		
+
 		warrior_traditions_idea = {
 
 			allowed = {
@@ -980,7 +980,7 @@ ideas = {
 				navy_carrier_air_targetting_factor = 0.25
 			}
 		}
-		
+
 		JAP_surprise_attack = {
 
 			allowed = {
@@ -990,11 +990,11 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = generic_navy_carrier_bonus
-			
+
 			modifier = {
 				sortie_efficiency = 0.2
 				naval_strike_attack_factor = 0.12
@@ -1002,8 +1002,8 @@ ideas = {
 				navy_carrier_air_targetting_factor = 0.25
 				naval_strike_agility_factor = 0.12
 				naval_strike = 1.00
-				navy_screen_attack_factor = 0.2 
-				navy_submarine_attack_factor = 0.2 
+				navy_screen_attack_factor = 0.2
+				navy_submarine_attack_factor = 0.2
 				navy_capital_ship_attack_factor = 0.2
 				amphibious_invasion = 0.80
 				invasion_preparation = -0.80
@@ -1015,7 +1015,7 @@ ideas = {
 				attrition = -0.20
 		}
 	}
-		
+
 		JAP_superior_will = {
 			allowed = {
 				always = no
@@ -1024,21 +1024,21 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			removal_cost = -1
 
 			picture = JAP_surprise_attack
-			
+
 			modifier = {
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_org_Factor = 0.10
 				land_night_attack = 0.1
 				no_supply_grace = 48
-				
+
 			}
 		}
-		
+
 		JAP_rebels = {
 			allowed = {
 				always = no
@@ -1057,7 +1057,7 @@ ideas = {
 				army_morale_factor = -0.05
 			}
 		}
-		
+
 		for_the_emperor_idea_sov = {
 			allowed = {
 				always = no
@@ -1240,11 +1240,11 @@ ideas = {
 				}
 			}
 
-			ai_ _do = {
+			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 
 		JAP_mitsumasa_yonai = {
 
@@ -1320,7 +1320,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-			
+
 			available = {
 				has_completed_focus = JAP_army_expansion
 			}
@@ -1638,11 +1638,11 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-			
+
 			available = {
 				has_completed_focus = JAP_supremacy_of_the_battlefleet
 			}
-			
+
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1712,11 +1712,11 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-			
+
 			available = {
 				has_completed_focus = JAP_agility_focus
 			}
-			
+
 			cost = 75
 			removal_cost = 10
 

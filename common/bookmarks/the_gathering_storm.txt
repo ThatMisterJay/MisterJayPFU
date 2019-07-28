@@ -76,8 +76,8 @@ bookmarks = {
 				state_shintoism
 			}
 			focuses = {
-				southern_expansion_focus
-				divine_wind_focus
+				JAP_strike_on_the_southern_resource_area
+				JAP_second_wind_china
 			}
 		}
 		"SOV"={
