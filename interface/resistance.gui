@@ -1,7 +1,8 @@
 guiTypes = {
 	containerWindowType = {
 		name = "resistance_container"
-		position = { x = 1460 y = 4 }
+		position = { x = -465 y = 4 }
+		Orientation = UPPER_RIGHT
 
 		buttonType ={
 			name ="resistance_bg"
