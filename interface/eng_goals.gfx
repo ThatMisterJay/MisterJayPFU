@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_focus_goal_royal_tank"
+		texturefile = "gfx/interface/goals/eng/royal_tank_regiment.dds"
+	
+	}
+
+	SpriteType = {
+		name = "GFX_focus_goal_fighter_command"
+		texturefile = "gfx/interface/goals/eng/fighter_command.dds"
+	
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_bomber_command"
+		texturefile = "gfx/interface/goals/eng/bomber_command.dds"
+	
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_coastal_command"
+		texturefile = "gfx/interface/goals/eng/coastal_command.dds"
+	
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_royal_airforce"
+		texturefile = "gfx/interface/goals/eng/the_raf.dds"
+	
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_jet_aircraft"
+		texturefile = "gfx/interface/goals/eng/jet_aircraft.dds"
+	
+	}
+
+
+
+}
