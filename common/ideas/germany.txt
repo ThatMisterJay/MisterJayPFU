@@ -1380,8 +1380,14 @@ ideas = {
 				original_tag = GER
 			}
 
+
+
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.10
+			}
+
+			research_bonus = {
+				industry = 0.10
 			}
 
 			traits = { electronics_concern }
