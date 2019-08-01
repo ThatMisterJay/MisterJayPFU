@@ -95,7 +95,6 @@ focus_tree = {
 			USA = {
 				country_event = britain.1
 			}
-			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -671,6 +670,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = british_austerity_idea
+			add_research_slot = 1
 		}
 	}
 
