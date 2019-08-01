@@ -1373,6 +1373,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			add_research_slot = 1
 			army_experience = 20
 			add_named_threat = { threat = 10 name = germany.4.t }
 			add_political_power = 75
@@ -1486,9 +1487,6 @@ focus_tree = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
-		available = {
-        date > 1939.1.1
-		}
 		x = 16
 		y = 2
 		cost = 10
@@ -1529,6 +1527,7 @@ focus_tree = {
 		prerequisite = { focus = GER_demand_memel }
 		will_lead_to_war_with = POL
 		available = {
+	        date > 1939.3.1
 			has_global_flag = sov_yes_pact
 			is_puppet = no
 			has_army_manpower = { size > 949999 } #100 div
@@ -2229,7 +2228,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_research_slot = 1
 			army_experience = 50
 			air_experience = 25
 
