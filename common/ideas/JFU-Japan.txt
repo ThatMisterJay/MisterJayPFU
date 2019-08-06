@@ -54,8 +54,10 @@ ideas = {
 				tag = CHI
 				attack_bonus_against = -0.4
 			}
-			industrial_capacity_factory = -0.1
-			conscription = -0.005
+			modifier = {
+				industrial_capacity_factory = -0.1
+				conscription = -0.005
+			}
 		}
 		JAP_resistance_5 = {
 			allowed = { always = yes }
@@ -65,8 +67,10 @@ ideas = {
 				tag = CHI
 				attack_bonus_against = -0.4
 			}
-			industrial_capacity_factory = -0.2
-			conscription = -0.01
+			modifier = {
+				industrial_capacity_factory = -0.2
+				conscription = -0.01
+			}
 		}
 
 		CHI_resistance_1 = {
