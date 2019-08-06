@@ -216,7 +216,10 @@ on_actions = {
 
 				if = {
 					limit = {
-						check_variable = { resistance_variable > 24 }
+						OR = {
+							check_variable = { resistance_variable > 24 }
+							NOT = { country_exists = CHI }
+						}
 					}
 					add_ideas = JAP_resistance_5
 					if = {
