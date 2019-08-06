@@ -98,14 +98,14 @@ sub_units = {
 			motorized_equipment = 60
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = 4
 		default_morale = 0
 		max_strength = 0.6
 		training_time = 120
 		weight = 0.5
-		hard_attack = -0.25 #Otherwise, the AT changes seriously break these. Remove at your own peril. -TW/MTG
+		hard_attack = 0.2
 
-		supply_consumption = 0.33
+		supply_consumption = 0.10
 
 		forest = {
 			attack = -0.2
