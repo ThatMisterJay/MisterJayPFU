@@ -455,15 +455,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-			OR = {
-					JAP = { surrender_progress > 0.05 }
-					date > 1943.1.1
-				}
-				has_war_with = USA
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
