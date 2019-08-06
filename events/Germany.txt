@@ -1289,7 +1289,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = {
+			HUN = {
 				set_technology = { basic_medium_tank = 1 }
 				create_equipment_variant = {
 					name = "LT-38 E"
@@ -1303,7 +1303,7 @@ country_event = {
 					}
 				}
 			}
-			SLO = {
+			HUN = {
 				set_technology = { improved_light_tank = 1 }
 				create_equipment_variant = {
 					name = "LT-35"
@@ -1316,7 +1316,6 @@ country_event = {
 				}
 			}
 		}
-
 	}
 
 	option = {
@@ -1440,7 +1439,6 @@ country_event = {
 			HUN = {
 				load_oob = "SLO_1939"
 				add_manpower = 50000
-				add_political_power = 600
 			}
 			every_state = {
 				limit = { is_core_of = CZE }
