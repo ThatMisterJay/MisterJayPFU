@@ -1024,7 +1024,7 @@ leader_traits = {
 	ideological_crusader = {
 		random = yes
 		sprite = 13
-		stability_weekly = 0.001
+		stability_weekly = 0.002
 
 
 		ai_will_do = {
