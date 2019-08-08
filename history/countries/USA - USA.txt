@@ -169,19 +169,21 @@ create_country_leader = {
 create_corps_commander = {
 	name = "George S. Patton"
 		picture = "Portrait_USA_George_S_Patton.dds"
-	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
-	skill = 5
+	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless trait_engineer
+	hill_fighter desert_fox ranger organizer }
+	skill = 6
 
-	attack_skill = 7
+	attack_skill = 8
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 4
 	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "Omar Bradley"
 		picture = "Portrait_USA_Omar_Bradley.dds"
-	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader }
+	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader
+	organizer infantry_leader naval_invader ranger skilled_staff }
 	skill = 5
 
 	attack_skill = 3
@@ -193,13 +195,14 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
 		picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 5
+	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected
+	brilliant_strategist panzer_leader infantry_leader trait_engineer naval_invader skilled_staff hill_fighter ranger }
+	skill = 6
 	id = 602
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -217,19 +220,21 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lucian Truscott"
 		picture = "Portrait_USA_Lucian_Truscott.dds"
-	traits = { trait_engineer commando cavalry_officer }
-	skill = 3
+	traits = { trait_engineer commando cavalry_officer cavalry_leader naval_invader trait_mountaineer
+	 trickster }
+	skill = 4
 
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Mark Clark"
 		picture = "Portrait_USA_Mark_W_Clark.dds"
-	traits = { infantry_officer trait_reckless }
+	traits = { infantry_officer trait_reckless infantry_leader organizer commando trickster
+	 hill_fighter urban_assault_specialist }
 	skill = 4
 
 	attack_skill = 5
@@ -242,25 +247,27 @@ create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
 		picture = "Portrait_USA_Douglas_MacArthur.dds"
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected }
-	skill = 4
+	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality politically_connected
+	organizer skilled_staff infantry_leader trickster naval_invader jungle_rat hill_fighter }
+	skill = 5
 
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Walter Krueger"
 		picture = "Portrait_USA_Walter_Krueger.dds"
-	traits = { armor_officer career_officer brilliant_strategist }
+	traits = { armor_officer career_officer brilliant_strategist organizer
+	trickster naval_invader jungle_rat }
 	skill = 3
 
 	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -381,7 +388,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Courtney Hodges"
 		picture = "Portrait_USA_Cortney_Hodges.dds"
-	traits = {  panzer_leader career_officer infantry_officer }
+	traits = {  panzer_leader career_officer infantry_officer infantry_leader trait_engineer
+	trickster ranger winter_specialist }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3

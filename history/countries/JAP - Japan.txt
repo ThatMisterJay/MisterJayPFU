@@ -20,7 +20,7 @@ add_ideas = {
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
 	add_ideas = {
-		JAP_interservice_rivalry_balanced		
+		JAP_interservice_rivalry_balanced
 	}
 }
 
@@ -163,7 +163,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Tomoyuki Yamashita"
 		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
-	traits = {
+	traits = {  trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat
 		trickster trait_engineer brilliant_strategist politically_connected
 	}
 	skill = 5
@@ -176,7 +176,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Hisaichi Terauchi"
 	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
-	traits = {
+	traits = { trait_engineer trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat trickster
 		offensive_doctrine
 		JAP_samurai_lineage   # hakushaku
 		politically_connected
@@ -235,7 +235,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Shizuichi Tanaka"
 		picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
-	traits = { trickster career_officer infantry_officer }
+	traits = { urban_assault_specialist trickster career_officer infantry_officer trait_engineer trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat  }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
@@ -257,7 +257,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Toshizo Nishio" #Toshizo
 		picture = "Portrait_Japan_Toshizo_Nishio.dds"
-	traits = { brilliant_strategist infantry_officer }
+	traits = { brilliant_strategist infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -301,7 +301,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Takashi Sakai"
 		picture = "Portrait_Japan_Takashi_Sakai.dds"
-	traits = { infantry_officer trait_reckless }
+	traits = { infantry_leader trait_reckless }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -334,7 +334,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Kenkichi Ueda"
 		picture = "Portrait_Japan_Kenkichi_Ueda.dds"
-	traits = { old_guard cavalry_officer trait_reckless }
+	traits = { old_guard cavalry_leader trait_reckless }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
@@ -367,7 +367,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Otozo Yamada"
 		picture = "Portrait_Japan_Otozo_Yamada.dds"
-	traits = { cavalry_officer career_officer }
+	traits = { cavalry_leader career_officer }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 1
@@ -378,7 +378,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Hatazo Adachi"
 		picture = "Portrait_Japan_Hatazo_Adachi.dds"
-	traits = { trickster JAP_samurai_lineage trait_reckless infantry_officer }
+	traits = { trickster JAP_samurai_lineage trait_reckless infantry_leader }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
