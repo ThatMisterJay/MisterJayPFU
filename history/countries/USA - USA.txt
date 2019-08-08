@@ -171,12 +171,12 @@ create_corps_commander = {
 		picture = "Portrait_USA_George_S_Patton.dds"
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless trait_engineer
 	hill_fighter desert_fox ranger organizer }
-	skill = 6
+	skill = 5
 
-	attack_skill = 8
-	defense_skill = 3
+	attack_skill = 7
+	defense_skill = 2
 	planning_skill = 4
-	logistics_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -199,10 +199,10 @@ create_field_marshal = {
 	brilliant_strategist panzer_leader infantry_leader trait_engineer naval_invader skilled_staff hill_fighter ranger }
 	skill = 6
 	id = 602
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 6
-	logistics_skill = 1
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {

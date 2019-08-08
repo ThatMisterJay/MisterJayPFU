@@ -153,12 +153,12 @@ create_corps_commander = {
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
 	traits = {  panzer_leader trait_cautious brilliant_strategist }
-	skill = 4
+	skill = 5
 
-	attack_skill = 3
-	defense_skill = 4
+	attack_skill = 4
+	defense_skill = 5
 	planning_skill = 2
-	logistics_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
@@ -166,11 +166,11 @@ create_corps_commander = {
 	id = 407
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
 	traits = { panzer_leader politically_connected }
-	skill = 4
+	skill = 5
 	attack_skill = 4
-	defense_skill = 4
+	defense_skill = 5
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -206,10 +206,10 @@ create_field_marshal = {
 
 
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 5
 	planning_skill = 2
-	logistics_skill = 5
+	logistics_skill = 4
 }
 
 create_field_marshal = {
