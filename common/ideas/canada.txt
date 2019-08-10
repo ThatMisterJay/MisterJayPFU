@@ -923,7 +923,7 @@ ideas = {
 				original_tag = CAN
 			}
 
-			traits = { army_artillery_2 }
+			traits = { army_cavalry_2 }
 
 			ai_will_do = {
 				factor = 1
