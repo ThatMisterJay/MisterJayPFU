@@ -11,6 +11,7 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
+	tech_logistics_company = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
@@ -223,14 +224,23 @@ create_field_marshal = {
 #	name = "Charles De Gaulle"
 #	picture = "Portrait_France_Charles_De_Gaulle.dds"
 #	traits = {  panzer_leader }
-#	skill = 3
+#	skill = 4
+# attack_skill = 5
+# defense_skill = 3
+# planning_skill = 3
+# logistics_skill = 2
 #}
+
 
 #create_corps_commander = {
 #	name = "Philippe Leclerc"
 #	picture = "portrait_france_philippe_leclerc.dds"
 #	traits = {  panzer_leader }
 #	skill = 3
+# attack_skill = 2
+# defense_skill = 2
+# planning_skill = 4
+# logistics_skill = 2
 #}
 
 create_corps_commander = {

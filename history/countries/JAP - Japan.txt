@@ -30,6 +30,7 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
+	tech_logistics_company = 1
 	motorised_infantry = 1
 	marines  = 1
 	gw_artillery = 1
@@ -164,7 +165,7 @@ create_corps_commander = {
 	name = "Tomoyuki Yamashita"
 		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
 	traits = {  trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat
-		trickster trait_engineer brilliant_strategist politically_connected
+		trickster trait_engineer brilliant_strategist politically_connected cavalry_officer armor_officer
 	}
 	skill = 5
 	attack_skill = 4
@@ -179,7 +180,7 @@ create_field_marshal = {
 	traits = { trait_engineer trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat trickster
 		offensive_doctrine
 		JAP_samurai_lineage   # hakushaku
-		politically_connected
+		politically_connected cavalry_officer armor_officer skilled_staffer
 	}
 	skill = 4
 	attack_skill = 4
@@ -235,7 +236,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Shizuichi Tanaka"
 		picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
-	traits = { urban_assault_specialist trickster career_officer infantry_officer trait_engineer trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat  }
+	traits = { urban_assault_specialist trickster career_officer infantry_officer trait_engineer trait_mountaineer hill_fighter
+	 infantry_leader commando organizer jungle_rat cavalry_officer armor_officer }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3
