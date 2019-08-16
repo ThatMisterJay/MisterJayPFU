@@ -138,7 +138,7 @@ add_namespace = {
 
 create_corps_commander = {
 	name = "Swarshik"
-	picture = "Swarshik.dds"
+	picture = "swarshik.dds"
 	traits = { cavalry_leader }
 	skill = 3
 	id = 900
