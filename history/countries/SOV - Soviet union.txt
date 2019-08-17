@@ -153,20 +153,20 @@ create_corps_commander = {
 	name = "Konstantin Rokossovsky"
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {  panzer_leader trait_cautious brilliant_strategist }
+	traits = {  panzer_leader trait_cautious brilliant_strategist ranger trickster }
 	skill = 5
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 5
 	planning_skill = 2
-	logistics_skill = 5
+	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
 	id = 407
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-	traits = { panzer_leader politically_connected }
+	traits = { panzer_leader politically_connected ranger }
 	skill = 5
 	attack_skill = 4
 	defense_skill = 5
