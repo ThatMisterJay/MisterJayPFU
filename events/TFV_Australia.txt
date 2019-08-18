@@ -958,7 +958,7 @@ country_event = {
  desc = tfv_australia.98.d
  picture = GFX_report_event_chamberlain
 
-fire_only_once = yesterday
+fire_only_once = yes
 
 trigger = {
   tag = AST

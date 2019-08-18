@@ -243,7 +243,7 @@ create_field_marshal = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
 	traits = { offensive_doctrine fast_planner organisational_leader inspirational_leader
-	 brilliant_strategist trait_engineer panzer_leader trickster ranger }
+	 brilliant_strategist trait_engineer panzer_leader trickster ranger hill_fighter }
 	skill = 5
 	id = 5
 	attack_skill = 5

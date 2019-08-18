@@ -109,15 +109,26 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
+create_corps_commander = {
+	name = "George Edwin Brink"
+	picture = "Dan_Pienaar.dds"
+	traits = { infantry_leader cavalry_leader desert_fox trait_cautious trickster }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
 create_field_marshal = {
 	name = "Jan Smuts"
 	picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
 	traits = { logistics_wizard offensive_doctrine commando guerilla_fighter trait_cautious politically_connected }
-	skill = 3
+	skill = 4
 	id = 3
 	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
+	defense_skill = 4
+	planning_skill = 3
 	logistics_skill = 3
 }
 
