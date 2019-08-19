@@ -227,7 +227,7 @@ set_war_support = 0.1
 
 create_corps_commander = {
 	name = "Thomas Victor Anderson"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "Anderson_Thomas_Victor.dds"
 	traits = { trait_engineer infantry_leader naval_invader }
 	skill = 4
     attack_skill = 4
@@ -248,8 +248,8 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "John Montague"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	name = "John Meredith Rockingham"
+	picture = "portrait_europe_generic_land_9.dds"
 	traits = { desert_fox cavalry_leader trickster }
 	skill = 3
     attack_skill = 4

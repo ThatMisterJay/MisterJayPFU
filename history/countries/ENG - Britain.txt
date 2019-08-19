@@ -249,7 +249,7 @@ create_field_marshal = {
 	name = "Bernard Montgomery" # Aristocrat
 	id = 996
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { hill_fighter desert_fox ranger logistics_wizard offensive_doctrine media_personality
+	traits = { hill_fighter desert_fox naval_invader logistics_wizard offensive_doctrine media_personality
 	 trait_cautious inflexible_strategist organizer }
 	skill = 5
 	attack_skill = 5
