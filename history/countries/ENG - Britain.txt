@@ -252,9 +252,9 @@ create_field_marshal = {
 	traits = { hill_fighter desert_fox naval_invader logistics_wizard offensive_doctrine media_personality
 	 trait_cautious inflexible_strategist organizer }
 	skill = 5
-	attack_skill = 5
+	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 3
+	planning_skill = 4
 	logistics_skill = 4
 }
 
