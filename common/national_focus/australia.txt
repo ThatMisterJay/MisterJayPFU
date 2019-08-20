@@ -147,12 +147,8 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Iven Mackay"
 					gfx = "GFX_AST_iven_mackay"
-					traits = { trickster trait_engineer infantry_leader war_hero hill_fighter inflexible_strategist }
+					traits = { }
 					skill = 3
-					attack_skill = 4
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
 				}
 			}
 		}

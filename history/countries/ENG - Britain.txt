@@ -13,7 +13,6 @@ set_technology = {
 	infantry_weapons1 = 1
 	tech_support = 1
 	tech_engineers = 1
-  tech_logistics_company = 1
 	tech_recon = 1
 	motorised_infantry = 1
 	gw_artillery = 1
@@ -185,18 +184,18 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-  british_bulldog
+
 	}
 }
 
 create_country_leader = {
-	name = "Stanley Baldwin"
-	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1938.1.1"
+	name = "Neville Chamberlain"
+	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
+	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
-		conservative_grandee
+
 	}
 }
 
@@ -237,7 +236,7 @@ create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat
 	id = 997
 	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = { defensive_doctrine trait_cautious career_officer organizer infantry_leader skilled_staffer}
+	traits = { defensive_doctrine trait_cautious career_officer }
 	skill = 5
 	attack_skill = 3
 	defense_skill = 5
@@ -249,19 +248,18 @@ create_field_marshal = {
 	name = "Bernard Montgomery" # Aristocrat
 	id = 996
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { hill_fighter desert_fox naval_invader logistics_wizard offensive_doctrine media_personality
-	 trait_cautious inflexible_strategist organizer }
-	skill = 5
-	attack_skill = 4
+	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
+	skill = 4
+	attack_skill = 2
 	defense_skill = 4
-	planning_skill = 4
+	planning_skill = 3
 	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "Claude Auchinleck"
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
-	traits = { inflexible_strategist career_officer organizer infantry_leader trait_mountaineer }
+	traits = { inflexible_strategist career_officer }
 	skill = 5
 	attack_skill = 3
 	defense_skill = 5
@@ -272,7 +270,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Neil Ritchie"
 	picture = "Portrait_Britain_Neil_Ritchie.dds"
-	traits = { inflexible_strategist armor_officer politically_connected infantry_leader naval_invader hill_fighter }
+	traits = { inflexible_strategist armor_officer politically_connected  }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -294,7 +292,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "William Slim"
 	picture = "Portrait_Britain_William_Slim.dds"
-	traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
+	traits = { trickster war_hero }
 	skill = 5
 	attack_skill = 3
 	defense_skill = 3
@@ -306,18 +304,18 @@ create_corps_commander = {
 	name = "Richard O'Connor"
 	id = 999
 	picture = "Portrait_Britain_Richard_OConnor.dds"
-	traits = { panzer_leader desert_fox trickster brilliant_strategist }
+	traits = { panzer_leader desert_fox trickster }
 	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
 	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "William Platt"
 	picture = "Portrait_Britain_William_Platt.dds"
-	traits = { trait_engineer infantry_leader hill_fighter }
+	traits = { trait_engineer }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -339,7 +337,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Harold Alexander"
 	picture = "Portrait_Britain_Harold_Alexander.dds"
-	traits = { defensive_doctrine inspirational_leader politically_connected trait_mountaineer hill_fighter infantry_leader organizer}
+	traits = { defensive_doctrine inspirational_leader politically_connected }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -394,7 +392,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Henry Pownall"
 	picture = "Portrait_Britain_Henry_Pownall.dds"
-	traits = {  trickster infantry_leader career_officer }
+	traits = {  trickster }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -427,7 +425,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "William Gott"
 		picture = "Portrait_Britain_William_Gott.dds"
-	traits = { armor_officer war_hero inflexible_strategist career_officer infantry_leader panzer_leader }
+	traits = { armor_officer war_hero inflexible_strategist }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 3
@@ -438,7 +436,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Jock Campbell"
 		picture = "Portrait_Britain_Jock_Campbell.dds"
-	traits = { armor_officer desert_fox infantry_leader commando trait_reckless }
+	traits = { armor_officer desert_fox }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -449,7 +447,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Oliver Leese"
 	picture = "Portrait_Britain_Oliver_Leese.dds"
-	traits = {  armor_officer harsh_leader politically_connected infantry_leader hill_fighter trait_engineer}
+	traits = {  armor_officer harsh_leader politically_connected }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
@@ -460,7 +458,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Miles Dempsey"
 	picture = "Portrait_Britain_Miles_Dempsey.dds"
-	traits = { naval_invader brilliant_strategist infantry_officer career_officer infantry_leader hill_fighter ranger skilled_staffer }
+	traits = { naval_invader brilliant_strategist infantry_officer career_officer }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -471,19 +469,19 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Brian Horrocks"
 	picture = "Portrait_Britain_Brian_Horrocks.dds"
-	traits = {  armor_officer career_officer war_hero infantry_leader ranger trait_engineer hill_fighter}
+	traits = {  armor_officer career_officer war_hero }
 	skill = 3
 
-	attack_skill = 2
+	attack_skill = 1
 	defense_skill = 3
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 3
 }
 
 create_field_marshal = {
 	name = "Archibald Wavell"
 	picture = "Portrait_Britain_Archibald_Wavell.dds"
-	traits = { career_officer organizer infantry_leader hill_fighter }
+	traits = { career_officer }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 4

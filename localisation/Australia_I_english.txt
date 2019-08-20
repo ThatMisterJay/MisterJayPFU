@@ -1,4 +1,0 @@
-l_english
- tfv_australia.97.t: "Lyons Passes Away"
- tfv_australia.97.d: "On 5 April 1939, Lyons suffered a heart attack while being driven from Melbourne to Sydney. It occurred shortly after he had stopped in at Goulburn to collect his son Kevin from St Patrick's College for the Easter holidays. Lyons was rushed to St Vincent's Hospital, Darlinghurst, in a critical condition. By the following day, he was unable to speak and was drifting in and out of consciousness. He soon fell into a coma, and died on the morning of 7 April."
- tfv_australia.97,a: "Robert Menzies will take his place"
