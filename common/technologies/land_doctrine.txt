@@ -50,7 +50,13 @@ technologies = {
 
 	delay = {
 
-		category_all_infantry = {
+		motorized = {
+			max_organisation = 15
+		}
+		mechanized = {
+			max_organisation = 15
+		}
+		amphibious_mechanized = {
 			max_organisation = 15
 		}
 
@@ -193,9 +199,16 @@ technologies = {
 	}
 
 	mass_motorization = {
-		category_all_infantry = {
-			max_organisation = 10
-		}
+
+			motorized = {
+				max_organisation = 10
+			}
+			mechanized = {
+				max_organisation = 10
+			}
+			amphibious_mechanized = {
+				max_organisation = 10
+			}
 
 
 		path = {
