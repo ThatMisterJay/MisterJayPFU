@@ -9,6 +9,7 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
+	tech_logistics_company = 1
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1
@@ -100,23 +101,34 @@ create_country_leader = {
 create_corps_commander = {
 	name = "George Edwin Brink"
 	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox armor_officer }
+	traits = { desert_fox armor_officer panzer_leader hill_fighter }
 	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 1
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "George Edwin Brink"
+	picture = "Dan_Pienaar.dds"
+	traits = { infantry_leader cavalry_leader desert_fox trait_cautious trickster }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_field_marshal = {
 	name = "Jan Smuts"
 	picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
-	traits = { logistics_wizard offensive_doctrine }
-	skill = 3
+	traits = { logistics_wizard offensive_doctrine commando guerilla_fighter trait_cautious politically_connected }
+	skill = 4
 	id = 3
 	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
+	defense_skill = 4
+	planning_skill = 3
 	logistics_skill = 3
 }
 

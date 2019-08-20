@@ -91,7 +91,28 @@ create_country_leader = {
 	traits = {
 		#
 	}
-}
+}	create_corps_commander = {
+		name = "Plaek Phibunsongkhram"
+		picture = "Plaek_Phibunsongkhram.dds"
+		traits = { organizer jungle_rat }
+		skill = 1
+		attack_skill = 1
+	  defense_skill = 1
+	  planning_skill = 1
+		logistics_skill = 1
+	}
+
+	create_corps_commander = {
+		name = "Charun Rattanakun Seriroengrit"
+		picture = "Charun_Rattanakun_Seriroengrit.dds"
+		traits = { trait_mountaineer infantry_leader jungle_rat }
+		skill = 3
+		attack_skill = 3
+	  defense_skill = 2
+	  planning_skill = 2
+		logistics_skill = 3
+	}
+
 ### Destroyer Variants
 create_equipment_variant = {
 	name = "Phra Ruang Class" #collection of various WWI and early interwar ships with similiar capabilities

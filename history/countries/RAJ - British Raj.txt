@@ -100,7 +100,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Noel Beresford-Peirse"
 	gfx = "GFX_RAJ_noel_beresford_peirse"
-	traits = { armor_officer }
+	traits = { armor_officer infantry_leader desert_fox hill_fighter }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -111,7 +111,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Frank Messervy"
 	gfx = "GFX_RAJ_frank_messervy"
-	traits = { hill_fighter }
+	traits = { hill_fighter desert_fox infantry_leader commando  }
 	skill = 3
 	attack_skill = 2
 	defense_skill = 2
@@ -122,12 +122,23 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Douglas Gracey"
 	gfx = "GFX_RAJ_douglas_gracey"
-	traits = { desert_fox }
+	traits = { desert_fox infantry_leader trait_engineer }
 	skill = 3
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jcor"
+	picture = "jcor.dds"
+	traits = { battleship_adherent bold }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 
 create_navy_leader = {
