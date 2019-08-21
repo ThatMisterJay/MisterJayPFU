@@ -2,6 +2,7 @@
 
 oob = "ROM_1936"
 
+set_convoys = 20
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.61
@@ -39,7 +40,7 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		mtg_transport + 1
+		mtg_transport = 1
 	}
 }
 
@@ -66,9 +67,6 @@ if = {
 		}
 	}
 }
-
-
-set_convoys = 10
 
 add_ideas = {
 	free_trade
