@@ -1693,8 +1693,8 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1944.1.1
-			has_tech = advanced_ship_hull_heavy
+			date > 1941.1.1
+			has_tech = improved_ship_hull_heavy
 			has_full_control_of_state = 133
 			#has_tech = improved_heavy_battery
 			#has_tech = dp_secondary_battery
@@ -1707,14 +1707,14 @@ focus_tree = {
 			navy_experience = 25
 			create_equipment_variant = {
 				name = "Vanguard"
-				type = ship_hull_heavy_4
+				type = ship_hull_heavy_3
 				parent_version = 0
 				modules = {
 					fixed_ship_battery_slot = ship_heavy_battery_3
 					fixed_ship_anti_air_slot = ship_anti_air_4
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
 					fixed_ship_radar_slot = ship_radar_3
-					fixed_ship_engine_slot = heavy_ship_engine_4
+					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = dp_ship_secondaries
 					fixed_ship_armor_slot = ship_armor_bb_3
 					front_1_custom_slot = ship_heavy_battery_3

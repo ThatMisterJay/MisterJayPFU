@@ -1568,13 +1568,16 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Barbu Paraianu"
 					gfx = GFX_Portrait_romania_barbu_paraianu
-					traits = {  }
-					skill = 2
+					traits = { trait_mountaineer infantry_leader trickster career_officer trait_engineer }
+					skill = 3
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = ROM_the_zb_53
 		icon = GFX_goal_generic_small_arms
