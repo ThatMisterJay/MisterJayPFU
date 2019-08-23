@@ -745,10 +745,6 @@ focus_tree = {
 			num_of_factories > 50
 		}
 
-		bypass = {
-
-		}
-
 		continue_if_invalid = yes
 		cancel_if_invalid = no
 		available_if_capitulated = no
@@ -814,10 +810,6 @@ focus_tree = {
 			democratic < 0.5
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -865,10 +857,6 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -914,14 +902,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -947,10 +927,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
 		}
 
 		bypass = {
@@ -993,14 +969,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -1030,10 +998,6 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1073,10 +1037,6 @@ focus_tree = {
 				is_faction_leader = yes
 				has_government = fascism
 			}
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1249,14 +1209,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1335,14 +1287,6 @@ focus_tree = {
 			factor = 9
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1403,14 +1347,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1442,14 +1378,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1500,14 +1428,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -1705,10 +1625,6 @@ focus_tree = {
 			has_tech = tech_mountaineers
 		}
 
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -1829,7 +1745,7 @@ focus_tree = {
 		id = ROM_royal_guards_divisions
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = ROM_army_maneuvers }
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
@@ -1899,7 +1815,7 @@ focus_tree = {
 
 			    	   		 	infantry = { x = 3 y = 0 }
 			    	   		 	infantry = { x = 3 y = 1 }
-								
+
 								artillery_brigade = { x = 4 y = 0 }
 								artillery_brigade = { x = 4 y = 1 }
 								artillery_brigade = { x = 4 y = 2 }
@@ -2203,21 +2119,13 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 28
+		x = 30
 		y = 0
 
 		cost = 5
 
 		ai_will_do = {
 			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2275,14 +2183,6 @@ focus_tree = {
 			factor = 9
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2309,14 +2209,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2346,14 +2238,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2388,14 +2272,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2424,14 +2300,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2467,14 +2335,6 @@ focus_tree = {
 			factor = 5
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2501,14 +2361,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2545,14 +2397,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2574,23 +2418,15 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_marine_regiment
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { focus = ROM_capital_ships }
-		x = 2
-		y = 2
-		relative_position_id = ROM_black_sea_dominance
+		prerequisite = { focus = ROM_royal_guards_divisions }
+		x = -2
+		y = 1
+		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -2606,8 +2442,13 @@ focus_tree = {
 				name = ROM_expand_the_marine_regiment
 				bonus = 1
 				uses = 2
-				category = tp_tech
 				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = ROM_expand_the_marine_regiment
+				bonus = 1
+				uses = 2
+				category = tp_tech
 			}
 		}
 	}
