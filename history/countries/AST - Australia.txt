@@ -156,9 +156,9 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 98
+    democratic = 100
     fascism = 0
-    communism = 2
+    communism = 0
 }
 
 create_country_leader = {
@@ -227,9 +227,9 @@ set_convoys = 100
 }
 
     set_popularities = {
-        democratic = 99
+        democratic = 100
         fascism = 0
-        communism = 1
+        communism = 0
     }
 	set_convoys = 100
 }
