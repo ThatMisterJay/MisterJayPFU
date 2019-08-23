@@ -282,7 +282,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription_factor = 0.05
+				conscription_factor = 0.10
 			}
 
 		}
@@ -923,7 +923,7 @@ ideas = {
 				original_tag = CAN
 			}
 
-			traits = { army_artillery_2 }
+			traits = { army_cavalry_2 }
 
 			ai_will_do = {
 				factor = 1

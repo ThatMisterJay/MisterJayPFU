@@ -63,3 +63,15 @@ create_country_leader = {
 		#
 	}
 }
+
+create_corps_commander = {
+	name = "Jcor213"
+	picture = ""
+	traits = {  old_guard trait_cautious career_officer organizer infantry_leader desert_fox }
+	skill = 2
+	rank = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
