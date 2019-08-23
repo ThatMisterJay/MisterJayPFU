@@ -963,7 +963,7 @@ fire_only_once = yes
 trigger = {
   tag = AST
 	has_government = democratic
-	date = 1941.10.9
+	date > 1941.10.9
 }
 option ={
 name = tfv_australia.98.a
