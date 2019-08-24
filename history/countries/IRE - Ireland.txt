@@ -20,9 +20,9 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 98
-    fascism = 1
-    communism = 1
+    democratic = 100
+    fascism = 0
+    communism = 0
 }
 
 add_ideas = {
@@ -77,9 +77,9 @@ create_corps_commander = {
 	name = "Michael Costello"
 	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
 	traits = { infantry_leader ranger trickster commando guerilla_fighter hill_fighter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
 }

@@ -9,8 +9,7 @@ set_technology = {
 	support_weapons = 1
 	tech_recon = 1
 	tech_support = 1
-	tech_logistics_company = 1
-  tech_engineers = 1
+	tech_engineers = 1
 	paratroopers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -125,7 +124,6 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-	JFU_autarky_idea
 }
 
 create_country_leader = {
@@ -198,8 +196,6 @@ create_field_marshal = {
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 2
 	id = 1
 }
 
@@ -230,14 +226,13 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Erwin Rommel"
 	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { trickster trait_engineer desert_fox trait_reckless war_hero armor_officer
-	 media_personality career_officer panzer_leader ranger trait_mountaineer infantry_leader }
+	traits = { trickster trait_engineer desert_fox trait_reckless war_hero armor_officer media_personality career_officer panzer_leader ranger trait_mountaineer infantry_leader }
 	skill = 5
 	id = 4
 	attack_skill = 6
-	defense_skill = 6
-	planning_skill = 2
-	logistics_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_field_marshal = {
@@ -318,8 +313,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Walter Model"
 	picture = "Portrait_Germany_Walter_Model.dds"
-	traits = { inspirational_leader defensive_doctrine fast_planner organisational_leader trait_engineer
-	organizer ranger unyielding_defender }
+	traits = { inspirational_leader defensive_doctrine fast_planner organisational_leader trait_engineer organizer ranger unyielding_defender }
 	skill = 6
 	id = 10
 	attack_skill = 5
@@ -427,13 +421,13 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Paul Hausser"
 	picture = "Portrait_Germany_Paul_Hausser.dds"
-	traits = {  armor_officer politically_connected cavalry_leader ranger }
+	traits = { armor_officer politically_connected cavalry_leader ranger }
 	skill = 4
 	id = 20
 	attack_skill = 5
 	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -452,7 +446,7 @@ create_corps_commander = {
 	name = "Georg von Küchler"
 	picture = "Portrait_Germany_Georg_von_Kuchler.dds"
 	traits = { ranger career_officer infantry_leader harsh_leader }
-	skill = 5
+	skill = 4
 	id = 22
 	attack_skill = 4
 	defense_skill = 4

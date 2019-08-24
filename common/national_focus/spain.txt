@@ -1261,55 +1261,55 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		army_experience = 5
+			army_experience = 5
 			add_tech_bonus = {
 				name = SPR_Doc_Bonus
 				bonus = 1
 				uses = 1
 				category = land_doctrine
+			}
+			custom_effect_tooltip = SPR_new_general_tt
+			hidden_effect = {
+				create_corps_commander = {
+					name = "Cabanella"
+					picture = "cabanellas.dds"
+					traits = {  trait_engineer infantry_leader hill_fighter trickster }
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 2
 				}
-				custom_effect_tooltip = SPR_new_general_tt
-				hidden_effect = {
-					create_corps_commander = {
-						name = "Cabanella"
-						picture = "cabanellas.dds"
-						traits = {  trait_engineer infantry_leader hill_fighter trickster }
-						skill = 3
-						attack_skill = 3
-						defense_skill = 2
-						planning_skill = 3
-						logistics_skill = 2
-					}
-					create_corps_commander = {
-						name = "Juan Yague"
-						picture = "Juan_Yague.dds"
-						traits = { infantry_leader hill_fighter trait_mountaineer }
-						skill = 4
-						attack_skill = 4
-						defense_skill = 5
-						planning_skill = 2
-						logistics_skill = 2
-					}
-					create_corps_commander = {
-						name = "Sanjurjo"
-						picture = "sanjurjo.dds"
-						traits = { infantry_leader  hill_fighter ranger }
-						skill = 3
-						attack_skill = 4
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 2
-					}
-					create_corps_commander = {
-						name = "Emilio Aola"
-						picture = "emilio_mola.dds"
-						traits = { infantry_leader hill_fighter trait_engineer urban_assault_specialist harsh_leader }
-						skill = 4
-						attack_skill = 4
-						defense_skill = 3
-						planning_skill = 2
-						logistics_skill = 4
-					}
+				create_corps_commander = {
+					name = "Juan Yague"
+					picture = "Juan_Yague.dds"
+					traits = { infantry_leader hill_fighter trait_mountaineer }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 5
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Sanjurjo"
+					picture = "sanjurjo.dds"
+					traits = { infantry_leader  hill_fighter ranger }
+					skill = 3
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Emilio Aola"
+					picture = "emilio_mola.dds"
+					traits = { infantry_leader hill_fighter trait_engineer urban_assault_specialist harsh_leader }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 4
+				}
 		 	}
 		}
 	}

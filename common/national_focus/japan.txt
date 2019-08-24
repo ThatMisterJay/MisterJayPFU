@@ -1627,6 +1627,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = mitsubishi } }
+				add_ideas = mitsubishi
+				add_political_power = -75
+			}
 			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = { set_technology = { cv_fighter2 = 1 } }
 		}

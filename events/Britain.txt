@@ -263,9 +263,7 @@ country_event = {
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
-			traits = { british_bulldog
-
-			}
+			traits = { british_bulldog }
 		}
 		add_stability = 0.1
 	}
@@ -303,9 +301,7 @@ country_event = {
 			picture = "Portrait_Britain_Winston_Churchill.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
-			traits = { british_bulldog
-
-			}
+			traits = { british_bulldog }
 		}
 	}
 	option = {
@@ -782,11 +778,10 @@ country_event = {
         	picture = "Portrait_Britain_Neville_Chamberlain.dds"
         	expire = "1965.1.1"
         	ideology = conservatism
-        	traits = { chamberlain_appeaser rearmer
-        	      }
-            }
+        	traits = { chamberlain_appeaser rearmer }
+        }
         set_country_flag = baldwin_resigned
-      }
+	}
 }
 
 #RAJ gets to choose sides in Indian civil war

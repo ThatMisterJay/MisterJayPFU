@@ -281,7 +281,7 @@ create_corps_commander = { ##available at the beginning - imprisonned when south
 #create_field_marshal = { ##in prison for the whole war
 #	name = "Maurice Gamelin"
 #	picture = "Portrait_France_Maurice_Gamelin.dds"
-#	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+#	traits = { defensive_doctrine old_guard }
 #	skill = 2
 #}
 
@@ -299,7 +299,7 @@ create_field_marshal = {
 #create_field_marshal = { ## Retired in 1940 due to age limit
 #	name = "Alphonse Georges"
 #	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-#	traits = { defensive_doctrine old_guard trait_cautious infantry_leader organizer }
+#	traits = { defensive_doctrine old_guard }
 #	skill = 3
 #}
 
@@ -307,7 +307,7 @@ create_field_marshal = {
 #create_corps_commander = { ## Escaped german prison in 1942
 #	name = "Henri Giraud"
 #	picture = "portrait_france_henri_giraud.dds"
-#	traits = {  trickster trait_cautious career_officer infantry_officer infantry_leader }
+#	traits = {  trickster }
 #	skill = 3
 #}
 

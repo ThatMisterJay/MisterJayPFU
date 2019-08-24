@@ -156,17 +156,17 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 98
+    democratic = 100
     fascism = 0
-    communism = 2
+    communism = 0
 }
 
 create_country_leader = {
-name = "Joseph Lyons"
-desc = "POLITICS_JOHN_CURTIN_DESC"
-picture = "Joseph_Lyons.dds"
-expire = "1965.1.1"
-ideology = conservatism
+	name = "Joseph Lyons"
+	desc = "POLITICS_JOHN_CURTIN_DESC"
+	picture = "Joseph_Lyons.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -227,9 +227,9 @@ set_convoys = 100
 }
 
     set_popularities = {
-        democratic = 99
+        democratic = 100
         fascism = 0
-        communism = 1
+        communism = 0
     }
 	set_convoys = 100
 }
@@ -272,10 +272,10 @@ create_corps_commander = {
 	gfx = "GFX_AST_alan_vasey"
 	traits = { career_officer hill_fighter jungle_rat trait_mountaineer infantry_leader commando }
 	skill = 3
-  attack_skill = 3
+    attack_skill = 3
 	defense_skill = 4
 	planning_skill = 2
-  logistics_skill = 1
+    logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Horace Robertson"
@@ -283,7 +283,7 @@ create_corps_commander = {
 	traits = { career_officer desert_fox cavalry_leader panzer_leader }
 	skill = 3
 	attack_skill = 3
-  defense_skill = 1
+    defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 3
 }

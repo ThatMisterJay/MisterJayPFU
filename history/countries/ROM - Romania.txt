@@ -12,7 +12,6 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
-	tech_logistics_company = 1
 	motorised_infantry = 1
 	gwtank = 1
 	basic_light_tank = 1
@@ -40,7 +39,6 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		mtg_transport = 1
 	}
 }
 
@@ -144,7 +142,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Petre Dumitrescu"
 	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { offensive_doctrine logistics_wizard infantry_leader organizer career_officer  }
+	traits = { offensive_doctrine logistics_wizard }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
@@ -185,9 +183,8 @@ if = {
 		traits = { trait_mountaineer infantry_leader career_officer }
 		skill = 4
 		attack_skill = 4
-	  defense_skill = 4
-	  planning_skill = 2
-		logistics_skill = 3
+		defense_skill = 4
+		planning_skill = 2
 	}
 
 	create_navy_leader = {

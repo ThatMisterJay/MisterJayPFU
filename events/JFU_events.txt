@@ -307,3 +307,66 @@ country_event = {
 		}
 	}
 }
+
+add_namespace = tfv_australia
+
+# Lyons Passes Away
+country_event = {
+	id = tfv_australia.97
+	title = tfv_australia.97.t
+	desc = tfv_australia.97.d
+	picture = "GFX_report_event_lyon.dds"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1939.4.6
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = tfv_australia.97.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Robert Menzies"
+			desc = "POLITICS_ROBERT_MENZIES_DESC"
+			picture = "Robert_Menzies.dds"
+			expire = "1965.1.1"
+			ideology = liberalism
+			traits = {
+			}
+		}
+	}
+}
+
+#John Curtin shall lead
+country_event = {
+	id = tfv_australia.98
+	title = tfv_australia.98.t
+	desc = tfv_australia.98.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1941.10.9
+	}
+	mean_time_to_happen = { days = 1 }
+	option ={
+		name = tfv_australia.98.a
+		set_party_name = { ideology = democratic long_name = AST_Labor_party name = AST_Labor_party }
+		create_country_leader = {
+			name = "John Curtin"
+			desc = "POLITICS_JOHN_CURTIN_DESC"
+			picture = "Portrait_Australia_John_Curtin.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			#
+			}
+		}
+	}
+}

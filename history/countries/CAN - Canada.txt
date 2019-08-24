@@ -13,7 +13,6 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	tech_logistics_company = 1
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1
@@ -219,9 +218,9 @@ set_war_support = 0.1
 }
 
     set_popularities = {
-        democratic = 98
-        fascism = 1
-        communism = 1
+        democratic = 100
+        fascism = 0
+        communism = 0
     }
 }
 
@@ -252,7 +251,7 @@ create_corps_commander = {
 	picture = "portrait_europe_generic_land_9.dds"
 	traits = { desert_fox cavalry_leader trickster }
 	skill = 3
-    attack_skill = 4
+	attack_skill = 4
     defense_skill = 2
     planning_skill = 1
     logistics_skill = 3
@@ -262,12 +261,11 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/CAN/Portrait_CAN_Lauren_Southern.dds"
 	traits = { hill_fighter trickster panzer_leader cavalry_leader media_personality politically_connected trait_reckless old_guard  }
 	skill = 4
-		attack_skill = 4
-		defense_skill = 3
-		planning_skill = 3
-		logistics_skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
-
 create_corps_commander = {
 	name = "Bert Hoffmeister"
 	gfx = "GFX_CAN_bert_hoffmeister"
