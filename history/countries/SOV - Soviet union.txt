@@ -94,6 +94,8 @@ add_ideas = {
 	trotskyite_plot
 	home_of_revolution
 	production_targets_idea
+	socialism_in_one_country
+	closed_economy
 }
 
 create_country_leader = {
