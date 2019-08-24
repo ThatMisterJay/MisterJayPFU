@@ -125,6 +125,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	JFU_autarky_idea
 }
 
 create_country_leader = {
@@ -242,7 +243,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { offensive_doctrine fast_planner organisational_leader inspirational_leader
+	traits = { offensive_doctrine organizer
 	 brilliant_strategist trait_engineer panzer_leader trickster ranger hill_fighter }
 	skill = 5
 	id = 5
@@ -267,7 +268,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Heinz Guderian"
 	picture = "Portrait_Germany_Heinz_Guderian.dds"
-	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer panzer_leader ranger hill_fighter
+	traits = { trickster brilliant_strategist panzer_leader armor_officer career_officer panzer_leader ranger hill_fighter trait_engineer
 	}
 	skill = 5
 	id = 6
@@ -474,7 +475,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Sepp Dietrich"
 	picture = "Portrait_Germany_Josef_Dietrich.dds"
-	traits = { armor_officer politically_connected brilliant_strategist trait_reckless
+	traits = { armor_officer politically_connected trait_reckless
 	 infantry_leader harsh_leader ranger hill_fighter }
 	skill = 5
 	id = 24
