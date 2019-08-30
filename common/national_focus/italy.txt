@@ -1554,7 +1554,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_albania_war_goal }
 		x = 12
 		y = 2
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1627,7 +1627,7 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
-		cost = 10
+		cost = 4.3
 		ai_will_do = {
 			factor = 10
 
