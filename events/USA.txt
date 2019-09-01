@@ -167,6 +167,7 @@ country_event = {
 			factor = 75
 		}
 		add_ideas = new_deal
+		add_political_power = 150
 		if = {
 			limit = {
 				OR = {
