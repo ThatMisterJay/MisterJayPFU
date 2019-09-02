@@ -2185,7 +2185,7 @@ leader_traits = {
 	army_chief_planning_1 = { #
 		sprite = 5
 		planning_speed = 0.05
-
+    max_planning = 0.5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2194,7 +2194,7 @@ leader_traits = {
 	army_chief_planning_2 = { #
 		sprite = 5
 		planning_speed = 0.10
-
+    max_planning = 0.1
 		ai_will_do = {
 			factor = 2
 		}
@@ -2203,7 +2203,7 @@ leader_traits = {
 	army_chief_planning_3 = { #
 		sprite = 5
 		planning_speed = 0.15
-
+    max_planning = 0.15
 		ai_will_do = {
 			factor = 3
 		}
@@ -2925,9 +2925,9 @@ leader_traits = {
 
 	air_airborne_1 = { # Paratrooper drop efficiency increased by 4%
 		sprite = 1
-		air_paradrop_attack_factor = 0.01
-		air_paradrop_defence_factor = 0.03
-		air_paradrop_agility_factor = 0.03
+		air_paradrop_attack_factor = 0.05
+		air_paradrop_defence_factor = 0.05
+		air_paradrop_agility_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -2936,8 +2936,8 @@ leader_traits = {
 
 	air_airborne_2 = { # Paratrooper drop efficiency increased by 8%
 		sprite = 1
-		air_paradrop_attack_factor = 0.02
-		air_paradrop_defence_factor = 0.05
+		air_paradrop_attack_factor = 0.1
+		air_paradrop_defence_factor = 0.1
 		air_paradrop_agility_factor = 0.05
 
 		ai_will_do = {
@@ -2947,8 +2947,8 @@ leader_traits = {
 
 	air_airborne_3 = { # Paratrooper drop efficiency increased by 12%
 		sprite = 1
-		air_paradrop_attack_factor = 0.03
-		air_paradrop_defence_factor = 0.07
+		air_paradrop_attack_factor = 0.15
+		air_paradrop_defence_factor = 0.15
 		air_paradrop_agility_factor = 0.07
 
 		ai_will_do = {
@@ -3232,6 +3232,7 @@ leader_traits = {
 	navy_amphibious_assault_1 = {
 		sprite = 3
 		amphibious_invasion = 0.05
+		special_forces_attack_factor = 0.03
 
 		ai_will_do = {
 			factor = 1
@@ -3241,6 +3242,7 @@ leader_traits = {
 	navy_amphibious_assault_2 = {
 		sprite = 3
 		amphibious_invasion = 0.1
+		special_forces_attack_factor = 0.05
 
 		ai_will_do = {
 			factor = 2
@@ -3250,6 +3252,7 @@ leader_traits = {
 	navy_amphibious_assault_3 = {
 		sprite = 3
 		amphibious_invasion = 0.15
+	  special_forces_attack_factor = 0.08
 
 		ai_will_do = {
 			factor = 3
