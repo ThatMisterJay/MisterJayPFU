@@ -346,6 +346,21 @@ ideas = {
 			}
 		}
 
+		NZL_fluffy = {
+
+			picture = generic_air_europe_2
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			traits = { army_infantry_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		NZL_trevor_handley = {
 
 			picture = generic_navy_europe_1
