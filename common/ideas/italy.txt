@@ -497,6 +497,23 @@ ideas = {
 			}
 		}
 
+		ITA_ezio = {
+
+    picture = generic_political_advisor_europe_6
+
+			allowed = {
+				original_tag = ITA
+			}
+
+
+
+			traits = { army_commando_1 }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
 		ettore_muti = {
 
 
