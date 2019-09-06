@@ -614,9 +614,9 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 
-		AST_thomas_blamey = {
+		AST_sydney_rowell = {
 
-			picture = generic_political_advisor_europe_3
+
 
 			allowed = {
 				original_tag = AST
