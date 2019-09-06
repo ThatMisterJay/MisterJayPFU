@@ -153,23 +153,23 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Ion Antonescu"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine }
-	skill = 4
-	attack_skill = 4
+	traits = { offensive_doctrine career_officer harsh_leader organizer inspirational_leader }
+	skill = 5
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
-	logistics_skill = 3
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Ioan Mihail Racovita"
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
+	traits = { hill_fighter infantry_leader trait_mountaineer career_officer }
+	skill = 4
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 if = {
@@ -180,12 +180,11 @@ if = {
 	create_corps_commander = {
 		name = "Gheorghe Avramescu"
 		gfx = GFX_Portrait_romania_gheorghe_avramescu
-		traits = { }
-		skill = 3
-		attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-		logistics_skill = 3
+		traits = { trait_mountaineer infantry_leader career_officer }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 2
 	}
 
 	create_navy_leader = {

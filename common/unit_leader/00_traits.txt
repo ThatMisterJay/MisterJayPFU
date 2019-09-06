@@ -451,7 +451,7 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = is_using_battle_plans
 
-		cost = 1000
+		cost = 2000
 		modifier = {
 			planning_speed = 0.1
 		}
@@ -475,7 +475,7 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = cavalary_ratio_over_40
 
-		cost = 1000
+		cost = 2000
 		modifier = {
 			cavalry_attack_factor = 0.15
 			motorized_attack_factor = 0.15
@@ -498,7 +498,7 @@ leader_traits = {
 		}
 		custom_gain_xp_trigger_tooltip = infantry_ratio_over_80
 
-		cost = 1000
+		cost = 2000
 		modifier = {
 			army_infantry_defence_factor = 0.10
 		}
@@ -1125,8 +1125,8 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.5
-			air_superiority_bonus_in_combat = -0.5
+			cas_damage_reduction = 0.2
+			air_superiority_bonus_in_combat = -0.2
 		}
 
 		ai_will_do = {

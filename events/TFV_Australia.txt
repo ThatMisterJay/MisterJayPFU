@@ -921,6 +921,7 @@ country_event = {
 
 }
 
+
 # Lyons Passes Away
 country_event = {
  id = tfv_australia.97

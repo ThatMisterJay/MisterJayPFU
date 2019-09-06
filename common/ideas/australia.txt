@@ -205,6 +205,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.25
 				foreign_subversive_activites = -0.50
+				conscription_factor = 0.15
 			}
 		}
 
@@ -229,6 +230,7 @@ ideas = {
 			modifier = {
 				send_volunteer_divisions_required = -1
 				send_volunteer_size = 1
+				conscription_factor = 0.15
 			}
 		}
 
@@ -685,7 +687,7 @@ ideas = {
 				original_tag = AST
 			}
 
-			traits = { army_artillery_2 }
+			traits = { army_commando_2 }
 
 			ai_will_do = {
 				factor = 1
