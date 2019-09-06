@@ -1664,6 +1664,22 @@ ideas = {
 			}
 		}
 
+		george_patton = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+
+
+
+			traits = { army_armored_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		mark_clark = {
 
 
@@ -1680,21 +1696,6 @@ ideas = {
 			}
 		}
 
-		george_patton = {
-
-
-			allowed = {
-				original_tag = USA
-			}
-
-
-
-			traits = { army_armored_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		jimmy_doolittle = {
 
