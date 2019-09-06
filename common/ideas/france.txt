@@ -1327,7 +1327,7 @@ ideas = {
 				original_tag = FRA
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20
@@ -1377,7 +1377,7 @@ ideas = {
 				original_tag = FRA
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_fleet_in_being = 0.20
@@ -1424,7 +1424,7 @@ ideas = {
 				}
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_operational_integrity = 0.20

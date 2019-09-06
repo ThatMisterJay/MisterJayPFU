@@ -1945,7 +1945,7 @@ ideas = {
 				NOT = { has_country_flag = purge_1_group_a }
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_mass_assault = 0.20
@@ -1986,7 +1986,7 @@ ideas = {
 				has_completed_focus = SOV_positive_heroism
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_mass_assault = 0.20
@@ -2022,7 +2022,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_fleet_in_being = 0.20
@@ -2042,7 +2042,7 @@ ideas = {
 				NOT = { has_country_flag = counter_purge }
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_battlefield_support = 0.20

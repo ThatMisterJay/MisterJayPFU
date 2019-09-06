@@ -1680,6 +1680,22 @@ ideas = {
 			}
 		}
 
+		george_patton = {
+
+
+			allowed = {
+				original_tag = USA
+			}
+
+
+
+			traits = { army_armored_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		jimmy_doolittle = {
 
 
@@ -2420,7 +2436,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_superior_firepower = 0.20
@@ -2436,7 +2452,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_mobile_warfare = 0.20
@@ -2468,7 +2484,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_base_strike = 0.20
@@ -2484,7 +2500,7 @@ ideas = {
 				original_tag = USA
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_strategic_destruction = 0.20

@@ -2731,7 +2731,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20
@@ -2761,7 +2761,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_fleet_in_being = 0.20
@@ -2806,7 +2806,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_strategic_destruction = 0.20

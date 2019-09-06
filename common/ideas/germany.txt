@@ -1531,7 +1531,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_mobile_warfare = 0.20
@@ -1548,7 +1548,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_battlefield_support = 0.20
@@ -1592,7 +1592,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_trade_interdiction = 0.20

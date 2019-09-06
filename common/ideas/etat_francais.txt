@@ -327,7 +327,7 @@ ideas = {
 				original_tag = EFR
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20

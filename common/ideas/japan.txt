@@ -1996,7 +1996,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20
@@ -2024,7 +2024,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_base_strike = 0.20
@@ -2052,7 +2052,7 @@ ideas = {
 				original_tag = JAP
 			}
 
-			cost = 250
+			cost = 175
 
 			research_bonus = {
 				cat_operational_integrity = 0.20
