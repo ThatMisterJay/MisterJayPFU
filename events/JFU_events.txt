@@ -370,3 +370,34 @@ country_event = {
 		}
 	}
 }
+
+
+
+country_event = {
+id = JFU.13
+title = JFU.13.t
+desc = JFU.13.d
+
+fire_only_once = yes
+
+trigger = {
+tag = ITA
+date > 1940.6.1
+}
+
+option = {
+name = JFU.13.a
+remove_ideas = italo_balbo
+remove_unit_leader = 994
+air_experience = 25
+add_stability = .10
+set_country_flag = balbo_dead
+}
+
+option = {
+name = JFU.13.b
+add_political_power = 100
+air_experience = 25
+}
+
+}

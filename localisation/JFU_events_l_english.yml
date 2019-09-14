@@ -247,11 +247,17 @@
     italy.17.a:0 "For Italy"
 
 
-    tfv_australia.97.t: "Lyons Passes Away"
-    tfv_australia.97.d: "On 5 April 1939, Lyons suffered a heart attack while being driven from Melbourne to Sydney. It occurred shortly after he had stopped in at Goulburn to collect his son Kevin from St Patrick's College for the Easter holidays. Lyons was rushed to St Vincent's Hospital, Darlinghurst, in a critical condition. By the following day, he was unable to speak and was drifting in and out of consciousness. He soon fell into a coma, and died on the morning of 7 April."
-    tfv_australia.97.a: "Robert Menzies will take his place"
+    tfv_australia.97.t:0 "Lyons Passes Away"
+    tfv_australia.97.d:0 "On 5 April 1939, Lyons suffered a heart attack while being driven from Melbourne to Sydney. It occurred shortly after he had stopped in at Goulburn to collect his son Kevin from St Patrick's College for the Easter holidays. Lyons was rushed to St Vincent's Hospital, Darlinghurst, in a critical condition. By the following day, he was unable to speak and was drifting in and out of consciousness. He soon fell into a coma, and died on the morning of 7 April."
+    tfv_australia.97.a:0 "Robert Menzies will take his place"
 
 
-    tfv_australia.98.t: "John Curtin Takes the Lead"
-    tfv_australia.98.d: "John Curtin is now leading Australia. This description is so short because Sithben is lazy and did not provide one."
-    tfv_australia.98.a: "Lazy Sithben is Lazy"
+    tfv_australia.98.t:0 "John Curtin Takes the Lead"
+    tfv_australia.98.d:0 "Curtin had refused Menzies' initial offer to form a wartime 'national government', partly because he feared that it would split the Labor Party, although he did agree to join the Advisory War Council. In October 1941, Arthur Coles and Alexander Wilson, the two independent MPs who had been keeping the Coalition in office since 1940 (first under Menzies, then under Fadden), joined forces with Labor in defeating Fadden's budget and bringing the government down. Governor-General Lord Gowrie was reluctant to call an election for a Parliament barely a year old, especially given the international situation. He summoned Coles and Wilson and made them promise that if he named Curtin prime minister, they would support him for the remainder of the Parliament to end the instability in government. The independents agreed, and Curtin was sworn in as prime minister on 7 October, aged 56. He became the first and only prime minister to come from Western Australia"
+    tfv_australia.98.a:0 "For stability, Curtin must lead"
+
+
+    JFU.13.t:0 "Balbo on his way to Tobruk"
+    JFU.13.d:0 "On 28 June 1940, Balbo was a passenger on a Savoia-Marchetti SM.79 headed for the Libyan airfield of Tobruk, arriving shortly after the airfield had been attacked by British aircraft. Italian anti-aircraft batteries defending the airfield misidentified the aircraft as a British fighter and opened fire upon it as it attempted a landing. It was downed and all on board perished."
+    JFU.13.a:0 "Have him killed"
+    JFU.13.b:0 "He is still useful"
