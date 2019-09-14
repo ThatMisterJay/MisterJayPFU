@@ -6,6 +6,9 @@ set_research_slots = 4
 
 add_ideas = {
 	victor_emmanuel
+	ITA_army
+  weak_industry0
+	weak_industry1
 	vittoria_mutilata
 	limited_exports
 	limited_conscription
@@ -218,7 +221,7 @@ create_corps_commander = {
 	name = "Ugo Cavallero"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
 	traits = {  old_guard trait_cautious career_officer organizer infantry_leader hill_fighter }
-	skill = 2
+	skill = 3
 	rank = 1
 	attack_skill = 2
 	defense_skill = 2
@@ -240,6 +243,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Italo Balbo"
+	id = 994
 	picture = "portrait_italy_italo_balbo.dds"
 	traits = { career_officer politically_connected trait_mountaineer infantry_leader }
 	skill = 2

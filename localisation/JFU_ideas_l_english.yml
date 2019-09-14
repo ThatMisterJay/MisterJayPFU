@@ -59,3 +59,40 @@
     SAF_von_leon:0 "Von Leon"
     NZL_fluffy:0 "Fluffy"
     ITA_ezio:0 "Ezio"
+
+
+#Italian ideas#
+    weak_industry2:0 "Southern Growing Pains"
+    weak_industry1:0 "Weak Northern Industry"
+    weak_industry0:0 "Weak Southern Industrial base"
+    ITA_exploit_africa:0 "Exploited African Labour"
+    ITA_upperclasssupport:0 "Upper Class Support"
+    ITA_papal_subject:0 "Papal Subjugation"
+    ITA_army:0 "Inadequate Army High Command"
+    ITA_output_boost:0 "Factory Owners Increase Production"
+    ITA_expanded_mvsn:0 "MVSN Expanded"
+    ITA_mvsn_2:0 "MVSN Supremacy"
+    ITA_army_2:0 "Incompetent Army High Command"
+    ITA_tanktreaty:0 "Armored Treaty"
+    ITA_sssupport:0 "SS Assistance"
+    ITA_new_officers:0 "Officer Training scheme"
+    ITA_air_build:0 "Regia Aeronautica Prioritized"
+    ITA_navy_build:0 "Regia Marina Prioritized"
+    ITA_air_supply:0 "Air Supply Theroy"
+
+
+
+
+
+
+
+#tooltip#
+ITA_new_army:0 "Our new officer corp will lead the Italian army to victory. "
+ITA_remove_yes_men:0 "No longer will the Italian army be hampered by incompetent officers who knew the right people. "
+ITA_training:0 "New officer will fill the needs of the Royal Army. "
+ITA_new_commanders:0 "Commanders loyal to the King will be needed if Italy is to survive. (Italy gain 3 new experienced officers)"
+ITA_med:0 "Despite our lackluster officer corp, we still have some capable officers. "
+ITA_mot_div:0 " Motorized Divisons will be needed if Italy is to keep up with the other powers. Will gain a elite mot. division in Rome. "
+ITA_ss:0 "The SS will help us form new elite formations. Will gain 2 elite divisions in Rome.  "
+    #research#
+    ITA_industrial_push:0 "Industrial Advancement"

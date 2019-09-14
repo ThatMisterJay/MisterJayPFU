@@ -126,9 +126,13 @@ ideas = {
 				original_tag = "ITA"
 			}
 
-			picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_6
 
 			traits = { prince_of_terror }
+
+			available = {
+				has_completed_focus = ITA_followthewaffenssexample
+				}
 
 			on_add = {
 			}
@@ -148,6 +152,10 @@ ideas = {
 			picture = generic_political_advisor_europe_2
 
 			traits = { compassionate_gentleman }
+
+			available = {
+				has_completed_focus = ITA_socialiteconnections
+			}
 
 			on_add = {
 			}
@@ -182,6 +190,10 @@ ideas = {
 				original_tag = "ITA"
 			}
 
+			available = {
+				has_completed_focus = ITA_begincolonialprojects
+			}
+
 			picture = generic_political_advisor_europe_3
 
 			traits = { smooth_talking_charmer }
@@ -199,6 +211,10 @@ ideas = {
 
 			allowed = {
 				original_tag = "ITA"
+			}
+
+			available = {
+				has_completed_focus = ITA_loyaltyoverability
 			}
 
 			picture = generic_political_advisor_europe_1
@@ -222,6 +238,9 @@ ideas = {
 				original_tag = "ITA"
 			}
 
+			available = {
+				has_completed_focus = ITA_capitalistclasssupport
+			}
 			picture = generic_political_advisor_europe_2
 
 			traits = { war_industrialist }
@@ -259,6 +278,10 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+
+			available = {
+				has_completed_focus = ITA_capitalistclasssupport
+			  }
 
 			picture = generic_political_advisor_europe_1
 
@@ -335,7 +358,9 @@ ideas = {
 				original_tag = ITA
 			}
 
-
+			available = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
 
 			traits = { army_chief_defensive_1 }
 
@@ -405,7 +430,9 @@ ideas = {
 				original_tag = ITA
 			}
 
-
+available = {
+NOT = { has_country_flag = balbo_dead }
+}
 
 			traits = { air_chief_all_weather_2 }
 
@@ -456,7 +483,9 @@ ideas = {
 				original_tag = ITA
 			}
 
-
+			available = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
 
 			traits = { army_regrouping_1 }
 
@@ -472,7 +501,9 @@ ideas = {
 				original_tag = ITA
 			}
 
-
+			available = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
 
 			traits = { army_cavalry_1 }
 
@@ -488,7 +519,9 @@ ideas = {
 				original_tag = ITA
 			}
 
-
+			available = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
 
 			traits = { army_infantry_1 }
 
@@ -499,13 +532,15 @@ ideas = {
 
 		ITA_ezio = {
 
-    picture = generic_political_advisor_europe_6
+    picture = alexander_kerensky
 
 			allowed = {
 				original_tag = ITA
 			}
 
-
+			available = {
+				has_completed_focus = ITA_securebritishmediterraneanholdings
+			}
 
 			traits = { army_commando_1 }
 
@@ -514,21 +549,7 @@ ideas = {
 			}
 		}
 
-		ettore_muti = {
 
-
-			allowed = {
-				original_tag = ITA
-			}
-
-
-
-			traits = { air_tactical_bombing_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		marziale_cerutti = {
 
@@ -537,30 +558,17 @@ ideas = {
 				original_tag = ITA
 			}
 
+			available = {
+				has_completed_focus = ITA_learnfromgermanfallschirmjger
+			}
 
-
-			traits = { air_air_combat_training_2 }
+			traits = { air_airborne_3 }
 
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		silvio_scaroni = {
-
-
-			allowed = {
-				original_tag = ITA
-			}
-
-
-
-			traits = { air_bomber_interception_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		alberto_da_zara = {
 
@@ -601,9 +609,11 @@ ideas = {
 				original_tag = ITA
 			}
 
+			available = {
+				has_completed_focus = ITA_marinesandlandingcraft
+			}
 
-
-			traits = { navy_naval_air_defense_1 }
+			traits = { navy_amphibious_assault_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -803,6 +813,9 @@ ideas = {
 			}
 
 			traits = { savoia_marchetti_aircraft_manufacturer }
+			available = {
+			has_completed_focus = ITA_fromgibraltartocyprusinonetank
+			}
 		}
 
 		crdaair = {

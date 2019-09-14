@@ -1,5 +1,5 @@
 leader_traits = {
-	
+
 ####### ITALIAN AIRCRAFT MANUFACTURERS #######
 
 	macchi_aircraft_manufacturer = {
@@ -13,12 +13,12 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	savoia_marchetti_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
 			heavy_fighter_equipment = {
-				reliability = 0.2 maximum_speed = 0.15 air_range = 0.1 air_agility = -0.1
+				reliability = 0.2 maximum_speed = 0.1 air_range = 0.2 air_agility = 0.1 air_defence = 0.15
 			}
 			nav_bomber_equipment = {
 				air_range = 0.1 naval_strike_attack = 0.1 maximum_speed = 0.2
@@ -27,8 +27,9 @@ leader_traits = {
 				air_range = 0.1 naval_strike_attack = 0.1 maximum_speed = 0.1
 			}
 		}
+
 	}
-	
+
 	fiat_aircraft_manufacturer {
 		random = no
 		equipment_bonus = {
@@ -43,7 +44,7 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	piaggio_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -52,7 +53,7 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	breda_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -64,7 +65,7 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	imam_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -73,7 +74,7 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 	crda_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -82,5 +83,5 @@ leader_traits = {
 			}
 		}
 	}
-	
+
 }
