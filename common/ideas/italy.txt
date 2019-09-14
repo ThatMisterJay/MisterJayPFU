@@ -530,9 +530,9 @@ NOT = { has_country_flag = balbo_dead }
 			}
 		}
 
-		ITA_ezio = {
+		ITA_com_spe = {
 
-    picture = alexander_kerensky
+    picture = generic_air_europe_2
 
 			allowed = {
 				original_tag = ITA
@@ -973,6 +973,25 @@ NOT = { has_country_flag = balbo_dead }
 
 			traits = { military_theorist }
 	}
+
+	ITA_ezio = {
+
+	allowed = {
+	original_tag = ITA
+	}
+
+	cost = 175
+
+	picture = alexander_kerensky
+
+	research_bonus = {
+		cat_mass_assault = 0.20
+	}
+
+	traits = { mass_assault_expert }
+
+	}
+
 
 		giovanni_messe = {
 
