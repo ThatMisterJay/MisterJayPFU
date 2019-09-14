@@ -394,10 +394,6 @@ add_stability = .10
 set_country_flag = balbo_dead
 }
 
-option = {
-name = JFU.13.b
-add_political_power = 100
-air_experience = 25
-}
+
 
 }

@@ -1956,7 +1956,7 @@ x = 22
 y = 4
 cost = 10
 available_if_capitulated = yes
-prerequisite = { focus = ITA_triumphinafrica }
+prerequisite = { focus = ITA_befriendbulgaria }
 available = {
 
 country_exists = ALB
