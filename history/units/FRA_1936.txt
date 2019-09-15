@@ -188,7 +188,7 @@ units = {
 		location = 5291
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -199,7 +199,7 @@ units = {
 		location = 9503
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -215,7 +215,7 @@ units = {
 		location = 3629
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -229,7 +229,7 @@ units = {
 		location = 549
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -237,7 +237,7 @@ units = {
 		location = 11516
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -254,7 +254,7 @@ units = {
 		location = 575
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -279,7 +279,7 @@ units = {
 		name = "12ème Div. d'Infanterie Motorisée"
 		location = 9472
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 	division= {
 		name = "1ère Division Légère Mécanique"
@@ -294,7 +294,7 @@ units = {
 		name = "19ème Division d'Infanterie"
 		location = 3509
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 
 	# Ve Corps d'Armée (Région Militaire in 1936) -- Orleans
@@ -309,7 +309,7 @@ units = {
 		location = 3509
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -318,14 +318,14 @@ units = {
 		name = "23ème Division d'Infanterie"
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 	division= {
 		name = "3ème Div. d'Inf. Nord-Africaine"
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -335,14 +335,14 @@ units = {
 		location = 3552
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
 		name = "21ème Division d'Infanterie"
 		location = 6536
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 
 
@@ -352,7 +352,7 @@ units = {
 		location = 11506
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -360,7 +360,7 @@ units = {
 		location = 11506
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -368,7 +368,7 @@ units = {
 		location = 11506
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -379,20 +379,20 @@ units = {
 		location = 678
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
 		name = "13ème Division d'Infanterie"
 		location = 678
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 	division= {
 		name = "14ème Division d'Infanterie"
 		location = 9642
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 
 	# VIIIe Corps d'Armée (Région Militaire in 1936) -- Dijon
@@ -400,14 +400,14 @@ units = {
 		name = "15ème Div. d'Infanterie Motorisée"
 		location = 3652
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 	division= {
 		name = "24ème Division d'Infanterie"
 		location = 3652
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -417,7 +417,7 @@ units = {
 		location = 5291
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -425,7 +425,7 @@ units = {
 		location = 11502
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -433,7 +433,7 @@ units = {
 		location = 3629
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -441,7 +441,7 @@ units = {
 		location = 9503
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -449,7 +449,7 @@ units = {
 		location = 678
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 
@@ -460,7 +460,7 @@ units = {
 		location = 11576
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -468,7 +468,7 @@ units = {
 		location = 11576
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -484,7 +484,7 @@ units = {
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -492,7 +492,7 @@ units = {
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -501,14 +501,14 @@ units = {
 		name = "36ème Division d'Infanterie"
 		location = 9737
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
-		start_experience_factor = 0.3
+		start_experience_factor = 1
 	}
 	division= {
 		name = "1ère Div. d'Inf. Coloniale"
 		location = 6657
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -524,7 +524,7 @@ units = {
 		location = 9745
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -532,7 +532,7 @@ units = {
 		location = 3764
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -550,7 +550,7 @@ units = {
 		location = 11834
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 
@@ -568,7 +568,7 @@ units = {
 		location = 9909
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 
@@ -637,7 +637,7 @@ units = {
 		division_template = "Division de Cavalerie"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 
@@ -668,7 +668,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -677,7 +677,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -686,7 +686,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -695,7 +695,7 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division= {
@@ -704,7 +704,7 @@ units = {
 		division_template = "Division de Cavalerie"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 
