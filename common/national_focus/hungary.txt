@@ -523,7 +523,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_industrial_revitalization
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = industry
 			}
@@ -705,7 +705,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -778,7 +778,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_announce_the_gyor_program
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 				category = industry
 			}

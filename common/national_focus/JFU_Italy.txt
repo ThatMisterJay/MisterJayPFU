@@ -15,14 +15,14 @@ id = ITA_developgreece
 icon = GFX_goal_generic_construct_civilian
 x = 9
 y = 10
-cost = 10
+cost = 14
 available_if_capitulated = yes
 prerequisite = { focus = ITA_italianfascism }
 prerequisite = { focus = ITA_policyofdevelopment }
 ai_will_do = {
  factor = 1
  }
- cost = 12.2
+ 
  available = {
    ITA = {
      controls_state = 186
@@ -373,7 +373,7 @@ id = ITA_longrangedetection
 icon = GFX_goal_generic_radar
 x = 13
 y = 10
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_airinnovationsii }
 ai_will_do = {
@@ -400,7 +400,7 @@ id = ITA_japanesedoctrineassistance
 icon = GFX_focus_chi_collaboration_with_the_japanese
 x = 19
 y = 10
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_heavyweapondevelopment }
 ai_will_do = {
@@ -1551,7 +1551,7 @@ id = ITA_marenostrum
 icon = GFX_goal_generic_construct_naval_dockyard
 x = 16
 y = 4
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_ethiopianwarlogistics }
 completion_reward = {
@@ -1587,7 +1587,7 @@ id = ITA_airinnovations
 icon = GFX_goal_generic_build_airforce
 x = 13
 y = 6
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughairpower }
 completion_reward = {
@@ -1618,7 +1618,7 @@ id = ITA_carrieradherent
 icon = GFX_goal_generic_navy_carrier
 x = 23
 y = 6
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughnavalpower }
 mutually_exclusive = { focus = ITA_battleshipadherent }
@@ -1640,7 +1640,7 @@ id = ITA_battleshipadherent
 icon = GFX_goal_generic_navy_battleship
 x = 19
 y = 6
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughnavalpower }
 mutually_exclusive = { focus = ITA_carrieradherent }
@@ -1664,7 +1664,7 @@ id = ITA_bombereffort
 icon = GFX_goal_generic_air_bomber
 x = 13
 y = 8
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_airinnovations }
 completion_reward = {
@@ -1690,7 +1690,7 @@ id = ITA_navalaireffort
 icon = GFX_goal_generic_air_naval_bomber
 x = 15
 y = 10
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_bombereffort }
 completion_reward = {
@@ -1713,7 +1713,7 @@ id = ITA_fleetdoctrineadvancement
 icon = GFX_goal_generic_navy_doctrines_tactics
 x = 21
 y = 9
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_allocateresourcestotheregiamarina }
 completion_reward = {
@@ -1764,7 +1764,7 @@ id = ITA_airinnovationsii
 icon = GFX_goal_generic_build_airforce
 x = 13
 y = 9
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_bombereffort }
 completion_reward = {
@@ -1784,7 +1784,7 @@ id = ITA_cruiserdevelopment
 icon = GFX_focus_generic_cruiser2
 x = 19
 y = 7
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughnavalpower }
 completion_reward = {
@@ -1805,7 +1805,7 @@ id = ITA_destroyerdevelopment
 icon = GFX_focus_generic_destroyer
 x = 23
 y = 7
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_carrieradherent }
 completion_reward = {
@@ -2159,7 +2159,7 @@ id = ITA_fromgibraltartocyprusinonetank
 icon = GFX_goal_generic_air_fighter2
 x = 16
 y = 7
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_longrangefighters }
 ai_will_do = {
@@ -2178,7 +2178,7 @@ id = ITA_longrangefighters
 icon = GFX_focus_usa_escort_fighters
 x = 15
 y = 6
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughairpower }
 ai_will_do = {
@@ -2204,7 +2204,7 @@ id = ITA_modernizednavalaa
 icon = GFX_goal_generic_air_production
 x = 23
 y = 9
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_northerndockyardexpansion }
 ai_will_do = {
@@ -2963,13 +2963,13 @@ id = ITA_developyugoslavia
 icon = GFX_goal_generic_construct_civilian
 x = 7
 y = 10
-cost = 10
+cost = 14
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofdevelopment }
 ai_will_do = {
  factor = 1
  }
- cost = 12.2
+
  available = {
    ITA = {
      controls_state = 103
@@ -3134,7 +3134,7 @@ id = ITA_airsupplytheory
 icon = GFX_focus_hol_war_on_pacifism
 x = 17
 y = 8
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_fromgibraltartocyprusinonetank }
 ai_will_do = {
@@ -3184,7 +3184,7 @@ id = ITA_heavyweapondevelopment
 icon = GFX_goal_generic_navy_battleship
 x = 19
 y = 9
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_southdockyardexpansion }
 ai_will_do = {
@@ -3209,7 +3209,7 @@ id = ITA_lightbatteriesdevelopment
 icon = GFX_goal_generic_navy_cruiser
 x = 23
 y = 10
-cost = 7
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_modernizednavalaa }
 ai_will_do = {

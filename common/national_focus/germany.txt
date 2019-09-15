@@ -190,7 +190,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = construction_tech
 			}
@@ -247,7 +247,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = construction_tech
 			}
@@ -280,13 +280,14 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = construction_tech
 			}
 		}
 
 		completion_reward = {
+		add_ideas = JFU_autarky_idea
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -337,7 +338,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = construction_tech_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = construction_tech
 			}

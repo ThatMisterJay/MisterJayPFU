@@ -148,11 +148,11 @@ focus_tree = {
 					name = "Iven Mackay"
 					gfx = "GFX_AST_iven_mackay"
 					traits = { trickster trait_engineer infantry_leader war_hero hill_fighter inflexible_strategist }
-					skill = 3
-					attack_skill = 4
-					defense_skill = 2
+					skill = 4
+					attack_skill = 5
+					defense_skill = 3
 					planning_skill = 2
-					logistics_skill = 2
+					logistics_skill = 3
 				}
 			}
 		}
@@ -1404,7 +1404,7 @@ focus_tree = {
 		x = 14
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1453,7 +1453,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = industry
 			}
@@ -1468,7 +1468,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1586,10 +1586,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = AST_department_of_supply_and_development_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1605,10 +1605,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_department_of_supply_and_development_AF
@@ -1643,7 +1643,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

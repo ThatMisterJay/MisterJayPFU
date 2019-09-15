@@ -82,7 +82,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 6
 		}
@@ -222,7 +222,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = industry
 			}
