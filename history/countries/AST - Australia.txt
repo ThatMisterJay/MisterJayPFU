@@ -271,11 +271,11 @@ create_corps_commander = {
 	name = "Alan Vasey"
 	gfx = "GFX_AST_alan_vasey"
 	traits = { career_officer hill_fighter jungle_rat trait_mountaineer infantry_leader commando }
-	skill = 3
-    attack_skill = 3
+	skill = 4
+    attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
-    logistics_skill = 1
+    logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Horace Robertson"
