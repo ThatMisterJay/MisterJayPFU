@@ -96,7 +96,7 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
 				min_export = -0.20
 			}
 		}
@@ -1180,7 +1180,7 @@ ideas = {
 
 		germaniawerft = {
 
-
+cost = 100
 			allowed = {
 				original_tag = GER
 			}
@@ -1199,7 +1199,7 @@ ideas = {
 
 		blohm_und_voss = {
 
-
+cost = 100
 			allowed = {
 				original_tag = GER
 			}

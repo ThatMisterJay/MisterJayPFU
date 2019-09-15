@@ -1970,7 +1970,7 @@ ideas = {
 		designer = yes
 
 		norfolk_naval_yard = {
-
+cost = 100
 
 			allowed = {
 				original_tag = USA
@@ -1990,7 +1990,7 @@ ideas = {
 
 		electric_boat_company = {
 
-
+cost = 100
 			allowed = {
 				original_tag = USA
 			}
@@ -2008,7 +2008,7 @@ ideas = {
 		}
 
 		brooklyn_naval_yard = {
-
+cost = 100
 
 			allowed = {
 				original_tag = USA
@@ -2028,7 +2028,7 @@ ideas = {
 
 		newport_news_shipbuilding = {
 
-
+cost = 100
 			allowed = {
 				original_tag = USA
 			}

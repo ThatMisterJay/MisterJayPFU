@@ -912,6 +912,27 @@ NOT = { has_country_flag = balbo_dead }
 
 			traits = { industrial_concern }
 		}
+
+
+olivetti = {
+
+			allowed = {
+				original_tag = ITA
+			}
+
+picture = generic_electronics_concern_3
+
+			research_bonus = {
+				electronics = 0.10
+			}
+
+			research_bonus = {
+				industry = 0.10
+			}
+
+			traits = { electronics_concern }
+		}
+
 	}
 
 
@@ -920,7 +941,7 @@ NOT = { has_country_flag = balbo_dead }
 		designer = yes
 
 		crda = {
-
+cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -933,7 +954,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		ansaldo = {
-
+cost = 100
 			allowed = {
 				original_tag = ITA
 			}
@@ -946,7 +967,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		odero_terni_orlando = {
-
+cost = 100
 			allowed = {
 				original_tag = ITA
 			}

@@ -234,7 +234,7 @@ ideas = {
 		designer = yes
 
 		free_french_fleet = {
-
+		cost = 100
 			picture = generic_naval_manufacturer_2
 
 			allowed = {

@@ -1284,7 +1284,7 @@ ideas = {
 		designer = yes
 
 		fcm = {
-
+cost = 100
 			allowed = {
 				OR = {
 					original_tag = FRA

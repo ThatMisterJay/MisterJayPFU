@@ -1090,7 +1090,7 @@ ideas = {
 		designer = yes
 
 		constanta_shipyard = {
-
+cost = 100
 			picture = generic_naval_manufacturer_2
 
 
@@ -1113,7 +1113,7 @@ ideas = {
 		}
 
 		ROM_coastal_defense_navy_designer = {
-
+cost = 100
 			picture = generic_coastal_navy
 
 			cost = 75
@@ -1150,7 +1150,7 @@ ideas = {
 		}
 
 		ROM_black_sea_dominance_designer = {
-
+cost = 100
 			picture = generic_sea_focused_navy
 
 			cost = 75

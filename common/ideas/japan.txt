@@ -1630,7 +1630,7 @@ ideas = {
 		designer = yes
 
 		kure_naval_arsenal = {
-
+cost = 100
 
 			allowed = {
 				original_tag = JAP
@@ -1649,7 +1649,7 @@ ideas = {
 		}
 
 		yokosuka_naval_arsenal = {
-
+cost = 100
 			allowed = {
 				original_tag = JAP
 			}
@@ -1666,7 +1666,7 @@ ideas = {
 		}
 
 		maizuru_naval_arsenal = {
-
+cost = 100
 			allowed = {
 				original_tag = JAP
 			}
@@ -1683,7 +1683,7 @@ ideas = {
 		}
 
 		sasebo_naval_arsenal = {
-
+cost = 100
 			allowed = {
 				original_tag = JAP
 			}

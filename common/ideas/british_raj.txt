@@ -900,7 +900,7 @@ ideas = {
 		designer = yes
 
 		mazagon_dock_limited = {
-
+cost = 100
 			allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -917,7 +917,7 @@ ideas = {
 		}
 
 		garden_reach_shipbuilders = {
-
+cost = 100
 			allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -933,7 +933,7 @@ ideas = {
 		}
 
 		scindia_shipyard = {
-
+cost = 100
 			allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ

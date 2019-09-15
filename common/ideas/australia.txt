@@ -922,7 +922,7 @@ ideas = {
 		designer = yes
 
 		Cockatoo_doe = {
-
+cost = 100
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
@@ -939,7 +939,7 @@ ideas = {
 		}
 
 		evans_deakin_co = {
-
+cost = 100
 			picture = generic_naval_manufacturer_1
 
 			allowed = {

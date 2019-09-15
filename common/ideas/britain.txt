@@ -2220,7 +2220,7 @@ ideas = {
 		designer = yes
 
 		yarrow_shipbuilders = {
-
+cost = 100
 			allowed = {
 				original_TAG = ENG
 			}
@@ -2234,7 +2234,7 @@ ideas = {
 		}
 
 		harland_wolff = {
-
+cost = 100
 			allowed = {
 				original_TAG = ENG
 			}
@@ -2249,7 +2249,7 @@ ideas = {
 		}
 
 		cammell_laird = {
-
+cost = 100
 			allowed = {
 				original_TAG = ENG
 			}
@@ -2267,7 +2267,7 @@ ideas = {
 		}
 
 		john_brown_company = {
-
+cost = 100
 			allowed = {
 				original_TAG = ENG
 			}
