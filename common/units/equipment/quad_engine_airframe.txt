@@ -194,7 +194,7 @@ equipments = {
 		naval_strike_attack = 0.0
 		naval_strike_targetting = 0.0
 
-		build_cost_ic = 180
+		build_cost_ic = 100
 		resources = {
 			#oil = 1
 			aluminium = 3
