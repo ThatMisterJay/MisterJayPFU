@@ -137,7 +137,11 @@ guiTypes = {
 				position = { x = -500 y = -199 }
 				spriteType = "GFX_HOE_button"
 				font = "hoi_16mbs"
+<<<<<<< HEAD
 				text = "Spanish Civil War Off"
+=======
+				text = "Spanish Civil War Currently On"
+>>>>>>> 163e2163... Made the spanish civil war button a bit more clear
 				orientation = LOWER_RIGHT
 			}
 
@@ -146,7 +150,11 @@ guiTypes = {
 				position = { x = -500 y = -199 }
 				spriteType = "GFX_HOE_button"
 				font = "hoi_16mbs"
+<<<<<<< HEAD
 				text = "Spanish Civil War On"
+=======
+				text = "Spanish Civil War Currently Off"
+>>>>>>> 163e2163... Made the spanish civil war button a bit more clear
 				orientation = LOWER_RIGHT
 			}
 
