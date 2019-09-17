@@ -473,9 +473,9 @@ create_corps_commander = {
 	name = "Brian Horrocks"
 	picture = "Portrait_Britain_Brian_Horrocks.dds"
 	traits = { armor_officer career_officer war_hero infantry_leader ranger trait_engineer hill_fighter}
-	skill = 3
+	skill = 4
 
-	attack_skill = 2
+	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 3
