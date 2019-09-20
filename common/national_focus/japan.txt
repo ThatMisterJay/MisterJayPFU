@@ -275,7 +275,7 @@ focus_tree = {
 		relative_position_id = JAP_mitsui
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = JAP_zaibatsus_integration }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}

@@ -307,8 +307,9 @@ picture = "generic_goods_red_bonus"
 
 political_advisor = {
 
-italo_balbo = {
+italo_balbo_1 = {
 
+picture = italo_balbo
 
   allowed = {
     original_tag = ITA
@@ -374,8 +375,9 @@ picture = generic_army_europe_6
 
  high_command = {
 
-giovanni_messe = {
+giovanni_messe_1 = {
 
+picture = giovanni_messe
   allowed = {
     original_tag = ITA
   }

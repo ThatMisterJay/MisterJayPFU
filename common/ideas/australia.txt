@@ -616,9 +616,9 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 
-		AST_sydney_rowell = {
+		AST_sydney_rowell_1 = {
 
-
+picture = AST_sydney_rowell
 
 			allowed = {
 				original_tag = AST

@@ -1664,14 +1664,14 @@ ideas = {
 			}
 		}
 
-		george_patton = {
+		george_patton_1 = {
 
 
 			allowed = {
 				original_tag = USA
 			}
 
-
+picture = george_patton
 
 			traits = { army_armored_2 }
 
