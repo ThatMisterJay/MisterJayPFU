@@ -93,6 +93,26 @@ if = {
 	}
 }
 
+  add_equipment_to_stockpile = {
+  type = infantry_equipment_1
+  amount = 20000
+    }
+   add_equipment_to_stockpile = {
+   type = artillery_equipment_1
+   amount = 1000
+}
+		add_equipment_to_stockpile = {
+										type = support_equipment_1
+										amount = 1000
+}
+		add_equipment_to_stockpile = {
+	  type = anti_air_equipment_1
+    amount = 400
+}
+		add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1
+		amount = 400
+}
 
 set_research_slots = 4
 set_convoys = 200
