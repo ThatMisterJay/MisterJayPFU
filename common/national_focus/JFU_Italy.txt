@@ -154,7 +154,7 @@ id = ITA_developitalianeastafricaphasetwo
 icon = GFX_focus_generic_steel
 x = 5
 y = 11
-cost = 10
+cost = 6
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developitalianeastafricaphaseone }
 ai_will_do = {
@@ -219,7 +219,7 @@ id = ITA_allocateresourcestoregiaaeronautica
 icon = GFX_focus_generic_aluminum
 x = 15
 y = 8
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_aircraftproduction }
 ai_will_do = {
@@ -247,12 +247,20 @@ id = ITA_developlibyaphasetwo
 icon = GFX_goal_generic_construction2
 x = 3
 y = 11
-cost = 10
+cost = 6
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developlibyaphaseone }
 ai_will_do = {
  factor = 1
  }
+
+ available = {
+   ITA = {
+     controls_state = 450
+     controls_state = 451
+   }
+   }
+
  completion_reward = {
 
  random_owned_controlled_state = {
@@ -288,12 +296,22 @@ id = ITA_italiantripoli
 icon = GFX_focus_hol_the_foundations_of_defense
 x = 6
 y = 12
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developlibyaphasetwo }
 ai_will_do = {
  factor = 1
  }
+
+ available = {
+   ITA = {
+     controls_state = 448
+     controls_state = 449
+     controls_state = 661
+     controls_state = 662
+   }
+   }
+
  completion_reward = {
 
      add_state_core = 448
@@ -310,7 +328,7 @@ id = ITA_learnfromgermanfallschirmjger
 icon = GFX_focus_ger_oppose_hitler
 x = 17
 y = 10
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_airsupplytheory }
 prerequisite = { focus = ITA_germanmilitarycooperation }
@@ -357,7 +375,7 @@ id = ITA_workwithfactoryowners
 icon = GFX_focus_eng_concessions_to_the_trade_unions
 x = 4
 y = 7
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_enforcepapalloyalty }
 ai_will_do = {
@@ -431,7 +449,7 @@ id = ITA_followthewaffenssexample
 icon = GFX_focus_prc_infiltration
 x = 7
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_germanmilitarycooperation }
 prerequisite = { focus = ITA_italianfascism }
@@ -456,7 +474,7 @@ id = ITA_followthepanzerwaffeexample
 icon = GFX_focus_generic_army_tanks2
 x = 10
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_trainnewstaffofficers }
 prerequisite = { focus = ITA_germanmilitarycooperation }
@@ -554,7 +572,7 @@ id = ITA_militaryproductionincrease
 icon = GFX_goal_generic_construct_mil_factory
 x = 11
 y = 7
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_trainnewstaffofficers }
 prerequisite = { focus = ITA_motorizationeffort }
@@ -585,7 +603,7 @@ id = ITA_delivernewstaffofficers
 icon = GFX_focus_generic_military_academy
 x = 11
 y = 8
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_trainnewstaffofficers }
 prerequisite = { focus = ITA_militaryproductionincrease }
@@ -931,7 +949,7 @@ id = ITA_policyofdevelopment
 icon = GFX_focus_generic_industry_2
 x = 5
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_begincolonialprojects }
 mutually_exclusive = { focus = ITA_policyofexploitation }
@@ -1090,7 +1108,7 @@ id = ITA_prospectforoil
 icon = GFX_goal_generic_production
 x = 1
 y = 7
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_enddevelopmentofthenorth }
 prerequisite = { focus = ITA_enddevelopmentofthesouth }
@@ -1102,7 +1120,7 @@ controls_state = 662
 completion_reward = {
 add_resource = {
 type = oil
-amount = 10
+amount = 20
 state = 662
 }
  }
@@ -1115,7 +1133,7 @@ id = ITA_libyanrefineries
 icon = GFX_goal_generic_oil_refinery
 x = 3
 y = 12
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developlibyaphasetwo }
 available = {
@@ -1189,7 +1207,7 @@ id = ITA_ablackshirtforeverydivision
 icon = GFX_goal_rhineland
 x = 6
 y = 6
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_sendbalbotorome }
 ai_will_do = {
@@ -1212,7 +1230,7 @@ id = ITA_legacyofrome
 icon = GFX_goal_tfv_saf_support_ossebrandwag
 x = 10
 y = 3
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_beginmilitaryrearmament }
 mutually_exclusive = { focus = ITA_loyaltyoverability }
@@ -1312,7 +1330,7 @@ id = ITA_modernizedartillery
 icon = GFX_goal_generic_army_artillery2
 x = 11
 y = 5
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_modernizedarmy }
 completion_reward = {
@@ -1332,7 +1350,7 @@ id = ITA_modernizedarmy
 icon = GFX_goal_generic_small_arms
 x = 11
 y = 4
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_legacyofrome }
 completion_reward = {
@@ -1367,7 +1385,7 @@ id = ITA_decimaflottigliamas
 icon = GFX_focus_generic_military_mission
 x = 12
 y = 11
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_legacyofrome }
 prerequisite = { focus = ITA_delivernewstaffofficers }
@@ -2039,7 +2057,7 @@ id = ITA_germanmilitarycooperation
 icon = GFX_focus_chi_mission_to_germany
 x = 8
 y = 8
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_treatywithgermany }
 
@@ -2140,7 +2158,7 @@ id = ITA_loyaltyoverability
 icon = GFX_focus_generic_military_mission
 x = 5
 y = 3
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_beginmilitaryrearmament }
 mutually_exclusive = { focus = ITA_legacyofrome }
@@ -2260,7 +2278,7 @@ id = ITA_promotemonarchistofficers
 icon = GFX_focus_rom_royal_dictatorship
 x = 9
 y = 4
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_legacyofrome }
 ai_will_do = {
@@ -2316,7 +2334,7 @@ id = ITA_removeyesmen
 icon = GFX_focus_eng_move_to_secure_the_dominions
 x = 9
 y = 5
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_promotemonarchistofficers }
 ai_will_do = {
@@ -2338,7 +2356,7 @@ id = ITA_trainnewstaffofficers
 icon = GFX_focus_generic_little_entente
 x = 9
 y = 6
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_removeyesmen }
 ai_will_do = {
@@ -2364,7 +2382,7 @@ id = ITA_motorizationeffort
 icon = GFX_goal_generic_army_motorized
 x = 11
 y = 6
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_modernizedartillery }
 ai_will_do = {
@@ -2421,7 +2439,7 @@ id = ITA_allocateresourcestotheregiamarina
 icon = GFX_focus_generic_steel
 x = 21
 y = 7
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_battleshipadherent focus = ITA_carrieradherent }
 ai_will_do = {
@@ -2452,7 +2470,7 @@ id = ITA_exploitbritishegypt
 icon = GFX_goal_generic_position_armies
 x = 0
 y = 13
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofexploitation }
 ai_will_do = {
@@ -2472,10 +2490,10 @@ ai_will_do = {
   limit = {
     ROOT = { has_full_control_of_state = PREV }
   }
-  add_extra_state_shared_building_slots = 6
+  add_extra_state_shared_building_slots = 10
   add_building_construction = {
     type = arms_factory
-    level = 4
+    level = 7
     instant_build = yes
     }
    }
@@ -2488,7 +2506,7 @@ id = ITA_exploitbritishmiddleeast
 icon = GFX_goal_generic_trade
 x = 2
 y = 13
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofexploitation }
 ai_will_do = {
@@ -2510,10 +2528,10 @@ ai_will_do = {
   limit = {
     ROOT = { has_full_control_of_state = PREV }
   }
-  add_extra_state_shared_building_slots = 3
+  add_extra_state_shared_building_slots = 6
   add_building_construction = {
     type = arms_factory
-    level = 2
+    level = 6
     instant_build = yes
   }
 
@@ -2527,7 +2545,7 @@ id = ITA_exploiteastafrica
 icon = GFX_goal_generic_position_armies
 x = 1
 y = 10
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofexploitation }
 ai_will_do = {
@@ -2546,10 +2564,10 @@ random_owned_controlled_state = {
   limit = {
     ROOT = { has_full_control_of_state = PREV }
   }
-  add_extra_state_shared_building_slots = 3
+  add_extra_state_shared_building_slots = 10
   add_building_construction = {
     type = industrial_complex
-    level = 2
+    level = 10
     instant_build = yes
   }
   }
@@ -2572,7 +2590,7 @@ id = ITA_exploitgreece
 icon = GFX_goal_generic_trade
 x = 1
 y = 11
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_exploiteastafrica }
 ai_will_do = {
@@ -2596,7 +2614,7 @@ ai_will_do = {
   add_extra_state_shared_building_slots = 6
   add_building_construction = {
     type = industrial_complex
-    level = 4
+    level = 6
     instant_build = yes
   }
   }
@@ -2620,7 +2638,7 @@ id = ITA_exploityugoslavia
 icon = GFX_goal_generic_trade
 x = 1
 y = 12
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_exploitgreece }
 ai_will_do = {
@@ -2644,7 +2662,7 @@ ai_will_do = {
   add_extra_state_shared_building_slots = 8
   add_building_construction = {
     type = industrial_complex
-    level = 6
+    level = 8
     instant_build = yes
   }
   }
@@ -2668,12 +2686,19 @@ id = ITA_developlibyaphaseone
 icon = GFX_focus_generic_industry_1
 x = 3
 y = 10
-cost = 10
+cost = 6
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofdevelopment }
 ai_will_do = {
  factor = 1
  }
+
+ available = {
+   ITA = {
+     controls_state = 448
+     controls_state = 449
+   }
+   }
 
 completion_reward = {
 
@@ -2756,7 +2781,7 @@ id = ITA_expandthemvsn
 icon = GFX_focus_eng_organise_the_blackshirts
 x = 6
 y = 4
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_loyaltyoverability }
 ai_will_do = {
@@ -2778,7 +2803,7 @@ id = ITA_italianfascism
 icon = GFX_focus_ger_assassinate_mussolini
 x = 6
 y = 8
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_ablackshirtforeverydivision }
 prerequisite = { focus = ITA_workwithfactoryowners }
@@ -2798,7 +2823,7 @@ id = ITA_socialiteconnections
 icon = GFX_focus_rom_parties_end
 x = 4
 y = 4
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_loyaltyoverability }
 ai_will_do = {
@@ -2817,7 +2842,7 @@ id = ITA_policyofexploitation
 icon = GFX_focus_hol_abandon_the_gold_standard
 x = 1
 y = 9
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_begincolonialprojects }
 mutually_exclusive = { focus = ITA_policyofdevelopment }
@@ -2843,7 +2868,7 @@ id = ITA_capitalistclasssupport
 icon = GFX_focus_mex_privatisation
 x = 4
 y = 5
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_socialiteconnections }
 ai_will_do = {
@@ -2874,7 +2899,7 @@ id = ITA_sendbalbotorome
 icon = GFX_goal_support_fascism
 x = 6
 y = 5
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_expandthemvsn }
 ai_will_do = {
@@ -2898,7 +2923,7 @@ id = ITA_enforcepapalloyalty
 icon = GFX_focus_mex_triumph_over_the_cristeros
 x = 4
 y = 6
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_capitalistclasssupport }
 ai_will_do = {
@@ -2917,7 +2942,7 @@ id = ITA_begincolonialprojects
 icon = GFX_focus_generic_treaty
 x = 1
 y = 8
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_prospectforoil }
 ai_will_do = {
@@ -3053,7 +3078,7 @@ id = ITA_developitalianeastafricaphaseone
 icon = GFX_goal_generic_production2
 x = 5
 y = 10
-cost = 10
+cost = 6
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofdevelopment }
 ai_will_do = {
@@ -3109,7 +3134,7 @@ id = ITA_aircraftproduction
 icon = GFX_focus_CZE_military_aeronautical_institute
 x = 14
 y = 7
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughairpower }
 ai_will_do = {
@@ -3159,7 +3184,7 @@ id = ITA_southdockyardexpansion
 icon = GFX_goal_generic_construct_naval_dockyard
 x = 19
 y = 8
-cost = 10
+cost = 8
 available_if_capitulated = yes
 prerequisite = { focus = ITA_cruiserdevelopment }
 ai_will_do = {

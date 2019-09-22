@@ -148,7 +148,7 @@ original_tag = ITA
 
 modifier = {
 conscription = 0.015
-army_morale_factor = 0.15
+army_morale_factor = 0.20
 land_reinforce_rate = 0.20
 army_core_attack_factor = 0.2
 army_core_defence_factor = 0.2
