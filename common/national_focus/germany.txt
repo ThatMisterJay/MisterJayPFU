@@ -690,6 +690,9 @@ focus_tree = {
 				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = advanced_medium_tank
+				technology = basic_heavy_tank
+				technology = improved_heavy_tank
+				technology = advanced_heavy_tank
 			}
 			add_tech_bonus = {
 				bonus = 1
