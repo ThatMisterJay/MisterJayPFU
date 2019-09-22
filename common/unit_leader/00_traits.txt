@@ -200,6 +200,22 @@ leader_traits = {
 		}
 	}
 
+	to_good = {
+		type = corps_commander
+
+
+
+		trait_type = personality_trait
+
+		modifier = {
+			promote_cost_factor = 5000
+		}
+
+	new_commander_weight = {
+		factor = 0
+	}
+	}
+
 	infantry_officer = {
 		type = land
 		trait_type = personality_trait

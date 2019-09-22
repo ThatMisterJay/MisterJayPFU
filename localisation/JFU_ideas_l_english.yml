@@ -89,7 +89,8 @@
 
 
 
-
+to_good:0 "Officer In His Prime"
+to_good_desc:0 "Can one man really lead 90 divisions"
 
 #tooltip#
 ITA_new_army:0 "Our new officer corp will lead the Italian army to victory. "
