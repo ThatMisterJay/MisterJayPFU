@@ -765,6 +765,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { # Abandon the Czechs
+	add_political_power = 75
 		name = germany.40.a
 		ai_chance = {
 			factor = 90
@@ -796,6 +797,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = { # Follow Britain's lead
+	add_political_power = 75
 		name = germany.41.a
 		ai_chance = {
 			factor = 90
@@ -1592,6 +1594,7 @@ country_event = {
 		ai_chance = { factor = 99 }
 		ENG = { country_event = germany.62 }
 		add_opinion_modifier = { target = GER modifier = protest_action }
+		add_political_power = 75
 	}
 }
 
@@ -1612,6 +1615,7 @@ country_event = {
 			news_event = { hours = 6 id = news.25 }
 		}
 		add_opinion_modifier = { target = GER modifier = protest_action }
+		add_political_power = 75
 	}
 }
 
