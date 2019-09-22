@@ -76,56 +76,7 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = pfu.3
-	title = pfu.3.t
-	desc = pfu.3.d
-	picture = GFX_report_event_yugoslavian_split
 
-	is_triggered_only = yes
-
-	immediate = { set_global_flag = yugo_historical_split }
-
-	option = {
-		name = pfu.3.a
-		GER = {
-			transfer_state = 107
-			transfer_state = 108
-			transfer_state = 102
-			transfer_state = 109
-			transfer_state = 104
-		}
-		if = {
-			limit = { country_exists = HUN }
-			HUN = { transfer_state = 45 }
-		}
-		if = {
-			limit = { NOT = { country_exists = HUN } }
-			GER = { transfer_state = 45 }
-		}
-		if = {
-			limit = { country_exists = BUL }
-
-			BUL = { transfer_state = 106 }
-		}
-		if = {
-			limit = { NOT = { country_exists = BUL } }
-			GER = { transfer_state = 106 }
-		}
-	    ITA = {
-			transfer_state = 757
-			transfer_state = 105
-			transfer_state = 103
-			transfer_state = 782
-
-			load_oob = "CRO_1939"
-		}
-		every_state = {
-			limit = { is_core_of = YUG }
-			remove_core_of = YUG
-		}
-	}
-}
 
 country_event = {
     id = pfu.5
