@@ -1140,6 +1140,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		add_popularity = {
+		ideology = fascism
+		popularity = 0.50
+		}
 			#Removes king carol and makes the most popular party the ruling one
 			if = {
 				limit = { has_country_leader = { id = 550 } }
