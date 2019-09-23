@@ -22,18 +22,18 @@ albania_war_goal = {
 			country_exists = ALB
 		}
 	}
-	
+
 	ai_strategy = {
 		type = antagonize
-		id = "ALB"			
+		id = "ALB"
 		value = 200
-	}		
+	}
 }
 
 greece_war_goal = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_greece_war_goal
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = GRE
 	}
 	abort = {
@@ -41,18 +41,18 @@ greece_war_goal = {
 			country_exists = GRE
 		}
 	}
-	
+
 	ai_strategy = {
 		type = antagonize
-		id = "GRE"			
+		id = "GRE"
 		value = 200
-	}		
+	}
 }
 
 anti_uk_war_goals = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_anti_uk_war_goals
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = ENG
 	}
 	abort = {
@@ -60,18 +60,18 @@ anti_uk_war_goals = {
 			country_exists = ENG
 		}
 	}
-	
+
 	ai_strategy = {
 		type = antagonize
-		id = "ENG"			
+		id = "ENG"
 		value = 200
-	}		
+	}
 }
 
 yugoslavia_war_goal = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_slovenia_dalmatia_claims
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = YUG
 	}
 	abort = {
@@ -79,34 +79,34 @@ yugoslavia_war_goal = {
 			country_exists = YUG
 		}
 	}
-	
+
 	ai_strategy = {
 		type = antagonize
-		id = "YUG"			
+		id = "YUG"
 		value = 200
-	}		
+	}
 }
 
 germany_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_pact_of_steel
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = GER
 	}
 	abort = {
 		NOT = { country_exists = GER }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "GER"			
+		id = "GER"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "GER"			
+		id = "GER"
 		value = 100
-	}	
+	}
 }
 
 romania_ally = {
@@ -118,17 +118,17 @@ romania_ally = {
 	abort = {
 		NOT = { country_exists = ROM }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "ROM"			
+		id = "ROM"
 		value = 200
 	}
 	ai_strategy = {
 		type = alliance
-		id = "ROM"			
+		id = "ROM"
 		value = 200
-	}	
+	}
 }
 
 bulgaria_ally = {
@@ -140,105 +140,105 @@ bulgaria_ally = {
 	abort = {
 		NOT = { country_exists = BUL }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "BUL"			
+		id = "BUL"
 		value = 200
 	}
 	ai_strategy = {
 		type = alliance
-		id = "BUL"			
+		id = "BUL"
 		value = 200
-	}	
+	}
 }
 
 yugoslavia_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_yugoslavia_friend
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = YUG
 	}
 	abort = {
 		NOT = { country_exists = YUG }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "YUG"			
+		id = "YUG"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "YUG"			
+		id = "YUG"
 		value = 100
-	}	
+	}
 }
 
 greece_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_greece_friend
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = GRE
 	}
 	abort = {
 		NOT = { country_exists = GRE }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "GRE"			
+		id = "GRE"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "GRE"			
+		id = "GRE"
 		value = 100
-	}	
+	}
 }
 
 turkey_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_turkey_friend
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = TUR
 	}
 	abort = {
 		NOT = { country_exists = TUR }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "TUR"			
+		id = "TUR"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "TUR"			
+		id = "TUR"
 		value = 100
-	}	
+	}
 }
 
 portugal_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_portugal_friend
+		has_completed_focus = ITA_triumphinafrica
 		country_exists = POR
 	}
 	abort = {
 		NOT = { country_exists = POR }
 	}
-	
+
 	ai_strategy = {
 		type = befriend
-		id = "POR"			
+		id = "POR"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "POR"			
+		id = "POR"
 		value = 100
-	}	
+	}
 }
 
 crush_ethiopia = {
@@ -250,7 +250,7 @@ crush_ethiopia = {
 	abort = {
 		NOT = { ITA = { has_war_with = ETH } }
 	}
-	
+
 	ai_strategy = {
 		type = area_priority
 		id = africa
@@ -261,11 +261,11 @@ crush_ethiopia = {
 
 ITA_template_design_1 = {
 	enable = {
-	
+
 		original_tag = ITA
-		date < 1940.1.1				
+		date < 1940.1.1
 	}
-	abort = { 
+	abort = {
 		date > 1940.1.1
 	}
 
@@ -280,7 +280,7 @@ ITA_template_design_1 = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -309,9 +309,9 @@ ITA_template_design_1 = {
 
 ITA_template_design_2 = {
 	enable = {
-	
+
 		original_tag = ITA
-		date > 1940.1.1				
+		date > 1940.1.1
 	}
 
 	ai_strategy = {
@@ -325,7 +325,7 @@ ITA_template_design_2 = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
@@ -349,7 +349,7 @@ ITA_template_design_2 = {
 		id = paratroopers
 		value = -50
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = mechanized
@@ -373,7 +373,7 @@ italy_be_careful_transporting_through_the_med = {
 			enemies_naval_strength_ratio < 1
 		}
 	}
-	
+
 	ai_strategy = {
 		type = naval_avoid_region
 		id = 68
