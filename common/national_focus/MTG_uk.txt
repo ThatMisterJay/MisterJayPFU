@@ -931,7 +931,7 @@ focus_tree = {
 				uses = 2
 				category = air_doctrine
 			}
-			air_experience = 25
+			air_experience = 80
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1143,10 +1143,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
+				ahead_reduction = 2
 				uses = 2
 				technology = fighter1
 				technology = fighter2
@@ -1168,7 +1169,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = bomber_command_focus
 				bonus = 1.0
@@ -1193,7 +1194,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = coastal_command_focus
 				bonus = 1.0
@@ -2746,20 +2747,14 @@ focus_tree = {
 			AST = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_australia_focus_1IC }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				every_state = { limit = { has_state_flag = ENG_uk_australia_focus_2dockyards }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
+				}
+
 				}
 				every_state = { limit = { has_state_flag = ENG_uk_australia_focus_1dockyard }
 					add_extra_state_shared_building_slots = 1
@@ -2774,7 +2769,7 @@ focus_tree = {
 					localization = uk_australia_focus
 				}
 			}
-		}
+
 
 		completion_reward = {
 			AST = {
@@ -2787,10 +2782,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_australia_focus_1IC
@@ -2803,10 +2798,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_australia_focus_1IC
@@ -2820,31 +2815,15 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_australia_focus_2dockyards
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
 						instant_build = yes
 					}
-					set_state_flag = ENG_uk_australia_focus_1dockyard
+					set_state_flag = ENG_uk_australia_focus_2dockyards
 				}
+
 				add_autonomy_ratio = {
 					value = -0.05
 					localization = uk_australia_focus
@@ -2899,21 +2878,14 @@ focus_tree = {
 			NZL = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1IC }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_2dockyards }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
 				}
+
 				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1dockyard }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -2940,10 +2912,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_1IC
@@ -2956,31 +2928,15 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_new_zealand_focus_1IC
 				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_new_zealand_focus_2dockyards
-				}
+
 				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
@@ -3060,10 +3016,10 @@ focus_tree = {
 					}
 				}
 				every_state = { limit = { has_state_flag = ENG_uk_canada_focus_1IC }
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -3109,10 +3065,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_canada_focus_1IC
@@ -3212,10 +3168,10 @@ focus_tree = {
 					}
 				}
 				every_state = { limit = { has_state_flag = ENG_uk_south_africa_focus_1IC }
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -3261,31 +3217,15 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1IC
 				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_south_africa_focus_1dockyard
-				}
+
 				random_owned_controlled_state = {
 					limit = {
 						is_coastal = yes
@@ -3433,6 +3373,13 @@ focus_tree = {
 			#}
 		}
 		completion_reward = {
+		ENG = { add_ideas = ENG_guided_by_britain_1 }
+		CAN = { add_ideas = ENG_guided_by_britain_1 }
+		AST = { add_ideas = ENG_guided_by_britain_1 }
+		RAJ = { add_ideas = ENG_guided_by_britain_1 }
+		NZL = { add_ideas = ENG_guided_by_britain_1 }
+		SAF = { add_ideas = ENG_guided_by_britain_1 }
+
 			add_political_power = 120
 			every_country = {
 				limit = {
