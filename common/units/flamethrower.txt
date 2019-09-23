@@ -9,18 +9,18 @@ sub_units = {
 			infantry
 			support
 		}
-		
+
 		group = support
-		
+
 		categories = {
 			category_front_line
 			category_support_battalions
 			category_army
 		}
 
-	
+
 		#combat_width = 1
-	
+
 		#Size Definitions
 		max_strength = 1
 		max_organisation = 10
@@ -31,7 +31,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.03
-		
+
 
 		soft_attack = 1
 
@@ -40,7 +40,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 20
+			support_equipment = 60
 			infantry_equipment = 20
 		}
 
