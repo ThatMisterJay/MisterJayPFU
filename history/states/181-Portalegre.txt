@@ -3,12 +3,10 @@ state={
 	id=181
 	name="STATE_181"
 	manpower = 1904600
-	
+
 	state_category = town
-	
-	resources={
-		tungsten=150 # was: 300
-	}
+
+
 
 	history={
 		owner = POR
@@ -20,6 +18,6 @@ state={
 	}
 
 	provinces={
-		845 889 938 3969 6818 6996 9787 11885 
+		845 889 938 3969 6818 6996 9787 11885
 	}
 }
