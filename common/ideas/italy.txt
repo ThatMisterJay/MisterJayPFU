@@ -854,7 +854,7 @@ NOT = { has_country_flag = balbo_dead }
 				original_tag = ITA
 			}
 			available = {
-				date > 1940.12.12
+			has_completed_focus = ITA_airinnovations
 			}
 			cost = 75
 			removal_cost = 10
