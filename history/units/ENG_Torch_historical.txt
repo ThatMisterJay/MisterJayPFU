@@ -81,28 +81,28 @@ units = {
 		location = 540
 		division_template = "Motorised Division - 1942"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.05
+		start_equipment_factor = 0.8
 	}
 	division= {
 		name = "6th Infantry divison"
 		location = 540
 		division_template = "Motorised Division - 1942"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.05
+		start_equipment_factor = 0.8
 	}
 	division= {
 		name = "4th Infantry division"
 		location = 540
 		division_template = "Motorised Division - 1942"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.05
+		start_equipment_factor = 0.8
 	}
 	division= {
 		name = "1st Infantry division"
 		location = 540
 		division_template = "Motorised Division - 1942"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.05
+		start_equipment_factor = 0.8
 	}
 }
 #####################
