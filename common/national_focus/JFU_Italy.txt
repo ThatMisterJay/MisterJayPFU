@@ -117,7 +117,7 @@ cost = 10
 available_if_capitulated = yes
 prerequisite = { focus = ITA_industrialeffort }
 ai_will_do = {
- factor = 1
+ factor = 2
  }
 
  completion_reward = {
@@ -158,7 +158,7 @@ cost = 6
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developitalianeastafricaphaseone }
 ai_will_do = {
- factor = 1
+ factor = 3
  }
  available = {
    ITA = {
@@ -223,7 +223,7 @@ cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_aircraftproduction }
 ai_will_do = {
- factor = 1
+ factor = 4
  }
 
 completion_reward = {
@@ -251,7 +251,7 @@ cost = 6
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developlibyaphaseone }
 ai_will_do = {
- factor = 1
+ factor = 5
  }
 
  available = {
@@ -300,7 +300,7 @@ cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_developlibyaphasetwo }
 ai_will_do = {
- factor = 1
+ factor = 6
  }
 
  available = {
@@ -333,7 +333,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_airsupplytheory }
 prerequisite = { focus = ITA_germanmilitarycooperation }
 ai_will_do = {
- factor = 1
+ factor = 7
  }
 
 completion_reward = {
@@ -360,7 +360,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_learnfromgermanfallschirmjger focus = ITA_marinesandlandingcraft }
 mutually_exclusive = { focus = ITA_decimaflottigliamas }
 ai_will_do = {
- factor = 1
+ factor = 8
  }
 
 completion_reward = {
@@ -379,7 +379,7 @@ cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_enforcepapalloyalty }
 ai_will_do = {
- factor = 1
+ factor = 9
  }
 completion_reward = {
 add_timed_idea = { idea = ITA_output_boost days = 365 }
@@ -396,7 +396,7 @@ cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_airinnovationsii }
 ai_will_do = {
- factor = 1
+ factor = 10
  }
 
 
@@ -423,7 +423,7 @@ cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_heavyweapondevelopment }
 ai_will_do = {
- factor = 1
+ factor = 11
  }
  completion_reward = {
  navy_experience = 100
@@ -454,7 +454,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_germanmilitarycooperation }
 prerequisite = { focus = ITA_italianfascism }
 ai_will_do = {
- factor = 1
+ factor = 12
  }
 
 completion_reward = {
@@ -479,7 +479,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_trainnewstaffofficers }
 prerequisite = { focus = ITA_germanmilitarycooperation }
 ai_will_do = {
- factor = 1
+ factor = 13
  }
 
 completion_reward = {
@@ -577,7 +577,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_trainnewstaffofficers }
 prerequisite = { focus = ITA_motorizationeffort }
 ai_will_do = {
- factor = 1
+ factor = 14
  }
 
 completion_reward = {
@@ -608,7 +608,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_trainnewstaffofficers }
 prerequisite = { focus = ITA_militaryproductionincrease }
 ai_will_do = {
- factor = 1
+ factor = 15
  }
 completion_reward = {
 custom_effect_tooltip = ITA_new_army
@@ -1118,6 +1118,11 @@ controls_state = 662
 }
  }
 completion_reward = {
+modify_building_resources = {
+   building = synthetic_refinery
+   resource = rubber
+   amount = 2
+}
 add_resource = {
 type = oil
 amount = 20
@@ -2545,7 +2550,7 @@ id = ITA_exploiteastafrica
 icon = GFX_goal_generic_position_armies
 x = 1
 y = 10
-cost = 7.2
+cost = 10
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofexploitation }
 ai_will_do = {
@@ -2564,10 +2569,10 @@ random_owned_controlled_state = {
   limit = {
     ROOT = { has_full_control_of_state = PREV }
   }
-  add_extra_state_shared_building_slots = 10
+  add_extra_state_shared_building_slots = 8
   add_building_construction = {
     type = industrial_complex
-    level = 10
+    level = 8
     instant_build = yes
   }
   }
@@ -2590,7 +2595,7 @@ id = ITA_exploitgreece
 icon = GFX_goal_generic_trade
 x = 1
 y = 11
-cost = 5
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_exploiteastafrica }
 ai_will_do = {
@@ -2638,7 +2643,7 @@ id = ITA_exploityugoslavia
 icon = GFX_goal_generic_trade
 x = 1
 y = 12
-cost = 5
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_exploitgreece }
 ai_will_do = {
