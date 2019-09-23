@@ -57,5 +57,8 @@ sub_units = {
 		marsh = {
 			attack = 0.1
 		}
+		amphibious = {
+					attack = 0.5
+				}
 	}
 }
