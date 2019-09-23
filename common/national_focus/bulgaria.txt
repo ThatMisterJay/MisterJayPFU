@@ -154,7 +154,7 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 7
 		}
 
 		cancel_if_invalid = yes
@@ -187,7 +187,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 7
 		}
 
 		bypass = {
@@ -257,7 +257,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 2
+			factor = 7
 		}
 
 		bypass =
@@ -339,6 +339,10 @@ focus_tree = {
 		x = 9
 		y = 6
 		cost = 10
+
+		ai_will_do = {
+			factor = 7
+		}
 
 		available_if_capitulated = yes
 		continue_if_invalid = yes
@@ -550,6 +554,10 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		ai_will_do = {
+			factor = 5
+		}
+
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -645,7 +653,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 6
 		}
 
 		bypass = {
@@ -712,7 +720,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		ai_will_do = {
-			factor = 2
+			factor = 6
 		}
 
 		bypass = {
@@ -788,7 +796,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 6
 		}
 
 		bypass = {
@@ -860,7 +868,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 7
 		}
 
 		bypass = {
@@ -930,7 +938,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 2
+			factor = 7
 		}
 
 		bypass = {
@@ -998,6 +1006,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+
 
 
 		complete_tooltip = {
