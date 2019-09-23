@@ -197,6 +197,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		modify_building_resources = {
+	 building = synthetic_refinery
+	 resource = rubber
+	 amount = 2
+}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1965,10 +1970,30 @@ focus_tree = {
 		}
 	}
 
+focus = {
+id = GER_czech_aircraft
+icon = GFX_goal_generic_air_fighter2
+prerequisite = { focus = GER_first_vienna_award }
+x = 14
+y = 4
+cost = 7.2
+completion_reward = {
+air_experience = 80
+add_tech_bonus = {
+	name = GER_fighter_2
+	bonus = 1
+	ahead_reduction = 2
+	uses = 1
+	technology = fighter2
+}
+}
+}
+
+
 	focus = {
 		id = GER_end_of_czechoslovakia
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = GER_first_vienna_award }
+		prerequisite = { focus = GER_czech_aircraft }
 		available = {
 			is_puppet = no
 			has_army_manpower = { size > 749999 }
@@ -1989,7 +2014,7 @@ focus_tree = {
 		}
 
 		x = 14
-		y = 4
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1997,6 +2022,7 @@ focus_tree = {
 
 
 		completion_reward = {
+
 
 			if = {
 				limit = { country_exists = CZE }

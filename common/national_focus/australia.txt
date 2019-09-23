@@ -569,7 +569,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AST_cac_boomerang
 				bonus = 1
-				ahead_reduction = 2
 				uses = 1
 				technology = fighter2
 			}
