@@ -3373,7 +3373,6 @@ focus_tree = {
 			#}
 		}
 		completion_reward = {
-		ENG = { add_ideas = ENG_guided_by_britain_1 }
 		CAN = { add_ideas = ENG_guided_by_britain_1 }
 		AST = { add_ideas = ENG_guided_by_britain_1 }
 		RAJ = { add_ideas = ENG_guided_by_britain_1 }
