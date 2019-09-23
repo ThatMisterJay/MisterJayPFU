@@ -900,7 +900,25 @@ instant_effect = {
 	}
 
 
+	add_equipment_production = {
+	equipment = {
+		type = anti_air_equipment_1
+		creator = "ENG"
+	}
+	requested_factories = 1
+	progress = 0.4
+	efficiency = 50
+}
 
+add_equipment_production = {
+equipment = {
+	type = cv_nav_bomber_equipment_1
+	creator = "ENG"
+}
+requested_factories = 1
+progress = 0.4
+efficiency = 50
+}
 
 	add_equipment_production = {
 		equipment = {
