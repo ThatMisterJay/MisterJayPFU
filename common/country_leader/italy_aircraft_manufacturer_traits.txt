@@ -22,10 +22,7 @@ leader_traits = {
 			}
 			nav_bomber_equipment = {
 				air_range = 0.1 naval_strike_attack = 0.1 maximum_speed = 0.2
-			}
-			cv_nav_bomber_equipment = {
-				air_range = 0.1 naval_strike_attack = 0.1 maximum_speed = 0.1
-			}
+			}		
 		}
 
 	}
@@ -50,6 +47,9 @@ leader_traits = {
 		equipment_bonus = {
 			strat_bomber_equipment = {
 				air_bombing = 0.1 reliability = 0.1
+			}
+			cv_nav_bomber_equipment = {
+				air_range = 0.1 naval_strike_attack = 0.1 maximum_speed = 0.1
 			}
 		}
 	}
