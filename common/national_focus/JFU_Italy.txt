@@ -229,12 +229,12 @@ ai_will_do = {
 completion_reward = {
 add_resource = {
 type = aluminium
-amount = 50
+amount = 45
 state = 162
 }
 add_resource = {
 type = aluminium
-amount = 50
+amount = 45
 state = 159
 }
 }
@@ -2453,17 +2453,17 @@ ai_will_do = {
  completion_reward = {
  add_resource = {
  type = steel
- amount = 50
+ amount = 40
  state = 156
  }
  add_resource = {
  type = steel
- amount = 50
+ amount = 40
  state = 162
  }
  add_resource = {
  type = steel
- amount = 50
+ amount = 40
  state = 157
  }
  }
