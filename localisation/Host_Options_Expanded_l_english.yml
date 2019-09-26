@@ -13,7 +13,7 @@
     help_event.1.c:0 "Help me with moving countries"
 
     help_event.2.t:0 "Host Voting Help"
-    help_event.2.d:0 "You asked for help about Host Voting. The host voting is calculated by the amount of people that voted. That means that if only one person voted, you can become host. It is NOT calculated by the amount of players. You will need at least 60% of the votes to win. The vote itself works as follows. If there is no host, at the start of the game a vote will pop up. This vote will last for 10 days as shown in the menu. In this time you can click a flag to vote. If the person that is voted for the most has sufficient votes, he/she will become the host. "
+    help_event.2.d:0 "You asked for help about Host Voting. The host voting is calculated by the amount of people that voted. That means that if only one person voted, you can become host. It is NOT calculated by the amount of players. You will need at least 60% of the votes to win. The vote itself works as follows. If there is no host, at the start of the game a vote will pop up. This vote will last for 10 days as shown in the menu. In this time you can click a flag to vote. If the person that is voted for the most has sufficient votes, he/she will become the host. \n\nAlternatively, in this mod the host can be chosen through Gamerules. This is highly advised, as players will not need to vote at all."
     help_event.2.a:0 "Thanks!"
 
     help_event.3.t:0 "Moving Factions Help"
@@ -96,3 +96,7 @@
     vote_on_host_bug:0 "§RA Bug Has Happened§!"
 
     has_voted_for_country_localisation:0 "[?local_country_has_voted_for.getName]"
+
+    #Gamerules
+    RULE_HOST_COUNTRY:0 "Host Options Expanded Gamerules"
+    RULE_GROUP_HOE:0 "Rule Group: HOE"

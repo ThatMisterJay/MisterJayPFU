@@ -150,6 +150,7 @@ country_event = {
 	}
 }
 
+
 add_namespace = player_permission
 
 #Message for host saying youre requesting permission

@@ -68,8 +68,6 @@ scripted_gui = {
 			general_option_2_click = { add_threat = 5 }
 			general_option_3_click = { add_threat = -1 }
 			general_option_4_click = { add_threat = -5 }
-			general_option_5_click = { set_global_flag = scw_over }
-			general_option_6_click = { clr_global_flag = scw_over }
 			general_option_7_click = {
 				every_country = {
 					limit = { is_ai = yes }
@@ -208,14 +206,6 @@ scripted_gui = {
 			general_option_2_visible = { ROOT = { TAG = event_target:game_host } }
 			general_option_3_visible = { ROOT = { TAG = event_target:game_host } }
 			general_option_4_visible = { ROOT = { TAG = event_target:game_host } }
-			general_option_5_visible = {
-				NOT = { has_global_flag = scw_over }
-				ROOT = { TAG = event_target:game_host }
-			}
-			general_option_6_visible = {
-				has_global_flag = scw_over
-				ROOT = { TAG = event_target:game_host }
-			}
 			general_option_7_visible = {
 				NOT = { has_global_flag = no_ai_faction_joining }
 				ROOT = { TAG = event_target:game_host }
