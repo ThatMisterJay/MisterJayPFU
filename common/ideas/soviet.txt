@@ -74,6 +74,31 @@ ideas = {
 			}
 		}
 
+		socialism_in_one_country = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			picture = trotskyite_plot_purged
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+
 		militarized_schools = {
 
 			removal_cost = -1
@@ -836,6 +861,7 @@ ideas = {
 				has_government = communism
 			}
 						modifier = {
+						min_export = 0.10
             lend_lease_tension = 2
 			}
 

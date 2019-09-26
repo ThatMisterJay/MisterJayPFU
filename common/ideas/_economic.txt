@@ -313,6 +313,10 @@ ideas = {
 				research_speed_factor = 0.15
 			}
 
+			available = {
+				NOT = { tag = SOV }
+			}
+
 			cancel_if_invalid = no
 		}
 
@@ -326,6 +330,7 @@ ideas = {
 				NOT = { tag = POR }
 			    NOT = { tag = ROM }
 				NOT = { tag = SWE }
+				NOT = { tag = SOV }
 			}
 
 			modifier = {
@@ -349,6 +354,7 @@ ideas = {
 				NOT = { tag = ROM }
 				NOT = { tag = TUR }
 				NOT = { tag = SPR }
+				NOT = { tag = SOV }
 				OR = {
 					AND = {
 						has_government = democratic
@@ -361,7 +367,8 @@ ideas = {
 						}
 					}
 					AND = {
-						NOT = { has_government = democratic }
+						NOT = { has_government = democratic	}
+
 						OR = {
 							has_idea = partial_economic_mobilisation
 							has_idea = war_economy
@@ -411,8 +418,7 @@ ideas = {
 					has_idea = tot_economic_mobilisation
 				}
 				OR = {
-					NOT = {	tag = SOV }
-					NOT = { has_opinion_modifier = MR_pact }
+					
 				}
 			}
 

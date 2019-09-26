@@ -16,11 +16,12 @@
     easy_surrender2:0 "Quick Surrender"
     varna_shipyard:0 "Varna Shipyard"
     soviet_justification:0 "No Justification"
+    socialism_in_one_country:0 "Socialism In One Country"
 
     endsieg:0 "Endsieg"
     GER_endsieg:0 "Endsieg"
     GER_endsieg_desc:0 "The final fight has arrived. We shall overcome this."
-
+    JFU_autarky_idea:0 "Autarky"
     mechanized_equipment_research:2 "Mechanization Research Speed"
 
     FRA_colonial_conscription:0 "Colonial Conscription"
