@@ -1,0 +1,18 @@
+defined_text = { # Country
+	name = vote_for_host
+	text = {
+		trigger = {
+			has_global_flag = vote_on_host
+		}
+		localization_key = vote_on_host_active
+	}
+	text = {
+		trigger = {
+			NOT = { has_global_flag = vote_on_host }
+		}
+		localization_key = vote_on_host_inactive
+	}
+	text = {
+		localization_key = vote_on_host_bug
+	}
+}

@@ -1,0 +1,547 @@
+add_namespace = Host_Options_Expanded_Setup
+add_namespace = logging_events
+#Logging purposes
+country_event = {
+	id = logging_events.1
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		for_each_scope_loop = {
+		    array = global.playerbase
+
+			log = "[?THIS.GetName]"
+		}
+	}
+}
+country_event = {
+	id = logging_events.2
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		for_each_scope_loop = {
+		    array = global.fascist_countries_array
+
+			log = "[?THIS.GetName]"
+		}
+	}
+}
+country_event = {
+	id = logging_events.3
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		log = "Votes for THIS: [?global.votes_for_@THIS]"
+		log = "Array size: [?global.playerbase^num]"
+
+		set_variable = { global.current_highest_vote = 4 }
+
+		#set_temp_variable = { vote_total = global.playerbase^num }
+		set_temp_variable = { vote_total = 5 }
+		divide_variable = { global.current_highest_vote = vote_total }
+		log = "Percentage for host: [?global.current_highest_vote]"
+	}
+}
+country_event = {
+	id = logging_events.4
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		add_player_countries = yes
+	}
+}
+country_event = {
+	id = logging_events.5
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+	}
+}
+
+
+#Sorting the array through event, only a helper
+country_event = {
+	id = Host_Options_Expanded_Setup.2
+	title = Host_Options_Expanded_Setup.2.t
+	desc = Host_Options_Expanded_Setup.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = Host_Options_Expanded_Setup.2.a
+		sort_array_by_factions = yes
+	}
+}
+
+add_namespace = help_event
+
+#Help event for mod
+country_event = {
+	id = help_event.1
+	title = help_event.1.t
+	desc = help_event.1.d
+
+	is_triggered_only = yes
+
+	#Explanation Host Vote
+	option = {
+		name = help_event.1.a
+		country_event = help_event.2
+	}
+
+	#Explanation moving factions
+	option = {
+		name = help_event.1.b
+		country_event = help_event.3
+	}
+
+	#Explanation changing countries
+	option = {
+		name = help_event.1.c
+		country_event = help_event.4
+	}
+}
+
+#Explanation Host Vote
+country_event = {
+	id = help_event.2
+	title = help_event.2.t
+	desc = help_event.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = help_event.2.a
+	}
+}
+
+#Explanation moving factions
+country_event = {
+	id = help_event.3
+	title = help_event.3.t
+	desc = help_event.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = help_event.3.a
+	}
+}
+
+#Explanation changing countries
+country_event = {
+	id = help_event.4
+	title = help_event.4.t
+	desc = help_event.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = help_event.4.a
+	}
+}
+
+
+add_namespace = player_permission
+
+#Message for host saying youre requesting permission
+country_event = {
+	id = player_permission.1
+	title = player_permission.1.t
+	desc = player_permission.1.d
+
+	is_triggered_only = yes
+
+	immediate = { set_global_flag = permission_being_asked }
+
+	option = {
+		name = player_permission.1.a
+	}
+}
+
+#Start of game permission
+country_event = {
+	id = player_permission.2
+	title = player_permission.2.t
+	desc = player_permission.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = player_permission.2.a
+		set_country_flag = permission_given_for_ideology_switch
+	}
+
+	option = {
+		name = player_permission.2.b
+		set_country_flag = permission_not_given_for_ideology_switch
+	}
+}
+
+#Permission to switch faction
+country_event = {
+	id = player_permission.3
+	title = player_permission.3.t
+	desc = player_permission.3.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:selected_player = {
+			set_country_flag = permission_being_asked_for_ideology_switch
+			save_global_event_target_as = country_being_asked_permission
+		}
+	}
+
+	option = {
+		name = player_permission.3.a
+		event_target:country_being_asked_permission = {
+			set_country_flag = permission_given_for_ideology_switch
+		}
+		event_target:game_host = { country_event = { id = player_permission.7 } }
+	}
+
+	option = {
+		name = player_permission.3.b
+		event_target:country_being_asked_permission = {
+			set_country_flag = permission_not_given_for_ideology_switch
+		}
+		event_target:game_host = { country_event = { id = player_permission.4 } }
+	}
+}
+
+#Permission not given, start vote?
+country_event = {
+	id = player_permission.4
+	title = player_permission.4.t
+	desc = player_permission.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = player_permission.4.a
+		event_target:country_being_asked_permission = {
+			clr_country_flag = permission_being_asked_for_ideology_switch
+		}
+		clr_global_flag = permission_being_asked
+		clear_global_event_target = country_being_asked_permission
+	}
+
+	option = {
+		name = player_permission.4.b
+		event_target:country_being_asked_permission = {
+			set_country_flag = vote_started_for_ideology_switch
+			clr_country_flag = vote_succeeded
+		}
+		every_country = {
+			limit = { is_ai = no }
+			country_event = player_permission.5
+		}
+		set_variable = { vote_for = 0 }
+		set_variable = { vote_against = 0 }
+		set_variable = { vote_total = 0 }
+
+		#The result
+		hidden_effect = { country_event = { id = player_permission.6 days = 10 } }
+	}
+}
+
+#Permission not given, voting begins
+country_event = {
+	id = player_permission.5
+	title = player_permission.5.t
+	desc = player_permission.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = player_permission.5.a
+		add_to_variable = { vote_for = 1 }
+	}
+
+	option = {
+		name = player_permission.5.b
+		add_to_variable = { vote_against = 1 }
+	}
+}
+
+#Permission not given, voting results show variables
+country_event = {
+	id = player_permission.6
+	title = player_permission.6.t
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_temp_variable = { vote_total = vote_for }
+		log = "Votes for: [?vote_for]"
+		log = "Votes against: [?vote_against]"
+		add_to_temp_variable = { vote_total = vote_against }
+		divide_variable = { vote_for = vote_total }
+		if = {
+			limit = {
+				check_variable = { vote_for > 0.8 }
+				check_variable = { vote_for < 1.1 }
+			}
+			log = "Vote percentage: [?vote_for|%G0]"
+
+			event_target:country_being_asked_permission = {
+				set_country_flag = vote_succeeded
+				set_country_flag = permission_given_for_ideology_switch
+			}
+		}
+		else = {
+			event_target:country_being_asked_permission = {
+				set_country_flag = vote_failed
+				set_country_flag = permission_not_given_for_ideology_switch
+			}
+		}
+	}
+
+	desc = {
+		text = player_permission.6.d.succeed
+		trigger = { event_target:country_being_asked_permission = { has_country_flag = vote_succeeded } }
+	}
+	desc = {
+		text = player_permission.6.d.fail
+		trigger = { event_target:country_being_asked_permission = { has_country_flag = vote_failed } }
+	}
+
+	option = {
+		name = player_permission.6.a
+
+		clr_global_flag = permission_being_asked
+		clear_global_event_target = country_being_asked_permission
+	}
+}
+
+#Permission given
+country_event = {
+	id = player_permission.7
+	title = player_permission.7.t
+	desc = player_permission.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = player_permission.7.a
+		clr_global_flag = permission_being_asked
+		clear_global_event_target = country_being_asked_permission
+	}
+}
+
+#Vote already going on
+country_event = {
+	id = player_permission.8
+	title = player_permission.8.t
+	desc = player_permission.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = player_permission.8.a
+	}
+}
+
+add_namespace = switching_countries
+
+#Switching countries, confirmation: used for both host and player
+country_event = {
+	id = switching_countries.1
+	title = switching_countries.1.t
+	desc = switching_countries.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = switching_countries.1.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = { TAG = event_target:game_host }
+			set_global_flag = confirm_country_switch_host
+		}
+		if = {
+			limit = {
+				TAG = event_target:country_to_switch
+				NOT = { has_global_flag = confirm_country_switch_player }
+			}
+			set_global_flag = confirm_country_switch_player
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = confirm_country_switch_host
+					has_global_flag = confirm_country_switch_player
+				}
+				country_event = switching_countries.2
+			}
+		}
+	}
+
+	#No switching
+	option = {
+		name = switching_countries.1.b
+		ai_chance = { factor = 0 }
+		set_country_flag = country_does_not_want_switch
+	}
+}
+
+#Clearing the countries that were switched
+country_event = {
+	id = switching_countries.2
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = { event_target:game_host = { TAG = event_target:country_to_switch } }
+			event_target:country_to_switch_to = { save_global_event_target_as = game_host }
+		}
+
+		event_target:country_to_switch_to = {
+			change_tag_from = event_target:country_to_switch
+			clr_country_flag = no_player_anymore
+		}
+		event_target:country_to_switch = { set_country_flag = no_player_anymore }
+
+		remove_from_array = { array = global.playerbase value = event_target:country_to_switch }
+		add_to_array = { array = global.playerbase value = event_target:country_to_switch_to }
+		sort_array_by_factions = yes
+
+		clear_global_event_target = country_to_switch
+		clear_global_event_target = country_to_switch_to
+		clr_global_flag = confirm_country_switch_host
+		clr_global_flag = confirm_country_switch_player
+	}
+}
+
+#Switching countries, Somebody said no
+country_event = {
+	id = switching_countries.3
+	title = switching_countries.3.t
+	desc = switching_countries.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = switching_countries.3.a
+		ai_chance = { factor = 0 }
+	}
+}
+
+add_namespace = host_vote
+
+#Vote to decide host
+country_event = {
+	id = host_vote.1
+	title = host_vote.1.t
+	desc = host_vote.1.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_global_flag = vote_for_new_host_succeeded
+		clr_global_flag = vote_for_new_host_failed
+		clr_country_flag = country_has_voted
+		if = {
+			limit = { has_event_target = current_highest_vote_holder }
+			clear_global_event_target = current_highest_vote_holder
+		}
+
+		set_global_flag = vote_on_host
+		set_variable = { global.votes_for_@THIS = 0 }
+		clear_variable = global.highest_vote
+		clear_variable = total_votes_num
+		clear_variable = votes_needed
+
+		hidden_effect = { country_event = { id = host_vote.2 days = 10 } }
+	}
+
+	option = {
+		name = host_vote.1.a
+	}
+}
+
+#Results of host vote
+country_event = {
+	id = host_vote.2
+	title = host_vote.2.t
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { total_votes_num = 0 }
+
+			every_country = {
+				limit = { is_ai = no }
+				add_to_variable = { total_votes_num = global.votes_for_@THIS }
+				if = {
+					limit = {
+						OR = {
+							NOT = { has_variable = global.current_highest_vote }
+							check_variable = { global.votes_for_@THIS > global.current_highest_vote }
+						}
+					}
+					set_variable = { global.current_highest_vote = global.votes_for_@THIS }
+					save_global_event_target_as = current_highest_vote_holder
+					log = "Votes for THIS: [?global.votes_for_@THIS]"
+					log = "Array size: [?global.playerbase^num]"
+				}
+			}
+
+			set_temp_variable = { vote_total = total_votes_num }
+			set_variable = { global.highest_vote = global.current_highest_vote }
+			set_variable = { votes_needed = total_votes_num }
+			multiply_variable = { votes_needed = 0.6 }
+			divide_variable = { global.current_highest_vote = vote_total }
+			log = "Percentage for host: [?global.current_highest_vote]"
+			log = "Votes needed: [?votes_needed]"
+			if = {
+				limit = { check_variable = { global.current_highest_vote > 0.6 } }
+
+				set_global_flag = vote_for_new_host_succeeded
+				if = {
+					limit = { has_event_target = game_host }
+					clear_global_event_target = game_host
+				}
+				event_target:current_highest_vote_holder = { save_global_event_target_as = game_host }
+			}
+			else = {
+				set_global_flag = vote_for_new_host_failed
+
+				if = {
+					limit = { NOT = { any_country = { TAG = event_target:game_host } } }
+					country_event = { id = host_vote.1 days = 3 }
+				}
+			}
+
+			clr_global_flag = vote_on_host
+			clr_country_flag = country_has_voted
+			clear_variable = local_country_has_voted_for
+		}
+	}
+
+	desc = {
+		text = host_vote.2.d.succeed
+		trigger = { any_country = { has_global_flag = vote_for_new_host_succeeded } }
+	}
+	desc = {
+		text = host_vote.2.d.fail
+		trigger = { any_country = { has_global_flag = vote_for_new_host_failed } }
+	}
+
+	option = {
+		name = host_vote.2.a
+	}
+}

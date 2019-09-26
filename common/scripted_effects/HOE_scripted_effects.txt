@@ -1,0 +1,200 @@
+# Host Options Expanded scripted effects
+# Splits initial country array up in 5 separate arrays
+
+add_player_countries = {
+	every_country = {
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { is_in_array = { global.playerbase = THIS.id } }
+				NOT = { has_country_flag = no_player_anymore }
+			}
+			add_to_array = { global.playerbase = THIS.id }
+			if = {
+				limit = { NOT = { has_country_flag = permission_given_for_ideology_switch } }
+				country_event = player_permission.2
+			}
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				is_in_array = { global.playerbase = THIS.id }
+			}
+			remove_from_array = { global.playerbase = THIS.id }
+		}
+	}
+	sort_array_by_factions = yes
+}
+
+sort_array_by_factions = {
+	clear_array = global.chinese_countries_array
+	clear_array = global.democratic_countries_array
+	clear_array = global.communist_countries_array
+	clear_array = global.fascist_countries_array
+	clear_array = global.neutral_countries_array
+	for_each_scope_loop = {
+		array = global.playerbase
+
+		THIS = {
+			if = {
+				limit = { is_ching_chong = yes }
+
+				#Add chinese country to array
+				add_to_array = { global.chinese_countries_array = THIS.id }
+			}
+			#If government is democratic
+			else_if = {
+				limit = { is_allied_with_allies = yes }
+
+				#Add democratic country to array
+				add_to_array = { global.democratic_countries_array = THIS.id }
+			}
+			# If government is gommie
+			else_if = {
+				limit = { is_allied_with_comintern = yes }
+
+				#Add gommie country to array
+				add_to_array = { global.communist_countries_array = THIS.id }
+			}
+			# If government is nezi
+			else_if = {
+				limit = { is_allied_with_axis = yes }
+
+				#Add fascist country to array
+				add_to_array = { global.fascist_countries_array = THIS.id }
+			}
+			# If government is neutral
+			else = {
+				limit = { is_neutral = yes }
+
+				#Add neutral country to array
+				add_to_array = { global.neutral_countries_array = THIS.id }
+			}
+			log = "[?THIS.GetName]"
+		}
+		clear_variable = array_country
+	}
+}
+
+#Moves a country from their faction to the Chinese faction
+switch_country_to_ching_chong = {
+	if = {
+		limit = { is_allied_with_allies = yes }
+		set_country_flag = switched_off_allies_team
+	}
+	else_if = {
+		limit = { is_allied_with_comintern = yes }
+		set_country_flag = switched_off_comintern_team
+	}
+	else_if = {
+		limit = { is_allied_with_axis = yes }
+		set_country_flag = switched_off_axis_team
+	}
+	else_if = {
+		limit = { is_neutral = yes }
+		set_country_flag = switched_off_neutral_team
+	}
+	set_country_flag = switched_to_ching_chong_team
+	clr_country_flag = switched_off_ching_chong_team
+	sort_array_by_factions = yes
+}
+
+#Moves a country from their faction to the Comintern faction
+switch_country_to_comintern = {
+	if = {
+		limit = { is_ching_chong = yes }
+		set_country_flag = switched_off_ching_chong_team
+	}
+	else_if = {
+		limit = { is_allied_with_allies = yes }
+		set_country_flag = switched_off_allies_team
+	}
+	else_if = {
+		limit = { is_allied_with_axis = yes }
+		set_country_flag = switched_off_axis_team
+	}
+	else_if = {
+		limit = { is_neutral = yes }
+		set_country_flag = switched_off_neutral_team
+	}
+	set_country_flag = switched_to_comintern_team
+	clr_country_flag = switched_off_comintern_team
+	sort_array_by_factions = yes
+	add_popularity = { ideology = communism popularity = 1 }
+	set_politics = { ruling_party = communism }
+}
+
+#Moves a country from their faction to the Allies faction
+switch_country_to_allies = {
+	if = {
+		limit = { is_ching_chong = yes }
+		set_country_flag = switched_off_ching_chong_team
+	}
+	else_if = {
+		limit = { is_allied_with_comintern = yes }
+		set_country_flag = switched_off_comintern_team
+	}
+	else_if = {
+		limit = { is_allied_with_axis = yes }
+		set_country_flag = switched_off_axis_team
+	}
+	else_if = {
+		limit = { is_neutral = yes }
+		set_country_flag = switched_off_neutral_team
+	}
+	set_country_flag = switched_to_allies_team
+	clr_country_flag = switched_off_allies_team
+	sort_array_by_factions = yes
+	add_popularity = { ideology = democratic popularity = 1 }
+	set_politics = { ruling_party = democratic }
+}
+
+#Moves a country from their faction to the Allies faction
+switch_country_to_axis = {
+	if = {
+		limit = { is_ching_chong = yes }
+		set_country_flag = switched_off_ching_chong_team
+	}
+	else_if = {
+		limit = { is_allied_with_comintern = yes }
+		set_country_flag = switched_off_comintern_team
+	}
+	else_if = {
+		limit = { is_allied_with_allies = yes }
+		set_country_flag = switched_off_allies_team
+	}
+	else_if = {
+		limit = { is_neutral = yes }
+		set_country_flag = switched_off_neutral_team
+	}
+	set_country_flag = switched_to_axis_team
+	clr_country_flag = switched_off_axis_team
+	sort_array_by_factions = yes
+	add_popularity = { ideology = fascism popularity = 1 }
+	set_politics = { ruling_party = fascism }
+}
+
+#Moves a country from their faction to the Neutral faction
+switch_country_to_neutral = {
+	if = {
+		limit = { is_ching_chong = yes }
+		set_country_flag = switched_off_ching_chong_team
+	}
+	else_if = {
+		limit = { is_allied_with_comintern = yes }
+		set_country_flag = switched_off_comintern_team
+	}
+	else_if = {
+		limit = { is_allied_with_allies = yes }
+		set_country_flag = switched_off_allies_team
+	}
+	else_if = {
+		limit = { is_allied_with_axis = yes }
+		set_country_flag = switched_off_axis_team
+	}
+	set_country_flag = switched_to_neutral_team
+	clr_country_flag = switched_off_neutral_team
+	sort_array_by_factions = yes
+	add_popularity = { ideology = neutrality popularity = 1 }
+	set_politics = { ruling_party = neutrality }
+}
