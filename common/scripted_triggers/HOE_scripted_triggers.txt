@@ -1,0 +1,66 @@
+# Is in faction with or has ideology or has flag
+
+is_ching_chong = {
+	OR = {
+		AND = {
+			CHI = { is_subject = no }
+			is_in_faction_with = CHI
+		}
+		is_independent_china_or_warlord = yes
+		has_country_flag = switched_to_ching_chong_team
+	}
+	NOT = { has_country_flag = switched_off_ching_chong_team }
+}
+
+is_allied_with_axis = {
+	OR = {
+		AND = {
+			GER = {
+				has_government = fascism
+				is_subject = no
+			}
+			is_in_faction_with = GER
+		}
+		has_government = fascism
+		has_country_flag = switched_to_axis_team
+	}
+	NOT = { has_country_flag = switched_off_axis_team }
+}
+
+is_allied_with_allies = {
+	OR = {
+		AND = {
+			ENG = {
+				has_government = democratic
+				is_subject = no
+			}
+			is_in_faction_with = ENG
+		}
+		has_government = democratic
+		has_country_flag = switched_to_axis_team
+	}
+	NOT = { has_country_flag = switched_off_allies_team }
+}
+
+is_allied_with_comintern = {
+	OR = {
+		AND = {
+			SOV = {
+				has_government = communism
+				is_subject = no
+			}
+			is_in_faction_with = SOV
+		}
+		has_government = communism
+		has_country_flag = switched_to_comintern_team
+	}
+	NOT = { has_country_flag = switched_off_comintern_team }
+}
+
+is_neutral = {
+	OR = {
+		has_government = neutrality
+		has_country_flag = switched_to_neutral_team
+	}
+	NOT = { has_country_flag = switched_off_neutral_team }
+}

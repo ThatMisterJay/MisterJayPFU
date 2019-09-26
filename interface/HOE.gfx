@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Host_Options_icon"
+		texturefile = "gfx/Host_Options_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_host_box"
+		texturefile = "gfx/host_box.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_HOE_button"
+		textureFile = "gfx/HOE_button.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}
