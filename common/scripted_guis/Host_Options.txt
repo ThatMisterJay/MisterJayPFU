@@ -206,6 +206,8 @@ scripted_gui = {
 			general_option_2_visible = { ROOT = { TAG = event_target:game_host } }
 			general_option_3_visible = { ROOT = { TAG = event_target:game_host } }
 			general_option_4_visible = { ROOT = { TAG = event_target:game_host } }
+			general_option_5_visible = { ROOT = { TAG = event_target:game_host } }
+			general_option_6_visible = { ROOT = { TAG = event_target:game_host } }
 			general_option_7_visible = {
 				NOT = { has_global_flag = no_ai_faction_joining }
 				ROOT = { TAG = event_target:game_host }
