@@ -2410,7 +2410,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = progress_cult_focus
+			add_ideas = ENG_colonial_elite
 		}
 	}
 
