@@ -431,6 +431,7 @@ ai_will_do = {
  name = torp_bonus
  bonus = 1
  uses = 2
+ ahead_reduction = 1
  technology = improved_ship_torpedo_launcher
  technology = advanced_ship_torpedo_launcher
  }
@@ -627,7 +628,7 @@ id = ITA_ethiopianwarlogistics
 icon = GFX_goal_generic_position_armies
 x = 15
 y = 0
-cost = 10
+cost = 5
 available_if_capitulated = yes
 bypass = {
 
@@ -793,7 +794,7 @@ id = ITA_beginmilitaryrearmament
 icon = GFX_goal_generic_construct_mil_factory
 x = 7
 y = 2
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_ethiopianwarlogistics }
 bypass = {
@@ -1121,7 +1122,7 @@ completion_reward = {
 modify_building_resources = {
    building = synthetic_refinery
    resource = rubber
-   amount = 2
+   amount = 1
 }
 add_resource = {
 type = oil
@@ -1576,7 +1577,7 @@ id = ITA_marenostrum
 icon = GFX_goal_generic_construct_naval_dockyard
 x = 16
 y = 4
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_ethiopianwarlogistics }
 completion_reward = {
@@ -1653,6 +1654,7 @@ add_tech_bonus = {
 name = cv_bonus
 bonus = 1
 uses = 2
+ahead_reduction = 1
 category = cv_tech
 }
  }
@@ -1675,6 +1677,7 @@ add_tech_bonus = {
 name = bb_bonus
 bonus = 1
 uses = 2
+ahead_reduction = 1
 category = bb_tech
 category = bc_tech
 }
@@ -1812,13 +1815,14 @@ x = 19
 y = 7
 cost = 7.2
 available_if_capitulated = yes
-prerequisite = { focus = ITA_victorythroughnavalpower }
+prerequisite = { focus = ITA_battleshipadherent focus = ITA_carrieradherent }
 completion_reward = {
 
 add_tech_bonus = {
 name = cr_bonus
 bonus = 1
 uses = 2
+ahead_reduction = 1
 category = cl_tech
 }
  }
@@ -1833,12 +1837,13 @@ x = 23
 y = 7
 cost = 7.2
 available_if_capitulated = yes
-prerequisite = { focus = ITA_carrieradherent }
+prerequisite = { focus = ITA_battleshipadherent focus = ITA_carrieradherent}
 completion_reward = {
 add_tech_bonus = {
 name = dd_bonus
 bonus = 1
 uses = 2
+ahead_reduction = 1
 category = dd_tech
 }
 
@@ -2109,7 +2114,7 @@ id = ITA_victorythroughairpower
 icon = GFX_focus_generic_air_defense
 x = 14
 y = 5
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_marenostrum }
 mutually_exclusive = { focus = ITA_victorythroughnavalpower }
@@ -2136,7 +2141,7 @@ id = ITA_victorythroughnavalpower
 icon = GFX_focus_generic_navy_battleship2
 x = 18
 y = 5
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_marenostrum }
 mutually_exclusive = { focus = ITA_victorythroughairpower }
@@ -2243,6 +2248,7 @@ add_tech_bonus = {
 name = dp_bonus
 bonus = 1
 uses = 1
+ahead_reduction = 1
 technology = dp_secondary_battery
 }
 }
@@ -2254,7 +2260,7 @@ id = ITA_northerndockyardexpansion
 icon = GFX_goal_generic_construct_naval_dockyard
 x = 23
 y = 8
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_destroyerdevelopment }
 ai_will_do = {
@@ -3189,7 +3195,7 @@ id = ITA_southdockyardexpansion
 icon = GFX_goal_generic_construct_naval_dockyard
 x = 19
 y = 8
-cost = 8
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_cruiserdevelopment }
 ai_will_do = {
@@ -3255,6 +3261,7 @@ navy_experience = 100
 add_tech_bonus = {
 name = lg_bonus
 bonus = 1
+ahead_reduction = 1
 uses = 2
 technology = improved_medium_battery
 technology = improved_light_battery
