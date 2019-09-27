@@ -1135,7 +1135,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 7.2
+		cost = 7
 		ai_will_do = {
 			factor = 3
 		}
@@ -1144,14 +1144,9 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
-			add_tech_bonus = {
-				name = fighter_command_focus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 2
-				technology = fighter1
-				technology = fighter2
-			}
+			custom_effect_tooltip = ENG_fighter2
+			hidden_effect = { set_technology = { fighter2 = 1 } }
+
 		}
 	}
 	focus = {
@@ -1161,7 +1156,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 7.2
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -1186,7 +1181,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 7.2
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
