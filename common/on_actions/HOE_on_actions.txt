@@ -1,0 +1,320 @@
+on_actions = {
+    on_startup = {
+		effect = {
+			set_global_flag = creating_playerbase
+
+            #Setting Host
+            every_country = {
+                #country_event = host_vote.1
+
+    			add_to_array = { global.countrybase = THIS.id }
+            }
+
+            random_country = {
+                add_player_countries = yes
+            }
+
+
+            #
+                if = {
+    				limit = {
+						has_game_rule = {
+							rule = set_host_country
+							option = normal
+						}
+    				}
+                    every_country = { country_event = host_vote.1 }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Germany
+    					}
+    				}
+    				GER = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Italy
+    					}
+    				}
+    				ITA = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Romania
+    					}
+    				}
+    				ROM = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Hungary
+    					}
+    				}
+    				HUN = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Bulgaria
+    					}
+    				}
+    				BUL = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Finland
+    					}
+    				}
+    				FIN = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = "Great Britain"
+    					}
+    				}
+    				ENG = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = USA
+    					}
+    				}
+    				USA = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Canada
+    					}
+    				}
+    				CAN = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = "South Africa"
+    					}
+    				}
+    				SAF = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = "British Raj"
+    					}
+    				}
+    				RAJ = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Australia
+    					}
+    				}
+    				AST = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = "New Zealand"
+    					}
+    				}
+    				NZL = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Japan
+    					}
+    				}
+    				JAP = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Manchukuo
+    					}
+    				}
+    				MAN = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = Siam
+    					}
+    				}
+    				SIA = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    			if = {
+    				limit = {
+    					has_game_rule = {
+    						rule = set_host_country
+    						option = "Soviet Union"
+    					}
+    				}
+    				SOV = {
+                        if = {
+                            limit = { is_ai = no }
+                            save_global_event_target_as = game_host
+                        }
+                        else = {
+                            every_country = { country_event = host_vote.1 }
+                        }
+                    }
+    			}
+    		#
+		}
+	}
+}
