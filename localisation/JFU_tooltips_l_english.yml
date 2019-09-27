@@ -56,3 +56,19 @@ GER_case_anton_JFU_tt:0 "This decision will capture what is left of the Vichy fl
 
 SAF_tank_variant_tt:0 "This focus will give you a Tank variant if you have Medium or Heavy tank 1 researched.\n"
 SPR_new_general_tt:0 "4 New Generals will appear."
+
+ENG_fighter2:0 "Allows production of the Supermarine Spitfire"
+
+#tooltip#
+ITA_new_army:0 "Our new officer corp will lead the Italian army to victory. "
+ITA_remove_yes_men:0 "No longer will the Italian army be hampered by a incompetent corp of officers who knew the right people. "
+ITA_training:0 "New officer will fill the needs of the Royal Army. "
+ITA_new_commanders:0 "Commanders loyal to the King will be needed if Italy is to survive. (Italy gain 3 new experienced officers)"
+ITA_med:0 "Despite our lackluster officer corp, we still have some capable officers.(Gives access to a commando expert) "
+ITA_mot_div:0 " Motorized Divisons will be needed if Italy is to keep up with the other powers. Will gain a elite mot. division in Rome. "
+ITA_ss:0 "The SS will help us form new elite formations. Will gain 2 elite divisions in Rome.  "
+ITA_paratroopers:0 "Will allow the use of a airborne operations genius. "
+ITA_amphibious:0 "Will allow the use of a amphibious operations expert. "
+ITA_newofficercorp:0 "Our new officer corp is read and awaits deployment. "
+ITA_designer:0 "Gives access to a Heavy fighter designer. "
+ITA_commando_exp:0 "Gives access to a commando expert.
