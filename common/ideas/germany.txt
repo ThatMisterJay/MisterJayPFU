@@ -1073,7 +1073,7 @@ ideas = {
 					defense = 0.2
 					armor_value = 0.20
 					reliability = -0.15
-					build_cost_ic = 0.15
+			  	build_cost_ic = 0.05
 				}
 				heavy_tank_destroyer_equipment = {
 					hard_attack = 0.25
@@ -1082,7 +1082,7 @@ ideas = {
 					defense = 0.2
 					reliability = -0.10
 					breakthrough = -0.10
-					build_cost_ic = 0.10
+					build_cost_ic = 0.05
 				}
 			}
 		}
@@ -1163,7 +1163,7 @@ ideas = {
 					armor_value = 0.10
 					ap_attack = 0.10
 					reliability = -0.10
-					build_cost_ic = 0.10
+					build_cost_ic = 0.05
 		}
 			}
 
