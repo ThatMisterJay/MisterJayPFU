@@ -68,7 +68,7 @@ ideas = {
 				attack_bonus_against = -0.4
 			}
 			modifier = {
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.6
 				conscription = -0.01
 			}
 		}

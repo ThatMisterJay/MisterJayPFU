@@ -1007,8 +1007,7 @@ ideas = {
 				amphibious_invasion = 0.80
 				invasion_preparation = -0.80
 				supply_consumption_factor = -0.25
-				special_forces_attack_factor = 0.1
-				army_attack_factor = 0.20
+				army_attack_factor = 0.10
 				army_org_Factor = 0.20
 				army_morale_factor = 0.20
 				attrition = -0.20
@@ -1029,8 +1028,8 @@ ideas = {
 			picture = jap_supremacy_of_will
 
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
 				army_org_Factor = 0.10
 				land_night_attack = 0.1
 				no_supply_grace = 48
@@ -1052,7 +1051,7 @@ ideas = {
 			picture = tfv_can_conscription_crisis
 
 			modifier = {
-                industrial_capacity_factory = -0.3
+                industrial_capacity_factory = -0.6
 				army_morale_factor = -0.05
 			}
 		}
@@ -1304,7 +1303,7 @@ ideas = {
 
 
 
-			traits = { army_chief_offensive_1 }
+			traits = { army_chief_offensive_2 }
 
 			ai_will_do = {
 				factor = 1
