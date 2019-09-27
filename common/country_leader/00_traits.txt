@@ -1615,12 +1615,7 @@ leader_traits = {
 	blitzkrieg_theorist = {
 		sprite = 14
 
-		equipment_bonus = {
-			armor = {
-				instant = yes
-				maximum_speed = 0.10
-			}
-		}
+	
 		experience_gain_army = 0.05
 
 		ai_will_do = {
