@@ -766,7 +766,7 @@ picture = AST_sydney_rowell
 				original_tag = AST
 			}
 
-			traits = { army_chief_offensive_1 }
+			traits = { army_chief_offensive_2 }
 
 			ai_will_do = {
 				factor = 1
