@@ -990,7 +990,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
-		cost = 4.3
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -1010,6 +1010,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_flexible_foreign_policy
+			add_political_power = 70
 		}
 	}
 
