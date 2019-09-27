@@ -49,14 +49,9 @@ ideas = {
 
 			picture = generic_morale_bonus
 
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.2
-				defense_bonus_against = -0.2
-			}
+			
 
 			modifier = {
-				army_org_Factor = -0.05
 				army_morale_factor = -0.05
 
 				invasion_preparation = 0.25 #+25% invasion prep time
@@ -75,20 +70,8 @@ ideas = {
 
 			picture = generic_morale_bonus
 
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.2
-				defense_bonus_against = -0.2
-			}
-
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.2
-				defense_bonus_against = -0.2
-			}
 
 			modifier = {
-				army_org_Factor = -0.10
 				army_morale_factor = -0.10
 			}
 		}
