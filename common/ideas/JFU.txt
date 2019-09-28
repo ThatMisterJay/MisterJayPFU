@@ -21,7 +21,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = 0.3
+				attack_bonus_against = 0.1
 			}
 
 			modifier = {
@@ -49,7 +49,7 @@ ideas = {
 
 			picture = generic_morale_bonus
 
-			
+
 
 			modifier = {
 				army_morale_factor = -0.05
