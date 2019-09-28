@@ -1577,6 +1577,7 @@ ideas = {
 				date > 1938.4.1
 			}
 
+cost = 75
 
 			research_bonus = {
 				armor = 0.15
@@ -1618,7 +1619,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-
+cost = 75
 
 			research_bonus = {
 				armor = 0.15
@@ -1636,6 +1637,9 @@ ideas = {
 		}
 
 		okmo = {
+
+			cost = 75
+
 			allowed = {
 				original_tag = SOV
 			}
