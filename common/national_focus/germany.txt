@@ -197,11 +197,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		modify_building_resources = {
-	 building = synthetic_refinery
-	 resource = rubber
-	 amount = 1
-}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
