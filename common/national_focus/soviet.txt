@@ -2031,7 +2031,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus2
 				bonus = 1
-				technology = improved_heavy_tank
+				technology = super_heavy_tank
 			}
 		}
 	}
