@@ -1917,9 +1917,10 @@ country_event = {
 		}
 		add_tech_bonus = {
 			name = armor_bonus
-			bonus = 1
+			bonus = 2
 			uses = 1
-			category = armor
+			technology = improved_medium_tank
+			technology = improved_heavy_tank
 		}
 	}
 
