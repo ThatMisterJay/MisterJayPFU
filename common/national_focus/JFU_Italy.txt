@@ -176,7 +176,7 @@ ai_will_do = {
   add_extra_state_shared_building_slots = 2
   add_building_construction = {
     type = industrial_complex
-    level = 1
+    level = 2
     instant_build = yes
   }
   }
@@ -188,7 +188,7 @@ ai_will_do = {
     add_extra_state_shared_building_slots = 2
     add_building_construction = {
       type = arms_factory
-      level = 1
+      level = 2
       instant_build = yes
     }
  }
@@ -1119,15 +1119,15 @@ controls_state = 662
 }
  }
 completion_reward = {
-modify_building_resources = {
-   building = synthetic_refinery
-   resource = rubber
-   amount = 1
-}
 add_resource = {
 type = oil
 amount = 20
 state = 662
+}
+add_resource = {
+type = rubber
+amount = 50
+state = 448
 }
  }
 
@@ -2556,7 +2556,7 @@ id = ITA_exploiteastafrica
 icon = GFX_goal_generic_position_armies
 x = 1
 y = 10
-cost = 10
+cost = 7.2
 available_if_capitulated = yes
 prerequisite = { focus = ITA_policyofexploitation }
 ai_will_do = {
@@ -2575,10 +2575,10 @@ random_owned_controlled_state = {
   limit = {
     ROOT = { has_full_control_of_state = PREV }
   }
-  add_extra_state_shared_building_slots = 8
+  add_extra_state_shared_building_slots = 6
   add_building_construction = {
     type = industrial_complex
-    level = 8
+    level = 6
     instant_build = yes
   }
   }
@@ -2670,10 +2670,10 @@ ai_will_do = {
   limit = {
     ROOT = { has_full_control_of_state = PREV }
   }
-  add_extra_state_shared_building_slots = 8
+  add_extra_state_shared_building_slots = 6
   add_building_construction = {
     type = industrial_complex
-    level = 8
+    level = 6
     instant_build = yes
   }
   }
