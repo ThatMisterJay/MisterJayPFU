@@ -1559,7 +1559,11 @@ technologies = {
 
 	assault_concentration = {
 
-		max_planning = 0.2
+		max_planning = 0.1
+
+		category_all_infantry = {
+			default_morale = 0.05
+		}
 
 		enable_tactic = tactic_overwhelming_fire
 		enable_tactic = tactic_default_overwhelming_fire
