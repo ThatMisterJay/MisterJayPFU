@@ -157,8 +157,8 @@ ability = {
 			fort = {
 				attack = 0.1
 			}
-			fortification_damage = 1.0
-			fortification_collateral_chance = 1.0
+			fortification_damage = 0.5
+			fortification_collateral_chance = 0.5
 		}
 		cost = 0.1
 		duration = 168
@@ -257,7 +257,7 @@ ability = {
 		unit_modifiers = {
 			river_crossing_factor = -0.5
 			river = {
-				attack = 0.4
+				attack = 0.2
 			}
 		}
 
