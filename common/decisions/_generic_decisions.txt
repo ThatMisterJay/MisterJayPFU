@@ -392,11 +392,15 @@ operations = {
 		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {
-            num_of_factories > 1000
+			has_full_control_of_state = 446
+			has_full_control_of_state = 453
+            num_of_factories > 10
 		}
 
 		visible = {
-            num_of_factories > 1000
+			has_full_control_of_state = 446
+			has_full_control_of_state = 453
+            num_of_factories > 10
 		}
 
 		fire_only_once = no
@@ -425,11 +429,13 @@ operations = {
 		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {
-            num_of_factories > 1000
+			has_full_control_of_state = 685
+            num_of_factories > 10
 		}
 
 		visible = {
-            num_of_factories > 1000
+			has_full_control_of_state = 685
+            num_of_factories > 10
 		}
 
 		fire_only_once = no
