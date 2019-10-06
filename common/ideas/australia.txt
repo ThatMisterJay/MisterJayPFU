@@ -149,6 +149,21 @@ ideas = {
 			}
 		}
 
+    AST_battle = {
+
+picture = "CZE_planning_bonus"
+
+     allowed = {
+			 original_tag = AST
+		 }
+
+modifier = {
+	army_core_defence_factor = 0.1
+	conscription = 0.02
+}
+
+		}
+
 		AST_naval_auxiliary_patrol = {
 
 			allowed = {

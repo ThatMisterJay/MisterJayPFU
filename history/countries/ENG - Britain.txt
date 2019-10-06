@@ -247,7 +247,6 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "Bernard Montgomery" # Aristocrat
-	id = 996
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
 	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
 	skill = 4
@@ -262,6 +261,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Claude Auchinleck"
+	id = 996
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
 	traits = { inflexible_strategist career_officer organizer infantry_leader trait_mountaineer }
 	skill = 5
@@ -484,6 +484,7 @@ create_corps_commander = {
 
 create_field_marshal = {
 	name = "Archibald Wavell"
+	id = 995
 	picture = "Portrait_Britain_Archibald_Wavell.dds"
 	traits = { career_officer organizer infantry_leader hill_fighter }
 	skill = 3

@@ -372,7 +372,7 @@ country_event = {
 }
 
 
-
+#Balbo death
 country_event = {
 id = JFU.13
 title = JFU.13.t
@@ -401,4 +401,142 @@ add_political_power = 100
 air_experience = 25
 }
 
+}
+
+
+#Australian battle events
+country_event = {
+	id = JFU.14
+	title = JFU.14.t
+	desc = JFU.14.d
+	picture = GFX_report_event_ANZAC_day
+
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		336 = { NOT = { is_controlled_by = ENG } }
+	}
+
+option = {
+name = JFU.14.a
+add_stability = -0.05
+add_war_support = 0.10
+set_country_flag = singapore_lost
+}
+
+}
+
+country_event = {
+	id = JFU.15
+	title = JFU.15.t
+	desc = JFU.15.d
+	picture = GFX_report_event_ast_planning
+
+fire_only_once = yes
+
+trigger = {
+	tag = AST
+	has_country_flag = singapore_lost
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = JFU.15.a
+add_political_power = 100
+add_ideas = AST_battle
+}
+}
+
+#Raj battle events
+country_event = {
+	id = JFU.16
+	title = JFU.16.t
+	desc = JFU.16.d
+	picture = GFX_report_event_indian_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = RAJ
+		336 = { NOT = { is_controlled_by = ENG } }
+	}
+
+option = {
+name = JFU.16.a
+ENG = {
+	remove_unit_leader = 995
+}
+add_ideas = RAJ_battle
+create_corps_commander = {
+	name = "Archibald Wavell"
+	id = 996
+	picture = "Portrait_Britain_Archibald_Wavell.dds"
+	traits = { career_officer organizer infantry_leader hill_fighter jungle_rat }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+}
+
+}
+
+#new leader
+country_event = {
+	id = JFU.17
+	title = JFU.17.t
+	desc = JFU.17.d
+	picture = GFX_report_event_partition_of_india
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = RAJ
+		date > 1943.10.1
+	}
+
+	option = {
+		name = JFU.17.a
+		ENG = {
+			remove_unit_leader = 996
+		}
+		create_country_leader = {
+			name = "Archibald Wavell"
+			desc = ""
+			picture = "Portrait_Britain_Archibald_Wavell.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				army_chief_reform_2
+			#
+			}
+
+		}
+		create_country_leader = {
+			name = "Archibald Wavell"
+			desc = ""
+			picture = "Portrait_Britain_Archibald_Wavell.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+				army_chief_reform_2
+			#
+			}
+
+		}
+		create_corps_commander = {
+			name = "Claude Auchinleck"
+			picture = "Portrait_Britain_Claude_Auchinleck.dds"
+			traits = { inflexible_strategist career_officer trait_engineer infantry_leader trait_mountaineer jungle_rat }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
 }
