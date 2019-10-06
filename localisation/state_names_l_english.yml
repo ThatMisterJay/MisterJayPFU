@@ -521,7 +521,7 @@
  STATE_520:0 "Northern Territory"
  STATE_521:0 "Queensland"
  STATE_522:0 "Western Australia"
- STATE_523:1 "Papua"
+ STATE_523:1 "Northern Papua"
  STATE_524:0 "Taiwan"
  STATE_525:0 "South Korea"
  STATE_526:0 "Okinawa"
@@ -781,3 +781,4 @@
  STATE_780:0 "Al-Muthanna"
  STATE_781:0 "Wasit"
  STATE_782:0 "Lower Croatia"
+ STATE_783:0 "Southern Papua"
