@@ -207,4 +207,8 @@ country_event = {
 					}
 				}
 	}
-	
+
+  option = {
+    name = gduannexations.9.a
+  }
+}

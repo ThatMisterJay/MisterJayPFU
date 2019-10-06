@@ -125,20 +125,13 @@ if = {
   }
   set_global_flag = GDU_GRE_capitulated
 
-
-
-  ITA = {
-    transfer_state = 185
-    transfer_state = 186
-    }
-
   GRE = {
     transfer_navy = {
       target = AST
     }
   }
 
-  GRE = { 					country_event = { id = gduannexations.11 days = 3 }  }
+
 
   GRE = { 					country_event = { id = gduannexations.6 days = 10 }  }			}
 }
@@ -156,13 +149,7 @@ if = {
   set_global_flag = GDU_YUG_capitulated
 
 
-  ITA = {
-    transfer_state = 103
-    transfer_state = 104
-    transfer_state = 105
-    transfer_state = 109
-    transfer_state = 789
-    }
+
 
 
   YUG = {
@@ -171,7 +158,7 @@ if = {
     }
   }
 
-  YUG = { 					country_event = { id = gduannexations.10 days = 3 }  }
+
 
   YUG = { 					country_event = { id = gduannexations.7 days = 10 }  }			}
 }
