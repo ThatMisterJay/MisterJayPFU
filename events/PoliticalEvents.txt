@@ -851,7 +851,7 @@ country_event = {
 	}
 	desc = {
 		text = political.27.d_communism
-	 	trigger = { has_government = communism }
+    trigger = { has_government = communism }
 	}
 	picture = GFX_report_event_journalists_speech
 

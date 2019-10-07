@@ -84,7 +84,7 @@ less_trucks_4_u_JAP = {
 southern_expansion = {
 	enable = {
 		tag = JAP
-		has_completed_focus = southern_expansion_focus
+		
 		OR = {
 			country_exists = HOL
 			country_exists = ENG
@@ -131,7 +131,7 @@ northern_expansion = {
 chinese_war = {
 	enable = {
 		tag = JAP
-		has_completed_focus = chinese_war_focus
+
 		country_exists = CHI
 	}
 	abort = {

@@ -72,7 +72,7 @@ fascism_on_the_rise = {
 				has_dlc = "Man the Guns"
 				OR = {
 					original_tag = USA
-					original_tag = MEX
+
 					original_tag = ENG
 				}
 			}
@@ -107,7 +107,7 @@ communism_on_the_rise = {
 				has_dlc = "Man the Guns"
 				OR = {
 					original_tag = USA
-					original_tag = MEX
+					
 					original_tag = ENG
 				}
 			}

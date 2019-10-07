@@ -9,6 +9,27 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = CHI_invite_foreign_investors
+
+
+	focus = {
+		id = CHI_educational_funding
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_stability = 0.1
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+
+
 	focus = {
 		id = CHI_industrial_reform
 		icon = GFX_goal_generic_construct_civ_factory
@@ -60,22 +81,7 @@ focus_tree = {
 			}
         }
 	}
-	focus = {
-		id = CHI_educational_funding
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 0
-		cost = 10
-		completion_reward = {
- 			add_stability = 0.1
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1
-				uses = 1
-				category = electronics
-			}
-		}
-	}
+	
 	focus = {
 		id = CHI_peking_university
 		icon = GFX_focus_research

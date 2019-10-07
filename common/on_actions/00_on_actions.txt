@@ -263,7 +263,7 @@ on_actions = {
 					is_puppet = no
 					OR = {
 						AND = {
-							tag = MEX
+							tag = USA
 							FROM = {
 								capital_scope = {
 									NOT = { is_on_continent = south_america }
@@ -272,7 +272,7 @@ on_actions = {
 						}
 						AND = {
 							FROM = {
-								tag = MEX
+								tag = USA
 							}
 							capital_scope = {
 								NOT = { is_on_continent = south_america }

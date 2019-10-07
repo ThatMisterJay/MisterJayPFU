@@ -82,8 +82,8 @@ country_event = {
 
 # Military Operations in Syria
 country_event = {
-	id = free_france.5
-	title = free_france.5.t
+	id = free_france.17
+	title = free_france.17.t
 	desc = free_france.5.desc
 	picture = GFX_report_event_syria_sway
 
@@ -91,7 +91,7 @@ country_event = {
 
 	#Try to attack and ask the british for help
 	option = {
-		name = free_france.5.a
+		name = free_france.17.a
 		ai_chance = {
 			factor = 100
 		}

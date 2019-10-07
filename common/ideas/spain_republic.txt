@@ -380,7 +380,7 @@ ideas = {
 
 		designer = yes
 
-		secn = {
+		secn_rep = {
 
 			picture = generic_naval_manufacturer_3
 

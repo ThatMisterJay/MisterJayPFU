@@ -32,11 +32,8 @@ ai_historical_focus_list_ENG = {
 		maud_focus
 		uk_mediterranean_focus
 		uk_carrier_focus
-		hongkong_focus
-		uk_iraq_focus
 		uk_rock_focus
 		singapore_focus
-		peninsular_focus
 		uk_small_arms_focus
 		uk_amphibious_focus
 		uk_protect_suez
@@ -54,7 +51,7 @@ ai_historical_focus_list_ENG = {
 
 ai_focus_defense_ENG = {
 	research = {
-		defensive = 5.0	
+		defensive = 5.0
 		radar_tech = 5.0
 		construction_tech = 2.0
 		artillery = 2.0
@@ -144,7 +141,7 @@ ai_focus_aviation_ENG = {
 		light_air = 4.0
 		light_fighter = 4.0
 		jet_technology = 1.0
-		cas_bomber = 2.0		
+		cas_bomber = 2.0
 		medium_air = 4.0
 		tactical_bomber = 5.0
 		heavy_air = 2.0

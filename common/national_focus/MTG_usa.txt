@@ -802,7 +802,7 @@ focus = {
 			has_war = yes
 		}
 		completion_reward = {
-			add_ideas = wartime_industry_focus
+			add_ideas = wartime_industry_focus_us
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 

@@ -1719,7 +1719,7 @@ focus = {
 			date > 1942.10.1
 		}
 
-		relative_position_id = naval_air_innovations_focus_2
+		
 		completion_reward = {
 			air_experience = 50
 			add_tech_bonus = {

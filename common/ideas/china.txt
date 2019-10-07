@@ -595,23 +595,7 @@ ideas = {
 
 		designer = yes
 
-		jiangnan_shipyard_group = {
-			picture = generic_naval_manufacturer_3
 
-
-			allowed = {
-				original_tag = CHI
-			}
-
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-
-			# riverine warfare weak on open waters
-
-			traits = { naval_manufacturer }
-
-		}
 	}
 
 	aircraft_manufacturer = { #

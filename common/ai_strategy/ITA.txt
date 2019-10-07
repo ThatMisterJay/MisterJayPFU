@@ -14,7 +14,7 @@
 albania_war_goal = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_albania_war_goal
+
 		country_exists = ALB
 	}
 	abort = {
@@ -33,7 +33,7 @@ albania_war_goal = {
 greece_war_goal = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_triumphinafrica
+
 		country_exists = GRE
 	}
 	abort = {
@@ -52,7 +52,7 @@ greece_war_goal = {
 anti_uk_war_goals = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_triumphinafrica
+
 		country_exists = ENG
 	}
 	abort = {
@@ -71,7 +71,7 @@ anti_uk_war_goals = {
 yugoslavia_war_goal = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_triumphinafrica
+
 		country_exists = YUG
 	}
 	abort = {
@@ -90,7 +90,7 @@ yugoslavia_war_goal = {
 germany_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_triumphinafrica
+
 		country_exists = GER
 	}
 	abort = {
@@ -134,7 +134,7 @@ romania_ally = {
 bulgaria_ally = {
 	enable = {
 		tag = ITA
-		has_completed_focus = ITA_bulgaria_friend
+		
 		country_exists = BUL
 	}
 	abort = {
