@@ -673,7 +673,7 @@ ideas = {
 			}
 		}
 
-		wartime_industry_focus = {
+		wartime_industry_focus_usa = {
 			allowed = {
 				always = no
 			}
