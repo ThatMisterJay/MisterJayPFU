@@ -1,4 +1,4 @@
-capital = 277
+﻿capital = 277
 
 oob = "MEX_1936"
 

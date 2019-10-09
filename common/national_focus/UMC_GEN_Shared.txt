@@ -289,17 +289,17 @@
 		completion_reward = {
 			add_resource = {
 				type = tungsten
-				amount = 40
+				amount = 1
 				state = 267
 			}
 			add_resource = {
 				type = oil
-				amount = 20
+				amount = 1
 				state = 267
 			}
 			add_resource = {
 				type = chromium
-				amount = 15
+				amount = 1
 				state = 267
 			}
 			add_tech_bonus = {

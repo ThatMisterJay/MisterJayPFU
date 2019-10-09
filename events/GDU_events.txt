@@ -1,4 +1,4 @@
-add_namespace = gduannexations
+﻿add_namespace = gduannexations
 
 country_event = {
 	id = gduannexations.1

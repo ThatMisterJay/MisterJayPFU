@@ -1,4 +1,4 @@
-add_namespace = Jfujap
+﻿add_namespace = Jfujap
 
 
 country_event = {

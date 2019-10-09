@@ -1,4 +1,4 @@
-add_namespace = pfu
+﻿add_namespace = pfu
 
 country_event = {
 	id = pfu.1

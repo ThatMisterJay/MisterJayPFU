@@ -1,4 +1,4 @@
-add_namespace = JFUinfralimiter 
+﻿add_namespace = JFUinfralimiter 
 
 country_event = {
 	id = JFUinfralimiter.1

@@ -1,4 +1,4 @@
-add_namespace = Host_Options_Expanded_Setup
+﻿add_namespace = Host_Options_Expanded_Setup
 add_namespace = logging_events
 #Logging purposes
 country_event = {

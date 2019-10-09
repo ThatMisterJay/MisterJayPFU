@@ -1,4 +1,4 @@
-#Rules events
+﻿#Rules events
 
 add_namespace = JFU_rules
 

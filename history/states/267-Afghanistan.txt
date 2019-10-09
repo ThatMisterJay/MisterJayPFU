@@ -1,4 +1,3 @@
-
 state={
 	id=267
 	name="STATE_267" # Kabul
@@ -6,11 +5,8 @@ state={
 
 	state_category = town
 
-	resources={
-		tungsten=14
+	resources= {
 		steel=6
-		oil=4
-		chromium=14
 	}
 	history={
 		owner = AFG

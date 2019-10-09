@@ -17,5 +17,6 @@ ai_historical_focus_list_AUS = {
 		equipment_effort_2
 		doctrine_effort_2
 		equipment_effort_3
+		
 	}
 }
