@@ -1387,7 +1387,7 @@ technologies = {
 		}
 
 		#planning max bonus increase
-		max_planning = 0.3
+		max_planning = 0.20
 
 		doctrine = yes
 		research_cost = 2
@@ -1939,6 +1939,7 @@ technologies = {
 	infiltration_in_depth = {
 
 		land_reinforce_rate = 0.02
+		max_planning = 0.05
 
 		recon = {
 			recon = 1
