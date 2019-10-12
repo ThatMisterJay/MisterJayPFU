@@ -37,7 +37,7 @@ ideas = {
 				planning_speed = 0.25
 				army_org_Factor = 0.10
 				army_morale_factor = 0.10
-				max_planning = 0.1
+				max_planning = 0.05
 				training_time_factor = -0.10
 			}
 		}
