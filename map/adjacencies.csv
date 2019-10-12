@@ -139,6 +139,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5929;11748;;-1;-1;-1;-1;-1;DOVER_STRAIT;South Channel
 8621;11748;;-1;-1;-1;-1;-1;DOVER_STRAIT;French Coast
 5960;5539;;-1;-1;-1;-1;-1;MALACCA_STRAIT;
+2800;2776;;-1;-1;-1;-1;-1;BAB-EL-MANDEB_STRAIT;
 2714;2737;;-1;-1;-1;-1;-1;SUNDA_STRAIT;Sunda strait
 2440;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Bali strait
 2265;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Lombok & Alas strait
