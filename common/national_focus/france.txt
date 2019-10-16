@@ -1421,6 +1421,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 100
+				producer = FRA
+			}
 			add_political_power = 150
 			country_event = { days = 1 id = free_france.1 }
 			hidden_effect = {
@@ -1504,11 +1509,7 @@ focus_tree = {
 
 		completion_reward = {
 		    add_ideas = free_french_fleet
-			add_equipment_to_stockpile = {
-				type = convoy_1
-				amount = 100
-				producer = FRA
-			}
+		
 			539 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
