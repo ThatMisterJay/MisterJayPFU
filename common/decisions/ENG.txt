@@ -645,6 +645,7 @@ political_actions = {
 		cost = 50
 
 		visible = {
+			tag = AST
 			tag = ENG
 			RAJ = { is_ai = yes }
 			country_exists = RAJ
