@@ -544,8 +544,8 @@ technologies = {
 		flamethrower = {
 			soft_attack = 0.05
 			fort = {
-				defence = 0.10
-				attack = 0.10
+				defence = 0.05
+				attack = 0.05
 			}
 		}
 
@@ -579,6 +579,10 @@ technologies = {
 				attack = 0.1
 				defence = 0.10
 			}
+			jungle = {
+				defence = 0.05
+				attack = 0.05
+			}
 		}
 		path = {
 			leads_to_tech = tech_flamethrower4
@@ -606,6 +610,9 @@ technologies = {
 		flamethrower = {
 			soft_attack = 0.05
 			fort = {
+				attack = 0.1
+			}
+			jungle = {
 				attack = 0.1
 			}
 		}

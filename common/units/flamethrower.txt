@@ -48,15 +48,19 @@ sub_units = {
 
 		urban = {
 			defence = 0.1
-			attack = 0.2
+			attack = 0.15
 		}
 
 		marsh = {
 			movement = -0.05
 		}
 
+		jungle = {
+			attack = 0.15
+		}
+
 		fort = {
-			attack = 0.3
+			attack = 0.15
 			defence = 0.1
 		}
 
