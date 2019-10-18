@@ -1,0 +1,39 @@
+#DSFU events#
+
+add_namespace = DSFU
+
+
+country_event = {
+  id = DSFU.1
+  title = DSFU.1.t
+  desc = DSFU.1.d
+  picture = GFX_report_event_romanian_soldiers
+
+is_triggered_only = yes
+
+fire_only_once = yes
+
+option = {
+name = DSFU.1.a
+load_oob = GER_ROM_SS
+}
+
+}
+
+country_event = {
+  id = DSFU.2
+  title = DSFU.2.t
+  desc = DSFU.2.d
+  picture = GFX_report_event_romanian_soldiers
+
+is_triggered_only = yes
+
+fire_only_once = yes
+
+option = {
+name = DSFU.2.a
+load_oob = GER_HUN_SS
+hidden_effect = { set_technology = { jaegers = 1 } }
+}
+
+}

@@ -1,6 +1,39 @@
 ideas = {
 
 	country = {
+
+    GER_ROM_exploited = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			picture = "generic_goods_red_bonus"
+
+			modifier = {
+		production_factory_efficiency_gain_factor = 0.04
+			}
+
+		}
+
+axis_exploited = {
+
+	allowed = {
+		original_tag = ROM
+	}
+
+	picture = "chi_forced_conscription"
+
+	modifier = {
+		industrial_capacity_factory = -0.04
+		production_speed_buildings_factor = -0.04
+	}
+
+}
+
+
+
+
 		sour_loser = {
 
 			allowed = {
@@ -252,7 +285,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.10
 				army_attack_factor = 0.05
-				consumer_goods_factor = 0.05
 			}
 
 		}

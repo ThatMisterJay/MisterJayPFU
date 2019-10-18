@@ -51,8 +51,8 @@
     pfu.15.t:0 "7th Armoured Division 'Rats of Tobruk'"
     pfu.15.d:0 "The 7th Armoured Division was an armoured division of the British Army that saw distinguished active service during World War II, where its exploits in the Western Desert Campaign made it famous as the Desert Rats."
     pfu.15.a:0 "Form the division from Englishmen"
-    pfu.15.b:0 "Form the division from South Africans"
-    pfu.15.c:0 "Form the division from Canadians"
+    pfu.15.c:0 "Form the division from South Africans"
+    pfu.15.b:0 "Form the division from Canadians"
     pfu.15.a.tt:0 "Spawns a seasoned tank division in Alexandria"
     pfu.16.t:0 "USAAF Strategic Air Command"
     pfu.16.d:0 "Until we can secure a landing upon the European mainland, we must make an effort in the air through strategic bombing. Bombing Axis industrial, milatary and infrastructure targets is the key to victory."
@@ -277,3 +277,11 @@
     JFU.17.t:0 "Linlinthgow Retiring"
     JFU.17.d:0 "In January 1943, Wavell was promoted to field marshal. When Linlinthgow retired as viceroy in the summer of 1943, Wavell was chosen to replace him. He himself was replaced in his military post in June by Auchinleck, who by this point had also experienced setbacks in North Africa. In 1943, Wavell was made a viscount and in September, he was formally named Governor-General and Viceroy of India."
     JFU.17.a:0 "New Viceroy"
+
+    DSFU.1.t:0 "New SS Divisions"
+    DSFU.1.d:0 "While Romania may not make the best of allies, some of their people may still be useful."
+    DSFU.1.a:0 "Till the final victory"
+    
+    DSFU.2.t:0 "New SS Divisions"
+    DSFU.2.d:0 "While Hungary may not make the best of allies, some of their people may still be useful."
+    DSFU.2.a:0 "Till the final victory"
