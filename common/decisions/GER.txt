@@ -39,6 +39,73 @@ operations = {
 			factor = 1
 		}
 	}
+
+GER_exploit_ROM = {
+
+	icon = infiltrate_state
+
+targets = { ROM }
+
+	available = {
+		is_in_faction_with = ROM
+	}
+
+	visible = { has_idea = heinrich_himmler }
+
+fire_only_once = yes
+
+	allowed = {
+		original_tag = GER
+		always = yes
+	}
+
+	available = {
+	NOT = { has_idea = GER_ROM_exploited }
+	}
+
+	complete_effect = {
+		add_timed_idea = { idea = GER_ROM_exploited days = 90 }
+		ROM = { add_timed_idea = { idea = axis_exploited days = 120 }  }
+		GER = { country_event = { id = DSFU.1 days = 1 } }
+	}
+}
+
+
+GER_exploit_HUN = {
+
+	icon = infiltrate_state
+
+targets = { HUN }
+
+	available = {
+		is_in_faction_with = HUN
+	}
+
+	visible = { has_idea = heinrich_himmler }
+
+fire_only_once = yes
+
+	allowed = {
+		original_tag = GER
+		always = yes
+	}
+
+	available = {
+	NOT = { has_idea = GER_ROM_exploited }
+	}
+
+	complete_effect = {
+		add_timed_idea = { idea = GER_ROM_exploited days = 90 }
+		HUN = { add_timed_idea = { idea = axis_exploited days = 120 }  }
+		GER = { country_event = { id = DSFU.2 days = 1 } }
+	}
+}
+
+
+
+
+
+
 }
 
 GER_case_anton_category = {
