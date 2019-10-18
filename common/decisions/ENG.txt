@@ -645,14 +645,19 @@ political_actions = {
 		cost = 50
 
 		visible = {
-			tag = AST
-			tag = ENG
+			OR = {
+				tag = ENG
+				tag = AST
+			}
 			RAJ = { is_ai = yes }
 			country_exists = RAJ
 		}
 
 		allowed = {
-			tag = ENG
+			OR = {
+				tag = AST
+				tag = ENG
+			}
 		}
 
 		complete_effect = {

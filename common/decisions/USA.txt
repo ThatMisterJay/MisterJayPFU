@@ -1,3 +1,300 @@
+
+support_SOV = {
+
+	lend_lease_gun_SOV = {
+
+		targets = { SOV }
+
+	icon = ger_military_buildup
+
+		allowed = {
+		OR = {	original_tag = USA
+		original_tag = ENG }
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+			has_equipment = { infantry_equipment > 3999 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = SOV
+					equipment = infantry_equipment
+					amount = 4000
+		}
+
+	}
+
+	}
+
+lend_lease_fighter_SOV = {
+
+	targets = { SOV }
+
+icon = generic_air
+
+	allowed = {
+		OR = {	original_tag = USA
+		original_tag = ENG }
+	}
+
+	available = {
+		SOV = { has_defensive_war = yes }
+		has_equipment = { fighter_equipment > 399 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = fighter_equipment
+				amount = 400
+	}
+
+}
+
+}
+
+lend_lease_CAS_SOV = {
+
+	icon = generic_air
+
+targets = { SOV }
+
+	allowed = {
+		OR = {	original_tag = USA
+		original_tag = ENG }
+	}
+
+	available = {
+		SOV = { has_defensive_war = yes }
+		has_equipment = { CAS_equipment > 399 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = CAS_equipment
+				amount = 400
+	}
+}
+}
+
+
+lend_lease_support_SOV = {
+
+	icon = ger_military_buildup
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+		has_equipment = { support_equipment > 399 }
+
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = support_equipment
+				amount = 400
+	}
+}
+}
+
+lend_lease_ART_SOV = {
+
+	icon = ger_military_buildup
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+		has_equipment = { artillery_equipment > 499 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = artillery_equipment
+				amount = 500
+	}
+}
+}
+
+lend_lease_AT_SOV = {
+
+	icon = ger_military_buildup
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+	has_equipment = { anti_tank_equipment > 499 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = anti_tank_equipment
+				amount = 500
+	}
+}
+}
+
+lend_lease_MOT_SOV = {
+
+	icon = ger_military_buildup
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+		has_equipment = { motorized_equipment > 199 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = motorized_equipment
+				amount = 200
+	}
+}
+}
+
+
+
+
+
+
+lend_lease_ltank_SOV = {
+
+	icon = generic_tank
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+		has_equipment = { light_tank_equipment > 199 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = light_tank_equipment
+				amount = 200
+	}
+}
+}
+
+
+
+
+
+lend_lease_mtank_SOV = {
+
+	icon = generic_tank
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+		has_equipment = { medium_tank_equipment > 199 }
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = medium_tank_equipment
+				amount = 200
+	}
+}
+}
+
+
+
+lend_lease_htank_SOV = {
+
+	icon = generic_tank
+
+targets = { SOV }
+
+allowed = {
+OR = {	original_tag = USA
+original_tag = ENG }
+}
+
+available = {
+	SOV = { has_defensive_war = yes }
+		has_equipment = { heavy_tank_equipment > 199 }
+
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = SOV
+				equipment = heavy_tank_equipment
+				amount = 200
+	}
+}
+}
+
+
+}
+
+
+
+
 war_measures = {
 
 	USA_homeland_defense = {
@@ -237,8 +534,270 @@ USA_aid_britain = {
 		days_remove = 360
 
 		complete_effect = {
+
 		}
 	}
+
+	lend_lease_gun_ENG = {
+
+		targets = { ENG }
+
+	icon = ger_military_buildup
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			ENG = { has_defensive_war = yes }
+			has_equipment = { infantry_equipment > 3999 }
+			has_country_flag = this_was_their_finest_hour_speech
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = ENG
+					equipment = infantry_equipment
+					amount = 4000
+		}
+
+	}
+
+	}
+
+lend_lease_fighter_ENG = {
+
+	targets = { ENG }
+
+icon = generic_air
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { fighter_equipment > 399 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = fighter_equipment
+				amount = 400
+	}
+
+}
+
+}
+
+lend_lease_CAS_ENG = {
+
+	icon = generic_air
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { CAS_equipment > 399 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = CAS_equipment
+				amount = 400
+	}
+}
+}
+
+lend_lease_support_ENG = {
+
+	icon = ger_military_buildup
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { support_equipment > 399 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = support_equipment
+				amount = 400
+	}
+}
+}
+
+lend_lease_ART_ENG = {
+
+	icon = ger_military_buildup
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { artillery_equipment > 499 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = artillery_equipment
+				amount = 500
+	}
+}
+}
+
+
+lend_lease_MOT_ENG = {
+
+	icon = ger_military_buildup
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { motorized_equipment > 199 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = motorized_equipment
+				amount = 200
+	}
+}
+}
+
+
+
+
+
+
+lend_lease_ltank_ENG = {
+
+	icon = generic_tank
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { light_tank_equipment > 199 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = light_tank_equipment
+				amount = 200
+	}
+}
+}
+
+
+
+
+
+lend_lease_mtank_ENG = {
+
+	icon = generic_tank
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { medium_tank_equipment > 199 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = motorized_equipment
+				amount = 200
+	}
+}
+}
+
+
+
+lend_lease_htank_ENG = {
+
+	icon = generic_tank
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		has_equipment = { heavy_tank_equipment > 199 }
+		has_country_flag = this_was_their_finest_hour_speech
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = heavy_tank_equipment
+				amount = 200
+	}
+}
+}
+
+
 }
 
 foreign_support = {

@@ -1,6 +1,21 @@
 ################
 ##### USA ######
 ################
+support_SOV = {
+
+icon = sov_great_patriotic_war
+
+	allowed = {
+	OR = { original_tag = USA
+	original_tag = ENG }
+	}
+	visible = {
+		SOV = { has_country_flag = lend_lease }
+		SOV = {
+			has_war = yes
+		}
+	}
+}
 
 USA_war_measures = {
 
