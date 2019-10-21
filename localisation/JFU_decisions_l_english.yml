@@ -62,8 +62,8 @@
     GER_exploit_ROM:0 "Exploit Romania for the War Effort"
     GER_exploit_HUN:0 "Exploit Hungary for the War Effort"
 
-    lend_lease_CAS_ENG:0 "Lend Lease Fighter Stockpile"
-    lend_lease_fighter_ENG:0 "Lend Lease CAS Stockpile"
+    lend_lease_CAS_ENG:0 "Lend Lease CAS Stockpile"
+    lend_lease_fighter_ENG:0 "Lend Lease Fighter Stockpile"
     lend_lease_gun_ENG:0  "Lend Lease Infantry Equipment Stockpile"
     lend_lease_ltank_ENG:0 "Lend Lease Light Tank Stcokpile"
     lend_lease_mtank_ENG:0 "Lend Lease Medium Tank Stockpile"
@@ -74,8 +74,8 @@
 
     support_SOV:0 "Lend Lease USSR"
 
-    lend_lease_CAS_SOV:0 "Lend Lease Fighter Stockpile"
-    lend_lease_fighter_SOV:0 "Lend Lease CAS Stockpile"
+    lend_lease_CAS_SOV:0 "Lend Lease CASFighter Stockpile"
+    lend_lease_fighter_SOV:0 "Lend Lease Fighter Stockpile"
     lend_lease_gun_SOV:0  "Lend Lease Infantry Equipment Stockpile"
     lend_lease_ltank_SOV:0 "Lend Lease Light Tank Stcokpile"
     lend_lease_mtank_SOV:0 "Lend Lease Medium Tank Stockpile"
@@ -84,3 +84,4 @@
     lend_lease_ART_SOV:0 "Lend Lease Artillery Stockpile"
     lend_lease_support_SOV:0 "Lend Lease Support Equipment Stockpile"
     lend_lease_AT_SOV:0 "Lend Lease Anti-tank Stockpile"
+    annex_MAN:0 "End Manchuria Independence"

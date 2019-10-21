@@ -2123,6 +2123,28 @@ ideas = {
 			}
 		}
 
+		ENG_bernard_montgomery = {
+
+			picture = bernard_montgomery
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			visible = {
+				has_country_flag = SAF_annexed
+				has_country_flag = CAN_annexed
+			}
+
+
+
+			traits = { army_armored_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		kenneth_anderson = {
 
 			allowed = {
