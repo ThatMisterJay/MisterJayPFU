@@ -662,6 +662,7 @@ political_actions = {
 		ai_will_do = { factor = 0 }
 		cost = 50
 
+targets = { SIA }
 		visible = {
 			tag = JAP
 			SIA = { is_ai = yes }
@@ -679,6 +680,24 @@ political_actions = {
 			JAP = {
 				annex_country = { target = SIA transfer_troops = yes }
 				add_ideas = annex_siam_idea
+			}
+		}
+	}
+
+	annex_MAN = {
+		ai_will_do = { factor = 0 }
+		cost = 50
+
+targets = { MAN }
+
+		visible = {
+			tag = JAP
+			country_exists = MAN
+		}
+
+		complete_effect = {
+			JAP = {
+				annex_country = { target = MAN transfer_troops = yes }
 			}
 		}
 	}
