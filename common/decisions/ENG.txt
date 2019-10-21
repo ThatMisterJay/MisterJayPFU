@@ -627,6 +627,7 @@ political_actions = {
 		}
 
 		complete_effect = {
+			set_country_flag = CAN_annexed
 			CAN = {
 				every_owned_state = {
 					limit = { is_core_of = CAN }
@@ -635,7 +636,7 @@ political_actions = {
 			}
 			ENG = {
 				annex_country = { target = CAN transfer_troops = yes }
-				add_ideas = annex_canada_idea
+
 			}
 		}
 	}
@@ -663,7 +664,7 @@ political_actions = {
 		complete_effect = {
 			ENG = {
 				annex_country = { target = RAJ transfer_troops = yes }
-				add_ideas = annex_british_raj_idea
+
 			}
 		}
 	}
@@ -691,7 +692,9 @@ political_actions = {
 			}
 			ENG = {
 				annex_country = { target = SAF transfer_troops = yes }
-				add_ideas = annex_south_africa_idea
+
+				set_country_flag = SAF_annexed
+
 			}
 		}
 	}
@@ -727,7 +730,7 @@ political_actions = {
 			}
 			ROOT = {
 				annex_country = { target = AST transfer_troops = yes }
-				add_ideas = annex_australia_idea
+
 			}
 		}
 	}
@@ -764,7 +767,7 @@ political_actions = {
 			annex_country = { target = NZL transfer_troops = yes }
 			if = {
 				limit = { tag = ENG }
-				add_ideas = annex_new_zealand_idea
+
 			}
 		}
 	}

@@ -182,7 +182,6 @@ political_actions = {
 			}
 			ROOT = {
 				annex_country = { target = BUL transfer_troops = yes }
-				add_ideas = annex_bulgaria_idea
 			}
 		}
 	}
@@ -209,7 +208,6 @@ political_actions = {
 			}
 			GER = {
 				annex_country = { target = ROM transfer_troops = yes }
-				add_ideas = annex_romania_idea
 			}
 		}
 	}
@@ -235,7 +233,7 @@ political_actions = {
 			}
 			GER = {
 				annex_country = { target = HUN transfer_troops = yes }
-				add_ideas = annex_hungary_idea
+
 			}
 		}
 	}
