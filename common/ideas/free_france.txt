@@ -207,6 +207,25 @@ ideas = {
 	}
 	high_command = {
 
+		FRA_FREE_charles_de_gaulle = {
+
+			picture = charles_de_gaulle
+
+					allowed = {
+							original_tag = FRA
+	}
+				available = {
+				original_tag = FRA
+				has_country_flag = free_france
+				}
+
+			visible = { has_country_flag = free_france }
+
+			traits = { army_armored_2 }
+
+
+		}
+
 		FRA_FREE_adolphe_cise = { ##military medic
 
 
