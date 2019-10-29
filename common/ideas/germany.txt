@@ -1063,7 +1063,7 @@ axis_exploited = {
 
 			equipment_bonus = {
 				medium_tank_equipment = {
-					reliability = 0.25
+					reliability = 0.1
 					maximum_speed = 0.1
 				}
 				medium_tank_destroyer_equipment = {
@@ -1104,7 +1104,6 @@ axis_exploited = {
 					ap_attack = 0.2
 					defense = 0.2
 					armor_value = 0.20
-					reliability = -0.15
 			  	build_cost_ic = 0.05
 				}
 				heavy_tank_destroyer_equipment = {
@@ -1112,7 +1111,6 @@ axis_exploited = {
 					ap_attack = 0.2
 					armor_value = 0.2
 					defense = 0.2
-					reliability = -0.10
 					breakthrough = -0.10
 					build_cost_ic = 0.05
 				}
@@ -1131,7 +1129,7 @@ axis_exploited = {
 
 			equipment_bonus = {
 				medium_tank_equipment = {
-					reliability = 0.25
+					reliability = 0.1
 					soft_attack = 0.1
 				}
 				medium_tank_destroyer_equipment = {
@@ -1173,7 +1171,6 @@ axis_exploited = {
 					hard_attack = 0.20
 					ap_attack = 0.20
 					armor_value = 0.20
-					reliability = -0.10
 					build_cost_ic = 0.15
 				}
 			}

@@ -676,13 +676,6 @@ on_actions = {
 				country_event = { id = Jfujap.4 days = 553}
 			}
 
-			if = {
-				limit = { SAF = { is_ai = yes } }
-				ENG = {
-					set_country_flag = SAF_annexed
-					annex_country = { target = SAF transfer_troops = yes }
-				}
-			}
 
 			if = {
 				limit = { SIA = { is_ai = yes } }
@@ -704,20 +697,9 @@ on_actions = {
 				}
 			}
 
-			if = {
-				limit = { HUN = { is_ai = yes } }
-				GER = {
-					add_ideas = JFU_generic_bonus_research
-					annex_country = { target = HUN transfer_troops = yes }
-				}
-			}
 
-			if = {
-				limit = { SPR = { is_ai = yes } }
-				GER = {
-					add_ideas = JFU_generic_refinery_and_army_recovery
-				}
-			}
+
+
 		}
 	}
 
