@@ -150,7 +150,7 @@ occupation_policy_4 = { # Harshest
 	#resistance_tick = 0.0
 	#local_resources = 0.0
 	local_manpower = -1.0
-	#local_factories = -0.4
+	local_factories = -0.4
 	occupation_cost = 0.04
 }
 
