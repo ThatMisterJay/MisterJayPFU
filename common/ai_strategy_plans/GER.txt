@@ -57,7 +57,7 @@ German_historical = {
 		GER_anti_comitern_pact
 		#1937
 		GER_army_innovation
-		GER_soviet_treaty
+		
 		#1938
 		GER_anschluss
 		GER_army_innovation_2

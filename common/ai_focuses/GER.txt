@@ -8,7 +8,6 @@ ai_historical_focus_list_GER = {
 		GER_industrial_effort
 		GER_industrial_effort_2
 		GER_army_innovation
-		GER_soviet_treaty
 		GER_air_innovation_2
 		GER_rocketry_focus
 		GER_extra_tech_slot
