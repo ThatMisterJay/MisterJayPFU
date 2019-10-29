@@ -35,6 +35,10 @@ create_country_leader = {
 	}
 }
 
+add_ideas = {
+	idea_EFR_neutrality
+}
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality

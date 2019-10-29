@@ -74,7 +74,7 @@
 
     support_SOV:0 "Lend Lease USSR"
 
-    lend_lease_CAS_SOV:0 "Lend Lease CASFighter Stockpile"
+    lend_lease_CAS_SOV:0 "Lend Lease Fighter Stockpile"
     lend_lease_fighter_SOV:0 "Lend Lease Fighter Stockpile"
     lend_lease_gun_SOV:0  "Lend Lease Infantry Equipment Stockpile"
     lend_lease_ltank_SOV:0 "Lend Lease Light Tank Stcokpile"

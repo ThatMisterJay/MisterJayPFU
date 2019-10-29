@@ -94,7 +94,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.20
 				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.20
+				production_speed_buildings_factor = 0.10
 				research_speed_factor = 0.05
 			}
 		}
@@ -116,7 +116,11 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription = 0.01
+				conscription = 0.015
+				production_speed_air_base_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+				production_speed_rocket_site_factor = 0.15
+				production_speed_radar_station_factor = 0.15
 			}
 		}
 	    SOV_order_227 = {
@@ -221,12 +225,11 @@ ideas = {
 			}
 
 			modifier = {
-				subversive_activites_upkeep = -0.5
 				land_reinforce_rate = 0.3
 			}
 		}
 
-		comintern_influence = {
+		second_five_year_plan = {
 
 			removal_cost = -1
 
@@ -238,12 +241,137 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_communism_drift_bonus
+			picture = generic_production_bonus
 
 			modifier = {
-				communism_drift = 0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.3
 			}
 		}
+
+		sov_rapid_industrial_relocation = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.70
+			}
+		}
+		operation_uranus_idea = {
+
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_org_Factor = 0.15
+				army_morale_factor = 0.1
+				army_speed_factor = 0.10
+				army_attack_factor = 0.1
+
+			}
+		}
+
+		operation_bagration_idea = {
+
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			modifier = {
+				army_org_Factor = 0.15
+				army_morale_factor = 0.1
+				army_speed_factor = 0.10
+				army_attack_factor = 0.1
+
+			}
+		}
+
+		PCAI_idea = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_infantry_bonus
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		third_five_year_plan_1 = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+		third_five_year_plan_2 = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_synthetic_refinery_factor = 0.5
+			}
+		}
+
 
 		progress_cult_focus = {
 			removal_cost = -1
@@ -313,8 +441,7 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				land_reinforce_rate = 0.02
-				army_morale_factor = 0.10
+				army_morale_factor = 0.15
 			}
 		}
 
@@ -350,6 +477,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.2
+				political_power_factor = -0.25
 			}
 		}
 
@@ -839,11 +967,12 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.05
 				conscription = 0.02
-				army_morale_factor = 0.25
+				army_morale_factor = 0.1
 				army_org_factor = 0.10
 				army_core_defence_factor = 0.05
+				minimum_training_level = -0.1
 
 			}
 		}
@@ -964,7 +1093,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-			traits = { captain_of_industry }
+			traits = { armaments_organizer }
 		}
 
 		SOV_nikolai_yezhov = {
@@ -981,7 +1110,9 @@ ideas = {
 				NOT = { has_country_flag = purge_2_group_a }
 			}
 
-			traits = { prince_of_terror }
+			traits = { backroom_backstabber }
+
+			cost = 175
 		}
 
 
@@ -1000,17 +1131,8 @@ ideas = {
 
 
 
-			traits = { communist_revolutionary }
+			traits = { compassionate_gentleman }
 
-			on_add = {
-				country_event = political.1
-			}
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
 
 			ai_will_do = {
 				factor = 0
@@ -1043,7 +1165,7 @@ ideas = {
 
 
 
-			traits = { army_chief_reform_2 }
+			traits = { army_chief_defensive_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1072,7 +1194,7 @@ ideas = {
 
 
 
-			traits = { army_chief_drill_1 }
+			traits = { army_chief_old_guard }
 
 			ai_will_do = {
 				factor = 1
@@ -1093,7 +1215,7 @@ ideas = {
 
 
 			# PURGED
-			traits = { army_chief_defensive_2 }
+			traits = { army_chief_reform_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -1120,6 +1242,23 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+
+		georgy_zhukov_marshal_of_victory = {
+
+			allowed = {
+				original_tag = SOV # Unlocked via focus
+
+			}
+			available =
+			{
+				has_completed_focus = Soviets_defenseofmoscow
+			}
+
+			picture = georgy_zhukov
+
+			traits = { marshal_of_victory }
+
 		}
 	}
 	navy_chief = {
@@ -1221,10 +1360,6 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
 
 
 
@@ -1315,24 +1450,13 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			available =
-			{
-				NOT = { has_country_flag = counter_purge }
-				custom_trigger_tooltip = {
-				tooltip = SOV_konev_civil_war
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 408
-						}
-					}
-				}
+			available = {
+				has_completed_focus = Soviets_operationuranus
 			}
 
 
 
-			traits = { army_concealment_2 }
+			traits = { maskirovka_expert }
 			# Almost certainly a psychopath
 
 			ai_will_do = {
@@ -1387,14 +1511,32 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_b }
-				has_completed_focus = SOV_positive_heroism
+				has_completed_focus = Soviets_rehabilitatedmilitary
 			}
-
-
 
 			# Not purged, but tried and tortured, then released
 			traits = { army_armored_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		vasily_chuikov = {
+
+
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			picture = alexander_yegorov
+
+			traits = { army_infantry_1 }
+			available =
+			{
+				has_completed_focus = Soviets_defenseofstalingrad
+			}
 
 			ai_will_do = {
 				factor = 1
@@ -1415,7 +1557,7 @@ ideas = {
 
 
 
-			traits = { air_airborne_1 }
+			traits = { army_commando_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1506,22 +1648,6 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 406
-						}
-					}
-				}
-			}
-
-
-
 			# Not purged, but arrested and released
 			traits = { navy_capital_ship_2 }
 
@@ -1577,7 +1703,7 @@ ideas = {
 				date > 1938.4.1
 			}
 
-cost = 75
+cost = 100
 
 			research_bonus = {
 				armor = 0.15
@@ -1585,26 +1711,19 @@ cost = 75
 
 			equipment_bonus = {
 				medium_tank_equipment = {
-					armor_value = 0.1
+					maximum_speed = 0.1
 					build_cost_ic = -0.15
 				}
 				medium_tank_destroyer_equipment = {
 					reliability = 0.1
 					hard_attack = 0.10
 					ap_attack = 0.05
-					defense = 0.1
+					maximum_speed = 0.1
 				}
 				medium_tank_artillery_equipment = {
 					reliability = 0.1
 					soft_attack = 0.05
-					defense = 0.1
-				}
-				light_tank_equipment = {
-					reliability = 0.1
-					soft_attack = 0.05
-					hard_attack = 0.10
-					ap_attack = 0.05
-					maximum_speed = 0.05
+					maximum_speed = 0.1
 				}
 			}
 
@@ -1619,7 +1738,7 @@ cost = 75
 				original_tag = SOV
 			}
 
-cost = 75
+cost = 100
 
 			research_bonus = {
 				armor = 0.15
@@ -1627,8 +1746,18 @@ cost = 75
 
 			equipment_bonus = {
 				light_tank_equipment = {
-					reliability = 0.2
-					maximum_speed = 0.2
+					reliability = 0.1
+					soft_attack = 0.05
+					build_cost_ic = -0.15
+				}
+				light_tank_destroyer_equipment = {
+					reliability = 0.1
+					hard_attack = 0.05
+					ap_attack = 0.1
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.05
 				}
 			}
 
@@ -1638,7 +1767,7 @@ cost = 75
 
 		okmo = {
 
-			cost = 75
+			cost = 100
 
 			allowed = {
 				original_tag = SOV
@@ -1650,20 +1779,16 @@ cost = 75
 
 			equipment_bonus = {
 				heavy_tank_equipment = {
-					reliability = 0.05
 					armor_value = 0.05
-					hard_attack = 0.05
 					ap_attack = 0.05
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 				heavy_tank_destroyer_equipment = {
-					reliability = 0.05
 					armor_value = 0.05
 					hard_attack = 0.05
 					ap_attack = 0.05
 				}
 				heavy_tank_artillery_equipment = {
-					reliability = 0.05
 					armor_value = 0.05
 					soft_attack = 0.1
 				}
@@ -1921,6 +2046,10 @@ cost = 75
 				mechanized_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
+				motorized_rocket_equipment = {
+					build_cost_ic = -0.2
+					soft_attack = 0.15
+				}
 			}
 
 
@@ -2007,13 +2136,6 @@ cost = 75
 			allowed = {
 				original_tag = SOV # Unlocked via focus
 
-			}
-			available =
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
-			available = {
-				has_completed_focus = SOV_positive_heroism
 			}
 
 			cost = 175

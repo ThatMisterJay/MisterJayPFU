@@ -448,6 +448,35 @@ SOV_industry_relocation = {
 #Category only allowed for SOV
 SOV_great_patriotic_war = {
 
+	SOV_move_capital_to_kuybyshev = {
+		
+		icon = generic_army_support
+
+		available = {
+			has_completed_focus = Soviets_defenseofmoscow
+		}
+
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				surrender_progress > 0.25
+				factor = 10
+			}
+		}
+		complete_effect = {
+			set_capital = 251
+		}
+	}
 	SOV_order_227 = {
 
 		icon = generic_army_support

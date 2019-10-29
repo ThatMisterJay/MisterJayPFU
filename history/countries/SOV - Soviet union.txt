@@ -4,7 +4,7 @@ oob = "SOV_1936"
 
 puppet = MON
 
-set_research_slots = 3
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
@@ -32,6 +32,7 @@ set_technology = {
 	naval_bomber1 = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	synth_oil_experiments = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -68,7 +69,7 @@ if = {
 
 
 set_convoys = 220
-set_stability = 0.52
+set_stability = 0.54
 set_war_support = 0.8
 
 set_politics = {
@@ -79,9 +80,7 @@ set_politics = {
 }
 
 set_popularities = {
-    democratic = 11
-    fascism = 2
-    communism = 87
+    communism = 100
 }
 
 create_faction = Comintern
@@ -95,6 +94,7 @@ add_ideas = {
 	production_targets_idea
 	socialism_in_one_country
 	closed_economy
+	mikhail_tukhachevsky
 }
 
 create_country_leader = {
@@ -149,19 +149,6 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-
-create_corps_commander = {
-	name = "Konstantin Rokossovsky"
-	id = 402
-	picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = { panzer_leader trait_cautious brilliant_strategist ranger trickster }
-	skill = 5
-
-	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 4
-}
 
 create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
@@ -529,18 +516,16 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-create_corps_commander = {
-	name = "Vasily Chuikov"
-		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-	traits = { brilliant_strategist career_officer }
-	skill = 1
-
-
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+#create_corps_commander = {
+#	name = "Vasily Chuikov"
+#		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
+#	traits = { brilliant_strategist career_officer }
+#	skill = 1
+#	attack_skill = 1
+#	defense_skill = 1
+#	planning_skill = 1
+#	logistics_skill = 1
+#}
 
 create_navy_leader = {
 	name = "Filipp Oktyabrskiy"

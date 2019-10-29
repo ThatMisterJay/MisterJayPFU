@@ -595,7 +595,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_soviet_treaty
+		id = GER_soviet_treaty_new
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_army_innovation }
 		#cancel = {
@@ -618,19 +618,11 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			SOV = {
-				country_event = { id = germany.75 days = 1 }
-				custom_effect_tooltip = needs_approval
-			}
-			# Actual reward effects added in event if Soviets approve
-			effect_tooltip = {
-				# Trade influence with the USSR? Or simply let the opinion mod do the work
-				add_tech_bonus = {
-					name = med_armor_bonus
-					bonus = 2
-					ahead_reduction = 2
-					technology = basic_medium_tank
-				}
+			add_tech_bonus = {
+				name = med_armor_bonus
+				bonus = 2
+				ahead_reduction = 2
+				technology = basic_medium_tank
 			}
 		}
 	}
@@ -638,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty_new }
 		x = 4
 		y = 3
 		cost = 5
@@ -664,7 +656,7 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation_2
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_soviet_treaty_new }
 		x = 6
 		y = 3
 		cost = 10
@@ -930,7 +922,7 @@ focus_tree = {
 	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
 		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_soviet_treaty_new }
 		available =
 		{
 			is_puppet = no

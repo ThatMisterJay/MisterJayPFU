@@ -713,13 +713,9 @@ country_event = {
 		ai_chance = {
 			factor = 30
 		}
-		name = soviet.25.b
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = nikita_khrushchev
-		set_country_flag = purged_khrushchev
-		hidden_effect = {
-			remove_ideas = nikita_khrushchev
-		}
+		name = soviet.25.c
+		add_political_power = -10
+		set_country_flag = purged_party_members
 	}
 }
 
@@ -760,7 +756,6 @@ country_event = {
 		show_ideas_tooltip = pyotr_smirnov
 		show_ideas_tooltip = mikhail_frinovsky
 		remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
-		remove_unit_leader = 900 #Swarshik
 		custom_effect_tooltip = soviet.27_tt
 		hidden_effect = {
 			remove_ideas = mikhail_tukhachevsky
@@ -770,34 +765,6 @@ country_event = {
 			remove_ideas = mikhail_frinovsky
 		}
 	}
-	option = {
-		ai_chance = {
-			factor = 75
-		}
-		name = soviet.26.b
-		set_country_flag = purge_1_group_b
-		custom_effect_tooltip = remove_chief_of_army
-		show_ideas_tooltip = semyon_timoshenko
-		show_ideas_tooltip = kliment_voroshilov
-		custom_effect_tooltip = remove_chief_of_navy
-		show_ideas_tooltip = ivan_yumashev
-		custom_effect_tooltip = remove_military_high_command
-		show_ideas_tooltip = konstantin_rokossovsky
-		show_ideas_tooltip = vladimir_kasatonov
-		remove_unit_leader = 405 #kliment_voroshilov, field marshal
-		remove_unit_leader = 402 #konstantin_rokossovsky, general
-		remove_unit_leader = 404 #semyon_timoshenko, general
-		remove_unit_leader = 403 #vladimir_kasatonov, naval commander
-		custom_effect_tooltip = soviet.27_tt
-		hidden_effect = {
-			remove_ideas = semyon_timoshenko
-			remove_ideas = kliment_voroshilov
-			remove_ideas = ivan_yumashev
-			remove_ideas = konstantin_rokossovsky
-			remove_ideas = vladimir_kasatonov
-		}
-	}
-	# REVISIT Balance, since the latter removes more unit leaders
 }
 
 # Great Purge - Trial of the 21
@@ -826,46 +793,17 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		name = soviet.27.a
+		name = soviet.27.ezio
 		set_country_flag = purge_2_group_a
 		custom_effect_tooltip = remove_political_advisor
 		show_ideas_tooltip = SOV_nikolai_yezhov
-		custom_effect_tooltip = remove_chief_of_airforce
 		show_ideas_tooltip = yakov_smushkevich
-		show_ideas_tooltip = konstantin_vershinin
-		show_ideas_tooltip = alexander_novikov
 		custom_effect_tooltip = remove_military_high_command
-		show_ideas_tooltip = gordey_levchenko
-		remove_unit_leader = 406 #gordey_levchenko, naval commander
 		custom_effect_tooltip = soviet.27_tt
 		hidden_effect = {
 			remove_ideas = SOV_nikolai_yezhov
 			remove_ideas = yakov_smushkevich
 			remove_ideas = pavel_rychagov
-			remove_ideas = alexander_novikov
-			remove_ideas = gordey_levchenko
-		}
-	}
-	option = {
-		ai_chance = {
-			factor = 45
-		}
-		name = soviet.27.b
-		set_country_flag = purge_2_group_b
-		custom_effect_tooltip = remove_chief_of_navy
-		show_ideas_tooltip = nikolay_kuznetsov
-		custom_effect_tooltip = remove_chief_of_airforce
-		show_ideas_tooltip = pavel_rychagov
-		custom_effect_tooltip = remove_military_high_command
-		show_ideas_tooltip = sergei_khudyakov
-		show_ideas_tooltip = aleksandr_vasilevsky
-		remove_unit_leader = 407 #aleksandr_vasilevsky, general
-		custom_effect_tooltip = soviet.27_tt
-		hidden_effect = {
-			remove_ideas = nikolay_kuznetsov
-			remove_ideas = konstantin_vershinin
-			remove_ideas = sergei_khudyakov
-			remove_ideas = aleksandr_vasilevsky
 		}
 	}
 }
@@ -1002,31 +940,30 @@ country_event = {
 }
 
 # comintern_influence removed due to war with common enemy
-country_event = {
-	id = soviet.100
-	title = soviet.100.t
-	desc = soviet.100.d
-	picture = GFX_report_event_soviet_soldiers_tank
+#country_event = {
+#	id = soviet.100
+#	title = soviet.100.t
+#	picture = GFX_report_event_soviet_soldiers_tank
 
-	trigger = {
-		has_idea = comintern_influence
-		has_war = yes
-		SOV = { has_war = yes }
-		NOT = { has_war_with = SOV }
-		any_enemy_country = {
-			has_war_with = SOV
-		}
-	}
+#	trigger = {
+#		has_idea = comintern_influence
+#		has_war = yes
+#		SOV = { has_war = yes }
+#		NOT = { has_war_with = SOV }
+#		any_enemy_country = {
+#			has_war_with = SOV
+#		}
+#	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
+#	mean_time_to_happen = {
+#		days = 30
+#	}
 
-	option = {
-		name = soviet.100.a
-		remove_ideas = comintern_influence
-	}
-}
+#	option = {
+#		name = soviet.100.a
+#		remove_ideas = comintern_influence
+#	}
+#}
 
 # Demand Bessarabia
 country_event = {
