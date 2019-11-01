@@ -31,6 +31,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = JAP_police
 			set_country_flag = kodoha_purge
 			add_political_power = 150
 			JAP = { country_event = { id = Jfujap.1 days = 1 } }
@@ -1719,7 +1720,7 @@ focus = {
 			date > 1942.10.1
 		}
 
-		
+
 		completion_reward = {
 			air_experience = 50
 			add_tech_bonus = {

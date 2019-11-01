@@ -113,6 +113,28 @@ ideas = {
 			}
 		}
 
+		JAP_police = {
+
+picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				enemy_partisan_effect = -0.3
+				local_factories = 0.3
+			}
+		}
+
 		JAP_liaison_conference = {
 			allowed = {
 				always = no
