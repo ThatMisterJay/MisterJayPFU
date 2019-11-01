@@ -1221,10 +1221,14 @@ ai_will_do = {
  }
 
 completion_reward = {
-remove_ideas = ITA_army
-add_ideas = ITA_army_2
-remove_ideas = ITA_expanded_mvsn
-add_ideas = ITA_mvsn_2
+  swap_ideas = {
+    add_idea = ITA_mvsn_2
+    remove_idea = ITA_expanded_mvsn
+  }
+  swap_ideas = {
+    add_idea = ITA_army_2
+    remove_idea = ITA_army
+  }
 add_stability = -0.10
 }
 
