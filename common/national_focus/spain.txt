@@ -967,62 +967,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SPR_Join_Germany
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = SPR_Fascist_Rec }
-		bypass = {
-			is_in_faction_with = GER
-		}
-		available = {
-			has_government = fascism
-			 threat > 0.99
-			GER = {
-				is_faction_leader = yes
-			}
-		}
-		x = 24
-		y = 3
-		cost = 0.2
-		ai_will_do = {
-			factor = 5
-		}
+	
 
-		completion_reward = {
-			GER = {
-				add_to_faction = ROOT
-			}
-		}
-	}
 
-	focus = {
-		id = SPR_Take_Por
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = SPR_Join_Germany }
-		x = 24
-		y = 4
-		cost = 10
-		available = {
-			has_government = fascism
-			NOT = {
-				is_in_faction_with = POR
-			}
-		}
-		ai_will_do = {
-			factor = 5
-		}
-
-		completion_reward = {
-			add_state_claim = 179
-			add_state_claim = 181
-			add_state_claim = 112
-			add_state_claim = 180
-			create_wargoal = {
-				type = annex_everything
-				target = POR
-			}
-		}
-	}
 
 	focus = {
 		id = SPR_Communist_Propaganda

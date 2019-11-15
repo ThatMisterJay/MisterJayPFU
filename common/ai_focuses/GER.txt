@@ -23,7 +23,7 @@ ai_historical_focus_list_GER = {
 		GER_weserubung
 		GER_war_with_france
 		GER_italy_ally
-		GER_nationalist_spain_ally
+		
 		GER_air_innovation
 		GER_tactical_air_effort
 
