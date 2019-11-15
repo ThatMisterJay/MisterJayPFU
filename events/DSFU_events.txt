@@ -37,3 +37,95 @@ hidden_effect = { set_technology = { jaegers = 1 } }
 }
 
 }
+
+country_event = {
+  id = DSFU.3
+  title = DSFU.3.t
+  desc = DSFU.3.d
+
+  trigger = {
+    tag = IRQ
+    OR = { 	any_country = {
+	   		is_in_faction_with = GER
+				has_full_control_of_state = 455
+        has_full_control_of_state = 454
+        has_full_control_of_state = 453
+	        }
+            date > 1941.5.1
+                  }
+
+}
+
+mean_time_to_happen = { days = 2 }
+
+
+
+fire_only_once = yes
+
+immediate = {
+  ENG = {
+      remove_resource_rights = 676
+      remove_resource_rights = 291
+    }
+}
+
+  option = {
+    name = DSFU.3.a
+    set_country_flag = IRQ_pressure
+
+    	ENG = { country_event = { id = DSFU.5 days = 1 } }
+
+  }
+
+
+
+}
+
+
+
+country_event = {
+id = DSFU.4
+title = DSFU.4.t
+desc = DSFU.4.d
+picture = GFX_report_event_aid_pact
+
+is_triggered_only = yes
+
+option = {
+name = DSFU.4.a
+set_country_flag = yes_GER
+add_ideas = debt_paid
+GER = { add_ideas = GER_payment }
+SPR = {
+  give_resource_rights = { receiver = GER state = 170 }
+  give_resource_rights = { receiver = GER state = 169 }
+  give_resource_rights = { receiver = GER state = 175 }
+}
+}
+
+option = {
+name = DSFU.4.b
+trigger = { SPR = { is_ai = no } }
+}
+
+}
+
+country_event = {
+id = DSFU.5
+title = DSFU.5.t
+desc = DSFU.5.d
+picture = GFX_report_event_canada_army
+
+is_triggered_only = yes
+
+fire_only_once = yes
+
+immediate = {
+set_country_flag = IRQ_pressure
+}
+
+option = {
+  name = DSFU.5.a
+}
+
+}

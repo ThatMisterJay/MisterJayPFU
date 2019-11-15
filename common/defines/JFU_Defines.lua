@@ -23,7 +23,7 @@ NDefines.NCountry.MIN_MANPOWER_RATIO = 0.25
 NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO = 0.9
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 200.0
 NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
-NDefines.NCountry.ATTACHE_XP_SHARE = 0.03
+NDefines.NCountry.ATTACHE_XP_SHARE = 0.1
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 3
 NDefines.NProduction.BASE_FACTORY_START_EFFICIENCY_FACTOR = 5 -- from 10
@@ -186,3 +186,10 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.75 -- damage redu
 
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
+
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6
+NDefines.NMilitary.MAX_NUM_TRAITS = 10
+NDefines.NMilitary.CORPS_COMMANDER_ASSIGNABLE_TRAIT_NUM = 7
+NDefines.NMilitary.FIELD_MARSHAL_ASSIGNABLE_TRAIT_NUM = 7
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00						-- Chances one ship get damage each hour while on training
