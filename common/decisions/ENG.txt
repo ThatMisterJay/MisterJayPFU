@@ -664,9 +664,8 @@ political_actions = {
 		}
 
 		complete_effect = {
-			ENG = {
+			ROOT = {
 				annex_country = { target = RAJ transfer_troops = yes }
-
 			}
 		}
 	}
@@ -810,9 +809,47 @@ operations = {
 			NOT = { ICE = { is_in_faction_with = ROOT } }
 		}
 
+
 		complete_effect = {
 			declare_war_on = { target = ICE type = puppet_wargoal_focus }
 			add_popularity = { ideology = democratic popularity = -0.05 }
+		}
+	}
+
+
+	operation_sabine = {
+
+		icon = generic_operation
+
+		allowed = {
+			tag = ENG
+		}
+
+		targets = { IRQ }
+
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_country_flag = IRQ_pressure
+		}
+
+		visible = {
+			has_country_flag = IRQ_pressure
+		NOT = {	has_war_with = IRQ }
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			tag = ENG
+		}
+
+		complete_effect = {
+			declare_war_on = { target = IRQ type = annex_everything }
 		}
 	}
 

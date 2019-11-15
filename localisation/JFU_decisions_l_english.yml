@@ -74,7 +74,7 @@
 
     support_SOV:0 "Lend Lease USSR"
 
-    lend_lease_CAS_SOV:0 "Lend Lease Fighter Stockpile"
+    lend_lease_CAS_SOV:0 "Lend Lease CAS Stockpile"
     lend_lease_fighter_SOV:0 "Lend Lease Fighter Stockpile"
     lend_lease_gun_SOV:0  "Lend Lease Infantry Equipment Stockpile"
     lend_lease_ltank_SOV:0 "Lend Lease Light Tank Stcokpile"
@@ -85,3 +85,5 @@
     lend_lease_support_SOV:0 "Lend Lease Support Equipment Stockpile"
     lend_lease_AT_SOV:0 "Lend Lease Anti-tank Stockpile"
     annex_MAN:0 "End Manchuria Independence"
+    operation_sabine:0 "Operation Sabine"
+    SPR_tungsten:0 "Offer Spain a Trade Agreement"

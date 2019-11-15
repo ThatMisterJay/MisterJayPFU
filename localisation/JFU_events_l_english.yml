@@ -281,7 +281,20 @@
     DSFU.1.t:0 "New SS Divisions"
     DSFU.1.d:0 "While Romania may not make the best of allies, some of their people may still be useful."
     DSFU.1.a:0 "Till the final victory"
-    
+
     DSFU.2.t:0 "New SS Divisions"
     DSFU.2.d:0 "While Hungary may not make the best of allies, some of their people may still be useful."
     DSFU.2.a:0 "Till the final victory"
+
+    DSFU.3.t:0 "Military Coup"
+    DSFU.3.d:0 "This is a AI country so why are you here?"
+    DSFU.3.a:0 "I'm lost, help!"
+
+    DSFU.4.t:0 "Offer From Germany"
+    DSFU.4.d:0 "Herr Hitler has made an offer to buy the rights to Spanish tungsten supplies, while it will give us imitate benefits in the long term we will miss out on opportunities down the road. And will send a clear message to London that we are on Germany's side."
+    DSFU.4.a:0 "Sure Mein Fuhrer"
+    DSFU.4.b:0 "Nyet Molotov"
+
+      DSFU.5.t:0 "Coup in Iraq"
+      DSFU.5.d:0 "A pro-Axis government can not be allowed to remain in power in Iraq. Middle East Command has put together a plan they have code-named Operation Sabine. The primary goal is to secure the Iraqi oilfields with as little damage done to them as possible. Our victory shall be swift."
+      DSFU.5.a:0 "Tea? Or something stronger?"
