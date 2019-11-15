@@ -220,5 +220,29 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
-	}
+
+
+
+
+debt_paid = {
+
+picture = generic_goods_red_bonus
+
+modifier = {
+ consumer_goods_factor = -0.07
+}
+
+}
+
+GER_payment = {
+
+picture = generic_goods_red_bonus
+
+modifier = {
+	consumer_goods_factor = 0.07
+}
+
+}
+
+}
 }
