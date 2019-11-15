@@ -132,6 +132,14 @@ GER_case_anton_category = {
 			has_government = fascism
 			EFR = { is_subject_of = GER }
 			date > 1941.10.1
+			any_country = {
+		   		is_in_faction_with = ENG
+					has_full_control_of_state = 458
+		        }
+				any_country = {
+				 		is_in_faction_with = ENG
+						has_full_control_of_state = 665
+				        }
 		}
 		ai_will_do = {
 			factor = 1
@@ -141,8 +149,9 @@ GER_case_anton_category = {
 			}
 		}
 		complete_effect = {
-			custom_effect_tooltip = GER_case_anton_JFU_tt
+			annex_country = { target = EFR transfer_troops = yes }
 			hidden_effect = {
+
 				EFR = {
 					transfer_navy = { target = GER }
 				}
@@ -152,6 +161,30 @@ GER_case_anton_category = {
 }
 
 political_actions = {
+
+SPR_tungsten = {
+
+	icon = tungsten
+
+	cost = 100
+
+targets = { SPR }
+
+	allowed = {
+		tag = GER
+	}
+
+visible = {
+	date > 1940.1.1
+	NOT = { has_country_flag = yes_GER }
+	has_global_flag = nationalist_victory
+}
+
+complete_effect = {
+	SPR = { country_event = { id = DSFU.4 days = 1 } }
+}
+
+}
 
 	annex_bulgaria = {
 		ai_will_do = { factor = 0 }
