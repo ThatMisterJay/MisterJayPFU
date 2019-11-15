@@ -24,6 +24,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	idea_EFR_neutrality
+}
+
 set_popularities = {
     democratic = 0
     fascism = 20

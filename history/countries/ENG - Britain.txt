@@ -131,10 +131,7 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 	}
-	set_autonomy = {
-		target = IRQ
-		autonomous_state = autonomy_puppet
-	}
+
 	else = {
 		puppet = RAJ
 	}
@@ -172,7 +169,7 @@ add_to_faction = SAF
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
-add_to_faction = IRQ
+
 
 #give_guarantee = CZE
 
