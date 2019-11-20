@@ -93,7 +93,7 @@ is_triggered_only = yes
 
 option = {
 name = DSFU.4.a
-set_country_flag = yes_GER
+GER = { set_country_flag = yes_GER }
 add_ideas = debt_paid
 GER = { add_ideas = GER_payment }
 SPR = {

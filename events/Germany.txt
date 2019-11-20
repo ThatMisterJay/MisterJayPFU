@@ -2445,12 +2445,6 @@ country_event = {
 					enemy = GER
 				}
 			}
-			IRQ = {
-				add_to_war = {
-					targeted_alliance = POL
-					enemy = GER
-				}
-			}
 			NZL = {
 				add_to_war = {
 					targeted_alliance = POL

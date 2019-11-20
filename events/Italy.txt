@@ -369,7 +369,7 @@ country_event = {
 # Italy (First Ljubljana Award) from german focus
 
 
-	
+
 
 
 # Italy Germany rejects demands for Vichy territory
@@ -451,7 +451,7 @@ country_event = {
 		transfer_state = 735
 	}
 }
-
+#Social Republic event 
 country_event = {
 id = italy.17
 title = italy.17.t
