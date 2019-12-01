@@ -19,6 +19,7 @@ add_ideas = {
 
 # Starting tech
 set_technology = {
+	basic_encryption = 1
 	tech_logistics_company = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
