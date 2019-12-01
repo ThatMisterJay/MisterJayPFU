@@ -183,6 +183,8 @@ NDefines.NCountry.MAX_BOMBING_WAR_SUPPORT_IMPACT = -0.2
 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.75 -- damage reduction if armor outclassing enemy
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.75 -- damage reduction if armor outclassing enemy
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3			                -- how to weight in highest armor & pen vs the division average
+NDefines.NMilitary.PEN_VS_AVERAGE = 1.0
 
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
