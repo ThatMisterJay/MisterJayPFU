@@ -9,6 +9,7 @@ set_war_support = 0.61
 
 # Starting tech
 set_technology = {
+	tech_logistics_company = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1

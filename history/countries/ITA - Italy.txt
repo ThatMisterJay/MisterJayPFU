@@ -2,6 +2,7 @@
 
 oob = "ITA_1936"
 
+set_variable = { var = ITR_support value = 0.10 }
 set_research_slots = 4
 
 add_ideas = {
@@ -18,6 +19,7 @@ add_ideas = {
 
 # Starting tech
 set_technology = {
+	tech_logistics_company = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -199,6 +201,7 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	id = 1004
 	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist harsh_leader trait_mountaineer }
 	skill = 1
 	attack_skill = 1
@@ -221,7 +224,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Ugo Cavallero"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
-	traits = {  old_guard trait_cautious career_officer organizer infantry_leader hill_fighter commando }
+	traits = {  old_guard trait_cautious career_officer organizer infantry_leader hill_fighter }
 	skill = 3
 	rank = 1
 	attack_skill = 2
@@ -232,6 +235,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Giovanni Messe"
+	id = 1005
 	picture = "Portrait_Italy_Giovanni_Messe.dds"
 	traits = {  armor_officer war_hero panzer_leader cavalry_leader hill_fighter desert_fox infantry_leader }
 	skill = 4
@@ -261,6 +265,30 @@ create_corps_commander = {
 	skill = 1
 	attack_skill = 1
 	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Junio Valerio Borghese 'Black Prince'"
+	picture = "black_prince.dds"
+	id = 1002
+	traits = { career_officer war_hero trait_reckless commando infantry_leader naval_invader trickster urban_assault_specialist }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Italo Gariboldi"
+	picture = "italo_gariboldi.dds"
+	id = 1003
+	traits = { career_officer infantry_leader ranger }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 1
 }
