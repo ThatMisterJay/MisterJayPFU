@@ -1212,6 +1212,38 @@ focus_tree = {
 	}
 
 	focus = {
+			id = JAP_research_unit
+			icon = GFX_Kaiserreich_Skull
+			prerequisite = { focus = JAP_supremacy_of_will }
+			x = 0
+			y = 1
+			relative_position_id = JAP_supremacy_of_will
+
+			cost = 10
+
+			ai_will_do = {
+				factor = 4
+			}
+
+			available = {
+				date > 1939.10.1
+			}
+
+			bypass = {
+
+			}
+
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+
+
+			completion_reward = {
+				add_research_slot = 1
+			}
+		}
+
+	focus = {
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = JAP_military_adventurism }
