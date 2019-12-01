@@ -14,7 +14,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.03
 			}
 		}
 
@@ -31,7 +31,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.03
 			}
 		}
 	}
@@ -44,15 +44,16 @@ ideas = {
 				original_tag = RAJ
 			}
 
-modifier = {
-	army_core_defence_factor = 0.1
-	land_reinforce_rate = 0.05
-	army_morale_factor = 0.05
-}
+                        picture = yug_federal_defense_council
 
-picture = "YUG_federal_defense_council"
+                        modifier = {	                     
+	                        land_reinforce_rate = 0.05
+	                        army_morale_factor = 0.05
+                        }
+                }
+        }
 
-		}
+	country = {
 
 		RAJ_azad_hind = {
 			picture = generic_morale_bonus
@@ -79,9 +80,96 @@ picture = "YUG_federal_defense_council"
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.02
 			}
 		}
+		raj_industry = {
+			allowed = { always = no }
+
+			removal_cost = -1
+
+picture = idea_generic_political_support
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		raj_defence = {
+			allowed = { always = no }
+
+			removal_cost = -1
+		 picture = ast_volunteer_defence_corps
+
+			modifier = {
+				army_core_defence_factor = 0.10
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		raj_coop = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			 picture = eng_the_sun_never_sets
+
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		raj_trade = {
+			allowed = { always = no }
+
+			removal_cost = -1
+
+               equipment_bonus = {
+
+				convoy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		raj_defence_in = {
+			allowed = { always = no }
+               	picture = generic_morale_bonus
+			removal_cost = -1
+
+
+
+			modifier = { supply_consumption_factor = -0.1
+			max_dig_in = 8
+
+			}
+
+		}
+		raj_grants = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			picture = generic_research_bonus
+
+
+			modifier = { research_speed_factor = 0.1
+
+			}
+
+		}
+		raj_merch = {
+			allowed = { always = no }
+
+			removal_cost = -1
+			picture = idea_can_wartime_prices_and_trade_board
+
+
+			modifier = {min_export = -0.05
+			research_speed_factor = 0.05
+			}
+
+		}
+
 
 		RAJ_cost_of_ceylon = {
 			allowed = { always = no }
@@ -90,7 +178,7 @@ picture = "YUG_federal_defense_council"
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -162,7 +250,6 @@ picture = "YUG_federal_defense_council"
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.02
 				conscription_factor = -0.1
 				autonomy_gain = 0.6
 			}
@@ -309,7 +396,7 @@ picture = "YUG_federal_defense_council"
 			modifier = {
 				autonomy_gain = -0.4
 				consumer_goods_factor = -0.03
-				conscription_factor = 0.05
+				conscription_factor = 0.1
 			}
 		}
 
@@ -420,7 +507,25 @@ picture = "YUG_federal_defense_council"
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.49
+				conscription_factor = -0.50
+			}
+		}
+		RAJ_agrarian_society2 = {
+
+			picture = generic_agrarian_society
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.3
 			}
 		}
 
@@ -524,13 +629,14 @@ picture = "YUG_federal_defense_council"
 
 			picture = generic_political_advisor_arab_3
 
+			cost = 175
+			removal_cost = 0
+
 			allowed = {
 				original_tag = RAJ
 			}
 
 			traits = { backroom_backstabber }
-
-			cost = 175
 
 			ai_will_do = {
 				factor = 0
@@ -546,8 +652,6 @@ picture = "YUG_federal_defense_council"
 			}
 
 			traits = { ideological_crusader }
-
-			cost = 150
 		}
 	}
 
@@ -625,7 +729,7 @@ picture = "YUG_federal_defense_council"
 		RAJ_ram_singh_thakur = {
 
 			picture = generic_army_arab_1
-
+available = {has_completed_focus = RAJ_an_indian_sandhurst}
 			allowed = {
 				original_tag = RAJ
 			}
@@ -636,16 +740,17 @@ picture = "YUG_federal_defense_council"
 				factor = 1
 			}
 		}
-
+#claude Ernest pert
 		RAJ_arjan_singh_vibhusan = {
 
-			picture = generic_air_arab_3
-
+			picture = generic_army_arab_3
+available = {has_completed_focus = RAJ_british_army_support}
 			allowed = {
+
 				original_tag = RAJ
 			}
 
-			traits = { air_air_combat_training_3 }
+			traits = { army_armored_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -672,10 +777,11 @@ picture = "YUG_federal_defense_council"
 			picture = generic_air_arab_1
 
 			allowed = {
+
 				original_tag = RAJ
 			}
 
-			traits = { air_close_air_support_3 }
+			traits = { army_concealment_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -916,7 +1022,7 @@ picture = "YUG_federal_defense_council"
 		designer = yes
 
 		mazagon_dock_limited = {
-cost = 100
+
 			allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -925,7 +1031,7 @@ cost = 100
 			picture = generic_naval_manufacturer_1
 
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.10
 			}
 
 			traits = { convoy_escort_naval_manufacturer }
@@ -933,7 +1039,7 @@ cost = 100
 		}
 
 		garden_reach_shipbuilders = {
-cost = 100
+
 			allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -942,14 +1048,14 @@ cost = 100
 			picture = generic_naval_manufacturer_3
 
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.10
 			}
 
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 
 		scindia_shipyard = {
-cost = 100
+
 			allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -958,12 +1064,13 @@ cost = 100
 			picture = generic_naval_manufacturer_2
 
 			research_bonus = {
-				naval_equipment = 0.15
+				naval_equipment = 0.10
 			}
 
 			traits = { atlantic_fleet_naval_manufacturer }
 
 		}
+
 	}
 
 	aircraft_manufacturer = {
@@ -980,7 +1087,7 @@ cost = 100
 			picture = generic_air_manufacturer_1
 
 			research_bonus = {
-				air_equipment = 0.15
+				air_equipment = 0.10
 			}
 
 			traits = { light_aircraft_manufacturer }
@@ -988,8 +1095,8 @@ cost = 100
 			modifier = {
 			}
 		}
-	}
 
+	}
 	materiel_manufacturer = {
 
 		designer = yes
@@ -1022,6 +1129,7 @@ cost = 100
 			}
 		}
 
+
 		ordnance_factories_board = {
 
 			allowed = {
@@ -1031,19 +1139,18 @@ cost = 100
 
 			picture = generic_artillery_manufacturer_2
 
+			cost = 50
+			removal_cost = 0
+
 			research_bonus = {
 				artillery = 0.10
 			}
 
-			equipment_bonus = {
+                        equipment_bonus = {
 				artillery_equipment = {
 					build_cost_ic = -0.05 instant = yes
-				}
-			}
-
-			cost = 50
-			removal_cost = 0
-
+                                }
+                        }
 			traits = { artillery_manufacturer }
 
 			modifier = {
@@ -1068,17 +1175,21 @@ cost = 100
 				medium_tank_equipment = {
 					reliability = 0.10
 					ap_attack = 0.10
+					build_cost_ic = -0.05
 				}
 				medium_tank_destroyer_equipment = {
 					reliability = 0.1
-					defense = 0.1
+					hard_attack = 0.1
+					build_cost_ic = -0.05
 				}
 				medium_tank_aa_equipment = {
 					reliability = 0.1
+					build_cost_ic = -0.05
 				}
 				medium_tank_artillery_equipment = {
 					reliability = 0.1
 					soft_attack = 0.1
+					build_cost_ic = -0.05
 				}
 			}
 		}
