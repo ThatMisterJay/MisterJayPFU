@@ -1,5 +1,18 @@
 ideas = {
 	country = {
+
+
+ENG_ITA_help = {
+
+	picture = "YUG_yugoslavian_general_staff"
+
+  targeted_modifier = {
+		tag = ITA
+		defense_bonus_against = 0.05
+   }
+
+}
+
 		george_v = {
 
 			allowed = {

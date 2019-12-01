@@ -1,0 +1,97 @@
+add_namespace = DSFU_ITR
+
+country_event = {
+id = DSFU_ITR.1
+title = DSFU_ITR.1.t
+desc = DSFU_ITR.1.d
+picture = GFX_report_event_fascists_posing
+
+
+
+fire_only_once = yes
+
+trigger = {
+tag = ITA
+has_cosmetic_tag = ITR
+}
+
+option = {
+  name = DSFU_ITR.1.a
+  set_country_flag = monarchist_officer
+  if = {
+    limit = { has_country_flag = ITA_rome}
+  add_ideas = monarchist_officer
+}
+  random_unit_leader = {
+    limit = {
+      has_id = 1005
+    }
+    add_unit_leader_trait = mon_ita
+  }
+  random_unit_leader = {
+    limit = {
+      has_id = 1004
+    }
+    add_unit_leader_trait = mon_ita
+  }
+if {
+  limit = {
+    has_completed_focus = ITA_promotemonarchistofficers
+  }
+random_unit_leader = {
+				limit = {
+					has_id = 1001
+				}
+		add_unit_leader_trait = mon_ita
+			}
+      random_unit_leader = {
+				limit = {
+					has_id = 2002
+				}
+			add_unit_leader_trait = mon_ita
+			}
+      random_unit_leader = {
+				limit = {
+					has_id = 3003
+				}
+				add_unit_leader_trait = mon_ita
+			}
+    }
+}
+
+option = {
+  name = DSFU_ITR.1.b
+  if = {
+    limit = { has_country_flag = ITA_rome}
+  add_ideas = monarchist_officer
+}
+  remove_unit_leader = 1001
+  remove_unit_leader = 2002
+  remove_unit_leader = 3003
+  add_ideas = ITA_purged_staff
+  set_country_flag = ITA_purged_staff
+}
+
+}
+country_event = {
+id = DSFU_ITR.2
+title = DSFU_ITR.2.t
+desc = DSFU_ITR.2.d
+picture = GFX_report_event_fascists_posing
+
+is_triggered_only = yes
+
+fire_only_once = yes
+
+#only the lower ranks
+option = {
+name = DSFU_ITR.2.a
+add_timed_idea = { idea = ITA_purged_lower_ranks days = 120 }
+}
+#higher ups only
+option = {
+name = DSFU_ITR.2.b
+remove_unit_leader =  1004
+remove_unit_leader =  1005
+}
+}

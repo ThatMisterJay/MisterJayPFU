@@ -300,3 +300,11 @@ diff_strong_ai_generic = {
 	experience_gain_army_unit_factor = 0.10
 	experience_gain_navy_unit_factor = 0.10
 }
+
+ship_experience_bonus_max = {
+    naval_damage_factor = 0.3    
+}
+
+ship_experience_malus_min = {
+    naval_damage_factor = -0.1
+}

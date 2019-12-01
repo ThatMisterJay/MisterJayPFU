@@ -825,6 +825,7 @@ operations = {
 			tag = ENG
 		}
 
+
 		targets = { IRQ }
 
 		available = {
@@ -849,6 +850,7 @@ operations = {
 		}
 
 		complete_effect = {
+			GER = { add_to_faction = IRQ }
 			declare_war_on = { target = IRQ type = annex_everything }
 		}
 	}

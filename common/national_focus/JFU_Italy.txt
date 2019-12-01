@@ -1245,6 +1245,7 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_beginmilitaryrearmament }
 mutually_exclusive = { focus = ITA_loyaltyoverability }
 completion_reward = {
+set_country_flag = ITA_rome
 army_experience = 5
 random_owned_controlled_state = {
 limit = {
@@ -2181,7 +2182,7 @@ ai_will_do = {
  }
 
 completion_reward ={
-
+set_country_flag = ITA_loyalty
 add_political_power = 200
 
 }
@@ -2306,6 +2307,7 @@ custom_effect_tooltip = ITA_new_commanders
 army_experience = 50
 hidden_effect = {
     create_corps_commander = {
+      id = 1001
 
       picture = "Portrait_Italy_Generic_land_5.dds"
       traits = { infantry_leader trait_mountaineer hill_fighter }
@@ -2316,7 +2318,7 @@ hidden_effect = {
       logistics_skill = 3
     }
     create_corps_commander = {
-
+      id = 2002
       picture = "Portrait_Italy_Generic_land_4.dds"
       traits = { infantry_leader trait_mountaineer hill_fighter }
       skill = 4
@@ -2326,7 +2328,7 @@ hidden_effect = {
       logistics_skill = 2
     }
     create_corps_commander = {
-
+      id = 3003
       picture = "Portrait_Italy_Generic_land_1.dds"
       traits = { organizer infantry_leader }
       skill = 4

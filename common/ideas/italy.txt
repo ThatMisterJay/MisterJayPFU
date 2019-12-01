@@ -240,6 +240,7 @@ ideas = {
 
 			available = {
 				has_completed_focus = ITA_capitalistclasssupport
+				NOT = { has_country_flag = purged_rich }
 			}
 			picture = generic_political_advisor_europe_2
 
@@ -281,6 +282,7 @@ ideas = {
 
 			available = {
 				has_completed_focus = ITA_capitalistclasssupport
+				NOT = { has_country_flag = purged_rich }
 			  }
 
 			picture = generic_political_advisor_europe_1

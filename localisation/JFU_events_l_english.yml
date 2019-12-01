@@ -298,3 +298,12 @@
       DSFU.5.t:0 "Coup in Iraq"
       DSFU.5.d:0 "A pro-Axis government can not be allowed to remain in power in Iraq. Middle East Command has put together a plan they have code-named Operation Sabine. The primary goal is to secure the Iraqi oilfields with as little damage done to them as possible. Our victory shall be swift."
       DSFU.5.a:0 "Tea? Or something stronger?"
+      DSFU_ITR.1.t:0 "Officers at the Front"
+      DSFU_ITR.1.d:0 "A large number of monarchist officer at the front had openly supported the coup in its initial stages, but after its failure, they merely claimed they supported their King. We now must choose whether we can afford to arrest the officers at such a dangerous time for our nation."
+      DSFU_ITR.1.a:0 "Make Them Renew Their Oath"
+      DSFU_ITR.1.b:0 "Arrest a Handfull"
+
+        DSFU_ITR.2.t:0 "What to do About the Traitors"
+        DSFU_ITR.2.d:0 "Our Army has needs that must be met, but Justice must be done for this attempted coup against Italy."
+        DSFU_ITR.2.a:0 "The lower ranks will suffer for this betrayel"
+        DSFU_ITR.2.b:0 "The generals will pay the price"

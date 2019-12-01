@@ -451,7 +451,7 @@ country_event = {
 		transfer_state = 735
 	}
 }
-#Social Republic event 
+#Social Republic event
 country_event = {
 id = italy.17
 title = italy.17.t
@@ -461,15 +461,29 @@ fire_only_once = yes
 
 trigger = {
 tag = ITA
-surrender_progress > 0.25
+surrender_progress > 0.45
 }
 
 option = {
 name = italy.17.a
+set_country_flag = ITA_ITR
+add_ideas = ITA_low_support
 set_cosmetic_tag = ITR
 remove_ideas = victor_emmanuel
 GER = {
 transfer_state = 39
+}
+if = {
+	limit = {
+		has_country_flag = ITA_loyalty
+	}
+	ENG = { add_ideas = ENG_ITA_help }
+	RAJ = { add_ideas = ENG_ITA_help }
+	USA = { add_ideas = ENG_ITA_help }
+	CAN = { add_ideas = ENG_ITA_help }
+	SAF = { add_ideas = ENG_ITA_help }
+	NZL = { add_ideas = ENG_ITA_help }
+	AST = { add_ideas = ENG_ITA_help }
 }
   }
  }

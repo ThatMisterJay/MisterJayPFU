@@ -200,6 +200,23 @@ leader_traits = {
 		}
 	}
 
+mon_ita = {
+	type = corps_commander
+
+	trait_type = personality_trait
+
+	modifier = {
+		promote_cost_factor = 50
+		reassignment_duration_factor = 0.1
+		army_morale_factor = -0.02
+		planning_speed = -0.10
+	}
+
+new_commander_weight = {
+	factor = 0
+}
+}
+
 	to_good = {
 		type = corps_commander
 
