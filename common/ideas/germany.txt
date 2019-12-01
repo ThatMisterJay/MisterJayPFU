@@ -874,8 +874,12 @@ axis_exploited = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				date > 1941.6.1
+				has_idea = GER_total_war
+			}
 
-			traits = { armaments_organizer }
+			traits = { total_war_organizer }
 		}
 
 		hjalmar_schacht = {
@@ -913,7 +917,7 @@ axis_exploited = {
 				original_tag = GER
 			}
 
-			traits = { fascist_demagogue }
+			traits = { fascist_demagogue propaganda_expert }
 
 			on_add = {
 				country_event = political.7
