@@ -326,14 +326,48 @@ country_event = {
 
 	option = {
 		name = soviet.13.a
-		create_wargoal = {
-			type = take_state
-			target = FIN
-			generator = { 146 }
+		SOV = {
+			country_event = { id = finland.8 }
+			white_peace = FIN
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 770
 		}
-		declare_war_on = { target = FIN type = annex_everything }
-		set_global_flag = finland_refuse
-		add_ideas = eth_failing_state
+		SOV = { remove_ideas = eth_failing_state }
+                SOV = {
+                add_manpower = -35000
+                add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -10000
+                }
+                add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = -1000
+                }
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = -1500
+                }
+                add_equipment_to_stockpile = {
+		type = light_tank_equipment
+		amount = -400
+                }
+                }
+                FIN = {
+                add_manpower = -7000
+                add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -1000
+                }
+                add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = -100
+                }
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = -100
+                }
+                }
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.12 }
