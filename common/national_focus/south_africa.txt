@@ -425,6 +425,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			set_cosmetic_tag = RSA
 			if = {
 				limit = {
 					544 = {

@@ -327,6 +327,7 @@ country_event = {
 	option = {
 		name = soviet.13.a
 		SOV = {
+		  set_country_flag = SOV_war_since_purge
 			country_event = { id = finland.8 }
 			white_peace = FIN
 			transfer_state = 146
@@ -346,7 +347,7 @@ country_event = {
                 }
 		add_equipment_to_stockpile = {
 		type = support_equipment
-		amount = -1500
+		amount = -500
                 }
                 add_equipment_to_stockpile = {
 		type = light_tank_equipment
