@@ -2213,6 +2213,7 @@ technologies = {
 	vast_offensives = {
 
 		supply_consumption_factor = -0.10
+		army_speed_factor = 0.05
 
 		infantry = { combat_width = -0.4 }
 		marine = { combat_width = -0.2 }
