@@ -638,12 +638,17 @@ focus_tree = {
 
 			if = {
 				limit = {
-					IRQ = {
-						controls_state = 291
-						controls_state = 676
+					ENG = {
+						controls_state = 455
+						controls_state = 454
 					}
 				}
-				ENG = { puppet = PER }
+				ENG = { annex_country = { target = PER transfer_troops = no } }
+				RAJ = { load_oob = RAJ_Iranian_troops }
+				if = {
+limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
+				GER = { add_to_faction = IRQ}
+			}
 		    }
 	    }
 	}

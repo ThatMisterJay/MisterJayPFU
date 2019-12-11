@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-	           	army_speed_factor = 0.15
+	           	army_speed_factor = 0.05
 				army_morale_factor = -0.05
 			}
 		}
@@ -282,7 +282,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.15
 				army_morale_factor = 0.1
-				army_speed_factor = 0.10
+				army_speed_factor = 0.05
 				army_attack_factor = 0.1
 
 			}
@@ -303,7 +303,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.15
 				army_morale_factor = 0.1
-				army_speed_factor = 0.10
+				army_speed_factor = 0.05
 				army_attack_factor = 0.1
 
 			}

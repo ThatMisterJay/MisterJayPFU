@@ -1226,7 +1226,7 @@ picture = tfv_can_conscription_crisis
 				army_defence_factor = 0.3
 				max_planning = 1
 				planning_speed = 0.25
-				army_speed_factor = 0.2
+				army_speed_factor = 0.05
 				ai_get_ally_desire_factor = -10000
 			}
 

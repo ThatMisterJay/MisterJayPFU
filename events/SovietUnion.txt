@@ -326,6 +326,7 @@ country_event = {
 
 	option = {
 		name = soviet.13.a
+		GER = { add_to_faction = FIN }
 		SOV = {
 		  set_country_flag = SOV_war_since_purge
 			country_event = { id = finland.8 }

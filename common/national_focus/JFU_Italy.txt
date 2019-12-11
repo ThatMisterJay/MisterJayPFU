@@ -1210,7 +1210,7 @@ instant_build = yes
 #Focus for A Blackshirt For Every Division
 focus = {
 id = ITA_ablackshirtforeverydivision
-icon = GFX_goal_rhineland
+icon = GFX_ita_MVSN
 x = 6
 y = 6
 cost = 7.2
@@ -2795,7 +2795,7 @@ completion_reward = {
 #Focus for Expand the MVSN
 focus = {
 id = ITA_expandthemvsn
-icon = GFX_focus_eng_organise_the_blackshirts
+icon = GFX_ita_MVSN_2
 x = 6
 y = 4
 cost = 7.2

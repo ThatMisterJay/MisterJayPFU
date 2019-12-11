@@ -767,6 +767,7 @@ country_event = {
 	option = {
 		name = JFU_germany.24.b
 		HUN = { add_ideas = GER_ace_idea_minors }
+		GER = { add_ideas = GER_ace_idea }
 		trigger = { country_exists = HUN }
 		set_autonomy = { target = HUN autonomy_state = autonomy_dominion }
 	}
@@ -775,6 +776,7 @@ country_event = {
 		name = JFU_germany.24.c
 		trigger = { country_exists = ROM }
 		ROM = { add_ideas = GER_ace_idea_minors }
+		GER = { add_ideas = GER_ace_idea }
 		set_autonomy = { target = ROM autonomy_state = autonomy_dominion }
 	}
 
@@ -782,12 +784,14 @@ country_event = {
 		name = JFU_germany.24.dee
 		trigger = { country_exists = BUL }
 		BUL = { add_ideas = GER_ace_idea_minors }
+		GER = { add_ideas = GER_ace_idea }
 		set_autonomy = { target = BUL autonomy_state = autonomy_dominion }
 	}
 
 	option = {
 		name = JFU_germany.24.e
 		ITA = { add_ideas = GER_ace_idea_minors }
+		GER = { add_ideas = GER_ace_idea }
 	}
 }
 
