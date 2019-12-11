@@ -1,0 +1,124 @@
+division_template = {
+	name = "RAJ Light Mountain Division"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		logistics_company { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+    anti_air = { x = 0 y = 4 }
+	}
+}
+
+units = {
+
+#first line
+
+division= {
+  name = "I. Light Infantry Division"
+  location = 1822
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "II. Light Infantry Division"
+  location = 4943
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "III. Light Infantry Division"
+  location = 5098
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "IV. Light Infantry Division"
+  location = 829
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "V. Light Infantry Division"
+  location = 10774
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "VI. Light Infantry Division"
+  location = 7953
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "VII. Light Infantry Division"
+  location = 5005
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+#second line
+
+division= {
+  name = "VIII. Light Infantry Division"
+  location = 10922
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "IX. Light Infantry Division"
+  location = 1982
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "X. Light Infantry Division"
+  location = 12756
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "XI. Light Infantry Division"
+  location = 4928
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+division= {
+  name = "XII. Light Infantry Division"
+  location = 5089
+  division_template = "RAJ Light Mountain Division"
+  start_experience_factor = 0.3
+}
+
+}
