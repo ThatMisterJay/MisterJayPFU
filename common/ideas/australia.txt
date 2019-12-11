@@ -270,6 +270,47 @@ modifier = {
 			}
 		}
 
+
+		AST_strengthen_white_australia2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		AST_weaken_white_australia2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tfv_can_conscription_crisis
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.05
+			}
+		}
+
 		AST_empire_air_training_scheme = {
 
 			allowed = {

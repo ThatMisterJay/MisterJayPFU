@@ -439,7 +439,12 @@ ITA_gothic_line = {
 
 days_remove = 50
 
-cost = 80
+available = {
+  controls_state = 161
+  controls_state = 162
+}
+
+cost = 50
 
 complete_effect = {
   custom_effect_tooltip = ITA_support_bad.tt
@@ -537,6 +542,11 @@ monarchist_ITA = {
     modifier = {
   			civilian_factory_use = 5
   		}
+
+      available = {
+        controls_state = 161
+        controls_state = 162
+      }
 
   days_remove = 50
 

@@ -1,0 +1,7 @@
+AST_white_australia_category = {
+        icon = power_struggle
+
+        allowed = {
+                original_tag = AST
+        }
+}
