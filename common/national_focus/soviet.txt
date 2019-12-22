@@ -635,21 +635,20 @@ focus_tree = {
 				transfer_state = 266
 				transfer_state = 416
 			}
-
-			if = {
-				limit = {
-					ENG = {
-						controls_state = 455
-						controls_state = 454
-					}
-				}
 				ENG = { annex_country = { target = PER transfer_troops = no } }
-				RAJ = { load_oob = RAJ_Iranian_troops }
+				if = {
+limit = { RAJ = { surrender_progress < 30 } }
+					RAJ = { load_oob = RAJ_Iranian_troops }
+			 }
+			 if = {
+limit = { RAJ = { surrender_progress > 30 } }
+				 ENG = { load_oob = RAJ_Iranian_troops }
+			}
 				if = {
 limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 				GER = { add_to_faction = IRQ}
 			}
-		    }
+
 	    }
 	}
 
