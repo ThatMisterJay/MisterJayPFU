@@ -1,0 +1,10 @@
+spriteTypes = {
+
+
+
+		SpriteType = {
+				name = "GFX_idea_AST_battle"
+				texturefile = "gfx/interface/ideas/idea_AST_battle.dds"
+			}
+
+}

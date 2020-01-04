@@ -151,7 +151,7 @@ ideas = {
 
     AST_battle = {
 
-picture = "CZE_planning_bonus"
+picture = "AST_battle"
 
      allowed = {
 			 original_tag = AST

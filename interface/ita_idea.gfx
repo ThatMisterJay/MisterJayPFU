@@ -1,0 +1,23 @@
+spriteTypes = {
+
+SpriteType = {
+		name = "GFX_idea_ITA_army"
+		texturefile = "gfx/interface/ideas/idea_ITA_army.dds"
+	}
+
+	SpriteType = {
+			name = "GFX_idea_ezio"
+			texturefile = "gfx/interface/ideas/idea_ezio.dds"
+		}
+
+		SpriteType = {
+				name = "GFX_idea_AST_battle"
+				texturefile = "gfx/interface/ideas/idea_AST_battle.dds"
+			}
+
+			SpriteType = {
+					name = "GFX_idea_black_prince"
+					texturefile = "gfx/interface/ideas/black_prince.dds"
+				}
+
+}

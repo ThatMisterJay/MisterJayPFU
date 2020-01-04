@@ -288,7 +288,7 @@ training_time_factor = 0.05
 supply_consumption_factor = 0.05
 }
 
-picture = "hol_expand_the_colonial_army"
+picture = "ITA_army"
 
 }
 
@@ -360,7 +360,7 @@ army_attack_factor = -0.1
 army_defence_factor = -0.1
 }
 
-picture = "hol_expand_the_colonial_army"
+picture = "ITA_army"
 
 }
 
@@ -568,9 +568,9 @@ picture = giovanni_messe
   traits = { army_armored_2 }
 }
 
-silvio_scaroni = {
+black_prince = {
 
-picture = generic_army_asia_7
+picture = black_prince
 
   allowed = {
     original_tag = ITA
@@ -606,9 +606,9 @@ picture = ettore_muti
   }
 }
 
-ITA_cav_exp = {
+silvio_scaroni = {
 
-picture = generic_army_europe_5
+
 
   allowed = {
     original_tag = ITA

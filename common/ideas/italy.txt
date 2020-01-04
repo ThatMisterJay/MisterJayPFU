@@ -1005,7 +1005,7 @@ cost = 100
 
 	cost = 175
 
-	picture = alexander_kerensky
+	picture = ezio
 
 	research_bonus = {
 		cat_mass_assault = 0.20
