@@ -217,7 +217,7 @@ equipments = {
 		soft_attack = 9
 		hard_attack = 7.5
 		ap_attack = 100
-		air_attack = 45
+		air_attack = 44
 
 		build_cost_ic = 38
 
@@ -230,7 +230,7 @@ equipments = {
 	}
 
 	modern_tank_aa_equipment_1 = {
-		year = 1945
+		year = 1947
 
 		archetype = modern_tank_aa_equipment
 		priority = 190

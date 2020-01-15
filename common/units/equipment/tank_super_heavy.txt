@@ -215,7 +215,7 @@ equipments = {
 		soft_attack = 15
 		hard_attack = 12
 		ap_attack = 110
-		air_attack = 70
+		air_attack = 69
 
 		build_cost_ic = 120
 		resources = {
@@ -227,7 +227,7 @@ equipments = {
 	}
 
 	super_heavy_tank_aa_equipment_1 = {
-		year = 1943
+		year = 1945
 
 		archetype = super_heavy_tank_aa_equipment
 		priority = 150

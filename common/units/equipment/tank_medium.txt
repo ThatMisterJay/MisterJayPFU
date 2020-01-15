@@ -425,7 +425,7 @@ equipments = {
 		soft_attack = 4.5
 		hard_attack = 3
 		ap_attack = 40
-		air_attack = 18
+		air_attack = 17
 
 		build_cost_ic = 14.5
 
@@ -438,7 +438,7 @@ equipments = {
 	}
 
 	medium_tank_aa_equipment_1 = {
-		year = 1939
+		year = 1941
 
 		archetype = medium_tank_aa_equipment
 		family = medium_tank_equipment_1
@@ -451,7 +451,7 @@ equipments = {
 	}
 
 	medium_tank_aa_equipment_2 = {
-		year = 1941
+		year = 1943
 
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
@@ -475,7 +475,7 @@ equipments = {
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 27
+		air_attack = 26
 
 		build_cost_ic = 15.5
 
@@ -487,7 +487,7 @@ equipments = {
 	}
 
 	medium_tank_aa_equipment_3 = {
-		year = 1943
+		year = 1945
 
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_2
@@ -511,7 +511,7 @@ equipments = {
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 80
-		air_attack = 35
+		air_attack = 34
 
 		build_cost_ic = 16.5
 

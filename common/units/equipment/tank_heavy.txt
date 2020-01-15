@@ -378,7 +378,7 @@ equipments = {
 	}
 
 	heavy_tank_aa_equipment = {
-		year = 1934
+		year = 1936
 
 		is_archetype = yes
 		is_convertable = yes
@@ -414,7 +414,7 @@ equipments = {
 		soft_attack = 4.5
 		hard_attack = 4
 		ap_attack = 25
-		air_attack = 18
+		air_attack = 17
 
 		build_cost_ic = 26
 		resources = {
@@ -427,7 +427,7 @@ equipments = {
 	}
 
 	heavy_tank_aa_equipment_1 = {
-		year = 1934
+		year = 1938
 
 		archetype = heavy_tank_aa_equipment
 		family = heavy_tank_equipment_1
@@ -439,7 +439,7 @@ equipments = {
 	}
 
 	heavy_tank_aa_equipment_2 = {
-		year = 1941
+		year = 1943
 
 		archetype = heavy_tank_aa_equipment
 		parent = heavy_tank_aa_equipment_1
@@ -463,7 +463,7 @@ equipments = {
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 31
+		air_attack = 30
 
 		build_cost_ic = 28
 		resources = {
@@ -474,7 +474,7 @@ equipments = {
 	}
 
 	heavy_tank_aa_equipment_3 = {
-		year = 1943
+		year = 1945
 
 		archetype = heavy_tank_aa_equipment
 		parent = heavy_tank_aa_equipment_2
@@ -500,7 +500,7 @@ equipments = {
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 88
-		air_attack = 40
+		air_attack = 39
 
 		build_cost_ic = 31
 		resources = {
