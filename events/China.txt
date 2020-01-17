@@ -512,6 +512,22 @@ country_event = {
 				limit = { country_exists = PRC }
 				add_to_faction = PRC
 			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = china.101
+	title = china.101.t
+	desc = china.101.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
 			annex_country = { target = GXC transfer_troops = yes }
 			annex_country = { target = XSM transfer_troops = yes }
 			annex_country = { target = YUN transfer_troops = yes }
@@ -521,10 +537,13 @@ country_event = {
 					country_exists = PRC
 				}
 				PRC = { annex_country = { target = SHX transfer_troops = yes } }
-			}
 		}
 	}
 }
+
+
+
+
 
 # China and Japan no longer at war - Break up faction and Mao claims his part of China
 country_event = {

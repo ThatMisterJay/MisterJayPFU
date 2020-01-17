@@ -232,44 +232,44 @@ on_actions = {
 	}
 
 	#FROM is war target
-	on_declare_war = {
-		effect = {
-			#Clear any tribute and support flag if new communists end up at war with SOV
-			if = {
-				limit = { has_country_flag = WTT_support_from_soviet }
-				PRC_soviet_tribute_clear_all = yes
-				clr_country_flag = WTT_support_from_soviet
-			}
-			FROM = {
-				if = {
-					limit = { has_country_flag = WTT_support_from_soviet }
-					PRC_soviet_tribute_clear_all = yes
-					clr_country_flag = WTT_support_from_soviet
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							tag = GER
-							FROM = { tag = SOV }
-						}
-						AND = {
-							tag = SOV
-							FROM = { tag = GER }
-						}
-					}
-					GER = { has_completed_focus = GER_ussr_war_goal }
-				}
-				hidden_effect = {
-					GER = {
-						add_timed_idea = { idea = GER_barbarossa days = 180 }
-						activate_mission = GER_barbarossa_mission
-					}
-				}
-			}
-		}
-	}
+#	on_declare_war = {
+#		effect = {
+#			#Clear any tribute and support flag if new communists end up at war with SOV
+#			if = {
+#				limit = { has_country_flag = WTT_support_from_soviet }
+#				PRC_soviet_tribute_clear_all = yes
+#				clr_country_flag = WTT_support_from_soviet
+#			}
+#			FROM = {
+#				if = {
+#					limit = { has_country_flag = WTT_support_from_soviet }
+#					PRC_soviet_tribute_clear_all = yes
+#					clr_country_flag = WTT_support_from_soviet
+#				}
+#			}
+#			if = {
+#				limit = {
+#					OR = {
+#						AND = {
+#							tag = GER
+#							FROM = { tag = SOV }
+#						}
+#						AND = {
+#							tag = SOV
+#							FROM = { tag = GER }
+#						}
+#					}
+#					GER = { has_completed_focus = GER_ussr_war_goal }
+#				}
+#				hidden_effect = {
+#					GER = {
+#						add_timed_idea = { idea = GER_barbarossa days = 180 }
+#						activate_mission = GER_barbarossa_mission
+#					}
+#				}
+#			}
+#		}
+#	}
 
 	#ROOT is subject FROM is overlord
 	on_subject_annexed = {
