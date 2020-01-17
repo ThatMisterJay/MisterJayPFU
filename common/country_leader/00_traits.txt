@@ -1106,18 +1106,7 @@ leader_traits = {
 		}
 	}
 
-	total_war_organizer = { 
-		sprite = 10
-		random = no
-		consumer_goods_factor = -0.05
-		industry_free_repair_factor = 1
-		production_factory_efficiency_gain_factor = 0.2
-		conversion_cost_civ_to_mil_factor = -0.3
 
-		ai_will_do = {
-			factor = 5
-		}
-	}
 
 	quartermaster_general = {
 		sprite = 10
@@ -3388,7 +3377,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				carrier_size = -0.2 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.5
+			 armor_value = 0.2 naval_speed = 0.1 naval_range = -0.5
 			}
 			capital_ship = {
 				armor_value = 0.2 hg_attack = 0.1 naval_speed = 0.1 naval_range = -0.5

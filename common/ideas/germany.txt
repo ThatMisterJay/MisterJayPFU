@@ -54,26 +54,7 @@ axis_exploited = {
 			}
 		}
 
-		general_staff = {
 
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				planning_speed = 0.25
-				army_org_Factor = 0.10
-				army_morale_factor = 0.10
-				max_planning = 0.05
-				training_time_factor = -0.10
-			}
-		}
 
 		triumphant_will = {
 
@@ -662,7 +643,7 @@ axis_exploited = {
 
 			equipment_bonus = {
 				submarine = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
@@ -844,9 +825,7 @@ axis_exploited = {
 			allowed = {
 				original_tag = GER
 			}
-			available = {
-				has_completed_focus = GER_west_wall
-			}
+
 
 			traits = { fortification_engineer }
 
@@ -871,12 +850,15 @@ axis_exploited = {
 
 		hjalmar_schacht = {
 
+available = {
+NOT = { has_idea = walther_funk }
+}
 
 			allowed = {
 				original_tag = GER
 			}
 
-			traits = { captain_of_industry }
+			traits = { reichbanker }
 			ai_will_do = {
 				factor = 2
 			}
@@ -884,7 +866,9 @@ axis_exploited = {
 
 		walther_funk = {
 
-
+			available = {
+			NOT = { has_idea = hjalmar_schacht }
+			}
 			allowed = {
 				original_tag = GER
 			}
@@ -952,7 +936,7 @@ axis_exploited = {
 				custom_effect_tooltip = GER_SS_himmler_recruit
 			}
 
-			traits = { prince_of_terror }
+			traits = { reichfuhrer_ss }
 		}
 
 		martin_bormann = {
@@ -1055,14 +1039,15 @@ axis_exploited = {
 			equipment_bonus = {
 				medium_tank_equipment = {
 					reliability = 0.1
-					maximum_speed = 0.1
+					maximum_speed = 0.05
+					soft_attack = 0.05
 				}
 				medium_tank_destroyer_equipment = {
 					hard_attack = 0.1
 					ap_attack = 0.10
 					reliability = 0.1
 					defense = 0.1
-					build_cost_ic = -0.30
+
 				}
 				medium_tank_aa_equipment = {
 					reliability = 0.1
@@ -1095,7 +1080,7 @@ axis_exploited = {
 					ap_attack = 0.2
 					defense = 0.2
 					armor_value = 0.20
-			  	build_cost_ic = 0.05
+
 				}
 				heavy_tank_destroyer_equipment = {
 					hard_attack = 0.25
@@ -1103,7 +1088,7 @@ axis_exploited = {
 					armor_value = 0.2
 					defense = 0.2
 					breakthrough = -0.10
-					build_cost_ic = 0.05
+
 				}
 			}
 		}
@@ -1128,7 +1113,7 @@ axis_exploited = {
 					ap_attack = 0.10
 					reliability = 0.1
 					defense = 0.1
-					build_cost_ic = -0.30
+
 				}
 				medium_tank_aa_equipment = {
 					reliability = 0.1
@@ -1162,7 +1147,7 @@ axis_exploited = {
 					hard_attack = 0.20
 					ap_attack = 0.20
 					armor_value = 0.20
-					build_cost_ic = 0.15
+
 				}
 			}
 		}
@@ -1183,7 +1168,7 @@ axis_exploited = {
 					armor_value = 0.10
 					ap_attack = 0.10
 					reliability = -0.10
-					build_cost_ic = 0.05
+
 		}
 			}
 
@@ -1708,7 +1693,7 @@ cost = 100
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_army_innovation
+				has_completed_focus = GER_heerrearmament
 			}
 
 
@@ -1743,7 +1728,7 @@ cost = 100
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_air_innovation
+				has_completed_focus = GER_luftwafferearmament
 			}
 
 			traits = { air_chief_all_weather_2 }
@@ -1822,7 +1807,7 @@ cost = 100
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_army_innovation
+					has_completed_focus = GER_heerrearmament
 				}
 
 			traits = { army_armored_3 }
@@ -1867,7 +1852,7 @@ cost = 100
 				original_tag = GER
 			}
 			available = {
-					has_completed_focus = GER_air_innovation
+					has_completed_focus = GER_luftwafferearmament
 			}
 
 			traits = { air_close_air_support_2 }
@@ -1877,19 +1862,7 @@ cost = 100
 			}
 		}
 
-		erhard_milch = {
 
-
-			allowed = {
-				original_tag = GER
-			}
-
-			traits = { air_bomber_interception_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		kurt_student = {
 

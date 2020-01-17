@@ -644,24 +644,7 @@ picture = generic_political_advisor_europe_4
   }
 }
 
-ITA_air_gen = {
 
-picture = generic_air_europe_3
-
-  allowed = {
-    original_tag = ITA
-  }
-
-  available = {
-    has_completed_focus = ITA_learnfromgermanfallschirmjger
-  }
-
-  traits = { air_airborne_3 }
-
-  ai_will_do = {
-    factor = 2
-  }
-}
 
 
 

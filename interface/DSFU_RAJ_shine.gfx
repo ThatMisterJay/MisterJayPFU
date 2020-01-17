@@ -1,0 +1,422 @@
+spriteTypes = {
+
+
+
+
+SpriteType = {
+  name = "GFX_raj_investors_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_investors.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_investors.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_investors.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_research_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_research.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_research.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_research.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_armor_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_armor.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_armor.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_armor.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_partition_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_partition.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_partition.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_partition.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_trade_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_trade.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_trade.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_trade.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_ishapore_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_ishapore.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_ishapore.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_ishapore.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_cripps_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_cripps.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_cripps.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_cripps.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_expansion_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_expansion.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_expansion.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_expansion.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_tea_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_tea.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_tea.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_tea.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_modern_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_modern.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_modern.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_modern.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_coop_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_coop.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_coop.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_coop.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_raj_support_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_support.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_support.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_support.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+SpriteType = {
+  name = "GFX_imp_service_shine"
+  texturefile = "gfx/interface/goals/raj/GFX_raj_imp_service.dds"
+  effectFile = "gfx/FX/buttonstate.lua"
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_imp_service.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+
+  animation = {
+    animationmaskfile = "gfx/interface/goals/raj/GFX_raj_imp_service.dds"
+    animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+    animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+    animationlooping = no			# yes or no ;)
+    animationtime = 0.75				# in seconds
+    animationdelay = 0			# in seconds
+    animationblendmode = "add"       #add, multiply, overlay
+    animationtype = "scrolling"      #scrolling, rotating, pulsing
+    animationrotationoffset = { x = 0.0 y = 0.0 }
+    animationtexturescale = { x = 1.0 y = 1.0 }
+  }
+  legacy_lazy_load = no
+}
+
+}

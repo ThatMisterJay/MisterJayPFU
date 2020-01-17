@@ -430,7 +430,7 @@ focus = {
 	}
 	focus = {
 		id = RAJ_industrial_expansion
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_raj_expansion
 		cost = 10
 		x = 21
 		y = 0
@@ -534,7 +534,7 @@ focus = {
 
 	focus = {
 		id = RAJ_cripps_mission
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_raj_cripps
 		prerequisite = { focus = RAJ_provincial_elections }
 		x = 2
 		y = 1
@@ -566,7 +566,7 @@ focus = {
 	}
 	focus = {
 		id = RAJ_two_nation_theory
-		icon = GFX_focus_RAJ_two_nation_theory
+		icon = GFX_raj_partition
 		cost = 10
 		prerequisite = {
 			focus = RAJ_cripps_mission
@@ -740,7 +740,7 @@ focus = {
 	}
 	focus = {
 		id = RAJ_imperial_service_troops
-		icon = GFX_focus_generic_commonwealth_build_infantry
+		icon = GFX_imp_service
 		cost = 10
 		prerequisite = {
 			focus = RAJ_princely_state_donations
@@ -763,6 +763,7 @@ focus = {
 
 }
 			completion_reward = {
+
 					swap_ideas = {
 							add_idea = RAJ_princely_states_donations_troops
 							remove_idea = RAJ_princely_states_donations
@@ -1414,7 +1415,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_Industrial_Modernization
-		icon = GFX_goal_generic_construction
+		icon = GFX_raj_modern
 		cost = 10
 		prerequisite = {
 			focus = RAJ_Self_Improvement
@@ -1466,7 +1467,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_Create_Trade_Department
-		icon = GFX_focus_generic_treaty
+		icon = GFX_raj_trade
 		cost = 10
 		prerequisite = {
 			focus = RAJ_Industrial_Modernization
@@ -1601,7 +1602,7 @@ artillery_brigade = {
 #Tea Export focus
 	focus = {
 		id = RAJ_Create_Industrial_Committee
-		icon = GFX_focus_usa_reestablish_the_gold_standard
+		icon = GFX_raj_tea
 		cost = 10
 		prerequisite = {
 			focus = RAJ_great_indian_peninsula_railway
@@ -1645,6 +1646,8 @@ artillery_brigade = {
 
 }
 			completion_reward = {
+				custom_effect_tooltip = available_military_high_command
+				show_ideas_tooltip = RAJ_ram_singh_thakur
 					custom_effect_tooltip = RAJ_indian_sandhurst_tt
 					hidden_effect = {
 							create_corps_commander = {
@@ -1749,7 +1752,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_indian_institute_of_science
-		icon = GFX_focus_research
+		icon = GFX_raj_research
 		cost = 10
 		prerequisite = {
 			focus = RAJ_tata_steel
@@ -2083,7 +2086,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_British_Cooperation
-		icon = GFX_focus_eng_the_sun_never_sets
+		icon = GFX_raj_coop
 		cost = 5
 		prerequisite = {
 			focus = RAJ_industrial_expansion
@@ -2111,7 +2114,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_ishapore_arsenal
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_raj_ishapore
 		cost = 10
 		prerequisite = {
 			focus = RAJ_British_Cooperation
@@ -2231,7 +2234,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_british_army_support
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_raj_support
 		cost = 10
 		prerequisite = {
 			focus = RAJ_ishapore_arsenal
@@ -2257,6 +2260,8 @@ artillery_brigade = {
 
 }
 			completion_reward = {
+				custom_effect_tooltip = available_military_high_command
+				show_ideas_tooltip = RAJ_robert
 					custom_effect_tooltip = RAJ_jungle_training_effect
 					hidden_effect = {
 							set_technology = {
@@ -2275,7 +2280,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_strengthen_ties_with_british_investors
-		icon = GFX_focus_RAJ_british_investors
+		icon = GFX_raj_investors
 		cost = 10
 		prerequisite = {
 			focus = RAJ_British_Cooperation
@@ -2365,7 +2370,7 @@ artillery_brigade = {
 	}
 	focus = {
 		id = RAJ_british_rail_investors
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_RAJ_british_investors
 		cost = 10
 		prerequisite = {
 			focus = RAJ_strengthen_ties_with_british_investors
@@ -2459,7 +2464,7 @@ artillery_brigade = {
 #raj tank focus
 focus = {
 id = RAJ_Indian_Armor_Corps
-icon = GFX_focus_generic_tank_production
+icon = GFX_raj_armor
 x = 26
 y = 4
 cost = 10

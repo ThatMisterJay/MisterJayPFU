@@ -7,7 +7,7 @@ add = 10
 tag = ITA
 }
 }
-continuous_focus_position = { x = 2000 y = 2000 }
+continuous_focus_position = { x = 1 y = 2000 }
 
 #Focus for Develop Greece
 focus = {
@@ -337,6 +337,8 @@ ai_will_do = {
  }
 
 completion_reward = {
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = marziale_cerutti
 custom_effect_tooltip = ITA_paratroopers
 add_tech_bonus = {
 name = special_bonus
@@ -364,6 +366,8 @@ ai_will_do = {
  }
 
 completion_reward = {
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = ITA_com_spe
 custom_effect_tooltip = ITA_med
 }
 
@@ -459,6 +463,8 @@ ai_will_do = {
  }
 
 completion_reward = {
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = ITA_giovanni_marinelli
 add_ideas = ITA_sssupport
 custom_effect_tooltip = ITA_ss
       hidden_effect = {
@@ -484,7 +490,8 @@ ai_will_do = {
  }
 
 completion_reward = {
-
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = giovanni_messe_1
 add_ideas = ITA_tanktreaty
 add_tech_bonus = {
 name = armor_bonus
@@ -612,7 +619,14 @@ ai_will_do = {
  factor = 15
  }
 completion_reward = {
-custom_effect_tooltip = ITA_new_army
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = ITA_inf_cav
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = silvio_scaroni
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = ITA_reg_exp
+  custom_effect_tooltip = available_chief_of_army
+  show_ideas_tooltip = ITA_off_exp
  }
 
 
@@ -1402,6 +1416,8 @@ prerequisite = { focus = ITA_legacyofrome }
 prerequisite = { focus = ITA_delivernewstaffofficers }
 mutually_exclusive = { focus = ITA_securebritishmediterraneanholdings }
 completion_reward = {
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = black_prince
 custom_effect_tooltip = ITA_commando_exp
 army_experience = 5
 add_tech_bonus = {
@@ -1771,6 +1787,8 @@ cost = 10
 available_if_capitulated = yes
 prerequisite = { focus = ITA_fleetdoctrineadvancement }
 completion_reward = {
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = luigi_mascherpa
 custom_effect_tooltip = ITA_amphibious
 add_tech_bonus = {
 name = ITA_marines_and_landing_craft
@@ -2182,6 +2200,16 @@ ai_will_do = {
  }
 
 completion_reward ={
+  custom_effect_tooltip = available_chief_of_army
+  show_ideas_tooltip = emilio_de_bono
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = ITA_serafino_mazzolini
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = vittorio_ambrosio
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = alfredo_guzzoni
+  custom_effect_tooltip = available_military_high_command
+  show_ideas_tooltip = mario_roatta
 set_country_flag = ITA_loyalty
 add_political_power = 200
 
@@ -2847,7 +2875,8 @@ ai_will_do = {
  factor = 1
  }
 completion_reward = {
-
+custom_effect_tooltip = available_political_advisor
+show_ideas_tooltip = ITA_gian_galeazzo_ciano
 add_stability = 0.1
 add_ideas = ITA_upperclasssupport
 }
@@ -2893,7 +2922,10 @@ ai_will_do = {
  }
 
 completion_reward = {
-
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = ITA_luigi_einaudi
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = ITA_giacomo_acerbo
 random_owned_controlled_state = {
  prioritize = { 2 }
  limit = {
@@ -2924,7 +2956,8 @@ ai_will_do = {
  }
 
 completion_reward = {
-
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = italo_balbo_1
 air_experience = 30
 add_popularity = {
 ideology = fascism
@@ -2966,6 +2999,8 @@ ai_will_do = {
  factor = 1
  }
 completion_reward = {
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = ITA_dino_grandi
 random_owned_controlled_state = {
   prioritize = { 451 }
   limit = {

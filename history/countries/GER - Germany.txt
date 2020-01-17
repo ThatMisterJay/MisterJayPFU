@@ -142,8 +142,8 @@ add_to_faction = GER
 
 
 add_ideas = {
+	GER_navaltreaty_1
 	sour_loser
-	general_staff
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

@@ -116,7 +116,12 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     raj_industry:0 "Tea Profits"
     raj_trade:0 "Trade Profits"
 
+    reichswerke_hermann:0 "Reichswerke Hermann Göring"
     total_war_organizer:0 "Reich Minister of Armaments"
+    sir_inspector_general:0 "Air Inspector General"
+    reichfuhrer_ss:0 "Reichsführer-SS"
+    reichbanker:0 "President of the Reichsbank"
+
     SS_help:0 "Seized Wealth"
     ITA_purged_rich:0 "Redistribution of Wealth"
     ITA_low_support:0 "Low Support for the Regime"
@@ -126,4 +131,20 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     black_prince:0 "The Black Prince"
     ENG_ITA_help:0 "Italian Co-belligerent Army"
     AST_strengthen_white_australia2:0 "Native Workers"
-AST_weaken_white_australia2:0 "Native Soldiers
+    AST_weaken_white_australia2:0 "Native Soldiers
+    RAJ_robert:0 "Robert Wordsworth"
+
+
+GER_navaltreaty_1:0 "Anglo-German Naval Agreement"
+GER_navaltreaty_2:0 "Anglo-German Naval Agreement"
+GER_heer_ss:0 "Deutsches Heer SS"
+GER_heer:0 "Deutsches Heer"
+GER_ss:0 "Schutzstaffel"
+GER_med_panzerwaffe:0 "Guderian's Panzerwaffe"
+GER_med_panzerwaffe_2:0 "Guderian's Panzerwaffe"
+GER_heavy_panzerwaffe:0 "Führer's Panzerwaffe"
+GER_NLF:0 "German Labour Front"
+GER_NLF_2:0 "Wartime Labour Front"
+GER_herman:0 "Hermann Göring"
+GER_volk:0 "Volkssturm"
+allies_exploited:0 "Exploited Nations"

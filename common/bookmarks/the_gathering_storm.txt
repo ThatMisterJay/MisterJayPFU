@@ -50,12 +50,12 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				sour_loser
-				general_staff
+
 			}
 			focuses = {
 				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
+
+				
 			}
 		}
 		"ITA"={
@@ -153,7 +153,7 @@ bookmarks = {
 			}
 			focuses = {
 				RAJ_indian_gurkhas
-				
+
 			}
 		}
 

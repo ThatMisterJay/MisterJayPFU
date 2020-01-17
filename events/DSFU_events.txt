@@ -129,3 +129,89 @@ option = {
 }
 
 }
+
+
+#Fate of the SS
+country_event = {
+  id = DSFU.6
+  title = DSFU.6.t
+  desc = DSFU.6.d
+  picture = GFX_report_event_german_volunteers
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.6.a
+    set_country_flag = SS_expanded
+    add_ideas = GER_ss
+    custom_effect_tooltip = GER_SS_tt
+    GER = {
+      country_event = { id = pfu.6 days = 100 }
+      country_event = { id = pfu.7 days = 150 }
+      country_event = { id = pfu.5 days = 200 }
+      country_event = { id = pfu.8 days = 440 }
+      country_event = { id = pfu.17 days = 440 }
+      country_event = { id = pfu.23 days = 488 }
+      country_event = { id = pfu.24 days = 455 }
+      country_event = { id = pfu.25 days = 400 }
+    }
+  }
+
+  option = {
+    name = DSFU.6.b
+    swap_ideas = { add_idea = GER_heer_ss remove_idea = GER_heer }
+  }
+
+
+}
+
+country_event = {
+  id = DSFU.7
+  title = DSFU.7.t
+  desc = DSFU.7.d
+  picture = GFX_report_event_soviet_german_soldier_handshake
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.7.a
+    SOV = {
+      give_resource_rights = { receiver = GER state = 234 }
+    }
+  }
+}
+
+country_event = {
+  id = DSFU.8
+  title = DSFU.8.t
+  desc = DSFU.8.d
+  picture = GFX_report_event_germany_politician_handshake
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.8.a
+    GER = {
+        remove_resource_rights = 234
+      }
+  }
+}
+
+
+country_event = {
+  id = DSFU.9
+  title = DSFU.9.t
+  desc = DSFU.9.d
+  picture = GFX_report_event_german_advisors_remain
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.9.a
+    add_ideas = GER_volk
+  }
+}

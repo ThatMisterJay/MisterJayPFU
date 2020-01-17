@@ -348,7 +348,7 @@ ideas = {
 
 		NZL_fluffy = {
 
-			picture = generic_air_europe_2
+			picture = NZL_fluffy
 
 			allowed = {
 				original_tag = NZL

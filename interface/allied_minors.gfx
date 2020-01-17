@@ -7,4 +7,14 @@ spriteTypes = {
 				texturefile = "gfx/interface/ideas/idea_AST_battle.dds"
 			}
 
+			SpriteType = {
+					name = "GFX_idea_NZL_fluffy"
+					texturefile = "gfx/interface/ideas/idea_NZL_fluffy.dds"
+				}
+
+				SpriteType = {
+						name = "GFX_idea_RAJ_tankguy"
+						texturefile = "gfx/interface/ideas/idea_RAJ_tankguy.dds"
+					}
+
 }

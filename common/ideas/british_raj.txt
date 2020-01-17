@@ -46,7 +46,7 @@ ideas = {
 
                         picture = yug_federal_defense_council
 
-                        modifier = {	                     
+                        modifier = {
 	                        land_reinforce_rate = 0.05
 	                        army_morale_factor = 0.05
                         }
@@ -734,16 +734,31 @@ available = {has_completed_focus = RAJ_an_indian_sandhurst}
 				original_tag = RAJ
 			}
 
+			traits = { army_commando_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		RAJ_inf_guy = {
+
+			picture = generic_army_arab_2
+			allowed = {
+				original_tag = RAJ
+			}
+
 			traits = { army_infantry_2 }
 
 			ai_will_do = {
 				factor = 1
 			}
 		}
-#claude Ernest pert
-		RAJ_arjan_singh_vibhusan = {
 
-			picture = generic_army_arab_3
+#claude Ernest pert
+		RAJ_robert = {
+
+			picture = RAJ_tankguy
 available = {has_completed_focus = RAJ_british_army_support}
 			allowed = {
 

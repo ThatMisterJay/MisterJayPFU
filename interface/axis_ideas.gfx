@@ -35,5 +35,24 @@ SpriteType = {
 			texturefile = "gfx/interface/ideas/idea_ger_heavy_panzer.dds"
 		}
 
+		SpriteType = {
+				name = "GFX_idea_ger_labourfront"
+				texturefile = "gfx/interface/ideas/idea_ger_labourfront.dds"
+			}
+
+			SpriteType = {
+					name = "GFX_idea_ger_labourfront_2"
+					texturefile = "gfx/interface/ideas/idea_ger_labourfront_2.dds"
+				}
+
+				SpriteType = {
+						name = "GFX_idea_ger_volk"
+						texturefile = "gfx/interface/ideas/idea_ger_volk.dds"
+					}
+
+					SpriteType = {
+							name = "GFX_idea_GER_exploit"
+							texturefile = "gfx/interface/ideas/idea_GER_exploit.dds"
+						}
 
 }

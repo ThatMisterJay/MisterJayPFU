@@ -278,6 +278,10 @@
     JFU.17.d:0 "In January 1943, Wavell was promoted to field marshal. When Linlinthgow retired as viceroy in the summer of 1943, Wavell was chosen to replace him. He himself was replaced in his military post in June by Auchinleck, who by this point had also experienced setbacks in North Africa. In 1943, Wavell was made a viscount and in September, he was formally named Governor-General and Viceroy of India."
     JFU.17.a:0 "New Viceroy"
 
+    JFU.18.t:0 "Arrival of William Slim"
+    JFU.18.d:0 "After our embarrasing defeat in the Battle of Burma, Major General William Slim was given command of the Burma Corps in March 1942. It was hoped that he could halt the advance of the Japanses army, and possibly even reclaim Burma."
+    JFU.18.a:0 "Our Guy"
+
     DSFU.1.t:0 "New SS Divisions"
     DSFU.1.d:0 "While Romania may not make the best of allies, some of their people may still be useful."
     DSFU.1.a:0 "Till the final victory"
@@ -298,6 +302,27 @@
       DSFU.5.t:0 "Coup in Iraq"
       DSFU.5.d:0 "A pro-Axis government can not be allowed to remain in power in Iraq. Middle East Command has put together a plan they have code-named Operation Sabine. The primary goal is to secure the Iraqi oilfields with as little damage done to them as possible. Our victory shall be swift."
       DSFU.5.a:0 "Tea? Or something stronger?"
+
+DSFU.6.t:0 "Fate Of the SS"
+DSFU.6.d:0 "The SS represents a potential problem in the future, as an independent paramilitary force led by Himmler could threaten the Fuhrer's absolute power, however, the Heer's loyalty can not be guaranteed, and in the event of a coup, the SS could be the key to holding on to power. "
+DSFU.6.a:0 "Herr Himmler would never betray the Fuhrer."
+DSFU.6.b:0 "The Heer would never break their oath."
+
+DSFU.7.t:0 "Soviet Trade Agreement"
+DSFU.7.d:0 "As part of the treaty with the Soviets, we will gain access to key resources that are needed if Germany is to survive the coming conflict   "
+DSFU.7.a:0 "gut"
+
+
+DSFU.8.t:0 "End Of The Agreement"
+DSFU.8.d:0 "The time has come to deal with the Bolshevik threat once and for all, we must move quickly to secure the lost resources. "
+DSFU.8.a:0 "So be it"
+
+DSFU.9.t:0 "Formation of the Volkssturm"
+DSFU.9.d:0 "The new Volkssturm drew inspiration from the old Prussian Landsturm of 1813–1815, that fought in the liberation wars against Napoleon, mainly as guerrilla forces. Plans to form a Landsturm national militia in eastern Germany as a last resort to boost fighting strength were first proposed in 1944 by General Heinz Guderian, chief of the General Staff."
+DSFU.9.a:0 "The Führer’s newest weapon"
+
+
+
       DSFU_ITR.1.t:0 "Officers at the Front"
       DSFU_ITR.1.d:0 "A large number of monarchist officer at the front had openly supported the coup in its initial stages, but after its failure, they merely claimed they supported their King. We now must choose whether we can afford to arrest the officers at such a dangerous time for our nation."
       DSFU_ITR.1.a:0 "Make Them Renew Their Oath"

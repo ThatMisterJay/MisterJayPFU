@@ -516,6 +516,9 @@ country_event = {
 		name = pfu.21.a
 		remove_ideas = GER_short_war
 		add_ideas = GER_total_war
+		GER = {
+			country_event = { id = DSFU.9 days = 1 }
+		}
 	}
 }
 
@@ -526,6 +529,7 @@ country_event = {
 	picture = GFX_report_event_nordland
 
 	trigger = {
+		has_country_flag = SS_expanded
 		tag = GER
 		date > 1943.5.1
 		has_tech = mechanised_infantry
@@ -867,7 +871,7 @@ country_event = {
 		}
 	}
 
-fire_only_once = yes 
+fire_only_once = yes
 
 	immediate = {
 		set_global_flag = SOV_caucasus
