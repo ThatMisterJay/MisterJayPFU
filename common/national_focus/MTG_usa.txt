@@ -488,18 +488,13 @@ focus_tree = {
    		completion_reward = {
    			add_tech_bonus = {
    				name = USA_rubber_reserve_company
-   				bonus = 1.0
-   				uses = 2
+   				bonus = 2
+   				uses = 4
    				technology = rubber_processing
    				technology = improved_rubber_processing
    				technology = advanced_rubber_processing
    				technology = modern_rubber_processing
    			}
-				add_resource = {
-					type = rubber
-					amount = 90
-					state = 369 #Kentucky
-				}
    		}
    	}
 
