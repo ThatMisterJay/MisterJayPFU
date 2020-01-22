@@ -2408,7 +2408,8 @@ available = {
 	name = signals_bonus
 	bonus = 1
 	uses = 2
-	technology = tech_signal_company
+	technology = signal_company_tech
+
 }
 
 add_tech_bonus = {
