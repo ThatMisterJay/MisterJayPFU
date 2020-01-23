@@ -14,7 +14,7 @@ focus_tree = {
 		icon = GFX_focus_generic_tank_production
 		x = 13
 		y = 7
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_panzerkampfwageniv
@@ -320,7 +320,7 @@ add_ideas = license_equipment_faster_production
 		icon = GFX_panzer_3
 		x = 15
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_guderiansplanforthepanzerwaffe }
 		ai_will_do = {
@@ -675,7 +675,7 @@ instant_build = yes
 		icon = GFX_goal_generic_CAS
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luftwafferearmament }
 		mutually_exclusive = { focus = GER_strategicaireffort }
@@ -725,7 +725,7 @@ technology = naval_bomber2
 		icon = GFX_goal_generic_air_bomber
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_luftwafferearmament }
 		mutually_exclusive = { focus = GER_tacticalaireffort }
@@ -2103,12 +2103,10 @@ swap_ideas = {
 		icon = GFX_naval_meeting
 		x = 7
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_cruisereffort
-		}
-		prerequisite = {
 			focus = GER_destroyereffort
 		}
 		completion_reward = {
@@ -2356,7 +2354,7 @@ category = trade_interdiction_tree
 		icon = GFX_spanish_war
 		x = 12
 		y = 2
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_heerrearmament }
 		ai_will_do = {
@@ -2370,16 +2368,22 @@ available = {
 		completion_reward = {
 			air_experience = 130
 			army_experience = 90
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
-	#Focus for Guderian's Plan For The Panzerwaffe
+	#Focus for Guderian's Plan For The panzerwaffe
 	focus = {
 		id = GER_guderiansplanforthepanzerwaffe
 		icon = GFX_ger_heinz
 		x = 14
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_spanishexperience }
 		mutually_exclusive = { focus = GER_hitlerspersonalplanforthepanzerwaffe }
@@ -2408,7 +2412,8 @@ available = {
 	name = signals_bonus
 	bonus = 1
 	uses = 2
-	technology = tech_signal_company
+	category = signal_company_tech
+
 }
 
 add_tech_bonus = {
@@ -2439,7 +2444,7 @@ category = infantry_weapons
 		icon = GFX_Hitler_tank
 		x = 12
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_spanishexperience }
 		mutually_exclusive = { focus = GER_guderiansplanforthepanzerwaffe }
@@ -2448,6 +2453,13 @@ category = infantry_weapons
 		}
 		completion_reward = {
 			add_ideas = GER_heavy_panzerwaffe
+			add_tech_bonus = {
+			name = PZ8_bonus
+			ahead_reduction = 2
+			bonus = 1
+			uses = 1
+			technology = super_heavy_tank
+			}
 		}
 
 	}
@@ -2553,7 +2565,7 @@ category = infantry_weapons
 		icon = GFX_GER_SPA
 		x = 13
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_guderiansplanforthepanzerwaffe
@@ -2563,8 +2575,7 @@ category = infantry_weapons
 			factor = 1
 		}
 		completion_reward = {
-
-
+			army_experience = 30
 			add_tech_bonus = {
 			name = PZAL_bonus
 			bonus = 1
@@ -2777,7 +2788,7 @@ category = infantry_weapons
 				name = mech_tech_bonus
 				bonus = 1
 				uses = 1
-				technology = mechanised_infantry
+				category = motorized_equipment
 			}
 			add_stability = .05
 			add_war_support = .05
@@ -2807,7 +2818,7 @@ category = infantry_weapons
 		icon = GFX_NLF
 		x = 23
 		y = 5
-		cost = 10
+		cost = 7.5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_danzigorwar
@@ -2931,7 +2942,7 @@ has_war_with = ENG
 		icon = GFX_goal_generic_construct_civilian
 		x = 29
 		y = 3
-		cost = 10
+		cost = 7.2
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_goeringsfouryearplan }
 		ai_will_do = {
