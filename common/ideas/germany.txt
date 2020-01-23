@@ -926,6 +926,7 @@ NOT = { has_idea = walther_funk }
 			}
 
 			available = {
+				has_country_flag = SS_expanded
 				OR = {
 					has_government = fascism
 					has_country_flag = GER_reinstated_nazi_leadership

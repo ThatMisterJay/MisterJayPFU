@@ -146,6 +146,7 @@ country_event = {
     set_country_flag = SS_expanded
     add_ideas = GER_ss
     custom_effect_tooltip = GER_SS_tt
+    hidden_effect = {
     GER = {
       country_event = { id = pfu.6 days = 100 }
       country_event = { id = pfu.7 days = 150 }
@@ -157,6 +158,9 @@ country_event = {
       country_event = { id = pfu.25 days = 400 }
     }
   }
+  custom_effect_tooltip = available_political_advisor
+  show_ideas_tooltip = heinrich_himmler
+}
 
   option = {
     name = DSFU.6.b
