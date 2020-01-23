@@ -990,7 +990,7 @@ ideas = {
 				has_government = communism
 			}
 						modifier = {
-						min_export = 0.10
+					  stability_factor = 0.10
             lend_lease_tension = 2
 			}
 
