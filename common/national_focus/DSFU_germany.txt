@@ -470,7 +470,7 @@ add_ideas = license_equipment_faster_production
 		icon = GFX_SS_1
 		x = 14
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_heerrearmament }
 		ai_will_do = {
@@ -2833,8 +2833,7 @@ category = infantry_weapons
 has_war_with = ENG
 }
 		completion_reward = {
-			swap_ideas = { add_idea = GER_NLF_2 remove_idea = GER_NLF
-			}
+			add_ideas = GER_NLF_2		
 		}
 	}
 
