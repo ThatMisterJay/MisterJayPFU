@@ -2634,7 +2634,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1940.6.1
+				date > 1938.1.1
 			}
 			research_bonus = {
 				armor = 0.15
@@ -2713,7 +2713,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1939.6.1
+				date > 1938.1.1
 			}
 			research_bonus = {
 				armor = 0.15
