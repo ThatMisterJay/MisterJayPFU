@@ -707,7 +707,7 @@ picture = AST_sydney_rowell
 
 		AST_clive_caldwell = {
 
-			picture = generic_air_europe_1
+			picture = AST_clive_caldwell
 
 			allowed = {
 				original_tag = AST
@@ -993,7 +993,7 @@ picture = AST_sydney_rowell
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 
 			equipment_bonus = {
 				medium_tank_equipment = {
