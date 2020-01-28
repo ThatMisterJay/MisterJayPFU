@@ -2738,7 +2738,10 @@ CAN = {
 			available = {
                                         date > 1942.3.1
 					has_war = yes
+                                        OR = {
                                         288 = { is_controlled_by = JAP }
+                                        288 = { is_controlled_by = SIA }
+                                        }
 
 				}
 			cancel_if_invalid = no
