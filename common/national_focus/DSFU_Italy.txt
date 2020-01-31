@@ -423,7 +423,7 @@ id = ITA_japanesedoctrineassistance
 icon = GFX_focus_chi_collaboration_with_the_japanese
 x = 19
 y = 10
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_heavyweapondevelopment }
 ai_will_do = {
@@ -1672,6 +1672,10 @@ mutually_exclusive = { focus = ITA_battleshipadherent }
 completion_reward = {
 navy_experience = 25
 add_tech_bonus = {
+swap_ideas = {
+  add_idea = ITA_navy_build_carrier remove_idea = ITA_navy_build
+}
+
 name = cv_bonus
 bonus = 1
 uses = 2
@@ -1693,6 +1697,9 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_victorythroughnavalpower }
 mutually_exclusive = { focus = ITA_carrieradherent }
 completion_reward = {
+  swap_ideas = {
+    add_idea = ITA_navy_build_battleship remove_idea = ITA_navy_build
+  }
 navy_experience = 25
 add_tech_bonus = {
 name = bb_bonus
@@ -1762,7 +1769,7 @@ id = ITA_fleetdoctrineadvancement
 icon = GFX_goal_generic_navy_doctrines_tactics
 x = 21
 y = 9
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_allocateresourcestotheregiamarina }
 completion_reward = {
@@ -1783,7 +1790,7 @@ id = ITA_marinesandlandingcraft
 icon = GFX_goal_generic_amphibious_assault
 x = 21
 y = 10
-cost = 10
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_fleetdoctrineadvancement }
 completion_reward = {
@@ -1836,7 +1843,7 @@ id = ITA_cruiserdevelopment
 icon = GFX_focus_generic_cruiser2
 x = 19
 y = 7
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_battleshipadherent focus = ITA_carrieradherent }
 completion_reward = {
@@ -1858,7 +1865,7 @@ id = ITA_destroyerdevelopment
 icon = GFX_focus_generic_destroyer
 x = 23
 y = 7
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_battleshipadherent focus = ITA_carrieradherent}
 completion_reward = {
@@ -2230,6 +2237,8 @@ ai_will_do = {
  factor = 1
  }
 completion_reward = {
+  custom_effect_tooltip = available_aircraft_designer
+  show_ideas_tooltip = savoia_marchetti
 custom_effect_tooltip = ITA_designer
 air_experience = 60
 
@@ -2269,7 +2278,7 @@ id = ITA_modernizednavalaa
 icon = GFX_goal_generic_air_production
 x = 23
 y = 9
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_northerndockyardexpansion }
 ai_will_do = {
@@ -3266,7 +3275,7 @@ id = ITA_heavyweapondevelopment
 icon = GFX_goal_generic_navy_battleship
 x = 19
 y = 9
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_southdockyardexpansion }
 ai_will_do = {
@@ -3291,7 +3300,7 @@ id = ITA_lightbatteriesdevelopment
 icon = GFX_goal_generic_navy_cruiser
 x = 23
 y = 10
-cost = 7.2
+cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_modernizednavalaa }
 ai_will_do = {
