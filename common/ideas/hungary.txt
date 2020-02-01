@@ -508,7 +508,7 @@ ideas = {
 
 
 
-			traits = { army_armored_1 }
+			traits = { army_infantry_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -531,21 +531,7 @@ ideas = {
 			}
 		}
 
-		HUN_Inf_guy = {
-
-			picture = generic_army_europe_6
-			allowed = {
-				original_tag = HUN
-			}
-
-
-
-			traits = { army_infantry_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
 
 		HUN_jeno_ratz = {
 
