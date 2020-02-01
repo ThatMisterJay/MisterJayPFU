@@ -1054,7 +1054,7 @@ country_event = germany.5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_anticominternpact }
 		available = {
-			date > 1941.4.1
+			date > 1941.6.20
 date < 1941.9.21
 		}
 		completion_reward = {
@@ -2833,7 +2833,7 @@ category = infantry_weapons
 has_war_with = ENG
 }
 		completion_reward = {
-			add_ideas = GER_NLF_2		
+			add_ideas = GER_NLF_2
 		}
 	}
 
