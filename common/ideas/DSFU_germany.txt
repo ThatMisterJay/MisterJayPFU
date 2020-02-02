@@ -220,7 +220,7 @@ GER_heavy_panzerwaffe = {
 
   equipment_bonus = {
     heavy_tank_equipment = {
-          armor_value = 0.10
+          armor_value = 0.05
     }
 
   }
