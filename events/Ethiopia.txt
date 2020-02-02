@@ -14,7 +14,7 @@ country_event = {
 			add_threat = -1
 			hidden_effect = {
 				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1500 producer = ETH }
-				271 = { remove_core_of = ETH }
+
 			}
 		}
 	}
@@ -29,8 +29,6 @@ country_event = {
 			limit = { country_exists = ETH }
 			annex_country = { target = ETH transfer_troops = no }
 		}
-		else = {
-			add_threat = -1
-		}
+
 	}
 }

@@ -1050,6 +1050,7 @@ focus_tree = {
 
 		completion_reward = {
 			#Remove ideas or display tooltip warning that it will happen
+			set_politics = { ruling_party = fascism }
 			if = {
 				limit = {
 					has_idea = ROM_securitate

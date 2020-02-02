@@ -82,6 +82,8 @@
     ITA_new_officers:0 "Officer Training scheme"
     ITA_air_build:0 "Regia Aeronautica Prioritized"
     ITA_navy_build:0 "Regia Marina Prioritized"
+    ITA_navy_build_carrier:0 "Regia Marina Prioritized"
+    ITA_navy_build_battleship:0 "Regia Marina Prioritized"
     ITA_air_supply:0 "Air Supply Theory"
     olivetti:0 "Olivetti"
 
