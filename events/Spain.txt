@@ -40,6 +40,19 @@ fire_only_once = yes
 			}
 set_politics = { ruling_party = fascism }
 			ITA = { country_event = { id = ethiopia.1 days = 1 } }
+
+			SOV = {
+				army_experience = 100
+				air_experience = 120
+			}
+			GER = {
+				army_experience = 100
+				air_experience = 120
+			}
+			ITA = {
+				army_experience = 50
+				air_experience = 100
+			}
 		}
 
 	}
