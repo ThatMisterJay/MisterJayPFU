@@ -110,7 +110,7 @@ ai_will_do = {
 #Focus for Start Development of the North
 focus = {
 id = ITA_startdevelopmentofthenorth
-icon = GFX_focus_generic_industry_2
+icon = GFX_italy_north_industry_1
 x = 2
 y = 3
 cost = 10
@@ -1444,7 +1444,7 @@ technology = desertinfantry_at
 #Focus for Start Development of the South
 focus = {
 id = ITA_startdevelopmentofthesouth
-icon = GFX_focus_generic_industry_2
+icon = GFX_italy_south_industry_1
 x = 0
 y = 3
 cost = 10
@@ -1488,7 +1488,7 @@ ai_will_do = {
 #Focus for End Development of the North
 focus = {
 id = ITA_enddevelopmentofthenorth
-icon = GFX_focus_generic_industry_3
+icon = GFX_italy_north_industry_2
 x = 2
 y = 6
 cost = 10
@@ -1538,7 +1538,7 @@ remove_ideas = weak_industry1
 #Focus for End Development of the South
 focus = {
 id = ITA_enddevelopmentofthesouth
-icon = GFX_focus_generic_industry_3
+icon = GFX_italy_south_industry_2
 x = 0
 y = 6
 cost = 10
@@ -2168,7 +2168,7 @@ add_ideas = ITA_air_build
 #Focus for Victory Through Naval power
 focus = {
 id = ITA_victorythroughnavalpower
-icon = GFX_focus_generic_navy_battleship2
+icon = GFX_ita_navy
 x = 18
 y = 5
 cost = 7.2
