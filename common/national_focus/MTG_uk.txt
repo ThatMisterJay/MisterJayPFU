@@ -553,24 +553,8 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					has_global_flag = spanish_civil_war
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
 					threat > 0.05
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
+
 		}
 
 		continue_if_invalid = yes
