@@ -699,7 +699,7 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 			focus = Soviets_uralindustrialcomplexes
 		}
 		available = {
-				date > 1941.4.1	
+				date > 1941.3.15	
 			OR = {
 				has_defensive_war_with = GER
 				NOT = { 126 = { is_owned_and_controlled_by = ENG } }
