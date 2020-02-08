@@ -2587,10 +2587,3 @@ CAN = {
 				}
 
 	}
-		x = 38
-		y = 0
-			ai_will_do = {
-					factor = 0.1
-				}
-			available = {
-					has_war = yes
