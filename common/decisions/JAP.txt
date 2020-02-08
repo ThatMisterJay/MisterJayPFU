@@ -679,7 +679,6 @@ targets = { SIA }
 			}
 			JAP = {
 				annex_country = { target = SIA transfer_troops = yes }
-				add_ideas = annex_siam_idea
 			}
 		}
 	}
