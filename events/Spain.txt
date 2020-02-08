@@ -25,7 +25,7 @@ fire_only_once = yes
 			SPR = {
 				add_timed_idea = {
 					idea = SPA_recovering_from_civil_war
-					days = 984
+					days = 1084
 			}
 		}
 
