@@ -220,7 +220,7 @@ controls_state = 15
 		icon = GFX_eu_axis
 		x = 25
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_warwiththeussr
@@ -369,7 +369,7 @@ add_ideas = license_equipment_faster_production
 		icon = GFX_flak
 		x = 10
 		y = 4
-		cost = 7.2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_germaninfantrytactics }
 		ai_will_do = {
@@ -416,7 +416,7 @@ add_ideas = license_equipment_faster_production
 		icon = GFX_focus_ger_oppose_hitler
 		x = 10
 		y = 2
-		cost = 7.2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_heerrearmament }
 		ai_will_do = {
@@ -527,7 +527,7 @@ has_war_with = ENG
 		icon = GFX_focus_ger_reichskommisariats
 		x = 27
 		y = 4
-		cost = 10
+		cost = 7.2
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_autarky }
 		ai_will_do = {
@@ -1424,7 +1424,7 @@ add_state_core = 153
 		icon = GFX_goal_generic_forceful_treaty
 		x = 20
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_anschluss }
 		bypass = {
@@ -1690,6 +1690,16 @@ is_puppet = no
 has_army_manpower = { size > 749999 }
 		}
 		completion_reward = {
+			HUN = {
+			country_event = { id = germany.51 }
+			add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
+			}
+			every_other_country = {
+			limit = {
+			is_faction_leader = yes
+			}
+			reverse_add_opinion_modifier = { target = HUN modifier = GER_second_vienna_award_other }
+			}
 			if =  {
 limit = {
 OR = {
@@ -1754,47 +1764,7 @@ generator = { 69 }
 		}
 	}
 
-	#Focus for First Vienna Award
-	focus = {
-		id = GER_firstviennaaward
-		icon = GFX_goal_generic_military_deal
-		x = 18
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_munichagreement }
-		bypass = {
 
-OR = {
-AND = {
-NOT = { CZE = { controls_state = 664 } }
-NOT = { owns_state = 664 }
-}
-HUN = { is_friend_or_potential_friend_of_GER = no }
-}
-
-		}
-		available = {
-
-is_puppet = no
-owns_state = 69
-
-		}
-		completion_reward = {
-
-HUN = {
-country_event = { id = germany.51 }
-add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
-}
-every_other_country = {
-limit = {
-is_faction_leader = yes
-}
-reverse_add_opinion_modifier = { target = HUN modifier = GER_second_vienna_award_other }
-}
-
-		}
-	}
 
 	#Focus for Focke-Wulf Fw 190
 	focus = {
@@ -1830,7 +1800,7 @@ technology = fighter2
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_firstviennaaward }
+		prerequisite = { focus = GER_munichagreement }
 		bypass = {
 			OR = {
 has_war_with = CZE
@@ -2026,7 +1996,7 @@ type = annex_everything
 		icon = GFX_focus_chi_army_reform
 		x = 19
 		y = 8
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_mansteinsplan }
 		available = {
@@ -2340,7 +2310,7 @@ category = trade_interdiction_tree
 		completion_reward = {
 			add_tech_bonus = {
 			name = PZ4_bonus
-			bonus = 1
+			bonus = 1.5
 			uses = 1
 			technology = improved_medium_tank
 			}
@@ -2354,7 +2324,7 @@ category = trade_interdiction_tree
 		icon = GFX_spanish_war
 		x = 12
 		y = 2
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_heerrearmament }
 		ai_will_do = {
@@ -2401,7 +2371,7 @@ available = {
 		icon = GFX_ger_inf
 		x = 10
 		y = 3
-		cost = 7.2
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_advancegermandoctrine }
 		ai_will_do = {
@@ -2818,7 +2788,7 @@ category = infantry_weapons
 		icon = GFX_NLF
 		x = 23
 		y = 5
-		cost = 7.5
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_danzigorwar
@@ -2958,7 +2928,7 @@ has_war_with = ENG
 		icon = GFX_goal_generic_oil_refinery
 		x = 29
 		y = 5
-		cost = 10
+		cost = 7.2
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_autarky }
 		ai_will_do = {
