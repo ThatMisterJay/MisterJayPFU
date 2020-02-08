@@ -2584,9 +2584,9 @@ CAN = {
 }
 			completion_reward = {
 					remove_ideas = RAJ_risk_of_famine
-				}
+	        }
+        }
 
-	}
 
 	focus = {
 		id = RAJ_bengal_forts
@@ -2696,11 +2696,6 @@ CAN = {
 }
 		completion_reward = {
 					430 = {
-									free_building_slots = {
-											building = anti_air_building
-											size > 0
-											include_locked = yes
-										}
 							add_building_construction = {
 									type = anti_air_building
 									level = 3
@@ -2708,12 +2703,6 @@ CAN = {
 								}
 						}
                                          431 = {
-
-									free_building_slots = {
-											building = anti_air_building
-											size > 0
-											include_locked = yes
-										}
 							add_building_construction = {
 									type = anti_air_building
 									level = 3
@@ -2742,7 +2731,6 @@ CAN = {
                                         288 = { is_controlled_by = JAP }
                                         288 = { is_controlled_by = SIA }
                                         }
-
 				}
 			cancel_if_invalid = no
 			continue_if_invalid = yes
@@ -2757,5 +2745,4 @@ CAN = {
 								}
 				}
 	}
-
 
