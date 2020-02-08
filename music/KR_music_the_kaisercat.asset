@@ -1,0 +1,68 @@
+### KAISERCAT ###
+
+music = {
+	name = "battle_cry_of_freedom"
+	file = "audio/kaisercat/battle_cry_of_freedom.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "canada_god_save_the_king"
+	file = "audio/kaisercat/canada_god_save_the_king.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "johnny_comes_marching"
+	file = "audio/kaisercat/johnny_comes_marching.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "johnny_comes_marching_instrumental"
+	file = "audio/kaisercat/johnny_comes_marching_instrumental.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "new_england_when_johnny_comes_marching_home"
+	file = "audio/kaisercat/new_england_when_johnny_comes_marching_home.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "pacific_states_the_west_will_never_fall"
+	file = "audio/kaisercat/pacific_states_the_west_will_never_fall.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rose_of_texas_instrumental"
+	file = "audio/kaisercat/rose_of_texas_instrumental.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "snooty_fox"
+	file = "audio/kaisercat/snooty_fox.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "union_state_new_kings_walking"
+	file = "audio/kaisercat/union_state_new_kings_walking.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "which_side"
+	file = "audio/kaisercat/which_side.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "yellow_rose_of_texas"
+	file = "audio/kaisercat/yellow_rose_of_texas.ogg"
+	volume = 0.65
+}
+
