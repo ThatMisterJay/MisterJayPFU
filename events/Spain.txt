@@ -23,8 +23,11 @@ fire_only_once = yes
 				threat = 2 name = SPR_war
 			}
 			SPR = {
-				add_ideas = SPA_recovering_from_civil_war
+				add_timed_idea = {
+					idea = SPA_recovering_from_civil_war
+					days = 984
 			}
+		}
 
 				set_stability = 0.60
 				add_popularity = {

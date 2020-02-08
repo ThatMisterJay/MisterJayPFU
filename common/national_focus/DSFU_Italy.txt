@@ -2571,9 +2571,6 @@ ai_will_do = {
      controls_state = 453
      controls_state = 454
      controls_state = 455
-     controls_state = 675
-     controls_state = 291
-     controls_state = 779
    }
    }
  completion_reward = {

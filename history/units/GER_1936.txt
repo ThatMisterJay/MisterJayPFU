@@ -702,7 +702,7 @@ instant_effect = {
 	add_equipment_production = {
 	equipment = {
 		type = anti_air_equipment_1
-		creator = "ENG"
+		creator = "GER"
 	}
 	requested_factories = 1
 	progress = 0.4
