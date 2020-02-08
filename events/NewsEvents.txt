@@ -2204,9 +2204,9 @@ news_event = {
 	desc = news.64.d
 	picture = GFX_news_event_033
 
-	major = yes
 
-	fire_only_once = yes 
+
+	fire_only_once = yes
 
 trigger = {
 	date > 1939.3.28
