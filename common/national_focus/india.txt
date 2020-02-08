@@ -2584,6 +2584,8 @@ CAN = {
 }
 			completion_reward = {
 					remove_ideas = RAJ_risk_of_famine
-				}
+	        }
+        }
 
-	}
+
+	
