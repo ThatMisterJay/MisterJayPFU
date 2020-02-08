@@ -1,0 +1,8 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "blacks_and_tans.ogg"
+	volume = 1
+}
+
