@@ -1,14 +1,9 @@
 ideas = {
-
   country = {
 
 GER_navaltreaty_1 = {
 
 picture = "ger_naval_treaty"
-
-cancel = {
-has_war_with = ENG
-}
 
 allowed = {
   original_tag = GER
@@ -39,10 +34,6 @@ submarine = {
 GER_navaltreaty_2 = {
 
 picture = "ger_naval_treaty"
-
-cancel = {
-has_war_with = ENG
-}
 
   allowed = {
     original_tag = GER
@@ -121,8 +112,6 @@ picture = "german_advisors"
   allowed_civil_war = {
     always = yes
   }
-
-
 
   removal_cost = -1
 
@@ -240,12 +229,9 @@ GER_NLF = {
 
   picture = "ger_labourfront"
 
-cancel = {
-has_war_with = ENG
-}
   modifier = {
     stability_factor = 0.10
-    industrial_capacity_factory = 0.10
+    industrial_capacity_factory = 0.15
   }
 }
 

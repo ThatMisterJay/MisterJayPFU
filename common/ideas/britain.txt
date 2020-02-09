@@ -647,7 +647,7 @@ ENG_ITA_help = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.5
+				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 			}
 
@@ -2517,7 +2517,7 @@ cost = 100
 			}
 
 			equipment_bonus = {
-				infantry_equipment= {
+				infantry_weapons = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -2634,7 +2634,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1938.1.1
+				date > 1940.6.1
 			}
 			research_bonus = {
 				armor = 0.15
@@ -2713,7 +2713,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1938.1.1
+				date > 1939.6.1
 			}
 			research_bonus = {
 				armor = 0.15

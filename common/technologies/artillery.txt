@@ -57,22 +57,6 @@ technologies = {
 
 	interwar_artillery = {
 
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-
 		artillery = {
 			soft_attack = 0.1
 		}
@@ -175,23 +159,6 @@ technologies = {
 
 	artillery2 = {
 
-
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-
 		artillery = {
 			soft_attack = 0.1
 		}
@@ -247,22 +214,6 @@ technologies = {
 	}
 
 	artillery3 = {
-
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
 
 		artillery = {
 			soft_attack = 0.1
@@ -360,22 +311,6 @@ technologies = {
 	}
 
 	artillery5 = {
-
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery_brigade {
-			soft_attack = 0.05
-		}
 
 		artillery = {
 			soft_attack = 0.1
@@ -654,22 +589,6 @@ technologies = {
 
 	antiair1 = {
 
-		light_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		modern_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		super_heavy_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -743,22 +662,6 @@ technologies = {
 
 	antiair3 = {
 
-		light_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		modern_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		super_heavy_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -796,22 +699,6 @@ technologies = {
 	}
 
 	antiair4 = {
-
-		light_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		modern_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
-		super_heavy_sp_anti_air_brigade = {
-			air_attack = 0.05
-		}
 
 		anti_air = {
 			air_attack = 0.1
@@ -926,26 +813,6 @@ technologies = {
 
 	antitank1 = {
 
-light_tank_destroyer_brigade= {
-	hard_attack = 0.1
-	ap_attack = 0.1
-}
-medium_tank_destroyer_brigade = {
-	hard_attack = 0.1
-	ap_attack = 0.1
-}
-heavy_tank_destroyer_brigade = {
-	hard_attack = 0.1
-	ap_attack = 0.1
-}
-modern_tank_destroyer_brigade = {
-	hard_attack = 0.1
-	ap_attack = 0.1
-}
-super_heavy_tank_destroyer_brigade = {
-	hard_attack = 0.1
-	ap_attack = 0.1
-}
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.2
@@ -1050,26 +917,6 @@ super_heavy_tank_destroyer_brigade = {
 
 	antitank3 = {
 
-		light_tank_destroyer_brigade= {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
@@ -1124,27 +971,6 @@ super_heavy_tank_destroyer_brigade = {
 	}
 
 	antitank4 = {
-
-		light_tank_destroyer_brigade= {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
 
 		anti_tank = {
 			hard_attack = 0.1

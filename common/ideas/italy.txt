@@ -721,7 +721,7 @@ NOT = { has_country_flag = balbo_dead }
 			}
 
 			equipment_bonus = {
-				infantry_equipment= {
+				infantry_weapons = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
