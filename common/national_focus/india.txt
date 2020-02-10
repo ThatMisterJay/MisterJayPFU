@@ -2592,7 +2592,7 @@ CAN = {
 		id = RAJ_bengal_forts
 		icon = GFX_goal_generic_fortify_city
 		cost = 10
-		x = 38
+		x = 39
 		y = 0
 			ai_will_do = {
 					factor = 0.1
@@ -2674,7 +2674,7 @@ CAN = {
 		prerequisite = {
 			focus = RAJ_bengal_forts
 		}
-		x = 38
+		x = 39
 		y = 1
 			ai_will_do = {
 					factor = 0.1
@@ -2713,14 +2713,195 @@ CAN = {
 	}
 
 	focus = {
-		id = RAJ_burma_co
-		icon = GFX_raj_co
+		id = RAJ_new_1st_army
+		icon = GFX_RAJ_sun_li_jen
 		cost = 10
 		prerequisite = {
 			focus = RAJ_bengal_aa
 		}
+		mutually_exclusive = {
+			focus = RAJ_form_the_14th_army
+		}
 		x = 38
 		y = 2
+			ai_will_do = {
+					factor = 0.1
+				}
+			available = {
+                    date > 1941.1.1
+					has_war = yes
+				    RAJ = {
+				    controls_state = 431
+				    }
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+			custom_effect_tooltip = 1st_army_tt
+CHI = {
+    remove_unit_leader = 1999
+}
+create_corps_commander = {
+	name = "Sun Li Jen"
+	gfx = "GFX_portrait_chi_sun_li_jen"
+	traits = { brilliant_strategist infantry_leader trait_mountaineer jungle_rat trait_engineer }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+				hidden_effect = {
+				division_template = {
+					name = "New 1st Army Division"
+					priority = 2
+
+					regiments = {
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+						mountaineers = { x = 0 y = 3 }
+						mountaineers = { x = 0 y = 4 }
+
+						mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+						mountaineers = { x = 1 y = 3 }
+						mountaineers = { x = 1 y = 4 }
+
+						mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 2 y = 1 }
+						mountaineers = { x = 2 y = 2 }
+						mountaineers = { x = 2 y = 3 }
+
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						logistics_company = { x = 0 y = 2 }
+						signal_company = { x = 0 y = 3 }
+						artillery = { x = 0 y = 4 }
+					}
+				}
+                    431 = {
+					create_unit = {
+						division = "name = \"200th Division NRA\" division_template = \"New 1st Army Division\" start_experience_factor = 1.0"
+						owner = RAJ
+					}
+                }
+			}
+        }
+	}
+
+	focus = {
+		id = RAJ_form_the_14th_army
+		icon = GFX_RAJ_14th_army
+		cost = 10
+		prerequisite = {
+			focus = RAJ_bengal_aa
+		}
+		mutually_exclusive = {
+			focus = RAJ_new_1st_army
+		}
+		x = 40
+		y = 2
+			ai_will_do = {
+					factor = 0.1
+				}
+			available = {
+                    date > 1941.1.1
+					has_war = yes
+					RAJ = {
+				    controls_state = 431
+				    }
+				}
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			complete_tooltip = {
+
+}
+			completion_reward = {
+			custom_effect_tooltip = 14th_army_tt
+ENG = {
+    remove_unit_leader = 2000
+}
+create_corps_commander = {
+    name = "William Slim"
+    id = 2000
+    picture = "Portrait_Britain_William_Slim.dds"
+    traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
+    skill = 5
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 5
+    logistics_skill = 5
+}
+				hidden_effect = {
+				division_template = {
+					name = "14th Army Division"
+					priority = 2
+
+					regiments = {
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+						mountaineers = { x = 0 y = 3 }
+						mountaineers = { x = 0 y = 4 }
+
+						mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+						mountaineers = { x = 1 y = 3 }
+						mountaineers = { x = 1 y = 4 }
+
+						mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 2 y = 1 }
+						mountaineers = { x = 2 y = 2 }
+						mountaineers = { x = 2 y = 3 }
+
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						logistics_company = { x = 0 y = 2 }
+						signal_company = { x = 0 y = 3 }
+						artillery = { x = 0 y = 4 }
+					}
+				}
+                    431 = {
+					create_unit = {
+						division = "name = \"Indian 5th Infantry Division\" division_template = \"14th Army Division\" start_experience_factor = 0.4"
+						owner = RAJ
+					}
+					create_unit = {
+						division = "name = \"Indian 7th Infantry Division\" division_template = \"14th Army Division\" start_experience_factor = 0.4"
+						owner = RAJ
+					}
+                }
+		    }
+		}
+	}
+
+
+	focus = {
+		id = RAJ_burma_co
+		icon = GFX_raj_co
+		cost = 10
+		prerequisite = {
+			focus = RAJ_form_the_14th_army focus = RAJ_new_1st_army
+		}
+		x = 39
+		y = 3
 			ai_will_do = {
 					factor = 0.1
 				}
@@ -2745,4 +2926,3 @@ CAN = {
 								}
 				}
 	}
-

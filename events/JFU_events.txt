@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Baltic Events
 ###########################
 
@@ -539,38 +539,4 @@ country_event = {
 			logistics_skill = 5
 		}
 	}
-}
-
-country_event = {
-    id = JFU.18
-    title = JFU.18.t
-    desc = JFU.18.d
-    picture = GFX_report_event_indian_soldiers
-
-    fire_only_once = yes
-
-    trigger = {
-        tag = RAJ
-        date > 1942.3.1
-        288 = { NOT = { is_controlled_by = RAJ } }
-    }
-
-option = {
-name = JFU.18.a
-ENG = {
-    remove_unit_leader = 69
-}
-create_corps_commander = {
-    name = "William Slim"
-        id = 69
-    picture = "Portrait_Britain_William_Slim.dds"
-    traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
-    skill = 5
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 5
-    logistics_skill = 5
-}
-}
-
 }
