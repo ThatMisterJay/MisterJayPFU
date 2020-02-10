@@ -3,7 +3,7 @@
 music = {
 	name = "maintheme"
 	file = "blacks_and_tans.ogg"
-	volume = 1
+	volume = 0.65
 }
 
 music = {
