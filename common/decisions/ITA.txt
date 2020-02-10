@@ -965,3 +965,66 @@ complete_effect = {
 
 
 }
+
+
+
+release_IEA = {
+
+	ITA_release_ethiopia = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			controls_state = 271
+			controls_state = 559
+			controls_state = 550
+		}
+
+		cost = 0
+
+		visible = {
+			original_tag = ITA
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = ETH
+					ETH = { ETH = { has_government = fascism } }
+				}
+				hidden_effect = {
+					NOR = {
+						set_state_controller = 559
+						set_state_controller = 550
+						set_state_controller = 271
+					}
+				}
+				NOR = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = ETH
+						has_government = fascism
+					}
+					transfer_state = 559
+					transfer_state = 550
+					transfer_state = 271
+					ITA = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+				}
+			}
+			else = {
+				ETH = {
+					transfer_state = 271
+					transfer_state = 550
+					transfer_state = 559
+				}
+				set_autonomy = { target = ETH autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+}

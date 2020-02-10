@@ -41,3 +41,16 @@ original_tag = ITA
 has_cosmetic_tag = ITR
 	}
 }
+
+release_IEA = {
+
+	icon = ger_reichskommissariats
+
+	allowed = {
+original_tag = ITA
+	}
+
+	visible = {
+original_tag = ITA
+	}
+}
