@@ -330,6 +330,10 @@ technologies = {
 
 		start_year = 1942
 
+		allow = {
+		date > 1941.6.1
+	}
+
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 10 }
@@ -461,6 +465,10 @@ technologies = {
 
 		start_year = 1940
 
+		allow = {
+		date > 1939.6.1
+	}
+
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 6 }
@@ -500,6 +508,10 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1941
+
+		allow = {
+		date > 1940.6.1
+	}
 
 		folder = {
 			name = artillery_folder
@@ -726,6 +738,9 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1940
+		allow = {
+		date > 1939.6.1
+	}
 
 		folder = {
 			name = artillery_folder
@@ -864,6 +879,10 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1943
+
+		allow = {
+		date > 1942.6.1
+	}
 
 		folder = {
 			name = artillery_folder
@@ -1017,6 +1036,10 @@ super_heavy_tank_destroyer_brigade = {
 		research_cost = 1
 
 		start_year = 1940
+
+		allow = {
+		date > 1940.1.1
+	}
 
 		folder = {
 			name = artillery_folder
@@ -1212,6 +1235,10 @@ super_heavy_tank_destroyer_brigade = {
 		research_cost = 1
 
 		start_year = 1943
+
+		allow = {
+		date > 1943.1.1
+	}
 
 		folder = {
 			name = artillery_folder
