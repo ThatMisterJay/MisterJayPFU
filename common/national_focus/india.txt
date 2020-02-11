@@ -2745,7 +2745,7 @@ CHI = {
 create_corps_commander = {
 	name = "Sun Li Jen"
 	gfx = "GFX_portrait_chi_sun_li_jen"
-	traits = { brilliant_strategist infantry_leader trait_mountaineer jungle_rat trait_engineer }
+	traits = { brilliant_strategist infantry_officer infantry_leader trait_mountaineer jungle_rat hill_fighter trait_engineer }
 	skill = 5
 	attack_skill = 5
 	defense_skill = 4
@@ -2786,6 +2786,7 @@ create_corps_commander = {
 						logistics_company = { x = 0 y = 2 }
 						signal_company = { x = 0 y = 3 }
 						artillery = { x = 0 y = 4 }
+                                                anti_air = { x = 0 y = 5 }
 					}
 				}
                     431 = {
@@ -2835,7 +2836,7 @@ create_corps_commander = {
     name = "William Slim"
     id = 2000
     picture = "Portrait_Britain_William_Slim.dds"
-    traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
+    traits = { trickster war_hero trait_mountaineer hill_fighter jungle_rat infantry_leader }
     skill = 5
     attack_skill = 3
     defense_skill = 3
@@ -2876,6 +2877,7 @@ create_corps_commander = {
 						logistics_company = { x = 0 y = 2 }
 						signal_company = { x = 0 y = 3 }
 						artillery = { x = 0 y = 4 }
+                                                anti_air = { x = 0 y = 5 }
 					}
 				}
                     431 = {
