@@ -479,9 +479,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1939.6.1
-		}
+	
 
 
 		folder = {
@@ -529,9 +527,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1942
 
-		allow = {
-		date > 1941.6.1
-		}
+
 
 
 		folder = {
@@ -579,9 +575,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 
-		allow = {
-		date > 1940.6.1
-		}
+
 
 		folder = {
 			name = armour_folder
@@ -685,9 +679,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1943
 
-		allow = {
-		date > 1942.1.1
-	}
+
 
 		ai_will_do = {
 			factor = 0
@@ -883,9 +875,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1941
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 
 		ai_will_do = {
@@ -928,9 +918,6 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 
-		allow = {
-		date > 1940.6.1
-	}
 
 		folder = {
 			name = armour_folder
@@ -1107,9 +1094,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1943
 
-		allow = {
-		date > 1942.1.1
-	}
+
 
 		ai_will_do = {
 			factor = 1
@@ -1151,9 +1136,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1943
 
-		allow = {
-		date > 1942.6.1
-	}
+
 
 		folder = {
 			name = armour_folder
@@ -1309,9 +1292,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1945
 
-		allow = {
-		date > 1944.1.1
-	}
+
 
 		ai_will_do = {
 			factor = 0
@@ -1451,9 +1432,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1947
 
-		allow = {
-		date > 1944.1.1
-	}
+
 
 		ai_will_do = {
 			factor = 0
@@ -1661,9 +1640,7 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1941
 
-		allow = {
-		date > 1940.6.1
-	}
+
 
 		folder = {
 			name = armour_folder
@@ -1776,9 +1753,6 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1943
 
-		allow = {
-		date > 1942.1.1
-	}
 
 		ai_will_do = {
 			factor = 0
@@ -1816,9 +1790,7 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1943
 
-		allow = {
-		date > 1942.6.1
-	}
+
 
 		folder = {
 			name = armour_folder
@@ -1919,9 +1891,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1945
 
-		allow = {
-		date > 1944.1.1
-	}
+
 
 		ai_will_do = {
 			factor = 0
@@ -2015,9 +1985,7 @@ technologies = {
 		research_cost = 0.5
 		start_year = 1945
 
-		allow = {
-				date > 1944.1.1
-			}
+
 		ai_will_do = {
 			factor = 0
 		}
