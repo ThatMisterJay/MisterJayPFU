@@ -987,6 +987,9 @@ release_IEA = {
 		}
 
 		complete_effect = {
+				271 = { add_core_of = ETH }
+				550 = { add_core_of = ETH }
+				559 = { add_core_of = ETH }
 			if = {
 				limit = {
 					country_exists = ETH
