@@ -755,7 +755,7 @@ technologies = {
 
 	sup_delay = {
 
-		category_light_infantry = {
+		category_all_infantry = {
 			max_organisation = 10
 		}
 
@@ -1150,7 +1150,7 @@ technologies = {
 
 	air_land_battle = {
 
-		category_front_line = {
+		category_all_infantry = {
 			max_organisation = 5
 		}
 
