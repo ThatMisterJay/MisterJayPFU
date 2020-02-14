@@ -200,9 +200,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -272,9 +270,7 @@ technologies = {
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		categories = {
 			naval_air
@@ -338,9 +334,7 @@ technologies = {
 		research_cost = 3
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -396,9 +390,7 @@ technologies = {
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		categories = {
 			naval_air
@@ -610,9 +602,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -668,9 +658,8 @@ technologies = {
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
+
 
 		categories = {
 			naval_air
@@ -725,9 +714,7 @@ technologies = {
 		research_cost = 3
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -781,9 +768,7 @@ technologies = {
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		categories = {
 			naval_air
@@ -930,9 +915,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -987,9 +970,7 @@ technologies = {
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		categories = {
 			naval_air
@@ -1047,9 +1028,7 @@ technologies = {
 		start_year = 1944
 
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -1104,9 +1083,7 @@ technologies = {
 		research_cost = 1.0 #Carrier Variant
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		categories = {
 			naval_air
@@ -1216,9 +1193,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -1250,9 +1225,7 @@ technologies = {
 		research_cost = 3
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 
 		folder = {
@@ -1339,9 +1312,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -1397,9 +1368,7 @@ technologies = {
 		research_cost = 3
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -1551,9 +1520,7 @@ technologies = {
 		research_cost = 2
 		start_year = 1940
 
-		allow = {
-		date > 1940.1.1
-	}
+
 
 		folder = {
 			name = air_techs_folder
@@ -1595,9 +1562,6 @@ technologies = {
 		research_cost = 3
 		start_year = 1944
 
-		allow = {
-		date > 1943.1.1
-	}
 
 		folder = {
 			name = air_techs_folder

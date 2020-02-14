@@ -313,6 +313,8 @@ ideas = {
 			modifier = {
 				max_command_power = 25
 			}
+		
+
 		}
 		USA_department_of_defense = {
 			picture = usa_department_of_defense

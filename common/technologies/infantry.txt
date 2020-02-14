@@ -102,7 +102,9 @@ technologies = {
 			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
 		}
-
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1938
 		folder = {
@@ -171,7 +173,9 @@ technologies = {
 			leads_to_tech = advanced_infantry_weapons
 			research_cost_coeff = 1
 		}
-
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -200,6 +204,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1940
 		folder = {
@@ -223,6 +230,9 @@ technologies = {
 			ap_attack = 1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1943
 		folder = {
@@ -283,6 +293,9 @@ technologies = {
 			soft_attack = 0.1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1944
 		folder = {
@@ -959,6 +972,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 2.5
 		start_year = 1943
 		folder = {
@@ -979,6 +995,9 @@ technologies = {
 
 		land_night_attack = 0.15
 
+		xp_research_type = army
+			xp_research_cost = 35
+			xp_research_bonus = 1
 		research_cost = 2
 		start_year = 1946
 		folder = {
@@ -1047,6 +1066,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 50
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
@@ -1115,6 +1137,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 50
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1938
 		folder = {
@@ -1183,6 +1208,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		xp_research_type = army
+			xp_research_cost = 50
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1940
 		folder = {
@@ -1246,6 +1274,9 @@ technologies = {
 			breakthrough = 0.05
 		}
 
+		xp_research_type = army
+			xp_research_cost = 50
+			xp_research_bonus = 1
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
