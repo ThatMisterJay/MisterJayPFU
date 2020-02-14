@@ -237,13 +237,35 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Mufasa Selassie"
-	picture = Portrait_Nubia_Mufasa_Selassie
-	traits = { infantry_leader infantry_officer }
+	name = "Géza Lakatos"
+	gfx = GFX_Portrait_hungary_geza_lakatos
+	traits = { infantry_leader career_officer }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
-	planning_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Károly Beregfy"
+	gfx = GFX_Portrait_hungary_karoly_beregfy
+	traits = { politically_connected infantry_leader }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lajos Veress"
+	gfx = GFX_Portrait_hungary_lajos_veress
+	traits = { armor_officer panzer_leader cavalry_leader trait_engineer career_officer}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
 	logistics_skill = 2
 }
 
@@ -251,9 +273,9 @@ create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
 	traits = { infantry_leader organizer harsh_leader career_officer hill_fighter }
-	skill = 4
+	skill = 3
 	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
