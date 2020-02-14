@@ -1741,7 +1741,18 @@ create_corps_commander = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			custom_effect_tooltip = hun_art_tt
+			hidden_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_2
+			creator = "GER"
+		}
+		requested_factories = 15
+		progress = 0.3
+		efficiency = 80
+	                }
+                      }
 		}
 	}
 
