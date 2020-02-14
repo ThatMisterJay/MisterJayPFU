@@ -1586,7 +1586,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
-				bonus = 2
+				bonus = 1
 				uses = 1
 				category = cat_heavy_armor
 				category = cat_medium_armor
@@ -1870,7 +1870,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
