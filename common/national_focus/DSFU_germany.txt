@@ -329,8 +329,8 @@ add_ideas = license_equipment_faster_production
 		completion_reward = {
 			add_tech_bonus = {
 			name = PZ3_bonus
-			ahead_reduction = 2
-			bonus = 2
+			ahead_reduction = 1
+			bonus = 1
 			uses = 1
 			technology = basic_medium_tank
 			}
@@ -1772,7 +1772,7 @@ generator = { 69 }
 		icon = GFX_ger_fighter2
 		x = 2
 		y = 4
-		cost = 7
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_airinnovationsii }
 
@@ -1781,11 +1781,10 @@ available = {
 }
 
 		completion_reward = {
-			air_experience = 80
+			air_experience = 25
 add_tech_bonus = {
 name = GER_fighter_2
 bonus = 1
-ahead_reduction = 2
 uses = 1
 technology = fighter2
 }
@@ -2010,7 +2009,7 @@ country_exists = EFR
 air_experience = 25
 add_tech_bonus = {
 	name = light3
-	bonus = 1.0
+	bonus = 0.5
 	uses = 1
 	technology = advanced_light_tank
 }
@@ -2310,7 +2309,7 @@ category = trade_interdiction_tree
 		completion_reward = {
 			add_tech_bonus = {
 			name = PZ4_bonus
-			bonus = 1.5
+			bonus = 1
 			uses = 1
 			technology = improved_medium_tank
 			}
@@ -2450,7 +2449,7 @@ category = infantry_weapons
 			add_tech_bonus = {
 			name = PZ6_bonus
 			ahead_reduction = 1
-			bonus = 2
+			bonus = 1
 			uses = 1
 			technology = improved_heavy_tank
 			}

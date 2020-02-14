@@ -52,7 +52,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 2
+				bonus = 1
 				technology = improved_heavy_tank
 			}
 		}
@@ -655,7 +655,7 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 						add_to_war = {
 							targeted_alliance = GER
 							enemy = SOV
-						}				
+						}
 				}
 			}
 
@@ -1268,12 +1268,12 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 		completion_reward = {
 			add_tech_bonus = {
 				name = med_armor_bonus
-				ahead_reduction = 2
+				ahead_reduction = 1
 				technology = basic_medium_tank
 			}
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				technology = improved_medium_tank
 			}

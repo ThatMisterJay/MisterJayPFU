@@ -2481,7 +2481,7 @@ add_ideas = ITA_tanktreaty
 add_tech_bonus = {
 name = armor_bonus
 bonus = 1
-uses = 2
+uses = 1
 technology = improved_medium_tank
 technology = basic_medium_tank
 }
@@ -2586,6 +2586,3 @@ CAN = {
 					remove_ideas = RAJ_risk_of_famine
 	        }
         }
-
-
-	
