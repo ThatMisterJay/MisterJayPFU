@@ -271,7 +271,7 @@ axis_exploited = {
 
 			modifier = {
 				stability_factor = 0.20
-				army_defence_factor = 0.2
+				army_core_defence_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
 		}

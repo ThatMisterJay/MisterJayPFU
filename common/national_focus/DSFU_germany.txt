@@ -1776,9 +1776,6 @@ generator = { 69 }
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_airinnovationsii }
 
-available = {
-	has_completed_focus = GER_munichagreement
-}
 
 		completion_reward = {
 			air_experience = 25
@@ -2448,7 +2445,6 @@ category = infantry_weapons
 		completion_reward = {
 			add_tech_bonus = {
 			name = PZ6_bonus
-			ahead_reduction = 1
 			bonus = 1
 			uses = 1
 			technology = improved_heavy_tank
