@@ -47,7 +47,6 @@ CHI_at_least_20_tt:0 "Japan needs to have occupied at least 20 Chinese States."
 CHI_organising_resistance_tt:0 "\nWill organise the §Glocal resistance§! in a random state in §YOccupied China§!. You can call these states to rise up with the decision §YRise My Minions§!.\n"
 CHI_will_spawn_divisions_tt:0 "Will spawn divisions in random states in §YOccupied China§!. This effect is more potent the longer you have organised the §Glocal resistance§!.\n"
 
-SPR_war:0 "Spanish Civil War"
 
 GER_fall_blau_tt:0 "The Soviet Union will gain a large amount of Oil in the Caucasus, though we will gain 2 mechanized divisions."
 GER_counter_husky_tt:0 "The Axis has control of the entire Westwall"
@@ -85,3 +84,9 @@ GER_stug_tt:0 "Will allow production of the §YStuG III Ausf. G§."
 GER_htd_tt:0 "Will allow production of the §YFerdinand§."
 GER_tank_3_tt:0 "Our experience from the east will allows us to develop more §YAdvanced Panzers§."
 GER_SPA_tt:0 "For our mobile warfare to succeeded we will need to develop §YMobile Artillery§."
+
+HUN_generals_tt:0 "Grants a §Y4 Skill General§"
+hun_art_tt:0 "Adds a production line of §YGerman Improved Artillery Equipment§! at §Y80%§! efficency"
+eth_mount_tt:0 "Spawns §Y2 Veteran Mountaineers§"
+14th_army_tt:0 "Spawns §Y2 Seasoned 14/4 Mountaineers§! "
+1st_army_tt:0 "Spawns §Y1 Veteran 14/4 Mountaineer§! "
