@@ -1,0 +1,467 @@
+focus_tree = {
+id = ETH
+country = {
+factor = 0
+modifier = {
+add = 10
+tag = ETH
+}
+}
+continuous_focus_position = { x = 800 y = 0 }
+
+focus = {
+id = ETH_collapsinggovernment
+icon = GFX_focus_eng_concessions_to_the_trade_unions
+x = 3
+y = 0
+cost = 35
+available_if_capitulated = yes
+ai_will_do = {
+ factor = 1
+ }
+ completion_reward = {
+ add_political_power = -200
+ add_ideas = ETH_industry1
+ add_ideas = ETH_army1
+ add_ideas = ETH_political1
+             set_party_name = { 
+                ideology = fascism
+                long_name = IEA_long
+                name = IEA_short
+            }
+ }
+}
+
+focus = {
+id = ETH_industrialrecovery
+icon = GFX_eth_recovery
+x = 0
+y = 1
+cost = 12.9
+available_if_capitulated = no
+prerequisite = { focus = ETH_collapsinggovernment }
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+   ETH = {
+     controls_state = 271
+   }
+   }
+ completion_reward = {
+   random_owned_controlled_state = {
+     prioritize = { 271 }
+     limit = {
+       ROOT = { has_full_control_of_state = PREV }
+     }
+     add_extra_state_shared_building_slots = 4
+     add_building_construction = {
+       type = industrial_complex
+       level = 2
+       instant_build = yes
+     }
+   }
+     swap_ideas = {
+	add_idea = ETH_industry2
+	remove_idea = ETH_industry1
+     }
+ }
+}
+
+focus = {
+id = ETH_italianinvestment
+icon = GFX_focus_usa_reestablish_the_gold_standard
+x = 0
+y = 2
+cost = 12.9
+available_if_capitulated = no
+prerequisite = { focus = ETH_industrialrecovery }
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+   ETH = {
+     controls_state = 271
+   }
+   }
+ completion_reward = {
+   random_owned_controlled_state = {
+     prioritize = { 271 }
+     limit = {
+       ROOT = { has_full_control_of_state = PREV }
+     }
+     add_extra_state_shared_building_slots = 4
+     add_building_construction = {
+       type = industrial_complex
+       level = 2
+       instant_build = yes
+     }
+   }
+     swap_ideas = {
+	add_idea = ETH_industry3
+	remove_idea = ETH_industry2
+     }
+ }
+}
+
+focus = {
+id = ETH_mining
+icon = GFX_focus_generic_steel
+x = 0
+y = 3
+cost = 12.9
+available_if_capitulated = no
+prerequisite = { focus = ETH_italianinvestment }
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+   ETH = {
+     controls_state = 271
+   }
+   }
+ completion_reward = {
+   add_resource = {
+    type = steel
+    amount = 25
+    state = 271
+   }
+   add_resource = {
+    type = tungsten
+    amount = 10
+    state = 271
+   } 
+  }
+}
+
+focus = {
+id = ETH_warprep
+icon = GFX_focus_AST_never_gallipoli
+x = 0
+y = 4
+cost = 12.9
+available_if_capitulated = no
+prerequisite = { focus = ETH_mining }
+ai_will_do = {
+ factor = 1
+ }
+
+ available = {
+   ETH = {
+     controls_state = 271
+   }
+   }
+ completion_reward = {
+   random_owned_controlled_state = {
+     prioritize = { 271 }
+     limit = {
+       ROOT = { has_full_control_of_state = PREV }
+     }
+     add_extra_state_shared_building_slots = 3
+     add_building_construction = {
+       type = arms_factory
+       level = 3
+       instant_build = yes
+     }
+   }
+
+ }
+}
+
+focus = {
+id = ETH_armyreform
+icon = GFX_eth_reform
+x = 2
+y = 1
+cost = 15
+available_if_capitulated = yes
+prerequisite = { focus = ETH_collapsinggovernment }
+ai_will_do = {
+ factor = 1
+ }
+ completion_reward = {
+     swap_ideas = {
+	add_idea = ETH_army2
+	remove_idea = ETH_army1
+     }
+ }
+}
+
+focus = {
+id = ETH_reconciliation
+icon = GFX_reach_out_to_italy
+x = 2
+y = 2
+cost = 15
+available_if_capitulated = yes
+prerequisite = { focus = ETH_armyreform }
+ai_will_do = {
+ factor = 1
+ }
+ completion_reward = {
+     swap_ideas = {
+	add_idea = ETH_army3
+	remove_idea = ETH_army2
+     }
+ }
+}
+
+focus = {
+id = ETH_africanrecruitment
+icon = GFX_eth_recruitment
+x = 2
+y = 3
+cost = 15
+available_if_capitulated = no
+prerequisite = { focus = ETH_reconciliation }
+ai_will_do = {
+ factor = 1
+ }
+ completion_reward = {
+	add_ideas = ETH_africanrecruitment
+ }
+}
+
+focus = {
+id = ETH_mountaineerlevys
+icon = GFX_goal_tfv_saf_support_german_coup
+x = 2
+y = 4
+cost = 15
+available_if_capitulated = yes
+prerequisite = { focus = ETH_africanrecruitment }
+ai_will_do = {
+ factor = 1
+ }
+		completion_reward = {
+				custom_effect_tooltip = eth_mount_tt
+				hidden_effect = {
+				division_template = {
+					name = "Italian Mountaineers"
+					priority = 2
+
+					regiments = {
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+						mountaineers = { x = 0 y = 3 }
+						mountaineers = { x = 0 y = 4 }
+
+						mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+						mountaineers = { x = 1 y = 3 }
+						mountaineers = { x = 1 y = 4 }
+
+						mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 2 y = 1 }
+						mountaineers = { x = 2 y = 2 }
+						mountaineers = { x = 2 y = 3 }
+
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+						artillery_brigade = { x = 3 y = 2 }
+						artillery_brigade = { x = 3 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+                                                artillery = { x = 0 y = 2 }
+					}
+				}
+                                271 = {
+					create_unit = {
+						division = "name = \"1st Italian Mountaineer Division\" division_template = \"Italian Mountaineers\" start_experience_factor = 1.0"
+						owner = ETH
+					}
+					create_unit = {
+						division = "name = \"2nd Italian Mountaineer Division\" division_template = \"Italian Mountaineers\" start_experience_factor = 1.0"
+						owner = ETH
+					}
+                                }
+			}
+		}
+}
+
+focus = {
+id = ETH_addisabeba
+icon = GFX_ita_bagdolio
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_collapsinggovernment }
+ai_will_do = {
+ factor = 1
+ }
+available = {
+ date > 1936.5.9
+ }
+ completion_reward = {
+     swap_ideas = {
+	add_idea = ETH_political2
+	remove_idea = ETH_political1
+     }
+			create_country_leader = {
+				name = "Pietro Badoglio"
+				desc = ""
+				picture = Portrait_ETH_Pietro_Badoglio.dds
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = { 
+				}
+			}
+ }
+}
+
+focus = {
+id = ETH_neghelli
+icon = GFX_ita_graziani
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_addisabeba }
+ai_will_do = {
+ factor = 1
+ }
+available = {
+ date > 1936.6.11
+ }
+ completion_reward = {
+     swap_ideas = {
+	add_idea = ETH_political3
+	remove_idea = ETH_political2
+     }
+			create_country_leader = {
+				name = "Rodolfo Graziani"
+				desc = ""
+				picture = Portrait_ETH_Radolfo_Graziani.dds
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+ }
+}
+
+focus = {
+id = ETH_aosta
+icon = GFX_ita_aosta
+x = 4
+y = 3`
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_neghelli }
+ai_will_do = {
+ factor = 1
+ }
+available = {
+ date > 1937.12.21
+ }
+ completion_reward = {
+     swap_ideas = {
+	add_idea = ETH_political4
+	remove_idea = ETH_political3
+     }
+			create_country_leader = {
+				name = "Prince Amedeo"
+				desc = ""
+				picture = Portrait_ETH_Amedeo_Savoia_Aosta.dds
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+			}
+ }
+}
+
+focus = {
+id = ETH_r1
+icon = GFX_goal_generic_axis_build_infantry
+x = 6
+y = 1
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_collapsinggovernment }
+ai_will_do = {
+ factor = 1
+ }
+completion_reward = {
+add_tech_bonus = {
+name = arty_bonus
+bonus = 1
+uses = 2
+category = land_doctrine
+}
+ }
+}
+
+focus = {
+id = ETH_r2
+icon = GFX_goal_generic_small_arms
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_r1 }
+ai_will_do = {
+ factor = 1
+ }
+completion_reward = {
+add_tech_bonus = {
+name = arty_bonus
+bonus = 1
+uses = 1
+category = infantry_weapons
+                 }
+ }
+}
+
+focus = {
+id = ETH_r3
+icon = GFX_goal_generic_army_artillery2
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_r2 }
+ai_will_do = {
+ factor = 1
+ }
+completion_reward = {
+add_tech_bonus = {
+name = arty_bonus
+bonus = 1
+uses = 1
+category = artillery
+                 }
+ }
+}
+
+focus = {
+id = ETH_r4
+icon = GFX_goal_generic_army_doctrines
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = ETH_r3 }
+ai_will_do = {
+ factor = 1
+ }
+completion_reward = {
+add_tech_bonus = {
+name = arty_bonus
+bonus = 1
+uses = 2
+category = land_doctrine
+}
+ }
+}
+
+#end of focuses
+}
