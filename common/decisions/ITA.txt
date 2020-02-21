@@ -965,3 +965,40 @@ complete_effect = {
 
 
 }
+
+release_IEA = {
+
+	ITA_release_ethiopia = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			controls_state = 271
+			controls_state = 559
+			controls_state = 550
+		}
+
+		cost = 0
+
+		visible = {
+			original_tag = ITA
+			controls_state = 271
+			controls_state = 559
+			controls_state = 550
+		}
+
+		complete_effect = {
+				271 = { add_core_of = ETH }
+				550 = { add_core_of = ETH }
+				559 = { add_core_of = ETH }
+				ETH = {
+					transfer_state = 271
+					transfer_state = 550
+					transfer_state = 559
+				}
+				set_autonomy = { target = ETH autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+}
