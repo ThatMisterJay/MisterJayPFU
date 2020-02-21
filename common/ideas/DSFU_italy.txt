@@ -236,7 +236,7 @@ modifier = {
  picture = "generic_production_bonus"
 
 modifier = {
-production_speed_arms_factory_factor = 0.20
+production_speed_arms_factory_factor = 0.10
   }
  }
 
@@ -442,7 +442,7 @@ allowed = {
 original_tag = ITA
 }
 
-picture = "generic_the_london_naval_treaty"
+picture = "ITA_navy"
 
 equipment_bonus = {
   fighter_equipment = {
@@ -456,6 +456,75 @@ equipment_bonus = {
   }
   tac_bomber_equipment = {
     build_cost_ic = 0.15 instant = yes
+  }
+}
+
+modifier = {
+industrial_capacity_dockyard = 0.2
+}
+
+}
+ITA_navy_build_battleship = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "ITA_navy"
+
+equipment_bonus = {
+  fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  heavy_fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  nav_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  tac_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+}
+
+equipment_bonus = {
+  capital_ship = {
+    build_cost_ic = -0.10 instant = yes
+  }
+}
+
+modifier = {
+industrial_capacity_dockyard = 0.2
+}
+
+}
+
+ITA_navy_build_carrier = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "ITA_navy"
+
+equipment_bonus = {
+  fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  heavy_fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  nav_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  tac_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+}
+
+equipment_bonus = {
+  carrier = {
+    build_cost_ic = -0.10 instant = yes
   }
 }
 

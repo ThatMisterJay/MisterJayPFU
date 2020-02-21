@@ -47,7 +47,7 @@ if = {
 set_convoys = 780		# biggest merchant marine in the world
 
 add_ideas = {
-	NOR_haakon_vii
+
 }
 
 set_politics = {

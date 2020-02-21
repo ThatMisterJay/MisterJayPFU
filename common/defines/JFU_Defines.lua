@@ -13,6 +13,8 @@ NDefines.NDiplomacy.AUTONOMY_LEVEL_CHANGE_PP_FREE = 150
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 75
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.3
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
+NDefines.NCountry.MAJOR_MIN_FACTORIES = 20
+NDefines.NCountry.MIN_MAJOR_COUNTRIES	= 12
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 28
@@ -20,7 +22,7 @@ NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 3
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 140
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.05
 NDefines.NCountry.MIN_MANPOWER_RATIO = 0.25
-NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO = 0.9
+NDefines.NCountry.PARADROP_AIR_SUPERIORITY_RATIO = 0.85
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 200.0
 NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.1
@@ -41,7 +43,13 @@ NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0.2
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 60.0
 NDefines.NTechnology.BASE_TECH_COST = 110
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 8		-- Base year ahead penalty
 NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.8
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+
 
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40

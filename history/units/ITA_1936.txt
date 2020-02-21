@@ -863,7 +863,7 @@ instant_effect = {
 			}
 			name = "RN Conte di Cavour"
 			requested_factories = 2
-			progress = 0.20
+			progress = 0.90
 			amount = 1
 		}
 
@@ -876,7 +876,7 @@ instant_effect = {
 			}
 			name = "RN Giulio Cesare"
 			requested_factories = 2
-			progress = 0.20
+			progress = 0.90
 			amount = 1
 		}
 		# BB: "Littorio"
@@ -887,7 +887,7 @@ instant_effect = {
 				version_name = "Littorio Class"
 			}
 			requested_factories = 2
-			progress = 0.20
+			progress = 0.50
 			amount = 1
 		}
 		# BB: Vittoria Veneto
@@ -898,7 +898,7 @@ instant_effect = {
 				version_name = "Littorio Class"
 			}
 			requested_factories = 2
-			progress = 0.20
+			progress = 0.50
 			amount = 1
 		}
 

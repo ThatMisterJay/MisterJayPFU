@@ -244,9 +244,14 @@ ENG_ITA_help = {
 
 			picture = generic_production_bonus
 
+			equipment_bonus = {
+		 	fighter_equipment = {
+		 		build_cost_ic = -0.06 instant = yes
+		 	}
+		 }
+
 			modifier = {
              production_speed_arms_factory_factor = 0.1
-
 				}
 
 		}
@@ -288,7 +293,7 @@ ENG_ITA_help = {
 
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.12 instant = yes
+					build_cost_ic = -0.06 instant = yes
 				}
 				cv_fighter_equipment = {
 					build_cost_ic = -0.1
@@ -647,7 +652,7 @@ ENG_ITA_help = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
 
@@ -2517,7 +2522,7 @@ cost = 100
 			}
 
 			equipment_bonus = {
-				infantry_weapons = {
+				infantry_equipment= {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -2634,7 +2639,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1940.6.1
+				date > 1938.1.1
 			}
 			research_bonus = {
 				armor = 0.15
@@ -2713,7 +2718,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1939.6.1
+				date > 1938.1.1
 			}
 			research_bonus = {
 				armor = 0.15

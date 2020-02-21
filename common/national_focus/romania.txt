@@ -1050,6 +1050,7 @@ focus_tree = {
 
 		completion_reward = {
 			#Remove ideas or display tooltip warning that it will happen
+			set_politics = { ruling_party = fascism }
 			if = {
 				limit = {
 					has_idea = ROM_securitate
@@ -1550,7 +1551,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1589,7 +1590,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_war_college
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1661,7 +1662,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1694,7 +1695,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1727,7 +1728,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1755,7 +1756,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -1854,7 +1855,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1882,7 +1883,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2036,7 +2037,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2065,7 +2066,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -2093,7 +2094,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = ROM_reserve_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2111,7 +2112,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1
-				ahead_reduction = 2
+				ahead_reduction = 1
 				uses = 1
 				category = cat_heavy_armor
 			}

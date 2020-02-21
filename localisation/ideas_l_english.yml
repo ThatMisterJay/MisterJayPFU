@@ -231,6 +231,26 @@ ATTACHE_LIST:0 "We received military attachés from $LIST$. And they give us the
  directorate_of_tank_design:0 "Directorate of Tank Design"
  nuffield:0 "Nuffield"
  vauxhall_motors:0 "Vauxhall Motors"
+ #Commonwealth tank designers
+  birmingham_rcw_RAJ:0 "Birmingham RCWC"
+  vickers_armstrong_eng_RAJ:0 "Vickers-Armstrong"
+  nuffield_RAJ:0 "Nuffield"
+  vauxhall_motors_RAJ:0 "Vauxhall Motors"
+
+  birmingham_rcw_CAN:0 "Birmingham RCWC"
+  vickers_armstrong_eng_CAN:0 "Vickers-Armstrong"
+  nuffield_CAN:0 "Nuffield"
+  vauxhall_motors_CAN:0 "Vauxhall Motors"
+
+  birmingham_rcw_AST:0 "Birmingham RCWC"
+  vickers_armstrong_eng_AST:0 "Vickers-Armstrong"
+  nuffield_AST:0 "Nuffield"
+  vauxhall_motors_AST:0 "Vauxhall Motors"
+
+  birmingham_rcw_SAF:0 "Birmingham RCWC"
+  vickers_armstrong_eng_SAF:0 "Vickers-Armstrong"
+  nuffield_SAF:0 "Nuffield"
+  vauxhall_motors_SAF:0 "Vauxhall Motors"
  #French tank designers
  somua:0 "SOMUA"
  #Japanese tank designers

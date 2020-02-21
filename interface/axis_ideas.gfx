@@ -54,5 +54,9 @@ SpriteType = {
 							name = "GFX_idea_GER_exploit"
 							texturefile = "gfx/interface/ideas/idea_GER_exploit.dds"
 						}
+						SpriteType = {
+								name = "GFX_idea_ITA_navy"
+								texturefile = "gfx/interface/ideas/idea_ITA_navy.dds"
+							}
 
 }

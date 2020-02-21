@@ -332,6 +332,18 @@ ideas = {
 
 		}
 
+		HUN_gusztav_gratz = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = HUN
+				has_dlc = "Death or Dishonor"
+			}
+
+			traits = { staunch_monarchist }
+		}
+
 		HUN_kalman_daranyi = {
 
 			picture = generic_political_advisor_europe_2
@@ -489,14 +501,14 @@ ideas = {
 		HUN_gusztav_jany = {
 
 			picture = generic_army_europe_3
-                        available = {has_completed_focus = HUN_special_forces}
+
 			allowed = {
 				original_tag = HUN
 			}
 
 
 
-			traits = { army_commando_1 }
+			traits = { army_infantry_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -519,16 +531,17 @@ ideas = {
 			}
 		}
 
-		HUN_Inf_guy = {
+	
 
-			picture = generic_army_europe_6
+		HUN_jeno_ratz = {
+
+			picture = generic_air_europe_3
+
 			allowed = {
 				original_tag = HUN
 			}
 
-
-
-			traits = { army_infantry_2 }
+			traits = { air_air_combat_training_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -538,7 +551,7 @@ ideas = {
 		HUN_henrik_werth = {
 
 			picture = generic_army_europe_1
-                        available = {has_completed_focus = HUN_mobile_focus}
+
 			allowed = {
 				original_tag = HUN
 			}
@@ -684,7 +697,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				infantry_weapons = {
+				infantry_equipment= {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}

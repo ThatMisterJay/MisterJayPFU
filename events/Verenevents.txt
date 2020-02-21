@@ -45,11 +45,11 @@ country_event = {
 			AND = {
 				tag = SPR
 				has_government = fascism
-				has_civil_war = yes
+
 			}
 			AND = {
 				tag = D01
-				has_civil_war = yes
+			
 				has_government = fascism
 			}
 		}

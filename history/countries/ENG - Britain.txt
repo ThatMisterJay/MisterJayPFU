@@ -1,4 +1,4 @@
-capital = 126
+﻿capital = 126
 
 oob = "ENG_1936"
 
@@ -295,7 +295,6 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Slim"
-        id = 2000
 	picture = "Portrait_Britain_William_Slim.dds"
 	traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
 	skill = 5

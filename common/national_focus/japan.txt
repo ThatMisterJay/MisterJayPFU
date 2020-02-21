@@ -1350,8 +1350,12 @@ focus = {
 		}
 
 		available = {
+			OR = {
 			date > 1940.12.5
-
+			GER = {
+				has_war_with = USA
+			}
+}
 
 		}
 

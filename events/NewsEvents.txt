@@ -2179,7 +2179,9 @@ news_event = {
 
 	major = yes
 
-	is_triggered_only = yes
+is_triggered_only = yes
+
+
 
 	option = {
 		name = news.63.a
@@ -2202,23 +2204,13 @@ news_event = {
 	desc = news.64.d
 	picture = GFX_news_event_033
 
-	major = yes
 
-	trigger = {
-		has_global_flag = spanish_civil_war
-		NOT = { has_global_flag = scw_over }
-		SPR = { has_civil_war = no }
-		any_other_country = {
-			original_tag = SPR
-			has_government = fascism
-		}
-		all_country = {
-			OR = {
-				NOT = { original_tag = SPR }
-				has_government = fascism
-			}
-		}
-	}
+
+	fire_only_once = yes
+
+trigger = {
+	date > 1939.3.28
+}
 
 	mean_time_to_happen = {
 		days = 2
@@ -2227,6 +2219,7 @@ news_event = {
 	immediate = {
 		set_global_flag = nationalist_victory
 		set_global_flag = scw_over
+
 	}
 
 	option = {
@@ -2238,54 +2231,43 @@ news_event = {
 	option = {
 		name = news.64.b
 		trigger = { original_tag = SPR }
+		SPR = {
+			remove_ideas = SPA_recovering_from_civil_war
+		}
 	}
 }
 
 # End of the Spanish Civil War (Republican victory)
-news_event = {
-	id = news.65
-	title = news.64.t
-	desc = news.65.d
-	picture = GFX_news_event_034
+#news_event = {
+#	id = news.65
+#	title = news.64.t
+#	desc = news.65.d
+#	picture = GFX_news_event_034
+#
+#	major = yes
+#
+#	is_triggered_only = yes
 
-	major = yes
+#	mean_time_to_happen = {
+#		days = 2
+#	}
 
-	trigger = {
-		has_global_flag = spanish_civil_war
-		NOT = { has_global_flag = scw_over }
-		SPR = { has_civil_war = no }
-		any_other_country = {
-			original_tag = SPR
-			NOT = { has_government = fascism }
-		}
-		all_country = {
-			OR = {
-				NOT = { original_tag = SPR }
-				NOT = { has_government = fascism }
-			}
-		}
-	}
+#	immediate = {
+#		set_global_flag = republican_victory
+#		set_global_flag = scw_over
+#	}
 
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	immediate = {
-		set_global_flag = republican_victory
-		set_global_flag = scw_over
-	}
-
-	option = {
-		name = news.65.a
-		trigger = {
-			NOT = { original_tag = SPR }
-		}
-	}
-	option = {
-		name = news.64.b
-		trigger = { original_tag = SPR }
-	}
-}
+#	option = {
+#		name = news.65.a
+#		trigger = {
+#			NOT = { original_tag = SPR }
+#		}
+#	}
+#	option = {
+#		name = news.64.b
+#		trigger = { original_tag = SPR }
+#	}
+#}
 
 # Games of the XI Olympiad
 news_event = {
@@ -5241,47 +5223,47 @@ trigger = { has_government = communism }
 }
 
 # End of Spanish Civil War (Inconclusive)
-news_event = {
-	id = news.162
-	title = news.64.t
-	desc = news.162.d
-	picture = GFX_news_event_032
-
-	major = yes
-
-	trigger = {
-		has_global_flag = spanish_civil_war
-		SPR = { has_civil_war = no }
-		NOT = { has_global_flag = scw_over }
-		any_other_country = {
-			original_tag = SPR
-			has_government = fascism
-		}
-		any_other_country = {
-			original_tag = SPR
-			NOT = { has_government = fascism }
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	immediate = {
-		set_global_flag = scw_over
-	}
-
-	option = {
-		name = news.162.a
-		trigger = {
-			NOT = { original_tag = SPR }
-		}
-	}
-	option = {
-		name = news.162.b
-		trigger = { original_tag = SPR }
-	}
-}
+#news_event = {
+#	id = news.162
+#	title = news.64.t
+#	desc = news.162.d
+#	picture = GFX_news_event_032
+#
+#	major = yes
+#
+#	trigger = {
+#		has_global_flag = spanish_civil_war
+#		SPR = { has_civil_war = no }
+#		NOT = { has_global_flag = scw_over }
+#		any_other_country = {
+#			original_tag = SPR
+#			has_government = fascism
+#		}
+#		any_other_country = {
+#			original_tag = SPR
+#			NOT = { has_government = fascism }
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+#
+#	immediate = {
+#		set_global_flag = scw_over
+#	}
+#
+#	option = {
+#		name = news.162.a
+#		trigger = {
+#			NOT = { original_tag = SPR }
+#		}
+#	}
+#	option = {
+#		name = news.162.b
+#		trigger = { original_tag = SPR }
+#	}
+#
 
 # London Conference
 news_event = {

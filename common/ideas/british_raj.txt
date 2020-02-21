@@ -43,17 +43,15 @@ ideas = {
 			allowed = {
 				original_tag = RAJ
 			}
+        picture = yug_federal_defense_council
 
-                        picture = yug_federal_defense_council
+  modifier = {
+    land_reinforce_rate = 0.05
+    army_morale_factor = 0.05
+					             }
+    }
 
-                        modifier = {
-	                        land_reinforce_rate = 0.05
-	                        army_morale_factor = 0.05
-                        }
-                }
-        }
 
-	country = {
 
 		RAJ_azad_hind = {
 			picture = generic_morale_bonus
@@ -746,7 +744,7 @@ available = {has_completed_focus = RAJ_an_indian_sandhurst}
 				original_tag = RAJ
 			}
 
-			traits = { army_commando_2 }
+			traits = { army_commando_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1145,7 +1143,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 			}
 
 			equipment_bonus = {
-				infantry_weapons = {
+				infantry_equipment= {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -1188,37 +1186,146 @@ available = {has_completed_focus = RAJ_british_army_support}
 	tank_manufacturer = {
 		designer = yes
 
-		RAJ_tank_designer = {
-			cost = 150
+		birmingham_rcw_RAJ = {
+			cost = 75
 			allowed = {
-				original_tag = RAJ
+				original_TAG = RAJ
 			}
-
+			available = {
+				date > 1938.1.1
+			}
 			research_bonus = {
 				armor = 0.15
 			}
+			picture = birmingham_rcw
 
 			equipment_bonus = {
 				medium_tank_equipment = {
-					reliability = 0.10
-					ap_attack = 0.10
-					build_cost_ic = -0.05
+					armor_value = 0.10
+					maximum_speed = 0.1
+					soft_attack = 0.05
 				}
 				medium_tank_destroyer_equipment = {
-					reliability = 0.1
+					armor_value = 0.15
+					maximum_speed = 0.1
 					hard_attack = 0.1
-					build_cost_ic = -0.05
-				}
-				medium_tank_aa_equipment = {
-					reliability = 0.1
-					build_cost_ic = -0.05
+					ap_attack = 0.05
 				}
 				medium_tank_artillery_equipment = {
-					reliability = 0.1
-					soft_attack = 0.1
-					build_cost_ic = -0.05
+					armor_value = 0.15
+					maximum_speed = 0.1
+					soft_attack = 0.05
 				}
 			}
 		}
-	}
+
+
+		nuffield_RAJ = {
+			cost = 75
+			allowed = {
+				original_TAG = RAJ
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			picture = nuffield
+
+			equipment_bonus = {
+				medium_tank_equipment = {
+					maximum_speed = 0.15
+				}
+				medium_tank_destroyer_equipment = {
+					hard_attack = 0.1
+					ap_attack = 0.1
+					maximum_speed = 0.15
+				}
+				medium_tank_artillery_equipment = {
+					soft_attack = 0.05
+					maximum_speed = 0.15
+				}
+			}
+		}
+
+		vauxhall_motors_RAJ = {
+			cost = 75
+			allowed = {
+				original_TAG = RAJ
+			}
+			available = {
+				date > 1938.1.1
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+    picture = vauxhall_motors
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.15
+					defense = 0.1
+					maximum_speed = -0.15
+					reliability = -0.05
+					ap_attack = -0.05
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.2
+					defense = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					maximum_speed = -0.15
+					reliability = -0.05
+				}
+				heavy_tank_artillery_equipment = {
+					armor_value = 0.2
+					defense = 0.1
+					soft_attack = 0.05
+					maximum_speed = -0.15
+					reliability = -0.05
+				}
+				}
+			}
+
+		vickers_armstrong_eng_RAJ = {
+			cost = 75
+			allowed = {
+				original_TAG = RAJ
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+   picture = vickers_armstrong_eng
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.10
+					maximum_speed = -0.15
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.10
+					hard_attack = 0.1
+					ap_attack = 0.05
+					maximum_speed = -0.15
+				}
+				heavy_tank_artillery_equipment = {
+					armor_value = 0.10
+					breakthrough = 0.05
+					soft_attack = 0.05
+					maximum_speed = -0.15
+				}
+				light_tank_equipment = {
+					maximum_speed = 0.1
+					reliability = 0.1
+				}
+				light_tank_destroyer_equipment = {
+					maximum_speed = 0.1
+					reliability = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.05
+				}
+				light_tank_artillery_equipment = {
+					maximum_speed = 0.1
+					reliability = 0.1
+					soft_attack = 0.05
+				}
+			}
+		}
+
 }
