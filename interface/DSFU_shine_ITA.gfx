@@ -132,7 +132,7 @@ SpriteType = {
 }
 
 SpriteType = {
- name = "GFX_ita_navy"
+ name = "GFX_ita_navy_shine"
  texturefile = "gfx/interface/goals/ita/GFX_ita_navy.dds"
  effectFile = "gfx/FX/buttonstate_onlydisable.lua"
  animation = {
@@ -163,7 +163,7 @@ SpriteType = {
 }
 
 SpriteType = {
- name = "GFX_italy_north_industry_1"
+ name = "GFX_italy_north_industry_1_shine"
  texturefile = "gfx/interface/goals/ita/GFX_italy_north_industry_1.dds"
  effectFile = "gfx/FX/buttonstate_onlydisable.lua"
  animation = {
@@ -194,7 +194,7 @@ SpriteType = {
 }
 
 SpriteType = {
- name = "GFX_italy_north_industry_2"
+ name = "GFX_italy_north_industry_2_shine"
  texturefile = "gfx/interface/goals/ita/GFX_italy_north_industry_2.dds"
  effectFile = "gfx/FX/buttonstate_onlydisable.lua"
  animation = {
@@ -225,7 +225,7 @@ SpriteType = {
 }
 
 SpriteType = {
- name = "GFX_italy_south_industry_1"
+ name = "GFX_italy_south_industry_1_shine"
  texturefile = "gfx/interface/goals/ita/GFX_italy_south_industry_1.dds"
  effectFile = "gfx/FX/buttonstate_onlydisable.lua"
  animation = {
@@ -256,7 +256,7 @@ SpriteType = {
 }
 
 SpriteType = {
- name = "GFX_italy_south_industry_2"
+ name = "GFX_italy_south_industry_2_shine"
  texturefile = "gfx/interface/goals/ita/GFX_italy_south_industry_2.dds"
  effectFile = "gfx/FX/buttonstate_onlydisable.lua"
  animation = {
