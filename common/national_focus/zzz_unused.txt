@@ -1996,4 +1996,345 @@ focus_tree = {
 
 		completion_reward = { }
 	}
+	focus = {
+		id = SPA_the_phalanx_ascendant
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SPA_supremacy_of_the_communion
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+
+
+
+	focus = {
+		id = SPR_masters_of_our_own_fate
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = CHI_cooperation_with_the_communists
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = FRA_ban_communism
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = FRA_ban_the_leagues
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_form_the_popular_front
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_communist_cooperation
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_coalition_government
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_government_of_national_defense
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_social_democracy
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SPR_the_popular_front
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SPR_portuguese_anarchism
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	
+
+	focus = {
+		id = FRA_french_forces_of_the_interior
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SPR_maintain_the_second_republic
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SPR_the_anti_fascist_workers_revolution
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SPR_regional_defense_council_of_aragon
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SOV_women_pilots
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_mission_to_the_us
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_100_regiments_campaign
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_naval_aviation
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_the_hump
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_ledo_road
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_burma_road
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_invite_the_flying_tigers
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_anti_japanese_expedition
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_provoke_japan
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_military_intelligence_department
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_socialist_market_economy
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_local_bomber_production
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_local_fighter_production
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_camco
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_hire_chennault
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+	focus = {
+		id = GEN_Soviet_Heavy_Industry
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

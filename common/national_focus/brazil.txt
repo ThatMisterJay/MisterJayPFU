@@ -13,9 +13,18 @@ focus_tree = {
 			add = 50
 			tag = LIT
 		}
+
+
+
+		modifier = {
+			add = 50
+			tag = SWE
+		}
+
+
 	}
 
-	default = yes
+	
 	reset_on_civilwar = no
 
 	focus = {

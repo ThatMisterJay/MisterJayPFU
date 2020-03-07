@@ -5,7 +5,7 @@ oob = "SPR_1936"
 set_research_slots = 3
 
 set_technology = {
-	basic_encryption = 1
+	armored_car1 = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -52,11 +52,29 @@ if = {
 	}
 }
 
+
+165 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+	}
+	171 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+	}
+	172 = {
+		add_dynamic_modifier = { modifier = autonomous_state }
+	}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+
+add_ideas = {
+	SPA_carlism_1
+	SPR_military_disloyalty
+	SPR_political_violence
+	SPR_national_strikes_3
 }
 
 set_popularities = {
@@ -148,59 +166,159 @@ set_war_support = 0.6
 }
 
 create_country_leader = {
-	name = "Manuel Azana"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
+		name = "Manuel Azaña"
+		desc = "POLITICS_MANUEL_AZANA_DESC"
+		picture = "Portrait_Spain_Manuel_Azana.dds"
+		expire = "1965.1.1"
+		ideology = conservatism
+		traits = {
+			figurehead_president
+		}
 	}
-}
 
-create_country_leader = {
-	name = "José Díaz"
-	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
+	create_country_leader = {
+		name = "José Díaz"
+		desc = "POLITICS_JOSE_DIAZ_DESC"
+		picture = "portrait_spr_jose_diaz.dds"
+		expire = "1965.1.1"
+		ideology = stalinism
+		traits = {
+			veteran_communist
+		}
 	}
-}
-
-create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
+	create_country_leader = {
+		name = "José Antonio Primo de Rivera"
+		desc = "POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
+		picture = "GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+		expire = "1965.1.1"
+		ideology = falangism
+		traits = {
+			sins_of_the_father
+		}
 	}
-}
-
-create_country_leader = {
-	name = "Alejandro Lerroux"
-	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
+	create_country_leader = {
+		name = "Manuel Fal Conde"
+		desc = "POLITICS_MANUEL_FAL_CONDE_DESC"
+		picture = "GFX_portrait_SPA_manuel_fal_conde"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			jefe
+		}
 	}
-}
 
-create_field_marshal = {
-	name = "José Asensio Torrado"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
+	create_field_marshal = {
+			name = "Francisco Franco"
+			id = 1108
+			gfx = "GFX_portrait_spain_francisco_franco"
+			traits = { organisational_leader logistics_wizard expert_delegator harsh_leader infantry_leader}
+			skill = 4
+		    attack_skill = 5
+		    defense_skill = 3
+		    planning_skill = 3
+		    logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Mohamed Meziane"
+			id = 1109
+			gfx = "GFX_portrait_SPA_mohamed_meziane"
+			traits = { harsh_leader career_officer infantry_leader trait_mountaineer harsh_leader }
+			skill = 4
+		    attack_skill = 4
+		    defense_skill = 3
+		    planning_skill = 3
+		    logistics_skill = 3
+		}
+
+		create_corps_commander = { # Could fit for all 3 factions
+			name = "Gonzalo Queipo de Llano"
+			id = 1110
+			gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+			traits = { infantry_officer infantry_leader harsh_leader urban_assault_specialist}
+			skill = 3
+		    attack_skill = 3
+		    defense_skill = 3
+		    planning_skill = 2
+		    logistics_skill = 2
+		}
+
+		# Nationalists leaders - Fascists
+
+		create_field_marshal = {
+			name = "Emilio Mola"
+			id = 1111
+			gfx = "GFX_portrait_SPA_emilio_mola"
+			traits = { organisational_leader trait_cautious thorough_planner infantry_leader hill_fighter trait_engineer urban_assault_specialist harsh_leader }
+			skill = 3
+		    attack_skill = 2
+		    defense_skill = 2
+		    planning_skill = 4
+		    logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Juan Yagüe"
+			id = 1112
+			gfx = "GFX_portrait_SPA_juan_yague"
+			traits = { brilliant_strategist trait_reckless infantry_leader hill_fighter trait_mountaineer  }
+			skill = 3
+		    attack_skill = 3
+		    defense_skill = 3
+		    planning_skill = 2
+		    logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Agustín Muñoz Grandes"
+			id = 1113
+			gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+			traits = { infantry_officer infantry_leader ranger panzer_leader }
+			skill = 3
+		    attack_skill = 4
+		    defense_skill = 2
+		    planning_skill = 2
+		    logistics_skill = 2
+		}
+
+		# Nationalists leaders - Carlists
+
+		create_corps_commander = {
+			name = "José Enrique Varela"
+			id = 1114
+			gfx = "GFX_portrait_SPA_jose_enrique_varela"
+			traits = { organizer infantry_leader hill_fighter }
+			skill = 3
+		    attack_skill = 3
+		    defense_skill = 2
+		    planning_skill = 3
+		    logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Miguel Cabanellas"
+			id = 1115
+			gfx = "GFX_portrait_SPA_miguel_cabanellas"
+			traits = { cavalry_officer old_guard trait_engineer infantry_leader hill_fighter trickster }
+			skill = 3
+		    attack_skill = 2
+		    defense_skill = 2
+		    planning_skill = 3
+		    logistics_skill = 3
+		}
+
+		create_corps_commander = {
+			name = "José Millán Astray"
+			id = 1116
+			gfx = "GFX_portrait_SPA_jose_millan_astray"
+			traits = { war_hero trait_reckless infantry_leader  }
+			skill = 3
+		    attack_skill = 3
+		    defense_skill = 3
+		    planning_skill = 2
+		    logistics_skill = 2
+		}
+
 
 create_corps_commander = {
 	name = "José Sanjurjo y Sacanell"

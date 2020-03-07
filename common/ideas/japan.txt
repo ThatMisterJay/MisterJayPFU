@@ -130,7 +130,7 @@ picture = tfv_can_conscription_crisis
 			removal_cost = -1
 
 			modifier = {
-				enemy_partisan_effect = -0.3
+				resistance_damage_to_garrison = -0.3
 				local_factories = 0.3
 			}
 		}

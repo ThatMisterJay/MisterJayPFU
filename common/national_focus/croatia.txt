@@ -1,16 +1,16 @@
 focus_tree = {
 	id = croatia_focus
-	
+
     country = {
         factor = 0
-        
+
         modifier = {
             add = 10
             tag = CRO
         }
     }
+
 	
-	default = yes
 	reset_on_civilwar = no
 
 	############################
@@ -53,8 +53,8 @@ focus_tree = {
 			army_experience = 30
 
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = CRO_mountain_brigades
 		icon = GFX_goal_generic_special_forces
@@ -94,7 +94,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = CRO_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
@@ -258,8 +258,8 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = YUG_artillery_regiments
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = CRO_small_arms
 		icon = GFX_goal_generic_small_arms
@@ -378,7 +378,7 @@ focus_tree = {
 				category = cat_anti_tank
 			}
 		}
-	}	
+	}
 	focus = {
 		id = CRO_motorization_effort
 		icon = GFX_goal_generic_army_motorized
@@ -398,7 +398,7 @@ focus_tree = {
 				technology = motorised_infantry
 			}
 		}
-	}	
+	}
 	focus = {
 		id = CRO_armored_cavalry
 		icon = GFX_goal_generic_build_tank
@@ -526,14 +526,14 @@ focus_tree = {
 				category = armor
 			}
 		}
-	}	
-	
+	}
+
 	focus = {
 		id = CRO_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = CRO_anti_tank_defenses }
 		prerequisite = { focus = CRO_artillery_regiments }
-		relative_position_id = CRO_officer_training		
+		relative_position_id = CRO_officer_training
 		x = -2
 		y = 4
 		cost = 10
@@ -582,9 +582,9 @@ focus_tree = {
 			modifier = {
 				factor = 0
 				date < 1939.1.1
-				OR = { 
+				OR = {
 					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
+					tag = GXC
 					tag = YUN
 					tag = SHX
 					tag = XSM
@@ -595,7 +595,7 @@ focus_tree = {
 
 					# we also dont want tiny nations to go crazy with slots right away
 					num_of_controlled_states < 2
-				}				
+				}
 			}
 		}
 	}
@@ -611,7 +611,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -624,7 +624,7 @@ focus_tree = {
 						building = industrial_complex
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -635,7 +635,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 				instant_build = yes
-			}			
+			}
 		}
 
 		completion_reward = {
@@ -684,7 +684,7 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2			
+			factor = 2
 		}
 
 		bypass = {
@@ -778,7 +778,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -849,7 +849,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -898,7 +898,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1001,7 +1001,7 @@ focus_tree = {
 						building = arms_factory
 						size < 1
 						include_locked = yes
-					}					
+					}
 				}
 			}
 		}
@@ -1013,7 +1013,7 @@ focus_tree = {
 				level = 1
 				instant_build = yes
 			}
-		}		
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1062,7 +1062,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1254,7 +1254,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-	
+
 
 	focus = {
 		id = CRO_secret_weapons
@@ -1373,7 +1373,7 @@ focus_tree = {
 			add_ideas = CRO_tomislav_II
 		}
 	}
-	
+
 	focus = {
 		id = CRO_militarism
 		icon = GFX_goal_CRO_ustasha_army
@@ -1444,12 +1444,12 @@ focus_tree = {
 				}
 			}
 		}
-	}	
+	}
 
 	focus = {
 		id = CRO_catholic_dominance_focus
 		icon = GFX_goal_christianity_and_state
-		prerequisite = { focus = CRO_nationalism_focus}		
+		prerequisite = { focus = CRO_nationalism_focus}
 		available = {
 			NOT = {
 				has_government = communism
@@ -1470,7 +1470,7 @@ focus_tree = {
 				any_neighbor_country = {
 					is_major = yes
 					has_government = fascism
-					
+
 				}
 				NOT = {
 					any_neighbor_country = {
@@ -1489,7 +1489,7 @@ focus_tree = {
 	focus = {
 		id = CRO_integrate_muslim_croats_focus
 		icon = GFX_goal_CRO_muslim_alliance
-		prerequisite = { focus = CRO_catholic_dominance_focus }	
+		prerequisite = { focus = CRO_catholic_dominance_focus }
 		relative_position_id = CRO_political_effort
 		x = 1
 		y = 3
@@ -1504,18 +1504,18 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CRO_croat_muslims_happy
-			if = { 
+			if = {
 				limit = {
 					controls_state = 104
-					}	
+					}
 					CRO = { add_state_core = 104}
-				}			
+				}
 		}
 	}
 	focus = {
 		id = CRO_integrate_orthodox_croats_focus
 		icon = GFX_goal_CRO_reconcile_croatian_orthodox
-		prerequisite = { focus = CRO_integrate_muslim_croats_focus }	
+		prerequisite = { focus = CRO_integrate_muslim_croats_focus }
 		relative_position_id = CRO_political_effort
 		x = 1
 		y = 4
@@ -1531,8 +1531,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 		}
-	}	
-	
+	}
+
 
 	focus = {
 		id = CRO_paramilitarism
@@ -1567,8 +1567,8 @@ focus_tree = {
 			add_ideas = ideological_fanaticism_focus
 
 		}
-	}	
-	
-	
+	}
+
+
 
 }

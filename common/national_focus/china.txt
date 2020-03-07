@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	shared_focus = CHI_invite_foreign_investors
+
 
 
 	focus = {
@@ -81,7 +81,7 @@ focus_tree = {
 			}
         }
 	}
-	
+
 	focus = {
 		id = CHI_peking_university
 		icon = GFX_focus_research

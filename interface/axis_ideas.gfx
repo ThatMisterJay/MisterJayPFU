@@ -54,9 +54,18 @@ SpriteType = {
 							name = "GFX_idea_GER_exploit"
 							texturefile = "gfx/interface/ideas/idea_GER_exploit.dds"
 						}
-						SpriteType = {
+			SpriteType = {
 								name = "GFX_idea_ITA_navy"
-								texturefile = "gfx/interface/ideas/idea_ITA_navy.dds"
+					texturefile = "gfx/interface/ideas/idea_ITA_navy.dds"
+			}
+			SpriteType = {
+							name = "GFX_idea_SPA_pro_allies_guy"
+						texturefile = "gfx/interface/ideas/idea_SPA_pro_allies_guy.dds"
+					}
+					SpriteType = {
+									name = "GFX_idea_SPA_pro_axis_guy"
+								texturefile = "gfx/interface/ideas/idea_SPA_pro_axis_guy.dds"
 							}
+
 
 }

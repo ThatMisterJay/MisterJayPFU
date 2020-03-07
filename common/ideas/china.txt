@@ -258,7 +258,7 @@ ideas = {
 			}
 
 			modifier = {
-				partisan_effect = 3.00
+				resistance_damage_to_garrison = 3.00
 				out_of_supply_factor = -0.80
 				attrition = -0.70
 				supply_consumption_factor = -0.60

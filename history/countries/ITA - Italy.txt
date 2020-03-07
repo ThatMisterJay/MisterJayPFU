@@ -19,7 +19,7 @@ add_ideas = {
 
 # Starting tech
 set_technology = {
-	basic_encryption = 1
+	armored_car1 = 1
 	tech_logistics_company = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -145,7 +145,7 @@ set_technology = {
 		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
-		basic_encryption = 1
+		armored_car1 = 1
 		basic_decryption = 1
 
 		#industry

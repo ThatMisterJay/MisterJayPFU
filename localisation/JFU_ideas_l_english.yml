@@ -125,6 +125,8 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     sir_inspector_general:0 "Air Inspector General"
     reichfuhrer_ss:0 "Reichsführer-SS"
     reichbanker:0 "President of the Reichsbank"
+    pro_allies_fm:0 "Pro Allies Foreign Minister"
+    pro_axis_fm:0 "Pro Axis Foreign Minister"
 
     SS_help:0 "Seized Wealth"
     ITA_purged_rich:0 "Redistribution of Wealth"
@@ -152,3 +154,6 @@ GER_NLF_2:0 "Wartime Labour Front"
 GER_herman:0 "Hermann Göring"
 GER_volk:0 "Volkssturm"
 allies_exploited:0 "Exploited Nations"
+
+SPA_pro_allies_guy:0 "Juan Luis Beigbeder y Atienza"
+SPA_pro_axis_guy:0 "Ramón Serrano Suñer"

@@ -203,3 +203,6 @@ NDefines.NMilitary.MAX_NUM_TRAITS = 10
 NDefines.NMilitary.CORPS_COMMANDER_ASSIGNABLE_TRAIT_NUM = 7
 NDefines.NMilitary.FIELD_MARSHAL_ASSIGNABLE_TRAIT_NUM = 7
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00						-- Chances one ship get damage each hour while on training
+
+
+NDefines.NOperatives.INTEL_NETWORK_MAX_INTELLIGENCE_AGENCY_DEFENSE_DETECTION_SCALE_FACTOR = 1
