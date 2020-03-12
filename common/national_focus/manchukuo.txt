@@ -950,5 +950,5 @@ focus_tree = {
 			}
 		}
 	}
-	shared_focus = CHI_invite_foreign_investors
+
 }

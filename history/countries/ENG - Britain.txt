@@ -1,4 +1,4 @@
-capital = 126
+﻿capital = 126
 
 oob = "ENG_1936"
 
@@ -9,7 +9,7 @@ set_war_support = 0.1
 
 # Starting tech
 set_technology = {
-	basic_encryption = 1
+	armored_car1 = 1
 	tech_logistics_company = 1
 	tech_signal_company = 1
 	infantry_weapons = 1
@@ -295,7 +295,6 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William Slim"
-        id = 2000
 	picture = "Portrait_Britain_William_Slim.dds"
 	traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
 	skill = 5

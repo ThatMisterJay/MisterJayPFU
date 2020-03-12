@@ -113,16 +113,8 @@ country_event = {
 		}
 		set_country_flag = CHI_flying_tigers
 		add_war_support = 0.05
-		add_ai_strategy = {
-			type = send_volunteers_desire
-			id = "ROOT"
-			value = 200
-		}
-		add_ai_strategy = {
-			type = support
-			id = "ROOT"
-			value = 200
-		}
+
+	
 		hidden_effect = {
 			news_event = { id = wtt_news.34 days = 1 }
 		}
@@ -161,12 +153,12 @@ country_event = {
 		air_experience = 25
 		add_ai_strategy = {
 			type = send_volunteers_desire
-			id = "ROOT"
+
 			value = 200
 		}
 		add_ai_strategy = {
 			type = support
-			id = "ROOT"
+
 			value = 200
 		}
 		unlock_decision_tooltip = CHI_soviet_volunteer_group
@@ -330,14 +322,14 @@ country_event = {
 	desc = {
 		text = wtt_burma_road.2.desc
 		trigger = {
-			NOT = { FROM = { has_war_with = ROOT } }
+
 		}
 	}
 
 	desc = {
 		text = wtt_burma_road.2.desc_war_with_from
 		trigger = {
-			FROM = { has_war_with = ROOT }
+
 		}
 	}
 	picture = GFX_report_event_generic_sign_treaty2
@@ -416,14 +408,14 @@ country_event = {
 	desc = {
 		text = wtt_ledo_road.2.desc
 		trigger = {
-			NOT = { FROM = { has_war_with = ROOT } }
+
 		}
 	}
 
 	desc = {
 		text = wtt_ledo_road.2.desc_war_with_from
 		trigger = {
-			FROM = { has_war_with = ROOT }
+
 		}
 	}
 	picture = GFX_report_event_indian_soldiers #TODO_WTT_CD event pic
@@ -502,14 +494,14 @@ country_event = {
 	desc = {
 		text = wtt_hanoi_route.2.desc
 		trigger = {
-			NOT = { FROM = { has_war_with = ROOT } }
+
 		}
 	}
 
 	desc = {
 		text = wtt_hanoi_route.2.desc_war_with_from
 		trigger = {
-			FROM = { has_war_with = ROOT }
+
 		}
 	}
 	picture = GFX_report_event_merchant_ship_01
@@ -554,14 +546,14 @@ country_event = {
 	desc = {
 		text = wtt_the_hump.2.desc
 		trigger = {
-			NOT = { FROM = { has_war_with = ROOT } }
+			NOT = { }
 		}
 	}
 
 	desc = {
 		text = wtt_the_hump.2.desc_war_with_from
 		trigger = {
-			FROM = { has_war_with = ROOT }
+
 		}
 	}
 	picture = GFX_report_event_generic_read_write

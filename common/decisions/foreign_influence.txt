@@ -9,7 +9,7 @@ foreign_influence = {
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -52,13 +52,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	socialist_education = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -118,13 +118,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	paramilitary_training = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -185,13 +185,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	military_parade = {
 
 		icon = eng_propaganda_campaigns
 
 		days_remove = 120
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -234,13 +234,13 @@ foreign_influence = {
 			factor = 0
 		}
 	}
-	
+
 	police_action = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -285,18 +285,18 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	fraternal_republic = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -356,18 +356,18 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	ultranationalist_coup = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -427,18 +427,18 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	military_dictatorship = {
 
 		icon = generic_prepare_civil_war
-		
+
 		cost = 50
-		
+
 		available = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -483,9 +483,40 @@ foreign_influence = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
+
+	instantiate_collaboration = {
+		icon = generic_prepare_civil_war
+
+		cost = 0
+
+		available = {
+			has_core_occupation_modifier = {
+				occupied_country_tag = FROM
+				modifier = compliance_80
+			}
+		}
+        visible = {
+			has_rule = can_create_collaboration_government
+			is_available_to_collaboration_government = yes
+			has_core_occupation_modifier = {
+				occupied_country_tag = FROM
+				modifier = compliance_60
+			}
+        }
+
+		complete_effect = {
+			set_temp_variable = { country_to_initiate = FROM }
+			instantiate_collaboration_government = yes
+		}
+
+		target_non_existing = yes
+		target_array = occupied_countries
+	}
+
+
 }

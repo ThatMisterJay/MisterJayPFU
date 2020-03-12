@@ -383,7 +383,7 @@ original_tag = ITA
 }
 
 modifier = {
-enemy_partisan_effect = -0.5
+resistance_damage_to_garrison = -0.5
 }
 
 picture = "chi_army_corruption"

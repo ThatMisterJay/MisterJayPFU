@@ -126,7 +126,7 @@ focus_tree = {
 
 	focus = {
 		id = HUN_renounce_the_treaty_of_trianon
-		icon = GFX_hun_trianon
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = HUN_strengthen_fascists }
 		x = 0
 		y = 1
@@ -523,7 +523,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_industrial_revitalization
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = industry
 			}
@@ -705,7 +705,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = HUN_industrial_revitalization
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -778,7 +778,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_announce_the_gyor_program
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 				category = industry
 			}
@@ -1273,11 +1273,11 @@ focus_tree = {
 		id = HUN_war_games
 		icon = GFX_goal_poland_goal
 		prerequisite = { focus = HUN_secret_rearmament }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = HUN_secret_rearmament
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -1288,14 +1288,42 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = HUN_theoretical_air_efforts
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = HUN_secret_rearmament }
+		x = 1
+		y = 1
+		relative_position_id = HUN_secret_rearmament
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_theoretical_air_efforts
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 
 	focus = {
 		id = HUN_bled_agreement
 		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = HUN_war_games }
+		prerequisite = { focus = HUN_war_games focus = HUN_theoretical_air_efforts }
 		x = 0
 		y = 2
 		relative_position_id = HUN_secret_rearmament
@@ -1335,6 +1363,224 @@ focus_tree = {
 		}
 	}
 
+	############################
+	######## AIR STUFFS ########
+	############################
+
+	focus = {
+		id = HUN_establish_the_air_force
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = HUN_bled_agreement }
+		x = -3
+		y = 3
+		relative_position_id = HUN_secret_rearmament
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = HUN_establish_the_air_force
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_indigenous_designs
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = HUN_establish_the_air_force }
+						available = {
+			date > 1938.1.1
+		}
+		mutually_exclusive = { focus = HUN_joint_air_development }
+		x = -1
+		y = 1
+		relative_position_id = HUN_establish_the_air_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = HUN_indigenous_designs
+		}
+	}
+
+	focus = {
+		id = HUN_heavy_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = HUN_indigenous_designs }
+		mutually_exclusive = { focus = HUN_light_fighter_effort }
+		x = -1
+		y = 1
+		relative_position_id = HUN_indigenous_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_heavy_fighter_effort
+				bonus = 1
+				uses = 1
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_light_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = HUN_indigenous_designs }
+		mutually_exclusive = { focus = HUN_heavy_fighter_effort }
+		x = 1
+		y = 1
+		relative_position_id = HUN_indigenous_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_light_fighter_effort
+				bonus = 1
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_cas_focus
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = HUN_light_fighter_effort focus = HUN_heavy_fighter_effort }
+		mutually_exclusive = { focus = HUN_tac_focus }
+		x = 1
+		y = 2
+		relative_position_id = HUN_indigenous_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_cas_focus
+				bonus = 1
+				uses = 1
+				technology = CAS1
+				technology = CAS2
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_tac_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = HUN_heavy_fighter_effort focus = HUN_light_fighter_effort }
+		mutually_exclusive = { focus = HUN_cas_focus }
+		x = -1
+		y = 2
+		relative_position_id = HUN_indigenous_designs
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_tac_focus
+				bonus = 1
+				uses = 1
+				technology = tactical_bomber1
+				technology = tactical_bomber2
+				technology = tactical_bomber3
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = HUN_joint_air_development
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = HUN_establish_the_air_force }
+		mutually_exclusive = { focus = HUN_indigenous_designs }
+		x = 2
+		y = 1
+		relative_position_id = HUN_establish_the_air_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+			is_in_faction = yes
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
 
 	############################
 	####### ARMY STUFFS ########
@@ -1342,9 +1588,9 @@ focus_tree = {
 
 	focus = {
 		id = HUN_army_maneuvers
-		icon = GFX_hun_army
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = HUN_bled_agreement }
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = HUN_bled_agreement
 
@@ -1377,10 +1623,10 @@ focus_tree = {
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_special_forces }
-		x = 19
-		y = 4
-
+		mutually_exclusive = { focus = HUN_home_defense }
+		x = -2
+		y = 1
+		relative_position_id = HUN_army_maneuvers
 
 		cost = 10
 
@@ -1393,29 +1639,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-				custom_effect_tooltip = available_military_high_command
-				show_ideas_tooltip = HUN_henrik_werth
-					custom_effect_tooltip = HUN_generals_tt
-					hidden_effect = {
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = { cavalry_leader infantry_leader trickster career_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-                         }
+			add_tech_bonus = {
+				name = HUN_mobile_focus
+				bonus = 1
+				uses = 1
+				category = cat_mobile_warfare
+			}
 		}
 	}
 
 	focus = {
 		id = HUN_the_botond
-		icon = GFX_hun_botond
+		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = HUN_mobile_focus }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
@@ -1433,7 +1670,7 @@ create_corps_commander = {
 			add_tech_bonus = {
 				name = HUN_the_botond
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = motorized_equipment
 			}
 		}
@@ -1442,9 +1679,9 @@ create_corps_commander = {
 	focus = {
 		id = HUN_motorized_logistics
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = HUN_mobile_focus }
-		x = -2
-		y = 1
+		prerequisite = { focus = HUN_the_botond }
+		x = 0
+		y = 3
 		relative_position_id = HUN_mobile_focus
 
 		cost = 10
@@ -1469,12 +1706,94 @@ create_corps_commander = {
 	}
 
 	focus = {
-		id = HUN_mobile_corps_doctrine
-		icon = GFX_goal_generic_build_tank
+		id = HUN_develop_tanks
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = HUN_mobile_focus }
+		mutually_exclusive = { focus = HUN_assault_gun_focus }
+		x = 0
+		y = 1
+		relative_position_id = HUN_mobile_focus
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_develop_tanks
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_assault_gun_focus
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = HUN_mobile_focus focus = HUN_home_defense }
+		mutually_exclusive = { focus = HUN_develop_tanks }
 		x = 2
 		y = 1
 		relative_position_id = HUN_mobile_focus
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = HUN_assault_gun_focus
+		}
+	}
+
+
+	focus = {
+		id = HUN_armored_warfare
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HUN_the_botond }
+		x = 0
+		y = 1
+		relative_position_id = HUN_the_botond
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_armored_warfare
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = HUN_mobile_corps_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = HUN_armored_warfare }
+		x = 0
+		y = 2
+		relative_position_id = HUN_the_botond
 
 		cost = 10
 
@@ -1490,28 +1809,29 @@ create_corps_commander = {
 			add_tech_bonus = {
 				name = HUN_mobile_corps_doctrine
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = cat_mobile_warfare
 			}
 		}
 	}
 
-
-###special forces####
+	############################
+	##### HOME DEF BRANCH ######
+	############################
 
 	focus = {
-		id = HUN_special_forces
-		icon = GFX_goal_generic_special_forces
+		id = HUN_home_defense
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
 		mutually_exclusive = { focus = HUN_mobile_focus }
-		x = 13
-		y = 4
-
+		x = 2
+		y = 1
+		relative_position_id = HUN_army_maneuvers
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 80
 		}
 
 		cancel_if_invalid = yes
@@ -1519,344 +1839,22 @@ create_corps_commander = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = HUN_gusztav_jany
 			add_tech_bonus = {
-				name = HUN_special_forces
+				name = HUN_home_defense
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = cat_grand_battle_plan
 			}
 		}
 	}
 
 	focus = {
-		id = HUN_desert_infantry
-		icon = GFX_hun_des_inf
-		prerequisite = { focus = HUN_special_forces }
-		mutually_exclusive = { focus = HUN_jaegers }
-		mutually_exclusive = { focus = HUN_shock_troops }
-		x = 15
-		y = 5
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-                        add_equipment_to_stockpile = { 
-                        type = convoy
-                        amount = 300
-                        }
-			add_tech_bonus = {
-				name = HUN_desert_infantry
-				bonus = 1
-				uses = 1
-				category = cat_grand_battle_plan
-			}
-			add_tech_bonus = {
-				name = HUN_desert_infantry
-				bonus = 1
-				uses = 2
-                                technology = desertinfantry_at
-                                technology = desertinfantry_at2
-                                technology = desertinfantry_at3
-			}
-					custom_effect_tooltip = HUN_generals_tt
-					hidden_effect = {
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = { infantry_leader desert_fox trickster career_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-                         }
-		}
-	}
-
-	focus = {
-		id = HUN_jaegers
-		icon = GFX_hun_jaegers
-		prerequisite = { focus = HUN_special_forces }
-		mutually_exclusive = { focus = HUN_shock_troops }
-		mutually_exclusive = { focus = HUN_desert_infantry }
-		x = 13
-		y = 5
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_jaegers
-				bonus = 1
-				uses = 1
-				category = cat_grand_battle_plan
-			}
-			add_tech_bonus = {
-				name = HUN_jaegers
-				bonus = 1
-				uses = 2
-                                technology = jaegers
-                                technology = jaegers2
-                                technology = jaegers3
-			}
-					custom_effect_tooltip = HUN_generals_tt
-					hidden_effect = {
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = { trickster career_officer infantry_leader ranger }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-                         }
-		}
-	}
-
-	focus = {
-		id = HUN_shock_troops
-		icon = GFX_hun_shock_troops
-		prerequisite = { focus = HUN_special_forces }
-		mutually_exclusive = { focus = HUN_jaegers }
-		mutually_exclusive = { focus = HUN_desert_infantry }
-		x = 11
-		y = 5
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_shock_troops
-				bonus = 1
-				uses = 1
-				category = cat_grand_battle_plan
-			}
-			add_tech_bonus = {
-				name = HUN_shock_troops
-				bonus = 1
-				uses = 2
-                                technology = shocktroops
-                                technology = shocktroops2
-                                technology = shocktroops3
-			}
-					custom_effect_tooltip = HUN_generals_tt
-					hidden_effect = {
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = { trickster career_officer infantry_leader urban_assault_specialist }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-                         }
-
-		}
-	}
-
-	focus = {
-		id = HUN_artillery
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = HUN_desert_infantry focus = HUN_jaegers focus = HUN_shock_troops focus = HUN_the_botond }
-		mutually_exclusive = { focus = HUN_ger_art }
-		x = 17
-		y = 6
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = artillery
-				bonus = 1
-				uses = 1
-				technology = gw_artillery
-				technology = artillery2
-				technology = artillery3
-				technology = artillery4
-				technology = artillery5
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_ger_art
-		icon = GFX_flak
-		prerequisite = { focus = HUN_desert_infantry focus = HUN_jaegers focus = HUN_shock_troops focus = HUN_the_botond }
-		mutually_exclusive = { focus = HUN_artillery }
-		x = 15
-		y = 6
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = hun_art_tt
-			hidden_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_2
-			creator = "GER"
-		}
-		requested_factories = 15
-		progress = 0.3
-		efficiency = 80
-	                }
-                      }
-		}
-	}
-
-	focus = {
-		id = HUN_anti_tank
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = HUN_desert_infantry focus = HUN_jaegers focus = HUN_shock_troops focus = HUN_the_botond }
-		x = 19
-		y = 6
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_anti_tank
-				bonus = 1
-				uses = 2
-				technology = interwar_antitank
-				technology = antitank2
-				technology = antitank3
-				technology = antitank4
-				technology = antitank5
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_anti_air
-		icon = GFX_focus_hol_war_on_pacifism
-		prerequisite = { focus = HUN_desert_infantry focus = HUN_jaegers focus = HUN_shock_troops focus = HUN_the_botond }
-		x = 13
-		y = 6
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_anti_air
-				bonus = 1
-				uses = 1
-				technology = interwar_antiair
-				technology = antiair2
-				technology = antiair3
-				technology = antiair4
-				technology = antiair5
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_44M_Tas
-		icon = GFX_hun_44m_tas
-		prerequisite = { focus = HUN_mobile_corps_doctrine }
-		x = 21
-		y = 6
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-                add_tech_bonus = {
-                name = HUN_44M_Tas
-                bonus = 1
-                uses = 1
-                technology = improved_heavy_tank
-}
-		}
-	}
-
-	focus = {
-		id = HUN_infantry_equipment
+		id = HUN_danuvia_submachine_guns
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = HUN_artillery focus = HUN_ger_art }
-		prerequisite = { focus = HUN_anti_tank }
-		prerequisite = { focus = HUN_anti_air }
-		x = 15
-		y = 7
-
+		prerequisite = { focus = HUN_home_defense }
+		x = 0
+		y = 1
+		relative_position_id = HUN_home_defense
 
 		cost = 10
 
@@ -1866,109 +1864,154 @@ create_corps_commander = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = HUN_infantry_equipment
-				bonus = 1
-				uses = 2
-                                category = infantry_weapons
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_engineers
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = HUN_artillery focus = HUN_ger_art }
-		prerequisite = { focus = HUN_anti_tank }
-		prerequisite = { focus = HUN_anti_air }
-		x = 17
-		y = 7
-
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_engineers
+				name = HUN_danuvia_submachine_gunssub
 				bonus = 1
 				uses = 1
-                                technology = tech_engineers
-                                technology = tech_engineers2
-                                technology = tech_engineers3
-                                technology = tech_engineers4
+				category = infantry_weapons
 			}
 		}
 	}
 
 	focus = {
-		id = HUN_flamethrowers
-		icon = GFX_hun_flame
-		prerequisite = { focus = HUN_shock_troops }
-		x = 11
-		y = 6
-
+		id = HUN_artillery_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = HUN_danuvia_submachine_guns }
+		x = 0
+		y = 2
+		relative_position_id = HUN_home_defense
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 60
+			factor = 50
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = HUN_flamethrowers
-				bonus = 1
-				uses = 1
-                                technology = tech_flamethrower
-                                technology = tech_flamethrower2
-                                technology = tech_flamethrower3
-                                technology = tech_flamethrower4
-			}
-		}
-	}
-
-	focus = {
-		id = HUN_44M
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = HUN_engineers focus = HUN_infantry_equipment }
-		x = 16
-		y = 8
-		cost = 10
-
-		ai_will_do = {
-			factor = 60
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = HUN_44M
+				name = HUN_artillery_effort
 				bonus = 1
 				uses = 2
-                                technology = rocket_artillery
-                                technology = rocket_artillery2
-                                technology = rocket_artillery3
-                                technology = rocket_artillery4
+				category = artillery
 			}
 		}
 	}
+
+	focus = {
+		id = HUN_light_infantry_divisions_doctrine
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = HUN_danuvia_submachine_guns }
+		x = -2
+		y = 2
+		relative_position_id = HUN_home_defense
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = HUN_light_infantry_divisions_doctrine_tech_tt
+			custom_effect_tooltip = HUN_light_infantry_divisions_doctrine_unit_tt
+			hidden_effect = {
+				if = {
+					limit = { has_tech = tech_engineers }
+					division_template = {
+						name = "Light Division"
+						priority = 2
+
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							artillery = { x = 0 y = 1 }
+							engineer = { x = 0 y = 1 }
+						}
+					}
+					else = {
+						division_template = {
+							name = "Light Division"
+							priority = 2
+
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+
+			    	   		 	infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+							}
+							support = {
+								recon = { x = 0 y = 0 }
+								artillery = { x = 0 y = 1 }
+								engineer = { x = 0 y = 1 }
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 43 }
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					create_unit = {
+						division = "name = \"1. Light Division\" division_template = \"Light Division\" start_experience_factor = 1.0"
+						owner = HUN
+					}
+				}
+			}
+			hidden_effect = { set_technology = { HUN_light_infantry_tech = 1 } }
+		}
+	}
+
+	focus = {
+		id = HUN_form_parachute_battalions
+		icon = GFX_focus_generic_paratrooper
+		prerequisite = { focus = HUN_light_infantry_divisions_doctrine }
+		x = -2
+		y = 3
+		relative_position_id = HUN_home_defense
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_form_parachute_battalions
+				bonus = 1.5
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+
+	############################
+	##### Naval Branch    ######
+	############################
 
 }

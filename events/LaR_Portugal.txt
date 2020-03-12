@@ -1,0 +1,17 @@
+﻿###########################
+# Portugal Events
+###########################
+
+add_namespace = lar_portugal_iberian_summit
+add_namespace = lar_portugal_navy_mutiny
+add_namespace = lar_portugal_iberian_workers_united
+add_namespace = lar_portugal_naval_blockade
+add_namespace = lar_portugal_purchase_ships
+add_namespace = lar_portugal_promote_monarchist_cause
+add_namespace = lar_portugal_spanish_civil_war
+add_namespace = lar_portugal_royal_iberian_alliance
+add_namespace = lar_portugal_overseas_provinces
+
+
+######## IBERIAN SUMMIT ########
+# Iberian summit - country suggests joining axis

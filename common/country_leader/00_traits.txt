@@ -320,6 +320,257 @@ leader_traits = {
 		production_speed_buildings_factor = 0.01
 	}
 
+	### Spanish LAR traits ###
+
+	education_reformer = {
+		sprite = 13
+
+		research_speed_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	voice_of_restraint = {
+		random = no
+		sprite = 13
+
+		democratic_drift = 0.05
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gran_carabinero = { # Hundred Thousand Sons of Negrín!
+		random = no
+		sprite = 13
+
+		consumer_goods_factor = -0.02
+		stability_factor = 0.05
+		conscription = 0.005
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	la_pasionaria = {
+		random = no
+		sprite = 13
+
+		communism_drift = 0.05
+		war_support_factor = 0.1
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	social_revolutionary = {
+		random = no
+		sprite = 13
+
+		neutrality_drift = 0.05
+		political_power_factor = 0.1
+		war_support_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	traditionalist_theorist = {
+		random = no
+		sprite = 13
+
+		neutrality_drift = 0.05
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	lifelong_carlist = {
+		random = no
+		sprite = 13
+		neutrality_drift = 0.1
+		stability_factor = 0.1
+	}
+
+	falangist_industrialist = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.05
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+	}
+
+	falangist_syndicalist = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		consumer_goods_factor = -0.05
+	}
+
+	leftist_freemason = {
+		random = no
+		sprite = 13
+		opinion_gain_monthly_same_ideology_factor = 0.25
+		civilian_intel_factor = 0.1
+		army_intel_factor = 0.1
+		navy_intel_factor = 0.1
+		airforce_intel_factor = 0.1
+	}
+
+	loyal_falangist = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		political_power_factor = 0.05
+	}
+
+	falangist_figurehead = {
+		random = no
+		sprite = 13
+		fascism_drift = 0.1
+		political_power_factor = 0.1
+	}
+
+	###
+
+	council_of_theorists = {
+		sprite = 14
+		experience_gain_army = 0.02
+		experience_gain_air = 0.02
+		experience_gain_navy = 0.02
+
+		ai_will_do = {
+			factor = 500
+		}
+	}
+
+	figurehead_president = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = 0.05
+	}
+
+	great_survivor = {
+		random = no
+		stability_factor = 0.1
+		mobilization_speed = 0.15
+	}
+
+	the_director = {
+		random = no
+		planning_speed = -0.1
+		max_planning = 0.1
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+	}
+
+	sins_of_the_father = {
+		random = no
+		production_speed_arms_factory_factor = 0.1
+		political_power_gain = -0.1
+		high_command_cost_factor = -0.34
+		air_chief_cost_factor = -0.34
+		army_chief_cost_factor = -0.34
+		navy_chief_cost_factor = -0.34
+	}
+
+	empire_builder = {
+		random = no
+		war_support_factor = 0.05
+		justify_war_goal_time = -0.25
+	}
+
+	jefe = {
+		random = no
+		war_support_weekly = 0.005
+	}
+
+	caudillo_1 = {
+		random = no
+		resistance_damage_to_garrison = -0.15
+		high_command_cost_factor = -0.15
+	}
+
+	caudillo_2 = {
+		random = no
+		resistance_damage_to_garrison = -0.15
+		high_command_cost_factor = -0.15
+		max_command_power = 20
+		command_power_gain_mult = 0.25
+	}
+
+	the_lion_of_the_rif = {
+		random = no
+		war_support_factor = 0.1
+		army_org_factor = 0.05
+	}
+
+	the_sacred_king = {
+		random = no
+		stability_factor = 0.1
+	}
+
+	disgraced_monarch = {
+		random = no
+		consumer_goods_factor = -0.05
+		stability_factor = -0.1
+	}
+
+	the_legitimist = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+	}
+
+	divided_interests = {
+		random = no
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = -0.05
+		research_speed_factor = -0.1
+	}
+
+	our_right_to_survive = {
+		random = no
+		war_support_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+
+	anarchist_zeal = {
+		random = no
+		neutrality_drift = 0.05
+		war_support_factor = 0.1
+		minimum_training_level = -0.1
+	}
+
+	militant_socialist = {
+		random = no
+		war_support_factor = 0.05
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+	constitutional_monarch_minor = { #Dom Duarte Nuno, King of Portugal
+		random = no
+		stability_weekly = 0.005
+		political_power_gain = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 #ai_focus_defense_factor
 #ai_focus_aggressive_factor
@@ -329,6 +580,21 @@ leader_traits = {
 #ai_focus_naval_factor
 #ai_focus_naval_air_factor
 #ai_focus_aviation_factor
+
+#ESPIONAGE IDEAS#
+
+head_of_intelligence = {
+	random = no
+	sprite = 15
+	operative_slot = 1
+	agency_upgrade_time = -0.15
+}
+
+mastermind_code_cracker = {
+	random = no
+	sprite = 15
+	decryption_power = 15
+}
 
 	dislikes_germany = {
 		random = no
@@ -496,7 +762,7 @@ leader_traits = {
 
 	revolutionary_general = { #Francisco José Mugica
 		random = no
-		partisan_effect = 0.25
+		resistance_damage_to_garrison = 0.25
 		mobilization_laws_cost_factor = -0.25
 		economy_cost_factor = -0.25
 		theorist_cost_factor = -0.25
@@ -799,7 +1065,7 @@ leader_traits = {
 	little_churchill = {
 		random = no
 		war_support_factor = 0.05
-		partisan_effect = 0.15
+		resistance_damage_to_garrison = 0.15
 	}
 
 	wilhelmina = {
@@ -826,7 +1092,7 @@ leader_traits = {
 	queen_of_the_people = {
 		random = no
 		war_support_factor = 0.1
-		partisan_effect = 0.25
+		resistance_damage_to_garrison = 0.25
 	}
 
 	leider = {
@@ -980,7 +1246,7 @@ leader_traits = {
 
 	prince_of_terror = {
 		sprite = 13
-		enemy_partisan_effect = -0.05
+		resistance_damage_to_garrison = -0.05
 		non_core_manpower = 0.10
 
 		ai_will_do = {
@@ -1163,7 +1429,7 @@ leader_traits = {
 
 	baron_of_terror = {
 		sprite = 13
-		enemy_partisan_effect = -0.15
+		resistance_damage_to_garrison = -0.15
 		foreign_subversive_activites = -0.15
 		non_core_manpower = 0.01
 
@@ -1321,7 +1587,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		enemy_partisan_effect = -0.25
+		resistance_damage_to_garrison = -0.25
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02
 
@@ -1407,7 +1673,7 @@ leader_traits = {
 		sprite = 10
 
 		consumer_goods_factor = -0.1
-		partisan_effect = 0.1
+		resistance_damage_to_garrison = 0.1
 
 		ai_will_do = {
 			factor = 1

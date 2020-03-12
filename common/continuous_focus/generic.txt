@@ -96,7 +96,7 @@ continuous_focus_palette = {
 		icon = GFX_goal_continuous_suppression
 
 		modifier = {
-			resistance_tick_auto = -2
+			resistance_damage_to_garrison = -2
 		}
 
 		ai_will_do = {

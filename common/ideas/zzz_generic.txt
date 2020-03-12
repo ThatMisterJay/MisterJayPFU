@@ -475,7 +475,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
-				enemy_partisan_effect = -0.1
+				resistance_damage_to_garrison = -0.1
 			}
 		}
 
@@ -950,7 +950,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.2
 				training_time_factor = 0.2
-				army_attack_factor = -0.25
+				army_attack_factor = -0.15
 				experience_gain_army = -0.1
 				army_org_factor = -0.1
 			}
@@ -972,7 +972,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.35
 				training_time_factor = 0.35
-				army_attack_factor = -0.5
+				army_attack_factor = -0.3
 				experience_gain_army = -0.2
 				army_org_factor = -0.20
 			}
@@ -994,7 +994,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = -0.5
 				training_time_factor = 0.5
-				army_attack_factor = -0.75
+				army_attack_factor = -0.45
 				experience_gain_army = -0.3
 				army_org_factor = -0.5
 			}
@@ -1035,8 +1035,8 @@ ideas = {
 			picture = chi_war_of_resistance3
 
 			modifier = {
-				resistance_tick_in_states_controlled_by_enemy = 0.01
-				partisan_effect = 0.25
+			
+				resistance_damage_to_garrison = 0.25
 			}
 		}
 		MTG_naval_treaty_adherent = {

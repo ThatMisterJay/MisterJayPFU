@@ -1,4 +1,4 @@
-capital = 613 # Nanjing
+﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
 set_stability = 0.2
@@ -105,7 +105,7 @@ set_convoys = 80
 		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
-		basic_encryption = 1
+		armored_car1 = 1
 		basic_decryption = 1
 
 		#industry
@@ -247,7 +247,6 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Sun Li Jen"
-        id = 1999
 	gfx = "GFX_portrait_chi_sun_li_jen"
 	traits = { brilliant_strategist }
 	skill = 4

@@ -8,7 +8,7 @@ set_stability = 0.6
 set_war_support = 0.7
 
 set_technology = {
-  basic_encryption = 1
+  armored_car1 = 1
     transport = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1

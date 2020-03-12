@@ -36,3 +36,15 @@ FRA_free_france_indian_ocean = {
 		original_tag = FRA
 	}
 }
+
+FRA_weapons_purchases_category = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_country_flag = FRA_arms_purchases_permitted
+		NOT = {
+			has_war_with = USA
+		}
+	}
+}

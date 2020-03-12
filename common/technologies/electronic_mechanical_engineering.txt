@@ -464,142 +464,249 @@ technologies = {
 
 	basic_encryption = {
 
-		# encryption 1
-		encryption = 1
+	# encryption 1
+	encryption = 1
 
-		research_cost = 1
-		start_year = 1938
+	research_cost = 1
+	start_year = 1938
+	allow_branch = {
+		NOT = { has_dlc = "La Resistance" }
+	}
+	folder = {
+		name = electronics_folder
+		position = { x = 0 y = 6 }
+	}
 
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 6 }
+	ai_will_do = {
+		factor = 1.75
+		modifier = {
+			has_war = yes
+			factor = 3
 		}
-
-		ai_will_do = {
-			factor = 1
+		modifier = {
+			num_of_military_factories < 50
+			factor = 1.5 # not a major
 		}
+		modifier = {
+			factor = 3
 
-		categories = {
-			electronics
-			encryption_tech
+			tag = GER
+		}
+		modifier = {
+			factor = 3
+
+			tag = SOV
 		}
 	}
 
-	improved_encryption = {
+	categories = {
+		electronics
+		encryption_tech
+	}
+}
 
-		# encryption 2
-		encryption = 1
+improved_encryption = {
 
-		research_cost = 1
-		start_year = 1940
+	# encryption 2
+	encryption = 1
+	allow_branch = {
+		NOT = { has_dlc = "La Resistance" }
+	}
+	research_cost = 1
+	start_year = 1940
 
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 10 }
+	folder = {
+		name = electronics_folder
+		position = { x = 0 y = 10 }
+	}
+
+	ai_will_do = {
+		factor = 1.75
+		modifier = {
+			has_war = yes
+			factor = 3
 		}
-
-		ai_will_do = {
-			factor = 1
+		modifier = {
+			num_of_military_factories < 50
+			factor = 1.5 # not a major
 		}
+		modifier = {
+			factor = 3
 
-		categories = {
-			electronics
-			encryption_tech
+			tag = GER
+		}
+		modifier = {
+			factor = 3
+
+			tag = SOV
 		}
 	}
 
-	advanced_encryption = {
+	categories = {
+		electronics
+		encryption_tech
+	}
+}
 
-		# encryption 3
-		encryption = 1
+advanced_encryption = {
 
-		research_cost = 1
-		start_year = 1942
+	# encryption 3
+	encryption = 1
+	allow_branch = {
+		NOT = { has_dlc = "La Resistance" }
+	}
+	research_cost = 1
+	start_year = 1942
 
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 14 }
+	folder = {
+		name = electronics_folder
+		position = { x = 0 y = 14 }
+	}
+
+	ai_will_do = {
+		factor = 1.75
+		modifier = {
+			has_war = yes
+			factor = 3
 		}
-
-		ai_will_do = {
-			factor = 1
+		modifier = {
+			num_of_military_factories < 50
+			factor = 1.5 # not a major
 		}
+		modifier = {
+			factor = 3
 
-		categories = {
-			electronics
-			encryption_tech
+			tag = GER
+		}
+		modifier = {
+			factor = 3
+
+			tag = SOV
 		}
 	}
 
-	basic_decryption = {
+	categories = {
+		electronics
+		encryption_tech
+	}
+}
 
-		# decryption 1
-		decryption = 1
+basic_decryption = {
 
-		research_cost = 1.5
-		start_year = 1938
+	# decryption 1
+	decryption = 1
+	allow_branch = {
+		NOT = { has_dlc = "La Resistance" }
+	}
+	research_cost = 1.5
+	start_year = 1938
 
-		folder = {
-			name = electronics_folder
-			position = { x = 4 y = 6 }
+	folder = {
+		name = electronics_folder
+		position = { x = 4 y = 6 }
+	}
+
+	ai_will_do = {
+		factor = 1.5
+		modifier = {
+			num_of_military_factories < 50
+			factor = 1.5 # not a major
 		}
+		modifier = {
+			factor = 3
 
-		ai_will_do = {
-			factor = 1
+			tag = GER
 		}
+		modifier = {
+			factor = 3
 
-		categories = {
-			electronics
-			decryption_tech
+			tag = SOV
 		}
 	}
 
-	improved_decryption = {
+	categories = {
+		electronics
+		decryption_tech
+	}
+}
 
-		# decryption 2
-		decryption = 1
+improved_decryption = {
 
-		research_cost = 1.5
-		start_year = 1940
+	# decryption 2
+	decryption = 1
+	allow_branch = {
+		NOT = { has_dlc = "La Resistance" }
+	}
+	research_cost = 1.5
+	start_year = 1940
 
-		folder = {
-			name = electronics_folder
-			position = { x = 4 y = 10 }
+	folder = {
+		name = electronics_folder
+		position = { x = 4 y = 10 }
+	}
+
+	ai_will_do = {
+		factor = 1.5
+		modifier = {
+			num_of_military_factories < 50
+			factor = 1.5 # not a major
 		}
+		modifier = {
+			factor = 3
 
-		ai_will_do = {
-			factor = 1
+			tag = GER
 		}
+		modifier = {
+			factor = 3
 
-		categories = {
-			electronics
-			decryption_tech
+			tag = SOV
 		}
 	}
 
-	advanced_decryption = {
+	categories = {
+		electronics
+		decryption_tech
+	}
+}
 
-		# decryption 3
-		decryption = 1
+advanced_decryption = {
 
-		research_cost = 1.5
-		start_year = 1942
+	# decryption 3
+	decryption = 1
+	allow_branch = {
+		NOT = { has_dlc = "La Resistance" }
+	}
+	research_cost = 1.5
+	start_year = 1942
 
-		folder = {
-			name = electronics_folder
-			position = { x = 4 y = 14 }
+	folder = {
+		name = electronics_folder
+		position = { x = 4 y = 14 }
+	}
+
+	ai_will_do = {
+		factor = 1.5
+		modifier = {
+			num_of_military_factories < 50
+			factor = 1.5 # not a major
 		}
+		modifier = {
+			factor = 3
 
-		ai_will_do = {
-			factor = 1
+			tag = GER
 		}
+		modifier = {
+			factor = 3
 
-		categories = {
-			electronics
-			decryption_tech
+			tag = SOV
 		}
 	}
 
+	categories = {
+		electronics
+		decryption_tech
+	}
+}
 	basic_fire_control_system = {
 
 		allow_branch = {
