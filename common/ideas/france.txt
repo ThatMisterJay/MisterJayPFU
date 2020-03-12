@@ -328,7 +328,7 @@ ideas = {
 			picture = generic_wall_line
 
 			modifier = {
-				max_planning = 0.25
+				max_planning = 0.16
 				planning_speed = -0.25
 			}
 		}
@@ -598,6 +598,24 @@ ideas = {
 
 	# POLITICAL
 	political_advisor = {
+
+
+		FRA_maurice_gauche = {
+
+		picture = generic_political_advisor_europe_3
+
+		available = {
+			has_intelligence_agency = yes
+		}
+
+		allowed = {
+			original_tag = FRA
+			has_dlc = "La Resistance"
+		}
+
+		traits = { head_of_intelligence }
+
+	}
 
 		FRA_gaston_henry_haye = {
 

@@ -6,7 +6,8 @@ state=
 
 	state_category = enclave
 	history={
-		 
+		 add_core_of = VEN
+		 owner = ENG
 	}
 	provinces= { 2077 }
 }

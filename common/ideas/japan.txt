@@ -113,6 +113,17 @@ ideas = {
 			}
 		}
 
+
+		JAP_china_war_support = {
+
+			picture = jap_ichi_go
+
+			modifier = {
+				experience_gain_army = 0.10
+				experience_gain_air = 0.05
+			}
+		}
+
 		JAP_police = {
 
 picture = tfv_can_conscription_crisis
@@ -130,8 +141,9 @@ picture = tfv_can_conscription_crisis
 			removal_cost = -1
 
 			modifier = {
-				resistance_damage_to_garrison = -0.3
-				local_factories = 0.3
+				operative_slot = 3
+				resistance_damage_to_garrison = -0.1
+				local_factories = 0.1
 			}
 		}
 
@@ -1192,7 +1204,7 @@ picture = tfv_can_conscription_crisis
 				army_morale_factor = -0.75
 				army_attack_factor = -0.5
 				army_defence_factor = -0.5
-				max_planning = -0.5
+				max_planning = -0.4
 				planning_speed = -0.5
 				research_speed_factor = -0.95
 				political_power_factor = -1
@@ -1286,6 +1298,22 @@ picture = tfv_can_conscription_crisis
 			traits = { prince_of_terror }
 		}
 
+		JAP_intelligence_advisor = {
+
+			visible = {
+				has_dlc = "La Resistance"
+			}
+
+			allowed = {
+				original_tag = JAP
+				has_intelligence_agency = yes
+			}
+
+			traits = { head_of_intelligence }
+
+		}
+
+
 		JAP_chiune_sugihara = {
 
 			picture = generic_political_advisor_asia_3
@@ -1318,7 +1346,7 @@ picture = tfv_can_conscription_crisis
 
 		kanin_kotohito = {
 
-
+	ledger = army
 			allowed = {
 				original_tag = JAP
 			}
@@ -1333,7 +1361,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		hajime_sugiyama = {
-
+		ledger = army
 
 			allowed = {
 				original_tag = JAP
@@ -1352,7 +1380,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		hideki_tojo = {
-
+ledger = army
 
 			allowed = {
 				original_tag = JAP
@@ -1372,7 +1400,7 @@ picture = tfv_can_conscription_crisis
 
 
 		fushimi_hiroyasu = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = JAP
@@ -1388,7 +1416,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		osami_nagano = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = JAP
@@ -1404,7 +1432,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		shigetaro_shimada = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = JAP
@@ -1423,7 +1451,7 @@ picture = tfv_can_conscription_crisis
 
 
 		torashiro_kawabe = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1442,7 +1470,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		korechika_anami = {
-
+ledger = air
 
 			allowed = {
 				original_tag = JAP
@@ -1458,7 +1486,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		kenji_doihara = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1480,7 +1508,7 @@ picture = tfv_can_conscription_crisis
 	high_command = {
 
 		hitoshi_imamura = {
-
+ledger = army
 
 			allowed = {
 				original_tag = JAP
@@ -1496,7 +1524,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		yasuji_okamura = {
-
+ledger = army
 
 			allowed = {
 				original_tag = JAP
@@ -1512,7 +1540,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		shunroku_hata = {
-
+ledger = army
 
 			allowed = {
 				original_tag = JAP
@@ -1528,7 +1556,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		mitsuo_fuchida = {
-
+ledger = air
 
 			allowed = {
 				original_tag = JAP
@@ -1544,7 +1572,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		nishizo_tsukahara = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1562,7 +1590,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		tateo_kato = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1580,7 +1608,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		soemu_toyoda = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = JAP
@@ -1596,7 +1624,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		matome_ugaki = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = JAP
@@ -1612,7 +1640,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		chuichi_nagumo = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = JAP
@@ -1628,7 +1656,7 @@ picture = tfv_can_conscription_crisis
 		}
 
 		JAP_tsutomu_sakuma = {
-
+ledger = navy
 			picture = generic_navy_asia_1
 
 			allowed = {
@@ -2012,7 +2040,7 @@ cost = 100
 	theorist = {
 
 		tomoyuki_yamashita = {
-
+ledger = army
 			allowed = {
 				original_tag = JAP
 			}
@@ -2027,7 +2055,7 @@ cost = 100
 		}
 
 		hisaichi_terauchi = {
-
+ledger = army
 			allowed = {
 				original_tag = JAP
 			}
@@ -2040,7 +2068,7 @@ cost = 100
 		}
 
 		isoroku_yamamoto = {
-
+ledger = navy
 			allowed = {
 				original_tag = JAP
 			}
@@ -2055,7 +2083,7 @@ cost = 100
 		}
 
 		minoru_genda = {
-
+ledger = navy
 			allowed = {
 				original_tag = JAP
 			}
@@ -2068,7 +2096,7 @@ cost = 100
 		}
 
 		yoshitoshi_tokugawa = {
-
+ledger = air
 			allowed = {
 				original_tag = JAP
 			}
@@ -2083,7 +2111,7 @@ cost = 100
 		}
 
 		hino_kumazo = {
-
+ledger = air
 			allowed = {
 				original_tag = JAP
 			}
@@ -2096,7 +2124,7 @@ cost = 100
 		}
 
 		yoshio_nishina = {
-
+ledger = army
 
 			allowed = {
 				original_tag = JAP
@@ -2112,7 +2140,7 @@ cost = 100
 		}
 
 		hideo_itokawa = {
-
+ledger = air
 
 			allowed = {
 				original_tag = JAP

@@ -18,6 +18,7 @@ state={
 
 
 		}
+		add_core_of = XSM
 		victory_points = {
 			4329 3
 		}

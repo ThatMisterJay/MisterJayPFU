@@ -101,7 +101,7 @@ ideas = {
 
 		SWI_werner_jenni = {
 
-
+ledger = army
 			allowed = {
 				original_tag = SWI
 			}
@@ -116,7 +116,7 @@ ideas = {
 		}
 
 		SWI_oskar_bider = {
-
+ledger = air
 
 			allowed = {
 				original_tag = SWI
@@ -135,7 +135,7 @@ ideas = {
 	army_chief = {
 
 		SWI_johann_august_sutter = {
-
+ledger = army
 			picture = generic_army_europe_5
 
 			allowed = {
@@ -152,7 +152,7 @@ ideas = {
 		}
 
 		SWI_ernst_laur = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -173,7 +173,7 @@ ideas = {
 
 
 		SWI_carl_jacob_burckhardt = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -190,7 +190,7 @@ ideas = {
 		}
 
 		SWI_j_d_de_montenach = {
-
+ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -211,7 +211,7 @@ ideas = {
 	navy_chief = {
 
 		SWI_rene_von_graffenried = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -228,7 +228,7 @@ ideas = {
 		}
 
 		SWI_hans_peter_bichsel_sohn = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -248,7 +248,7 @@ ideas = {
 	high_command = {
 
 		SWI_hermann_hessel_lorenz = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -265,7 +265,7 @@ ideas = {
 		}
 
 		SWI_jean_de_muralt = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -282,7 +282,7 @@ ideas = {
 		}
 
 		SWI_eugen_bircher = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -299,7 +299,7 @@ ideas = {
 		}
 
 		SWI_etienne_primault = {
-
+			ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -316,7 +316,7 @@ ideas = {
 		}
 
 		SWI_hans_oehler = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {

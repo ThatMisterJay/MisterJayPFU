@@ -606,7 +606,7 @@ ideas = {
 
 		SAF_james_mitchell_baker = {
 			picture = generic_army_europe_3
-
+ledger = army
 			allowed = {
 				original_tag = SAF
 			}
@@ -620,7 +620,7 @@ ideas = {
 
 		SAF_leonard_beyers = {
 			picture = generic_army_europe_4
-
+ledger = army
 			allowed = {
 				original_tag = SAF
 			}
@@ -638,7 +638,7 @@ ideas = {
 
 		SAF_adolf_malan = {
 			picture = generic_air_europe_3
-
+ledger = air
 			allowed = {
 				original_tag = SAF
 			}
@@ -652,7 +652,7 @@ ideas = {
 
 		SAF_pierre_van_ryneveld = {
 			picture = generic_air_europe_2
-
+ledger = air
 			allowed = {
 				original_tag = SAF
 			}
@@ -670,7 +670,7 @@ ideas = {
 
 		SAF_pierre_oliver_knoll = {
 			picture = generic_navy_europe_2
-
+ledger = navy
 			allowed = {
 				original_tag = SAF
 			}
@@ -684,7 +684,7 @@ ideas = {
 
 		SAF_cornelis_van_zuigenbrogge = {
 			picture = generic_navy_europe_1
-
+ledger = navy
 			allowed = {
 				original_tag = SAF
 			}
@@ -700,7 +700,7 @@ ideas = {
 	high_command = {
 
 		SAF_robert_palmer = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -715,7 +715,7 @@ ideas = {
 		}
 
 		SAF_c_de_weenburg_du_toit = {
-
+ledger = army
 			picture = generic_army_europe_5
 
 			allowed = {
@@ -730,7 +730,7 @@ ideas = {
 		}
 
 		SAF_marinus_van_osterkamp = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -745,7 +745,7 @@ ideas = {
 		}
 
 		SAF_von_leon = {
-
+ledger = army
 			picture = generic_political_advisor_europe_4
 
 
@@ -761,7 +761,7 @@ ideas = {
 		}
 
 		SAF_jeannot_de_la_tourier = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -778,7 +778,7 @@ ideas = {
 
 	theorist = {
 		SAF_j_f_van_rensburg = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -793,7 +793,7 @@ ideas = {
 		}
 
 		SAF_s_p_le_roux = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {

@@ -8,6 +8,7 @@ state={
 	}
 
 	history={
+		add_core_of = IRQ
 		owner = ENG
 		victory_points = { 5074 1 }
 		victory_points = { 10840 3 }

@@ -209,6 +209,7 @@ ideas = {
 			}
 
 			modifier = {
+				operative_slot = 3
 				subversive_activites_upkeep = -0.5
 			}
 		}
@@ -225,6 +226,7 @@ ideas = {
 			}
 
 			modifier = {
+				operative_slot = 3
 				land_reinforce_rate = 0.3
 			}
 		}
@@ -519,23 +521,23 @@ ideas = {
 			}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.5
-					air_attack = -0.5
+					air_agility = -0.25
+					air_attack = -0.25
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.5
-					air_attack = -0.5
+					air_agility = -0.25
+					air_attack = -0.25
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.5
-					air_ground_attack = -0.5
+					air_agility = -0.25
+					air_ground_attack = -0.25
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.5
-					air_ground_attack = -0.5
+					air_agility = -0.25
+					air_ground_attack = -0.25
 					instant = yes
 				}
 			  }
@@ -566,23 +568,23 @@ ideas = {
 				}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.45
-					air_attack = -0.45
+					air_agility = -0.2
+					air_attack = -0.15
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.45
-					air_attack = -0.45
+					air_agility = -0.2
+					air_attack = -0.2
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.45
-					air_ground_attack = -0.45
+					air_agility = -0.2
+					air_ground_attack = -0.2
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.45
-					air_ground_attack = -0.45
+					air_agility = -0.2
+					air_ground_attack = -0.2
 					instant = yes
 				}
 			  }
@@ -612,23 +614,23 @@ ideas = {
 				}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.4
-					air_attack = -0.4
+					air_agility = -0.15
+					air_attack = -0.15
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.4
-					air_attack = -0.4
+					air_agility = -0.15
+					air_attack = -0.15
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.4
-					air_ground_attack = -0.4
+					air_agility = -0.15
+					air_ground_attack = -0.15
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.4
-					air_ground_attack = -0.4
+					air_agility = -0.15
+					air_ground_attack = -0.15
 					instant = yes
 				}
 			  }
@@ -658,23 +660,23 @@ ideas = {
 				}
 					equipment_bonus = {
 					fighter_equipment = {
-					air_agility = -0.35
-					air_attack = -0.35
+					air_agility = -0.1
+					air_attack = -0.1
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.35
-					air_attack = -0.35
+					air_agility = -0.1
+					air_attack = -0.1
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.35
-					air_ground_attack = -0.35
+					air_agility = -0.1
+					air_ground_attack = -0.1
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.35
-					air_ground_attack = -0.35
+					air_agility = -0.1
+					air_ground_attack = -0.1
 					instant = yes
 				}
      		   }
@@ -704,23 +706,23 @@ ideas = {
 				}
 					equipment_bonus = {
 					fighter_equipment = {
-					air_agility = -0.30
-					air_attack = -0.30
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.30
-					air_attack = -0.30
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.30
-					air_ground_attack = -0.30
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.30
-					air_ground_attack = -0.30
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 			}
@@ -750,23 +752,23 @@ ideas = {
 				}
 					equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.25
-					air_attack = -0.25
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.25
-					air_attack = -0.25
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.25
-					air_ground_attack = -0.25
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.25
-					air_ground_attack = -0.25
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 			}
@@ -795,23 +797,23 @@ ideas = {
 				}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.20
-					air_attack = -0.20
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.20
-					air_attack = -0.20
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.20
-					air_ground_attack = -0.20
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.20
-					air_ground_attack = -0.20
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 			}
@@ -840,23 +842,23 @@ ideas = {
 				}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.15
-					air_attack = -0.15
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.15
-					air_attack = -0.15
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.15
-					air_ground_attack = -0.15
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.15
-					air_ground_attack = -0.15
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 			}
@@ -885,23 +887,23 @@ ideas = {
 				}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.10
-					air_attack = -0.10
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.10
-					air_attack = -0.10
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.10
-					air_ground_attack = -0.10
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.10
-					air_ground_attack = -0.10
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 			}
@@ -1116,7 +1118,20 @@ ideas = {
 			cost = 175
 		}
 
+		soviet_vsevolod_merkulov = {
 
+			available = {
+				has_intelligence_agency = yes
+			}
+
+			allowed = {
+				original_tag = SOV
+				has_dlc = "La Resistance"
+			}
+
+			traits = { head_of_intelligence }
+
+		}
 
 		nikita_khrushchev = {
 
@@ -1146,7 +1161,7 @@ ideas = {
 
 		semyon_timoshenko = {
 			#Also unit leader: 404
-
+ledger = army
 			allowed = {
 				original_tag = SOV
 			}
@@ -1175,7 +1190,7 @@ ideas = {
 
 		kliment_voroshilov = {
 			#Also unit leader: 405
-
+ledger = army
 			allowed = {
 				original_tag = SOV
 			}
@@ -1203,7 +1218,7 @@ ideas = {
 		}
 
 		alexander_yegorov = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV
@@ -1224,7 +1239,7 @@ ideas = {
 		}
 
 		vasily_blucher = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV
@@ -1246,7 +1261,7 @@ ideas = {
 		}
 
 		georgy_zhukov_marshal_of_victory = {
-
+ledger = army
 			allowed = {
 				original_tag = SOV # Unlocked via focus
 
@@ -1266,7 +1281,7 @@ ideas = {
 
 		pyotr_smirnov = {
 
-
+ledger = navy
 			allowed = {
 				original_tag = SOV
 
@@ -1288,7 +1303,7 @@ ideas = {
 
 		mikhail_frinovsky = {
 
-
+ledger = navy
 			allowed = {
 				original_tag = SOV
 
@@ -1309,7 +1324,7 @@ ideas = {
 		}
 
 		nikolay_kuznetsov = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = SOV
@@ -1331,7 +1346,7 @@ ideas = {
 		}
 
 		ivan_yumashev = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = SOV
@@ -1356,7 +1371,7 @@ ideas = {
 
 
 		alexander_novikov = {
-
+ledger = air
 			allowed = {
 				original_tag = SOV
 
@@ -1373,7 +1388,7 @@ ideas = {
 		}
 
 		konstantin_vershinin = {
-
+ledger = air
 
 			allowed = {
 				original_tag = SOV
@@ -1394,7 +1409,7 @@ ideas = {
 		}
 
 		yakov_smushkevich = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1418,7 +1433,7 @@ ideas = {
 		}
 
 		pavel_rychagov = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1447,7 +1462,7 @@ ideas = {
 
 		ivan_konev = {
 			#Also unit leader: 408
-
+ledger = army
 			allowed = {
 				original_tag = SOV
 			}
@@ -1467,7 +1482,7 @@ ideas = {
 
 		aleksandr_vasilevsky = {
 			#Also unit leader: 407
-
+ledger = army
 			allowed = {
 				original_tag = SOV
 
@@ -1497,7 +1512,7 @@ ideas = {
 
 		konstantin_rokossovsky = {
 			#Also unit leader: 402
-
+ledger = army
 			allowed = {
 				original_tag = SOV # Unlocked via focus
 				hidden_trigger = {
@@ -1524,7 +1539,7 @@ ideas = {
 		}
 
 		vasily_chuikov = {
-
+ledger = army
 
 
 			allowed = {
@@ -1545,7 +1560,7 @@ ideas = {
 		}
 
 		pavel_zhigarev = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV
@@ -1567,7 +1582,7 @@ ideas = {
 
 		sergei_khudyakov = {
 
-
+ledger = air
 			allowed = {
 				OR = {
 					original_tag = SOV
@@ -1590,7 +1605,7 @@ ideas = {
 		}
 
 		stepan_krasovsky = {
-
+ledger = air
 
 			allowed = {
 				OR = {
@@ -1614,7 +1629,7 @@ ideas = {
 
 		vladimir_kasatonov = {
 			#Also unit leader: 403
-
+ledger = navy
 			allowed = {
 				original_tag = SOV
 
@@ -1644,7 +1659,7 @@ ideas = {
 
 		gordey_levchenko = {
 			#Also unit leader: 406
-
+ledger = navy
 			allowed = {
 				original_tag = SOV
 
@@ -1659,7 +1674,7 @@ ideas = {
 
 		arseniy_golovko = {
 			#Also unit leader: 409
-
+ledger = navy
 			allowed = {
 				original_tag = SOV
 
@@ -2095,7 +2110,7 @@ cost = 100
 
 
 		mikhail_tukhachevsky = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV
@@ -2116,7 +2131,7 @@ cost = 100
 		}
 
 		boris_shaposhnikov = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV
@@ -2132,7 +2147,7 @@ cost = 100
 		}
 
 		georgy_zhukov = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV # Unlocked via focus
@@ -2149,7 +2164,7 @@ cost = 100
 		}
 
 		sergey_gorshkov = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = SOV
@@ -2169,7 +2184,7 @@ cost = 100
 		}
 
 		vladimir_tributs = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = SOV
@@ -2185,7 +2200,7 @@ cost = 100
 		}
 
 		sergei_rudenko = {
-
+ledger = air
 
 			allowed = {
 				original_tag = SOV
@@ -2205,7 +2220,7 @@ cost = 100
 		}
 
 		alexander_golovanov = {
-
+ledger = air
 
 			allowed = {
 				original_tag = SOV
@@ -2221,7 +2236,7 @@ cost = 100
 		}
 
 		igor_kurchatov = {
-
+ledger = army
 
 			allowed = {
 				original_tag = SOV
@@ -2238,7 +2253,7 @@ cost = 100
 
 		sergei_korolev = {
 
-
+ledger = air
 			allowed = {
 				original_tag = SOV
 			}

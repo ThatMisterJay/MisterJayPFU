@@ -39,16 +39,20 @@ set_politics = { ruling_party = fascism }
 			army_experience = 200
 
 			SOV = {
-				army_experience = 100
-				air_experience = 120
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
+
 			}
 			GER = {
-				army_experience = 100
-				air_experience = 120
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
 			}
 			ITA = {
-				army_experience = 50
-				air_experience = 100
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
 			}
 		}
 

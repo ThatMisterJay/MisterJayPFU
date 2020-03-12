@@ -735,11 +735,31 @@ political_actions = {
 		}
 
 		complete_effect = {
+			if = {
+				limit = {
+					original_tag = RAJ
+				}
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+				add_state_modifier = {
+					modifier = {
+						local_non_core_manpower = 1
+					}
+				}
+			}
+		}
+			if = {
+				limit = {
+					NOT = { original_tag = RAJ	}
+					}
 			AST = {
 				every_owned_state = {
 					limit = { is_core_of = AST }
 					add_core_of = ROOT
-				}
+				 }
+			 }
 			}
 			ROOT = {
 				annex_country = { target = AST transfer_troops = yes }
@@ -772,12 +792,32 @@ political_actions = {
 		}
 
 		complete_effect = {
+			if = {
+				limit = {
+					original_tag = RAJ
+				}
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+				add_state_modifier = {
+					modifier = {
+						local_non_core_manpower = 1
+					}
+				}
+			}
+		}
+			if = {
+				limit = {
+					NOT = { original_tag = RAJ	}
+					}
 			NZL = {
 				every_owned_state = {
 					limit = { is_core_of = NZL }
 					add_core_of = ROOT
 				}
 			}
+		}
 			annex_country = { target = NZL transfer_troops = yes }
 			if = {
 				limit = { tag = ENG }

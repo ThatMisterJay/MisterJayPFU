@@ -24,8 +24,8 @@ ideas = {
 				navy_screen_attack_factor = -0.25
 				army_attack_factor = -0.20
 				army_defence_factor = -0.20
-				army_core_attack_factor = 0.2
-				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.16
+				army_core_defence_factor = 0.16
 			}
 		}
 
@@ -313,7 +313,7 @@ ideas = {
 			modifier = {
 				max_command_power = 25
 			}
-		
+
 
 		}
 		USA_department_of_defense = {
@@ -414,8 +414,8 @@ ideas = {
 
 
 			modifier = {
-				army_core_defence_factor = 0.2
-				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.16
+				army_core_attack_factor = 0.16
 			}
 		}
 		USA_armed_forces_desegregation = {
@@ -1322,6 +1322,21 @@ ideas = {
 				factor = 0
 			}
 		}
+		usa_william_donovan = {
+
+	available = {
+		has_intelligence_agency = yes
+		threat > 0.5
+	}
+
+	allowed = {
+		original_tag = USA
+		has_dlc = "La Resistance"
+	}
+
+	traits = { head_of_intelligence }
+
+}
 		harold_ickes = {
 
 
@@ -1423,7 +1438,7 @@ ideas = {
 
 
 		douglas_macarthur = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -1443,7 +1458,7 @@ ideas = {
 		}
 
 		george_marshall = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -1459,7 +1474,7 @@ ideas = {
 		}
 
 		dwight_eisenhower = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -1474,7 +1489,7 @@ ideas = {
 			}
 		}
 		walter_krueger = {
-
+ledger = army
 			picture = USA_walter_krueger
 			allowed = {
 				original_tag = USA
@@ -1497,7 +1512,7 @@ ideas = {
 
 
 		henry_arnold = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -1513,7 +1528,7 @@ ideas = {
 		}
 
 		carl_spaatz = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -1530,7 +1545,7 @@ ideas = {
 		}
 
 		george_kenney = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -1545,7 +1560,7 @@ ideas = {
 			}
 		}
 		USA_charles_lindbergh = {
-
+ledger = air
 			picture = generic_air_europe_3
 			allowed = {
 				original_tag = USA
@@ -1581,7 +1596,7 @@ ideas = {
 	navy_chief = {
 
 		ernest_king = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -1597,7 +1612,7 @@ ideas = {
 		}
 
 		chester_nimitz = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -1613,7 +1628,7 @@ ideas = {
 		}
 
 		william_halsey = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -1632,7 +1647,7 @@ ideas = {
 
 	high_command = {
 		courtney_hodges = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -1649,7 +1664,7 @@ ideas = {
 
 		joseph_stilwell = {
 
-
+ledger = army
 			allowed = {
 				original_tag = USA
 			}
@@ -1668,7 +1683,7 @@ ideas = {
 
 		george_patton_1 = {
 
-
+ledger = army
 			allowed = {
 				original_tag = USA
 			}
@@ -1683,7 +1698,7 @@ picture = george_patton
 		}
 
 		mark_clark = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -1700,7 +1715,7 @@ picture = george_patton
 
 
 		jimmy_doolittle = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -1716,7 +1731,7 @@ picture = george_patton
 		}
 
 		john_cannon = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -1732,7 +1747,7 @@ picture = george_patton
 		}
 
 		claire_lee_chennault = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -1748,7 +1763,7 @@ picture = george_patton
 		}
 
 		raymond_spruance = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -1764,7 +1779,7 @@ picture = george_patton
 		}
 
 		frank_jack_fletcher = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -1780,7 +1795,7 @@ picture = george_patton
 		}
 
 		thomas_kinkaid = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -2433,7 +2448,7 @@ cost = 100
 
 	theorist = {
 		omar_bradley = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -2449,7 +2464,7 @@ cost = 100
 		}
 
 		george_patton = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -2465,7 +2480,7 @@ cost = 100
 		}
 
 		dewitt_clinton_ramsey = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -2481,7 +2496,7 @@ cost = 100
 		}
 
 		marc_mitscher = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -2497,7 +2512,7 @@ cost = 100
 		}
 
 		curtis_lemay = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = USA
@@ -2513,7 +2528,7 @@ cost = 100
 		}
 
 		harold_mcclelland = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA
@@ -2529,7 +2544,7 @@ cost = 100
 		}
 
 		robert_oppenheimer = {
-
+ledger = army
 
 			allowed = {
 				original_tag = USA
@@ -2545,7 +2560,7 @@ cost = 100
 		}
 
 		robert_goddard = {
-
+ledger = air
 
 			allowed = {
 				original_tag = USA

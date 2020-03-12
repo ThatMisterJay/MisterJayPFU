@@ -7,26 +7,11 @@ state={
 	}
 
 	history={
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = PRC
-		buildings = {
-			infrastructure = 1
-
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-				infrastructure = 2
-
-			}
-
-		}
 
 	}
 
 	provinces={
-		1918 1999 2067 4375 4999 7294 7988 8104 9966 10726 10841 10903 12724 12837 
+		1918 1999 2067 4375 4999 7294 7988 8104 9966 10726 10841 10903 12724 12837
 	}
 	manpower=968200
 	buildings_max_level_factor=1.000

@@ -386,7 +386,7 @@ ideas = {
 
 
 		HUN_ferenc_szombathelyi = {
-
+ledger = army
 			picture = generic_army_europe_4
 
 			allowed = {
@@ -403,7 +403,7 @@ ideas = {
 		}
 
 		HUN_hugo_sonyi = {
-
+ledger = army
 			picture = generic_army_europe_5
 
 			allowed = {
@@ -424,7 +424,7 @@ ideas = {
 
 
 		HUN_bela_rakosi = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -441,7 +441,7 @@ ideas = {
 		}
 
 		HUN_sandor_magyarossy = {
-
+ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -462,7 +462,7 @@ ideas = {
 
 
 		HUN_francois_deak = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -479,7 +479,7 @@ ideas = {
 		}
 
 		HUN_reszo_kastner = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -499,7 +499,7 @@ ideas = {
 	high_command = {
 
 		HUN_gusztav_jany = {
-
+ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -516,7 +516,7 @@ ideas = {
 		}
 
 		HUN_dezso_laszlo = {
-
+ledger = army
 			picture = generic_army_europe_2
 			allowed = {
 				original_tag = HUN
@@ -531,10 +531,10 @@ ideas = {
 			}
 		}
 
-	
+
 
 		HUN_jeno_ratz = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -549,7 +549,7 @@ ideas = {
 		}
 
 		HUN_henrik_werth = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -568,7 +568,7 @@ ideas = {
 
 	theorist = {
 		HUN_shvoy_kalman = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -583,7 +583,7 @@ ideas = {
 		}
 
 		HUN_gyorgy_jendrassik = {
-
+ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {

@@ -12,12 +12,13 @@ state={
 	}
 
 	history={
+		add_core_of = AFR
 		owner = FRA
 		victory_points = {
 			11969 10
 		}
 		victory_points = {
-			9994 1 
+			9994 1
 		}
 		buildings = {
 			infrastructure = 3

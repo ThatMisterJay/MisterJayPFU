@@ -248,6 +248,7 @@ ideas = {
 	army_chief = {
 
 		CRO_vladimir_laxa = {
+			ledger = army
 
 			allowed = {
 				original_tag = CRO
@@ -261,6 +262,7 @@ ideas = {
 		}
 
 		CRO_fedor_dragojlov = {
+			ledger = army
 
 			allowed = {
 				original_tag = CRO
@@ -283,6 +285,7 @@ ideas = {
 
 
 		CRO_friedrich_navratil = {
+			ledger = air
 
 			allowed = {
 				original_tag = CRO
@@ -296,6 +299,7 @@ ideas = {
 		}
 
 		CRO_adalbert_rogulja = {
+			ledger = air
 
 			picture = generic_air_europe_3
 
@@ -314,6 +318,7 @@ ideas = {
 	navy_chief = {
 
 		CRO_edgar_angeli = {
+			ledger = navy
 
 			picture = generic_navy_europe_2
 
@@ -329,6 +334,7 @@ ideas = {
 		}
 
 		CRO_nikola_steinfl = {
+			ledger = navy
 
 			picture = generic_navy_europe_3
 
@@ -343,6 +349,7 @@ ideas = {
 			}
 		}
 		CRO_djuro_jakcin2 = {
+			ledger = navy
 
 			allowed = {
 				original_tag = CRO
@@ -364,6 +371,7 @@ ideas = {
 	high_command = {
 
 		CRO_slavko_stancer = { #theorist instead?
+			ledger = army
 
 			allowed = {
 				original_tag = CRO
@@ -377,6 +385,7 @@ ideas = {
 		}
 
 		CRO_vilko_begic = {
+			ledger = army
 
 			allowed = {
 				original_tag = CRO
@@ -390,6 +399,7 @@ ideas = {
 		}
 
 		CRO_slavko_kvaternik = {
+			ledger = army
 
 			picture = generic_army_europe_1
 
@@ -405,6 +415,7 @@ ideas = {
 		}
 
 		CRO_vladimir_kren = {
+			ledger = air
 
 			picture = generic_air_europe_1
 
@@ -420,6 +431,7 @@ ideas = {
 		}
 
 		CRO_djuro_jakcin = {
+			ledger = navy
 
 			allowed = {
 				original_tag = CRO
@@ -439,7 +451,7 @@ ideas = {
 
 	theorist = {
 		CRO_sismundo_pejacevic = {
-
+ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -454,7 +466,7 @@ ideas = {
 		}
 
 		CRO_ivan_crnkovic = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -469,7 +481,7 @@ ideas = {
 		}
 
 		CRO_mihajlo_tomasic = {
-
+ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {

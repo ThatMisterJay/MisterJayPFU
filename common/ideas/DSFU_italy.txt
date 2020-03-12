@@ -162,8 +162,8 @@ ITA_endsieg = {
   picture = "generic_reserve_divisions"
 
   modifier = {
-    army_core_attack_factor = 0.1
-    army_core_defence_factor = 0.1
+    army_core_attack_factor = 0.08
+    army_core_defence_factor = 0.08
     army_morale_factor = 0.05
    }
 }
@@ -180,7 +180,7 @@ ITA_endsieg = {
        planning_speed = -0.05
        army_org_Factor = -0.03
        army_morale_factor = -0.05
-       max_planning = -0.05
+       max_planning = -0.04
        training_time_factor = 0.1
       }
    }
@@ -283,7 +283,7 @@ modifier = {
 planning_speed = -0.20
 army_org_Factor = -0.05
 army_morale_factor = -0.1
-max_planning = -0.15
+max_planning = -0.12
 training_time_factor = 0.05
 supply_consumption_factor = 0.05
 }
@@ -334,8 +334,8 @@ modifier = {
 conscription = 0.015
 army_morale_factor = 0.20
 land_reinforce_rate = 0.20
-army_core_attack_factor = 0.2
-army_core_defence_factor = 0.2
+army_core_attack_factor = 0.16
+army_core_defence_factor = 0.16
 }
 
 picture = "MEX_politicised_army_2"
@@ -353,7 +353,7 @@ modifier = {
 planning_speed = -0.20
 army_org_Factor = -0.1
 army_morale_factor = -0.15
-max_planning = -0.15
+max_planning = -0.12
 training_time_factor = 0.1
 supply_consumption_factor = 0.1
 army_attack_factor = -0.1
@@ -598,7 +598,7 @@ cost = 100
  army_chief = {
 
  ITA_off_exp = {
-
+ledger = army
 picture = generic_army_europe_6
 
    allowed = {
@@ -626,6 +626,7 @@ picture = generic_army_europe_6
  high_command = {
 
 giovanni_messe_1 = {
+  ledger = army
 
 picture = giovanni_messe
   allowed = {
@@ -638,7 +639,7 @@ picture = giovanni_messe
 }
 
 black_prince = {
-
+ledger = army
 picture = black_prince
 
   allowed = {
@@ -658,6 +659,7 @@ picture = black_prince
 
 ITA_inf_cav = {
 
+ledger = army
 picture = ettore_muti
 
   allowed = {
@@ -677,7 +679,7 @@ picture = ettore_muti
 
 silvio_scaroni = {
 
-
+ledger = army
 
   allowed = {
     original_tag = ITA
@@ -695,6 +697,7 @@ silvio_scaroni = {
 }
 
 ITA_reg_exp = {
+  ledger = army
 
 picture = generic_political_advisor_europe_4
 

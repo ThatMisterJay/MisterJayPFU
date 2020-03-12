@@ -199,8 +199,8 @@ picture = idea_generic_political_support
 			picture = raj_all_india_forward_bloc
 
 			modifier = {
-				army_core_defence_factor = 0.10
-				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.08
+				army_core_attack_factor = 0.08
 			}
 		}
 
@@ -668,7 +668,7 @@ picture = idea_generic_political_support
 	theorist = {
 
 		RAJ_rajendra_prasad = {
-
+ledger = army
 			picture = generic_army_arab_1
 
 			allowed = {
@@ -683,7 +683,7 @@ picture = idea_generic_political_support
 		}
 
 		RAJ_anyang_bhula = {
-
+ledger = air
 			picture = generic_air_arab_1
 
 			allowed = {
@@ -698,7 +698,7 @@ picture = idea_generic_political_support
 		}
 
 		RAJ_bahadur_jayla_of_khoch_bahur = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = RAJ
@@ -714,7 +714,7 @@ picture = idea_generic_political_support
 		}
 
 		RAJ_homi_j_bhabha = {
-
+ledger = army
 			available = {
 				has_completed_focus = RAJ_institute_of_fundamental_research
 			}
@@ -737,6 +737,7 @@ picture = idea_generic_political_support
 	high_command = {
 
 		RAJ_ram_singh_thakur = {
+			ledger = army
 
 			picture = generic_army_arab_1
 available = {has_completed_focus = RAJ_an_indian_sandhurst}
@@ -752,6 +753,7 @@ available = {has_completed_focus = RAJ_an_indian_sandhurst}
 		}
 
 		RAJ_inf_guy = {
+			ledger = army
 
 			picture = generic_army_arab_2
 			allowed = {
@@ -767,6 +769,7 @@ available = {has_completed_focus = RAJ_an_indian_sandhurst}
 
 #claude Ernest pert
 		RAJ_robert = {
+			ledger = army
 
 			picture = RAJ_tankguy
 available = {has_completed_focus = RAJ_british_army_support}
@@ -783,7 +786,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_aspy_merwan_engineer = {
-
+ledger = air
 			picture = generic_air_arab_2
 
 			allowed = {
@@ -798,6 +801,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_mehar_singh = {
+			ledger = army
 
 			picture = generic_air_arab_1
 
@@ -814,6 +818,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_w_h_gould_bradford = {
+			ledger = navy
 
 			picture = generic_navy_europe_1
 
@@ -831,7 +836,9 @@ available = {has_completed_focus = RAJ_british_army_support}
 	# MILITARY
 	army_chief = {
 
+
 		RAJ_arthur_a_barrett = {
+			ledger = army
 
 			picture = generic_army_europe_2
 
@@ -849,6 +856,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_archibald_wavell = {
+			ledger = army
 
 			picture = generic_army_europe_1
 
@@ -866,6 +874,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_reginald_savory = {
+			ledger = army
 
 			picture = generic_army_europe_1
 
@@ -883,6 +892,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_kodandera_cariappa = {
+			ledger = army
 
 			picture = generic_army_arab_3
 
@@ -900,6 +910,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_mohan_singh = {
+			ledger = army
 
 			picture = generic_army_arab_2
 
@@ -919,6 +930,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 
 	air_chief = {
 
+
 		RAJ_bruce_w_mcpherson = {
 
 			picture = generic_air_europe_1
@@ -937,6 +949,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_subroto_mukherjee = {
+			ledger = air
 
 			picture = generic_air_arab_3
 
@@ -954,6 +967,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_ravindra_darshan_singh = {
+			ledger = air
 
 			picture = generic_air_arab_2
 
@@ -974,6 +988,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 	navy_chief = {
 
 		RAJ_louis_mountbatten = {
+			ledger = navy
 
 			picture = generic_navy_europe_2
 
@@ -991,6 +1006,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_william_e_parry = {
+			ledger = navy
 
 			picture = generic_navy_europe_1
 
@@ -1008,6 +1024,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_bhaskar_soman = {
+			ledger = navy
 
 			picture = generic_navy_arab_3
 
@@ -1025,6 +1042,7 @@ available = {has_completed_focus = RAJ_british_army_support}
 		}
 
 		RAJ_ram_dass_katari = {
+			ledger = navy
 
 			picture = generic_navy_arab_3
 
@@ -1328,4 +1346,5 @@ available = {has_completed_focus = RAJ_british_army_support}
 			}
 		}
 
+}
 }

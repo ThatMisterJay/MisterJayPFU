@@ -11,6 +11,7 @@ state={
 	}
 
 	history={
+		add_core_of = AFR
 		owner = ITA
 
 		victory_points = {

@@ -10,6 +10,7 @@ state={
 	}
 
 	history= {
+		add_core_of = AFR
 		owner = FRA
 		buildings = {
 			infrastructure = 1

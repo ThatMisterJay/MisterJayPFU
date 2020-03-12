@@ -232,8 +232,8 @@ ideas = {
 
 			modifier = {
 				army_morale_factor = 0.05
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.08
 			}
 		}
 
@@ -473,7 +473,7 @@ ideas = {
 	army_chief = {
 
 		MAN_guan_xingde = {
-
+ledger = army
 			picture = generic_army_asia_4
 
 			allowed = {
@@ -491,7 +491,7 @@ ideas = {
 	air_chief = {
 
 		MAN_nakajima_kesago = {
-
+ledger = air
 			picture = generic_air_asia_3
 
 			allowed = {
@@ -510,7 +510,7 @@ ideas = {
 	navy_chief = {
 
 		MAN_yin_zuoqian = {
-
+ledger = navy
 			picture = generic_navy_asia_3
 
 			allowed = {
@@ -530,7 +530,7 @@ ideas = {
 	high_command = {
 
 		MAN_yonimitsu_kasahara = {
-
+ledger = army
 			picture = generic_army_asia_3
 
 			allowed = {
@@ -545,7 +545,7 @@ ideas = {
 		}
 
 		MAN_kyoiji_tomonaga = {
-
+ledger = army
 			picture = generic_air_asia_2
 
 			allowed = {
@@ -560,7 +560,7 @@ ideas = {
 		}
 
 		MAN_hesehn_tiemei = {
-
+ledger = army
 			picture = generic_army_asia_1
 
 			allowed = {
@@ -579,7 +579,7 @@ ideas = {
 
 	theorist = {
 		MAN_hung_zhehuang = {
-
+ledger = army
 			picture = generic_army_asia_1
 
 			allowed = {
@@ -594,7 +594,7 @@ ideas = {
 		}
 
 		MAN_deng_linge = {
-
+ledger = air
 			picture = generic_air_asia_2
 
 			allowed = {

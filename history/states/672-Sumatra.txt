@@ -13,6 +13,7 @@ state={
 
 	history=
 	{
+		add_core_of = XSM
 		owner = HOL
 		victory_points = {
 			4652 1

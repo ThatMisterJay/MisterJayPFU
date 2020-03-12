@@ -980,67 +980,67 @@
  AST_CAS_equipment_2_short:0 "CAC Woomera"
  AST_CAS_equipment_3:0 "Bristol Beaufighter"
  AST_CAS_equipment_3_short:0 "Beaufighter"
- 
+
  AST_jet_fighter_equipment_2:0 "CAC Sabre"
  AST_jet_fighter_equipment_2_short:0 "CAC Sabre"
- 
+
  #Argentinia
- 
+
  ARG_heavy_fighter_equipment_3:0 "I.Ae 30 Nancu P1"
  ARG_heavy_fighter_equipment_3_short:0 "Nancu P1"
- 
+
  ARG_fighter_equipment_0:0 "FMA D.21"
  ARG_fighter_equipment_0_short:0 "D.21"
  ARG_fighter_equipment_2:0 "FMA Hawk 75O"
  ARG_fighter_equipment_2_short:0 "Hawk 75O"
- 
+
  ARG_CAS_equipment_2:0 "I.Ae 22 DL"
  ARG_CAS_equipment_2_short:0 "I.Ae 22 DL"
  ARG_CAS_equipment_3:0 "I.Ae 30 Nancu P2"
  ARG_CAS_equipment_3_short:0 "Nancu P2"
- 
+
  ARG_tac_bomber_equipment_0:0 "FMA AeMB.1"
  ARG_tac_bomber_equipment_0_short:0 "FMA AeMB.1"
  ARG_tac_bomber_equipment_1:0 "FMA AeMB.2"
  ARG_tac_bomber_equipment_1_short:0 "FMA AeMB.2"
  ARG_tac_bomber_equipment_3:0 "I.Ae 24 Calquin"
  ARG_tac_bomber_equipment_3_short:0 "Calquin"
- 
+
  ARG_jet_fighter_equipment_1:0 "FMA I.Ae. 27 Pulqui I"
  ARG_jet_fighter_equipment_1_short:0 "Pulqui I"
  ARG_jet_fighter_equipment_2:0 "FMA IAe 33 Pulqui II"
  ARG_jet_fighter_equipment_2_short:0 "Pulqui II"
- 
+
  #Belgium
- 
+
  BEL_fighter_equipment_0:0 "Avions Fairey Firefly"
  BEL_fighter_equipment_0_short:0 "Av-F. Firefly"
  BEL_fighter_equipment_1:0 "Avions Fairey Fantôme"
  BEL_fighter_equipment_1_short:0 "Fantôme"
  BEL_fighter_equipment_2:0 "Renard R.36"
  BEL_fighter_equipment_2_short:0 "R.36"
- 
+
  BEL_CAS_equipment_1:0 "Avions Fairey Battle"
  BEL_CAS_equipment_1_short:0 "Battle"
  BEL_CAS_equipment_2:0 "SABCA S.47"
  BEL_CAS_equipment_2_short:0 "S.47"
- 
+
  BEL_tac_bomber_equipment_1:0 "LACAB GR.8"
  BEL_tac_bomber_equipment_1_short:0 "GR.8"
  BEL_tac_bomber_equipment_2:0 "Renard-PZL 37"
  BEL_tac_bomber_equipment_2_short:0 "R-PZL 37"
- 
+
  BEL_jet_fighter_equipment_2:0 "SABCA Hunter"
  BEL_jet_fighter_equipment_2_short:0 "Hunter"
- 
+
  # canadian
- 
+
  CAN_jet_fighter_equipment_1:0 "De Havilland Vampire"
  CAN_jet_fighter_equipment_1_short:0 "Vampire"
  CAN_jet_fighter_equipment_2:0 "CL 100 Canuck"
  CAN_jet_fighter_equipment_2_short:0 "CL 100 Canuck"
- 
- #Czech 
+
+ #Czech
  CZE_CAS_equipment_1:0 "Aero Vodochody A.101"
  CZE_CAS_equipment_1_short:0 "Aero A.101"
  CZE_fighter_equipment_0:0 "Avia B-34.1"
@@ -1058,16 +1058,16 @@
  CZE_tac_bomber_equipment_2_short:0 "Letov Š-50"
  CZE_tac_bomber_equipment_3:0 "Aero Vodochody A.300"
  CZE_tac_bomber_equipment_3_short:0 "Aero A.300"
- 
+
  CZE_jet_fighter_equipment_1:0 "Avia S-92"
  CZE_jet_fighter_equipment_1_short:0 "S-92"
- 
+
  #Romania
  ROM_CAS_equipment_1:0 "IAR 37"
  ROM_CAS_equipment_1_short:0 "IAR 37"
  ROM_CAS_equipment_3:0 "IAR 471"
  ROM_CAS_equipment_3_short:0 "IAR 471"
- 
+
  ROM_fighter_equipment_0:0 "IAR 14"
  ROM_fighter_equipment_0_short:0 "IAR 14"
  ROM_fighter_equipment_1:0 "IAR P.24E"
@@ -1076,7 +1076,7 @@
  ROM_fighter_equipment_2_short:0 "IAR 80"
  ROM_fighter_equipment_3:0 "IAR 109G"
  ROM_fighter_equipment_3_short:0 "IAR 109G"
- 
+
  ROM_tac_bomber_equipment_0:0 "IAR Potez 25TOE"
  ROM_tac_bomber_equipment_0_short:0 "IAR Potez 25TOE"
  ROM_tac_bomber_equipment_1:0 "IAR PZL 37 Łoś"
@@ -1085,13 +1085,13 @@
  ROM_tac_bomber_equipment_2_short:0 "Potez 633"
  ROM_tac_bomber_equipment_3:0 "IAR 79"
  ROM_tac_bomber_equipment_3_short:0 "IAR 79"
- 
+
  ROM_nav_bomber_equipment_1:0 "Savoia-Marchetti S.55"
  ROM_nav_bomber_equipment_1_short:0 "SM.S.55"
  ROM_nav_bomber_equipment_2:0 "Heinkel He.114B"
  ROM_nav_bomber_equipment_2_short:0 "He.114B"
 
- #Holland 
+ #Holland
  # herr fokker wins the race, with a single Koolhoven interloper
 
  HOL_heavy_fighter_equipment_1:0 "Fokker G.1 Mercury"
@@ -1119,7 +1119,7 @@
  HOL_tac_bomber_equipment_2_short:0 "Fokker T.IX"
 
  #Finland
- 
+
  FIN_fighter_equipment_0:0 "Gloster Kukko"
  FIN_fighter_equipment_0_short:0 "Kukko"
  FIN_fighter_equipment_1:0 "VL Myrsky"
@@ -1128,34 +1128,34 @@
  FIN_fighter_equipment_2_short:0 "VL Humu"
  FIN_fighter_equipment_3:0 "VL Pyörremyrsky"
  FIN_fighter_equipment_3_short:0 "VL Pyörremyrsky"
- 
+
  FIN_nav_bomber_equipment_1:0 "VL Kotka"
  FIN_nav_bomber_equipment_1_short:0 "VL Kotka"
- 
+
  FIN_CAS_equipment_1:0 "Fokker-VL C.X"
  FIN_CAS_equipment_1_short:0 "Fokker-VL C.X"
- 
+
  FIN_tac_bomber_equipment_1:0 "Bristol-VL Blenheim"
  FIN_tac_bomber_equipment_1_short:0 "Blenheim"
- 
+
  #Norway
- 
+
  NOR_fighter_equipment_0:0 "F.F. 7 Hauk"
  NOR_fighter_equipment_0_short:0 "Hauk"
- 
+
  NOR_nav_bomber_equipment_1:0 "M.F. 11"
  NOR_nav_bomber_equipment_1_short:0 "M.F. 11"
- 
+
  NOR_tac_bomber_equipment_0:0 "Kjeller-Fokker C.V"
  NOR_tac_bomber_equipment_0_short:0 "Kj.-F. C.V"
- 
+
  #Hungary
  HUN_heavy_fighter_equipment_2:0 "DRR Me 201Ca-1"
  HUN_heavy_fighter_equipment_2_short:0 "Me 210Ca-1"
- 
+
  HUN_CAS_equipment_1:0 "Weiss WM-21 Sólyom"
  HUN_CAS_equipment_1_short:0 "WM-21"
- 
+
  HUN_fighter_equipment_0:0 "AVIS III"
  HUN_fighter_equipment_0_short:0 "AVIS III"
  HUN_fighter_equipment_2:0 "Weiss WM-23 Ezustnyil"
@@ -1167,7 +1167,7 @@
 
  RAJ_fighter_equipment_0:0 "Hawker Hart"
  RAJ_fighter_equipment_0_short:0 "Hart"
- 
+
  RAJ_fighter_equipment_1:0 "Hawker Demon"
  RAJ_fighter_equipment_1_short:0 "Demon"
 
@@ -1176,8 +1176,8 @@
  #Spain
  SPA_fighter_equipment_2:0 "Hispano Aviación HA-1112"
  SPA_fighter_equipment_2_short:0 "HA-1112"
- 
- #Sweden 
+
+ #Sweden
 
  SWE_fighter_equipment_0:0 "Gloster Gladiator"
  SWE_fighter_equipment_0_short:0 "J-8"
@@ -1232,14 +1232,14 @@
  SWE_CAS_equipment_2_short:0 "J-20"
  SWE_CAS_equipment_3:0 "Saab J-21A"
  SWE_CAS_equipment_3_short:0 "J-21A"
- 
+
  #switzerland
- 
+
  SWI_tac_bomber_equipment_0:0 "K+W Thun Fokker C.V.-E"
  SWI_tac_bomber_equipment_0_short:0 "K+W C.V.-E"
- 
+
  # Turkish planes, all fictional, licence, or fictional licence builds
- 
+
  TUR_fighter_equipment_0:0 "TamTAS Hawk"
  TUR_fighter_equipment_0_short:0 "TamTAS Hawk"
  TUR_fighter_equipment_1:0 "TamTAS Hurricane"
@@ -1248,7 +1248,7 @@
  TUR_fighter_equipment_2_short:0 "THK Fw 190"
  TUR_fighter_equipment_3:0 "THK P47"
  TUR_fighter_equipment_3_short:0 "THK P47"
- 
+
  TUR_tac_bomber_equipment_0:0 "TamTAS Ju A-20"
  TUR_tac_bomber_equipment_0_short:0 "A-20"
  TUR_tac_bomber_equipment_1:0 "TamTAS Blenheim"
@@ -1257,7 +1257,7 @@
  TUR_tac_bomber_equipment_2_short:0 "THK Baltimore"
  TUR_tac_bomber_equipment_3:0 "THK Invader"
  TUR_tac_bomber_equipment_3_short:0 "THK Invader"
- 
+
  #chinese planes
  CHI_fighter_equipment_0:0 "Liuchow Kwangsi Type 3"
  CHI_fighter_equipment_0_short:0 "Type 3"
@@ -1265,10 +1265,10 @@
  CHI_fighter_equipment_1_short:0 "P40"
  CHI_fighter_equipment_2:0 "Chu X-P0"
  CHI_fighter_equipment_2_short:0 "X-P0"
- 
+
  CHI_CAS_equipment_1:0 "CAMCO Vultee V-11"
  CHI_CAS_equipment_1_short:0 "Vultee V-11"
- 
+
  #yugoslavian planes
  YUG_fighter_equipment_0:0 "Avia-Ikarus BH-33"
  YUG_fighter_equipment_0_short:0 "BH-33"
@@ -1278,21 +1278,54 @@
  YUG_fighter_equipment_2_short:0 "IK-3"
  YUG_fighter_equipment_3:0 "Ikarus S-49"
  YUG_fighter_equipment_3_short:0 "S-49"
- 
+
  YUG_heavy_fighter_equipment_1:0 "Rogozarski IK-5"
  YUG_heavy_fighter_equipment_1_short:0 "IK-5"
  YUG_heavy_fighter_equipment_2:0 "Rogozarski R-313"
  YUG_heavy_fighter_equipment_2_short:0 "R-313"
- 
+
  YUG_CAS_equipment_1:0 "Ikarus Orkan"
  YUG_CAS_equipment_1_short:0 "Ikarus Orkan"
- 
+
  YUG_tac_bomber_equipment_0:0 "DFA-Breguet Br. 19 A2"
  YUG_tac_bomber_equipment_0_short:0 "Br. 19 A2"
  YUG_tac_bomber_equipment_1:0 "DFA-Dornier Do-17Ka "
  YUG_tac_bomber_equipment_1_short:0 "Do-17 Ka"
  YUG_tac_bomber_equipment_2:0 "DFA-Bristol Blenheim"
  YUG_tac_bomber_equipment_2_short:0 "Blenheim"
- 
+
  YUG_nav_bomber_equipment_1:0 "Rogozarski SIM-XIV-H"
  YUG_nav_bomber_equipment_1_short:0 "SIM-XIV-H"
+
+
+ #scot planes
+ scout_plane:0 "Scout Plane"
+ scout_plane_equipment_desc:0 "A plane developed specifically for photo reconnaisance. Relies primarily on speed and stealth to survive and will lose in any stand-up fight."
+ scout_plane_equipment:0 "Scout Planes"
+ scout_plane_equipment_1:0 "Scout Plane I"
+ scout_plane_equipment_1_desc:0 "Gathering intelligence on enemy troop movements and providing reports of enemy naval deployments has been the original mission for airplanes since their first deployment in the Great War, and is still an important mission."
+ scout_plane_equipment_2:0 "Scout Plane II"
+ scout_plane_equipment_2_desc:0 "By developing dedicated planes for aerial surveillance and long-range reconnaissance, we ensure that we gain and maintain an accurate picture of our opponent's intentions and capabilities."
+ GER_scout_plane_equipment_1:0 "Henschel Hs 126"
+ GER_scout_plane_equipment_1_short:0 "Hs. 126"
+ GER_scout_plane_equipment_2:0 "Focke-Wulf Fw 189"
+ GER_scout_plane_equipment_2_short:0 "Fw 189"
+ ENG_scout_plane_equipment_1:0 "Spitfire PR"
+ ENG_scout_plane_equipment_2:0 "Mosquito PR"
+ USA_scout_plane_equipment_1:0 "F4 Lightning"
+ USA_scout_plane_equipment_1_short:0 "F4"
+ USA_scout_plane_equipment_2:0 "F6 Mustang"
+ USA_scout_plane_equipment_2_short:0 "F6"
+ SOV_scout_plane_equipment_1:0 "R-10"
+ SOV_scout_plane_equipment_2:0 "Yak-2"
+ JAP_scout_plane_equipment_1:0 "Mitsubishi Ki-46"
+ JAP_scout_plane_equipment_1_short:0 "Ki-46"
+ JAP_scout_plane_equipment_2:0 "Nakajima J1N1-C"
+ JAP_scout_plane_equipment_2_short:0 "J1N1-C"
+ ITA_scout_plane_equipment_1:0 "Caproni Ca.310"
+ ITA_scout_plane_equipment_1_short:0 "Ca.310"
+ ITA_scout_plane_equipment_2:0 "Caproni Ca.311"
+ ITA_scout_plane_equipment_2_short:0 "Ca.311"
+ FRA_scout_plane_equipment_1:0 "Bloch MB-131"
+ FRA_scout_plane_equipment_1_short:0 "MB-131"
+ FRA_scout_plane_equipment_2:0 "CAO-700"

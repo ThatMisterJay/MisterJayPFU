@@ -1,5 +1,9 @@
 #reload countrycolors
 
+AFR = {	color = rgb { 23 1 74 }
+		color_ui = rgb { 23 1 74 }
+}
+
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
@@ -301,8 +305,8 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 GXC = {

@@ -322,7 +322,7 @@ ideas = {
 	theorist = {
 
 		EFR_pierre_hering = {
-
+ledger = army
 			allowed = {
 				original_tag = EFR
 			}
@@ -348,7 +348,7 @@ ideas = {
 		}
 
 		EFR_paul_gastin = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -365,7 +365,7 @@ ideas = {
 
 	high_command = {
 		EFR_henri_bineau = { ###Henri Bineau Vichyste jusqu'auboutistes
-
+ledger = army
 			allowed = {
 				original_tag = EFR
 			}
@@ -379,7 +379,7 @@ ideas = {
 			}
 		}
 		EFR_emile_mollard = { ###should change side and bring equipment at some point. Chief of the « Conservation du Matériel » ou CDM qui veut aussi dire « Camouflage du Matériel ». to cheat on the armistice treaty.
-
+ledger = army
 			allowed = {
 				original_tag = EFR
 			}
@@ -396,7 +396,7 @@ ideas = {
 	# MILITARY
 	army_chief = {
 		EFR_odilon_picquendar  = { ###see role diff with hutzinger he was chief of staff
-
+ledger = army
 			allowed = {
 				original_tag = EFR
 			}
@@ -409,7 +409,7 @@ ideas = {
 		}
 		## Huntzinger before he died, while he was Secrétaire d’État à la Guerre so like minister of defense.
 		EFR_charles_huntziger = {
-
+ledger = army
 			allowed = {
 				original_tag = EFR
 			}
@@ -425,7 +425,7 @@ ideas = {
 			allowed = {
 				original_tag = EFR
 			}
-
+ledger = army
 			traits = { army_chief_offensive_2 }
 
 			ai_will_do = {
@@ -436,7 +436,7 @@ ideas = {
 	air_chief = {
 
 		EFR_bertrand_pujo = {
-
+ledger = air
 			allowed = {
 				original_tag = EFR
 			}
@@ -448,7 +448,7 @@ ideas = {
 			}
 		}
 		EFR_jean_romatet = {
-
+ledger = air
 			allowed = {
 				original_tag = EFR
 			}
@@ -464,7 +464,7 @@ ideas = {
 	navy_chief = {
 
 		EFR_gabriel_auphan = {
-
+ledger = navy
 			allowed = {
 				original_tag = EFR
 			}

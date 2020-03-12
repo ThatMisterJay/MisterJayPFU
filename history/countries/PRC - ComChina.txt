@@ -1,4 +1,4 @@
-﻿capital = 622
+﻿capital = 613 # Nanjing
 
 oob = "PRC_1936"
 
@@ -14,7 +14,7 @@ set_war_support = 0.7
 save_global_event_target_as = WTT_communist_china
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -23,7 +23,8 @@ set_politics = {
 set_popularities = {
     democratic = 0
     fascism = 0
-    communism = 100
+    communism = 40
+	  neutrality = 60
 }
 
 add_ideas = {
@@ -37,14 +38,22 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}
 	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
+
 	}
 }
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }
+
+create_country_leader = {
+	name = "Yan Xishan"
+	desc = "POLITICS_YAN XISHAN_DESC"
+	picture = "GFX_portrait_shanxi_portrait_yan_xishan"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
 	name = "Mao Zedong"

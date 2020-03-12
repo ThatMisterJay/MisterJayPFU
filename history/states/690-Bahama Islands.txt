@@ -2,10 +2,11 @@ state={
 	id=690
 	name="STATE_690"
 	manpower = 40000
-	
+
 	state_category = tiny_island
 
 	history={
+		add_core_of = VEN
 		owner = ENG
 		buildings = {
 			10254 = {
@@ -21,7 +22,7 @@ state={
 	}
 
 	provinces={
-		4647 7245 10254 
+		4647 7245 10254
 	}
-	
+
 }

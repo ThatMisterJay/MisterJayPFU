@@ -46,6 +46,7 @@ ideas = {
 	army_chief = {
 
 		BUL_nikola_hadzipetkov = {
+			ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -62,6 +63,7 @@ ideas = {
 		}
 
 		BUL_hristo_lukov = {
+			ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -81,6 +83,7 @@ ideas = {
 	air_chief = {
 
 		BUL_vasil_boydev = {
+			ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -95,6 +98,7 @@ ideas = {
 		}
 
 		BUL_asen_dobrev_nikolov = {
+			ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -112,6 +116,7 @@ ideas = {
 	navy_chief = {
 
 		BUL_nikola_totev_markov = {
+			ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -126,6 +131,7 @@ ideas = {
 		}
 
 		BUL_bonyu_stoev_pironkov = {
+			ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -143,6 +149,7 @@ ideas = {
 	high_command = {
 
 		BUL_stoyan_stoyanov = {
+			ledger = air
 
 			picture = generic_air_europe_2
 
@@ -158,6 +165,7 @@ ideas = {
 		}
 
 		BUL_blagoi_ivanov = {
+			ledger = army
 
 			picture = generic_army_europe_4
 
@@ -173,6 +181,7 @@ ideas = {
 		}
 
 		BUL_kiril_dimitrov_yanchule = {
+			ledger = army
 
 			picture = generic_army_europe_2
 
@@ -188,6 +197,7 @@ ideas = {
 		}
 
 		BUL_atanas_pavlov_zhilkov = {
+			ledger = army
 
 			picture = generic_army_europe_5
 
@@ -232,7 +242,7 @@ ideas = {
 
 	theorist = {
 		BUL_kiril_stanchev = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -247,7 +257,7 @@ ideas = {
 		}
 
 		BUL_ivan_gaidimitriv = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -262,7 +272,7 @@ ideas = {
 		}
 
 		BUL_georgi_petsov = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {

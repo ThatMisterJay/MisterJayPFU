@@ -14,6 +14,7 @@ state={
 	}
 
 	history={
+		add_core_of = XSM
 		owner = ENG
 		victory_points = {
 			12299 10

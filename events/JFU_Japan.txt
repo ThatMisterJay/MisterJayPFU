@@ -59,39 +59,27 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		add_ideas = JAP_china_war_support
 		name = Jfujap.4.a
 		news_event = { hours = 6 id = news.1 }
-		declare_war_on = { target = CHI type = puppet_wargoal_focus }
-		declare_war_on = { target = PRC type = puppet_wargoal_focus }
+		annex_country = { target = PRC transfer_troops = no }
+add_manpower = -150000
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = -15000
+
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = -2000
+
+}
 		hidden_effect = {
-			add_named_threat = { threat = -4 name = JAP_war_with_china }
-			MAN = {
-				add_to_war = {
-					targeted_alliance = JAP
-					enemy = CHI
-				}
-				add_to_war = {
-					targeted_alliance = JAP
-					enemy = PRC
-				}
-			}
+			add_named_threat = { threat = 2 name = JAP_war_with_china }
 
-			MEN = {
-				add_to_war = {
-					targeted_alliance = JAP
-					enemy = CHI
-				}
-				add_to_war = {
-					targeted_alliance = JAP
-					enemy = PRC
-				}
-			}
 		}
 
-		CHI = {
-			country_event = { id = china.100 }
-		 	transfer_state = 615
-		}
+
 	}
 }
 
@@ -133,5 +121,35 @@ news_event = {
 				tag = JAP
 			}
 		}
+	}
+}
+
+country_event = {
+	id = Jfujap.5
+	title = Jfujap.5.t
+	desc = Jfujap.5.d
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = {
+		name = Jfujap.5.a
+		annex_country = { target = CHI transfer_troops = no }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -15000
+
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -2000
+
+		}
+		hidden_effect = {
+			add_named_threat = { threat = 1 name = JAP_war_with_china_2 }
+
+		}
+
+
 	}
 }

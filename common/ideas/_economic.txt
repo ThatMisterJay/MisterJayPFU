@@ -22,6 +22,7 @@ ideas = {
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
 				fuel_gain_factor = -0.8
+				agency_upgrade_time = 1.0
 			}
 
 			allowed_to_remove = {
@@ -52,6 +53,7 @@ ideas = {
 				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
 				fuel_gain_factor = -0.6
+				agency_upgrade_time = 0.8
 			}
 			allowed_to_remove = {
 				OR = {
@@ -311,6 +313,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.15
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
 			}
 
 			available = {
@@ -339,6 +343,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.08
+				civilian_intel_to_others = 15.0
+		navy_intel_to_others = 10.0
 			}
 
 			default = yes
@@ -387,6 +393,8 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.03
+				civilian_intel_to_others = 10.0
+			navy_intel_to_others = 5
 			}
 
 			cancel_if_invalid = no
@@ -418,7 +426,7 @@ ideas = {
 					has_idea = tot_economic_mobilisation
 				}
 				OR = {
-					
+
 				}
 			}
 

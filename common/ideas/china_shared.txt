@@ -162,7 +162,7 @@ ideas = {
 	air_chief = {
 
 		CHI_claire_lee_chennault_air_chief = {
-
+ledger = air
 			name = claire_lee_chennault
 
 			picture = CHI_claire_chennault
@@ -205,7 +205,7 @@ ideas = {
 	theorist = {
 
 		CHI_claire_lee_chennault_air_theorist = {
-
+ledger = air
 			name = claire_lee_chennault
 
 			picture = CHI_claire_chennault

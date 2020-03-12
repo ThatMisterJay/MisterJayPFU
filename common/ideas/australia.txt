@@ -643,7 +643,7 @@ modifier = {
 	theorist = {
 
 		AST_norman_makin = {
-
+	ledger = navy
 			picture = generic_political_advisor_europe_3
 
 			allowed = {
@@ -658,7 +658,7 @@ modifier = {
 		}
 
 		AST_james_fairbairn = {
-
+ledger = air
 			picture = generic_political_advisor_europe_2
 
 			allowed = {
@@ -673,7 +673,7 @@ modifier = {
 		}
 
 		AST_sydney_rowell_1 = {
-
+ledger = army
 picture = AST_sydney_rowell
 
 			allowed = {
@@ -691,6 +691,7 @@ picture = AST_sydney_rowell
 	high_command = {
 
 		AST_arthur_allen = {
+			ledger = army
 
 			picture = generic_army_europe_2
 
@@ -706,6 +707,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_clive_caldwell = {
+			ledger = air
 
 			picture = AST_clive_caldwell
 
@@ -721,6 +723,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_john_collins = {
+			ledger = navy
 
 			picture = generic_navy_europe_1
 
@@ -736,6 +739,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_edmund_herring = {
+			ledger = army
 
 			picture = generic_army_europe_1
 
@@ -750,6 +754,7 @@ picture = AST_sydney_rowell
 			}
 		}
 		AST_arthur_drakeford = {
+			ledger = air
 
 			picture = generic_army_europe_4
 
@@ -762,6 +767,7 @@ picture = AST_sydney_rowell
 			}
 
 		AST_cederic_hicks = {
+			ledger = army
 
 			picture = generic_army_europe_4
 
@@ -785,6 +791,7 @@ picture = AST_sydney_rowell
 	army_chief = {
 
 		AST_john_lavarack = {
+			ledger = army
 
 			picture = generic_army_europe_5
 
@@ -800,6 +807,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_sydney_rowell = {
+			ledger = army
 
 			picture = generic_army_europe_3
 
@@ -815,6 +823,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_vernon_sturdee = {
+			ledger = army
 
 			picture = generic_army_europe_5
 
@@ -834,6 +843,7 @@ picture = AST_sydney_rowell
 
 
 		AST_richard_williams = {
+			ledger = air
 
 			picture = generic_air_europe_1
 
@@ -849,6 +859,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_charles_burnett = {
+			ledger = air
 
 			picture = generic_air_europe_3
 
@@ -868,6 +879,7 @@ picture = AST_sydney_rowell
 	navy_chief = {
 
 		AST_ragnar_colvin = {
+			ledger = navy
 
 			picture = generic_navy_europe_2
 
@@ -883,6 +895,7 @@ picture = AST_sydney_rowell
 		}
 
 		AST_jack_crace = {
+			ledger = navy
 
 			picture = generic_navy_europe_1
 

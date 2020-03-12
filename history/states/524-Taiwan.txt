@@ -3,7 +3,7 @@ state=
 	id=524
 	name="STATE_524"
 	manpower = 4592537
-	
+
 	state_category = large_town
 		resources={
 		aluminium=12
@@ -11,8 +11,7 @@ state=
 	history=
 	{
 		owner = JAP
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -22,10 +21,10 @@ state=
 			}
 		}
 		victory_points = {
-			7186 5 
+			7186 5
 		}
 		victory_points = {
-			12068 1 
+			12068 1
 		}
 
 	}

@@ -7,17 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = AFG
-		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
-		}
-		victory_points = {
-			4893 1
-		}
-		add_core_of = AFG
-		add_extra_state_shared_building_slots = 4
+
 	}
 
 	provinces={

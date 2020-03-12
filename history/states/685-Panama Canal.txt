@@ -6,6 +6,7 @@ state={
 	state_category = enclave
 
 	history={
+		add_core_of = VEN
 		owner = USA
 		victory_points = {
 			7617 5

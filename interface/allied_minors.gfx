@@ -22,4 +22,14 @@ spriteTypes = {
 				texturefile = "gfx/interface/ideas/idea_clive_caldwell.dds"
 					}
 
+			SpriteType = {
+					name = "GFX_ideas_SOV_Vasily_Chuikov"
+					texturefile = "gfx/interface/ideas/ideas_SOV_Vasily_Chuikov.dds"
+						}
+
+					SpriteType = {
+						name = "GFX_idea_SOV_night_witch"
+								texturefile = "gfx/interface/ideas/idea_SOV_night_witch.dds"
+									}
+
 }

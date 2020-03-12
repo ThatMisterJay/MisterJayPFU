@@ -6,20 +6,9 @@ state={
 	state_category = town
 
 	resources= {
-		steel=6
+
 	}
 	history={
-		owner = AFG
-		buildings = {
-			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 5
-		}
-		victory_points = {
-			10737 5
-		}
-		add_core_of = AFG
-		add_extra_state_shared_building_slots = 5
 	}
 
 	provinces={

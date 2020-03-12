@@ -3,10 +3,11 @@ state={
 	id=513
 	name="STATE_513" # Tlmecen
 	manpower = 811486
-	
+
 	state_category = wasteland
 
 	history={
+		add_core_of = AFR
 		owner = FRA
 		buildings = {
 			infrastructure = 1
@@ -14,6 +15,6 @@ state={
 	}
 
 	provinces={
-		1126 1128 1967 3991 4018 4150 4970 5053 7008 7033 7040 7149 9943 9960 10045 10059 12018 12020 12034 12888 13074 
+		1126 1128 1967 3991 4018 4150 4970 5053 7008 7033 7040 7149 9943 9960 10045 10059 12018 12020 12034 12888 13074
 	}
 }

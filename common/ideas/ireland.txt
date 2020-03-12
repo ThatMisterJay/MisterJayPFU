@@ -111,7 +111,7 @@ ideas = {
 
 		IRE_liam_archer = {
 			picture = generic_army_europe_2
-
+ledger = army
 			allowed = {
 				original_tag = IRE
 			}
@@ -128,7 +128,7 @@ ideas = {
 			allowed = {
 				original_tag = IRE
 			}
-
+ledger = army
 			traits = { army_chief_defensive_2 }
 
 			ai_will_do = {
@@ -138,7 +138,7 @@ ideas = {
 
 		IRE_sean_russell = {
 			picture = generic_army_europe_1
-
+ledger = army
 			allowed = {
 				original_tag = IRE
 			}
@@ -156,7 +156,7 @@ ideas = {
 
 		IRE_h_t_green = {
 			picture = generic_air_europe_1
-
+ledger = air
 			allowed = {
 				original_tag = IRE
 			}
@@ -170,7 +170,7 @@ ideas = {
 
 		IRE_p_a_mulcahy = {
 			picture = generic_air_europe_2
-
+ledger = air
 			allowed = {
 				original_tag = IRE
 			}
@@ -186,7 +186,7 @@ ideas = {
 	navy_chief = {
 
 		IRE_john_byrne = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -202,7 +202,7 @@ ideas = {
 
 		IRE_s_muiris = {
 			picture = generic_navy_europe_3
-
+ledger = navy
 			allowed = {
 				original_tag = IRE
 			}
@@ -221,7 +221,7 @@ ideas = {
 
 		IRE_dan_mckenna = {
 			picture = generic_army_europe_1
-
+ledger = army
 			allowed = {
 				original_tag = IRE
 			}
@@ -236,7 +236,7 @@ ideas = {
 		IRE_frank_fahy = {
 
 			picture = generic_army_europe_2
-
+ledger = army
 			allowed = {
 				original_tag = IRE
 			}
@@ -251,7 +251,7 @@ ideas = {
 		IRE_michael_brennan = {
 
 			picture = generic_air_europe_3
-
+ledger = air
 			allowed = {
 				original_tag = IRE
 			}
@@ -264,7 +264,7 @@ ideas = {
 		}
 
 		IRE_a_t_lawlor = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -281,7 +281,7 @@ ideas = {
 
 	theorist = {
 		IRE_michael_joe_costello = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -296,7 +296,7 @@ ideas = {
 		}
 
 		IRE_oscar_traynor = {
-
+ledger = air
 			picture = generic_political_advisor_europe_2
 
 			allowed = {

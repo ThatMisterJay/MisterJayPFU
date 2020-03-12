@@ -4,19 +4,20 @@ state={
 	name="STATE_459" # Algiers
 	manpower = 3089944
 	state_category = town
-	
+
 	resources={
 		steel=36
 	}
 
 	history={
+		add_core_of = AFR
 		owner = FRA
-		
+
 		victory_points = {
-			1145 5 
+			1145 5
 		}
 		victory_points = {
-			7132 5 
+			7132 5
 		}
 		buildings = {
 			industrial_complex = 1
@@ -32,6 +33,6 @@ state={
 	}
 
 	provinces={
-		1013 1145 4116 4131 4146 7132 9964 11923 11939 12760 
+		1013 1145 4116 4131 4146 7132 9964 11923 11939 12760
 	}
 }

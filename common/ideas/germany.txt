@@ -975,6 +975,21 @@ NOT = { has_idea = walther_funk }
 
 			traits = { smooth_talking_charmer }
 		}
+		ger_wilhelm_canaris = {
+
+		available = {
+			has_intelligence_agency = yes
+		}
+
+		allowed = {
+			original_tag = GER
+			has_dlc = "La Resistance"
+		}
+
+		traits = { head_of_intelligence }
+
+	}
+	
 	}
 
 
@@ -1510,7 +1525,7 @@ cost = 100
 
 	theorist = {
 		von_braun = {
-
+ledger = air
 			allowed = {
 				original_tag = GER
 			}
@@ -1523,7 +1538,7 @@ cost = 100
 		}
 
 		heisenberg = {
-
+ledger = army
 
 			allowed = {
 				original_tag = GER
@@ -1537,7 +1552,7 @@ cost = 100
 		}
 
 		heinz_guderian = {
-
+ledger = army
 
 			allowed = {
 				original_tag = GER
@@ -1552,7 +1567,7 @@ cost = 100
 		}
 
 		manstein = {
-
+ledger = army
 
 			allowed = {
 				original_tag = GER
@@ -1569,7 +1584,7 @@ cost = 100
 		}
 
 		wolfram_von_richthofen = {
-
+ledger = air
 
 			allowed = {
 				original_tag = GER
@@ -1585,7 +1600,7 @@ cost = 100
 		}
 
 		walther_wever = {
-
+ledger = air
 
 			allowed = {
 				original_tag = GER
@@ -1599,7 +1614,7 @@ cost = 100
 		}
 
 		ernst_udet = {
-
+ledger = air
 
 			allowed = {
 				original_tag = GER
@@ -1613,7 +1628,7 @@ cost = 100
 		}
 
 		alfred_saalwachter = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = GER
@@ -1629,7 +1644,7 @@ cost = 100
 		}
 
 		otto_ciliax = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = GER
@@ -1647,6 +1662,7 @@ cost = 100
 	army_chief = {
 
 		ludwig_beck = {
+			ledger = army
 
 
 			allowed = {
@@ -1674,6 +1690,7 @@ cost = 100
 		}
 
 		franz_halder = {
+			ledger = army
 
 
 			allowed = {
@@ -1688,6 +1705,7 @@ cost = 100
 		}
 
 		walther_von_brauchitsch = {
+			ledger = army
 
 
 			allowed = {
@@ -1709,6 +1727,7 @@ cost = 100
 	air_chief = {
 
 		goering = {
+			ledger = air
 
 
 			allowed = {
@@ -1723,6 +1742,7 @@ cost = 100
 		}
 
 		ritter_von_greim = {
+			ledger = air
 
 
 			allowed = {
@@ -1740,6 +1760,7 @@ cost = 100
 		}
 
 		albert_kesselring = {
+			ledger = air
 
 
 			allowed = {
@@ -1757,6 +1778,7 @@ cost = 100
 	navy_chief = { #CHIEF OF NAVY
 
 		raeder = {
+			ledger = navy
 
 
 			allowed = {
@@ -1771,6 +1793,7 @@ cost = 100
 		}
 
 		donitz = {
+			ledger = navy
 
 
 			allowed = {
@@ -1788,6 +1811,7 @@ cost = 100
 	high_command = {
 
 		ferdinand_schorner = {
+			ledger = army
 
 
 			allowed = {
@@ -1802,6 +1826,7 @@ cost = 100
 		}
 
 		erwin_rommel = {
+			ledger = army
 
 
 			allowed = {
@@ -1819,6 +1844,7 @@ cost = 100
 		}
 
 		gerd_von_rundstedt = {
+			ledger = army
 
 
 			allowed = {
@@ -1833,6 +1859,7 @@ cost = 100
 		}
 
 		werner_von_fritsch = {
+			ledger = army
 
 
 			allowed = {
@@ -1847,6 +1874,7 @@ cost = 100
 		}
 
 		hugo_sperrle = {
+			ledger = air
 
 
 			allowed = {
@@ -1856,7 +1884,7 @@ cost = 100
 					has_completed_focus = GER_luftwafferearmament
 			}
 
-			traits = { air_close_air_support_2 }
+			traits = { air_tactical_bombing_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -1866,7 +1894,7 @@ cost = 100
 
 
 		kurt_student = {
-
+ledger = air
 
 			allowed = {
 				original_tag = GER
@@ -1880,7 +1908,7 @@ cost = 100
 		}
 
 		erich_bey = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = GER
@@ -1894,7 +1922,7 @@ cost = 100
 		}
 
 		gunther_lutjens = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = GER
@@ -1908,7 +1936,7 @@ cost = 100
 		}
 
 		viktor_schutze = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = GER
@@ -1926,4 +1954,5 @@ cost = 100
 
 
 
+}
 }

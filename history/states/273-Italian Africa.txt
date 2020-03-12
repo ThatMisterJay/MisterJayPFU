@@ -7,11 +7,12 @@ state={
 	resources={
 		oil=12
 	}
-	
+
 	state_category = wasteland
 	impassable = yes
 
 	history={
+		add_core_of = AFR
 		owner = ITA
 		buildings = {
 			infrastructure = 0

@@ -285,8 +285,8 @@ stability_bad_modifier = {
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
-	army_core_attack_factor = 0.1
-	army_core_defence_factor = 0.1
+	army_core_attack_factor = 0.08
+	army_core_defence_factor = 0.08
 	command_power_gain_mult = 0.5
 }
 
@@ -373,8 +373,8 @@ diff_strong_ai_generic = {
 	land_reinforce_rate = 0.02
 
 	# defensivness
-	army_core_attack_factor = 0.15
-	army_core_defence_factor = 0.15
+	army_core_attack_factor = 0.12
+	army_core_defence_factor = 0.12
 
 	attrition = -0.075
 
@@ -406,18 +406,18 @@ naval_mines_effect = {
 }
 
 air_wing_experience_bonus_max = {
-	air_attack_factor = 0.2
+	air_attack_factor = 0.15
 	#air_defence_factor = 0.2
-	air_agility_factor = 0.3
-	air_night_penalty = -0.2
+	air_agility_factor = 0.15
+	air_night_penalty = -0.15
 	#air_weather_penalty = -0.3
 }
 
 air_wing_experience_malus_min = {
-	air_attack_factor = -0.15
+	air_attack_factor = -0.05
 	#air_defence_factor = -0.15
-	air_agility_factor = -0.15
-	air_night_penalty = 0.15
+	air_agility_factor = -0.05
+	air_night_penalty = 0.05
 	#air_weather_penalty = 0.15
 }
 
@@ -508,7 +508,7 @@ intel_network_state_level_bonus = {
 
 # modifiers applied to enemy divisions in an intel network
 intel_network_state_level_penalty = {
-	max_planning = -1
+	max_planning = -0.08
 	max_dig_in = -1
 }
 

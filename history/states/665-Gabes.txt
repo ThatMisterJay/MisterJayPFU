@@ -7,6 +7,7 @@ state={
 	}
 
 	history={
+		add_core_of = AFR
 		owner = FRA
 		buildings = {
 			infrastructure = 2
@@ -14,11 +15,11 @@ state={
 		}
 		add_core_of = FRA
 	}
-	
+
 	state_category = pastoral
 
 	provinces={
-		1105 3987 4992 7005 9983 10082 11957 12000 13145 13179 
+		1105 3987 4992 7005 9983 10082 11957 12000 13145 13179
 	}
 	manpower=427824
 	buildings_max_level_factor=1.000

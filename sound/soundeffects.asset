@@ -45,6 +45,46 @@ soundeffect = {
 	max_audible = 3
 	fade_out = 0.8
 }
+soundeffect =
+{
+	name = "alert_decision_timeout_sound"
+	volume = 0.40
+	sounds = {
+		sound = "select_new_alert"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_not_enough_garrison_sound"
+	volume = 0.40
+	sounds = {
+		sound = "unable_manpower_alert"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_unassigned_divisions_sound"
+	volume = 0.40
+	sounds = {
+		sound = "unable_manpower_alert"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_operative_ready_to_recruit_sound"
+	volume = 0.35
+	sounds = {
+		sound = "low_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
 soundeffect = {
 	name = ship_hit_small_effect
 	falloff = "falloff_100"
@@ -2667,6 +2707,23 @@ soundeffect =
 	}
 	max_audible = 1
 	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_decision_new_sound"
+	volume = 0.40
+	sounds = {
+		sound = "select_new_alert"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+sound =
+{
+	name = "select_new_alert"
+	file = "menu/select_new_alert.wav"
+	volume = 1.2
 }
 soundeffect =
 {
