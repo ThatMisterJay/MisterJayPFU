@@ -7,6 +7,7 @@ state={
 	}
 
 	history={
+		add_core_of = AFR
 		owner = FRA
 		buildings = {
 			infrastructure = 2
@@ -16,7 +17,7 @@ state={
 	}
 
 	provinces={
-		1974 1993 3165 5084 7963 8078 11108 11194 12719 12830 
+		1974 1993 3165 5084 7963 8078 11108 11194 12719 12830
 	}
 	manpower=2572456
 	buildings_max_level_factor=1.000

@@ -10,10 +10,7 @@ country_event = {
 
 fire_only_once = yes
 
-		trigger = {
-			tag = SPR
-			date > 1936.7.17
-		}
+		is_triggered_only = yes
 
 
 	option = { # Support Nationalists
@@ -23,38 +20,39 @@ fire_only_once = yes
 				threat = 2 name = SPR_war
 			}
 			SPR = {
-				add_timed_idea = {
-					idea = SPA_recovering_from_civil_war
-					days = 1084
-			}
+				add_ideas = SPA_recovering_from_civil_war
 		}
 
-				set_stability = 0.60
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.20
-				}
+		remove_ideas = SPR_military_disloyalty
+remove_ideas = SPR_political_violence
+SPR_clr_national_strikes = yes
+
+				add_stability = -0.10
+
 			}
 			news_event = { hours = 6 id = news.63 }
 
-			add_popularity = {
-				ideology = fascism
-				popularity = 1
-			}
+
 set_politics = { ruling_party = fascism }
 			ITA = { country_event = { id = ethiopia.1 days = 1 } }
 
+			army_experience = 200
+
 			SOV = {
-				army_experience = 100
-				air_experience = 120
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
+
 			}
 			GER = {
-				army_experience = 100
-				air_experience = 120
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
 			}
 			ITA = {
-				army_experience = 50
-				air_experience = 100
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
 			}
 		}
 

@@ -2038,34 +2038,8 @@ focus_tree = {
 		completion_reward = { }
 	}
 
-	focus = {
-		id = FRA_ban_communism
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
 
-		completion_reward = { }
-	}
 
-	focus = {
-		id = FRA_ban_the_leagues
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_form_the_popular_front
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
 	focus = {
 		id = FRA_communist_cooperation
 		icon = GFX_goal_generic_construction
@@ -2120,26 +2094,10 @@ focus_tree = {
 
 		completion_reward = { }
 	}
-	focus = {
-		id = SPA_unify_the_nationalist_front
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
 
-		completion_reward = { }
-	}
 
-	focus = {
-		id = FRA_french_forces_of_the_interior
-		icon = GFX_goal_generic_construction
-		x = 0
-		y = 0
-		cost = 10
-
-		completion_reward = { }
-	}
 	
+
 	focus = {
 		id = SPR_maintain_the_second_republic
 		icon = GFX_goal_generic_construction

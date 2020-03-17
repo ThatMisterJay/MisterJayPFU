@@ -2,14 +2,12 @@ state={
 	id=752
 	name="STATE_752"
 		history={
-		owner = SHX
-		add_core_of = SHX
-		add_core_of = CHI
+		owner = PRC
 		add_core_of = PRC
 		buildings = {
 		}
 	}
-	
+
 	provinces={
 		1959 2087 4525 7048 10629 10854 12331 12609 12880 4960
 	}

@@ -10,6 +10,7 @@ state={
 	state_category = rural
 
 	history={
+		add_core_of = XSM
 		owner = ENG
 		victory_points = {
 			7371 5

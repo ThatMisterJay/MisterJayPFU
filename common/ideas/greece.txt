@@ -140,7 +140,7 @@ political_advisor = {
 theorist = {
 
 	GRE_nikolaos_plastiras = {
-
+ledger = army
 		picture = generic_army_europe_3
 
 		allowed = {
@@ -155,7 +155,7 @@ theorist = {
 	}
 
 	GRE_eleftherios_venizelos = {
-
+ledger = air
 		picture = generic_political_advisor_europe_1
 
 		allowed = {
@@ -173,7 +173,7 @@ theorist = {
 	army_chief = {
 
 		GRE_alexander_papagos = {
-
+ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -190,7 +190,7 @@ theorist = {
 		}
 
 		GRE_konstantinos_ventiris = {
-
+ledger = army
 			picture = generic_army_europe_5
 
 			allowed = {
@@ -211,7 +211,7 @@ theorist = {
 
 
 		GRE_panagiotis_gazis = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -228,7 +228,7 @@ theorist = {
 		}
 
 		GRE_vasilios_tsarpalis = {
-
+ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -249,7 +249,7 @@ theorist = {
 
 
 		GRE_alexandros_sakellariou = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -266,7 +266,7 @@ theorist = {
 		}
 
 		GRE_petros_voulgaris = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -286,7 +286,7 @@ theorist = {
 	high_command = {
 
 		GRE_aris_velouchiotis = {
-
+ledger = army
 			allowed = {
 				original_tag = GRE
 			}
@@ -302,7 +302,7 @@ theorist = {
 
 		GRE_napoleon_zervas = {
 
-
+ledger = army
 			allowed = {
 				original_tag = GRE
 			}
@@ -318,7 +318,7 @@ theorist = {
 
 		GRE_nikos_beloyannis = {
 
-
+ledger = air
 			allowed = {
 				original_tag = GRE
 			}
@@ -334,7 +334,7 @@ theorist = {
 
 		GRE_aristeidis_moraitinis = {
 
-
+ledger = air
 			allowed = {
 				original_tag = GRE
 			}

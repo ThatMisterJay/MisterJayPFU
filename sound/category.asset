@@ -10,6 +10,7 @@ category = {
 	diplomatic_notification
 	complete_focus
 	research_complete
+  agency_complete
 	join_faction
 	stage_coup
 	justify_wargoals
@@ -17,6 +18,7 @@ category = {
 	enemy_declare_war
 	horse_walking
 	tutorial_objective_done
+  operation_complete
 
 	######## INGAME ALERT - topbar
 	# simple sound effect. at least important and less important
@@ -30,6 +32,7 @@ category = {
 	alert_free_naval_dockyards_sound #4
 	alert_pick_new_idea_sound #4
 	alert_select_focus_sound #4
+  alert_not_enough_garrison_sound
 	alert_trade_import_unfullfilled_sound #4
 	alert_expeditionary_force_sound #4
 	alert_available_wargoal_sound #4
@@ -50,8 +53,11 @@ category = {
 	alert_lack_of_resources_sound # 4
 	alert_naval_convoy_raiding_results_sound # 4
 	alert_paused_diplomatic_actions_sound # 3
+  alert_unassigned_divisions_sound
 	alert_no_equipment_production_sound #4
 	alert_port_strike_results_sound
+  alert_decision_timeout_sound
+  alert_operative_ready_to_recruit_sound
 
 	######## INGAME ALERT - sidebar
 	# important and less so by type (naval/air/land)
@@ -65,7 +71,8 @@ category = {
 	alert_enemy_air_superiority_sound # 2 eget
 	alert_naval_combat_sound #2
 	alert_expensive_ships_low_str_sound #2
-	alert_resistance_sound # 3
+  alert_decision_new_sound
+  alert_resistance_sound # 3
 	alert_battleplans_with_no_divs_sound # 5
 
 	####### SHIPS

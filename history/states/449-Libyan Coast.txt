@@ -3,25 +3,26 @@ state={
 	id=449
 	name="STATE_449" # El Agheila
 	manpower = 40431
-	
+
 	state_category = enclave
 	resources={
-		
+
 	}
 
 	history={
+		add_core_of = AFR
 		owner = ITA
 				victory_points = {
-			1198 3 
+			1198 3
 		}
-		
+
 		buildings = {
 			infrastructure = 3
 					1198 ={
 			bunker = 5
 			}
-		
-		
+
+
 		}
 	}
 

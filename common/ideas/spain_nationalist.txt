@@ -3,7 +3,15 @@ ideas = {
 	country = {
 
 
+SPA_civil_war_support = {
 
+	picture = CZE_planning_bonus
+
+	modifier = {
+		experience_gain_army = 0.12
+		experience_gain_air = 0.12
+	}
+}
 
 
 		SPR_Recruitment_Fascist = {
@@ -25,7 +33,43 @@ ideas = {
 				}
 
 
+				SPR_military_disloyalty = {
 
+					picture = chi_war_of_resistance
+
+					allowed = {
+						original_tag = SPR
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+						custom_modifier_tooltip = SPR_military_disloyalty_tt
+						military_leader_cost_factor = 1.00
+					}
+				}
+
+				SPR_political_violence = {
+
+		picture = SPR_political_violence
+
+		allowed = {
+			original_tag = SPR
+			NOT = { has_global_flag = spanish_civil_war }
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		modifier = {
+			stability_factor = -0.15
+			disabled_ideas = 1
+		}
+	}
 
 
 
@@ -67,6 +111,125 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 		}
+
+		SPR_national_strikes_1 = { # Two times suppressed as Nationalists
+
+					name = SPR_national_strikes
+
+					picture = FRA_factory_strikes
+
+					allowed = {
+						original_tag = SPR
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+						stability_factor = -0.2
+					}
+
+				}
+
+				SPR_national_strikes_2 = { # One time suppressed as Nationalists
+
+					name = SPR_national_strikes
+
+					picture = FRA_factory_strikes
+
+					allowed = {
+						original_tag = SPR
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+						stability_factor = -0.15
+						industrial_capacity_factory = -0.05
+						industrial_capacity_dockyard = -0.05
+						production_speed_buildings_factor = -0.05
+					}
+
+				}
+
+				SPR_national_strikes_3 = { # Default starter spirit
+
+					name = SPR_national_strikes
+
+					picture = FRA_factory_strikes
+
+					allowed = {
+						original_tag = SPR
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+						stability_factor = -0.1
+						industrial_capacity_factory = -0.1
+						industrial_capacity_dockyard = -0.1
+						production_speed_buildings_factor = -0.1
+					}
+
+				}
+
+				SPR_national_strikes_4 = { # One time concessions to the left as Nationalists
+
+					name = SPR_national_strikes
+
+					picture = FRA_factory_strikes
+
+					allowed = {
+						original_tag = SPR
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+						political_power_factor = -0.1
+						stability_factor = -0.05
+						industrial_capacity_factory = -0.15
+						industrial_capacity_dockyard = -0.15
+						production_speed_buildings_factor = -0.15
+					}
+
+				}
+
+				SPR_national_strikes_5 = { # Two times concessions to the left as Nationalists
+
+					name = SPR_national_strikes
+
+					picture = FRA_factory_strikes
+
+					allowed = {
+						original_tag = SPR
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					modifier = {
+						political_power_factor = -0.2
+						industrial_capacity_factory = -0.2
+						industrial_capacity_dockyard = -0.2
+						production_speed_buildings_factor = -0.2
+					}
+
+				}
+
 
 
 
@@ -136,6 +299,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = 0.1
+
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -168,6 +332,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.14
 				production_speed_buildings_factor = -0.07
 				consumer_goods_factor = 0.07
+
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -197,6 +362,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.07
 				production_speed_buildings_factor = -0.04
 				consumer_goods_factor = 0.04
+
 			}
 
 			rule = { can_decline_call_to_war = yes }
@@ -1176,7 +1342,10 @@ ideas = {
 				}
 			}
 
-
+available = {
+	NOT = { has_completed_focus = SPA_banish_the_party_leaders
+	}
+}
 
 			traits = { falangist_syndicalist }
 		}
@@ -1197,6 +1366,9 @@ ideas = {
 				}
 			}
 
+available = {
+	has_completed_focus = SPA_banish_the_party_leaders
+}
 
 
 			traits = { loyal_falangist }
@@ -1263,6 +1435,56 @@ ideas = {
 
 
 			traits = { silent_workhorse }
+		}
+
+
+		SPA_pro_allies_guy = {
+
+			picture = SPA_pro_allies_guy
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+			available {
+				has_completed_focus = SPA_join_the_allies
+			}
+
+			traits = { pro_allies_fm }
+		}
+
+		SPA_pro_axis_guy = {
+
+			picture = SPA_pro_axis_guy
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+
+			available {
+				has_completed_focus = SPA_join_the_axis
+			}
+
+			visible = {
+				NOT = {
+					tag = SPD
+					tag = SPC
+				}
+			}
+
+
+
+			traits = { pro_axis_fm }
 		}
 
 		SPA_luis_hernando_de_larramendi = {
@@ -1855,6 +2077,9 @@ ideas = {
 				}
 			}
 
+available = {
+	has_completed_focus = SPA_the_condor_legion
+}
 
 
 			traits = { army_armored_2 }

@@ -149,7 +149,7 @@ country = {
 	theorist = {
 
 	TUR_mehmet_gunaltay = {
-
+ledger = army
 		picture = generic_army_europe_2
 
 		allowed = {
@@ -164,7 +164,7 @@ country = {
 	}
 
 	TUR_refik_saydam = {
-
+ledger = air
 		picture = generic_political_advisor_europe_1
 
 		allowed = {
@@ -182,7 +182,7 @@ country = {
 	army_chief = {
 
 		TUR_kazim_orbay = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -199,7 +199,7 @@ country = {
 		}
 
 		TUR_fevzi_cakmak = {
-
+ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -219,7 +219,7 @@ country = {
 	air_chief = {
 
 		TUR_memduh_tagmac = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -236,7 +236,7 @@ country = {
 		}
 
 		TUR_ali_orlungat = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -257,7 +257,7 @@ country = {
 
 
 		TUR_mehmet_ali_ungen = {
-
+ledger = navy
 			picture = generic_navy_europe_3
 
 			allowed = {
@@ -274,7 +274,7 @@ country = {
 		}
 
 		TUR_rauf_orbay = {
-
+ledger = navy
 			picture = generic_navy_europe_3
 
 			allowed = {
@@ -294,7 +294,7 @@ country = {
 	high_command = {
 
 		TUR_sabiha_gokcen = {
-
+ledger = air
 			picture = sabiha_gocen
 
 			allowed = {
@@ -311,7 +311,7 @@ country = {
 		}
 
 		TUR_abdurrahman_gurman = {
-
+ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -327,7 +327,7 @@ country = {
 		}
 
 		TUR_ali_fuat_cebesoy = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -343,7 +343,7 @@ country = {
 		}
 
 		TUR_erkan_gataly = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {

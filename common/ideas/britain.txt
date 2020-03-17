@@ -159,6 +159,7 @@ ENG_ITA_help = {
 			}
 
 			modifier = {
+				operative_slot = 3
 				drift_defence_factor = 0.5
 			}
 
@@ -458,7 +459,7 @@ ENG_ITA_help = {
 				max_command_power = 25
 				command_power_gain_mult = 0.1
 				planning_speed = 0.1
-				max_planning = 0.1
+				max_planning = 0.04
 			}
 
 			picture = eng_chiefs_of_staff_committee
@@ -1964,11 +1965,52 @@ ENG_ITA_help = {
 
 			traits = { quartermaster_general }
 		}
+
+	eng_stewart_menzies = {
+
+		available = {
+			has_intelligence_agency = yes
+		}
+
+		allowed = {
+			original_tag = ENG
+			has_dlc = "La Resistance"
+		}
+
+		traits = { head_of_intelligence }
+
+	}
+
+	eng_alan_turing = {
+
+		picture = eng_alan_turing
+
+		available = {
+			has_intelligence_agency = yes
+			has_done_agency_upgrade = upgrade_form_department
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
+		}
+		allowed = {
+			original_tag = ENG
+			has_dlc = "La Resistance"
+		}
+
+		traits = { mastermind_code_cracker }
+
+	}
+
 	}
 
 	# MILITARY
 	army_chief = {
 		john_vereker = {
+			ledger = army
 			allowed = {
 				original_tag = ENG
 			}
@@ -1983,6 +2025,7 @@ ENG_ITA_help = {
 		}
 
 		edmund_ironside = {
+			ledger = army
 
 			allowed = {
 				original_tag = ENG
@@ -1998,6 +2041,7 @@ ENG_ITA_help = {
 		}
 
 		alan_brooke = {
+			ledger = army
 
 			allowed = {
 				original_tag = ENG
@@ -2015,6 +2059,7 @@ ENG_ITA_help = {
 	navy_chief = {
 
 		ernle_chatfield = {
+			ledger = navy
 
 			allowed = {
 				original_tag = ENG
@@ -2030,6 +2075,8 @@ ENG_ITA_help = {
 		}
 
 		dudley_pound = {
+			ledger = navy
+
 
 			allowed = {
 				original_tag = ENG
@@ -2046,6 +2093,7 @@ ENG_ITA_help = {
 		}
 
 		andrew_cunningham = {
+			ledger = navy
 
 			allowed = {
 				original_tag = ENG
@@ -2063,6 +2111,7 @@ ENG_ITA_help = {
 	air_chief = {
 
 		cyril_newall = {
+			ledger = air
 
 			allowed = {
 				original_tag = ENG
@@ -2078,6 +2127,7 @@ ENG_ITA_help = {
 		}
 
 		charles_portal = {
+			ledger = air
 
 			allowed = {
 				original_tag = ENG
@@ -2094,6 +2144,7 @@ ENG_ITA_help = {
 		}
 
 		edward_ellington = {
+			ledger = air
 
 			allowed = {
 				original_tag = ENG
@@ -2112,6 +2163,7 @@ ENG_ITA_help = {
 	high_command = {
 
 		archibald_wavell = {
+			ledger = army
 
 			allowed = {
 				original_tag = ENG
@@ -2127,6 +2179,7 @@ ENG_ITA_help = {
 		}
 
 		claude_auchinleck = {
+			ledger = army
 
 			allowed = {
 				original_tag = ENG
@@ -2142,6 +2195,7 @@ ENG_ITA_help = {
 		}
 
 		ENG_bernard_montgomery = {
+			ledger = army
 
 			picture = bernard_montgomery
 
@@ -2164,6 +2218,7 @@ ENG_ITA_help = {
 		}
 
 		kenneth_anderson = {
+			ledger = army
 
 			allowed = {
 				original_tag = ENG
@@ -2179,6 +2234,7 @@ ENG_ITA_help = {
 		}
 
 		sholto_douglas = {
+			ledger = air
 
 			allowed = {
 				original_tag = ENG
@@ -2194,6 +2250,7 @@ ENG_ITA_help = {
 		}
 
 		trafford_leigh_mallory = {
+			ledger = air
 
 			allowed = {
 				original_tag = ENG
@@ -2209,6 +2266,7 @@ ENG_ITA_help = {
 		}
 
 		frederick_bowhill = {
+			ledger = air
 
 			allowed = {
 				original_tag = ENG
@@ -2224,6 +2282,7 @@ ENG_ITA_help = {
 		}
 
 		louis_mountbatten = {
+			ledger = army
 
 			allowed = {
 				original_tag = ENG
@@ -2239,6 +2298,7 @@ ENG_ITA_help = {
 		}
 
 		henry_harwood = {
+			ledger = navy
 
 			allowed = {
 				original_tag = ENG
@@ -2254,6 +2314,7 @@ ENG_ITA_help = {
 		}
 
 		max_horton = {
+			ledger = navy
 
 			allowed = {
 				original_tag = ENG
@@ -2269,6 +2330,7 @@ ENG_ITA_help = {
 		}
 
 		ENG_david_stirling = {
+			ledger = army
 
 			available = {
 				has_completed_focus = ENG_special_air_service
@@ -2798,7 +2860,7 @@ cost = 100
 	theorist = {
 
 		bernard_montgomery = {
-
+ledger = army
 			allowed = {
 				original_tag = ENG
 			}
@@ -2813,7 +2875,7 @@ cost = 100
 		}
 
 		harold_alexander = {
-
+ledger = army
 			allowed = {
 				original_tag = ENG
 			}
@@ -2828,7 +2890,7 @@ cost = 100
 		}
 
 		james_somerville = {
-
+ledger = navy
 			allowed = {
 				original_tag = ENG
 			}
@@ -2843,7 +2905,7 @@ cost = 100
 		}
 
 		tom_phillips = {
-
+ledger = navy
 			allowed = {
 				original_tag = ENG
 			}
@@ -2858,7 +2920,7 @@ cost = 100
 		}
 
 		hugh_dowding = {
-
+ledger = air
 			allowed = {
 				original_tag = ENG
 			}
@@ -2873,7 +2935,7 @@ cost = 100
 		}
 
 		arthur_harris = {
-
+ledger = air
 			allowed = {
 				original_tag = ENG
 			}
@@ -2888,7 +2950,7 @@ cost = 100
 		}
 
 		james_chadwick = {
-
+ledger = army
 			allowed = {
 				original_tag = ENG
 			}
@@ -2903,7 +2965,7 @@ cost = 100
 		}
 
 		frank_whittle = {
-
+ledger = air
 			allowed = {
 				original_tag = ENG
 			}
@@ -2920,7 +2982,7 @@ cost = 100
 		# Crap communist ministers, intentionally without loc so they are 'randomized'
 
 		ENG_random_communist_minister_14 = {
-
+ledger = air
 			picture = generic_army_europe_5
 
 			visible = {
@@ -2938,7 +3000,7 @@ cost = 100
 			traits = { little_rocket_man }
 		}
 		ENG_random_communist_minister_15 = {
-
+ledger = army
 			picture = generic_army_europe_6
 
 			visible = {

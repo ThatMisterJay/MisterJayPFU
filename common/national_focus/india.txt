@@ -648,16 +648,7 @@ focus = {
 									transfer_state = 422
 									add_state_core = 422
 								}
-							add_resource = {
-									type = rubber
-									amount = -80
-									state = 422
-								}
-							add_resource = {
-									type = rubber
-									amount = 80
-									state = 126
-								}
+
 						}
 				}
 

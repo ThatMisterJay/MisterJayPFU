@@ -9,6 +9,7 @@ state={
 		aluminium=30
 	}
 	history={
+		add_core_of = AFR
 		owner = ENG
 
 		victory_points = {

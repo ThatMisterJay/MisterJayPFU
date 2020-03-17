@@ -323,12 +323,9 @@ focus_tree = {
 		}
 
 		available = {
-			JAP = {
-				has_war_with = CHI
-				}
+
 			JAP = { controls_state = 613 }
 			JAP = { controls_state = 608 }
-			JAP = { controls_state = 592 }
 
 		}
 

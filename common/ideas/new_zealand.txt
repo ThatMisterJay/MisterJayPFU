@@ -253,7 +253,7 @@ ideas = {
 	theorist = {
 
 		NZL_keith_j_holyoake = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -268,7 +268,7 @@ ideas = {
 		}
 
 		NZL_r_a_cochrane = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -283,7 +283,7 @@ ideas = {
 		}
 
 		NZL_arthur_dawes = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = NZL
@@ -308,7 +308,7 @@ ideas = {
 			allowed = {
 				original_tag = NZL
 			}
-
+ledger = army
 			traits = { army_regrouping_2 }
 
 			ai_will_do = {
@@ -319,7 +319,7 @@ ideas = {
 		NZL_j_c_nichols = {
 
 			picture = generic_army_europe_4
-
+ledger = army
 			allowed = {
 				original_tag = NZL
 			}
@@ -332,7 +332,7 @@ ideas = {
 		}
 
 		NZL_h_d_mcgregor = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -349,7 +349,7 @@ ideas = {
 		NZL_fluffy = {
 
 			picture = NZL_fluffy
-
+ledger = army
 			allowed = {
 				original_tag = NZL
 			}
@@ -362,7 +362,7 @@ ideas = {
 		}
 
 		NZL_trevor_handley = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -380,7 +380,7 @@ ideas = {
 	army_chief = {
 
 		NZL_william_sinclair_burgess = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -397,7 +397,7 @@ ideas = {
 		}
 
 		NZL_edward_puttick = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -414,7 +414,7 @@ ideas = {
 		}
 
 		NZL_j_e_duigan = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -431,7 +431,7 @@ ideas = {
 		}
 
 		NZL_n_weir = {
-
+ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -451,7 +451,7 @@ ideas = {
 	air_chief = {
 
 		NZL_a_j_stallworthy = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -468,7 +468,7 @@ ideas = {
 		}
 
 		NZL_l_p_peterson = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -488,7 +488,7 @@ ideas = {
 	navy_chief = {
 
 		NZL_h_e_horan = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -505,7 +505,7 @@ ideas = {
 		}
 
 		NZL_w_h_stratton = {
-
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -522,7 +522,7 @@ ideas = {
 		}
 
 		NZL_eric_prendergast = {
-
+ledger = navy
 			picture = generic_navy_europe_3
 
 			allowed = {

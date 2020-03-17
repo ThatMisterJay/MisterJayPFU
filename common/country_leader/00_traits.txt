@@ -247,6 +247,7 @@ leader_traits = {
 		random = no
 		war_support_factor = -0.05
 
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -469,9 +470,9 @@ leader_traits = {
 	the_director = {
 		random = no
 		planning_speed = -0.1
-		max_planning = 0.1
-		army_core_attack_factor = 0.15
-		army_core_defence_factor = 0.15
+		max_planning = 0.08
+		army_core_attack_factor = 0.12
+		army_core_defence_factor = 0.12
 	}
 
 	sins_of_the_father = {
@@ -534,7 +535,7 @@ leader_traits = {
 
 	divided_interests = {
 		random = no
-		army_core_attack_factor = 0.05
+		army_core_attack_factor = 0.04
 		army_core_defence_factor = -0.05
 		research_speed_factor = -0.1
 	}
@@ -921,12 +922,92 @@ mastermind_code_cracker = {
 	appeaser = {
 		random = yes
 		war_support_factor = -0.1
+		stability_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	tenacious_negotiator = {
+			random = yes
+			political_power_factor = 0.1
+			trade_opinion_factor = 0.25
+		}
 
+		national_integralist = {
+			sprite = 13
+			random = yes
+			political_power_factor = 0.15
+			stability_weekly = 0.001
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		retired_officer = {
+			random = yes
+			war_support_factor = 0.05
+			high_command_cost_factor = -0.25
+			air_chief_cost_factor = -0.25
+			army_chief_cost_factor = -0.25
+			navy_chief_cost_factor = -0.25
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		eager_collaborator = {
+			random = yes
+			send_volunteer_size = 2
+			improve_relations_maintain_cost_factor = -1
+			fascism_acceptance = 75
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		constitutional_monarch = {
+			random = no
+			stability_weekly = 0.01
+			political_power_gain = 0.1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		duke_of_orleans = {
+			random = no
+			neutrality_drift = 0.1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		count_of_paris = {
+			random = no
+			global_building_slots_factor = 0.05
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		reluctant_interventionist = {
+		random = yes
+		stability_factor = 0.05
+		lend_lease_tension = -0.2
+		request_lease_tension = -0.2
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+		emergency_powers = {
+			random = no
+			political_power_gain = 0.5
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	anti_democrat = {
 		random = no
 		democratic_acceptance = -50
@@ -952,13 +1033,13 @@ mastermind_code_cracker = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
-		army_core_attack_factor = 0.1
+		army_core_attack_factor = 0.08
 		army_core_defence_factor = 0.1
 	}
 	great_war_hero = {
 		war_support_factor = 0.05
 		stability_factor = 0.05
-		army_core_attack_factor = 0.2
+		army_core_attack_factor = 0.16
 		army_core_defence_factor = 0.2
 	}
 
@@ -998,8 +1079,8 @@ mastermind_code_cracker = {
 	nationalist_symbol = {
 		war_support_factor = 0.05
 		stability_factor = 0.05
-		army_core_attack_factor = 0.1
-		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.08
+		army_core_defence_factor = 0.08
 	}
 
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
@@ -1912,6 +1993,16 @@ mastermind_code_cracker = {
 		}
 	}
 
+	aircraft_manufacturer = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
 	light_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -2045,6 +2136,22 @@ mastermind_code_cracker = {
 			factor = 1
 		}
 	}
+
+	armored_car_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armored_car_equipment = {
+				maximum_speed = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 
 	medium_tank_manufacturer = {
 		random = no
@@ -2325,7 +2432,7 @@ mastermind_code_cracker = {
 
 	army_chief_offensive_1 = { # +5 Offensive efficiency
 		sprite = 7
-		army_attack_factor = 0.05
+		army_attack_factor = 0.04
 
 		ai_will_do = {
 			factor = 1
@@ -2334,7 +2441,7 @@ mastermind_code_cracker = {
 
 	army_chief_offensive_2 = { # +10 Offensive efficiency
 		sprite = 7
-		army_attack_factor = 0.1
+		army_attack_factor = 0.08
 
 		ai_will_do = {
 			factor = 2
@@ -2343,7 +2450,7 @@ mastermind_code_cracker = {
 
 	army_chief_offensive_3 = { # +15 Offensive efficiency
 		sprite = 7
-		army_attack_factor = 0.15
+		army_attack_factor = 0.12
 
 		ai_will_do = {
 			factor = 3
@@ -2446,7 +2553,7 @@ mastermind_code_cracker = {
 	army_chief_planning_1 = { #
 		sprite = 5
 		planning_speed = 0.05
-    max_planning = 0.5
+    max_planning = 0.04
 		ai_will_do = {
 			factor = 1
 		}
@@ -2455,7 +2562,7 @@ mastermind_code_cracker = {
 	army_chief_planning_2 = { #
 		sprite = 5
 		planning_speed = 0.10
-    max_planning = 0.1
+    max_planning = 0.08
 		ai_will_do = {
 			factor = 2
 		}
@@ -2464,7 +2571,7 @@ mastermind_code_cracker = {
 	army_chief_planning_3 = { #
 		sprite = 5
 		planning_speed = 0.15
-    max_planning = 0.15
+    max_planning = 0.12
 		ai_will_do = {
 			factor = 3
 		}
@@ -2556,8 +2663,8 @@ mastermind_code_cracker = {
 
 	army_armored_1 = { # +4 armor efficiency
 		sprite = 8
-		army_armor_attack_factor = 0.05
-	    army_armor_defence_factor = 0.05
+		army_armor_attack_factor = 0.04
+	    army_armor_defence_factor = 0.04
 
 		ai_will_do = {
 			factor = 1
@@ -2566,8 +2673,8 @@ mastermind_code_cracker = {
 
 	army_armored_2 = { # +8 armor efficiency
 		sprite = 8
-		army_armor_attack_factor = 0.1
-	    army_armor_defence_factor = 0.1
+		army_armor_attack_factor = 0.08
+	    army_armor_defence_factor = 0.08
 
 		ai_will_do = {
 			factor = 2
@@ -2576,8 +2683,8 @@ mastermind_code_cracker = {
 
 	army_armored_3 = { # +12 armor efficiency
 		sprite = 8
-		army_armor_attack_factor = 0.15
-	    army_armor_defence_factor = 0.15
+		army_armor_attack_factor = 0.12
+	    army_armor_defence_factor = 0.12
 
 		ai_will_do = {
 			factor = 3
@@ -2618,8 +2725,8 @@ mastermind_code_cracker = {
 
 	army_infantry_1 = { # +4 infantry efficiency
 		sprite = 5
-		army_infantry_attack_factor = 0.05
-		army_infantry_defence_factor = 0.1
+		army_infantry_attack_factor = 0.04
+		army_infantry_defence_factor = 0.04
 
 		ai_will_do = {
 			factor = 1
@@ -2628,8 +2735,8 @@ mastermind_code_cracker = {
 
 	army_infantry_2 = { # +8 infantry efficiency
 		sprite = 5
-		army_infantry_attack_factor = 0.1
-		army_infantry_defence_factor = 0.15
+		army_infantry_attack_factor = 0.08
+		army_infantry_defence_factor = 0.08
 
 		ai_will_do = {
 			factor = 3
@@ -2638,8 +2745,8 @@ mastermind_code_cracker = {
 
 	army_infantry_3 = { # +12 infantry efficiency
 		sprite = 5
-		army_infantry_attack_factor = 0.15
-		army_infantry_defence_factor = 0.2
+		army_infantry_attack_factor = 0.12
+		army_infantry_defence_factor = 0.12
 
 		ai_will_do = {
 			factor = 4
@@ -2649,8 +2756,8 @@ mastermind_code_cracker = {
 
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.1
-	    special_forces_defence_factor = 0.1
+		special_forces_attack_factor = 0.08
+	    special_forces_defence_factor = 0.08
 
 		ai_will_do = {
 			factor = 1
@@ -2659,8 +2766,8 @@ mastermind_code_cracker = {
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.15
-	    special_forces_defence_factor = 0.15
+		special_forces_attack_factor = 0.12
+	    special_forces_defence_factor = 0.12
 
 		ai_will_do = {
 			factor = 2
@@ -2669,8 +2776,8 @@ mastermind_code_cracker = {
 
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.2
-	    special_forces_defence_factor = 0.2
+		special_forces_attack_factor = 0.16
+	    special_forces_defence_factor = 0.16
 
 		ai_will_do = {
 			factor = 3
@@ -2680,12 +2787,12 @@ mastermind_code_cracker = {
 
 	army_cavalry_1 = { # +4 cavalry/motorized efficiency
 		sprite = 8
-		cavalry_attack_factor = 0.05
-		cavalry_defence_factor = 0.05
-		motorized_attack_factor = 0.05
-		motorized_defence_factor = 0.05
-		mechanized_attack_factor = 0.05
-		mechanized_defence_factor = 0.05
+		cavalry_attack_factor = 0.04
+		cavalry_defence_factor = 0.04
+		motorized_attack_factor = 0.04
+		motorized_defence_factor = 0.04
+		mechanized_attack_factor = 0.04
+		mechanized_defence_factor = 0.04
 
 		ai_will_do = {
 			factor = 1
@@ -2694,12 +2801,12 @@ mastermind_code_cracker = {
 
 	army_cavalry_2 = { # +8 cavalry/motorized efficiency
 		sprite = 8
-		cavalry_attack_factor = 0.1
-		cavalry_defence_factor = 0.1
-		motorized_attack_factor = 0.1
-		motorized_defence_factor = 0.1
-		mechanized_attack_factor = 0.1
-		mechanized_defence_factor = 0.1
+		cavalry_attack_factor = 0.08
+		cavalry_defence_factor = 0.08
+		motorized_attack_factor = 0.08
+		motorized_defence_factor = 0.08
+		mechanized_attack_factor = 0.08
+		mechanized_defence_factor = 0.08
 
 		ai_will_do = {
 			factor = 2
@@ -2708,13 +2815,12 @@ mastermind_code_cracker = {
 
 	army_cavalry_3 = { # +12 cavalry/motorized efficiency
 		sprite = 8
-		cavalry_attack_factor = 0.15
-		cavalry_defence_factor = 0.15
-		motorized_attack_factor = 0.15
-		motorized_defence_factor = 0.15
-		mechanized_attack_factor = 0.15
-		mechanized_defence_factor = 0.15
-
+		cavalry_attack_factor = 0.12
+		cavalry_defence_factor = 0.12
+		motorized_attack_factor = 0.12
+		motorized_defence_factor = 0.12
+		mechanized_attack_factor = 0.12
+		mechanized_defence_factor = 0.12
 		ai_will_do = {
 			factor = 3
 		}

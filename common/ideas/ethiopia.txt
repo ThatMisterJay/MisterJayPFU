@@ -16,7 +16,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = -0.010				
+				stability_weekly = -0.010
 			}
 		}
 	}
@@ -63,7 +63,7 @@ ideas = {
 	army_chief = {
 
 		ETH_desta_damtew = {
-
+ledger = army
 			picture = generic_army_arab_2
 
 			allowed = {
@@ -78,7 +78,7 @@ ideas = {
 		}
 
 		ETH_ras_kassa = {
-
+ledger = army
 			picture = generic_army_arab_1
 
 			allowed = {
@@ -96,7 +96,7 @@ ideas = {
 	air_chief = {
 
 		ETH_john_robinson = {
-
+ledger = air
 			picture = generic_air_arab_3
 
 			allowed = {
@@ -111,7 +111,7 @@ ideas = {
 		}
 
 		ETH_mesfin_sileshi = {
-
+ledger = air
 			picture = generic_air_arab_3
 
 			allowed = {
@@ -130,7 +130,7 @@ ideas = {
 	navy_chief = {
 
 		ETH_ras_seyum = {
-
+ledger = navy
 			picture = generic_navy_arab_2
 
 			allowed = {
@@ -145,7 +145,7 @@ ideas = {
 		}
 
 		ETH_lij_johannes = {
-
+ledger = navy
 			picture = generic_navy_arab_3
 
 			allowed = {
@@ -163,7 +163,7 @@ ideas = {
 	high_command = {
 
 		ETH_woldemeskal_tariku = {
-
+ledger = army
 			picture = generic_army_arab_1
 
 			allowed = {
@@ -178,7 +178,7 @@ ideas = {
 		}
 
 		ETH_haile_abba_mersa = {
-
+ledger = army
 			picture = generic_army_arab_3
 
 			allowed = {
@@ -195,7 +195,7 @@ ideas = {
 		ETH_lij_abiye_abebe = {
 
 			picture = generic_army_arab_2
-
+ledger = army
 			allowed = {
 				original_tag = ETH
 			}
@@ -208,7 +208,7 @@ ideas = {
 		}
 
 		ETH_fitauri_zawde_gobena = {
-
+ledger = air
 			picture = generic_air_arab_2
 
 			allowed = {
@@ -223,7 +223,7 @@ ideas = {
 		}
 
 		ETH_dedja_zinatch_nadeon = {
-
+ledger = navy
 			picture = generic_navy_arab_2
 
 			allowed = {
@@ -240,7 +240,7 @@ ideas = {
 
 	theorist = {
 		ETH_ras_kebbede = {
-
+ledger = army
 			picture = generic_army_arab_2
 
 			allowed = {
@@ -255,7 +255,7 @@ ideas = {
 		}
 
 		ETH_wondossen_kassa = {
-
+ledger = navy
 			picture = generic_navy_arab_3
 
 			allowed = {
@@ -270,7 +270,7 @@ ideas = {
 		}
 
 		ETH_gabriel_zawde_gilaneh = {
-
+ledger = air
 			picture = generic_air_arab_2
 
 			allowed = {

@@ -22,7 +22,9 @@ SOV_great_patriotic_war = {
 		original_tag = SOV
 	}
 	visible = {
-		has_war = yes
+		original_tag = SOV
 	}
+	priority = 1000
+
 		
 }

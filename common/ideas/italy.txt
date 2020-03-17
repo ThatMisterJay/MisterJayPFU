@@ -94,6 +94,22 @@ ideas = {
 	}
 		political_advisor = {
 
+
+italy_mario_roatta = {
+
+	available = {
+		has_intelligence_agency = yes
+	}
+
+	allowed = {
+		original_tag = ITA
+		has_dlc = "La Resistance"
+	}
+
+	traits = { head_of_intelligence }
+
+}
+
 		carlo_scorza = {
 
 
@@ -323,7 +339,7 @@ ideas = {
 
 		pietro_badoglio = {
 
-
+ledger = army
 			allowed = {
 				original_tag = ITA
 			}
@@ -339,7 +355,7 @@ ideas = {
 
 		ugo_cavallero = {
 
-
+ledger = army
 			allowed = {
 				original_tag = ITA
 			}
@@ -355,7 +371,7 @@ ideas = {
 
 		emilio_de_bono = {
 
-
+ledger = army
 			allowed = {
 				original_tag = ITA
 			}
@@ -374,7 +390,7 @@ ideas = {
 	navy_chief = {
 
 		domenico_cavagnari = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = ITA
@@ -392,7 +408,7 @@ ideas = {
 
 		arturo_riccardi = {
 
-
+ledger = navy
 			allowed = {
 				original_tag = ITA
 			}
@@ -408,7 +424,7 @@ ideas = {
 
 		inigo_campioni = {
 
-
+ledger = navy
 			allowed = {
 				original_tag = ITA
 			}
@@ -426,7 +442,7 @@ ideas = {
 
 
 		italo_balbo = {
-
+ledger = air
 
 			allowed = {
 				original_tag = ITA
@@ -444,7 +460,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		rino_corso_fougier = {
-
+ledger = air
 
 			allowed = {
 				original_tag = ITA
@@ -460,7 +476,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		francesco_pricolo = {
-
+ledger = air
 
 			allowed = {
 				original_tag = ITA
@@ -479,7 +495,7 @@ NOT = { has_country_flag = balbo_dead }
 	high_command = {
 
 		mario_roatta = {
-
+ledger = army
 
 			allowed = {
 				original_tag = ITA
@@ -497,7 +513,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		vittorio_ambrosio = {
-
+ledger = army
 
 			allowed = {
 				original_tag = ITA
@@ -516,7 +532,7 @@ NOT = { has_country_flag = balbo_dead }
 
 		alfredo_guzzoni = {
 
-
+ledger = army
 			allowed = {
 				original_tag = ITA
 			}
@@ -533,7 +549,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		ITA_com_spe = {
-
+ledger = army
     picture = generic_air_europe_2
 
 			allowed = {
@@ -554,7 +570,7 @@ NOT = { has_country_flag = balbo_dead }
 
 
 		marziale_cerutti = {
-
+ledger = air
 
 			allowed = {
 				original_tag = ITA
@@ -573,7 +589,7 @@ NOT = { has_country_flag = balbo_dead }
 
 
 		alberto_da_zara = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = ITA
@@ -589,7 +605,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		carlo_bergamini = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = ITA
@@ -605,7 +621,7 @@ NOT = { has_country_flag = balbo_dead }
 		}
 
 		luigi_mascherpa = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = ITA
@@ -984,7 +1000,7 @@ cost = 100
 
 	theorist = {
 		guglielmo_nasi = {
-
+ledger = army
 
 			allowed = {
 				original_tag = ITA
@@ -998,7 +1014,7 @@ cost = 100
 	}
 
 	ITA_ezio = {
-
+ledger = army
 	allowed = {
 	original_tag = ITA
 	}
@@ -1017,7 +1033,7 @@ cost = 100
 
 
 		giovanni_messe = {
-
+ledger = army
 			allowed = {
 				original_tag = ITA
 			}
@@ -1032,7 +1048,7 @@ cost = 100
 		}
 
 		rodolfo_graziani = {
-
+ledger = army
 			allowed = {
 				original_tag = ITA
 			}
@@ -1051,7 +1067,7 @@ cost = 100
 		}
 
 		guiseppe_fioravanzo = {
-
+ledger = navy
 			allowed = {
 				original_tag = ITA
 			}
@@ -1066,7 +1082,7 @@ cost = 100
 		}
 
 		angelo_iachino = {
-
+ledger = navy
 			allowed = {
 				original_tag = ITA
 			}
@@ -1079,7 +1095,7 @@ cost = 100
 		}
 
 		amedeo_mecozzi = {
-
+ledger = air
 			allowed = {
 				original_tag = ITA
 			}
@@ -1094,7 +1110,7 @@ cost = 100
 		}
 
 		renato_sandalli = {
-
+ledger = air
 
 			allowed = {
 				original_tag = ITA
@@ -1108,7 +1124,7 @@ cost = 100
 		}
 
 		gaetano_crocco = {
-
+ledger = air
 
 			allowed = {
 				original_tag = ITA

@@ -120,8 +120,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.12
+				army_core_defence_factor = 0.12
 			}
 		}
 
@@ -151,7 +151,7 @@ ideas = {
 	}
 	army_chief = {
 		FRA_FREE_georges_catroux = { ##
-
+ledger = army
 			allowed = {
 				original_tag = FRA
 
@@ -168,7 +168,7 @@ ideas = {
 			}
 		}
 		FRA_FREE_edgard_de_larminat = { ##
-
+ledger = army
 			allowed = {
 				original_tag = FRA
 
@@ -188,7 +188,7 @@ ideas = {
 	air_chief = {
 
 		FRA_FREE_henry_de_rancourt_de_mimerand = { ##bomber pilot, founder of the first free french air school
-
+ledger = air
 			allowed = {
 				original_tag = FRA
 
@@ -208,7 +208,7 @@ ideas = {
 	high_command = {
 
 		FRA_FREE_charles_de_gaulle = {
-
+ledger = army
 			picture = charles_de_gaulle
 
 					allowed = {
@@ -228,7 +228,7 @@ ideas = {
 
 		FRA_FREE_adolphe_cise = { ##military medic
 
-
+ledger = army
 			allowed = {
 				original_tag = FRA
 			}

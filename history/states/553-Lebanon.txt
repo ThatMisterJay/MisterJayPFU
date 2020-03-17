@@ -11,6 +11,7 @@ state={
 		victory_points = {
 			792 5
 		}
+		add_core_of = IRQ
 		buildings = {
 			infrastructure = 2
 			air_base = 5

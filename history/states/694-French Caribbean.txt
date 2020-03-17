@@ -6,6 +6,7 @@ state={
 	state_category = rural
 
 	history={
+		add_core_of = VEN
 		owner = FRA
 		buildings = {
 			infrastructure = 1

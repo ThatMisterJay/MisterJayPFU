@@ -69,7 +69,7 @@ ideas = {
 
 	theorist = {
 		TIB_gyato_wangdu = {
-
+ledger = army
 			picture = generic_army_asia_2
 
 			allowed = {
@@ -84,7 +84,7 @@ ideas = {
 		}
 
 		TIB_sampo_tsewang_rigzin = {
-
+ledger = air
 			picture = generic_air_asia_2
 
 			allowed = {
@@ -99,7 +99,7 @@ ideas = {
 		}
 
 		TIB_chama_samphe = {
-
+ledger = navy
 
 			allowed = {
 				original_tag = TIB
@@ -118,7 +118,7 @@ ideas = {
 	high_command = {
 
 		TIB_khemey_sonam_wangdi = {
-
+ledger = army
 			picture = generic_army_asia_2
 
 			allowed = {
@@ -133,7 +133,7 @@ ideas = {
 		}
 
 		TIB_chaghoe_namgyal_dorje = {
-
+ledger = army
 			picture = generic_army_asia_1
 
 			allowed = {
@@ -148,7 +148,7 @@ ideas = {
 		}
 
 		TIB_tenpa_jamyang = {
-
+ledger = army
 			picture = generic_army_asia_4
 
 			allowed = {
@@ -163,7 +163,7 @@ ideas = {
 		}
 
 		TIB_jamyang_rabten = {
-
+ledger = navy
 			picture = generic_navy_asia_2
 
 			allowed = {
@@ -181,7 +181,7 @@ ideas = {
 	army_chief = {
 
 		TIB_lobsang_tenzin = {
-
+ledger = army
 			picture = generic_army_asia_3
 
 			allowed = {
@@ -196,7 +196,7 @@ ideas = {
 		}
 
 		TIB_jampal_rabgye_rinpoche = {
-
+ledger = army
 			picture = generic_army_asia_5
 
 			allowed = {
@@ -214,7 +214,7 @@ ideas = {
 	air_chief = {
 
 		TIB_bapa_yeshe = {
-
+ledger = air
 			picture = generic_air_asia_1
 
 			allowed = {
@@ -231,7 +231,7 @@ ideas = {
 		}
 
 		TIB_chodak_karma = {
-
+ledger = air
 			picture = generic_air_asia_2
 
 			allowed = {
@@ -251,7 +251,7 @@ ideas = {
 	navy_chief = {
 
 		TIB_lhalu_tsewang_dorje = {
-
+ledger = navy
 			picture = generic_navy_asia_3
 
 			allowed = {
@@ -266,7 +266,7 @@ ideas = {
 		}
 
 		TIB_sogyal_rinpoche = {
-
+ledger = navy
 			picture = generic_navy_asia_2
 
 			allowed = {

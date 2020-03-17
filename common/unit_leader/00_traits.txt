@@ -358,7 +358,7 @@ new_commander_weight = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_planning = 0.1
+			max_planning = 0.08
 		}
 
 		ai_will_do = {
@@ -510,9 +510,9 @@ new_commander_weight = {
 
 		cost = 2000
 		modifier = {
-			cavalry_attack_factor = 0.15
-			motorized_attack_factor = 0.15
-			mechanized_attack_factor = 0.15
+			cavalry_attack_factor = 0.12
+			motorized_attack_factor = 0.12
+			mechanized_attack_factor = 0.12
 		}
 
 		ai_will_do = {
@@ -692,8 +692,8 @@ new_commander_weight = {
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
 		modifier = {
-			army_armor_speed_factor = 0.05
-			army_armor_attack_factor = 0.05
+			army_armor_speed_factor = 0.04
+			army_armor_attack_factor = 0.04
 		}
 
 		ai_will_do = {
@@ -904,8 +904,8 @@ new_commander_weight = {
 		}
 		cost = 1000
 		modifier = {
-			army_armor_attack_factor = 0.05
-			army_armor_defence_factor = 0.05
+			army_armor_attack_factor = 0.04
+			army_armor_defence_factor = 0.04
 		}
 
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -958,8 +958,8 @@ new_commander_weight = {
 		}
 		cost = 500
 		modifier = {
-			cavalry_attack_factor = 0.10
-			cavalry_defence_factor = 0.10
+			cavalry_attack_factor = 0.08
+			cavalry_defence_factor = 0.08
 		}
 
 		ai_will_do = {
@@ -1030,7 +1030,7 @@ new_commander_weight = {
 		}
 		cost = 500
 		modifier = {
-			army_infantry_attack_factor = 0.10
+			army_infantry_attack_factor = 0.08
 		}
 
 		ai_will_do = {
@@ -2196,10 +2196,10 @@ new_commander_weight = {
 }
 
 		modifier = {
-			exiled_divisions_attack_factor = 0.1
-			own_exiled_divisions_attack_factor = 0.05
-			exiled_divisions_defense_factor = 0.1
-			own_exiled_divisions_defense_factor = 0.05
+			exiled_divisions_attack_factor = 0.08
+			own_exiled_divisions_attack_factor = 0.04
+			exiled_divisions_defense_factor = 0.08
+			own_exiled_divisions_defense_factor = 0.04
 		}
 
 		ai_will_do = {
@@ -2412,8 +2412,8 @@ operative_natural_orator = {
 
 	cost = 400
 	modifier = {
-		operation_coup_government_risk = -0.25
-		operation_coup_government_cost = -0.25
+		
+
 		boost_ideology_mission_factor = 0.2
 	}
 }

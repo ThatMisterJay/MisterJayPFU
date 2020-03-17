@@ -39,7 +39,7 @@ ideas = {
 	army_chief = {
 
 		SIA_luang_phibunsongkhram = {
-
+ledger = army
 			picture = generic_army_asia_2
 
 			allowed = {
@@ -55,7 +55,7 @@ ideas = {
 
 
 		SIA_phraya_chitnasongkhla = {
-
+ledger = army
 			picture = generic_army_asia_3
 
 			allowed = {
@@ -75,7 +75,7 @@ ideas = {
 
 
 		SIA_phra_vechayanrangsarit = {
-
+ledger = air
 			picture = generic_air_asia_2
 
 			allowed = {
@@ -91,7 +91,7 @@ ideas = {
 
 
 		SIA_phraya_chalermarkiart = {
-
+ledger = air
 			picture = generic_air_asia_3
 
 			allowed = {
@@ -110,7 +110,7 @@ ideas = {
 
 
 		SIA_phraya_wichcitcholathai = {
-
+ledger = navy
 			picture = generic_navy_asia_1
 
 			allowed = {
@@ -126,7 +126,7 @@ ideas = {
 
 
 		SIA_thawon_thamrongnawasawat = {
-
+ledger = navy
 			picture = generic_navy_asia_3
 
 			allowed = {
@@ -144,7 +144,7 @@ ideas = {
 	high_command = {
 
 		SIA_tianliang_huntrakool = {
-
+ledger = army
 			picture = generic_army_asia_3
 
 			allowed = {
@@ -159,7 +159,7 @@ ideas = {
 		}
 
 		SIA_sindhu_kamalanavin = {
-
+ledger = army
 			picture = generic_army_asia_1
 
 			allowed = {
@@ -174,7 +174,7 @@ ideas = {
 		}
 
 		SIA_phraya_thayarnpikart = {
-
+ledger = air
 			picture = generic_air_asia_3
 
 			allowed = {
@@ -189,7 +189,7 @@ ideas = {
 		}
 
 		SIA_luang_sinthusongkhramchai = {
-
+ledger = air
 			picture = generic_air_asia_1
 
 			allowed = {
@@ -204,7 +204,7 @@ ideas = {
 		}
 
 		SIA_pridi_phanomyong = {
-
+ledger = navy
 			picture = generic_navy_asia_3
 
 			allowed = {
@@ -219,7 +219,7 @@ ideas = {
 		}
 
 		SIA_phraya_preechacholayudha = {
-
+ledger = navy
 			picture = generic_navy_asia_1
 
 			allowed = {
@@ -238,7 +238,7 @@ ideas = {
 
 	theorist = {
 		SIA_manphya_khanphialong = {
-
+ledger = army
 			picture = generic_army_asia_2
 
 			allowed = {
@@ -253,7 +253,7 @@ ideas = {
 		}
 
 		SIA_sawat_phutianands = {
-
+ledger = navy
 			picture = generic_navy_asia_3
 
 			allowed = {
@@ -268,7 +268,7 @@ ideas = {
 		}
 
 		SIA_phra_silpasakrakorn = {
-
+ledger = air
 			picture = generic_air_asia_3
 
 			allowed = {

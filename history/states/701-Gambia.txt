@@ -2,9 +2,10 @@ state={
 	id=701
 	name="STATE_701"
 	manpower = 199520
-	
+
 	state_category = enclave
 	history={
+		add_core_of = AFR
 		owner = ENG
 		buildings = {
 			4989 = {
@@ -13,8 +14,8 @@ state={
 		}
 
 	}
-	
+
 	provinces={
-		4989 
+		4989
 	}
 }

@@ -8,9 +8,10 @@ state={
 	state_category = rural
 
 	history={
+		add_core_of = AFR
 		owner = ENG
 		victory_points = {
-			10862 1 
+			10862 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -24,7 +25,7 @@ state={
 	}
 
 	provinces={
-		8039 8096 10862 12742 12785 12787 13136 
+		8039 8096 10862 12742 12785 12787 13136
 	}
 	manpower=3163600
 	buildings_max_level_factor=1.000

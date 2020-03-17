@@ -55,6 +55,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for rem
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 
+NDefines.NPolitics.PLANNING_MAX = 0.3
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 3
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.65
@@ -172,7 +173,7 @@ NDefines.NAI.MAX_SCREEN_TASKFORCES_FOR_MINE_LAYING = 0.10 --from 0.15
 
 NDefines.NGraphics.BORDER_WIDTH = 0.8
 
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.04
 
 NDefines.NCountry.HEROES_BEING_KILLED_WEEKLY_WAR_SUPPORT_PENALTY_DECAY = 0.001 -- Weekly decay of war heroes manpower lost war support penalty
 NDefines.NCountry.MAX_HEROES_BEING_KILLED_WAR_SUPPORT_IMPACT = -0.1				-- Max total penalty from war heroes manpower lost

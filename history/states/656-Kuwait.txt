@@ -4,9 +4,10 @@ state={
 	name="STATE_656"
 
 	history={
+		add_core_of = IRQ
 		owner = ENG
 		victory_points = {
-			8085 1 
+			8085 1
 		}
 		buildings = {
 			8085 = {
@@ -19,7 +20,7 @@ state={
 	}
 
 	provinces={
-		8085 
+		8085
 	}
 	manpower=80000
 	buildings_max_level_factor=1.000

@@ -5,6 +5,7 @@ state={
 	state_category = small_island
 
 	history={
+		add_core_of = ENG
 		owner = ENG
 		buildings = {
 			13010 = {
@@ -12,8 +13,8 @@ state={
 			}
 		}
 	}
-	
+
 	provinces={
-		13010 
+		13010
 	}
 }

@@ -105,5 +105,29 @@ reichbanker = {
   }
 }
 
+pro_allies_fm = {
+  sprite = 10
+  random = no
+  production_speed_industrial_complex_factor = 0.05
+  min_export = -0.40
+
+
+  ai_will_do = {
+    factor = 5
+  }
+}
+
+pro_axis_fm = {
+  sprite = 10
+  random = no
+
+  min_export = 0.40
+
+
+  ai_will_do = {
+    factor = 5
+  }
+}
+
 
 }

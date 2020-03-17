@@ -685,7 +685,7 @@ ideas = {
 	theorist = {
 
 		CAN_kenneth_stuart = {
-
+ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
@@ -699,7 +699,7 @@ ideas = {
 			traits = { military_theorist }
 		}
 		CAN_george_volkoff = {
-
+ledger = army
 			picture = generic_political_advisor_europe_2
 
 			allowed = {
@@ -714,7 +714,7 @@ ideas = {
 			traits = { nuclear_scientist }
 		}
 		CAN_tasker_cook = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -729,6 +729,7 @@ ideas = {
 		}
 		CAN_robert_leckie = {
 
+ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -747,6 +748,7 @@ ideas = {
 	army_chief = {
 
 		CAN_harry_crerar = {
+			ledger = army
 			picture = generic_army_europe_4
 
 			allowed = {
@@ -763,6 +765,7 @@ ideas = {
 		}
 
 		CAN_andrew_mcnaughton = {
+			ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -779,6 +782,7 @@ ideas = {
 		}
 
 		CAN_george_pearkes = {
+			ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
@@ -798,6 +802,7 @@ ideas = {
 	air_chief = {
 
 		CAN_lloyd_samuel_breadner = {
+			ledger = air
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -814,6 +819,7 @@ ideas = {
 		}
 
 		CAN_george_croil = {
+			ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -830,6 +836,7 @@ ideas = {
 		}
 
 		CAN_harold_edwards = {
+			ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -846,6 +853,7 @@ ideas = {
 			}
 		}
 		CAN_raymond_collishaw = {
+			ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -866,6 +874,7 @@ ideas = {
 	navy_chief = {
 
 		CAN_percy_nelles = {
+			ledger = navy
 			picture = generic_navy_europe_3
 
 			allowed = {
@@ -884,6 +893,7 @@ ideas = {
 
 
 		CAN_alasdair_murray = {
+			ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -897,6 +907,7 @@ ideas = {
 			}
 		}
 		CAN_george_jones = {
+			ledger = navy
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -916,6 +927,7 @@ ideas = {
 
 
 		CAN_guy_simonds = {
+			ledger = army
 
 			picture = generic_army_europe_1
 
@@ -931,6 +943,7 @@ ideas = {
 		}
 
 		CAN_gino_verchiella = {
+			ledger = air
 
 			picture = generic_air_europe_2
 
@@ -946,6 +959,7 @@ ideas = {
 		}
 
 		CAN_john_murchie = {
+			ledger = army
 
 			picture = generic_army_europe_2
 
@@ -961,6 +975,7 @@ ideas = {
 		}
 
 		CAN_frederick_m_w_harvey = {
+			ledger = army
 
 			picture = generic_army_europe_3
 

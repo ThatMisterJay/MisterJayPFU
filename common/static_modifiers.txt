@@ -280,8 +280,8 @@ diff_strong_ai_generic = {
 	land_reinforce_rate = 0.02
 
 	# defensivness
-	army_core_attack_factor = 0.15
-	army_core_defence_factor = 0.15
+	army_core_attack_factor = 0.12
+	army_core_defence_factor = 0.12
 
 	attrition = -0.075
 

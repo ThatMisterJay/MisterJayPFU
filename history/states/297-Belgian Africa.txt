@@ -4,6 +4,7 @@ state={
 	name="STATE_297"
 
 	history={
+		add_core_of = AFR
 		owner = SPR
 		buildings = {
 			infrastructure = 2

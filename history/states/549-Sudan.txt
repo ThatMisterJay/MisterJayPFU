@@ -8,6 +8,7 @@ state={
 	}
 
 	history={
+		add_core_of = AFR
 		owner = ENG
 		buildings = {
 			infrastructure = 2

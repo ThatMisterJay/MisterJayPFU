@@ -421,6 +421,7 @@ ideas = {
 		#Communist
 
 		CHI_zhu_de = {
+			ledger = army
 
 			picture = generic_army_asia_1
 
@@ -438,6 +439,7 @@ ideas = {
 		#Clique
 
 		CHI_chen_jitang = {
+			ledger = army
 
 			picture = generic_army_asia_2
 
@@ -457,6 +459,7 @@ ideas = {
 		#Nationalist
 
 		CHI_li_zongren = {
+			ledger = army
 
 			picture = generic_army_asia_3
 
@@ -472,6 +475,7 @@ ideas = {
 		}
 
 		CHI_he_yingqin = {
+			ledger = army
 
 			picture = generic_army_asia_1
 
@@ -498,6 +502,7 @@ ideas = {
 		#Clique
 
 		CHI_wang_shuming = {
+			ledger = air
 
 			picture = generic_air_asia_1
 
@@ -517,6 +522,7 @@ ideas = {
 		#Nationalist
 
 		CHI_zhou_zhirou = {
+			ledger = air
 
 			picture = generic_air_asia_2
 
@@ -539,6 +545,7 @@ ideas = {
 		#Communist
 
 		CHI_xiao_jinguang = {
+			ledger = navy
 
 			picture = generic_navy_asia_1
 
@@ -556,6 +563,7 @@ ideas = {
 		#Clique
 
 		CHI_bai_chongxi = {
+			ledger = navy
 
 			picture = generic_navy_asia_2
 
@@ -573,6 +581,7 @@ ideas = {
 		#Nationalist
 
 		CHI_chen_shaokuan = {
+			ledger = navy
 
 			picture = generic_navy_asia_3
 
@@ -627,7 +636,7 @@ ideas = {
 
 	theorist = {
 		CHI_bo_yibo = {
-
+ledger = army
 			picture = generic_army_asia_2
 
 			allowed = {
@@ -642,7 +651,7 @@ ideas = {
 		}
 
 		CHI_fang_zeyi = {
-
+ledger = air
 			picture = generic_air_asia_2
 
 			allowed = {
@@ -659,7 +668,7 @@ ideas = {
 		CHI_huang_shen = {
 
 			picture = generic_navy_asia_2
-
+ledger = navy
 			allowed = {
 				original_tag = CHI
 			}
@@ -677,6 +686,7 @@ ideas = {
 	high_command = {
 
 		CHI_gao_zhihang = {
+			ledger = air
 
 			picture = generic_air_asia_2
 
@@ -692,6 +702,7 @@ ideas = {
 		}
 
 		CHI_xiao_yisu = {
+			ledger = army
 
 			picture = generic_army_asia_2
 
@@ -707,6 +718,7 @@ ideas = {
 		}
 
 		CHI_chen_cheng = {
+			ledger = army
 
 			picture = generic_army_asia_3
 
@@ -722,6 +734,7 @@ ideas = {
 		}
 
 		CHI_yu_hanmou = {
+			ledger = army
 
 			picture = generic_army_asia_1
 

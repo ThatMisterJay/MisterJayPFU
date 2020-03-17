@@ -9,6 +9,7 @@ state={
 	}
 
 	provinces={
+		add_core_of = AFR
 		1977 2046 2088 10902
 	}
 	manpower=1

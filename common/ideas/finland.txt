@@ -17,8 +17,8 @@ ideas = {
 
 			modifier = {
 				army_morale_factor = 0.25
-				army_core_attack_factor = 0.20
-				army_core_defence_factor = 0.30
+				army_core_attack_factor = 0.16
+				army_core_defence_factor = 0.16
 			}
 		}
 		no_finnish_justification = {
@@ -82,7 +82,7 @@ ideas = {
 	theorist = {
 
 		FIN_akseli_anttila = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -98,7 +98,7 @@ ideas = {
 		}
 
 		FIN_vaino_valve = {
-
+ledger = navy
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -119,7 +119,7 @@ ideas = {
 
 
 		FIN_lauri_malmberg = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -136,7 +136,7 @@ ideas = {
 		}
 
 		FIN_hugo_osterman = {
-
+ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -153,7 +153,7 @@ ideas = {
 		}
 
 		FIN_carl_mannerheim = {
-
+ledger = army
 			picture = generic_army_europe_4
 
 			allowed = {
@@ -174,7 +174,7 @@ ideas = {
 
 
 		FIN_jarl_lundqvist = {
-
+ledger = air
 			picture = generic_air_europe_3
 
 			allowed = {
@@ -191,7 +191,7 @@ ideas = {
 		}
 
 		FIN_olavi_sarko = {
-
+ledger = air
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -211,6 +211,7 @@ ideas = {
 	navy_chief = {
 
 		FIN_olavi_arho = {
+			ledger = navy
 
 			picture = generic_navy_europe_2
 
@@ -228,6 +229,7 @@ ideas = {
 		}
 
 		FIN_eero_rahola = {
+			ledger = navy
 
 			picture = generic_navy_europe_1
 
@@ -248,6 +250,7 @@ ideas = {
 	high_command = {
 		FIN_karl_oesch = {
 
+			ledger = army
 
 			allowed = {
 				original_tag = FIN
@@ -264,7 +267,7 @@ ideas = {
 
 		FIN_valio_porvari = {
 
-
+			ledger = air
 			allowed = {
 				original_tag = FIN
 			}
@@ -279,6 +282,7 @@ ideas = {
 		}
 
 		FIN_lauri_tiainen = {
+			ledger = army
 
 
 			allowed = {
@@ -296,6 +300,7 @@ ideas = {
 
 		FIN_harald_ohquist = {
 
+			ledger = army
 
 			allowed = {
 				original_tag = FIN
