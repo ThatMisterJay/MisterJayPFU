@@ -1,4 +1,4 @@
-﻿capital = 43
+capital = 43
 
 oob = "HUN_1936"
 
@@ -7,7 +7,7 @@ set_stability = 0.7
 set_war_support = 0.6
 
 set_technology = {
-	armored_car1 = 1
+	basic_encryption = 1
 	tech_logistics_company = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -236,7 +236,6 @@ create_country_leader = {
 
 }
 
-
 create_corps_commander = {
 	name = "Géza Lakatos"
 	gfx = GFX_Portrait_hungary_geza_lakatos
@@ -246,17 +245,6 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Iván Hindy"
-	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = { trickster infantry_leader urban_assault_specialist career_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -285,9 +273,9 @@ create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
 	traits = { infantry_leader organizer harsh_leader career_officer hill_fighter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
