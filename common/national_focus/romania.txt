@@ -1864,7 +1864,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = ROM_the_armored_division_tt
+			custom_effect_tooltip = ROM_the_armored_division2_tt
 			#Give template depending on recon tech and medium
 			hidden_effect = {
 				if = {
