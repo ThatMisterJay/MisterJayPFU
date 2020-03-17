@@ -772,7 +772,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = FRA_begin_rearmament }
 		available_if_capitulated = yes
 		relative_position_id = FRA_begin_rearmament
@@ -865,7 +865,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_methodical_battle
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -880,7 +880,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_fortification_focus
-		cost = 10
+		cost = 5
 
 		available = {
 			735 = { is_controlled_by = ROOT }
@@ -903,7 +903,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_alpine_forts
-		cost = 10
+		cost = 5
 
 		available = {
 			18 = { is_controlled_by = ROOT }
@@ -946,7 +946,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_infantry_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1135,7 +1135,7 @@ focus_tree = {
 		mutually_exclusive = { focus = FRA_defensive_focus }
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = FRA_begin_rearmament
 		available_if_capitulated = yes
 		prerequisite = { focus = FRA_begin_rearmament }
@@ -1208,7 +1208,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_motorized_focus
-		cost = 10
+		cost = 5
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1226,7 +1226,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_mechanized_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1348,7 +1348,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_air_ground_cooperation }
 		mutually_exclusive = { }
 		relative_position_id = FRA_air_dominance
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1382,7 +1382,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_light_medium_armor
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1417,7 +1417,7 @@ focus_tree = {
 		}
 		prerequisite = {}
 		mutually_exclusive = { focus = FRA_revive_the_national_bloc }
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2285,7 +2285,7 @@ focus_tree = {
 			y = 0
 		}
 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2642,7 +2642,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 43
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2692,7 +2692,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2755,7 +2755,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_naval_bases
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2804,7 +2804,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2832,7 +2832,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_the_old_school
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2855,7 +2855,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_the_old_school
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2877,7 +2877,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_carrier_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2899,7 +2899,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = FRA_capital_ship_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -2925,7 +2925,7 @@ focus_tree = {
 						version_name = "Richelieu Class"
 					}
 					requested_factories = 1
-					progress = 0.35
+					progress = 0.6
 					amount = 1
 				}
 			}
@@ -2945,7 +2945,7 @@ focus_tree = {
 						creator = "FRA"
 					}
 					requested_factories = 1
-					progress = 0.35
+					progress = 0.6
 					amount = 1
 				}
 			}
@@ -2959,7 +2959,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = FRA_carrier_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -2992,7 +2992,7 @@ focus_tree = {
 							version_name = "Joffre Class"
 						}
 						requested_factories = 1
-						progress = 0.40
+						progress = 0.6
 						amount = 1
 					}
 				}
@@ -3018,7 +3018,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = FRA_naval_rearmament
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3034,7 +3034,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_the_young_school
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3056,7 +3056,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_the_young_school
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3078,7 +3078,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = FRA_surface_combat
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3106,7 +3106,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = FRA_rush_the_richelieus
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 
