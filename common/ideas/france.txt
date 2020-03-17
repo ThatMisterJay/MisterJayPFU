@@ -44,9 +44,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				conscription_factor = -0.25
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 		FRA_inefficient_economy_1 = {
@@ -294,7 +293,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				non_core_manpower = 0.15
+				non_core_manpower = 0.2
 			}
 		}
 		FRA_immigration = {
@@ -311,7 +310,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				non_core_manpower = 0.5
+				conscription = 0.03
 			}
 		}
 		FRA_agricultural_protectionism = {

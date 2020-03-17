@@ -1437,6 +1437,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_matignon_agreements
+				days = 365
+			}
 			add_political_power = 150
 			create_country_leader = {
 				name = "Léon Blum"
@@ -1472,11 +1476,8 @@ focus_tree = {
 		}
 
 		available = {
-                OR = {
                               has_idea = FRA_matignon_agreements
-                              has_idea = FRA_factory_strikes
-                        }
-        }
+                }
 
 		bypass = {
 
@@ -1487,14 +1488,8 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-				limit = { has_idea = FRA_matignon_agreements }
 				remove_ideas = FRA_matignon_agreements
-			}
-			else_if = {
-				limit = { has_idea = FRA_factory_strikes }
-				remove_ideas = FRA_factory_strikes
-			}
+
 		}
 	}
 	focus = {
@@ -2086,7 +2081,15 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			remove_worker_shortage_effect = yes
+			if = {
+				limit = { has_idea = FRA_full_employment }
+			        remove_worker_shortage_effect = yes
+                                add_ideas = FRA_immigration
+			}
+			else_if = {
+				limit = { NOT = { has_idea = FRA_factory_strikes } }
+                                add_ideas = FRA_immigration
+			}
 		}
 	}
 	focus = {
@@ -2297,6 +2300,10 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_timed_idea = {
+				idea = FRA_factory_strikes
+				days = 90
+			}
 			add_political_power = 150
 			create_country_leader = {
 				name = "Pierre Laval"
