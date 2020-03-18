@@ -3,8 +3,8 @@
  partisan:0 "Partisans"
 
  #FOCUS
- FRA_france_libre:0 "La France Libre"
- FRA_france_libre_desc:0 "On this 18 June 1940, as the metropolitan French government is preparing to sign an armistice with the Nazi invaders, General Charles de Gaulle just broadcasted on the BBC to France where he declared that the war for France was not yet over, and incited every french soldier to rally London to keep fighting the tyranny of the Nazis."
+ FRA_france_libre:0 "§BLa§! §WFrance§! §RLibre§!"
+ FRA_france_libre_desc:0 "On this 18 June 1940, as the metropolitan French government is preparing to sign an armistice with the Nazi invaders, General Charles de Gaulle just broadcasted on the BBC to France where he declared that the war for France was not yet over, and incited every french soldier to rally to London to keep fighting the tyranny of the Nazis."
  FRA_france_libre_effect_1: "Will gain a division of Infantry in Alexandria."
  FRA_sway_west_africa:0 "Battle for Dakar"
  FRA_sway_west_africa_desc:0 "Pierre Boisson, the governor-general of French Equatorial Africa, is a staunch supporter of the Vichy regime and we must secure the African Colonies as they offer vital manpower and African colonial troops, we must launch the operation codenamed Menace to capture the strategic port of Dakar."
