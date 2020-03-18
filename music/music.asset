@@ -5,6 +5,16 @@ music = {
 	file = "blacks_and_tans.ogg"
 	volume = 1
 }
+music = {
+	name = "maintheme"
+	file = "battle_cry_of_freedom.ogg"
+	volume = 1
+}
+music = {
+	name = "maintheme"
+	file = "canada_god_save_the_king.ogg"
+	volume = 1
+}
 
 # General Peace:
 music = {
