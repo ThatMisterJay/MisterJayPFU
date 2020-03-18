@@ -86,7 +86,7 @@ ideas = {
 
 			removal_cost = -1
 
-picture = idea_generic_political_support
+                        picture = generic_political_support
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -115,7 +115,7 @@ picture = idea_generic_political_support
 
 		raj_trade = {
 			allowed = { always = no }
-
+                        picture = generic_economic_increase
 			removal_cost = -1
 
                equipment_bonus = {
