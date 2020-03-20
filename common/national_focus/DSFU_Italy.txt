@@ -93,17 +93,17 @@ ai_will_do = {
         instant_build = yes
       }
       }
-  every_state = {
+  every_owned_state = {
     limit = {
       is_core_of = GRE
     }
-    add_state_modifier = {
-      modifier = {
-        local_non_core_manpower = 0.20
-      }
+
+      add_dynamic_modifier =  { modifier = ITA_balken_development }
+
+
     }
   }
- }
+
 
  }
 
@@ -121,6 +121,7 @@ ai_will_do = {
  }
 
  completion_reward = {
+   ITA_lower_industry = yes
    random_owned_controlled_state = {
      prioritize = { 160 }
      limit = {
@@ -971,7 +972,17 @@ mutually_exclusive = { focus = ITA_policyofexploitation }
 ai_will_do = {
  factor = 1
  }
+
  completion_reward = {
+   every_owned_state = {
+     limit = {
+       OR = {
+         is_core_of = AFR
+         is_core_of = ETH
+       }
+     }
+     add_dynamic_modifier = { modifier = ITA_colonial_development }
+   }
  random_owned_controlled_state = {
   prioritize = { 114 }
   limit = {
@@ -1455,6 +1466,7 @@ ai_will_do = {
  }
 
  completion_reward = {
+   ITA_lower_industry = yes
    random_owned_controlled_state = {
      prioritize = { 156 }
      limit = {
@@ -1499,6 +1511,7 @@ ai_will_do = {
  factor = 1
  }
  completion_reward = {
+   ITA_lower_industry = yes
  add_tech_bonus = {
      name = ITA_industrial_push
      bonus = 1.5
@@ -1531,7 +1544,20 @@ ai_will_do = {
   }
 
 
-remove_ideas = weak_industry1
+  every_owned_state = {
+    limit = {
+      OR = {
+        state = 158
+        state = 39
+        state = 160
+        state = 736
+        state = 161
+        state = 162
+
+      }
+    }
+    remove_dynamic_modifier = { modifier = weak_ITA_industry }
+  }
 
  }
 }
@@ -1550,19 +1576,16 @@ ai_will_do = {
  }
 
  completion_reward = {
+  ITA_lower_industry = yes
  add_tech_bonus = {
      name = ITA_industrial_push
      bonus = 1.5
      uses = 1
      category = industry
    }
-   add_timed_idea = {
-   				idea = weak_industry2
-   				days = 365
-   			}
- remove_ideas = weak_industry0
+
    random_owned_controlled_state = {
-     prioritize = { 161 }
+     prioritize = { 117 }
      limit = {
        ROOT = { has_full_control_of_state = PREV }
      }
@@ -1574,7 +1597,7 @@ ai_will_do = {
      }
    }
    random_owned_controlled_state = {
-     prioritize = { 159 }
+     prioritize = { 156 }
      limit = {
        ROOT = { has_full_control_of_state = PREV }
      }
@@ -1586,6 +1609,18 @@ ai_will_do = {
    }
   }
 
+  every_owned_state = {
+    limit = {
+      OR = {
+        state = 2
+        state = 159
+        state = 156
+        state = 115
+        state = 157
+      }
+    }
+    remove_dynamic_modifier = { modifier = weak_ITA_industry }
+  }
 
   }
  }
@@ -2539,6 +2574,17 @@ ai_will_do = {
     }
    }
  completion_reward = {
+   every_owned_state = {
+     limit = {
+       OR = {
+         state = 447
+         state = 446
+         state = 456
+         state = 452
+       }
+     }
+     add_dynamic_modifier = { modifier = ITA_colonial_exploit }
+   }
  random_owned_controlled_state = {
   prioritize = { 161 }
   limit = {
@@ -2574,6 +2620,16 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   every_owned_state = {
+     limit = {
+       OR = {
+         state = 453
+         state = 454
+         state = 455
+       }
+     }
+     add_dynamic_modifier = { modifier = ITA_colonial_exploit }
+   }
  random_owned_controlled_state = {
   prioritize = { 158 }
   limit = {
@@ -2657,6 +2713,14 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   every_owned_state = {
+     limit = {
+       OR = {
+         is_core_of = GRE
+       }
+     }
+     add_dynamic_modifier = { modifier = ITA_colonial_exploit }
+   }
  random_owned_controlled_state = {
   prioritize = { 162 }
   limit = {
@@ -2705,6 +2769,14 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   every_owned_state = {
+     limit = {
+       OR = {
+         is_core_of = YUG
+       }
+     }
+     add_dynamic_modifier = { modifier = ITA_colonial_exploit }
+   }
  random_owned_controlled_state = {
   prioritize = { 161 }
   limit = {
@@ -2902,6 +2974,15 @@ ai_will_do = {
  factor = 1
  }
 completion_reward = {
+  every_owned_state = {
+    limit = {
+      OR = {
+        is_core_of = AFR
+        is_core_of = ETH
+      }
+    }
+    add_dynamic_modifier = { modifier = ITA_colonial_exploit }
+  }
 add_ideas = ITA_exploit_africa
 random_owned_controlled_state = {
   prioritize = { 2 }
@@ -3116,15 +3197,12 @@ ai_will_do = {
        instant_build = yes
      }
      }
-  every_state = {
+  every_owned_state = {
     limit = {
       is_core_of = YUG
     }
-    add_state_modifier = {
-      modifier = {
-        local_non_core_manpower = 0.20
-      }
-    }
+    add_dynamic_modifier = { modifier = ITA_balken_development }
+
   }
 
  }
