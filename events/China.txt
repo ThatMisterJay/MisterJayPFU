@@ -503,7 +503,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 100 }
 		name = china.100.a
-		news_event = { id = news.288 }
+		
 		create_faction = chinese_united_front
 		PRC = { add_opinion_modifier = { target = CHI modifier = unstable_alliance } }
 		CHI = { add_opinion_modifier = { target = PRC modifier = unstable_alliance } }

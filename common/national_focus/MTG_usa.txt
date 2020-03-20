@@ -1569,7 +1569,7 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-			custom_effect_tooltip = USA_lend_soviet_tt
+			custom_effect_tooltip = USA_lend_soviet_new_tt
 
 			hidden_effect = {
 				if = {
@@ -1583,6 +1583,11 @@ focus = {
 					else = { SOV = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2000 producer = USA } } }
 				}
 				if = {
+					limit = { USA = { has_tech = antitank2 } }
+					SOV = { add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 2000 producer = USA } }
+					else = { SOV = { add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 2000 producer = USA } } }
+				}
+				if = {
 					limit = { USA = { has_tech = fighter2 } }
 					SOV = { add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 500 producer = USA } }
 					else = {
@@ -1593,9 +1598,12 @@ focus = {
 						}
 					}
 				}
-				add_timed_idea = { idea = lend_lease_soviet days = 120 }
+				SOV = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = USA } }
+				SOV = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = USA } }
+
 				SOV = { country_event = { id = usa.1001 hours = 6 } }
 			}
+			add_timed_idea = { idea = lend_lease_soviet days = 120 }
 		}
 	}
 
@@ -1949,7 +1957,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				add_political_power = 100				
+				add_political_power = 100
 			if = {
 				limit = {
 					has_war_support < 0.1

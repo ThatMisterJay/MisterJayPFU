@@ -143,8 +143,8 @@ foreign_civilian_oversight = {
 		required_garrison_factor 		= -0.50
 		resistance_damage_to_garrison 	= -0.25
 		compliance_gain 				= 0.015
-		local_factories 				= 0.00
-		local_resources 				= 0.00
+		local_factories 				= 0.05
+		local_resources 				= 0.05
 	}
 	starting_law = yes
 
@@ -167,8 +167,8 @@ local_police_force_garrison = {
 		compliance_gain 				= -0.025
 		required_garrison_factor 		= -0.65
 		resistance_damage_to_garrison	= -0.5
-		local_factories 				= 0.00
-		local_resources 				= 0.00
+		local_factories 				= 0.10
+		local_resources 				= 0.10
 	}
 
 
@@ -204,8 +204,8 @@ secret_police_oversight = {
 		compliance_gain 				= -0.04
 		required_garrison_factor 		= -0.3
 		resistance_damage_to_garrison 	= -0.15
-		local_factories 				= 0.05
-		local_resources 				= 0.05
+		local_factories 				= 0.15
+		local_resources 				= 0.15
 		enemy_operative_detection_chance_over_occupied_tag = 1 # offset detection chance by +1%
 		enemy_intel_network_gain_factor_over_occupied_tag = -0.25 # -25% scaled by the number of occupied states and the ratio of the network covering those occupied states
 		# todo + spy defense
@@ -242,8 +242,8 @@ military_governor_occupation = {
 		resistance_target 			= -0.4
 		compliance_gain 			= -0.045
 		required_garrison_factor 	= -0.1
-		#local_factories 			= 0.00
-		local_resources 			= 0.10
+		local_factories 			= 0.2
+		local_resources 			= 0.2
 		local_manpower 				= 0.08
 	}
 	ai_will_do = {
@@ -276,9 +276,9 @@ martial_law_occupation = {
 		resistance_target 				= -0.50
 		compliance_gain 				= -0.055
 		#required_garrison_factor 		= 0.0
-		#resistance_damage_to_garrison 	= 0.0
-		#local_factories 				= 0.0
-		local_resources 				= 0.1
+		resistance_damage_to_garrison 	= 0.1
+		local_factories 				= 0.25
+		local_resources 				= 0.25
 	}
 
 	ai_will_do = {
@@ -311,8 +311,8 @@ forced_labor_occupation = {
 		compliance_gain 					= -0.08
 		resistance_damage_to_garrison 		= 0.3
 		required_garrison_factor 			= 0.50
-		local_resources 					= 0.40
-		local_factories 					= 0.05
+		local_resources 					= 0.80
+		local_factories 					= 0.25
 		repair_speed_infrastructure_factor 	= 0.25
 
 		custom_modifier_tooltip = "resource_sabotage_decrease_tooltip"
@@ -399,8 +399,8 @@ harsh_quotas_occupation = {
 		required_garrison_factor 		= 0.60
 		resistance_damage_to_garrison 	= 0.50
 
-		local_factories 				= 0.25
-		local_resources 				= 0.05
+		local_factories 				= 0.80
+		local_resources 				= 0.25
 
 		repair_speed_arms_factory_factor = 0.25
 		repair_speed_industrial_complex_factor = 0.25

@@ -78,9 +78,9 @@ add_ideas = {
 }
 
 set_popularities = {
-    democratic = 47
-    fascism = 46
-    communism = 7
+    democratic = 80
+    fascism = 10
+    communism = 10
 }
 
 set_convoys = 150

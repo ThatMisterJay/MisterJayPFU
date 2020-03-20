@@ -1442,10 +1442,7 @@ country_event = {
 				load_oob = "SLO_1939"
 				add_manpower = 50000
 			}
-			every_state = {
-				limit = { is_core_of = CZE }
-				remove_core_of = CZE
-			}
+
 		}
 	}
 }

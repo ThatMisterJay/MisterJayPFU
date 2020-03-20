@@ -1,5 +1,117 @@
 
 support_SOV = {
+	lend_lease_train_SOV = {
+
+		targets = { SOV }
+
+	icon = ger_military_buildup
+
+		allowed = {
+		original_tag = USA
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+			num_of_civilian_factories_available_for_projects > 14
+
+		}
+
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			if = {
+				limit = { SOV = { has_idea = us_sov_assistance_2 } }
+				SOV = {
+					swap_ideas = {
+						add_idea = us_sov_assistance_3
+						remove_idea = us_sov_assistance_2
+					}
+				}
+				else = { SOV = { add_ideas = us_sov_assistance_1 } }
+			}
+
+		}
+
+	}
+
+	lend_lease_rubber_SOV = {
+
+		targets = { SOV }
+
+	icon = ger_military_buildup
+
+		allowed = {
+		original_tag = USA
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+			num_of_civilian_factories_available_for_projects > 14
+
+		}
+
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			SOV = {
+				modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 1
+				}
+			}
+		}
+
+
+
+	}
+
+	lend_lease_machine_tools_SOV = {
+
+		targets = { SOV }
+
+	icon = ger_military_buildup
+
+		allowed = {
+		original_tag = USA
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+			num_of_civilian_factories_available_for_projects > 14
+
+		}
+
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			if = {
+				limit = { SOV = { has_idea = us_sov_assistance_1 } }
+				SOV = {
+					swap_ideas = {
+						add_idea = us_sov_assistance_3
+						remove_idea = us_sov_assistance_1
+					}
+				}
+				else = { SOV = { add_ideas = us_sov_assistance_2 } }
+			}
+
+		}
+
+	}
+
 
 	lend_lease_gun_SOV = {
 
@@ -30,6 +142,34 @@ support_SOV = {
 
 	}
 
+
+	lend_lease_train_SOV_2 = {
+
+		targets = { SOV }
+
+	icon = ger_military_buildup
+
+		allowed = {
+		original_tag = USA
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+
+		}
+
+
+	days_remove = 15
+
+		complete_effect = {
+			SOV = {
+				add_ideas = us_sov_assistance_2
+			}
+
+		}
+
+	}
+
 lend_lease_fighter_SOV = {
 
 	targets = { SOV }
@@ -44,6 +184,10 @@ icon = generic_air
 	available = {
 		SOV = { has_defensive_war = yes }
 		has_equipment = { fighter_equipment > 399 }
+	}
+
+	visible = {
+			SOV = { has_country_flag = lend_lease }
 	}
 
 days_remove = 15
@@ -74,6 +218,9 @@ targets = { SOV }
 		SOV = { has_defensive_war = yes }
 		has_equipment = { CAS_equipment > 399 }
 	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
+	}
 
 days_remove = 15
 
@@ -103,6 +250,9 @@ available = {
 		has_equipment = { support_equipment > 399 }
 
 	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
+	}
 
 days_remove = 15
 
@@ -129,6 +279,9 @@ original_tag = ENG }
 available = {
 	SOV = { has_defensive_war = yes }
 		has_equipment = { artillery_equipment > 499 }
+	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
 	}
 
 days_remove = 15
@@ -157,6 +310,9 @@ available = {
 	SOV = { has_defensive_war = yes }
 	has_equipment = { anti_tank_equipment > 499 }
 	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
+	}
 
 days_remove = 15
 
@@ -183,6 +339,9 @@ original_tag = ENG }
 available = {
 	SOV = { has_defensive_war = yes }
 		has_equipment = { motorized_equipment > 199 }
+	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
 	}
 
 days_remove = 15
@@ -216,6 +375,9 @@ available = {
 	SOV = { has_defensive_war = yes }
 		has_equipment = { light_tank_equipment > 199 }
 	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
+	}
 
 days_remove = 15
 
@@ -247,6 +409,9 @@ available = {
 	SOV = { has_defensive_war = yes }
 		has_equipment = { medium_tank_equipment > 199 }
 	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
+	}
 
 days_remove = 15
 
@@ -276,6 +441,9 @@ available = {
 	SOV = { has_defensive_war = yes }
 		has_equipment = { heavy_tank_equipment > 199 }
 
+	}
+	visible = {
+			SOV = { has_country_flag = lend_lease }
 	}
 
 days_remove = 15

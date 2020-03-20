@@ -23,13 +23,33 @@ spriteTypes = {
 					}
 
 			SpriteType = {
-					name = "GFX_ideas_SOV_Vasily_Chuikov"
-					texturefile = "gfx/interface/ideas/ideas_SOV_Vasily_Chuikov.dds"
+					name = "GFX_idea_SOV_vasily_chuikov"
+					texturefile = "gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"
 						}
 
 					SpriteType = {
 						name = "GFX_idea_SOV_night_witch"
 								texturefile = "gfx/interface/ideas/idea_SOV_night_witch.dds"
 									}
+
+			SpriteType = {
+					name = "GFX_idea_SOV_beria"
+					texturefile = "gfx/interface/ideas/idea_SOV_beria.dds"
+						}
+
+				SpriteType = {
+						name = "GFX_idea_SOV_molotov"
+						texturefile = "gfx/interface/ideas/idea_SOV_molotov.dds"
+							}
+
+					SpriteType = {
+						name = "GFX_idea_SOV_nikolai_voznesensky"
+						texturefile = "gfx/interface/ideas/idea_SOV_nikolai_voznesensky.dds"
+									}
+
+						SpriteType = {
+							name = "GFX_idea_SOV_nikolai_yezhov"
+									texturefile = "gfx/interface/ideas/idea_SOV_nikolai_yezhov.dds"
+										}
 
 }

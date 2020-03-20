@@ -1,0 +1,28 @@
+spriteTypes = {
+
+spriteType = {
+	name = "GFX_weak_ITA_industry"
+	textureFile = "gfx/interface/DSFU_GFX/weak_ITA_industry.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_colony_exploit"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_colony_exploit.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_colony_dev"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_colony_dev.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_balkan_exploit"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_balkan_exploit.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_balkan_dev"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_balkan_dev.dds"
+}
+
+}

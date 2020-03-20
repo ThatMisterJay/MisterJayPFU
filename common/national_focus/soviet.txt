@@ -304,7 +304,7 @@ focus_tree = {
 				name = "Georgy Zhukov"
 				id = 410
 				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-				traits = { defensive_doctrine offensive_doctrine thorough_planner organisational_leader logistics_wizard panzer_leader cavalry_leader}
+				traits = { defensive_doctrine offensive_doctrine thorough_planner organisational_leader logistics_wizard panzer_leader cavalry_leader expert_delegator}
 				skill = 7
 				attack_skill = 7
 				defense_skill = 6
@@ -313,7 +313,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = georgy_zhukov_marshal_of_victory
-			add_ideas = general_winter_idea
 			add_ideas = great_patriotic_war
 
 			219 = {
@@ -528,11 +527,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			create_corps_commander = {
+			create_field_marshal = {
 				name = "Konstantin Rokossovsky"
 				id = 402
 				picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-				traits = { panzer_leader trait_cautious brilliant_strategist ranger swamp_fox trickster }
+				traits = { panzer_leader trait_cautious brilliant_strategist ranger swamp_fox trickster adaptable expert_improviser panzer_expert }
 				skill = 5
 
 				attack_skill = 5
@@ -559,7 +558,7 @@ focus_tree = {
 		available = {
 			OR = {
 				GER = { has_idea = fall_blau }
-				date > 1942.8.1
+				date > 1942.7.1
 				217 = { is_owned_by = ROOT
 					any_neighbor_state = {
 							NOT = { is_controlled_by = ROOT }
@@ -611,6 +610,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = vasily_chuikov
 		}
 	}
 
@@ -627,6 +628,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = countenance_tooltip_tt
 			set_country_flag = lend_lease
 	        SOV = {
 				transfer_state = 420
@@ -677,7 +679,7 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 			focus = Soviets_defenseofstalingrad
 		}
 		available = {
-			date > 1942.10.1
+			date > 1942.8.1
 			date < 1943.3.1
 			OR = {
 				controls_state = 219 #Moscow
@@ -691,6 +693,8 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 		}
 		completion_reward = {
 			add_timed_idea = { idea = operation_uranus_idea days = 30 }
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = ivan_konev
 		}
 	}
 
@@ -811,7 +815,7 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 		icon = GFX_focus_generic_military_mission
 		x = 15
 		y = 5
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = Soviets_lessonsofthewinterwar }
 		ai_will_do = {
@@ -948,6 +952,8 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 			set_rule = {
 				can_generate_female_aces = yes
 			}
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = yevdokiya_bershanskaya
 			if = {
 				limit = {
 					SOV = { has_full_control_of_state = 219 }
@@ -1367,7 +1373,6 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 				owns_state = 13
 				owns_state = 190
 				owns_state = 191
-				owns_state = 147
 				owns_state = 189
 				owns_state = 78
 				owns_state = 89

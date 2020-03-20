@@ -749,8 +749,8 @@
  SOV_nav_bomber_equipment_2_short:0 "ANT-62T"
  SOV_nav_bomber_equipment_3:0 "Ilyushin Il-6"
  SOV_nav_bomber_equipment_3_short:0 "Il-6"
- SOV_CAS_equipment_1:0 "Kochyerigin LBSh"
- SOV_CAS_equipment_1_short:0 "LBSh"
+ SOV_CAS_equipment_1:0 "Polikarpov Po-2"
+ SOV_CAS_equipment_1_short:0 "Po-2"
  SOV_CAS_equipment_2:0 "Ilyushin IL-2 Sturmovik"
  SOV_CAS_equipment_2_short:0 "IL-2 Sturmovik"
  SOV_CAS_equipment_3:0 "Ilyushin IL-10"
@@ -1297,6 +1297,8 @@
  YUG_nav_bomber_equipment_1:0 "Rogozarski SIM-XIV-H"
  YUG_nav_bomber_equipment_1_short:0 "SIM-XIV-H"
 
+
+ #scout planes
 
  #scot planes
  scout_plane:0 "Scout Plane"

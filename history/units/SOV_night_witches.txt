@@ -1,7 +1,7 @@
 ﻿air_wings = {
 	
 	219 = {
-		tac_bomber_equipment_0 =  {		
+		CAS_equipment_1 =  {		
 				owner = "SOV" 
 				amount = 200
 			}

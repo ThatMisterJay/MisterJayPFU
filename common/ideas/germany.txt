@@ -47,6 +47,7 @@ axis_exploited = {
 			removal_cost = -1
 
 			modifier = {
+				operative_slot = 3
 				drift_defence_factor = 0.5
 			}
 			rule = {
@@ -989,7 +990,7 @@ NOT = { has_idea = walther_funk }
 		traits = { head_of_intelligence }
 
 	}
-	
+
 	}
 
 

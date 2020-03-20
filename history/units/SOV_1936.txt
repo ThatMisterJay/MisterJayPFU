@@ -74,6 +74,7 @@ division_template = {
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
 
 		medium_armor = { x = 2 y = 0 }
 		medium_armor = { x = 2 y = 1 }
@@ -83,7 +84,6 @@ division_template = {
 		medium_armor = { x = 3 y = 1 }
 		medium_armor = { x = 3 y = 2 }
 		medium_armor = { x = 3 y = 3 }
-		medium_armor = { x = 3 y = 4 }
 		medium_armor = { x = 4 y = 0 }
 		medium_armor = { x = 4 y = 1 }
 		medium_armor = { x = 4 y = 2 }
@@ -91,7 +91,7 @@ division_template = {
 
 	}
 	support = {
-        recon = { x = 0 y = 0 }
+        mot_recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
 		logistics_company = { x = 0 y = 2 }
 	}
@@ -128,7 +128,7 @@ division_template = {
 
 	}
 	support = {
-        recon = { x = 0 y = 0 }
+        mot_recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
 		logistics_company = { x = 0 y = 2 }
 	}
@@ -165,7 +165,7 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		recon = { x = 0 y = 1 } 	# (mot) Engineer bn
+		mot_recon = { x = 0 y = 1 } 	# (mot) Engineer bn
 		logistics_company = { x = 0 y = 2 }
 
 	}
@@ -1698,22 +1698,7 @@ air_wings = {
 	# MVO Aviatsya Komandovaniya
 	195 = {
 		# 2ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
-			owner = "SOV"
-			amount = 100
-		}
-		fighter_equipment_1 = {
-			owner = "SOV"
-			amount = 100
-		}
-		fighter_equipment_1 = {
-			owner = "SOV"
-			amount = 100
-		}
-		fighter_equipment_1 = {
-			owner = "SOV"
-			amount = 100
-		}
+		
 		tac_bomber_equipment_0 =  {
 			owner = "SOV"
 			amount = 100
@@ -1878,7 +1863,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "SOV"
 		}
-		requested_factories = 27
+		requested_factories = 25
 		progress = 0.1
 		efficiency = 50
 	}
@@ -1887,7 +1872,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "SOV"
 		}
-		requested_factories = 10
+		requested_factories = 5
 		progress = 0.3
 		efficiency = 50
 	}
@@ -1930,26 +1915,10 @@ instant_effect = {
 	}
 
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SOV"
-		}
-		requested_factories = 5
-		progress = 0.15
-		efficiency = 50
-	}
+	
 
 
 	### Ships Under Construction Notes ###
-	add_equipment_production = {
-		equipment = {
-			type = convoy_1
-			creator = "SOV"
-		}
-		requested_factories = 15
-		progress = 0.70
-		amount = 0
-	}
+	
 }
 	#####################

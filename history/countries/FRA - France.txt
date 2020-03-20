@@ -1,6 +1,16 @@
-﻿capital = 16
+capital = 16
+
+set_stability = 0.5
+set_war_support = 0.15
 
 oob = "FRA_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "FRA_1936_naval_mtg"
+	else = {
+		set_naval_oob = "FRA_1936_naval_legacy"
+	}
+}
 
 set_research_slots = 3
 
@@ -11,8 +21,8 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
-	tech_recon = 1
 	tech_engineers = 1
+	tech_recon = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
@@ -20,7 +30,6 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	improved_light_tank = 1
-	basic_heavy_tank = 0.8
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1
@@ -74,36 +83,17 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-set_variable = { attacked_state_west_africa = 0 }
-set_variable = { attacked_state_america = 0 }
-set_variable = { attacked_state_indian_ocean = 0 }
-set_variable = { attacked_state_syria = 0 }
-
-
-set_variable = { counter_french_west_africa_attacked = 0 }
-set_variable = { counter_liberia_attacked = 0 }
-set_variable = { counter_senegal_attacked = 0 }
-set_variable = { counter_southern_sahara_attacked = 0 }
-set_variable = { counter_mauritania_attacked = 0 }
-
-set_variable = { counter_lebanon_attacked = 0 }
-set_variable = { counter_aleppo_attacked = 0 }
-set_variable = { counter_damascus_attacked = 0 }
-set_variable = { counter_deir_az_zur_attacked = 0 }
-
-set_variable = { counter_guyana_attacked = 0 }
-set_variable = { counter_french_caribbean_attacked = 0 }
-set_variable = { counter_st_pierre_miquelon_attacked = 0 }
-
-set_variable = { counter_madagascar_attacked = 0 }
-set_variable = { counter_comoro_attacked = 0 }
-set_variable = { counter_reunion_attacked = 0 }
-set_variable = { counter_french_somaliland_attacked = 0 }
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
 
 set_convoys = 300
-set_stability = 0.5
-set_war_support = 0.15
+
 
 set_politics = {
 	ruling_party = democratic
@@ -111,7 +101,6 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
 set_popularities = {
     democratic = 79
     fascism = 1
@@ -122,23 +111,16 @@ add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
 	FRA_protected_by_the_maginot_line
-	FRA_inflexible_industry
-	volunteer_only
+	limited_conscription
+	FRA_full_employment
+	FRA_political_violence
+	FRA_inefficient_economy_2
+        volunteer_only
 }
 
-#give_guarantee = CZE
+give_guarantee = CZE
 
 #Order matters here Daladier will start as leaders because added last
-create_country_leader = {
-	name = "Charles de Gaulle"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
 create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -147,18 +129,17 @@ create_country_leader = {
 	ideology = socialism
 	traits = {
 		stout_defender
-		easy_surrender2
 	}
 }
 
 create_country_leader = {
 	name = "Maurice Thorez"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "Portrait_France_Generic_3.dds"
+	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
 	ideology = 	stalinism
 	traits = {
-		easy_surrender2
+		
 	}
 }
 
@@ -169,9 +150,10 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-
+		
 	}
 }
+
 ### Add Pierre Koenig for Free France.
 #create_corps_commander = {
 #	name = "Jean de Lattre de Tassigny"
@@ -312,7 +294,6 @@ create_navy_leader = {
 	maneuvering_skill = 1
 	coordination_skill = 1
 }
-
 
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -481,7 +462,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Minerve Class"
+		name = "Minerve Class"					
 		type = ship_hull_submarine_1
 		name_group = FRA_SS_HISTORICAL
 		parent_version = 0
@@ -527,7 +508,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Le Fantasque Class"
+		name = "Le Fantasque Class"				
 		type = ship_hull_light_1
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -543,7 +524,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Mogador Class"
+		name = "Mogador Class"				
 		type = ship_hull_light_2
 		name_group = FRA_DD_HISTORICAL
 		parent_version = 0
@@ -594,7 +575,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "La Galissonnière Class"
+		name = "La Galissonnière Class"			
 		type = ship_hull_cruiser_1
 		name_group = FRA_CL_HISTORICAL
 		parent_version = 0
@@ -630,7 +611,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Algérie Class"
+		name = "Algérie Class"				
 		type = ship_hull_cruiser_1
 		name_group = FRA_CA_HISTORICAL
 		parent_version = 0
@@ -648,7 +629,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Courbet Class"
+		name = "Courbet Class"		
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -668,7 +649,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Bretagne Class"
+		name = "Bretagne Class"				
 		type = ship_hull_heavy_1
 		name_group = FRA_BB_HISTORICAL
 		parent_version = 0
@@ -688,7 +669,7 @@ if = {
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-		name = "Dunkerque Class"
+		name = "Dunkerque Class"		
 		type = ship_hull_heavy_2
 		name_group = FRA_BC_HISTORICAL
 		parent_version = 0
@@ -740,6 +721,93 @@ if = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			mid_1_custom_slot = empty
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+		create_equipment_variant = {
+			name = "Aurore Class"
+			type = submarine_2
+			upgrades = {
+				ship_reliability_upgrade = 3
+				sub_engine_upgrade = 3
+				sub_stealth_upgrade = 3
+				sub_torpedo_upgrade = 3
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Le Hardi Class"
+			type = destroyer_2
+			upgrades = {
+				ship_torpedo_upgrade = 1
+				destroyer_engine_upgrade = 1
+				ship_ASW_upgrade = 1
+				ship_anti_air_upgrade = 1
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Mogador Class"
+			type = destroyer_2
+			upgrades = {
+				ship_torpedo_upgrade = 2
+				destroyer_engine_upgrade = 2
+				ship_ASW_upgrade = 2
+				ship_anti_air_upgrade = 2
+			}
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Submarines #
+		create_equipment_variant = {
+			name = "Aurore Class"				
+			type = ship_hull_submarine_2
+			name_group = FRA_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				fixed_ship_engine_slot = sub_ship_engine_2
+				rear_1_custom_slot = ship_torpedo_sub_2
+			}
+		}
+		# Destroyers #
+		create_equipment_variant = {
+			name = "Le Hardi Class"
+			type = ship_hull_light_2
+			name_group = FRA_DE_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_3
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_2
+				mid_1_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		create_equipment_variant = {
+			name = "Joffre Class"
+			type = ship_hull_carrier_1
+			name_group = FRA_CV_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = empty
+			}
 		}
 	}
 }

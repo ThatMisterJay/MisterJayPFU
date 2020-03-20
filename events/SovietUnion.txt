@@ -898,7 +898,7 @@ country_event = {
 		remove_unit_leader = 408
 		remove_ideas = pavel_zhigarev
 		remove_ideas = stepan_krasovsky
-		remove_ideas = arseniy_golovko
+	
 		remove_unit_leader = 409
 		remove_ideas = georgy_zhukov
 		remove_unit_leader = 410

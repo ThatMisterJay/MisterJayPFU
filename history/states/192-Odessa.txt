@@ -23,9 +23,7 @@ state={
 			741 = {
 				bunker = 4
 			}
-			11670 = {
-				bunker = 4
-			}
+
 		}
 		add_core_of = SOV
 		1939.1.1 = {

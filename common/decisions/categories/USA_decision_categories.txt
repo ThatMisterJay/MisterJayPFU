@@ -10,11 +10,14 @@ icon = sov_great_patriotic_war
 	original_tag = ENG }
 	}
 	visible = {
-		SOV = { has_country_flag = lend_lease }
+		USA = {
+			has_completed_focus = USA_lend_soviet
+		}
 		SOV = {
 			has_war = yes
 		}
 	}
+	priority = 100
 }
 
 USA_war_measures = {
@@ -68,6 +71,7 @@ USA_war_plans = {
 	visible = {
 		has_completed_focus = USA_war_plans_division
 	}
+	priority = 90
 }
 USA_intervention_mandate = {
 	icon = usa_intervention_mandate

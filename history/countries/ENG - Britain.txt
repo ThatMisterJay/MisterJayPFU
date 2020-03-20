@@ -43,6 +43,37 @@ set_technology = {
 	fuel_refining = 1
 }
 
+
+
+# Africa roads
+
+452 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+447 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+446 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+453 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+454 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+456 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+
+
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

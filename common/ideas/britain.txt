@@ -159,6 +159,7 @@ ENG_ITA_help = {
 			}
 
 			modifier = {
+				operative_slot = 3
 				drift_defence_factor = 0.5
 			}
 

@@ -1,0 +1,45 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+		# Soviet Plane Production
+			SOV = {
+				add_ideas = polikarpov_design_bureau 
+				set_technology = { CAS1 = 1 }
+				set_technology = { fighter1 = 1}
+				add_equipment_production = {
+					equipment = {
+						type = fighter_equipment_1
+						creator = "SOV"
+					}
+					requested_factories = 10
+					progress = 0.15
+					efficiency = 50
+				}
+				add_equipment_production = {
+					equipment = {
+						type = cas_equipment_1
+						creator = "SOV"
+					}
+					requested_factories = 2
+					progress = 0.15
+					efficiency = 50
+				}
+				remove_ideas = polikarpov_design_bureau
+				load_oob = "SOV_fighters"
+				#convoys to keep production queue order
+				add_equipment_production = {
+					equipment = {
+						type = convoy_1
+						creator = "SOV"
+					}
+					requested_factories = 15
+					progress = 0.70
+					amount = 0
+				}
+			}
+		}
+	}
+}
+
+   
