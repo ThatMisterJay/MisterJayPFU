@@ -1617,6 +1617,7 @@ ai_will_do = {
         state = 156
         state = 115
         state = 157
+        state = 117
       }
     }
     remove_dynamic_modifier = { modifier = weak_ITA_industry }
