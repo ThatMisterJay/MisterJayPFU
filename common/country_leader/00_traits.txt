@@ -315,8 +315,8 @@ leader_traits = {
 
 	emperor_showa = {
 			random = no
-			defensive_war_stability_factor = 0.3 #FOR THE EMPERAH
-
+		defensive_war_stability_factor = 0.3
+		offensive_war_stability_factor = 0.3
 			ai_will_do = {
 				factor = 1
 			}
