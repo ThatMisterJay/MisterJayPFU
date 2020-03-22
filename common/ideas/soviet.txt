@@ -612,6 +612,10 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.5
+civilian_intel_factor = -0.15
+army_intel_factor = -0.15
+navy_intel_factor = -0.15
+airforce_intel_factor = -0.15
 			}
 				equipment_bonus = {
 				fighter_equipment = {
@@ -658,6 +662,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.15
+				army_intel_factor = -0.15
+				navy_intel_factor = -0.15
+				airforce_intel_factor = -0.15
 				army_org_factor = -0.45
 				}
 				equipment_bonus = {
@@ -704,6 +712,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.15
+				army_intel_factor = -0.15
+				navy_intel_factor = -0.15
+				airforce_intel_factor = -0.15
 				army_org_factor = -0.4
 				}
 				equipment_bonus = {
@@ -750,6 +762,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.15
+				army_intel_factor = -0.15
+				navy_intel_factor = -0.15
+				airforce_intel_factor = -0.15
 				army_org_factor = -0.35
 				}
 					equipment_bonus = {
@@ -796,6 +812,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.12
+				army_intel_factor = -0.12
+				navy_intel_factor = -0.12
+				airforce_intel_factor = -0.12
 				army_org_factor = -0.30
 				}
 					equipment_bonus = {
@@ -842,6 +862,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.12
+				army_intel_factor = -0.12
+				navy_intel_factor = -0.12
+				airforce_intel_factor = -0.12
 				army_org_factor = -0.25
 				}
 					equipment_bonus = {
@@ -887,6 +911,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+				navy_intel_factor = -0.1
+				airforce_intel_factor = -0.1
 				army_org_factor = -0.20
 				}
 				equipment_bonus = {
@@ -932,6 +960,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+				navy_intel_factor = -0.1
+				airforce_intel_factor = -0.1
 				army_org_factor = -0.15
 				}
 				equipment_bonus = {
@@ -977,6 +1009,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+				navy_intel_factor = -0.1
+				airforce_intel_factor = -0.1
 				army_org_factor = -0.10
 				}
 				equipment_bonus = {
@@ -1023,6 +1059,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.05
+				army_intel_factor = -0.05
+				navy_intel_factor = -0.05
+				airforce_intel_factor = -0.05
 				army_org_factor = -0.05
 				}
 				equipment_bonus = {
