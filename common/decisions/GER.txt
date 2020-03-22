@@ -299,7 +299,7 @@ complete_effect = {
 
 		available = {
 			GER = { has_war_with = SOV }
-			SOV = { surrender_progress < 0.80 }
+			GER = { surrender_progress > 0.70 }
 			date > 1941.10.1
 		}
 
