@@ -219,3 +219,18 @@ country_event = {
     add_ideas = GER_volk
   }
 }
+
+country_event = {
+  id = DSFU.10
+  title = DSFU.10.t
+  desc = DSFU.10.d
+  picture = GFX_report_event_romanian_soldiers
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.10.a
+    load_oob = USA_smoking_snakes
+  }
+}

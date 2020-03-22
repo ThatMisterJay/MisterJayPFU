@@ -1074,6 +1074,9 @@ HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 }
 }
 hidden_effect = {
+	USA = {
+		country_event = { id = DSFU.10 days = 100 }
+	}
 SOV = {
 remove_ideas = SOV_molotov_ribbentrop_pact
 add_timed_idea = { idea = shattered_retreat days = 115 }
