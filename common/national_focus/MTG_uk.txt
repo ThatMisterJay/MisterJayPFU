@@ -48,13 +48,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = codebreaking_bonus
-				bonus = 1.0
-				uses = 3
-				category = decryption_tech
-				category = computing_tech
-			}
+			hidden_effect = {
+						set_technology = { lar_decryption_bonus_tech = 1 }
+					}
+					custom_effect_tooltip = lar_decryption_bonus_tt
 		}
 	}
 
@@ -2821,35 +2818,12 @@ technology = fighter2
 	focus = {
 		id = uk_new_zealand_focus
 		prerequisite = { focus = uk_australia_focus }
-		available = {
-			is_in_faction_with = NZL
-		}
+
 		bypass = {
-			OR = {
+			if = {
 				NZL = { exists = no }
-				NZL = {
-					custom_trigger_tooltip = {
-						tooltip = construction_effort_tt
-						all_owned_state = {
-							free_building_slots = {
-								building = industrial_complex
-								size < 1
-								include_locked = yes
-							}
-						}
-					}
-					custom_trigger_tooltip = {
-						tooltip = naval_effort_tt
-						all_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size < 1
-								include_locked = yes
-							}
-						}
-					}
-				}
-			}
+				AST = { exists = no }
+			}	
 		}
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -2859,91 +2833,136 @@ technology = fighter2
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			NZL = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1IC }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
 
-				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1dockyard }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_new_zealand_focus
-				}
-			}
-		}
 
 		completion_reward = {
-			NZL = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = NZL
 					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_new_zealand_focus_1IC
 				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
+				AST = {
+					add_opinion_modifier = { target = ENG modifier = aided_industry }
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
 						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
 					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
 					}
-					set_state_flag = ENG_uk_new_zealand_focus_1IC
-				}
 
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = yes
+							}
 						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1dockyard
 					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
+					add_autonomy_ratio = {
+						value = -0.05
+						localization = uk_new_zealand_focus
 					}
-					set_state_flag = ENG_uk_new_zealand_focus_1dockyard
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_new_zealand_focus
 				}
 			}
+			if = {
+				limit = {
+					country_exists = NZL
+				}
+				NZL = {
+					add_opinion_modifier = { target = ENG modifier = aided_industry }
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
+					}
+
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1dockyard
+					}
+					add_autonomy_ratio = {
+						value = -0.05
+						localization = uk_new_zealand_focus
+					}
+				}
+			}
+
 		}
 	}
 
@@ -3246,102 +3265,6 @@ technology = fighter2
 			has_dlc = "Man the Guns"
 		}
 
-		available = {
-			CAN = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			SAF = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			AST = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			NZL = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = {
-							OR = {
-								tag = ENG
-								tag = CAN
-								tag = SAF
-								tag = AST
-								tag = NZL
-							}
-						}
-					}
-				}
-			}
-
-		}
-
-		bypass = {
-			CAN = {
-				exists = no
-			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				OR = {
-					exists = no
-					NOT = { is_subject_of = ENG }
-				}
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = { tag = ENG }
-					}
-				}
-			}
-		}
 
 		continue_if_invalid = no
 
