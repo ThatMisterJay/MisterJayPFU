@@ -52,4 +52,9 @@ spriteTypes = {
 									texturefile = "gfx/interface/ideas/idea_SOV_nikolai_yezhov.dds"
 										}
 
+									SpriteType = {
+										name = "GFX_idea_ENG_war_cabinet"
+										texturefile = "gfx/interface/ideas/idea_ENG_war_cabinet.dds"
+														}
+
 }

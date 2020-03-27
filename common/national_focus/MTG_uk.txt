@@ -1667,9 +1667,9 @@ technology = fighter2
 
 	focus = {
 		id = ENG_vanguard
-		prerequisite = { focus = uk_battleship_focus }
+		prerequisite = { focus = ENG_expand_the_repair_yards }
 		icon = GFX_focus_generic_navy_battleship2
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = uk_battleship_focus
 		cost = 5
@@ -2823,7 +2823,7 @@ technology = fighter2
 			if = {
 				NZL = { exists = no }
 				AST = { exists = no }
-			}	
+			}
 		}
 		icon = GFX_goal_generic_construction
 		x = 0
@@ -3794,6 +3794,96 @@ technology = fighter2
 		}
 	}
 
+
+	focus = {
+		id = ENG_war_ministry
+
+		prerequisite = { focus = ENG_military_training_act }
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = 0
+		y = 1
+		relative_position_id = ENG_military_training_act
+		cost = 5
+
+		available = {
+	threat > 0.4
+		}
+
+	completion_reward = {
+add_ideas = ENG_war_cabinet
+	}
+
+	}
+
+focus = {
+	id = ENG_scandinavia_intervention
+
+	prerequisite = { focus = ENG_war_ministry }
+	icon = GFX_ENG_Scandinavia
+	x = 0
+	y = 1
+	relative_position_id = ENG_war_ministry
+	cost = 5
+
+	available = {
+threat > 0.4
+	}
+
+completion_reward = {
+	add_war_support = 0.05
+custom_effect_tooltip = ENG_norway_warplan
+}
+
+}
+
+focus = {
+	id = ENG_norway_occupation
+
+	prerequisite = { focus = ENG_scandinavia_intervention }
+	icon = GFX_ENG_norway_occupation
+	x = 1
+	y = 1
+	relative_position_id = ENG_scandinavia_intervention
+	cost = 5
+
+	available = {
+controls_state = 144
+controls_state = 143
+controls_state = 142
+	}
+
+completion_reward = {
+	country_event = {
+	id = DSFU.11   days = 30 }
+}
+
+}
+
+focus = {
+	id = ENG_sweden_steel
+
+	prerequisite = { focus = ENG_scandinavia_intervention }
+	icon = GFX_ENG_SWE_offer
+	x = -1
+	y = 1
+	relative_position_id = ENG_scandinavia_intervention
+	cost = 5
+
+	available = {
+has_full_control_of_state = 144
+	}
+
+completion_reward = {
+	hidden_effect = {
+	GER = {
+		set_country_flag = SWE_embargo
+	}
+}
+country_event = {
+	id = DSFU.12 days = 1
+ }
+}
+}
 	focus = {
 		id = ENG_prepare_for_the_inevitable
 		available = {
@@ -3805,19 +3895,10 @@ technology = fighter2
 		prerequisite = { focus = ENG_home_defence }
 
 		icon = GFX_goal_generic_construction
-
-cost = 5
 		x = -2
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

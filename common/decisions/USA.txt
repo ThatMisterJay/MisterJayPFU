@@ -1434,8 +1434,8 @@ USA_war_plans = {
 		days_remove = 180
 		targeted_modifier = {
 			tag = ITA
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
+			attack_bonus_against = 0.08
+			defense_bonus_against = 0.08
 		}
 	}
 	USA_execute_war_plan_orange = {
@@ -1457,18 +1457,18 @@ USA_war_plans = {
 		}
 		targeted_modifier = {
 			tag = JAP
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
+			attack_bonus_against = 0.08
+			defense_bonus_against = 0.08
 		}
 		targeted_modifier = {
 			tag = MAN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
+			attack_bonus_against = 0.08
+			defense_bonus_against = 0.08
 		}
 		targeted_modifier = {
 			tag = MEN
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
+			attack_bonus_against = 0.08
+			defense_bonus_against = 0.08
 		}
 	}
 	USA_execute_war_plan_black = {
@@ -1486,8 +1486,8 @@ USA_war_plans = {
 		days_remove = 180
 		targeted_modifier = {
 			tag = GER
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
+			attack_bonus_against = 0.08
+			defense_bonus_against = 0.08
 		}
 	}
 

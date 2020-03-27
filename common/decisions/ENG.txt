@@ -425,6 +425,41 @@ political_actions = {
 		}
 	}
 
+	ENG_SWE_embargo = {
+
+		allowed = {
+			original_tag = ENG
+		}
+
+targets = { SWE }
+
+		available = {
+		has_full_control_of_state = 144
+		}
+
+		cost = 50
+
+icon = generic_political_discourse
+
+
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+has_completed_focus = ENG_sweden_steel
+has_country_flag = GER_SWE_trade
+		}
+
+		complete_effect = {
+			clr_country_flag = GER_SWE_trade
+country_event = {
+	id = DSFU.12 days = 1
+}
+	}
+}
+
 	ENG_request_azores_lease = {
 
 		allowed = {
@@ -735,7 +770,12 @@ political_actions = {
 		}
 
 		complete_effect = {
-
+			AST = {
+				every_owned_state = {
+					limit = { is_core_of = AST }
+					add_core_of = ROOT
+				}
+			}
 			ROOT = {
 				annex_country = { target = AST transfer_troops = yes }
 
@@ -767,6 +807,13 @@ political_actions = {
 		}
 
 		complete_effect = {
+			NZL = {
+				every_owned_state = {
+					limit = { is_core_of = NZL }
+					add_core_of = ROOT
+				}
+			}
+
 			annex_country = { target = NZL transfer_troops = yes }
 
 		}
@@ -835,7 +882,7 @@ operations = {
 
 		visible = {
 			tag = ENG
-	has_war_with = GER
+	has_completed_focus = ENG_scandinavia_intervention
 		}
 
 		cost = 50

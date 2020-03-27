@@ -2,7 +2,7 @@
 
 add_namespace = DSFU
 
-
+# SS exploit
 country_event = {
   id = DSFU.1
   title = DSFU.1.t
@@ -19,7 +19,7 @@ load_oob = GER_ROM_SS
 }
 
 }
-
+# SS exploit
 country_event = {
   id = DSFU.2
   title = DSFU.2.t
@@ -37,7 +37,7 @@ hidden_effect = { set_technology = { jaegers = 1 } }
 }
 
 }
-
+#Iraq coup IRQ
 country_event = {
   id = DSFU.3
   title = DSFU.3.t
@@ -82,7 +82,7 @@ immediate = {
 }
 
 
-
+#spanishtrade deal accepted
 country_event = {
 id = DSFU.4
 title = DSFU.4.t
@@ -110,6 +110,7 @@ trigger = { SPR = { is_ai = no } }
 
 }
 
+#Iraq coup
 country_event = {
 id = DSFU.5
 title = DSFU.5.t
@@ -169,7 +170,7 @@ country_event = {
 
 
 }
-
+#German-soviet agreement starts
 country_event = {
   id = DSFU.7
   title = DSFU.7.t
@@ -186,7 +187,7 @@ country_event = {
     }
   }
 }
-
+#German-soviet agreement ends
 country_event = {
   id = DSFU.8
   title = DSFU.8.t
@@ -204,7 +205,7 @@ country_event = {
   }
 }
 
-
+#German Volk event
 country_event = {
   id = DSFU.9
   title = DSFU.9.t
@@ -220,6 +221,8 @@ country_event = {
   }
 }
 
+
+#Brazilian Expeditionary Force event
 country_event = {
   id = DSFU.10
   title = DSFU.10.t
@@ -232,5 +235,120 @@ country_event = {
   option = {
     name = DSFU.10.a
     load_oob = USA_smoking_snakes
+  }
+}
+
+country_event = {
+  id = DSFU.11
+  title = DSFU.11.t
+  desc = DSFU.11.d
+  picture = GFX_report_event_finnish_soldiers_snow
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.11.a
+    every_owned_state = {
+      limit = {
+        is_core_of = NOR
+      }
+      add_state_modifier = {
+  modifier = {
+    local_non_core_manpower = 0.60
+  }
+}
+      add_compliance = 60
+    }
+
+  }
+}
+
+
+#start embaro event
+country_event = {
+  id = DSFU.12
+  title = DSFU.12.t
+  desc = DSFU.12.d
+  picture = GFX_report_event_finnish_soldiers_snow
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.12.a
+    GER = {
+      set_country_flag = SWE_embargo
+    }
+    GER = {
+				add_opinion_modifier = { target = SWE modifier = embargo }
+			}
+      hidden_effect = {
+      SWE = {
+        138 = {
+      add_resource = {
+      type = steel
+      amount = -213
+      state = 138
+      }
+
+      add_resource = {
+      type = tungsten
+      amount = -94
+      state = 138
+      }
+
+      add_resource = {
+      type = chromium
+      amount = -54
+      state = 138
+      }
+     }
+    }
+  }
+  }
+}
+
+#end embargo evnet
+country_event = {
+  id = DSFU.13
+  title = DSFU.13.t
+  desc = DSFU.13.d
+  picture = GFX_report_event_finnish_soldiers_snow
+  is_triggered_only = yes
+
+
+
+  option = {
+    name = DSFU.13.a
+    GER = {
+      clr_country_flag = SWE_embargo
+    }
+    GER = {
+				remove_opinion_modifier = { target = SWE modifier = embargo }
+			}
+      hidden_effect = {
+      SWE = {
+        138 = {
+      add_resource = {
+      type = steel
+      amount = 213
+      state = 138
+      }
+
+      add_resource = {
+      type = tungsten
+      amount = 94
+      state = 138
+      }
+
+      add_resource = {
+      type = chromium
+      amount = 54
+      state = 138
+      }
+     }
+    }
+  }
   }
 }
