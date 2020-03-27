@@ -21,7 +21,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.08
 			}
 
 			modifier = {
