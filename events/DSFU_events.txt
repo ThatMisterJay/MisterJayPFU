@@ -265,12 +265,12 @@ country_event = {
 }
 
 
-#start embaro event
+#start embargo event
 country_event = {
   id = DSFU.12
   title = DSFU.12.t
   desc = DSFU.12.d
-  picture = GFX_report_event_finnish_soldiers_snow
+  picture = GFX_report_event_swedish_soldier
   is_triggered_only = yes
 
 
@@ -314,7 +314,7 @@ country_event = {
   id = DSFU.13
   title = DSFU.13.t
   desc = DSFU.13.d
-  picture = GFX_report_event_finnish_soldiers_snow
+  picture = GFX_report_event_swedish_soldier
   is_triggered_only = yes
 
 
@@ -352,3 +352,33 @@ country_event = {
   }
   }
 }
+
+#country_event = {
+#  id = DSFU.14
+#  title = DSFU.14.t
+#  desc = DSFU.14.d
+#  picture = GFX_report_event_finnish_soldiers_snow
+#  is_triggered_only = yes
+
+
+
+#  option = {
+#    name = DSFU.14.a
+
+#  }
+
+#  option = {
+#    name = DSFU.14.b
+# trigger = {
+#   has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+#}
+# set_country_flag = Halifax_advisor
+#   }
+
+#    option = {
+#     name = DSFU.14.c
+ #add_political_power = 100
+#   }
+
+
+ #}
