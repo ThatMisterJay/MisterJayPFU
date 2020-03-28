@@ -16,7 +16,7 @@ country_event = {
 		name = spain.1.a
 		trigger = { is_ai = no }
 		hidden_effect = {	add_named_threat = {
-				threat = 2 name = SPR_war
+				threat = 3.5 name = SPR_war
 			}
 			SPR = {
 				add_ideas = SPA_recovering_from_civil_war
