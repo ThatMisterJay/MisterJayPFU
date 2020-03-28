@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+		
 		victor_emmanuel = {
 
 
@@ -25,6 +26,7 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+
 		vittoria_mutilata = {
 
 			allowed = {

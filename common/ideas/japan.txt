@@ -119,8 +119,8 @@ ideas = {
 			picture = jap_ichi_go
 
 			modifier = {
-				experience_gain_army = 0.10
-				experience_gain_air = 0.05
+				experience_gain_army = 0.20
+				experience_gain_air = 0.15
 			}
 		}
 

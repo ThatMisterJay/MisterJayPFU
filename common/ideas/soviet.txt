@@ -1067,6 +1067,23 @@ airforce_intel_factor = -0.15
 				}
 		}
 
+SOV_stab_in_the_back = {
+	removal_cost = -1
+
+	picture = generic_purge
+
+	allowed = {
+		always = no # Added via event
+	}
+
+
+
+	modifier = {
+surrender_limit = 0.50
+
+	}
+}
+
 		great_patriotic_war = {
 			removal_cost = -1
 
