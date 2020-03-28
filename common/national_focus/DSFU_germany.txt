@@ -2335,8 +2335,8 @@ available = {
 }
 
 		completion_reward = {
-			air_experience = 130
-			army_experience = 90
+			air_experience = 65
+			army_experience = 45
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1
