@@ -1516,7 +1516,14 @@ ai_will_do = {
      name = ITA_industrial_push
      bonus = 1.5
      uses = 1
-     category = industry
+     technology = dispersed_industry3
+technology = dispersed_industry4
+technology = concentrated_industry3
+technology = concentrated_industry4
+technology = advanced_machine_tools
+technology = assembly_line_production
+technology = construction3
+technology = construction4
    }
    random_owned_controlled_state = {
      prioritize = { 161 }
@@ -1581,7 +1588,14 @@ ai_will_do = {
      name = ITA_industrial_push
      bonus = 1.5
      uses = 1
-     category = industry
+     technology = dispersed_industry3
+technology = dispersed_industry4
+technology = concentrated_industry3
+technology = concentrated_industry4
+technology = advanced_machine_tools
+technology = assembly_line_production
+technology = construction3
+technology = construction4
    }
 
    random_owned_controlled_state = {

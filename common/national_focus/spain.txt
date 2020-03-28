@@ -785,7 +785,14 @@ focus = {
 				name = SPA_fascist_economic_aid
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = dispersed_industry3
+technology = dispersed_industry4
+technology = concentrated_industry3
+technology = concentrated_industry4
+technology = advanced_machine_tools
+technology = assembly_line_production
+technology = construction3
+technology = construction4
 			}
 		}
 	}
@@ -1906,7 +1913,14 @@ show_ideas_tooltip = SPA_pro_allies_guy
 				name = SPA_capitalist_economic_aid
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = dispersed_industry3
+technology = dispersed_industry4
+technology = concentrated_industry3
+technology = concentrated_industry4
+technology = advanced_machine_tools
+technology = assembly_line_production
+technology = construction3
+technology = construction4
 			}
 			random_owned_controlled_state = {
 				limit = {
