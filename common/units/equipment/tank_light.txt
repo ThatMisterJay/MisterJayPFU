@@ -490,7 +490,7 @@ equipments = {
 		soft_attack = 3
 		hard_attack = 1.5
 		ap_attack = 20
-		air_attack = 15.5
+		air_attack = 20
 
 		build_cost_ic = 10
 		resources = {
@@ -524,7 +524,7 @@ equipments = {
 		soft_attack = 4.5
 		hard_attack = 4
 		ap_attack = 35
-		air_attack = 23
+		air_attack = 30
 
 		build_cost_ic = 11
 		resources = {

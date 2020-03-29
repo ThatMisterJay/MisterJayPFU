@@ -425,7 +425,7 @@ equipments = {
 		soft_attack = 4.5
 		hard_attack = 3
 		ap_attack = 40
-		air_attack = 17
+		air_attack = 25
 
 		build_cost_ic = 14.5
 
@@ -475,7 +475,7 @@ equipments = {
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 26
+		air_attack = 35
 
 		build_cost_ic = 15.5
 
@@ -511,7 +511,7 @@ equipments = {
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 80
-		air_attack = 34
+		air_attack = 45
 
 		build_cost_ic = 16.5
 
