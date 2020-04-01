@@ -612,6 +612,10 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.5
+civilian_intel_factor = -0.15
+army_intel_factor = -0.15
+navy_intel_factor = -0.15
+airforce_intel_factor = -0.15
 			}
 				equipment_bonus = {
 				fighter_equipment = {
@@ -658,6 +662,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.15
+				army_intel_factor = -0.15
+				navy_intel_factor = -0.15
+				airforce_intel_factor = -0.15
 				army_org_factor = -0.45
 				}
 				equipment_bonus = {
@@ -704,6 +712,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.15
+				army_intel_factor = -0.15
+				navy_intel_factor = -0.15
+				airforce_intel_factor = -0.15
 				army_org_factor = -0.4
 				}
 				equipment_bonus = {
@@ -750,6 +762,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.15
+				army_intel_factor = -0.15
+				navy_intel_factor = -0.15
+				airforce_intel_factor = -0.15
 				army_org_factor = -0.35
 				}
 					equipment_bonus = {
@@ -796,6 +812,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.12
+				army_intel_factor = -0.12
+				navy_intel_factor = -0.12
+				airforce_intel_factor = -0.12
 				army_org_factor = -0.30
 				}
 					equipment_bonus = {
@@ -842,6 +862,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.12
+				army_intel_factor = -0.12
+				navy_intel_factor = -0.12
+				airforce_intel_factor = -0.12
 				army_org_factor = -0.25
 				}
 					equipment_bonus = {
@@ -887,6 +911,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+				navy_intel_factor = -0.1
+				airforce_intel_factor = -0.1
 				army_org_factor = -0.20
 				}
 				equipment_bonus = {
@@ -932,6 +960,10 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+				navy_intel_factor = -0.1
+				airforce_intel_factor = -0.1
 				army_org_factor = -0.15
 				}
 				equipment_bonus = {
@@ -977,27 +1009,31 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+				navy_intel_factor = -0.1
+				airforce_intel_factor = -0.1
 				army_org_factor = -0.10
 				}
 				equipment_bonus = {
 				fighter_equipment = {
-					air_agility = -0.10
-					air_attack = -0.10
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				heavy_fighter_equipment = {
-					air_agility = -0.10
-					air_attack = -0.10
+					air_agility = -0.05
+					air_attack = -0.05
 					instant = yes
 				}
 				CAS_equipment = {
-					air_agility = -0.10
-					air_ground_attack = -0.10
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 				tac_bomber_equipment = {
-					air_agility = -0.10
-					air_ground_attack = -0.10
+					air_agility = -0.05
+					air_ground_attack = -0.05
 					instant = yes
 				}
 			}
@@ -1023,31 +1059,30 @@ ideas = {
 			}
 
 			modifier = {
+				civilian_intel_factor = -0.05
+				army_intel_factor = -0.05
+				navy_intel_factor = -0.05
+				airforce_intel_factor = -0.05
 				army_org_factor = -0.05
 				}
-				equipment_bonus = {
-				fighter_equipment = {
-					air_agility = -0.05
-					air_attack = -0.05
-					instant = yes
-				}
-				heavy_fighter_equipment = {
-					air_agility = -0.05
-					air_attack = -0.05
-					instant = yes
-				}
-				CAS_equipment = {
-					air_agility = -0.05
-					air_ground_attack = -0.05
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					air_agility = -0.05
-					air_ground_attack = -0.05
-					instant = yes
-				}
-			}
 		}
+
+SOV_stab_in_the_back = {
+	removal_cost = -1
+
+	picture = generic_purge
+
+	allowed = {
+		always = no # Added via event
+	}
+
+
+
+	modifier = {
+surrender_limit = 0.50
+
+	}
+}
 
 		great_patriotic_war = {
 			removal_cost = -1
@@ -1151,7 +1186,7 @@ ideas = {
 
 		SOV_lavrentiy_beria = {
 
-			picture = generic_army_europe_2
+			picture = SOV_beria
 
 			allowed = {
 				original_tag = SOV
@@ -1175,7 +1210,7 @@ ideas = {
 
 		SOV_vyacheslav_molotov = {
 
-			picture = generic_political_advisor_europe_1
+			picture = SOV_molotov
 
 			allowed = {
 				original_tag = SOV
@@ -1186,7 +1221,7 @@ ideas = {
 
 		SOV_nikolai_voznesensky = {
 
-			picture = generic_political_advisor_europe_2
+			picture = SOV_nikolai_voznesensky
 
 			allowed = {
 				original_tag = SOV
@@ -1197,7 +1232,7 @@ ideas = {
 
 		SOV_nikolai_yezhov = {
 
-			picture = generic_army_europe_2
+			picture = SOV_nikolai_yezhov
 
 			allowed = {
 				original_tag = SOV
@@ -1662,7 +1697,7 @@ ledger = army
 				original_tag = SOV
 			}
 
-			picture = SOV_Vasily_Chuikov
+			picture = SOV_vasily_chuikov
 
 			traits = { army_infantry_1 }
 			available =

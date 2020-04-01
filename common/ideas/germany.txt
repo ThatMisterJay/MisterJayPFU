@@ -291,7 +291,7 @@ axis_exploited = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.2
+				attack_bonus_against = 0.16
 			}
 
 			modifier = {
@@ -320,7 +320,7 @@ axis_exploited = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.12
 			}
 
 			modifier = {
@@ -388,7 +388,7 @@ axis_exploited = {
 			picture = generic_morale_bonus
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
+				attack_bonus_against = 0.12
 			}
 
 			modifier = {
@@ -413,8 +413,8 @@ axis_exploited = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
+				attack_bonus_against = 0.12
+				defense_bonus_against = 0.12
 			}
 
 			modifier = {
@@ -707,8 +707,8 @@ axis_exploited = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.04
+				defense_bonus_against = 0.04
 			}
 		}
 

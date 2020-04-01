@@ -1851,13 +1851,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = CAN_camp_x
-				bonus = 1
-				uses = 1
-				category = encryption_tech
-				category = decryption_tech
-			}
+			hidden_effect = {
+					set_technology = { lar_decryption_bonus_tech = 1 }
+				}
+				custom_effect_tooltip = lar_decryption_bonus_tt
 		}
 	}
 

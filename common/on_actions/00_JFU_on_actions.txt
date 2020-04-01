@@ -1,5 +1,39 @@
 on_actions = {
 
+
+
+
+
+
+
+
+
+
+
+
+on_state_control_changed = {
+
+
+effect = {
+  if = {
+    limit = {
+      ENG = {
+        controls_state = 144
+        controls_state = 143
+        controls_state = 142
+      }
+    }
+      NOR = { country_event = { id = gduannexations.5 days = 10 }  }			}
+  }
+}
+
+
+
+
+
+
+
+
 on_startup = {
   effect = {
     #British oil concessions

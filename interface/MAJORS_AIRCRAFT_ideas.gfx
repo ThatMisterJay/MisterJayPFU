@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 
 	### GERMAN IDEAS
 	spriteType = {
@@ -17,8 +17,8 @@ spriteTypes = {
 		name = "GFX_idea_henschelair"
 		texturefile = "gfx/interface/ideas/idea_henschelair.tga"
 	}
-	
-	
+
+
 	### BRITISH IDEAS
 	spriteType = {
 		name = "GFX_idea_bristol"
@@ -28,25 +28,29 @@ spriteTypes = {
 		name = "GFX_idea_vickers"
 		texturefile = "gfx/interface/ideas/idea_vickers_armstrong.dds"
 	}
-	
+
 	### RUSSIAN IDEAS
 	spriteType = {
 		name = "GFX_idea_lavochkin_design_bureau"
 		texturefile = "gfx/interface/ideas/idea_lavochkin.tga"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_petyakov_design_bureau"
 		texturefile = "gfx/interface/ideas/idea_petyakov.tga"
-	}	
+	}
 
 	spriteType = {
 		name = "GFX_idea_sukhoi_design_bureau"
 		texturefile = "gfx/interface/ideas/idea_sukhoi.tga"
-	}	
-	
-	
-	### USA IDEAS		
+	}
+
+	spriteType = {
+		name = "GFX_idea_polikarpov_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_polikarpov.tga"
+	}
+
+	### USA IDEAS
 	spriteType = {
 		name = "GFX_idea_martin"
 		texturefile = "gfx/interface/ideas/idea_martin.tga"
@@ -63,14 +67,14 @@ spriteTypes = {
 		name = "GFX_idea_curtiss_wright"
 		texturefile = "gfx/interface/ideas/idea_curtiss_wright.tga"
 	}
-	
+
 	### JAPANESE IDEAS
 	spriteType = {
 		name = "GFX_idea_kawasaki2"
 		texturefile = "gfx/interface/ideas/idea_kawasaki2.dds"
-	}	
-	
-	### ITALIAN IDEAS	
+	}
+
+	### ITALIAN IDEAS
 	spriteType = {
 		name = "GFX_idea_crdaair"
 		texturefile = "gfx/interface/ideas/idea_crdaair.dds"
@@ -115,8 +119,8 @@ spriteTypes = {
 		name = "GFX_idea_crda"
 		texturefile = "gfx/interface/ideas/idea_crda.dds"
 	}
-	
-	### FRENCH IDEAS	
+
+	### FRENCH IDEAS
 	spriteType = {
 		name = "GFX_idea_fcm"
 		texturefile = "gfx/interface/ideas/idea_fcm.dds"
@@ -149,5 +153,5 @@ spriteTypes = {
 		name = "GFX_idea_nord"
 		texturefile = "gfx/interface/ideas/idea_nord.dds"
 	}
-	
+
 }

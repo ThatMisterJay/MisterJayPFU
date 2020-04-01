@@ -11,15 +11,11 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				FRA_market_dynamism
-				FRA_maquis
-				FRA_national_council_of_the_resistance
-                                FRA_france_undividable
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-                                FRA_france_libre
-                                FRA_national_council_of_the_resistance
-                                FRA_devalue_the_franc
 			}
 		}
 		"USA"={

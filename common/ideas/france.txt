@@ -874,8 +874,8 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
 			}
 		}
 		FRA_rebuild_the_military = {
@@ -1440,6 +1440,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.9
 				stability_factor = -0.1
 				war_support_factor = -0.1
+				consumer_goods_factor = 0.1
 			}
 		}
 

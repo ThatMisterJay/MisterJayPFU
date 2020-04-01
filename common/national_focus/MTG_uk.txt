@@ -48,13 +48,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = codebreaking_bonus
-				bonus = 1.0
-				uses = 3
-				category = decryption_tech
-				category = computing_tech
-			}
+			hidden_effect = {
+						set_technology = { lar_decryption_bonus_tech = 1 }
+					}
+					custom_effect_tooltip = lar_decryption_bonus_tt
 		}
 	}
 
@@ -594,7 +591,14 @@ focus_tree = {
 				name = industrial_bonus
 				bonus = 1.5
 				uses = 2
-				category = industry
+				technology = dispersed_industry3
+technology = dispersed_industry4
+technology = concentrated_industry3
+technology = concentrated_industry4
+technology = advanced_machine_tools
+technology = assembly_line_production
+technology = construction3
+technology = construction4
 			}
 		}
 	}
@@ -1670,9 +1674,9 @@ technology = fighter2
 
 	focus = {
 		id = ENG_vanguard
-		prerequisite = { focus = uk_battleship_focus }
+		prerequisite = { focus = ENG_expand_the_repair_yards }
 		icon = GFX_focus_generic_navy_battleship2
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = uk_battleship_focus
 		cost = 5
@@ -2821,34 +2825,11 @@ technology = fighter2
 	focus = {
 		id = uk_new_zealand_focus
 		prerequisite = { focus = uk_australia_focus }
-		available = {
-			is_in_faction_with = NZL
-		}
+
 		bypass = {
-			OR = {
+			if = {
 				NZL = { exists = no }
-				NZL = {
-					custom_trigger_tooltip = {
-						tooltip = construction_effort_tt
-						all_owned_state = {
-							free_building_slots = {
-								building = industrial_complex
-								size < 1
-								include_locked = yes
-							}
-						}
-					}
-					custom_trigger_tooltip = {
-						tooltip = naval_effort_tt
-						all_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size < 1
-								include_locked = yes
-							}
-						}
-					}
-				}
+				AST = { exists = no }
 			}
 		}
 		icon = GFX_goal_generic_construction
@@ -2859,91 +2840,136 @@ technology = fighter2
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			NZL = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1IC }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
 
-				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1dockyard }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_new_zealand_focus
-				}
-			}
-		}
 
 		completion_reward = {
-			NZL = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
+			if = {
+				limit = {
+					NOT = {
+						country_exists = NZL
 					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_new_zealand_focus_1IC
 				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
+				AST = {
+					add_opinion_modifier = { target = ENG modifier = aided_industry }
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
 						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
 					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
 					}
-					set_state_flag = ENG_uk_new_zealand_focus_1IC
-				}
 
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = yes
+							}
 						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1dockyard
 					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
+					add_autonomy_ratio = {
+						value = -0.05
+						localization = uk_new_zealand_focus
 					}
-					set_state_flag = ENG_uk_new_zealand_focus_1dockyard
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_new_zealand_focus
 				}
 			}
+			if = {
+				limit = {
+					country_exists = NZL
+				}
+				NZL = {
+					add_opinion_modifier = { target = ENG modifier = aided_industry }
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
+					}
+					random_owned_controlled_state = {
+						limit = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1IC
+					}
+
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 0
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+						set_state_flag = ENG_uk_new_zealand_focus_1dockyard
+					}
+					add_autonomy_ratio = {
+						value = -0.05
+						localization = uk_new_zealand_focus
+					}
+				}
+			}
+
 		}
 	}
 
@@ -3246,102 +3272,6 @@ technology = fighter2
 			has_dlc = "Man the Guns"
 		}
 
-		available = {
-			CAN = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			SAF = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			AST = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			NZL = {
-				OR = {
-					AND = {
-						is_subject_of = ENG
-						has_government = ROOT
-					}
-					exists = no
-				}
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = {
-							OR = {
-								tag = ENG
-								tag = CAN
-								tag = SAF
-								tag = AST
-								tag = NZL
-							}
-						}
-					}
-				}
-			}
-
-		}
-
-		bypass = {
-			CAN = {
-				exists = no
-			}
-			SAF = {
-				exists = no
-			}
-			RAJ = {
-				OR = {
-					exists = no
-					NOT = { is_subject_of = ENG }
-				}
-			}
-			AST = {
-				exists = no
-			}
-			NZL = {
-				exists = no
-			}
-			NOT = {
-				any_state = {
-					OR = {
-						is_core_of = ENG
-						is_core_of = CAN
-						is_core_of = SAF
-						is_core_of = AST
-						is_core_of = NZL
-					}
-					OWNER = {
-						NOT = { tag = ENG }
-					}
-				}
-			}
-		}
 
 		continue_if_invalid = no
 
@@ -3871,6 +3801,104 @@ technology = fighter2
 		}
 	}
 
+
+	focus = {
+		id = ENG_war_ministry
+
+		prerequisite = { focus = ENG_military_training_act }
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = 0
+		y = 1
+		relative_position_id = ENG_military_training_act
+		cost = 5
+
+		available = {
+	threat > 0.4
+		}
+
+	completion_reward = {
+add_ideas = ENG_war_cabinet
+	}
+
+	}
+
+focus = {
+	id = ENG_scandinavia_intervention
+
+	prerequisite = { focus = ENG_war_ministry }
+	icon = GFX_ENG_Scandinavia
+	x = 0
+	y = 1
+	relative_position_id = ENG_war_ministry
+	cost = 5
+
+	available = {
+threat > 0.4
+	}
+
+completion_reward = {
+	add_war_support = 0.05
+custom_effect_tooltip = ENG_norway_warplan
+}
+
+}
+
+focus = {
+	id = ENG_norway_occupation
+
+	prerequisite = { focus = ENG_scandinavia_intervention }
+	icon = GFX_ENG_norway_occupation
+	x = 1
+	y = 1
+	relative_position_id = ENG_scandinavia_intervention
+	cost = 5
+
+	available = {
+controls_state = 144
+controls_state = 143
+controls_state = 142
+	}
+
+completion_reward = {
+	country_event = {
+	id = DSFU.11   days = 30 }
+}
+
+}
+
+focus = {
+	id = ENG_sweden_steel
+
+	prerequisite = { focus = ENG_scandinavia_intervention }
+	icon = GFX_ENG_SWE_offer
+	x = -1
+	y = 1
+	relative_position_id = ENG_scandinavia_intervention
+	cost = 5
+
+	available = {
+OR = {
+		controls_state = 144
+		if = {
+	is_in_faction_with = NOR
+	NOR = {
+		controls_state = 144
+	}
+}
+}
+	}
+
+completion_reward = {
+	hidden_effect = {
+	GER = {
+		set_country_flag = SWE_embargo
+	}
+}
+country_event = {
+	id = DSFU.12 days = 1
+ }
+}
+}
 	focus = {
 		id = ENG_prepare_for_the_inevitable
 		available = {
@@ -3882,19 +3910,10 @@ technology = fighter2
 		prerequisite = { focus = ENG_home_defence }
 
 		icon = GFX_goal_generic_construction
-
-cost = 5
 		x = -2
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

@@ -678,9 +678,7 @@ technologies = {
 		anti_air = {
 			air_attack = 0.1
 		}
-		anti_air_brigade = {
-			air_attack = 0.1
-		}
+
 		### DD'S ADDITION
 		mot_anti_air_brigade = {
 			air_attack = 0.1
@@ -768,9 +766,7 @@ technologies = {
 		anti_air = {
 			air_attack = 0.1
 		}
-		anti_air_brigade = {
-			air_attack = 0.1
-		}
+
 		### DD'S ADDITION
 		mot_anti_air_brigade = {
 			air_attack = 0.1
@@ -822,9 +818,7 @@ technologies = {
 		anti_air = {
 			air_attack = 0.1
 		}
-		anti_air_brigade = {
-			air_attack = 0.1
-		}
+
 		### DD'S ADDITION
 		mot_anti_air_brigade = {
 			air_attack = 0.1

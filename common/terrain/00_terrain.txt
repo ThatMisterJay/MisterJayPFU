@@ -17,7 +17,7 @@ categories =  {
 		is_water = yes
 		sound_type = sea
 	}
-	
+
 	lakes = {
 		color = { 58 91 255 }
 		movement_cost = 1.0
@@ -34,7 +34,7 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.2
+			attack = -0.1
 			#movement = -0.2
 		}
 

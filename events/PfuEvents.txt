@@ -601,9 +601,7 @@ country_event = {
 			has_full_control_of_state = 608
         }
         date > 1940.7.1
-        JAP = {
-            has_war_with = CHI
-        }
+
 	}
 
 	fire_only_once = yes

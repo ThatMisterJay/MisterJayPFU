@@ -2,16 +2,16 @@ leader_traits = {
 	maskirovka_expert = { # Gives Encryption
 		sprite = 9
 		recon_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 2
 		}
 	}
 	marshal_of_victory = { # For Zhukov
 		sprite = 7
-		army_attack_factor = 0.1
+		army_attack_factor = 0.08
 		experience_gain_army_factor = 0.15
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -20,7 +20,7 @@ leader_traits = {
 		sprite = 1
 		air_night_penalty = -0.1
 		air_cas_present_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 2
 		}

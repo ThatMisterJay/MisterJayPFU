@@ -237,7 +237,7 @@ leader_traits = {
 	british_bulldog = {
 		random = no
 		war_support_factor = 0.1
-
+    political_power_gain = 0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -310,6 +310,28 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	#Major leader traits
+
+	emperor_showa = {
+			random = no
+		defensive_war_stability_factor = 0.3
+		offensive_war_stability_factor = 0.3
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		il_duce = {
+				random = no
+				political_power_gain = 0.05
+
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+######
 
 	generallissimo = {
 		random = no
@@ -558,8 +580,8 @@ leader_traits = {
 		war_support_factor = 0.05
 		targeted_modifier = {
 			tag = SOV
-			attack_bonus_against = 0.1
-			defense_bonus_against = 0.1
+			attack_bonus_against = 0.08
+			defense_bonus_against = 0.08
 		}
 	}
 
@@ -3599,7 +3621,7 @@ mastermind_code_cracker = {
 	navy_amphibious_assault_1 = {
 		sprite = 3
 		amphibious_invasion = 0.05
-		special_forces_attack_factor = 0.03
+		amphibious_invasion_defence = 0.04
 
 		ai_will_do = {
 			factor = 1
@@ -3609,7 +3631,7 @@ mastermind_code_cracker = {
 	navy_amphibious_assault_2 = {
 		sprite = 3
 		amphibious_invasion = 0.1
-		special_forces_attack_factor = 0.05
+		amphibious_invasion_defence = 0.08
 
 		ai_will_do = {
 			factor = 2
@@ -3619,7 +3641,7 @@ mastermind_code_cracker = {
 	navy_amphibious_assault_3 = {
 		sprite = 3
 		amphibious_invasion = 0.15
-	  special_forces_attack_factor = 0.08
+	  amphibious_invasion_defence = 0.12
 
 		ai_will_do = {
 			factor = 3

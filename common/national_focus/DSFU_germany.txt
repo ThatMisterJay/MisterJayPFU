@@ -1074,6 +1074,9 @@ HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 }
 }
 hidden_effect = {
+	USA = {
+		country_event = { id = DSFU.10 days = 100 }
+	}
 SOV = {
 remove_ideas = SOV_molotov_ribbentrop_pact
 add_timed_idea = { idea = shattered_retreat days = 115 }
@@ -2332,8 +2335,8 @@ available = {
 }
 
 		completion_reward = {
-			air_experience = 130
-			army_experience = 90
+			air_experience = 65
+			army_experience = 45
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1

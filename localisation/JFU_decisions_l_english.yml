@@ -125,3 +125,8 @@ ITA_take_back_land_1:0 "Demend the return of South Tyrol"
 AST_white_australia_category:0 "New Guinean Service Debate"
 AST_weaken_white_australia:0 "The Natives Will Serve"
 AST_strengthen_white_australia:0 "The Natives Will Fill Support Roles"
+
+operation_wilfred:0 "Plan R 4"
+operation_wilfred_desc:0 "It was agreed to utilize Churchill's naval mining plan, Operation Wilfred, designed to remove the sanctuary of the Leads and force transport ships into international waters where the Royal Navy could engage and destroy them. Accompanying this would be Plan R 4, an operation where, upon almost certain German counteraction to Operation Wilfred, the Allies would then proceed to occupy Narvik, Trondheim, Bergen, and Stavanger. The planners hoped that the operation would not provoke the Norwegians to resist the Allies with armed force."
+ENG_SWE_embargo:0 "Cut Swedish Trade to Germany"
+SWE_trade:0 "Reestablish Trade with Sweden"

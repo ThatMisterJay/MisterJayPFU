@@ -1,5 +1,5 @@
 #	Example:
-# 
+#
 #	example_dynamic_modifier = {
 #		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
 #		enable = { always = yes } #optional, the modifier won't apply if not enabled
@@ -25,12 +25,12 @@
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 
 sabotaged_resources = {
-	remove_trigger = { 
+	remove_trigger = {
 		has_resistance = no
 	}
-	
+
 	icon = GFX_modifiers_sabotaged_resource
-	
+
 	temporary_state_resource_oil = sabotaged_oil
 	temporary_state_resource_aluminium = sabotaged_aluminium
 	temporary_state_resource_rubber = sabotaged_rubber
@@ -39,11 +39,82 @@ sabotaged_resources = {
 	temporary_state_resource_chromium = sabotaged_chromium
 }
 
+#Italy state mdoifiers
+
+weak_ITA_industry = {
+	enable = { always = yes }
+
+	icon = GFX_weak_ITA_industry
+
+	local_building_slots_factor = -0.10
+	state_production_speed_buildings_factor = -0.40
+}
+
+
+
+ITA_balken_development = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_balkan_dev
+
+	local_building_slots_factor = 0.60
+	state_production_speed_buildings_factor = 0.10
+	local_non_core_manpower = 0.2
+}
+
+ITA_balken_exploit = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_balkan_exploit
+
+  resistance_growth = 0.50
+	local_building_slots_factor = -0.30
+	state_production_speed_buildings_factor = -0.30
+	local_non_core_manpower = -1
+}
+
+ITA_colonial_development = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_colony_dev
+
+	local_building_slots_factor = 0.25
+	state_production_speed_buildings_factor = 0.10
+	local_non_core_manpower = 0.1
+}
+
+ITA_colonial_exploit = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_colony_exploit
+
+
+  resistance_growth = 0.50
+	local_building_slots_factor = -0.50
+	state_production_speed_buildings_factor = -0.10
+	local_non_core_manpower = -1
+}
+
+
+
+
+#
+
+
+africa_roads = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+
+
+}
+
+
 autonomous_state = {
 	enable = { always = yes }
 
 	icon = GFX_modifiers_sabotaged_resource
-	
+
 	recruitable_population_factor = -0.5
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
@@ -54,7 +125,7 @@ semi_autonomous_state = {
 	enable = { always = yes }
 
 	icon = GFX_modifiers_sabotaged_resource
-	
+
 	local_building_slots_factor = -0.25
 	state_resources_factor = -0.25
 	state_production_speed_buildings_factor = -0.25

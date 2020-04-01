@@ -8,7 +8,7 @@ ENG_ITA_help = {
 
   targeted_modifier = {
 		tag = ITA
-		defense_bonus_against = 0.05
+		defense_bonus_against = 0.04
    }
 
 }
@@ -143,6 +143,31 @@ ENG_ITA_help = {
 			modifier = {
 				conscription_factor = -0.25
 				#conscription = -0.006
+			}
+		}
+
+		ENG_war_cabinet = {
+
+			allowed = {
+				always = no
+			}
+
+picture = ENG_war_cabinet
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				high_command_cost_factor = -0.25
+				air_chief_cost_factor = -0.25
+				army_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+				war_support_factor = 0.05
 			}
 		}
 
@@ -827,13 +852,13 @@ ENG_ITA_help = {
 
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
 			}
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
 			}
 
 			picture = generic_fascism_banned
@@ -860,8 +885,8 @@ ENG_ITA_help = {
 
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
 			}
 
 			picture = generic_fascism_banned
@@ -888,8 +913,8 @@ ENG_ITA_help = {
 
 			targeted_modifier = {
 				tag = ITA
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
 			}
 
 			picture = generic_fascism_banned

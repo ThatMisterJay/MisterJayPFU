@@ -8,8 +8,8 @@ SPA_civil_war_support = {
 	picture = CZE_planning_bonus
 
 	modifier = {
-		experience_gain_army = 0.12
-		experience_gain_air = 0.12
+		experience_gain_army = 0.15
+		experience_gain_air = 0.15
 	}
 }
 

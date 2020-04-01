@@ -9,12 +9,107 @@ add_ideas = {
 	victor_emmanuel
 	ITA_army
   weak_industry0
-	weak_industry1
 	vittoria_mutilata
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
 }
+
+
+
+
+
+
+
+#weak industry stuff
+158 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+159 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+39 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+160 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+736 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+161 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+162 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+157 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+2 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+117 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+114 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+156 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+115 = {
+	add_dynamic_modifier = { modifier = weak_ITA_industry }
+}
+
+# Africa roads
+
+663 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+451 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+450 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+449 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+662 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+661 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+448 = {
+	add_dynamic_modifier = { modifier = africa_roads }
+}
+
+
+
+
+
+
+
 
 
 # Starting tech
@@ -195,7 +290,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-
+il_duce
 	}
 }
 

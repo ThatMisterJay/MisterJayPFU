@@ -299,7 +299,7 @@ complete_effect = {
 
 		available = {
 			GER = { has_war_with = SOV }
-			SOV = { surrender_progress < 0.80 }
+			GER = { surrender_progress > 0.70 }
 			date > 1941.10.1
 		}
 
@@ -429,6 +429,47 @@ complete_effect = {
 
 foreign_politics = {
 
+
+
+	SWE_trade = {
+
+
+
+targets = { SWE }
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+		has_full_control_of_state = 144
+		}
+
+		cost = 10
+
+icon = generic_political_discourse
+
+
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+has_country_flag = SWE_embargo
+		}
+
+		complete_effect = {
+			ENG = {
+				 set_country_flag = GER_SWE_trade
+			}
+country_event = {
+	id = DSFU.13 days = 1
+}
+	}
+}
+
+
 	# Titles Deprivation Act 1917
 	request_restoration_of_british_titles = {
 
@@ -553,6 +594,40 @@ GER_military_buildup = {
 }
 
 special_projects = {
+
+	GER_begin_heavy_water_production = {
+		allowed = {
+			original_tag = GER
+			has_dlc = "La Resistance"
+		}
+		available = {
+			110 = {
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		visible = { has_tech = atomic_research }
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		days_remove = 365
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_water
+				category = nuclear
+				uses = 2
+				bonus = 2
+			}
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
+
 	GER_dismantle_maginot = {
 
 		icon = generic_construction

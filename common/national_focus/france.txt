@@ -1480,7 +1480,7 @@ focus_tree = {
                 }
 
 		bypass = {
-
+				NOT = { has_idea = FRA_matignon_agreements }
 		}
 
 		cancel_if_invalid = yes
@@ -2351,7 +2351,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_laissez_faire
-				category = industry
+				technology = dispersed_industry3
+technology = dispersed_industry4
+technology = concentrated_industry3
+technology = concentrated_industry4
+technology = advanced_machine_tools
+technology = assembly_line_production
+technology = construction3
+technology = construction4
 				uses = 2
 				bonus = 1.5
 			}

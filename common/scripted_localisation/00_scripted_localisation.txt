@@ -8,6 +8,32 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
+
+defined_text = { # Country
+	name = GetWarMinistryName
+	text = {
+		trigger = {
+			original_tag = ENG
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+		localization_key = ENG_war_ministry_churchill
+	}
+	text = {
+		trigger = {
+			original_tag = ENG
+			has_country_leader =  {
+		name = "Neville Chamberlain"
+		ruling_only = yes
+	}
+		}
+		localization_key = ENG_war_ministry_chamberlain
+	}
+	text = {
+		localization_key = ENG_war_ministry_name
+	}
+}
+
+
 defined_text = { # Country
 	name = GetKdfWagenName
 	text = {
