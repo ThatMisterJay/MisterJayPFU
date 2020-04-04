@@ -22,6 +22,17 @@ spriteTypes = {
 				texturefile = "gfx/interface/ideas/idea_clive_caldwell.dds"
 					}
 
+		SpriteType = {
+				name = "GFX_idea_AST_blamey"
+				texturefile = "gfx/interface/ideas/idea_AST_blamey.dds"
+						}
+
+		SpriteType = {
+					name = "GFX_idea_AST_robertson"
+					texturefile = "gfx/interface/ideas/idea_AST_robertson.dds"
+						}
+
+
 			SpriteType = {
 					name = "GFX_idea_SOV_vasily_chuikov"
 					texturefile = "gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"

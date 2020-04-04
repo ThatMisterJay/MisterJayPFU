@@ -282,6 +282,10 @@
     JFU.18.d:0 "After our embarrasing defeat in the Battle of Burma, Major General William Slim was given command of the Burma Corps in March 1942. It was hoped that he could halt the advance of the Japanses army, and possibly even reclaim Burma."
     JFU.18.a:0 "Our Guy"
 
+JFU.19.t:0 "Formation of the New 1st Army"
+    JFU.19.d:0 "Formed from the remnants of the X Force, the New 1st Army was one of the top 5 Chinese crack units. Equipped with American weapons and lead by 'Rommel of the East' it contributed significantly to the Burma campaign."
+    JFU.19.a:0 "The China War Lives On"
+
     DSFU.1.t:0 "New SS Divisions"
     DSFU.1.d:0 "While Romania may not make the best of allies, some of their people may still be useful."
     DSFU.1.a:0 "Till the final victory"
@@ -338,6 +342,17 @@ DSFU.13.t:0 "Narvik Route Retaken!"
 DSFU.13.d:0 "We have reopen the trade route with Sweden and can now gain there steel"
 DSFU.13.a:0 "Finally"
 
+
+
+DSFU.15.t:0 "Revolt of the Generals"
+DSFU.15.d:0 "The defence of Australia took on a new urgency in December 1941 with the entry of Japan into the war. Within the Army there was a concern that Bennett or Lavarack would be appointed as commander-in-chief. In March 1942, Vasey, Herring and Steele approached the Minister for the Army, Frank Forde, with a proposal that all officers over the age of 50 be immediately retired and Major General Horace Robertson be appointed commander-in-chief."
+DSFU.15.a:0 "Blamey will take this Appointment"
+DSFU.15.b:0 "Robertson will take this Appointment"
+
+DSFU.16.t:0 "Australian Armoured Corp"
+DSFU.16.d:0 "If we are to develop Australian armour, we must first decide where this armour is to fight. The Sentinel Project is a fine tank but is not fitted for jungle warfare which we would be engaged in if a war was to break out with Japan, however, it is well fitted for a conflict in Europe or North African. "
+DSFU.16.a:0 "Continue the Sentinetl Project"
+DSFU.16.b:0 "Explore Second Option"
 
       DSFU_ITR.1.t:0 "Officers at the Front"
       DSFU_ITR.1.d:0 "A large number of monarchist officer at the front had openly supported the coup in its initial stages, but after its failure, they merely claimed they supported their King. We now must choose whether we can afford to arrest the officers at such a dangerous time for our nation."

@@ -1,0 +1,14 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_report_event_6th_division_staff"
+		texturefile = "gfx/event_pictures/report_event_6th_division_staff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ast_mediums"
+		texturefile = "gfx/event_pictures/report_event_ast_mediums.dds"
+	}
+
+}

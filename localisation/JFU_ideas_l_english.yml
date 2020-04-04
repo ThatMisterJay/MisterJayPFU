@@ -146,6 +146,7 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     ITA_colonial_development:0 "Developed Colonial Territory "
     ITA_balken_exploit:0 "Exploited Balken Territory"
     ITA_balken_development:0 "developed Balken Territory"
+    africa_roads:0 "Poor African Logistics"
 
 #commonwealth stuff
 
@@ -180,3 +181,9 @@ SOV_stab_in_the_back:0 "Stabbed in the Back"
 
 ENG_war_cabinet:0 "War Cabinet"
 ENG_war_cabinet_desc:0 "On 3 September 1939, Neville Chamberlain, Prime Minister of the United Kingdom, reconstructed his existing government so as to be suited for the Second World War. The most dramatic change to the ministerial line-up saw the return of Winston Churchill as First Lord of the Admiralty."
+
+JAP_law:0 "Asian Liberation"
+JAP_law_desc:0 "All Asians are equal, but some Asians are more equal"
+
+AST_blamey:0 "Thomas Blamey"
+AST_robertson:0 "Horace Robertson"
