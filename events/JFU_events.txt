@@ -644,7 +644,7 @@ hidden_effect = {
                 }
                     431 = {
                     create_unit = {
-                        division = "name = "200th Division NRA" division_template = "New 1st Army Division" start_experience_factor = 1.0"
+                        division = "name = \"200th Division NRA\" division_template = \"New 1st Army Division\" start_experience_factor = 1.0"
                         owner = RAJ
                     }
                 }
