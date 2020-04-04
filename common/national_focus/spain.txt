@@ -802,7 +802,6 @@ technology = construction4
 		available = {
 			has_full_control_of_state = 165
 			has_full_control_of_state = 176
-			has_full_control_of_state = 792
 			has_full_control_of_state = 41
 		}
 		bypass = {

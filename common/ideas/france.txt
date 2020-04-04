@@ -258,8 +258,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.5
+				economy_cost_factor = -0.1
+				conversion_cost_civ_to_mil_factor = -0.05
 			}
 		}
 		FRA_expanded_citizenship = {

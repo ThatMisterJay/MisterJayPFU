@@ -24,7 +24,7 @@ country_event = {
 		has_idea = FRA_full_employment
 		not = { has_idea = FRA_worker_shortage }
 		OR = {
-                        has_idea = limited_conscription
+                    
 			has_idea = extensive_conscription
 			has_idea = service_by_requirement
 			has_idea = all_adults_serve
@@ -145,5 +145,3 @@ country_event = {
 		set_country_flag = FRA_arms_purchases_permitted
 	}
 }
-
-
