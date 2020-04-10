@@ -845,6 +845,9 @@ limit = { NOT = { IRQ = { is_in_faction_with = GER } } }
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			date > 1939.10.1
+		}
 		prerequisite = {
 			focus = Soviets_transpolarflights
 		}
