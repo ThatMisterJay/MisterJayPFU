@@ -27,7 +27,7 @@ focus_tree = {
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -61,7 +61,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -171,71 +171,20 @@ focus_tree = {
 
 			search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
-				add_stability = 0.05
+				add_stability = 0.1
 			}
 		}
-	focus = {
-		id = FRA_metropolitan_france
-		icon = GFX_focus_generic_industry_1
-		available = {
-			any_owned_state = {
-				is_core_of = ROOT
-				free_building_slots = { #less than 24 unlocked slots
-					building = industrial_complex
-					size > 1
-					include_locked = yes
-				}
-			}
-		}
-		x = 0
-		y = 2
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = { focus = FRA_invest_in_the_metropole }
-		relative_position_id = FRA_devalue_the_franc
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		bypass = {
-
-		}
-
-		complete_tooltip = {
-			22 = {
-				add_extra_state_shared_building_slots = 4
-			}
-			16 = {
-				add_extra_state_shared_building_slots = 4
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			22 = {
-				add_extra_state_shared_building_slots = 4
-				set_state_flag = FRA_industrial_expansion_target
-				set_state_flag = FRA_colonial_industry_target
-			}
-			16 = {
-				add_extra_state_shared_building_slots = 4
-				set_state_flag = FRA_industrial_expansion_target
-				set_state_flag = FRA_colonial_industry_target
-			}
-		}
-	}
 
 	focus = {
 		id = FRA_industrial_expansion
 		icon = GFX_focus_generic_industry_3
 		available = {
 		}
-		prerequisite = { focus = FRA_metropolitan_france focus = FRA_algerie_france }
+		prerequisite = { focus = FRA_invest_in_the_metropole }
 		x = 0
 		y = 1
-		relative_position_id = FRA_metropolitan_france
-		cost = 15
+		relative_position_id = FRA_invest_in_the_metropole
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -247,30 +196,24 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		complete_tooltip = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = FRA_industrial_expansion_target
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
+
 		}
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			custom_effect_tooltip = FRA_industrial_expansion_effect_tt
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					has_state_flag = FRA_industrial_expansion_target
-				}
+			16 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
+					instant_build = yes
+				}
+			}
+			2 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -282,9 +225,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		available = {
 		}
-		prerequisite = { focus = FRA_industrial_expansion focus = FRA_colonial_industry }
+		prerequisite = { focus = FRA_colonial_industry }
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = FRA_industrial_expansion
 		cost = 15
 		ai_will_do = {
@@ -361,7 +304,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.2
 		}
-		prerequisite = { focus = FRA_invest_in_the_metropole focus = FRA_invest_in_the_colonies }
+		prerequisite = { focus = FRA_invest_in_the_colonies }
 		relative_position_id = FRA_invest_in_the_metropole
 		available_if_capitulated = yes
 
@@ -378,7 +321,6 @@ focus_tree = {
 					}
 					is_owned_or_subject_trigger = yes
 					OR = {
-						has_state_flag = FRA_industrial_expansion_target
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
@@ -390,12 +332,10 @@ focus_tree = {
 		completion_reward = {
 			460 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = FRA_industrial_expansion_target
 				set_state_flag = FRA_colonial_industry_target
 			}
 			459 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = FRA_industrial_expansion_target
 				set_state_flag = FRA_colonial_industry_target
 			}
 		}
@@ -573,7 +513,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = FRA_algerie_france
-		cost = 15
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -605,18 +545,14 @@ focus_tree = {
 		id = FRA_extra_research_slot
 		icon = GFX_focus_research
 		available = {
-			if = {
-				limit = { amount_research_slots > 3 }
-				num_of_factories > 75
-			}
 		}
 		prerequisite = {
-			focus = FRA_industrial_expansion
+			focus = FRA_colonial_industry
 
 		}
 		x = 0
 		y = 1
-		relative_position_id = FRA_industrial_expansion
+		relative_position_id = FRA_colonial_industry
 		cost = 10
 
 		available_if_capitulated = yes
@@ -634,16 +570,16 @@ focus_tree = {
 		id = FRA_extra_research_slot_2
 		icon = GFX_focus_research
 		prerequisite = {
-			focus = FRA_colonial_industry
+			focus = FRA_extra_research_slot
 		}
 		available = {
 			if = {
-				num_of_factories > 75
+				num_of_factories > 80
 			}
 		}
 		x = 0
 		y = 1
-		relative_position_id = FRA_colonial_industry
+		relative_position_id = FRA_extra_research_slot
 		cost = 10
 
 		available_if_capitulated = yes
@@ -679,7 +615,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -797,7 +733,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_defensive_focus }
 		mutually_exclusive = { focus = FRA_methodical_battle }
 		relative_position_id = FRA_defensive_focus
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -813,7 +749,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = { FRA_firepower }
@@ -847,7 +783,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -930,7 +866,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = FRA_firepower_kills
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -995,7 +931,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_heavy_armor_focus }
 		mutually_exclusive = { }
 		relative_position_id = FRA_heavy_armor_focus
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1011,7 +947,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
             add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 400 producer = FRA }
@@ -1031,7 +967,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_firepower_kills focus = FRA_methodical_battle }
 		mutually_exclusive = { }
 		relative_position_id = FRA_firepower_kills
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1047,7 +983,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -1066,7 +1002,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_infantry_tanks }
 		mutually_exclusive = { }
 		relative_position_id = FRA_infantry_tanks
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1116,7 +1052,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1160,7 +1096,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_aggressive_focus }
 		mutually_exclusive = { focus = FRA_air_dominance }
 		relative_position_id = FRA_aggressive_focus
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1176,7 +1112,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			custom_effect_tooltip = available_designer
@@ -1269,7 +1205,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = { FRA_air_dominance }
@@ -1325,7 +1261,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -1364,7 +1300,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = { FRA_flying_artillery }
@@ -1380,7 +1316,7 @@ focus_tree = {
 			focus = FRA_flying_artillery
 		}
 		x = -1
-		y = 1
+		y = 1s
 		relative_position_id = FRA_light_medium_armor
 		cost = 5
 
@@ -1441,7 +1377,6 @@ focus_tree = {
 				idea = FRA_matignon_agreements
 				days = 365
 			}
-			add_political_power = 150
 			create_country_leader = {
 				name = "Léon Blum"
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -2304,7 +2239,6 @@ focus_tree = {
 				idea = FRA_factory_strikes
 				days = 90
 			}
-			add_political_power = 150
 			create_country_leader = {
 				name = "Pierre Laval"
 				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
@@ -2767,7 +2701,7 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			459 = {
+			556 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -2789,7 +2723,7 @@ technology = construction4
 					set_state_flag = FRA_colonial_dockyards
 				}
 			}
-			286 = {
+			539 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -3133,8 +3067,8 @@ technology = construction4
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-		x = 53
-		y = 0
+		x = 36
+		y = 5
 		cost = 10
 
 		available_if_capitulated = yes
@@ -3351,10 +3285,10 @@ technology = construction4
 	focus = {
 		id = FRA_france_libre
 		icon = GFX_goal_france_libre
-		x = 12
-		y = 0
+		x = 0
+		y = 2
 		cost = 5
-		relative_position_id = FRA_air_focus
+		relative_position_id = FRA_dirigisme
 
 		available_if_capitulated = yes
 
@@ -3371,6 +3305,7 @@ technology = construction4
 			add_political_power = 150
 			country_event = { days = 1 id = free_france.1 }
 			hidden_effect = {
+                                add_ideas = FRA_no_con_event
 				set_technology = { desertinfantry_at = 1 }
 				load_oob = FRA_free_france
 				set_technology = { antitank2 = 1 }
@@ -3904,8 +3839,8 @@ technology = construction4
 	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_goal_generic_demand_territory
-		x = 72
-		y = 1
+		x = 29
+		y = 7
 		offset = {
 			x = 0
 			y = 0
@@ -3919,25 +3854,19 @@ technology = construction4
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 40
-			}
-			else = {
-				num_of_factories > 14
-			}
 		}
 
 		bypass = {
-			not = { has_idea = FRA_defeatism }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = { FRA_defeatism }
+			remove_ideas = { FRA_political_violence }
+			remove_ideas = { FRA_worker_shortage }
+			remove_ideas = { FRA_full_employment }
+			remove_ideas = { FRA_inefficient_economy_2 }
+			remove_ideas = { FRA_inefficient_economy_1 }
 		}
 	}
 	focus = {
