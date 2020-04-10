@@ -1,6 +1,105 @@
+special_projects = {
+
+ITA_naval_away = {
+
+  icon = generic_naval
+
+  cost = 20
+
+days_remove = 1
+
+  allowed = {
+    tag = ITA
+  }
+
+
+
+visible = {
+  has_completed_focus = ITA_victorythroughnavalpower
+OR = {
+  has_idea = ITA_navy_build_carrier
+  has_idea = ITA_navy_build_battleship
+}
+}
+
+complete_effect = {
+  if = {
+    limit = {
+      has_idea = ITA_navy_build_battleship
+    }
+    swap_ideas = {
+      remove_idea = ITA_navy_build_battleship
+      add_idea = ITA_air_nerd
+    }
+  }
+  if = {
+    limit = {
+      has_idea = ITA_navy_build_carrier
+    }
+    swap_ideas = {
+      remove_idea = ITA_navy_build_carrier
+      add_idea = ITA_air_nerd
+    }
+  }
+}
+
+}
+
+ITA_naval_return = {
+
+  icon = generic_naval
+
+  cost = 20
+
+days_remove = 1
+
+  allowed = {
+    tag = ITA
+  }
+
+
+
+visible = {
+  OR = {
+    has_completed_focus = ITA_carrieradherent
+    has_completed_focus = ITA_battleshipadherent
+  }
+  NOT = {
+OR = {
+  has_idea = ITA_navy_build_carrier
+  has_idea = ITA_navy_build_battleship
+}
+}
+}
+
+complete_effect = {
+  if = {
+    limit = {
+      has_completed_focus = ITA_battleshipadherent
+    }
+    swap_ideas = {
+      remove_idea = ITA_air_nerd
+      add_idea = ITA_navy_build_carrier
+    }
+  }
+  if = {
+    limit = {
+      has_completed_focus = ITA_carrieradherent
+    }
+    swap_ideas = {
+      remove_idea = ITA_air_nerd
+      add_idea = ITA_navy_build_carrier
+    }
+  }
+}
+
+}
+
+
+}
+
+
 blackshirt_ITA = {
-
-
 
 
 
