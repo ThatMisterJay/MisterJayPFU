@@ -63,7 +63,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_3_tt
-			hidden_effect = {
+
 			if = {
 				limit = { has_completed_focus = GER_hitlerspersonalplanforthepanzerwaffe
 				}
@@ -84,7 +84,7 @@ focus_tree = {
 				technology = advanced_medium_tank
 				}
 			}
-		}
+
 	}
 	}
 
@@ -1098,6 +1098,10 @@ country_event = { id = JFU_germany.23 days = 15 }
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_warwiththeussr }
+		bypass = {
+			date < 1942.10.10
+			217 = { CONTROLLER = { is_in_faction_with = GER } }
+		}
 		available = {
 			date > 1942.3.10
 date < 1942.10.10
@@ -2551,7 +2555,6 @@ category = infantry_weapons
 			technology = improved_light_art
 			}
 			custom_effect_tooltip = GER_SPA_tt
-			hidden_effect = {
 			if = {
 				limit = {
 					has_completed_focus = GER_hitlerspersonalplanforthepanzerwaffe
@@ -2574,7 +2577,7 @@ category = infantry_weapons
 		technology = improved_medium_art
 		}
 	}
-		}
+
 	}
 	}
 
