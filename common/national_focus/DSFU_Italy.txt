@@ -1722,11 +1722,12 @@ prerequisite = { focus = ITA_victorythroughnavalpower }
 mutually_exclusive = { focus = ITA_battleshipadherent }
 completion_reward = {
 navy_experience = 25
-add_tech_bonus = {
-swap_ideas = {
-  add_idea = ITA_navy_build_carrier remove_idea = ITA_navy_build
-}
 
+swap_ideas = {
+   remove_idea = ITA_navy_build
+   add_idea = ITA_navy_build_carrier
+}
+add_tech_bonus = {
 name = cv_bonus
 bonus = 1
 uses = 2
