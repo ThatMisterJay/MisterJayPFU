@@ -167,8 +167,8 @@ create_corps_commander = {
 	name = "Tomoyuki Yamashita"
 	picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
 	traits = { to_good trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat trickster trait_engineer brilliant_strategist politically_connected cavalry_officer armor_officer }
-	skill = 5
-	attack_skill = 4
+	skill = 6
+	attack_skill = 6
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 4
@@ -178,11 +178,11 @@ create_field_marshal = {
 	name = "Hisaichi Terauchi"
 	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
 	traits = { to_good trait_engineer trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat trickster offensive_doctrine JAP_samurai_lineage politically_connected cavalry_officer armor_officer skilled_staffer }
-	skill = 4
-	attack_skill = 4
+	skill = 5
+	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -233,10 +233,10 @@ create_corps_commander = {
 	name = "Shizuichi Tanaka"
 	picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
 	traits = { to_good urban_assault_specialist trickster career_officer infantry_officer trait_engineer trait_mountaineer hill_fighter infantry_leader commando organizer jungle_rat cavalry_officer armor_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
 	logistics_skill = 4
 }
 
