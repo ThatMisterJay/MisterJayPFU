@@ -1939,10 +1939,13 @@ cost = 100
 
 			allowed = {
 				original_tag = SOV
-				NOT =  { has_tech = CAS1 }
+				date < 1930.1.1
 			}
-
-			cost = 75
+			
+			cost = 10000
+			cancel = {
+				date > 1936.1.1
+			}
 
 			research_bonus = {
 				air_equipment = 0.15

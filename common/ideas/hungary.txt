@@ -332,17 +332,7 @@ ideas = {
 
 		}
 
-		HUN_gusztav_gratz = {
 
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
-
-			traits = { staunch_monarchist }
-		}
 
 		HUN_kalman_daranyi = {
 
@@ -386,7 +376,7 @@ ideas = {
 
 
 		HUN_ferenc_szombathelyi = {
-ledger = army
+
 			picture = generic_army_europe_4
 
 			allowed = {
@@ -403,7 +393,7 @@ ledger = army
 		}
 
 		HUN_hugo_sonyi = {
-ledger = army
+
 			picture = generic_army_europe_5
 
 			allowed = {
@@ -424,7 +414,7 @@ ledger = army
 
 
 		HUN_bela_rakosi = {
-ledger = air
+
 			picture = generic_air_europe_1
 
 			allowed = {
@@ -441,7 +431,7 @@ ledger = air
 		}
 
 		HUN_sandor_magyarossy = {
-ledger = air
+
 			picture = generic_air_europe_2
 
 			allowed = {
@@ -462,7 +452,7 @@ ledger = air
 
 
 		HUN_francois_deak = {
-ledger = navy
+
 			picture = generic_navy_europe_1
 
 			allowed = {
@@ -479,7 +469,7 @@ ledger = navy
 		}
 
 		HUN_reszo_kastner = {
-ledger = navy
+
 			picture = generic_navy_europe_2
 
 			allowed = {
@@ -499,16 +489,18 @@ ledger = navy
 	high_command = {
 
 		HUN_gusztav_jany = {
-ledger = army
+                        ledger = army
 			picture = generic_army_europe_3
 
 			allowed = {
 				original_tag = HUN
 			}
 
+			available = {
+				has_completed_focus = HUN_special_forces
+			}
 
-
-			traits = { army_infantry_1 }
+			traits = { army_commando_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -516,7 +508,7 @@ ledger = army
 		}
 
 		HUN_dezso_laszlo = {
-ledger = army
+                        ledger = army
 			picture = generic_army_europe_2
 			allowed = {
 				original_tag = HUN
@@ -524,24 +516,7 @@ ledger = army
 
 
 
-			traits = { army_regrouping_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-
-
-		HUN_jeno_ratz = {
-ledger = air
-			picture = generic_air_europe_3
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			traits = { air_air_combat_training_2 }
+			traits = { army_infantry_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -549,11 +524,15 @@ ledger = air
 		}
 
 		HUN_henrik_werth = {
-ledger = army
+                        ledger = army
 			picture = generic_army_europe_1
 
 			allowed = {
 				original_tag = HUN
+			}
+
+			available = {
+				has_completed_focus = HUN_mobile_focus
 			}
 
 			traits = { army_cavalry_2 }
@@ -568,7 +547,7 @@ ledger = army
 
 	theorist = {
 		HUN_shvoy_kalman = {
-ledger = army
+                        ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -580,21 +559,6 @@ ledger = army
 			}
 
 			traits = { military_theorist }
-		}
-
-		HUN_gyorgy_jendrassik = {
-ledger = air
-			picture = generic_air_europe_2
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			research_bonus = {
-				air_doctrine = 0.15
-			}
-
-			traits = { air_warfare_theorist }
 		}
 
 	}

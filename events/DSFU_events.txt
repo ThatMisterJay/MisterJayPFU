@@ -382,3 +382,63 @@ country_event = {
 
 
  #}
+
+ country_event = {
+   id = DSFU.15
+   title = DSFU.15.t
+   desc = DSFU.15.d
+   picture = GFX_report_event_6th_division_staff
+   is_triggered_only = yes
+
+
+
+   option = {
+     name = DSFU.15.a
+     set_country_flag = chief_blamey
+     custom_effect_tooltip = available_chief_of_army
+     show_ideas_tooltip = AST_blamey
+  }
+
+  option = {
+    name = DSFU.15.b
+    set_country_flag = chief_robertson
+    custom_effect_tooltip = available_military_high_command
+    show_ideas_tooltip = AST_robertson
+  }
+
+ }
+
+ country_event = {
+   id = DSFU.16
+   title = DSFU.16.t
+   desc = DSFU.16.d
+   picture = GFX_report_event_ast_mediums
+   is_triggered_only = yes
+
+
+
+   option = {
+     name = DSFU.16.a
+     add_tech_bonus = {
+       add_tech_bonus = {
+         name = AST_med
+         bonus = 1
+         uses = 1
+         technology = improved_medium_tank
+       }
+     }
+  }
+
+  option = {
+    name = DSFU.16.b
+    add_tech_bonus = {
+      add_tech_bonus = {
+        name = AST_light
+        bonus = 1
+        uses = 1
+        technology = advanced_light_tank
+      }
+    }
+  }
+
+ }

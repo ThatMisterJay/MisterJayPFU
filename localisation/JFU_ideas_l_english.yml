@@ -37,6 +37,8 @@
     USA_husky_failed:0 "Operation Husky Failed"
     USA_counter_husky_enemy:0 "Operation Husky Countered"
 
+
+
     japan_superheavy_bb_production:0 "Superheavy Battleship Effort"
 
     license_equipment_faster_production:0 "Faster License Production"
@@ -86,6 +88,7 @@
     ITA_navy_build:0 "Regia Marina Prioritized"
     ITA_navy_build_carrier:0 "Regia Marina Prioritized"
     ITA_navy_build_battleship:0 "Regia Marina Prioritized"
+    ITA_air_nerd:0 "Regia Marina Resources Diverted"
     ITA_air_supply:0 "Air Supply Theory"
     olivetti:0 "Olivetti"
 
@@ -111,6 +114,7 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     axis_exploited:0 "Exploited State"
     ENG_bernard_montgomery:0 "Bernard Montgomery"
     FRA_FREE_charles_de_gaulle:0 "Charles De Gaulle"
+    HUN_ganz_danubius:0 "Ganz Danubius"
 
     GER_payment:0 "Spanish Tungsten Costs"
     debt_paid:0 "German Payments"
@@ -146,6 +150,7 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     ITA_colonial_development:0 "Developed Colonial Territory "
     ITA_balken_exploit:0 "Exploited Balken Territory"
     ITA_balken_development:0 "developed Balken Territory"
+    africa_roads:0 "Poor African Logistics"
 
 #commonwealth stuff
 
@@ -180,3 +185,9 @@ SOV_stab_in_the_back:0 "Stabbed in the Back"
 
 ENG_war_cabinet:0 "War Cabinet"
 ENG_war_cabinet_desc:0 "On 3 September 1939, Neville Chamberlain, Prime Minister of the United Kingdom, reconstructed his existing government so as to be suited for the Second World War. The most dramatic change to the ministerial line-up saw the return of Winston Churchill as First Lord of the Admiralty."
+
+JAP_law:0 "Asian Liberation"
+JAP_law_desc:0 "All Asians are equal, but some Asians are more equal"
+
+AST_blamey:0 "Thomas Blamey"
+AST_robertson:0 "Horace Robertson"

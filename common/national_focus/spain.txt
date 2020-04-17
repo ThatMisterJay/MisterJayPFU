@@ -187,7 +187,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
-			army_experience = 10
+			army_experience = 40
 			custom_effect_tooltip = SPA_the_army_of_africa_tt
 		}
 	}
@@ -234,7 +234,14 @@ focus = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
 		completion_reward = {
 			custom_effect_tooltip = SPA_con_paquito_tt
-
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.30
+			}
+			add_popularity = {
+					ideology = democratic
+					popularity = -0.30
+			}
 		}
 	}
 
@@ -802,7 +809,6 @@ technology = construction4
 		available = {
 			has_full_control_of_state = 165
 			has_full_control_of_state = 176
-			has_full_control_of_state = 792
 			has_full_control_of_state = 41
 		}
 		bypass = {
@@ -1043,11 +1049,7 @@ technology = construction4
 	focus = {
 		id = SPA_expand_the_war_industry
 		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
+
 		}
 		bypass = {
 		}

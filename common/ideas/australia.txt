@@ -785,10 +785,55 @@ picture = AST_sydney_rowell
 			ai_will_do = {
 				factor = 1
 			}
+
+		}
+
+
+		AST_robertson = {
+			ledger = army
+
+			picture = AST_robertson
+
+			allowed = {
+				original_tag = AST
+
+			}
+			cost = 100
+		visible = {
+			has_country_flag = chief_robertson
+		}
+
+			traits = { army_armored_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	# MILITARY
 	army_chief = {
+
+
+		AST_blamey = {
+			ledger = army
+
+    picture = AST_blamey
+
+			allowed = {
+				original_tag = AST
+			}
+
+			visible = {
+				has_country_flag = chief_blamey
+			}
+
+			traits = { army_chief_planning_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 
 		AST_john_lavarack = {
 			ledger = army

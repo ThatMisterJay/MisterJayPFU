@@ -31,7 +31,7 @@ sub_units = {
 		training_time = 120
 
 		need = {
-			anti_air_equipment = 40
+			anti_air_equipment = 30
 		}
 
 		can_be_parachuted = yes
@@ -90,7 +90,7 @@ sub_units = {
 		supply_consumption = 0.15
 		transport = motorized_equipment
 		need = {
-			anti_air_equipment = 40
+			anti_air_equipment = 30
 			motorized_equipment = 30
 		}
 

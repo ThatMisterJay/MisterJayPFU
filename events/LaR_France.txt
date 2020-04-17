@@ -23,8 +23,8 @@ country_event = {
 		tag = FRA
 		has_idea = FRA_full_employment
 		not = { has_idea = FRA_worker_shortage }
+		not = { has_idea = FRA_no_con_event }
 		OR = {
-                        has_idea = limited_conscription
 			has_idea = extensive_conscription
 			has_idea = service_by_requirement
 			has_idea = all_adults_serve
@@ -67,6 +67,7 @@ country_event = {
 		tag = FRA
 		has_idea = FRA_worker_shortage
 		not = { has_idea = FRA_full_employment }
+		not = { has_idea = FRA_no_con_event }
 		OR = {
                         has_idea = limited_conscription
 			has_idea = disarmed_nation

@@ -29,7 +29,7 @@ state={
 
 		1939.1.1 = {
 			buildings = {
-				air_base = 6
+				air_base = 5
 				radar_station = 1
 			}
 		}
