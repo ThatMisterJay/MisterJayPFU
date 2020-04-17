@@ -106,7 +106,8 @@ africa_roads = {
 
 	icon = GFX_modifiers_sabotaged_resource
 
-state_production_speed_infrastructure_factor = -5.9
+state_production_speed_infrastructure_factor = -5
+state_repair_speed_infrastructure_factor = 5
 
 }
 
