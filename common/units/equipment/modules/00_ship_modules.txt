@@ -1756,6 +1756,7 @@ equipment_modules = {
 
 
 		add_stats = {
+			sub_detection = 2.0	
 			sub_attack = 26
 			build_cost_ic = 150
 		}
@@ -1776,6 +1777,7 @@ equipment_modules = {
 
 
 		add_stats = {
+			sub_detection = 4.0
 			sub_attack = 32
 			build_cost_ic = 180
 		}
@@ -1920,7 +1922,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			sub_detection = 4
+			sub_detection = 8
 			build_cost_ic = 40
 		}
 	}
@@ -1931,7 +1933,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			sub_detection = 7.0
+			sub_detection = 16.0
 			build_cost_ic = 60
 		}
 		can_convert_from = {
