@@ -65,6 +65,26 @@ ideas = {
 			}
 		}
 
+		AST_tobruk = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AST_infantry
+
+			modifier = {
+			out_of_supply_factor = -0.15
+			no_supply_grace = 60
+			}
+		}
+
 		AST_all_in = {
 
 			allowed = {
@@ -151,16 +171,16 @@ ideas = {
 
     AST_battle = {
 
-picture = "AST_battle"
+     picture = "AST_battle"
 
      allowed = {
 			 original_tag = AST
 		 }
 
-modifier = {
-	army_core_defence_factor = 0.1
-	conscription = 0.02
-}
+    modifier = {
+    	army_core_defence_factor = 0.1
+    	conscription = 0.02
+   }
 
 		}
 
@@ -538,6 +558,7 @@ modifier = {
 
 	political_advisor = {
 
+
 		AST_alexander_hore_ruthven = {
 
 			picture = generic_political_advisor_europe_1
@@ -557,9 +578,13 @@ modifier = {
 				original_tag = AST
 			}
 
-			traits = { backroom_backstabber }
+			traits = { attorney_general lieutenant_of_industry }
 
 			cost = 175
+
+			available = {
+					has_country_leader = { ruling_only = yes name = "Joseph Lyons" }
+			}
 		}
 
 		AST_ben_chifley = {
@@ -573,11 +598,12 @@ modifier = {
 
 			cost = 100
 
-			traits = { smooth_talking_charmer }
+			traits = { smooth_talking_charmer financial_expert }
 
 			available = {
-				has_completed_focus = AST_support_the_policy_of_appeasement
+					has_country_leader = { ruling_only = yes name = "John Curtin" }
 			}
+
 		}
 
 		AST_herbert_v_evatt = {
@@ -590,13 +616,10 @@ modifier = {
 
 			cost = 100
 
-			traits = { silent_workhorse }
+			traits = { minister_external_affairs attorney_general }
 
 			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = AST_support_the_policy_of_appeasement
-				}
+					has_country_leader = { ruling_only = yes name = "John Curtin" }
 			}
 		}
 
@@ -621,17 +644,14 @@ modifier = {
 
 			picture = generic_democratic_reformer_western_european_2d
 
-			traits = { democratic_reformer }
+			traits = { minister_info }
 
-			on_add = {
-				country_event = political.13
+			available = {
+					has_country_leader = { ruling_only = yes name = "John Curtin" }
+					has_completed_focus = AST_classify_aliens
 			}
 
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
+
 
 			ai_will_do = {
 				factor = 0
@@ -643,7 +663,7 @@ modifier = {
 	theorist = {
 
 		AST_norman_makin = {
-	ledger = navy
+	 ledger = navy
 			picture = generic_political_advisor_europe_3
 
 			allowed = {
@@ -658,7 +678,7 @@ modifier = {
 		}
 
 		AST_james_fairbairn = {
-ledger = air
+    ledger = air
 			picture = generic_political_advisor_europe_2
 
 			allowed = {
@@ -673,8 +693,8 @@ ledger = air
 		}
 
 		AST_sydney_rowell_1 = {
-ledger = army
-picture = AST_sydney_rowell
+     ledger = army
+         picture = AST_sydney_rowell
 
 			allowed = {
 				original_tag = AST
@@ -803,6 +823,8 @@ picture = AST_sydney_rowell
 			has_country_flag = chief_robertson
 		}
 
+		   cost = 100
+
 			traits = { army_armored_1 }
 
 			ai_will_do = {
@@ -826,6 +848,8 @@ picture = AST_sydney_rowell
 			visible = {
 				has_country_flag = chief_blamey
 			}
+
+   cost = 100
 
 			traits = { army_chief_planning_2 }
 
@@ -958,7 +982,7 @@ picture = AST_sydney_rowell
 
 
 	industrial_concern = {
-
+   use_list_view = yes
 
 
 		bhp_steel = {
@@ -1008,6 +1032,8 @@ picture = AST_sydney_rowell
 
 	tank_manufacturer = {
 		designer = yes
+
+		use_list_view = yes
 
 		birmingham_rcw_AST = {
 			cost = 75
@@ -1158,7 +1184,7 @@ picture = AST_sydney_rowell
 		designer = yes
 
 		Cockatoo_doe = {
-cost = 100
+    cost = 100
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
@@ -1175,7 +1201,7 @@ cost = 100
 		}
 
 		evans_deakin_co = {
-cost = 100
+   cost = 100
 			picture = generic_naval_manufacturer_1
 
 			allowed = {

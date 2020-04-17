@@ -23,6 +23,11 @@ spriteTypes = {
 					}
 
 		SpriteType = {
+				name = "GFX_idea_AST_infantry"
+				texturefile = "gfx/interface/ideas/idea_AST_infantry.dds"
+					}
+
+		SpriteType = {
 				name = "GFX_idea_AST_blamey"
 				texturefile = "gfx/interface/ideas/idea_AST_blamey.dds"
 						}

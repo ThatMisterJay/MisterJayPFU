@@ -307,7 +307,7 @@ has_completed_focus = GER_successesinthewest
     original_tag = GER
   }
 
-  traits = { sir_inspector_general }
+  traits = { air_inspector_general }
 
   ai_will_do = {
     factor = 1

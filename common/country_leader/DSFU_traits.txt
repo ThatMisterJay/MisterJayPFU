@@ -27,7 +27,7 @@ leader_traits = {
     }
   }
 
-sir_inspector_general = {
+air_inspector_general = {
   sprite = 1
   random = no
 
@@ -126,6 +126,37 @@ pro_axis_fm = {
 
   ai_will_do = {
     factor = 5
+  }
+}
+
+attorney_general = {
+  sprite = 13
+  political_power_factor = 0.25
+
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minister_external_affairs = {
+  sprite = 13
+  stability_factor = 0.05
+  war_support_factor = 0.05
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minister_info = {
+  sprite = 13
+intelligence_agency_defense = 1.0
+stability_factor = -0.05
+foreign_subversive_activites = -0.2
+
+  ai_will_do = {
+    factor = 1
   }
 }
 

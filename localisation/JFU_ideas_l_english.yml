@@ -65,7 +65,8 @@
     giovanni_messe_1:0 "Giovanni Messe"
     italo_balbo_1:0 "Italo Balbo"
     AST_sydney_rowell_1:0 "Sydney Rowell"
-
+    AST_tobruk:0 "Spirit of the Rats of Tobruk"
+    AST_tobruk_desc:0 "The defenders had adopted Tobruk's excellent network of below-ground defensive positions which had been built pre-war by the Italian Army. The propagandist for Germany, William Joyce, better known as "Lord Haw-Haw", began describing the besieged men as living like rats in underground dug-outs and caves. In radio broadcasts, he derisively referred to and addressed the garrison as the "rats of Tobruk".
 
 
 #Italian ideas#
@@ -129,12 +130,18 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
 #traits#
     reichswerke_hermann:0 "Reichswerke Hermann Göring"
     total_war_organizer:0 "Reich Minister of Armaments"
-    sir_inspector_general:0 "Air Inspector General"
+    air_inspector_general:0 "Air Inspector General"
     reichfuhrer_ss:0 "Reichsführer-SS"
     reichbanker:0 "President of the Reichsbank"
     pro_allies_fm:0 "Pro Allies Foreign Minister"
     pro_axis_fm:0 "Pro Axis Foreign Minister"
     il_duce:0 "ll Duce"
+    minister_info:0 "Minister for Information"
+    AST_arthur_calwell_desc:0 "Calwell was appointed as Minister for Information in the Second Curtin Ministry following the 1943 election, and became well known for his tough attitude towards the Australian press and his strict enforcement of wartime censorship. This earned him the enmity of large sections of the Australian press, and he was dubbed "Cocky" Calwell by his political foes, cartoonists of the period depicting him as an obstinate Australian cockatoo."
+    minister_external_affairs:0 "Minister for External Affairs"
+    minister_external_affairs_desc:0 "The minister is usually one of the most senior members of Cabinet – the position is equivalent to that of Secretary of State for Foreign and Commonwealth Affairs in Britain or Secretary of State in the United States"
+    attorney_general:0 "Attorney-General"
+    attorney_general_desc:0 "The Attorney-General is usually a member of the Federal Cabinet, but need not be. Under the Constitution, they are appointed by the Governor-General on the advice of the Prime Minister, and serve at the Governor-General's pleasure. In practice, the Attorney-General is a party politician and their tenure is determined by political factors. By convention, but not constitutional requirement, the Attorney-General is a lawyer by training (either a barrister or solicitor)."
 
 
 #Italian stuff#

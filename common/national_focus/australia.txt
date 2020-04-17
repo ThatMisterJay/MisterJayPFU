@@ -1235,6 +1235,36 @@ available = {
 	}
 
 	focus = {
+		id = AST_singapore_strategy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = AST_cockatoo_island_shipyards }
+		mutually_exclusive = { focus = AST_fly_the_jolly_roger }
+		x = 0
+		y = 1
+		relative_position_id = AST_cockatoo_island_shipyards
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_protect_overseas_commerce
+				bonus = 1
+				uses = 2
+				category = fleet_in_being_tree
+				category = convoy_defense_tree
+			}
+		}
+	}
+
+	focus = {
 		id = AST_protect_overseas_commerce
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = AST_cockatoo_island_shipyards }
@@ -2108,6 +2138,7 @@ available = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = AST_tobruk
 			#Starts with recon and engineers
 			hidden_effect = {
 				if = {
@@ -2394,7 +2425,8 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = AST_classify_aliens
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = AST_arthur_calwell
 			if = {
 				limit = {
 					has_government = democratic

@@ -2196,9 +2196,9 @@ new_commander_weight = {
 }
 
 		modifier = {
-			exiled_divisions_attack_factor = 0.08
+			exiled_divisions_attack_factor = 0.04
 			own_exiled_divisions_attack_factor = 0.04
-			exiled_divisions_defense_factor = 0.08
+			exiled_divisions_defense_factor = 0.04
 			own_exiled_divisions_defense_factor = 0.04
 		}
 
@@ -2412,7 +2412,7 @@ operative_natural_orator = {
 
 	cost = 400
 	modifier = {
-		
+
 
 		boost_ideology_mission_factor = 0.2
 	}
