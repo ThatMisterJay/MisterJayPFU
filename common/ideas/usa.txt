@@ -1589,7 +1589,7 @@ ledger = navy
 
 
 
-			traits = { navy_chief_reform_2 }
+			traits = { navy_chief_reform_2 navy_anti_submarine_1 }
 
 			ai_will_do = {
 				factor = 1
