@@ -1,4 +1,5 @@
 ﻿l_english:
+    civgo_dynamic_modifier:0 "Linear Industry Modifier"
     usa_special_forces:0 "USA Special Forces"
     usa_special_forces_desc:0 "USA is a nation heavily dependent on special forces, and for this reason the cap was highered."
     JAP_cg_defense_state:0 "National Defense State"
