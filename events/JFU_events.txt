@@ -327,6 +327,12 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	option = {
 		name = tfv_australia.97.a
+		if = {
+			limit = {
+				has_idea = AST_robert_g_menzies
+			 }
+			 remove_ideas = AST_robert_g_menzies
+		}
 		kill_country_leader = yes
 		create_country_leader = {
 			name = "Robert Menzies"
@@ -474,7 +480,6 @@ add_timed_idea = { idea = RAJ_battle
 }
 create_corps_commander = {
 	name = "Archibald Wavell"
-	id = 996
 	picture = "Portrait_Britain_Archibald_Wavell.dds"
 	traits = { career_officer organizer infantry_leader hill_fighter jungle_rat }
 	skill = 4
