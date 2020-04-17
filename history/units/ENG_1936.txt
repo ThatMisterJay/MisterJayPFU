@@ -874,7 +874,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "ENG"
 		}
-		requested_factories = 4
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
@@ -884,7 +884,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "ENG"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
 	}
@@ -920,15 +920,7 @@ progress = 0.4
 efficiency = 50
 }
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "ENG"
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
+
 
 	### Ongoing Ship Production Jan 1 1936 ###
 	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
