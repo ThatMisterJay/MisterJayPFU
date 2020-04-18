@@ -1728,10 +1728,12 @@ create_corps_commander = {
 		y = 6
 
 available = {
-	has_tech = artillery_equipment_2
+	 GER = {
+	 has_tech = artillery1
+ }
 }
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1747,7 +1749,7 @@ available = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_2
-			creator = "HUN"
+			creator = "GER"
 		}
 		requested_factories = 15
 		progress = 0.3
