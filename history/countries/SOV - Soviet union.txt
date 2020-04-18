@@ -2,7 +2,7 @@
 
 oob = "SOV_1936"
 
-puppet = MON
+
 
 set_research_slots = 4
 

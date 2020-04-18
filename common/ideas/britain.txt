@@ -2109,7 +2109,7 @@ picture = ENG_war_cabinet
 
 
 
-			traits = { navy_chief_decisive_battle_1 }
+			traits = { navy_chief_decisive_battle_1 navy_anti_submarine_1 }
 			# REVISIT Secondary trait for anti-sub efforts?
 
 			ai_will_do = {

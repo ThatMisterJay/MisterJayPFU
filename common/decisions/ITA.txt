@@ -64,7 +64,7 @@ visible = {
     has_completed_focus = ITA_carrieradherent
     has_completed_focus = ITA_battleshipadherent
   }
-  NOT = {
+NOT = {
 OR = {
   has_idea = ITA_navy_build_carrier
   has_idea = ITA_navy_build_battleship
@@ -79,7 +79,7 @@ complete_effect = {
     }
     swap_ideas = {
       remove_idea = ITA_air_nerd
-      add_idea = ITA_navy_build_carrier
+      add_idea = ITA_navy_build_battleship
     }
   }
   if = {

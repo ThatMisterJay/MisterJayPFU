@@ -1,6 +1,7 @@
 ideas = {
 
 	mobilization_laws = {
+		use_list_view = yes
 		law = yes
 
 		disarmed_nation = {

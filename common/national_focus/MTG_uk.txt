@@ -1134,7 +1134,7 @@ technology = construction4
 			air_experience = 25
 add_tech_bonus = {
 name = ENG_fighter_2
-bonus = 1.4
+bonus = 1.5
 uses = 1
 technology = fighter2
 }
