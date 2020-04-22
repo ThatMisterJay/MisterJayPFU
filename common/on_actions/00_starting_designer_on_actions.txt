@@ -54,4 +54,21 @@ on_actions = {
 
 				remove_ideas = hawker
 	}
+
+	GER = {
+		add_ideas = messerschmitt
+
+		set_technology = { fighter1 = 1}
+		add_equipment_production = {
+			equipment = {
+				type = fighter_equipment_1
+				creator = "GER"
+			}
+			requested_factories = 30
+			progress = 0.15
+			efficiency = 50
+		}
+    load_oob = "GER_luftwaffe"
+		remove_ideas = messerschmitt
+}
 }
