@@ -192,9 +192,9 @@ create_field_marshal = {
 	traits = { panzer_leader harsh_leader politically_connected }
 	skill = 5
 
-	attack_skill = 5
+	attack_skill = 4
 	defense_skill = 5
-	planning_skill = 2
+	planning_skill = 3
 	logistics_skill = 4
 }
 

@@ -305,11 +305,11 @@ focus_tree = {
 				id = 410
 				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
 				traits = { defensive_doctrine offensive_doctrine thorough_planner organisational_leader logistics_wizard panzer_leader cavalry_leader expert_delegator}
-				skill = 7
-				attack_skill = 7
+				skill = 6
+				attack_skill = 6
 				defense_skill = 6
-				planning_skill = 7
-				logistics_skill = 7
+				planning_skill = 6
+				logistics_skill = 6
 			}
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = georgy_zhukov_marshal_of_victory
@@ -534,9 +534,9 @@ focus_tree = {
 				traits = { panzer_leader trait_cautious brilliant_strategist ranger swamp_fox trickster adaptable expert_improviser panzer_expert }
 				skill = 5
 
-				attack_skill = 5
+				attack_skill = 4
 				defense_skill = 5
-				planning_skill = 2
+				planning_skill = 3
 				logistics_skill = 4
 			}
 			add_ideas = rehabilitated_military_focus
