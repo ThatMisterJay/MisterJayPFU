@@ -1072,6 +1072,10 @@ if = {
 limit = { HUN = { is_in_faction_with = GER } }
 HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 }
+if = {
+limit = { FIN = { is_in_faction_with = GER } }
+FIN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+}
 }
 hidden_effect = {
 	USA = {
@@ -2490,7 +2494,7 @@ category = infantry_weapons
 			upgrades = {
 				tank_engine_upgrade = 2
 				tank_reliability_upgrade = 2
-				tank_gun_upgrade = 7
+				tank_at_upgrade = 7
 				tank_armor_upgrade = 6
 			}
 		}
