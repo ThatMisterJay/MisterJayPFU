@@ -13,6 +13,11 @@ news_event = {
 
   option = {
   name = DSFU_news.1.a
+  trigger = {
+  NOT = {
+   is_in_faction_with = ENG
+   }
+ }
   }
 
   option = {
