@@ -909,7 +909,7 @@ technology = construction4
 		available_if_capitulated = no
 
 		completion_reward = {
-			annex_country = { target = MEN transfer_troops = yes }
+			add_stability = 0.15
 		}
 	}
 
