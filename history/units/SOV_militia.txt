@@ -29,74 +29,86 @@ units = {
 		location = 6380
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 		division= {
 		name = "Militsiya Diviziya"
 		location = 6380
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 			division= {
 		name = "Militsiya Diviziya"
 		location = 6245
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 	division= {
 		name = "Militsiya Diviziya"
 		location = 11349
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 		division= {
 		name = "Militsiya Diviziya"
 		location = 6262
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 		division= {
 		name = "Militsiya Diviziya"
 		location = 6262
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 		division= {
 		name = "Militsiya Diviziya"
 		location = 6414
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 		division= {
 		name = "Militsiya Diviziya"
 		location = 11282
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 			division= {
 		name = "Militsiya Diviziya"
 		location = 3578
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 			division= {
 		name = "Militsiya Diviziya"
 		location = 3529
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 			division= {
 		name = "Militsiya Diviziya"
 		location = 413
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 			division= {
 		name = "Militsiya Diviziya"
 		location = 121
 		division_template = "Militsiya Diviziya"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
 	}
 
-	
+
 
 }

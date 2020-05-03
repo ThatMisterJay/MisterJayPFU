@@ -55,7 +55,7 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
-		recon = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 1 }
 		logistics_company { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
 	}
@@ -194,10 +194,34 @@ division_template = {
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 0 y = 4 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
 	}
 }
 
@@ -215,7 +239,7 @@ division_template = {
 		paratrooper = { x = 1 y = 2 }
 		paratrooper = { x = 1 y = 3 }
 		paratrooper = { x = 1 y = 4 }
-		
+
 	}
 }
 
@@ -1698,7 +1722,7 @@ air_wings = {
 	# MVO Aviatsya Komandovaniya
 	195 = {
 		# 2ya Istrebitel'nye Aviabrigada
-		
+
 		tac_bomber_equipment_0 =  {
 			owner = "SOV"
 			amount = 100
@@ -1915,10 +1939,10 @@ instant_effect = {
 	}
 
 
-	
+
 
 
 	### Ships Under Construction Notes ###
-	
+
 }
 	#####################
