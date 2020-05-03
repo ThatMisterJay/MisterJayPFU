@@ -24,8 +24,8 @@
 
 	}
 	support = {
-		engineer = { x = 0 y = 0 } 	
-		recon = { x = 0 y = 1 } 		
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 
 	}
@@ -38,12 +38,12 @@ division_template = {
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
 		motorized = { x = 0 y = 3 }
-		
+
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 		motorized = { x = 1 y = 3 }
-	    
+
 		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
@@ -60,8 +60,8 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
-		logistics_company { x = 0 y = 2 } 
+        mot_recon = { x = 0 y = 1 }
+		logistics_company { x = 0 y = 2 }
 
 	}
 }
@@ -84,7 +84,7 @@ division_template = {
 units = {
 	##### Honvédelmi Fõparancsnokság #####
 	# Gyorshadtest ('Rapid Corps', actual corps raised in 1940)
-	division= {	
+	division= {
 		name = "1. Huszár Dandár"
 		location = 9660
 		division_template = "Huszár Dandár"
@@ -92,7 +92,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "2. Huszár Dandár"
 		location = 9660
 		division_template = "Huszár Dandár"
@@ -102,7 +102,7 @@ units = {
 	}
 
 	# I Hadtest
-	division= {	
+	division= {
 		name = "1. Gyalogdandár"
 		location = 9660
 		division_template = "Gyalogdandár"
@@ -110,7 +110,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "2. Gyalogdandár"
 		location = 9660
 		division_template = "Gyalogdandár"
@@ -120,7 +120,7 @@ units = {
 	}
 
 	# II Hadtest
-	division= {	
+	division= {
 		name = "3. Gyalogdandár"
 		location = 701
 		division_template = "Gyalogdandár"
@@ -128,7 +128,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "4. Gyalogdandár"
 		location = 701
 		division_template = "Gyalogdandár"
@@ -138,7 +138,7 @@ units = {
 	}
 
 	# III Hadtest
-	division= {	
+	division= {
 		name = "5. Gyalogdandár"
 		location = 11627
 		division_template = "Gyalogdandár"
@@ -146,7 +146,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "6. Gyalogdandár"
 		location = 11627
 		division_template = "Gyalogdandár"
@@ -156,7 +156,7 @@ units = {
 	}
 
 	# IV Hadtest
-	division= {	
+	division= {
 		name = "7. Gyalogdandár"
 		location = 11610
 		division_template = "Gyalogdandár"
@@ -164,7 +164,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "8. Gyalogdandár"
 		location = 11610
 		division_template = "Gyalogdandár"
@@ -174,7 +174,7 @@ units = {
 	}
 
 	# V Hadtest
-	division= {	
+	division= {
 		name = "9. Gyalogdandár"
 		location = 679
 		division_template = "Gyalogdandár"
@@ -182,7 +182,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "10. Gyalogdandár"
 		location = 679
 		division_template = "Gyalogdandár"
@@ -192,7 +192,7 @@ units = {
 	}
 
 	# VI Hadtest
-	division= {	
+	division= {
 		name = "11. Gyalogdandár"
 		location = 11659
 		division_template = "Gyalogdandár"
@@ -200,7 +200,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "12. Gyalogdandár"
 		location = 11659
 		division_template = "Gyalogdandár"
@@ -210,7 +210,7 @@ units = {
 	}
 
 	# VII Hadtest
-	division= {	
+	division= {
 		name = "13. Gyalogdandár"
 		location = 6751
 		division_template = "Gyalogdandár"
@@ -218,7 +218,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
+	division= {
 		name = "14. Gyalogdandár"
 		location = 6751
 		division_template = "Gyalogdandár"
@@ -234,7 +234,7 @@ air_wings = {
 		# 1. Légi Ezred -- Fiat CR.32 fighters
 		# 2. Légi Ezred -- Fiat CR.32 fighters
 		fighter_equipment_0 = {
-			owner = "HUN" 
+			owner = "HUN"
 				amount = 72
 		}
 
@@ -242,7 +242,7 @@ air_wings = {
 	154 = {
 		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
 		CAS_equipment_1 = {
-			owner = "HUN" 
+			owner = "HUN"
 			amount = 24
 		}
 	}

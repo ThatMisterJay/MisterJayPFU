@@ -26,7 +26,7 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 } 	# (semi-mot) Engineer bn
-		recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		mot_recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 		logistics_company { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
 	}
