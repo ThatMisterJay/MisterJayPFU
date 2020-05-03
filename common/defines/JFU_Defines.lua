@@ -130,6 +130,8 @@ NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.10 -- from 0.05
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 30 -- Amount of in-game-hours that takes the submarine (with position unrevealed) to hide.
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24 -- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.040 --from 0.025
+NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 2.0						-- spotting speed mult against naval invasion armies
+NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 4.0
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4
