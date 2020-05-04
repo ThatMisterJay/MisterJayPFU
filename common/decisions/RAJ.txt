@@ -1,0 +1,84 @@
+RAJ_naval_category = {
+
+        RAJ_small_naval_effort = {
+
+                icon = generic_naval
+
+                available = {
+                        original_tag = RAJ
+                        NOT = { has_country_flag = naval_effort_cancelled }
+                        NOT = { has_country_flag = rajnaval2 }
+                        NOT = { has_country_flag = rajnaval3 }
+                }
+		visible = {
+			has_completed_focus = RAJ_naval_construction_effort
+		}               
+                cost = 10
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 99
+		}
+                complete_effect = {
+                   add_ideas = RAJ_naval_construction1
+                                hidden_effect = {
+                                        set_country_flag = rajnaval1
+                                } 
+                }
+        }
+
+        RAJ_moderate_naval_effort = {
+
+                icon = generic_naval
+
+                available = {
+                        original_tag = RAJ
+                        NOT = { has_country_flag = naval_effort_cancelled }
+                        NOT = { has_country_flag = rajnaval1 }
+                        NOT = { has_country_flag = rajnaval3 }
+                }
+		visible = {
+			has_completed_focus = RAJ_naval_construction_effort
+		} 
+                cost = 10
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 99
+		}
+                complete_effect = {
+                   add_ideas = RAJ_naval_construction2
+                                hidden_effect = {
+                                        set_country_flag = rajnaval2
+                                } 
+                }
+        }
+
+        RAJ_large_naval_effort = {
+
+                icon = generic_naval
+
+                available = {
+                        original_tag = RAJ
+                        NOT = { has_country_flag = naval_effort_cancelled }
+                        NOT = { has_country_flag = rajnaval1 }
+                        NOT = { has_country_flag = rajnaval2 }
+                }
+               	visible = {
+			has_completed_focus = RAJ_naval_construction_effort
+		} 
+                cost = 10
+		fire_only_once = yes
+		days_remove = -1
+		ai_will_do = {
+			factor = 99
+		}
+                complete_effect = {
+                   add_ideas = RAJ_naval_construction3
+                                hidden_effect = {
+                                        set_country_flag = rajnaval3
+                                }               
+                }
+        }
+
+}

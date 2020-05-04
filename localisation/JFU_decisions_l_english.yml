@@ -140,3 +140,8 @@ italian_logistics:0 "Improve Eastern Libyan Logistics"
 british_logistics_2:0 "Improve East Egyptian Logistics"
 italian_logistics_2:0 "Improve Western Libyan Logistics"
 british_logistics_3:0 "Improve Middle east Logistics"
+
+RAJ_naval_category:0 "Naval Policy"
+RAJ_small_naval_effort:0 "Small Naval Construction Effort"
+RAJ_moderate_naval_effort:0 "Moderate Naval Construction Effort"
+RAJ_large_naval_effort:0 "Large Naval Construction Effort"

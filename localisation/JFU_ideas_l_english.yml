@@ -158,6 +158,9 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     AST_strengthen_white_australia2:0 "Native Workers"
     AST_weaken_white_australia2:0 "Native Soldiers"
     RAJ_robert:0 "Robert Wordsworth"
+    RAJ_naval_construction1:0 "Small Naval Construction Effort"
+    RAJ_naval_construction2:0 "Mooderate Naval Construction Effort"
+    RAJ_naval_construction3:0 "Huge Naval Construction Effort"
 
 #German stuff
 GER_navaltreaty_1:0 "Anglo-German Naval Agreement"
