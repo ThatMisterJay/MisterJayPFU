@@ -15,6 +15,8 @@ attacking_state:0 "Attacking a French State"
 FRA_free_france_effect_1:0 "Will gain a division of desert troops in Alexandria."
 FRA_free_france_operation_exporter_tt:0 "Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
 syria_sway_tt:0 "Will attempt to retake Syria from the traitors in Vichy. Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
+FRA_colonial_industry_effect_tt2:0 "Adds one §YCivilian Factory§! to every colonial state previously invested in."
+FRA_military_factories_effect_tt2:0 "Adds one §YMilitary Factory§! to every colonial state previously invested in."
 
 
 pfu.33.a.tt:0 "Spawns an elite Royal Guards armoured division in Egypt."
