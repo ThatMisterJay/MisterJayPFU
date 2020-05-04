@@ -43,7 +43,8 @@ ideas = {
 			allowed = {
 				original_tag = RAJ
 			}
-        picture = yug_federal_defense_council
+
+        picture = YUG_federal_defense_council
 
   modifier = {
     land_reinforce_rate = 0.05

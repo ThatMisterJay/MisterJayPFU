@@ -83,10 +83,10 @@ ITA_new_era.tt:0 "Requires 90% support"
 
 GER_bismarck_tt:0 "Adds two §YBismarck-Class Battleships§! to the production queue, at 50% complete."
 GER_SS_tt:0 "Will form §YSS Divisions§! in the future."
-GER_stug_tt:0 "Will allow production of the §YStuG III Ausf. G§."
-GER_htd_tt:0 "Will allow production of the §YFerdinand§."
-GER_tank_3_tt:0 "Our experience from the east will allows us to develop more §YAdvanced Panzers§."
-GER_SPA_tt:0 "For our mobile warfare to succeeded we will need to develop §YMobile Artillery§."
+GER_stug_tt:0 "Will allow production of the §YStuG III Ausf. G§!."
+GER_htd_tt:0 "Will allow production of the §YFerdinand§!."
+GER_tank_3_tt:0 "Our experience from the east will allows us to develop more §YAdvanced Panzers§!."
+GER_SPA_tt:0 "For our mobile warfare to succeeded we will need to develop §YMobile Artillery§!."
 
 ENG_norway_warplan:0 "Will allow us to executed §YMilitary Operations§! in Scandanavia"
 
@@ -95,5 +95,20 @@ hun_art_tt:0 "Adds a production line of §YGerman Improved Artillery Equipment§
 
 chief_robertson:0 "Robertson Appointed"
 chief_blamey:0 "Blamey Appointed"
+british_accept:0 "British Accept"
+sturdee_resigns:0 "Vernon Sturdee Resigned"
+AST_rules_the_waves:0 "Australia naval build up complete"
+
+ENG_sell_ship.tt:0 "Sell The Ship to §YAustralia§!"
+AST_ENG_yes.tt:0 "Accpet the Australian Offer to §Ypurchases§! our Ships"
+AST_ENG_no.tt:0 "Deny the Australian Offer to §Ypurchases§! our Ships"
+sold_out_CV:0 "Britsh no long have §YCarriers§! to sell"
+sold_out_BB:0 "Britsh no long have §YBattleships§! to sell"
+AST_offer_to_buy.tt:0 "Send the request to the British"
+AST_dec_cat_singapore.tt:0 "Will allow access to §YSingapore Strategy decision§!"
+AST_fleet_plan.tt:0 "Will start the §YAustralia Squadron§! build up mission"
+AST_far_east.tt:0 "With our new Fleet we can now assume responsibility for the §YFar East§!"
+british_aircraft_tech.tt:0 "The British will supply us with §Yblueprints§! and assistance with CV aircraft development (have carrier aircraft designer set)"
+AST_naval_tech.tt:0 "The British will aid us in catch up in the naval arms race"
 
 RAJ_naval_effort_tt:0 "Unlocks §YNaval Policy§! decisions."

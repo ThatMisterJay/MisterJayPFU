@@ -29,7 +29,7 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
+        mot_recon = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 2 }
 	}
 	priority = 2
@@ -126,7 +126,7 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
+        mot_recon = { x = 0 y = 1 }
 		logistics_company { x = 0 y = 2 }
 
 	}
@@ -161,6 +161,30 @@ division_template = {
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 0 y = 4 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars

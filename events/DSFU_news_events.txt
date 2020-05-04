@@ -1,0 +1,36 @@
+add_namespace = DSFU_news
+
+#news events
+news_event = {
+  id = DSFU_news.1
+  title = DSFU_news.1.t
+  desc = DSFU_news.1.d
+  picture = GFX_news_event_ast_army
+
+  is_triggered_only = yes
+
+	major = yes
+
+  option = {
+  name = DSFU_news.1.a
+  trigger = {
+  NOT = {
+   is_in_faction_with = ENG
+   }
+ }
+  }
+
+  option = {
+  name = DSFU_news.1.b
+    trigger = {
+      tag = AST
+    }
+  }
+
+  option = {
+  name = DSFU_news.1.c
+    trigger = {
+      is_in_faction_with = ENG
+    }
+  }
+}

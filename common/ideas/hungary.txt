@@ -500,6 +500,7 @@ ideas = {
 				has_completed_focus = HUN_special_forces
 			}
 
+
 			traits = { army_commando_1 }
 
 			ai_will_do = {
@@ -531,9 +532,7 @@ ideas = {
 				original_tag = HUN
 			}
 
-			available = {
-				has_completed_focus = HUN_mobile_focus
-			}
+		
 
 			traits = { army_cavalry_2 }
 

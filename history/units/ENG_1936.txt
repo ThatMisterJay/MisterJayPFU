@@ -61,9 +61,9 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
-		signal_company { x = 0 y = 2 }
-		logistics_company { x = 0 y = 3 }
+        mot_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
 	}
 }
 
@@ -78,9 +78,33 @@ division_template = {
 		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 0 y = 4 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+
 	}
 }
 
@@ -874,7 +898,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "ENG"
 		}
-		requested_factories = 4
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
@@ -884,7 +908,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "ENG"
 		}
-		requested_factories = 3
+		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
 	}
@@ -920,172 +944,4 @@ progress = 0.4
 efficiency = 50
 }
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "ENG"
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	### Ongoing Ship Production Jan 1 1936 ###
-	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_2
-			creator = "ENG"
-			version_name = "Leander Class"
-		}
-		name = "HMS Apollo"
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_2
-			creator = "ENG"
-			version_name = "Leander Class"
-		}
-		name = "HMS Amphion"
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_2
-			creator = "ENG"
-			version_name = "Leander Class"
-		}
-		name = "HMS Penelope"
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
-	}
-	# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "ENG"
-			version_name = "S Class"
-		}
-		name = "HMS Seawolf"
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "ENG"
-			version_name = "S Class"
-		}
-		name = "HMS Narwhal"
-		requested_factories = 1
-		progress = 0.40
-		amount = 1
-	}
-	# DD: G/H class (x9) ("HMS Gallant" "HMS Garland" "HMS Gipsy" "HMS Glowworm" "HMS Grafton" "HMS Grenade" "HMS Grenville" "HMS Greyhound" "HMS Griffin")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Gallant"
-		requested_factories = 1
-		progress = 0.90
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Garland"
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Gipsy"
-		requested_factories = 1
-		progress = 0.90
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Glowworm"
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Grafton"
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Grenade"
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Greyhound"
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Griffin"
-		requested_factories = 1
-		progress = 0.80
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "ENG"
-			version_name = "E/F/G/H Class"
-		}
-		name = "HMS Grenville"
-		requested_factories = 1
-		progress = 0.40
-		amount = 1
-	}
 }

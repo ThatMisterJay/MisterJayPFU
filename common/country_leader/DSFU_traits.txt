@@ -27,7 +27,7 @@ leader_traits = {
     }
   }
 
-sir_inspector_general = {
+air_inspector_general = {
   sprite = 1
   random = no
 
@@ -77,11 +77,12 @@ sir_inspector_general = {
 
 reichfuhrer_ss = {
   sprite = 13
-  resistance_damage_to_garrison = -0.20
+  resistance_damage_to_garrison = -0.25
 	political_power_factor = 0.05
   mobilization_laws_cost_factor = -0.10
   weekly_manpower = 100
   army_morale_factor = 0.02
+  intelligence_agency_defense = 0.5
 
 
 
@@ -129,5 +130,76 @@ pro_axis_fm = {
   }
 }
 
+attorney_general = {
+  sprite = 13
+  political_power_factor = 0.25
+
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minister_external_affairs = {
+  sprite = 13
+  stability_factor = 0.05
+  war_support_factor = 0.05
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minister_info = {
+  sprite = 13
+intelligence_agency_defense = 1.0
+stability_factor = -0.1
+war_support_factor = 0.1
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minority_government = {
+  sprite = 13
+  political_power_factor = -0.05
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+# Menzies trait
+pig_iron_bob = {
+  sprite = 13
+  political_power_factor = -0.05
+  war_support_factor = -0.05
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+#lyons trait
+peace_time_rearmer = {
+  sprite = 13
+  production_speed_arms_factory_factor = 0.05
+  production_speed_dockyard_factor = 0.05
+  war_support_factor = -0.05
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+war_time_prime_minister = {
+  sprite = 13
+  production_speed_buildings_factor = 0.05
+
+  ai_will_do = {
+    factor = 1
+  }
+}
 
 }

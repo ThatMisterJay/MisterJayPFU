@@ -27,7 +27,10 @@
 
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 0 y = 2 }
+    signal_company = { x = 0 y = 3 }
+    logistics_company = { x = 0 y = 4 }
 	}
 }
 

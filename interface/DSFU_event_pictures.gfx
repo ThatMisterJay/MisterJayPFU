@@ -18,6 +18,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_cat_australia_singapore"
+		texturefile = "gfx/interface/decisions/decision_cat_australia_singapore.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_cat_picture_trucks"
 		texturefile = "gfx/interface/decisions/decision_cat_trucks.dds"
 	}

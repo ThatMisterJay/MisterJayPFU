@@ -1072,6 +1072,10 @@ if = {
 limit = { HUN = { is_in_faction_with = GER } }
 HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 }
+if = {
+limit = { FIN = { is_in_faction_with = GER } }
+FIN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+}
 }
 hidden_effect = {
 	USA = {
@@ -1099,7 +1103,7 @@ country_event = { id = JFU_germany.23 days = 15 }
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_warwiththeussr }
 		bypass = {
-			date < 1942.10.10
+			date > 1942.10.10
 			217 = { CONTROLLER = { is_in_faction_with = GER } }
 		}
 		available = {
@@ -2472,7 +2476,7 @@ category = infantry_weapons
 			factor = 1
 		}
 		available = {
-			has_tech = improved_medium_tank
+			has_tech = basic_medium_tank
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -2490,7 +2494,7 @@ category = infantry_weapons
 			upgrades = {
 				tank_engine_upgrade = 2
 				tank_reliability_upgrade = 2
-				tank_gun_upgrade = 7
+				tank_at_upgrade = 7
 				tank_armor_upgrade = 6
 			}
 		}

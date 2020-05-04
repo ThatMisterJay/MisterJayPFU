@@ -62,8 +62,9 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
+        mot_recon = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 2 }
+		logistics_company { x = 0 y = 3 }
 	}
 	priority = 2
 
@@ -99,8 +100,9 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
+        mot_recon = { x = 0 y = 1 }
 		signal_company = { x = 0 y = 2 }
+		logistics_company { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -135,7 +137,7 @@ division_template = {
 	 	engineer = { x = 0 y = 1 }
         signal_company = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 3 }
-		anti_air = { x = 0 y = 4 }
+		mot_anti_air_brigade = { x = 0 y = 4 }
 	}
 
 }
@@ -234,10 +236,34 @@ division_template = {
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-        cavalry = { x = 0 y = 1 }
-        cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 0 y = 4 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
 	}
 	support = {
 	    military_police = { x = 0 y = 0 }
@@ -538,132 +564,7 @@ units = {
 	}
 }
 
-### Air oob
-air_wings = {
 
-	### I. Luftkreiskommando -- Berlin ###
-	56 = {
-		# Jagdgeschwader 132 'Richtofen'
-		fighter_equipment_1 =  {		# Ar 68
-			owner = "GER"
-			amount = 100
-		}
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			modifier="fighter_genius"
-			name="Erich"
-			surname="Hartmann"
-			callsign="Bubi"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
-		}
-		fighter_equipment_1 =  {		# Ar 68
-			owner = "GER"
-			amount = 100
-		}
-		fighter_equipment_1 =  {		# Ar 68
-			owner = "GER"
-			amount = 100
-		}
-		fighter_equipment_1 =  {		# Ar 68
-			owner = "GER"
-			amount = 100
-		}
-		fighter_equipment_1 =  {			# Hs 123
-			owner = "GER"
-			amount = 100
-		}
-		fighter_equipment_1 =  {			# Hs 123
-			owner = "GER"
-			amount = 100
-		}
-		# Kampfgeschwader 153
-	}
-
-	### II. Luftkreiskommando -- Munich ###
-	57 = {
-		# Jagdgeschwader 136
-		fighter_equipment_1 =  {		# bf109s
-			owner = "GER"
-			amount = 100
-		}
-		fighter_equipment_1 =  {		# bf109s
-			owner = "GER"
-			amount = 100
-		}
-				fighter_equipment_1 =  {		# bf109s
-			owner = "GER"
-			amount = 100
-		}
-				fighter_equipment_1 =  {		# bf109s
-			owner = "GER"
-			amount = 100
-		}
-				fighter_equipment_1 =  {		# bf109s
-			owner = "GER"
-			amount = 100
-		}
-				fighter_equipment_1 =  {		# bf109s
-			owner = "GER"
-			amount = 100
-		}
-
-	}
-		64 = {
-		# Jagdgeschwader 136
-		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER"
-			amount = 100
-		}
-		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER"
-			amount = 100
-		}
-		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER"
-			amount = 100
-		}
-		# Kampfgeschwader 154
-		tac_bomber_equipment_1 = {		# Do 23
-			owner = "GER"
-			amount = 100
-		}
-		tac_bomber_equipment_1 = {		# Do 23
-			owner = "GER"
-			amount = 100
-		}
-		tac_bomber_equipment_1 = {		# Do 23
-			owner = "GER"
-			amount = 100
-		}
-		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER"
-			amount = 100
-		}
-		tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER"
-			amount = 100
-		}
-	tac_bomber_equipment_0 = {		# Do 23
-			owner = "GER"
-			amount = 100
-		}
-	}
-	61 = {
-			transport_plane_equipment_1 = {
-			owner = "GER"
-			amount = 5
-		}
-	}
-
-	### VI. Luftkreiskommando -- Kiel ###
-	58 = {
-		# Küstenfliegergruppe 106
-		nav_bomber_equipment_1 =  {		# He 59, Do 18
-			owner = "GER"
-			amount = 80
-		}
-		# Küstenfliegergruppe 206
-	}
-}
 
 #########################
 ## STARTING PRODUCTION ##
@@ -737,16 +638,7 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			version_name = "Bf 109 E"
-			creator = "GER"
-		}
-		requested_factories = 15
-		progress = 0.15
-		efficiency = 50
-	}
+
 
 	add_equipment_production = {
 		equipment = {
@@ -767,136 +659,7 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	### Ships Under Contruction ###
-	# SS: Type IIA (x2) ("U-25" "U-26"), Type IIB (x6) ("U-14" "U-16" "U-18" "U-15" "U-20" "U-19")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER"
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER"
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.65
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER"
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.55
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_1
-			creator = "GER"
-			version_name = "Type II Class"
-		}
-		requested_factories = 1
-		progress = 0.45
-		amount = 2
-	}
-	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934 Class"
-		}
-		requested_factories = 1
-		progress = 0.75
-		amount = 2
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934 Class"
-		}
-		requested_factories = 1
-		progress = 0.65
-		amount = 2
-	}
 
-	# CA: "Graf Spee"
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_panzerschiff
-			creator = "GER"
-			version_name = "Deutschland Class"
-		}
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
-	# Scharnhorst
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_2
-			creator = "GER"
-			version_name = "Scharnhorst Class"
-		}
-		requested_factories = 1
-		progress = 0.35
-		amount = 1
-	}
-	# Gneisenau
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_heavy_2
-			creator = "GER"
-			version_name = "Scharnhorst Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 1
-	}
-	# DD: 1934A class (x12) ("Z5"-"Z16")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 4
-	}
-	# DD: 1934A class (x12) ("Z5"-"Z16")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 4
-	}
-	# DD: 1934A class (x12) ("Z5"-"Z16")
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "GER"
-			version_name = "Zerstörer 1934A Class"
-		}
-		requested_factories = 1
-		progress = 0.25
-		amount = 4
-	}
 }
 
 #####################

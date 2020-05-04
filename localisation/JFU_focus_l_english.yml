@@ -2142,6 +2142,20 @@
     AST_chief_of_army:0 "Re-establish a Chief of the Army"
     AST_chief_of_army_desc:0 "As the prospect of war with Japan became more likely, so also did the need to make appropriate arrangements for leading the defence of Australia. In 1935, Lavarack had recommended that in the event of war, the Military Board be abolished and its powers vested in a Commander-in-chief. In April 1941, the Minister for the Army, Percy Spender, recommended that this now be done, with Sturdee becoming Commander in Chief of the Australian Military Forces. Instead, the government elected to adopt the British system, in which the Military Board (or Army Council as it was called there) continued to operate, with a separate GOC Home Forces. On 5 August 1941, Major General Sir Iven Mackay was appointed to this newly created post. However, the idea of a Commander in Chief did not go away and editorials in the Sunday Telegraph and The Sydney Morning Herald advocated the appointment."
 
+    AST_singapore_strategy:0 "Commit to the Singapore Strategy"
+    AST_singapore_strategy_desc:0 ""
+    AST_singapore_fleet_plan:0 "Australian Squadron Plan"
+    AST_singapore_fleet_plan_desc:0 "We shall expand upon John Jellicoe plan for the RAN"
+    AST_british_naval_development:0 "British Naval Cooperation"
+    AST_british_naval_development_desc:0 ""
+    AST_send_farncomb_to_britain:0 "Send Farncomb to Britain"
+    AST_send_farncomb_to_britain_desc:0 ""
+    AST_fleet:0 "Australian Squadron"
+    AST_fleet_desc:0 ""
+    AST_western_australian_dockyards:0 "Western Australian Dockyards"
+    AST_western_australian_dockyards_desc:0 ""
+
+
 HUN_special_forces:0 "Különleges Erők"
 HUN_special_forces_desc:0 "Due to our small population it is impossible for us to field a large army, rather we should have a small elite army largely made up of special forces to defend our nation."
 HUN_mobile_focus:0 "The Gyorshadtest"

@@ -113,19 +113,13 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
+
 	set_autonomy = {
 		target = MAN
 		autonomous_state = autonomy_colony
 	}
 	else = {
-		set_autonomy = {
-			target = MEN
-			autonomous_state = autonomy_puppet
-		}
+
 		set_autonomy = {
 			target = MAN
 			autonomous_state = autonomy_puppet
@@ -149,7 +143,7 @@ set_popularities = {
 }
 create_faction = "Daitoa Kyoeiken"
 add_to_faction = MAN
-add_to_faction = MEN
+
 
 create_country_leader = {
 	name = "Hirohito"

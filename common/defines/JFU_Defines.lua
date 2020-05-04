@@ -1,7 +1,7 @@
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 70
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.6, 0.5, 0.4, 0.02, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.2, 0.1, 0.05, 0.0 }
 NDefines.NDiplomacy.DIPLOMACY_HOURS_BETWEEN_REQUESTS = 12
 NDefines.NDiplomacy.GUARANTEE_COST = 12
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 2.0
@@ -80,7 +80,7 @@ NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 12
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.45
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.35
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0002
@@ -110,6 +110,7 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0
 NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 2.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
 NDefines.NNavy.DETECTION_CHANCE_MULT_BASE = 0.05
 NDefines.NNavy.COMBAT_MIN_DURATION = 24
 NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.8
@@ -129,6 +130,8 @@ NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.10 -- from 0.05
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 30 -- Amount of in-game-hours that takes the submarine (with position unrevealed) to hide.
 NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24 -- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.040 --from 0.025
+NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 2.0						-- spotting speed mult against naval invasion armies
+NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 4.0
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4
@@ -208,3 +211,11 @@ NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00						-- Chances one ship get dam
 
 
 NDefines.NOperatives.INTEL_NETWORK_MAX_INTELLIGENCE_AGENCY_DEFENSE_DETECTION_SCALE_FACTOR = 1
+NDefines.NOperatives.MAX_PROPAGANDA_STABILITY_IMPACT = -0.1			-- Max total penalty from operative performing the propaganda mission in a country
+NDefines.NOperatives.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = -0.1		-- Max total penalty from operative performing the propaganda mission in a country
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 1						-- Number of days needed to create an intelligence agency
+NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 30						-- Number of days needed to upgrade an intelligence agency
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 20					-- Number of factories used to create an intelligence agency
+NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 4	-- max operative slots gained from upgrades
+NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 100.0					-- The maximum amount of trade influence that can be gained through the control trade mission
+NDefines.NOperatives.DEFAULT_OPERATION_COST_MULTIPLIER = 0.1
