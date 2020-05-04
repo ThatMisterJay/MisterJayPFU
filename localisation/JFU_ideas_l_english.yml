@@ -101,7 +101,7 @@ ENG_guided_by_britain:0 "Guided By Britannia"
 to_good:0 "Officer In His Prime"
 to_good_desc:0 "Can one man really lead 90 divisions"
 mon_ita:0 "Watched General"
-mon_ita_desc:0 "Monarchist officers remain in our ranks despite the failed coup they must be watched and made to prove loyalty whenever possible "
+mon_ita_desc:0 "Monarchist officers remain in our ranks despite the failed coup they must be watched and made to prove loyalty whenever possible."
 monarchist_officer:0 "Aristocratic Officers at All Levels of Command "
 monarchist_officer_desc:0 "Officers who still hold loyalty to the King remain in positions throughout our military high commands but can not easily be removed without our military losing too many good officers. "
 monarchist_officer_1:0 "Aristocratic Officers at All Levels of Command"
@@ -117,6 +117,7 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     ENG_bernard_montgomery:0 "Bernard Montgomery"
     FRA_FREE_charles_de_gaulle:0 "Charles De Gaulle"
     HUN_ganz_danubius:0 "Ganz Danubius"
+    AST_pig_iron_sold:0 "Iron sold to Japan"
 
     GER_payment:0 "Spanish Tungsten Costs"
     debt_paid:0 "German Payments"
@@ -140,9 +141,14 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     minister_info:0 "Minister for Information"
     AST_arthur_calwell_desc:0 "Calwell was appointed as Minister for Information in the Second Curtin Ministry following the 1943 election, and became well known for his tough attitude towards the Australian press and his strict enforcement of wartime censorship. This earned him the enmity of large sections of the Australian press, and he was dubbed "Cocky" Calwell by his political foes, cartoonists of the period depicting him as an obstinate Australian cockatoo."
     minister_external_affairs:0 "Minister for External Affairs"
-    minister_external_affairs_desc:0 "The minister is usually one of the most senior members of Cabinet – the position is equivalent to that of Secretary of State for Foreign and Commonwealth Affairs in Britain or Secretary of State in the United States"
+    minister_external_affairs_desc:0 "The minister is usually one of the most senior members of Cabinet – the position is equivalent to that of Secretary of State for Foreign and Commonwealth Affairs in Britain or Secretary of State in the United States."
     attorney_general:0 "Attorney-General"
     attorney_general_desc:0 "The Attorney-General is usually a member of the Federal Cabinet, but need not be. Under the Constitution, they are appointed by the Governor-General on the advice of the Prime Minister, and serve at the Governor-General's pleasure. In practice, the Attorney-General is a party politician and their tenure is determined by political factors. By convention, but not constitutional requirement, the Attorney-General is a lawyer by training (either a barrister or solicitor)."
+    minority_government:0 "Minority Government"
+    pig_iron_bob:0 "Pig Iron Bob"
+    pig_iron_bob_desc:0 "It was during the Dalfram Dispute that the title "Pig Iron Bob" was coined in reference to the then Attorney General Robert Menzies."
+    peace_time_rearmer:0 "Peace Time Rearmer"
+    war_time_prime_minister:0 "Wartime Prime Minister"
 
 
 #Italian stuff#
@@ -155,9 +161,9 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     black_prince:0 "The Black Prince"
     weak_ITA_industry:0 "Weak Italian Industrial Base"
     ITA_colonial_exploit:0 "Exploited Colonial Territory"
-    ITA_colonial_development:0 "Developed Colonial Territory "
-    ITA_balken_exploit:0 "Exploited Balken Territory"
-    ITA_balken_development:0 "developed Balken Territory"
+    ITA_colonial_development:0 "Developed Colonial Territory"
+    ITA_balken_exploit:0 "Exploited Balkan Territory"
+    ITA_balken_development:0 "Developed Balkan Territory"
     africa_roads:0 "Poor African Logistics"
 
 #commonwealth stuff
@@ -197,5 +203,11 @@ ENG_war_cabinet_desc:0 "On 3 September 1939, Neville Chamberlain, Prime Minister
 JAP_law:0 "Asian Liberation"
 JAP_law_desc:0 "All Asians are equal, but some Asians are more equal"
 
+#Australia stuff
+
 AST_blamey:0 "Thomas Blamey"
 AST_robertson:0 "Horace Robertson"
+pig_iron_sale:0 "Trade with Japan"
+AST_navy_focus:0 "RAN Prioritized"
+AST_ENG_naval:0 "British-Australian Naval Development"
+far_eastern_conscripts:0 "Far Eastern Colonial Conscription"

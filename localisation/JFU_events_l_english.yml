@@ -354,6 +354,46 @@ DSFU.16.d:0 "If we are to develop Australian armour, we must first decide where 
 DSFU.16.a:0 "Continue the Sentinetl Project"
 DSFU.16.b:0 "Explore Second Option"
 
+DSFU.17.t:0 "Australia Purchases Battleship"
+DSFU.17.d:0 "As agreed we will sell our old battleships to help bolster the Australian Squadron however, we must choose which ship to transfer to the Royal Australian Navy."
+DSFU.17.a:0 "HMS Royal Oak"
+DSFU.17.b:0 "HMS Ramillies"
+DSFU.17.c:0 "HMS Royal Sovereign"
+DSFU.17.e:0 "Sold Out"
+
+DSFU.18.t:0 "Australia Purchases Carriers"
+DSFU.18.d:0 "As agreed we will sell our old Carriers to help bolster the Australian Squadron however, we must choose which ship to transfer to the Royal Australian Navy."
+DSFU.18.a:0 "HMS Hermes"
+DSFU.18.b:0 "HMS Eagle"
+DSFU.18.c:0 "Sold Out"
+
+
+DSFU.19.t:0 "Australia offers to buy old Capital Ships"
+DSFU.19.d:0 "The Australian government has started an ambitious naval armament scheme, which will be lucky to finish half of it's planned ships on time without major rediverting of Australia's resources away from other projects. Those issue aside a strong Australian naval force will mean fewer resources of the Royal Navy commit to the Far East in the event of war with Japan, officers of the RAN has reached out with a proposal of buying older British ships."
+DSFU.19.a:0 "Proceed with the Negotiation with the RAN"
+DSFU.19.b:0 "End Negotiations with the RAN"
+
+DSFU.20.t:0 "Fate Java"
+DSFU.20.d:0 "With a war in the Pacific now a real threat to our Empire, we must consider how we manage our Far Eastern possessions, Australia has approached us with an offer to take over administration of the Java area, being closer to Java means they will have an easier time supplying it then we do and will be more able to rapidly deploy troops to reinforce it."
+DSFU.20.a:0 "Agreed to the offer"
+DSFU.20.b:0 "Decline the Australian offer"
+
+DSFU.21.t:0 "Fate Sumatra"
+DSFU.21.d:0 "With a war in the Pacific now a real threat to our Empire, we must consider how we manage our Far Eastern possessions, Australia has approached us with an offer to take over administration of the Sumatra area, being closer to Sumatra means they will have an easier time supplying it then we do and will be more able to rapidly deploy troops to reinforce it."
+DSFU.21.a:0 "Agreed to the offer"
+DSFU.21.b:0 "Decline the Australian offer"
+
+DSFU.22.t:0 "Fate of Borneo"
+DSFU.22.d:0 "With a war in the Pacific now a real threat to our Empire, we must consider how we manage our Far Eastern possessions, Australia has approached us with an offer to take over administration of the Borneo, being closer to Borneo means they will have an easier time supplying it then we do and will be more able to rapidly deploy troops to reinforce it."
+DSFU.22.a:0 "Agreed to the offer"
+DSFU.22.b:0 "Decline the Australian offer"
+
+DSFU_news.1.t:0 "Australia recommits to the Singapore Strategy"
+DSFU_news.1.d:0 "Australia has begun a military build-up in line with plans laid out in the Singapore strategy, that came as a result of the 1920s imperial conference, for Australia to fulfil such requirements, as the plan laid out, it will require a great deal of production directed towards the Royal Australian Navy, either way, this could be the start of a new Pacific naval power to rival even the Imperial Japanese Navy. "
+DSFU_news.1.a:0 "Spooky"
+DSFU_news.1.b:0 "Fortune Favours the Bold"
+DSFU_news.1.c:0 "My Lord, is that legal"
+
       DSFU_ITR.1.t:0 "Officers at the Front"
       DSFU_ITR.1.d:0 "A large number of monarchist officer at the front had openly supported the coup in its initial stages, but after its failure, they merely claimed they supported their King. We now must choose whether we can afford to arrest the officers at such a dangerous time for our nation."
       DSFU_ITR.1.a:0 "Make Them Renew Their Oath"

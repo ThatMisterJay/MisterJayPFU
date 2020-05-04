@@ -105,7 +105,8 @@ support_SOV = {
 						remove_idea = us_sov_assistance_1
 					}
 				}
-				else = { SOV = { add_ideas = us_sov_assistance_2 } }
+				else = { SOV = {
+					 add_ideas = us_sov_assistance_2 } }
 			}
 
 		}

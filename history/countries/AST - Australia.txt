@@ -169,7 +169,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
+		peace_time_rearmer
 	}
 }
 
@@ -302,6 +302,7 @@ create_navy_leader = {
 	name = "Harold Farncomb"
 	gfx = "GFX_AST_harold_farncomb"
 	traits = { aviation_enthusiast naval_lineage }
+	id = 109
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3
