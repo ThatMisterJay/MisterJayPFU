@@ -145,7 +145,7 @@ focus = {
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 
 		icon = GFX_focus_befriend_italy
-		x = 8
+		x = 4
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
 		cost = 5
@@ -260,7 +260,7 @@ focus = {
 
 		icon = GFX_goal_generic_army_doctrines
 		x = 4
-		y = -1
+		y = -4
 		relative_position_id = SPA_the_condor_legion
 		cost = 10
 		available_if_capitulated = yes
@@ -832,6 +832,27 @@ focus = {
 					instant_build = yes
 				}
 			}
+
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 48
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+				state = 48
+			}
+			add_resource = {
+				type = aluminium
+				amount = 6
+				state = 211
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 211
+			}
 			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
 		}
 	}
@@ -1073,6 +1094,27 @@ focus = {
 				uses = 2
 				category = excavation_tech
 			}
+
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 48
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+				state = 48
+			}
+			add_resource = {
+				type = aluminium
+				amount = 6
+				state = 211
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 211
+			}
 			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
 		}
 	}
@@ -1276,6 +1318,12 @@ focus = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_research_slot = 1
+			add_tech_bonus = {
+				name = BUL_Radar_Testing
+				uses = 1
+				bonus = 1
+				category = electronics
+			}
 		}
 	}
 
@@ -1763,6 +1811,369 @@ technology = construction4
 				load_oob = "BUL_azul.txt"
 			}
 			custom_effect_tooltip = "Spawns two 14/4 Spanish Volunteers in Sofia"
+		}
+	}
+
+
+	focus = {
+		id = BUL_oppress_macedonians
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = SPA_consolidate_the_north }
+		relative_position_id = SPA_consolidate_the_north
+		x = -4
+		y = 1
+		cost = 10
+
+		available_if_capitulated = no
+		available = {
+			731 = { is_controlled_by = BUL }
+		}
+
+		completion_reward = {
+			add_state_core = 731
+			add_manpower = -25000
+	    }
+	}
+
+	focus = {
+		id = BUL_Prepare_For_War
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = BUL_oppress_macedonians}
+		relative_position_id = BUL_oppress_macedonians
+		x = 0
+		y = 1
+		cost = 10
+
+		available_if_capitulated = no
+		available = { NOT = { BUL = { owns_state = 77 } } }
+
+		completion_reward = {
+	        GER = { country_event = { id = germany.106 } }
+			add_state_core = 77
+	    }
+	}
+
+	focus = {
+		id = BUL_Reclaim_Greek_States
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = BUL_Prepare_For_War }
+		relative_position_id = BUL_Prepare_For_War
+		available = {
+			threat > 0.50
+			NOT = { is_in_faction_with = GRE }
+			country_exists = GRE
+		}
+		will_lead_to_war_with = GRE
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GRE
+				generator = { 184 }
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = BUL_Mobile_Army
+		icon = GFX_goal_generic_army_motorized
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		prerequisite = { focus = SPA_an_armored_corps }
+		relative_position_id = SPA_an_armored_corps
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SAF_mechanization_effort
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_Mobile_Support
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = SPA_specialised_army }
+		relative_position_id = SPA_specialised_army
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+				add_tech_bonus = {
+				name = AST_fund_owen_gun_research
+				bonus = 1.0
+				uses = 1
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+			}
+			add_tech_bonus = {
+				name = AST_fund_owen_gun_research
+				bonus = 1.0
+				uses = 1
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+				technology = tech_field_hospital3
+			}
+		}
+	}
+
+
+
+	#--------------------------------------
+	#				NAVAL
+	#--------------------------------------
+	focus = {
+		id = BUL_naval_warfare
+		icon = GFX_goal_generic_build_navy
+		x = 10
+		y = 0
+
+		relative_position_id = SPA_the_national_and_popular_army_of_spain
+
+		cost = 5
+
+		available = {
+			BUL = {
+				OR = {
+					controls_state = 731
+					controls_state = 184
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 25
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 60
+				producer = BUL
+			}
+
+			set_technology = {
+				mtg_transport = 1
+				early_ship_hull_light = 1
+				basic_torpedo = 1
+				early_ship_hull_submarine = 1
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_thrace_dockyard_construction
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = BUL_naval_warfare }
+		mutually_exclusive = { focus = BUL_macedonia_dockyard_construction }
+		x = -2
+		y = 1
+
+		relative_position_id = BUL_naval_warfare
+
+		cost = 5
+
+		available = {BUL = { controls_state = 184 }}
+
+		completion_reward = {
+			184 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_improved_raiding
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = BUL_thrace_dockyard_construction }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		relative_position_id = BUL_thrace_dockyard_construction
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = BUL_submarine_effort
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_macedonia_dockyard_construction
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = BUL_naval_warfare }
+		mutually_exclusive = { focus = BUL_thrace_dockyard_construction }
+		x = 2
+		y = 1
+
+		relative_position_id = BUL_naval_warfare
+
+		cost = 5
+
+		available = {
+			BUL = {
+				controls_state = 731
+			}
+		}
+
+		completion_reward = {
+			731 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_improved_screening
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = BUL_macedonia_dockyard_construction }
+		x = 0
+		y = 2
+
+		relative_position_id = BUL_macedonia_dockyard_construction
+
+		cost = 5
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = BUL_screen_effort
+				bonus = 1
+				uses = 2
+				category = dd_tech
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_recruit_new_admirals
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = BUL_naval_warfare }
+
+		relative_position_id = BUL_macedonia_dockyard_construction
+		x = -2
+		y = 1
+
+		cost = 1.43
+
+		completion_reward = {
+			create_navy_leader = {
+				name = "Diamond the Blind"
+				picture = "diamond.dds"
+				traits = { air_controller fly_swatter }
+				skill = 3
+				id = 2001
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_modernize_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = BUL_recruit_new_admirals }
+		x = 0
+		y = 2
+
+		relative_position_id = BUL_recruit_new_admirals
+
+		cost = 5
+
+		available = {
+			BUL = {
+				OR = {
+					controls_state = 731
+					controls_state = 184
+				}
+			}
+		}
+
+		completion_reward = {
+			731 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = BUL_screen_effort
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = BUL_modernize_navy }
+		relative_position_id = BUL_modernize_navy
+		x = 0
+		y = 1
+
+		cost = 8.6
+
+		available = {
+			BUL = {
+				OR = {
+					controls_state = 731
+					controls_state = 184
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_capital_ship_effort
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
+				category = bb_tech
+				category = bc_tech
+				category = cv_tech
+			}
 		}
 	}
 }
