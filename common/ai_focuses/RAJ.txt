@@ -6,7 +6,6 @@ ai_historical_focus_list_RAJ = {
         RAJ_integrate_princely_railways
         RAJ_british_rail_investors
         RAJ_ishapore_arsenal
-        RAJ_expand_mazagon_dock
-        RAJ_found_scindia_shipyard
+
 	}
 }

@@ -284,7 +284,7 @@ country_event = {
 			create_corps_commander = {
 				name = "Charles De Gaulle"
 				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				traits = { panzer_leader harsh_leader organizer  exiled_leader }
+				traits = { panzer_leader harsh_leader organizer exiled_leader }
 				skill = 4
 				attack_skill = 4
 				defense_skill = 3
@@ -317,17 +317,17 @@ country_event = {
 				traits = { spotter }
 				skill = 3
 			}
-			create_corps_commander = {
-				name = "Darth Sithben"
-				picture = "Sithben_General_1.dds"
-				traits = { old_guard cavalry_leader commando exiled_leader }
-				id = 2000
-				skill = 9
-				attack_skill = 6
-				defense_skill = 1
-				planning_skill = 5
-				logistics_skill = 3
-			}
+		#	create_corps_commander = {
+		#		name = "Darth Sithben"
+		#		picture = "Sithben_General_1.dds"
+		#		traits = { old_guard cavalry_leader commando exiled_leader }
+		#		id = 2000
+		#		skill = 9
+		#		attack_skill = 6
+		#		defense_skill = 1
+		#		planning_skill = 5
+		#		logistics_skill = 3
+		#	}
 			set_country_flag = free_france
 			set_capital = 539
 			hidden_effect = {
@@ -340,6 +340,7 @@ country_event = {
 				set_state_controller = 680
 				set_state_controller = 554
 				set_state_controller = 458
+
 				if = {
 					limit = { 1 = { owner = { original_tag = FRA } } }
 					set_state_controller = 1
@@ -385,6 +386,7 @@ country_event = {
 				limit = { FRA = { has_country_flag = become_vichy } }
 				change_tag_from = FRA
 			}
+			load_focus_tree = free_french_focus
 		}
 
 

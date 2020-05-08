@@ -1,0 +1,180 @@
+focus_tree = {
+	id = free_french_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 0
+		}
+	}
+
+
+
+	default = no
+
+  focus = {
+		id = FRA_france_libre
+		icon = GFX_goal_france_libre
+		x = 8
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+		available = {
+			EFR = { exists = yes }
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 100
+				producer = FRA
+			}
+
+   }
+  }
+
+#army
+
+  focus = {
+		id = FRA_reorganized_army
+		icon = GFX_goal_france_libre
+    prerequisite = { focus = FRA_france_libre }
+		x = -3
+		y = 1
+		cost = 5
+		relative_position_id = FRA_france_libre
+
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+
+   }
+  }
+
+#operations
+  focus = {
+    id = FRA_operation_menace
+    icon = GFX_goal_france_libre
+    prerequisite = { focus = FRA_france_libre }
+    x = 0
+    y = 2
+    cost = 5
+    relative_position_id = FRA_france_libre
+
+    available_if_capitulated = yes
+
+    available = {
+
+    }
+
+    completion_reward = {
+
+
+   }
+  }
+
+  focus = {
+    id = FRA_sucesse_in_gabon
+    icon = GFX_goal_france_libre
+    x = 0
+    y = 1
+    cost = 5
+    relative_position_id = FRA_operation_menace
+
+    available_if_capitulated = yes
+
+    available = {
+
+    }
+
+    completion_reward = {
+
+
+   }
+  }
+
+#industry
+  focus = {
+    id = FRA_state_of_gabon
+    icon = GFX_france_three
+    prerequisite = { focus = FRA_france_libre }
+    x = 3
+    y = 1
+    cost = 5
+    relative_position_id = FRA_france_libre
+
+    available_if_capitulated = yes
+
+    available = {
+
+    }
+
+    completion_reward = {
+
+
+   }
+  }
+
+  focus = {
+    id = FRA_allied_aid
+    icon = GFX_goal_france_libre
+    prerequisite = { focus = FRA_state_of_gabon }
+    x = 1
+    y = 2
+    cost = 5
+    relative_position_id = FRA_state_of_gabon
+
+    available_if_capitulated = yes
+
+    available = {
+
+    }
+
+    completion_reward = {
+
+
+   }
+  }
+
+  focus = {
+    id = FRA_arms_purchases
+    icon = GFX_goal_france_libre
+    prerequisite = { focus = FRA_state_of_gabon }
+    x = -1
+    y = 2
+    cost = 5
+    relative_position_id = FRA_state_of_gabon
+
+    available_if_capitulated = yes
+
+    available = {
+
+    }
+
+    completion_reward = {
+
+
+   }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
