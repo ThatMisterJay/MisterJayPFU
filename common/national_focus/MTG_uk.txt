@@ -3288,17 +3288,15 @@ technology = fighter2
 			#}
 		}
 		completion_reward = {
-		CAN = { add_ideas = ENG_guided_by_britain_1 }
-		AST = { add_ideas = ENG_guided_by_britain_1 }
-		RAJ = { add_ideas = ENG_guided_by_britain_1 }
-		NZL = { add_ideas = ENG_guided_by_britain_1 }
-		SAF = { add_ideas = ENG_guided_by_britain_1 }
+	        add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
+	        add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
+	        add_war_support = 0.15
 
-			add_political_power = 120
+			add_political_power = -30
+
 			every_country = {
 				limit = {
 					OR = {
-						tag = ENG
 						AND = {
 							is_subject_of = ENG
 							tag = CAN
@@ -3321,11 +3319,13 @@ technology = fighter2
 						}
 					}
 				}
-				country_event = { id = mtg_britain.82 hours = 6 }
+		        add_political_power = -75
+		        add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+		        add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_ideas = ENG_guided_by_britain_1
+		        add_war_support = 0.1
 				hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			}
-			custom_effect_tooltip = ENG_imperial_conference_tt
-			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 	}
 
