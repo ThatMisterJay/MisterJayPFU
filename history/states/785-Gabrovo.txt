@@ -1,0 +1,19 @@
+state={
+	id=785
+	name="STATE_785"
+	provinces={
+		3796 3819 3952 6842 9610 9612
+	}
+
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = BUL
+	}
+	manpower=3036537
+	buildings_max_level_factor=1.000
+
+	state_category = large_city
+}

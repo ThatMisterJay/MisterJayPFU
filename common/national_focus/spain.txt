@@ -128,8 +128,6 @@ focus = {
 
 	focus = {
 		id = SPA_hand_over_the_ceda_campaign_chest
-		available = {
-		}
 
 		prerequisite = { focus = SPA_a_great_spain }
 
@@ -148,61 +146,14 @@ focus = {
 	}
 
 	focus = {
-		id = SPA_negotiate_carlist_support
-		available = {
-		}
+		id = SPA_secure_the_northern_garrisons
 
 		prerequisite = { focus = SPA_hand_over_the_ceda_campaign_chest }
-
-		icon = GFX_goal_generic_military_deal
-		x = 0
-		y = 1
-		relative_position_id = SPA_hand_over_the_ceda_campaign_chest
-		cost = 4
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
-		completion_reward = {
-			set_country_flag = SPA_negotiate_carlist_support_flag
-			add_popularity = {
-			    ideology = neutrality
-			    popularity = 0.15
-			}
-		}
-	}
-
-	focus = {
-		id = SPA_the_army_of_africa
-		available = {
-		}
-
-		prerequisite = { focus = SPA_negotiate_carlist_support }
-
-		icon = GFX_goal_generic_special_forces
-		x = 0
-		y = 1
-		relative_position_id = SPA_negotiate_carlist_support
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
-		completion_reward = {
-			army_experience = 40
-			custom_effect_tooltip = SPA_the_army_of_africa_tt
-		}
-	}
-
-	focus = {
-		id = SPA_secure_the_northern_garrisons
-		available = {
-		}
-
-		prerequisite = { focus = SPA_the_army_of_africa }
 
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		relative_position_id = SPA_the_army_of_africa
+		relative_position_id = SPA_hand_over_the_ceda_campaign_chest
 		cost = 5
 
 		available_if_capitulated = yes
@@ -218,14 +169,12 @@ focus = {
 
 	focus = {
 		id = SPA_con_paquito
-		available = {
-		}
 
 		prerequisite = { focus = SPA_secure_the_northern_garrisons }
 
 
 		icon = GFX_goal_generic_dangerous_deal
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SPA_secure_the_northern_garrisons
 		cost = 4
@@ -248,13 +197,11 @@ focus = {
 	focus = {
 		id = SPA_unify_the_nationalist_front
 
-		bypass = {
-		}
 		prerequisite = { focus = SPA_con_paquito }
 
 
 		icon = GFX_focus_spa_unify_the_nationalist_front
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SPA_con_paquito
 		cost = 5
@@ -311,8 +258,6 @@ focus = {
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 
 		icon = GFX_focus_befriend_italy
@@ -348,8 +293,6 @@ focus = {
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 
 		icon = GFX_focus_chi_mission_to_germany
@@ -384,8 +327,6 @@ focus = {
 
 	focus = {
 		id = SPA_equipment_shipments
-		bypass = {
-		}
 		prerequisite = { focus = SPA_the_corpo_truppe_volontarie }
 		prerequisite = { focus = SPA_the_condor_legion }
 
@@ -422,8 +363,6 @@ focus = {
 
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_equipment_shipments }
 
 		icon = GFX_focus_generic_military_academy
@@ -444,8 +383,6 @@ focus = {
 		id = SPA_doctrinal_advancements
 
 
-		bypass = {
-		}
 		prerequisite = { focus = SPA_equipment_shipments }
 
 		icon = GFX_goal_generic_army_doctrines
@@ -488,12 +425,10 @@ focus = {
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
 		icon = GFX_goal_generic_army_doctrines
-		x = -6
+		x = -4
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 10
@@ -535,14 +470,10 @@ focus = {
 
 	focus = {
 		id = SPA_the_army_of_africa_model
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
 
 		icon = GFX_goal_generic_army_artillery
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
 		cost = 10
@@ -562,16 +493,12 @@ focus = {
 
 	focus = {
 		id = SPA_equipment_modernization
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_the_army_of_africa_model }
+		prerequisite = { focus = SPA_doctrinal_advancements }
 
 		icon = GFX_goal_generic_small_arms
-		x = -1
-		y = 2
-		relative_position_id = SPA_the_army_of_africa_model
+		x = 0
+		y = 1
+		relative_position_id = SPA_doctrinal_advancements
 		cost = 10
 
 		available_if_capitulated = yes
@@ -588,10 +515,6 @@ focus = {
 
 	focus = {
 		id = SPA_artillery_modernization
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_equipment_modernization }
 
 		icon = GFX_goal_generic_army_artillery2
@@ -614,10 +537,6 @@ focus = {
 
 	focus = {
 		id = SPA_expand_the_air_branch
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_equipment_modernization }
 
 		icon = GFX_goal_generic_air_doctrine
@@ -648,10 +567,6 @@ focus = {
 
 	focus = {
 		id = SPA_expand_the_special_forces
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_equipment_modernization }
 
 		icon = GFX_goal_generic_special_forces
@@ -680,10 +595,6 @@ focus = {
 
 	focus = {
 		id = SPA_motorization
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_the_army_of_africa_model }
 
 		icon = GFX_goal_generic_army_motorized
@@ -706,10 +617,6 @@ focus = {
 
 	focus = {
 		id = SPA_an_armored_corps
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_motorization }
 		prerequisite = { focus = SPA_join_the_axis }
 
@@ -768,8 +675,6 @@ focus = {
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_join_the_axis }
 		prerequisite = { focus = SPA_national_recovery }
 		mutually_exclusive = { focus = SPA_autarky }
@@ -810,8 +715,6 @@ technology = construction4
 			has_full_control_of_state = 165
 			has_full_control_of_state = 176
 			has_full_control_of_state = 41
-		}
-		bypass = {
 		}
 		prerequisite = { focus = SPA_fascist_economic_aid }
 
@@ -899,8 +802,6 @@ technology = construction4
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_spanish_austerity }
 
 		icon = GFX_goal_generic_construct_infrastructure
@@ -937,8 +838,6 @@ technology = construction4
 		id = SPA_support_the_war_industry
 		available = {
 
-		}
-		bypass = {
 		}
 		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
 		prerequisite = { focus = SPA_improve_cross_country_railways }
@@ -1029,8 +928,6 @@ technology = construction4
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_support_the_war_industry }
 
 		icon = GFX_goal_generic_construct_military
@@ -1050,8 +947,6 @@ technology = construction4
 		id = SPA_expand_the_war_industry
 		available = {
 
-		}
-		bypass = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
 
@@ -1117,8 +1012,6 @@ technology = construction4
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = {  focus = SPA_fuse_the_parties }
 
 		icon = GFX_goal_generic_consumer_goods
@@ -1163,10 +1056,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_autarky
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_national_recovery }
 		mutually_exclusive = { focus = SPA_fascist_economic_aid }
 
@@ -1206,10 +1095,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_spanish_austerity
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_autarky }
 
 		ai_will_do = {
@@ -1270,10 +1155,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_reduce_reliance_on_foreign_resources
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_spanish_austerity }
 
 		icon = GFX_goal_generic_construction2
@@ -1300,8 +1181,6 @@ technology = construction4
 		available = {
 			NOT = { has_completed_focus = SPA_the_stabilization_plan }
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_spanish_austerity }
 		mutually_exclusive = { focus = SPA_capitalist_economic_aid }
 
@@ -1320,10 +1199,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_ensure_agricultural_self_sufficiency
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_expand_the_axis_gold_trade }
 
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1411,10 +1286,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_save_the_alcazar
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 
 		icon = GFX_focus_spa_save_the_alcazar
@@ -1432,8 +1303,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_martyrdom_for_primo_de_rivera
-		available = {
-		}
 		bypass = {
 
 		}
@@ -1458,10 +1327,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_caudillo_of_spain
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_save_the_alcazar }
 
 		icon = GFX_focus_spa_caudillo_of_spain
@@ -1499,10 +1364,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_extol_the_martyrs_of_the_war
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_martyrdom_for_primo_de_rivera }
 		prerequisite = { focus = SPA_caudillo_of_spain }
 
@@ -1596,8 +1457,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_foment_a_carlist_split
-		available = {
-		}
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
@@ -1624,8 +1483,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_integrate_the_requetes
-		available = {
-		}
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
@@ -1683,10 +1540,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_utilize_the_intellectuals
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_integrate_the_requetes }
 
 		icon = GFX_focus_research
@@ -1704,8 +1557,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_banish_the_party_leaders
-		available = {
-		}
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
@@ -1731,14 +1582,10 @@ technology = construction4
 
 	focus = {
 		id = SPA_safeguard_the_freedom_of_worship
-		available = {
-		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
 
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
 		cost = 10
@@ -1798,8 +1645,6 @@ show_ideas_tooltip = SPA_pro_allies_guy
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		}
 		prerequisite = { focus = SPA_join_the_allies }
 		prerequisite = { focus = SPA_national_recovery }
 
@@ -1854,8 +1699,6 @@ show_ideas_tooltip = SPA_pro_allies_guy
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		}
 		prerequisite = { focus = SPA_the_stabilization_plan }
 
 		icon = GFX_goal_generic_construct_military
@@ -1885,8 +1728,6 @@ show_ideas_tooltip = SPA_pro_allies_guy
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		}
 		prerequisite = { focus = SPA_expand_spanish_bases }
 		prerequisite = { focus = SPA_reduce_reliance_on_foreign_resources }
 		mutually_exclusive = { focus = SPA_expand_the_axis_gold_trade }
@@ -1955,8 +1796,6 @@ technology = construction4
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		}
 		prerequisite = { focus = SPA_capitalist_economic_aid }
 
 		icon = GFX_goal_generic_consumer_goods
@@ -2012,8 +1851,6 @@ technology = construction4
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		}
 		prerequisite = { focus = SPA_capitalist_economic_aid }
 
 		icon = GFX_goal_generic_production
@@ -2067,8 +1904,6 @@ technology = construction4
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		bypass = {
-		}
 		prerequisite = { focus = SPA_improve_living_standards }
 		prerequisite = { focus = SPA_domestic_industrial_developments }
 
@@ -2193,8 +2028,6 @@ technology = construction4
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
 		icon = GFX_focus_generic_treaty
@@ -2249,8 +2082,6 @@ technology = construction4
 		available = {
 			num_of_factories > 50
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_adopt_the_26_points }
 
 		icon = GFX_focus_research2
@@ -2273,8 +2104,6 @@ technology = construction4
 				name = "Francisco Franco"
 				ruling_only = yes
 			}
-		}
-		bypass = {
 		}
 		prerequisite = { focus = SPA_adopt_the_26_points }
 
@@ -2334,8 +2163,6 @@ technology = construction4
 		available = {
 			has_completed_focus = SPA_adopt_the_26_points
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_dictator_for_life  }
 
 		icon = GFX_goal_rhineland
@@ -2364,10 +2191,7 @@ technology = construction4
 		available = {
 			has_full_control_of_state = 290
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_la_division_azul }
-		prerequisite = { focus = SPA_stamp_out_the_maquis }
 
 		icon = GFX_goal_generic_position_armies
 		x = 0
@@ -2398,8 +2222,6 @@ technology = construction4
 		available = {
 
 		}
-		bypass = {
-		}
 		prerequisite = { focus = SPA_the_tangiers_enclave }
 
 		ai_will_do = {
@@ -2420,127 +2242,6 @@ technology = construction4
 
 		completion_reward = {
 				add_war_support = 0.20
-		}
-	}
-
-
-	focus = {
-		id = SPA_stamp_out_the_maquis
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_dictator_for_life  }
-
-		icon = GFX_goal_generic_more_territorial_claims
-		x = 2
-		y = 1
-		relative_position_id = SPA_dictator_for_life
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPR_recovering_from_civil_war_focus_tt
-		}
-	}
-
-	focus = {
-		id = SPA_defenses_against_strategic_bombing
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_stamp_out_the_maquis }
-
-		icon = GFX_focus_generic_air_defense
-		x = 0
-		y = 1
-		relative_position_id = SPA_stamp_out_the_maquis
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					is_in_home_area = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { #Galicia
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { #Basque
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { #Madrid
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SPA_defenses_against_invasion
-		available = {
-		}
-		bypass = {
-		}
-		prerequisite = { focus = SPA_defenses_against_strategic_bombing }
-
-		icon = GFX_focus_generic_coastal_fort
-		x = 0
-		y = 1
-		relative_position_id = SPA_defenses_against_strategic_bombing
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = SPA_defenses_against_invasion_tt
-			every_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					is_in_home_area = yes
-				}
-				add_building_construction = {
-					type = coastal_bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					province = {
-						all_provinces = yes
-						limit_to_naval_base = yes
-					}
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 	}
 
