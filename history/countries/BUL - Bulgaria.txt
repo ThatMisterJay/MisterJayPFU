@@ -3,7 +3,7 @@
 oob = "BUL_1936"
 
 set_research_slots = 3
-set_stability = 0.4
+set_stability = 0.3
 set_war_support = 0.62
 
 add_ideas = {
@@ -11,7 +11,7 @@ add_ideas = {
 }
 
 set_technology = {
-	armored_car1 = 1 
+	armored_car1 = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -40,18 +40,18 @@ set_popularities = {
 
 1939.1.1 = {
 	set_politics = {
-	ruling_party = neutrality
-	last_election = "1938.3.27"
-	election_frequency = 48
-	elections_allowed = no
-}
+		ruling_party = neutrality
+		last_election = "1938.3.27"
+		election_frequency = 48
+		elections_allowed = no
+	}
 
-set_popularities = {
-    democratic = 5
-    fascism = 35
-    communism = 0
-    neutrality = 60
-}
+	set_popularities = {
+	    democratic = 5
+	    fascism = 35
+	    communism = 0
+	    neutrality = 60
+	}
 }
 
 create_country_leader = {
