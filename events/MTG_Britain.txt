@@ -4936,7 +4936,6 @@ country_event = {
 		trigger = {
 			tag = ENG
 		}
-		activate_mission = ENG_imperial_conference_decision
 		set_country_flag = { flag = ENG_imperial_conference_timer_flag value = 1 days = 60 }
 		every_country = {
 			limit = {

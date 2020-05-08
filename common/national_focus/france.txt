@@ -3422,7 +3422,7 @@ technology = construction4
 		icon = GFX_france_nine
 		prerequisite = { focus = FRA_sway_west_africa }
 		x = -1
-		y = 3
+		y = 4
 		cost = 5
 		relative_position_id = FRA_france_libre
 
@@ -3467,32 +3467,14 @@ technology = construction4
 	}
 
 	focus = {
-		id = FRA_organize_the_resistance
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = FRA_sway_syria }
-		prerequisite = { focus = FRA_sway_west_africa }
-		x = 0
-		y = 1
-		cost = 10
-		relative_position_id = FRA_sway_syria
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = { days = 1 id = free_france.8 }
-			custom_effect_tooltip = organize_the_resistance_tt
-		}
-	}
-
-	focus = {
 		id = FRA_unleash_the_resistance_1
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = FRA_organize_the_resistance }
+		prerequisite = { focus = FRA_sway_syria }
 		x = -1
 		y = 1
-		cost = 1.5
+		cost = 5
 
-		relative_position_id = FRA_organize_the_resistance
+		relative_position_id = FRA_sway_syria
 
 		available = {
 			has_war_with = EFR
@@ -3512,12 +3494,12 @@ technology = construction4
 	focus = {
 		id = FRA_unleash_the_resistance_2
 		icon = GFX_france_four
-		prerequisite = { focus = FRA_organize_the_resistance }
+		prerequisite = { focus = FRA_sway_syria }
 		x = 1
 		y = 1
 		cost = 5
 
-		relative_position_id = FRA_organize_the_resistance
+		relative_position_id = FRA_sway_syria
 
 		available = {
 			is_ai = no
@@ -3528,7 +3510,7 @@ technology = construction4
 
 		completion_reward = {
 			country_event = { days = 1 id = pfu.32 }
-			custom_effect_tooltip = unleash_the_resistance_2_tt
+			custom_effect_tooltip = "Destroys 2 forts and coastal forts in both Cherbourg and Brest. Also damages 2 infrastructure in Loire, Ile de France and Champagne."
 		}
 	}
 
@@ -3845,7 +3827,7 @@ technology = construction4
 			focus = FRA_france_libre
 		}
 
-		cost = 1
+		cost = 0.2
 		ai_will_do = {
 			factor = 1
 		}
@@ -3910,51 +3892,14 @@ technology = construction4
 		}
 	}
 	focus = {
-		id = FRA_reach_out_to_trade_unions
-		icon = GFX_goal_generic_major_alliance
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+		id = FRA_cooperation_with_the_communists
+		icon = GFX_focus_generic_soviet_politics
+		x = -1
+		y = 2
 		prerequisite = {
 			focus = FRA_refus_absurde
 		}
 		relative_position_id = FRA_refus_absurde
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			add_ideas = FRA_connections_to_trade_unions
-		}
-	}
-	focus = {
-		id = FRA_cooperation_with_the_communists
-		icon = GFX_focus_generic_soviet_politics
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_reach_out_to_trade_unions
-		}
-		relative_position_id = FRA_reach_out_to_trade_unions
 
 		cost = 5
 		ai_will_do = {
@@ -3982,13 +3927,14 @@ technology = construction4
 				}
 			}
 			add_ideas = FRA_communist_cooperation_2
+			add_ideas = FRA_connections_to_trade_unions
 		}
 	}
 	focus = {
-		id = FRA_connections_to_industrialists
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 2
-		y = 1
+		id = FRA_the_civil_and_military_organization
+		icon = GFX_goal_generic_military_deal
+		x = 1
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -4014,50 +3960,14 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = FRA_industrialist_connections
-		}
-	}
-	focus = {
-		id = FRA_the_civil_and_military_organization
-		icon = GFX_goal_generic_military_deal
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_connections_to_industrialists
-		}
-		relative_position_id = FRA_connections_to_industrialists
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = FRA_industrialist_connections
-				add_idea = FRA_civil_and_military_organization
-			}
+			add_ideas = FRA_civil_and_military_organization
 		}
 	}
 	focus = {
 		id = FRA_national_council_of_the_resistance
 		icon = GFX_focus_focus_fra_national_resistance_council
 		x = -1
-		y = 1
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -4106,7 +4016,7 @@ technology = construction4
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
 
-		cost = 5
+		cost = 0.2
 		ai_will_do = {
 			factor = 1
 		}
@@ -4153,7 +4063,7 @@ technology = construction4
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip = FRA_french_forces_of_the_interior_tt
+			custom_effect_tooltip = "Creates 20 width Infantry in every liberated core state"
 			division_template = {
 				name = "FFI Demi-Brigade"
 				division_names_group = FRA_INF_01

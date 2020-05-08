@@ -1,4 +1,4 @@
-﻿add_namespace = pfu
+add_namespace = pfu
 
 country_event = {
 	id = pfu.1
@@ -712,17 +712,14 @@ country_event = {
 
 	option = {
 		name = pfu.32.a
-		14 = {
-			damage_building = { type = air_base damage = 3 }
+		30 = {
 			damage_building = { type = infrastructure damage = 2 }
 		}
-		15 = {
+		16 = {
 			damage_building = { type = infrastructure damage = 2 }
-			damage_building = { type = air_base damage = 3 }
 		}
-		29 = {
+		18 = {
 			damage_building = { type = infrastructure damage = 2 }
-			damage_building = { type = air_base damage = 3 }
 		}
 
 		remove_building = {
@@ -732,6 +729,17 @@ country_event = {
 		}
 		remove_building = {
 			type = bunker
+			level = 2
+			province = 3552
+		}
+
+		remove_building = {
+			type = coastal_bunker
+			level = 2
+			province = 6449
+		}
+		remove_building = {
+			type = coastal_bunker
 			level = 2
 			province = 3552
 		}
