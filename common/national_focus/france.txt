@@ -3953,7 +3953,7 @@ technology = construction4
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_ideas = FRA_civil_and_military_organizationQ
+			add_ideas = FRA_civil_and_military_organization
 		}
 	}
 	focus = {
