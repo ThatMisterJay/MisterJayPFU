@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 ENG_burma_road_tt:0 "Will increase the opinion of China and the Yunnan Clique, but will decrease Japan's opinion of us.\n"
 ENG_commonwealth_focus_tt:0 "Increases opinion with all of the commonwealth.\n"
 FRA_request_uk_territory_tt:0 "Request the transfer of all UK territory in south-west Africa. We will have to pay a price for this deal."
@@ -111,4 +111,12 @@ AST_far_east.tt:0 "With our new Fleet we can now assume responsibility for the �
 british_aircraft_tech.tt:0 "The British will supply us with §Yblueprints§! and assistance with CV aircraft development (have carrier aircraft designer set)"
 AST_naval_tech.tt:0 "The British will aid us in catch up in the naval arms race"
 
-RAJ_naval_effort_tt:0 "Unlocks §YNaval Policy§! decisions."
+RAJ_naval_effort_tt:0 "Unlocks §YNaval Construction Effort§! decisions."
+RAJ_cruiser_tt:0 "Allows you to order §Y2 India Class§! cruisers."
+RAJ_destroyer_tt:0 "Allows you to order §Y6 Black Swan Class§! destroyers."
+RAJ_admiral_tt:0 "Allows the RIN to hire §YAdmiral Jcor§!."
+RAJ_tech_tt:0 "Gives several basic ship hull designs."
+RAJ_jewel_tt:0 "Adds §Y1 Guardian Class§! battleship to the production queue, 50% complete."
+RAJ_crusade_tt:0 "Adds §Y2 Crusader Class§! carriers to the production queue, at 50% and 30% complete, respectively."
+
+available_ship_designer:0 "§GAvailable§! as §YShip Designer§!:"
