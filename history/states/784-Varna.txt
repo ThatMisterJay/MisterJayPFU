@@ -9,6 +9,7 @@ state={
 		owner = BUL
 		buildings = {
 			infrastructure = 6
+			industrial_complex = 2
 		}
 		add_core_of = BUL
 	}
