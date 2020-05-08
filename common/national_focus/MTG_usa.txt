@@ -78,42 +78,13 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-
-	focus = {
-		id = USA_suspend_the_presecution
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = -5
-		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal }
-		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		available = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_stability = -0.05
-		}
-	}
 	focus = {
 		id = USA_reach_out_to_the_ware_group
 		icon = GFX_goal_generic_propaganda
-		x = 0
-		y = 3
-		prerequisite = { focus = USA_suspend_the_presecution }
+		x = -1
+		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
-		relative_position_id = USA_suspend_the_presecution
+		relative_position_id = USA_agricultural_adjustment_act
 		cost = 10
 
 		ai_will_do = {
