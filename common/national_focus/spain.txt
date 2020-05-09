@@ -756,7 +756,7 @@ focus = {
 
 		icon = GFX_goal_generic_construction
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SPA_join_the_axis
 		cost = 10
 
@@ -1030,7 +1030,7 @@ focus = {
 
 		icon = GFX_goal_generic_oil_refinery
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = SPA_join_the_axis
 		cost = 10
 
@@ -1279,7 +1279,7 @@ focus = {
 
 		icon = GFX_goal_generic_neutrality_focus
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SPA_join_the_allies
 		cost = 10
 
@@ -1626,7 +1626,7 @@ focus = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BUL_oppress_macedonians}
 		relative_position_id = BUL_oppress_macedonians
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 
@@ -1642,15 +1642,16 @@ focus = {
 	focus = {
 		id = BUL_Reclaim_Greek_States
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = BUL_Prepare_For_War }
-		relative_position_id = BUL_Prepare_For_War
+		prerequisite = { focus = BUL_oppress_macedonians }
+		relative_position_id = BUL_oppress_macedonians
 		available = {
 			threat > 0.50
 			NOT = { is_in_faction_with = GRE }
 			country_exists = GRE
+			GER = { has_war = yes }
 		}
 		will_lead_to_war_with = GRE
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		ai_will_do = {
