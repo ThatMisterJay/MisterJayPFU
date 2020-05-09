@@ -4,7 +4,7 @@ state={
 	name="STATE_48"
 	resources={
 		aluminium=3.000
-		steel=32
+		steel=64
 		tungsten=64
 	}
 
@@ -29,5 +29,5 @@ state={
 	}
 	manpower=1891500
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=metropolis
 }

@@ -24,7 +24,7 @@ focus_tree = {
 	default = no
 
 
-continuous_focus_position = { x = 1 y = 3000 }
+continuous_focus_position = { x = 1 y = 2000 }
 
 
 #  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ###  #  # ### #   ###     #  # ###
@@ -109,11 +109,6 @@ continuous_focus_position = { x = 1 y = 3000 }
 
 	focus = {
 		id = SPA_consolidate_the_north
-		available = {
-			controls_state = 166
-			controls_state = 172
-			controls_state = 176
-		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 
 		icon = GFX_goal_generic_position_armies
@@ -125,8 +120,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			random_owned_controlled_state = {
-
+			786 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -135,7 +129,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 					}
 				}
 
-			random_owned_controlled_state = {
+			785 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -144,9 +138,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 					}
 				}
 
-			random_owned_controlled_state = {
-
-
+			784 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -155,8 +147,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 					}
 
 			}
-			random_owned_controlled_state = {
-
+			212 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -165,7 +156,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 					}
 
 			}
-			random_owned_controlled_state = {
+			211 = {
 
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -548,6 +539,7 @@ focus = {
 				name = SPA_an_armored_corps
 				bonus = 1.0
 				uses = 1
+				ahead_reduction = 1
 				category = armor
 			}
 			custom_effect_tooltip = available_political_advisor
@@ -587,8 +579,7 @@ focus = {
 	focus = {
 		id = SPA_doctrinal_advancements
 
-		prerequisite = { focus = SPA_an_armored_corps }
-		prerequisite = { focus = SPA_specialised_army }
+		prerequisite = { focus = SPA_an_armored_corps focus = SPA_specialised_army }
 
 		icon = GFX_goal_generic_army_doctrines
 		x = 1
@@ -786,11 +777,6 @@ focus = {
 
 	focus = {
 		id = SPA_facilitate_pyrenees_freight_transports
-		available = {
-			has_full_control_of_state = 165
-			has_full_control_of_state = 176
-			has_full_control_of_state = 41
-		}
 		prerequisite = { focus = SPA_fascist_economic_aid }
 
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1594,7 +1580,7 @@ focus = {
 
 		completion_reward = {
 			hidden_effect = {
-				load_oob = "BUL_azul.txt"
+				load_oob = "BUL_azul"
 			}
 			custom_effect_tooltip = "Spawns two 14/4 Spanish Volunteers in Sofia"
 		}
@@ -1734,8 +1720,8 @@ focus = {
 	focus = {
 		id = BUL_naval_warfare
 		icon = GFX_goal_generic_build_navy
-		x = 10
-		y = 0
+		x = 0
+		y = 7
 
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
 
