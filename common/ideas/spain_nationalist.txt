@@ -40,8 +40,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			allowed = {
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -59,7 +58,7 @@ ideas = {
 			picture = chi_war_of_resistance
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 				NOT = { has_global_flag = spanish_civil_war }
 			}
 
@@ -78,7 +77,7 @@ ideas = {
 			picture = SPR_political_violence
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 				NOT = { has_global_flag = spanish_civil_war }
 			}
 
@@ -101,7 +100,7 @@ ideas = {
 			picture = SPR_nationalist_remnants
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -119,7 +118,7 @@ ideas = {
 			picture = SPR_nationalist_remnants
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -140,7 +139,7 @@ ideas = {
 					picture = FRA_factory_strikes
 
 					allowed = {
-						original_tag = SPR
+						original_tag = BUL
 						NOT = { has_global_flag = spanish_civil_war }
 					}
 
@@ -161,7 +160,7 @@ ideas = {
 					picture = FRA_factory_strikes
 
 					allowed = {
-						original_tag = SPR
+						original_tag = BUL
 						NOT = { has_global_flag = spanish_civil_war }
 					}
 
@@ -185,7 +184,7 @@ ideas = {
 					picture = FRA_factory_strikes
 
 					allowed = {
-						original_tag = SPR
+						original_tag = BUL
 						NOT = { has_global_flag = spanish_civil_war }
 					}
 
@@ -209,7 +208,7 @@ ideas = {
 					picture = FRA_factory_strikes
 
 					allowed = {
-						original_tag = SPR
+						original_tag = BUL
 						NOT = { has_global_flag = spanish_civil_war }
 					}
 
@@ -234,7 +233,7 @@ ideas = {
 					picture = FRA_factory_strikes
 
 					allowed = {
-						original_tag = SPR
+						original_tag = BUL
 						NOT = { has_global_flag = spanish_civil_war }
 					}
 
@@ -261,7 +260,7 @@ ideas = {
 			picture = SPR_nationalist_remnants
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -280,7 +279,7 @@ ideas = {
 			picture = SPR_nationalist_remnants
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -301,11 +300,7 @@ ideas = {
 			picture = FRA_matignon_agreements
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -332,11 +327,7 @@ ideas = {
 			picture = FRA_matignon_agreements
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -363,11 +354,7 @@ ideas = {
 			picture = FRA_matignon_agreements
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -409,12 +396,7 @@ ideas = {
 			picture = SPA_carlism
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = democratic
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -436,11 +418,7 @@ ideas = {
 			picture = SPA_carlism
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -462,11 +440,7 @@ ideas = {
 			picture = SPA_carlism
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -491,11 +465,7 @@ ideas = {
 			picture = SPA_carlism
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -516,11 +486,7 @@ ideas = {
 			picture = SPA_carlism
 
 			allowed = {
-				original_tag = SPR
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -537,7 +503,7 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -578,7 +544,7 @@ ideas = {
 			picture = german_advisors
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -595,7 +561,7 @@ ideas = {
 			picture = SPA_eliminate_the_carlists
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -614,7 +580,7 @@ ideas = {
 			picture = SPA_carlism
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -633,7 +599,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -650,7 +616,7 @@ ideas = {
 			picture = generic_agrarian_reform
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -667,7 +633,7 @@ ideas = {
 			picture = SPA_embrace_the_spanish_destiny
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -687,7 +653,7 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -707,7 +673,7 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -726,7 +692,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -743,7 +709,7 @@ ideas = {
 			picture = generic_navy_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -760,7 +726,7 @@ ideas = {
 			picture = SPA_duty_to_work
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -780,7 +746,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -800,7 +766,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -821,7 +787,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -841,7 +807,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -862,7 +828,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -883,7 +849,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -905,7 +871,7 @@ ideas = {
 			picture = SPA_national_recovery
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -925,7 +891,7 @@ ideas = {
 			picture = SPR_seize_the_gold_reserves
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -942,7 +908,7 @@ ideas = {
 			picture = CZE_planning_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -959,7 +925,7 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -978,7 +944,7 @@ ideas = {
 			picture = SPA_la_division_azul
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -997,7 +963,7 @@ ideas = {
 			picture = SPA_disjointed_carlist_juntas
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1018,7 +984,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1039,7 +1005,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1061,7 +1027,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1084,7 +1050,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1107,7 +1073,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1130,7 +1096,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1154,7 +1120,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1179,7 +1145,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1203,7 +1169,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1228,7 +1194,7 @@ ideas = {
 			picture = SPA_crusade_against_democracy
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1256,7 +1222,7 @@ ideas = {
 			picture = generic_navy_bonus
 
 			allowed = {
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			allowed_civil_war = {
@@ -1283,8 +1249,7 @@ ideas = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 			traits = { prince_of_terror }
@@ -1298,8 +1263,7 @@ ideas = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 			traits = { compassionate_gentleman }
@@ -1313,8 +1277,7 @@ ideas = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 			traits = { war_industrialist }
@@ -1328,42 +1291,10 @@ ideas = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				original_tag = BUL
 			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
 
 			traits = { falangist_industrialist }
-		}
-
-		SPA_raimundo_fernandez_cuesta = {
-
-			picture = SPA_raimundo_fernandez_cuesta
-
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-available = {
-	has_completed_focus = SPA_banish_the_party_leaders
-}
-
-
-			traits = { loyal_falangist }
 		}
 
 		SPA_tomas_dominguez_arevalo = {
@@ -1372,19 +1303,12 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
 
-			traits = { lifelong_carlist }
+			traits = { popular_figurehead }
 		}
 
 		SPA_diego_hidalgo_y_duran = {
@@ -1393,14 +1317,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1414,40 +1331,12 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
 
 			traits = { silent_workhorse }
-		}
-
-		SPA_luis_hernando_de_larramendi = {
-
-			picture = SPA_luis_hernando_de_larramendi
-
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-
-
-			traits = { traditionalist_theorist }
 		}
 
 		SPA_jose_antonio_primo_de_rivera = {
@@ -1456,14 +1345,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1483,8 +1365,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 			picture = generic_army_europe_3
@@ -1503,8 +1384,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 			picture = generic_air_europe_3
@@ -1523,14 +1403,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1558,34 +1431,12 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
 
 			traits = { army_chief_old_guard }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_ricardo_rada_vanilla = {
-
-			name = SPA_ricardo_rada
-
-			picture = generic_army_europe_1
-
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
-			}
-
-
-
-			traits = { army_chief_defensive_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -1600,8 +1451,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1621,14 +1471,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1646,14 +1489,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1664,57 +1500,6 @@ available = {
 				factor = 1
 			}
 		}
-
-		SPA_heli_rolando_de_tella = { # Francoist/Carlist
-
-			picture = SPA_heli_rolando_de_tella
-
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-
-
-			traits = { army_chief_defensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_miguel_ponte = { # Francoist
-
-			picture = SPA_miguel_ponte
-
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-
-
-			traits = { army_chief_drill_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
 	}
 	air_chief = {
 
@@ -1728,8 +1513,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1749,8 +1533,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1770,14 +1553,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1802,8 +1578,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1823,8 +1598,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1844,8 +1618,7 @@ available = {
 
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1865,14 +1638,7 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
@@ -1898,34 +1664,12 @@ available = {
 			picture = generic_army_europe_5
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
 
 			traits = { army_logistics_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_agustin_munoz_grandes_vanilla = {
-			ledger = army
-
-			name = SPA_agustin_munoz_grandes
-
-			picture = generic_army_europe_3
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
-			}
-
-
-
-			traits = { army_infantry_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -1940,8 +1684,7 @@ available = {
 			picture = generic_air_europe_2
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1961,8 +1704,7 @@ available = {
 			picture = generic_air_europe_1
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
-				original_tag = SPR
-				has_government = fascism
+				original_tag = BUL
 			}
 
 
@@ -1986,16 +1728,11 @@ available = {
 				original_tag = SPR
 			}
 
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+			available = {
+				has_completed_focus = SPA_specialised_army
 			}
 
-
-
-			traits = { army_infantry_2 }
+			traits = { army_commando_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -2009,19 +1746,12 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				original_tag = BUL
 			}
 
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+			available = {
+				has_completed_focus = SPA_an_armored_corps
 			}
-
-available = {
-	has_completed_focus = SPA_the_condor_legion
-}
 
 
 			traits = { army_armored_2 }
@@ -2038,45 +1768,12 @@ available = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
+				original_tag = BUL
 			}
 
 
 
 			traits = { army_logistics_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_miguel_cabanellas = { # Carlist
-			ledger = army
-
-			picture = SPA_miguel_cabanellas
-
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
-
-
-
-			traits = { army_regrouping_2 }
 
 			ai_will_do = {
 				factor = 1

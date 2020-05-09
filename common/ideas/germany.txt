@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 
-    GER_ROM_exploited = {
+	    GER_ROM_exploited = {
 
 			allowed = {
 				original_tag = GER
@@ -11,25 +11,25 @@ ideas = {
 			picture = "generic_goods_red_bonus"
 
 			modifier = {
-		production_factory_efficiency_gain_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.04
 			}
 
 		}
 
-axis_exploited = {
+		axis_exploited = {
 
-	allowed = {
-		original_tag = ROM
-	}
+			allowed = {
+				original_tag = ROM
+			}
 
-	picture = "chi_forced_conscription"
+			picture = "chi_forced_conscription"
 
-	modifier = {
-		industrial_capacity_factory = -0.04
-		production_speed_buildings_factor = -0.04
-	}
+			modifier = {
+				industrial_capacity_factory = -0.04
+				production_speed_buildings_factor = -0.04
+			}
 
-}
+		}
 
 
 
@@ -851,9 +851,9 @@ axis_exploited = {
 
 		hjalmar_schacht = {
 
-available = {
-NOT = { has_idea = walther_funk }
-}
+			available = {
+				NOT = { has_idea = walther_funk }
+			}
 
 			allowed = {
 				original_tag = GER
@@ -989,8 +989,7 @@ NOT = { has_idea = walther_funk }
 
 		traits = { head_of_intelligence }
 
-	}
-
+		}
 	}
 
 
@@ -1003,7 +1002,10 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = BUL
+				}
 			}
 
 			research_bonus = {
@@ -1046,7 +1048,10 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = BUL
+				}
 			}
 
 			research_bonus = {
@@ -1078,7 +1083,10 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = BUL
+				}
 			}
 			available = {
 				date > 1941.6.1
@@ -1114,7 +1122,10 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = BUL
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1145,7 +1156,10 @@ NOT = { has_idea = walther_funk }
 			picture = GER_MAN
 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = BUL
+				}
 			}
 			available = {
 				date > 1941.6.1
@@ -1173,7 +1187,10 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = BUL
+				}
 			}
 
 			research_bonus = {
@@ -1185,15 +1202,9 @@ NOT = { has_idea = walther_funk }
 					armor_value = 0.10
 					ap_attack = 0.10
 					reliability = -0.10
-
-		}
+				}
 			}
-
 		}
-
-
-
-
 	}
 
 	naval_manufacturer = {

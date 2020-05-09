@@ -48,8 +48,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-
-			add_stability = .10
+			add_political_power = 120
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.1
@@ -64,34 +63,15 @@ continuous_focus_position = { x = 1 y = 3000 }
 	}
 
 	focus = {
-		id = SPA_hand_over_the_ceda_campaign_chest
-
-		prerequisite = { focus = SPA_a_great_spain }
-
-		icon = GFX_focus_generic_concessions
-		x = 0
-		y = 1
-
-		relative_position_id = SPA_a_great_spain
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	focus = {
 		id = SPA_con_paquito
 
-		prerequisite = { focus = SPA_hand_over_the_ceda_campaign_chest }
+		prerequisite = { focus = SPA_a_great_spain }
 
 
 		icon = GFX_goal_generic_dangerous_deal
 		x = 0
 		y = 1
-		relative_position_id = SPA_hand_over_the_ceda_campaign_chest
+		relative_position_id = SPA_a_great_spain
 		cost = 5
 
 		available_if_capitulated = yes
@@ -201,8 +181,6 @@ focus = {
 				uses = 1
 				category = cas_bomber
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 		}
 	}
 
@@ -438,6 +416,8 @@ focus = {
 				uses = 1
 				category = armor
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 		}
 	}
 
@@ -465,6 +445,8 @@ focus = {
 				technology = special_forces_3a
 				technology = special_forces_3b
 			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SPA_emilio_mola
 		}
 	}
 
@@ -1886,7 +1868,7 @@ technology = construction4
 		icon = GFX_goal_generic_army_motorized
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1894,6 +1876,7 @@ technology = construction4
 		relative_position_id = SPA_an_armored_corps
 
 		completion_reward = {
+			army_experience = 15
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
 				bonus = 1
@@ -1918,7 +1901,7 @@ technology = construction4
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 15
 				add_tech_bonus = {
 				name = AST_fund_owen_gun_research
 				bonus = 1.0
