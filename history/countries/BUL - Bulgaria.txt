@@ -7,7 +7,9 @@ set_stability = 0.3
 set_war_support = 0.62
 
 add_ideas = {
-	limited_conscription
+	SPR_military_disloyalty
+	SPR_political_violence
+	SPR_national_strikes_3
 }
 
 set_technology = {

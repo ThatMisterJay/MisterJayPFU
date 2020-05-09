@@ -17,8 +17,7 @@ focus_tree = {
 
 		modifier = {
 			add = 10
-			tag = SPR
-			has_dlc = "La Resistance"
+			tag = BUL
 		}
 	}
 
@@ -40,7 +39,7 @@ continuous_focus_position = { x = 1 y = 3000 }
 
 		icon = GFX_goal_generic_demand_territory
 		x = 3
-		y = 3
+		y = 0
 
 
 		cost = 5
@@ -57,8 +56,6 @@ continuous_focus_position = { x = 1 y = 3000 }
 			    ideology = neutrality
 			    popularity = 0.05
 			}
-			country_event = { id = spain.10 }
-
 		}
 	}
 
@@ -107,6 +104,143 @@ continuous_focus_position = { x = 1 y = 3000 }
 		completion_reward = {
 			add_stability = 0.10
 			add_war_support = .05
+		}
+	}
+
+	focus = {
+		id = SPA_consolidate_the_north
+		available = {
+			controls_state = 166
+			controls_state = 172
+			controls_state = 176
+		}
+		prerequisite = { focus = SPA_unify_the_nationalist_front }
+
+		icon = GFX_goal_generic_position_armies
+		x = 0
+		y = 1
+		relative_position_id = SPA_unify_the_nationalist_front
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+
+			random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+
+			random_owned_controlled_state = {
+
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+
+			}
+			random_owned_controlled_state = {
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+
+			}
+			random_owned_controlled_state = {
+
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+
+				}
+			}
+
+		}
+	}
+
+
+	focus = {
+		id = SPA_utilize_the_intellectuals
+		prerequisite = { focus = SPA_consolidate_the_north }
+
+		icon = GFX_focus_research
+		x = 1
+		y = 1
+		relative_position_id = SPA_consolidate_the_north
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = BUL_Radar_Testing
+				uses = 1
+				bonus = 1
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_banish_the_party_leaders
+		bypass = {
+			has_global_flag = SPR_carlist_uprising_flag
+		}
+		prerequisite = { focus = SPA_consolidate_the_north }
+
+		icon = GFX_focus_generic_support_the_left_right
+		x = -1
+		y = 1
+		relative_position_id = SPA_consolidate_the_north
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CARLIST_UPRISING}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = SPA_fuse_the_parties
+		bypass = {
+			has_global_flag = SPR_carlist_uprising_flag
+		}
+		prerequisite = { focus = SPA_banish_the_party_leaders }
+		relative_position_id = SPA_banish_the_party_leaders
+
+		icon = GFX_focus_spa_fuse_the_parties
+		x = 0
+		y = 1
+
+		cost = 5
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = SPA_carlism_4
 		}
 	}
 
@@ -238,7 +372,7 @@ focus = {
 
 		icon = GFX_goal_generic_army_doctrines
 		x = 4
-		y = -4
+		y = -3
 		relative_position_id = SPA_the_condor_legion
 		cost = 10
 		available_if_capitulated = yes
@@ -591,11 +725,6 @@ focus = {
 #Repay Axis debts
 	focus = {
 		id = SPA_join_the_axis
-		available = {
-			GER = {
-				has_offensive_war = yes
-			}
-		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
 		ai_will_do = {
@@ -616,8 +745,8 @@ focus = {
 
 		completion_reward = {
 			add_ideas = SPA_pro_axis_market
+		}
 	}
-}
 
 	focus = {
 		id = SPA_fascist_economic_aid
@@ -838,8 +967,6 @@ focus = {
 			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
 		}
 	}
-
-
 
 	focus = {
 		id = SPA_the_duty_to_work
@@ -1208,164 +1335,10 @@ focus = {
 #  # #  #  #  ###  ##  #  # #  # ### ### ##   #  ##             #   #  # #  # #  #  ##   ##
 
 
-
-
-	focus = {
-		id = SPA_consolidate_the_north
-		available = {
-			controls_state = 166
-			controls_state = 172
-			controls_state = 176
-		}
-		bypass = {
-
-		}
-		prerequisite = { focus = SPA_unify_the_nationalist_front }
-
-		icon = GFX_goal_generic_position_armies
-		x = 0
-		y = 1
-		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			random_owned_controlled_state = {
-
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-
-			random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-
-			random_owned_controlled_state = {
-
-
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-
-			}
-			random_owned_controlled_state = {
-
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-
-			}
-			random_owned_controlled_state = {
-
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-
-				}
-			}
-
-		}
-	}
-
-
-	focus = {
-		id = SPA_utilize_the_intellectuals
-		prerequisite = { focus = SPA_consolidate_the_north }
-
-		icon = GFX_focus_research
-		x = 1
-		y = 1
-		relative_position_id = SPA_consolidate_the_north
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_research_slot = 1
-			add_tech_bonus = {
-				name = BUL_Radar_Testing
-				uses = 1
-				bonus = 1
-				category = electronics
-			}
-		}
-	}
-
-	focus = {
-		id = SPA_banish_the_party_leaders
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_consolidate_the_north }
-
-		icon = GFX_focus_generic_support_the_left_right
-		x = -1
-		y = 1
-		relative_position_id = SPA_consolidate_the_north
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CARLIST_UPRISING}
-		completion_reward = {
-			add_political_power = 50
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SPA_raimundo_fernandez_cuesta
-		}
-	}
-
-	focus = {
-		id = SPA_fuse_the_parties
-		bypass = {
-			has_global_flag = SPR_carlist_uprising_flag
-		}
-		prerequisite = { focus = SPA_banish_the_party_leaders }
-		relative_position_id = SPA_banish_the_party_leaders
-
-		icon = GFX_focus_spa_fuse_the_parties
-		x = 0
-		y = 1
-
-		cost = 5
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_MANPOWER}
-		completion_reward = {
-			add_ideas = SPA_carlism_4
-		}
-	}
-
-
-
 #apponit pro allies foreign minister
 	focus = {
 		id = SPA_join_the_allies
-		available = {
-			GER = {
-				has_offensive_war = yes
-			}
-		}
 
-		bypass = {
-
-		}
 		prerequisite = { focus = SPA_fuse_the_parties }
 
 		ai_will_do = {
@@ -1390,10 +1363,6 @@ focus = {
 	}
 	focus = {
 		id = SPA_the_stabilization_plan
-		available = {
-			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
-			has_idea = SPA_pro_allies_market
-		}
 		mutually_exclusive = { focus = SPA_autarky focus = SPA_fascist_economic_aid }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1446,15 +1415,12 @@ focus = {
 
 	focus = {
 		id = SPA_expand_spanish_bases
-		available = {
-				has_idea = SPA_pro_allies_market
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		prerequisite = { focus = SPA_the_stabilization_plan }
 
 		icon = GFX_goal_generic_construct_military
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SPA_the_stabilization_plan
 		cost = 10
@@ -1475,9 +1441,6 @@ focus = {
 
 	focus = {
 		id = SPA_capitalist_economic_aid
-		available = {
-				has_idea = SPA_pro_allies_market
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		prerequisite = { focus = SPA_expand_spanish_bases }
@@ -1541,9 +1504,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_improve_living_standards
-		available = {
-				has_idea = SPA_pro_allies_market
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		prerequisite = { focus = SPA_capitalist_economic_aid }
@@ -1596,9 +1556,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_domestic_industrial_developments
-		available = {
-				has_idea = SPA_pro_allies_market
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		prerequisite = { focus = SPA_capitalist_economic_aid }
@@ -1649,9 +1606,6 @@ technology = construction4
 
 	focus = {
 		id = SPA_the_spanish_miracle
-		available = {
-				has_idea = SPA_pro_allies_market
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		prerequisite = { focus = SPA_improve_living_standards }

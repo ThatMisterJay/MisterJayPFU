@@ -6,11 +6,7 @@ SPR_foreign_arms_purchases = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
+			original_tag = BUL
 		}
 
 		cost = 25
@@ -19,15 +15,8 @@ SPR_foreign_arms_purchases = {
 
 		days_remove = 20
 
-		modifier = {
-
-		}
-
 		visible = {
 		  has_completed_focus = SPA_equipment_shipments
-		}
-
-		complete_effect = {
 		}
 
 		remove_effect = {
@@ -158,11 +147,7 @@ SPR_foreign_arms_purchases = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
+			original_tag = BUL
 		}
 
 		cost = 25
@@ -171,15 +156,8 @@ SPR_foreign_arms_purchases = {
 
 		days_remove = 20
 
-		modifier = {
-
-		}
-
 		visible = {
 			has_completed_focus = SPA_equipment_shipments
-		}
-
-		complete_effect = {
 		}
 
 		remove_effect = {
@@ -310,11 +288,7 @@ SPR_foreign_arms_purchases = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
+			original_tag = BUL
 		}
 
 		cost = 25
@@ -323,15 +297,8 @@ SPR_foreign_arms_purchases = {
 
 		days_remove = 20
 
-		modifier = {
-
-		}
-
 		visible = {
 		  has_completed_focus = SPA_equipment_shipments
-		}
-
-		complete_effect = {
 		}
 
 		remove_effect = {
@@ -462,11 +429,7 @@ SPR_foreign_arms_purchases = {
 		icon = generic_air
 
 		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
+			original_tag = BUL
 		}
 
 		cost = 25
@@ -475,15 +438,8 @@ SPR_foreign_arms_purchases = {
 
 		days_remove = 20
 
-		modifier = {
-
-		}
-
 		visible = {
 		  has_completed_focus = SPA_equipment_shipments
-		}
-
-		complete_effect = {
 		}
 
 		remove_effect = {
@@ -614,11 +570,7 @@ SPR_foreign_arms_purchases = {
 		icon = generic_prepare_civil_war
 
 		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
+			original_tag = BUL
 		}
 
 		cost = 25
@@ -627,15 +579,8 @@ SPR_foreign_arms_purchases = {
 
 		days_remove = 20
 
-		modifier = {
-
-		}
-
 		visible = {
 		  has_completed_focus = SPA_equipment_shipments
-		}
-
-		complete_effect = {
 		}
 
 		remove_effect = {
@@ -766,11 +711,7 @@ SPR_foreign_arms_purchases = {
 		icon = generic_tank
 
 		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
+			original_tag = BUL
 		}
 
 		cost = 25
@@ -779,15 +720,8 @@ SPR_foreign_arms_purchases = {
 
 		days_remove = 20
 
-		modifier = {
-
-		}
-
 		visible = {
 		  has_completed_focus = SPA_equipment_shipments
-		}
-
-		complete_effect = {
 		}
 
 		remove_effect = {
@@ -912,613 +846,11 @@ SPR_foreign_arms_purchases = {
 		}
 
 	}
-
-}
-
-
-
-
-
-
-political_actions = {
-
-
-SPA_save_the_alcazar_mission = {
-
-		name = SPA_save_the_alcazar
-
-		icon = eng_propaganda_campaigns
-
-		allowed = {
-			tag = SPA
-		}
-
-		available = {
-			controls_province = 858
-		}
-
-		fire_only_once = yes
-
-		days_mission_timeout = 140
-
-		cancel_if_not_visible = yes
-
-		activation = {
-			always = no
-		}
-
-		visible = {
-			tag = SPA
-
-			has_completed_focus = SPA_save_the_alcazar
-		}
-
-		complete_effect = {
-			add_war_support = 0.1
-			add_stability = 0.1
-			add_political_power = 100
-			complete_national_focus = SPA_caudillo_of_spain
-		}
-
-		timeout_effect = {
-		}
-	}
-
 }
 
 SPR_recovering_from_civil_war = {
-
-	SPR_eliminate_guerrillas = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SPR
-		}
-
-		available = {
-
-			has_equipment = {
-			    infantry_equipment > 4000
-			}
-			has_army_experience > 10
-		}
-
-		state_target = yes
-
-		targets = { 41 165 166 167 168 169 170 171 172 173 174 175 176 177 178 788 789 790 791 792 793 794 }
-
-		target_trigger = {
-			OR = {
-				has_completed_focus = SPA_stamp_out_the_maquis
-			}
-			FROM = {
-				is_owned_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-				}
-			}
-		}
-
-		cost = 40
-
-		fire_only_once = yes
-
-		days_remove = 70
-
-		ai_will_do = {
-			base = 200
-		}
-
-		modifier = {
-			weekly_manpower = -300
-		}
-
-		visible = {
-
-				has_completed_focus = SPA_stamp_out_the_maquis
-
-		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = -4000
-			}
-			army_experience = -10
-		}
-
-		remove_effect = {
-			FROM = {
-				add_core_of = ROOT
-			}
-		}
-	}
-
 }
 
 
 SPR_expand_resource_extraction = {
-
-	expand_basque_steel_works = { #792
-
-		icon = steel
-
-		allowed = {
-
-		}
-
-		highlight_states = {
-			state = 792
-		}
-
-		available = {
-			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 792
-			controls_state = 792
-		}
-
-		visible = {
-			owns_state = 792
-			controls_state = 792
-			792 = {
-				NOT = {
-					has_state_flag = basque_steel_developed
-				}
-			}
-			OR = {
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 90
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		remove_effect = {
-			792 = { set_state_flag = basque_steel_developed }
-			792 = {
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	expand_western_aragon_steel_works = { #166
-
-		icon = steel
-
-		allowed = {
-
-		}
-
-		highlight_states = {
-			state = 166
-		}
-
-		available = {
-			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 166
-			controls_state = 166
-		}
-
-		visible = {
-			owns_state = 166
-			controls_state = 166
-			166 = {
-				NOT = {
-					has_state_flag = western_aragon_steel_developed
-				}
-			}
-			OR = {
-
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 90
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		remove_effect = {
-			166 = { set_state_flag = western_aragon_steel_developed }
-			166 = {
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	expand_granada_steel_works = { #173
-
-		icon = steel
-
-		allowed = {
-
-		}
-
-		highlight_states = {
-			state = 173
-		}
-
-		available = {
-			has_tech = construction3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 173
-			controls_state = 173
-		}
-
-		visible = {
-			owns_state = 173
-			controls_state = 173
-			173 = {
-				NOT = {
-					has_state_flag = granada_steel_developed
-				}
-			}
-			OR = {
-
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 90
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		remove_effect = {
-			173 = { set_state_flag = granada_steel_developed }
-			173 = {
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	develop_salamanca_tungsten_deposits = { #788
-
-		icon = tungsten
-
-		allowed = {
-
-		}
-
-		available = {
-			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 788
-			controls_state = 788
-		}
-
-		highlight_states = {
-			state = 788
-		}
-
-		visible = {
-			owns_state = 788
-			controls_state = 788
-			788 = {
-				NOT = {
-					has_state_flag = salamanca_tungsten_developed
-				}
-			}
-			OR = {
-
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				tag = ENG
-				has_war = no
-				factor = 0
-			}
-		}
-
-		remove_effect = {
-			788 = { set_state_flag = salamanca_tungsten_developed }
-			788 = {
-				add_resource = {
-					type = tungsten
-					amount = 12
-				}
-			}
-		}
-	}
-
-	develop_valladolid_tungsten_deposits = { #791
-
-		icon = tungsten
-
-		allowed = {
-
-		}
-
-		available = {
-			has_tech = excavation4
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 791
-			controls_state = 791
-		}
-
-		highlight_states = {
-			state = 791
-		}
-
-		visible = {
-			owns_state = 791
-			controls_state = 791
-			791 = {
-				NOT = {
-					has_state_flag = valladolid_tungsten_developed
-				}
-			}
-			OR = {
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 35
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				tag = ENG
-				has_war = no
-				factor = 0
-			}
-		}
-
-		remove_effect = {
-			791 = { set_state_flag = valladolid_tungsten_developed }
-			791 = {
-				add_resource = {
-					type = tungsten
-					amount = 14
-				}
-			}
-		}
-	}
-
-	develop_galicia_tungsten_deposits = { #171
-
-		icon = tungsten
-
-		allowed = {
-
-		}
-
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 171
-			controls_state = 171
-		}
-
-		highlight_states = {
-			state = 171
-		}
-
-		visible = {
-			owns_state = 171
-			controls_state = 171
-			171 = {
-				NOT = {
-					has_state_flag = galicia_tungsten_developed
-				}
-			}
-			OR = {
-
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				tag = ENG
-				has_war = no
-				factor = 0
-			}
-		}
-
-		remove_effect = {
-			171 = { set_state_flag = galicia_tungsten_developed }
-			171 = {
-				add_resource = {
-					type = tungsten
-					amount = 12
-				}
-			}
-		}
-	}
-
-	expand_extremadura_tungsten_mines = { #170
-
-		icon = tungsten
-
-		allowed = {
-
-		}
-
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 170
-			controls_state = 170
-		}
-
-		highlight_states = {
-			state = 170
-		}
-
-		visible = {
-			owns_state = 170
-			controls_state = 170
-			170 = {
-				NOT = {
-					has_state_flag = extremadura_tungsten_developed
-				}
-			}
-			OR = {
-
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 35
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				tag = ENG
-				has_war = no
-				factor = 0
-			}
-		}
-
-		remove_effect = {
-			170 = { set_state_flag = extremadura_tungsten_developed }
-			170 = {
-				add_resource = {
-					type = tungsten
-					amount = 12
-				}
-			}
-		}
-	}
-
-	expand_madrid_bauxite_mines = { #41
-
-		icon = aluminium
-
-		allowed = {
-
-		}
-
-		highlight_states = {
-			state = 41
-		}
-
-		available = {
-			has_tech = excavation3
-			num_of_civilian_factories_available_for_projects > 2
-			owns_state = 41
-			controls_state = 41
-		}
-
-		visible = {
-			owns_state = 41
-			controls_state = 41
-			41 = {
-				NOT = {
-					has_state_flag = madrid_aluminium_developed
-				}
-			}
-			OR = {
-
-				has_completed_focus = SPA_reduce_reliance_on_foreign_resources
-
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 25
-		days_remove = 60
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		remove_effect = {
-			41 = { set_state_flag = madrid_aluminium_developed }
-			41 = {
-				add_resource = {
-					type = aluminium
-					amount = 8
-				}
-			}
-		}
-	}
-
 }

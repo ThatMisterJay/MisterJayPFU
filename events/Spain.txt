@@ -16,6 +16,7 @@ country_event = {
 		hidden_effect = {
 			add_named_threat = { threat = 3.5 name = SPR_war }
 			SPR_clr_national_strikes = yes
+			ITA = { country_event = { id = ethiopia.1 days = 1 } }
 		}
 
 		add_ideas = SPA_recovering_from_civil_war
@@ -24,11 +25,11 @@ country_event = {
 		remove_ideas = SPR_political_violence
 
 		add_stability = -0.10
+		country_event = veren.2
 		news_event = { hours = 6 id = news.63 }
 
 
 		set_politics = { ruling_party = fascism }
-		ITA = { country_event = { id = ethiopia.1 days = 1 } }
 
 		army_experience = 200
 

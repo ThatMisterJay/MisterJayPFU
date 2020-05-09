@@ -7,10 +7,6 @@ state={
 
 	state_category = rural
 
-	resources={
-		steel=20
-	}
-
 	history={
 		owner = SPR
 		victory_points = {
@@ -23,7 +19,7 @@ state={
 				naval_base = 3
 			}
 		}
-		
+
 	}
 
 	provinces={

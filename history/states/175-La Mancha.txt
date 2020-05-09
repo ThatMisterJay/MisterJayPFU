@@ -4,10 +4,6 @@ state={
 	name="STATE_175"
 	manpower = 848903
 
-	resources={
-		tungsten=76
-	}
-
 	state_category = town
 
 	history={
@@ -17,7 +13,7 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = SPR
-		
+
 	}
 
 	provinces={

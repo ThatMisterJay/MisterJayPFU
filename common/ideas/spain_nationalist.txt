@@ -1725,7 +1725,7 @@ ideas = {
 
 			allowed = {
 				has_dlc = "La Resistance"
-				original_tag = SPR
+				original_tag = BUL
 			}
 
 			available = {
