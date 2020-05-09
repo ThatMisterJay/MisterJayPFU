@@ -121,3 +121,139 @@ create_field_marshal = {
 	planning_skill = 4
 	logistics_skill = 4
 }
+
+
+
+create_corps_commander = {
+	name = "Mohamed Meziane"
+	id = 1109
+	gfx = "GFX_portrait_SPA_mohamed_meziane"
+	traits = { harsh_leader career_officer infantry_leader trait_mountaineer harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = { # Could fit for all 3 factions
+	name = "Gonzalo Queipo de Llano"
+	id = 1110
+	gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+	traits = { infantry_officer infantry_leader harsh_leader urban_assault_specialist}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+# Nationalists leaders - Fascists
+
+create_field_marshal = {
+	name = "Emilio Mola"
+	id = 1111
+	gfx = "GFX_portrait_SPA_emilio_mola"
+	traits = { organisational_leader trait_cautious thorough_planner infantry_leader hill_fighter trait_engineer urban_assault_specialist harsh_leader }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Juan Yagüe"
+	id = 1112
+	gfx = "GFX_portrait_SPA_juan_yague"
+	traits = { brilliant_strategist trait_reckless infantry_leader hill_fighter trait_mountaineer  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Agustín Muñoz Grandes"
+	id = 1113
+	gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+	traits = { infantry_officer infantry_leader ranger panzer_leader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+# Nationalists leaders - Carlists
+
+create_corps_commander = {
+	name = "José Enrique Varela"
+	id = 1114
+	gfx = "GFX_portrait_SPA_jose_enrique_varela"
+	traits = { organizer infantry_leader hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Miguel Cabanellas"
+	id = 1115
+	gfx = "GFX_portrait_SPA_miguel_cabanellas"
+	traits = { cavalry_officer old_guard trait_engineer infantry_leader hill_fighter trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "José Millán Astray"
+	id = 1116
+	gfx = "GFX_portrait_SPA_jose_millan_astray"
+	traits = { war_hero trait_reckless infantry_leader  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "José Sanjurjo y Sacanell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { infantry_leader infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Luis González de Ubieta"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = { seawolf }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Miguel Buiza"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { superior_tactician }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
