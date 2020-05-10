@@ -170,13 +170,6 @@ crisis = {
 			}
 			if = {
 				limit = {
-					has_idea = draft_dodging_3
-					has_stability > 0.4
-				}
-				add_stability = -0.1
-			}
-			if = {
-				limit = {
 					has_idea = draft_dodging_2
 				}
 				swap_ideas = {
@@ -347,7 +340,7 @@ crisis = {
 			country_event = stability.23
 		}
 	}
-	
+
 	mutiny_mission = {
 
 		icon = generic_civil_support
