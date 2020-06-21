@@ -242,14 +242,7 @@ units = {
 	}
 
 	# Subordinate to Army
-	division= {
-		name = "1° Raggruppamento Celere"
-		location = 6788
-		division_template = "Raggruppamento Celere"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
 
 	## 4a Armata ##
 	# Corpo d'Armata Alpina #
@@ -317,14 +310,7 @@ units = {
 	}
 
 	# Subordinate to Army
-	division= {
-		name = "2° Raggruppamento Celere"
-		location = 6626
-		division_template = "Raggruppamento Celere"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
 
 	## 6a Armata ##
 	# Corpo d'Armata Celere #

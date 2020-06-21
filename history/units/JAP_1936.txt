@@ -454,12 +454,7 @@ units = {
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
-	division = {
-		name = "1 Kiheishidan"
-		location = 7697
-		division_template = "Kihei Shidan"
-		start_experience_factor = 0.2
-	}
+
 
 	# 5 Homengun - 5th Field Army
 	division = {
@@ -508,65 +503,7 @@ units = {
 	}
 
 	### Chumo Gun -- Inner Mongolian Army ###
-	division = {
-		name = "1 Mouko Kiheishidan"
-		location = 12469
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "2 Mouko Kiheishidan"
-		location = 12469
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "3 Mouko Kiheishidan"
-		location = 7812
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "4 Mouko Kiheishidan"
-		location = 7812
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "5 Mouko Kiheishidan"
-		location = 10429
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
 
-
-	}
-	division = {
-		name = "6 Mouko Kiheishidan"
-		location = 10429
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "7 Mouko Kiheishidan"
-
-		location = 3978
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "8 Mouko Kiheishidan"
-		location = 3978
-		division_template = "Kihei Shidan"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "JAP" } }
-		start_experience_factor = 0.2
-	}
 
 
 	### Kita-Shina Ichigun - North China Army ###

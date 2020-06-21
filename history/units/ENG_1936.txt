@@ -234,14 +234,7 @@ units = {
 
 	}
 	#Northern Command
-	division= {
-		name = "4th Cavalry Brigade"
-		location = 377
-		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
-	}
 	division= {
 		name = "5. Infantry Division"
 		location = 6103
@@ -296,14 +289,7 @@ units = {
 
 	}
 	#Western Command
-	division= {
-		name = "1st Cavalry Brigade"
-		location = 3369
-		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1
 
-	}
 	division= {
 		name = "42nd 'East Lancashire' Infantry Division"
 		location = 322
@@ -405,14 +391,7 @@ units = {
 		start_equipment_factor = 0.15
 
 	}
-	division= {
-		name = "The Cavalry Brigade (Egypt)"
-		location = 4076
-		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
-	}
 	#Gibraltar
 	division= {
 		name = "Gibraltar Defense Force"

@@ -268,14 +268,6 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division= {
-		name = "16ya Kavaleriyskaya Diviziya"
-		location = 11181
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
 
 	# Directly subordinate to TVD
 	division= {
@@ -460,22 +452,7 @@ units = {
 	}
 
 	# 6ya Kavaleriyskiy Korpus
-	division= {
-		name = "6ya 'Chongarskaya' Kav. Div."
-		location = 6293
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
-	division= {
-		name = "36ya 'Chongarskaya' Kav. Div."
-		location = 6293
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
 
 	# 11ya Strelkoviy Korpus
 	division= {
@@ -504,22 +481,7 @@ units = {
 	}
 
 	# 3ya Kavaleriyskiy Korpus
-	division= {
-		name = "7ya Kavaleriyskaya Diviziya"
-		location = 3267
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
-	division= {
-		name = "11ya Kavaleriyskaya Diviziya"
-		location = 11216
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
 
 	# NKVD Belorusskiy Korpus -- NKVD Border Guard and RR units
 	division= {
@@ -838,41 +800,8 @@ units = {
 
 	}
 
-	# 1ya Kavaleriyskiy Korpus
-	division= {
-		name = "1ya 'Chernigov' Kav. Div."
-		location = 3430
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
-	division= {
-		name = "3ya 'Bessarabskaya' Kav. Div."
-		location = 6455
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
-
-	# 2ya Kavaleriyskiy Korpus
-	division= {
-		name = "9ya 'Krymskiy' Kav. Div."
-		location = 525
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division= {
-		name = "31ya Kavaleriyskaya Diviziya"
-		location = 525
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
 
 	# NKVD Kyiv Korpus -- NKVD Border Guard and RR units
 	division= {
@@ -974,22 +903,7 @@ units = {
 	}
 
 	# 5ya Kavaleriyskiy Korpus
-	division= {
-		name = "5ya 'Bleanov' Kav. Div."
-		location = 11437
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
 
-	}
-	division= {
-		name = "14ya 'Bessarabskaya' Kav. Div."
-		location = 11437
-		division_template = "Kavaleriyskaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
 
 	# Subordinate to VO
 	division= {
@@ -1077,24 +991,7 @@ units = {
 	#### Zakavkaz'e Voennyii Okrug (Transcaucasus Military District) -- Tblisi ####
 	### Batumi Gruppa Armiya -- Batumi ###
 	# 15ya Kavaleriyskiy Korpus
-	division= {
-		name = "17ya Gorno-Kav. Div."
-		location = 3653
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
 
-	}
-	division= {
-		name = "24ya Kavaleriyskaya Diviziya"
-		location = 3653
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-
-	}
 
 	# Subordinate to AG
 	division= {
@@ -1207,43 +1104,6 @@ units = {
 
 	}
 
-	# 7ya Kavaleriyskiy Korpus
-	division= {
-		name = "10ya Kavaleriyskaya Diviziya"
-		location = 6474
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-
-	}
-	division= {
-		name = "12ya 'Kubanskaya' Kav. Div."
-		location = 6474
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-
-	}
-	division= {
-		name = "13ya 'Kubanskaya' Kav. Div."
-		location = 6474
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-
-	}
-	division= {
-		name = "15ya 'Donskaya' Kav. Div."
-		location = 6474
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-
-	}
 
 	# Subordinate to AG
 	division= {
@@ -1266,44 +1126,10 @@ units = {
 
 	#### Tsentral'naya Aziya Voennyii Okrug (Central Asia Military District) -- Tashkent ####
 	# 9ya Kavaleriyskiy Korpus
-	division= {
-		name = "18ya 'Turkestanskaya' Kav. Div."
-		location = 12370
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
-	}
-	division= {
-		name = "20ya 'Tadzhikskaya' Kav. Div."
-		location = 5062
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {
-		name = "21ya 'Ferganskaya' Kav. Div."
-		location = 4768
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
 
 	# Subordinate to AG
-	division= {
-		name = "19ya Gorno-Kav. Div."
-		location = 1459
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
-	}
 	division= {
 		name = "68ya 'Turkestan.' Gornostrelk. Div."
 		location = 4923
@@ -1437,15 +1263,7 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-	division= {
-		name = "8ya 'Dal'nevostochnyi' Kav. Div."
-		location = 6686
-		division_template = "Kavaleriyskaya Diviziya"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
-	}
 	division= {
 		name = "DVVO Mekhanizirovaniy Korpus"
 		location = 12189
