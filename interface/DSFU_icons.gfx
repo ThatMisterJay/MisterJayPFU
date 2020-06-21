@@ -25,4 +25,20 @@ spriteType = {
 	textureFile = "gfx/interface/DSFU_GFX/ITA_balkan_dev.dds"
 }
 
+spriteType = {
+	name = "GFX_FRA_integral"
+	textureFile = "gfx/interface/DSFU_GFX/FRA_integral.dds"
+}
+spriteType = {
+	name = "GFX_FRA_gabon_conscripts"
+	textureFile = "gfx/interface/DSFU_GFX/FRA_gabon_conscripts.dds"
+}
+spriteType = {
+	name = "GFX_FRA_free_gabon"
+	textureFile = "gfx/interface/DSFU_GFX/FRA_free_gabon.dds"
+}
+spriteType = {
+	name = "GFX_FRA_gabon_contested"
+	textureFile = "gfx/interface/DSFU_GFX/FRA_gabon_contested.dds"
+}
 }

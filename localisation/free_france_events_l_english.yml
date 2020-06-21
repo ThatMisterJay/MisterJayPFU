@@ -104,3 +104,12 @@ free_france.14.a:0 "Huzzah!"
 free_france.15.t:0 "The Invasion of [FRA_attacked_state.getName]"
 free_france.15.desc:0 "The Free French attack on [FRA_attacked_state.getName] has pushed us out of the region. We will have to sit by while those bastards claim it as their territory..."
 free_france.15.a:0 "Thats too bad."
+
+free_france.16.t:0 "Trade Deal"
+free_france.16.d:0 "The British and Americans are willing to sell us military equipment"
+free_france.16.a:0 "Deal"
+
+free_france.17.t:0 "The Free French"
+free_france.17.d:0 "As we establish our new administering branch 2 opposing factions have formed, the Militarists who think we need to style our selves as a military with a state to win the war, while the Republicans believe we must keep a distinction between our military and civil services or we will become that which we are fighting."
+free_france.17.a:0 "Support the Republicans"
+free_france.17.b:0 "Support the Militarists"

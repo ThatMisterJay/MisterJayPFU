@@ -3,7 +3,7 @@
 ################
 
 SOV_industry_relocation = {
-	
+
 	allowed = {
 		original_tag = SOV
 	}
@@ -18,6 +18,8 @@ SOV_industry_relocation = {
 }
 
 SOV_great_patriotic_war = {
+
+	icon = sov_great_patriotic_war
 	allowed = {
 		original_tag = SOV
 	}
@@ -26,5 +28,5 @@ SOV_great_patriotic_war = {
 	}
 	priority = 1000
 
-		
+
 }

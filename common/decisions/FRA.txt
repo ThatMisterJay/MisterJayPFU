@@ -51,6 +51,7 @@ FRA_vichy_france = {
 		}
 	}
 
+
 	FRA_case_anton_mission = {
 
 		icon = generic_tank
@@ -94,6 +95,59 @@ FRA_vichy_france = {
 			custom_effect_tooltip = GAME_OVER_TT
 		}
 	}
+}
+
+operations = {
+
+	FRA_torch = {
+
+		icon = generic_operation
+
+		targets = { EFR }
+
+		available = {
+			original_tag = FRA
+			has_completed_focus = FRA_prep_for_torch
+			has_war_with = EFR
+		}
+		visible = {
+			has_completed_focus = FRA_prep_for_torch
+		}
+
+		allowed = { tag = FRA }
+
+		cost = 10
+
+		complete_effect = {
+		country_event =	free_france.9
+		}
+		fire_only_once = yes
+	}
+
+	FRA_vert= {
+
+		icon = generic_operation
+
+		targets = { EFR }
+
+		available = {
+			original_tag = FRA
+			has_completed_focus = FRA_prepare_plan_vert
+		}
+		visible = {
+			has_completed_focus = FRA_prepare_plan_vert
+		}
+
+		allowed = { tag = FRA }
+
+		cost = 10
+
+		complete_effect = {
+		country_event =	pfu.32
+		}
+		fire_only_once = yes
+	}
+
 }
 
 FRA_free_france_west_africa = {
@@ -719,14 +773,18 @@ FRA_free_france_america = {
 
 	FRA_guyana_mission = {
 
+		icon = generic_operation
+
+		targets = { EFR }
+
 		available = {
 			TAG = FRA
 			NOT = { 310 = { is_owned_and_controlled_by = FRA } }
-			NOT = { has_country_flag = attacking_state }
+
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_decision_unlock_america
+			has_completed_focus = FRA_plan_operations_in_america
 			NOT = { 310 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -736,8 +794,7 @@ FRA_free_france_america = {
 		cost = 30
 
 		complete_effect = {
-			hidden_effect = { set_country_flag = attacking_state }
-			add_to_variable = { counter_guyana_attacked = 1 }
+
 		}
 
 		ai_will_do = {
@@ -746,37 +803,27 @@ FRA_free_france_america = {
 
 		fire_only_once = no
 		days_remove = 15
-		fixed_random_seed = no
+
 
 		remove_effect = {
-			310 = {
-				save_event_target_as = FRA_attacked_state
-			}
-			if = {
-				limit = { check_variable = { counter_guyana_attacked > 2 } }
-				country_event = { id = free_france.13 days = 1 }
-			}
-			else = {
-				random_list = {
-					60 = { country_event = { id = free_france.13 days = 1 } }
-					40 = { country_event = { id = free_france.14 days = 1 } }
-				}
-			}
-			add_equipment_to_stockpile = { type = infantry_equipment amount = -500 }
-			add_manpower = -2500
+			transfer_state = 310
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -1500 }
+			add_manpower = -3000
 		}
 	}
 
 	FRA_french_caribbean_mission = {
 
+    icon = generic_operation
+		targets = { EFR }
+
 		available = {
 			TAG = FRA
 			NOT = { 694 = { is_owned_and_controlled_by = FRA } }
-			NOT = { has_country_flag = attacking_state }
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_decision_unlock_america
+			has_completed_focus = FRA_plan_operations_in_america
 			NOT = { 694 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -786,45 +833,36 @@ FRA_free_france_america = {
 		cost = 10
 
 		complete_effect = {
-			hidden_effect = { set_country_flag = attacking_state }
-			add_to_variable = { counter_french_caribbean_attacked = 1 }
+
 		}
 
 		fire_only_once = no
 		days_remove = 15
-		fixed_random_seed = no
+
 
 		ai_will_do = { factor = 1 }
 
 		remove_effect = {
-			694 = {
-				save_event_target_as = FRA_attacked_state
-			}
-			if = {
-				limit = { check_variable = { counter_french_caribbean_attacked > 2 } }
-				country_event = { id = free_france.13 days = 1 }
-			}
-			else = {
-				random_list = {
-					75 = { country_event = { id = free_france.13 days = 1 } }
-					25 = { country_event = { id = free_france.14 days = 1 } }
-				}
-			}
-			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+			transfer_state = 694
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -200 }
 			add_manpower = -500
 		}
 	}
 
 	FRA_st_pierre_miquelon_mission = {
 
+		icon = generic_operation
+
+		targets = { EFR }
+
 		available = {
 			TAG = FRA
-			NOT = { 730 = { is_owned_and_controlled_by = FRA } }
+
 			NOT = { has_country_flag = attacking_state }
 			NOT = { has_war_with = EFR }
 		}
 		visible = {
-			has_completed_focus = FRA_decision_unlock_america
+			has_completed_focus = FRA_plan_operations_in_america
 			NOT = { 730 = { is_owned_and_controlled_by = FRA } }
 			NOT = { has_war_with = EFR }
 		}
@@ -845,20 +883,8 @@ FRA_free_france_america = {
 		fixed_random_seed = no
 
 		remove_effect = {
-			730 = {
-				save_event_target_as = FRA_attacked_state
-			}
-			if = {
-				limit = { check_variable = { counter_st_pierre_miquelon_attacked > 2 } }
-				country_event = { id = free_france.13 days = 1 }
-			}
-			else = {
-				random_list = {
-					90 = { country_event = { id = free_france.13 days = 1 } }
-					10 = { country_event = { id = free_france.14 days = 1 } }
-				}
-			}
-			add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+		  transfer_state = 730
+			add_equipment_to_stockpile = { type = infantry_equipment amount = -200 }
 			add_manpower = -500
 		}
 	}
@@ -1568,6 +1594,784 @@ FRA_weapons_purchases_category = {
 			USA = {
 				add_offsite_building = { type = industrial_complex level = -5 }
 			}
+		}
+	}
+}
+
+
+
+
+FRA_free_france_african_recruitment = {
+
+
+}
+
+FRA_request_allied_support = {
+
+	FRA_buy_mills_eng = {
+
+		icon = generic_construction
+
+	  targets = { ENG }
+
+
+		available = {
+		num_of_civilian_factories > 1
+		}
+
+		visible = {
+				FRA = {
+					has_completed_focus = FRA_rely_on_allied_aid
+				 }
+		}
+
+	 days_remove = 70
+
+
+
+
+
+		complete_effect = {
+
+		FRA = {
+		 add_offsite_building = { type = arms_factory level = 2 }
+		}
+		}
+
+			remove_effect = {
+
+			FRA = {
+			 add_offsite_building = { type = arms_factory level = -2 }
+				}
+			}
+
+	}
+
+
+	FRA_buy_mills_usa = {
+
+		icon = generic_construction
+
+	  targets = { USA }
+
+
+		available = {
+		num_of_civilian_factories > 1
+		}
+
+		visible = {
+				FRA = {
+					has_completed_focus = FRA_rely_on_allied_aid
+				 }
+		}
+
+	 days_remove = 70
+
+
+
+
+
+		complete_effect = {
+
+		FRA = {
+		 add_offsite_building = { type = arms_factory level = 2 }
+		}
+		}
+
+			remove_effect = {
+
+			FRA = {
+			 add_offsite_building = { type = arms_factory level = -2 }
+				}
+			}
+
+	}
+
+	FRA_buy_mills_sov = {
+
+		icon = generic_construction
+
+		targets = { SOV }
+
+
+		available = {
+		num_of_civilian_factories > 3
+		}
+
+		visible = {
+				FRA = {
+					has_completed_focus = FRA_rely_on_allied_aid
+				 }
+		}
+
+	 days_remove = 100
+
+	 modifier = {
+			 civilian_factory_use = 4
+		 }
+
+
+
+		complete_effect = {
+		SOV = {
+		 add_offsite_building = { type = industrial_complex level = 4 }
+		}
+		FRA = {
+		 add_offsite_building = { type = arms_factory level = 5 }
+		}
+		}
+
+			remove_effect = {
+			SOV = {
+				add_offsite_building = { type = industrial_complex level = -4 }
+			}
+			FRA = {
+			 add_offsite_building = { type = arms_factory level = -5 }
+				}
+			}
+
+	}
+
+
+
+}
+
+FRA_allied_support = {
+
+	lend_lease_FRA_arty = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+
+
+		available = {
+			has_equipment = { artillery_equipment > 499 }
+		}
+
+		visible = {
+				FRA = {
+					has_completed_focus = FRA_rely_on_allied_aid
+				 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = artillery_equipment
+					amount = 500
+		}
+	}
+	}
+
+
+	lend_lease_FRA_guns_big = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+
+
+		available = {
+
+			has_equipment = { infantry_equipment > 9999 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = infantry_equipment
+					amount = 10000
+		}
+	}
+	}
+
+	lend_lease_FRA_guns = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+
+
+		available = {
+
+			has_equipment = { infantry_equipment > 3999 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = infantry_equipment
+					amount = 4000
+		}
+	}
+	}
+
+	lend_lease_FRA_support = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+
+
+		available = {
+
+			has_equipment = { support_equipment > 499 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = support_equipment
+					amount = 500
+		}
+	}
+	}
+
+	lend_lease_FRA_aa = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+
+		available = {
+			has_equipment = { anti_air_equipment > 499 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = anti_air_equipment
+					amount = 500
+		}
+	}
+	}
+
+	lend_lease_FRA_at = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+
+
+		available = {
+
+			has_equipment = { anti_tank_equipment > 499 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = anti_tank_equipment
+					amount = 500
+		}
+	}
+	}
+
+	lend_lease_FRA_mot = {
+
+		icon = ger_military_buildup
+
+	targets = { FRA }
+
+	available = {
+
+		has_equipment = { motorized_equipment > 499 }
+	}
+	visible = {
+		FRA = {
+			has_completed_focus = FRA_rely_on_allied_aid
+		 }
+	}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = ENG
+					equipment = motorized_equipment
+					amount = 500
+		}
+	}
+	}
+
+	lend_lease_FRA_heavytank = {
+
+		icon = generic_tank
+
+	targets = { FRA }
+
+
+
+		available = {
+
+			has_equipment = { heavy_tank_equipment > 399 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = heavy_tank_equipment
+					amount = 400
+		}
+	}
+	}
+
+	lend_lease_FRA_mediumtank = {
+
+		icon = generic_tank
+
+	targets = { FRA }
+
+
+
+		available = {
+
+			has_equipment = { medium_tank_equipment > 399 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = medium_tank_equipment
+					amount = 400
+		}
+	}
+	}
+
+	lend_lease_FRA_lighttank = {
+
+		icon = generic_tank
+
+	targets = { FRA }
+
+
+
+		available = {
+			has_equipment = { light_tank_equipment > 399 }
+		}
+		visible = {
+			FRA = {
+				has_completed_focus = FRA_rely_on_allied_aid
+			 }
+		}
+
+
+	days_remove = 15
+
+		complete_effect = {
+			send_equipment = {
+					target = FRA
+					equipment = light_tank_equipment
+					amount = 400
+		}
+	}
+	}
+
+}
+
+
+FRA_industry_targets {
+
+	FRA_north_industry_target = {
+
+		icon = generic_construction
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 29
+					state = 15
+					state = 18
+				}
+				industrial_complex > 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 29
+				}
+
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	FRA_west_industry_target = {
+
+		icon = generic_construction
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 14
+					state = 30
+					state = 23
+					state = 19
+				}
+				industrial_complex > 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 23
+				}
+
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	FRA_center_industry_target = {
+
+		icon = generic_construction
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+			OR = {
+				state = 24
+				state = 27
+				state = 33
+				state = 25
+			}
+			industrial_complex > 6
+			}
+		}
+
+		highlight_state_targets = {
+				state = 33
+				}
+
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	FRA_east_industry_target = {
+
+		icon = generic_construction
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.003
+		}
+
+		highlight_state_targets = {
+					state = 20
+				}
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 28
+					state = 17
+					state = 22
+					state = 735
+					state = 20
+				}
+				industrial_complex > 6
+			}
+		}
+
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	FRA_south_industry_target = {
+
+		icon = generic_construction
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			stability_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 22
+				}
+				industrial_complex > 6
+			}
+		}
+
+		highlight_state_targets = {
+					state = 21
+					state = 22
+					state = 31
+					state = 26
+				}
+
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+
+	FRA_north_mill_industry_target = {
+
+		icon =  ger_military_buildup
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			war_support_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 29
+					state = 15
+					state = 18
+				}
+				arms_factory > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 29
+				}
+
+		complete_effect = {
+			add_political_power = 60
+			army_experience = 20
+		}
+	}
+
+	FRA_west_mill_industry_target = {
+
+		icon =  ger_military_buildup
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			war_support_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 14
+					state = 30
+					state = 23
+					state = 19
+				}
+				arms_factory > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 23
+				}
+
+		complete_effect = {
+			add_political_power = 60
+			army_experience = 20
+		}
+	}
+
+	FRA_center_mill_industry_target = {
+
+		icon =  ger_military_buildup
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			war_support_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 24
+					state = 27
+					state = 33
+					state = 25
+				}
+				arms_factory > 5
+			}
+
+		}
+
+		highlight_state_targets = {
+				state = 33
+				}
+
+		complete_effect = {
+			add_political_power = 60
+			army_experience = 20
+		}
+	}
+
+	FRA_east_mill_industry_target = {
+
+		icon =  ger_military_buildup
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			war_support_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 28
+					state = 17
+					state = 22
+					state = 735
+					state = 20
+				}
+				arms_factory > 5
+			}
+		}
+
+		highlight_state_targets = {
+					state = 20
+				}
+
+		complete_effect = {
+			add_political_power = 60
+			army_experience = 20
+		}
+	}
+
+	FRA_south_mill_industry_target = {
+
+		icon =  ger_military_buildup
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		modifier = {
+			war_support_weekly = 0.003
+		}
+
+
+		available = {
+			any_owned_state = {
+				OR = {
+					state = 21
+					state = 22
+					state = 31
+					state = 26
+				}
+				arms_factory > 5
+			}
+		}
+
+		highlight_state_targets = {
+					state = 22
+				}
+
+		complete_effect = {
+			add_political_power = 60
+			army_experience = 20
 		}
 	}
 }

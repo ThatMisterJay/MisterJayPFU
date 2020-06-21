@@ -1260,7 +1260,7 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = AST_dec_cat_singapore.tt
+			unlock_decision_category_tooltip = AST_singapore_strategy_category
       news_event = DSFU_news.1
 		}
 	}
