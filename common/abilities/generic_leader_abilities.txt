@@ -228,6 +228,7 @@ ability = {
 		type = army_leader
 
 		allowed = {
+			has_ability = probing_attack
 			is_border_war = no
 		}
 
