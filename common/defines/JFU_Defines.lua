@@ -146,7 +146,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
     0.3, -- MINES SWEEPING
     0.0, -- TRAIN
     0.0, -- RESERVE_FLEET
-    1.0, -- NAVAL_INVASION_SUPPORT
+    0.4, -- NAVAL_INVASION_SUPPORT
 }
 
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
