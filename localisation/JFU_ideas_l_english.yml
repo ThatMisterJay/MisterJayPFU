@@ -94,6 +94,8 @@
     ITA_air_nerd:0 "Regia Marina Resources Diverted"
     ITA_air_supply:0 "Air Supply Theory"
     olivetti:0 "Olivetti"
+    ETH_war:0 "Second Italo-Ethiopian War"
+    ETH_war_desc:0 "War crimes were committed by both sides in this conflict. Italian troops used mustard gas in aerial bombardments (in violation of the Geneva Conventions) against combatants and civilians in an attempt to discourage the Ethiopian people from supporting the resistance. Deliberate Italian attacks against ambulances and hospitals of the Red Cross were reported. By all estimates, hundreds of thousands of Ethiopian civilians died as a result of the Italian invasion, including during the reprisal Yekatit 12 massacre in Addis Ababa, in which as many as 30,000 civilians were killed. Crimes by Ethiopian troops included the use of Dum-Dum bullets (in violation of the Hague Conventions), the killing of civilian workmen (including during the Gondrand massacre) and the mutilation of captured Eritrean Ascari and Italians (often with castration), beginning in the first weeks of war."
 
 RAJ_battle:0 "Battle For The RAJ"
 ENG_david_stirling:0 "David Stirling"
