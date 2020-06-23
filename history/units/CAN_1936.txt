@@ -139,38 +139,6 @@ division_template = {
 }
 
 units = {
-	##### Royal Canadian Army #####
-	## 1st Infantry Division ##
-	division= {
-		name = "1. Infantry Division"
-		location = 722 # London ONT
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-
-	## 2nd Infantry Division ##
-	division= {
-		name = "2. Infantry Division"
-		location = 3775 # Toronto
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-	## 3rd Miltary District ##
-	division= {
-		name = "3. Infantry Division"
-		location = 3605 # Kingston ONT
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-
-
-
 	##### Naval OOB #####
 	fleet = {
 		name = "Royal Canadian Navy"
@@ -184,7 +152,6 @@ units = {
 		}
 	}
 }
-
 
 
 ##### Starting Production #####

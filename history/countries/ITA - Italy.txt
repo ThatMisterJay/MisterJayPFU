@@ -15,34 +15,7 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-add_equipment_to_stockpile = {
-type = infantry_equipment_1
-amount = 43100
-	}
 
-add_equipment_to_stockpile = {
- type = infantry_equipment_0
- amount = 6800
-		 }
-
- add_equipment_to_stockpile = {
- type = artillery_equipment_1
- amount = 4200
-}
-	add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 1200
-}
-
-add_equipment_to_stockpile = {
-type = light_tank_equipment_1
-amount = 720
-}
-
-add_equipment_to_stockpile = {
-type = motorized_equipment
-amount = 430
-}
 
 
 
@@ -189,6 +162,35 @@ set_technology = {
 	basic_ship_hull_heavy = 1
 	mtg_transport = 1
 	coastal_defense_ships = 1
+}
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 43100
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 6800
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 4200
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 1200
+}
+
+add_equipment_to_stockpile = {
+type = light_tank_equipment_1
+amount = 720
+}
+
+add_equipment_to_stockpile = {
+type = motorized_equipment
+amount = 430
 }
 
 # DIPLOMACY / WAR 36

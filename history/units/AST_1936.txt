@@ -87,50 +87,6 @@ division_template = {
 
 
 units = {
-	##### Royal Australian Army #####
-	division= {
-		name = "5. Infantry Division"
-		location = 1652 # Perth
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# 2nd Military District -- New South Wales
-	division= {
-		name = "1. Infantry Division"
-		location = 12406 # Sydney
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-
-	}
-	division= {
-		name = "2. Infantry Division"
-		location = 7859 # Canberra
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-
-	}
-
-	# 3rd Military District -- New South Wales
-	division= {
-		name = "3. Infantry Division"
-		location = 7798 # Melbourne
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division= {
-		name = "4. Infantry Division"
-		location = 7798 # Melbourne
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
 
 	##### Naval OOB #####
 	fleet = {

@@ -1826,6 +1826,27 @@ has_army_manpower = { size > 749999 }
 NOT = { has_war_with = CZE }
 		}
 		completion_reward = {
+			hidden_effect = {
+				YUG = {
+					load_oob = OOB_YUG
+				}
+				HOL = {
+					load_oob = OOB_HOL
+				}
+				GRE = {
+					load_oob = OOB_GRE
+				}
+				NOR = {
+					load_oob = OOB_NOR
+				}
+				BEL = {
+					load_oob = OOB_BEL
+				}
+				POL = {
+					load_oob = OOB_POL
+				}
+			}
+
 			if = {
 limit = { country_exists = CZE }
 set_global_flag = end_of_czechoslovakia
