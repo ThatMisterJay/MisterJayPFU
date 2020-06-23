@@ -26,6 +26,27 @@ set_technology = {
 
 	fleet_in_being = 1
 }
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 4200
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 1500
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 453
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 156
+}
+
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

@@ -23,6 +23,26 @@ set_technology = {
 
 }
 
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 11500
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 1900
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 152
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 510
+}
+
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 

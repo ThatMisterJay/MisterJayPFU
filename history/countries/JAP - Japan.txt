@@ -52,6 +52,37 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
 }
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 38500
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 11300
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 2600
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 1600
+}
+
+
+add_equipment_to_stockpile = {
+type = light_tank_equipment_1
+amount = 720
+}
+
+add_equipment_to_stockpile = {
+type = motorized_equipment
+amount = 600
+}
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

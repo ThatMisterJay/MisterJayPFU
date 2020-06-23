@@ -21,6 +21,21 @@ set_technology = {
 	force_rotation = 1
 }
 
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 10700
+	}
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 1000
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 290
+}
+
+
 if = {
 	limit = {
 		has_dlc = "Death or Dishonor"

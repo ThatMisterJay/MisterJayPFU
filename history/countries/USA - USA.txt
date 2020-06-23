@@ -31,6 +31,29 @@ set_technology = {
 	fuel_refining = 1
 }
 
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 12900
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 786
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 1200
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 556
+}
+
+add_equipment_to_stockpile = {
+type = motorized_equipment
+amount = 231
+}
 
 
 if = {
