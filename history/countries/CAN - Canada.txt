@@ -4,7 +4,7 @@ oob = "CAN_1936"
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 # Starting tech
 set_technology = {
 	armored_car1 = 1

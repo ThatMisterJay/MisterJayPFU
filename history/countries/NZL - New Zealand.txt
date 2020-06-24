@@ -5,7 +5,7 @@ oob = "NZL_1936"
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 
 set_technology = {
 	armored_car1 = 1

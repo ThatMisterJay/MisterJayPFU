@@ -4,7 +4,7 @@ oob = "ITA_1936"
 
 set_variable = { var = ITR_support value = 0.10 }
 set_research_slots = 4
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 add_ideas = {
 	victor_emmanuel
 	ITA_army

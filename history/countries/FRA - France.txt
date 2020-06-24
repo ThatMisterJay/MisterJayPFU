@@ -2,7 +2,7 @@ capital = 16
 
 set_stability = 0.5
 set_war_support = 0.15
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 oob = "FRA_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
