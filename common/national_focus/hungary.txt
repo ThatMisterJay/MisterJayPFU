@@ -422,7 +422,7 @@ focus_tree = {
 
 		available = {
 			strength_ratio = { tag = YUG ratio > 0.35 }
-			has_army_manpower = { size > 80000 }
+			
 		}
 
 		bypass = {

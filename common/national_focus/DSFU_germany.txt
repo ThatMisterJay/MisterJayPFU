@@ -944,7 +944,7 @@ technology = jet_fighter1
 		prerequisite = { focus = GER_reasserteasternclaims }
 		available = {
 			is_puppet = no
-has_army_manpower = { size > 849999 }
+
 SOV = {
 NOT = { has_war_with = GER }
 country_exists = SOV
@@ -1315,7 +1315,7 @@ add_building_construction = { type = coastal_bunker province = 192 level = 5 ins
 		prerequisite = { focus = GER_rhineland }
 		available = {
 			date > 1937.1.1
-has_army_manpower = { size > 649999 }
+
 NOT = { has_idea = rhineland_challenge_met }
 		}
 		completion_reward = {
@@ -1495,7 +1495,7 @@ original_tag = POL
 			date > 1939.3.1
 has_global_flag = sov_yes_pact
 is_puppet = no
-has_army_manpower = { size > 949999 }
+
 
 85 = {
 owner = {
@@ -1698,7 +1698,7 @@ GER = { controls_state = 69 }
 		available = {
 			date > 1938.1.1
 is_puppet = no
-has_army_manpower = { size > 749999 }
+
 		}
 		completion_reward = {
 			HUN = {
@@ -1822,7 +1822,7 @@ is_puppet_of = PREV
 		}
 		available = {
 			is_puppet = no
-has_army_manpower = { size > 749999 }
+
 NOT = { has_war_with = CZE }
 		}
 		completion_reward = {
@@ -1909,7 +1909,7 @@ ROM = { has_capitulated = yes }
 		available = {
 
 is_puppet = no
-has_army_manpower = { size > 749999 }
+
 has_capitulated = no
 
 		}

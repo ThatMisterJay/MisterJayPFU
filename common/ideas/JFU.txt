@@ -1,5 +1,31 @@
 ideas = {
 	country = {
+
+    peace_time_army = {
+
+
+		picture = "generic_infantry_bonus"
+
+
+	modifier = {
+      experience_gain_battleship_training_factor = 10.0
+      experience_gain_submarine_training_factor  = 10.0
+      experience_gain_battle_cruiser_training_factor = 10.0
+			experience_gain_destroyer_training_factor 10.0
+			experience_gain_carrier_training_factor = 10.0
+			experience_gain_heavy_cruiser_training_factor = 10.0
+			experience_gain_light_cruiser_training_factor = 10.0
+			experience_gain_cv_nav_bomber_training_factor = 10.0
+			experience_gain_fighter_training_factor = 10.0
+			experience_gain_cv_fighter_training_factor = 10.0
+			experience_gain_cas_training_factor = 10.0
+			experience_gain_nav_bomber_training_factor = 10.0
+			experience_gain_cv_cas_training_factor  = 10.0
+			training_time_factor = -0.45
+  }
+
+		}
+
 		usa_special_forces = {
 			allowed = { always = yes }
 			picture = ast_volunteer_defence_corps
