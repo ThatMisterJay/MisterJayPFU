@@ -192,6 +192,8 @@ FRA_call_to_arms:0 "Appeal of 18 June"
 FRA_civil_supported:0 "Civilian Government"
 FRA_military_supported:0 "Military Government"
 FRA_home_production:0 "Free French Production"
+FRA_perfidious_albion:0 "Perfidious Albion"
+FRA_perfidious_albion_desc:0 ""Perfidious Albion" is a pejorative phrase used within the context of international relations diplomacy to refer to alleged acts of diplomatic sleights, duplicity, treachery and hence infidelity (with respect to perceived promises made to or alliances formed with other nation states) by monarchs or governments of the UK (or England prior to 1707) in their pursuit of self-interest."
 
 
 #commonwealth stuff

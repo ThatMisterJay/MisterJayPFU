@@ -170,7 +170,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { remove_ideas = country_rules_siam_idea }
+	#	hidden_effect = { remove_ideas = country_rules_siam_idea }
 	}
 
 	option = {
@@ -234,7 +234,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { remove_ideas = country_rules_china_idea }
+#		hidden_effect = { remove_ideas = country_rules_china_idea }
 	}
 
 	option = {
@@ -266,7 +266,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { remove_ideas = country_rules_afghanistan_idea }
+#		hidden_effect = { remove_ideas = country_rules_afghanistan_idea }
 	}
 
 	option = {
