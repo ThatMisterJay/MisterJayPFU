@@ -413,7 +413,7 @@ country_event = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			load_oob = "EFR_fleet"
+			
 
             set_popularities = {
                 democratic = 18

@@ -843,9 +843,17 @@ fire_only_once = yes
 		}
 
 		complete_effect = {
-			EFR = {
-				country_event = { id = wtt_britain.25 hours = 5 }
+			complete_national_focus = ENG_operation_catapult
+			custom_effect_tooltip = ENG_operation_catapult_tt
+			FRA = {
+				add_timed_idea = {
+					idea = FRA_perfidious_albion
+					days = 120
+				}
 			}
+			hidden_effect = {
+			set_country_flag = french_navy_attacked
+	  	}
 		}
 	}
 }

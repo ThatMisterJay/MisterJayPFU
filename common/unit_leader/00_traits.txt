@@ -93,7 +93,7 @@ leader_traits = {
 	}
 
 	politically_connected = {
-		type = all
+		type = { land navy }
 		trait_type = personality_trait
 
 		non_shared_modifier = {
@@ -106,7 +106,7 @@ leader_traits = {
 	}
 
 	war_hero = {
-		type = all
+		type = { land navy }
 		trait_type = personality_trait
 
 		non_shared_modifier = {
