@@ -203,6 +203,8 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
 
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue
+NDefines.NMilitary.DIG_IN_FACTOR = 0.015
+NDefines.NMilitary.UNIT_DIGIN_SPEED = 2						   -- how "deep" you can dig a day.
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6
 NDefines.NMilitary.MAX_NUM_TRAITS = 10
 NDefines.NMilitary.CORPS_COMMANDER_ASSIGNABLE_TRAIT_NUM = 7
