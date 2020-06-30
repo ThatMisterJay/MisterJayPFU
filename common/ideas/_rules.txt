@@ -100,15 +100,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		country_rules_siam_idea = {
-			picture = closed_economy
-			on_add = {
-				country_event = { id = JFU_rules.11 }
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
+
 		country_rules_vichy_france_idea = {
 			picture = closed_economy
 			on_add = {
@@ -138,15 +130,7 @@ ideas = {
 				factor = 0
 			}
 		}
-		country_rules_china_idea = {
-			picture = closed_economy
-			on_add = {
-				country_event = { id = JFU_rules.15 }
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
+
 		country_rules_soviet_idea = {
 			picture = closed_economy
 			on_add = {
@@ -156,14 +140,6 @@ ideas = {
 				factor = 0
 			}
 		}
-		country_rules_afghanistan_idea = {
-			picture = closed_economy
-			on_add = {
-				country_event = { id = JFU_rules.17 }
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
+
 	}
 }
