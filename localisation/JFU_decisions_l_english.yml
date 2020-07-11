@@ -190,3 +190,6 @@ northern_french_state:0 "Is in Northern France"
 western_french_state:0 "Is in Western France"
 eastern_french_state:0 "Is in Eastern France"
 center_french_state:0 "Is in Central France"
+
+FRA_vert:0 "Operation Vert"
+FRA_torch:0 "Operation Torch"
