@@ -25,8 +25,8 @@
 	}
 	support = {
 		engineer = { x = 0 y = 0 } 	# (semi-mot) Engineer bn
-		recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		logistics_company { x = 0 y = 2 } 
+		mot_recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+		logistics_company { x = 0 y = 2 }
 		artillery = { x = 0 y = 3 }
 	}
 }
@@ -40,12 +40,12 @@ division_template = {
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
 		motorized = { x = 0 y = 3 }
-		
+
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 		motorized = { x = 1 y = 3 }
-	    
+
 		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
@@ -63,7 +63,7 @@ division_template = {
 	support = {
         engineer = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
-		signal_company { x = 0 y = 2 } 
+		signal_company { x = 0 y = 2 }
 		logistics_company { x = 0 y = 3 }
 	}
 }
@@ -85,51 +85,83 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		
+
 	}
 	priority = 0
 }
+division_template = {
+	name = "Guards Armoured Division"
+	priority = 2
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	 	heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		heavy_armor = { x = 2 y = 4 }
+		heavy_armor = { x = 3 y = 0 }
+		heavy_armor = { x = 3 y = 1 }
+		heavy_armor = { x = 3 y = 2 }
+		heavy_armor = { x = 3 y = 3 }
+		heavy_armor = { x = 3 y = 4 }
+		heavy_armor = { x = 4 y = 0 }
+		heavy_armor = { x = 4 y = 1 }
+		heavy_armor = { x = 4 y = 2 }
+		heavy_armor = { x = 4 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 0 y = 2 }
+    signal_company = { x = 0 y = 3 }
+    logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Armoured Division"
+	priority = 2
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	 	medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 3 y = 4 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+		medium_armor = { x = 4 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 0 y = 2 }
+    signal_company = { x = 0 y = 3 }
+    logistics_company = { x = 0 y = 4 }
+	}
+}
 
 ##### OOB #####
-units = {
-	##### Royal South African Army #####
-	division= {	
-		name = "1. Infantry Division"
-		location = 12589 # Capetown
-		division_template = "Infantry Division" 
-		start_experience_factor = 0.2
-
-	}
-	division= {	
-		name = "2. Infantry Division"
-		location = 10400 # Durbin
-		division_template = "Infantry Division" 
-		start_experience_factor = 0.2
-
-
-	}
-	
-	division= {	
-		name = "Eastern Province Cmd."
-		location = 4696 # East London
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	
-	division= {	
-		name = "Natal Command"
-		location = 1468 # Durbin
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-
-	##### No Naval OOB #####
-}
 
 
 

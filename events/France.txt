@@ -227,21 +227,10 @@ country_event = {
 		set_state_controller = 19
 		# Italian Occupation Zone (if they did well)
 		ITA = { transfer_state = 735 }
-		if = {
-			limit = { 21 = { is_controlled_by = ITA } }
-			ITA = { transfer_state = 21 }
-		}
-		if = {
-			limit = {
-				21 = { is_controlled_by = ITA }
-				32 = { is_controlled_by = ITA }
-			}
-			ITA = { transfer_state = 32 }
-		}
-		if = {
-			limit = { 1 = { is_controlled_by = ITA } }
-			ITA = { transfer_state = 1 }
-		}
+  	ITA = { transfer_state = 21 }
+		ITA = { transfer_state = 32 }
+		ITA = { transfer_state = 1 }
+
 		FRA = {
 			destroy_ships = {
 				type = ship_hull_light
@@ -269,65 +258,114 @@ country_event = {
 				capital = 713
 				states = { 713 32 21}
 			}
+			set_stability = 0.5
+			set_war_support = 0.5
+			remove_ideas = { FRA_political_violence }
+      remove_ideas = { FRA_worker_shortage }
+      remove_ideas = { FRA_full_employment }
+      remove_ideas = { FRA_inefficient_economy_2 }
+      remove_ideas = { FRA_inefficient_economy_1 }
 			##add checks if general exists
+			if = {
+				limit = {
+					has_unit_leader = 801
+				}
 			remove_unit_leader = 801
-			remove_unit_leader = 802
-			remove_unit_leader = 803
-			remove_unit_leader = 804
-			remove_unit_leader = 805
-			remove_unit_leader = 806
-			remove_unit_leader = 807
-			#remove_unit_leader = 808 #René-Émile Godfroy
-			remove_unit_leader = 809
-			add_ideas = FRA_FREE_army
-			set_cosmetic_tag = FRA_FREE
-			create_corps_commander = {
-				name = "Charles De Gaulle"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				traits = { panzer_leader harsh_leader organizer  exiled_leader }
-				skill = 4
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 4
+		}
+		if = {
+			limit = {
+				has_unit_leader = 802
 			}
+			remove_unit_leader = 802
+		}
+		if = {
+			limit = {
+				has_unit_leader = 803
+			}
+			remove_unit_leader = 803
+		}
+		if = {
+			limit = {
+				has_unit_leader = 804
+			}
+			remove_unit_leader = 804
+		}
+		if = {
+			limit = {
+				has_unit_leader = 805
+			}
+			remove_unit_leader = 805
+		}
+		if = {
+			limit = {
+				has_unit_leader = 806
+			}
+			remove_unit_leader = 806
+		}
+		if = {
+			limit = {
+				has_unit_leader = 807
+			}
+			remove_unit_leader = 807
+		}
+			#remove_unit_leader = 808 #René-Émile Godfroy
+			if = {
+				limit = {
+					has_unit_leader = 809
+				}
+			remove_unit_leader = 809
+		}
+			add_ideas = FRA_FREE_army_4
+			add_ideas = FRA_exile_government_4
+			set_cosmetic_tag = FRA_FREE
+		#	create_corps_commander = {
+		#		name = "Charles De Gaulle"
+	#			picture = "Portrait_France_Charles_De_Gaulle.dds"
+	#			traits = { panzer_leader harsh_leader organizer }
+	#			skill = 4
+#				attack_skill = 4
+#				defense_skill = 3
+#				planning_skill = 3
+#				logistics_skill = 4
+#			}
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				picture = "Portrait_France_Marie_Pierre_Koenig.dds"
-				traits = { trickster organizer exiled_leader }
+				traits = { trickster organizer infantry_leader }
 				skill = 2
 				attack_skill = 2
-				defense_skill = 2
+				defense_skill = 3
 				planning_skill = 3
 				logistics_skill = 2
 			}
-			create_corps_commander = {
-				name = "Edgard de Larminat"
-				picture = "Edgard_de_Larminat.dds"
-				traits = { desert_fox infantry_leader harsh_leader exiled_leader }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 3
-			}
+	#		create_corps_commander = {
+	#			name = "Edgard de Larminat"
+	#			picture = "Edgard_de_Larminat.dds"
+	#			traits = { desert_fox infantry_leader harsh_leader exiled_leader }
+	#			skill = 3
+	#			attack_skill = 3
+	#			defense_skill = 2
+	#			planning_skill = 1
+	#			logistics_skill = 3
+	#		}
 			create_navy_leader = {
 				name = "Émile Muselier"
 				picture = "Portrait_France_Emile_Muselier.dds"
 				traits = { spotter }
 				skill = 3
 			}
-			create_corps_commander = {
-				name = "Darth Sithben"
-				picture = "Sithben_General_1.dds"
-				traits = { old_guard cavalry_leader commando exiled_leader }
-				id = 2000
-				skill = 9
-				attack_skill = 6
-				defense_skill = 1
-				planning_skill = 5
-				logistics_skill = 3
-			}
+		#	create_corps_commander = {
+		#		name = "Darth Sithben"
+		#		picture = "Sithben_General_1.dds"
+		#		traits = { old_guard cavalry_leader commando exiled_leader }
+		#		id = 2000
+		#		skill = 9
+		#		attack_skill = 6
+		#		defense_skill = 1
+		#		planning_skill = 5
+		#		logistics_skill = 3
+		#	}
+		load_focus_tree = free_french_focus
 			set_country_flag = free_france
 			set_capital = 539
 			hidden_effect = {
@@ -340,6 +378,9 @@ country_event = {
 				set_state_controller = 680
 				set_state_controller = 554
 				set_state_controller = 458
+				539 = {
+					add_dynamic_modifier = { modifier = FRA_gabon_contested }
+				}
 				if = {
 					limit = { 1 = { owner = { original_tag = FRA } } }
 					set_state_controller = 1
@@ -367,12 +408,12 @@ country_event = {
 		random_other_country = {
 			limit = { original_tag = EFR has_government = fascism }
 			# ROOT = { puppet = PREV }
-			set_capital = 26
+
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			load_oob = "EFR_fleet"
+			
 
             set_popularities = {
                 democratic = 18
@@ -380,11 +421,14 @@ country_event = {
                 communism = 2
                 neutrality = 10
             }
+
+
 			# FRA Player Switches to Vichy
 			if = {
 				limit = { FRA = { has_country_flag = become_vichy } }
 				change_tag_from = FRA
 			}
+
 		}
 
 

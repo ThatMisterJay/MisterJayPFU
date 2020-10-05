@@ -79,67 +79,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_suspend_the_presecution
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = -5
-		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal }
-		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-		available = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_stability = -0.05
-		}
-	}
-	focus = {
-		id = USA_reach_out_to_the_ware_group
-		icon = GFX_goal_generic_propaganda
-		x = 0
-		y = 3
-		prerequisite = { focus = USA_suspend_the_presecution }
-		prerequisite = { focus = USA_agricultural_adjustment_act }
-		relative_position_id = USA_suspend_the_presecution
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			not = {
-				has_government = communism
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = harry_white
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = victor_perlo
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = whittaker_chambers
-		}
-	}
-
    	focus = {
    		id = USA_wpa
    		icon = GFX_goal_generic_production
@@ -214,6 +153,38 @@ focus_tree = {
 			}
    		}
    	}
+	focus = {
+		id = USA_reach_out_to_the_ware_group
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 2
+		prerequisite = { focus = USA_agricultural_adjustment_act }
+		relative_position_id = USA_agricultural_adjustment_act
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			not = {
+				has_government = communism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = harry_white
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = victor_perlo
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = whittaker_chambers
+		}
+	}
    	focus = {
    		id = USA_fair_labour_standards_act
    		icon = GFX_focus_eng_concessions_to_the_trade_unions
@@ -1299,6 +1270,18 @@ focus = {
 					GER = { puppet = EFR }
 				}
 				load_oob = USA_torch
+				if = {
+					limit = {
+						NOT = {
+							ENG = {
+								has_country_flag = french_navy_attacked
+							}
+						}
+					}
+					GER = {
+						load_oob = "EFR_fleet"
+					}
+				}
 			}
 			custom_effect_tooltip = USA_operation_torch_effect_3
 		}

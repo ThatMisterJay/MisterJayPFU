@@ -1,7 +1,7 @@
 ﻿capital = 64
 
 oob = "GER_1936"
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 # Starting tech
 set_technology = {
 	armored_car1 = 1
@@ -24,7 +24,7 @@ set_technology = {
 	improved_light_tank = 1
 	basic_heavy_tank = 0.9
 	early_fighter = 1
-	fighter1 = 1
+	#fighter1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
 	strategic_bomber1 = 1
@@ -98,15 +98,18 @@ if = {
 
   add_equipment_to_stockpile = {
   type = infantry_equipment_1
-  amount = 20000
+  amount = 66100
     }
+
+
+
    add_equipment_to_stockpile = {
    type = artillery_equipment_1
-   amount = 1000
+   amount = 5000
 }
 		add_equipment_to_stockpile = {
-										type = support_equipment_1
-										amount = 1000
+		type = support_equipment_1
+		amount = 2900
 }
 		add_equipment_to_stockpile = {
 	  type = anti_air_equipment_1
@@ -114,7 +117,22 @@ if = {
 }
 		add_equipment_to_stockpile = {
 		type = anti_tank_equipment_1
-		amount = 400
+		amount = 1000
+}
+
+   add_equipment_to_stockpile = {
+   type = light_tank_equipment_2
+   amount = 720
+}
+
+	add_equipment_to_stockpile = {
+	type = light_tank_equipment_1
+	amount = 1400
+}
+
+ add_equipment_to_stockpile = {
+ type = motorized_equipment
+ amount = 1600
 }
 
 set_research_slots = 4
@@ -266,9 +284,9 @@ create_field_marshal = {
 	skill = 5
 	id = 5
 	attack_skill = 5
-	defense_skill = 3
+	defense_skill = 4
 	planning_skill = 4
-	logistics_skill = 4
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -291,8 +309,8 @@ create_corps_commander = {
 	skill = 5
 	id = 6
 	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 5
+	defense_skill = 4
+	planning_skill = 4
 	logistics_skill = 3
 }
 
@@ -944,14 +962,4 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 5
 	}
 	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Bf 109 E"
-	type = fighter_equipment_1
-	upgrades = {
-		plane_gun_upgrade = 2
-		plane_range_upgrade = 3
-		plane_engine_upgrade = 4
-		plane_reliability_upgrade = 3
-	}
 }

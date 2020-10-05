@@ -551,8 +551,7 @@ ideas = {
 				global_building_slots_factor = 0.10
 				enemy_justify_war_goal_time = 10.0
 				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.20
-				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.15
 				production_factory_efficiency_gain_factor = -0.10
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.10
@@ -1101,10 +1100,10 @@ surrender_limit = 0.50
 				conscription = 0.02
 				army_morale_factor = 0.1
 				army_org_factor = 0.10
-				army_core_defence_factor = 0.05
+				army_core_defence_factor = 0.04
 				minimum_training_level = -0.1
-				winter_attrition_factor = -0.5
-				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.2
+				acclimatization_cold_climate_gain_factor = 0.4
 
 			}
 		}
@@ -1941,7 +1940,7 @@ cost = 100
 				original_tag = SOV
 				date < 1930.1.1
 			}
-			
+
 			cost = 10000
 			cancel = {
 				date > 1936.1.1

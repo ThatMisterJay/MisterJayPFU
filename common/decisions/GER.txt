@@ -182,6 +182,7 @@ visible = {
 
 complete_effect = {
 	SPR = { country_event = { id = DSFU.4 days = 1 } }
+	show_ideas_tooltip = GER_payment
 }
 
 }

@@ -16,53 +16,6 @@
 }
 
 
-units = {
-	######## LAND OOB ########
-	##### Royal Siamese Army #####
-	division = {
-		name = "1st Division"
-		location = 7408
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division = {
-		name = "2nd Division"
-		location = 7236
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division = {
-		name = "3rd Division"
-		location = 7292
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division = {
-		name = "4th Division"
-		location = 12264
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-
-	######## NAVAL OOB ########
-	fleet = {
-		name = "Royal Siamese Navy"
-		naval_base = 7408 # Bangkok
-		task_force = {
-			name = "Royal Siamese Navy"
-			location = 7408 # Bangkok
-			ship = { name = "HTMS Phra Ruang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIA version_name = "Phra Ruang Class" } } }
-		}
-	}		
-}
 
 air_wings = {
 	### Royal Siamese Air Force ###

@@ -2,6 +2,7 @@
 
 oob = "SAF_1936"
 
+add_timed_idea = { idea = peace_time_army days = 1168 }
 # Starting tech
 set_technology = {
 	armored_car1 = 1
@@ -26,6 +27,28 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 	motorised_infantry = 1
+}
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 3500
+	}
+
+
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 312
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 1138
+}
+
+
+add_equipment_to_stockpile = {
+type = motorized_equipment
+amount = 60
 }
 
 if = {

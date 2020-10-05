@@ -334,15 +334,40 @@ country_event = {
 			 remove_ideas = AST_robert_g_menzies
 		}
 		kill_country_leader = yes
-		create_country_leader = {
-			name = "Robert Menzies"
-			desc = "POLITICS_ROBERT_MENZIES_DESC"
-			picture = "Robert_Menzies.dds"
-			expire = "1965.1.1"
-			ideology = liberalism
-			traits = {
+		if = {
+			limit = {
+				has_country_flag = pig_iron_sold
+			}
+			create_country_leader = {
+				name = "Robert Menzies"
+				desc = "POLITICS_ROBERT_MENZIES_DESC"
+				picture = "Robert_Menzies.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					minority_government
+					pig_iron_bob
+				}
 			}
 		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = pig_iron_sold
+				}
+			}
+			create_country_leader = {
+				name = "Robert Menzies"
+				desc = "POLITICS_ROBERT_MENZIES_DESC"
+				picture = "Robert_Menzies.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					minority_government
+				}
+		}
+
+	 }
 	}
 }
 
@@ -371,7 +396,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = socialism
 			traits = {
-			#
+			war_time_prime_minister
 			}
 		}
 	}

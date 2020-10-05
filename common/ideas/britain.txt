@@ -123,6 +123,11 @@ ENG_ITA_help = {
 
 			traits = { popular_figurehead }
 
+			modifier = {
+		surrender_limit = 0.10
+
+			}
+
 
 		}
 

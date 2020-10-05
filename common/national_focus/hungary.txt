@@ -422,7 +422,7 @@ focus_tree = {
 
 		available = {
 			strength_ratio = { tag = YUG ratio > 0.35 }
-			has_army_manpower = { size > 80000 }
+			
 		}
 
 		bypass = {
@@ -1727,13 +1727,8 @@ create_corps_commander = {
 		x = 15
 		y = 6
 
-available = {
-	 GER = {
-	 has_tech = artillery1
- }
-}
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 60

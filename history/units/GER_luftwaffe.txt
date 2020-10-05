@@ -1,0 +1,125 @@
+air_wings = {
+
+	### I. Luftkreiskommando -- Berlin ###
+	56 = {
+		# Jagdgeschwader 132 'Richtofen'
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER"
+			amount = 100
+		}
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_genius"
+			name="Erich"
+			surname="Hartmann"
+			callsign="Bubi"
+			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER"
+			amount = 100
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER"
+			amount = 100
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER"
+			amount = 100
+		}
+		fighter_equipment_1 =  {			# Hs 123
+			owner = "GER"
+			amount = 100
+		}
+		fighter_equipment_1 =  {			# Hs 123
+			owner = "GER"
+			amount = 100
+		}
+		# Kampfgeschwader 153
+	}
+
+	### II. Luftkreiskommando -- Munich ###
+	57 = {
+		# Jagdgeschwader 136
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER"
+			amount = 100
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER"
+			amount = 100
+		}
+				fighter_equipment_1 =  {		# bf109s
+			owner = "GER"
+			amount = 100
+		}
+				fighter_equipment_1 =  {		# bf109s
+			owner = "GER"
+			amount = 100
+		}
+				fighter_equipment_1 =  {		# bf109s
+			owner = "GER"
+			amount = 100
+		}
+				fighter_equipment_1 =  {		# bf109s
+			owner = "GER"
+			amount = 100
+		}
+
+	}
+		64 = {
+		# Jagdgeschwader 136
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER"
+			amount = 100
+		}
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER"
+			amount = 100
+		}
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER"
+			amount = 100
+		}
+		# Kampfgeschwader 154
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER"
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER"
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER"
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# Do 23
+			owner = "GER"
+			amount = 100
+		}
+		tac_bomber_equipment_0 = {		# Do 23
+			owner = "GER"
+			amount = 100
+		}
+	tac_bomber_equipment_0 = {		# Do 23
+			owner = "GER"
+			amount = 100
+		}
+	}
+	61 = {
+			transport_plane_equipment_1 = {
+			owner = "GER"
+			amount = 5
+		}
+	}
+
+	### VI. Luftkreiskommando -- Kiel ###
+	58 = {
+		# Küstenfliegergruppe 106
+		nav_bomber_equipment_1 =  {		# He 59, Do 18
+			owner = "GER"
+			amount = 80
+		}
+		# Küstenfliegergruppe 206
+	}
+}

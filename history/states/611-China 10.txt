@@ -4,8 +4,8 @@ state={
 	name="STATE_611"
 
 	history={
-		owner = MEN
-		add_core_of = MEN
+		owner = MAN
+		add_core_of = MAN
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		828 952 1137 1489 1590 4495 6904 7545 7674 9776 10397 
+		828 952 1137 1489 1590 4495 6904 7545 7674 9776 10397
 	}
 	manpower=1470000
 	buildings_max_level_factor=1.000

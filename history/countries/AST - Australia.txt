@@ -3,7 +3,7 @@
 oob = "AST_1936"
 set_stability = 0.8
 set_war_support = 0.3
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 set_research_slots = 3
 # Starting tech
 set_technology = {
@@ -26,6 +26,27 @@ set_technology = {
 
 	fleet_in_being = 1
 }
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 4200
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 1500
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 453
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 156
+}
+
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -169,7 +190,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
+		peace_time_rearmer
 	}
 }
 
@@ -302,6 +323,7 @@ create_navy_leader = {
 	name = "Harold Farncomb"
 	gfx = "GFX_AST_harold_farncomb"
 	traits = { aviation_enthusiast naval_lineage }
+	id = 109
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3

@@ -102,14 +102,15 @@ same_support_type = anti_air
 	light_sp_anti_air_brigade = {
 		sprite = light_armor
 		map_icon_category = armored
-		priority = 301
-		ai_priority = 100
+		priority = 0
+		ai_priority = 0
 		active = yes
 		affects_speed = yes
 
 		type = {
 			armor
 			anti_air
+			support
 		}
 
 		group = support
@@ -170,14 +171,15 @@ same_support_type = anti_air
 	medium_sp_anti_air_brigade = {
 		sprite = medium_armor
 		map_icon_category = armored
-		priority = 301
-		ai_priority = 100
+		priority = 0
+		ai_priority = 0
 		active = yes
 		affects_speed = yes
 
 		type = {
 			armor
 			anti_air
+			support
 		}
 
 		group = support
@@ -240,8 +242,8 @@ same_support_type = anti_air
 	heavy_sp_anti_air_brigade = {
 		sprite = heavy_armor
 		map_icon_category = armored
-		priority = 301
-		ai_priority = 100
+		priority = 0
+		ai_priority = 0
 		active = yes
 		training_time = 180
 		affects_speed = yes
@@ -249,6 +251,7 @@ same_support_type = anti_air
 		type = {
 			armor
 			anti_air
+			support
 		}
 
 		group = support
@@ -310,8 +313,8 @@ same_support_type = anti_air
 	super_heavy_sp_anti_air_brigade = {
 		sprite = heavy_armor
 		map_icon_category = armored
-		priority = 301
-		ai_priority = 100
+		priority = 0
+		ai_priority = 0
 		active = yes
 		affects_speed = yes
 		categories = {
@@ -325,6 +328,7 @@ same_support_type = anti_air
 		type = {
 			armor
 			anti_air
+			support
 		}
 
 		combat_width = 0

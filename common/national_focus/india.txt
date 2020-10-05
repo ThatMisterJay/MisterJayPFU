@@ -13,157 +13,12 @@ focus_tree = {
 	default = no
 
 #navy start
-focus = {
-		id = RAJ_expand_mazagon_dock
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 30
-		y = 0
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0.1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_mazagon_dock
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = { has_state_flag = RAJ_expand_mazagon_dock_NB }
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-						province = 1349
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			navy_experience = 25
-			random_owned_controlled_state = {
-				prioritize = { 429 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = RAJ_expand_mazagon_dock
-				if = {
-					limit = { state = 429 }
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-						province = 1349
-					}
-					set_state_flag = RAJ_expand_mazagon_dock_NB
-				}
-			}
-		}
-	}
 
 	focus = {
-		id = RAJ_found_scindia_shipyard
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 32
-		y = 0
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0.1
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_found_scindia_shipyard
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = { has_state_flag = RAJ_found_scindia_shipyard_NB }
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-						province = 10255
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 426 }
-				limit = {
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = RAJ_found_scindia_shipyard
-				if = {
-					limit = { state = 429 }
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-						province = 10255
-					}
-					set_state_flag = RAJ_found_scindia_shipyard_NB
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = RAJ_royal_indian_navy
+		id = RAJ_navy_of_our_own
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = RAJ_expand_mazagon_dock
-		focus = RAJ_found_scindia_shipyard }
-		x = 31
-		y = 1
+		x = 35
+		y = 0
 
 		cost = 5
 
@@ -191,13 +46,49 @@ focus = {
 	}
 
 	focus = {
-		id = RAJ_screening_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = RAJ_royal_indian_navy }
-		x = 30
-		y = 2
+		id = RAJ_bengal_iron_works
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = RAJ_navy_of_our_own }
+		x = 35
+		y = 1
 
 		cost = 5
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+                   431 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+
+					add_resource = {
+						type = steel
+						amount = 50
+					}
+                         }
+		}
+	}
+
+	focus = {
+		id = RAJ_the_bengal_patrol
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = RAJ_navy_of_our_own }
+		x = 36
+		y = 2
+		mutually_exclusive = {
+			focus = RAJ_long_range_escorts
+		}		
+                cost = 5
 
 		ai_will_do = {
 			factor = 0.1
@@ -236,13 +127,15 @@ focus = {
 	}
 
 	focus = {
-		id = RAJ_cruiser_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = RAJ_royal_indian_navy }
-		x = 32
+		id = RAJ_long_range_escorts
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = RAJ_navy_of_our_own }
+		x = 34
 		y = 2
-
-		cost = 5
+		mutually_exclusive = {
+			focus = RAJ_the_bengal_patrol
+		}		
+                cost = 5
 
 		ai_will_do = {
 			factor = 0.1
@@ -281,11 +174,69 @@ focus = {
 	}
 
 	focus = {
-		id = RAJ_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = RAJ_screening_effort focus = RAJ_cruiser_effort }
-		x = 30
+		id = RAJ_naval_planes
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = RAJ_carrier_focus }
+		prerequisite = { focus = RAJ_fighter_effort }		
+                x = 32
+		y = 5
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_carrier_planes
+				bonus = 1.0
+				uses = 2
+				category = naval_air
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_naval_construction_effort
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RAJ_the_bengal_patrol focus = RAJ_long_range_escorts }
+		x = 35
 		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = RAJ_naval_effort_tt
+                        429 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_advanced_submarine_research
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = RAJ_naval_construction_effort }
+		x = 35
+		y = 4
 
 		cost = 5
 
@@ -302,58 +253,207 @@ focus = {
 				name = RAJ_submarine_effort
 				bonus = 1
 				uses = 2
+                                ahead_reduction = 1
 				category = ss_tech
 			}
 		}
 	}
 
 	focus = {
-		id = RAJ_capital_ship_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = RAJ_screening_effort focus = RAJ_cruiser_effort }
-		x = 32
+		id = RAJ_carrier_focus
+		prerequisite = { focus = RAJ_long_range_escorts }
+		icon = GFX_goal_generic_navy_carrier
+		x = 33
 		y = 3
-
 		cost = 5
-
 		ai_will_do = {
-			factor = 0.1
+			factor = 0.25
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
+			navy_experience = 50
 			add_tech_bonus = {
-				name = RAJ_capital_ship_effort
-				bonus = 1
+				name = uk_carrier_focus
+				bonus = 1.0
 				uses = 2
 				category = cv_tech
+			}
+
+		}
+	}
+	focus = {
+		id = RAJ_battleship_focus
+		prerequisite = { focus = RAJ_the_bengal_patrol }
+		icon = GFX_goal_generic_navy_battleship
+		x = 37
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = RAJ_battleship_focus
+				bonus = 1.0
+				uses = 2
 				category = bb_tech
 			}
 		}
 	}
 
 	focus = {
-		id = RAJ_modernizing_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = RAJ_royal_indian_navy }
-		x = 31
+		id = RAJ_HMIS_Jewel
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = RAJ_battleship_focus }
+		x = 37
 		y = 4
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 1
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				add_tech_bonus = {
+					name = JAP_the_ultimate_battleship
+					bonus = 3.0
+					uses = 1
+					category = shbb_tech
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						not = { has_tech = ship_hull_super_heavy }
+					}
+					set_technology = {
+						ship_hull_super_heavy = 1
+					}
+				}
+				create_equipment_variant = {
+					name = "Guardian Class"
+					type = ship_hull_super_heavy_1
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_super_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_shbb
+						front_1_custom_slot = ship_super_heavy_battery_1
+						front_2_custom_slot = ship_super_heavy_battery_1
+						mid_1_custom_slot = ship_anti_air_2
+						mid_2_custom_slot = ship_anti_air_2
+						mid_3_custom_slot = ship_anti_air_2
+						rear_1_custom_slot = ship_super_heavy_battery_1
+						rear_2_custom_slot = ship_super_heavy_battery_1
+					}
+				}
+				hidden_effect = {
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_super_heavy_1
+							creator = "RAJ"
+							version_name = "Guardian Class"
+						}
+						name = "HMIS Jewel"
+						requested_factories = 5
+						progress = 0.5
+						amount = 1
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RAJ_HMIS_Pride
+		prerequisite = { focus = RAJ_carrier_focus }
+		icon = GFX_goal_generic_navy_carrier
+		x = 33
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+	        create_equipment_variant = {
+		name = "Crusader Class"
+		type = ship_hull_carrier_1
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
+		}
+	        }
+				hidden_effect = {
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_1
+							creator = "RAJ"
+							version_name = "Crusader Class"
+						}
+						name = "HMIS Pride"
+						requested_factories = 10
+						progress = 0.5
+						amount = 1
+					}					                                     
+                                        add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_1
+							creator = "RAJ"
+							version_name = "Crusader Class"
+						}
+						name = "HMIS Crusade"
+						requested_factories = 10
+						progress = 0.3
+						amount = 1
+
+					}
+				}
+                }
+	}
+
+	focus = {
+		id = RAJ_modern_doctrine
+		prerequisite = { focus = RAJ_HMIS_Pride focus = RAJ_HMIS_Jewel focus = RAJ_advanced_submarine_research }
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 35
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		        add_tech_bonus = {
 				name = RAJ_modernizing_navy
 				bonus = 1.0
 				uses = 2
@@ -361,6 +461,7 @@ focus = {
 			}
 		}
 	}
+
 #navy end
 
 	focus = {
@@ -1807,7 +1908,7 @@ artillery_brigade = {
 		id = RAJ_raf_funding
 		icon = GFX_goal_generic_air_fighter
 		cost = 5
-		x = 35
+		x = 31
 		y = 0
 			ai_will_do = {
 					factor = 0.1
@@ -1844,7 +1945,7 @@ artillery_brigade = {
 		prerequisite = {
 			focus = RAJ_raf_funding
 		}
-		x = 34
+		x = 30
 		y = 1
 			ai_will_do = {
 					factor = 0.1
@@ -1885,7 +1986,7 @@ artillery_brigade = {
 		prerequisite = {
 			focus = RAJ_raf_funding
 		}
-		x = 36
+		x = 32
 		y = 1
 			ai_will_do = {
 					factor = 0.1
@@ -1965,7 +2066,7 @@ artillery_brigade = {
 		prerequisite = {
 			focus = RAJ_expand_air_bases
 		}
-		x = 35
+		x = 31
 		y = 2
 			ai_will_do = {
 					factor = 0.1
@@ -2003,7 +2104,7 @@ artillery_brigade = {
 		prerequisite = {
 			focus = RAJ_air_support_effort
 		}
-		x = 35
+		x = 31
 		y = 3
 			ai_will_do = {
 					factor = 0.1
@@ -2045,7 +2146,7 @@ artillery_brigade = {
 		prerequisite = {
 			focus = RAJ_royal_indian_air_force
 		}
-		x = 35
+		x = 31
 		y = 4
 			ai_will_do = {
 					factor = 0.1

@@ -3288,17 +3288,15 @@ technology = fighter2
 			#}
 		}
 		completion_reward = {
-		CAN = { add_ideas = ENG_guided_by_britain_1 }
-		AST = { add_ideas = ENG_guided_by_britain_1 }
-		RAJ = { add_ideas = ENG_guided_by_britain_1 }
-		NZL = { add_ideas = ENG_guided_by_britain_1 }
-		SAF = { add_ideas = ENG_guided_by_britain_1 }
+	        add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
+	        add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
+	        add_war_support = 0.15
 
-			add_political_power = 120
+			add_political_power = -30
+
 			every_country = {
 				limit = {
 					OR = {
-						tag = ENG
 						AND = {
 							is_subject_of = ENG
 							tag = CAN
@@ -3321,11 +3319,13 @@ technology = fighter2
 						}
 					}
 				}
-				country_event = { id = mtg_britain.82 hours = 6 }
+		        add_political_power = -75
+		        add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+		        add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+				add_ideas = ENG_guided_by_britain_1
+		        add_war_support = 0.1
 				hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			}
-			custom_effect_tooltip = ENG_imperial_conference_tt
-			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 	}
 
@@ -3493,8 +3493,9 @@ technology = fighter2
 	focus = {
 		id = ENG_operation_catapult
 		available = {
-			FRA = { has_legitimacy > 20 }
-			EFR = { has_navy_size = { size > 25 } }
+			NOT = {
+				country_exists = FRA
+			}
 		}
 
 		available_if_capitulated = yes
@@ -3513,264 +3514,7 @@ technology = fighter2
 		completion_reward = {
 			custom_effect_tooltip = ENG_operation_catapult_tt
 			EFR = {
-				if = {
-					limit = { FRA = { has_legitimacy > 90 } }
-				    for_loop_effect = {
-				        start = 0
-				        end = 23
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 6
-				        transfer_ship = { type = heavy_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 35
-				        transfer_ship = { type = carrier target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 35
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
-				else_if = {
-					limit = { FRA = { has_legitimacy > 80 } } # 70 ships
-				    for_loop_effect = {
-				        start = 0
-				        end = 21
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 6
-				        transfer_ship = { type = heavy_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 33
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
-				else_if = {
-					limit = { FRA = { has_legitimacy > 70 } } # 65 ships
-				    for_loop_effect = {
-				        start = 0
-				        end = 20
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = heavy_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 5
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 30
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
-				else_if = {
-					limit = { FRA = { has_legitimacy > 60 } } # 60 ships
-				    for_loop_effect = {
-				        start = 0
-				        end = 18
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 4
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 4
-				        transfer_ship = { type = heavy_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 4
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 30
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
-				else_if = {
-					limit = { FRA = { has_legitimacy > 40 } } # 55 ships
-				    for_loop_effect = {
-				        start = 0
-				        end = 18
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 3
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 3
-				        transfer_ship = { type = heavy_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 3
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 28
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
-				else_if = {
-					limit = { FRA = { has_legitimacy > 30 } } # 45 ships
-				    for_loop_effect = {
-				        start = 0
-				        end = 16
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 2
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 2
-				        transfer_ship = { type = heavy_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 2
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 23
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
-				else = {  # 30 ships
-				    for_loop_effect = {
-				        start = 0
-				        end = 13
-				        transfer_ship = { type = destroyer target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 1
-				        transfer_ship = { type = light_cruiser target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 1
-				        transfer_ship = { type = battleship target = ENG }
-				        add = 1
-				    }
-
-				    for_loop_effect = {
-				        start = 0
-				        end = 15
-				        transfer_ship = { type = submarine target = ENG }
-				        add = 1
-				    }
-				}
+				country_event = { id = wtt_britain.25 hours = 5 }
 			}
 		}
 	}

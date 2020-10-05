@@ -1327,6 +1327,7 @@ technology = construction4
 		}
 		completion_reward = {
 			country_event = japan.11
+			country_event = pfu.26
 		}
 	}
 

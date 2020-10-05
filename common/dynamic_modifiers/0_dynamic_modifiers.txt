@@ -57,9 +57,10 @@ ITA_balken_development = {
 
 	icon = GFX_ITA_balkan_dev
 
+  resistance_target 				= -0.20
 	local_building_slots_factor = 0.60
 	state_production_speed_buildings_factor = 0.10
-	local_non_core_manpower = 0.2
+	recruitable_population_factor = 0.2
 }
 
 ITA_balken_exploit = {
@@ -67,10 +68,10 @@ ITA_balken_exploit = {
 
 	icon = GFX_ITA_balkan_exploit
 
-  resistance_growth = 0.50
+  resistance_target 				= 0.50
 	local_building_slots_factor = -0.30
 	state_production_speed_buildings_factor = -0.30
-	local_non_core_manpower = -1
+	recruitable_population_factor = -1
 }
 
 ITA_colonial_development = {
@@ -78,9 +79,10 @@ ITA_colonial_development = {
 
 	icon = GFX_ITA_colony_dev
 
+  resistance_target 				= -0.10
 	local_building_slots_factor = 0.25
 	state_production_speed_buildings_factor = 0.10
-	local_non_core_manpower = 0.1
+	recruitable_population_factor = 0.1
 }
 
 ITA_colonial_exploit = {
@@ -89,15 +91,55 @@ ITA_colonial_exploit = {
 	icon = GFX_ITA_colony_exploit
 
 
-  resistance_growth = 0.50
+  resistance_target = 0.50
 	local_building_slots_factor = -0.50
 	state_production_speed_buildings_factor = -0.10
-	local_non_core_manpower = -1
+	recruitable_population_factor = -1
 }
 
 
+FRA_gabon_military = {
 
+	enable = { always = yes }
 
+	icon = GFX_FRA_gabon_conscripts
+
+	state_production_speed_buildings_factor = -0.15
+	recruitable_population_factor = 0.6
+}
+
+FRA_free_gabon = {
+
+	enable = { always = yes }
+
+	icon = GFX_FRA_free_gabon
+
+  recruitable_population_factor = -0.15
+	state_production_speed_buildings_factor = 0.2
+	local_building_slots_factor = 0.50
+}
+
+FRA_gabon_contested = {
+
+	enable = { always = yes }
+
+	icon = GFX_FRA_gabon_contested
+
+  local_building_slots_factor = -0.30
+	state_production_speed_buildings_factor = -0.4
+
+}
+
+FRA_integral = {
+
+	enable = { always = yes }
+
+	icon = GFX_FRA_integral
+
+	local_building_slots_factor = 0.4
+  resistance_target	= -0.20
+	recruitable_population_factor = 0.2
+}
 #
 
 

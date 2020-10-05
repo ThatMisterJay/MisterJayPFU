@@ -87,7 +87,7 @@ ideas = {
 
 			removal_cost = -1
 
-picture = idea_generic_political_support
+                        picture = generic_political_support
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -116,7 +116,7 @@ picture = idea_generic_political_support
 
 		raj_trade = {
 			allowed = { always = no }
-
+                        picture = generic_economic_increase
 			removal_cost = -1
 
                equipment_bonus = {
@@ -169,6 +169,40 @@ picture = idea_generic_political_support
 
 		}
 
+		RAJ_naval_construction1 = {
+			picture = generic_sea_focused_navy
+			allowed = { always = no }
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+
+		RAJ_naval_construction2 = {
+			picture = generic_sea_focused_navy
+			allowed = { always = no }
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = 0.02	
+		        }
+		}
+
+		RAJ_naval_construction3 = {
+			picture = generic_sea_focused_navy
+			allowed = { always = no }
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+		}
 
 		RAJ_cost_of_ceylon = {
 			allowed = { always = no }
@@ -1066,8 +1100,8 @@ ledger = air
 		designer = yes
 
 		mazagon_dock_limited = {
-
-			allowed = {
+                        cost = 100			
+                        allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -1083,8 +1117,8 @@ ledger = air
 		}
 
 		garden_reach_shipbuilders = {
-
-			allowed = {
+                        cost = 100			
+                       allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -1099,8 +1133,8 @@ ledger = air
 		}
 
 		scindia_shipyard = {
-
-			allowed = {
+                        cost = 100			
+                        allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
@@ -1114,7 +1148,22 @@ ledger = air
 			traits = { atlantic_fleet_naval_manufacturer }
 
 		}
+		bombay_dockyard = {
+                        cost = 100
+			allowed = { 
+				original_tag = RAJ
+			}
 
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			traits = { coastal_defence_naval_manufacturer } 
+
+			equipment_bonus = {
+
+			}
+		}
 	}
 
 	aircraft_manufacturer = {

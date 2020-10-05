@@ -93,7 +93,7 @@ leader_traits = {
 	}
 
 	politically_connected = {
-		type = all
+		type = { land navy }
 		trait_type = personality_trait
 
 		non_shared_modifier = {
@@ -106,7 +106,7 @@ leader_traits = {
 	}
 
 	war_hero = {
-		type = all
+		type = { land navy }
 		trait_type = personality_trait
 
 		non_shared_modifier = {
@@ -1120,7 +1120,17 @@ new_commander_weight = {
 			factor = 1
 		}
 
-		enable_ability = probing_attack
+		modifier = {
+			hills = {
+				movement = 0.1
+			}
+		forest = {
+				movement = 0.1
+			}
+	   jungle = {
+	  			movement = 0.1
+	 		}
+		}
 
 		trait_type = assignable_trait
 		parent = commando

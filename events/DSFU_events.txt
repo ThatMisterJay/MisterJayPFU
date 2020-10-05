@@ -442,3 +442,220 @@ country_event = {
   }
 
  }
+
+
+#sell battleship
+ country_event = {
+   id = DSFU.17
+   title = DSFU.17.t
+   desc = DSFU.17.d
+   picture = GFX_report_event_ast_navy
+   is_triggered_only = yes
+
+
+
+   option = {
+     name = DSFU.17.a
+     trigger = {
+       NOT = {
+         has_country_flag = ship_sold_1
+       }
+     }
+     custom_effect_tooltip = ENG_sell_ship.tt
+     set_country_flag = ship_sold_1
+     transfer_ship = {
+  			        prefer_name = "HMS Royal Oak"
+  			        type = battleship
+  			        target = AST
+  			    }
+     }
+
+
+  option = {
+    name = DSFU.17.b
+    trigger = {
+      NOT = {
+        has_country_flag = ship_sold_2
+      }
+    }
+    custom_effect_tooltip = ENG_sell_ship.tt
+    set_country_flag = ship_sold_2
+    transfer_ship = {
+ 			        prefer_name = "HMS Ramillies"
+ 			        type = battleship
+ 			        target = AST
+ 			    }
+  }
+
+  option = {
+    name = DSFU.17.c
+    trigger = {
+      NOT = {
+        has_country_flag = ship_sold_3
+      }
+    }
+    custom_effect_tooltip = ENG_sell_ship.tt
+    set_country_flag = ship_sold_3
+    transfer_ship = {
+ 			        prefer_name = "HMS Royal Sovereign"
+ 			        type = battleship
+ 			        target = AST
+ 			    }
+  }
+
+  option = {
+    name = DSFU.17.e
+    trigger = {
+      has_country_flag = ship_sold_1
+      has_country_flag = ship_sold_2
+      has_country_flag = ship_sold_3
+    }
+    AST = { set_country_flag = sold_out_BB }
+  }
+
+ }
+
+#sell carriers
+ country_event = {
+   id = DSFU.18
+   title = DSFU.18.t
+   desc = DSFU.18.d
+   picture = GFX_report_event_ast_navy
+   is_triggered_only = yes
+
+
+
+   option = {
+     name = DSFU.18.a
+
+     trigger = {
+       NOT = {
+         has_country_flag = ship_sold_4
+       }
+     }
+     custom_effect_tooltip = ENG_sell_ship.tt
+     set_country_flag = ship_sold_4
+     transfer_ship = {
+  			        prefer_name = "HMS Hermes"
+  			        type = carrier
+  			        target = AST
+  			    }
+  }
+
+  option = {
+    name = DSFU.18.b
+    trigger = {
+      NOT = {
+        has_country_flag = ship_sold_5
+      }
+    }
+    custom_effect_tooltip = ENG_sell_ship.tt
+    set_country_flag = ship_sold_5
+    transfer_ship = {
+ 			        prefer_name = "HMS Eagle"
+ 			        type = carrier
+ 			        target = AST
+ 			    }
+  }
+
+  option = {
+    name = DSFU.18.c
+    trigger = {
+      has_country_flag = ship_sold_5
+      has_country_flag = ship_sold_4
+    }
+  AST = { set_country_flag = sold_out_CV }
+  }
+
+}
+
+#offer to buy UK ships
+country_event = {
+  id = DSFU.19
+  title = DSFU.19.t
+  desc = DSFU.19.d
+  picture = GFX_report_event_ast_planning
+  is_triggered_only = yes
+
+
+  option = {
+  name = DSFU.19.a
+  AST = {
+    set_country_flag = british_accept
+  }
+  custom_effect_tooltip = AST_ENG_yes.tt
+  }
+
+  option = {
+  name = DSFU.19.b
+  custom_effect_tooltip = AST_ENG_no.tt
+  }
+}
+
+#Java
+country_event = {
+  id = DSFU.20
+  title = DSFU.20.t
+  desc = DSFU.20.d
+  picture = GFX_report_event_ast_troops_landing
+  is_triggered_only = yes
+
+
+  option = {
+  name = DSFU.20.a
+  AST = {
+    transfer_state = 335
+    transfer_state = 667
+  }
+
+  }
+
+  option = {
+  name = DSFU.20.b
+
+  }
+}
+
+#Sumatra
+country_event = {
+  id = DSFU.21
+  title = DSFU.21.t
+  desc = DSFU.21.d
+  picture = GFX_report_event_ast_troops_landing
+  is_triggered_only = yes
+
+
+  option = {
+  name = DSFU.21.a
+  AST = {
+    transfer_state = 672
+   }
+  }
+
+  option = {
+  name = DSFU.21.b
+  }
+}
+
+#Borneo
+country_event = {
+  id = DSFU.22
+  title = DSFU.22.t
+  desc = DSFU.22.d
+  picture = GFX_report_event_ast_troops_landing
+  is_triggered_only = yes
+
+
+  option = {
+  name = DSFU.22.a
+  AST = {
+    transfer_state = 333
+    transfer_state = 766
+    transfer_state = 667
+  }
+  }
+
+  option = {
+  name = DSFU.22.b
+  }
+}

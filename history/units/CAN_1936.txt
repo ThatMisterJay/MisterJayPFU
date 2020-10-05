@@ -61,46 +61,84 @@ division_template = {
 	}
 	support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
+        mot_recon = { x = 0 y = 1 }
 		signal_company { x = 0 y = 2 }
 		logistics_company { x = 0 y = 3 }
 	}
 }
+division_template = {
+	name = "Guards Armoured Division"
+	priority = 2
 
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	 	heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		heavy_armor = { x = 2 y = 4 }
+		heavy_armor = { x = 3 y = 0 }
+		heavy_armor = { x = 3 y = 1 }
+		heavy_armor = { x = 3 y = 2 }
+		heavy_armor = { x = 3 y = 3 }
+		heavy_armor = { x = 3 y = 4 }
+		heavy_armor = { x = 4 y = 0 }
+		heavy_armor = { x = 4 y = 1 }
+		heavy_armor = { x = 4 y = 2 }
+		heavy_armor = { x = 4 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 0 y = 2 }
+    signal_company = { x = 0 y = 3 }
+    logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Armoured Division"
+	priority = 2
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	 	medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 3 y = 4 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+		medium_armor = { x = 4 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		mot_anti_air_brigade = { x = 0 y = 2 }
+    signal_company = { x = 0 y = 3 }
+    logistics_company = { x = 0 y = 4 }
+	}
+}
 
 units = {
-	##### Royal Canadian Army #####
-	## 1st Infantry Division ##
-	division= {
-		name = "1. Infantry Division"
-		location = 722 # London ONT
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-
-	## 2nd Infantry Division ##
-	division= {
-		name = "2. Infantry Division"
-		location = 3775 # Toronto
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-	## 3rd Miltary District ##
-	division= {
-		name = "3. Infantry Division"
-		location = 3605 # Kingston ONT
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-
-
-
 	##### Naval OOB #####
 	fleet = {
 		name = "Royal Canadian Navy"
@@ -114,7 +152,6 @@ units = {
 		}
 	}
 }
-
 
 
 ##### Starting Production #####

@@ -85,6 +85,25 @@ ideas = {
 			}
 		}
 
+		far_eastern_conscripts = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+
+			modifier = {
+			non_core_manpower = 0.2
+			}
+		}
+
 		AST_all_in = {
 
 			allowed = {
@@ -554,6 +573,78 @@ ideas = {
 				industrial_capacity_dockyard = 0.2
 			}
 		}
+
+#singapore stuff
+
+AST_ENG_naval = {
+
+	picture = generic_navy_bonus
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	research_bonus = {
+		naval_equipment = 0.05
+	}
+
+  modifier = {
+		license_naval_purchase_cost = -0.60
+	}
+
+}
+
+AST_navy_focus = {
+
+	picture = generic_the_london_naval_treaty
+
+	allowed = {
+		always = no
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+
+	modifier = {
+		industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory = -0.1
+	}
+}
+
+pig_iron_sale = {
+
+picture = SOV_scientist_defect
+
+allowed = {
+	always = no
+}
+
+allowed_civil_war = {
+	always = yes
+}
+
+removal_cost = -1
+
+	modifier = {
+		industrial_capacity_dockyard = 0.15
+		industrial_capacity_factory = 0.15
+		stability_factor = -0.08
+		war_support_factor = -0.08
+	}
+
+}
+
+
+
 	}
 
 	political_advisor = {
@@ -580,7 +671,7 @@ ideas = {
 
 			traits = { attorney_general lieutenant_of_industry }
 
-			cost = 175
+
 
 			available = {
 					has_country_leader = { ruling_only = yes name = "Joseph Lyons" }
@@ -899,6 +990,11 @@ ideas = {
 			allowed = {
 				original_tag = AST
 			}
+			available = {
+				NOT = {
+					has_country_flag = sturdee_resigns
+				}
+			}
 
 			traits = { army_chief_offensive_2 }
 
@@ -1192,11 +1288,15 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 
+			available = {
+				has_completed_focus = AST_singapore_fleet_plan
+			}
+
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { coastal_defence_naval_manufacturer }
 
 		}
 

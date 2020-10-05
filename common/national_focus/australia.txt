@@ -185,6 +185,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = AST_daimler_dingo
 		icon = GFX_goal_generic_army_motorized
@@ -207,6 +208,11 @@ available = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				technology = armored_car2
+			}
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 1.0
@@ -1176,7 +1182,7 @@ available = {
 	focus = {
 		id = AST_cockatoo_island_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 11
+		x = 30
 		y = 0
 
 		cost = 5
@@ -1236,9 +1242,9 @@ available = {
 
 	focus = {
 		id = AST_singapore_strategy
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_usa_focus_on_asia
 		prerequisite = { focus = AST_cockatoo_island_shipyards }
-		mutually_exclusive = { focus = AST_fly_the_jolly_roger }
+
 		x = 0
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
@@ -1254,24 +1260,19 @@ available = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_protect_overseas_commerce
-				bonus = 1
-				uses = 2
-				category = fleet_in_being_tree
-				category = convoy_defense_tree
-			}
+			unlock_decision_category_tooltip = AST_singapore_strategy_category
+      news_event = DSFU_news.1
 		}
 	}
 
 	focus = {
 		id = AST_protect_overseas_commerce
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = AST_cockatoo_island_shipyards }
-		mutually_exclusive = { focus = AST_fly_the_jolly_roger }
+		prerequisite = { focus = AST_singapore_strategy }
+
 		x = -1
 		y = 1
-		relative_position_id = AST_cockatoo_island_shipyards
+		relative_position_id = AST_singapore_strategy
 
 		cost = 5
 
@@ -1297,11 +1298,10 @@ available = {
 	focus = {
 		id = AST_fly_the_jolly_roger
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = AST_cockatoo_island_shipyards }
-		mutually_exclusive = { focus = AST_protect_overseas_commerce }
-		x = 1
+		prerequisite = { focus = AST_singapore_strategy }
+		x = 4
 		y = 1
-		relative_position_id = AST_cockatoo_island_shipyards
+		relative_position_id = AST_singapore_strategy
 
 		cost = 5
 
@@ -1326,10 +1326,10 @@ available = {
 	focus = {
 		id = AST_scrap_iron_flotilla
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = AST_protect_overseas_commerce focus = AST_fly_the_jolly_roger }
-		x = -1
-		y = 2
-		relative_position_id = AST_cockatoo_island_shipyards
+		prerequisite = { focus = AST_singapore_strategy }
+		x = -3
+		y = 1
+		relative_position_id = AST_singapore_strategy
 
 		cost = 5
 
@@ -1347,7 +1347,7 @@ available = {
 				bonus = 1
 				ahead_reduction = 2
 				uses = 1
-				category = dd_tech
+				technology = improved_ship_hull_light
 			}
 		}
 	}
@@ -1355,10 +1355,10 @@ available = {
 	focus = {
 		id = AST_royal_australian_submarine_service
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = AST_protect_overseas_commerce focus = AST_fly_the_jolly_roger }
-		x = 1
-		y = 2
-		relative_position_id = AST_cockatoo_island_shipyards
+		prerequisite = { focus = AST_fly_the_jolly_roger }
+		x = 0
+		y = 1
+		relative_position_id = AST_fly_the_jolly_roger
 
 		cost = 5
 
@@ -1384,10 +1384,10 @@ available = {
 	focus = {
 		id = AST_naval_auxiliary_patrol
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = AST_royal_australian_submarine_service focus = AST_scrap_iron_flotilla }
-		x = 0
-		y = 3
-		relative_position_id = AST_cockatoo_island_shipyards
+		prerequisite = { focus = AST_protect_overseas_commerce focus = AST_scrap_iron_flotilla }
+		x = 1
+		y = 1
+		relative_position_id = AST_scrap_iron_flotilla
 
 		cost = 5
 
@@ -1406,11 +1406,11 @@ available = {
 
 	focus = {
 		id = AST_cruisers
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = AST_naval_auxiliary_patrol }
-		x = -1
-		y = 4
-		relative_position_id = AST_cockatoo_island_shipyards
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = AST_scrap_iron_flotilla }
+		x = 0
+		y = 2
+		relative_position_id = AST_scrap_iron_flotilla
 
 		cost = 5
 
@@ -1428,7 +1428,7 @@ available = {
 				bonus = 1
 				ahead_reduction = 2
 				uses = 1
-				category = cl_tech
+				technology = improved_ship_hull_cruiser
 			}
 		}
 	}
@@ -1436,12 +1436,14 @@ available = {
 	focus = {
 		id = AST_pacific_area_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = AST_naval_auxiliary_patrol }
+		prerequisite = { focus = AST_singapore_strategy }
 		x = 1
-		y = 4
-		relative_position_id = AST_cockatoo_island_shipyards
+		y = 1
+		relative_position_id = AST_singapore_strategy
 
 		cost = 5
+
+
 
 		ai_will_do = {
 			factor = 1
@@ -1455,12 +1457,205 @@ available = {
 			add_tech_bonus = {
 				name = AST_pacific_area_navy
 				bonus = 1
-				uses = 1
+				uses = 4
 				category = naval_doctrine
 			}
 		}
 	}
 
+	focus = {
+		id = AST_british_naval_development
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = AST_pacific_area_navy }
+		x = 1
+		y = 1
+		relative_position_id = AST_pacific_area_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+    add_ideas = AST_ENG_naval
+    ENG = {
+	 	 country_event = {
+			 id = DSFU.19 days = 1
+		 }
+	   add_ideas = AST_ENG_naval
+     }
+		 custom_effect_tooltip = AST_naval_tech.tt
+		 hidden_effect = {
+		 set_technology = {
+			 basic_light_battery = 1
+			 basic_medium_battery = 1
+			 basic_heavy_battery = 1
+			 improved_secondary_battery = 1
+		 }
+	 }
+		}
+	}
+
+	focus = {
+		id = AST_singapore_fleet_plan
+		icon = GFX_AST_fleet_plan
+		prerequisite = { focus = AST_pacific_area_navy }
+		x = -1
+		y = 1
+		relative_position_id = AST_pacific_area_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = evans_deakin_co
+					}
+				}
+				add_ideas = Cockatoo_doe
+				add_political_power = 75
+			}
+			add_tech_bonus = {
+			name = cv_bonus
+			bonus = 2
+			uses = 1
+			ahead_reduction = 1
+			technology = dp_secondary_battery
+			}
+     navy_experience = 40
+		 custom_effect_tooltip = AST_fleet_plan.tt
+		}
+	}
+
+	focus = {
+		id = AST_western_australian_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = AST_singapore_fleet_plan }
+		x = -1
+		y = 1
+		relative_position_id = AST_singapore_fleet_plan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			522 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+
+	focus = {
+		id = AST_send_farncomb_to_britain
+		icon = GFX_AST_carrier_fleet
+		prerequisite = { focus = AST_british_naval_development }
+		x = 1
+		y = 1
+		relative_position_id = AST_british_naval_development
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+			name = cv_bonus
+			bonus = 2
+			uses = 1
+			ahead_reduction = 1
+			category = cv_tech
+			}
+		random_unit_leader = {
+			limit = {
+				has_id = 109
+			}
+			add_unit_leader_trait = air_controller
+		}
+		custom_effect_tooltip = british_aircraft_tech.tt
+
+hidden_effect = {
+		 set_technology =  {
+			 fighter1 = 1
+			 cv_fighter1 = 1
+		 }
+	 }
+		 add_tech_bonus = {
+ 	 name = AST_CV_aircraft
+ 	 bonus = 2.0
+ 	 uses = 1
+ 	 technology = naval_bomber2
+ 		}
+
+			add_tech_bonus = {
+		name = AST_CV_aircraft
+		bonus = 2.0
+		uses = 1
+		technology = cv_fighter2
+			}
+	 }
+ }
+
+	focus = {
+		id = AST_fleet
+		icon = GFX_AST_battleship_fleet
+		prerequisite = { focus = AST_british_naval_development }
+		prerequisite = { focus = AST_singapore_fleet_plan }
+		x = 1
+		y = 1
+		relative_position_id = AST_singapore_fleet_plan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		available = {
+			has_country_flag = AST_rules_the_waves
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AST_far_east.tt
+      add_ideas = ENG_expand_the_repair_yards
+		}
+	}
 
 	############################
 	##### INDUSTRY SECTION #####
@@ -1470,7 +1665,7 @@ available = {
 	focus = {
 		id = AST_standard_gauge_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 14
+		x = 10
 		y = 0
 
 		cost = 5
@@ -1935,7 +2130,7 @@ available = {
 	focus = {
 		id = AST_establish_advisory_war_council
 		icon = GFX_goal_generic_demand_territory
-		x = 22
+		x = 18
 		y = 0
 
 		cost = 10
@@ -2414,7 +2609,7 @@ available = {
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2500,10 +2695,10 @@ available = {
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		x = 28
+		x = 24
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2647,7 +2842,7 @@ available = {
 		y = 2
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2667,8 +2862,7 @@ available = {
 				value = 0.1
 				localization = AST_adopt_westminster
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = AST_arthur_calwell
+
 		}
 	}
 
@@ -2713,7 +2907,7 @@ available = {
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2838,7 +3032,7 @@ available = {
 		y = 4
 		relative_position_id = AST_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

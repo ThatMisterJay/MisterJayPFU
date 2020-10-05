@@ -1,5 +1,5 @@
 ideas = {
-        
+
         hidden_ideas = {
 		FRA_no_con_event = {
 
@@ -27,7 +27,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -277,7 +277,7 @@ ideas = {
 
 			modifier = {
 				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.5
+				conversion_cost_civ_to_mil_factor = -0.1
 			}
 		}
 		FRA_expanded_citizenship = {

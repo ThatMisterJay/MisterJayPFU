@@ -6,7 +6,7 @@ set_stability = 0.8
 
 #set_stability = 0.2 #with emperor
 set_war_support = 0.8
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 set_research_slots = 4
 
 add_ideas = {
@@ -52,6 +52,37 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
 }
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 38500
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 11300
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 2600
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 1600
+}
+
+
+add_equipment_to_stockpile = {
+type = light_tank_equipment_1
+amount = 720
+}
+
+add_equipment_to_stockpile = {
+type = motorized_equipment
+amount = 600
+}
+
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -113,19 +144,13 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
+
 	set_autonomy = {
 		target = MAN
 		autonomous_state = autonomy_colony
 	}
 	else = {
-		set_autonomy = {
-			target = MEN
-			autonomous_state = autonomy_puppet
-		}
+
 		set_autonomy = {
 			target = MAN
 			autonomous_state = autonomy_puppet
@@ -149,7 +174,7 @@ set_popularities = {
 }
 create_faction = "Daitoa Kyoeiken"
 add_to_faction = MAN
-add_to_faction = MEN
+
 
 create_country_leader = {
 	name = "Hirohito"
