@@ -24,7 +24,7 @@ country_event = {
 			name = tizard_mission_focus
 			uses = 1
 			bonus = 0.5
-			technology = fighter2
+			technology = fighter3
 		}
 		add_tech_bonus = {
 			name = tizard_mission_focus
