@@ -1,7 +1,0 @@
-ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-  modifier="fighter_good"
-  name="Ian"
-  surname="Smith"
-  callsign="Green Leader"
-  portrait=2
-}

@@ -1,7 +1,0 @@
-RAJ_naval_category = {
-        icon = generic_economy
-
-        allowed = {
-                original_tag = RAJ
-        }
-}
