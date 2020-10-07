@@ -27,4 +27,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_trucks.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_cat_commonwealth"
+		texturefile = "gfx/interface/decisions/decision_cat_commonwealth.dds"
+	}
+
 }

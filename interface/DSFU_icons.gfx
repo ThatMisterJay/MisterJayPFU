@@ -41,4 +41,12 @@ spriteType = {
 	name = "GFX_FRA_gabon_contested"
 	textureFile = "gfx/interface/DSFU_GFX/FRA_gabon_contested.dds"
 }
+spriteType = {
+	name = "GFX_ENG_british_saf"
+	textureFile = "gfx/interface/DSFU_GFX/ENG_british_saf.dds"
+}
+spriteType = {
+	name = "GFX_ENG_british_rho"
+	textureFile = "gfx/interface/DSFU_GFX/ENG_british_rho.dds"
+}
 }
