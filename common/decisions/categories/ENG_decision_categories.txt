@@ -10,6 +10,18 @@ ENG_imperial_conference_decision = {
 	}
 }
 
+ENG_commonwealth_decision = {
+	icon = eng_imperial_conference
+
+	picture = GFX_decision_cat_commonwealth
+
+	priority = 10
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
 ENG_enforce_the_naval_treaties = {
 	icon = generic_political_actions
 
