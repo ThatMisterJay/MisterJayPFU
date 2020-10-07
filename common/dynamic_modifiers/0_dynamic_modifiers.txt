@@ -140,6 +140,31 @@ FRA_integral = {
   resistance_target	= -0.20
 	recruitable_population_factor = 0.2
 }
+
+#UK
+
+ENG_rhodesia = {
+
+	enable = { always = yes }
+
+	icon = GFX_ENG_british_rho
+
+	local_building_slots_factor = 0.5
+  resistance_target	= -0.80
+	recruitable_population_factor = 0.6
+}
+
+ENG_south_africa = {
+
+	enable = { always = yes }
+
+	icon = GFX_ENG_british_saf
+
+	local_building_slots_factor = 0.6
+  resistance_target	= -0.90
+	recruitable_population_factor = 0.5
+}
+
 #
 
 

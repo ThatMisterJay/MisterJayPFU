@@ -77,6 +77,10 @@ type = motorized_equipment
 amount = 621
 }
 
+545 = {
+	add_dynamic_modifier = { modifier = ENG_rhodesia }
+}
+
 # Africa roads
 
 452 = {
