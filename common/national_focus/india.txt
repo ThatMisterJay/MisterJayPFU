@@ -31,17 +31,22 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			set_technology = {
-				early_ship_hull_light = 1
-				basic_torpedo = 1
-				early_ship_hull_submarine = 1
-			}
+			custom_effect_tooltip = RAJ_tech_tt
 			add_tech_bonus = {
 				name = RAJ_royal_indian_navy
 				bonus = 1
 				uses = 1
 				category = naval_doctrine
 			}
+			hidden_effect = {
+			set_technology = {
+				basic_ship_hull_light = 0.9
+		                early_ship_hull_heavy = 1
+		                early_ship_hull_cruiser = 1
+		                early_ship_hull_carrier = 1
+				early_ship_hull_submarine = 1
+			}
+                        }
 		}
 	}
 
@@ -99,6 +104,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = RAJ_destroyer_tt
 			add_tech_bonus = {
 				name = RAJ_screening_effort
 				bonus = 1
@@ -146,6 +152,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = RAJ_cruiser_tt
 			add_tech_bonus = {
 				name = RAJ_cruiser_effort
 				bonus = 1
@@ -309,7 +316,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_HMIS_Jewel
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_raj_jewel
 		prerequisite = { focus = RAJ_battleship_focus }
 		x = 37
 		y = 4
@@ -325,6 +332,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = RAJ_jewel_tt
 			if = {
 				limit = {
 					not = { has_dlc = "Man the Guns" }
@@ -386,7 +394,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_HMIS_Pride
 		prerequisite = { focus = RAJ_carrier_focus }
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_raj_crusade
 		x = 33
 		y = 4
 		cost = 10
@@ -397,6 +405,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		custom_effect_tooltip = RAJ_crusade_tt
 	        create_equipment_variant = {
 		name = "Crusader Class"
 		type = ship_hull_carrier_1
@@ -453,14 +462,81 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = RAJ_admiral_tt
 		        add_tech_bonus = {
 				name = RAJ_modernizing_navy
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = naval_doctrine
 			}
 		}
 	}
+
+	focus = {
+		id = RAJ_british_designs
+		icon = GFX_focus_chi_british_cooperation
+		cost = 5
+		prerequisite = {
+			focus = RAJ_navy_of_our_own
+		}
+		mutually_exclusive = {
+			focus = RAJ_indian_ocean_naval_alliance
+		}
+		x = 37
+		y = 1
+			ai_will_do = {
+					factor = 0.1
+				}
+			available = {
+					NOT = { has_completed_focus = RAJ_Self_Improvement }
+				}
+			bypass = {
+                        }
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+				custom_effect_tooltip = available_ship_designer
+				show_ideas_tooltip = mazagon_dock_limited
+				show_ideas_tooltip = scindia_shipyard
+				}
+
+	}
+
+	focus = {
+		id = RAJ_indian_ocean_naval_alliance
+		icon = GFX_AST_battleship_fleet
+		cost = 5
+		prerequisite = {
+			focus = RAJ_navy_of_our_own
+		}
+		mutually_exclusive = {
+			focus = RAJ_british_designs
+		}
+		x = 39
+		y = 1
+			ai_will_do = {
+					factor = 0.1
+				}
+			available = {
+                        AST = {
+                                   has_completed_focus = AST_singapore_fleet_plan
+                                }
+				}
+			bypass = {
+                        }
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
+			completion_reward = {
+				custom_effect_tooltip = available_ship_designer
+				show_ideas_tooltip = garden_reach_shipbuilders
+				show_ideas_tooltip = Cockatoo_doe2
+				}
+
+	}
+
+
 
 #navy end
 

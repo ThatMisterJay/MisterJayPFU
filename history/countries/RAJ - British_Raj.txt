@@ -8,6 +8,8 @@ set_research_slots = 3
 # Starting tech
 set_technology = {
 	armored_car1 = 1
+        gwtank = 1
+	motorised_infantry = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1
@@ -20,6 +22,12 @@ set_technology = {
 	gw_artillery = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	early_ship_hull_light = 1
+	basic_torpedo = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_depth_charges = 1
+	basic_secondary_battery = 1
 
 }
 
@@ -164,17 +172,6 @@ create_corps_commander = {
 }
 
 
-create_navy_leader = {
-	name = "Jcor"
-	picture = "Jcor.dds"
-	traits = { battleship_adherent bold }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 1
-	coordination_skill = 2
-}
-
 
 create_navy_leader = {
 	name = "Herbert Fitzherbert"
@@ -201,3 +198,20 @@ if = {
 		nationalities = { RAJ }
 	}
 }
+
+create_equipment_variant = {
+		name = "Folkestone Class"
+		type = ship_hull_light_1
+		name_group = RAJ_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}

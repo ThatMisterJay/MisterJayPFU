@@ -205,6 +205,7 @@ FRA_perfidious_albion_desc:0 ""Perfidious Albion" is a pejorative phrase used wi
     RAJ_naval_construction1:0 "Small Naval Construction Effort"
     RAJ_naval_construction2:0 "Mooderate Naval Construction Effort"
     RAJ_naval_construction3:0 "Huge Naval Construction Effort"
+    Cockatoo_doe2:0 "Cockatoo Docks and Engineering"
 
 #German stuff
 GER_navaltreaty_1:0 "Anglo-German Naval Agreement"
