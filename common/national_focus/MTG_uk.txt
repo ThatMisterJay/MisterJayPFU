@@ -3262,72 +3262,7 @@ technology = fighter2
 		}
 	}
 
-	focus = {
-		id = ENG_imperial_conference
-		prerequisite = { focus = uk_canada_focus }
-		prerequisite = { focus = uk_new_zealand_focus }
-		prerequisite = { focus = uk_south_africa_focus }
 
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-
-		continue_if_invalid = no
-
-		icon = GFX_goal_generic_national_unity
-
-		x = 0
-		y = 2
-		relative_position_id = uk_new_zealand_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-			#modifier = {
-			#	factor = 0
-			#}
-		}
-		completion_reward = {
-	        add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
-	        add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
-	        add_war_support = 0.15
-
-			add_political_power = -30
-
-			every_country = {
-				limit = {
-					OR = {
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-					}
-				}
-		        add_political_power = -75
-		        add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
-		        add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
-				add_ideas = ENG_guided_by_britain_1
-		        add_war_support = 0.1
-				hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
-			}
-		}
-	}
 
 	### DEMOCRATIC BRANCH - STEADY AS SHE GOES ###
 
