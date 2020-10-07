@@ -86,17 +86,7 @@ division_template = {
 	priority = 0
 }
 
-units = {
-	##### Royal New Zealand Army #####
-	division= {
-		name = "2nd NZL Expeditionary Force"
-		location = 4543 # Auckland
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
 
-	}
-
-}
 
 
 

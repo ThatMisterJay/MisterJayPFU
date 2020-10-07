@@ -91,16 +91,6 @@ division_template = {
 	}
 }
 
-units = {
-	#India Command
-	
-	#Northern Command
-	
-	division= {	
-		name = "Pashawar District"
-		location = 12717
-		division_template = "Indian Division"
-		start_experience_factor = 0.1
 
 	}
 	division= {	
@@ -189,6 +179,7 @@ units = {
        }
 
 }
+
 
 
 

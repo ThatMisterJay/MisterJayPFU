@@ -118,21 +118,9 @@ country_event = { #Juin defects
 	desc = axis_minors_vichy_france.4.desc
 	picture = GFX_report_event_french_liberation
 
-	trigger = {
-		tag = FRA
-		EFR = {
-			has_completed_focus = EFR_negociate_the_release_of_officers
-			NOT = {
-				controls_state = 459
-				controls_state = 461
-			}
-		}
-		has_global_flag = fall_of_france
-	}
-	mean_time_to_happen = {
-			days = 270
-		}
-	fire_only_once = yes
+  is_triggered_only = yes
+
+
 	option = {
 		name = axis_minors_vichy_france.4.a
 		ai_chance = {
@@ -141,13 +129,13 @@ country_event = { #Juin defects
 		create_corps_commander = {
 			name = "Alphonse Juin"
 			picture = "Portrait_France_Alphonse_Juin.dds"
-			traits = { panzer_leader  }
+			traits = { panzer_leader trickster desert_fox  }
 			id = 799
 			skill = 4
 			attack_skill = 4
-			defense_skill = 4
+			defense_skill = 2
 			planning_skill = 5
-			logistics_skill = 4
+			logistics_skill = 2
 
 		}
 		EFR = {

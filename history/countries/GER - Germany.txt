@@ -1,7 +1,7 @@
 ﻿capital = 64
 
 oob = "GER_1936"
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 # Starting tech
 set_technology = {
 	armored_car1 = 1
@@ -98,15 +98,18 @@ if = {
 
   add_equipment_to_stockpile = {
   type = infantry_equipment_1
-  amount = 20000
+  amount = 66100
     }
+
+
+
    add_equipment_to_stockpile = {
    type = artillery_equipment_1
-   amount = 1000
+   amount = 5000
 }
 		add_equipment_to_stockpile = {
-										type = support_equipment_1
-										amount = 1000
+		type = support_equipment_1
+		amount = 2900
 }
 		add_equipment_to_stockpile = {
 	  type = anti_air_equipment_1
@@ -114,7 +117,22 @@ if = {
 }
 		add_equipment_to_stockpile = {
 		type = anti_tank_equipment_1
-		amount = 400
+		amount = 1000
+}
+
+   add_equipment_to_stockpile = {
+   type = light_tank_equipment_2
+   amount = 720
+}
+
+	add_equipment_to_stockpile = {
+	type = light_tank_equipment_1
+	amount = 1400
+}
+
+ add_equipment_to_stockpile = {
+ type = motorized_equipment
+ amount = 1600
 }
 
 set_research_slots = 4

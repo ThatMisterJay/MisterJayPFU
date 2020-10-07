@@ -108,6 +108,13 @@ country_event = {
 
 	option = {
 		name = JFU_welcome.22.a
+		annex_country = {
+			    target = ETH
+
+			}
+		add_timed_idea = {
+			idea = ETH_war days = 380
+		}
 	}
 }
 

@@ -1,4 +1,4 @@
-﻿add_namespace = pfu
+add_namespace = pfu
 
 country_event = {
 	id = pfu.1
@@ -583,28 +583,8 @@ country_event = {
 	desc = pfu.26.d
 	picture = GFX_report_event_jap_southern
 
-	trigger = {
-		tag = JAP
+  is_triggered_only = yes
 
-		any_country = {
-    		is_in_faction_with = JAP
-			has_full_control_of_state = 592
-        }
-
-		any_country = {
-    		is_in_faction_with = JAP
-			has_full_control_of_state = 613
-        }
-
-		any_country = {
-    		is_in_faction_with = JAP
-			has_full_control_of_state = 608
-        }
-        date > 1940.7.1
-
-	}
-
-	fire_only_once = yes
 
 	mean_time_to_happen = { days = 1 }
 
@@ -712,17 +692,14 @@ country_event = {
 
 	option = {
 		name = pfu.32.a
-		14 = {
-			damage_building = { type = air_base damage = 3 }
+		30 = {
 			damage_building = { type = infrastructure damage = 2 }
 		}
-		15 = {
+		16 = {
 			damage_building = { type = infrastructure damage = 2 }
-			damage_building = { type = air_base damage = 3 }
 		}
-		29 = {
+		18 = {
 			damage_building = { type = infrastructure damage = 2 }
-			damage_building = { type = air_base damage = 3 }
 		}
 
 		remove_building = {
@@ -732,6 +709,17 @@ country_event = {
 		}
 		remove_building = {
 			type = bunker
+			level = 2
+			province = 3552
+		}
+
+		remove_building = {
+			type = coastal_bunker
+			level = 2
+			province = 6449
+		}
+		remove_building = {
+			type = coastal_bunker
 			level = 2
 			province = 3552
 		}

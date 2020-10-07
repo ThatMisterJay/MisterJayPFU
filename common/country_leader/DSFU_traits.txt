@@ -195,7 +195,7 @@ peace_time_rearmer = {
 
 war_time_prime_minister = {
   sprite = 13
-  production_speed_buildings_factor = 0.05
+  production_factory_efficiency_gain_factor = 0.05
 
   ai_will_do = {
     factor = 1

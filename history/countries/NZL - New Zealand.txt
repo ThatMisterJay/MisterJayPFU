@@ -5,7 +5,7 @@ oob = "NZL_1936"
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 
 set_technology = {
 	armored_car1 = 1
@@ -21,6 +21,24 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 }
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 1400
+	}
+
+
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 156
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 40
+}
+
+
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

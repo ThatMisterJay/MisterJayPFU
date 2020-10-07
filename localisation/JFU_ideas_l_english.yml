@@ -94,6 +94,8 @@
     ITA_air_nerd:0 "Regia Marina Resources Diverted"
     ITA_air_supply:0 "Air Supply Theory"
     olivetti:0 "Olivetti"
+    ETH_war:0 "Second Italo-Ethiopian War"
+    ETH_war_desc:0 "War crimes were committed by both sides in this conflict. Italian troops used mustard gas in aerial bombardments (in violation of the Geneva Conventions) against combatants and civilians in an attempt to discourage the Ethiopian people from supporting the resistance. Deliberate Italian attacks against ambulances and hospitals of the Red Cross were reported. By all estimates, hundreds of thousands of Ethiopian civilians died as a result of the Italian invasion, including during the reprisal Yekatit 12 massacre in Addis Ababa, in which as many as 30,000 civilians were killed. Crimes by Ethiopian troops included the use of Dum-Dum bullets (in violation of the Hague Conventions), the killing of civilian workmen (including during the Gondrand massacre) and the mutilation of captured Eritrean Ascari and Italians (often with castration), beginning in the first weeks of war."
 
 RAJ_battle:0 "Battle For The RAJ"
 ENG_david_stirling:0 "David Stirling"
@@ -160,12 +162,39 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     ITA_nat_industry:0 "Nationalized Industry"
     ITA_endsieg:0 "Italian Endsieg"
     black_prince:0 "The Black Prince"
+    #state modifiers
     weak_ITA_industry:0 "Weak Italian Industrial Base"
     ITA_colonial_exploit:0 "Exploited Colonial Territory"
     ITA_colonial_development:0 "Developed Colonial Territory"
     ITA_balken_exploit:0 "Exploited Balkan Territory"
     ITA_balken_development:0 "Developed Balkan Territory"
     africa_roads:0 "Poor African Logistics"
+    FRA_integral:0 "Integral Territory"
+    FRA_gabon_military:0 "Extensive Gabon Conscription"
+    FRA_free_gabon:0 "Free French Capital Territory"
+    FRA_gabon_contested:0 "Battle for Gabon"
+
+
+#French stuff
+
+FRA_vichy_exile_officers:0 "Vichy Exiles"
+FRA_foreign_legion_recruitment:0 "French Foreign Legion"
+FRA_FREE_army_4:0 "Free French Army"
+FRA_FREE_army_3:0 "Free French Army"
+FRA_FREE_army_2:0 "Free French Army"
+FRA_FREE_army_1:0 "Free French Army"
+FRA_FREE_army_0:0 "Free French Army"
+FRA_exile_government_4:0 "Exiled Government"
+FRA_exile_government_3:0 "Exiled Government"
+FRA_exile_government_2:0 "Exiled Government"
+FRA_exile_government_1:0 "Exiled Government"
+FRA_call_to_arms:0 "Appeal of 18 June"
+FRA_civil_supported:0 "Civilian Government"
+FRA_military_supported:0 "Military Government"
+FRA_home_production:0 "Free French Production"
+FRA_perfidious_albion:0 "Perfidious Albion"
+FRA_perfidious_albion_desc:0 ""Perfidious Albion" is a pejorative phrase used within the context of international relations diplomacy to refer to alleged acts of diplomatic sleights, duplicity, treachery and hence infidelity (with respect to perceived promises made to or alliances formed with other nation states) by monarchs or governments of the UK (or England prior to 1707) in their pursuit of self-interest."
+
 
 #commonwealth stuff
 
@@ -207,6 +236,8 @@ ENG_war_cabinet_desc:0 "On 3 September 1939, Neville Chamberlain, Prime Minister
 
 JAP_law:0 "Asian Liberation"
 JAP_law_desc:0 "All Asians are equal, but some Asians are more equal"
+
+peace_time_army:0 "Peace Time Military"
 
 #Australia stuff
 

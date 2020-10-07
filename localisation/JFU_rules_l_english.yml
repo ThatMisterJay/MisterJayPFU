@@ -77,7 +77,7 @@
 
 
     JFU_rules.7.t:0 "Rules for Italy"
-    JFU_rules.7.d:0 "1. Cannot declare war on Greece or Yugoslavia before Germany is at war (Tip: Declare war whilst Germany is at war but prior to joining the axis.) \n\n2. Not a rule, but Italy joins 1 month after the fall of Paris \n\n3. Cannot send navy out of the med without taking Gibraltar or Suez."
+    JFU_rules.7.d:0 "1. Cannot declare war on Greece or Yugoslavia before Germany is at war (Tip Declare war whilst Germany is at war but prior to joining the axis.) \n\n2. Not a rule, but Italy joins 1 month after the fall of Paris \n\n3. Cannot send navy out of the med without taking Gibraltar or Suez."
     JFU_rules.7.a:0 "I should follow these!"
 
     JFU_rules.8.t:0 "Rules for Japan"
@@ -101,11 +101,11 @@
     JFU_rules.12.a:0 "I should follow these!"
 
     JFU_rules.13.t:0 "Rules for USA"
-    JFU_rules.13.d:0 "1. Cannot join the Allies or go to war until 1941 or if any of the following occur: \n- Axis takes a port in UK \n- Operation Barbarossa occurs \n- Invasion of South American European Colonies \n\n2. Cannot lend lease the allies until June 1940 or France falls (Fuel allowed)."
+    JFU_rules.13.d:0 "1. Cannot join the Allies or go to war until 1941 or if any of the following occur \n- Axis takes a port in UK \n- Operation Barbarossa occurs \n- Invasion of South American European Colonies \n\n2. Cannot lend lease the allies until June 1940 or France falls (Fuel allowed)."
     JFU_rules.13.a:0 "I should follow these!"
 
     JFU_rules.14.t:0 "Rules for France"
-    JFU_rules.14.d:0 "1. Cannot have more than 10 divisions outside of France before capitulation (Expedition these 10 units to another country prior to capitulation otherwise you will lose these units). \n\n2. May not send any lend lease other than planes until capitulation. \n\n3. No building ports in Metropolitan France."
+    JFU_rules.14.d:0 "1. Cannot have more than any divisions outside of France before capitulation . \n\n2. May not send any lend lease other than planes until capitulation. \n\n3. No building ports in Metropolitan France."
     JFU_rules.14.a:0 "I should follow these!"
 
     JFU_rules.15.t:0 "Rules for China"

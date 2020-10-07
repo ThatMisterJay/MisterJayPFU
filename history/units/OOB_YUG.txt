@@ -1,0 +1,200 @@
+units = {
+	######## LAND UNITS ########
+	###### Vojska Kraljevine Jugoslavije ######
+	division = {
+		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1. 'Cerska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "19. 'Fontina' Pesadijska Divizija"
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	### Obalnim Armija ###
+	division = {
+		name = "12. 'Jadranska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3924
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	### 5. Armija ###
+	division = {
+		name = "8. 'Krajinska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 907
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "9. 'Timocka' Pesadijska Div."  				# Peadijska if we get font support
+		location = 11868
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "2. Konjička Divizija"
+		location = 11887
+		division_template = "Konjička Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	### 6. Armija ###
+	division = {
+		name = "3. 'Dunavska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3614
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	#### 1. Grupa Vojska ####
+	### 4. Armija ###
+	division = {
+		name = "27. 'Savaska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 11581
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	### 7. Armija ###
+	division = {
+		name = "Triglavski Odred"
+		location = 3631
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Risnajaski Odred" 							# Rinajaski if we get font support
+		location = 11612
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "1. Konjička Divizija"
+		location = 9627
+		division_template = "Konjička Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	#### 2. Grupa Vojska ####
+	### 1. Armija ###
+	division = {
+		name = "7. 'Potiska' Pesadijska Div."  				# Peadijska if we get font support
+		location = 6643
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "3. Konjička Divizija"
+		location = 614
+		division_template = "Konjička Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	### 2. Armija ###
+	division = {
+		name = "10. 'Bosanska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3627
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "17. 'Vrbaska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3623
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	#### 3. Grupa Vojska ####
+	### 3. Armija ###
+	division = {
+		name = "13. 'Hercegovacka' Pesadijska Div."  		# Peadijska if we get font support
+		location = 833
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "15. 'Zetska' Pesadijska Div."  				# Peadijska if we get font support
+		location = 6913
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "25. 'Vardarsa' Pesadijska Div."  			# Peadijska if we get font support
+		location = 9809
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+	### 3. Teritorijalna Armija ###
+	division = {
+		name = "5. 'Sumadijska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3833
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "20. 'Bregalnicka' Pesadijska Div."  		# Peadijska if we get font support
+		location = 11856
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "22. 'Ibarska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3882
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+
+} 

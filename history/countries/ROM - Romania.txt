@@ -4,6 +4,7 @@ oob = "ROM_1936"
 
 set_convoys = 20
 set_research_slots = 3
+add_timed_idea = { idea = peace_time_army days = 1168 }
 set_stability = 0.6
 set_war_support = 0.61
 
