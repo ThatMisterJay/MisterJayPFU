@@ -426,6 +426,9 @@ focus_tree = {
 
 		completion_reward = {
 			set_cosmetic_tag = RSA
+			545 = {
+				add_core_of = SAF
+			}
 			ENG = { load_oob = ENG_smith }
 			if = {
 				limit = {

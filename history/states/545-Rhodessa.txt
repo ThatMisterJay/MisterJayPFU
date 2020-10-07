@@ -10,7 +10,6 @@ state={
 	}
 
 	history={
-		add_core_of = SAF
 		owner = ENG
 		buildings = {
 			infrastructure = 2
