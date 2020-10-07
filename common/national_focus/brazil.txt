@@ -1,0 +1,43 @@
+focus_tree = {
+	id = brazilian_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+
+		modifier = {
+			add = 50
+			tag = LIT
+		}
+
+
+
+		modifier = {
+			add = 50
+			tag = SWE
+		}
+
+
+	}
+
+	
+	reset_on_civilwar = no
+
+	focus = {
+		id = BRA_commit_seppuku
+		icon = GFX_goal_generic_construction2
+		x = 5
+		y = 0
+		cost = 10000
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -5000
+		}
+	}
+}

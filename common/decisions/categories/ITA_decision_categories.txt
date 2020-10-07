@@ -1,0 +1,43 @@
+monarchist_ITA = {
+
+	icon = generic_monarchism
+
+	allowed = {
+original_tag = ITA
+	}
+
+	visible = {
+has_country_flag = ITA_rome
+original_tag = ITA
+has_country_flag = ITA_ITR
+	}
+}
+
+blackshirt_ITA = {
+
+  custom_icon = {
+  		tag = ITA
+  		value = ITR_support_icon_value
+      desc = ITR_support_desc
+
+
+      visible = {
+        tag = ITA
+      }
+
+}
+
+  picture = GFX_decision_cat_picture_organize_the_blackshirts
+
+	icon = generic_fascism
+
+	allowed = {
+original_tag = ITA
+	}
+
+	visible = {
+has_country_flag = ITA_loyalty
+original_tag = ITA
+has_cosmetic_tag = ITR
+	}
+}

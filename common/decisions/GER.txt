@@ -1,0 +1,713 @@
+#Category only allowed for GER
+operations = {
+
+	GER_barbarossa_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		available = {
+			219 = { is_controlled_by_ROOT_or_ally = yes }
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+			202 = { is_controlled_by_ROOT_or_ally = yes }
+			217 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+GER_exploit_ROM = {
+
+	icon = infiltrate_state
+
+targets = { ROM }
+
+	available = {
+		is_in_faction_with = ROM
+	}
+
+	visible = { has_idea = heinrich_himmler }
+
+fire_only_once = yes
+
+	allowed = {
+		original_tag = GER
+		always = yes
+	}
+
+	available = {
+	NOT = { has_idea = GER_ROM_exploited }
+	}
+
+	complete_effect = {
+		add_timed_idea = { idea = GER_ROM_exploited days = 90 }
+		ROM = { add_timed_idea = { idea = axis_exploited days = 120 }  }
+		GER = { country_event = { id = DSFU.1 days = 1 } }
+	}
+}
+
+
+GER_exploit_HUN = {
+
+	icon = infiltrate_state
+
+targets = { HUN }
+
+	available = {
+		is_in_faction_with = HUN
+	}
+
+	visible = { has_idea = heinrich_himmler }
+
+fire_only_once = yes
+
+	allowed = {
+		original_tag = GER
+		always = yes
+	}
+
+	available = {
+	NOT = { has_idea = GER_ROM_exploited }
+	}
+
+	complete_effect = {
+		add_timed_idea = { idea = GER_ROM_exploited days = 90 }
+		HUN = { add_timed_idea = { idea = axis_exploited days = 120 }  }
+		GER = { country_event = { id = DSFU.2 days = 1 } }
+	}
+}
+
+
+
+
+
+
+}
+
+GER_case_anton_category = {
+
+	GER_case_anton = {
+
+		icon = generic_operation
+
+		available = {
+			original_tag = GER
+			has_government = fascism
+			EFR = {
+				is_subject_of = GER
+				NOT = { has_country_flag = case_anton }
+			}
+			date > 1942.1.1
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = GER
+			has_government = fascism
+			EFR = { is_subject_of = GER }
+			date > 1941.10.1
+			any_country = {
+		   		is_in_faction_with = ENG
+					has_full_control_of_state = 458
+		        }
+				any_country = {
+				 		is_in_faction_with = ENG
+						has_full_control_of_state = 665
+				        }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ITA = { has_capitulated = no }
+			}
+		}
+		complete_effect = {
+			annex_country = { target = EFR transfer_troops = yes }
+			hidden_effect = {
+
+				EFR = {
+					transfer_navy = { target = GER }
+				}
+			}
+		}
+	}
+}
+
+political_actions = {
+
+SPR_tungsten = {
+
+	icon = tungsten
+
+	cost = 100
+
+targets = { SPR }
+
+	allowed = {
+		tag = GER
+	}
+
+visible = {
+	date > 1940.1.1
+	NOT = { has_country_flag = yes_GER }
+	has_global_flag = nationalist_victory
+}
+
+complete_effect = {
+	SPR = { country_event = { id = DSFU.4 days = 1 } }
+	show_ideas_tooltip = GER_payment
+}
+
+}
+
+	annex_bulgaria = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+
+		allowed = {
+			OR = {
+				tag = GER
+				tag = ROM
+			}
+		}
+
+		visible = {
+			date > 1939.1.1
+			OR = {
+				tag = GER
+				tag = ROM
+			}
+			BUL = { is_ai = yes }
+			country_exists = BUL
+		}
+
+		complete_effect = {
+			BUL = {
+				every_owned_state = {
+					limit = { is_core_of = BUL }
+					add_core_of = ROOT
+				}
+			}
+			ROOT = {
+				annex_country = { target = BUL transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_romania = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+
+		allowed = { tag = GER }
+
+		visible = {
+			tag = GER
+			ROM = { is_ai = yes }
+			country_exists = ROM
+			date > 1939.1.1
+		}
+
+		complete_effect = {
+			ROM = {
+				every_owned_state = {
+					limit = { is_core_of = ROM }
+					add_core_of = GER
+				}
+			}
+			GER = {
+				annex_country = { target = ROM transfer_troops = yes }
+			}
+		}
+	}
+
+	annex_hungary = {
+		ai_will_do = { factor = 0 }
+		cost = 30
+
+		allowed = { tag = GER }
+
+		visible = {
+			tag = GER
+			HUN = { is_ai = yes }
+			country_exists = HUN
+			date > 1939.1.1
+		}
+
+		complete_effect = {
+			HUN = {
+				every_owned_state = {
+					limit = { is_core_of = HUN }
+					add_core_of = GER
+				}
+			}
+			GER = {
+				annex_country = { target = HUN transfer_troops = yes }
+
+			}
+		}
+	}
+
+	puppet_vichy_france = {
+		ai_will_do = { factor = 0 }
+		cost = 25
+
+		allowed = { tag = GER }
+
+		visible = {
+			tag = GER
+			country_exists = EFR
+			date > 1941.1.1
+			GER = { has_war_with = SOV }
+		}
+
+		complete_effect = {
+			GER = { puppet = EFR }
+		}
+	}
+
+	capitulate_to_allies = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			GER = { has_war_with = SOV }
+			GER = { surrender_progress > 0.70 }
+			date > 1941.10.1
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+
+		visible = {
+			GER = { has_war_with = SOV }
+			SOV = { surrender_progress < 0.80 }
+		}
+
+		complete_effect = {
+			GER = { country_event = { id = JFU_germany.18 days = 1 } }
+		}
+	}
+
+	# Reinstate Wilhelm IV into the line of succession
+	reinstate_wilhelm_iv_succession_rights = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_country_flag = backed_down_netherlands_kaiser
+		}
+
+		complete_effect = {
+			add_stability = -0.10
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
+			hidden_effect = {
+				set_country_flag = reinstated_wilhelm_iv_succession_rights
+			}
+		}
+	}
+
+	# Agnatic-Cognatic Primogeniture
+	modernize_the_succession_laws = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_country_flag = reinstated_wilhelm_iv_succession_rights
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			custom_effect_tooltip = modernize_the_succession_laws_tt
+			hidden_effect = {
+				set_country_flag = modernized_succession_laws
+			}
+		}
+	}
+
+	recall_von_lettow_vorbeck = {
+
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			has_civil_war = no
+		}
+		visible = {
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Wilhelm II" }
+				has_country_leader = { ruling_only = yes name = "Wilhelm III" }
+				has_country_leader = { ruling_only = yes name = "Victoria" }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Paul von Lettow-Vorbeck"
+				gfx = GFX_portrait_ger_von_lettow_vorbeck
+				traits = { trickster war_hero media_personality jungle_rat}
+				skill = 4
+				id = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+		}
+	}
+}
+
+foreign_politics = {
+
+
+
+	SWE_trade = {
+
+
+
+targets = { SWE }
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+		has_full_control_of_state = 144
+		}
+
+		cost = 10
+
+icon = generic_political_discourse
+
+
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+has_country_flag = SWE_embargo
+		}
+
+		complete_effect = {
+			ENG = {
+				 set_country_flag = GER_SWE_trade
+			}
+country_event = {
+	id = DSFU.13 days = 1
+}
+	}
+}
+
+
+	# Titles Deprivation Act 1917
+	request_restoration_of_british_titles = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			ENG = { has_opinion = { target = GER value > 99 } }
+			custom_trigger_tooltip = {
+				tooltip = hindenburg_destroyed_tt
+				NOT = { has_global_flag = hindenburg_destroyed }
+			}
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_completed_focus = GER_ally_the_shade
+			has_country_flag = modernized_succession_laws
+		}
+
+		complete_effect = {
+			ENG = { country_event = { id = wtt_germany.999 days = 1 } }
+			custom_effect_tooltip = request_restoration_of_british_titles_tt
+			hidden_effect = { set_global_flag = hindenburg_event_in_progress }
+		}
+	}
+
+	GER_request_polish_war_participation = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war_with = SOV
+			NOT = { is_in_faction_with = POL }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_country_flag = poland_traded_danzig
+			has_completed_focus = GER_tackle_the_communist_threat
+		}
+
+		complete_effect = {
+			POL = { country_event = { id = wtt_germany.65 hours = 6 } }
+		}
+
+	}
+}
+
+#Category only allowed for GER
+GER_military_buildup = {
+
+	GER_plan_z = {
+
+		icon = generic_naval
+
+		available = {
+			has_navy_size = {
+				unit = battleship
+				size > 9
+			}
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 2
+			}
+			has_navy_size = {
+				unit = carrier
+				size > 3
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 99
+			}
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 1800
+		is_good = no
+		activation = {
+			has_completed_focus = GER_planz
+		}
+
+
+		visible = {
+			has_completed_focus = GER_planz
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+		}
+	}
+}
+
+special_projects = {
+
+	GER_begin_heavy_water_production = {
+		allowed = {
+			original_tag = GER
+			has_dlc = "La Resistance"
+		}
+		available = {
+			110 = {
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		visible = { has_tech = atomic_research }
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		days_remove = 365
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_water
+				category = nuclear
+				uses = 2
+				bonus = 2
+			}
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
+
+	GER_dismantle_maginot = {
+
+		icon = generic_construction
+
+		available = {
+			#has_war = yes
+			controls_state = 28
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				controls_state = 18
+				controls_state = 29
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			NOT = { tag = FRA }
+			controls_state = 28
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				18 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+				29 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { FRA = { has_completed_focus = FRA_extend_the_maginot_line } }
+				add_timed_idea = { idea = GER_dismantle_maginot days = 270 }
+				else = {
+					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+				}
+			}
+		}
+	}
+}

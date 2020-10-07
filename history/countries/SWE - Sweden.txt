@@ -1,0 +1,182 @@
+﻿capital = 141
+
+oob = "SWE_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	neutrality_idea_sweden
+	
+}
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	gwtank = 1
+	basic_light_tank = 1
+	CAS1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	motorised_infantry = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.9.18"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+    democratic = 75
+    neutrality = 14
+    communism = 8
+    fascism = 3
+}
+
+set_convoys = 50
+set_stability = 0.75
+
+
+
+
+create_country_leader = {
+	name = "Per Albin Hansson"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Olov Lindholm"
+	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Axel Pehrsson-Bramstorp"
+	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Folke Högberg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { commando }
+	skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Erik af Edholm"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  hill_fighter }
+	skill = 2
+
+}
+
+create_field_marshal = {
+	name = "Ernst Linder"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { defensive_doctrine old_guard }
+	skill = 4
+
+}
+
+create_navy_leader = {
+	name = "Claes Lindström"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { blockade_runner }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Karl Peyron"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Gustaf Eriksson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = { ironside }
+	skill = 3
+}
+
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Draken Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}

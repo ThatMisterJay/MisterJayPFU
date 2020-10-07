@@ -1,0 +1,16 @@
+
+state={
+	id=322
+	name="STATE_322"
+
+	history={
+		 
+	}
+
+	provinces={
+		1991 2014 2093 2098 4900 4994 5033 7926 8121 10918 12807
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=town
+}

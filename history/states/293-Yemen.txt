@@ -1,0 +1,28 @@
+
+state={
+	id=293
+	name="STATE_293"
+
+	resources={
+		oil=9.000
+	}
+
+	history={
+		add_core_of = IRQ
+		owner = ENG
+		victory_points = { 5074 1 }
+		victory_points = { 10840 3 }
+		buildings = {
+			5074 = { naval_base = 3 }
+			infrastructure = 1
+			10840 = { naval_base = 1 }
+		}
+	}
+
+	provinces={
+		1920 1973 4924 5074 10752 10840
+	}
+	manpower=2489500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

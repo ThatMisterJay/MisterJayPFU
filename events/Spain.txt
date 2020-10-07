@@ -1,0 +1,58 @@
+
+add_namespace = spain
+
+# Spanish Civil War if Franco is elected
+country_event = {
+	id = spain.10
+	title = spain.1.t
+	desc = spain.10.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+
+		is_triggered_only = yes
+
+
+	option = { # Support Nationalists
+		name = spain.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {	add_named_threat = {
+				threat = 3.5 name = SPR_war
+			}
+			SPR = {
+				add_ideas = SPA_recovering_from_civil_war
+		}
+
+		remove_ideas = SPR_military_disloyalty
+remove_ideas = SPR_political_violence
+SPR_clr_national_strikes = yes
+
+				add_stability = -0.10
+
+			}
+			news_event = { hours = 6 id = news.63 }
+
+
+set_politics = { ruling_party = fascism }
+			ITA = { country_event = { id = ethiopia.1 days = 1 } }
+
+			army_experience = 200
+
+			SOV = {
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
+
+			}
+			GER = {
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
+			}
+			ITA = {
+				add_timed_idea = {
+					idea = SPA_civil_war_support days = 1000
+				}
+			}
+		}
+
+	}

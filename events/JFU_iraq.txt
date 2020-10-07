@@ -1,0 +1,48 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = iraq
+
+#
+country_event = {
+	id = iraq.1
+	title = iraq.1.t
+	desc = iraq.1.d
+
+	is_triggered_only = yes
+
+	option = { # Support democrats
+		name = iraq.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 291
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = fascism
+				size = 0.5
+				capital = 676
+				states = { 676 675 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = IRQ
+					has_government = fascism
+				}
+				load_oob = "IRQ_civil_war_axis"
+				set_equipment_fraction = 0.7
+				set_stability = 0.8
+				add_popularity = { ideology = fascism popularity = 1 }
+				set_country_flag = IRQ_fascist
+			}
+			#news_event = { hours = 6 id = news.63 }
+			set_global_flag = iraq_civil_war
+
+			load_oob = "IRQ_civil_war_allies"
+			set_equipment_fraction = 0.7
+			set_stability = 0.9
+			add_popularity = { ideology = democratic popularity = 1 }
+		}
+		custom_effect_tooltip = nationalists_chosen
+	}
+}

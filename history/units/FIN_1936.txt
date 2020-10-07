@@ -1,0 +1,249 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Divisioona"		# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Erillinen Prikaati" 	# Separate Brigade - Represents groups of separate battalions (Erillinen Pataljoona) and various garrison units
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Ratsuväkiprikaati"  		# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+
+##### OOB #####
+units = {
+	##### LAND UNITS #####
+	##### Suomen Pääesikunta #####
+	division = {
+		name = "6. Divisioona"
+		location = 3137 # Tampere
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "9. Divisioona"
+		location = 158 # Oulu
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "Lapin Ryhmä"
+		location = 197 # Salla
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Pohjois-Karjalan Ryhmä"
+		location = 11156 # Uimaharju
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	# IV Corps
+	division = {
+		name = "12. Divisioona"
+		location = 9061 # Joensuu
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "13. Divisioona"
+		location = 11141 # Kuopio
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "Räsäsen Ryhmä"
+		location = 6153 # Suojärvi
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	### Kannaksen Armeija ###
+	# II Corps
+	division = {
+		name = "1. Divisioona"
+		location = 9206 # Viipuri
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "4. Divisioona"
+		location = 11105 # Helsinki
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "5. Divisioona"
+		location = 3083 # Turku
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "11. Divisioona"
+		location = 3061 # Kotka
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Lipolan Ryhmä"
+		location = 9176 # Salmi
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Muolaan Ryhmä"
+		location = 3061 # Kotka
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Uudenkirkon Ryhmä"
+		location = 9176 # Salmi
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	# III Corps
+	division = {
+		name = "8. Divisioona" # Vaasa
+		location = 3122
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "10. Divisioona"
+		location = 9056 # Jyväskylä
+		division_template = "Divisioona"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "Raudun Ryhmä"
+		location = 9181 # Ilomantsi
+		division_template = "Erillinen Prikaati"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Suomen Merivoimat"
+		naval_base = 11105 # Helsinki
+		task_force = {
+			name = "Rannikkolaivue"
+			location =  11105 # Helsinki
+			ship = { name = "Ilmarinen" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = FIN version_name = "Väinämöinen Class" } } }
+			ship = { name = "Väinämöinen" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = FIN version_name = "Väinämöinen Class" } } }
+		}
+		task_force = {
+			name = "Sukellusvenelaivue"
+			location =  11105 # Helsinki
+			ship = { name = "Vetehinen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN version_name = "Vetehinen Class" } } }
+			ship = { name = "Vesihiisi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN version_name = "Vetehinen Class" } } }
+			ship = { name = "Iku-Turso" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN version_name = "Vetehinen Class" } } }
+			ship = { name = "Vesikko" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN  version_name = "Vesikko Class"} } }
+		}
+	}
+
+}
+
+### No air units (first formed Jan-1938) ###
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FIN"
+		}
+		requested_factories = 1
+		progress = 0.66
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FIN"
+		}
+		requested_factories = 1
+		progress = 0.35
+		efficiency = 100
+	}
+}

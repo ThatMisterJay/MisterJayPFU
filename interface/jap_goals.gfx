@@ -1,0 +1,30 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_Kaiserreich_Tusnami"
+		texturefile = "gfx/interface/goals/Kaiserreich_Tsunami.tga"
+	
+	}
+
+	SpriteType = {
+		name = "GFX_Kaiserreich_Skull"
+		texturefile = "gfx/interface/goals/Kaiserreich_Skull.tga"
+	
+	}
+	SpriteType = {
+		name = "GFX_Kaiserreich_Jap_Officer"
+		texturefile = "gfx/interface/goals/Kaiserreich_Jap_Officer.tga"
+	
+	}
+	SpriteType = {
+		name = "GFX_Kaiserreich_Jap_Navy"
+		texturefile = "gfx/interface/goals/Kaiserreich_Jap_Navy.tga"
+	
+	}
+	SpriteType = {
+		name = "GFX_Kaiserreich_Jap_Purge"
+		texturefile = "gfx/interface/goals/Kaiserreich_Jap_Purge.tga"
+	
+	}
+
+}

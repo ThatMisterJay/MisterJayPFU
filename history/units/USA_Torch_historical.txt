@@ -1,0 +1,20 @@
+﻿units = {
+
+	division= {
+		name = "Armored Division"
+		location = 788 # Norfolk
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "Armored Division"
+		location = 788 # Norfolk
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+}
+#####################

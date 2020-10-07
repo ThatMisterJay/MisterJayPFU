@@ -1,0 +1,169 @@
+division_template = {
+					name = "Minbing"
+	
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+					    infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+
+					}
+				}
+
+units = {
+	##### PFU Chinese Militia #####
+	division= {
+		name = "Minbing"
+		location = 1053
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Minbing"
+		location = 10112
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Minbing"
+		location = 10084
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Minbing"
+		location = 1193
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Minbing"
+		location = 12057
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}	
+	
+	division= {
+		name = "Minbing"
+		location = 7054
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		name = "Minbing"
+		location = 7054
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		name = "Minbing"
+		location = 7054
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+	
+	division= {
+		name = "Minbing"
+		location = 11961
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "Minbing"
+		location = 11961
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "Minbing"
+		location = 10054
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Minbing"
+		location = 10054
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "Minbing"
+		location = 10054
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+			division= {
+		name = "Minbing"
+		location = 1094
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Minbing"
+		location = 1094
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Minbing"
+		location = 1094
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Minbing"
+		location = 1094
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Minbing"
+		location = 1094
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+				division= {
+		name = "Minbing"
+		location = 9972
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Minbing"
+		location = 9972
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Minbing"
+		location = 9972
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+					division= {
+		name = "Minbing"
+		location = 9972
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}				
+	
+	division= {
+		name = "Minbing"
+		location = 9972
+		division_template = "Minbing"
+		start_experience_factor = 0.3
+	}
+	
+	
+
+	
+
+}

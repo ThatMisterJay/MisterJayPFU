@@ -1,0 +1,41 @@
+
+state={
+	id=598
+	name="STATE_598"
+	resources={
+		aluminium=12.000
+	}
+
+	history={
+		owner = PRC
+		
+		add_core_of = PRC
+				victory_points = {
+			12055 1
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 4
+			1029 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		1938.10.25 = {
+			controller = JAP
+
+		}
+
+	}
+
+	provinces={
+		1001 1029 1076 1121 1161 4001 4005 4010 4031 4082 4123 4148 7025 7085 7142 7181 7200 9953 9956 9995 10095 10098 11973 12055 12067 13144
+	}
+	manpower=23669300
+	buildings_max_level_factor=1.000
+	state_category=town
+}

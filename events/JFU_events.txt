@@ -1,0 +1,683 @@
+﻿###########################
+# Baltic Events
+###########################
+
+add_namespace = JFU
+
+#Italy joins axis 1 month after fall of paris
+country_event = {
+	id = JFU.1
+	title = JFU.1.t
+	desc = JFU.1.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+    immediate = {
+        GER = { add_to_faction = ITA }
+        ITA = {
+            add_to_war = {
+                targeted_alliance = GER
+                enemy = ENG
+            }
+        }
+    }
+
+	option = {
+		name = JFU.1.a
+	}
+}
+
+#Japan gains resistance after china dies
+country_event = {
+	id = JFU.5
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		set_variable = { resistance_variable = 30 }
+	}
+}
+
+#germany goes to war if 21 september
+country_event = {
+	id = JFU.6
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = GER
+		NOT = { has_completed_focus = GER_warwiththeussr }
+		date > 1941.9.21
+	}
+	hidden = yes
+
+	option = {
+		GER = { complete_national_focus = GER_warwiththeussr }
+		GER = { declare_war_on = { target = SOV type = annex_everything } }
+	}
+}
+
+country_event = {
+	id = JFU.7
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		tag = GER
+		NOT = { has_completed_focus = GER_operationblau }
+		NOT = { has_idea = GER_blitzkrieg }
+		206 = { CONTROLLER = { is_in_faction_with = GER } }
+		SOV = { controls_state = 219 }
+		SOV = { controls_state = 217 }
+		SOV = { controls_state = 238 }
+		SOV = { controls_state = 234 }
+		date > 1942.10.10
+		date < 1943.1.1
+	}
+	hidden = yes
+
+	option = {
+		GER = { complete_national_focus = GER_fall_blau }
+	}
+}
+
+#Operation husky spawns
+country_event = {
+	id = JFU.8
+	title = JFU.8.t
+	desc = JFU.8.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.8.a
+		hidden_effect = {
+			load_oob = "Husky_paratroopers"
+		}
+		custom_effect_tooltip = operation_husky_spawn_airborne
+		if = {
+			limit = { NOT = { TAG = USA } }
+			save_global_event_target_as = operation_husky_commonwealth
+		}
+	}
+
+	option = {
+		name = JFU.8.b
+		hidden_effect = {
+			load_oob = "Husky_mixed"
+		}
+		custom_effect_tooltip = operation_husky_spawn_mixed
+		if = {
+			limit = { NOT = { TAG = USA } }
+			ROOT = { save_global_event_target_as = operation_husky_commonwealth }
+		}
+	}
+
+	option = {
+		name = JFU.8.c
+		hidden_effect = {
+			load_oob = "Husky_marines"
+		}
+		custom_effect_tooltip = operation_husky_spawn_marines
+		if = {
+			limit = { NOT = { TAG = USA } }
+			save_global_event_target_as = operation_husky_commonwealth
+		}
+	}
+
+	option = {
+		name = JFU.8.d
+		trigger = { NOT = { tag = USA } }
+		ENG = { country_event = { id = JFU.9 } }
+	}
+}
+
+#Operation husky choose who gets spawns
+country_event = {
+	id = JFU.9
+	title = JFU.9.t
+	desc = JFU.9.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.9.a
+		ENG = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.9.b
+		trigger = {
+			FRA = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		FRA = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.9.c
+		trigger = {
+			SAF = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		SAF = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.9.d
+		country_event = { id = JFU.10 }
+		#next page
+	}
+}
+
+#Operation husky choose who gets spawns page 2
+country_event = {
+	id = JFU.10
+	title = JFU.10.t
+	desc = JFU.10.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = JFU.10.a
+		trigger = {
+			AST = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		AST = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.10.b
+		trigger = {
+			RAJ = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		RAJ = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.10.c
+		trigger = {
+			NZL = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		NZL = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.10.d
+		country_event = { id = JFU.11 }
+		#next page
+	}
+}
+
+#Operation husky choose who gets spawns page 3
+country_event = {
+	id = JFU.11
+	title = JFU.11.t
+	desc = JFU.11.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			CAN = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		name = JFU.11.a
+		CAN = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.11.b
+		trigger = {
+			IRE = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		IRE = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.11.c
+		trigger = {
+			IRQ = {
+				is_in_faction_with = ENG
+				is_ai = no
+			}
+		}
+		IRQ = { country_event = { id = JFU.8 } }
+	}
+
+	option = {
+		name = JFU.11.d
+		country_event = { id = JFU.9 }
+		#first page
+	}
+}
+
+country_event = {
+	id = JFU.12
+	title = JFU.12.t
+	desc = JFU.12.desc
+	picture = GFX_report_event_royalarmor
+
+	trigger = {
+		tag = ENG
+		date > 1939.5.1
+		ENG = {
+			controls_state = 681
+			controls_state = 447
+		}
+		NOT = { country_exists = SAF }
+		has_country_flag = SAF_annexed
+		has_tech = basic_heavy_tank
+	}
+
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = JFU.12.a
+		add_manpower = -15000
+		custom_effect_tooltip = JFU.12.tt
+		hidden_effect = {
+			load_oob = ENG_south_african_tank
+		}
+	}
+}
+
+add_namespace = tfv_australia
+
+# Lyons Passes Away
+country_event = {
+	id = tfv_australia.97
+	title = tfv_australia.97.t
+	desc = tfv_australia.97.d
+	picture = "GFX_report_event_lyon.dds"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1939.4.6
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = tfv_australia.97.a
+		if = {
+			limit = {
+				has_idea = AST_robert_g_menzies
+			 }
+			 remove_ideas = AST_robert_g_menzies
+		}
+		kill_country_leader = yes
+		if = {
+			limit = {
+				has_country_flag = pig_iron_sold
+			}
+			create_country_leader = {
+				name = "Robert Menzies"
+				desc = "POLITICS_ROBERT_MENZIES_DESC"
+				picture = "Robert_Menzies.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					minority_government
+					pig_iron_bob
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = pig_iron_sold
+				}
+			}
+			create_country_leader = {
+				name = "Robert Menzies"
+				desc = "POLITICS_ROBERT_MENZIES_DESC"
+				picture = "Robert_Menzies.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					minority_government
+				}
+		}
+
+	 }
+	}
+}
+
+#John Curtin shall lead
+country_event = {
+	id = tfv_australia.98
+	title = tfv_australia.98.t
+	desc = tfv_australia.98.d
+	picture = GFX_report_event_chamberlain
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1941.10.9
+	}
+	mean_time_to_happen = { days = 1 }
+	option ={
+		name = tfv_australia.98.a
+		set_party_name = { ideology = democratic long_name = AST_Labor_party name = AST_Labor_party }
+		create_country_leader = {
+			name = "John Curtin"
+			desc = "POLITICS_JOHN_CURTIN_DESC"
+			picture = "Portrait_Australia_John_Curtin.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			war_time_prime_minister
+			}
+		}
+	}
+}
+
+
+#Balbo death
+country_event = {
+id = JFU.13
+title = JFU.13.t
+desc = JFU.13.d
+picture = report_event_airplane_crash
+
+fire_only_once = yes
+
+trigger = {
+tag = ITA
+date > 1940.6.1
+}
+
+option = {
+name = JFU.13.a
+remove_ideas = italo_balbo
+remove_unit_leader = 994
+air_experience = 25
+add_stability = .10
+set_country_flag = balbo_dead
+}
+
+option = {
+name = JFU.13.b
+add_political_power = 100
+air_experience = 25
+}
+
+}
+
+
+#Australian battle events
+country_event = {
+	id = JFU.14
+	title = JFU.14.t
+	desc = JFU.14.d
+	picture = GFX_report_event_ANZAC_day
+
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		336 = { NOT = { is_controlled_by = ENG } }
+	}
+
+option = {
+name = JFU.14.a
+add_stability = -0.05
+add_war_support = 0.10
+set_country_flag = singapore_lost
+}
+
+}
+
+country_event = {
+	id = JFU.15
+	title = JFU.15.t
+	desc = JFU.15.d
+	picture = GFX_report_event_ast_planning
+
+fire_only_once = yes
+
+trigger = {
+	tag = AST
+	has_country_flag = singapore_lost
+}
+
+mean_time_to_happen = { days = 1 }
+
+option = {
+name = JFU.15.a
+add_political_power = 100
+add_ideas = AST_battle
+}
+}
+
+#Raj battle events
+country_event = {
+	id = JFU.16
+	title = JFU.16.t
+	desc = JFU.16.d
+	picture = GFX_report_event_indian_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = RAJ
+		336 = { NOT = { is_controlled_by = ENG } }
+	}
+
+option = {
+name = JFU.16.a
+ENG = {
+	remove_unit_leader = 995
+}
+add_timed_idea = { idea = RAJ_battle
+	days = 365
+}
+create_corps_commander = {
+	name = "Archibald Wavell"
+	picture = "Portrait_Britain_Archibald_Wavell.dds"
+	traits = { career_officer organizer infantry_leader hill_fighter jungle_rat }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+}
+
+}
+
+#new leader
+country_event = {
+	id = JFU.17
+	title = JFU.17.t
+	desc = JFU.17.d
+	picture = GFX_report_event_partition_of_india
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = RAJ
+		date > 1943.10.1
+	}
+
+	option = {
+		name = JFU.17.a
+		ENG = {
+			remove_unit_leader = 996
+		}
+		create_country_leader = {
+			name = "Archibald Wavell"
+			desc = ""
+			picture = "Portrait_Britain_Archibald_Wavell.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				army_chief_reform_2
+			#
+			}
+
+		}
+		create_country_leader = {
+			name = "Archibald Wavell"
+			desc = ""
+			picture = "Portrait_Britain_Archibald_Wavell.dds"
+			expire = "1965.1.1"
+			ideology = centrism
+			traits = {
+				army_chief_reform_2
+			#
+			}
+
+		}
+		create_corps_commander = {
+			name = "Claude Auchinleck"
+			picture = "Portrait_Britain_Claude_Auchinleck.dds"
+			traits = { inflexible_strategist career_officer trait_engineer infantry_leader trait_mountaineer jungle_rat }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+}
+
+country_event = {
+    id = JFU.18
+    title = JFU.18.t
+    desc = JFU.18.d
+    picture = GFX_report_event_indian_soldiers
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = RAJ
+        date > 1942.3.1
+        288 = { NOT = { is_controlled_by = RAJ } }
+    }
+
+option = {
+name = JFU.18.a
+ENG = {
+    remove_unit_leader = 69
+}
+create_corps_commander = {
+    name = "William Slim"
+        id = 69
+    picture = "Portrait_Britain_William_Slim.dds"
+    traits = { trickster war_hero trait_mountaineer jungle_rat infantry_leader }
+    skill = 5
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 5
+    logistics_skill = 5
+}
+}
+
+}
+
+country_event = {
+    id = JFU.19
+    title = JFU.19.t
+    desc = JFU.19.d
+    picture = GFX_report_event_chinese_soldiers_fighting
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = RAJ
+        date > 1941.1.1
+    RAJ = {
+    controls_state = 431
+    }
+    }
+
+option = {
+name = JFU.19.a
+create_corps_commander = {
+    name = "Sun Li Jen"
+    gfx = "GFX_portrait_chi_sun_li_jen"
+    traits = { brilliant_strategist infantry_officer infantry_leader trait_mountaineer jungle_rat panzer_leader }
+    skill = 5
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 4
+}
+hidden_effect = {
+                division_template = {
+                    name = "New 1st Army Division"
+                    priority = 2
+
+                    regiments = {
+                        mountaineers = { x = 0 y = 0 }
+                        mountaineers = { x = 0 y = 1 }
+                        mountaineers = { x = 0 y = 2 }
+                        mountaineers = { x = 0 y = 3 }
+                        mountaineers = { x = 0 y = 4 }
+
+                        mountaineers = { x = 1 y = 0 }
+                        mountaineers = { x = 1 y = 1 }
+                        mountaineers = { x = 1 y = 2 }
+                        mountaineers = { x = 1 y = 3 }
+                        mountaineers = { x = 1 y = 4 }
+
+                        mountaineers = { x = 2 y = 0 }
+                        mountaineers = { x = 2 y = 1 }
+                        mountaineers = { x = 2 y = 2 }
+                        mountaineers = { x = 2 y = 3 }
+
+                        artillery_brigade = { x = 3 y = 0 }
+                        artillery_brigade = { x = 3 y = 1 }
+                        artillery_brigade = { x = 3 y = 2 }
+                        artillery_brigade = { x = 3 y = 3 }
+                    }
+                    support = {
+                        engineer = { x = 0 y = 0 }
+                        recon = { x = 0 y = 1 }
+                        logistics_company = { x = 0 y = 2 }
+                        signal_company = { x = 0 y = 3 }
+                        artillery = { x = 0 y = 4 }
+                                                anti_air = { x = 0 y = 5 }
+                    }
+                }
+                    431 = {
+                    create_unit = {
+                        division = "name = \"200th Division NRA\" division_template = \"New 1st Army Division\" start_experience_factor = 1.0"
+                        owner = RAJ
+                    }
+                }
+}
+
+}

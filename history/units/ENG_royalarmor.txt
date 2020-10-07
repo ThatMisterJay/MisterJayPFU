@@ -1,0 +1,9 @@
+units = {
+	##### PFU Guards armoured #####
+	division= {
+		name = "Guards Armoured Division"
+		location = 4076
+		division_template = "Guards Armoured Division"
+		start_experience_factor = 0.5
+	}
+}

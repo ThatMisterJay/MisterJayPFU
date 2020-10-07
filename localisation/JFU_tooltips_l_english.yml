@@ -1,0 +1,117 @@
+﻿l_english:
+ENG_burma_road_tt:0 "Will increase the opinion of China and the Yunnan Clique, but will decrease Japan's opinion of us.\n"
+ENG_commonwealth_focus_tt:0 "Increases opinion with all of the commonwealth.\n"
+FRA_request_uk_territory_tt:0 "Request the transfer of all UK territory in south-west Africa. We will have to pay a price for this deal."
+RAJ_protect_ceylon_tt:0 "Transfers the state of Ceylon to us. We will have to pay for the transport of the majority of the rubber to London.\n"
+RAJ_request_ports_tt:0 "Transfers the states of Goa and French India to us. We will have to pay a price for this deal.\n"
+CHI_flying_tigers_tt:0 "This will allow the USA to send us fighters if we have a short supply of them."
+stubborn_surrender:0 "Stubborn Defender"
+special_forces_3b_tt:0 "Will increase effectiveness of all Special Forces by 5% (i.e.Marines gain attack on River, Shock Troops on forts)"
+SPR_civil_war_threat:0 "Spanish Civil War"
+USA_load_paratroopers_tt:0 "This focus will give you the next level of Paratrooper tech, and spawn 6 paratrooper divisions in Washington."
+
+attacking_state:0 "Attacking a French State"
+
+FRA_free_france_effect_1:0 "Will gain a 2 divisions of desert troops in Alexandria."
+FRA_free_france_operation_exporter_tt:0 "Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
+syria_sway_tt:0 "Will attempt to retake Syria from the traitors in Vichy. Will gain an Infantry Division in Beirut if operations in Lebanon are succesful."
+FRA_colonial_industry_effect_tt2:0 "Adds one §YCivilian Factory§! to every colonial state previously invested in."
+FRA_military_factories_effect_tt2:0 "Adds one §YMilitary Factory§! to every colonial state previously invested in."
+
+
+pfu.33.a.tt:0 "Spawns an elite Royal Guards armoured division in Egypt."
+JFU.12.tt:0 "Spawns a South African heavy tank division in Alexandria."
+pfu.urals.tt:0 "§RDO THIS FOCUS AS FAST AS YOU CAN!§! Moves industrial capacity in the west from places like Moscow and Leningrad, and brings it eastward along with §Gmassive§! construction of new military factories in and around the Urals."
+pfu.14.a.tt:0 "Spawns 11 infantry divisions and 1 tank division along the Wolga river"
+
+JAP_ports_tt:0 "Constructs 4 ports per state in §GKyushu§!, §GOkinawa§!, §GTaiwan§! and §GSiam§! if controlled by the Japanese faction.\n"
+JAP_capitulate:0 "Japan has capitulated to the Allies."
+JAP_korea_tt:0 "Spawns twelve 14/4 divisions in §GKorea§!."
+JAP_subvert_india_tt:0 "Will spawn 2 divisions made from Indian freedom fighters."
+JAP_southern_expansion_tt:0 "This focus will unlock a decision to go to war with the UK and their allies, and after you are at war with the UK a decision to go to war with the USA."
+JAP_lower_resistance:0 "This focus will lower the Chinese resistance by 10.\n"
+JAP_yamato_JFU_tt:0 "Adds two §YYamato-Class Super Battleships§! to the production queue, at 50% complete."
+JAP_war_with_china:0 "Counterweight for Japanese War"
+JAP_homeland_tt:0 "Spawns 16 coastguard divisions to defend against naval invasions."
+JAP_resistance_training_tt:0 "Trains the Resistance Army to fight against the Japanese invaders. Will increase the bonus attack and defense gained from §GStart the Offensive§!."
+
+operation_husky_spawn_mixed:0 "Spawns 3 §GMarines§! and 3 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
+operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
+operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparation for §GOperation Husky§!.\n"
+
+empty_line:0 "\n\n"
+
+CHI_experimental_mechanised_unit_effect_tt:0 "Gain a Division with 5 §YLight Tank§! and 5 §YMotorised§! battalions\n"
+CHI_at_least_10_tt:0 "Japan needs to have occupied at least 10 Chinese States."
+CHI_at_least_15_tt:0 "Japan needs to have occupied at least 15 Chinese States."
+CHI_at_least_20_tt:0 "Japan needs to have occupied at least 20 Chinese States."
+
+CHI_organising_resistance_tt:0 "\nWill organise the §Glocal resistance§! in a random state in §YOccupied China§!. You can call these states to rise up with the decision §YRise My Minions§!.\n"
+CHI_will_spawn_divisions_tt:0 "Will spawn divisions in random states in §YOccupied China§!. This effect is more potent the longer you have organised the §Glocal resistance§!.\n"
+
+SPR_war:0 "Spanish Civil War"
+
+GER_fall_blau_tt:0 "The Soviet Union will gain a large amount of Oil in the Caucasus, though we will gain 2 mechanized divisions."
+GER_counter_husky_tt:0 "The Axis has control of the entire Westwall"
+
+ENG_operation_catapult_tt:0 "If we stike at the Vichy Fleet now we will prevent it falling into the hands of the Axis."
+GER_case_anton_JFU_tt:0 "This decision will capture what is left of the Vichy fleet for ourselves."
+
+SAF_tank_variant_tt:0 "This focus will give you a Tank variant if you have Medium or Heavy tank 1 researched.\n"
+SPR_new_general_tt:0 "4 New Generals will appear."
+
+ENG_fighter2:0 "Allows production of the Supermarine Spitfire"
+
+#tooltip#
+ITA_new_army:0 "Our new officer corp will lead the Italian army to victory. "
+ITA_remove_yes_men:0 "No longer will the Italian army be hampered by a incompetent corp of officers who knew the right people. "
+ITA_training:0 "New officer will fill the needs of the Royal Army. "
+ITA_new_commanders:0 "Commanders loyal to the King will be needed if Italy is to survive. (Italy gain 3 new experienced officers)"
+ITA_med:0 "Despite our lackluster officer corp, we still have some capable officers.(Gives access to a commando expert) "
+ITA_mot_div:0 " Motorized Divisons will be needed if Italy is to keep up with the other powers. Will gain a elite mot. division in Rome. "
+ITA_ss:0 "The SS will help us form new elite formations. Will gain 2 elite divisions in Rome.  "
+ITA_paratroopers:0 "Will allow the use of a airborne operations genius. "
+ITA_amphibious:0 "Will allow the use of a amphibious operations expert. "
+ITA_newofficercorp:0 "Our new officer corp is read and awaits deployment. "
+ITA_designer:0 "Gives access to a Heavy fighter designer. "
+ITA_commando_exp:0 "Gives access to a commando expert.
+
+
+ITA_support_good.tt:0 "This will increase support for the Regime. "
+ITA_support_bad.tt:0 "This will lower support for the Regime. "
+ITA_new_era.tt:0 "Requires 90% support"
+
+GER_bismarck_tt:0 "Adds two §YBismarck-Class Battleships§! to the production queue, at 50% complete."
+GER_SS_tt:0 "Will form §YSS Divisions§! in the future."
+GER_stug_tt:0 "Will allow production of the §YStuG III Ausf. G§!."
+GER_htd_tt:0 "Will allow production of the §YFerdinand§!."
+GER_tank_3_tt:0 "Our experience from the east will allows us to develop more §YAdvanced Panzers§!."
+GER_SPA_tt:0 "For our mobile warfare to succeeded we will need to develop §YMobile Artillery§!."
+
+ENG_norway_warplan:0 "Will allow us to execute §YMilitary Operations§! in Scandanavia"
+
+HUN_generals_tt:0 "Grants a §Y5 Skill General§"
+hun_art_tt:0 "Adds a production line of §YGerman Improved Artillery Equipment§! at §Y80%§! efficency"
+
+chief_robertson:0 "Robertson Appointed"
+chief_blamey:0 "Blamey Appointed"
+british_accept:0 "British Accept"
+sturdee_resigns:0 "Vernon Sturdee Resigned"
+AST_rules_the_waves:0 "Australia naval build up complete"
+
+ENG_sell_ship.tt:0 "Sell The Ship to §YAustralia§!"
+AST_ENG_yes.tt:0 "Accpet the Australian Offer to §Ypurchases§! our Ships"
+AST_ENG_no.tt:0 "Deny the Australian Offer to §Ypurchases§! our Ships"
+sold_out_CV:0 "Britsh no long have §YCarriers§! to sell"
+sold_out_BB:0 "Britsh no long have §YBattleships§! to sell"
+AST_offer_to_buy.tt:0 "Send the request to the British"
+AST_dec_cat_singapore.tt:0 "Will allow access to §YSingapore Strategy decision§!"
+AST_fleet_plan.tt:0 "Will start the §YAustralia Squadron§! build up mission"
+AST_far_east.tt:0 "With our new Fleet we can now assume responsibility for the §YFar East§!"
+british_aircraft_tech.tt:0 "The British will supply us with §Yblueprints§! and assistance with CV aircraft development (have carrier aircraft designer set)"
+AST_naval_tech.tt:0 "The British will supply §Yblueprints§! to improve our naval armament sheme"
+
+RAJ_naval_effort_tt:0 "Unlocks §YNaval Policy§! decisions."
+
+FRA_vichy_troops:0 "Vichy Corp"
+FRA_free_foreign_legion:0 "Foreign Legion"

@@ -1,0 +1,9 @@
+
+ai_historical_focus_list_EFR = {
+	ai_national_focuses = {
+     EFR_marechal_nous_voila
+	 EFR_famille
+     EFR_travail
+	 EFR_rationning
+	}
+}

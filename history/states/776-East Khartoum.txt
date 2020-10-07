@@ -1,0 +1,19 @@
+
+state={
+	id=776
+	name="STATE_776"
+
+	history={
+		owner = ENG
+
+	}
+
+	provinces={
+		add_core_of = AFR
+		1977 2046 2088 10902
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

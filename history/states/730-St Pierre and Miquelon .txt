@@ -1,0 +1,18 @@
+state={
+	id=730
+	name="STATE_730"
+	manpower=3426
+	state_category = tiny_island
+
+	history={
+		owner = FRA
+		buildings = {
+			373 = {
+				naval_base = 1
+			}
+		}
+		add_extra_state_shared_building_slots = 1
+	}
+
+	provinces={ 373 }
+}

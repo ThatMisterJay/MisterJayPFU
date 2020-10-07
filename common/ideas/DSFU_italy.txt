@@ -1,0 +1,777 @@
+ideas = {
+ country = {
+
+
+
+   		ETH_war = {
+
+        allowed = {
+          tag = ITA
+        }
+
+      picture = "por_colonial_army"
+
+        modifier = {
+        experience_gain_army = 0.30
+        war_support_factor = -0.10
+        }
+
+   		}
+
+   ITA_high_support = {
+
+     allowed = {
+       tag = ITA
+     }
+
+   picture = "prc_low_popular_support3"
+
+     modifier = {
+     stability_factor = 0.10
+     conscription_factor = 0.1
+     war_support_factor = 0.10
+     }
+
+   }
+
+ITA_low_support = {
+
+  allowed = {
+    tag = ITA
+  }
+
+picture = "prc_low_popular_support2"
+
+  modifier = {
+  stability_factor = -0.10
+  conscription_factor = -0.1
+  war_support_factor = -0.10
+  }
+
+}
+
+
+ITA_purged_rich = {
+
+picture = "eng_tackle_capitalism"
+
+modifier = {
+stability_factor = -0.10
+consumer_goods_factor = -0.05
+}
+
+}
+
+   SS_help = {
+ picture = "generic_spy_intel"
+ modifier = {
+consumer_goods_factor = -0.05
+  }
+
+   }
+
+   monarchist_officer = {
+
+     allowed = {
+       original_tag = ITA
+     }
+
+     picture = "can_patriation"
+
+     modifier = {
+political_power_factor = -0.10
+      }
+   }
+
+   victor_emmanuel_1 = {
+
+
+
+picture = "victor_emmanuel"
+
+     allowed = {
+       original_tag = "ITA"
+     }
+
+     allowed_civil_war = {
+       NOT = {
+         has_government = communism
+       }
+       NOT = {
+         any_other_country = {
+           original_tag = ITA
+           has_government = fascism
+         }
+       }
+     }
+
+     removal_cost = -1
+
+     modifier = {
+       stability_factor = 0.15
+       war_support_factor = 0.15
+     }
+   }
+
+   monarchist_officer_1 = {
+
+     allowed = {
+       original_tag = ITA
+     }
+
+     picture = "ast_abandon_the_westminster_system"
+
+     modifier = {
+political_power_factor = 0.15
+      }
+   }
+
+ITA_nat_industry = {
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  picture = "generic_central_management"
+
+  modifier = {
+industrial_capacity_factory = 0.20
+   }
+
+}
+
+ITA_freetime = {
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  picture = "hol_haven_of_tolerance"
+
+  modifier = {
+industrial_capacity_factory = -0.10
+   }
+
+}
+
+
+
+ITA_purged_lower_ranks = {
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  picture = "chi_wargaming_division"
+
+  modifier = {
+    army_org_Factor = -0.05
+    training_time_factor = 0.1
+   }
+}
+
+ITA_endsieg = {
+  allowed = {
+    original_tag = ITA
+  }
+
+  picture = "generic_reserve_divisions"
+
+  modifier = {
+    army_core_attack_factor = 0.08
+    army_core_defence_factor = 0.08
+    army_morale_factor = 0.05
+   }
+}
+
+   ITA_purged_staff = {
+
+     allowed = {
+       original_tag = ITA
+     }
+
+     picture = "chi_wargaming_division"
+
+     modifier = {
+       planning_speed = -0.05
+       army_org_Factor = -0.03
+       army_morale_factor = -0.05
+       max_planning = -0.04
+       training_time_factor = 0.1
+      }
+   }
+
+   weak_industry3 = {
+
+   allowed = {
+     original_tag = ITA
+   }
+
+   picture = "FRA_factory_strikes"
+
+   modifier = {
+   industrial_capacity_factory = -0.1
+
+    }
+   }
+
+ weak_industry2 = {
+
+ allowed = {
+   original_tag = ITA
+ }
+
+ picture = "FRA_factory_strikes"
+
+ modifier = {
+ industrial_capacity_factory = -0.2
+
+  }
+ }
+
+ weak_industry1 = {
+
+ allowed = {
+   original_tag = ITA
+ }
+
+picture = "FRA_factory_strikes"
+
+modifier = {
+ industrial_capacity_factory = -0.3
+
+  }
+ }
+
+ weak_industry0 = {
+
+ allowed = {
+   original_tag = ITA
+ }
+
+ picture = "FRA_factory_strikes"
+
+modifier = {
+ industrial_capacity_factory = -0.4
+
+  }
+ }
+
+ ITA_exploit_africa  = {
+
+ allowed = {
+   original_tag = ITA
+ }
+
+ picture = "generic_production_bonus"
+
+modifier = {
+production_speed_arms_factory_factor = 0.10
+  }
+ }
+
+ITA_upperclasssupport = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+political_advisor_cost_factor = -0.25
+high_command_cost_factor = -0.15
+air_chief_cost_factor = -0.15
+army_chief_cost_factor = -0.15
+navy_chief_cost_factor = -0.15
+}
+
+picture = "generic_disjointed_gov"
+
+}
+
+ITA_papal_subject = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+stability_factor = 0.25
+}
+
+picture = "ENG_the_war_to_end_all_wars"
+
+}
+
+ITA_army = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+
+planning_speed = -0.20
+army_org_Factor = -0.05
+army_morale_factor = -0.1
+max_planning = -0.12
+training_time_factor = 0.05
+supply_consumption_factor = 0.05
+}
+
+picture = "ITA_army"
+
+}
+
+
+ITA_output_boost = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+production_speed_buildings_factor = 0.25
+industrial_capacity_factory = 0.25
+}
+
+picture = "generic_deal_with_the_devil"
+
+}
+
+
+ITA_expanded_mvsn = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+army_morale_factor = 0.15
+land_reinforce_rate = 0.20
+}
+
+picture = "MEX_politicised_army"
+
+}
+
+ITA_mvsn_2 = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+conscription = 0.015
+army_morale_factor = 0.20
+land_reinforce_rate = 0.20
+army_core_attack_factor = 0.16
+army_core_defence_factor = 0.16
+}
+
+picture = "MEX_politicised_army_2"
+
+}
+
+
+ITA_army_2 = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+planning_speed = -0.20
+army_org_Factor = -0.1
+army_morale_factor = -0.15
+max_planning = -0.12
+training_time_factor = 0.1
+supply_consumption_factor = 0.1
+army_attack_factor = -0.08
+army_defence_factor = -0.08
+}
+
+picture = "ITA_army"
+
+}
+
+
+ITA_tanktreaty = {
+
+
+picture = "generic_acquire_tanks"
+
+modifier = {
+				license_armor_purchase_cost = -0.75
+			}
+
+}
+
+ITA_sssupport = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+resistance_damage_to_garrison = -0.5
+}
+
+picture = "chi_army_corruption"
+
+}
+
+
+
+ITA_new_officers = {
+
+allowed = {
+original_tag = ITA
+}
+
+modifier = {
+experience_gain_army = 0.15
+}
+
+picture = "chi_army_corruption3"
+
+}
+
+ITA_air_build = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "man_five_year_plan_air"
+
+equipment_bonus = {
+  fighter_equipment = {
+    build_cost_ic = -0.1 instant = yes
+  }
+  heavy_fighter_equipment = {
+    build_cost_ic = -0.1 instant = yes
+  }
+  nav_bomber_equipment = {
+    build_cost_ic = -0.05 instant = yes
+  }
+  tac_bomber_equipment = {
+    build_cost_ic = -0.05 instant = yes
+  }
+}
+
+modifier = {
+
+industrial_capacity_dockyard = -0.15
+}
+
+}
+
+ITA_navy_build = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "ITA_navy"
+
+equipment_bonus = {
+  fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  heavy_fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  nav_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  tac_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+}
+
+modifier = {
+industrial_capacity_dockyard = 0.2
+}
+
+}
+ITA_navy_build_battleship = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "ITA_navy"
+
+equipment_bonus = {
+  fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  heavy_fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  nav_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  tac_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+}
+
+equipment_bonus = {
+  capital_ship = {
+    build_cost_ic = -0.10 instant = yes
+  }
+}
+
+modifier = {
+industrial_capacity_dockyard = 0.2
+}
+
+}
+
+ITA_navy_build_carrier = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "ITA_navy"
+
+equipment_bonus = {
+  fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  heavy_fighter_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  nav_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+  tac_bomber_equipment = {
+    build_cost_ic = 0.15 instant = yes
+  }
+}
+
+equipment_bonus = {
+  carrier = {
+    build_cost_ic = -0.10 instant = yes
+  }
+}
+
+modifier = {
+industrial_capacity_dockyard = 0.2
+}
+
+}
+
+ITA_air_nerd = {
+
+allowed = {
+original_tag = ITA
+}
+
+picture = "ITA_navy"
+
+
+
+
+
+modifier = {
+industrial_capacity_dockyard = 0.05
+}
+
+}
+
+
+ITA_air_supply = {
+
+allowed = {
+original_tag =ITA
+}
+
+equipment_bonus = {
+transport_plane_equipment = {
+  build_cost_ic = -0.30
+  air_range = 0.25
+  instant = yes
+ }
+}
+
+picture = "generic_goods_red_bonus"
+
+}
+
+ }
+
+political_advisor = {
+
+italo_balbo_1 = {
+
+picture = italo_balbo
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  available = {
+    has_completed_focus = ITA_sendbalbotorome
+    NOT = { has_country_flag = balbo_dead }
+  }
+
+
+
+cost = 100
+
+  traits = { popular_figurehead fascist_militia_leader }
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ }
+
+ # MILITARY
+ army_chief = {
+
+ ITA_off_exp = {
+ledger = army
+picture = generic_army_europe_6
+
+   allowed = {
+     original_tag = ITA
+   }
+
+   available = {
+     has_completed_focus = ITA_delivernewstaffofficers
+   }
+
+   traits = { army_chief_offensive_2 }
+
+   ai_will_do = {
+     factor = 2
+   }
+ }
+
+ }
+
+ air_chief = {
+
+
+ }
+
+ high_command = {
+
+giovanni_messe_1 = {
+  ledger = army
+
+picture = giovanni_messe
+  allowed = {
+    original_tag = ITA
+  }
+  available = {
+    has_completed_focus = ITA_followthepanzerwaffeexample
+  }
+  traits = { army_armored_2 }
+}
+
+black_prince = {
+ledger = army
+picture = black_prince
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  available = {
+    has_completed_focus = ITA_decimaflottigliamas
+  }
+
+  traits = { army_commando_2 }
+
+  ai_will_do = {
+    factor = 2
+  }
+}
+
+ITA_inf_cav = {
+
+ledger = army
+picture = ettore_muti
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  available = {
+    has_completed_focus = ITA_delivernewstaffofficers
+  }
+
+  traits = { army_infantry_2 }
+
+  ai_will_do = {
+    factor = 2
+  }
+}
+
+silvio_scaroni = {
+
+ledger = army
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  available = {
+    has_completed_focus = ITA_delivernewstaffofficers
+  }
+
+  traits = { army_cavalry_2 }
+
+  ai_will_do = {
+    factor = 2
+  }
+}
+
+ITA_reg_exp = {
+  ledger = army
+
+picture = generic_political_advisor_europe_4
+
+  allowed = {
+    original_tag = ITA
+  }
+
+  available = {
+    has_completed_focus = ITA_delivernewstaffofficers
+  }
+
+  traits = { army_regrouping_2 }
+
+  ai_will_do = {
+    factor = 2
+  }
+}
+
+
+
+
+
+
+
+
+
+}
+
+}

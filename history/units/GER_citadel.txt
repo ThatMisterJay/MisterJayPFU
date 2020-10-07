@@ -1,0 +1,34 @@
+﻿###### OOB ######
+units = {
+	##### PFU 103rd & 102nd #####
+	division = {
+		name = "103. Schwere Panzer-Abteilung"
+		location = 525
+		division_template = "Schwere Panzer Abteilung"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "102. Schwere Panzer-Abteilung"
+		location = 525
+		division_template = "Schwere Panzer Abteilung"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "20. Panzergrenadier-Division"
+		location = 525
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "25. Panzergrenadier-Division"
+		location = 525
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "29. Panzergrenadier-Division"
+		location = 525
+		division_template = "Panzergrenadier-Division"
+		start_experience_factor = 0.4
+	}
+}

@@ -1,0 +1,51 @@
+units = {
+	##### PFU Austria #####
+	division= {
+		name = "100. Gebirgsjäger-Division"
+		location = 688
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.5
+	}
+		division= {
+		name = "117. Gebirgsjäger-Division"
+		location = 688
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.4
+	}
+			division= {
+		name = "118. Gebirgsjäger-Division"
+		location = 688
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.4
+	}
+	division= {	
+		name = "44. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "45. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "137. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "262. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "297. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+}

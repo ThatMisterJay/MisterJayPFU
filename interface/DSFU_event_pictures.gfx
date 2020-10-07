@@ -1,0 +1,30 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_report_event_6th_division_staff"
+		texturefile = "gfx/event_pictures/report_event_6th_division_staff.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ast_mediums"
+		texturefile = "gfx/event_pictures/report_event_ast_mediums.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_bren_carrier"
+		texturefile = "gfx/interface/decisions/decision_cat_bren_carrier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_australia_singapore"
+		texturefile = "gfx/interface/decisions/decision_cat_australia_singapore.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_trucks"
+		texturefile = "gfx/interface/decisions/decision_cat_trucks.dds"
+	}
+
+}

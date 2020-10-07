@@ -1,0 +1,9 @@
+﻿units = {
+	##### PFU 7th armoured #####
+	division= {
+		name = "7. Armoured Division"
+		location = 4076
+		division_template = "Armoured Division"
+		start_experience_factor = 0.4
+	}
+}

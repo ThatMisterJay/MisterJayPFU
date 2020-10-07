@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_resistance"
+		texturefile = "gfx/interface/resistance_icon.dds"
+		legacy_lazy_load = no
+	}
+}

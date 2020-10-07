@@ -1,0 +1,307 @@
+# Special forces tab
+
+technologies = {
+
+	special_forces_0 = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.10
+			acclimatization_cold_climate_gain_factor = 0.10
+		}
+
+		path = {
+			leads_to_tech = special_forces_1a
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = special_forces_1b
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = special_forces_1c
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 5 y = 0 }
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_1a = {
+
+		special_forces_cap = 0.15
+		special_forces_training_time_factor = -0.3
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_2a = {
+
+		XOR = {
+			special_forces_2b
+		}
+
+		category_special_forces = {
+			max_organisation = 5
+			defense = 0.05
+		}
+
+		special_forces_training_time_factor = 0.1
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 0 y = 5 }
+		}
+
+		path = {
+			leads_to_tech = special_forces_3a
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_3a = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+
+		special_forces_cap = 0.40
+
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 0 y = 7 }
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_1b = {
+
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.30
+			acclimatization_cold_climate_gain_factor = 0.30
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 10 y = 2 }
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_2b = {
+
+		XOR = { special_forces_2a }
+
+		mountaineers = { breakthrough = 0.03 }
+		paratrooper = { breakthrough = 0.03 }
+		marine = { breakthrough = 0.03 }
+		jaeger = { breakthrough = 0.03 }
+		jungletroop = { breakthrough = 0.03 }
+		desertinfantry = { breakthrough = 0.03 }
+		shocktroop = { breakthrough = 0.03 }
+
+		special_forces_cap = 0.15
+
+		research_cost = 1
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 10 y = 5 }
+		}
+
+		path = {
+			leads_to_tech = special_forces_3b
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = { factor = 2 }
+	}
+
+	special_forces_3b = {
+
+		category_special_forces = {
+			max_organisation = 5
+			defense = 0.05
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = special_forces_3b_tt
+		}
+
+		mountaineers = {
+			mountain = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		marine = {
+			river = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		jaeger = {
+			forest = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		jungletroop = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		desertinfantry = {
+			desert = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+		shocktroop = {
+			fort = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+
+		special_forces_training_time_factor = 0.3
+
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 10 y = 7 }
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	special_forces_1c = {
+
+		special_forces_cap = 0.25
+
+		research_cost = 0.5
+		start_year = 1936
+
+		folder = {
+			name = etat_folder
+			position = { x = 5 y = 3 }
+		}
+
+		path = {
+			leads_to_tech = special_forces_2b
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = special_forces_2a
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			special_forces
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}

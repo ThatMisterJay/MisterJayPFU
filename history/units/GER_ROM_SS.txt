@@ -1,0 +1,14 @@
+units = {
+ division = {
+name = "24th Waffen Grenadier Division of the SS (1st Romanian)"
+location = 692
+division_template = "Gebirgsjäger-Division"
+start_experience_factor = 0.5
+ }
+ division = {
+name = "23rd Waffen Grenadier Division of the SS (2nd Romanian)"
+location = 692
+division_template = "Gebirgsjäger-Division"
+start_experience_factor = 0.5
+ }
+}

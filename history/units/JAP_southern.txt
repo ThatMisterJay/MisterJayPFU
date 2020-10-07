@@ -1,0 +1,320 @@
+﻿##### OOB #####
+division_template = {
+	name = "Kongo Hohei Ryodan" 			# Garrison template - represents Imperial Manchukuo Army infantry divisions: 2 infantry regiments (3k men) -- militia (lowest equipment, experience)
+										# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	    infantry = { x = 1 y = 4 }
+	}
+		support = {
+		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+
+	}
+	priority = 0
+}
+units = {
+		division = {
+		name = "Yokosuka Tokubetsu Rikusentai"
+		location = 12068 #Yokosuka
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Kure Tokubetsu Rikusentai"
+		location = 12068 #Yokosuka
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+		division = {
+		name = "Maizuru Tokubetsu Rikusentai"
+		location = 12068 #Yokosuka
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+			division = {
+		name = "Sasebo Tokubetsu Rikusentai"
+		location = 12068 #Yokosuka
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+				division = {
+		name = "Ryojun Tokubetsu Rikusentai"
+		location = 12068 #Yokosuka
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+	
+		division = {
+		name = "Okinawa Shidan"
+		location = 11932 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+			division = {
+		name = "Iwoto Shidan"
+		location = 13025
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+				division = {
+		name = "Saipan Shidan"
+		location = 3995 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+					division = {
+		name = "Yappu Shidan"
+		location = 13028 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+						division = {
+		name = "Palau Shidan"
+		location = 4357 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+							division = {
+		name = "Truk Shidan"
+		location = 2489
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+								division = {
+		name = "Minamitorishima Shidan"
+		location = 13026
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+									division = {
+		name = "Taiwan Shidan"
+		location = 12068
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.5
+	}
+										division = {
+		name = "161. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "201. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "202. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "205. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "206. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "209. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "212. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "214. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "216. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+											division = {
+		name = "222. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "224. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "225. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "229. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "231. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "234. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "303. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "308. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "312. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "316. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+												division = {
+		name = "320. Hohei Shidan"
+		location = 11914
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+													division = {
+		name = "Tokyo Ryodan"
+		location = 1182
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+														division = {
+		name = "Nagoya Ryodan"
+		location = 10125
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+														division = {
+		name = "Kanto Ryodan"
+		location = 9998
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+														division = {
+		name = "Osaka Ryodan"
+		location = 7072
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+														division = {
+		name = "Hiroshima Ryodan"
+		location = 1092
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+														division = {
+		name = "Kokura Ryodan"
+		location = 1025
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+														division = {
+		name = "Nagasaki Ryodan"
+		location = 9950
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+															division = {
+		name = "Kagoshima Ryodan"
+		location = 4102
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																division = {
+		name = "Kochi Ryodan"
+		location = 7197
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																	division = {
+		name = "Sendai Ryodan"
+		location = 7169
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																		division = {
+		name = "Sapporo Ryodan"
+		location = 10444
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																			division = {
+		name = "Aomori Ryodan"
+		location = 6994
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																				division = {
+		name = "Naha Ryodan"
+		location = 10124
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																				division = {
+		name = "Taipei Ryodan"
+		location = 7186
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+																					division = {
+		name = "Kuril Ryodan"
+		location = 1399
+		division_template = "Kongo Hohei Ryodan"
+		start_experience_factor = 0.3
+	}
+	
+	
+	
+	
+
+
+

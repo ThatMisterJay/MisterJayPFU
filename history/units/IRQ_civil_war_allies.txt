@@ -1,0 +1,115 @@
+﻿units = {
+	##### Royal Iraqi Army #####
+	division = {
+		name = "5. Alfurqat"
+		location = 12046
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "6. Alfurqat"
+		location = 2097
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "7. Alfurqat"
+		location = 2097
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "8. Alfurqat"
+		location = 12855
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "9. Alfurqat"
+		location = 12046
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "10. Alfurqat"
+		location = 7994
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "11. Alfurqat"
+		location = 10345
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "12. Alfurqat"
+		location = 1524
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "13. Alfurqat"
+		location = 1524
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "14. Alfurqat"
+		location = 10345
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "15. Alfurqat"
+		location = 12046
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "16. Alfurqat"
+		location = 2097
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "17. Alfurqat"
+		location = 12855
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "18. Alfurqat"
+		location = 7994
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.22
+		efficiency = 100
+	}
+}

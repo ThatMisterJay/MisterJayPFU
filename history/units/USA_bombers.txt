@@ -1,0 +1,8 @@
+air_wings = {
+	358 = {
+		tac_bomber_equipment_2 =  {
+			owner = "USA"
+			amount = 500
+		}
+	}
+}

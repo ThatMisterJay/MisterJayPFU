@@ -1,0 +1,10 @@
+﻿l_english:
+    music_selection:0 "Music Selection"
+    classical_music_on:0 "Turn Long Classical Music on"
+    classical_music_off:0 "Turn Long Classical Music off"
+    rock_music_on:0 "Turn Rock Music on"
+    rock_music_off:0 "Turn Rock Music off"
+    hide_music_selection:0 "Hide Music Selection Menu"
+    show_music_selection:0 "Show Music Selection Menu"
+    only_rock_music_off:0 "Rock Music Only Off"
+    only_rock_music_on:0 "Rock Music Only"

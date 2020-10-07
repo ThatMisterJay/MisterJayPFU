@@ -1,0 +1,20 @@
+﻿add_namespace = JFUinfralimiter 
+
+country_event = {
+	id = JFUinfralimiter.1
+	title = JFUinfralimiter.1.t 
+	desc = JFUinfralimiter.1.d
+	picture = GFX_report_event_south_africa_patrol
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = JFUinfralimiter.1.a 
+	}
+	
+}
+
+
+	
+	
+	

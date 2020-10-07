@@ -1,0 +1,32 @@
+﻿l_english:
+    usa_special_forces:0 "USA Special Forces"
+    usa_special_forces_desc:0 "USA is a nation heavily dependent on special forces, and for this reason the cap was highered."
+    JAP_cg_defense_state:0 "National Defense State"
+
+    generic_neutral_country:0 "Neutral Country"
+    generic_neutral_country_desc:0 "This country is not supposed to be played OR conquered and thus is neutral."
+    shattered_retreat:0 "Shattered retreat"
+    shattered_retreat_desc:0 "The surprise attack of Germany has left our army in a bad state."
+    GER_blitzkrieg_romania:0 "Blitzkrieg"
+
+    special_forces_0:0 "Special Forces Tech"
+    special_forces_0_desc:0 ""
+    special_forces_1a:0 "Mass Training"
+    special_forces_1a_desc:0 ""
+    special_forces_1b:0 "New Uniforms"
+    special_forces_1b_desc:0 ""
+    special_forces_2a:0 "Special Forces Training"
+    special_forces_2a_desc:0 ""
+    special_forces_2b:0 "Specialist Training"
+    special_forces_2b_desc:0 ""
+    special_forces_3a:0 "Massive Effort"
+    special_forces_3a_desc:0 ""
+    special_forces_3b:0 "Expert Training"
+    special_forces_3b_desc:0 ""
+    special_forces_1c:0 "Call To Arms"
+    special_forces_1c_desc:0 ""
+
+    etat_folder:0 "Special Forces"
+    etat_folder_desc:0 "Special Forces Training"
+
+    JAP_Riku_Bonus:0 "Marines and Jungle troops"

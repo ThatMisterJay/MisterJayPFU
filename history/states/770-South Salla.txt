@@ -1,0 +1,16 @@
+state={
+	id=770
+	name="STATE_770"
+						history={
+		owner = FIN
+		add_core_of = FIN
+
+	}
+	provinces={
+		9158 
+	}
+	manpower=260
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

@@ -1,0 +1,77 @@
+﻿division_template = {
+	name = "Alfurqat Almasha"			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		recon = { x = 0 y = 1 }   # Pioneer Bn
+		artillery = { x = 0 y = 2 }   # Pioneer Bn
+	}
+}
+
+
+
+units = {
+	##### Royal Iraqi Army #####
+	division = {
+		name = "1. Alfurqat"
+		location = 2097
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Alfurqat"
+		location = 10106
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Alfurqat"
+		location = 7977
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4. Alfurqat"
+		location = 2089
+		division_template = "Alfurqat Almasha"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "IRQ"
+		}
+		requested_factories = 1
+		progress = 0.22
+		efficiency = 100
+	}
+}

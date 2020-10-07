@@ -1,0 +1,24 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+fearful_against_germany = {
+	enable = {
+		tag = POR
+		country_exists = SPR
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "SPR"
+		value = 100000
+	}
+}

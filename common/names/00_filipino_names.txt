@@ -1,0 +1,34 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+###############################################################
+# Added Philippines Names 
+###############################################################
+
+PHI = {
+	male = {
+		names = { 
+			Emilio Apolinario Andrés José Hermano Jacinto Mariano Deodato Ladislao Teodoro Valentíne Antonio León Simeón Arcadio Artemio Manuel Abian Abundino
+			Aian Aijie Alab Alad Alcomendras Aldrin Aldrine Aljon Alkaid Ambo Anastacio Angelico Angelito Aquaino Ardy Arksis Arnel Asterio Banawag Banoy Benjia Berchan
+			Betsog Bimbo Bulanon Buwan Caloy Capli Charrie Chito  Chyll Cyrel Czar Dakila Darl Deither Dekster Dexther Ding Dioscoro Diosdado Diwa Dominador
+			Dominadores Dominique Drender Drigo Edzel Eldex Eldrian Elyo Erlin Euly Eutiquiano Froilan Gaprysty Gemmark Gial Girlie Irlo Jairence Jamael Jamebei Jayvee 
+			Jazper Jeian Jelvin Jennifor Jesie Jestoni Jezreel Jilcs Jobal Jonazel Joniel Jonray Josel Jovanie Jovver Judiel Junix Kero Kidlat Klyde Klyntz Kristofferson Labuguen
+			Leal Leonell Lito Lordie Lordwally Ludin Lulwalhati Magiting Magrady Makisig Malvin Margiel Emmanuel Migo Migoy Mortel Nikho Nikkoli Nimuel Ninoy Nirvan Olivert
+			Ong Peary Piolo Prinzander Ramgen Ranie Rexander Rexy Rey Reymond Reynjun Rieley Rohgin Romel Rommel Romulo Ronard Ronnel Rosal Royette Ruther Sadire
+			Sheanwayne Sinag Sonjoedric Susano Venju Vivencio Xael Yhanie Zaldy Zandro Ziegfred Zigfried 
+		}
+	}
+	female = {
+		names = {
+			Adelfa Adelpha Adielle Agapita Aileeza Ailyn Ainjyl Alaine Alaiza Alcomendras Aleli Alerie Alkaid Alliana Alpheratz Alyanna Anatalia Angelet Angeli Anielle Aprielle
+			Arabiana Arminda Arthlyn Audris Averilla Ayezza Ayin Bahala Benilda Berlina Blaisie Blessica Buenavista Bulanon Buwan Carlah Carlmie Cesyl Charina Chariz 
+		}
+	}
+	surnames = {
+		Aguainaldo Mabini Bonifacio Jacinto Rizal Díaz Plata Diwa Arellano
+	}
+	callsigns = { }
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=151
+	name="STATE_151"
+	manpower = 1854711
+	
+	
+	state_category = city
+	
+	resources={
+		aluminium=24
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			661 ={
+				bunker = 2
+			}
+			11623 ={
+			bunker = 2
+			}
+			663 ={
+			bunker = 5
+			}
+			3641 ={
+			bunker = 2
+			}
+		}
+		victory_points = {
+			663 10 
+		}
+		add_core_of = SWI
+	}
+
+	provinces={
+		658 661 663 3641 3660 3662 9600 11601 11623 
+	}
+}

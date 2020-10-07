@@ -1,0 +1,20 @@
+
+state={
+	id=339
+	name="STATE_339"
+	manpower = 1
+
+	state_category = town
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		928 3927 4112 6992 7130 9921 9929 10038 11848 11898
+	}
+}

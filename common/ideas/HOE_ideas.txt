@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		AI_no_faction_joining = {
+		    picture = FRA_matignon_agreements
+
+		    allowed = {
+		        is_ai = yes
+		    }
+
+		    removal_cost = -1
+			rule = { can_create_factions = no }
+
+
+			modifier = {
+				ai_get_ally_desire_factor = -5000
+				ai_call_ally_desire_factor = -5000
+				ai_join_ally_desire_factor = -5000
+				join_faction_tension = 2
+			}
+		}
+	}
+}

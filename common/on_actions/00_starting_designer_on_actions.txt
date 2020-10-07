@@ -1,0 +1,378 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+		# Soviet Plane Production
+			SOV = {
+				add_ideas = polikarpov_design_bureau
+				set_technology = { CAS1 = 1 }
+				set_technology = { fighter1 = 1}
+				add_equipment_production = {
+					equipment = {
+						type = fighter_equipment_1
+						creator = "SOV"
+					}
+					requested_factories = 10
+					progress = 0.15
+					efficiency = 50
+				}
+				add_equipment_production = {
+					equipment = {
+						type = cas_equipment_1
+						creator = "SOV"
+					}
+					requested_factories = 2
+					progress = 0.15
+					efficiency = 50
+				}
+				remove_ideas = polikarpov_design_bureau
+				load_oob = "SOV_fighters"
+				#convoys to keep production queue order
+				add_equipment_production = {
+					equipment = {
+						type = convoy_1
+						creator = "SOV"
+					}
+					requested_factories = 15
+					progress = 0.70
+					amount = 0
+				}
+			}
+			ENG = {
+				add_ideas = hawker
+
+				set_technology = { fighter1 = 1}
+				add_equipment_production = {
+					equipment = {
+						type = fighter_equipment_1
+						creator = "ENG"
+					}
+					requested_factories = 10
+					progress = 0.15
+					efficiency = 50
+				}
+
+				remove_ideas = hawker
+
+
+				### Ongoing Ship Production Jan 1 1936 ###
+				# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "ENG"
+						version_name = "Leander Class"
+					}
+					name = "HMS Apollo"
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "ENG"
+						version_name = "Leander Class"
+					}
+					name = "HMS Amphion"
+					requested_factories = 1
+					progress = 0.50
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "ENG"
+						version_name = "Leander Class"
+					}
+					name = "HMS Penelope"
+					requested_factories = 1
+					progress = 0.15
+					amount = 1
+				}
+				# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_submarine_1
+						creator = "ENG"
+						version_name = "S Class"
+					}
+					name = "HMS Seawolf"
+					requested_factories = 1
+					progress = 0.50
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_submarine_1
+						creator = "ENG"
+						version_name = "S Class"
+					}
+					name = "HMS Narwhal"
+					requested_factories = 1
+					progress = 0.40
+					amount = 1
+				}
+				# DD: G/H class (x9) ("HMS Gallant" "HMS Garland" "HMS Gipsy" "HMS Glowworm" "HMS Grafton" "HMS Grenade" "HMS Grenville" "HMS Greyhound" "HMS Griffin")
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Gallant"
+					requested_factories = 1
+					progress = 0.90
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Garland"
+					requested_factories = 1
+					progress = 0.80
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Gipsy"
+					requested_factories = 1
+					progress = 0.90
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Glowworm"
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Grafton"
+					requested_factories = 1
+					progress = 0.80
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Grenade"
+					requested_factories = 1
+					progress = 0.80
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Greyhound"
+					requested_factories = 1
+					progress = 0.95
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Griffin"
+					requested_factories = 1
+					progress = 0.80
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "ENG"
+						version_name = "E/F/G/H Class"
+					}
+					name = "HMS Grenville"
+					requested_factories = 1
+					progress = 0.40
+					amount = 1
+				}
+				add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "ENG"
+			version_name = "Ark Royal Class"
+		}
+		name = "HMS Ark Royal"
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
+
+
+
+	}
+
+	GER = {
+		add_ideas = messerschmitt
+
+		set_technology = { fighter1 = 1}
+		add_equipment_production = {
+			equipment = {
+				type = fighter_equipment_1
+				creator = "GER"
+			}
+			requested_factories = 30
+			progress = 0.15
+			efficiency = 50
+		}
+    load_oob = "GER_luftwaffe"
+		remove_ideas = messerschmitt
+		### Ships Under Contruction ###
+		# SS: Type IIA (x2) ("U-25" "U-26"), Type IIB (x6) ("U-14" "U-16" "U-18" "U-15" "U-20" "U-19")
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_1
+				creator = "GER"
+				version_name = "Type II Class"
+			}
+			requested_factories = 1
+			progress = 0.75
+			amount = 2
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_1
+				creator = "GER"
+				version_name = "Type II Class"
+			}
+			requested_factories = 1
+			progress = 0.65
+			amount = 2
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_1
+				creator = "GER"
+				version_name = "Type II Class"
+			}
+			requested_factories = 1
+			progress = 0.55
+			amount = 2
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_1
+				creator = "GER"
+				version_name = "Type II Class"
+			}
+			requested_factories = 1
+			progress = 0.45
+			amount = 2
+		}
+		# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "GER"
+				version_name = "Zerstörer 1934 Class"
+			}
+			requested_factories = 1
+			progress = 0.75
+			amount = 2
+		}
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "GER"
+				version_name = "Zerstörer 1934 Class"
+			}
+			requested_factories = 1
+			progress = 0.65
+			amount = 2
+		}
+
+		# CA: "Graf Spee"
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_panzerschiff
+				creator = "GER"
+				version_name = "Deutschland Class"
+			}
+			requested_factories = 1
+			progress = 0.95
+			amount = 1
+		}
+		# Scharnhorst
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "GER"
+				version_name = "Scharnhorst Class"
+			}
+			requested_factories = 1
+			progress = 0.35
+			amount = 1
+		}
+		# Gneisenau
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				creator = "GER"
+				version_name = "Scharnhorst Class"
+			}
+			requested_factories = 1
+			progress = 0.25
+			amount = 1
+		}
+		# DD: 1934A class (x12) ("Z5"-"Z16")
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "GER"
+				version_name = "Zerstörer 1934A Class"
+			}
+			requested_factories = 1
+			progress = 0.25
+			amount = 4
+		}
+		# DD: 1934A class (x12) ("Z5"-"Z16")
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "GER"
+				version_name = "Zerstörer 1934A Class"
+			}
+			requested_factories = 1
+			progress = 0.25
+			amount = 4
+		}
+		# DD: 1934A class (x12) ("Z5"-"Z16")
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				creator = "GER"
+				version_name = "Zerstörer 1934A Class"
+			}
+			requested_factories = 1
+			progress = 0.25
+			amount = 4
+		}
+}
+}

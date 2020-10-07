@@ -1,0 +1,141 @@
+﻿units = {
+	##### PFU Western Wall Units #####
+	division= {
+		name = "347. Infanterie-Division"
+		location = 6336
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "719. Infanterie-Division"
+		location = 3314
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "205. Infanterie-Division"
+		location = 9498
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "278. Infanterie-Division"
+		location = 3211
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "331. Infanterie-Division"
+		location = 391
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "326. Infanterie-Division"
+		location = 6446
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "344. Infanterie-Division"
+		location = 575
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "348. Infanterie-Division"
+		location = 11548
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "245. Infanterie-Division"
+		location = 6560
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "346. Infanterie-Division"
+		location = 485
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "711. Infanterie-Division"
+		location = 9434
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "716. Infanterie-Division"
+		location = 11535
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "352. Infanterie-Division"
+		location = 6449
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "243. Infanterie-Division"
+		location = 6598
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "266. Infanterie-Division"
+		location = 3552
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "343. Infanterie-Division"
+		location = 6572
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "353. Infanterie-Division"
+		location = 6536
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "265. Infanterie-Division"
+		location = 11600
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "275. Infanterie-Division"
+		location = 9737
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "708. Infanterie-Division"
+		location = 6657
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "276. Infanterie-Division"
+		location = 11465
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "21. Panzer-Division"
+		location = 9578
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "Panzer-Division 'Lehr'"
+		location = 3576
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+	}
+}

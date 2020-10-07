@@ -1,0 +1,640 @@
+ideas = {
+	country = {
+
+		FRA_FREE_army_0 = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+     picture = FRA_FREE_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				army_core_attack_factor = 0.04
+				army_core_defence_factor = 0.04
+			}
+		}
+
+		FRA_FREE_army_1 = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			picture = FRA_FREE_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.05
+				planning_speed = -0.10
+				army_org_Factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+
+		FRA_FREE_army_2 = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			picture = FRA_FREE_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.1
+				planning_speed = -0.20
+				army_org_Factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+
+		FRA_FREE_army_3 = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			picture = FRA_FREE_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.1
+				planning_speed = -0.30
+				army_org_Factor = -0.15
+				army_morale_factor = -0.15
+			}
+		}
+
+		FRA_FREE_army_4 = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			picture = FRA_FREE_army
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.15
+				planning_speed = -0.30
+				army_org_Factor = -0.2
+				army_morale_factor = -0.2
+			}
+		}
+
+		FRA_vichy_exile_officers = {
+
+			picture = eng_service_overseas
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.2
+				training_time_army_factor = -0.3
+				weekly_manpower = 200
+			}
+		}
+
+		FRA_foreign_legion_recruitment = {
+
+			picture = FRA_FL
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.05
+				weekly_manpower = 100
+				attrition = -0.05
+			}
+		}
+
+
+
+		FRA_exile_government_4 = {
+
+			picture = generic_disjointed_gov
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.40
+				conscription_factor = -0.60
+				mobilization_laws_cost_factor = 0.75
+				resistance_growth_on_our_occupied_states  = -0.2
+		  	legitimacy_gain_factor = -0.3
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+
+		FRA_exile_government_3 = {
+
+			picture = generic_disjointed_gov
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.25
+				conscription_factor = -0.40
+				mobilization_laws_cost_factor = 0.50
+				resistance_growth_on_our_occupied_states  = -0.1
+	  		legitimacy_gain_factor = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+		}
+
+		FRA_exile_government_2 = {
+
+			picture = generic_disjointed_gov
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.10
+				conscription_factor = -0.20
+				mobilization_laws_cost_factor = 0.25
+				resistance_growth_on_our_occupied_states  = 0.1
+	  		legitimacy_gain_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
+		FRA_exile_government_1 = {
+
+			picture = FRA_national_resistance_council
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.10
+				resistance_growth_on_our_occupied_states  = 0.2
+		  	legitimacy_gain_factor = 0.1
+				stability_factor = 0.15
+				war_support_factor = 0.15
+
+			}
+		}
+
+		FRA_home_production = {
+
+			picture = FRA_home_production
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.005
+				conscription_factor = -0.20
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		FRA_military_supported = {
+
+			picture = por_colonial_assimilation
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.10
+				defensive_war_stability_factor = 0.3
+				war_support_factor = 0.1
+				high_command_cost_factor = -0.25
+				air_chief_cost_factor = -0.25
+				army_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+		    experience_gain_army = 0.40
+
+			}
+		}
+			FRA_civil_supported = {
+
+					picture = generic_victors_of_ww1
+
+					allowed = {
+						original_tag = FRA
+						always = no
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					modifier = {
+						stability_factor = 0.4
+						political_power_gain = 0.30
+						political_advisor_cost_factor = -0.2
+						trade_laws_cost_factor = -0.2
+						economy_cost_factor = -0.2
+
+
+					}
+				}
+
+				FRA_call_to_arms = {
+
+					picture = FRA_call_to_arms
+
+					allowed = {
+						original_tag = FRA
+						always = no
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					modifier = {
+						war_support_weekly = 0.01
+						weekly_manpower = 100
+					}
+				}
+
+		FRA_colonial_conscription = {
+
+			picture = generic_army_war_college
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.01
+				conscription_factor = -0.20
+				non_core_manpower = 0.30
+			}
+		}
+
+		FRA_joint_french_and_russian_rubber_refinery_program = {
+
+		    picture = generic_goods_red_bonus
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+                production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+
+
+		FRA_FREE_research_efforts = {
+
+			picture = generic_research_bonus
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+		    modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+
+		FRA_perfidious_albion = {
+	  	removal_cost = -1
+
+	  	picture = generic_purge
+
+	  	allowed = {
+	  		always = no # Added via event
+	  	}
+
+
+
+	  	modifier = {
+	  stability_factor = -0.05
+    war_support_factor = -0.1
+	  	}
+	  }
+
+		FRA_FREE_gold_reserves = {
+
+			picture = generic_foreign_capital
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				defensive_war_stability_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		FRA_FREE_viva_la_france = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.12
+				army_core_defence_factor = 0.12
+			}
+		}
+
+
+	}
+	political_advisor = {
+		FRA_FREE_felix_eboue = { ##gave Free France  first lands
+
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				original_tag = FRA
+				has_country_flag = free_france
+			}
+
+			visible = { has_country_flag = free_france }
+
+			traits = { efficient_colonial_administrator }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	army_chief = {
+		FRA_FREE_georges_catroux = { ##
+ledger = army
+			allowed = {
+				original_tag = FRA
+
+			}
+			available = {
+				has_country_flag = free_france
+				has_completed_focus = FRA_bring_exiles_into_the_fold
+			}
+
+			visible = { has_country_flag = free_france }
+			traits = { army_chief_morale_3 }  ##maybe reform
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		FRA_FREE_edgard_de_larminat = { ##
+ledger = army
+			allowed = {
+				original_tag = FRA
+
+			}
+			available = {
+				has_country_flag = free_france
+				has_completed_focus = FRA_bring_exiles_into_the_fold
+			}
+
+			visible = { has_country_flag = free_france }
+			traits = { army_chief_maneuver_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	air_chief = {
+
+		FRA_FREE_henry_de_rancourt_de_mimerand = { ##bomber pilot, founder of the first free french air school
+ledger = air
+			allowed = {
+				original_tag = FRA
+
+			}
+			available = {
+				has_country_flag = free_france
+			}
+
+			visible = { has_country_flag = free_france }
+			traits = { air_chief_safety_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	high_command = {
+
+		FRA_FREE_charles_de_gaulle = {
+ledger = army
+			picture = charles_de_gaulle
+
+					allowed = {
+							original_tag = FRA
+	}
+				available = {
+				original_tag = FRA
+				has_country_flag = free_france
+				}
+
+			visible = { has_country_flag = free_france }
+
+			traits = { army_armored_2 }
+
+
+		}
+
+		FRA_FREE_adolphe_cise = { ##military medic
+
+ledger = army
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				original_tag = FRA
+				has_country_flag = free_france
+			}
+
+			visible = { has_country_flag = free_france }
+
+			traits = { army_logistics_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = {
+
+		designer = yes
+
+		free_french_fleet = {
+		cost = 100
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				original_tag = FRA
+			}
+
+			available = {
+				has_completed_focus = FRA_revive_naval_construction
+			}
+
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+
+			traits = { free_france_fleet }
+
+			modifier = {
+			}
+		}
+    }
+
+}

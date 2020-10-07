@@ -1,0 +1,35 @@
+state={
+	id=783
+	name="STATE_783"
+	resources={
+		rubber=6.000
+		aluminium=9.000
+	}
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 1
+			air_base = 3
+			4329 = {
+				naval_base = 3
+
+			}
+
+
+		}
+		add_core_of = XSM
+		victory_points = {
+			4329 3
+		}
+
+
+	}
+
+	provinces={
+		4329 12931 4418 10974 7305 7333 10231 10260 10248 12995 4346 7349 7362 4317 7409 4289 12135 1242 1222 12123 10147 12484 1310 1283 7378
+	}
+	manpower=575000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,120 @@
+################
+##### FRA ######
+################
+
+
+FRA_industry_targets = {
+
+picture = GFX_decision_cat_generic_mefo_bills
+
+priority = 10
+
+	allowed = {
+		original_tag = FRA
+		NOT = {
+			has_cosmetic_tag = FRA_FREE
+		}
+	}
+
+	visible = {
+		has_completed_focus = FRA_devalue_the_franc
+	}
+}
+
+
+FRA_vichy_france = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_african_recruitment = {
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	visible = {
+		has_completed_focus = FRA_expanded_gabon_conscription
+	}
+}
+
+FRA_allied_support = {
+
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = USA
+			original_tag = AST
+			original_tag = CAN
+			original_tag = RAJ
+			original_tag = NZL
+			original_tag = SAF
+
+		}
+	}
+
+	visible = {
+		FRA = {
+		has_completed_focus = FRA_rely_on_allied_aid
+	}
+	}
+}
+
+FRA_request_allied_support = {
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	visible = {
+		has_completed_focus = FRA_rely_on_allied_aid
+	}
+}
+
+FRA_free_france_west_africa = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_syria = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_free_france_america = {
+
+	icon = military_operation
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	visible = {
+		has_completed_focus = FRA_plan_operations_in_america
+	}
+}
+
+FRA_free_france_indian_ocean = {
+
+	allowed = {
+		original_tag = FRA
+	}
+}
+
+FRA_weapons_purchases_category = {
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_country_flag = FRA_arms_purchases_permitted
+		NOT = {
+			has_war_with = USA
+		}
+	}
+}

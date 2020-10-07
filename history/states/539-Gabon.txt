@@ -1,0 +1,33 @@
+
+state={
+	id=539
+	name="STATE_539"
+
+	history={
+		add_core_of = AFR
+		owner = FRA
+		victory_points = {
+			8193 5
+		}
+		victory_points = {
+			5139 2
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			5139 = {
+				naval_base = 1
+			}
+			8244 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		2080 2192 3109 5036 5054 5139 6008 6039 8193 8207 8244 9137 10948 11012 12975
+	}
+	manpower=2564000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

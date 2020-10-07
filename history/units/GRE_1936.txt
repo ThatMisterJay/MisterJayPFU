@@ -1,0 +1,138 @@
+﻿division_template = {
+	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
+	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
+	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
+	# Note: sources have all Greek regular infantry as mountain-trained
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  # Full howitzer regiment
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Tetrágono Pezikoú" 				# Square Infantry Division
+	# Prior to 1940 mobilization = 1st, 2nd, 8th
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  # Full howitzer regiment
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Merarchía Ippikoú" 			# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Motorized recon inf bn
+	}
+}
+
+units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Vasilikó Polemikó Naftikó"
+		naval_base = 4109 # Athens
+		task_force = {
+			name = "Vasilikós Stólos"
+			location = 4109 # Athens
+			ship = { name = "RHS Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name =  "Averof Class" } } }
+			ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }
+			# Destroyer Flotilla
+			ship = { name = "RHS Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }
+			ship = { name = "RHS Ierax" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }
+			ship = { name = "RHS Leon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }
+			ship = { name = "RHS Panthir" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }
+			ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RHS Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RHS Psara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RHS Spetsai" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+		}
+		task_force = {
+			name = "Stolískou Ypovrychíon"
+			location = 4109 # Athens
+			ship = { name = "RHS Katsonis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name =  "Katsonis Class" } } }
+			ship = { name = "RHS Papanikolis" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GRE version_name =  "Katsonis Class" } } }
+			ship = { name = "RHS Protefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }
+			ship = { name = "RHS Nirefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }
+			ship = { name = "RHS Triton" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }
+			ship = { name = "RHS Glafkos" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = GRE version_name =  "Glafkos Class" } } }
+		}
+	}
+
+}
+
+##### No Air units -- Greece did not start to modernize air force until 1937 #####
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.22
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+}

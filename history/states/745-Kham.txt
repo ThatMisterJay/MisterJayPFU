@@ -1,0 +1,13 @@
+state={
+	id=745
+	name="STATE_745"
+	provinces={
+		4407 5018 5080 5102 8041 8059 10741 10856
+	}
+	history={
+		 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

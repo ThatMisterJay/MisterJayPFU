@@ -1,0 +1,243 @@
+#	Example:
+#
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+exile_government_level_down = {
+
+	if = {
+		limit = {
+			has_idea =	FRA_exile_government_4
+		}
+		swap_ideas = {
+			remove_idea =	FRA_exile_government_4
+			add_idea = FRA_exile_government_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_exile_government_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_exile_government_3
+			add_idea = FRA_exile_government_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_exile_government_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_exile_government_2
+			add_idea = FRA_exile_government_1
+		}
+	}
+
+}
+
+french_army_level_down = {
+
+	if = {
+		limit = {
+			has_idea = FRA_FREE_army_1
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_1
+			add_idea = FRA_FREE_army_0
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_FREE_army_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_2
+			add_idea = FRA_FREE_army_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_FREE_army_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_3
+			add_idea = FRA_FREE_army_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_FREE_army_4
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_4
+			add_idea = FRA_FREE_army_3
+		}
+	}
+}
+
+remove_worker_shortage_effect = {
+	if = {
+		limit = { has_idea = FRA_worker_shortage }
+		remove_ideas = FRA_worker_shortage
+	}
+	else_if = {
+		limit = { has_idea = FRA_full_employment }
+		remove_ideas = FRA_full_employment
+	}
+}
+
+remove_occupation_cost_effect = {
+	if = {
+		limit = { has_idea = FRA_occupation_costs_1 }
+		remove_ideas = FRA_occupation_costs_1
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_2
+		}
+		remove_ideas = FRA_occupation_costs_2
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_3
+		}
+		remove_ideas = FRA_occupation_costs_3
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_4
+		}
+		remove_ideas = FRA_occupation_costs_4
+	}
+}
+
+reduce_occupation_cost_effect = {
+	if = {
+		limit = { has_idea = FRA_occupation_costs_1 }
+		remove_ideas = FRA_occupation_costs_1
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_2
+			add_idea = FRA_occupation_costs_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_3
+			add_idea = FRA_occupation_costs_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_4
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_4
+			add_idea = FRA_occupation_costs_3
+		}
+	}
+}
+
+increase_occupation_cost_effect = {
+	if = {
+		limit = {
+			has_idea = FRA_occupation_costs_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_3
+			add_idea = FRA_occupation_costs_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_2
+			add_idea = FRA_occupation_costs_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_occupation_costs_1
+		}
+		swap_ideas = {
+			remove_idea = FRA_occupation_costs_1
+			add_idea = FRA_occupation_costs_2
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_idea = FRA_occupation_costs_1
+				has_idea = FRA_occupation_costs_2
+				has_idea = FRA_occupation_costs_3
+				has_idea = FRA_occupation_costs_4
+			}
+		}
+		add_ideas = FRA_occupation_costs_1
+	}
+}
+
+FRA_congress_of_paris_italian_claims_setup_effect = {
+	add_state_claim = 452
+	add_state_claim = 447
+	add_state_claim = 446
+	add_state_claim = 457
+	add_state_claim = 456
+	add_state_claim = 551
+	add_state_claim = 549
+	add_state_claim = 269
+	add_state_claim = 547
+	add_state_claim = 548
+	add_state_claim = 546
+}
+
+FRA_congress_of_paris_portugese_claims_setup_effect = {
+	add_state_claim = 295
+	add_state_claim = 771
+	add_state_claim = 770
+	add_state_claim = 545
+	add_state_claim = 542
+	add_state_claim = 541
+	add_state_claim = 681
+	add_state_claim = 275
+	add_state_claim = 719
+}
+
+FRA_right_wing_riot_effect = {
+	if = {
+		limit = {
+			has_idea = FRA_political_violence
+		}
+		country_event = lar_france_political_violence.1
+	}
+}
+FRA_communism_riot_effect = {
+	if = {
+		limit = {
+			has_idea = FRA_political_violence
+		}
+		country_event = lar_france_political_violence.2
+	}
+}

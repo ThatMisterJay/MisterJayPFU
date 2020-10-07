@@ -1,0 +1,27 @@
+
+state={
+	id=600
+	name="STATE_600"
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			3992 3
+		}
+	
+
+	}
+
+	provinces={
+		1153 1628 3992 4038 4083 4185 7007 7653 9984 10114 10501 11988 12495 13141
+	}
+	manpower=15820400
+	buildings_max_level_factor=1.000
+	state_category=town
+}

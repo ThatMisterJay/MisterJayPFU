@@ -1,0 +1,32 @@
+units = {
+	division = {
+		name = "Guangzhou Hohei Shidan"
+		location = 1047
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "162. Hohei Shidan"
+		location = 1047
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "161. Hohei Shidan"
+		location = 1047
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "201. Hohei Shidan"
+		location = 7152
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "203. Hohei Shidan"
+		location = 1070
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+}

@@ -1,0 +1,19 @@
+
+state={
+	id=342
+	name="STATE_342" # Antalya
+	manpower = 1
+	state_category = rural
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1005 1119 9941 10122 11917 12013 12016 12096
+	}
+}
