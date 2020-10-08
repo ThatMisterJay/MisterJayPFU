@@ -2,7 +2,7 @@
 
 oob = "SOV_1936"
 
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 
 set_research_slots = 4
 
@@ -34,6 +34,41 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	synth_oil_experiments = 1
+}
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 80600
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 21700
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 9000
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 2700
+}
+
+
+ add_equipment_to_stockpile = {
+ type = light_tank_equipment_2
+ amount = 5400
+}
+
+add_equipment_to_stockpile = {
+type = light_tank_equipment_1
+amount = 2700
+}
+
+add_equipment_to_stockpile = {
+type = motorized_equipment
+amount = 6200
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

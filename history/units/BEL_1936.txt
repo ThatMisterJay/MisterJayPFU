@@ -26,98 +26,11 @@
 	support = {
 		engineer = { x = 0 y = 0 }  # Full howitzer regiment
 		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }   
+		artillery = { x = 0 y = 2 }
 	}
 }
 
-### OOB ###
-units = {
-	##### L'Armée Belge #####
-	# I Corps d'Armée
-	division= {	
-		name = "4ème Division d'Infanterie"
-		location = 9574  # Hoeselt
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
 
-	}
-
-	# II Corps d'Armée
-	division= {	
-		name = "6ème Division d'Infanterie"
-		location = 13068  # Leuven
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
-
-	# III Corps d'Armée
-	division= {	
-		name = "2ème Division d'Infanterie"
-		location = 11519  # Liege
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
-	division= {	
-		name = "3ème Division d'Infanterie"
-		location = 11519  # Liege
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
-
-	# IV Corps d'Armée
-	division= {	
-		name = "5ème Division d'Infanterie"
-		location = 516  #Brussels
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
-
-	# Corps d'Cavalerie
-	division= {	
-		name = "1ère Division d'Infanterie"
-		location = 11519  # Liege
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
-	division= {	
-		name = "9ère Division d'Infanterie"
-		location = 13068  # Leuven
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division= {	
-		name = "12ère Division d'Infanterie"
-		location = 13068  # Leuven
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-
-	}
-
-	# Groupement K
-	division= {	
-		name = "1ère Division de Chasseurs Ardennais"
-		location = 11407  # St Hubert
-		division_template = "Division d'Infanterie"		# elite bicycle infantry
-		start_experience_factor = 0.3
-	}
-
-
-
-}
 
 air_wings = {
 	### Aéronautique Militaire Belge -- Brussels (Nivelle)

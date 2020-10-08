@@ -680,6 +680,7 @@ operations = {
 		targets = { NOR }
 
 		available = {
+			country_exists = NOR
 			has_government = democratic
 			tag = ENG
 	    has_war_with = GER
@@ -764,10 +765,11 @@ fire_only_once = yes
 			IRE = { exists = yes }
 			NOT = { has_war_with = IRE }
 			NOT = { is_in_faction_with = IRE }
-			NOR = { has_capitulated = yes }
-			is_in_faction_with = NOR
-			FRA = { has_capitulated = yes }
-			is_in_faction_with = FRA
+			NOT = {
+				has_full_control_of_state = 126
+				has_full_control_of_state = 127
+				has_full_control_of_state = 125
+			}
 		}
 
 		cost = 50
@@ -841,9 +843,17 @@ fire_only_once = yes
 		}
 
 		complete_effect = {
-			EFR = {
-				country_event = { id = wtt_britain.25 hours = 5 }
+			complete_national_focus = ENG_operation_catapult
+			custom_effect_tooltip = ENG_operation_catapult_tt
+			FRA = {
+				add_timed_idea = {
+					idea = FRA_perfidious_albion
+					days = 120
+				}
 			}
+			hidden_effect = {
+			set_country_flag = french_navy_attacked
+	  	}
 		}
 	}
 }

@@ -162,45 +162,6 @@ division_template = {
 }
 
 ##### OOB #####
-units = {
-	##### Royal South African Army #####
-	division= {
-		name = "1. Infantry Division"
-		location = 12589 # Capetown
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-
-	}
-	division= {
-		name = "2. Infantry Division"
-		location = 10400 # Durbin
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-
-
-	}
-
-	division= {
-		name = "Eastern Province Cmd."
-		location = 4696 # East London
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	division= {
-		name = "Natal Command"
-		location = 1468 # Durbin
-		division_template = "Garrison Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-
-	##### No Naval OOB #####
-}
 
 
 

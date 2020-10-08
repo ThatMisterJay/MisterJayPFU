@@ -3,7 +3,7 @@ capital = 439
 oob = "RAJ_1936"
 set_stability = 0.6
 set_war_support = 0.1
-
+add_timed_idea = { idea = peace_time_army days = 1168 }
 set_research_slots = 3
 # Starting tech
 set_technology = {
@@ -22,6 +22,26 @@ set_technology = {
 	fuel_refining = 1
 
 }
+
+add_equipment_to_stockpile = {
+type = infantry_equipment_1
+amount = 11500
+	}
+
+add_equipment_to_stockpile = {
+ type = infantry_equipment_0
+ amount = 1900
+		 }
+
+ add_equipment_to_stockpile = {
+ type = artillery_equipment_1
+ amount = 152
+}
+	add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 510
+}
+
 
 if = {
 	limit = { has_dlc = "Together for Victory" }

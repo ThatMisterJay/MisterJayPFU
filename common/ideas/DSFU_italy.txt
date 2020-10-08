@@ -2,10 +2,26 @@ ideas = {
  country = {
 
 
+
+   		ETH_war = {
+
+        allowed = {
+          tag = ITA
+        }
+
+      picture = "por_colonial_army"
+
+        modifier = {
+        experience_gain_army = 0.30
+        war_support_factor = -0.10
+        }
+
+   		}
+
    ITA_high_support = {
 
      allowed = {
-       tag ITA
+       tag = ITA
      }
 
    picture = "prc_low_popular_support3"
@@ -21,7 +37,7 @@ ideas = {
 ITA_low_support = {
 
   allowed = {
-    tag ITA
+    tag = ITA
   }
 
 picture = "prc_low_popular_support2"

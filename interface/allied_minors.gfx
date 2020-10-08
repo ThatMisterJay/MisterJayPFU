@@ -1,7 +1,5 @@
 spriteTypes = {
 
-
-
 		SpriteType = {
 				name = "GFX_idea_AST_battle"
 				texturefile = "gfx/interface/ideas/idea_AST_battle.dds"
@@ -27,6 +25,22 @@ spriteTypes = {
 				texturefile = "gfx/interface/ideas/idea_AST_infantry.dds"
 					}
 
+					SpriteType = {
+							name = "GFX_idea_FRA_FL"
+							texturefile = "gfx/interface/ideas/idea_FRA_FL.dds"
+										}
+
+		SpriteType = {
+				name = "GFX_idea_FRA_call_to_arms"
+				texturefile = "gfx/interface/ideas/idea_FRA_call_to_arms.dds"
+							}
+
+    	SpriteType = {
+    			name = "GFX_idea_FRA_home_production"
+    			texturefile = "gfx/interface/ideas/idea_FRA_home_production.dds"
+    						}
+
+
 		SpriteType = {
 				name = "GFX_idea_AST_blamey"
 				texturefile = "gfx/interface/ideas/idea_AST_blamey.dds"
@@ -36,6 +50,8 @@ spriteTypes = {
 					name = "GFX_idea_AST_robertson"
 					texturefile = "gfx/interface/ideas/idea_AST_robertson.dds"
 						}
+
+
 
 
 			SpriteType = {

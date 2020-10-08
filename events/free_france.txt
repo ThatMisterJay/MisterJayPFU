@@ -77,27 +77,30 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+
+		add_stability = -0.05
+		add_war_support = -0.05
 	}
 }
 
 # Military Operations in Syria
-country_event = {
-	id = free_france.17
-	title = free_france.17.t
-	desc = free_france.5.desc
-	picture = GFX_report_event_syria_sway
-
-	is_triggered_only = yes
-
+#country_event = {
+#	id = free_france.17
+#	title = free_france.17.t
+#	desc = free_france.5.desc
+#	picture = GFX_report_event_syria_sway
+#
+#	is_triggered_only = yes
+#
 	#Try to attack and ask the british for help
-	option = {
-		name = free_france.17.a
-		ai_chance = {
-			factor = 100
-		}
-		ENG = { country_event = free_france.6 }
-	}
-}
+#	option = {
+#		name = free_france.17.a
+#		ai_chance = {
+#			factor = 100
+#	}
+#		ENG = { country_event = free_france.6 }
+#	}
+#}
 
 # British response for help in Syria
 country_event = {
@@ -159,6 +162,8 @@ country_event = {
 		hidden_effect = {
 			FRA = {
 				custom_effect_tooltip = FRA_free_france_operation_exporter_tt
+			}
+			ENG = {
 				country_event = free_france.71
 			}
 			EFR = {
@@ -399,5 +404,90 @@ country_event = {
 
 	option = {
 		name = free_france.15.a
+	}
+}
+
+country_event = {
+	id = free_france.16
+	title = free_france.16.t
+	desc = free_france.16.d
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.16.a
+		FRA = { add_timed_idea = { idea = FRA_english_africa_cost days = 200 } }
+    ENG = { add_timed_idea = { idea = ENG_colonial_trade days = 150 } }
+		USA = { add_timed_idea = { idea = ENG_colonial_trade days = 150 } }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 6000
+			producer = ENG
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 3000
+			producer = ENG
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 600
+			producer = ENG
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 600
+			producer = ENG
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 600
+			producer = ENG
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 6000
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 2000
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 500
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 500
+			producer = USA
+		}
+	}
+}
+
+country_event = {
+	id = free_france.17
+	title = free_france.17.t
+	desc = free_france.17.d
+	picture = GFX_report_event_french_resistance
+
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.17.a
+		add_ideas = FRA_civil_supported
+	}
+
+	option = {
+		name = free_france.17.b
+	  add_ideas =	FRA_military_supported
 	}
 }

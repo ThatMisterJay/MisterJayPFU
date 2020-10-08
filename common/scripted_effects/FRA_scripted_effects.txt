@@ -16,7 +16,77 @@
 #	}
 #
 
+exile_government_level_down = {
 
+	if = {
+		limit = {
+			has_idea =	FRA_exile_government_4
+		}
+		swap_ideas = {
+			remove_idea =	FRA_exile_government_4
+			add_idea = FRA_exile_government_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_exile_government_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_exile_government_3
+			add_idea = FRA_exile_government_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_exile_government_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_exile_government_2
+			add_idea = FRA_exile_government_1
+		}
+	}
+
+}
+
+french_army_level_down = {
+
+	if = {
+		limit = {
+			has_idea = FRA_FREE_army_1
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_1
+			add_idea = FRA_FREE_army_0
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_FREE_army_2
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_2
+			add_idea = FRA_FREE_army_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_FREE_army_3
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_3
+			add_idea = FRA_FREE_army_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = FRA_FREE_army_4
+		}
+		swap_ideas = {
+			remove_idea = FRA_FREE_army_4
+			add_idea = FRA_FREE_army_3
+		}
+	}
+}
 
 remove_worker_shortage_effect = {
 	if = {

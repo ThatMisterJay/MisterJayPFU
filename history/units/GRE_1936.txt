@@ -78,121 +78,6 @@ division_template = {
 }
 
 units = {
-	######## Ellinikó Genikó Epiteleío ########
-	division = {
-		name = "V Merarchía Pezikoú"
-		location = 12058
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division = {
-		name = "VIII Merarchía Pezikoú"
-		location = 3914
-		division_template = "Tetrágono Pezikoú"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "Merarchía Ippikoú"
-		location = 11818
-		division_template = "Merarchía Ippikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-
-	# A Sóma Stratoú
-	division = {
-		name = "II Merarchía Pezikoú"
-		location = 4109
-		division_template = "Tetrágono Pezikoú"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "III Merarchía Pezikoú"
-		location = 4193
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division = {
-		name = "IV Merarchía Pezikoú"
-		location = 7096
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-
-	# B Sóma Stratoú
-	division = {
-		name = "I Merarchía Pezikoú"
-		location = 863
-		division_template = "Tetrágono Pezikoú"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "IX Merarchía Pezikoú"
-		location = 966
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-
-	# C Sóma Stratoú
-	division = {
-		name = "VI Merarchía Pezikoú"
-		location = 3526
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		name = "X Merarchía Pezikoú"
-		location = 10163
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-	division = {
-		name = "XI Merarchía Pezikoú"
-		location = 11818
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# D Sóma Stratoú
-	division = {
-		name = "VII Merarchía Pezikoú"
-		location = 9791
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# E Sóma Stratoú
-	division = {
-		name = "XII Merarchía Pezikoú"
-		location = 11774
-		division_template = "Trigonikó Pezikoú"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
 
 	##### NAVAL UNITS #####
 	fleet = {
@@ -203,7 +88,7 @@ units = {
 			location = 4109 # Athens
 			ship = { name = "RHS Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = GRE version_name =  "Averof Class" } } }
 			ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }
-			# Destroyer Flotilla	
+			# Destroyer Flotilla
 			ship = { name = "RHS Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }
 			ship = { name = "RHS Ierax" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }
 			ship = { name = "RHS Leon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Aetos Class" } } }

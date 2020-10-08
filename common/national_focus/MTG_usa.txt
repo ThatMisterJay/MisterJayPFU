@@ -1270,6 +1270,18 @@ focus = {
 					GER = { puppet = EFR }
 				}
 				load_oob = USA_torch
+				if = {
+					limit = {
+						NOT = {
+							ENG = {
+								has_country_flag = french_navy_attacked
+							}
+						}
+					}
+					GER = {
+						load_oob = "EFR_fleet"
+					}
+				}
 			}
 			custom_effect_tooltip = USA_operation_torch_effect_3
 		}

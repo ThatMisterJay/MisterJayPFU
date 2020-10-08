@@ -1,0 +1,72 @@
+units = {
+  division= {
+		name = "1. Divisie"
+		location = 3314  # Amsterdam
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		name = "3. Divisie"
+		location = 3211 # The Hague
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+	# 2e Legerkorps
+	division= {
+		name = "2. Divisie"
+		location = 9498  # Rotterdam
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		name = "4. Divisie"
+		location = 9498  # Rotterdam
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+	# 3e Legerkorps
+	division= {
+		name = "5. Divisie"
+		location = 6500  # Venlo
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		name = "6. Divisie"
+		location = 11562  # Maastricht
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+
+	# 4e Legerkorps
+	division= {
+		name = "7. Divisie"
+		location = 9335  # Gronigen
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		name = "8. Divisie"
+		location = 9335  # Gronigen
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+}
