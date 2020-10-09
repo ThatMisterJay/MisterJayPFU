@@ -163,6 +163,9 @@ ENG_rats_tank_div:0 "Form §Y7. Armoured Division§!"
 ENG_no_south_africa:0 "End South Afrcian Confederation"
 ENG_imperial_conference:0 "Hold §YImperial Conference§!"
 IRQ_pressure:0 "Iraq has cut oil shipments"
+lend_lease_41:0 "Emergency Shipment of tanks to the British"
+CAN_lend_lease_41:0 "Emergency Shipment of tanks to the Soviets"
+ENG_lend_lease_41:0 "Emergency Shipment of tanks to the Soviets"
 
 #general
 african_logistics:0 "African Logistics Problem"

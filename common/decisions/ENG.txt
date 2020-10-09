@@ -98,16 +98,16 @@ ENG_no_south_africa = {
 	}
 
 	complete_effect = {
+		ENG = {
+			annex_country = { target = SAF transfer_troops = yes }
+			set_country_flag = SAF_annexed
+		}
 		every_state = {
 			limit = {
 				is_core_of = SAF
 			}
 			add_dynamic_modifier = { modifier = ENG_south_africa }
 			add_compliance = 0.90
-		}
-		ENG = {
-			annex_country = { target = SAF transfer_troops = yes }
-			set_country_flag = SAF_annexed
 		}
 		CAN = {
 			random_owned_controlled_state = {
@@ -184,6 +184,50 @@ ENG_no_south_africa = {
 	 }
 
 	 }
+}
+
+support_SOV = {
+
+	ENG_lend_lease_41 = {
+
+		icon = generic_tank
+
+	targets = { SOV }
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+			date > 1941.1.1
+			has_tech = basic_medium_tank
+			has_tech = basic_heavy_tank
+		}
+
+	days_remove = 15
+
+	fire_only_once = yes
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = lend_lease_cost days = 100
+				}
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = medium_tank_equipment_1
+					amount = 300
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = heavy_tank_equipment_1
+					amount = 250
+					producer = ENG
+				}
+			}
+	}
+	}
+
 }
 
 political_actions = {
