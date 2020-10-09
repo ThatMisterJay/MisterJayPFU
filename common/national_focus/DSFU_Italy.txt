@@ -653,7 +653,7 @@ bypass = {
  }
 }
 completion_reward = {
-
+add_threat = 2
 if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
 550 = {
 add_building_construction = {
