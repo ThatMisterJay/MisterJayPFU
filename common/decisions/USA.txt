@@ -242,8 +242,8 @@ lend_lease_support_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG tag = CAN }
 }
 
 available = {
@@ -273,8 +273,8 @@ lend_lease_ART_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG tag = CAN }
 }
 
 available = {
@@ -303,8 +303,8 @@ lend_lease_AT_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG tag = CAN }
 }
 
 available = {
@@ -333,8 +333,8 @@ lend_lease_MOT_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG tag = CAN }
 }
 
 available = {
@@ -368,8 +368,8 @@ lend_lease_ltank_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG tag = CAN }
 }
 
 available = {
@@ -402,8 +402,8 @@ lend_lease_mtank_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG tag = CAN }
 }
 
 available = {
@@ -434,8 +434,8 @@ lend_lease_htank_SOV = {
 targets = { SOV }
 
 allowed = {
-OR = {	original_tag = USA
-original_tag = ENG }
+OR = {	tag = USA
+tag = ENG }
 }
 
 available = {
@@ -931,7 +931,7 @@ days_remove = 15
 	complete_effect = {
 		send_equipment = {
 				target = ENG
-				equipment = motorized_equipment
+				equipment = medium_tank_equipment
 				amount = 200
 	}
 }
@@ -963,6 +963,38 @@ days_remove = 15
 				equipment = heavy_tank_equipment
 				amount = 200
 	}
+}
+}
+
+lend_lease_41 = {
+
+	icon = generic_tank
+
+targets = { ENG }
+
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+		ENG = { has_defensive_war = yes }
+		date > 1941.1.1
+		has_tech = basic_medium_tank
+	}
+
+days_remove = 15
+
+	complete_effect = {
+		add_timed_idea = {
+			idea = lend_lease_cost days = 100
+			}
+		ENG = {
+			add_equipment_to_stockpile = {
+				type = medium_tank_equipment_1
+				amount = 500
+				producer = USA
+			}
+		}
 }
 }
 
