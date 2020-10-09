@@ -236,6 +236,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			create_equipment_variant = {
+			name = "Matilda II 'Queen of the Desert'"
+			type = heavy_tank__equipment_1
+			parent_version = 0
+			upgrades = {
+				tank_engine_upgrade = 3
+				tank_reliability_upgrade = 4
+				tank_gun_upgrade = 4
+				tank_armor_upgrade = 7
+			}
+		}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
