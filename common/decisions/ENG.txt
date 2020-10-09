@@ -88,7 +88,7 @@ ENG_no_south_africa = {
 		date < 1936.10.1
 	}
 
-	cost = 50
+
 
 	fire_only_once = yes
 
@@ -107,7 +107,7 @@ ENG_no_south_africa = {
 				is_core_of = SAF
 			}
 			add_dynamic_modifier = { modifier = ENG_south_africa }
-			add_compliance = 0.90
+			add_compliance = 90
 		}
 		CAN = {
 			random_owned_controlled_state = {
