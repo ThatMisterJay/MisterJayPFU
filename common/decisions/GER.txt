@@ -157,6 +157,37 @@ GER_case_anton_category = {
 
 political_actions = {
 
+no_hungary = {
+	ai_will_do = { factor = 0 }
+	icon = generic_political_discourse
+  targets = { HUN }
+
+	allowed = { tag = GER }
+
+	visible = {
+		tag = GER
+		HUN = { is_ai = yes }
+		country_exists = HUN
+		date < 1937.1.1
+	}
+
+	complete_effect = {
+		HUN = {
+			every_owned_state = {
+				limit = { is_core_of = HUN }
+				add_core_of = ROM
+			}
+		}
+		ROM = {
+			annex_country = { target = HUN transfer_troops = yes }
+			set_country_flag = hungary_annexed
+		}
+
+	}
+
+
+}
+
 SPR_tungsten = {
 
 	icon = tungsten
