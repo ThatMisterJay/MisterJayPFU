@@ -6,16 +6,13 @@ support_SOV = {
 icon = sov_great_patriotic_war
 
 	allowed = {
-	OR = { 
+	OR = {
 	tag = USA
 	tag = ENG
 	tag = CAN
     }
 	}
 	visible = {
-		USA = {
-			has_completed_focus = USA_lend_soviet
-		}
 		SOV = {
 			has_war = yes
 		}

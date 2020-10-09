@@ -271,7 +271,7 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
+	
 
 	immediate = {
 		set_global_flag = ENG_tank
@@ -724,16 +724,7 @@ country_event = {
 	desc = pfu.33.d
 	picture = GFX_report_event_royalarmor
 
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = SAF
-			tag = CAN
-		}
-		date > 1939.5.1
-		ENG = { controls_state = 447 }
-		has_tech = basic_heavy_tank
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = ENG_royalarmor
@@ -773,7 +764,7 @@ country_event = {
 			}
 		}
 	}
-	mean_time_to_happen = { days = 1 }
+
 }
 
 country_event = {
