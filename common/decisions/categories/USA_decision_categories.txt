@@ -6,8 +6,11 @@ support_SOV = {
 icon = sov_great_patriotic_war
 
 	allowed = {
-	OR = { original_tag = USA
-	original_tag = ENG }
+	OR = { 
+	tag = USA
+	tag = ENG
+	tag = CAN
+    }
 	}
 	visible = {
 		USA = {
