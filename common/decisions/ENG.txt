@@ -82,6 +82,10 @@ ENG_no_south_africa = {
 	targets = { SAF }
 
 	available = {
+		tag = ENG
+		SAF = { is_ai = yes }
+		country_exists = CAN
+		date < 1936.10.1
 	}
 
 	cost = 50
@@ -89,9 +93,42 @@ ENG_no_south_africa = {
 	fire_only_once = yes
 
 	visible = {
+		date < 1936.10.1
+		SAF = { is_ai = yes }
 	}
 
 	complete_effect = {
+		every_state = {
+			limit = {
+				is_core_of = SAF
+			}
+			add_dynamic_modifier = { modifier = ENG_south_africa }
+			add_compliance = 0.90
+		}
+		ENG = {
+			annex_country = { target = SAF transfer_troops = yes }
+			set_country_flag = SAF_annexed
+		}
+		CAN = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
  }
 
  }
@@ -695,7 +732,6 @@ country_event = {
 				annex_country = { target = SAF transfer_troops = yes }
 
 				set_country_flag = SAF_annexed
-
 			}
 		}
 	}
