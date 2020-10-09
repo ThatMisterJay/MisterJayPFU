@@ -1816,7 +1816,7 @@ cost = 100
 				original_tag = JAP
 			}
 			available = {
-				date > 1940.1.1
+
 			}
 			cost = 75
 			removal_cost = 10
@@ -1964,7 +1964,7 @@ cost = 100
 				original_tag = JAP
 			}
 			available = {
-				date > 1941.1.1
+				
 			}
 			research_bonus = {
 				armor = 0.15

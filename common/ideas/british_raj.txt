@@ -188,7 +188,7 @@ ideas = {
 
 			modifier = {
 				production_speed_dockyard_factor = 0.1
-				consumer_goods_factor = 0.02	
+				consumer_goods_factor = 0.02
 		        }
 		}
 
@@ -1100,7 +1100,7 @@ ledger = air
 		designer = yes
 
 		mazagon_dock_limited = {
-                        cost = 100			
+                        cost = 100
                         allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -1117,7 +1117,7 @@ ledger = air
 		}
 
 		garden_reach_shipbuilders = {
-                        cost = 100			
+                        cost = 100
                        allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -1133,7 +1133,7 @@ ledger = air
 		}
 
 		scindia_shipyard = {
-                        cost = 100			
+                        cost = 100
                         allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
@@ -1150,7 +1150,7 @@ ledger = air
 		}
 		bombay_dockyard = {
                         cost = 100
-			allowed = { 
+			allowed = {
 				original_tag = RAJ
 			}
 
@@ -1158,7 +1158,7 @@ ledger = air
 				naval_equipment = 0.15
 			}
 
-			traits = { coastal_defence_naval_manufacturer } 
+			traits = { coastal_defence_naval_manufacturer }
 
 			equipment_bonus = {
 
@@ -1254,147 +1254,7 @@ ledger = air
 	tank_manufacturer = {
 		designer = yes
 
-		birmingham_rcw_RAJ = {
-			cost = 75
-			allowed = {
-				original_TAG = RAJ
-			}
-			available = {
-				date > 1938.1.1
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			picture = birmingham_rcw
 
-			equipment_bonus = {
-				medium_tank_equipment = {
-					armor_value = 0.10
-					maximum_speed = 0.1
-					soft_attack = 0.05
-				}
-				medium_tank_destroyer_equipment = {
-					armor_value = 0.15
-					maximum_speed = 0.1
-					hard_attack = 0.1
-					ap_attack = 0.05
-				}
-				medium_tank_artillery_equipment = {
-					armor_value = 0.15
-					maximum_speed = 0.1
-					soft_attack = 0.05
-				}
-			}
-		}
-
-
-		nuffield_RAJ = {
-			cost = 75
-			allowed = {
-				original_TAG = RAJ
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-			picture = nuffield
-
-			equipment_bonus = {
-				medium_tank_equipment = {
-					maximum_speed = 0.15
-				}
-				medium_tank_destroyer_equipment = {
-					hard_attack = 0.1
-					ap_attack = 0.1
-					maximum_speed = 0.15
-				}
-				medium_tank_artillery_equipment = {
-					soft_attack = 0.05
-					maximum_speed = 0.15
-				}
-			}
-		}
-
-		vauxhall_motors_RAJ = {
-			cost = 75
-			allowed = {
-				original_TAG = RAJ
-			}
-			available = {
-				date > 1938.1.1
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-    picture = vauxhall_motors
-			equipment_bonus = {
-				heavy_tank_equipment = {
-					armor_value = 0.15
-					defense = 0.1
-					maximum_speed = -0.15
-					reliability = -0.05
-					ap_attack = -0.05
-				}
-				heavy_tank_destroyer_equipment = {
-					armor_value = 0.2
-					defense = 0.1
-					hard_attack = 0.1
-					ap_attack = 0.1
-					maximum_speed = -0.15
-					reliability = -0.05
-				}
-				heavy_tank_artillery_equipment = {
-					armor_value = 0.2
-					defense = 0.1
-					soft_attack = 0.05
-					maximum_speed = -0.15
-					reliability = -0.05
-				}
-				}
-			}
-
-		vickers_armstrong_eng_RAJ = {
-			cost = 75
-			allowed = {
-				original_TAG = RAJ
-			}
-			research_bonus = {
-				armor = 0.15
-			}
-   picture = vickers_armstrong_eng
-			equipment_bonus = {
-				heavy_tank_equipment = {
-					armor_value = 0.10
-					maximum_speed = -0.15
-				}
-				heavy_tank_destroyer_equipment = {
-					armor_value = 0.10
-					hard_attack = 0.1
-					ap_attack = 0.05
-					maximum_speed = -0.15
-				}
-				heavy_tank_artillery_equipment = {
-					armor_value = 0.10
-					breakthrough = 0.05
-					soft_attack = 0.05
-					maximum_speed = -0.15
-				}
-				light_tank_equipment = {
-					maximum_speed = 0.1
-					reliability = 0.1
-				}
-				light_tank_destroyer_equipment = {
-					maximum_speed = 0.1
-					reliability = 0.1
-					hard_attack = 0.1
-					ap_attack = 0.05
-				}
-				light_tank_artillery_equipment = {
-					maximum_speed = 0.1
-					reliability = 0.1
-					soft_attack = 0.05
-				}
-			}
-		}
 
 }
 }

@@ -1909,6 +1909,34 @@ picture = ENG_war_cabinet
 			}
 		}
 
+
+
+		lend_lease_cost = {
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				heavy_tank_equipment= {
+					build_cost_ic = 0.2 instant = yes
+				}
+				medium_tank_equipment= {
+					build_cost_ic = 0.2 instant = yes
+				}
+				light_tank_equipment= {
+					build_cost_ic = 0.2 instant = yes
+				}
+
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+
 	}
 
 
@@ -2495,7 +2523,7 @@ cost = 100
 				original_TAG = ENG
 			}
 			available = {
-				date > 1941.1.1
+
 			}
 
 			cost = 75
@@ -2728,11 +2756,16 @@ cost = 100
 		birmingham_rcw = {
 			cost = 75
 			allowed = {
-				original_TAG = ENG
+				OR = {
+				tag = ENG
+				tag = SAF
+				tag = NZL
+				tag = AST
+				tag = CAN
+				tag = RAJ
 			}
-			available = {
-				date > 1938.1.1
 			}
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2759,7 +2792,7 @@ cost = 100
 		# directorate_of_tank_design = {
 			# cost = 75
 			# allowed = {
-				# original_TAG = ENG
+				# tag = ENG
 			# }
 			# available = {
 				# date > 1944.1.1
@@ -2782,7 +2815,14 @@ cost = 100
 		nuffield = {
 			cost = 75
 			allowed = {
-				original_TAG = ENG
+				OR = {
+				tag = ENG
+				tag = SAF
+				tag = NZL
+				tag = AST
+				tag = CAN
+				tag = RAJ
+			}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -2807,11 +2847,16 @@ cost = 100
 		vauxhall_motors = {
 			cost = 75
 			allowed = {
-				original_TAG = ENG
+				OR = {
+				tag = ENG
+				tag = SAF
+				tag = NZL
+				tag = AST
+				tag = CAN
+				tag = RAJ
 			}
-			available = {
-				date > 1938.1.1
 			}
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2845,7 +2890,14 @@ cost = 100
 		vickers_armstrong_eng = {
 			cost = 75
 			allowed = {
-				original_TAG = ENG
+				OR = {
+				tag = ENG
+				tag = SAF
+				tag = NZL
+				tag = AST
+				tag = CAN
+				tag = RAJ
+			}
 			}
 			research_bonus = {
 				armor = 0.15

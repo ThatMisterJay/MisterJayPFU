@@ -1885,7 +1885,7 @@ ledger = navy
 				original_tag = USA
 			}
 			available = {
-				date > 1939.9.1
+
 			}
 			research_bonus = {
 				armor = 0.15
@@ -2059,7 +2059,7 @@ cost = 100
 				original_tag = USA
 			}
 			available = {
-				date > 1940.10.11
+
 			}
 			cost = 50
 			removal_cost = 10
