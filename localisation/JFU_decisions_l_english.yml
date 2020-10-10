@@ -124,6 +124,7 @@ ITA_take_back_land:0 "Demend the return of South Tyrol"
 ITA_take_back_land_1:0 "Demend the return of South Tyrol"
 ITA_naval_away:0 "Redivert Resources"
 ITA_naval_return:0 "Prioritize Regia Marina"
+no_hungary:0 "Romanian Panzerfaust"
 
 # Australia
 AST_white_australia_category:0 "New Guinean Service Debate"
