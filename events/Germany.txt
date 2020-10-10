@@ -1176,7 +1176,7 @@ country_event = {
 
 	option = {
 		name = germany.51.a
-		HUN = { transfer_state = 664 }
+		transfer_state = 664
 	}
 }
 
