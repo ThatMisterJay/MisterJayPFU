@@ -113,6 +113,14 @@ british_aircraft_tech.tt:0 "The British will supply us with §Yblueprints§! and
 AST_naval_tech.tt:0 "The British will supply §Yblueprints§! to improve our naval armament sheme"
 
 RAJ_naval_effort_tt:0 "Unlocks §YNaval Policy§! decisions."
+RAJ_naval_effort_tt:0 "Unlocks §YNaval Construction Effort§! decisions."
+RAJ_cruiser_tt:0 "Allows you to order §Y2 India Class§! cruisers."
+RAJ_destroyer_tt:0 "Allows you to order §Y6 Black Swan Class§! destroyers."
+RAJ_admiral_tt:0 "Allows the RIN to hire §YAdmiral Jcor§!."
+RAJ_tech_tt:0 "Gives several basic ship hull designs."
+RAJ_jewel_tt:0 "Adds §Y1 Guardian Class§! battleship to the production queue, 50% complete."
+RAJ_crusade_tt:0 "Adds §Y2 Crusader Class§! carriers to the production queue, at 50% and 30% complete, respectively."
+available_ship_designer:0 "§GAvailable§! as §YShip Designer§!:"
 
 FRA_vichy_troops:0 "Vichy Corp"
 FRA_free_foreign_legion:0 "Foreign Legion"

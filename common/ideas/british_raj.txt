@@ -1105,7 +1105,9 @@ ledger = air
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
-
+                        available = {
+				has_completed_focus = RAJ_british_designs
+			}
 			picture = generic_naval_manufacturer_1
 
 			research_bonus = {
@@ -1121,6 +1123,9 @@ ledger = air
                        allowed = {
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
+			}
+			available = {
+				has_completed_focus = RAJ_indian_ocean_naval_alliance
 			}
 
 			picture = generic_naval_manufacturer_3
@@ -1138,6 +1143,9 @@ ledger = air
 				has_dlc = "Together for Victory"
 				original_TAG = RAJ
 			}
+                        available = {
+				has_completed_focus = RAJ_british_designs
+			}
 
 			picture = generic_naval_manufacturer_2
 
@@ -1148,10 +1156,17 @@ ledger = air
 			traits = { atlantic_fleet_naval_manufacturer }
 
 		}
-		bombay_dockyard = {
+		Cockatoo_doe2 = {
                         cost = 100
+			picture = Cockatoo_doe
+
 			allowed = {
-				original_tag = RAJ
+				original_TAG = RAJ
+				has_dlc = "Together for Victory"
+			}
+
+			available = {
+				has_completed_focus = RAJ_indian_ocean_naval_alliance
 			}
 
 			research_bonus = {

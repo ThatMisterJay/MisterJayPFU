@@ -1,5 +1,5 @@
-﻿division_template = {
-	name = "Indian Division"
+division_template = {
+	name = "Infantry Division"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -12,17 +12,99 @@
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+
+
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
-		recon = { x = 0 y = 1 }   # Pioneer Bn
-		artillery = { x = 0 y = 2 }   # Pioneer Bn
+		engineer = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 
+division_template = {
+	name = "Garrison Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 
 
 
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		cavalry = { x = 2 y = 4 }
+
+		cavalry = { x = 3 y = 0 }
+		cavalry = { x = 3 y = 1 }
+		cavalry = { x = 3 y = 2 }
+		cavalry = { x = 3 y = 3 }
+		cavalry = { x = 3 y = 4 }
+
+		cavalry = { x = 4 y = 0 }
+		cavalry = { x = 4 y = 1 }
+		cavalry = { x = 4 y = 2 }
+		cavalry = { x = 4 y = 3 }
+		cavalry = { x = 4 y = 4 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+fleet = {
+		name = "Royal Indian Navy"
+		naval_base = 4245 # Calcutta
+		task_force = {
+			name = "Royal Indian Navy Task Force 1"
+			location = 4245 # Calcutta
+			ship = { name = "HMIS Hindustan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RAJ version_name = "Folkestone Class" } } }
+                }
+       }
+       }
 
 
 ##### Starting Production #####
@@ -30,6 +112,15 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
+			creator = "RAJ"
+		}
+		requested_factories = 1
+		progress = 0.12
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
 			creator = "RAJ"
 		}
 		requested_factories = 1
