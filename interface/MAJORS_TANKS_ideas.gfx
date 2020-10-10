@@ -41,9 +41,9 @@ spriteTypes = {
 			texturefile = "gfx/interface/technologies/improved_light_tank.dds"
 		}
 		SpriteType = {
-			name = "GFX_ENG_advanced_light_tank_medium"
-			texturefile = "gfx/interface/technologies/USA_adv_light_tank.dds"
-		}
+		name = "GFX_ENG_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_light_tank.dds"
+	}	
 		SpriteType = {
 			name = "GFX_ENG_basic_heavy_tank_medium"
 			texturefile = "gfx/interface/technologies/ENG_imp_light_tank.dds"
