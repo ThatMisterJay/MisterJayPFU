@@ -103,6 +103,7 @@ equipments = {
 		air_defence = 30
 		air_bombing = 20 #-10
 
+		build_cost_ic = 46.4
 		# build_cost_ic = 72
 	}
 
@@ -121,7 +122,7 @@ equipments = {
 		air_defence = 45
 		air_bombing = 30 # -15
 
-		build_cost_ic = 40.6
+		build_cost_ic = 49.2
 		resources = {
 			#oil = 1
 			aluminium = 4
