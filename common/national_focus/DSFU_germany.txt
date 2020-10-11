@@ -1701,10 +1701,21 @@ is_puppet = no
 
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					country_exists = HUN
+				}
 			HUN = {
 			country_event = { id = germany.51 }
 			add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
 			}
+		}
+     else_if = {
+			 ROM = {
+ 			country_event = { id = germany.51 }
+ 			add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
+ 			}
+		 }
 			every_other_country = {
 			limit = {
 			is_faction_leader = yes
