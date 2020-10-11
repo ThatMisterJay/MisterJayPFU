@@ -270,7 +270,7 @@ complete_effect = {
 			GER = {
 				annex_country = { target = ROM transfer_troops = yes }
 			}
-		}
+		GER = consumer_goods_factor = 0.05}   
 	}
 
 	annex_hungary = {
