@@ -209,15 +209,15 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				enemy_justify_war_goal_time = 5.0
+				consumer_goods_factor = 1
+				production_factory_max_efficiency_factor = -1
+				industrial_capacity_factory = -1
 				join_faction_tension = 2.00
 				send_volunteers_tension = 2.00
 				guarantee_tension = 2.0
 				ai_get_ally_desire_factor = -200
 				political_power_factor = -2.00
-				production_speed_arms_factory_factor = -0.80
-				production_speed_industrial_complex_factor = -0.80
-                research_speed_factor = -1000
+                research_speed_factor = -1
 			}
 		}
 

@@ -1,8 +1,9 @@
 state={
 	id=754
 	name="STATE_754"
-		history={
-
+	history={
+		add_core_of = MON
+		owner = MON
 	}
 	provinces={
 		1723 1781 1787 1853 4655 4786 4856 4873 7806 7864 10558 10575 10632 10689 12539 12541 12612 12669

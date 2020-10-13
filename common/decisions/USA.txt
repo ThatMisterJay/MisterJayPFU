@@ -4,7 +4,7 @@ support_SOV = {
 
 		targets = { SOV }
 
-	icon = ger_military_buildup
+		icon = ger_military_buildup
 
 		allowed = {
 		original_tag = USA
@@ -13,6 +13,8 @@ support_SOV = {
 		available = {
 			SOV = { has_defensive_war = yes }
 			num_of_civilian_factories_available_for_projects > 14
+			NOT = { SOV = { has_idea = us_sov_assistance_1 } }
+			NOT = { SOV = { has_idea = us_sov_assistance_3 } }
 
 		}
 
@@ -37,7 +39,48 @@ support_SOV = {
 		}
 
 	}
+	
+	lend_lease_machine_tools_SOV = {
 
+		targets = { SOV }
+
+		icon = ger_military_buildup
+
+		allowed = {
+		original_tag = USA
+		}
+
+		available = {
+			SOV = { has_defensive_war = yes }
+			num_of_civilian_factories_available_for_projects > 14
+			NOT = { SOV = { has_idea = us_sov_assistance_2 } }
+			NOT = { SOV = { has_idea = us_sov_assistance_3 } }
+
+		}
+
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 15
+		}
+
+		remove_effect = {
+			if = {
+				limit = { SOV = { has_idea = us_sov_assistance_1 } }
+				SOV = {
+					swap_ideas = {
+						add_idea = us_sov_assistance_3
+						remove_idea = us_sov_assistance_1
+					}
+				}
+				else = { SOV = {
+					 add_ideas = us_sov_assistance_2 } }
+			}
+
+		}
+
+	}
+	
 	lend_lease_rubber_SOV = {
 
 		targets = { SOV }
@@ -74,44 +117,7 @@ support_SOV = {
 
 	}
 
-	lend_lease_machine_tools_SOV = {
-
-		targets = { SOV }
-
-	icon = ger_military_buildup
-
-		allowed = {
-		original_tag = USA
-		}
-
-		available = {
-			SOV = { has_defensive_war = yes }
-			num_of_civilian_factories_available_for_projects > 14
-
-		}
-
-		days_remove = 30
-
-		modifier = {
-			civilian_factory_use = 15
-		}
-
-		remove_effect = {
-			if = {
-				limit = { SOV = { has_idea = us_sov_assistance_1 } }
-				SOV = {
-					swap_ideas = {
-						add_idea = us_sov_assistance_3
-						remove_idea = us_sov_assistance_1
-					}
-				}
-				else = { SOV = {
-					 add_ideas = us_sov_assistance_2 } }
-			}
-
-		}
-
-	}
+	
 
 
 	lend_lease_gun_SOV = {
@@ -144,32 +150,7 @@ support_SOV = {
 	}
 
 
-	lend_lease_train_SOV_2 = {
-
-		targets = { SOV }
-
-	icon = ger_military_buildup
-
-		allowed = {
-		original_tag = USA
-		}
-
-		available = {
-			SOV = { has_defensive_war = yes }
-
-		}
-
-
-	days_remove = 15
-
-		complete_effect = {
-			SOV = {
-				add_ideas = us_sov_assistance_2
-			}
-
-		}
-
-	}
+	
 
 lend_lease_fighter_SOV = {
 
