@@ -681,6 +681,46 @@ technology = construction4
 		}
 	}
 
+
+
+	focus = {
+		id = ENG_fuel_storage
+		prerequisite = { focus = general_rearmament_focus }
+		available = {
+
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_goal_generic_oil_refinery
+		x = 1
+		y = 1
+		relative_position_id = general_rearmament_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			129 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = fuel_silo
+			level = 3
+			instant_build = yes
+			}
+			}
+			128 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = fuel_silo
+			level = 3
+			instant_build = yes
+			}
+			}
+
+		}
+	}
+
 	focus = {
 		id = ENG_special_air_service
 		prerequisite = { focus = general_rearmament_focus }
@@ -691,7 +731,7 @@ technology = construction4
 		continue_if_invalid = yes
 
 		icon = GFX_focus_eng_special_air_service
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = general_rearmament_focus
 		cost = 10
@@ -1354,6 +1394,8 @@ technology = fighter2
 			}
 		}
 	}
+
+
 
 
 
@@ -2784,6 +2826,7 @@ technology = fighter2
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = AST
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -2800,6 +2843,7 @@ technology = fighter2
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = AST
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -2816,6 +2860,7 @@ technology = fighter2
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = AST
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -2872,6 +2917,7 @@ technology = fighter2
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
 					random_owned_controlled_state = {
 						limit = {
+							is_core_of = AST
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -2888,6 +2934,7 @@ technology = fighter2
 					}
 					random_owned_controlled_state = {
 						limit = {
+							is_core_of = AST
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -2906,6 +2953,7 @@ technology = fighter2
 					random_owned_controlled_state = {
 						limit = {
 							is_coastal = yes
+							is_core_of = AST
 							free_building_slots = {
 								building = dockyard
 								size > 0
@@ -2934,6 +2982,7 @@ technology = fighter2
 					add_opinion_modifier = { target = ENG modifier = aided_industry }
 					random_owned_controlled_state = {
 						limit = {
+							is_core_of = NZL
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -2950,6 +2999,7 @@ technology = fighter2
 					}
 					random_owned_controlled_state = {
 						limit = {
+							is_core_of = NZL
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -2968,6 +3018,7 @@ technology = fighter2
 					random_owned_controlled_state = {
 						limit = {
 							is_coastal = yes
+							is_core_of = NZL
 							free_building_slots = {
 								building = dockyard
 								size > 0
@@ -3041,6 +3092,7 @@ technology = fighter2
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = CAN
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -3057,6 +3109,7 @@ technology = fighter2
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = CAN
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -3073,6 +3126,7 @@ technology = fighter2
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = CAN
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -3090,6 +3144,7 @@ technology = fighter2
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = CAN
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -3209,6 +3264,7 @@ technology = fighter2
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = SAF
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -3225,6 +3281,7 @@ technology = fighter2
 				}
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = SAF
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -3242,6 +3299,7 @@ technology = fighter2
 
 				random_owned_controlled_state = {
 					limit = {
+						is_core_of = SAF
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -3584,10 +3642,9 @@ country_event = {
 	focus = {
 		id = ENG_prepare_for_the_inevitable
 		available = {
-			OR = {
-					threat > 0.5
-					has_war = yes
-				}
+    GER = {
+			has_completed_focus = GER_fateofczechoslovakia
+		}
 		}
 		prerequisite = { focus = ENG_home_defence }
 
@@ -3595,12 +3652,39 @@ country_event = {
 		x = -2
 		y = 1
 		relative_position_id = ENG_home_defence
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			add_ideas = ENG_prepare_for_the_inevitable_idea
+			random_owned_controlled_state = {
+				prioritize = { 130 }
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+
+			}
+			random_owned_controlled_state = {
+				prioritize = { 131 }
+				limit = {
+					is_core_of = ENG
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+
+			}
+
 		}
 	}
 	### END HOME DEFENCE BRANCH ###
