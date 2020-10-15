@@ -2,12 +2,12 @@ state={
 	id=747
 	name="STATE_747"
 	state_category = large_city
-	
+
 	history={
 		owner = USA
 	buildings = {
 			infrastructure = 7
-			industrial_complex = 4
+			industrial_complex = 14
 			dockyard = 1
 				9832 = {
 				naval_base = 3
@@ -15,16 +15,16 @@ state={
 			}
         }
 				victory_points = {
-			9832 1 
+			9832 1
 		}
-	
+
 	add_core_of = USA
 	}
-	
+
 	provinces={
-		6909 9832 9847 9850 11830 
+		6909 9832 9847 9850 11830
 	}
-		
+
 	manpower=1673300
 	buildings_max_level_factor=1.000
 }

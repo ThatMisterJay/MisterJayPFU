@@ -38,6 +38,7 @@ JAP_resistance_training_tt:0 "Trains the Resistance Army to fight against the Ja
 operation_husky_spawn_mixed:0 "Spawns 3 §GMarines§! and 3 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
 operation_husky_spawn_airborne:0 "Spawns 6 §GParatroopers§! in Tunisia in preparation for §GOperation Husky§!.\n"
 operation_husky_spawn_marines:0 "Spawns 6 §GMarines§! in Tunisia in preparation for §GOperation Husky§!.\n"
+USA_great_depression_cooldown_JFU_tt:0 "After this law is passed, it will take §Y290 days§! until further New Deal legislation is drafted and ready to be signed.\n\n"
 
 empty_line:0 "\n\n"
 

@@ -6,16 +6,16 @@ state={
 		owner = USA
 	buildings = {
 			infrastructure = 7
-			industrial_complex = 3
+			industrial_complex = 13
         }
-	
+
 	add_core_of = USA
-	
+
 	}
-	
-	
+
+
 	provinces={
-		733 3712 3715 10481 
+		733 3712 3715 10481
 	}
 	manpower=481000
 	buildings_max_level_factor=1.000

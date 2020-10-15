@@ -113,6 +113,7 @@ focus_tree = {
    		available = {
    			congress_medium_support_trigger = yes
    			has_government = democratic
+				date > 1937.1.1
    		}
 
    		bypass = {
@@ -131,9 +132,9 @@ focus_tree = {
 
    		completion_reward = {
    			USA_great_depression_level_down = yes
-   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
+   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 290 }
    			USA_congress_medium_opposition = yes
-   			custom_effect_tooltip = USA_great_depression_cooldown_tt
+   			custom_effect_tooltip = USA_great_depression_cooldown_JFU_tt
    			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
 			random_owned_controlled_state = {
 				limit = {
@@ -160,7 +161,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_agricultural_adjustment_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -220,8 +221,8 @@ focus_tree = {
 
    		completion_reward = {
    			USA_great_depression_level_down = yes
-   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
-   			custom_effect_tooltip = USA_great_depression_cooldown_tt
+   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 290 }
+   			custom_effect_tooltip = USA_great_depression_cooldown_JFU_tt
    			USA_congress_medium_opposition = yes
 			random_owned_controlled_state = {
 				limit = {
