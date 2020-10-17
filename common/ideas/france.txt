@@ -1801,7 +1801,10 @@ ideas = {
 				original_tag = FRA
 			}
 			available = {
+
 				has_completed_focus = FRA_defensive_focus
+
+
 			}
 
 			cost = 50
@@ -2134,7 +2137,10 @@ ideas = {
 			}
 
 			available = {
+        OR = {
 				has_completed_focus = FRA_heavy_armor_focus
+        has_cosmetic_tag = FRA_FREE
+      }
 			}
 
 			research_bonus = {
@@ -2192,9 +2198,13 @@ ideas = {
 			picture = generic_tank_manufacturer_2
                         cost = 75
 			available = {
+        OR = {
 				has_completed_focus = FRA_battle_of_maneuver
-				has_completed_focus = FRA_army_reform
-			}
+
+        has_cosmetic_tag = FRA_FREE
+      }
+      }
+
 
 			allowed = {
 				original_tag = FRA
@@ -2227,7 +2237,10 @@ ideas = {
 			picture = generic_tank_manufacturer_3
                         cost = 75
 			available = {
+        OR = {
 				has_completed_focus = FRA_infantry_tanks
+        has_cosmetic_tag = FRA_FREE
+      }
 			}
 
 			allowed = {
@@ -2271,7 +2284,10 @@ ideas = {
 
 
 			available = {
+        OR = {
 				has_completed_focus = FRA_battle_of_maneuver
+        has_cosmetic_tag = FRA_FREE
+      }
 			}
                         cost = 75
 			allowed = {
