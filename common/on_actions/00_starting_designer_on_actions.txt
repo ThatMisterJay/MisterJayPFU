@@ -52,7 +52,7 @@ on_actions = {
 					efficiency = 50
 				}
 
-				remove_ideas = hawker
+				load_oob = ENG_air
 
 
 				### Ongoing Ship Production Jan 1 1936 ###
