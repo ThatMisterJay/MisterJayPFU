@@ -684,7 +684,7 @@ picture = ENG_war_cabinet
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.1
 			}
 
 			picture = generic_production_bonus
