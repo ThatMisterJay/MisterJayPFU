@@ -1756,7 +1756,7 @@ equipment_modules = {
 
 
 		add_stats = {
-			sub_detection = 2.0	
+			sub_detection = 2.0
 			sub_attack = 26
 			build_cost_ic = 150
 		}
@@ -1842,7 +1842,7 @@ equipment_modules = {
 
 		add_stats = {
 			surface_detection = 7
-			sub_detection = 2.5
+			sub_detection = 4
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -1855,7 +1855,7 @@ equipment_modules = {
 
 		add_stats = {
 			surface_detection = 10
-			sub_detection = 3.5
+			sub_detection = 6
 			build_cost_ic = 170
 		}
 		can_convert_from = {
