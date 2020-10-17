@@ -1,0 +1,28 @@
+ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+  modifier="fighter_good"
+  name="Marmaduke"
+  surname="Pattle"
+  callsign="Pat"
+  portrait=3
+}
+ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+  modifier="fighter_good"
+  name="Paddy"
+  surname="Finucane"
+  callsign="Paddy"
+  portrait=2
+}
+ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+  modifier="fighter_good"
+  name="Alan"
+  surname="Deere"
+  callsign="AI"
+  portrait=1
+}
+ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+  modifier="fighter_good"
+  name="Karel"
+  surname="Kuttelwascher"
+  callsign="Kut"
+  portrait=3
+}
