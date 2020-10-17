@@ -2183,7 +2183,7 @@ has_completed_focus = FRA_industrial_expansion_north
 			y = 0
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2202,7 +2202,7 @@ has_completed_focus = FRA_industrial_expansion_north
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 70
 		}
 	}
 	focus = {
@@ -2248,7 +2248,7 @@ has_completed_focus = FRA_industrial_expansion_north
 		x = -1
 		y = 1
 		relative_position_id = FRA_buy_time
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2279,7 +2279,7 @@ has_completed_focus = FRA_industrial_expansion_north
 		x = 0
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2332,7 +2332,7 @@ has_completed_focus = FRA_industrial_expansion_north
 			focus = FRA_go_with_britain
 		}
 		relative_position_id = FRA_go_with_britain
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
