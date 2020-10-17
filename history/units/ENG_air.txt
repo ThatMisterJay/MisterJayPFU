@@ -1,0 +1,18 @@
+air_wings = {
+	### RAF Fighter Command ###
+	126 = {
+		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
+		fighter_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}
+				fighter_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}
+				fighter_equipment_1 = {
+			owner = "ENG"
+			amount = 100
+		}
+ }
+}

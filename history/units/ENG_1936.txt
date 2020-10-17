@@ -632,14 +632,6 @@ air_wings = {
 			owner = "ENG"
 			amount = 100
 		}
-				fighter_equipment_0 = {
-			owner = "ENG"
-			amount = 100
-		}
-				fighter_equipment_0 = {
-			owner = "ENG"
-			amount = 100
-		}
 
 		CAS_equipment_1 = {
 			owner = "ENG"
