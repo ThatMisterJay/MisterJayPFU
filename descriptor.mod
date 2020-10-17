@@ -13,6 +13,6 @@ tags={
 	"Gameplay"
 	"Map"
 }
-supported_version="1.9.*"
+supported_version="1.10.*"
 path="C:/Users/Ben/Documents/Paradox Interactive/Hearts of Iron IV/mod/MisterJayPFU"
 remote_file_id="1862530967"

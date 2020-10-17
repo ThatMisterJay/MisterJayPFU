@@ -1,0 +1,94 @@
+################
+#### TURKEY ####
+################
+
+TUR_the_constitutional_arrows_category = {
+	priority = 8
+	icon = tur_the_constitutional_arrows_category
+
+	picture = GFX_decision_cat_picture_constitutional_arrows
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+TUR_kurdish_state_management_category  = {
+	priority = 4
+	icon = tur_unifying_the_country
+
+
+
+	allowed = {
+
+		original_tag = TUR
+	}
+}
+
+TUR_fundamentalist_state_management_category  = {
+	priority = 5
+	icon = tur_unifying_the_country
+
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+TUR_kemalist_state_management_category = {
+	priority = 5
+	icon = tur_unifying_the_country
+
+
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+TUR_the_fading_father_category  = {
+	priority = 9
+	icon = generic_crisis
+
+	picture = GFX_decision_cat_picture_ataturk_health
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+TUR_the_enemy_within = {
+	priority = 7
+
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+TUR_industrial_projects_category = {
+	priority = 1
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+TUR_reforming_our_armed_forces_category = {
+	priority = 3
+
+	allowed = {
+		original_tag = TUR
+	}
+}
+
+category_faction_debug_decisions = {
+	priority = 0
+	visible = {
+		is_debug = yes
+	}
+
+	allowed = {
+		original_tag = TUR
+	}
+}

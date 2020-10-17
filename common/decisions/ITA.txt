@@ -791,7 +791,7 @@ has_country_flag = ITR_phase_one
     }
     create_corps_commander = {
       id = 2002
-      picture = "Portrait_Italy_Generic_land_4.dds"
+      picture = "Portrait_Italy_Generic_land_5.dds"
       traits = { infantry_leader trait_mountaineer hill_fighter }
       skill = 4
       attack_skill = 3

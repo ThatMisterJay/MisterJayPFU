@@ -8,6 +8,7 @@ set_technology = {
 	tech_logistics_company = 1
   tech_signal_company = 1
 	infantry_weapons = 1
+	camelry = 1
 	infantry_weapons1 = 1
 	support_weapons = 1
 	tech_recon = 1
@@ -262,6 +263,30 @@ create_field_marshal = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hans von Luck"
+	gfx = "GFX_portrait_GER_hans_von_luck"
+	traits = { career_officer armor_officer brilliant_strategist trickster }
+	skill = 4 #13
+	id = 75
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Wilhelm Ritter von Thoma"
+	gfx = "GFX_portrait_GER_wilhelm_ritter_von_thoma"
+	traits = { war_hero brilliant_strategist armor_officer hill_fighter }
+	skill = 4 #13
+	id = 76
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
 }
 
 create_corps_commander = {

@@ -6,7 +6,7 @@ state={
 		owner = USA
 	buildings = {
 			infrastructure = 7
-			industrial_complex = 15
+			industrial_complex = 13
 			air_base = 5
         }
 

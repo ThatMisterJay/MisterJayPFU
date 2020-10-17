@@ -8,6 +8,42 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	underage_monarch = {
+	random = no
+	stability_factor = 0.10
+	political_advisor_cost_factor = 0.25
+	trade_laws_cost_factor = 0.25
+	mobilization_laws_cost_factor = 0.25
+	economy_cost_factor = 0.25
+}
+
+legitimate_heir = {
+	random = no
+	stability_factor = 0.10
+	political_power_factor = 0.1
+}
+
+collaborator_king = {
+	random = no
+	fascism_drift = 0.1
+	fascism_acceptance = 75
+	political_power_factor = 0.1
+}
+
+freedom_fighter = { #Seyid Riza
+	random = no
+	stability_factor = 0.25
+	war_support_factor = 0.15
+	army_core_defence_factor = 0.1
+}
+
+experienced_insurgent = { #Ihsan Nuri
+	random = no
+	war_support_factor = 0.15
+	max_command_power = 25
+	command_power_gain_mult = 0.25
+	defensive_war_stability_factor = 0.4
+}
 
 	warrior_code = {
 		random = no

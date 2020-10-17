@@ -3,6 +3,22 @@ ideas = {
 	country = {
 
 
+		BUL_army_restrictions = {
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				tag = BUL
+			}
+			removal_cost = -1		
+			modifier = {
+
+			}
+		}
+
 SPA_civil_war_support = {
 
 	picture = CZE_planning_bonus

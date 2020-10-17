@@ -117,6 +117,7 @@ set_technology = {
 	armored_car1 = 1
 	tech_logistics_company = 1
 	infantry_weapons = 1
+	camelry = 1
 	infantry_weapons1 = 1
 	tech_support = 1
 	tech_engineers = 1
@@ -494,6 +495,18 @@ create_navy_leader = {
 	defense_skill = 1
 	maneuvering_skill = 3
 	coordination_skill = 1
+}
+
+create_navy_leader = {
+	name = "Ferdinando Umberto Filippo Adalberto"
+	gfx = "GFX_portrait_ITA_ferdinando_adalberto"
+	traits = { gentlemanly media_personality career_officer superior_tactician }
+	skill = 4 #13
+	id = 77
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 3
 }
 
 if = {

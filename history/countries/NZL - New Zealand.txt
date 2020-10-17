@@ -10,6 +10,7 @@ add_timed_idea = { idea = peace_time_army days = 1168 }
 set_technology = {
 	armored_car1 = 1
 	infantry_weapons = 1
+	camelry = 1
 	infantry_weapons1 = 1
 	gwtank = 1
 	gw_artillery = 1

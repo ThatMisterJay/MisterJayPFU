@@ -3004,21 +3004,148 @@ focus_tree = {
 	}
 
 
+	focus = {
+		id = YUG_dissolve_serbia
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
 
 
 
+	focus = {
+		id = YUG_divide_bosnia
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_democratic_principles
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_balkan_federation_of_socialist_republics 
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_overthrow_the_tsar
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_abolish_the_monarchy
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_depose_the_tsar
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_treaty_of_perpetual_friendship
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_plot_against_boris
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
 
 
 
+	focus = {
+		id = BUL_dominance_in_the_black_sea
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
+
+	focus = {
+		id = BUL_a_balkan_confederation
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
+
+		completion_reward = { }
+	}
 
 
 
+	focus = {
+		id = GRE_realign_ourselves_with_the_central_powers
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
 
+		completion_reward = { }
+	}
 
+	focus = {
+		id = BUL_the_fate_of_the_balkans
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
 
+		completion_reward = { }
+	}
 
+	focus = {
+		id = BUL_support_macedonian_organizations
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 0
+		cost = 10
 
-
-
-
-}
+		completion_reward = { }
+	}
