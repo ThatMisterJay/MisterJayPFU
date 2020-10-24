@@ -2627,6 +2627,7 @@ focus = {
 		}
 
 		completion_reward = {
+			add_ideas = USA_naval_build_up
 			if = {
 				limit = {
 					 has_war_support < 0.4

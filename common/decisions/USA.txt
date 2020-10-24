@@ -1,3 +1,64 @@
+USA_two_ocean_navy_act_cat = {
+
+	USA_naval_act = {
+
+		icon = generic_naval
+
+		allowed = {
+			tag = USA
+		}
+
+		available = {
+			num_of_naval_factories > 80
+
+			has_navy_size = {
+				unit = carrier
+				size > 7
+			}
+			has_navy_size = {
+				unit = battleship
+				size > 21
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 231
+			}
+
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 1500
+		is_good = no
+		activation = {
+			has_completed_focus = USA_two_ocean_navy_act
+		}
+
+
+
+
+		visible = {
+			has_completed_focus = USA_war_department
+		}
+
+		complete_effect = {
+			remove_ideas = USA_naval_build_up
+			add_political_power = 200
+			add_war_support = 0.10
+			add_stability = 0.10
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+}
+
 
 support_SOV = {
 	lend_lease_train_SOV = {
