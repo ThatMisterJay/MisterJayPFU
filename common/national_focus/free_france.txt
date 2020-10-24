@@ -500,16 +500,6 @@ focus_tree = {
 				}
 				transfer_state = 556
 			}
-
-			if = {
-				limit = {
-				NOT = {
-					controls_state = 598
-				 }
-				}
-				transfer_state = 589
-			}
-
 			if = {
 				limit = {
 				NOT = {

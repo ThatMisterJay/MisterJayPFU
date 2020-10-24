@@ -1985,7 +1985,7 @@ has_completed_focus = FRA_industrial_expansion_north
 			focus = FRA_laissez_faire
 		}
 		relative_position_id = FRA_reform_the_labour_laws
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2214,7 +2214,7 @@ has_completed_focus = FRA_industrial_expansion_north
 			focus = FRA_review_foreign_policy
 		}
 		relative_position_id = FRA_review_foreign_policy
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -2311,7 +2311,7 @@ has_completed_focus = FRA_industrial_expansion_north
 		x = 1
 		y = 1
 		relative_position_id = FRA_buy_time
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2462,7 +2462,7 @@ technology = construction4
 			focus = FRA_agricultural_protectionism
 		}
 		relative_position_id = FRA_laissez_faire
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
