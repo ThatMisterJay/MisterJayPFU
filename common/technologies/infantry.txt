@@ -1719,20 +1719,8 @@ armored_car_at_upgrade = {
 			factor = 1
 		}
 	}
-	######### FROM JAPANESE FOCUS ##########
-	bicycle_infantry = {
 
-		allow = {
-			always = no
-		}
 
-		research_cost = 1
-		start_year = 1936
-
-		enable_subunits = {
-			bicycle_battalion
-		}
-	}
 
 	camelry = {
 
@@ -1744,7 +1732,7 @@ armored_car_at_upgrade = {
 		start_year = 1936
 
 		enable_subunits = {
-			camelry
+	#		camelry
 			bicycle_battalion
 		}
 	}

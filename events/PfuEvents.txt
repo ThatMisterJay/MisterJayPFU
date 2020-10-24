@@ -292,7 +292,7 @@ country_event = {
 		name = pfu.15.b
 		custom_effect_tooltip = pfu.15.a.tt
 		hidden_effect = {
-			CAN = {
+			SAF = {
 				add_manpower = -12000
 				load_oob = ENG_tank
 			}
@@ -303,7 +303,7 @@ country_event = {
 		name = pfu.15.c
 		custom_effect_tooltip = pfu.15.a.tt
 		hidden_effect = {
-			SAF = {
+			CAN = {
 				add_manpower = -12000
 				load_oob = ENG_tank
 			}
@@ -748,7 +748,7 @@ country_event = {
 		name = pfu.15.b
 		custom_effect_tooltip = pfu.33.a.tt
 		hidden_effect = {
-			CAN = {
+			SAF = {
 				add_manpower = -12000
 				load_oob = ENG_royalarmor
 			}
@@ -759,7 +759,7 @@ country_event = {
 		name = pfu.15.c
 		custom_effect_tooltip = pfu.33.a.tt
 		hidden_effect = {
-			SAF = {
+			CAN = {
 				add_manpower = -12000
 				load_oob = ENG_royalarmor
 			}
