@@ -132,7 +132,7 @@ focus_tree = {
 
    		completion_reward = {
    			USA_great_depression_level_down = yes
-   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 290 }
+   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 350 }
    			USA_congress_medium_opposition = yes
    			custom_effect_tooltip = USA_great_depression_cooldown_JFU_tt
    			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -221,7 +221,7 @@ focus_tree = {
 
    		completion_reward = {
    			USA_great_depression_level_down = yes
-   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 290 }
+   			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 350 }
    			custom_effect_tooltip = USA_great_depression_cooldown_JFU_tt
    			USA_congress_medium_opposition = yes
 			random_owned_controlled_state = {
