@@ -496,9 +496,6 @@ ideas = {
 				original_tag = HUN
 			}
 
-			available = {
-				has_completed_focus = HUN_special_forces
-			}
 
 
 			traits = { army_commando_1 }
@@ -540,12 +537,26 @@ ideas = {
 				factor = 1
 			}
 		}
+		HUN_jeno_major = {
+					ledger = army
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = HUN
+			}
 
 
+
+			traits = { army_armored_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	theorist = {
-		HUN_shvoy_kalman = {
+		HUN_istvan_shvoy = {
                         ledger = army
 			picture = generic_army_europe_2
 
@@ -558,6 +569,20 @@ ideas = {
 			}
 
 			traits = { military_theorist }
+		}
+			HUN_istvan_kalman = {
+						ledger = air
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.15
+			}
+			
+			traits = { air_warfare_theorist }
 		}
 
 	}
