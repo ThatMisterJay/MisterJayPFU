@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-   add_core_of = MON
-   owner = MON
+   add_core_of = SOV
+   owner = SOV
 	}
 
 	provinces={
