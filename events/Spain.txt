@@ -1,7 +1,7 @@
 
 add_namespace = spain
 
-# Spanish Civil War if Franco is elected
+# Spanish Civil War from Focus
 country_event = {
 	id = spain.10
 	title = spain.1.t
@@ -65,7 +65,7 @@ country_event = {
 	}
 
 }
-	
+	#Alcaza-Zamora Resigns
 	country_event = {
 	id = spain.90
 	title = spain.90.t
@@ -87,7 +87,7 @@ country_event = {
 				limit = {
 					has_completed_focus = SPR_the_popular_front
 				}
-				remove_ideas = SPR_government_power_struggle
+				
 				add_political_power = 10
 			}
 			retire_country_leader = yes
@@ -118,6 +118,7 @@ country_event = {
 	}
 }
 
+#unused end of civil war event
 country_event = {
 	id = spain.1000
 	title = spain.1000.t
