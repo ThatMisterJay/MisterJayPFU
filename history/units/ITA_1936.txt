@@ -208,6 +208,13 @@ division_template = {
 
 
 units = {
+
+	division= {
+		name = "4a Divisione di Fanteria 'Livorno'"
+		location = 9904
+		division_template = "Divisione di Fanteria"		# "Semi-Mountain" (less trained & equipped than Alpina)
+		start_experience_factor = 0.3
+	}
 	##### NAVAL UNITS #####
 	### 1st FLEET ###
 

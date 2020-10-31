@@ -8,9 +8,7 @@ state={
 		owner = SPR
 		buildings = {
 			infrastructure = 2
-			1903 = {
-				naval_base = 2
-			}
+			
 		}
 	}
 

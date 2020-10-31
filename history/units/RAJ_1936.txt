@@ -95,7 +95,14 @@ division_template = {
 }
 
 units = {
-fleet = {
+	division= {	
+		name = "Delhi District"
+		location = 2086 #Delhi
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+
+	}
+	fleet = {
 		name = "Royal Indian Navy"
 		naval_base = 4245 # Calcutta
 		task_force = {

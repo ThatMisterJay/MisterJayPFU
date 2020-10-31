@@ -73,6 +73,18 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
+			AND = {
+				tag = SPR
+				has_idea = SPA_no_navy
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SPAIN_ALLIES_NEUTRAL
+			always = no
+		}
+	}
+	if = {
+		limit = {
 			has_game_rule = {
 				rule = allow_guarantees
 				option = BLOCKED
@@ -650,6 +662,18 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 			}
 		}
 		threat>0.99
+	}
+	if = {
+		limit = {
+			AND = {
+				tag = SPR
+				has_idea = SPA_no_navy
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SPAIN_ALLIES_NEUTRAL
+			always = no
+		}
 	}
 	if = {
 		limit = {

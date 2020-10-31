@@ -172,6 +172,14 @@ division_template = {
 	}
 }
 
+units = {
+	division= {
+		name = "42ème Division d'Infanterie"
+		location = 11506
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+}
 
 division_template = {
 	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment

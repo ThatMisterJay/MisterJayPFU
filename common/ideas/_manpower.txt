@@ -102,6 +102,13 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = SPA_no_navy }
+				}
 			}
 
 			modifier = {
@@ -154,14 +161,15 @@ ideas = {
 					}
 					is_subject = no
 				}
-
 				if = {
 					limit = {
-						original_tag = HUN
+						original_tag = SPR
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { has_idea = HUN_treaty_of_triannon }
+					NOT = { has_idea = SPA_no_navy }
 				}
+
+				
 			}
 
 			ai_will_do = {
@@ -247,6 +255,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					NOT = { has_idea = SPA_no_navy }
 				}
 			}
 
@@ -339,6 +353,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					NOT = { has_idea = SPA_no_navy }
 				}
 			}
 
@@ -433,6 +453,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 			}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+					}
+					NOT = { has_idea = SPA_no_navy }
 				}
 			}
 

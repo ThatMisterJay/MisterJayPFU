@@ -181,6 +181,17 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

@@ -2219,6 +2219,11 @@ trigger = {
 	immediate = {
 		set_global_flag = nationalist_victory
 		set_global_flag = scw_over
+		hidden_effect = {
+			SPR = {
+				add_ideas = SPA_recovering_from_civil_war
+			}
+		}
 
 	}
 
@@ -2232,7 +2237,7 @@ trigger = {
 		name = news.64.b
 		trigger = { original_tag = SPR }
 		SPR = {
-			remove_ideas = SPA_recovering_from_civil_war
+			add_ideas = SPA_recovering_from_civil_war
 		}
 	}
 }
