@@ -204,6 +204,26 @@ if = {
 	}
 }
 
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 17600
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 1500
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+    type = support_equipment
+    amount = 522
+    producer = ROM
+}
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_1
+	amount = 72
+	producer = ROM
+}
 
 ### Ship Variants ###
 if = {

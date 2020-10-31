@@ -159,6 +159,12 @@ division_template = {
 
 
 units = {
+	division = {
+		name = "7 'Kuma' Hohei Shidan"
+		location = 10125 #Asahigawa
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
 	fleet = {
 		name = "Dai 1 Kantai"
 		naval_base = 9998  #Yokosuka

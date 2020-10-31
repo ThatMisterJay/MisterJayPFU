@@ -1060,23 +1060,27 @@ date < 1941.9.21
 		completion_reward = {
 			country_event = { id = DSFU.8 days = 1 }
 			GER = {
-declare_war_on = {
-target = SOV
-type = annex_everything
-}
-if = {
-limit = { ROM = { is_in_faction_with = GER } }
-ROM = { add_to_war = { targeted_alliance = GER enemy = SOV } }
-}
-if = {
-limit = { HUN = { is_in_faction_with = GER } }
-HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
-}
-if = {
-limit = { FIN = { is_in_faction_with = GER } }
-FIN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
-}
-}
+		declare_war_on = {
+		target = SOV
+		type = annex_everything
+		}
+		if = {
+		limit = { ROM = { is_in_faction_with = GER } }
+		ROM = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+		}
+		if = {
+		limit = { HUN = { is_in_faction_with = GER } }
+		HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+		}
+		if = {
+		limit = { FIN = { is_in_faction_with = GER } }
+		FIN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+		}
+		if = {
+			limit = { SPR = { is_in_faction_with = GER } }
+			SPR = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+		}
+		}
 hidden_effect = {
 	USA = {
 		country_event = { id = DSFU.10 days = 100 }

@@ -122,6 +122,13 @@ division_template = {
 
 units = {
 
+	division= {
+		name = "1st 'Big Red One' Division"
+		location = 3878
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
 		##### NAVAL UNITS #####
 		### PACIFIC FLEET -- San Diego
 

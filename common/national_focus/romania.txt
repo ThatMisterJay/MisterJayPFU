@@ -140,6 +140,16 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			create_corps_commander = {
+				name = "Ewald von Kleist"
+				picture = "Portrait_Germany_Ewald_von_Kleist.dds"
+				traits = { armor_officer trait_cautious trait_engineer panzer_leader}
+				skill = 4
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 3
+			}
 			custom_effect_tooltip = ROM_invite_german_advisors_tt
 			hidden_effect = {
 				diplomatic_relation = {

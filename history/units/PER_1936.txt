@@ -21,28 +21,6 @@
 }
 
 
-units = {
-	######## LAND OOB ########
-	##### Royal Iranian Army #####
-	division = {
-		name = "South Persia Rifles"
-		location = 10913
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-	division = {
-		name = "Imperial Gendarmerie"
-		location = 10837
-		division_template = "Infantry Division"		
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-
-	}
-
-	######## No Naval OOB ########
-}
 
 
 instant_effect = {

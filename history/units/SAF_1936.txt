@@ -162,7 +162,15 @@ division_template = {
 }
 
 ##### OOB #####
+units = {
+	division= {
+		name = "1. Infantry Division"
+		location = 12589 # Capetown
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
 
+	}
+}
 
 
 ##### Starting Production #####

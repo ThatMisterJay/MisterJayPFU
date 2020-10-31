@@ -49,4 +49,8 @@ spriteType = {
 	name = "GFX_ENG_british_rho"
 	textureFile = "gfx/interface/DSFU_GFX/ENG_british_rho.dds"
 }
+spriteType = {
+	name = "GFX_SOV_moscow_metro"
+	textureFile = "gfx/interface/DSFU_GFX/SOV_moscow_metro.dds"
+}
 }

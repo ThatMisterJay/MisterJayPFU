@@ -30,37 +30,7 @@
 
 
 
-units = {
-	##### Royal Iraqi Army #####
-	division = {
-		name = "1. Alfurqat"
-		location = 2097
-		division_template = "Alfurqat Almasha"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "2. Alfurqat"
-		location = 10106
-		division_template = "Alfurqat Almasha"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "3. Alfurqat"
-		location = 7977
-		division_template = "Alfurqat Almasha"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {
-		name = "4. Alfurqat"
-		location = 2089
-		division_template = "Alfurqat Almasha"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-}
+
 
 
 

@@ -82,6 +82,16 @@ division_template = {
 
 
 
+units = {
+	division= {
+		name = "1. Gyalogdandár"
+		location = 9660
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+}
 
 ### Magyar Légiero ###
 air_wings = {

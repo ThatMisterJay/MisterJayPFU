@@ -6,11 +6,10 @@ state={
 	state_category = wasteland
 
 	history={
+		add_core_of = AFR
 		owner = SPR
 		buildings = {
-			12857 = {
-				naval_base = 1
-			}
+			
 		}
 	}
 

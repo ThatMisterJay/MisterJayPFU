@@ -139,6 +139,14 @@ division_template = {
 }
 
 units = {
+	division= {
+		name = "1. Infantry Division"
+		location = 722 # London ONT
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
 	##### Naval OOB #####
 	fleet = {
 		name = "Royal Canadian Navy"

@@ -88,6 +88,13 @@ division_template = {
 
 units = {
 
+	division= {
+		name = "1. Infantry Division"
+		location = 12406 # Sydney
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+
+	}
 	##### Naval OOB #####
 	fleet = {
 		name = "Royal Australian Navy"
