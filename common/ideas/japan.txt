@@ -1462,7 +1462,7 @@ ledger = air
 
 
 
-			traits = { air_chief_night_operations_1 }
+			traits = { air_chief_night_operations_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -1478,7 +1478,7 @@ ledger = air
 
 
 
-			traits = { air_chief_ground_support_1 }
+			traits = { air_chief_ground_support_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -1496,7 +1496,7 @@ ledger = air
 			}
 
 
-			traits = { air_chief_all_weather_1 }
+			traits = { air_chief_all_weather_2 }
 
 			ai_will_do = {
 				factor = 1
