@@ -263,7 +263,7 @@
  spain.90.desc:0 "The power struggle between the various parties of the Left, so recently united in victory in the 1936 elections, has already come to a head. Wary of President Niceto Alcalá-Zamora's centrist and compromising policies, his alienated supporters in the Cortes judged the very dissolution of the Cortes that resulted in the elections to be unconstitutional, and dismissed him from office.\n\nIn Alcalá-Zamora's stead, the Cortes has elected his old rival, Manuel Azaña, who now has inherited the unenviable task of bringing back stability to the increasingly-polarizing Spanish political scene."
  spain.90.a:0 "The chaos is complete."
  SPA_no_navy:0 "Neutral Nation"
- SPA_no_navy_desc: "This nation is nominally neutral, and therefore has no use of an airforce or navy. This national spirit will be removed should we go to war with the Western Allies."
+ SPA_no_navy_desc: "This nation is nominally neutral, and therefore has no use of an airforce or navy. This national spirit will be removed should we be attacked by the Western Allies."
  SPA_an_armored_corps_new:0 "Enlist German Tank Designers"
  SPA_an_armored_corps_new_desc:0 "Spain needs a modern tank force if it is not to be outdone by its neighbours, and who better to go to than the Germans?"
  SPAIN_ALLIES_NEUTRAL:0 "§RSpain is only allowed to fight on the Eastern Front and will join the war against the Soviets via the Operation Barbarossa Focus if they are in the Axis.§"

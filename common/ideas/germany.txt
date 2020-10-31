@@ -1003,13 +1003,25 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = SPR
+				}
 			}
 
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
+			available = {
+				if = {
+					limit = {
+						tag = SPR
+					}
+					has_completed_focus = SPA_an_armored_corps_new
+				}
+			}
+		
 			equipment_bonus = {
 				medium_tank_artillery_equipment = {
 					reliability = 0.1
@@ -1046,11 +1058,23 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = SPR
+				}
 			}
 
 			research_bonus = {
 				armor = 0.15
+			}
+			
+			available = {
+				if = {
+					limit = {
+						tag = SPR
+					}
+					has_completed_focus = SPA_an_armored_corps_new
+				}
 			}
 
 			equipment_bonus = {
@@ -1078,10 +1102,19 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = SPR
+				}
 			}
 			available = {
 				date > 1941.6.1
+				if = {
+					limit = {
+						tag = SPR
+					}
+					has_completed_focus = SPA_an_armored_corps_new
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1114,12 +1147,24 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = SPR
+				}
 			}
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
+			available = {
+				if = {
+					limit = {
+						tag = SPR
+					}
+					has_completed_focus = SPA_an_armored_corps_new
+				}
+			}
+			
 			equipment_bonus = {
 				medium_tank_equipment = {
 					reliability = 0.1
@@ -1145,10 +1190,19 @@ NOT = { has_idea = walther_funk }
 			picture = GER_MAN
 
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = SPR
+				}
 			}
 			available = {
 				date > 1941.6.1
+				if = {
+					limit = {
+						tag = SPR
+					}
+					has_completed_focus = SPA_an_armored_corps_new
+				}
 			}
 
 			research_bonus = {
@@ -1173,9 +1227,21 @@ NOT = { has_idea = walther_funk }
 
 			cost = 75
 			allowed = {
-				original_tag = GER
+				OR = {
+					original_tag = GER
+					original_tag = SPR
+				}
 			}
-
+			
+			available = {
+				if = {
+					limit = {
+						tag = SPR
+					}
+					has_completed_focus = SPA_an_armored_corps_new
+				}
+			}
+			
 			research_bonus = {
 				armor = 0.15
 			}
