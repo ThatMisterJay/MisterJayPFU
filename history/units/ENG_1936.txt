@@ -202,6 +202,13 @@ division_template = {
 }
 
 units = {
+
+	division= {
+		name = "1. Infantry Division"
+		location = 6103
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
 	### HOME COMMAND ###
 		fleet = {
 			name = "Home Command"

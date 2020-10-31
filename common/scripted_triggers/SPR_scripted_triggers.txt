@@ -1,0 +1,76 @@
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			AND = {
+				tag = SPR
+				has_idea = SPA_no_navy
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SPAIN_ALLIES_NEUTRAL
+			always = no
+		}
+	}
+	
+	else = {
+		always = yes
+	}
+}
+
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			FROM = {
+				AND = {
+					tag = SPR
+					has_idea = SPA_no_navy
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SPAIN_ALLIES_NEUTRAL
+			always = no
+		}
+	}
+	else = {
+		always = yes
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = { 
+	if = {
+		limit = {
+			AND = {
+				tag = SPR
+				has_idea = SPA_no_navy
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SPAIN_ALLIES_NEUTRAL
+			always = no
+		}
+	}
+	
+	else = {
+		always = yes
+	}
+}
+
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			FROM = {
+				AND = {
+					tag = SPR
+					has_idea = SPA_no_navy
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SPAIN_ALLIES_NEUTRAL
+			always = no
+		}
+	}
+	else = {
+		always = yes
+	}
+}

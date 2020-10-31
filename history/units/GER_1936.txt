@@ -272,6 +272,12 @@ priority = 0
 }
 
 units = {
+	division= {
+		name = "2. Infanterie-Division"
+		location = 6521
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
 
  fleet = {
 	name = "Kriegsmarine"

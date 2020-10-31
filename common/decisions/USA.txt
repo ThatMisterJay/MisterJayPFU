@@ -3,6 +3,7 @@ support_SOV = {
 	lend_lease_train_SOV = {
 
 		targets = { SOV }
+		
 
 	icon = ger_military_buildup
 

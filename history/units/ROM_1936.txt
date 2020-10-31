@@ -135,6 +135,12 @@ division_template = {
 
 
 units = {
+	division = {
+		name = "Divizia 1 Infanterie de Garda"
+		location = 9617
+		division_template = "Divizia Infanterie"			# Guards division: elite, latest equipment
+		start_experience_factor = 0.3
+	}
 	##### NAVAL UNITS #####
 	fleet = {
 		name = "Flota Romania de Mare"

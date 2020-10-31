@@ -75,6 +75,24 @@ add_ideas = {
 	SPR_military_disloyalty
 	SPR_political_violence
 	SPR_national_strikes_3
+	SPA_no_navy
+	free_trade
+}
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment_1
+    amount = 17600
+    producer = SPR
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 1600
+    producer = SPR
+}
+add_equipment_to_stockpile = {
+    type = support_equipment
+    amount = 424
+    producer = SPR
 }
 
 set_popularities = {
@@ -84,8 +102,8 @@ set_popularities = {
 }
 
 set_convoys = 150
-set_stability = 0.5
-set_war_support = 0.6
+set_stability = 0.55
+set_war_support = 0.65
 
 1939.1.1 = {
 
@@ -166,13 +184,13 @@ set_war_support = 0.6
 }
 
 create_country_leader = {
-		name = "Manuel Azaña"
-		desc = "POLITICS_MANUEL_AZANA_DESC"
-		picture = "Portrait_Spain_Manuel_Azana.dds"
+		name = "Niceto Alcalá-Zamora"
+		desc = "POLITICS_NICETO_ALCALA_ZAMORA_DESC"
+		picture = "GFX_portrait_SPR_niceto_alcala_zamora"
 		expire = "1965.1.1"
 		ideology = conservatism
 		traits = {
-			figurehead_president
+
 		}
 	}
 
@@ -212,7 +230,7 @@ create_country_leader = {
 			id = 1108
 			gfx = "GFX_portrait_spain_francisco_franco"
 			traits = { organisational_leader logistics_wizard expert_delegator harsh_leader infantry_leader}
-			skill = 4
+			skill = 5
 		    attack_skill = 5
 		    defense_skill = 3
 		    planning_skill = 3
@@ -224,7 +242,7 @@ create_country_leader = {
 			id = 1109
 			gfx = "GFX_portrait_SPA_mohamed_meziane"
 			traits = { harsh_leader career_officer infantry_leader trait_mountaineer harsh_leader }
-			skill = 4
+			skill = 5
 		    attack_skill = 4
 		    defense_skill = 3
 		    planning_skill = 3
@@ -236,7 +254,7 @@ create_country_leader = {
 			id = 1110
 			gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
 			traits = { infantry_officer infantry_leader harsh_leader urban_assault_specialist}
-			skill = 3
+			skill = 4
 		    attack_skill = 3
 		    defense_skill = 3
 		    planning_skill = 2
@@ -274,12 +292,14 @@ create_country_leader = {
 			id = 1113
 			gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
 			traits = { infantry_officer infantry_leader ranger panzer_leader }
-			skill = 3
+			skill = 4
 		    attack_skill = 4
 		    defense_skill = 2
 		    planning_skill = 2
 		    logistics_skill = 2
 		}
+		
+		
 
 		# Nationalists leaders - Carlists
 

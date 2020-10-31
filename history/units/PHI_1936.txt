@@ -19,38 +19,7 @@
 
 
 units = {
-	######## LAND OOB ########
-	##### Philippine High Command #####
-	division = {
-		name = "1st Philippines Division"
-		location = 10265
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division = {
-		name = "2nd Philippines Division"
-		location = 4241
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division = {
-		name = "3rd Philippines Division"
-		location = 12118
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division = {
-		name = "4th Philippines Division"
-		location = 4288
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division = {
-		name = "5th Philippines Division"
-		location = 12213
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
+	
 
 	######## Naval OOB ########
 	navy = {
