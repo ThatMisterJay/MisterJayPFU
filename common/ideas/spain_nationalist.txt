@@ -13,7 +13,7 @@ ideas = {
 			allowed_civil_war = {
 				tag = BUL
 			}
-			removal_cost = -1		
+			removal_cost = -1
 			modifier = {
 
 			}
@@ -86,22 +86,22 @@ SPA_civil_war_support = {
 			disabled_ideas = 1
 		}
 	}
-	
-	
+
+
 		SPR_ongoing_civil_war = {
-			
+
 			name = SPR_ongoing_civil_war
-			
+
 			picture = SPR_nationalist_remnants
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
@@ -131,23 +131,23 @@ SPA_civil_war_support = {
 				max_surrender_limit_offset = 0.15
 			}
 		}
-		
+
 		SPA_no_navy = {
-			
+
 			picture = neutrality_idea
-			
+
 			cancel = {
 				has_war_with = ENG
 			}
-			
+
 			allowed = {
 				original_tag = SPR
 			}
-			
+
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				production_speed_dockyard_factor = -1.2
 				production_speed_naval_base_factor = -1.2
@@ -1316,11 +1316,11 @@ SPA_civil_war_support = {
 		}
 	}
 
-	
-	
-	
-	aircraft_manufacturer = { 		
-			
+
+
+
+	aircraft_manufacturer = {
+
 		designer = yes
 
 		### Vanilla ###
@@ -1328,99 +1328,99 @@ SPA_civil_war_support = {
 		casa_vanilla = {
 
 			name = casa
-			
+
 			picture = generic_air_manufacturer_2
 
-			
+
 			allowed = {
 				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+
 			traits = { light_aircraft_manufacturer }
-			
+
 			equipment_bonus = {
 				# capable of aerobatics, forward shooting machine guns, low number of crashes
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		### La Resistance ###
-		
+
 		casa = {
-			
+
 			picture = SPR_casa
 
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
 			}
 
 			available = {
-				
+
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+
 			traits = { medium_aircraft_manufacturer }
-			
+
 			equipment_bonus = {
 				# capable of aerobatics, forward shooting machine guns, low number of crashes
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		SPR_hispano_aviacion = {
-			
+
 			picture = SPR_hispano_aviacion
 
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
 			}
 
 			available = {
-				
+
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+
 			traits = { light_aircraft_manufacturer }
-			
+
 			equipment_bonus = {
 				# capable of aerobatics, forward shooting machine guns, low number of crashes
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-	
+
 	materiel_manufacturer = {
-		
+
 		designer = yes
 
 		SPR_star_bonifacio_echeverria = {
-			
+
 			picture = SPR_star_bonifacio_echeverria
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1448,7 +1448,7 @@ SPA_civil_war_support = {
 		SPR_esperanza_y_cia = {
 
 			picture = SPR_esperanza_y_cia
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1476,7 +1476,7 @@ SPA_civil_war_support = {
 		SPR_llama_gabilondo_y_cia = {
 
 			picture = SPR_llama_gabilondo_y_cia_sa
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1501,7 +1501,7 @@ SPA_civil_war_support = {
 		SPR_hispano_suiza = {
 
 			picture = SPR_hispano_suiza
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1517,7 +1517,7 @@ SPA_civil_war_support = {
 				mechanized_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
-				
+
 			}
 
 
@@ -1533,13 +1533,13 @@ SPA_civil_war_support = {
 		}
 
 	}
-	
+
 	industrial_concern = {
-	
+
 		SPR_compania_telefonica_nacional = {
-			
+
 			picture = SPR_compania_telefonica_nacional
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1557,31 +1557,31 @@ SPA_civil_war_support = {
 		}
 
 		SPR_industria_de_guerra_de_cataluna = {
-			
+
 			picture = SPR_industrias_de_guerra_de_cataluna
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
 			}
 
 			available = {
-				
+
 			}
-			
+
 			research_bonus = {
 			}
-			
+
 			traits = { construction_company }
-			
+
 			modifier = {
 			}
 		}
 
 		SPR_altos_hornos_de_vizcaya = {
-			
+
 			picture = SPR_altos_hornos_de_vizcaya
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1598,9 +1598,9 @@ SPA_civil_war_support = {
 		}
 
 		SPR_campsa = {
-			
+
 			picture = SPR_campsa
-			
+
 			allowed = {
 				has_dlc = "La Resistance"
 				original_tag = SPR
@@ -1622,7 +1622,7 @@ SPA_civil_war_support = {
 		}
 
 	}
-	
+
 	political_advisor = {
 
 		### Vanilla ###
@@ -1876,14 +1876,14 @@ available = {
 			traits = { traditionalist_theorist }
 		}
 
-		
+
 	}
 
 	theorist = {
 
-		
 
-		
+
+
 
 		### La Resistance ###
 
@@ -1891,7 +1891,7 @@ available = {
 			ledger = army
 
 			allowed = {
-				
+
 				original_tag = SPR
 			}
 
@@ -1912,22 +1912,22 @@ available = {
 
 			traits = { military_theorist }
 		}
-		
+
 		SPA_agustin_munoz_grandes = { # Falangist
 			ledger = army
-				
+
 			allowed = {
-				
+
 				original_tag = SPR
 			}
-	
+
 			visible = {
 				NOT = {
 					tag = SPD
 					tag = SPC
 				}
 			}
-	
+
 			available = {
 				NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
 				custom_trigger_tooltip = {
@@ -1935,15 +1935,15 @@ available = {
 					NOT = { tag = SPD }
 				}
 			}
-			
+
 			cost = 175
-			
+
 			picture = SPA_agustin_munoz_grandes
-			
+
 			research_bonus = {
 				cat_mobile_warfare = 0.2
 			}
-			
+
 			traits = { mobile_warfare_expert }
 		}
 	}
@@ -2068,7 +2068,7 @@ available = {
 			}
 		}
 
-		
+
 
 		SPA_miguel_ponte = { # Francoist
 
@@ -2356,7 +2356,7 @@ available = {
 
 		### La Resistance ###
 
-		
+
 
 		SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
 			ledger = army
@@ -2386,9 +2386,10 @@ available = {
 				factor = 1
 			}
 		}
-		
+
 		SPA_heli_rolando_de_tella = { # Francoist/Carlist
 
+      ledger = army
 			picture = SPA_heli_rolando_de_tella
 
 			allowed = {

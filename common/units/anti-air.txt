@@ -50,7 +50,7 @@ sub_units = {
 		breakthrough = -0.4
 		soft_attack = -0.4
 		hard_attack = -0.4
-		air_attack = -0.2
+		
 
 
 		same_support_type = anti_air
@@ -139,7 +139,7 @@ same_support_type = anti_air
 		#Tanks are awesome
 		soft_attack = 0.5
 
-		
+
 
 		same_support_type = anti_air
 	}
@@ -182,7 +182,7 @@ same_support_type = anti_air
 		#Tanks are awesome
 		soft_attack = 0.5
 
-		
+
 
 		same_support_type = anti_air
 	}
@@ -225,7 +225,7 @@ same_support_type = anti_air
 		#Tanks are awesome
 		soft_attack = 0.5
 
-		
+
 
 		same_support_type = anti_air
 	}
@@ -267,7 +267,7 @@ same_support_type = anti_air
 		#Tanks are awesome
 		soft_attack = 0.5
 
-		
+
 
 		same_support_type = anti_air
 	}
@@ -310,7 +310,7 @@ same_support_type = anti_air
 		#Tanks are awesome
 		soft_attack = 0.5
 
-		
+
 
 		same_support_type = anti_air
 	}
