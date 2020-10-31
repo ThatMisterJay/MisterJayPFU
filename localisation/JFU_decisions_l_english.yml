@@ -206,3 +206,7 @@ center_french_state:0 "Is in Central France"
 
 FRA_vert:0 "Operation Vert"
 FRA_torch:0 "Operation Torch"
+
+USA_two_ocean_navy_act_cat:0 "Naval Rearmament"
+USA_two_ocean_navy_act_cat_desc:0 "Modest naval expansion programs had been implemented by the Vinson-Trammell Act of 1934 and the Naval Act of 1938. In early June 1940, the U.S. Congress passed legislation that provided an 11% increase in naval tonnage as well as an expansion of naval air capacity. On June 17, a few days after German troops conquered France, Chief of Naval Operations Harold Stark requested four billion dollars from Congress to increase the size of the American combat fleet by 70%, adding 257 ships amounting to 1,325,000 tons."
+USA_naval_act:0 "Two Ocean Navy"

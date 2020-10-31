@@ -39,6 +39,22 @@ USA_aid_britain = {
 		}
 	}
 }
+
+USA_two_ocean_navy_act_cat = {
+
+
+picture = GFX_decision_cat_naval_blockade
+
+priority = 9
+
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_two_ocean_navy_act
+	}
+}
+
 USA_foreign_support = {
 	allowed = {
 		OR = {
