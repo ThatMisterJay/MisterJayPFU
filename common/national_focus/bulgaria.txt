@@ -7,22 +7,7 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 ### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 
-focus_tree = {
-	id = bulgarian_focus
 
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			tag = BUL
-			has_dlc = "Battle for the Bosporus"
-		}
-	}
-
-	default = no
-
-	continuous_focus_position = { x = 50 y = 1500 }
 
 
 #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##          ########  ########     ###    ##    ##  ######  ##     ##
@@ -34,5 +19,5 @@ focus_tree = {
 #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ########    ########  ##     ## ##     ## ##    ##  ######  ##     ##
 
 
-	
+
 }

@@ -628,12 +628,12 @@ name = JFU.19.a
 create_corps_commander = {
     name = "Sun Li Jen"
     gfx = "GFX_portrait_chi_sun_li_jen"
-    traits = { brilliant_strategist infantry_officer infantry_leader trait_mountaineer jungle_rat panzer_leader }
-    skill = 5
+    traits = { to_good brilliant_strategist infantry_officer infantry_leader trait_mountaineer trickster panzer_leader }
+    skill = 4
     attack_skill = 4
-    defense_skill = 4
+    defense_skill = 3
     planning_skill = 2
-    logistics_skill = 4
+    logistics_skill = 2
 }
 hidden_effect = {
                 division_template = {

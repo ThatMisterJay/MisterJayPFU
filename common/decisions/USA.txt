@@ -27,7 +27,7 @@ USA_two_ocean_navy_act_cat = {
 		}
 
 		fire_only_once = yes
-		days_mission_timeout = 1500
+		days_mission_timeout = 1800
 		is_good = no
 		activation = {
 			has_completed_focus = USA_two_ocean_navy_act
@@ -46,6 +46,8 @@ USA_two_ocean_navy_act_cat = {
 			add_war_support = 0.10
 			add_stability = 0.10
 		}
+
+		
 	}
 
 
