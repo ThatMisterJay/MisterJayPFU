@@ -1,0 +1,25 @@
+state={
+	id=784
+	name="STATE_784"
+	manpower=9787
+	state_category = large_city
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 6
+			7859 = {
+				bunker = 1
+			}
+		}
+
+		victory_points = {
+			7859 30 
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+		7859
+	}
+}
