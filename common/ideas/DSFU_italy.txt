@@ -1,8 +1,6 @@
 ideas = {
  country = {
 
-
-
    		ETH_war = {
 
         allowed = {
@@ -265,8 +263,9 @@ modifier = {
 
  picture = "generic_production_bonus"
 
-modifier = {
-production_speed_arms_factory_factor = 0.10
+ modifier = {
+  production_speed_dockyard_factor = 0.10
+  production_speed_arms_factory_factor = 0.10
   }
  }
 
@@ -330,8 +329,8 @@ original_tag = ITA
 }
 
 modifier = {
-production_speed_buildings_factor = 0.25
-industrial_capacity_factory = 0.25
+production_speed_buildings_factor = 0.20
+industrial_capacity_factory = 0.20
 }
 
 picture = "generic_deal_with_the_devil"
@@ -601,46 +600,325 @@ picture = "generic_goods_red_bonus"
 
 }
 
+
+
+ITA_debt_0 = {
+    name = ITA_debt
+    allowed = {
+      original_tag = ITA
+    }
+
+    removal_cost = -1
+
+    picture = ger_mefo_bills
+
+    modifier = {
+      political_power_cost = 0.05
+    }
+  }
+
+  ITA_debt_1 = {
+      name = ITA_debt
+      allowed = {
+        original_tag = ITA
+      }
+
+      removal_cost = -1
+
+      picture = ger_mefo_bills
+
+      modifier = {
+        political_power_cost = 0.1
+      }
+    }
+
+    ITA_debt_2 = {
+        name = ITA_debt
+        allowed = {
+          original_tag = ITA
+        }
+
+        removal_cost = -1
+
+        picture = ger_mefo_bills
+
+        modifier = {
+          stability_factor = -0.02
+          political_power_cost = 0.15
+        }
+   }
+   ITA_debt_3 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.04
+         political_power_cost = 0.20
+       }
+   }
+
+   ITA_debt_4 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.06
+         political_power_cost = 0.25
+       }
+   }
+
+   ITA_debt_5 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.08
+         political_power_cost = 0.30
+       }
+   }
+
+   ITA_debt__5 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.1
+         political_power_cost = 0.35
+       }
+   }
+
+   ITA_debt_6 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.12
+         political_power_cost = 0.4
+       }
+   }
+
+   ITA_debt_7 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.14
+         political_power_cost = 0.45
+       }
+   }
+
+   ITA_debt_8 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.16
+         political_power_cost = 0.5
+       }
+   }
+
+   ITA_debt_9 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.18
+         political_power_cost = 0.55
+       }
+   }
+
+   ITA_debt_10 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.20
+         political_power_cost = 0.60
+       }
+   }
+
+   ITA_debt_11 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.22
+         political_power_cost = 0.65
+       }
+   }
+
+   ITA_debt_12 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.24
+         political_power_cost = 0.70
+       }
+   }
+
+   ITA_debt_13 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.26
+         political_power_cost = 0.75
+       }
+   }
+
+   ITA_debt_14 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.28
+         political_power_cost = 0.8
+       }
+   }
+
+   ITA_debt_15 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.30
+         political_power_cost = 0.85
+       }
+   }
+
+   ITA_debt_16 = {
+       name = ITA_debt
+       allowed = {
+         original_tag = ITA
+       }
+
+       removal_cost = -1
+
+       picture = ger_mefo_bills
+
+       modifier = {
+         stability_factor = -0.32
+         political_power_cost = 0.90
+       }
+   }
  }
 
-political_advisor = {
 
-italo_balbo_1 = {
+   political_advisor = {
 
-picture = italo_balbo
+   italo_balbo_1 = {
 
-  allowed = {
-    original_tag = ITA
-  }
+   picture = italo_balbo
 
-  available = {
-    has_completed_focus = ITA_sendbalbotorome
-    NOT = { has_country_flag = balbo_dead }
-  }
+     allowed = {
+       original_tag = ITA
+     }
 
-
-
-cost = 100
-
-  traits = { popular_figurehead fascist_militia_leader }
-
-  ai_will_do = {
-    factor = 1
-  }
-}
+     available = {
+       has_completed_focus = ITA_sendbalbotorome
+       NOT = { has_country_flag = balbo_dead }
+     }
 
 
 
+   cost = 100
+
+     traits = { popular_figurehead fascist_militia_leader }
+
+     ai_will_do = {
+       factor = 1
+     }
 
 
-
-
-
-
-
-
+   }
 
  }
+
 
  # MILITARY
  army_chief = {

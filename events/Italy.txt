@@ -456,6 +456,7 @@ country_event = {
 id = italy.17
 title = italy.17.t
 desc = italy.17.d
+picture = GFX_report_event_generic_sign_treaty1
 
 fire_only_once = yes
 

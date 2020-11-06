@@ -47,8 +47,58 @@ weak_ITA_industry = {
 	icon = GFX_weak_ITA_industry
 
 	local_building_slots_factor = -0.10
-	state_production_speed_buildings_factor = -0.40
+	state_production_speed_buildings_factor = -0.20
 }
+
+weak_ITA_industry_south = {
+	enable = { always = yes }
+
+	icon = GFX_weak_ITA_industry
+
+	local_building_slots_factor = -0.15
+	state_production_speed_buildings_factor = -0.30
+}
+
+ITA_develop_industry = {
+	enable = { always = yes }
+
+	icon = GFX_weak_ITA_industry
+
+  recruitable_population_factor = -0.4
+}
+
+ITA_industry_civ = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_industry_civ
+
+	state_production_speed_industrial_complex_factor = 0.20
+}
+
+ITA_industry_mill = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_industry_mill
+
+	state_production_speed_arms_factory_factor = 0.20
+}
+
+ITA_industry_dockyard = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_industry_dockyard
+
+	state_production_speed_dockyard_factor = 0.20
+}
+
+ITA_industry_extra_slots = {
+	enable = { always = yes }
+
+	icon = GFX_ITA_industry_extra_slots
+
+	local_building_slots_factor = 0.20
+}
+
 
 
 
@@ -57,7 +107,7 @@ ITA_balken_development = {
 
 	icon = GFX_ITA_balkan_dev
 
-  resistance_target 				= -0.20
+  resistance_target	= -0.20
 	local_building_slots_factor = 0.60
 	state_production_speed_buildings_factor = 0.10
 	recruitable_population_factor = 0.2
@@ -68,7 +118,7 @@ ITA_balken_exploit = {
 
 	icon = GFX_ITA_balkan_exploit
 
-  resistance_target 				= 0.50
+  resistance_target = 0.30
 	local_building_slots_factor = -0.30
 	state_production_speed_buildings_factor = -0.30
 	recruitable_population_factor = -1
@@ -79,10 +129,12 @@ ITA_colonial_development = {
 
 	icon = GFX_ITA_colony_dev
 
-  resistance_target 				= -0.10
+
+  compliance_gain = 0.1
+  resistance_target	= -0.10
 	local_building_slots_factor = 0.25
 	state_production_speed_buildings_factor = 0.10
-	recruitable_population_factor = 0.1
+	recruitable_population_factor = 0.3
 }
 
 ITA_colonial_exploit = {
@@ -91,12 +143,14 @@ ITA_colonial_exploit = {
 	icon = GFX_ITA_colony_exploit
 
 
-  resistance_target = 0.50
+  resistance_target = 0.30
 	local_building_slots_factor = -0.50
 	state_production_speed_buildings_factor = -0.10
-	recruitable_population_factor = -1
+	recruitable_population_factor = -0.5
 }
 
+
+#France
 
 FRA_gabon_military = {
 
@@ -173,8 +227,8 @@ africa_roads = {
 
 	icon = GFX_modifiers_sabotaged_resource
 
-state_production_speed_infrastructure_factor = -5
-state_repair_speed_infrastructure_factor = 5
+state_production_speed_infrastructure_factor = -1.3
+state_repair_speed_infrastructure_factor = 1.3
 
 }
 
@@ -202,9 +256,9 @@ semi_autonomous_state = {
 
 moscow_metro_modifier = {
 	enable = { always = yes }
-	
+
 	icon = GFX_SOV_moscow_metro
-	
+
 	local_building_slots_factor = 0.25
 	state_production_speed_buildings_factor = 0.1
 	industry_air_damage_factor = -0.1

@@ -1,3 +1,437 @@
+
+
+ITA_industrial_development = {
+
+
+
+ITA_pay_down_debt = {
+
+  icon = generic_construction
+
+  days_remove = 50
+
+  available = {
+   has_country_flag = Italian_debt
+  }
+
+  modifier = {
+      consumer_goods_factor = 0.05
+
+    }
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    ITA_lower_debt = yes
+  }
+
+}
+
+ITA_civ_south = {
+
+  icon = generic_construction
+
+  days_remove = 70
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthesouth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthesouth
+    }
+  }
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      remove_dynamic_modifier = { modifier = ITA_industry_civ }
+    }
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_civ }
+    }
+  }
+
+}
+
+ITA_mill_south = {
+
+  icon = ger_military_buildup
+
+  days_remove = 70
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthesouth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthesouth
+    }
+  }
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      remove_dynamic_modifier = { modifier = ITA_industry_mill }
+    }
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_mill }
+    }
+  }
+
+}
+
+ITA_dockyard_south = {
+
+  icon = generic_naval
+
+  days_remove = 70
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthesouth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthesouth
+    }
+  }
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      remove_dynamic_modifier = { modifier = ITA_industry_dockyard }
+    }
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_dockyard }
+    }
+  }
+
+}
+
+ITA_expand_industry_south = {
+
+  icon = generic_construction
+
+  days_remove = 70
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthesouth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthesouth
+    }
+  }
+
+  fire_only_once = yes
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 2
+          state = 156
+          state = 115
+          state = 157
+          state = 117
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_extra_slots }
+    }
+  }
+
+}
+
+ITA_civ_north = {
+
+  icon = generic_construction
+
+  days_remove = 70
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthenorth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthenorth
+    }
+  }
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      remove_dynamic_modifier = { modifier = ITA_industry_civ }
+    }
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_civ  }
+    }
+  }
+
+}
+
+ITA_mill_north = {
+
+  icon = ger_military_buildup
+
+  days_remove = 70
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthenorth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthenorth
+    }
+  }
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      remove_dynamic_modifier = { modifier = ITA_industry_mill  }
+    }
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_mill  }
+    }
+  }
+
+}
+
+ITA_dockyard_north = {
+
+  icon = generic_naval
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthenorth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthenorth
+    }
+  }
+
+  days_remove = 70
+
+  allowed = {
+    tag = ITA
+  }
+
+  remove_effect = {
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      remove_dynamic_modifier = { modifier = ITA_industry_dockyard }
+    }
+  }
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_dockyard }
+    }
+  }
+
+}
+
+ITA_expand_industry_north = {
+
+  icon = generic_construction
+
+  available = {
+    has_completed_focus = ITA_startdevelopmentofthenorth
+    NOT = {
+      has_completed_focus = ITA_enddevelopmentofthenorth
+    }
+  }
+
+  days_remove = 70
+
+  allowed = {
+    tag = ITA
+  }
+
+
+
+  complete_effect = {
+    ITA_increase_debt = yes
+    every_owned_state = {
+      limit = {
+        OR = {
+          state = 158
+          state = 39
+          state = 160
+          state = 736
+          state = 161
+          state = 162
+          state = 159
+
+        }
+      }
+      add_dynamic_modifier = { modifier = ITA_industry_extra_slots }
+    }
+  }
+
+}
+
+
+}
+
+
 special_projects = {
 
 ITA_naval_away = {

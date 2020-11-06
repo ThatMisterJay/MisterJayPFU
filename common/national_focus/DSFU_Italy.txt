@@ -33,6 +33,7 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   ITA_increase_debt = yes
  random_owned_controlled_state = {
   prioritize = { 186 }
   limit = {
@@ -122,6 +123,22 @@ ai_will_do = {
 
  completion_reward = {
    ITA_lower_industry = yes
+   every_owned_state = {
+     limit = {
+       OR = {
+         state = 158
+         state = 39
+         state = 160
+         state = 736
+         state = 161
+         state = 162
+         state = 159
+
+       }
+     }
+     remove_dynamic_modifier = { modifier = weak_ITA_industry }
+     add_dynamic_modifier = { modifier = ITA_develop_industry }
+   }
    random_owned_controlled_state = {
      prioritize = { 160 }
      limit = {
@@ -169,6 +186,7 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   ITA_increase_debt = yes
  random_owned_controlled_state = {
   prioritize = { 550 }
   limit = {
@@ -228,6 +246,7 @@ ai_will_do = {
  }
 
 completion_reward = {
+ITA_increase_debt = yes
 add_resource = {
 type = aluminium
 amount = 45
@@ -263,7 +282,7 @@ ai_will_do = {
    }
 
  completion_reward = {
-
+ ITA_increase_debt = yes
  random_owned_controlled_state = {
   prioritize = { 450 }
   limit = {
@@ -647,13 +666,9 @@ cost = 5
 available_if_capitulated = yes
 bypass = {
 
-550 = { NOT = { is_owned_and_controlled_by = ITA }
-559 = { NOT = { is_owned_and_controlled_by = ITA } }
-
- }
 }
 completion_reward = {
-add_threat = 2
+
 if = { limit = { 550 = { is_owned_and_controlled_by = ITA } }
 550 = {
 add_building_construction = {
@@ -1467,6 +1482,19 @@ ai_will_do = {
 
  completion_reward = {
    ITA_lower_industry = yes
+   every_owned_state = {
+     limit = {
+       OR = {
+         state = 2
+         state = 156
+         state = 115
+         state = 157
+         state = 117
+       }
+     }
+     remove_dynamic_modifier = { modifier = weak_ITA_industry_south }
+     add_dynamic_modifier = { modifier = ITA_develop_industry }
+   }
    random_owned_controlled_state = {
      prioritize = { 156 }
      limit = {
@@ -1564,7 +1592,7 @@ technology = construction4
 
       }
     }
-    remove_dynamic_modifier = { modifier = weak_ITA_industry }
+    remove_dynamic_modifier = { modifier = ITA_develop_industry }
   }
 
  }
@@ -1628,14 +1656,13 @@ technology = construction4
     limit = {
       OR = {
         state = 2
-
         state = 156
         state = 115
         state = 157
         state = 117
       }
     }
-    remove_dynamic_modifier = { modifier = weak_ITA_industry }
+    remove_dynamic_modifier = { modifier = ITA_develop_industry }
   }
 
   }
@@ -1943,6 +1970,9 @@ cost = 5
 available_if_capitulated = yes
 prerequisite = { focus = ITA_ethiopianwarlogistics }
 available = {
+NOT = {
+  has_idea = ETH_war
+}
 OR = {
 owns_state = 271
 ETH = { is_puppet_of = ITA }
@@ -2553,6 +2583,8 @@ ai_will_do = {
  factor = 1
  }
  completion_reward = {
+ ITA_increase_debt = yes
+ add_research_slot = 1
  add_resource = {
  type = steel
  amount = 40
@@ -2592,6 +2624,7 @@ ai_will_do = {
     }
    }
  completion_reward = {
+   ITA_lower_debt = yes
    every_owned_state = {
      limit = {
        OR = {
@@ -2638,6 +2671,7 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   ITA_lower_debt = yes
    every_owned_state = {
      limit = {
        OR = {
@@ -2684,6 +2718,7 @@ ai_will_do = {
    }
    }
 completion_reward = {
+  ITA_lower_debt = yes
 random_owned_controlled_state = {
   prioritize = { 157 }
   limit = {
@@ -2731,6 +2766,7 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   ITA_lower_debt = yes
    every_owned_state = {
      limit = {
        OR = {
@@ -2787,6 +2823,7 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   ITA_lower_debt = yes
    every_owned_state = {
      limit = {
        OR = {
@@ -2842,6 +2879,7 @@ ai_will_do = {
    }
 
 completion_reward = {
+  ITA_increase_debt = yes
 
 random_owned_controlled_state = {
  prioritize = { 448 }
@@ -3167,10 +3205,11 @@ ai_will_do = {
    }
    }
  completion_reward = {
+   ITA_increase_debt = yes
  random_owned_controlled_state = {
   prioritize = { 103 }
   limit = {
-    ROOT = { has_full_control_of_state = PREV }
+    is_core_of = YUG
   }
   add_extra_state_shared_building_slots = 3
   add_building_construction = {
@@ -3182,7 +3221,7 @@ ai_will_do = {
   random_owned_controlled_state = {
    prioritize = { 107 }
    limit = {
-     ROOT = { has_full_control_of_state = PREV }
+     is_core_of = YUG
    }
    add_extra_state_shared_building_slots = 3
    add_building_construction = {
@@ -3195,6 +3234,7 @@ ai_will_do = {
     prioritize = { 109 }
     limit = {
       ROOT = { has_full_control_of_state = PREV }
+      is_core_of = YUG
     }
     add_extra_state_shared_building_slots = 3
     add_building_construction = {
@@ -3207,6 +3247,7 @@ ai_will_do = {
      prioritize = { 104 }
      limit = {
        ROOT = { has_full_control_of_state = PREV }
+       is_core_of = YUG
      }
      add_extra_state_shared_building_slots = 3
      add_building_construction = {
@@ -3246,6 +3287,7 @@ ai_will_do = {
    }
    }
 completion_reward = {
+  ITA_increase_debt = yes
 random_owned_controlled_state = {
   prioritize = { 271 }
   limit = {
