@@ -161,6 +161,17 @@ war_support_factor = 0.1
   }
 }
 
+minister_commerce = {
+  sprite = 13
+  production_speed_industrial_complex_factor = 0.05
+  production_speed_infrastructure_factor = 0.05
+  min_export = -0.10
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
 minority_government = {
   sprite = 13
   political_power_factor = -0.05

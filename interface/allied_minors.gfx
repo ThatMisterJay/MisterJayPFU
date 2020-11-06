@@ -23,7 +23,18 @@ spriteTypes = {
 		SpriteType = {
 				name = "GFX_idea_AST_infantry"
 				texturefile = "gfx/interface/ideas/idea_AST_infantry.dds"
-					}
+		}
+
+		SpriteType = {
+				name = "GFX_idea_AST_billy_hughes"
+				texturefile = "gfx/interface/ideas/AST_billy_hughes.dds"
+		}
+
+		SpriteType = {
+				name = "GFX_idea_AST_earle_page"
+				texturefile = "gfx/interface/ideas/AST_earle_page.dds"
+		}
+
 
 					SpriteType = {
 							name = "GFX_idea_FRA_FL"
