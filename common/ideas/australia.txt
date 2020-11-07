@@ -731,6 +731,25 @@ removal_cost = -1
 
 		}
 
+		AST_frank = {
+
+			picture = AST_frank
+
+			allowed = {
+				original_tag = AST
+				has_dlc = "Together for Victory"
+			}
+
+			cost = 100
+
+			traits = { deputy_pm minister_war }
+
+			available = {
+					has_country_leader = { ruling_only = yes name = "John Curtin" }
+			}
+
+		}
+
 		AST_herbert_v_evatt = {
 
 			picture = generic_political_advisor_europe_2
