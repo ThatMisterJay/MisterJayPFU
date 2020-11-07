@@ -34,6 +34,12 @@ ai_will_do = {
    }
  completion_reward = {
    ITA_increase_debt = yes
+   every_owned_state = {
+     limit = {
+       is_core_of = GRE
+     }
+     add_compliance = 40
+   }
  random_owned_controlled_state = {
   prioritize = { 186 }
   limit = {
@@ -187,6 +193,12 @@ ai_will_do = {
    }
  completion_reward = {
    ITA_increase_debt = yes
+   every_owned_state = {
+     limit = {
+       is_core_of = ETH
+     }
+     add_compliance = 30
+   }
  random_owned_controlled_state = {
   prioritize = { 550 }
   limit = {
@@ -283,6 +295,12 @@ ai_will_do = {
 
  completion_reward = {
  ITA_increase_debt = yes
+ every_owned_state = {
+   limit = {
+     is_core_of = AFR
+   }
+   add_compliance = 30
+ }
  random_owned_controlled_state = {
   prioritize = { 450 }
   limit = {
@@ -2880,7 +2898,12 @@ ai_will_do = {
 
 completion_reward = {
   ITA_increase_debt = yes
-
+  every_owned_state = {
+    limit = {
+      is_core_of = AFR
+    }
+    add_compliance = 30
+  }
 random_owned_controlled_state = {
  prioritize = { 448 }
  limit = {
@@ -3206,6 +3229,12 @@ ai_will_do = {
    }
  completion_reward = {
    ITA_increase_debt = yes
+   every_owned_state = {
+     limit = {
+       is_core_of = YUG
+     }
+     add_compliance = 40
+   }
  random_owned_controlled_state = {
   prioritize = { 103 }
   limit = {
@@ -3288,6 +3317,12 @@ ai_will_do = {
    }
 completion_reward = {
   ITA_increase_debt = yes
+  every_owned_state = {
+    limit = {
+      is_core_of = ETH
+    }
+    add_compliance = 30
+  }
 random_owned_controlled_state = {
   prioritize = { 271 }
   limit = {
