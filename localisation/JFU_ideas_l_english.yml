@@ -166,6 +166,8 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     pig_iron_bob_desc:0 "It was during the Dalfram Dispute that the title "Pig Iron Bob" was coined in reference to the then Attorney General Robert Menzies."
     peace_time_rearmer:0 "Peace Time Rearmer"
     war_time_prime_minister:0 "Wartime Prime Minister"
+    deputy_pm:0 "Deputy Prime Minister"
+    minister_war:0 "Minister for the Army"
 
 
 #Italian stuff#
@@ -271,3 +273,5 @@ AST_billy_hughes:0 "Billy Hughes"
 AST_billy_hughes_desc:0 "Hughes is generally acknowledged as one of the most influential Australian politicians of the 20th century. He was a controversial figure throughout his lifetime, and his legacy continues to be debated by historians. His strong views and abrasive manner meant he frequently made political enemies, often from within his own parties. Hughes' opponents accused him of engaging in authoritarianism and populism, as well as inflaming sectarianism; his use of the War Precautions Act 1914 was particularly controversial. His former colleagues in the Labor Party considered him a traitor, while conservatives were suspicious of what they viewed as his socialist economic policies. However, he was extremely popular among the general public, particularly ex-servicemen, who affectionately nicknamed him "the little digger"."
 AST_earle_page:0 "Earle Page"
 AST_earle_page_desc:0 "Page served in parliament for almost 42 years, the third longest-serving Australian parliamentarian of all time; only Menzies lasted longer as the leader of a major Australian political party. He secured his party's independence by refusing overtures to merge with the Nationalists and the UAP, and the policies that he favoured – decentralisation, agrarianism, and government support of primary industry – have remained the basis of its platform up to the present day. The coalitions that he established and maintained with Bruce and Lyons have served as a model for all subsequent coalition governments."
+AST_frank:0 "Frank Forde"
+AST_frank_desc:0 "After Labor's landslide defeat at the 1931 election, Forde was elected deputy leader in place of Ted Theodore. He was expected to become party leader after Scullin's retirement in 1935 but lost to John Curtin by one vote. He returned to cabinet in 1941 as Minister for the Army in the Curtin Government, and as the de facto deputy prime minister was one of the government's most prominent figures. When John Curtin died in office in 1945, Forde was appointed prime minister to serve while the Labor Party elected a new leader. He contested the leadership ballot against Ben Chifley and Norman Makin, but Chifley emerged victorious."
