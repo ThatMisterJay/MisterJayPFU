@@ -238,6 +238,8 @@ GER_NLF_2:0 "Wartime Labour Front"
 GER_herman:0 "Hermann Göring"
 GER_volk:0 "Volkssturm"
 allies_exploited:0 "Exploited Nations"
+refinery_idea:0 "Cheap Natural Rubber"
+ refinery_idea_desc:0 "The Allies have abundant natural rubber in Malaya, the Dutch East Indies, and Ceylon. Synthetically produced rubber is far too expensive for the market, stifling the development of synthetic refineries."
 
 SPA_pro_allies_guy:0 "Juan Luis Beigbeder y Atienza"
 SPA_pro_axis_guy:0 "Ramón Serrano Suñer"
