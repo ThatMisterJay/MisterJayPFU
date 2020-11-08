@@ -97,6 +97,18 @@
     olivetti:0 "Olivetti"
     ETH_war:0 "Second Italo-Ethiopian War"
     ETH_war_desc:0 "War crimes were committed by both sides in this conflict. Italian troops used mustard gas in aerial bombardments (in violation of the Geneva Conventions) against combatants and civilians in an attempt to discourage the Ethiopian people from supporting the resistance. Deliberate Italian attacks against ambulances and hospitals of the Red Cross were reported. By all estimates, hundreds of thousands of Ethiopian civilians died as a result of the Italian invasion, including during the reprisal Yekatit 12 massacre in Addis Ababa, in which as many as 30,000 civilians were killed. Crimes by Ethiopian troops included the use of Dum-Dum bullets (in violation of the Hague Conventions), the killing of civilian workmen (including during the Gondrand massacre) and the mutilation of captured Eritrean Ascari and Italians (often with castration), beginning in the first weeks of war."
+    ITA_industry_extra_slots:0 "Expanded Industrial focus"
+    ITA_industry_civ:0 "Civilian Investment"
+    ITA_industry_mill:0 "Military Investment"
+    ITA_industry_dockyard:0 "Naval Investment"
+    weak_ITA_industry_south:0 "Weak Industrial Base"
+    ITA_debt:0 "Italian Loans"
+    ITA_develop_industry:0 "Industrialization"
+
+
+
+
+
 
 RAJ_battle:0 "Battle For The RAJ"
 ENG_david_stirling:0 "David Stirling"
@@ -143,6 +155,7 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     pro_axis_fm:0 "Pro Axis Foreign Minister"
     il_duce:0 "ll Duce"
     minister_info:0 "Minister for Information"
+    minister_commerce:0 "Minister of Commerce"
     AST_arthur_calwell_desc:0 "Calwell was appointed as Minister for Information in the Second Curtin Ministry following the 1943 election, and became well known for his tough attitude towards the Australian press and his strict enforcement of wartime censorship. This earned him the enmity of large sections of the Australian press, and he was dubbed "Cocky" Calwell by his political foes, cartoonists of the period depicting him as an obstinate Australian cockatoo."
     minister_external_affairs:0 "Minister for External Affairs"
     minister_external_affairs_desc:0 "The minister is usually one of the most senior members of Cabinet – the position is equivalent to that of Secretary of State for Foreign and Commonwealth Affairs in Britain or Secretary of State in the United States."
@@ -153,6 +166,8 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     pig_iron_bob_desc:0 "It was during the Dalfram Dispute that the title "Pig Iron Bob" was coined in reference to the then Attorney General Robert Menzies."
     peace_time_rearmer:0 "Peace Time Rearmer"
     war_time_prime_minister:0 "Wartime Prime Minister"
+    deputy_pm:0 "Deputy Prime Minister"
+    minister_war:0 "Minister for the Army"
 
 
 #Italian stuff#
@@ -225,6 +240,8 @@ GER_NLF_2:0 "Wartime Labour Front"
 GER_herman:0 "Hermann Göring"
 GER_volk:0 "Volkssturm"
 allies_exploited:0 "Exploited Nations"
+refinery_idea:0 "Cheap Natural Rubber"
+ refinery_idea_desc:0 "The Allies have abundant natural rubber in Malaya, the Dutch East Indies, and Ceylon. Synthetically produced rubber is far too expensive for the market, stifling the development of synthetic refineries."
 
 SPA_pro_allies_guy:0 "Juan Luis Beigbeder y Atienza"
 SPA_pro_axis_guy:0 "Ramón Serrano Suñer"
@@ -252,3 +269,9 @@ pig_iron_sale:0 "Trade with Japan"
 AST_navy_focus:0 "RAN Prioritized"
 AST_ENG_naval:0 "British-Australian Naval Development"
 far_eastern_conscripts:0 "Far Eastern Colonial Conscription"
+AST_billy_hughes:0 "Billy Hughes"
+AST_billy_hughes_desc:0 "Hughes is generally acknowledged as one of the most influential Australian politicians of the 20th century. He was a controversial figure throughout his lifetime, and his legacy continues to be debated by historians. His strong views and abrasive manner meant he frequently made political enemies, often from within his own parties. Hughes' opponents accused him of engaging in authoritarianism and populism, as well as inflaming sectarianism; his use of the War Precautions Act 1914 was particularly controversial. His former colleagues in the Labor Party considered him a traitor, while conservatives were suspicious of what they viewed as his socialist economic policies. However, he was extremely popular among the general public, particularly ex-servicemen, who affectionately nicknamed him "the little digger"."
+AST_earle_page:0 "Earle Page"
+AST_earle_page_desc:0 "Page served in parliament for almost 42 years, the third longest-serving Australian parliamentarian of all time; only Menzies lasted longer as the leader of a major Australian political party. He secured his party's independence by refusing overtures to merge with the Nationalists and the UAP, and the policies that he favoured – decentralisation, agrarianism, and government support of primary industry – have remained the basis of its platform up to the present day. The coalitions that he established and maintained with Bruce and Lyons have served as a model for all subsequent coalition governments."
+AST_frank:0 "Frank Forde"
+AST_frank_desc:0 "After Labor's landslide defeat at the 1931 election, Forde was elected deputy leader in place of Ted Theodore. He was expected to become party leader after Scullin's retirement in 1935 but lost to John Curtin by one vote. He returned to cabinet in 1941 as Minister for the Army in the Curtin Government, and as the de facto deputy prime minister was one of the government's most prominent figures. When John Curtin died in office in 1945, Forde was appointed prime minister to serve while the Labor Party elected a new leader. He contested the leadership ballot against Ben Chifley and Norman Makin, but Chifley emerged victorious."
