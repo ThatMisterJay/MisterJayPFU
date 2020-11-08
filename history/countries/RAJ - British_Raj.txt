@@ -4,6 +4,10 @@ oob = "RAJ_1936"
 set_stability = 0.6
 set_war_support = 0.1
 add_timed_idea = { idea = peace_time_army days = 1168 }
+add_timed_idea = {
+	idea = refinery_idea
+	days = 1899
+}
 set_research_slots = 3
 # Starting tech
 set_technology = {
