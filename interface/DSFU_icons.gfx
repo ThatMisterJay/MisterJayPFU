@@ -11,6 +11,26 @@ spriteType = {
 }
 
 spriteType = {
+	name = "GFX_ITA_industry_civ"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_industry_civ.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_industry_dockyard"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_industry_dockyard.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_industry_mill"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_industry_mill.dds"
+}
+
+spriteType = {
+	name = "GFX_ITA_industry_extra_slots"
+	textureFile = "gfx/interface/DSFU_GFX/ITA_industry_extra_slots.dds"
+}
+
+spriteType = {
 	name = "GFX_ITA_colony_dev"
 	textureFile = "gfx/interface/DSFU_GFX/ITA_colony_dev.dds"
 }
