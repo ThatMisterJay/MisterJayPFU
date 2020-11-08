@@ -17,11 +17,9 @@ add_ideas = {
 
 
 
-
-
-
-
 #weak industry stuff
+
+#North
 158 = {
 	add_dynamic_modifier = { modifier = weak_ITA_industry }
 }
@@ -50,28 +48,29 @@ add_ideas = {
 	add_dynamic_modifier = { modifier = weak_ITA_industry }
 }
 
+#south
 157 = {
-	add_dynamic_modifier = { modifier = weak_ITA_industry }
+	add_dynamic_modifier = { modifier = weak_ITA_industry_south }
 }
 
 2 = {
-	add_dynamic_modifier = { modifier = weak_ITA_industry }
+	add_dynamic_modifier = { modifier = weak_ITA_industry_south }
 }
 
 117 = {
-	add_dynamic_modifier = { modifier = weak_ITA_industry }
+	add_dynamic_modifier = { modifier = weak_ITA_industry_south }
 }
 
 114 = {
-	add_dynamic_modifier = { modifier = weak_ITA_industry }
+	add_dynamic_modifier = { modifier = weak_ITA_industry_south }
 }
 
 156 = {
-	add_dynamic_modifier = { modifier = weak_ITA_industry }
+	add_dynamic_modifier = { modifier = weak_ITA_industry_south }
 }
 
 115 = {
-	add_dynamic_modifier = { modifier = weak_ITA_industry }
+	add_dynamic_modifier = { modifier = weak_ITA_industry_south }
 }
 
 # Africa roads
