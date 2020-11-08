@@ -2251,8 +2251,10 @@ picture = ENG_war_cabinet
 			}
 
 			visible = {
-				has_country_flag = SAF_annexed
-				has_country_flag = CAN_annexed
+					NOT = {
+						country_exists = CAN
+						country_exists = SAF
+					}
 			}
 
 
