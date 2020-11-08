@@ -678,6 +678,40 @@ removal_cost = -1
 			}
 		}
 
+		AST_billy_hughes = {
+
+			picture = AST_billy_hughes
+
+			allowed = {
+				original_tag = AST
+			}
+
+			traits = { old_figurehead }
+
+
+
+			available = {
+					has_country_leader = { ruling_only = yes name = "Joseph Lyons" }
+			}
+		}
+
+		AST_earle_page = {
+
+			picture = AST_earle_page
+
+			allowed = {
+				original_tag = AST
+			}
+
+			traits = { minister_commerce }
+
+
+
+			available = {
+					has_country_leader = { ruling_only = yes name = "Joseph Lyons" }
+			}
+		}
+
 		AST_ben_chifley = {
 
 			picture = generic_political_advisor_europe_3
@@ -690,6 +724,25 @@ removal_cost = -1
 			cost = 100
 
 			traits = { smooth_talking_charmer financial_expert }
+
+			available = {
+					has_country_leader = { ruling_only = yes name = "John Curtin" }
+			}
+
+		}
+
+		AST_frank = {
+
+			picture = AST_frank
+
+			allowed = {
+				original_tag = AST
+				has_dlc = "Together for Victory"
+			}
+
+			cost = 100
+
+			traits = { deputy_pm minister_war }
 
 			available = {
 					has_country_leader = { ruling_only = yes name = "John Curtin" }
