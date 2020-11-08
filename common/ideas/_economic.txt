@@ -418,18 +418,11 @@ ideas = {
 
 
 			available = {
-				has_war = yes
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_war = yes
+					tag = JAP
 				}
-				OR = {
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
-				}
-				OR = {
 
-				}
 			}
 
 			cost = 150
