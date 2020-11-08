@@ -32,4 +32,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_commonwealth.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_cat_italian_king"
+		texturefile = "gfx/interface/decisions/decision_cat_italian_king.dds"
+	}
+
 }
