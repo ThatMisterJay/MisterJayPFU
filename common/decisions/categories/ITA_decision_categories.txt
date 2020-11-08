@@ -1,6 +1,22 @@
+ITA_industrial_development = {
+
+	icon = generic_industry
+  priority = 15
+	allowed = {
+original_tag = ITA
+	}
+
+	visible = {
+has_completed_focus = ITA_industrialeffort
+	}
+}
+
+
 monarchist_ITA = {
 
 	icon = generic_monarchism
+  priority = 20
+	picture = GFX_decision_cat_italian_king
 
 	allowed = {
 original_tag = ITA
@@ -14,7 +30,7 @@ has_country_flag = ITA_ITR
 }
 
 blackshirt_ITA = {
-
+ priority = 20
   custom_icon = {
   		tag = ITA
   		value = ITR_support_icon_value
