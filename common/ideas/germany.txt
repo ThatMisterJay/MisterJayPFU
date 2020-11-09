@@ -297,7 +297,6 @@ axis_exploited = {
 			modifier = {
 				army_org_Factor = 0.20
 				army_morale_factor = 0.2
-				army_speed_factor = 0.05
 				supply_consumption_factor = -0.10
 				army_bonus_air_superiority_factor = 0.20
 				air_interception_attack_factor = 0.20
@@ -326,7 +325,7 @@ axis_exploited = {
 			modifier = {
 				army_org_Factor = 0.15
 				army_morale_factor = 0.10
-				army_speed_factor = 0.05
+
 				supply_consumption_factor = -0.05
 				army_bonus_air_superiority_factor = 0.10
 				air_interception_attack_factor = 0.10
@@ -388,13 +387,12 @@ axis_exploited = {
 			picture = generic_morale_bonus
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.12
+				attack_bonus_against = 0.08
 			}
 
 			modifier = {
-				army_org_Factor = 0.15
+				army_org_Factor = 0.1
 				army_morale_factor = 0.1
-				army_speed_factor = 0.05
 			}
 
 		}
@@ -413,14 +411,14 @@ axis_exploited = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.12
-				defense_bonus_against = 0.12
+				attack_bonus_against = 0.08
+				defense_bonus_against = 0.08
 			}
 
 			modifier = {
-				army_org_Factor = 0.15
+				army_org_Factor = 0.1
 				army_morale_factor = 0.1
-				army_speed_factor = 0.05
+
 			}
 		}
 
@@ -442,7 +440,7 @@ axis_exploited = {
 				army_attack_factor = 0.8
 				army_defence_factor = 0.8
 				supply_consumption_factor = -0.8
-				army_speed_factor = 0.05
+
 				industrial_capacity_factory = 0.5
 				industrial_capacity_dockyard = 0.5
 				consumer_goods_factor = -0.5
@@ -1012,7 +1010,7 @@ NOT = { has_idea = walther_funk }
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			available = {
 				if = {
 					limit = {
@@ -1021,7 +1019,7 @@ NOT = { has_idea = walther_funk }
 					has_completed_focus = SPA_an_armored_corps_new
 				}
 			}
-		
+
 			equipment_bonus = {
 				medium_tank_artillery_equipment = {
 					reliability = 0.1
@@ -1067,7 +1065,7 @@ NOT = { has_idea = walther_funk }
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			available = {
 				if = {
 					limit = {
@@ -1155,7 +1153,7 @@ NOT = { has_idea = walther_funk }
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			available = {
 				if = {
 					limit = {
@@ -1164,7 +1162,7 @@ NOT = { has_idea = walther_funk }
 					has_completed_focus = SPA_an_armored_corps_new
 				}
 			}
-			
+
 			equipment_bonus = {
 				medium_tank_equipment = {
 					reliability = 0.1
@@ -1232,7 +1230,7 @@ NOT = { has_idea = walther_funk }
 					original_tag = SPR
 				}
 			}
-			
+
 			available = {
 				if = {
 					limit = {
@@ -1241,7 +1239,7 @@ NOT = { has_idea = walther_funk }
 					has_completed_focus = SPA_an_armored_corps_new
 				}
 			}
-			
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -1590,19 +1588,8 @@ cost = 100
 		}
 	}
 
-	theorist = {
-		von_braun = {
-ledger = air
-			allowed = {
-				original_tag = GER
-			}
+	military_theorist_cat = {
 
-			research_bonus = {
-				rocketry = 0.20
-			}
-
-			traits = { rocket_scientist }
-		}
 
 		heisenberg = {
 ledger = army
@@ -1640,7 +1627,7 @@ ledger = army
 				original_tag = GER
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_mobile_warfare = 0.20
@@ -1649,6 +1636,9 @@ ledger = army
 
 			traits = { mobile_warfare_expert }
 		}
+	}
+
+theorist = {
 
 		wolfram_von_richthofen = {
 ledger = air
@@ -1657,7 +1647,7 @@ ledger = air
 				original_tag = GER
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_battlefield_support = 0.20
@@ -1694,6 +1684,21 @@ ledger = air
 			traits = { dive_bomber }
 		}
 
+		von_braun = {
+ledger = air
+			allowed = {
+				original_tag = GER
+			}
+
+			research_bonus = {
+				rocketry = 0.20
+			}
+
+			traits = { rocket_scientist }
+		}
+	}
+
+    naval_theorist_cat = {
 		alfred_saalwachter = {
 ledger = navy
 
@@ -1701,7 +1706,7 @@ ledger = navy
 				original_tag = GER
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_trade_interdiction = 0.20
