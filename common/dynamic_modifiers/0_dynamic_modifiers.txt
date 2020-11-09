@@ -256,27 +256,3 @@ semi_autonomous_state = {
 
 moscow_metro_modifier = {
 	enable = { always = yes }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-	
-=======
-
->>>>>>> Sithben
-	icon = GFX_SOV_moscow_metro
-
-	local_building_slots_factor = 0.25
-	state_production_speed_buildings_factor = 0.1
-	industry_air_damage_factor = -0.1
-}
-<<<<<<< HEAD
-=======
-
-	icon = GFX_SOV_moscow_metro
-
-	local_building_slots_factor = 0.25
-	state_production_speed_buildings_factor = 0.1
-	industry_air_damage_factor = -0.1
-}
->>>>>>> Stashed changes
-=======
->>>>>>> Sithben
