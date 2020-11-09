@@ -132,6 +132,8 @@ NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 24 -- Amount of in-game-hours that m
 NDefines.NNavy.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.040 --from 0.025
 NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 2.0						-- spotting speed mult against naval invasion armies
 NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 4.0
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1	-- org will clamped to this ratio on manual move
+NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 0.5	-- org will clamped to this ratio on manual move
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4
@@ -199,8 +201,8 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.75 -- damage redu
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3			                -- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 1.0
 
-NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
 
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue
 NDefines.NMilitary.DIG_IN_FACTOR = 0.015
