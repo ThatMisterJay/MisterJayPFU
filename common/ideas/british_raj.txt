@@ -700,8 +700,8 @@ ideas = {
 		}
 	}
 
-	theorist = {
 
+military_theorist_cat = {
 		RAJ_rajendra_prasad = {
 ledger = army
 			picture = generic_army_arab_1
@@ -716,7 +716,9 @@ ledger = army
 
 			traits = { military_theorist }
 		}
+  }
 
+theorist = {
 		RAJ_anyang_bhula = {
 ledger = air
 			picture = generic_air_arab_1
@@ -732,21 +734,7 @@ ledger = air
 			traits = { air_warfare_theorist }
 		}
 
-		RAJ_bahadur_jayla_of_khoch_bahur = {
-ledger = navy
 
-			allowed = {
-				original_tag = RAJ
-			}
-
-			picture = generic_political_advisor_arab_1
-
-			research_bonus = {
-				naval_doctrine = 0.15
-			}
-
-			traits = { naval_theorist }
-		}
 
 		RAJ_homi_j_bhabha = {
 ledger = army
@@ -766,6 +754,24 @@ ledger = army
 			}
 
 			traits = { nuclear_scientist }
+		}
+}
+		naval_theorist_cat = {
+
+		RAJ_bahadur_jayla_of_khoch_bahur = {
+ledger = navy
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			picture = generic_political_advisor_arab_1
+
+			research_bonus = {
+				naval_doctrine = 0.15
+			}
+
+			traits = { naval_theorist }
 		}
 	}
 

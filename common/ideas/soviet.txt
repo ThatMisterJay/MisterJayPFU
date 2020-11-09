@@ -2219,7 +2219,7 @@ ledger = army
 				NOT = { has_country_flag = purge_1_group_a }
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_mass_assault = 0.20
@@ -2253,7 +2253,7 @@ ledger = army
 
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_mass_assault = 0.20
@@ -2261,7 +2261,9 @@ ledger = army
 
 			traits = { mass_assault_expert }
 		}
+}
 
+naval_theorist_cat = {
 		sergey_gorshkov = {
 ledger = navy
 
@@ -2289,7 +2291,7 @@ ledger = navy
 				original_tag = SOV
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_fleet_in_being = 0.20
@@ -2297,7 +2299,8 @@ ledger = navy
 
 			traits = { grand_fleet_proponent}
 		}
-
+}
+theorist = {
 		sergei_rudenko = {
 ledger = air
 
@@ -2309,7 +2312,7 @@ ledger = air
 				NOT = { has_country_flag = counter_purge }
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_battlefield_support = 0.20

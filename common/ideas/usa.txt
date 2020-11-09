@@ -1867,7 +1867,7 @@ ledger = navy
 			available = {
 				has_completed_focus = USA_tank_destroyer_doctrine
 			}
-
+   cost = 20
 
 			research_bonus = {
 				armor = 0.15

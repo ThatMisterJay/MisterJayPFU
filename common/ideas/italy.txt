@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		
+
 		victor_emmanuel = {
 
 
@@ -1000,7 +1000,8 @@ cost = 100
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
+
 		guglielmo_nasi = {
 ledger = army
 
@@ -1021,7 +1022,7 @@ ledger = army
 	original_tag = ITA
 	}
 
-	cost = 175
+	cost = 130
 
 	picture = ezio
 
@@ -1040,7 +1041,7 @@ ledger = army
 				original_tag = ITA
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_mobile_warfare = 0.20
@@ -1055,7 +1056,7 @@ ledger = army
 				original_tag = ITA
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20
@@ -1067,14 +1068,15 @@ ledger = army
 				factor = 3
 			}
 		}
-
+}
+naval_theorist_cat ={
 		guiseppe_fioravanzo = {
 ledger = navy
 			allowed = {
 				original_tag = ITA
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_fleet_in_being = 0.20
@@ -1095,14 +1097,15 @@ ledger = navy
 
 			traits = { naval_theorist }
 		}
-
+	}
+  theorist = {
 		amedeo_mecozzi = {
 ledger = air
 			allowed = {
 				original_tag = ITA
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_operational_integrity = 0.20

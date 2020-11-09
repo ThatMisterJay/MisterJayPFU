@@ -772,7 +772,7 @@ ideas = {
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 		ROM_gheorghe_potopeanu = {
 ledger = army
@@ -789,7 +789,8 @@ ledger = army
 
 			traits = { military_theorist }
 		}
-
+  }
+theorist = {
 		ROM_emanoil_ionescu = {
 ledger = air
 

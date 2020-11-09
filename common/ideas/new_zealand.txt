@@ -250,7 +250,7 @@ ideas = {
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 		NZL_keith_j_holyoake = {
 ledger = army
@@ -266,7 +266,8 @@ ledger = army
 
 			traits = { military_theorist }
 		}
-
+	}
+theorist = {
 		NZL_r_a_cochrane = {
 ledger = air
 			picture = generic_air_europe_1
@@ -281,7 +282,9 @@ ledger = air
 
 			traits = { air_warfare_theorist }
 		}
+}
 
+naval_theorist_cat = {
 		NZL_arthur_dawes = {
 ledger = navy
 

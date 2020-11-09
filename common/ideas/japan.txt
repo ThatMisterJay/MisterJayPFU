@@ -1964,7 +1964,7 @@ cost = 100
 				original_tag = JAP
 			}
 			available = {
-				
+
 			}
 			research_bonus = {
 				armor = 0.15
@@ -2037,7 +2037,7 @@ cost = 100
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 		tomoyuki_yamashita = {
 ledger = army
@@ -2045,7 +2045,7 @@ ledger = army
 				original_tag = JAP
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20
@@ -2066,14 +2066,16 @@ ledger = army
 
 			traits = { military_theorist }
 		}
+}
 
+naval_theorist_cat = {
 		isoroku_yamamoto = {
 ledger = navy
 			allowed = {
 				original_tag = JAP
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_base_strike = 0.20
@@ -2094,14 +2096,16 @@ ledger = navy
 
 			traits = { naval_theorist }
 		}
+}
 
+theorist = {
 		yoshitoshi_tokugawa = {
 ledger = air
 			allowed = {
 				original_tag = JAP
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_operational_integrity = 0.20

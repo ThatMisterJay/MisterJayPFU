@@ -682,7 +682,7 @@ ideas = {
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 		CAN_kenneth_stuart = {
 ledger = army
@@ -698,6 +698,8 @@ ledger = army
 
 			traits = { military_theorist }
 		}
+}
+		theorist = {
 		CAN_george_volkoff = {
 ledger = army
 			picture = generic_political_advisor_europe_2
@@ -727,6 +729,8 @@ ledger = air
 
 			traits = { air_warfare_theorist }
 		}
+}
+		naval_theorist_cat = {
 		CAN_robert_leckie = {
 
 ledger = navy
@@ -995,7 +999,7 @@ ledger = navy
 	tank_manufacturer = {
 		designer = yes
 
-	
+
 
 }
 

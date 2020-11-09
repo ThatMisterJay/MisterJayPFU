@@ -529,7 +529,7 @@ ideas = {
 				original_tag = HUN
 			}
 
-		
+
 
 			traits = { army_cavalry_2 }
 
@@ -556,8 +556,27 @@ ideas = {
 	}
 
 	theorist = {
+
+			HUN_istvan_kalman = {
+						ledger = air
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = HUN
+			}
+
+			research_bonus = {
+				air_doctrine = 0.15
+			}
+
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+	military_theorist_cat = {
 		HUN_istvan_shvoy = {
-                        ledger = army
+												ledger = army
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -570,21 +589,6 @@ ideas = {
 
 			traits = { military_theorist }
 		}
-			HUN_istvan_kalman = {
-						ledger = air
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = HUN
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.15
-			}
-			
-			traits = { air_warfare_theorist }
-		}
-
 	}
 
 	aircraft_manufacturer = {

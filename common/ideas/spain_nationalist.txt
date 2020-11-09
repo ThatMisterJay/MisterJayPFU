@@ -1879,7 +1879,7 @@ available = {
 
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 
 

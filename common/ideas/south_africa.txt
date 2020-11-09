@@ -777,20 +777,6 @@ ledger = navy
 	}
 
 	theorist = {
-		SAF_j_f_van_rensburg = {
-ledger = army
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = SAF
-			}
-
-			research_bonus = {
-				land_doctrine = 0.15
-			}
-
-			traits = { military_theorist }
-		}
 
 		SAF_s_p_le_roux = {
 ledger = air
@@ -808,6 +794,22 @@ ledger = air
 		}
 
 	}
+military_theorist_cat = {
+	SAF_j_f_van_rensburg = {
+ledger = army
+		picture = generic_army_europe_2
+
+		allowed = {
+			original_tag = SAF
+		}
+
+		research_bonus = {
+			land_doctrine = 0.15
+		}
+
+		traits = { military_theorist }
+	}
+}
 
 	tank_manufacturer = {
 		designer = yes

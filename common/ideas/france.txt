@@ -2610,7 +2610,7 @@ ideas = {
 	}
 
 
-	theorist = {
+	military_theorist_cat = {
 		charles_de_gaulle = {
 ledger = army
 			allowed = {
@@ -2653,7 +2653,9 @@ ledger = army
 
 			traits = { military_theorist }
 		}
+  }
 
+naval_theorist_cat = {
 		louis_kahn = {
 			ledger = navy
 
@@ -2686,7 +2688,9 @@ ledger = army
 
 			traits = { naval_theorist }
 		}
+}
 
+  theorist = {
 		victor_denain = {
 			ledger = air
 

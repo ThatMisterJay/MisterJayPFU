@@ -577,7 +577,7 @@ ledger = army
 
 
 
-	theorist = {
+	military_theorist_cat = {
 		MAN_hung_zhehuang = {
 ledger = army
 			picture = generic_army_asia_1
@@ -592,7 +592,8 @@ ledger = army
 
 			traits = { military_theorist }
 		}
-
+	}
+theorist = {
 		MAN_deng_linge = {
 ledger = air
 			picture = generic_air_asia_2

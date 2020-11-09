@@ -804,7 +804,7 @@ removal_cost = -1
 
 	}
 
-	theorist = {
+	naval_theorist_cat = {
 
 		AST_norman_makin = {
 	 ledger = navy
@@ -821,6 +821,9 @@ removal_cost = -1
 			traits = { naval_theorist }
 		}
 
+	}
+		theorist = {
+
 		AST_james_fairbairn = {
     ledger = air
 			picture = generic_political_advisor_europe_2
@@ -835,6 +838,10 @@ removal_cost = -1
 
 			traits = { air_warfare_theorist }
 		}
+
+	}
+
+	military_theorist_cat = {
 
 		AST_sydney_rowell_1 = {
      ledger = army
