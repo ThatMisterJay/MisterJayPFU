@@ -132,7 +132,7 @@ pro_axis_fm = {
 
 attorney_general = {
   sprite = 13
-  political_power_factor = 0.25
+  political_power_factor = 0.20
 
 
   ai_will_do = {
@@ -162,7 +162,7 @@ war_support_factor = 0.1
 }
 
 minister_commerce = {
-  sprite = 13
+  sprite = 10
   production_speed_industrial_complex_factor = 0.05
   production_speed_infrastructure_factor = 0.05
   min_export = -0.10
@@ -194,7 +194,7 @@ pig_iron_bob = {
 
 #lyons trait
 peace_time_rearmer = {
-  sprite = 13
+  sprite = 10
   production_speed_arms_factory_factor = 0.05
   production_speed_dockyard_factor = 0.05
   war_support_factor = -0.05
@@ -216,7 +216,7 @@ war_time_prime_minister = {
 deputy_pm = {
   sprite = 13
   stability_factor = 0.10
-  political_power_factor = 0.05
+  political_power_factor = 0.1
 
   ai_will_do = {
     factor = 1
@@ -224,10 +224,56 @@ deputy_pm = {
 }
 
 minister_war = {
-  sprite = 13
+  sprite = 10
   war_support_factor = 0.05
   production_factory_max_efficiency_factor = 0.05
   mobilization_laws_cost_factor = -0.20
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minister_transport = {
+  sprite = 10
+  production_speed_industrial_complex_factor = 0.05
+  production_speed_infrastructure_factor = 0.2
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+war_secretary = {
+  sprite = 13
+  war_support_factor = 0.05
+  production_factory_efficiency_gain_factor = 0.05
+  production_speed_air_base_factor = 0.1
+  production_speed_naval_base_factor = 0.1
+  production_speed_radar_station_factor = 0.1
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+secretary_foreign = {
+  sprite = 15
+  war_support_factor = 0.05
+  agency_upgrade_time = -0.3
+  operative_slot = 2
+
+  ai_will_do = {
+    factor = 1
+  }
+}
+
+minister_labour = {
+  sprite = 13
+  production_factory_max_efficiency_factor = 0.03
+  production_factory_efficiency_gain_factor = 0.05
+  industrial_capacity_factory = 0.05
+  conscription_factor = -0.15
 
   ai_will_do = {
     factor = 1
