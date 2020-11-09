@@ -10,6 +10,7 @@ state={
 		aluminium=1
 	}
 	history={
+		add_core_of = JAP
 		owner = JAP
 		buildings = {
 			infrastructure = 1
