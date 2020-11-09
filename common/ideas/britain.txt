@@ -1939,17 +1939,12 @@ picture = ENG_war_cabinet
 
 
 
-			traits = { democratic_reformer }
+			traits = { deputy_pm }
 
-			on_add = {
-				country_event = political.13
+			available = {
+				has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			}
 
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
 
 			ai_will_do = {
 				factor = 0
@@ -1998,8 +1993,33 @@ picture = ENG_war_cabinet
 			allowed = {
 				original_tag = ENG
 			}
+			visible = {
+				has_country_leader = { ruling_only = yes name = "Stanley Baldwin" }
+			}
+			available = {
+				has_country_leader = { ruling_only = yes name = "Stanley Baldwin" }
+			}
 
-			traits = { armaments_organizer }
+			traits = { minister_transport }
+		}
+
+		ENG_leslie_hore_belisha_2 = {
+
+      name = ENG_leslie_hore_belisha
+			picture = ENG_leslie_hore_belisha
+
+			allowed = {
+				original_tag = ENG
+			}
+
+
+      visible = {
+				has_country_leader = { ruling_only = yes name = "Neville Chamberlain" }
+			}
+			available = {
+				has_country_leader = { ruling_only = yes name = "Neville Chamberlain" }
+			}
+			traits = { war_secretary }
 		}
 
 		ENG_ernest_bevin = {
@@ -2010,7 +2030,26 @@ picture = ENG_war_cabinet
 				original_tag = ENG
 			}
 
-			traits = { quartermaster_general }
+			available = {
+				has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			}
+
+			traits = { minister_labour }
+		}
+
+		ENG_eden = {
+
+			picture = ENG_eden
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			available = {
+				has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			}
+
+			traits = { secretary_foreign }
 		}
 
 	eng_stewart_menzies = {
@@ -2930,7 +2969,7 @@ cost = 100
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 		bernard_montgomery = {
 ledger = army
@@ -2938,7 +2977,7 @@ ledger = army
 				original_tag = ENG
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_grand_battle_plan = 0.20
@@ -2962,13 +3001,17 @@ ledger = army
 			traits = { military_theorist }
 		}
 
+}
+
+naval_theorist_cat = {
+
 		james_somerville = {
 ledger = navy
 			allowed = {
 				original_tag = ENG
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_fleet_in_being = 0.20
@@ -2991,6 +3034,9 @@ ledger = navy
 
 			traits = { naval_theorist }
 		}
+	}
+
+  theorist = {
 
 		hugh_dowding = {
 ledger = air
@@ -3013,7 +3059,7 @@ ledger = air
 				original_tag = ENG
 			}
 
-			cost = 175
+			cost = 130
 
 			research_bonus = {
 				cat_strategic_destruction = 0.20
@@ -3022,8 +3068,12 @@ ledger = air
 			traits = { victory_through_airpower }
 		}
 
+
+
+
 		james_chadwick = {
-ledger = army
+
+    ledger = civilian
 			allowed = {
 				original_tag = ENG
 			}
@@ -3038,7 +3088,7 @@ ledger = army
 		}
 
 		frank_whittle = {
-ledger = air
+ledger = civilian
 			allowed = {
 				original_tag = ENG
 			}

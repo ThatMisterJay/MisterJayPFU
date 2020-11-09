@@ -1,4 +1,7 @@
 ﻿l_english:
+government_2:0 "Military Laws & Theorist"  
+military_theorist_cat:0 "Military Theorist"
+naval_theorist_cat:0 "Naval Theorist"
 RAJ_tank_designer:0 "Arjun"
 received_attache:0 "Received attaché"
 received_attache_desc:0 "Foreign military attachés residing in our country."

@@ -168,6 +168,10 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     war_time_prime_minister:0 "Wartime Prime Minister"
     deputy_pm:0 "Deputy Prime Minister"
     minister_war:0 "Minister for the Army"
+    minister_transport:0 "Minister of Transport"
+    war_secretary:0 "Secretary of State for War"
+    secretary_foreign:0 "Foreign Secretary"
+    minister_labour:0 "Minister of Labour and National Service"
 
 
 #Italian stuff#
@@ -254,6 +258,11 @@ SOV_stab_in_the_back:0 "Stabbed in the Back"
 
 ENG_war_cabinet:0 "War Cabinet"
 ENG_war_cabinet_desc:0 "On 3 September 1939, Neville Chamberlain, Prime Minister of the United Kingdom, reconstructed his existing government so as to be suited for the Second World War. The most dramatic change to the ministerial line-up saw the return of Winston Churchill as First Lord of the Admiralty."
+ENG_eden:0 "Anthony Eden"
+ENG_eden_desc:0 "At the end of 1940, Eden returned to the Foreign Office and became a member of the executive committee of the Political Warfare Executive in 1941. Although he was one of Churchill's closest confidants, his role in wartime was restricted because Churchill conducted himself the most important negotiations, with Franklin D. Roosevelt and Joseph Stalin, but Eden served loyally as Churchill's lieutenant."
+
+
+
 
 JAP_law:0 "Asian Liberation"
 JAP_law_desc:0 "All Asians are equal, but some Asians are more equal"

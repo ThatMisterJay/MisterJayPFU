@@ -40,6 +40,11 @@ spriteTypes = {
 				texturefile = "gfx/interface/ideas/AST_frank.dds"
 		}
 
+		SpriteType = {
+				name = "GFX_idea_ENG_eden"
+				texturefile = "gfx/interface/ideas/ENG_eden.dds"
+		}
+
 
 					SpriteType = {
 							name = "GFX_idea_FRA_FL"
