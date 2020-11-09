@@ -17,10 +17,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
-				training_time_factor = -0.1
+				training_time_factor = -0.2
 				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.1
-				research_speed_factor = 0.05
+
 
 			}
 
@@ -52,10 +51,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
-				training_time_factor = -0.05
+				training_time_factor = -0.1
 				industrial_capacity_factory = 0.03
-				production_speed_buildings_factor = 0.05
-				research_speed_factor = 0.03
+
 			}
 
 			default = yes
@@ -113,7 +111,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.04
-				training_time_factor = 0.1
+
 			}
 
 			cancel_if_invalid = no
@@ -169,7 +167,7 @@ ideas = {
 					NOT = { has_idea = SPA_no_navy }
 				}
 
-				
+
 			}
 
 			ai_will_do = {
@@ -196,7 +194,7 @@ ideas = {
 				conscription = 0.07
 				#industrial_capacity_factory = -0.1
 				#production_speed_buildings_factor = -0.1
-				training_time_factor = 0.2
+				training_time_factor = 0.1
 			}
 
 			cancel_if_invalid = no
@@ -297,9 +295,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.09
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
 				training_time_factor = 0.2
 			}
 
@@ -395,9 +393,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.11
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
-				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_buildings_factor = -0.15
 				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
 			}
