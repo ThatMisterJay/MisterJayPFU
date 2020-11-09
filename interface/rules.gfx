@@ -23,4 +23,12 @@ spriteTypes = {
 		name = "GFX_idea_slot_country_rules"
 		textureFile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_slot_naval_theorist_cat"
+		textureFile = "gfx/interface/ideas/idea_slot_naval_theorist_cat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_military_theorist_cat"
+		textureFile = "gfx/interface/ideas/idea_slot_military_theorist_cat.dds"
+	}
 }
