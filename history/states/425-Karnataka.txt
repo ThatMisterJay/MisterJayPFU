@@ -8,11 +8,12 @@ state={
 
 	resources={
 		chromium=20
-		tungsten=28
+		tungsten=6
 	}
 
 	history={
 		owner = RAJ
+		add_core_of= RAJ
 		victory_points = {
 			8011 1
 		}
