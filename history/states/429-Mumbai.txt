@@ -6,11 +6,12 @@ state={
 	state_category = town
 	
 	resources={
-		tungsten=19 # was: 26
+		tungsten=10 # was: 26
 	}
 
 	history={
 		owner = RAJ
+		add_core_of= RAJ
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
