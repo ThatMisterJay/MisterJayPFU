@@ -8,11 +8,12 @@ state={
 
 	resources={
 		steel=20
-		tungsten=16
+		tungsten=7
 	}
 
 	history={
 		owner = RAJ
+		add_core_of= RAJ
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
