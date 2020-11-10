@@ -9,7 +9,6 @@ state={
 		steel=40
 		aluminium=12
 		chromium = 4
-		tungsten = 2
 	}
 
 	history={

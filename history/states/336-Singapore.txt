@@ -9,7 +9,7 @@ state={
 	resources={
 		rubber=150 #-50-100-50-100
 		steel=32
-		tungsten=308
+		tungsten=71
 		aluminium = 80
 	}
 

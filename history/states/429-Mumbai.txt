@@ -5,10 +5,6 @@ state={
 	manpower = 17355600
 	state_category = town
 	
-	resources={
-		tungsten=10 # was: 26
-	}
-
 	history={
 		owner = RAJ
 		add_core_of= RAJ

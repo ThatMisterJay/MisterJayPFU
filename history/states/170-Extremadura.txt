@@ -6,9 +6,6 @@ state={
 	
 	state_category = large_town
 	
-	resources={
-		tungsten=60
-	}
 
 	history={
 		owner = SPR

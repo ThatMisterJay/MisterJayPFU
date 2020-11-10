@@ -7,10 +7,6 @@ state={
 	state_category = town
 
 
-	resources={
-		tungsten=18 # was: 42
-	}
-
 	history={
 		owner = RAJ
 		add_core_of= RAJ

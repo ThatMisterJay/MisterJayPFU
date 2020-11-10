@@ -1,9 +1,6 @@
 state={
 	id=233
 	name="STATE_233"
-	resources={
-		chromium=35 # was: 46.000
-	}
 
 	history={
 		owner = SOV

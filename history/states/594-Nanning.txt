@@ -2,10 +2,6 @@
 state={
 	id=594
 	name="STATE_594"
-	resources={
-		tungsten=14.000
-
-	}
 
 	history={
 		owner = CHI
