@@ -8,11 +8,12 @@ state={
 
 
 	resources={
-		tungsten=32 # was: 42
+		tungsten=18 # was: 42
 	}
 
 	history={
 		owner = RAJ
+		add_core_of= RAJ
 		buildings = {
 			infrastructure = 3
 		}
