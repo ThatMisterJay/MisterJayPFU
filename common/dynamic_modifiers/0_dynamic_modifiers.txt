@@ -143,7 +143,7 @@ ITA_colonial_exploit = {
 	icon = GFX_ITA_colony_exploit
 
 
-  resistance_target = 0.30
+  resistance_target = 0.20
 	local_building_slots_factor = -0.50
 	state_production_speed_buildings_factor = -0.10
 	recruitable_population_factor = -0.5

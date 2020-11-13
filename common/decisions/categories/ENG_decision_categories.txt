@@ -10,6 +10,17 @@ ENG_imperial_conference_decision = {
 	}
 }
 
+allied_united_command = {
+	icon = GFX_decision_category_military_operation
+
+	allowed = {
+		OR = {
+			tag = ENG
+			is_in_faction_with = ENG
+		}
+	}
+}
+
 ENG_commonwealth_decision = {
 	icon = eng_imperial_conference
 

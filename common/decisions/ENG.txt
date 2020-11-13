@@ -184,6 +184,127 @@ ENG_no_south_africa = {
 	 }
 
 	 }
+
+	 ENG_ETH = {
+		 icon = generic_army_support
+
+		 targets = { ETH }
+
+		 allowed = {
+			 tag = ENG
+		 }
+
+		 available = {
+     controls_state = 550
+		 controls_state = 271
+		 controls_state = 559
+		 }
+
+		 cost = 50
+
+		 fire_only_once = yes
+
+		 visible = {
+			 has_war = yes
+		 }
+
+		 complete_effect = {
+			 every_state = {
+		     limit = {
+		       OR = {
+           state = 550
+					 state = 271
+					 state = 559
+		       }
+		     }
+				 add_compliance = 50
+		     remove_dynamic_modifier = { modifier = ITA_colonial_exploit }
+		   }
+		}
+	}
+
+	ENG_Libya = {
+		icon = generic_army_support
+
+		targets = { ITA }
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		controls_state = 448
+		controls_state = 449
+		controls_state = 450
+		controls_state = 451
+		controls_state = 663
+		controls_state = 662
+		controls_state = 661
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 448
+						state = 449
+						state = 450
+						state = 451
+						state = 663
+						state = 662
+						state = 661
+					}
+				}
+				add_compliance = 50
+				remove_dynamic_modifier = { modifier = ITA_colonial_exploit }
+			}
+	 }
+ }
+
+
+}
+
+allied_united_command = {
+
+	ENG_supreme_command = {
+		icon = generic_army_support
+
+		targets = { USA }
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			date > 1942.1.1
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			USA = {
+				has_war_with = GER
+			}
+		}
+
+		complete_effect = {
+
+	 }
+
+	}
+
+
+
 }
 
 support_SOV = {
@@ -826,7 +947,7 @@ country_event = {
 			OR = {
 				tag = ENG
 				tag = AST
-				
+
 			}
 			NZL = { is_ai = yes }
 			country_exists = NZL
@@ -836,7 +957,7 @@ country_event = {
 			OR = {
 				tag = ENG
 				tag = AST
-			
+
 			}
 		}
 

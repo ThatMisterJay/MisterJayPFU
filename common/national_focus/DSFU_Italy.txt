@@ -2749,17 +2749,9 @@ random_owned_controlled_state = {
     instant_build = yes
   }
   }
-  every_state = {
-    limit = {
-      is_core_of = ETH
-    }
-    add_state_modifier = {
-      modifier = {
-        local_non_core_manpower = -1
-      }
-    }
+
   }
- }
+
 
 }
 #Focus for Exploit Greece
@@ -2811,7 +2803,7 @@ ai_will_do = {
     }
     add_state_modifier = {
       modifier = {
-        local_non_core_manpower = -1
+        local_non_core_manpower = -0.50
       }
     }
   }
@@ -2868,7 +2860,7 @@ ai_will_do = {
     }
     add_state_modifier = {
       modifier = {
-        local_non_core_manpower = -1
+        local_non_core_manpower = -0.50
       }
     }
   }

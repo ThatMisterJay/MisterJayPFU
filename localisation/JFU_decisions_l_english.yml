@@ -180,6 +180,8 @@ IRQ_pressure:0 "Iraq has cut oil shipments"
 lend_lease_41:0 "Emergency Shipment of tanks to the British"
 CAN_lend_lease_41:0 "Emergency Shipment of tanks to the Soviets"
 ENG_lend_lease_41:0 "Emergency Shipment of tanks to the Soviets"
+ENG_ETH:0 "Military Government of East Africa"
+ENG_Libya:0 "Military Government of Libya"
 
 #general
 african_logistics:0 "African Logistics Problem"
