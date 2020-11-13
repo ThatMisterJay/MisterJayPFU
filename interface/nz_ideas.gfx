@@ -1,0 +1,84 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_NZL_2NZEF"
+		texturefile = "gfx/interface/ideas/nzl/GFX_NZL_2NZEF.png"
+	}
+		
+	spriteType = {
+		name = "GFX_air_defense"
+		texturefile = "gfx/interface/ideas/nzl/GFX_air_defense.png"
+	}
+	
+	spriteType = {
+		name = "GFX_british_officers"
+		texturefile = "gfx/interface/ideas/nzl/GFX_british_officers.png"
+	}
+	
+	spriteType = {
+		name = "GFX_NZL_British_Advisors"
+		texturefile = "gfx/interface/ideas/nzl/GFX_NZL_British_Advisors.png"
+	}
+	
+	spriteType = {
+		name = "GFX_NZL_Home_Guard"
+		texturefile = "gfx/interface/ideas/nzl/GFX_NZL_Home_Guard.png"
+	}
+	
+	spriteType = {
+		name = "GFX_NZL_Memories"
+		texturefile = "gfx/interface/ideas/nzl/GFX_NZL_Memories.png"
+	}
+	
+	spriteType = {
+		name = "GFX_NZL_Oil"
+		texturefile = "gfx/interface/ideas/nzl/GFX_NZL_Oil.png"
+	}
+	
+	spriteType = {
+		name = "goal_fac_complex"
+		texturefile = "gfx/interface/ideas/nzl/goal_fac_complex.png"
+	}
+	
+	spriteType = {
+		name = "goal_fac_plan"
+		texturefile = "gfx/interface/ideas/nzl/goal_fac_plan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_nz_navy"
+		texturefile = "gfx/interface/ideas/nzl/GFX_nz_navy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_NZL_dream"
+		texturefile = "gfx/interface/ideas/nzl/GFX_NZL_dream.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_agriculture"
+		texturefile = "gfx/interface/ideas/nzl/agriculture.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_housing"
+		texturefile = "gfx/interface/ideas/nzl/build_housing.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_dam"
+		texturefile = "gfx/interface/ideas/nzl/dam.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_land_reform"
+		texturefile = "gfx/interface/ideas/nzl/land_reform.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_uk_heavys"
+		texturefile = "gfx/interface/ideas/nzl/heavy_armour_british.tga"
+	}
+	
+	
+}

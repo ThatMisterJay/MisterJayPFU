@@ -4,7 +4,6 @@ state={
 	name="STATE_138"
 	manpower = 1
 	resources={
-		tungsten = 94
 		steel = 213
 		chromium = 54
 		aluminium = 3

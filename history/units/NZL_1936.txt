@@ -1,102 +1,143 @@
 ﻿division_template = {
-	name = "Infantry Division"  	# Standard formation for frontline divisions
+	name = "Infantry Division"		# Military District Forces (reserve/garrison forces)
+	# Note: all forces at reserve levels in 1936
+
+	division_names_group = NZL_INF_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 2 y = 3 }
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-
-
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 	# (semi-mot) Engineer bn
-		recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		artillery = { x = 0 y = 2 }
-	}
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+					
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 1 y = 4 }
+					
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 } 	
+					recon = { x = 0 y = 1 } 		
+					artillery = { x = 0 y = 2 }
+				}
 }
 
 division_template = {
-	name = "Armored-Division"
+	name = "Light Armoured Division"
+
+	division_names_group = NZL_ARM_01
 
 	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 0 y = 3 }
-
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 0 y = 4 }
+		
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		light_armor = { x = 1 y = 4 }
+		
 		light_armor = { x = 2 y = 0 }
 		light_armor = { x = 2 y = 1 }
 		light_armor = { x = 2 y = 2 }
 		light_armor = { x = 2 y = 3 }
-		light_armor = { x = 3 y = 0 }
-		light_armor = { x = 3 y = 1 }
-		light_armor = { x = 3 y = 2 }
-		light_armor = { x = 3 y = 3 }
-		light_armor = { x = 4 y = 0 }
-		light_armor = { x = 4 y = 1 }
-		light_armor = { x = 4 y = 2 }
-		light_armor = { x = 4 y = 3 }
-
+		light_armor = { x = 2 y = 4 }
+		
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		motorized = { x = 3 y = 4 }
 	}
+	
 	support = {
-        engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
-	}
+					engineer = { x = 0 y = 0 } 	
+					recon = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+				}
 }
 
 division_template = {
-	name = "Garrison Brigade"
+	name = "Medium Armoured Division"
+
+	division_names_group = NZL_ARM_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+		
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		motorized = { x = 3 y = 4 }
 	}
+	
 	support = {
-		engineer = { x = 0 y = 0 }
-
-	}
-	priority = 0
+					engineer = { x = 0 y = 0 } 	
+					recon = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+				}
 }
 
 units = {
-	division= {
-		name = "2nd NZL Expeditionary Force"
+	##### Royal New Zealand Army #####
+	division= {	
+		#name = "1st NZ Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 4543 # Auckland
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 
-	}
+
+
+	##### No Naval OOB (receives first RN ships in 1941) #####
 }
 
-
+air_wings = {
+	### Royal New Zealand Air Force (RNZAF)
+	284 = {
+		# RNZAF Station Auckland -- Vickers Vildebeests
+		nav_bomber_equipment_1 =  {
+			owner = "NZL" 
+			amount = 50
+		}
+	}
+}
 
 
 ##### Starting Production #####

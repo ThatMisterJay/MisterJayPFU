@@ -2090,11 +2090,15 @@ cancel_if_invalid = yes
 			}
 			add_tech_bonus = {
 				name = JAP_battery_bonus
-				uses = 2
-				bonus = 1
-				ahead_reduction = 0.5
-				technology = improved_secondary_battery
+				uses = 1
+				ahead_reduction = 0.75
 				technology = dp_secondary_battery
+			}	
+			add_tech_bonus = {
+				name = JAP_battery_bonus
+				uses = 1
+				bonus = 0.5
+				technology = improved_secondary_battery
 			}
 		}
 	}

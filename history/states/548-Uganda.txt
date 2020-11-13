@@ -3,7 +3,6 @@ state={
 	name="STATE_548"
 	resources={
 		rubber=6.000
-		tungsten=23
 	}
 
 	state_category = rural
