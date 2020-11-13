@@ -1,0 +1,29 @@
+spriteTypes = {
+	
+	corneredTileSpriteType = {
+		name = "GFX_tiled_header_scimpro"
+		size= { x=45 y=22 }
+		textureFile = "gfx//interface//tiles//tiled_header_scimpro.dds"
+		borderSize = { x=8 y=8 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	progressbartype = {
+		name = "GFX_damage_bar_large"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/building_damage_bar_large.dds"
+		textureFile2 = "gfx/interface/building_damage_bar_large_bg.dds"
+		size = { x = 55 y = 9 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	progressbartype = {
+		name = "GFX_damage_bar_small"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/building_damage_bar_small.dds"
+		textureFile2 = "gfx/interface/building_damage_bar_small_bg.dds"
+		size = { x = 23 y = 4 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+}
