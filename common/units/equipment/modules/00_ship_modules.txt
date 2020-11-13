@@ -192,7 +192,7 @@ equipment_modules = {
 			build_cost_ic = 1350
 		}
 		multiply_stats = {
-			naval_speed = -0.08
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 36
@@ -223,7 +223,7 @@ equipment_modules = {
 			build_cost_ic = 1450
 		}
 		multiply_stats = {
-			naval_speed = -0.09
+			naval_speed = -0.07
 		}
 		add_average_stats = {
 			hg_armor_piercing = 40
@@ -256,7 +256,7 @@ equipment_modules = {
 
 		}
 		multiply_stats = {
-			naval_speed = -0.10
+			naval_speed = -0.8
 		}
 		add_average_stats = {
 			hg_armor_piercing = 43

@@ -350,13 +350,21 @@ experienced_insurgent = { #Ihsan Nuri
 	#Major leader traits
 
 	emperor_showa = {
-			random = no
+		random = no
+		stability_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	staunch_militarist = {
+		random = no
 		defensive_war_stability_factor = 0.3
 		offensive_war_stability_factor = 0.3
-			ai_will_do = {
-				factor = 1
-			}
+		ai_will_do = {
+			factor = 1
 		}
+	}
 
 		il_duce = {
 				random = no

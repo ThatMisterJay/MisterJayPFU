@@ -31,9 +31,21 @@ on_actions = {
                 give_resource_rights = { receiver = ENG state = 291 }
                 give_resource_rights = { receiver = ENG state = 676 }
             }
+			#Chinese Tungsten and Rubber to Germany
+			CHI = {
+				give_resource_rights = { receiver = GER state = 591 } #Hainan
+				give_resource_rights = { receiver = GER state = 759 } #Shantou
+			}	
+				
+			#Siam Rubber to Japan
+			SIA = {
+				give_resource_rights = { receiver = JAP state = 289 } #Siam
+				give_resource_rights = { receiver = JAP state = 724 } #Northern Malay
+			}
         }
     }
-
+	
+	
     on_capitulation = {
         effect = {
             if = {
@@ -45,4 +57,7 @@ on_actions = {
             }
         }
     }
+	
+	
 }
+

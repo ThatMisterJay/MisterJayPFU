@@ -16,6 +16,24 @@ ideas = {
 				ai_get_ally_desire_factor = 50
 			}
 		}
+		
+		JAP_hirohito = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_hirohito
+			
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
 
 		JAP_first_air_fleet = {
 
@@ -120,7 +138,7 @@ ideas = {
 
 			modifier = {
 				experience_gain_army = 0.20
-				experience_gain_air = 0.15
+				experience_gain_air = 0.25
 			}
 		}
 
@@ -144,6 +162,7 @@ picture = tfv_can_conscription_crisis
 				operative_slot = 3
 				resistance_damage_to_garrison = -0.1
 				local_factories = 0.1
+				fascism_drift = 0.05
 			}
 		}
 
@@ -1035,16 +1054,13 @@ picture = tfv_can_conscription_crisis
 				navy_carrier_air_targetting_factor = 0.25
 				naval_strike_agility_factor = 0.12
 				naval_strike = 1.00
-				navy_screen_attack_factor = 0.2
-				navy_submarine_attack_factor = 0.2
-				navy_capital_ship_attack_factor = 0.2
 				amphibious_invasion = 0.80
 				invasion_preparation = -0.80
 				supply_consumption_factor = -0.25
-				army_attack_factor = 0.10
-				army_org_Factor = 0.20
-				army_morale_factor = 0.20
-				attrition = -0.20
+				army_attack_factor = 0.04
+				army_org_Factor = 0.10
+				army_morale_factor = 0.10
+				
 		}
 	}
 
@@ -1062,8 +1078,8 @@ picture = tfv_can_conscription_crisis
 			picture = jap_supremacy_of_will
 
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				army_defence_factor = 0.04
+				army_attack_factor = 0.04
 				army_org_Factor = 0.10
 				land_night_attack = 0.1
 				no_supply_grace = 48
@@ -1462,7 +1478,7 @@ ledger = air
 
 
 
-			traits = { air_chief_night_operations_2 }
+			traits = { air_chief_night_operations_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1478,7 +1494,7 @@ ledger = air
 
 
 
-			traits = { air_chief_ground_support_2 }
+			traits = { air_chief_ground_support_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1496,7 +1512,7 @@ ledger = air
 			}
 
 
-			traits = { air_chief_all_weather_2 }
+			traits = { air_chief_all_weather_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1693,7 +1709,7 @@ cost = 100
 				naval_equipment = 0.15
 			}
 
-			traits = { atlantic_fleet_naval_manufacturer } # built Yamato
+			traits = { battlefleet_designer } # built Yamato
 
 		}
 

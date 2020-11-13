@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = RAJ
+		add_core_of = XSM
 		buildings = {
 			infrastructure = 1
 			air_base = 1

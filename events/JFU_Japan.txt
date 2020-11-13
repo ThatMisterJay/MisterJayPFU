@@ -83,6 +83,9 @@ add_equipment_to_stockpile = {
 			add_named_threat = { threat = 4 name = JAP_war_with_china }
 
 		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.1 }
+		}
 
 
 	}

@@ -329,11 +329,15 @@ country_event = {
 
 	option = {
 		name = japan.11.a
-		SIA = {
-			country_event = { id = japan.12 }
+		JAP = {
+			annex_country = {
+				target = SIA
+				transfer_troops = no
+			}
 		}
 	}
 }
+
 
 # Siam event from Japan: Become puppet or not
 country_event = {
@@ -567,5 +571,35 @@ country_event = {
 
 	option = {
 		name = japan.22.a
+	}
+}
+
+#Event USA recieves after Japan invades Southern Indochina
+
+country_event = {
+	id = japan.33
+	title = japan.33.t
+	desc = japan.33.d
+	picture = GFX_report_event_chinese_soldiers_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = japan.33.a
+		USA = { add_opinion_modifier = { target = JAP modifier = embargo } }
+		INS = { add_opinion_modifier = { target = JAP modifier = embargo } }
+		VEN = { add_opinion_modifier = { target = JAP modifier = embargo } }
+		PHI = { add_opinion_modifier = { target = JAP modifier = embargo } }
+		every_country = {
+			limit = {
+				is_in_faction_with = ENG
+			}
+			add_opinion_modifier = { target = JAP modifier = embargo }
+		}
+		add_war_support = 0.1
+		hidden_effect = {
+			news_event = { id = DSFU_news.3 hours = 12 }
+		}
+		
 	}
 }

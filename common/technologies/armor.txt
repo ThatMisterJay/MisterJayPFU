@@ -477,7 +477,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1939
 
 	
 

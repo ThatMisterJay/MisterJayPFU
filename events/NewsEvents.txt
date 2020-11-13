@@ -2238,6 +2238,7 @@ trigger = {
 		trigger = { original_tag = SPR }
 		SPR = {
 			add_ideas = SPA_recovering_from_civil_war
+			diplomatic_relation = { country = ENG relation = non_aggression_pact }
 		}
 	}
 }

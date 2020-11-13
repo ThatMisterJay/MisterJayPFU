@@ -182,3 +182,39 @@ country_event = {
 		}
 	}
 }
+
+#Event to peace out Spain against the WAllies
+
+country_event = {
+	id = spain.99
+	title = spain.99.t
+	desc = spain.99.desc
+	picture = GFX_report_event_spr_plane_crash
+	
+	mean_time_to_happen = {
+		hours = 1
+	}
+	
+	trigger = {
+		tag = SPR
+		has_offensive_war_with = ENG
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_enemy_country = {
+					limit = {
+						NOT = { tag = SOV }
+						NOT = { tag = MON }
+					}
+					white_peace = SPR
+				}
+		}
+	}
+	
+	option = { # I'm sorry I won't do it again
+		name = spain.99.a
+		add_stability = -0.1
+		news_event = { hours = 6 id = DSFU_news.4 }
+	}
+}
