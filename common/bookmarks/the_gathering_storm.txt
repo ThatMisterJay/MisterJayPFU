@@ -53,7 +53,7 @@ bookmarks = {
 			focuses = {
 				GER_anschluss
 
-				
+
 			}
 		}
 		"ITA"={
@@ -125,8 +125,7 @@ bookmarks = {
 
 			}
 			focuses = {
-				NZL_bob_semple_tank
-				NZL_maori_volunteers
+			
 			}
 		}
 		"SAF"={
@@ -186,10 +185,10 @@ bookmarks = {
 			history = "SPAIN_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				
+
 			}
 			focuses = {
-				
+
 			}
 		}
 
