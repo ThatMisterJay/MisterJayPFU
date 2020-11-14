@@ -14,21 +14,21 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_named_threat = {threat = 3.5 name = SPR_war }
-				
+
 			SPR = {
 				add_timed_idea = { idea = SPR_ongoing_civil_war days = 988 }
 			}
 
 			remove_ideas = SPR_military_disloyalty
 			remove_ideas = SPR_political_violence
-			
+
 			SPR_clr_national_strikes = yes
 
 			add_stability = -0.10
-			
+
 			news_event = { hours = 6 id = news.63 }
 			news_event = { days = 988 id = news.64 }
-			country_event = { id = spain.78 days = 5 } 
+			country_event = { id = spain.78 days = 5 }
 			set_politics = { ruling_party = neutrality }
 			create_country_leader = {
 						name = "José Sanjurjo"
@@ -44,18 +44,18 @@ country_event = {
 
 			SOV = {
 				add_timed_idea = {
-					idea = SPA_civil_war_support days = 988 
+					idea = SPA_civil_war_support days = 988
 				}
 
 			}
 			GER = {
 				add_timed_idea = {
-					idea = SPA_civil_war_support days = 988 
+					idea = SPA_civil_war_support days = 988
 				}
 			}
 			ITA = {
 				add_timed_idea = {
-					idea = SPA_civil_war_support days = 988 
+					idea = SPA_civil_war_support days = 988
 				}
 			}
 		}
@@ -75,8 +75,8 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	
-	
+
+
 	option = { # Ok
 		name = spain.90.a
 		if = {
@@ -87,7 +87,7 @@ country_event = {
 				limit = {
 					has_completed_focus = SPR_the_popular_front
 				}
-				
+
 				add_political_power = 10
 			}
 			retire_country_leader = yes
@@ -111,7 +111,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-		
+
 				}
 			}
 		}
@@ -128,12 +128,12 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-	
-	
+
+
 	option = { # Ok
 		name = spain.1000.a
 		add_ideas = SPA_recovering_from_civil_war
-		
+
 	}
 }
 
@@ -143,9 +143,9 @@ country_event = {
 	title = spain.78.t
 	desc = spain.78.desc
 	picture = GFX_report_event_spr_plane_crash
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			kill_country_leader = yes
@@ -161,7 +161,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { # RIP
 		name = spain.78.a
 		effect_tooltip = {
@@ -190,16 +190,16 @@ country_event = {
 	title = spain.99.t
 	desc = spain.99.desc
 	picture = GFX_report_event_spr_plane_crash
-	
+
 	mean_time_to_happen = {
-		hours = 1
+		days = 1
 	}
-	
+
 	trigger = {
 		tag = SPR
 		has_offensive_war_with = ENG
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			every_enemy_country = {
@@ -211,7 +211,7 @@ country_event = {
 				}
 		}
 	}
-	
+
 	option = { # I'm sorry I won't do it again
 		name = spain.99.a
 		add_stability = -0.1

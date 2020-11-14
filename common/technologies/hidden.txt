@@ -31,5 +31,76 @@ technologies = {
 
 
 	# }
+
+
+	formation_flying = {
+
+		# enable_equipments = {
+			# partisan_equipment_0
+		# }
+		enable_subunits = {
+			partisan
+		}
+
+	}
+	force_rotation = {
+
+		# enable_equipments = {
+			# partisan_equipment_0
+		# }
+		enable_subunits = {
+			partisan
+		}
+
+	}
+	fighter_baiting = {
+
+			# enable_equipments = {
+				# partisan_equipment_0
+			# }
+			enable_subunits = {
+				partisan
+			}
+
+		}
+		low_echelon_support = {
+
+			# enable_equipments = {
+				# partisan_equipment_0
+			# }
+			enable_subunits = {
+				partisan
+			}
+
+		}
+		dispersed_fighting = {
+
+			# enable_equipments = {
+				# partisan_equipment_0
+			# }
+			enable_subunits = {
+				partisan
+			}
+
+		}
+		home_defence = {
+
+			# enable_equipments = {
+				# partisan_equipment_0
+			# }
+			enable_subunits = {
+				partisan
+			}
+
+		}
+		infrastructure_destruction = {
+
+			# enable_equipments = {
+				# partisan_equipment_0
+			# }
+			enable_subunits = {
+				partisan
+			}
+
 }
 ### EOF ###
