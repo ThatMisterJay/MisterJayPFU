@@ -1253,26 +1253,161 @@ prospect_for_resources = {
 	}
 }
 
-JAP_southern_expansion = {
+JAP_expansionism = {
+	
+	JAP_marco_polo_bridge_incident = {
 
-	JAP_pressure_france = {
+		available = {
+			has_war_with = PRC
+		}
+
+		visible = {
+			
+		}
+		icon = jap_conquer_china
+		fire_only_once = yes
+
+
+		modifier = {
+
+		}
+		priority = 10
+		
+		days_mission_timeout = 553
+		is_good = yes
+		fire_only_once = yes
+		
+		cost = 0
+
+		
+
+		complete_effect = {
+		}
+		
+		timeout_effect = {
+			country_event = Jfujap.4
+			hidden_effect = {
+				news_event = news.1
+			}
+		}
+
+
+	}
+	
+	JAP_southern_china_strategic_offensive = {
+
+		available = {
+			has_war_with = CHI
+		}
+
+		visible = {
+			
+		}
+		icon = jap_conquer_china
+		fire_only_once = yes
+
+
+		modifier = {
+
+		}
+		priority = 10
+		
+		days_mission_timeout = 953
+		is_good = yes
+		fire_only_once = yes
+		
+		cost = 0
+
+		
+
+		complete_effect = {
+		}
+		
+		timeout_effect = {
+			country_event = Jfujap.5
+		}
+
+	}
+	
+	JAP_invade_indochina = {
 
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } }
-			NOT = { has_war_with = FRA }
-			NOT = { is_in_faction_with = FRA }
 			custom_trigger_tooltip = {
-				tooltip = demand_indochina_focus_tt
+				tooltip = demand_northern_indochina_focus_tt
 				OR = {
-					286 = { is_fully_controlled_by = EFR }
-					670 = { is_fully_controlled_by = EFR }
-					671 = { is_fully_controlled_by = EFR }
+					
+					670 = { is_fully_controlled_by = EFR } #Laos
+					671 = { is_fully_controlled_by = EFR } #Tonkin
 				}
 			}
 		}
 
 		visible = {
+			
+		}
+		icon = border_war
+		
+
+		fire_only_once = yes
+
+
+		modifier = {
+
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				FRA = { has_war = no }
+			}
+			modifier = {
+				factor = 3
+				FRA = { has_war = yes }
+				OR = {
+					16 = { NOT = { is_controlled_by = FRA } } #Paris
+					strength_ratio = {
+						tag = FRA
+						ratio > 0.9
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			JAP = {
+				set_state_owner = 671 #Tonkin
+				set_state_owner = 670 #Laos
+			}
+		}
+
+	}
+
+	JAP_invade_southern_indochina = {
+
+		available = {
 			has_completed_focus = JAP_strike_south_doctrine
+			custom_trigger_tooltip = {
+				tooltip = demand_southern_indochina_focus_tt
+				OR = {
+					286 = { is_fully_controlled_by = EFR } #Saigon
+					741 = {	is_fully_controlled_by = EFR } #Cambodia
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = demand_southern_indochina_focus_2_tt
+				OR = {
+					670 = { is_fully_controlled_by = JAP } #Laos
+					671 = { is_fully_controlled_by = JAP } #Tonkin
+				}
+			}
+		}
+		icon = border_war
+		visible = {
+			
 		}
 
 		fire_only_once = yes
@@ -1304,14 +1439,78 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			EFR = { country_event = { id = france.1 } }
+			JAP = {
+				set_state_owner = 286 #Saigon
+				set_state_owner = 741 #Cambodia
+			}
+			add_named_threat = { threat = 25 name = jap_indochina_tension }
+			custom_effect_tooltip = JAP_invade_southern_indochina_tt
+			USA = { country_event = { id = japan.33 days = 3 } }
+			hidden_effect = {
+				news_event = DSFU_news.2
+			}
+		}
+
+	}
+	
+	JAP_invade_siam = {
+
+		available = {
+			has_completed_focus = siamese_puppet_focus
+			custom_trigger_tooltip = {
+				tooltip = demand_siam_focus_tt
+				OR = {
+					286 = { is_fully_controlled_by = JAP } #Saigon
+					741 = {	is_fully_controlled_by = JAP } #Cambodia
+				}
+			}
+		}
+
+		visible = {
+			
+		}
+		icon = jap_pacific_guardian
+		fire_only_once = yes
+
+
+		modifier = {
+
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				FRA = { has_war = no }
+			}
+			modifier = {
+				factor = 3
+				FRA = { has_war = yes }
+				OR = {
+					16 = { NOT = { is_controlled_by = FRA } } #Paris
+					strength_ratio = {
+						tag = FRA
+						ratio > 0.9
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			JAP = {
+				country_event = japan.11
+			}
+			add_named_threat = { threat = 10 name = jap_siam_tension }
+			
 		}
 
 	}
 
 	JAP_tora_tora_tora = {
 
-		icon = generic_operation
+		icon = jap_pacific_guardian
 		fire_only_once = yes
 
 		allowed = {
@@ -1322,6 +1521,7 @@ JAP_southern_expansion = {
 			has_completed_focus = JAP_strike_on_the_southern_resource_area
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
+			date > 1940.12.30
 		}
 
 		cost = 0
@@ -1334,7 +1534,7 @@ JAP_southern_expansion = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_strike_on_the_southern_resource_area
+			
 		}
 
 		complete_effect = {
@@ -1343,8 +1543,28 @@ JAP_southern_expansion = {
 					target = INS
 					transfer_troops = yes
 				}
+				every_owned_state = {
+					limit = {
+						not = { is_core_of = ROOT }
+						is_core_of = INS
+					}
+					add_compliance = 100
+				}
 			}
-			333 = { set_demilitarized_zone = no }
+			USA = {
+				annex_country = {
+					target = PHI
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					limit = {
+						not = { is_core_of = ROOT }
+						is_core_of = PHI
+					}
+					add_compliance = 100
+				}
+			}
+
 		}
 
 		remove_effect = {
@@ -1369,6 +1589,7 @@ JAP_southern_expansion = {
 				target = PHI
 				type = annex_everything
 			}
+			
 			declare_war_on = {
 				target = ENG
 				type = annex_everything

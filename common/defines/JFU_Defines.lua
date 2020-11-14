@@ -53,7 +53,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for rem
 
 
 
-NDefines.NBuildings.MAX_SHARED_SLOTS = 40
+NDefines.NBuildings.MAX_SHARED_SLOTS = 50
 NDefines.NBuildings.INFRA_TO_SUPPLY = 3
 
 NDefines.NPolitics.PLANNING_MAX = 0.3
@@ -107,7 +107,7 @@ NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.90
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.0
 NDefines.NAir.DISRUPTION_DEFENCE_ATTACK_FACTOR = 2.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
-NDefines.NAir.AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0
+NDefines.NAir.AIR_NAVAL_KAMIKAZE_DAMAGE_MULT = 10.0
 NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 2.0
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0							-- Days to deploy one air wing
@@ -223,3 +223,5 @@ NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 20					-- Number of factories u
 NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 4	-- max operative slots gained from upgrades
 NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 100.0					-- The maximum amount of trade influence that can be gained through the control trade mission
 NDefines.NOperatives.DEFAULT_OPERATION_COST_MULTIPLIER = 0.1
+
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2; 					-- For 10 Support Companies	

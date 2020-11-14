@@ -137,7 +137,7 @@ SPA_civil_war_support = {
 			picture = neutrality_idea
 
 			cancel = {
-				has_war_with = ENG
+				has_defensive_war_with = ENG
 			}
 
 			allowed = {

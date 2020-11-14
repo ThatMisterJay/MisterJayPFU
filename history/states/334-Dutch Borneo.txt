@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		add_core_of = XSM
-		owner = HOL
+		owner = INS
+		add_core_of = INS
 		victory_points = {
 			10237 5
 		}
