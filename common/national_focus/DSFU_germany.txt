@@ -1842,6 +1842,29 @@ NOT = { has_war_with = CZE }
 		}
 		completion_reward = {
 			hidden_effect = {
+				ENG = {
+					add_stability = -0.15
+				}
+				CAN = {
+					add_stability = -0.15
+				}
+				SAF = {
+					add_stability = -0.15
+				}
+				RAJ = {
+					add_stability = -0.15
+				}
+				AST = {
+					add_stability = -0.15
+				}
+				NZL = {
+					if = {
+						limit = {
+							has_completed_focus = Nzl_cri_app
+						}
+						add_stability = -0.15
+					}
+				}
 				YUG = {
 					load_oob = OOB_YUG
 				}

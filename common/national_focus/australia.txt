@@ -1483,6 +1483,7 @@ available = {
 
 		completion_reward = {
     add_ideas = AST_ENG_naval
+		add_research_slot = 1
     ENG = {
 	 	 country_event = {
 			 id = DSFU.19 days = 1
