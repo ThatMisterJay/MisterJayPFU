@@ -19,7 +19,7 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
+		
 		buildings = {
 			industrial_complex = 2
 			infrastructure = 3

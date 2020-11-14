@@ -18,18 +18,7 @@ set_technology = {
 }
 
 # DIPLOMACY
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = INS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = INS
-	}
-}
+
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

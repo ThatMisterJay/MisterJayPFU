@@ -125,6 +125,8 @@ ideas = {
 			modifier = {
 				army_attack_factor = -0.25 ##slight nerf from new units
 				army_org_Factor = -0.20
+				consumer_goods_factor = 1
+				conscription_factor = -0.99
 			}
 		}
 

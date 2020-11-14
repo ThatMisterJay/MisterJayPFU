@@ -6,7 +6,7 @@ set_stability = 0.8
 
 #set_stability = 0.2 #with emperor
 set_war_support = 0.8
-add_timed_idea = { idea = peace_time_army days = 1168 }
+add_timed_idea = { idea = peace_time_army days = 1674  }
 set_research_slots = 4
 
 add_ideas = {
@@ -185,7 +185,7 @@ create_country_leader = {
 	expire = "1989.1.1"
 	ideology = fascism_ideology
 	traits = {
-		warrior_code emperor_showa popular_figurehead
+		emperor_showa
 
 	}
 }
@@ -303,7 +303,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Naruhiko Higashikuni"
 	picture = "Portrait_Japan_Naruhiko_Higashikuni.dds"
-	traits = { JAP_samurai_lineage politically_connected }
+	traits = { JAP_samurai_lineage politically_connected infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -314,7 +314,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Seishiro Itagaki"
 	picture = "Portrait_Japan_Seishiro_Itagaki.dds"
-	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
+	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -347,7 +347,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Nobuyushi Muto"
 		picture = "Portrait_Japan_Nobuyoshi_Muto.dds"
-	traits = {  }
+	traits = { infantry_leader }
 	skill = 3
 	attack_skill = 4
 	defense_skill = 3
@@ -380,7 +380,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Yoshijiro Umezu"
 		picture = "Portrait_Japan_Yoshijiro_Umezu.dds"
-	traits = { trait_cautious politically_connected }
+	traits = { trait_cautious politically_connected infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -1140,7 +1140,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_3
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 			front_1_custom_slot = ship_light_medium_battery_2
 			mid_1_custom_slot = ship_light_medium_battery_2
 			mid_2_custom_slot = ship_torpedo_2

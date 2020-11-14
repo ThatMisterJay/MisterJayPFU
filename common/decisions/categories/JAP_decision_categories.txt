@@ -4,11 +4,13 @@ JAP_intervene_in_china = {
 	}
 }
 
-JAP_southern_expansion = {
+JAP_expansionism = {
 	allowed = {
 		original_tag = JAP
 	}
-
+	icon = jap_southern_expansion
+	picture = GFX_decision_cat_picture_chi_infiltration
+	priority = 10
 	visible = {
 		is_puppet = no
 	}
@@ -40,4 +42,5 @@ JAP_interservice_rivalry = {
 		original_tag = JAP
 		has_dlc = "Waking the Tiger"
 	}
+	priority = 5
 }

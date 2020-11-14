@@ -2,7 +2,8 @@ state={
 	id=766
 	name="STATE_766"
 		history={
-		owner = HOL
+		owner = INS
+		add_core_of = INS
 
 	}
 	

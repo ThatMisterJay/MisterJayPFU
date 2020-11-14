@@ -1,6 +1,23 @@
 #stuff taken from GDU
 on_actions = {
 
+# When the Dutch East Indies capitulates, UK annexes it and gets its troops/navy #
+
+on_capitulation = {
+effect = {
+if = {
+  limit = {
+    tag = INS
+  }
+  set_global_flag = GDU_INS_capitulated
+  INS = {
+    transfer_navy = {
+      target = AST
+    }
+  }
+  INS = { 					country_event = { id = gduannexations.9 days = 10 }  }			}
+}
+}
 
 
 # When Iraq capitulates, UK annexes it and gets its troops/navy #

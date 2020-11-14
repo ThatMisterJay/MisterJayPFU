@@ -212,3 +212,26 @@ country_event = {
     name = gduannexations.9.a
   }
 }
+
+
+country_event = {
+	id = gduannexations.10
+	title = gduannexations.10.t
+	desc = gduannexations.10.d
+	picture = GFX_report_event_canadian_soldiers
+
+	is_triggered_only = yes
+
+	immediate = {
+				ENG = {
+					annex_country = {
+						target = INS
+						transfer_troops = no
+					}
+				}
+	}
+
+  option = {
+    name = gduannexations.10.a
+  }
+}

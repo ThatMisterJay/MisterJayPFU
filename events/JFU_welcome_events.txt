@@ -106,15 +106,24 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = JFU_welcome.22.a
-		annex_country = {
-			    target = ETH
+	immediate = {
+		hidden_effect = {
+			annex_country = {
+					target = ETH
 
 			}
-		add_timed_idea = {
-			idea = ETH_war days = 380
+			add_timed_idea = {
+				idea = ETH_war days = 380
+			}
+			add_timed_idea = { 
+				idea = peace_time_army days = 1168
+			}
 		}
+	}
+	
+	option = {
+		name = JFU_welcome.22.a
+		
 	}
 }
 
@@ -142,5 +151,6 @@ country_event = {
 
 	option = {
 		name = JFU_welcome.50.a
+		
 	}
 }
