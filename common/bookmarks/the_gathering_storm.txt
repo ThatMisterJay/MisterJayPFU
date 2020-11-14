@@ -59,14 +59,9 @@ bookmarks = {
 			}
 			focuses = {
 				GER_anschluss
-<<<<<<< HEAD
-
-
-=======
 				GER_goeringsfouryearplan
 				GER_mansteinsplan
 				
->>>>>>> Ezio
 			}
 		}
 		"ITA"={

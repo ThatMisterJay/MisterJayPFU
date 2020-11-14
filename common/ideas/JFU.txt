@@ -1,33 +1,24 @@
 ideas = {
 	country = {
 
-<<<<<<< HEAD
-
 		refinery_idea = {
 
-	allowed = {
-		always = yes
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	picture = FRA_motorized_focus
-
-	modifier = {
-		production_speed_synthetic_refinery_factor = -0.8
-	}
-}
-
-    peace_time_army = {
-
-
-		picture = "generic_infantry_bonus"
-
-=======
+			allowed = {
+				always = yes
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+		
+			picture = FRA_motorized_focus
+		
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.8
+			}
+		}
 		peace_time_army = {
 		
 			picture = "generic_infantry_bonus"
@@ -35,7 +26,6 @@ ideas = {
 			cancel = {
 				has_war = yes
 			}
->>>>>>> Ezio
 
 			modifier = {
 				experience_gain_battleship_training_factor = 10.0
