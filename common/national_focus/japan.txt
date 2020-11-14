@@ -452,7 +452,7 @@ technology = construction4
 		cost = 5
 		
 		available = {
-			date = 1942.1.1
+			date > 1942.1.1
 			surrender_progress > 0.05
 		}
 
