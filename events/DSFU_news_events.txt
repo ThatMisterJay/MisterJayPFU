@@ -34,3 +34,82 @@ news_event = {
     }
   }
 }
+
+
+
+#Occupation of Southern Indochina
+
+news_event = {
+  id = DSFU_news.2
+  title = DSFU_news.2.t
+  desc = DSFU_news.2.d
+  picture = GFX_news_event_511
+
+  is_triggered_only = yes
+
+	major = yes
+
+  option = {
+  name = DSFU_news.2.a
+  trigger = {
+  NOT = {
+   is_in_faction_with = ENG
+   }
+ }
+  }
+
+  option = {
+  name = DSFU_news.2.b
+    trigger = {
+      NOT = { tag = JAP }
+    }
+  }
+
+}
+
+#US Embargoes Japan
+
+news_event = {
+  id = DSFU_news.3
+  title = DSFU_news.3.t
+  desc = DSFU_news.3.d
+  picture = GFX_news_event_generic_usa_treaty
+
+  is_triggered_only = yes
+
+	major = yes
+
+  option = {
+  name = DSFU_news.3.a
+	trigger = {
+		tag = JAP
+	}
+  }
+
+  option = {
+  name = DSFU_news.3.b
+    trigger = {
+      NOT = { tag = JAP }
+    }
+  }
+}
+
+#Franco backs down against the WAllies
+
+news_event = {
+  id = DSFU_news.4
+  title = DSFU_news.4.t
+  desc = DSFU_news.4.d
+  picture = GFX_news_event_spr_spanish_civil_war2
+
+  is_triggered_only = yes
+
+	major = yes
+
+  option = {
+  name = DSFU_news.4.a
+  
+  }
+
+}
+

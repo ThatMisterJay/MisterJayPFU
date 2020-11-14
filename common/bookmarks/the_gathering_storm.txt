@@ -16,6 +16,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
+				FRA_devalue_the_franc
+				FRA_division_cuirassee
+				FRA_air_dominance
 			}
 		}
 		"USA"={
@@ -28,6 +31,8 @@ bookmarks = {
 			}
 			focuses = {
 				USA_war_plan_black
+				USA_vichy_ultimatum
+				USA_two_ocean_navy_act
 			}
 		}
 		"ENG"={
@@ -40,6 +45,8 @@ bookmarks = {
 			}
 			focuses = {
 				tizard_mission_focus
+				ENG_scandinavia_intervention
+				ENG_special_air_service
 			}
 		}
 
@@ -48,12 +55,18 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				sour_loser
-
+				GER_navaltreaty_1
 			}
 			focuses = {
 				GER_anschluss
+<<<<<<< HEAD
 
 
+=======
+				GER_goeringsfouryearplan
+				GER_mansteinsplan
+				
+>>>>>>> Ezio
 			}
 		}
 		"ITA"={
@@ -61,10 +74,13 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				vittoria_mutilata
-				victor_emmanuel
+				ITA_army
+				weak_industry0
 			}
 			focuses = {
-
+				ITA_victorythroughairpower
+				ITA_victorythroughnavalpower
+				ITA_legacyofrome
 			}
 		}
 		"JAP"={
@@ -72,10 +88,13 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				state_shintoism
+				JAP_interservice_rivalry_balanced
+				JAP_Coup
 			}
 			focuses = {
 				JAP_strike_on_the_southern_resource_area
-				JAP_second_wind_china
+				JAP_first_air_fleet
+				JAP_the_manchurian_project
 			}
 		}
 		"SOV"={
@@ -84,9 +103,12 @@ bookmarks = {
 			ideas = {
 				trotskyite_plot
 				home_of_revolution
+				closed_economy
 			}
 			focuses = {
 				SOV_great_purge
+				Soviets_continuethesecondfiveyearplan
+				Soviets_thirdfiveyearplan
 			}
 		}
 

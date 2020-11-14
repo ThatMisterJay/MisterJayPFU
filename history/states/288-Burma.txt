@@ -13,6 +13,7 @@ state={
 
 	history={
 		owner = RAJ
+		add_core_of = XSM
 		victory_points = { 1330 3  }
 		buildings = {
 			infrastructure = 2

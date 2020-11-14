@@ -52,22 +52,22 @@
     country_rules_afghanistan_idea:0 "Afghanistan"
 
     JFU_rules.1.t:0 "General Rules"
-    JFU_rules.1.d:0 "1. Hour requirements do not mean a thing. If you play like a retard expect to be treated like one \n\n2. No autism, stupid behaviour or using of exploits, 1 time is forgivable if not aware of an exploit, 2nd time will result in a permanent ban \n\n3. Hosts discretion is final, do not argue with the host, if you do and it is seen as illegitimate whining, you will be banned, for how long depends on hosts discretion. \n\n4.No factory boosting/depressing. \n\n5.No deleting factories."
+    JFU_rules.1.d:0 "1. Hour requirements do not mean a thing. If you play like an idiot expect to be treated like one \n\n2. No stupid behaviour or using of exploits, one time is forgivable if not aware of an exploit, 2nd time will result in a permanent ban \n\n3. Hosts discretion is final, do not argue with the host, if you do and it is seen as illegitimate whining, you will be banned, for how long depends on hosts discretion. \n\n4.No factory boosting/depressing. \n\n5.No deleting factories."
     JFU_rules.1.a:0 "I should follow these!"
 
     JFU_rules.2.t:0 "Template Rules"
-    JFU_rules.2.d:0 "1. 20 Combat width minimum (MP allowed to be 10 width) and 40 width maximum. \n\n2. No disabling equipment on divisions \n\n3. Minimum Airwing size: 100. \n\n4.No going around Special Forces capacity limit by spawning small templates then converting them to large templates with no equipment. Just do the research in the Special Forces tree. \n\n5. No mixing tanks with leg infantry, except for Light Tanks and Amphibious Tanks. \n\n6. Starting and spawn-in templates can not have their equipment category changed. This goes for every battalion. That means infantry can not be converted to motorized or tanks, and Light tanks can not be changed to medium or heavy (and of course the other way around too). You are not allowed to go over 40 width."
+    JFU_rules.2.d:0 "1. 20 Combat width minimum and 40 width maximum. \n\n2. No disabling equipment on divisions \n\n3. Minimum Airwing size: 100. \n\n4.No going around Special Forces capacity limit by spawning small templates then converting them to large templates with no equipment. Just do the research in the Special Forces tree. \n\n5. No mixing tanks with leg infantry, except for Light Tanks and Amphibious Tanks. \n\n6. Starting and spawn-in templates can not have their equipment category changed. This goes for every battalion. That means infantry can not be converted to motorized or tanks, and Light tanks can not be changed to medium or heavy (and of course the other way around too). You are not allowed to go over 40 width."
 
     JFU_rules.3.t:0 "Diplomacy Rules"
-    JFU_rules.3.d:0 "1. The military access mechanic may only be used by countries of the same faction. \n\n2. You cannot release territory. \n\n3. No unwanted boosting and no coups. \n\n4. No Joining Factions until Germany is at war with Poland other than through focus. The first war outside of China and Spain must be Poland, i.e. no Yugo or Greece for Italy  \n\n5. Spain and Vichy France can not give docking rights to anyone."
+    JFU_rules.3.d:0 "1. The military access mechanic is banned. (Yes even you, USA.) \n\n2. You cannot release territory. \n\n3. No unwanted boosting and no coups. \n\n4. No Joining Factions until Germany is at war with Poland other than through focus. The first war outside of China and Spain must be Poland, i.e. no Yugo or Greece for Italy  \n\n5. Spain and Vichy France can not give docking rights to anyone."
     JFU_rules.3.a:0 "I should follow these!"
 
     JFU_rules.4.t:0 "Combat Rules"
-    JFU_rules.4.d:0 "1. Fleets cannot be on 'do not engage' \n\n2. Divisions cannot be deleted or have their templates changed when at war unless in an allied capital.  \n\n3. Encircled capitals must be taken as soon as possible. (If you encircle a capital you have to constantly attack it) \n\n4. Naval superiority must be maintained to carry out a naval invasion in the Channel (If you lose naval superiority you must stop moving your invading forces) \n\n5. Soviets can choose the game speed once Operation Barbarossa occurs, until Winter where it is resumed to speed 3. \n\n6. No more than 4 carriers per nation may participate on one side in a naval battle. \n\n7. All subjects must be called into war. \n\n8. No cheesing wargoals. You must declare on a nation you have a war goal with. (Ie, not declaring on Netherlands once 'Around Maginot' focus is complete. \n\n9.Mine-laying is banned. \n\n10. You may not expeditionary units to a country with GBP for the purposes of planning bonus. \n\n11. Blocking straits is not allowed unless you own at least 1 side of it, and you can not block with any class lighter than Heavy Cruisers."
+    JFU_rules.4.d:0 "1. Fleets cannot be on 'do not engage' \n\n2. Divisions cannot be deleted or have their templates changed when at war unless in an allied capital.  \n\n3. Encircled capitals must be taken as soon as possible. (If you encircle a capital you have to constantly attack it) \n\n4. Naval superiority must be maintained to carry out a naval invasion in the Channel (If you lose naval superiority you must stop moving your invading forces) \n\n5. Soviets can choose the game speed once Operation Barbarossa occurs, until Winter where it is resumed to speed 3. \n\n6. No more than 4 carriers per nation may participate on one side in a naval battle. \n\n7. All subjects must be called into war. \n\n8. No cheesing wargoals. You must declare on a nation you have a war goal with. (Ie, not declaring on Netherlands once 'Around Maginot' focus is complete. \n\n9.Mine-laying is banned. \n\n10. You may not expeditionary units to a country with GBP for the purposes of planning bonus. \n\n11. Blocking straits is not allowed unless you own at least 1 side of it, and you can not block with any class lighter than Heavy Cruisers. \n\n12. Setting Submarines to 'Always Engage' is banned."
     JFU_rules.4.a:0 "I should follow these!"
 
     JFU_rules.5.t:0 "Volunteer Rules"
-    JFU_rules.5.d:0 "1. Volunteers can only be sent to Spain and Spain can send volunteers to any AXIS country. \n\n2. Volunteers can only be sent once \n\n3. Volunteers are only allowed to be Infantry and Air volunteers \n\n4. Only Soviet Union,Spain, Germany, Italy and Japan are allowed to send volunteers. \n\n5. Spain can send volunteers to axis."
+    JFU_rules.5.d:0 "Due to supply related exploits, the usage of volunteers is banned."
     JFU_rules.5.a:0 "I should follow these!"
 
     JFU_rules.6.t:0 "Rules for Germany"
@@ -81,11 +81,11 @@
     JFU_rules.7.a:0 "I should follow these!"
 
     JFU_rules.8.t:0 "Rules for Japan"
-    JFU_rules.8.d:0 "1. Must declare war on China before 1938. \n\n2. Must form Co-Prosperity Sphere and stay in it. \n\n3. Cannot go to war with the Allies, through either justification or focus, until 1941. \n\n4. Japan has to declare war on allies before June 1941. \n\n5. May not give land to Manchukuo during the war, but if China is annexed, Japan is free to give Manchukuo land. \n\n6. May only kamikaze in South China Sea and around the main islands."
+    JFU_rules.8.d:0 "1. Must declare war on China before 1938. \n\n2. Must form Co-Prosperity Sphere and stay in it. \n\n3. Cannot go to war with the Allies, through either justification or focus, until 1941. \n\n4. Japan has to declare war on allies before June 1941. \n\n5. Kamikazes are 100% legal."
     JFU_rules.8.a:0 "I should follow these!"
 
-    JFU_rules.9.t:0 "Rules for Spain Volunteer Nation"
-    JFU_rules.9.d:0 "1. May only receive volunteers from Soviet Union, Germany, Italy and Japan. 2. Spain may not declare war on anyone. Portuguese tungsten has been moved to Spain"
+    JFU_rules.9.t:0 "Rules for Spain"
+    JFU_rules.9.d:0 "1. Spain may not declare on anyone except via focus, including Portugal. \n\n2. Spain must not accept call to arms from their allies and may only join wars via focus. You will lose 10% stability each time you join an offensive war against the Western Allies."
     JFU_rules.9.a:0 "I should follow these!"
 
     JFU_rules.10.t:0 "Rules for Finland"
@@ -113,7 +113,7 @@
     JFU_rules.15.a:0 "I should follow these!"
 
     JFU_rules.16.t:0 "Rules for the Soviet Union"
-    JFU_rules.16.d:0 "1. Cannot expand beyond the Molotov-Ribbentrop pact sphere until 1940. \n\n2. Only firearms and 500 aircraft can be sent to Nationalist China."
+    JFU_rules.16.d:0 "1. No fun allowed."
     JFU_rules.16.a:0 "I should follow these!"
 
     JFU_rules.17.t:0 "Rules for Afghanistan"

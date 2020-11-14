@@ -9,6 +9,7 @@ set_technology = {
 }
 set_stability = 0.6
 set_war_support = 0.7
+set_research_slots = 1
 
 
 save_global_event_target_as = WTT_communist_china
@@ -31,6 +32,7 @@ add_ideas = {
 	closed_economy
 	service_by_requirement
 	partial_economic_mobilisation
+	warlord_cliques
 }
 
 if = {

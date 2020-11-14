@@ -3,11 +3,15 @@
 oob = "USA_1936"
 
 set_research_slots = 5
+<<<<<<< HEAD
 add_timed_idea = { idea = peace_time_army days = 1168 }
 add_timed_idea = {
 	idea = refinery_idea
 	days = 1899
 }
+=======
+add_timed_idea = { idea = peace_time_army days = 1674  }
+>>>>>>> Ezio
 # Starting tech
 set_technology = {
 	armored_car1 = 1
@@ -751,7 +755,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_3
+			fixed_ship_armor_slot = ship_armor_cruiser_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			front_1_custom_slot = ship_light_medium_battery_2
 			mid_1_custom_slot = ship_airplane_launcher_1
@@ -845,7 +849,7 @@ if = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_3
+				fixed_ship_armor_slot = ship_armor_cruiser_2
 				mid_1_custom_slot = ship_airplane_launcher_1
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_medium_battery_2
