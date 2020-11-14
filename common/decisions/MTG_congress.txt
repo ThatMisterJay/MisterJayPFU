@@ -243,6 +243,7 @@ USA_congress = {
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
+			add_political_power = 30
 			random_owned_state = {
 				limit = {
 					has_state_flag = USA_congress_build_factory
@@ -291,6 +292,7 @@ USA_congress = {
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
+			add_political_power = 30
 			random_owned_state = {
 				limit = {
 					has_state_flag = USA_congress_build_arms_factory
@@ -338,6 +340,7 @@ USA_congress = {
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
+			add_political_power = 30
 			random_owned_state = {
 				limit = {
 					has_state_flag = USA_congress_build_dockyard
@@ -385,6 +388,7 @@ USA_congress = {
 			clr_country_flag = USA_congress_investment
 		}
 		complete_effect = {
+			add_political_power = 30
 			random_owned_state = {
 				limit = {
 					has_state_flag = USA_congress_build_infrastructure
