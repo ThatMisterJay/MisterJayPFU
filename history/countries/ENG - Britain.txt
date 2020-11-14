@@ -321,19 +321,19 @@ create_field_marshal = {
 	logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "Bernard Montgomery" # Aristocrat
-	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
-	skill = 4
-	traits = { hill_fighter desert_fox naval_invader logistics_wizard offensive_doctrine media_personality
-	 trait_cautious inflexible_strategist organizer }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-}
+#create_corps_commander = {
+#	name = "Bernard Montgomery" # Aristocrat
+#	picture = "Portrait_Britain_Bernard_Montgomery.dds"
+#	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
+#	skill = 4
+#	traits = { hill_fighter desert_fox naval_invader logistics_wizard offensive_doctrine media_personality
+#	 trait_cautious inflexible_strategist organizer }
+#	skill = 5
+#	attack_skill = 4
+#	defense_skill = 4
+#	planning_skill = 4
+#	logistics_skill = 4
+#}
 
 create_corps_commander = {
 	name = "Claude Auchinleck"
@@ -341,8 +341,8 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
 	traits = { inflexible_strategist career_officer organizer infantry_leader trait_mountaineer }
 	skill = 5
-	attack_skill = 3
-	defense_skill = 5
+	attack_skill = 4
+	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 5
 }
@@ -385,11 +385,11 @@ create_corps_commander = {
 	id = 999
 	picture = "Portrait_Britain_Richard_OConnor.dds"
 	traits = { panzer_leader desert_fox trickster brilliant_strategist }
-	skill = 3
-	attack_skill = 2
+	skill = 4
+	attack_skill = 5
 	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -562,12 +562,12 @@ create_field_marshal = {
 	name = "Archibald Wavell"
 	id = 995
 	picture = "Portrait_Britain_Archibald_Wavell.dds"
-	traits = { career_officer organizer infantry_leader hill_fighter }
-	skill = 3
-	attack_skill = 3
+	traits = { career_officer organizer infantry_leader hill_fighter logistics_wizard }
+	skill = 4
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 2
+	logistics_skill = 4
 }
 
 create_navy_leader = {

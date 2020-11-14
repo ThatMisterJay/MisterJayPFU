@@ -298,7 +298,53 @@ allied_united_command = {
 		}
 
 		complete_effect = {
+			create_field_marshal = {
+				name = "Dwight D. Eisenhower"
+				picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
+				traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected brilliant_strategist panzer_leader infantry_leader trait_engineer naval_invader skilled_staffer hill_fighter ranger }
+				skill = 6
+				id = 602
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 5
+			}
+	 }
 
+	}
+
+	ENG_monty_command = {
+		icon = generic_army_support
+
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			date > 1942.1.1
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			create_corps_commander = {
+				name = "Bernard Montgomery" # Aristocrat
+				picture = "Portrait_Britain_Bernard_Montgomery.dds"
+				traits = { hill_fighter desert_fox naval_invader media_personality
+				 trait_cautious inflexible_strategist organizer panzer_leader trickster infantry_leader }
+				skill = 6
+				attack_skill = 6
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 4
+			}
 	 }
 
 	}
