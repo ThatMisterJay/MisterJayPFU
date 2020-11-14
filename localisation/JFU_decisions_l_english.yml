@@ -182,6 +182,12 @@ CAN_lend_lease_41:0 "Emergency Shipment of tanks to the Soviets"
 ENG_lend_lease_41:0 "Emergency Shipment of tanks to the Soviets"
 ENG_ETH:0 "Military Government of East Africa"
 ENG_Libya:0 "Military Government of Libya"
+allied_united_command:0 "Imperial General Staff"
+allied_united_command_desc:0 ""
+ENG_supreme_command:0 "Supreme Allied Commander in Europe"
+ENG_supreme_command_desc:0 "In December 1943, President Roosevelt decided that Eisenhower – not Marshall – would be Supreme Allied Commander in Europe. The following month, he resumed command of ETOUSA and the following month was officially designated as the Supreme Allied Commander of the Allied Expeditionary Force (SHAEF), serving in a dual role until the end of hostilities in Europe in May 1945."
+ENG_monty_command:0 "New Field Commander for the Eighth Army"
+ENG_monty_command_desc:0 "In 1942, a new field commander was required in the Middle East, where Auchinleck was fulfilling both the role of Commander-in-chief (C-in-C) of Middle East Command and commander Eighth Army. He had stabilised the Allied position at the First Battle of El Alamein, but after a visit in August 1942, the Prime Minister, Winston Churchill, replaced him as C-in-C with General Sir Harold Alexander and William Gott as commander of the Eighth Army in the Western Desert. However, after Gott was killed flying back to Cairo, Churchill was persuaded by Brooke, who by this time was Chief of the Imperial General Staff (CIGS), to appoint Montgomery, who had only just been nominated to replace Alexander, as commander of the British First Army for Operation Torch, the invasion of French North Africa."
 
 #general
 african_logistics:0 "African Logistics Problem"

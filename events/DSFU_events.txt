@@ -659,3 +659,22 @@ country_event = {
   name = DSFU.22.b
   }
 }
+
+country_event = {
+  id = DSFU.23
+  title = DSFU.23.t
+  desc = DSFU.23.d
+  picture = GFX_report_event_canada_army
+  is_triggered_only = yes
+
+
+  option = {
+  name = DSFU.23.a
+  RAJ = {
+      give_resource_rights = { receiver = ENG state = 640 }
+      give_resource_rights = { receiver = ENG state = 288 }
+
+  }
+  }
+
+}
