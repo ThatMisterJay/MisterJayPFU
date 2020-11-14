@@ -673,7 +673,6 @@ country_event = {
   RAJ = {
       give_resource_rights = { receiver = ENG state = 640 }
       give_resource_rights = { receiver = ENG state = 288 }
-
   }
   }
 

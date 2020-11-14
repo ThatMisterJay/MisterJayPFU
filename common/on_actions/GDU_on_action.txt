@@ -15,7 +15,9 @@ if = {
       target = AST
     }
   }
-  INS = { 					country_event = { id = gduannexations.9 days = 10 }  }			}
+  INS = { 					country_event = { id = gduannexations.9 days = 10 }
+  }
+		}
 }
 }
 
