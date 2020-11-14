@@ -7,6 +7,7 @@ add_timed_idea = { idea = peace_time_army days = 1674  }
 add_timed_idea = {
 	idea = refinery_idea
 	days = 1899
+}
 # Starting tech
 set_technology = {
 	armored_car1 = 1
