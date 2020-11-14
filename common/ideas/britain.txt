@@ -1927,6 +1927,131 @@ picture = ENG_war_cabinet
 			}
 		}
 
+		ENG_desert_operation_allied = {
+			removal_cost = -1
+			allowed = {
+				OR = {
+					tag = ENG
+					tag = CAN
+					tag = SAF
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+
+
+			modifier = {
+				army_morale_factor = 0.05
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.08
+				no_supply_grace = 40
+			}
+		}
+
+		ENG_med_operation_allied = {
+			removal_cost = -1
+			allowed = {
+				OR = {
+					tag = ENG
+					tag = CAN
+					tag = SAF
+					tag = USA
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+
+
+			modifier = {
+				army_morale_factor = 0.05
+				supply_consumption_factor = -0.05
+				out_of_supply_factor = -0.05
+				no_supply_grace = 50
+				amphibious_invasion_defence = 0.04 
+			}
+		}
+		ENG_med_operation_allied_failed = {
+			name = ENG_desert_operation_allied_failed
+			removal_cost = -1
+			allowed = {
+				OR = {
+					tag = ITA
+					tag = GER
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.06
+			}
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.06
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.06
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.06
+			}
+
+			modifier = {
+			}
+		}
+
+		ENG_desert_operation_allied_failed = {
+			removal_cost = -1
+			allowed = {
+				OR = {
+					tag = ITA
+					tag = GER
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.04
+			}
+			targeted_modifier = {
+				tag = SAF
+				attack_bonus_against = 0.04
+			}
+			targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.04
+			}
+
+			modifier = {
+				out_of_supply_factor = -0.08
+				no_supply_grace = 40
+			}
+		}
+
+
 	}
 
 
@@ -2278,6 +2403,56 @@ picture = ENG_war_cabinet
 
 			ai_will_do = {
 				factor = 2
+			}
+		}
+
+
+		ENG_bernard_montgomery_2 = {
+			ledger = army
+			name = ENG_bernard_montgomery
+
+			picture = bernard_montgomery
+
+			allowed = {
+				original_tag = ENG
+			}
+
+			visible = {
+				OR = {
+					NOT = {
+						country_exists = CAN
+					}
+					NOT = {
+						country_exists = SAF
+					}
+				}
+				NOT = {
+					country_exists = CAN
+					country_exists = SAF
+				}
+			}
+
+			available = {
+				OR = {
+					NOT = {
+						country_exists = CAN
+					}
+					NOT = {
+						country_exists = SAF
+					}
+				}
+				NOT = {
+					country_exists = CAN
+					country_exists = SAF
+				}
+			}
+
+
+
+			traits = { army_armored_1 }
+
+			ai_will_do = {
+				factor = 1
 			}
 		}
 

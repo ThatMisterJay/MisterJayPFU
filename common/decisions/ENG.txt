@@ -349,6 +349,351 @@ allied_united_command = {
 
 	}
 
+	ENG_prepare_med_operation = {
+		icon = ger_military_buildup
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_war = yes
+			has_equipment = { support_equipment > 1999 }
+			has_equipment = { infantry_equipment > 3999 }
+			has_equipment = { motorized_equipment > 1999 }
+			has_fuel > 29999
+			controls_state = 450
+		}
+
+		cost = 50
+
+		days_remove = 100
+
+		fire_only_once = yes
+
+		visible = {
+		has_war_with = ITA
+		NOT = {
+			has_country_flag = ENG_med_operation_ready
+		}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -1000
+			}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -4000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -1000
+			}
+			add_fuel = -30000
+	 }
+
+		remove_effect = {
+		set_country_flag = ENG_med_operation_ready
+		}
+	}
+
+	ENG_prepare_desert_operation = {
+		icon = ger_military_buildup
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_war = yes
+			has_equipment = { support_equipment > 299 }
+			has_equipment = { infantry_equipment > 3999 }
+			has_equipment = { motorized_equipment > 299 }
+			has_fuel > 9999
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		visible = {
+    has_war_with = ITA
+		NOT = {
+			has_country_flag = ENG_desert_operation_ready
+		}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -300
+	   	}
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -4000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -300
+			}
+			add_fuel = -10000
+	 }
+
+		remove_effect = {
+    set_country_flag = ENG_desert_operation_ready
+		}
+	}
+
+	ENG_launch_med_operation_1 = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		has_country_flag = ENG_desert_operation_ready
+		NOT = {has_active_mission = ENG_med_operation_offensive_2}
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		visible = {
+		has_country_flag = ENG_med_operation_ready
+		ITA = {
+			controls_state = 114
+		}
+		}
+
+		complete_effect = {
+		activate_mission = ENG_med_operation_offensive_1
+		ENG = {
+			add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+		}
+		if = {
+			limit = {
+				country_exists = CAN
+			}
+			CAN = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAF
+			}
+			SAF = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+
+	 }
+
+		remove_effect = {
+		clr_country_flag = ENG_med_operation_ready
+		}
+	}
+
+	ENG_launch_med_operation_2 = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		has_country_flag = ENG_desert_operation_ready
+		NOT = { has_active_mission = ENG_med_operation_offensive_1 } 
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		visible = {
+		has_country_flag = ENG_med_operation_ready
+		ITA = {
+			controls_state = 115
+		}
+		}
+
+		complete_effect = {
+		activate_mission = ENG_med_operation_offensive_2
+		ENG = {
+			add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+		}
+		if = {
+			limit = {
+				country_exists = CAN
+			}
+			CAN = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAF
+			}
+			SAF = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+
+	 }
+
+		remove_effect = {
+		clr_country_flag = ENG_med_operation_ready
+		}
+	}
+
+	ENG_launch_desert_operation_1 = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+    has_country_flag = ENG_desert_operation_ready
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		visible = {
+		has_country_flag = ENG_desert_operation_ready
+			ITA = {
+			controls_state = 450
+	  	}
+		}
+
+		complete_effect = {
+    activate_mission = ENG_desert_operation_offensive
+		ENG = {
+			add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+		}
+		if = {
+			limit = {
+				country_exists = CAN
+			}
+			CAN = {
+				add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAF
+			}
+			SAF = {
+				add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+			}
+		}
+
+	 }
+
+		remove_effect = {
+		clr_country_flag = ENG_desert_operation_ready
+		}
+	}
+
+
+	ENG_launch_desert_operation_2 = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		has_country_flag = ENG_desert_operation_ready
+		}
+
+		visible = {
+			has_country_flag = ENG_desert_operation_ready
+			NOT = {
+				ITA = {
+					controls_state = 450
+					controls_state = 451
+					controls_state = 663
+				}
+			}
+		}
+
+		cost = 50
+
+		days_remove = 90
+
+		fire_only_once = yes
+
+		visible = {
+		has_war = yes
+		}
+
+		complete_effect = {
+		activate_mission = ENG_desert_operation_offensive_1
+		ENG = {
+			add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+		}
+		if = {
+			limit = {
+				country_exists = CAN
+			}
+			CAN = {
+				add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAF
+			}
+			SAF = {
+				add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+			}
+		}
+
+	 }
+
+		remove_effect = {
+		clr_country_flag = ENG_desert_operation_ready
+		}
+	}
 
 
 }
@@ -1022,6 +1367,294 @@ country_event = {
 }
 
 operations = {
+
+#North Africa
+	ENG_desert_operation_offensive = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		targets = { ITA }
+
+		allowed = {
+			always = no
+
+		}
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+    controls_state = 450
+		controls_state = 451
+		controls_state = 663
+		}
+
+
+		days_mission_timeout = 80
+		is_good = no
+
+		visible = {
+			has_country_flag = ENG_desert_operation_ready
+		}
+
+		complete_effect = {
+			add_war_support = 0.10
+			CAN = {
+			add_war_support = 0.10
+			}
+			SAF = {
+			add_war_support = 0.10
+			}
+			ITA = {
+				add_stability = -0.08
+			}
+		}
+
+		timeout_effect = {
+			add_war_support = -0.05
+			CAN = {
+			add_war_support = -0.05
+			}
+			SAF = {
+			add_war_support = -0.05
+			}
+			ITA = {
+				add_timed_idea = { idea = ENG_desert_operation_allied_failed days = 40 }
+			}
+			GER = {
+				add_timed_idea = { idea = ENG_desert_operation_allied_failed days = 40 }
+			}
+		}
+	}
+
+		ENG_desert_operation_offensive_1 = {
+	  name = ENG_desert_operation_offensive
+			icon = GFX_decision_generic_ignite_civil_war
+			allowed = {
+				always = no
+			}
+
+			targets = { ITA }
+
+			allowed = {
+				tag = ENG
+			}
+
+			available = {
+			controls_state = 448
+			controls_state = 661
+			}
+
+
+			days_mission_timeout = 80
+			is_good = no
+
+			visible = {
+				has_country_flag = ENG_desert_operation_ready
+			}
+
+			complete_effect = {
+				add_war_support = 0.10
+				CAN = {
+				add_war_support = 0.10
+				}
+				SAF = {
+				add_war_support = 0.10
+				}
+				ITA = {
+					add_stability = -0.08
+				}
+			}
+
+			timeout_effect = {
+				add_war_support = -0.05
+				CAN = {
+				add_war_support = -0.05
+				}
+				SAF = {
+				add_war_support = -0.05
+				}
+				ITA = {
+					add_timed_idea = { idea = ENG_desert_operation_allied_failed days = 40 }
+				}
+				GER = {
+					add_timed_idea = { idea = ENG_desert_operation_allied_failed days = 40 }
+				}
+			}
+	}
+
+
+#Mediterranean
+	ENG_med_operation_offensive_1 = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		targets = { ITA }
+
+		allowed = {
+			always = no
+
+		}
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+    controls_state = 114
+		}
+
+
+		days_mission_timeout = 80
+		is_good = no
+
+		visible = {
+			has_country_flag = ENG_med_operation_ready
+		}
+
+		complete_effect = {
+			add_war_support = 0.10
+			if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_war_support = 0.10
+			}
+		}
+			CAN = {
+			add_war_support = 0.10
+			}
+			SAF = {
+			add_war_support = 0.10
+			}
+			ITA = {
+				add_stability = -0.08
+				add_war_support = -0.05
+			}
+		}
+
+		timeout_effect = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_war_support = -0.05
+				add_stability = -0.05
+				}
+	    }
+			CAN = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			}
+			SAF = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			}
+			ITA = {
+				add_timed_idea = { idea = ENG_med_operation_allied_failed days = 40 }
+				add_stability = 0.05
+			}
+			GER = {
+				add_timed_idea = { idea = ENG_med_operation_allied_failed days = 40 }
+				add_stability = 0.05
+			}
+		}
+	}
+
+	ENG_med_operation_offensive_2 = {
+
+		name = ENG_med_operation_offensive_1
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		targets = { ITA }
+
+		allowed = {
+			always = no
+
+		}
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+		controls_state = 115
+		}
+
+
+		days_mission_timeout = 80
+		is_good = no
+
+		visible = {
+			has_country_flag = ENG_med_operation_ready
+		}
+
+		complete_effect = {
+			add_war_support = 0.10
+			if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_war_support = 0.10
+				}
+		}
+			CAN = {
+			add_war_support = 0.10
+			}
+			SAF = {
+			add_war_support = 0.10
+			}
+			ITA = {
+				add_stability = -0.08
+				add_war_support = -0.05
+			}
+		}
+
+		timeout_effect = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_war_support = -0.05
+				add_stability = -0.05
+      }
+			}
+			CAN = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			}
+			SAF = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			}
+			ITA = {
+				add_timed_idea = { idea = ENG_desert_operation_allied_failed days = 40 }
+				add_stability = 0.05
+			}
+			GER = {
+				add_timed_idea = { idea = ENG_desert_operation_allied_failed days = 40 }
+				add_stability = 0.05
+			}
+		}
+	}
 
 	operation_fork = {
 

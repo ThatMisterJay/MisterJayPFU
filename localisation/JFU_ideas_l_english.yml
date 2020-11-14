@@ -260,7 +260,9 @@ ENG_war_cabinet:0 "War Cabinet"
 ENG_war_cabinet_desc:0 "On 3 September 1939, Neville Chamberlain, Prime Minister of the United Kingdom, reconstructed his existing government so as to be suited for the Second World War. The most dramatic change to the ministerial line-up saw the return of Winston Churchill as First Lord of the Admiralty."
 ENG_eden:0 "Anthony Eden"
 ENG_eden_desc:0 "At the end of 1940, Eden returned to the Foreign Office and became a member of the executive committee of the Political Warfare Executive in 1941. Although he was one of Churchill's closest confidants, his role in wartime was restricted because Churchill conducted himself the most important negotiations, with Franklin D. Roosevelt and Joseph Stalin, but Eden served loyally as Churchill's lieutenant."
-
+ENG_desert_operation_allied_failed:0 "Axis Counter Attack"
+ENG_desert_operation_allied:0 "Allied Offensive in Africa"
+ENG_med_operation_allied:0 "Allied Amphibious Offensive"
 
 
 
