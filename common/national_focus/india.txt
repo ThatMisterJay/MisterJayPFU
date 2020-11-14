@@ -92,7 +92,7 @@ focus_tree = {
 		y = 2
 		mutually_exclusive = {
 			focus = RAJ_long_range_escorts
-		}		
+		}
                 cost = 5
 
 		ai_will_do = {
@@ -140,7 +140,7 @@ focus_tree = {
 		y = 2
 		mutually_exclusive = {
 			focus = RAJ_the_bengal_patrol
-		}		
+		}
                 cost = 5
 
 		ai_will_do = {
@@ -184,7 +184,7 @@ focus_tree = {
 		id = RAJ_naval_planes
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = RAJ_carrier_focus }
-		prerequisite = { focus = RAJ_fighter_effort }		
+		prerequisite = { focus = RAJ_fighter_effort }
                 x = 32
 		y = 5
 
@@ -431,7 +431,7 @@ focus_tree = {
 						requested_factories = 10
 						progress = 0.5
 						amount = 1
-					}					                                     
+					}
                                         add_equipment_production = {
 						equipment = {
 							type = ship_hull_carrier_1
@@ -1574,6 +1574,9 @@ artillery_brigade = {
 					factor = 0.1
 				}
 			completion_reward = {
+				ENG = {
+					country_event = DSFU.23
+				}
 					add_political_power = 100
 					add_autonomy_ratio = {
 							value = 0.3
