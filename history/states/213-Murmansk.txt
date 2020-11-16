@@ -4,7 +4,7 @@ state={
 	name="STATE_213"
 	resources={
 		steel=28.000
-		chromium=24.000
+		chromium=12.000
 		aluminium=55.000
 	}
 
