@@ -73,4 +73,13 @@ spriteType = {
 	name = "GFX_SOV_moscow_metro"
 	textureFile = "gfx/interface/DSFU_GFX/SOV_moscow_metro.dds"
 }
+spriteType = {
+	name = "GFX_trait_large_front_commander"
+	textureFile = "gfx/interface/DSFU_GFX/trait_large_front_commander.dds"
+}
+spriteType = {
+	name = "GFX_trait_to_good"
+	textureFile = "gfx/interface/DSFU_GFX/trait_to_good.dds"
+}
+
 }
