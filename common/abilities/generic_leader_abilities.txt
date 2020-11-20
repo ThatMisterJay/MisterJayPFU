@@ -251,13 +251,14 @@ ability = {
 		allowed = {
 			has_ability = makeshift_bridges
 			is_border_war = no
+			is_leading_army_group = no
 		}
 
 
 		unit_modifiers = {
-			river_crossing_factor = -0.5
+			river_crossing_factor = -0.25
 			river = {
-				attack = 0.2
+				attack = 0.16
 			}
 		}
 
