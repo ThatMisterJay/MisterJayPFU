@@ -924,14 +924,18 @@ ITA_debt_0 = {
  army_chief = {
 
  ITA_off_exp = {
-ledger = army
-picture = generic_army_europe_6
+     ledger = army
+    picture = generic_army_europe_6
 
    allowed = {
      original_tag = ITA
    }
 
    available = {
+     has_completed_focus = ITA_delivernewstaffofficers
+   }
+
+   visible = {
      has_completed_focus = ITA_delivernewstaffofficers
    }
 
@@ -961,6 +965,9 @@ picture = giovanni_messe
   available = {
     has_completed_focus = ITA_followthepanzerwaffeexample
   }
+  visible = {
+    has_completed_focus = ITA_followthepanzerwaffeexample
+  }
   traits = { army_armored_2 }
 }
 
@@ -973,6 +980,9 @@ picture = black_prince
   }
 
   available = {
+    has_completed_focus = ITA_decimaflottigliamas
+  }
+  visible = {
     has_completed_focus = ITA_decimaflottigliamas
   }
 
@@ -996,6 +1006,10 @@ picture = ettore_muti
     has_completed_focus = ITA_delivernewstaffofficers
   }
 
+  visible = {
+    has_completed_focus = ITA_delivernewstaffofficers
+  }
+
   traits = { army_infantry_2 }
 
   ai_will_do = {
@@ -1012,6 +1026,10 @@ ledger = army
   }
 
   available = {
+    has_completed_focus = ITA_delivernewstaffofficers
+  }
+
+  visible = {
     has_completed_focus = ITA_delivernewstaffofficers
   }
 
@@ -1032,6 +1050,10 @@ picture = generic_political_advisor_europe_4
   }
 
   available = {
+    has_completed_focus = ITA_delivernewstaffofficers
+  }
+
+  visible = {
     has_completed_focus = ITA_delivernewstaffofficers
   }
 
