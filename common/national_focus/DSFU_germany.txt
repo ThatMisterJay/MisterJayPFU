@@ -47,18 +47,20 @@ focus_tree = {
 	focus = {
 		id = GER_lessonfromtheeasternfront
 		icon = GFX_eastern_front
-		x = 16
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_panzerindustry
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = GER_panzerindustry
 		}
-		prerequisite = {
-			focus = GER_operationblau
-		}
+
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			date > 1943.1.1
 		}
 
 		completion_reward = {
@@ -1097,94 +1099,6 @@ country_event = { id = JFU_germany.23 days = 15 }
 		}
 	}
 
-	#Focus for Operation Blau
-	focus = {
-		id = GER_operationblau
-		icon = GFX_goal_generic_position_armies
-		x = 22
-		y = 6
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = GER_warwiththeussr }
-		bypass = {
-			date > 1942.10.10
-			217 = { CONTROLLER = { is_in_faction_with = GER } }
-		}
-		available = {
-			date > 1942.3.10
-date < 1942.10.10
-NOT = { has_idea = GER_blitzkrieg }
-206 = { CONTROLLER = { is_in_faction_with = GER } }
-SOV = { controls_state = 219 }
-SOV = { controls_state = 217 }
-SOV = { controls_state = 238 }
-SOV = { controls_state = 234 }
-		}
-		completion_reward = {
-			add_timed_idea = { idea = fall_blau days = 80 }
-custom_effect_tooltip = GER_fall_blau_tt
-hidden_effect = {
-if = {
-limit = { NOT = { GER = { has_tech = basic_medium_td } } }
-GER = { set_technology = { basic_medium_td = 1 } }
-}
-if = {
-limit = { NOT = { GER = { has_tech = mechanised_infantry } } }
-GER = { set_technology = { mechanised_infantry = 1 } }
-}
-
-SOV = {
-add_resource = {
-type = oil
-amount = 60
-state = 232
-}
-}
-SOV = {
-add_resource = {
-type = oil
-amount = 40
-state = 229
-}
-    }
-load_oob = GER_fallblau
-add_manpower = -50000
-}
-		}
-	}
-
-	#Focus for Operation Citadel
-	focus = {
-		id = GER_operationcitadel
-		icon = GFX_goal_generic_axis_build_infantry
-		x = 22
-		y = 7
-		cost = 5
-
-		prerequisite = { focus = GER_operationblau }
-		available = {
-			date > 1943.1.10
-   has_tech = improved_heavy_tank
-206 = { CONTROLLER = { is_in_faction_with = GER } }
-202 = { CONTROLLER = { is_in_faction_with = GER } }
-   SOV = { controls_state = 217 }
-   SOV = { controls_state = 219 }
-   SOV = { controls_state = 260 }
-   SOV = { controls_state = 229 }
-		}
-		completion_reward = {
-			add_timed_idea = { idea = operation_citadel days = 80 }
-
-   custom_effect_tooltip = pfu.citadel.tt
-   hidden_effect = {
-load_oob = GER_citadel_tank
-   load_oob = GER_citadel
-   add_manpower = -50000
-add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 15000 producer = GER }
-           }
-		}
-	}
-
 	#Focus for Atlantic Wall
 	focus = {
 		id = GER_atlanticwall
@@ -2060,8 +1974,9 @@ type = annex_everything
 	focus = {
 		id = GER_successesinthewest
 		icon = GFX_focus_chi_army_reform
-		x = 19
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_mansteinsplan
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_mansteinsplan }

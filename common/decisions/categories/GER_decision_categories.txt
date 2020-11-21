@@ -32,6 +32,18 @@ GER_case_anton_category = {
 	}
 }
 
+GER_OKH = {
+	icon = military_operation
+	priority = 10
+
+	picture = GFX_decision_cat_OKH
+
+	allowed = {
+		original_tag = GER
+	}
+
+}
+
 GER_reichskommissariats = {
 
 	allowed = {
