@@ -6,9 +6,6 @@ state={
 
 	state_category = wasteland
 
-	resources={
-		chromium=40
-	}
 
 	history={
 		add_core_of = AFR

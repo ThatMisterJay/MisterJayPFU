@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=116
+		chromium=54
 		aluminium=32
 	}
 

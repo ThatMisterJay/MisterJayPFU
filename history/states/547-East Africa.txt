@@ -2,9 +2,6 @@
 state={
 	id=547
 	name="STATE_547"
-	resources={
-		chromium=70.000
-	}
 
 	history={
 		add_core_of = AFR
