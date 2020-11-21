@@ -172,6 +172,9 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     war_secretary:0 "Secretary of State for War"
     secretary_foreign:0 "Foreign Secretary"
     minister_labour:0 "Minister of Labour and National Service"
+    large_front_commander:0 "Large Front Officer"
+    large_front_commander_desc:0 "Capable of managing large amounts of divisions on a wide front."
+    expert_improviser_movement_bonus_on_land_DSFU:0 "Movement Bonus On Land: §G+5.0%§!"
 
 
 #Italian stuff#
@@ -263,7 +266,8 @@ ENG_eden_desc:0 "At the end of 1940, Eden returned to the Foreign Office and bec
 ENG_desert_operation_allied_failed:0 "Axis Counter Attack"
 ENG_desert_operation_allied:0 "Allied Offensive in Africa"
 ENG_med_operation_allied:0 "Allied Amphibious Offensive"
-
+ENG_imperial_counter_espionage:0 "Imperial Counter Espionage Bureau"
+imperial_counter_espionage:0 "[ROOT.GetAdjective] Special Intelligence Bureau"
 
 
 JAP_law:0 "Asian Liberation"
