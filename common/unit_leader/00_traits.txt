@@ -533,7 +533,7 @@ new_commander_weight = {
 		}
 		custom_gain_xp_trigger_tooltip = cavalary_ratio_over_40
 
-		cost = 2000
+		cost = 1500
 		modifier = {
 			cavalry_defence_factor = 0.08
 			motorized_defence_factor = 0.08
@@ -556,7 +556,7 @@ new_commander_weight = {
 		}
 		custom_gain_xp_trigger_tooltip = infantry_ratio_over_80
 
-		cost = 2000
+		cost = 1500
 		modifier = {
 			army_infantry_defence_factor = 0.08
 		}
