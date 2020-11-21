@@ -33,6 +33,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_cat_OKH"
+		texturefile = "gfx/interface/decisions/decision_cat_OKH.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_imperial_staff"
+		texturefile = "gfx/interface/decisions/decision_cat_imperial_staff.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_cat_italian_king"
 		texturefile = "gfx/interface/decisions/decision_cat_italian_king.dds"
 	}
