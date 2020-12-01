@@ -12,6 +12,7 @@ ENG_imperial_conference_decision = {
 
 allied_united_command = {
 	icon = GFX_decision_category_military_operation
+	picture = GFX_decision_cat_imperial_staff
 priority = 9
 	allowed = {
 original_tag = ENG

@@ -2205,7 +2205,7 @@ cost = 100
 		}
 	}
 
-	theorist = {
+	military_theorist_cat = {
 
 
 		mikhail_tukhachevsky = {
@@ -2300,6 +2300,7 @@ ledger = navy
 			traits = { grand_fleet_proponent}
 		}
 }
+
 theorist = {
 		sergei_rudenko = {
 ledger = air

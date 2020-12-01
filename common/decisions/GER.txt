@@ -1,4 +1,104 @@
 #Category only allowed for GER
+GER_OKH = {
+
+  GER_OKH_case_blue = {
+
+   icon = generic_operation
+
+	 targets = { SOV }
+
+    available = {
+			date > 1942.3.10
+			date < 1942.10.10
+			NOT = { has_idea = GER_blitzkrieg }
+			206 = { CONTROLLER = { is_in_faction_with = GER } }
+			SOV = { controls_state = 219 }
+			SOV = { controls_state = 217 }
+			SOV = { controls_state = 238 }
+			SOV = { controls_state = 234 }
+			has_equipment = { support_equipment > 999 }
+			has_equipment = { motorized_equipment > 999 }
+
+		}
+
+		visible = {
+			has_war_with = SOV
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -1000
+			}
+			add_timed_idea = { idea = fall_blau days = 80 }
+      custom_effect_tooltip = GER_fall_blau_tt
+			load_oob = GER_fallblau
+      hidden_effect = {
+        SOV = {
+          add_resource = {
+           type = oil
+           amount = 60
+           state = 232
+          }
+        }
+        SOV = {
+          add_resource = {
+            type = oil
+            amount = 40
+            state = 229
+          }
+      	}
+      }
+	  }
+  }
+
+	GER_OKH_citadel = {
+
+		icon = generic_tank
+
+		targets = { SOV }
+
+		available = {
+			date > 1943.1.10
+      206 = { CONTROLLER = { is_in_faction_with = GER } }
+      202 = { CONTROLLER = { is_in_faction_with = GER } }
+	    SOV = { controls_state = 217 }
+	    SOV = { controls_state = 219 }
+	    SOV = { controls_state = 260 }
+	    SOV = { controls_state = 229 }
+			has_equipment = { support_equipment > 999 }
+			has_equipment = { motorized_equipment > 999 }
+		}
+
+		visible = {
+		  has_war_with = SOV
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -1000
+			}
+		  add_timed_idea = { idea = operation_citadel days = 80 }
+      custom_effect_tooltip = pfu.citadel.tt
+	     hidden_effect = {
+        load_oob = GER_citadel_tank
+        load_oob = GER_citadel
+        add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 15000 producer = GER }
+		  }
+		}
+	}
+}
+
+
 operations = {
 
 	GER_barbarossa_mission = {
@@ -219,13 +319,13 @@ complete_effect = {
 
 		allowed = {
 			OR = {
-				tag = GER
+				tag = ITA
 				tag = ROM
 			}
 		}
 
 		visible = {
-			date > 1939.1.1
+			date > 1938.1.1
 			OR = {
 				tag = GER
 				tag = ROM
@@ -257,7 +357,7 @@ complete_effect = {
 			tag = GER
 			ROM = { is_ai = yes }
 			country_exists = ROM
-		#	date > 1939.1.1
+			date > 1939.1.1
 		}
 		days_remove = 3000
 

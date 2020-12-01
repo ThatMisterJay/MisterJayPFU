@@ -67,7 +67,7 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.5
 NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 10.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 10.0
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 90
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 24
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
@@ -97,6 +97,20 @@ NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 6.0
 NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_STRATEGIC_BOMBER = 0.006
 NDefines.NMilitary.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.072
+NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
+  0.0, -- field marshal
+  0.0, -- corps commander
+  1.0, -- navy general
+  0.0, -- operative
+}
+
+NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
+  0.5, -- field marshal
+  0.5, -- corps commander
+  0.5, -- navy general
+  0.0, -- operative
+}
+
 NDefines.NAir.COMBAT_AMOUNT_DIFF_AFFECT_GANG_CHANCE = 0.4
 NDefines.NAir.COMBAT_SITUATION_WIN_CHANCE_FROM_GANG = 0.1
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0.02
@@ -224,4 +238,4 @@ NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 4	-- max operativ
 NDefines.NOperatives.CONTROL_TRADE_MAX_INFLUENCE = 100.0					-- The maximum amount of trade influence that can be gained through the control trade mission
 NDefines.NOperatives.DEFAULT_OPERATION_COST_MULTIPLIER = 0.1
 
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2; 					-- For 10 Support Companies	
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2; 					-- For 10 Support Companies

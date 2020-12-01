@@ -4,6 +4,8 @@
 
 add_namespace = JFU
 
+
+
 #Italy joins axis 1 month after fall of paris
 country_event = {
 	id = JFU.1
@@ -60,29 +62,29 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = JFU.7
-
-	fire_only_once = yes
-	mean_time_to_happen = { days = 1 }
-	trigger = {
-		tag = GER
-		NOT = { has_completed_focus = GER_operationblau }
-		NOT = { has_idea = GER_blitzkrieg }
-		206 = { CONTROLLER = { is_in_faction_with = GER } }
-		SOV = { controls_state = 219 }
-		SOV = { controls_state = 217 }
-		SOV = { controls_state = 238 }
-		SOV = { controls_state = 234 }
-		date > 1942.10.10
-		date < 1943.1.1
-	}
-	hidden = yes
-
-	option = {
-		GER = { complete_national_focus = GER_fall_blau }
-	}
-}
+#country_event = {
+#	id = JFU.7
+#
+#	fire_only_once = yes
+#	mean_time_to_happen = { days = 1 }
+#	trigger = {
+#		tag = GER
+#		NOT = { has_completed_focus = GER_operationblau }
+#		NOT = { has_idea = GER_blitzkrieg }
+#		206 = { CONTROLLER = { is_in_faction_with = GER } }
+#		SOV = { controls_state = 219 }
+#		SOV = { controls_state = 217 }
+#		SOV = { controls_state = 238 }
+#		SOV = { controls_state = 234 }
+#		date > 1942.10.10
+#		date < 1943.1.1
+#	}
+#	hidden = yes
+#
+#	option = {
+#		GER = { complete_national_focus = GER_fall_blau }
+#	}
+#}
 
 #Operation husky spawns
 country_event = {

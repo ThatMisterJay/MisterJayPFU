@@ -392,6 +392,18 @@ DSFU.23.t:0 "British Administration of Burma"
 DSFU.23.d:0 "The British separated Burma Province from British India in 1937 and granted the colony a new constitution calling for a fully elected assembly, with many powers given to the Burmese, but this proved to be a divisive issue as some Burmese felt that this was a ploy to exclude them from any further Indian reforms."
 DSFU.23.a:0 "God Save the King"
 
+DSFU.24.t:0 "North African Operation"
+DSFU.24.d:0 "The troops are ready, pick the target and we will take it."
+DSFU.24.a:0 "Target Tunisia"
+DSFU.24.b:0 "Target Tripoli"
+DSFU.24.c:0 "Target Benghazi"
+DSFU.24.d:0 "Call off Operation"
+
+DSFU.25.t:0 "Mediterranean Operation"
+DSFU.25.d:0 "The troops are ready, pick the target and we will take it."
+DSFU.25.a:0 "Target Sardina"
+DSFU.25.b:0 "Target Sicily"
+DSFU.25.c:0 "Call off Operation"
 
 DSFU_news.1.t:0 "Australia recommits to the Singapore Strategy"
 DSFU_news.1.d:0 "Australia has begun a military build-up in line with plans laid out in the Singapore strategy, that came as a result of the 1920s imperial conference, for Australia to fulfil such requirements, as the plan laid out, it will require a great deal of production directed towards the Royal Australian Navy, either way, this could be the start of a new Pacific naval power to rival even the Imperial Japanese Navy. "
@@ -408,7 +420,7 @@ DSFU_news.1.c:0 "My Lord, is that legal"
         DSFU_ITR.2.d:0 "Our Army has needs that must be met, but Justice must be done for this attempted coup against Italy."
         DSFU_ITR.2.a:0 "The lower ranks will suffer for this betrayel"
         DSFU_ITR.2.b:0 "The generals will pay the price"
-        
+
         DSFU_news.2.t:0 "Japan occupies Southern Indochina"
         DSFU_news.2.d:0 "Under the guise of providing protection for the remainder of the French colony, Japanese troops have marched south into Saigon and Cambodia today. This has been met with outrage in the West, as experts fear this could be used as a launching point for future invasions."
         DSFU_news.2.a:0 "Everything is proceeding as planned."
@@ -418,7 +430,7 @@ DSFU_news.1.c:0 "My Lord, is that legal"
         DSFU_news.3.d:0 "Today President [USA.GetLeader] has announced the seizure of all Japanese assets in the United States and the cessation of all trade with Japan in retaliation for the invasion of Indochina. The President hopes that this may bring the Japanese to the bargaining table, but some experts claim that this has only made war an inevability. Only time will tell."
         DSFU_news.3.a:0 "The Gaijin leave us no choice"
         DSFU_news.3.b:0 "Something big is brewing in the Pacific..."
-        
+
         DSFU_news.4.t:0 "Franco backs down"
         DSFU_news.4.d:0 "Not shortly after a Spanish declaration of war reached the British embassy in Madrid, Francisco Franco the Caudillo of Spain has sent a retraction. This diplomatic mistep has sent the entire country into a state of mass confusion but the people are collectively breathing a sigh of relief at not being sent into another war so soon after their destructive civil war."
         DSFU_news.4.a:0 "Thankfully Franco saw reason"

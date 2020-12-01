@@ -14,30 +14,30 @@ add_timed_idea = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	
+
 	gwtank = 1
-	
+
 	gw_artillery = 1
-	
-	tech_support = 1		
+
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
-	
+
 	early_fighter = 1
 	naval_bomber1 = 1
-	
+
 	trench_warfare = 1
 	fleet_in_being = 1
-	
+
 	fuel_silos = 1
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 1400
 		}
-	
-	
-	
+
+
+
 	 add_equipment_to_stockpile = {
 	 type = artillery_equipment_1
 	 amount = 156
@@ -133,7 +133,7 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Robert Row"
 	gfx = "GFX_NZL_robert_row"
-	traits = { naval_invader }
+	traits = { naval_invader infantry_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 2
@@ -144,7 +144,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "William Stevens"
 	gfx = "GFX_NZL_william_stevens"
-	traits = {  }
+	traits = { organizer career_officer }
 	skill = 4
 	attack_skill = 2
 	defense_skill = 4

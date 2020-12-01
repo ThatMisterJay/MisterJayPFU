@@ -152,6 +152,10 @@ italy_mario_roatta = {
 				has_completed_focus = ITA_followthewaffenssexample
 				}
 
+				visible = {
+					has_completed_focus = ITA_followthewaffenssexample
+				}
+
 			on_add = {
 			}
 
@@ -232,6 +236,10 @@ italy_mario_roatta = {
 			}
 
 			available = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
+
+			visible = {
 				has_completed_focus = ITA_loyaltyoverability
 			}
 
@@ -382,6 +390,10 @@ ledger = army
 				has_completed_focus = ITA_loyaltyoverability
 			}
 
+			visible = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
+
 			traits = { army_chief_defensive_1 }
 
 			ai_will_do = {
@@ -507,6 +519,10 @@ ledger = army
 				has_completed_focus = ITA_loyaltyoverability
 			}
 
+			visible = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
+
 			traits = { army_regrouping_1 }
 
 			ai_will_do = {
@@ -525,6 +541,10 @@ ledger = army
 				has_completed_focus = ITA_loyaltyoverability
 			}
 
+			visible = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
+
 			traits = { army_cavalry_1 }
 
 			ai_will_do = {
@@ -540,6 +560,10 @@ ledger = army
 			}
 
 			available = {
+				has_completed_focus = ITA_loyaltyoverability
+			}
+
+			visible = {
 				has_completed_focus = ITA_loyaltyoverability
 			}
 
@@ -562,6 +586,10 @@ ledger = army
 				has_completed_focus = ITA_securebritishmediterraneanholdings
 			}
 
+			visible = {
+				has_completed_focus = ITA_securebritishmediterraneanholdings
+			}
+
 			traits = { army_commando_1 }
 
 			ai_will_do = {
@@ -579,6 +607,9 @@ ledger = air
 			}
 
 			available = {
+				has_completed_focus = ITA_learnfromgermanfallschirmjger
+			}
+			visible = {
 				has_completed_focus = ITA_learnfromgermanfallschirmjger
 			}
 

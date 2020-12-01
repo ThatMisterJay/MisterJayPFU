@@ -2452,7 +2452,7 @@ cost = 100
 	}
 
 
-	theorist = {
+	military_theorist_cat = {
 		omar_bradley = {
 ledger = army
 
@@ -2484,6 +2484,8 @@ ledger = army
 
 			traits = { mobile_warfare_expert }
 		}
+ }
+naval_theorist_cat = {
 
 		dewitt_clinton_ramsey = {
 ledger = navy
@@ -2516,7 +2518,8 @@ ledger = navy
 
 			traits = { naval_aviation_pioneer }
 		}
-
+}
+theorist = {
 		curtis_lemay = {
 ledger = air
 

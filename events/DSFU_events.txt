@@ -669,11 +669,231 @@ country_event = {
 
 
   option = {
-  name = DSFU.23.a
-  RAJ = {
-      give_resource_rights = { receiver = ENG state = 640 }
-      give_resource_rights = { receiver = ENG state = 288 }
-  }
+    name = DSFU.23.a
+      RAJ = {
+        give_resource_rights = { receiver = ENG state = 640 }
+        give_resource_rights = { receiver = ENG state = 288 }
+      }
   }
 
+}
+
+country_event = {
+  id = DSFU.24
+  title = DSFU.24.t
+  desc = DSFU.24.d
+  picture = GFX_report_event_canada_army
+  is_triggered_only = yes
+
+
+  option = {
+    name = DSFU.24.a
+    trigger = {
+      458 = {
+        CONTROLLER = {
+          NOT = {
+            tag = ROOT
+            is_in_faction_with = ROOT
+          }
+        }
+      }
+    }
+    clr_country_flag = ENG_desert_operation_ready
+    activate_mission = ENG_desert_operation_offensive_tunisia
+    ENG = {
+      add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+    }
+    if = {
+      limit = {
+        country_exists = CAN
+      }
+      CAN = {
+        add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+      }
+    }
+
+    if = {
+      limit = {
+        country_exists = SAF
+      }
+      SAF = {
+      add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+      }
+    }
+
+  }
+
+  option = {
+    name = DSFU.24.b
+    trigger = {
+      448 = {
+        CONTROLLER = {
+          NOT = {
+            tag = ROOT
+            is_in_faction_with = ROOT
+          }
+        }
+      }
+    }
+    clr_country_flag = ENG_desert_operation_ready
+    activate_mission = ENG_desert_operation_offensive_tripoil
+    ENG = {
+      add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+    }
+    if = {
+      limit = {
+        country_exists = CAN
+      }
+      CAN = {
+        add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+      }
+    }
+
+    if = {
+      limit = {
+        country_exists = SAF
+      }
+      SAF = {
+      add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+      }
+    }
+
+  }
+
+  option = {
+    name = DSFU.24.c
+    trigger = {
+      450 = {
+        CONTROLLER = {
+          NOT = {
+            tag = ROOT
+            is_in_faction_with = ROOT
+          }
+        }
+      }
+    }
+    clr_country_flag = ENG_desert_operation_ready
+    activate_mission = ENG_desert_operation_offensive_benghasi
+    ENG = {
+      add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+    }
+    if = {
+      limit = {
+        country_exists = CAN
+      }
+      CAN = {
+        add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+      }
+    }
+
+    if = {
+      limit = {
+        country_exists = SAF
+      }
+      SAF = {
+      add_timed_idea = { idea = ENG_desert_operation_allied days = 80 }
+      }
+    }
+  }
+
+  option = {
+    name = DSFU.24.d
+  }
+}
+
+country_event = {
+  id = DSFU.25
+  title = DSFU.25.t
+  desc = DSFU.25.d
+  picture = GFX_report_event_canada_army
+  is_triggered_only = yes
+
+#sardina
+  option = {
+    name = DSFU.25.a
+    trigger = {
+      ITA = {
+        controls_state = 114
+      }
+    }
+    clr_country_flag = ENG_med_operation_ready
+    activate_mission = ENG_med_operation_offensive_sardina
+    ENG = {
+			add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+		}
+		if = {
+			limit = {
+				country_exists = CAN
+			}
+			CAN = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAF
+			}
+			SAF = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+    }
+
+
+  #Sicily
+  option = {
+    name = DSFU.25.b
+    trigger = {
+      ITA = {
+        controls_state = 115
+      }
+    }
+    clr_country_flag = ENG_med_operation_ready
+    activate_mission = ENG_med_operation_offensive_sicily
+    ENG = {
+			add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+		}
+		if = {
+			limit = {
+				country_exists = CAN
+			}
+			CAN = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAF
+			}
+			SAF = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+		if = {
+			limit = {
+				USA = {
+					has_war_with = ITA
+				}
+			}
+			USA = {
+				add_timed_idea = { idea = ENG_med_operation_allied days = 80 }
+			}
+		}
+    }
+
+
+
+  option = {
+    name = DSFU.25.c
+  }
 }

@@ -189,12 +189,32 @@ picture = ENG_war_cabinet
 			}
 
 			modifier = {
-				operative_slot = 3
 				drift_defence_factor = 0.5
 			}
 
 			rule = {
 				can_create_factions = yes
+			}
+		}
+
+		ENG_imperial_counter_espionage = {
+			picture = generic_spy_political
+			allowed = {
+				always = no
+			}
+			modifier = {
+				operative_slot = 1
+			}
+		}
+
+		imperial_counter_espionage = {
+			picture = generic_spy_coup
+			allowed = {
+				always = no
+			}
+			modifier = {
+				operative_slot = 2
+				drift_defence_factor = 0.1
 			}
 		}
 
@@ -1977,7 +1997,7 @@ picture = ENG_war_cabinet
 				supply_consumption_factor = -0.05
 				out_of_supply_factor = -0.05
 				no_supply_grace = 50
-				amphibious_invasion_defence = 0.04 
+				amphibious_invasion_defence = 0.04
 			}
 		}
 		ENG_med_operation_allied_failed = {
