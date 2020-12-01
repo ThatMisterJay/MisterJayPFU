@@ -1,7 +1,5449 @@
 
 
 #Category only allowed for SOV
-SOV_great_patriotic_war = {
+SOV_industry_relocation = {
+
+	SOV_relocate_industry_from_moscow = {
+		icon = generic_construction
+		highlight_states = {
+			state = 219
+		}
+		available = {
+			NOT = {
+				219 = { #Moscow
+					is_owned_and_controlled_by = SOV
+					OR =	{
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = yes
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 7
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						219 = { #Moscow
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					219 = { #Moscow
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+						}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									219 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									219 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_moscow
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						219 = { #Moscow
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					219 = { #Moscow
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									219 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									219 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_moscow
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_moscow_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_leningrad = {
+		icon = generic_construction
+		highlight_states = {
+			state = 195
+		}
+		available = {
+			NOT = {
+				195 = { #Leningrad
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 32
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						195 = { #Leningrad
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					195 = { #Leningrad
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									195 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									195 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_leningrad
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						195 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					195 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									195 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									195 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_leningrad
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_leningrad_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_yaroslavl = {
+		icon = generic_construction
+		highlight_states = {
+			state = 248
+		}
+		available = {
+			NOT = {
+				248 = { #Yaroslavl
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 13
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						248 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					248 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									248 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									248 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_yaroslavl
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						248 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					248 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									248 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									248 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_yaroslavl
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_yaroslavl_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_kalinin = {
+		icon = generic_construction
+		highlight_states = {
+			state = 247
+		}
+		available = {
+			NOT = {
+				247 = { #Kalinin
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 19
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						247 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					247 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									247 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									247 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kalinin
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						247 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					247 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									247 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									247 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kalinin
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_kalinin_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_kaunas = {
+		icon = generic_construction
+		highlight_states = {
+			state = 11
+		}
+		available = {
+			NOT = {
+				11 = { #Kaunas
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						11 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					11 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									11 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									11 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kaunas
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						11 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					11 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									11 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									11 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kaunas
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_kaunas_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	
+	SOV_relocate_industry_from_kurzeme = {
+		icon = generic_construction
+		highlight_states = {
+			state = 190
+		}
+		available = {
+			NOT = {
+				190 = { #Kurzeme
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 19
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						190 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					190 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									190 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									190 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kurzeme
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						190 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					190 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									190 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									190 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kurzeme
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_kurzeme_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_vidzeme = {
+		icon = generic_construction
+		highlight_states = {
+			state = 12
+		}
+		available = {
+			NOT = {
+				12 = { #Vidzeme
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 3
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						12 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					12 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									12 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									12 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_vidzeme
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						12 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					12 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									12 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									12 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_vidzeme
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_vidzeme_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_harju = {
+		icon = generic_construction
+		highlight_states = {
+			state = 13
+		}
+		available = {
+			NOT = {
+				13 = { #Harju
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 6
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						13 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					13 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									13 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									13 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_harju
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						13 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					13 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									13 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									13 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_harju
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_harju_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_tartu = {
+		icon = generic_construction
+		highlight_states = {
+			state = 191
+		}
+		available = {
+			NOT = {
+				191 = { #Tartu
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 39
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						191 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					191 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									13 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									13 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_tartu
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						191 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					191 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									191 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									191 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_tartu
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_tartu_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_lvov = {
+		icon = generic_construction
+		highlight_states = {
+			state = 91
+		}
+		available = {
+			NOT = {
+				91 = { #Lvov
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						91 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					91 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									13 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									13 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_lvov
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						91 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					91 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									91 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									91 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_lvov
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_lvov_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_bialyostok = {
+		icon = generic_construction
+		highlight_states = {
+			state = 97
+		}
+		available = {
+			NOT = {
+				97 = { #Bialyostok
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 5
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						97 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					97 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									97 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									97 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_bialyostok
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						97 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					97 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									97 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									97 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_bialyostok
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_bialyostok_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_nowogrodek = {
+		icon = generic_construction
+		highlight_states = {
+			state = 95
+		}
+		available = {
+			NOT = {
+				95 = { #Nowogrodek
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 11
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						95 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					95 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									95 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									95 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_nowogrodek
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						95 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					95 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									95 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									95 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_nowogrodek
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_nowogrodek_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_wilno = {
+		icon = generic_construction
+		highlight_states = {
+			state = 784
+		}
+		available = {
+			NOT = {
+				784 = { #Wilno
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 16
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						784 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					784 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									784 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									784 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_wilno
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						784 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					784 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									784 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									784 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_wilno
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_wilno_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_wilejka = {
+		icon = generic_construction
+		highlight_states = {
+			state = 96
+		}
+		available = {
+			NOT = {
+				96 = { #Wilejka
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 7
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						96 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					96 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									96 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									96 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_wilejka
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						96 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					96 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									96 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									96 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_wilejka
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_wilejka_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_novgorod = {
+		icon = generic_construction
+		highlight_states = {
+			state = 263
+		}
+		available = {
+			NOT = {
+				263 = { #Novgorod
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 130
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						263 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					263 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									263 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									263 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_novgorod
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						263 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					263 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									263 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									263 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_novgorod
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_novgorod_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_smolensk = {
+		icon = generic_construction
+		highlight_states = {
+			state = 242
+		}
+		available = {
+			NOT = {
+				242 = { #Smolensk
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 37
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						242 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					242 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									242 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									242 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_smolensk
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						242 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					242 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									242 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									242 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_smolensk
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_smolensk_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_rzhev = {
+		icon = generic_construction
+		highlight_states = {
+			state = 246
+		}
+		available = {
+			NOT = {
+				246 = { #Rzhev
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 65
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						246 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					246 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									246 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									246 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_rzhev
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						246 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					246 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									246 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									246 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_rzhev
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_rzhev_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_brest = {
+		icon = generic_construction
+		highlight_states = {
+			state = 94
+		}
+		available = {
+			NOT = {
+				94 = { #Brest
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						94 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					94 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									94 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									94 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_brest
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						94 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					94 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									94 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									94 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_brest
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_brest_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_minsk = {
+		icon = generic_construction
+		highlight_states = {
+			state = 206
+		}
+		available = {
+			NOT = {
+				206 = { #Minsk
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 5
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						206 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					206 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									206 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									206 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_minsk
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						206 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					206 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									206 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									206 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_minsk
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_minsk_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_gomel = {
+		icon = generic_construction
+		highlight_states = {
+			state = 241
+		}
+		available = {
+			NOT = {
+				241 = { #Gomel
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 20
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						241 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					241 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									241 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									241 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_gomel
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						241 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					241 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									241 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									241 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_gomel
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_gomel_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_bryansk = {
+		icon = generic_construction
+		highlight_states = {
+			state = 224
+		}
+		available = {
+			NOT = {
+				224 = { #Bryansk
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 80
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						224 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					224 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									224 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									224 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_bryansk
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						224 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					224 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									224 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									224 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_bryansk
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_bryansk_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_tula = {
+		icon = generic_construction
+		highlight_states = {
+			state = 223
+		}
+		available = {
+			NOT = {
+				223 = { #Tula
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 31
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						223 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					223 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									223 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									223 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_tula
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						223 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					223 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									223 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									223 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_tula
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_tula_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_orel = {
+		icon = generic_construction
+		highlight_states = {
+			state = 222
+		}
+		available = {
+			NOT = {
+				222 = { #Orel
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 68
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						222 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					222 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									222 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									222 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_orel
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						222 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					222 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									222 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									222 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_orel
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_orel_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_kursk = {
+		icon = generic_construction
+		highlight_states = {
+			state = 220
+		}
+		available = {
+			NOT = {
+				220 = { #Kursk
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 80
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						220 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					220 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									220 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									220 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kursk
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						220 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					220 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									220 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									220 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kursk
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_kursk_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_voronezh = {
+		icon = generic_construction
+		highlight_states = {
+			state = 260
+		}
+		available = {
+			NOT = {
+				260 = { #Voronezh
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 42
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						260 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					260 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									260 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									260 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_voronezh
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						260 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					260 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									260 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									260 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_voronezh
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_voronezh_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_crimea = {
+		icon = generic_construction
+		highlight_states = {
+			state = 137
+		}
+		available = {
+			NOT = {
+				137 = { #Crimea
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 60
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						137 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					137 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									137 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									137 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_crimea
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						137 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					137 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									137 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									137 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_crimea
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_crimea_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_odessa = {
+		icon = generic_construction
+		highlight_states = {
+			state = 192
+		}
+		available = {
+			NOT = {
+				192 = { #Odessa
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 2
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						192 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					192 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									192 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									192 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_odessa
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						192 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					192 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									192 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									192 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_odessa
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_odessa_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_dnipropetrovsk = {
+		icon = generic_construction
+		highlight_states = {
+			state = 226
+		}
+		available = {
+			NOT = {
+				226 = { #Dnipropetrovsk
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 17
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						226 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					226 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									226 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									226 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_dnipropetrovsk
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						226 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					226 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									226 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									226 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_dnipropetrovsk
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_dnipropetrovsk_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_zaporozhe = {
+		icon = generic_construction
+		highlight_states = {
+			state = 200
+		}
+		available = {
+			NOT = {
+				200 = { #Zaporozhe
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 65
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						200 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					200 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									200 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									200 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_zaporozhe
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						200 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					200 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									200 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									200 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_zaporozhe
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_zaporozhe_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_stalino = {
+		icon = generic_construction
+		highlight_states = {
+			state = 227
+		}
+		available = {
+			NOT = {
+				227 = { #Stalino
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 43
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						227 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					227 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									227 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									227 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_stalino
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						227 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					227 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									227 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									227 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_stalino
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_stalino_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_voroshilovgrad = {
+		icon = generic_construction
+		highlight_states = {
+			state = 228
+		}
+		available = {
+			NOT = {
+				228 = { #Voroshilovgrad
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 80
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						228 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					228 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									228 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									228 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_voroshilovgrad
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						228 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					228 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									228 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									228 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_voroshilovgrad
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_voroshilovgrad_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_kharkov = {
+		icon = generic_construction
+		highlight_states = {
+			state = 221
+		}
+		available = {
+			NOT = {
+				221 = { #Kharkov
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 40
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						221 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					221 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									221 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									221 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kharkov
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						221 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					221 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									221 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									221 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kharkov
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_kharkov_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_rostov = {
+		icon = generic_construction
+		highlight_states = {
+			state = 218
+		}
+		available = {
+			NOT = {
+				218 = { #Rostov
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 65
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						218 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					218 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									218 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									218 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_rostov
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						218 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					218 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									218 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									218 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_rostov
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_rostov_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_kiev = {
+		icon = generic_construction
+		highlight_states = {
+			state = 202
+		}
+		available = {
+			NOT = {
+				202 = { #Kiev
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 7
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						202 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					202 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									202 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									202 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kiev
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						202 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					202 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									202 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									202 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_kiev
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_kiev_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_cherkasy = {
+		icon = generic_construction
+		highlight_states = {
+			state = 203
+		}
+		available = {
+			NOT = {
+				203 = { #Cherkasy
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 8
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						203 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					203 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									203 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									203 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_cherkasy
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						203 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					203 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									203 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									203 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_cherkasy
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_cherkasy_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_wolyn = {
+		icon = generic_construction
+		highlight_states = {
+			state = 93
+		}
+		available = {
+			NOT = {
+				93 = { #Wolyn
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 7
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						93 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					93 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									93 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									93 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_wolyn
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						93 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					93 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									93 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									93 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_wolyn
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_wolyn_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+
+	SOV_relocate_industry_from_pinsk = {
+		icon = generic_construction
+		highlight_states = {
+			state = 194
+		}
+		available = {
+			NOT = {
+				194 = { #Pinsk
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 25
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+		timeout_effect = {
+				if = {
+					limit = {
+						194 = { #
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					194 = { #
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									194 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									194 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_pinsk
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						194 = {
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					194 = {
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									201 = {
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									201 = {
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_pinsk
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_pinsk_tt
+		}
+
+		complete_effect = {
+
+		}
+
+	}
+	}	
+
+SOV_Great_Patriotic_War = {
 	SOV_disable_free_repair_decision = {
 
 		icon = generic_army_support
@@ -970,9 +6412,9 @@ SOV_great_patriotic_war = {
 			factor = 1
 		}
 	}
-}
 
-SOV_great_patriotic_war = {
+
+
 	#217 "Stalingrad"
 	SOV_hold_stalingrad = {
 
