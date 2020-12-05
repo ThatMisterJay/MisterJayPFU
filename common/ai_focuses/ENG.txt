@@ -42,7 +42,6 @@ ai_historical_focus_list_ENG = {
 		uk_canada_focus
 		uk_australia_focus
 		uk_new_zealand_focus
-		uk_south_africa_focus
 		royal_ordinance_focus
 		UK_secret_focus
 		uk_jet_focus
