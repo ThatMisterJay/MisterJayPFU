@@ -20,14 +20,43 @@ commonwealth_transfer_air_wing = {
 	}
 	days_remove = 10
 	available = {
-		has_equipment = { fighter_equipment > 99 }
+		OR = {
+			has_equipment = { fighter_equipment > 99 }
+			has_equipment = { cas_equipment > 99 }
+			has_equipment = { tac_bomber_equipment > 99 }
+		}
 	}
 	complete_effect = {
-		send_equipment = {
-				target = ENG
-				equipment = fighter_equipment
-				amount = 100
-	  }
+		if = {
+			limit = {
+				has_equipment = { fighter_equipment > 99 }
+			}
+			send_equipment = {
+					target = ENG
+					equipment = fighter_equipment
+					amount = 100
+			}
+		}
+		if = {
+			limit = {
+				has_equipment = { tac_bomber_equipment > 99 }
+			}
+			send_equipment = {
+					target = ENG
+					equipment = tac_bomber_equipment
+					amount = 100
+			}
+		}
+		if = {
+			limit = {
+				has_equipment = { CAS_equipment > 99 }
+			}
+			send_equipment = {
+					target = ENG
+					equipment = CAS_equipment
+					amount = 100
+			}
+		}
 	}
 }
 

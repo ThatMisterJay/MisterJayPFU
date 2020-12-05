@@ -882,7 +882,8 @@ ITA_debt_0 = {
        picture = ger_mefo_bills
 
        modifier = {
-         stability_factor = -0.32
+         consumer_goods_factor = 0.1
+         stability_factor = -0.30
          political_power_cost = 0.90
        }
    }

@@ -140,7 +140,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
+		great_war_hero
 	}
 }
 
@@ -158,7 +158,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Ion Antonescu"
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine career_officer harsh_leader organizer inspirational_leader }
+	traits = {  career_officer harsh_leader organizer  }
 	skill = 5
 	attack_skill = 5
 	defense_skill = 4
