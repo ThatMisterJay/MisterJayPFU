@@ -1414,9 +1414,9 @@ focus = {
 		id = USA_lend_lease_act
 		icon = GFX_focus_generic_treaty
 		x = 1
-		y = 1
-		prerequisite = { focus = USA_war_plan_black }
-		relative_position_id = USA_war_plan_black
+		y = 2
+		prerequisite = { focus = USA_intervention_in_europe }
+		relative_position_id = USA_intervention_in_europe
 		cost = 10
 
 		ai_will_do = {
@@ -1546,7 +1546,7 @@ focus = {
 			SOV = { has_war_with = GER }
 		}
 		x = 0
-		y = 1
+		y = 2
 		cost = 5
 		relative_position_id = USA_lend_lease_act
 		ai_will_do = {
@@ -1620,7 +1620,7 @@ focus = {
 			ENG = { exists = no }
 		}
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = USA_war_plan_black
 		cost = 10
@@ -2138,7 +2138,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = USA_support_rock_island }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2409,7 +2409,7 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}

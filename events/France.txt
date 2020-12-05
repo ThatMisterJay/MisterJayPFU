@@ -367,7 +367,6 @@ country_event = {
 		#	}
 		load_focus_tree = free_french_focus
 			set_country_flag = free_france
-			set_capital = 539
 			hidden_effect = {
 				set_state_controller = 26
 				set_state_controller = 22
@@ -378,9 +377,16 @@ country_event = {
 				set_state_controller = 680
 				set_state_controller = 554
 				set_state_controller = 458
-				539 = {
-					add_dynamic_modifier = { modifier = FRA_gabon_contested }
+				ENG = {
+					transfer_state = 539
+					transfer_state = 660
+					transfer_state = 774
+					puppet = FRA
 				}
+				AST = {
+					transfer_state = 635
+				}
+
 				if = {
 					limit = { 1 = { owner = { original_tag = FRA } } }
 					set_state_controller = 1
@@ -413,7 +419,7 @@ country_event = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			
+
 
             set_popularities = {
                 democratic = 18

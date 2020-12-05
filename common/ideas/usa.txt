@@ -350,6 +350,10 @@ ideas = {
 
 			modifier = {
 				max_command_power = 50
+				high_command_cost_factor = -0.2
+				air_chief_cost_factor = -0.2
+				army_chief_cost_factor = -0.2
+				navy_chief_cost_factor = -0.2
 			}
 		}
 		USA_state_funds_refused = {
