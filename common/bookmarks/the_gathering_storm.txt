@@ -61,7 +61,7 @@ bookmarks = {
 				GER_anschluss
 				GER_goeringsfouryearplan
 				GER_mansteinsplan
-				
+
 			}
 		}
 		"ITA"={
@@ -130,8 +130,13 @@ bookmarks = {
 			ideology = democratic
 			ideas = {
 				AST_great_depression_1
+				AST_white_policy
+				AST_army_1
 			}
 			focuses = {
+				AST_second_imperial_force
+				AST_singapore_strategy
+				AST_support_the_policy_of_appeasement
 			}
 		}
 		"NZL"={
@@ -142,19 +147,7 @@ bookmarks = {
 
 			}
 			focuses = {
-			
-			}
-		}
-		"SAF"={
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SAF_ossewabrandwag
-				SAF_history_of_segregation
-			}
-			focuses = {
-				SAF_secure_interests_in_africa
+
 			}
 		}
 		"RAJ"={

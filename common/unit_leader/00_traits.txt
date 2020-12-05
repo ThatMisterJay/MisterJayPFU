@@ -467,6 +467,7 @@ new_commander_weight = {
 		prerequisites = {
 			NOT = {
 				has_trait = to_good
+				is_field_marshal = yes
 			}
 		}
 

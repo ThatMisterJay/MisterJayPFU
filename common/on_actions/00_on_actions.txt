@@ -641,6 +641,12 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
+			AST = {
+	 country_event = {
+		 id = DSFU.26
+		 days = 1197
+ }
+}
 			RAJ = { country_event = { id = JFU_welcome.1 } }
 			SAF = { country_event = { id = JFU_welcome.2 } }
 			CAN = { country_event = { id = JFU_welcome.3 } }
@@ -675,14 +681,14 @@ on_actions = {
 					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
 					add_building_construction = { type = naval_base province = 7408 level = 5 instant_build = yes }
 				}
-				
+
 			}
 
 			if = {
 				limit = { MAN = { is_ai = yes } }
 				JAP = {
 					annex_country {
-						target = MAN 
+						target = MAN
 						transfer_troops = no
 					}
 				}
