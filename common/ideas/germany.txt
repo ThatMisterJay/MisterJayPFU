@@ -112,7 +112,6 @@ axis_exploited = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.10
-				min_export = -0.20
 			}
 		}
 
@@ -435,7 +434,7 @@ axis_exploited = {
 			}
 		}
 
-		GER_autarky_idea = {
+		GER_autarky_idea_JFU = {
 
 			allowed = {
 				original_tag = GER
@@ -453,7 +452,6 @@ axis_exploited = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 
