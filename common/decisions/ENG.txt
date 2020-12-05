@@ -5,6 +5,148 @@ ENG_imperial_conference_decision = {
 
 ENG_commonwealth_decision = {
 
+#Commonwealth decisions
+
+commonwealth_transfer_air_wing = {
+	icon = generic_air
+	fire_only_once = no
+	targets = { ENG }
+	allowed = {
+		OR = {
+			original_tag = CAN
+			original_tag = AST
+			original_tag = NZL
+		}
+	}
+	days_remove = 10
+	available = {
+		has_equipment = { fighter_equipment > 99 }
+	}
+	complete_effect = {
+		send_equipment = {
+				target = ENG
+				equipment = fighter_equipment
+				amount = 100
+	  }
+	}
+}
+
+
+
+#British decisions
+
+	ENG_manpower_transfer_small = {
+		icon = generic_operation
+		fire_only_once = no
+		available = {
+			has_manpower > 20000
+		}
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+			has_war = yes
+		}
+		days_re_enable = 50
+		on_map_mode = map_only
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OR = {
+					state = 126
+					state = 275
+					state = 784
+					state = 284
+					state = 439
+				}
+			}
+		}
+		complete_effect = {
+			add_manpower = -20000
+			FROM = {
+				CONTROLLER = {
+				add_manpower = 20000
+				}
+			}
+		}
+	}
+
+	ENG_manpower_transfer_medium = {
+		icon = generic_operation
+		fire_only_once = no
+		available = {
+			has_manpower > 100000
+		}
+		allowed = {
+			tag = ENG
+		}
+		visible = {
+			has_war = yes
+		}
+		days_re_enable = 100
+		on_map_mode = map_only
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OR = {
+					state = 126
+					state = 275
+					state = 784
+					state = 284
+					state = 439
+				}
+			}
+		}
+		complete_effect = {
+			add_manpower = -100000
+			FROM = {
+				CONTROLLER = {
+				add_manpower = 100000
+				}
+			}
+		}
+	}
+
+	ENG_manpower_transfer_large = {
+		icon = generic_operation
+		fire_only_once = no
+		available = {
+			has_manpower > 200000
+		}
+		allowed = {
+			tag = ENG
+		}
+		visible = {
+			has_war = yes
+		}
+		days_re_enable = 150
+		on_map_mode = map_only
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_capital = yes
+				OR = {
+					state = 126
+					state = 275
+					state = 784
+					state = 284
+					state = 439
+				}
+			}
+		}
+		complete_effect = {
+			add_manpower = -200000
+			FROM = {
+				CONTROLLER = {
+				add_manpower = 200000
+				}
+			}
+		}
+	}
+
 
 	ENG_imperial_counter_espionage_bureau = {
 		icon = onmap_recruit_operative
@@ -15,6 +157,9 @@ ENG_commonwealth_decision = {
 					has_idea = imperial_counter_espionage
 				}
 			}
+		}
+		allowed = {
+			tag = ENG
 		}
 
 		visible ={
@@ -32,7 +177,6 @@ ENG_commonwealth_decision = {
 				is_capital = yes
 				OR = {
           state = 126
-					state = 276
 					state = 275
 					state = 784
 					state = 284
@@ -66,7 +210,6 @@ ENG_commonwealth_decision = {
 				has_completed_focus = uk_new_zealand_focus
 				has_completed_focus = uk_canada_focus
 				has_completed_focus = uk_australia_focus
-				has_completed_focus = uk_south_africa_focus
 			}
 		}
 
@@ -118,67 +261,6 @@ ENG_commonwealth_decision = {
 
 	}
 
-
-ENG_no_south_africa = {
-	icon = generic_political_discourse
-
-	allowed = {
-		tag = ENG
-	}
-
-	targets = { SAF }
-
-	available = {
-		tag = ENG
-		SAF = { is_ai = yes }
-		country_exists = CAN
-		date < 1936.10.1
-	}
-
-
-
-	fire_only_once = yes
-
-	visible = {
-		date < 1936.10.1
-		SAF = { is_ai = yes }
-	}
-
-	complete_effect = {
-		ENG = {
-			annex_country = { target = SAF transfer_troops = yes }
-			set_country_flag = SAF_annexed
-		}
-		every_state = {
-			limit = {
-				is_core_of = SAF
-			}
-			add_dynamic_modifier = { modifier = ENG_south_africa }
-			add_compliance = 90
-		}
-		CAN = {
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = CAN
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
- }
-
- }
 
  ENG_rats_tank_div = {
 
@@ -287,6 +369,9 @@ ENG_no_south_africa = {
 		controls_state = 663
 		controls_state = 662
 		controls_state = 661
+		ITA = {
+			has_completed_focus = ITA_policyofexploitation
+		}
 		}
 
 		cost = 50
@@ -749,6 +834,8 @@ political_actions = {
 		}
 	}
 
+
+
 	macdonald_proposal = {
 
 		allowed = {
@@ -1077,6 +1164,9 @@ country_event = {
 					limit = { is_core_of = CAN }
 					add_core_of = ENG
 				}
+				every_unit_leader = {
+	      	set_nationality = ENG
+	      }
 			}
 			ENG = {
 				annex_country = { target = CAN transfer_troops = yes }
@@ -1107,18 +1197,24 @@ country_event = {
 		}
 
 		complete_effect = {
-			every_state = {
-		    limit = {
-		      is_core_of = RAJ
-		    }
-		    add_state_modifier = {
-		      modifier = {
-		        local_non_core_manpower = 0.40
-		      }
-		    }
-		  }
+			RAJ = {
+				every_unit_leader = {
+					set_nationality = ENG
+				}
+			}
 			ROOT = {
 				annex_country = { target = RAJ transfer_troops = yes }
+			}
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+				add_state_modifier = {
+					modifier = {
+						local_non_core_manpower = 0.60
+					}
+				}
+				add_compliance = 90
 			}
 		}
 	}
@@ -1143,6 +1239,9 @@ country_event = {
 				every_owned_state = {
 					limit = { is_core_of = SAF }
 					add_core_of = ENG
+				}
+				every_unit_leader = {
+					set_nationality = ENG
 				}
 			}
 			ENG = {
@@ -1182,6 +1281,9 @@ country_event = {
 					limit = { is_core_of = AST }
 					add_core_of = ROOT
 				}
+				every_unit_leader = {
+					set_nationality = ENG
+				}
 			}
 			ROOT = {
 				annex_country = { target = AST transfer_troops = yes }
@@ -1209,7 +1311,6 @@ country_event = {
 			OR = {
 				tag = ENG
 				tag = AST
-
 			}
 		}
 
@@ -1218,6 +1319,9 @@ country_event = {
 				every_owned_state = {
 					limit = { is_core_of = NZL }
 					add_core_of = ROOT
+				}
+				every_unit_leader = {
+					set_nationality = ENG
 				}
 			}
 
@@ -1228,6 +1332,37 @@ country_event = {
 }
 
 operations = {
+
+
+	ENG_torch = {
+		name = FRA_torch
+
+		icon = generic_operation
+
+		targets = { EFR }
+
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = ENG
+			USA = {
+				has_completed_focus = USA_operation_torch
+			}
+		}
+
+
+		cost = 10
+
+		complete_effect = {
+		country_event =	free_france.9
+		transfer_state = 310
+		transfer_state = 694
+		}
+	}
+
 
 #North Africa
 	ENG_desert_operation_offensive_tunisia = {
@@ -1262,9 +1397,6 @@ operations = {
 				 CAN = {
 				  add_war_support = 0.10
 				 }
-				 SAF = {
-				  add_war_support = 0.10
-				 }
 				ITA = {
 					add_stability = -0.08
 				}
@@ -1275,9 +1407,6 @@ operations = {
 			timeout_effect = {
 				add_war_support = -0.05
 			  	CAN = {
-				add_war_support = -0.05
-				}
-				SAF = {
 				add_war_support = -0.05
 				}
 				ITA = {
@@ -1323,9 +1452,6 @@ operations = {
 				CAN = {
 				add_war_support = 0.10
 				}
-				SAF = {
-				add_war_support = 0.10
-				}
 				ITA = {
 					add_stability = -0.08
 				}
@@ -1335,9 +1461,6 @@ operations = {
 			timeout_effect = {
 				add_war_support = -0.05
 				CAN = {
-				add_war_support = -0.05
-				}
-				SAF = {
 				add_war_support = -0.05
 				}
 				ITA = {
@@ -1381,9 +1504,6 @@ operations = {
 				CAN = {
 				add_war_support = 0.10
 				}
-				SAF = {
-				add_war_support = 0.10
-				}
 				ITA = {
 					add_stability = -0.08
 				}
@@ -1392,9 +1512,6 @@ operations = {
 			timeout_effect = {
 				add_war_support = -0.05
 				CAN = {
-				add_war_support = -0.05
-				}
-				SAF = {
 				add_war_support = -0.05
 				}
 				ITA = {
@@ -1453,9 +1570,6 @@ operations = {
 			CAN = {
 			add_war_support = 0.10
 			}
-			SAF = {
-			add_war_support = 0.10
-			}
 			ITA = {
 				add_stability = -0.08
 				add_war_support = -0.05
@@ -1477,10 +1591,6 @@ operations = {
 				}
 	    }
 			CAN = {
-			add_war_support = -0.05
-			add_stability = -0.05
-			}
-			SAF = {
 			add_war_support = -0.05
 			add_stability = -0.05
 			}
@@ -1542,9 +1652,6 @@ operations = {
 			CAN = {
 			add_war_support = 0.10
 			}
-			SAF = {
-			add_war_support = 0.10
-			}
 			ITA = {
 				add_stability = -0.08
 				add_war_support = -0.05
@@ -1566,10 +1673,6 @@ operations = {
       }
 			}
 			CAN = {
-			add_war_support = -0.05
-			add_stability = -0.05
-			}
-			SAF = {
 			add_war_support = -0.05
 			add_stability = -0.05
 			}

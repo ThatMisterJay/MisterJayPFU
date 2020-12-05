@@ -6,7 +6,12 @@ ENG_imperial_conference_decision = {
 	icon = eng_imperial_conference
 
 	allowed = {
-		original_tag = ENG
+		OR = {
+		  original_tag = ENG
+			original_tag = CAN
+			original_tag = AST
+			original_tag = NZL
+	  }
 	}
 }
 
@@ -27,7 +32,12 @@ ENG_commonwealth_decision = {
 	priority = 10
 
 	allowed = {
-		original_tag = ENG
+		OR = {
+			original_tag = ENG
+			original_tag = CAN
+			original_tag = AST
+			original_tag = NZL
+		}
 	}
 }
 
@@ -35,6 +45,6 @@ ENG_enforce_the_naval_treaties = {
 	icon = generic_political_actions
 
 	allowed = {
-		original_tag = ENG
+			original_tag = ENG
 	}
 }
