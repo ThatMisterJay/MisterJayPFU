@@ -12,17 +12,15 @@ state={
 	}
 
 	history={
-		owner = SAF
+		owner = ENG
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 6
 			air_base = 3
 		}
 		victory_points = {
 			10400 10
 		}
-		add_core_of = SAF
+		add_core_of = AFR
 	}
 
 	provinces={
