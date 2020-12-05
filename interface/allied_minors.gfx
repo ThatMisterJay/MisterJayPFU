@@ -1,10 +1,5 @@
 spriteTypes = {
 
-		SpriteType = {
-				name = "GFX_idea_AST_battle"
-				texturefile = "gfx/interface/ideas/idea_AST_battle.dds"
-			}
-
   	SpriteType = {
 			name = "GFX_idea_NZL_fluffy"
 			texturefile = "gfx/interface/ideas/idea_NZL_fluffy.dds"
@@ -25,6 +20,11 @@ spriteTypes = {
 				texturefile = "gfx/interface/ideas/idea_AST_infantry.dds"
 		}
 
+    SpriteType = {
+        name = "GFX_idea_AST_army"
+        texturefile = "gfx/interface/ideas/AST_army.dds"
+    }
+
 		SpriteType = {
 				name = "GFX_idea_AST_billy_hughes"
 				texturefile = "gfx/interface/ideas/AST_billy_hughes.dds"
@@ -39,6 +39,36 @@ spriteTypes = {
 				name = "GFX_idea_AST_frank"
 				texturefile = "gfx/interface/ideas/AST_frank.dds"
 		}
+
+    SpriteType = {
+      name = "GFX_idea_AST_white_policy"
+      texturefile = "gfx/interface/ideas/idea_AST_white_policy.dds"
+    }
+
+		SpriteType = {
+		  name = "GFX_idea_AST_imperial_force"
+		  texturefile = "gfx/interface/ideas/idea_AST_imperial_force.dds"
+		}
+
+    SpriteType = {
+	    name = "GFX_idea_AST_hat"
+	    texturefile = "gfx/interface/ideas/AST_hat.dds"
+	  }
+
+		SpriteType = {
+		name = "GFX_idea_AST_mackay"
+		texturefile = "gfx/interface/ideas/idea_AST_mackay.dds"
+		}
+
+    SpriteType = {
+    name = "GFX_idea_AST_northcott"
+    texturefile = "gfx/interface/ideas/idea_AST_northcott.dds"
+    }
+
+		 SpriteType = {
+				 name = "GFX_idea_AST_battle"
+				 texturefile = "gfx/interface/ideas/AST_battle.dds"
+				 }
 
 		SpriteType = {
 				name = "GFX_idea_ENG_eden"

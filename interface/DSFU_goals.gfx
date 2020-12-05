@@ -133,6 +133,441 @@ SpriteType = {
  legacy_lazy_load = no
 }
 
+SpriteType = {
+ name = "GFX_AST_artillary_corp"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_artillary_corp.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_artillary_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_artillary_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_catering_corp"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_catering_corp.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_catering_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_catering_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_engineer_corp"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_engineer_corp.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_engineer_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_engineer_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_medical_corp"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_medical_corp.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_medical_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_medical_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_militia_training"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_militia_training.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_militia_training.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_militia_training.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_prepare_imperial_force"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_prepare_imperial_force.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_prepare_imperial_force.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_prepare_imperial_force.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_infantry_corp"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_infantry_corp.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_infantry_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_infantry_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_imperial_force"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_imperial_force.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_imperial_force.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_imperial_force.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_new_guinea"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_new_guinea.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_new_guinea.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_new_guinea.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_brisbane_line"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_brisbane_line.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_brisbane_line.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_brisbane_line.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_tank_corp"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_tank_corp.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_tank_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_tank_corp.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_light_horse"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_light_horse.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_light_horse.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_light_horse.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_WAAAF"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_WAAAF.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_WAAAF.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_WAAAF.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+SpriteType = {
+ name = "GFX_AST_japanese_threat"
+ texturefile = "gfx/interface/goals/ast/GFX_AST_japanese_threat.dds"
+ effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_japanese_threat.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ animation = {
+	 animationmaskfile = "gfx/interface/goals/ast/GFX_AST_japanese_threat.dds"
+	 animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+	 animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+	 animationlooping = yes			# yes or no ;)
+	 animationtime = 0.75				# in seconds
+	 animationdelay = 10.0			# in seconds
+	 animationblendmode = "add"       #add, multiply, overlay
+	 animationtype = "scrolling"      #scrolling, rotating, pulsing
+	 animationrotationoffset = { x = 0.0 y = 0.0 }
+	 animationtexturescale = { x = 1.0 y = 1.0 }
+ }
+ legacy_lazy_load = no
+}
+
+}
 
 
 }

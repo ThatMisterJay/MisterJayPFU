@@ -47,4 +47,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_italian_king.dds"
 	}
 
+	spriteType = {
+	name = "GFX_report_event_lyon"
+	texturefile = "gfx/event_pictures/report_event_lyon.dds"
+}
+
+spriteType = {
+	name = "GFX_report_event_curtin"
+	texturefile = "gfx/event_pictures/report_event_curtin.dds"
+}
+spriteType = {
+	name = "GFX_report_event_fadden"
+	texturefile = "gfx/event_pictures/report_event_fadden.dds"
+}
+
 }

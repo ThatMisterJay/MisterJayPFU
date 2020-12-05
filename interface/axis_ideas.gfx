@@ -8,17 +8,22 @@ SpriteType = {
 	SpriteType = {
 			name = "GFX_idea_ezio"
 			texturefile = "gfx/interface/ideas/idea_ezio.dds"
-		}
+	}
+
+	spriteType = {
+		name = "GFX_idea_autarky"
+		texturefile = "gfx/interface/ideas/autarky.dds"
+	}
 
 		SpriteType = {
 				name = "GFX_idea_ger_naval_treaty"
 				texturefile = "gfx/interface/ideas/idea_ger_naval_treaty.dds"
-			}
+		}
 
 			SpriteType = {
 					name = "GFX_idea_black_prince"
 					texturefile = "gfx/interface/ideas/black_prince.dds"
-				}
+			}
 
 				SpriteType = {
 						name = "GFX_idea_ger_ss"
