@@ -128,10 +128,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			random_state = {
+		completion_reward = {
+			random_owned_controlled_state = {
 				limit = {
-					has_state_flag = CAN_national_housing_act_IC
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -139,10 +143,8 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = CAN_national_housing_act_IC
 			}
-		}
-
-		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -264,30 +266,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_department_of_munitions_and_supply_AF1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_department_of_munitions_and_supply_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -298,10 +276,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF1
@@ -314,10 +292,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF2
@@ -562,6 +540,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = CAN_fighter_discount
 			random_owned_controlled_state = {
 				prioritize = { 276 682 }
 				limit = {
@@ -631,19 +610,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_alberta_coal_towns_IC
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -659,6 +626,22 @@ focus_tree = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
+					instant_build = yes
+				}
+				set_state_flag = CAN_alberta_coal_towns_IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_alberta_coal_towns_IC
@@ -763,10 +746,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_john_inglis_and_company_AF1
@@ -780,10 +763,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_john_inglis_and_company_AF2
