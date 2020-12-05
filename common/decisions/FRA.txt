@@ -99,30 +99,7 @@ FRA_vichy_france = {
 
 operations = {
 
-	FRA_torch = {
 
-		icon = generic_operation
-
-		targets = { EFR }
-
-		available = {
-			original_tag = FRA
-			has_completed_focus = FRA_prep_for_torch
-			has_war_with = EFR
-		}
-		visible = {
-			has_completed_focus = FRA_prep_for_torch
-		}
-
-		allowed = { tag = FRA }
-
-		cost = 10
-
-		complete_effect = {
-		country_event =	free_france.9
-		}
-		fire_only_once = yes
-	}
 
 	FRA_vert= {
 

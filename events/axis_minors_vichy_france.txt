@@ -72,10 +72,6 @@ country_event = { #ensure that Free France has the right territories
 		ai_chance = {
 			factor = 100
 		}
-		set_state_controller = 515
-		set_state_controller = 660
-		set_state_controller = 539
-		set_capital = 539
 	}
 }
 country_event = { #annexation of EFR by FRA if liberation
