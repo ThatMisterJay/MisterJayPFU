@@ -304,7 +304,7 @@ focus_tree = {
 				name = "Georgy Zhukov"
 				id = 410
 				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-				traits = { defensive_doctrine offensive_doctrine thorough_planner organisational_leader logistics_wizard panzer_leader cavalry_leader expert_delegator}
+				traits = { offensive_doctrine thorough_planner organisational_leader logistics_wizard panzer_leader cavalry_leader expert_delegator}
 				skill = 6
 				attack_skill = 6
 				defense_skill = 6
@@ -531,7 +531,7 @@ focus_tree = {
 				name = "Konstantin Rokossovsky"
 				id = 402
 				picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-				traits = { panzer_leader trait_cautious brilliant_strategist ranger swamp_fox trickster adaptable expert_improviser panzer_expert }
+				traits = { panzer_leader trait_cautious brilliant_strategist ranger swamp_fox trickster  }
 				skill = 5
 
 				attack_skill = 4
