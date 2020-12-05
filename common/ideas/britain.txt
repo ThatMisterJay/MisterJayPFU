@@ -402,7 +402,7 @@ picture = ENG_war_cabinet
 					build_cost_ic = -0.1 instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -2438,33 +2438,11 @@ picture = ENG_war_cabinet
 			}
 
 			visible = {
-				OR = {
-					NOT = {
-						country_exists = CAN
-					}
-					NOT = {
-						country_exists = SAF
-					}
-				}
-				NOT = {
-					country_exists = CAN
-					country_exists = SAF
-				}
+
 			}
 
 			available = {
-				OR = {
-					NOT = {
-						country_exists = CAN
-					}
-					NOT = {
-						country_exists = SAF
-					}
-				}
-				NOT = {
-					country_exists = CAN
-					country_exists = SAF
-				}
+
 			}
 
 
@@ -2476,30 +2454,6 @@ picture = ENG_war_cabinet
 			}
 		}
 
-		ENG_bernard_montgomery = {
-			ledger = army
-
-			picture = bernard_montgomery
-
-			allowed = {
-				original_tag = ENG
-			}
-
-			visible = {
-					NOT = {
-						country_exists = CAN
-						country_exists = SAF
-					}
-			}
-
-
-
-			traits = { army_armored_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		kenneth_anderson = {
 			ledger = army
