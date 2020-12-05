@@ -4,6 +4,17 @@ on_actions = {
 		effect = {
 		# Soviet Plane Production
 			SOV = {
+				add_ideas = okmo
+        set_technology = { basic_heavy_tank = 1}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_1
+						creator = "SOV"
+					}
+					requested_factories = 10
+					progress = 0.15
+					efficiency = 50
+				}
 				add_ideas = polikarpov_design_bureau
 				set_technology = { CAS1 = 1 }
 				set_technology = { fighter1 = 1}
@@ -40,11 +51,22 @@ on_actions = {
 			}
 			ENG = {
 				add_ideas = hawker
+				add_ideas = vickers_armstrong_eng
 
 				set_technology = { fighter1 = 1}
+				set_technology = { basic_heavy_tank = 1}
 				add_equipment_production = {
 					equipment = {
 						type = fighter_equipment_1
+						creator = "ENG"
+					}
+					requested_factories = 10
+					progress = 0.15
+					efficiency = 50
+				}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_1
 						creator = "ENG"
 					}
 					requested_factories = 10
@@ -231,6 +253,17 @@ on_actions = {
 
 	GER = {
 		add_ideas = messerschmitt
+		add_ideas = porsche
+		set_technology = { basic_heavy_tank = 1}
+		add_equipment_production = {
+			equipment = {
+				type = heavy_tank_equipment_1
+				creator = "GER"
+			}
+			requested_factories = 10
+			progress = 0.15
+			efficiency = 50
+		}
 
 		set_technology = { fighter1 = 1}
 		add_equipment_production = {
@@ -374,5 +407,24 @@ on_actions = {
 			progress = 0.25
 			amount = 4
 		}
+}
+
+FRA ={
+	add_ideas = B1bis
+	set_technology = { basic_heavy_tank = 1}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_tank_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 10
+		progress = 0.15
+		efficiency = 50
+	}
+	add_equipment_to_stockpile = {
+		type = heavy_tank_equipment_1
+		amount = 400
+		producer = FRA
+	}
 }
 }
