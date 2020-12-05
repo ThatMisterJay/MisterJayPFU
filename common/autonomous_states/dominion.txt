@@ -13,6 +13,7 @@ autonomy_state = {
 		extra_trade_to_overlord_factor = 0.25
 		overlord_trade_cost_factor = -0.25
 		can_master_build_for_us = 1
+		license_subject_master_purchase_cost = -0.75
 	}
 
 	ai_subject_wants_higher = {
