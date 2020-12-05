@@ -162,6 +162,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = low_economic_mobilisation
 			random_owned_controlled_state = {
+				prioritize = { 128 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -179,6 +180,7 @@ focus_tree = {
 				set_state_flag = ENG_limited_rearmament_focus_2IC
 			}
 			random_owned_controlled_state = {
+				prioritize = { 131 }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -229,7 +231,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -679,6 +681,23 @@ technology = construction4
 		completion_reward = {
 			add_ideas = british_austerity_idea
 			add_research_slot = 1
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
 		}
 	}
 
@@ -832,10 +851,10 @@ technology = construction4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -849,10 +868,10 @@ technology = construction4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -866,10 +885,10 @@ technology = construction4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
@@ -2514,14 +2533,14 @@ technology = fighter2
 			AST = { add_ideas = license_equipment_faster_production }
 			RAJ = { add_ideas = license_equipment_faster_production }
 			NZL = { add_ideas = license_equipment_faster_production }
-			SAF = { add_ideas = license_equipment_faster_production }
+
 
 			hidden_effect = {
 				CAN = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
 				AST = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
 				RAJ = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
 				NZL = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
-				SAF = { add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties } }
+
 			}
 		}
 	}
@@ -2901,7 +2920,7 @@ technology = fighter2
 		x = 0
 		y = 1
 		relative_position_id = uk_australia_focus
-		cost = 3
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3082,7 +3101,7 @@ technology = fighter2
 		x = 0
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 6
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3186,86 +3205,27 @@ technology = fighter2
 	}
 
 	focus = {
-		id = uk_south_africa_focus
+		id = uk_british_focus
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = SAF
+
 		}
 		bypass = {
-			OR = {
-				SAF = { exists = no }
-				SAF = {
-					custom_trigger_tooltip = {
-						tooltip = construction_effort_tt
-						all_owned_state = {
-							free_building_slots = {
-								building = industrial_complex
-								size < 1
-								include_locked = yes
-							}
-						}
-					}
-					custom_trigger_tooltip = {
-						tooltip = naval_effort_tt
-						all_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size < 1
-								include_locked = yes
-							}
-						}
-					}
-				}
-			}
+
 		}
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
-		cost = 4
+		cost = 5
 
-		available_if_capitulated = yes
 
-		complete_tooltip = {
-			SAF = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				every_state = { limit = { has_state_flag = ENG_uk_south_africa_focus_2IC }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = { limit = { has_state_flag = ENG_uk_south_africa_focus_1IC }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = { limit = { has_state_flag = ENG_uk_south_africa_focus_1dockyard }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_south_africa_focus
-				}
-			}
-		}
 
 		completion_reward = {
-			SAF = {
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
+					prioritize = { 119 }
 					limit = {
-						is_core_of = SAF
+						is_core_of = ENG
 						free_building_slots = {
 							building = industrial_complex
 							size > 1
@@ -3281,8 +3241,9 @@ technology = fighter2
 					set_state_flag = ENG_uk_south_africa_focus_2IC
 				}
 				random_owned_controlled_state = {
+					prioritize = { 119 }
 					limit = {
-						is_core_of = SAF
+						is_core_of = ENG
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -3299,8 +3260,9 @@ technology = fighter2
 				}
 
 				random_owned_controlled_state = {
+					prioritize = { 119 }
 					limit = {
-						is_core_of = SAF
+						is_core_of = ENG
 						is_coastal = yes
 						free_building_slots = {
 							building = dockyard
@@ -3316,12 +3278,8 @@ technology = fighter2
 					}
 					set_state_flag = ENG_uk_south_africa_focus_1dockyard
 				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_south_africa_focus
-				}
 			}
-		}
+
 	}
 
 

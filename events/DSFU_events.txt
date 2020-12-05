@@ -897,3 +897,125 @@ country_event = {
     name = DSFU.25.c
   }
 }
+
+# Lyons Passes Away
+country_event = {
+	id = DSFU.26
+	title = DSFU.26.t
+	desc = DSFU.26.d
+	picture = "GFX_report_event_lyon"
+
+  is_triggered_only = yes
+
+
+	option = {
+		name = DSFU.26.a
+    add_stability = -0.10
+		if = {
+			limit = {
+				has_idea = AST_robert_g_menzies
+			 }
+			 remove_ideas = AST_robert_g_menzies
+		}
+		kill_country_leader = yes
+		if = {
+			limit = {
+				has_country_flag = pig_iron_sold
+			}
+			create_country_leader = {
+				name = "Robert Menzies"
+				desc = "POLITICS_ROBERT_MENZIES_DESC"
+				picture = "Robert_Menzies.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					minority_government
+					pig_iron_bob
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = pig_iron_sold
+				}
+			}
+			create_country_leader = {
+				name = "Robert Menzies"
+				desc = "POLITICS_ROBERT_MENZIES_DESC"
+				picture = "Robert_Menzies.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					minority_government
+				}
+		}
+
+	 }
+	 hidden_effect = {
+		 country_event = {
+			 id = DSFU.27
+			 days = 872
+		 }
+	 }
+	}
+}
+
+country_event = {
+	id = DSFU.27
+	title = DSFU.27.t
+	desc = DSFU.27.d
+	picture = "GFX_report_event_fadden"
+
+
+
+  is_triggered_only = yes
+
+	option ={
+		name = DSFU.27.a
+		create_country_leader = {
+			name = "Arthur Fadden"
+			desc = "POLITICS_Fadden_DESC"
+			picture = "arthur_fadden.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+      failing_government
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = DSFU.28
+				days = 40
+			}
+		}
+	}
+}
+
+#Curtin takes office
+country_event = {
+	id = DSFU.28
+	title = DSFU.28.t
+	desc = DSFU.28.d
+	picture = "GFX_report_event_curtin"
+
+
+
+  is_triggered_only = yes
+
+	option ={
+		name = DSFU.28.a
+		add_stability = 0.05
+		set_party_name = { ideology = democratic long_name = AST_Labor_party name = AST_Labor_party }
+		create_country_leader = {
+			name = "John Curtin"
+			desc = "POLITICS_JOHN_CURTIN_DESC"
+			picture = "Portrait_Australia_John_Curtin.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			war_time_prime_minister
+			}
+		}
+	}
+}
