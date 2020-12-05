@@ -229,7 +229,7 @@ create_field_marshal = {
 	name = "Maurice Gamelin"
 	id = 801
 	picture = "Portrait_France_Maurice_Gamelin.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	traits = { old_guard inflexible_strategist career_officer }
 	skill = 2
 	attack_skill = 1
 	defense_skill = 3
@@ -241,7 +241,7 @@ create_field_marshal = {
 	name = "Maxime Weygand"
 	id = 802
 	picture = "Portrait_France_Maxime_Weygand.dds"
-	traits = { defensive_doctrine old_guard inflexible_strategist career_officer organizer harsh_leader }
+	traits = {  old_guard inflexible_strategist career_officer organizer harsh_leader }
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -259,6 +259,29 @@ create_field_marshal = {
 	defense_skill = 2
 	planning_skill = 4
 	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles De Gaulle"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  armor_officer harsh_leader media_personality panzer_leader }
+	id = 101
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Philippe Leclerc"
+	picture = "portrait_france_philippe_leclerc.dds"
+	traits = { cavalry_leader panzer_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 5
 }
 
 #create_corps_commander = {

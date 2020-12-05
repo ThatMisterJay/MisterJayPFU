@@ -87,6 +87,22 @@ amount = 621
 	add_dynamic_modifier = { modifier = ENG_rhodesia }
 }
 
+681 = {
+	add_dynamic_modifier = { modifier = ENG_south_africa }
+}
+
+541 = {
+	add_dynamic_modifier = { modifier = ENG_south_africa }
+}
+
+275 = {
+	add_dynamic_modifier = { modifier = ENG_south_africa }
+}
+
+719 = {
+	add_dynamic_modifier = { modifier = ENG_south_africa }
+}
+
 # Africa roads
 
 452 = {
@@ -197,11 +213,6 @@ if = {
 		freedom_level = 0.4
 	}
 	set_autonomy = {
-		target = SAF
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
-	set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
@@ -245,7 +256,7 @@ add_to_faction = ENG
 add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
-add_to_faction = SAF
+
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
@@ -314,7 +325,7 @@ create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat
 	id = 997
 	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = { defensive_doctrine trait_cautious career_officer organizer infantry_leader skilled_staffer}
+	traits = {  trait_cautious career_officer organizer infantry_leader skilled_staffer}
 	skill = 5
 	attack_skill = 3
 	defense_skill = 5
@@ -362,7 +373,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Alan Cunningham"
 	picture = "Portrait_Britain_Alan_Cunningham.dds"
-	traits = {}
+	traits = { }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 1
@@ -418,7 +429,7 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Harold Alexander"
 	picture = "Portrait_Britain_Harold_Alexander.dds"
-	traits = { defensive_doctrine inspirational_leader politically_connected trait_mountaineer hill_fighter infantry_leader organizer}
+	traits = { politically_connected trait_mountaineer hill_fighter infantry_leader organizer}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
