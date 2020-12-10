@@ -1900,7 +1900,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+			 
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -1919,7 +1919,7 @@ cost = 100
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+
 
 
 
@@ -1964,7 +1964,7 @@ cost = 100
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+
 
 
 
@@ -1988,7 +1988,7 @@ cost = 100
 				date > 1940.1.1
 			}
 			cost = 75
-			removal_cost = 10
+
 
 
 
@@ -2009,7 +2009,7 @@ cost = 100
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+
 
 
 
@@ -2030,7 +2030,7 @@ cost = 100
 				original_tag = SOV
 			}
 			cost = 75
-			removal_cost = 10
+
 
 
 

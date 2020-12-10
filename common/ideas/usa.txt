@@ -386,7 +386,7 @@ ideas = {
 
 			modifier = {
 				planning_speed = 0.1
-				operative_slot = 1.5
+				operative_slot = 1
 			}
 		}
 		USA_maritime_commission = {
@@ -1847,7 +1847,7 @@ ledger = navy
 		chrysler = {
 
 			cost = 50
-			removal_cost = 10
+
 			allowed = {
 				original_tag = USA
 			}
@@ -1905,7 +1905,7 @@ ledger = navy
 
 		army_ordnance_department = {
 			cost = 50
-			removal_cost = 10
+
 
 			allowed = {
 				original_tag = USA
@@ -1937,7 +1937,7 @@ ledger = navy
 
 		general_motors = {
 			cost = 50
-			removal_cost = 10
+			 
 
 			allowed = {
 				original_tag = USA
@@ -1970,7 +1970,7 @@ ledger = navy
 		rock_island_arsenal_tank = {
 
 			cost = 50
-			removal_cost = 10
+
 			allowed = {
 				original_tag = USA
 			}
@@ -2088,7 +2088,7 @@ cost = 100
 
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2128,7 +2128,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2148,7 +2148,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2169,7 +2169,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2207,7 +2207,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2227,7 +2227,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2247,7 +2247,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2267,7 +2267,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -2287,7 +2287,7 @@ cost = 100
 				original_tag = USA
 			}
 			cost = 50
-			removal_cost = 10
+
 
 			equipment_bonus = {
 				fighter_equipment = {

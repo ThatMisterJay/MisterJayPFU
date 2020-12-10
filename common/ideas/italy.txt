@@ -841,7 +841,7 @@ ledger = navy
 				original_tag = ITA
 			}
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -857,7 +857,7 @@ ledger = navy
 				original_tag = ITA
 			}
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -875,7 +875,7 @@ ledger = navy
 				original_tag = ITA
 			}
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -890,7 +890,7 @@ ledger = navy
 				original_tag = ITA
 			}
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -908,7 +908,7 @@ ledger = navy
 			has_completed_focus = ITA_airinnovations
 			}
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -923,7 +923,7 @@ ledger = navy
 				original_tag = ITA
 			}
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -938,7 +938,7 @@ ledger = navy
 				original_tag = ITA
 			}
 			cost = 75
-			removal_cost = 10
+			
 
 			research_bonus = {
 				air_equipment = 0.15

@@ -1300,7 +1300,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+			 
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -1323,7 +1323,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+
 
 			research_bonus = {
 				air_equipment = 0.15
@@ -1349,7 +1349,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -1371,7 +1371,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -1392,7 +1392,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+
 
 
 			research_bonus = {
@@ -1413,7 +1413,7 @@ cost = 100
 			}
 
 			cost = 75
-			removal_cost = 10
+
 
 
 			research_bonus = {
