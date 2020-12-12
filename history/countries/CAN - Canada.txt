@@ -11,6 +11,7 @@ add_timed_idea = {
 }
 # Starting tech
 set_technology = {
+	interwar_mech = 1
 	armored_car1 = 1
 	tech_logistics_company = 1
 	tech_signal_company = 1

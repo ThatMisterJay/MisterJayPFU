@@ -11,6 +11,7 @@ add_timed_idea = { idea = peace_time_army days = 1168 }
 set_research_slots = 3
 # Starting tech
 set_technology = {
+	interwar_mech = 1
 	armored_car1 = 1
 	motorised_infantry = 1
 	infantry_weapons = 1

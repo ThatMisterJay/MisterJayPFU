@@ -39,8 +39,7 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 	trench_warfare = 1
-	fighter1 = 0.8
-
+	interwar_mech = 1
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -63,9 +62,13 @@ add_equipment_to_stockpile = {
  type = artillery_equipment_1
  amount = 2800
 }
-	add_equipment_to_stockpile = {
+add_equipment_to_stockpile = {
 	type = support_equipment_1
 	amount = 1200
+}
+add_equipment_to_stockpile = {
+	type = mechanized_equipment_interwar
+	amount = 300
 }
 	add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
@@ -321,17 +324,17 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "Alan Brooke" # Aristocrat
-	id = 997
-	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = {  trait_cautious career_officer organizer infantry_leader skilled_staffer}
-	skill = 5
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 3
-}
+#create_field_marshal = {
+#	name = "Alan Brooke" # Aristocrat
+#	id = 997
+#	picture = "Portrait_Britain_Alan_Brooke.dds"
+#	traits = {  trait_cautious career_officer organizer infantry_leader skilled_staffer}
+#	skill = 5
+#	attack_skill = 3
+#	defense_skill = 5
+#	planning_skill = 5
+#	logistics_skill = 3
+#}
 
 #create_corps_commander = {
 #	name = "Bernard Montgomery" # Aristocrat
@@ -373,7 +376,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Alan Cunningham"
 	picture = "Portrait_Britain_Alan_Cunningham.dds"
-	traits = { }
+	traits = { trait_cautious infantry_leader }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 1
@@ -437,16 +440,6 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-create_corps_commander = {
-	name = "Jackie Smyth"
-	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
-	traits = { old_guard }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
 
 create_corps_commander = {
 	name = "Thomas Jacomb Hutton"
@@ -462,7 +455,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Arthur Percival"
 		picture = "Portrait_Britain_Arthur_Percival.dds"
-	traits = {  trait_cautious }
+	traits = { career_officer trait_cautious harsh_leader organizer }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -473,10 +466,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Merton Beckwith-Smith"
 		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
-	traits = { commando }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
+	traits = { commando trait_reckless infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 1
 }
@@ -497,6 +490,7 @@ create_field_marshal = {
 	picture = "Portrait_Britain_John_Vereker.dds"
 	traits = { inspirational_leader politically_connected trait_cautious }
 	skill = 3
+	id = 2002
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
@@ -506,7 +500,7 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Henry Wilson"
 		picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
-	traits = { old_guard politically_connected }
+	traits = { old_guard politically_connected organizer }
 	skill = 4
 	attack_skill = 2
 	defense_skill = 4

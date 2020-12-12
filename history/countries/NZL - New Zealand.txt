@@ -14,7 +14,7 @@ add_timed_idea = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-
+  interwar_mech = 1
 	gwtank = 1
 
 	gw_artillery = 1
