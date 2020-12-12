@@ -1446,6 +1446,10 @@ technologies = {
 		enable_equipments = {
 			heavy_tank_equipment_1
 		}
+		enable_subunits = {
+			heavy_infanty_support
+		}
+
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
 			NOT = {	has_template_containing_unit = heavy_armor }
