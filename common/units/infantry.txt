@@ -459,6 +459,9 @@ sub_units = {
 		type = {
 			mechanized
 		}
+		type = {
+			infantry
+		}
 
 		group = mobile
 
