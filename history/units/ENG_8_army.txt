@@ -1,0 +1,24 @@
+units = {
+	##### PFU 7th armoured #####
+	division= {
+		name = "3. Armoured Division"
+		location = 4076
+		division_template = "Armoured Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.2
+	}
+  division= {
+    name = "9th Motor Division"
+    location = 4076
+    division_template = "Motorised Division"
+    start_experience_factor = 0.5
+    start_equipment_factor = 0.2
+  }
+  division= {
+    name = "8th Motor Division"
+    location = 4076
+    division_template = "Motorised Division"
+    start_experience_factor = 0.5
+    start_equipment_factor = 0.2
+  }
+}
