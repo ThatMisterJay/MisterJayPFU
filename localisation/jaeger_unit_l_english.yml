@@ -1,6 +1,6 @@
 ﻿l_english:
 
- 
+
 #######################
 jaeger:0"Jaeger"
 jaeger_desc:0"Jaeger are forces that specialize in surviving the wilderness of the boreal forest. Usually these troops are native to their territory and take a long time to train."
@@ -17,4 +17,7 @@ shocktroop_desc:0"Shock Troops can smash into Enemy lines to achieve a break thr
 flamethrower:0"Flamethrower Support"
 flamethrower_desc:0"Flamethrowers can be of great help in close Combat. It can be very costly to clear Houses and Fortifications with regular Infantry Units. The Flamethrower will greatly aid in such tasks and close range combat against soft Units in general."
 
+avre_company:0 "Assault Vehicle Royal Engineers Company"
+avre_company_desc:0 "The Petard Mortar's ability to demolish obstructions and fortifications proved valuable to the allied advance, while the morale impact of seeing the large gun caused many enemies to abandon their positions. AVRE vehicles were frequently teamed with Churchill Crocodile flamethrowers for bunker clearance. The AVRE would crack the defences, allowing the flamethrower to soak the interior with flammable liquid, forcing those inside to surrender."
 
+heavy_infanty_support:0 "Infantry Tank Attachment"

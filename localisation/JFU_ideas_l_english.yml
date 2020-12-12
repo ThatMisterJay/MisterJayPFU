@@ -198,6 +198,7 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     FRA_gabon_contested:0 "Battle for Gabon"
     ENG_rhodesia:0 "British Rhodesia"
     ENG_south_africa:0 "British South Africa"
+    GER_exploit:0 "Exploited"
 
 
 
@@ -277,6 +278,7 @@ JAP_law_desc:0 "All Asians are equal, but some Asians are more equal"
 
 peace_time_army:0 "Peace Time Military"
 lend_lease_cost:0 "Diverted Production"
+naval_agency:0 "Abwehr"
 
 #Australia stuff
 
