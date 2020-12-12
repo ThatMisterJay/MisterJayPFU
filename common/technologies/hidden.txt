@@ -102,5 +102,23 @@ technologies = {
 				partisan
 			}
 
+    }
+
+		interwar_mech = {
+
+			  enable_equipments = {
+				  mechanized_equipment_interwar
+			  }
+
+
+		}
+		avre_unit = {
+
+			enable_subunits = {
+				avre_company
+			}
+
+
+		}
 }
 ### EOF ###
