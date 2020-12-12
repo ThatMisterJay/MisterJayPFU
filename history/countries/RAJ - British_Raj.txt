@@ -11,6 +11,7 @@ add_timed_idea = {
 set_research_slots = 3
 # Starting tech
 set_technology = {
+	interwar_mech = 1
 	armored_car1 = 1
         gwtank = 1
 	motorised_infantry = 1
@@ -141,6 +142,17 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Jackie Smyth"
+	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
+	traits = { old_guard infantry_leader politically_connected }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
