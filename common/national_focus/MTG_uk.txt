@@ -3117,21 +3117,32 @@ country_event = {
 		available_if_capitulated = yes
 
 	  completion_reward = {
-			set_technology = {
-				improved_heavy_art = 1
-				avre_unit = 1
-			}
+			hidden_effect = {
+			  set_technology = {
+			  	improved_heavy_art = 1
+			  	avre_unit = 1
+			  }
+
 			create_equipment_variant = {
-			name = "Flying dustbin"
-			type = heavy_tank_artillery_equipment_2
-			parent_version = 0
-			upgrades = {
-				tank_engine_upgrade = 6
-				tank_reliability_upgrade = 3
-				tank_art_upgrade = 4
-				tank_armor_upgrade = 3
-			}
-		}
+		  	name = "Flying Dustbin"
+		  	type = heavy_tank_artillery_equipment_2
+		  	parent_version = 0
+		  	upgrades = {
+		  		tank_engine_upgrade = 6
+		  		tank_reliability_upgrade = 3
+		  		tank_art_upgrade = 4
+		  		tank_armor_upgrade = 3
+		  	}
+		  }
+	  }
+		custom_effect_tooltip = AVRE_tt
+		  add_tech_bonus = {
+		    name = Infantry_bonus
+		    bonus = 1
+		    uses = 2
+		    technology = amphibious_tank
+		    technology = amphibious_tank_2
+		  }
 	  }
 
 	}

@@ -114,6 +114,7 @@ british_aircraft_tech.tt:0 "The British will supply us with §Yblueprints§! and
 AST_naval_tech.tt:0 "The British will supply §Yblueprints§! to improve our naval armament sheme"
 ENG_8th_army_tt:0 "3 new divisions, 1 §YArmoured§! and 2 §YMotorized§! will be formed for the 8th Army"
 development.tt:0 "Will allow us to spend §YPolitical Power§! to develop the Empire"
+AVRE_tt:0 "Will allow production of the §YFlying Dustbin§!."
 
 RAJ_naval_effort_tt:0 "Unlocks §YNaval Policy§! decisions."
 RAJ_naval_effort_tt:0 "Unlocks §YNaval Construction Effort§! decisions."
