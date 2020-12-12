@@ -15,7 +15,6 @@ ai_historical_focus_list_ENG = {
 		uk_burma_focus
 		naval_rearmament_focus
 		uk_extra_tech_slot
-		ENG_motorized_focus
 		ENG_home_defence
 		ENG_tank_focus
 		crypto_bomb_focus
@@ -38,10 +37,6 @@ ai_historical_focus_list_ENG = {
 		uk_amphibious_focus
 		uk_protect_suez
 		uk_malta_focus
-		uk_commonwealth_focus
-		uk_canada_focus
-		uk_australia_focus
-		uk_new_zealand_focus
 		royal_ordinance_focus
 		UK_secret_focus
 		uk_jet_focus

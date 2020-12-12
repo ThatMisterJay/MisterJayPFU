@@ -37,8 +37,49 @@ ENG_commonwealth_decision = {
 			original_tag = CAN
 			original_tag = AST
 			original_tag = NZL
+			original_tag = RAJ
 		}
 	}
+
+	visibility_type = map_and_decisions_view
+
+	on_map_area = {
+	  state = 276
+	  name = ENG_dev_CAN
+	  zoom = 850
+		target_root_trigger = {
+			tag = ENG
+			has_completed_focus = ENG_commonwealth_focus
+		}
+  }
+	on_map_area = {
+		state = 784
+		name = ENG_dev_AST
+		zoom = 850
+		target_root_trigger = {
+			tag = ENG
+			has_completed_focus = ENG_commonwealth_focus
+		}
+	}
+	on_map_area = {
+		state = 284
+		name = ENG_dev_NZL
+		zoom = 850
+		target_root_trigger = {
+			tag = ENG
+			has_completed_focus = ENG_commonwealth_focus
+		}
+	}
+	on_map_area = {
+		state = 439
+		name = ENG_dev_RAJ
+		zoom = 850
+		target_root_trigger = {
+      tag = ENG
+			has_completed_focus = ENG_commonwealth_focus
+    }
+	}
+
 }
 
 ENG_enforce_the_naval_treaties = {

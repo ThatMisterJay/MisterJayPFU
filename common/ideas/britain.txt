@@ -531,10 +531,10 @@ picture = ENG_war_cabinet
 			}
 
 			modifier = {
-				political_advisor_cost_factor = -0.25
-				trade_laws_cost_factor = -0.25
-				mobilization_laws_cost_factor = -0.25
-				economy_cost_factor = -0.25
+				political_advisor_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
+				mobilization_laws_cost_factor = -0.1
+				economy_cost_factor = -0.1
 			}
 
 			picture = eng_guided_by_britain
@@ -2708,7 +2708,7 @@ cost = 100
 			}
 
 			cost = 75
-			 
+
 
 			research_bonus = {
 				air_equipment = 0.15

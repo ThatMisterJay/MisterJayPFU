@@ -839,14 +839,17 @@ assume_command_of_far_east = {
 
     icon = generic_operation
 
-fire_only_once = yes
+    fire_only_once = yes
 
     allowed = {
       tag = AST
     }
 
     visible = {
+      OR = {
       has_completed_focus = AST_fleet
+      has_country_flag = raj_annexed
+      }
     }
 
 

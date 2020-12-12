@@ -7,6 +7,61 @@ ENG_commonwealth_decision = {
 
 #Commonwealth decisions
 
+
+commonwealth_support_britain_war = {
+	icon = generic_political_discourse
+	fire_only_once = yes
+	targets = { ENG }
+	allowed = {
+		OR = {
+			original_tag = CAN
+			original_tag = AST
+			original_tag = NZL
+			original_tag = RAJ
+		}
+	}
+  cost = 40
+	available = {
+		GER = {
+			has_completed_focus = GER_fateofczechoslovakia
+		}
+	}
+	complete_effect = {
+		add_war_support = 0.08
+		ENG = {
+			add_war_support = 0.04
+		}
+	}
+}
+
+
+
+commonwealth_support_britain = {
+	icon = generic_political_discourse
+	fire_only_once = no
+	targets = { ENG }
+	allowed = {
+		OR = {
+			original_tag = CAN
+			original_tag = AST
+			original_tag = NZL
+			original_tag = RAJ
+		}
+	}
+	days_re_enable = 200
+  cost = 80
+	available = {
+		ENG = {
+			has_completed_focus = ENG_commonwealth_focus
+		}
+	}
+	complete_effect = {
+		ENG = {
+			add_political_power = 80
+		}
+	}
+}
+
 commonwealth_transfer_air_wing = {
 	icon = generic_air
 	fire_only_once = no
@@ -64,6 +119,224 @@ commonwealth_transfer_air_wing = {
 
 #British decisions
 
+ENG_commonwealth_production = {
+	icon = generic_operation
+	fire_only_once = yes
+	available = {
+
+	}
+	allowed = {
+		tag = ENG
+	}
+	available = {
+		has_completed_focus = ENG_commonwealth_focus
+	}
+
+  cost = 40
+
+	complete_effect = {
+		ENG = { add_ideas = license_equipment_faster_production }
+		CAN = { add_ideas = license_equipment_faster_production }
+		AST = { add_ideas = license_equipment_faster_production }
+		RAJ = { add_ideas = license_equipment_faster_production }
+		NZL = { add_ideas = license_equipment_faster_production }
+	}
+}
+
+ENG_commonwealth_industry_civ = {
+	icon = generic_construction
+	fire_only_once = no
+
+	allowed = {
+		tag = ENG
+	}
+
+	available = {
+		NOT = {
+			has_country_flag = commonwealth_development
+		}
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+	}
+	visible = {
+		has_completed_focus = ENG_commonwealth_focus
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+	}
+	modifier = {
+		political_power_factor = -0.2
+	}
+
+	days_remove = 50
+	on_map_mode = map_only
+	state_target = yes
+	target_trigger = {
+		FROM = {
+			OR = {
+			  is_controlled_by = NZL
+			  is_controlled_by = CAN
+			  is_controlled_by = AST
+			  is_controlled_by = RAJ
+		  }
+		}
+	}
+
+	complete_effect = {
+		set_country_flag = { flag = commonwealth_development days = 50 value = 1 }
+		FROM = {
+			CONTROLLER = {
+			}
+		}
+	}
+	remove_effect = {
+		FROM = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+ENG_commonwealth_industry_mill = {
+	icon = ger_military_buildup
+	fire_only_once = no
+
+	allowed = {
+		tag = ENG
+	}
+
+	available = {
+		NOT = {
+			has_country_flag = commonwealth_development
+		}
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+	}
+	visible = {
+		has_completed_focus = ENG_commonwealth_focus
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+	}
+	modifier = {
+		political_power_factor = -0.2
+	}
+
+	days_remove = 50
+	on_map_mode = map_only
+	state_target = yes
+	target_trigger = {
+		FROM = {
+			OR = {
+			  is_controlled_by = NZL
+			  is_controlled_by = CAN
+			  is_controlled_by = AST
+			  is_controlled_by = RAJ
+		  }
+		}
+	}
+	complete_effect = {
+		set_country_flag = { flag = commonwealth_development days = 50 value = 1 }
+		FROM = {
+		}
+	}
+	remove_effect = {
+		FROM = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+ENG_commonwealth_industry_road = {
+	icon = eng_trade_unions_demand
+	fire_only_once = no
+
+	allowed = {
+		tag = ENG
+	}
+
+	available = {
+		NOT = {
+			has_country_flag = commonwealth_development_road
+		}
+		FROM = {
+			free_building_slots = {
+				building = infrastructure
+				size > 3
+			}
+		}
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+	}
+	visible = {
+		has_completed_focus = ENG_commonwealth_focus
+		NOT = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+	}
+
+	modifier = {
+		political_power_factor = -0.15
+	}
+
+	days_remove = 40
+	on_map_mode = map_only
+	state_target = yes
+	target_trigger = {
+		FROM = {
+			OR = {
+			  is_controlled_by = NZL
+			  is_controlled_by = CAN
+			  is_controlled_by = AST
+			  is_controlled_by = RAJ
+		  }
+		}
+	}
+	complete_effect = {
+		set_country_flag = { flag = commonwealth_development_road days = 40 value = 1 }
+	}
+	remove_effect = {
+		FROM = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
 	ENG_manpower_transfer_small = {
 		icon = generic_operation
 		fire_only_once = no
@@ -84,8 +357,7 @@ commonwealth_transfer_air_wing = {
 			FROM = {
 				is_capital = yes
 				OR = {
-					state = 126
-					state = 275
+					state = 276
 					state = 784
 					state = 284
 					state = 439
@@ -121,8 +393,7 @@ commonwealth_transfer_air_wing = {
 			FROM = {
 				is_capital = yes
 				OR = {
-					state = 126
-					state = 275
+					state = 276
 					state = 784
 					state = 284
 					state = 439
@@ -158,8 +429,7 @@ commonwealth_transfer_air_wing = {
 			FROM = {
 				is_capital = yes
 				OR = {
-					state = 126
-					state = 275
+					state = 276
 					state = 784
 					state = 284
 					state = 439
@@ -206,7 +476,7 @@ commonwealth_transfer_air_wing = {
 				is_capital = yes
 				OR = {
           state = 126
-					state = 275
+					state = 276
 					state = 784
 					state = 284
 					state = 439
@@ -234,12 +504,7 @@ commonwealth_transfer_air_wing = {
 		}
 
 		available = {
-			has_completed_focus = uk_india_focus
-			OR = {
-				has_completed_focus = uk_new_zealand_focus
-				has_completed_focus = uk_canada_focus
-				has_completed_focus = uk_australia_focus
-			}
+			date > 1937.5.14
 		}
 
 		cost = 100
@@ -251,7 +516,7 @@ commonwealth_transfer_air_wing = {
 		complete_effect = {
 			add_timed_idea = { idea = ENG_imperial_conference_defense_5 days = 365 }
 		 add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
-		 add_war_support = 0.15
+
  every_country = {
 	 limit = {
 		 OR = {
@@ -277,12 +542,11 @@ commonwealth_transfer_air_wing = {
 			 }
 		 }
 	 }
-			 add_political_power = -75
+			 add_political_power = -35
 			 add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
 			 add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
 	     add_ideas = ENG_guided_by_britain_1
-			 add_war_support = 0.1
-	 hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
+	     hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
  }
 
 		}
@@ -304,7 +568,7 @@ commonwealth_transfer_air_wing = {
 		has_tech = basic_medium_tank
  	}
 
- 	cost = 50
+ 	cost = 10
 
  	fire_only_once = yes
 
@@ -330,7 +594,7 @@ commonwealth_transfer_air_wing = {
 			has_tech = basic_heavy_tank
 		}
 
-		cost = 50
+		cost = 10
 
 		fire_only_once = yes
 
@@ -1233,6 +1497,7 @@ country_event = {
 			}
 			ROOT = {
 				annex_country = { target = RAJ transfer_troops = yes }
+				set_country_flag = raj_annexed
 			}
 			every_state = {
 				limit = {
@@ -1240,7 +1505,7 @@ country_event = {
 				}
 				add_state_modifier = {
 					modifier = {
-						local_non_core_manpower = 0.60
+						local_non_core_manpower = 0.40
 					}
 				}
 				add_compliance = 90
@@ -1361,6 +1626,33 @@ country_event = {
 }
 
 operations = {
+
+
+	ENG_belgium_line = {
+		icon = border_war
+
+		targets = { BEL }
+
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = yes
+
+		available = {
+			has_completed_focus = ENG_bef
+		}
+
+		visible = {
+			has_completed_focus = ENG_prepare_bef
+		}
+
+
+		days_remove = 60
+
+		modifier = {
+			dig_in_speed_factor = 0.5
+		}
+	}
 
 
 	ENG_torch = {
