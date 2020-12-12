@@ -1105,8 +1105,8 @@ mastermind_code_cracker = {
 	great_war_hero = {
 		war_support_factor = 0.05
 		stability_factor = 0.05
-		army_core_attack_factor = 0.16
-		army_core_defence_factor = 0.2
+		army_core_attack_factor = 0.12
+		army_core_defence_factor = 0.12
 	}
 
 	imperial_connections = {
@@ -1268,6 +1268,7 @@ mastermind_code_cracker = {
 		# Boosts Communism
 		sprite = 13
 		communism_drift = 0.1
+		political_power_factor = 0.1
 
 		ai_will_do = {
 			factor = 0
@@ -1279,6 +1280,7 @@ mastermind_code_cracker = {
 		# Boosts Democracy
 		sprite = 13
 		democratic_drift = 0.1
+		political_power_factor = 0.1
 
 		ai_will_do = {
 			factor = 0
@@ -1290,6 +1292,7 @@ mastermind_code_cracker = {
 		# Boosts Fascism
 		sprite = 13
 		fascism_drift = 0.1
+		political_power_factor = 0.1
 
 		ai_will_do = {
 			factor = 0
