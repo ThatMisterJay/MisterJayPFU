@@ -122,7 +122,7 @@ set_popularities = {
 
 create_faction = Comintern
 add_to_faction = SOV
-add_to_faction = MON
+
 
 
 add_ideas = {
@@ -130,6 +130,7 @@ add_ideas = {
 	home_of_revolution
 	closed_economy
 	mikhail_tukhachevsky
+	SOV_nikolai_yezhov
 }
 
 create_country_leader = {
