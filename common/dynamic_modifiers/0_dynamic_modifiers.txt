@@ -219,6 +219,18 @@ ENG_south_africa = {
 	recruitable_population_factor = 0.5
 }
 
+#Germany
+
+GER_exploit = {
+	enable = { always = yes }
+
+	icon = GFX_GER_exploit
+
+  resistance_target = 0.10
+	local_building_slots_factor = -0.10
+	state_production_speed_buildings_factor = -0.10
+}
+
 #
 
 

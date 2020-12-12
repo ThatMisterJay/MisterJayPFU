@@ -174,8 +174,16 @@ controls_state = 15
 			add_timed_idea = {
 				idea = allies_exploited days = 100
 			}
-
-
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = FRA
+						is_core_of = BEL
+						is_core_of = HOL
+					}
+				}
+				add_dynamic_modifier = { modifier = GER_exploit }
+			}
 		}
 	}
 
@@ -361,6 +369,15 @@ add_ideas = license_equipment_faster_production
 		completion_reward = {
 			add_timed_idea = {
 				idea = allies_exploited days = 100
+			}
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = NOR
+						is_core_of = DEN
+					}
+				}
+				add_dynamic_modifier = { modifier = GER_exploit }
 			}
 	}
 }
@@ -1410,7 +1427,7 @@ original_tag = POL
 }
 		}
 		available = {
-			date > 1939.3.1
+			date > 1939.9.1
 has_global_flag = sov_yes_pact
 is_puppet = no
 
