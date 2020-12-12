@@ -46,8 +46,7 @@ axis_exploited = {
 
 			removal_cost = -1
 
-			modifier = {
-				operative_slot = 3
+			modifier = {				
 				drift_defence_factor = 0.5
 			}
 			rule = {
@@ -1300,7 +1299,7 @@ cost = 100
 			}
 
 			cost = 75
-			 
+
 
 			research_bonus = {
 				air_equipment = 0.15

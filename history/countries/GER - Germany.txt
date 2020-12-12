@@ -167,6 +167,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	naval_agency
 }
 
 create_country_leader = {

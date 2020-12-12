@@ -89,6 +89,24 @@ allies_exploited = {
   }
 }
 
+naval_agency = {
+
+  allowed = {
+    original_tag = GER
+  }
+
+  removal_cost = 1
+
+  picture = "agency_idea_ger"
+
+  modifier = {
+    operative_slot = 4
+    army_intel_to_others = 10.0
+    airforce_intel_to_others = 10.0
+    navy_intel_to_others = 10.0
+  }
+}
+
 GER_heer = {
 
   picture = "general_staff"
