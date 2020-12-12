@@ -41,6 +41,11 @@ spriteType = {
 }
 
 spriteType = {
+	name = "GFX_GER_exploit"
+	textureFile = "gfx/interface/DSFU_GFX/GER_exploit.dds"
+}
+
+spriteType = {
 	name = "GFX_ITA_balkan_dev"
 	textureFile = "gfx/interface/DSFU_GFX/ITA_balkan_dev.dds"
 }

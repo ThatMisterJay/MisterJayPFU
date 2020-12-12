@@ -1,14 +1,5 @@
 spriteTypes = {
 
-
-
-
-
-
-
-
-
-
 SpriteType = {
  name = "GFX_UK_NZ_Navy"
  texturefile = "gfx/interface/goals/GFX_UK_NZ_Navy.dds"
@@ -567,7 +558,24 @@ SpriteType = {
  legacy_lazy_load = no
 }
 
+SpriteType = {
+  name = "GFX_ENG_avre"
+  texturefile = "gfx/interface/goals/eng/GFX_ENG_avre.dds"
 }
 
+SpriteType = {
+  name = "GFX_ENG_bef"
+  texturefile = "gfx/interface/goals/eng/GFX_ENG_bef.dds"
+}
+
+SpriteType = {
+  name = "GFX_ENG_brooke"
+  texturefile = "gfx/interface/goals/eng/GFX_ENG_brooke.dds"
+}
+
+SpriteType = {
+  name = "GFX_ENG_8_army"
+  texturefile = "gfx/interface/goals/eng/GFX_ENG_8_army.dds"
+}
 
 }

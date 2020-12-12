@@ -82,6 +82,39 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_flamethrower.dds"
 	}
 
+	spriteType = {
+	name = "GFX_unit_avre_company_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_artillery_icon.dds" noOfFrames = 2
+  }
+	spriteType = {
+	name = "GFX_unit_avre_company_icon_medium_white"
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2
+	}
+	spriteType = {
+	name = "GFX_unit_sturmtiger_company_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_artillery_icon.dds" noOfFrames = 2
+	}
+	spriteType = {
+	name = "GFX_unit_sturmtiger_company_icon_medium_white"
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2
+	}
+	spriteType = {
+	  name = "GFX_unit_medium_tank_destroyer_attachment_icon_medium"
+	  textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_at_icon.dds" noOfFrames = 2
+	}
+	spriteType = {
+	  name = "GFX_unit_medium_tank_destroyer_attachment_icon_medium_white"
+	  textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2
+	}
+	spriteType = {
+	name = "GFX_unit_heavy_infanty_support_icon_medium"
+	textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds" noOfFrames = 2
+	}
+	spriteType = {
+	name = "GFX_unit_heavy_infanty_support_icon_medium_white"
+	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2
+	}
+
 	######## Special Forces #########
 
 
