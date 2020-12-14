@@ -1,0 +1,170 @@
+
+defined_text = {
+	name = tips_title_scripted
+	text = {
+		trigger = { check_variable = { tips_variable = 1 } }
+		localization_key = TIPS_TITLE_1
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 2 } }
+		localization_key = TIPS_TITLE_2
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 3 } }
+		localization_key = TIPS_TITLE_3
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 4 } }
+		localization_key = TIPS_TITLE_4
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 5 } }
+		localization_key = TIPS_TITLE_5
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 6 } }
+		localization_key = TIPS_TITLE_6
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 7 } }
+		localization_key = TIPS_TITLE_7
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 8 } }
+		localization_key = TIPS_TITLE_8
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 9 } }
+		localization_key = TIPS_TITLE_9
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 10 } }
+		localization_key = TIPS_TITLE_10
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 11 } }
+		localization_key = TIPS_TITLE_11
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 12 } }
+		localization_key = TIPS_TITLE_12
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 13 } }
+		localization_key = TIPS_TITLE_13
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 14 } }
+		localization_key = TIPS_TITLE_14
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 15 } }
+		localization_key = TIPS_TITLE_15
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 16 } }
+		localization_key = TIPS_TITLE_16
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 17 } }
+		localization_key = TIPS_TITLE_17
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 18 } }
+		localization_key = TIPS_TITLE_18
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 19 } }
+		localization_key = TIPS_TITLE_19
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 20 } }
+		localization_key = TIPS_TITLE_20
+	}
+	text = { localization_key = NO_TEXT }
+}
+
+defined_text = {
+	name = tips_text_scripted
+	text = {
+		trigger = { check_variable = { tips_variable = 1 } }
+		localization_key = TIPS_TEXT_1
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 2 } }
+		localization_key = TIPS_TEXT_2
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 3 } }
+		localization_key = TIPS_TEXT_3
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 4 } }
+		localization_key = TIPS_TEXT_4
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 5 } }
+		localization_key = TIPS_TEXT_5
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 6 } }
+		localization_key = TIPS_TEXT_6
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 7 } }
+		localization_key = TIPS_TEXT_7
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 8 } }
+		localization_key = TIPS_TEXT_8
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 9 } }
+		localization_key = TIPS_TEXT_9
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 10 } }
+		localization_key = TIPS_TEXT_10
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 11 } }
+		localization_key = TIPS_TEXT_11
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 12 } }
+		localization_key = TIPS_TEXT_12
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 13 } }
+		localization_key = TIPS_TEXT_13
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 14 } }
+		localization_key = TIPS_TEXT_14
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 15 } }
+		localization_key = TIPS_TEXT_15
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 16 } }
+		localization_key = TIPS_TEXT_16
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 17 } }
+		localization_key = TIPS_TEXT_17
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 18 } }
+		localization_key = TIPS_TEXT_18
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 19 } }
+		localization_key = TIPS_TEXT_19
+	}
+	text = {
+		trigger = { check_variable = { tips_variable = 20 } }
+		localization_key = TIPS_TEXT_20
+	}
+	text = { localization_key = NO_TEXT }
+}

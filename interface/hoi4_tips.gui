@@ -1,0 +1,165 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "hoi4_tips_container"
+		position = { x = -498 y = 8 }
+		orientation = UPPER_RIGHT
+
+		buttonType = {
+			name = "hoi4_tips_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_tips_button"
+			buttonText = ""
+			buttonFont = "Main_14_black"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "MENU_hoi4_tips"
+			pdx_tooltip_delayed = "MENU_hoi4_tips_EXPANDED"
+		}
+	}
+
+	containerWindowType = {
+		name = "hoi4_tips_options_container"
+		position = {x=-565 y=60}
+		size = { width=180 height=300 }
+		orientation = UPPER_RIGHT
+		moveable = yes
+
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -105 y = 17 }
+			quadTextureSprite ="GFX_closebutton"
+			orientation = upper_right
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_1"
+			position = {x=30 y=50}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Government & PP"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_2"
+			position = {x=30 y=78}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Research"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_3"
+			position = {x=30 y=106}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Trade"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_4"
+			position = {x=30 y=134}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Construction"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_5"
+			position = {x=30 y=162}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Production"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_6"
+			position = {x=30 y=190}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Recruitment"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_7"
+			position = {x=30 y=218}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Land Warfare"
+		}
+
+		buttonType = {
+			name = "hoi4_tips_option_8"
+			position = {x=30 y=246}
+			spriteType = "GFX_sort_button_120x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Air Warfare"
+		}
+	}
+
+	containerWindowType = {
+		name = "hoi4_tips_text_container"
+		position = {x=-1356 y=60 }
+		orientation = UPPER_RIGHT
+		size = { width=800 height=450 }
+		moveable = yes
+
+		fade_time = 300
+		fade_type = linear
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -50 y = 17 }
+			quadTextureSprite ="GFX_closebutton"
+			orientation = upper_right
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "tips_title_scripted"
+			position = { x = 45 y = 33 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "[tips_title_scripted]"
+			format = left
+			maxWidth = 700
+			maxHeight = 20
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "tips_text_scripted"
+			position = { x = 50 y = 83 }
+			font = "hoi_16"
+			borderSize = {x = 0 y = 0}
+			text = "[tips_text_scripted]"
+			format = left
+			maxWidth = 700
+			maxHeight = 700
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+}

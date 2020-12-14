@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_tips_button"
+        texturefile = "gfx/tips_button.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+}

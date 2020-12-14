@@ -1,0 +1,76 @@
+scripted_gui = {
+
+	hoi4_tips = {
+		window_name = "hoi4_tips_container"
+		parent_window_token = top_bar
+		dirty = update_gui_variable
+
+		visible = { is_ai = no }
+		ai_enabled = { always = no }
+
+		effects = {
+			hoi4_tips_button_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_hoi4_tips }
+				set_variable = { show_hoi4_tips = show }
+			}
+		}
+	}
+
+	hoi4_tips_options = {
+		context_type = player_context
+
+		window_name = "hoi4_tips_options_container"
+		dirty = update_gui_variable
+
+		visible = {
+            is_ai = no
+			check_variable = { show_hoi4_tips > 0.0 }
+		}
+		ai_enabled = { always = no }
+
+		effects = {
+			hoi4_tips_option_1_click = {
+				set_variable = { tips_variable = 1 }
+			}
+			hoi4_tips_option_2_click = {
+				set_variable = { tips_variable = 2 }
+			}
+			hoi4_tips_option_3_click = {
+				set_variable = { tips_variable = 3 }
+			}
+			hoi4_tips_option_4_click = {
+				set_variable = { tips_variable = 4 }
+			}
+			hoi4_tips_option_5_click = {
+				set_variable = { tips_variable = 5 }
+			}
+			hoi4_tips_option_6_click = {
+				set_variable = { tips_variable = 6 }
+			}
+			hoi4_tips_option_7_click = {
+				set_variable = { tips_variable = 7 }
+			}
+			hoi4_tips_option_8_click = {
+				set_variable = { tips_variable = 8 }
+			}
+			close_button_click = { set_variable = { show_hoi4_tips = 0 } }
+		}
+	}
+
+	hoi4_tips_text = {
+		context_type = player_context
+
+		window_name = "hoi4_tips_text_container"
+		dirty = tips_variable
+
+		visible = {
+            is_ai = no
+			check_variable = { tips_variable > 0 }
+		}
+
+		effects = {
+			close_button_click = { set_variable = { tips_variable = 0 } }
+		}
+	}
+}
