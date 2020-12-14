@@ -53,6 +53,18 @@ technologies = {
 		}
 
 	}
+
+	branch_interoperation = {
+		
+	}
+	trench_warfare = {
+
+		# enable_equipments = {
+			# partisan_equipment_0
+		# }
+
+
+	}
 	fighter_baiting = {
 
 			# enable_equipments = {

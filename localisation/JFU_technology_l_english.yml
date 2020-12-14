@@ -30,4 +30,7 @@
     etat_folder_desc:0 "Special Forces Training"
 
     JAP_Riku_Bonus:0 "Marines and Jungle troops"
-  
+     DSFU_ASSAULT_LABEL:0 "ARMORED ASSAULT"
+     DSFU_ASSAULT_LABEL_TT:0 "Focus frontal attacks with armor."
+     DSFU_INFILTRATION_LABEL:0 "INFANTRY ASSAULT"
+     DSFU_INFILTRATION_LABEL_TT:0 "Focus on infantry strategies."

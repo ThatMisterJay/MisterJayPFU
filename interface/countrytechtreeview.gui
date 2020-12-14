@@ -2731,12 +2731,12 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "ASSAULT_LABEL"
+				text = "DSFU_ASSAULT_LABEL"
 				maxWidth = 170
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "ASSAULT_LABEL_TT"
+				pdx_tooltip = "DSFU_ASSAULT_LABEL_TT"
 			}
 
 			instantTextBoxType = {
@@ -2745,12 +2745,12 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "INFILTRATION_LABEL"
+				text = "DSFU_INFILTRATION_LABEL"
 				maxWidth = 200
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "INFILTRATION_LABEL_TT"
+				pdx_tooltip = "DSFU_INFILTRATION_LABEL_TT"
 			}
 
 			instantTextBoxType = {
@@ -2810,7 +2810,7 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "trench_warfare_tree"
+				name = "attritional_containment_tree"
 				position = { x=1040 y=172 }
 				size = { width = 480 height = 1350 }
 				slotsize = { width=60 height= 60 }
