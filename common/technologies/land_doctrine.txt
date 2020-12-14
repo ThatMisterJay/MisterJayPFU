@@ -2,7 +2,7 @@ technologies = {
 
 	mobile_warfare = {
 
-		xor = { superior_firepower trench_warfare mass_assault }
+		xor = { superior_firepower attritional_containment mass_assault }
 
 		path = {
 			leads_to_tech = delay
@@ -37,7 +37,7 @@ technologies = {
 				factor = 0
 				OR = {
 					has_tech = superior_firepower
-					has_tech = trench_warfare
+					has_tech = attritional_containment
 					has_tech = mass_assault
 				}
 			}
@@ -72,7 +72,7 @@ technologies = {
 		allow = {
 			NOT = {
 				has_tech = superior_firepower
-				has_tech = trench_warfare
+				has_tech = attritional_containment
 				has_tech = mass_assault
 			}
 		}
@@ -679,7 +679,7 @@ technologies = {
 
 
 		#Increased Partisan effect on your land occupied by others
-		resistance_damage_to_garrison = 0.1 #10% more partisan effects
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects
 
 		enable_tactic = tactic_guerrilla_tactics
 		enable_tactic = tactic_default_guerrilla_tactics
@@ -709,7 +709,7 @@ technologies = {
 
 	superior_firepower = {
 
-		xor = { mobile_warfare trench_warfare mass_assault }
+		xor = { mobile_warfare attritional_containment mass_assault }
 
 		path = {
 			leads_to_tech = sup_delay
@@ -742,7 +742,7 @@ technologies = {
 				factor = 0
 				OR = {
 					has_tech = mobile_warfare
-					has_tech = trench_warfare
+					has_tech = attritional_containment
 					has_tech = mass_assault
 				}
 			}
@@ -777,7 +777,7 @@ technologies = {
 		allow = {
 			NOT = {
 				has_tech = mobile_warfare
-				has_tech = trench_warfare
+				has_tech = attritional_containment
 				has_tech = mass_assault
 			}
 		}
@@ -1334,12 +1334,16 @@ technologies = {
 	}
 
 
-	trench_warfare = {
+	attritional_containment = {
 
 		xor = { mobile_warfare superior_firepower mass_assault }
 
-		max_dig_in = 10
-		dig_in_speed_factor = 0.25 #25% bonus
+		max_dig_in = 8
+		dig_in_speed_factor = 0.15 #25% bonus
+		category_all_infantry = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
 
 
 		path = {
@@ -1522,13 +1526,14 @@ technologies = {
 			max_organisation = 5
 		}
 
-		enable_tactic = tactic_blitz
-		enable_tactic = tactic_elastic_defense
-		enable_tactic = tactic_default_blitz
-		enable_tactic = tactic_default_elastic_defense
+		category_tanks = {
+			max_organisation = 4
+			breakthrough = 0.15
+		}
+
 
 		path = {
-			leads_to_tech = assault_concentration
+			leads_to_tech = armored_operations
 			research_cost_coeff = 1
 		}
 
@@ -1557,18 +1562,19 @@ technologies = {
 		}
 	}
 
-	assault_concentration = {
+	armored_operations = {
 
-		max_planning = 0.08
-
-		category_all_infantry = {
-			default_morale = 0.05
+		category_tanks = {
+			max_organisation = 2
+		}
+		category_all_armor = {
+			default_morale = 0.1
 		}
 
-		enable_tactic = tactic_overwhelming_fire
-		enable_tactic = tactic_default_overwhelming_fire
+    max_planning = 0.08
+
 		path = {
-			leads_to_tech = branch_interoperation
+			leads_to_tech = assault_concentration
 			research_cost_coeff = 1
 		}
 
@@ -1593,18 +1599,142 @@ technologies = {
 		ai_research_weights = {
 			infantry_weapons = 1.5
 			motorized_equipment = 1.0
+		}
+	}
+
+
+	infantry_offensive = {
+
+		xor = {
+			grand_mechanized_offensive
+		}
+		category_light_infantry = {
+			max_organisation = 5
+			breakthrough = 0.1
+		}
+
+		enable_tactic = tactic_infantry_charge
+		enable_tactic = tactic_default_infantry_charge
+		path = {
+			leads_to_tech = infiltration_in_depth
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes
+		research_cost = 2
+
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	infiltration_in_depth = {
+
+		max_planning = 0.04
+		category_all_infantry = {
+			default_morale = 0.1
+		}
+
+
+		category_recon = {
+			recon = 1
+		}
+
+		path = {
+			leads_to_tech = assault_concentration
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes
+		research_cost = 2
+
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	assault_concentration = {
+
+		enable_tactic = tactic_blitz
+		enable_tactic = tactic_elastic_defense
+		enable_tactic = tactic_default_blitz
+		enable_tactic = tactic_default_elastic_defense
+
+		category_all_infantry = {
+			default_morale = 0.05
+		}
+		enable_subunits = {
+			heavy_infanty_support
+		}
+
+		enable_tactic = tactic_overwhelming_fire
+		enable_tactic = tactic_default_overwhelming_fire
+		path = {
+			leads_to_tech = infiltration_assault
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes
+		research_cost = 2
+
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
 			cat_mechanized_equipment = 1.0
 		}
 	}
 
-	branch_interoperation = {
+	infiltration_assault = {
 
-		category_all_infantry = {
-			max_organisation = 5
-		}
-		category_tanks = {
-			max_organisation = 1
-		}
+    land_night_attack = 0.25 # negates half of base penalty
+		supply_consumption_factor = -0.15
 
 		path = {
 			leads_to_tech = assault_breakthrough
@@ -1622,7 +1752,7 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 12 }
+			position = { x = 0 y = 14 }
 		}
 
 		ai_will_do = {
@@ -1661,7 +1791,7 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -2 y = 14 }
+			position = { x = 0 y = 16 }
 		}
 
 		ai_will_do = {
@@ -1677,41 +1807,7 @@ technologies = {
 
 	central_planning = {
 
-		max_planning = 0.08
-		planning_speed = 0.1
-
-
-		path = {
-			leads_to_tech = c3i_theory
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = -2 y = 16 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
-
-	c3i_theory = {
-
+		max_planning = 0.12
 		land_reinforce_rate = 0.02
 		category_all_infantry = {
 			max_organisation = 5
@@ -1720,46 +1816,6 @@ technologies = {
 			max_organisation = 1
 		}
 
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = -2 y = 18 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
-
-	infantry_offensive = {
-
-		xor = {
-			grand_mechanized_offensive
-		}
-		category_light_infantry = {
-			max_organisation = 5
-			breakthrough = 0.1
-		}
-
-		enable_tactic = tactic_infantry_charge
-		enable_tactic = tactic_default_infantry_charge
-		path = {
-			leads_to_tech = armored_operations
-			research_cost_coeff = 1
-		}
 
 		doctrine = yes
 		research_cost = 2
@@ -1772,7 +1828,7 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 8 }
+			position = { x = 0 y = 18 }
 		}
 
 		ai_will_do = {
@@ -1785,193 +1841,12 @@ technologies = {
 		}
 	}
 
-	armored_operations = {
-
-		category_tanks = {
-			max_organisation = 2
-		}
-		category_all_armor = {
-			default_morale = 0.1
-		}
-
-		enable_tactic = tactic_blitz
-		enable_tactic = tactic_elastic_defense
-		enable_tactic = tactic_default_blitz
-		enable_tactic = tactic_default_elastic_defense
-
-		path = {
-			leads_to_tech = infiltration_assault
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
 
 
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 2 y = 10 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
-
-	infiltration_assault = {
-
-
-		supply_consumption_factor = -0.20
-
-		path = {
-			leads_to_tech = night_assault_tactics
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 2 y = 12 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
-
-	night_assault_tactics = {
-
-		#reduce land night combat penalty
-		land_night_attack = 0.25 # negates half of base penalty
-
-
-		path = {
-			leads_to_tech = attritional_containment
-			research_cost_coeff = 1
-		}
-
-
-
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 2 y = 14 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
-
-	attritional_containment = {
-
-		category_all_infantry = {
-			max_organisation = 10
-		}
-		category_tanks = {
-			max_organisation = 1
-		}
-		path = {
-			leads_to_tech = infiltration_in_depth
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 2 y = 16 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
-
-	infiltration_in_depth = {
-
-		land_reinforce_rate = 0.02
-		max_planning = 0.04
-
-		recon = {
-			recon = 1
-		}
-
-		doctrine = yes
-		research_cost = 2
-
-		categories = {
-			land_doctrine
-			cat_grand_battle_plan
-		}
-
-
-		folder = {
-			name = land_doctrine_folder
-			position = { x = 2 y = 18 }
-		}
-
-		ai_will_do = {
-			factor = 20
-		}
-
-		ai_research_weights = {
-			infantry_weapons = 1.5
-			motorized_equipment = 1.0
-		}
-	}
 
 	mass_assault = {
 
-		xor = { mobile_warfare superior_firepower trench_warfare }
+		xor = { mobile_warfare superior_firepower attritional_containment }
 
 		path = {
 			leads_to_tech = pocket_defence
@@ -2001,7 +1876,7 @@ technologies = {
 				OR = {
 					has_tech = mobile_warfare
 					has_tech = superior_firepower
-					has_tech = trench_warfare
+					has_tech = attritional_containment
 				}
 			}
 		}
@@ -2035,7 +1910,7 @@ technologies = {
 			NOT = {
 				has_tech = mobile_warfare
 				has_tech = superior_firepower
-				has_tech = trench_warfare
+				has_tech = attritional_containment
 			}
 		}
 
@@ -2387,7 +2262,7 @@ technologies = {
 
 
 		#Increased Partisan effect on your land occupied by others
-		resistance_damage_to_garrison = 0.1 #10% more partisan effects
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects
 		#Land Units take less attrition
 		attrition = -0.1 #take 10% less attrition losses
 
@@ -2550,7 +2425,7 @@ technologies = {
 			default_morale = 0.2
 		}
 
-		resistance_damage_to_garrison = 0.2
+		resistance_damage_to_garrison_on_our_occupied_states = 0.2
 
 		enable_tactic = tactic_guerrilla_tactics
 		enable_tactic = tactic_default_guerrilla_tactics
