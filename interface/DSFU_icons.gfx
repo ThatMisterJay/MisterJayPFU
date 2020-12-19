@@ -83,6 +83,14 @@ spriteType = {
 	textureFile = "gfx/interface/DSFU_GFX/trait_large_front_commander.dds"
 }
 spriteType = {
+	name = "GFX_trait_nighter_fighter_spec"
+	textureFile = "gfx/interface/DSFU_GFX/trait_nighter_fighter_spec.dds"
+}
+spriteType = {
+	name = "GFX_trait_training_general"
+	textureFile = "gfx/interface/DSFU_GFX/trait_training_general.dds"
+}
+spriteType = {
 	name = "GFX_trait_to_good"
 	textureFile = "gfx/interface/DSFU_GFX/trait_to_good.dds"
 }

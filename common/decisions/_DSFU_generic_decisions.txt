@@ -367,3 +367,101 @@ complete_effect = {
 }
 
 }
+
+military_staff_cat = {
+
+  staff_college = {
+  	icon = generic_army_support
+  	fire_only_once = no
+
+  	allowed = {
+  	}
+
+  	available = {
+      has_army_experience > 30
+  	}
+  	visible = {
+  	}
+  	modifier = {
+
+  	}
+
+  	days_remove = 50
+
+
+  	complete_effect = {
+      custom_effect_tooltip = general_training.tt
+      if = {
+        limit = {
+          has_army_experience > 30
+        }
+        random_unit_leader = {
+          limit = {
+            skill < 3
+            num_units > 0
+            num_units < 2
+            NOT = { has_trait = training_general }
+          }
+          add_timed_unit_leader_trait = {
+            trait = training_general
+            days = 30
+          }
+        add_skill_level = 1
+        add_unit_leader_trait = organizer
+        }
+        army_experience = -30
+        random_unit_leader = {
+          limit = {
+            skill < 2
+            num_units > 0
+            num_units < 2
+            NOT = { has_trait = training_general }
+            NOT = { has_trait = organizer }
+          }
+          add_unit_leader_trait = organizer
+        }
+  		}
+    }
+  }
+
+  staff_college_infantry = {
+  	icon = generic_army_support
+  	fire_only_once = no
+
+  	allowed = {
+  	}
+
+  	available = {
+      has_army_experience > 60
+  	}
+  	visible = {
+  	}
+  	modifier = {
+
+  	}
+
+  	days_remove = 50
+
+
+  	complete_effect = {
+      custom_effect_tooltip = general_training_infantry.tt
+        random_unit_leader = {
+          limit = {
+            NOT = {
+               has_trait = infantry_leader
+               has_trait = training_general
+            }
+            num_units > 0
+            num_units < 2
+          }
+          add_timed_unit_leader_trait = {
+            trait = training_general
+            days = 60
+          }
+          add_unit_leader_trait = infantry_leader
+        }
+        army_experience = -60
+  	}
+  }
+
+}

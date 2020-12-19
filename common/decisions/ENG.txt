@@ -470,25 +470,22 @@ ENG_commonwealth_industry_road = {
 		}
 
 		on_map_mode = map_and_decisions_view
-		state_target = yes
+
     target_trigger = {
     	FROM = {
-				is_capital = yes
 				OR = {
-          state = 126
-					state = 276
-					state = 784
-					state = 284
-					state = 439
+          tag = NZL
+					tag = CAN
+					tag = AST
+					tag = RAJ
+					tag = ENG
         }
       }
 	  }
 		complete_effect = {
 			FROM = {
-				CONTROLLER = {
 				add_ideas = imperial_counter_espionage
 				create_intelligence_agency = yes
-				}
 			}
 		}
 

@@ -175,6 +175,11 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     large_front_commander:0 "Large Front Officer"
     large_front_commander_desc:0 "Capable of managing large amounts of divisions on a wide front."
     expert_improviser_movement_bonus_on_land_DSFU:0 "Movement Bonus On Land: §G+5.0%§!"
+    training_general:0 "Staff Training"
+    training_general_desc:0 "Staff Training"
+    nighter_fighter_spec:0 "Night Combat Specialist"
+    nighter_fighter_spec_desc:0 ""
+    fighting_in_night.tt:0 "Fighting while at night"
 
 
 #Italian stuff#

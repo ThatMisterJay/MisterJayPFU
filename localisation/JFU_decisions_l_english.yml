@@ -222,6 +222,7 @@ GER_OKH_citadel:0 "Unternehmen Zitadelle"
 GER_OKH_case_blue:0 "Fall Blau"
 
 
+
 #general
 african_logistics:0 "African Logistics Problem"
 african_logistics_desc:0 "A battle in the northern desert presents a problem of logistics for both our army and the enemies. If we are to build up supply stockpiles capable of supplying a push to secure all of North Africa, then it will require a great deal of time and resources to build the necessary infrastructure."
@@ -230,6 +231,10 @@ italian_logistics:0 "Improve Eastern Libyan Logistics"
 british_logistics_2:0 "Improve East Egyptian Logistics"
 italian_logistics_2:0 "Improve Western Libyan Logistics"
 british_logistics_3:0 "Improve Middle east Logistics"
+staff_college_infantry:0 "Give a Field Commander Infantry Training"
+staff_college:0 "Give a Field Commander Staff Training"
+military_staff_cat:0 "Military High Command"
+military_staff_cat_desc:0 ""
 
 RAJ_naval_category:0 "Naval Policy"
 RAJ_small_naval_effort:0 "Small Naval Construction Effort"

@@ -88,6 +88,8 @@ GER_stug_tt:0 "Will allow production of the §YStuG III Ausf. G§!."
 GER_htd_tt:0 "Will allow production of the §YFerdinand§!."
 GER_tank_3_tt:0 "Our experience from the east will allows us to develop more §YAdvanced Panzers§!."
 GER_SPA_tt:0 "For our mobile warfare to succeeded we will need to develop §YMobile Artillery§!."
+general_training.tt:0 "For our §YCommander§! to receive staff training he must be in command of a single §Ydivision§! and we'll need §Y30 Army Experience§! for a level 2 or §Y50 Army Experience§! for a level 1 §YCommander§!"
+general_training_infantry.tt:0 "For our §YCommander§! to receive Infantry training he must be in command of a single §Ydivision§! and we need §Y60 Army Experience§!."
 
 ENG_norway_warplan:0 "Will allow us to execute §YMilitary Operations§! in Scandanavia"
 
