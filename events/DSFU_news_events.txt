@@ -13,11 +13,11 @@ news_event = {
 
   option = {
   name = DSFU_news.1.a
-  trigger = {
-  NOT = {
-   is_in_faction_with = ENG
-   }
- }
+    trigger = {
+      NOT = {
+        is_in_faction_with = ENG
+      }
+    }
   }
 
   option = {
@@ -51,11 +51,9 @@ news_event = {
 
   option = {
   name = DSFU_news.2.a
-  trigger = {
-  NOT = {
-   is_in_faction_with = ENG
-   }
- }
+	trigger = {
+		tag = JAP
+	}
   }
 
   option = {
@@ -108,8 +106,7 @@ news_event = {
 
   option = {
   name = DSFU_news.4.a
-  
+
   }
 
 }
-

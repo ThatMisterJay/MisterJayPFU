@@ -1371,8 +1371,8 @@ JAP_expansionism = {
 
 		complete_effect = {
 			JAP = {
-				set_state_owner = 671 #Tonkin
-				set_state_owner = 670 #Laos
+				transfer_state = 671 #Tonkin
+				transfer_state = 670 #Laos
 			}
 		}
 
@@ -1432,8 +1432,8 @@ JAP_expansionism = {
 
 		complete_effect = {
 			JAP = {
-				set_state_owner = 286 #Saigon
-				set_state_owner = 741 #Cambodia
+				transfer_state = 286 #Saigon
+				transfer_state = 741 #Cambodia
 			}
 			add_named_threat = { threat = 25 name = jap_indochina_tension }
 			custom_effect_tooltip = JAP_invade_southern_indochina_tt
