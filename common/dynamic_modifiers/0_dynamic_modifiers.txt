@@ -106,11 +106,12 @@ ITA_balken_development = {
 	enable = { always = yes }
 
 	icon = GFX_ITA_balkan_dev
-
-  resistance_target	= -0.20
+  local_factories = 0.3
+	compliance_growth = 0.15
+	resistance_growth = -0.15
 	local_building_slots_factor = 0.60
 	state_production_speed_buildings_factor = 0.10
-	recruitable_population_factor = 0.2
+	local_non_core_manpower = 0.2
 }
 
 ITA_balken_exploit = {
@@ -118,23 +119,23 @@ ITA_balken_exploit = {
 
 	icon = GFX_ITA_balkan_exploit
 
-  resistance_target = 0.30
+	compliance_growth = -0.1
+	resistance_growth = 0.1
 	local_building_slots_factor = -0.30
 	state_production_speed_buildings_factor = -0.30
-	recruitable_population_factor = -1
+	local_non_core_manpower = -1
 }
 
 ITA_colonial_development = {
 	enable = { always = yes }
 
 	icon = GFX_ITA_colony_dev
-
-
-  compliance_gain = 0.1
-  resistance_target	= -0.10
+  local_factories = 0.3
+	compliance_growth = 0.2
+	resistance_growth = -0.2
 	local_building_slots_factor = 0.25
 	state_production_speed_buildings_factor = 0.10
-	recruitable_population_factor = 0.3
+	local_non_core_manpower = 0.3
 }
 
 ITA_colonial_exploit = {
@@ -143,11 +144,109 @@ ITA_colonial_exploit = {
 	icon = GFX_ITA_colony_exploit
 
 
-  resistance_target = 0.20
+	compliance_growth = -0.1
+	resistance_growth = 0.15
 	local_building_slots_factor = -0.50
 	state_production_speed_buildings_factor = -0.10
 	recruitable_population_factor = -0.5
 }
+
+#Japan
+
+JAP_stronghold_1 = {
+	enable = { always = yes }
+
+	icon = GFX_JAP_stronghold_1
+
+	local_factories = 0.1
+	compliance_growth = 0.05
+	resistance_growth = -0.05
+  resistance_damage_to_garrison = -0.05
+	local_building_slots_factor = 0.20
+	state_production_speed_buildings_factor = 0.05
+	local_non_core_manpower = 0.15
+	local_resources = 0.1
+}
+
+JAP_stronghold_2 = {
+	enable = { always = yes }
+
+	icon = GFX_JAP_stronghold_1
+
+	local_factories = 0.2
+	compliance_growth = 0.10
+	resistance_growth = -0.10
+  resistance_damage_to_garrison = -0.10
+	local_building_slots_factor = 0.40
+	state_production_speed_buildings_factor = 0.10
+	local_non_core_manpower = 0.25
+	local_resources = 0.2
+}
+
+JAP_stronghold_3 = {
+	enable = { always = yes }
+
+	icon = GFX_JAP_stronghold_2
+
+	local_factories = 0.3
+	compliance_growth = 0.15
+	resistance_growth = -0.15
+  resistance_damage_to_garrison = -0.15
+	local_building_slots_factor = 0.60
+	state_production_speed_buildings_factor = 0.15
+	local_non_core_manpower = 0.35
+	local_resources = 0.3
+}
+
+#China
+
+CHI_stronghold_1 = {
+	enable = { always = yes }
+
+	icon = GFX_CHI_kmt_1
+
+	local_factories = -0.1
+	compliance_growth = -0.05
+	resistance_growth = 0.05
+  resistance_damage_to_garrison = 0.05
+	local_building_slots_factor = -0.15
+	state_production_speed_buildings_factor = -0.05
+	local_non_core_manpower = -0.15
+	local_resources = -0.15
+}
+
+CHI_stronghold_2 = {
+	enable = { always = yes }
+
+	icon = GFX_CHI_kmt_1
+
+	local_factories = -0.2
+	compliance_growth = -0.10
+	resistance_growth = 0.10
+	resistance_damage_to_garrison = 0.20
+	local_building_slots_factor = -0.30
+	state_production_speed_buildings_factor = -0.10
+	local_non_core_manpower = -0.2
+	local_resources = -0.3
+}
+
+
+CHI_stronghold_3 = {
+	enable = { always = yes }
+
+	icon = GFX_CHI_kmt_2
+
+  local_factories = -0.3
+	compliance_growth = -0.15
+	army_speed_factor_for_controller = -0.05
+	resistance_growth = 0.15
+  resistance_damage_to_garrison = 0.20
+	local_building_slots_factor = -0.45
+	state_production_speed_buildings_factor = -0.15
+	local_non_core_manpower = -0.35
+	local_resources = -0.45
+}
+
 
 
 #France
@@ -159,7 +258,7 @@ FRA_gabon_military = {
 	icon = GFX_FRA_gabon_conscripts
 
 	state_production_speed_buildings_factor = -0.15
-	recruitable_population_factor = 0.6
+	local_non_core_manpower = 0.6
 }
 
 FRA_free_gabon = {
@@ -190,9 +289,11 @@ FRA_integral = {
 
 	icon = GFX_FRA_integral
 
+
+  local_factories = 0.3
 	local_building_slots_factor = 0.4
   resistance_target	= -0.20
-	recruitable_population_factor = 0.2
+	local_non_core_manpower = 0.2
 }
 
 #UK
@@ -202,10 +303,10 @@ ENG_rhodesia = {
 	enable = { always = yes }
 
 	icon = GFX_ENG_british_rho
-
+  local_factories = 0.3
 	local_building_slots_factor = 0.5
   resistance_target	= -0.80
-	recruitable_population_factor = 0.6
+	local_non_core_manpower = 0.6
 }
 
 ENG_south_africa = {
@@ -213,10 +314,10 @@ ENG_south_africa = {
 	enable = { always = yes }
 
 	icon = GFX_ENG_british_saf
-
+  local_factories = 0.3
 	local_building_slots_factor = 0.6
   resistance_target	= -0.90
-	recruitable_population_factor = 0.5
+	local_non_core_manpower = 0.5
 }
 
 #Germany
@@ -225,7 +326,7 @@ GER_exploit = {
 	enable = { always = yes }
 
 	icon = GFX_GER_exploit
-
+  local_factories = -0.1
   resistance_target = 0.10
 	local_building_slots_factor = -0.10
 	state_production_speed_buildings_factor = -0.10

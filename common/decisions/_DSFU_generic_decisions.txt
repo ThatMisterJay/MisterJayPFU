@@ -465,3 +465,649 @@ military_staff_cat = {
   }
 
 }
+
+allied_china_war = {
+
+  support_chinese_local_attack = {
+  	icon = generic_prepare_civil_war
+  	fire_only_once = no
+
+
+  	available = {
+      has_equipment = { support_equipment > 29 }
+      has_equipment = { infantry_equipment > 709 }
+      has_equipment = { artillery_equipment > 69 }
+      NOT = {
+        has_country_flag = attack_under_way
+      }
+  	}
+  	visible = {
+      if = {
+        limit = {
+          OR = {
+            tag = ENG
+            tag = AST
+            tag = RAJ
+            tag = CAN
+            tag = NZL
+            tag = USA
+          }
+        }
+        ENG = {
+          has_completed_focus = uk_burma_focus
+        }
+      }
+  	}
+  	modifier = {
+  	}
+
+  	days_remove = 40
+  	on_map_mode = map_only
+  	state_target = yes
+  	target_trigger = {
+  		FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        OR = {
+          has_dynamic_modifier = { modifier = CHI_stronghold_3 }
+          has_dynamic_modifier = { modifier = CHI_stronghold_2 }
+          has_dynamic_modifier = { modifier = CHI_stronghold_1 }
+          has_dynamic_modifier = { modifier = JAP_stronghold_1 }
+        }
+
+  		}
+  	}
+  	complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -30
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -710
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -70
+      }
+      set_country_flag = { flag = attack_under_way days = 40 value = 1 }
+  	}
+  	remove_effect = {
+      army_experience = 4
+  		FROM = {
+        add_resistance = 10
+
+  		}
+  	}
+  }
+
+  support_chinese_urban_attack = {
+    icon = generic_prepare_civil_war
+    fire_only_once = no
+
+
+    available = {
+      has_equipment = { support_equipment > 39 }
+      has_equipment = { infantry_equipment > 1499 }
+      has_equipment = { artillery_equipment > 89 }
+      NOT = {
+        has_country_flag = attack_under_way
+      }
+    }
+    visible = {
+      if = {
+        limit = {
+          OR = {
+            tag = ENG
+            tag = AST
+            tag = RAJ
+            tag = CAN
+            tag = NZL
+            tag = USA
+          }
+        }
+        ENG = {
+          has_completed_focus = uk_burma_focus
+        }
+      }
+    }
+    modifier = {
+    }
+
+    days_remove = 50
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        OR = {
+          has_dynamic_modifier = { modifier = JAP_stronghold_2 }
+          has_dynamic_modifier = { modifier = JAP_stronghold_3 }
+        }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -40
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -1500
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -90
+      }
+      set_country_flag = { flag = attack_under_way days = 50 value = 1 }
+    }
+    remove_effect = {
+      army_experience = 8
+      FROM = {
+        add_resistance = 10
+      }
+    }
+  }
+
+  support_chinese_battle = {
+    icon = generic_ignite_civil_war
+    fire_only_once = no
+
+
+    available = {
+      has_equipment = { support_equipment > 49 }
+      has_equipment = { infantry_equipment > 4599 }
+      has_equipment = { artillery_equipment > 109 }
+      NOT = {
+        has_country_flag = battle_under_way
+      }
+    }
+    visible = {
+      if = {
+        limit = {
+          OR = {
+            tag = ENG
+            tag = AST
+            tag = RAJ
+            tag = CAN
+            tag = NZL
+            tag = USA
+          }
+        }
+        ENG = {
+          has_completed_focus = uk_burma_focus
+        }
+      }
+    }
+    modifier = {
+    }
+
+
+    days_remove = 60
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        OR = {
+          has_dynamic_modifier = { modifier = JAP_stronghold_1 }
+          has_dynamic_modifier = { modifier = JAP_stronghold_2 }
+          has_dynamic_modifier = { modifier = CHI_stronghold_1 }
+
+        }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -50
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -4600
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -110
+      }
+      set_country_flag = { flag = battle_under_way days = 60 value = 1 }
+    }
+    remove_effect = {
+    FROM = {
+        if = {
+          limit = {
+            has_dynamic_modifier = { modifier = JAP_stronghold_2 }
+          }
+          remove_dynamic_modifier = { modifier = JAP_stronghold_2 }
+          add_dynamic_modifier = { modifier = JAP_stronghold_1 }
+        }
+        else_if = {
+          limit = {
+            has_dynamic_modifier = { modifier = JAP_stronghold_1 }
+          }
+          remove_dynamic_modifier = { modifier = JAP_stronghold_1 }
+          add_dynamic_modifier = { modifier = CHI_stronghold_1 }
+        }
+        else_if = {
+          limit = {
+            has_dynamic_modifier = { modifier = CHI_stronghold_1 }
+          }
+          remove_dynamic_modifier = { modifier = CHI_stronghold_1 }
+          add_dynamic_modifier = { modifier = CHI_stronghold_2 }
+        }
+      }
+    }
+  }
+
+  support_chinese_secure_state = {
+    icon = infiltrate_state
+    fire_only_once = no
+
+
+    available = {
+      has_equipment = { support_equipment > 49 }
+      has_equipment = { infantry_equipment > 4999 }
+      has_equipment = { artillery_equipment > 139 }
+      NOT = {
+        has_country_flag = battle_under_way
+      }
+    }
+    visible = {
+      if = {
+        limit = {
+          OR = {
+            tag = ENG
+            tag = AST
+            tag = RAJ
+            tag = CAN
+            tag = NZL
+            tag = USA
+          }
+        }
+        ENG = {
+          has_completed_focus = uk_burma_focus
+        }
+      }
+    }
+    modifier = {
+    }
+
+    days_remove = 50
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        has_dynamic_modifier = { modifier = CHI_stronghold_2 }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -50
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -5000
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -130
+      }
+      set_country_flag = { flag = battle_under_way days = 50 value = 1 }
+    }
+      remove_effect = {
+        FROM = {
+          remove_dynamic_modifier = { modifier = CHI_stronghold_2 }
+          add_dynamic_modifier = { modifier = CHI_stronghold_3 }
+        }
+      }
+  }
+
+  support_chinese_break_control = {
+    icon = infiltrate_state
+    fire_only_once = no
+
+
+
+    available = {
+      has_equipment = { support_equipment > 79 }
+      has_equipment = { infantry_equipment > 9999 }
+      has_equipment = { artillery_equipment > 249 }
+      NOT = {
+        has_country_flag = battle_under_way
+      }
+    }
+    visible = {
+      if = {
+        limit = {
+          OR = {
+            tag = ENG
+            tag = AST
+            tag = RAJ
+            tag = CAN
+            tag = NZL
+            tag = USA
+          }
+        }
+        ENG = {
+          has_completed_focus = uk_burma_focus
+        }
+      }
+    }
+    modifier = {
+    }
+
+    days_remove = 80
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        has_dynamic_modifier = { modifier = JAP_stronghold_3 }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -80
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -10000
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -250
+      }
+      set_country_flag = { flag = battle_under_way days = 80 value = 1 }
+    }
+    remove_effect = {
+    FROM = {
+      remove_dynamic_modifier = { modifier = JAP_stronghold_3 }
+      add_dynamic_modifier = { modifier = JAP_stronghold_2 }
+      }
+    }
+  }
+
+
+
+}
+
+axis_china_war = {
+
+  japanese_crack_down = {
+    icon = generic_prepare_civil_war
+    fire_only_once = no
+
+
+    available = {
+      has_equipment = { support_equipment > 29 }
+      has_equipment = { infantry_equipment > 709 }
+      has_equipment = { artillery_equipment > 69 }
+      NOT = {
+        has_country_flag = attack_under_way
+      }
+    }
+
+    visible = {
+      tag = JAP
+      owns_state = 608
+    }
+
+    modifier = {
+    }
+
+    days_remove = 40
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -30
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -710
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -70
+      }
+      set_country_flag = { flag = attack_under_way days = 40 value = 1 }
+    }
+    remove_effect = {
+      army_experience = 4
+      FROM = {
+        add_resistance = -10
+      }
+    }
+  }
+
+
+
+  japanese_battle = {
+    icon = generic_ignite_civil_war
+    fire_only_once = no
+
+
+
+    available = {
+      has_equipment = { support_equipment > 49 }
+      has_equipment = { infantry_equipment > 4599 }
+      has_equipment = { artillery_equipment > 109 }
+      NOT = {
+        has_country_flag = battle_under_way
+      }
+    }
+
+    visible = {
+      tag = JAP
+      owns_state = 608
+    }
+
+    modifier = {
+    }
+
+    days_remove = 50
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        OR = {
+          has_dynamic_modifier = { modifier = JAP_stronghold_1 }
+          has_dynamic_modifier = { modifier = CHI_stronghold_2 }
+          has_dynamic_modifier = { modifier = CHI_stronghold_1 }
+        }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -50
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -4600
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -110
+      }
+      set_country_flag = { flag = battle_under_way days = 50 value = 1 }
+    }
+    remove_effect = {
+    FROM = {
+        if = {
+          limit = {
+            has_dynamic_modifier = { modifier = CHI_stronghold_2 }
+          }
+          remove_dynamic_modifier = { modifier = CHI_stronghold_2 }
+          add_dynamic_modifier = { modifier = CHI_stronghold_1 }
+        }
+        else_if = {
+          limit = {
+            has_dynamic_modifier = { modifier = CHI_stronghold_1 }
+          }
+          remove_dynamic_modifier = { modifier = CHI_stronghold_1 }
+          add_dynamic_modifier = { modifier = JAP_stronghold_1 }
+        }
+        else_if = {
+          limit = {
+            has_dynamic_modifier = { modifier = JAP_stronghold_1 }
+          }
+          remove_dynamic_modifier = { modifier = JAP_stronghold_1 }
+          add_dynamic_modifier = { modifier = JAP_stronghold_2 }
+        }
+      }
+    }
+  }
+
+  japanese_secure_state = {
+    icon = infiltrate_state
+    fire_only_once = no
+
+
+    available = {
+      has_equipment = { support_equipment > 49 }
+      has_equipment = { infantry_equipment > 4999 }
+      has_equipment = { artillery_equipment > 139 }
+      NOT = {
+        has_country_flag = battle_under_way
+      }
+    }
+
+    visible = {
+      tag = JAP
+      owns_state = 608
+    }
+
+    modifier = {
+    }
+
+    days_remove = 40
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        has_dynamic_modifier = { modifier = JAP_stronghold_2 }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -50
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -5000
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -130
+      }
+      set_country_flag = { flag = battle_under_way days = 40 value = 1 }
+    }
+    remove_effect = {
+    FROM = {
+      remove_dynamic_modifier = { modifier = JAP_stronghold_2 }
+      add_dynamic_modifier = { modifier = JAP_stronghold_3 }
+      }
+    }
+  }
+
+  japanese_break_control = {
+    icon = infiltrate_state
+    fire_only_once = no
+
+
+    available = {
+      has_equipment = { support_equipment > 79 }
+      has_equipment = { infantry_equipment > 9999 }
+      has_equipment = { artillery_equipment > 249 }
+      NOT = {
+        has_country_flag = attack_under_way
+      }
+    }
+    visible = {
+      tag = JAP
+      owns_state = 608
+    }
+    modifier = {
+    }
+
+
+    days_remove = 70
+    on_map_mode = map_only
+    state_target = yes
+    target_trigger = {
+      FROM = {
+        is_owned_by = JAP
+        OR = {
+          is_core_of = PRC
+          is_core_of = CHI
+        }
+        has_dynamic_modifier = { modifier = CHI_stronghold_3 }
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+          type = support_equipment
+          amount = -80
+      }
+      add_equipment_to_stockpile = {
+          type = infantry_equipment
+          amount = -10000
+      }
+      add_equipment_to_stockpile = {
+          type = artillery_equipment
+          amount = -250
+      }
+      set_country_flag = { flag = battle_under_way days = 70 value = 1 }
+    }
+    remove_effect = {
+    FROM = {
+      remove_dynamic_modifier = { modifier = CHI_stronghold_3 }
+      add_dynamic_modifier = { modifier = CHI_stronghold_2 }
+      }
+    }
+  }
+}

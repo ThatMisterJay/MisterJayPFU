@@ -31,3 +31,53 @@ military_staff_cat = {
 	}
 
 }
+
+allied_china_war = {
+	picture = generic_border_conflicts
+  icon = border_conflicts
+  allowed = {
+		OR = {
+		  is_in_faction_with = ENG
+			tag = ENG
+		}
+	}
+	priority = 5
+	visibility_type = map_and_decisions_view
+
+	on_map_area = {
+		state = 620
+		name = axis_china
+		zoom = 629
+		target_root_trigger = {
+			OR = {
+				is_in_faction_with = ENG
+				tag = ENG
+			}
+		}
+	}
+}
+
+axis_china_war = {
+	picture = generic_border_conflicts
+  icon = border_conflicts
+  allowed = {
+		OR = {
+			is_in_faction_with = JAP
+			tag = JAP
+		}
+	}
+	priority = 5
+	visibility_type = map_and_decisions_view
+
+	on_map_area = {
+		state = 620
+		name = axis_china
+		zoom = 620
+		target_root_trigger = {
+			OR = {
+				is_in_faction_with = JAP
+				tag = JAP
+			}
+		}
+	}
+}
