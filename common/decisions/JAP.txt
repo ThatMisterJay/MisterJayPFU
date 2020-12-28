@@ -1254,7 +1254,7 @@ prospect_for_resources = {
 }
 
 JAP_expansionism = {
-	
+
 	JAP_marco_polo_bridge_incident = {
 
 		available = {
@@ -1262,7 +1262,7 @@ JAP_expansionism = {
 		}
 
 		visible = {
-			
+
 		}
 		icon = jap_conquer_china
 		fire_only_once = yes
@@ -1272,22 +1272,24 @@ JAP_expansionism = {
 
 		}
 		priority = 10
-		
+
 		days_mission_timeout = 553
 		is_good = yes
 		fire_only_once = yes
-		
+
 		complete_effect = {
 		}
-		
+
 		timeout_effect = {
 			country_event = Jfujap.4
-			
+			hidden_effect = {
+				country_event = super.6
+			}
 		}
 
 
 	}
-	
+
 	JAP_southern_china_strategic_offensive = {
 
 		available = {
@@ -1295,7 +1297,7 @@ JAP_expansionism = {
 		}
 
 		visible = {
-			
+
 		}
 		icon = jap_conquer_china
 		fire_only_once = yes
@@ -1305,22 +1307,22 @@ JAP_expansionism = {
 
 		}
 		priority = 10
-		
+
 		days_mission_timeout = 953
 		is_good = yes
 		fire_only_once = yes
-		
-	
+
+
 
 		complete_effect = {
 		}
-		
+
 		timeout_effect = {
 			country_event = Jfujap.5
 		}
 
 	}
-	
+
 	JAP_invade_indochina = {
 
 		available = {
@@ -1328,7 +1330,7 @@ JAP_expansionism = {
 			custom_trigger_tooltip = {
 				tooltip = demand_northern_indochina_focus_tt
 				OR = {
-					
+
 					670 = { is_fully_controlled_by = EFR } #Laos
 					671 = { is_fully_controlled_by = EFR } #Tonkin
 				}
@@ -1336,10 +1338,10 @@ JAP_expansionism = {
 		}
 
 		visible = {
-			
+
 		}
 		icon = border_war
-		
+
 
 		fire_only_once = yes
 
@@ -1399,7 +1401,7 @@ JAP_expansionism = {
 		}
 		icon = border_war
 		visible = {
-			
+
 		}
 
 		fire_only_once = yes
@@ -1444,7 +1446,7 @@ JAP_expansionism = {
 		}
 
 	}
-	
+
 	JAP_invade_siam = {
 
 		available = {
@@ -1459,7 +1461,7 @@ JAP_expansionism = {
 		}
 
 		visible = {
-			
+
 		}
 		icon = jap_pacific_guardian
 		fire_only_once = yes
@@ -1495,7 +1497,7 @@ JAP_expansionism = {
 				country_event = japan.11
 			}
 			add_named_threat = { threat = 10 name = jap_siam_tension }
-			
+
 		}
 
 	}
@@ -1526,10 +1528,13 @@ JAP_expansionism = {
 		}
 
 		visible = {
-			
+
 		}
 
 		complete_effect = {
+			  hidden_effect = {
+					country_event = super.4
+				}
 		    ENG = {
 				annex_country = {
 					target = INS
@@ -1552,6 +1557,17 @@ JAP_expansionism = {
 					limit = {
 						not = { is_core_of = ROOT }
 						is_core_of = PHI
+					}
+					add_compliance = 100
+				}
+				annex_country = {
+					target = VEN
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					limit = {
+						not = { is_core_of = ROOT }
+						is_core_of = VEN
 					}
 					add_compliance = 100
 				}
@@ -1581,7 +1597,7 @@ JAP_expansionism = {
 				target = PHI
 				type = annex_everything
 			}
-			
+
 			declare_war_on = {
 				target = ENG
 				type = annex_everything

@@ -75,6 +75,22 @@ spriteType = {
 	textureFile = "gfx/interface/DSFU_GFX/ENG_british_rho.dds"
 }
 spriteType = {
+	name = "GFX_JAP_stronghold_1"
+	textureFile = "gfx/interface/DSFU_GFX/JAP_stronghold_1.dds"
+}
+spriteType = {
+	name = "GFX_CHI_kmt_1"
+	textureFile = "gfx/interface/DSFU_GFX/CHI_kmt_1.dds"
+}
+spriteType = {
+	name = "GFX_CHI_kmt_2"
+	textureFile = "gfx/interface/DSFU_GFX/CHI_kmt_2.dds"
+}
+spriteType = {
+	name = "GFX_JAP_stronghold_2"
+	textureFile = "gfx/interface/DSFU_GFX/JAP_stronghold_2.dds"
+}
+spriteType = {
 	name = "GFX_SOV_moscow_metro"
 	textureFile = "gfx/interface/DSFU_GFX/SOV_moscow_metro.dds"
 }

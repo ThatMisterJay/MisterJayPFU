@@ -204,6 +204,12 @@ victor_emmanuel_1_desc:0 "The "Soldier King" remind the Italians of their recent
     ENG_rhodesia:0 "British Rhodesia"
     ENG_south_africa:0 "British South Africa"
     GER_exploit:0 "Exploited"
+    JAP_stronghold_1:0 "Limited Japanese Control"
+    JAP_stronghold_2:0 "Strong Japanese Control"
+    JAP_stronghold_3:0 "Complete Japanese Control"
+    CHI_stronghold_1:0 "Limited Chinese Resistance"
+    CHI_stronghold_2:0 "Strong Chinese Resistance"
+    CHI_stronghold_3:0 "Overwhelming Chinese Resistance"
 
 
 

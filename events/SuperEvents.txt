@@ -1,0 +1,134 @@
+﻿##################
+# SUPER EVENTS
+##################
+
+add_namespace = super
+
+country_event = {		#Super Event DONE
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+
+	hidden = yes
+
+	option = {
+		name = super.1.a
+    every_country = {
+      set_country_flag = Super_Event_Visible
+      set_country_flag = ENG_death_of_george
+			sound_effect = "superev_god_save_the_king"
+		}
+
+	}
+}
+
+country_event = {		#munich
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+
+	hidden = yes
+
+	option = {
+		name = super.2.a
+    every_country = {
+      set_country_flag = Super_Event_Visible
+      set_country_flag = DSFU_munich
+			sound_effect = "superev_PeaceInOurTime"
+		}
+
+	}
+}
+
+country_event = {		#ww2
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+
+	hidden = yes
+
+	option = {
+		name = super.3.a
+    every_country = {
+      set_country_flag = Super_Event_Visible
+      set_country_flag = DSFU_second_ww
+			sound_effect = "superev_danzig_or_war"
+		}
+	}
+}
+
+country_event = {		#jap-allies war
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+
+	hidden = yes
+
+	option = {
+		name = super.4.a
+    every_country = {
+      set_country_flag = Super_Event_Visible
+      set_country_flag = DSFU_day_of_infamy
+			sound_effect = "superev_ADayWhichWillLiveInInfamy"
+		}
+	}
+}
+
+country_event = {		#barb
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+
+	hidden = yes
+
+	option = {
+		name = super.5.a
+    every_country = {
+      set_country_flag = Super_Event_Visible
+      set_country_flag = DSFU_barb
+			sound_effect = "superev_roads_to_moscow"
+		}
+
+	}
+}
+
+country_event = {		#china war
+	id = super.6
+	title = super.6.t
+	desc = super.6.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+
+	hidden = yes
+
+	option = {
+		name = super.6.a
+    every_country = {
+      set_country_flag = Super_Event_Visible
+      set_country_flag = DSFU_second_sino_japanese_war
+			sound_effect = "superev_sino_japanese_war"
+		}
+	}
+}

@@ -2390,11 +2390,7 @@ technology = fighter2
 		id = uk_burma_focus
 		prerequisite = { focus = uk_asia_focus }
 		available = {
-			CHI = {
-				has_war_with = JAP
-				NOT = { has_war_with = ENG }
-			}
-			JAP = { NOT = { is_in_faction_with = ENG } }
+			JAP = { controls_state = 608 }
 		}
 
 		bypass = {
@@ -2412,48 +2408,8 @@ technology = fighter2
 
 		available_if_capitulated = yes
 
-		bypass = {
-			640 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 1
-				}
-			}
-			325 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 1
-				}
-			}
-			601 = {
-				free_building_slots = {
-					building = infrastructure
-					size < 2
-				}
-				free_building_slots = {
-					building = air_base
-					size < 1
-				}
-				free_building_slots = {
-					building = arms_factory
-					size < 1
-					include_locked = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			640 = {
-				if = {
-					limit = {
-						OR = {
-							ENG = { controls_state = 640 }
-							any_other_country = {
-								is_in_faction_with = ENG
-								controls_state = 640
-							}
-						}
-					}
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -2465,64 +2421,13 @@ technology = fighter2
 						instant_build = yes
 					}
 				}
-			}
-			325 = {
-				if = {
-					limit = {
-					OR = {
-							CHI = { controls_state = 325 }
-							any_other_country = {
-								is_in_faction_with = CHI
-								controls_state = 640
-							}
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			601 = {
-				if = {
-					limit = {
-						OR = {
-							CHI = { controls_state = 601 }
-							any_other_country = {
-								is_in_faction_with = CHI
-								controls_state = 601
-							}
-						} }
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
 			add_war_support = 0.05
 			if = {
 				limit = {
 					has_dlc = "Waking the Tiger"
 				}
 				unlock_decision_tooltip = CHI_expand_the_burma_road
+				unlock_decision_category_tooltip = allied_china_war
 			}
 			CHI = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good }
@@ -2590,49 +2495,6 @@ technology = fighter2
 			}
 		}
 	}
-
-	focus = {
-		id = uk_china_focus
-		prerequisite = { focus = uk_burma_focus  }
-		available = {
-			CHI = { exists = yes }
-			has_government = democratic
-		}
-		cancel = {
-			CHI = { exists = no }
-		}
-		icon = GFX_goal_generic_improve_relations
-		x = 0
-		y = 1
-		relative_position_id = uk_burma_focus
-		cost = 4.3
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		completion_reward = {
-			event_target:WTT_current_china_leader = {
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-				add_timed_idea = { idea = democratic_influence days = 1095 }
-				country_event = { id = generic.1 }
-				set_country_flag = ENG_influenced_by_britain_flag
-			}
-			every_other_country = {
-				limit = {
-					NOT = { has_government = democratic }
-					num_of_factories > 30
-				}
-				add_opinion_modifier = { target = CHI modifier = democratic_leanings_bad }
-			}
-		}
-	}
-
-
-
 	### DEMOCRATIC BRANCH - STEADY AS SHE GOES ###
 
 	focus = {

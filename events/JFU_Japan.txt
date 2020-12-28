@@ -68,20 +68,61 @@ country_event = {
 		name = Jfujap.4.a
 		news_event = { hours = 6 id = news.1 }
 		annex_country = { target = PRC transfer_troops = no }
-add_manpower = -150000
-add_equipment_to_stockpile = {
-	type = infantry_equipment
-	amount = -15000
-
-}
-add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = -2000
-
-}
+    add_manpower = -150000
+    add_equipment_to_stockpile = {
+    	type = infantry_equipment
+    	amount = -15000
+    }
+    add_equipment_to_stockpile = {
+    	type = support_equipment
+    	amount = -2000
+    }
 		hidden_effect = {
 			add_named_threat = { threat = 4 name = JAP_war_with_china }
-
+      every_state = {
+				limit = {
+					OR = {
+					  state = 608
+					  state = 613
+				  }
+				}
+				add_dynamic_modifier = { modifier = JAP_stronghold_3 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+					  state = 598
+					  state = 597
+					  state = 596
+				  }
+				}
+				add_dynamic_modifier = { modifier = JAP_stronghold_2 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+					  state = 606
+					  state = 600
+					  state = 614
+					  state = 607
+					  state = 762
+					  state = 621
+				  }
+				}
+				add_dynamic_modifier = { modifier = JAP_stronghold_1 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+					  state = 620
+					  state = 763
+					  state = 761
+					  state = 615
+					  state = 622
+				  }
+				}
+				add_dynamic_modifier = { modifier = CHI_stronghold_1 }
+			}
 		}
 		hidden_effect = {
 			country_event = { days = 5 id = news.1 }
@@ -159,6 +200,57 @@ country_event = {
 		}
 		hidden_effect = {
 			add_named_threat = { threat = 5 name = JAP_war_with_china_2 }
+			every_state = {
+				limit = {
+					state = 592
+				}
+				add_dynamic_modifier = { modifier = JAP_stronghold_3 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+					  state = 591
+					  state = 793
+					  state = 758
+					  state = 760
+				  }
+				}
+				add_dynamic_modifier = { modifier = JAP_stronghold_2 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+					  state = 599
+					  state = 594
+						state = 593
+						state = 759
+				  }
+				}
+				add_dynamic_modifier = { modifier = JAP_stronghold_1 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+					  state = 765
+					  state = 602
+					  state = 595
+					  state = 764
+				  }
+				}
+				add_dynamic_modifier = { modifier = CHI_stronghold_1 }
+			}
+			every_state = {
+				limit = {
+					state = 603
+				}
+				add_dynamic_modifier = { modifier = CHI_stronghold_2 }
+			}
+			every_state = {
+				limit = {
+					state = 325
+				}
+				add_dynamic_modifier = { modifier = CHI_stronghold_3 }
+			}
 
 		}
 

@@ -1,0 +1,145 @@
+defined_text = { #SUPER EVENT TITLES
+    name = get_super_event_title
+
+    text = {
+        trigger = {
+            has_country_flag = ENG_death_of_george
+        }
+        localization_key = "GFX_SPEVNT_death_of_george"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_barb
+        }
+        localization_key = "GFX_SPEVNT_DSFU_barb"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_munich
+        }
+        localization_key = "GFX_SPEVNT_DSFU_munich"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_second_ww
+        }
+        localization_key = "GFX_SPEVNT_DSFU_second_ww"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_day_of_infamy
+        }
+        localization_key = "GFX_SPEVNT_DSFU_day_of_infamy"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_second_sino_japanese_war
+        }
+        localization_key = "GFX_SPEVNT_DSFU_second_sino_japanese_war"
+    }
+
+
+}
+
+defined_text = { #SUPER EVENT QUOTES
+    name = get_superevent_quote
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_barb
+        }
+        localization_key = "GFX_SPEVNT_DSFU_barb_TEXT"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = ENG_death_of_george
+        }
+        localization_key = "GFX_SPEVNT_death_of_george_TEXT"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_munich
+        }
+        localization_key = "GFX_SPEVNT_DSFU_munich_TEXT"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_second_ww
+        }
+        localization_key = "GFX_SPEVNT_DSFU_second_ww_TEXT"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_day_of_infamy
+        }
+        localization_key = "GFX_SPEVNT_DSFU_day_of_infamy_TEXT"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_second_sino_japanese_war
+        }
+        localization_key = "GFX_SPEVNT_DSFU_second_sino_japanese_war_TEXT"
+    }
+
+
+
+}
+
+defined_text = { #SUPER EVENT REMARKS
+    name = get_superevent_remark
+
+    text = {
+        trigger = {
+            has_country_flag = ENG_death_of_george
+        }
+        localization_key = "GFX_SPEVNT_death_of_george_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_barb
+        }
+        localization_key = "GFX_SPEVNT_DSFU_barb_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_munich
+        }
+        localization_key = "GFX_SPEVNT_DSFU_munich_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_second_ww
+        }
+        localization_key = "GFX_SPEVNT_DSFU_second_ww_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_day_of_infamy
+        }
+        localization_key = "GFX_SPEVNT_DSFU_day_of_infamy_REMARK"
+    }
+
+    text = {
+        trigger = {
+            has_country_flag = DSFU_second_sino_japanese_war
+        }
+        localization_key = "GFX_SPEVNT_DSFU_second_sino_japanese_war_REMARK"
+    }
+
+
+
+}

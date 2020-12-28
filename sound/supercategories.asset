@@ -1,0 +1,29 @@
+category = {
+	name = "Super Events"
+	soundeffects = {
+		superev_weltkrieg
+		superev_acw
+		superev_collapse
+		superev_balkan
+		superev_ottoman
+		superev_russia
+		superev_austria
+		superev_canada
+		superev_rcw
+		superev_scw
+		superev_black
+		superev_gerjap
+		superev_rusjap
+		superev_fall
+		superev_restoration
+		superev_america
+		superev_italy
+		superev_danzig_or_war
+		superev_god_save_the_king
+	  superev_PeaceInOurTime
+		superev_ADayWhichWillLiveInInfamy
+		superev_roads_to_moscow
+		superev_sino_japanese_war
+	}
+	compressor = master_compressor
+}

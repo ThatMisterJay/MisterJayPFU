@@ -1,0 +1,108 @@
+scripted_gui = {
+
+	Pax_Super_Event_Window = {
+		context_type = player_context
+		window_name = "Super_Event_Window"
+
+		visible = {
+			has_country_flag = Super_Event_Visible
+		}
+
+		triggers = {
+			Super_Event_Image_Default_visible = {
+				has_country_flag = Super_Event_Visible_NoImage
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_death_of_george_visible = {
+				has_country_flag = ENG_death_of_george
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_world_war_2_visible = {
+				has_country_flag = DSFU_second_ww
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_second_sino_japanese_war_visible = {
+				has_country_flag = DSFU_second_sino_japanese_war
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_barb_visible = {
+				has_country_flag = DSFU_barb
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_day_of_infamy_visible = {
+				has_country_flag = DSFU_day_of_infamy
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_munich_visible = {
+				has_country_flag = DSFU_munich
+			}
+		}
+
+
+		properties = {
+			Super_Event_Image_Default = {
+				image = "[get_my_superevent_texture]"
+			}
+		}
+
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = Super_Event_Visible
+
+				if = {
+					limit = {
+						has_country_flag = ENG_death_of_george
+					}
+					clr_country_flag  = ENG_death_of_george
+				}
+
+				if = {
+					limit = {
+						has_country_flag = DSFU_second_sino_japanese_war
+					}
+					clr_country_flag  = DSFU_second_sino_japanese_war
+				}
+
+				if = {
+					limit = {
+						has_country_flag = DSFU_day_of_infamy
+					}
+					clr_country_flag  = DSFU_day_of_infamy
+				}
+
+				if = {
+					limit = {
+						has_country_flag = DSFU_second_ww
+					}
+					clr_country_flag  = DSFU_second_ww
+				}
+
+				if = {
+					limit = {
+						has_country_flag = DSFU_munich
+					}
+					clr_country_flag  = DSFU_munich
+				}
+
+				if = {
+					limit = {
+						has_country_flag = DSFU_barb
+					}
+					clr_country_flag  = DSFU_barb
+				}
+			}
+		}
+	}
+}

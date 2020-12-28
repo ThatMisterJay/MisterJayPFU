@@ -1101,6 +1101,7 @@ date < 1941.9.21
 		}
 		}
 hidden_effect = {
+	country_event = super.5
 	USA = {
 		country_event = { id = DSFU.10 days = 100 }
 	}
@@ -1528,6 +1529,7 @@ country_event = { id = germany.113 days = 1 }
 custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
 }
 hidden_effect = {
+country_event = super.3
 ENG = { add_to_faction = POL }
 }
 		}
@@ -1677,6 +1679,7 @@ transfer_state = 74
 }
 hidden_effect = {
 GER = {
+country_event = super.2
 country_event = { id = germany.124 days = 1 }
 }
 }

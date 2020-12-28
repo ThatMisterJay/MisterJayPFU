@@ -542,6 +542,7 @@ country_event = {
 			set_country_flag = ENG_king_died
 			remove_ideas = george_v
 			add_ideas = ENG_king_edward
+			country_event = super.1
 		}
 	}
 
