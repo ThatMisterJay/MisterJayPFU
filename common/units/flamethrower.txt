@@ -9,6 +9,7 @@ sub_units = {
 		type = {
 			infantry
 			support
+	
 		}
 
 		group = support
@@ -16,7 +17,10 @@ sub_units = {
 		categories = {
 			category_support_battalions
 			category_army
+
 		}
+
+
 
 
 		#combat_width = 1
@@ -70,5 +74,7 @@ sub_units = {
 		amphibious = {
 			movement = -0.05
 		}
+
+
 	}
 }

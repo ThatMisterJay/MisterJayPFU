@@ -19,6 +19,8 @@ sub_units = {
 		}
 
 
+
+
 		combat_width = 0
 
 		#Size Definitions
@@ -71,6 +73,7 @@ sub_units = {
 			movement = -0.1
 			attack = -0.1
 		}
+
 
 	}
 
