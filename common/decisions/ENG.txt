@@ -446,6 +446,35 @@ ENG_commonwealth_industry_road = {
 		}
 	}
 
+	ENG_imperial_counter_espionage_uk = {
+		icon = onmap_recruit_operative
+		fire_only_once = no
+		name = ENG_imperial_counter_espionage_bureau
+		available = {
+			NOT = {
+				any_country = {
+					has_idea = imperial_counter_espionage
+				}
+			}
+		}
+		allowed = {
+			tag = ENG
+		}
+
+		visible = {
+			NOT = {
+				any_country = {
+					has_idea = imperial_counter_espionage
+				}
+			}
+		}
+
+		complete_effect = {
+				add_ideas = imperial_counter_espionage
+				create_intelligence_agency = yes
+		}
+	}
+
 
 	ENG_imperial_counter_espionage_bureau = {
 		icon = onmap_recruit_operative
@@ -607,7 +636,7 @@ ENG_commonwealth_industry_road = {
 	 ENG_ETH = {
 		 icon = generic_army_support
 
-		 targets = { ETH }
+
 
 		 allowed = {
 			 tag = ENG
@@ -645,7 +674,6 @@ ENG_commonwealth_industry_road = {
 	ENG_Libya = {
 		icon = generic_army_support
 
-		targets = { ITA }
 
 		allowed = {
 			tag = ENG

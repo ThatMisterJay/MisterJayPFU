@@ -250,6 +250,11 @@ sub_units = {
 		soft_attack = 0.25
 		breakthrough = 0.3
 
+
+		amphibious = {
+			attack = -0.2
+		}
+
 	}
 
 
