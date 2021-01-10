@@ -316,7 +316,7 @@ ENG_south_africa = {
 	icon = GFX_ENG_british_saf
   local_factories = 0.3
 	local_building_slots_factor = 0.6
-  resistance_target	= -0.90
+  resistance_growth	= -0.90
 	local_non_core_manpower = 0.5
 }
 
@@ -327,7 +327,7 @@ GER_exploit = {
 
 	icon = GFX_GER_exploit
   local_factories = -0.1
-  resistance_target = 0.10
+  resistance_growth = 0.10
 	local_building_slots_factor = -0.10
 	state_production_speed_buildings_factor = -0.10
 }
