@@ -13,9 +13,6 @@ on_actions = {
             }
         }
     }
-    on_state_control_changed = {
-
-    }
 
     on_startup = {
         effect = {
@@ -35,8 +32,8 @@ on_actions = {
 			CHI = {
 				give_resource_rights = { receiver = GER state = 591 } #Hainan
 				give_resource_rights = { receiver = GER state = 759 } #Shantou
-			}	
-				
+			}
+
 			#Siam Rubber to Japan
 			SIA = {
 				give_resource_rights = { receiver = JAP state = 289 } #Siam
@@ -44,8 +41,8 @@ on_actions = {
 			}
         }
     }
-	
-	
+
+
     on_capitulation = {
         effect = {
             if = {
@@ -57,7 +54,6 @@ on_actions = {
             }
         }
     }
-	
-	
-}
 
+
+}
