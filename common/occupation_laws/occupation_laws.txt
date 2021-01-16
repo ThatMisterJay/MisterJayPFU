@@ -222,10 +222,10 @@ liberate_workers_occupation = {
 
 	state_modifier = {
 		resistance_target 				= -0.15
-		compliance_gain 				= -0.025
+		compliance_gain 				= 0.005
 		required_garrison_factor 		= -0.20
 		resistance_damage_to_garrison 	= 0.25
-		local_factories 				= 0.2
+		local_factories 				= 0.4
 		local_resources 				= 0.3
 	}
 
@@ -474,13 +474,23 @@ JAP_law = {
 	}
 
 	state_modifier = {
-		resistance_target 				= -0.55
+		resistance_target 				= -0.4
 		compliance_gain 				= 0.01
 		required_garrison_factor 		= 0.5
 		resistance_damage_to_garrison 	= 0.5
-		local_factories 				= 0.45
-		local_resources 				= 0.45
-		resistance_decay 				= 1.0
+		local_factories 				= 0.40
+		local_resources 				= 0.40
+	}
+
+	available = {
+		FROM = {
+			NOT = {
+				OR = {
+					tag = CHI
+					tag = PRC
+				}
+			}
+		}
 	}
 
 	ai_will_do = {
@@ -492,7 +502,7 @@ JAP_law = {
 			set_temp_variable = { resistance_limit = 40 }
 			set_temp_variable = { requirement_limit = 2.0 }
 			if = {
-				limit = { occupation_law = brutally_oppressive_occupation }
+				limit = { occupation_law = JAP_law }
 				set_temp_variable = { resistance_limit = 35 }
 				set_temp_variable = { requirement_limit = 1.8 }
 			}
