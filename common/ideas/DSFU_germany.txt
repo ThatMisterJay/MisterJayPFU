@@ -101,9 +101,9 @@ naval_agency = {
 
   modifier = {
     operative_slot = 4
-    army_intel_to_others = 10.0
-    airforce_intel_to_others = 10.0
-    navy_intel_to_others = 10.0
+    army_intel_to_others = 05.0
+    airforce_intel_to_others = 05.0
+    navy_intel_to_others = 05.0
   }
 }
 
