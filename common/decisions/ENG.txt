@@ -152,8 +152,9 @@ ENG_commonwealth_industry_civ = {
 	}
 
 	available = {
+		political_power_growth > 0.3
 		NOT = {
-			has_country_flag = commonwealth_development
+		#	has_country_flag = commonwealth_development
 		}
 		NOT = {
 			OR = {
@@ -172,7 +173,7 @@ ENG_commonwealth_industry_civ = {
 		}
 	}
 	modifier = {
-		political_power_factor = -0.2
+		political_power_factor = -0.3
 	}
 
 	days_remove = 50
@@ -190,7 +191,7 @@ ENG_commonwealth_industry_civ = {
 	}
 
 	complete_effect = {
-		set_country_flag = { flag = commonwealth_development days = 50 value = 1 }
+		#set_country_flag = { flag = commonwealth_development days = 50 value = 1 }
 		FROM = {
 			CONTROLLER = {
 			}
@@ -217,8 +218,9 @@ ENG_commonwealth_industry_mill = {
 	}
 
 	available = {
+		political_power_growth > 0.3
 		NOT = {
-			has_country_flag = commonwealth_development
+			#has_country_flag = commonwealth_development
 		}
 		NOT = {
 			OR = {
@@ -237,7 +239,7 @@ ENG_commonwealth_industry_mill = {
 		}
 	}
 	modifier = {
-		political_power_factor = -0.2
+		political_power_factor = -0.3
 	}
 
 	days_remove = 50
@@ -254,7 +256,7 @@ ENG_commonwealth_industry_mill = {
 		}
 	}
 	complete_effect = {
-		set_country_flag = { flag = commonwealth_development days = 50 value = 1 }
+		#set_country_flag = { flag = commonwealth_development days = 50 value = 1 }
 		FROM = {
 		}
 	}
@@ -279,8 +281,9 @@ ENG_commonwealth_industry_road = {
 	}
 
 	available = {
+		political_power_growth > 0.2
 		NOT = {
-			has_country_flag = commonwealth_development_road
+			#has_country_flag = commonwealth_development_road
 		}
 		FROM = {
 			free_building_slots = {
@@ -306,7 +309,7 @@ ENG_commonwealth_industry_road = {
 	}
 
 	modifier = {
-		political_power_factor = -0.15
+		political_power_factor = -0.20
 	}
 
 	days_remove = 40
@@ -323,7 +326,7 @@ ENG_commonwealth_industry_road = {
 		}
 	}
 	complete_effect = {
-		set_country_flag = { flag = commonwealth_development_road days = 40 value = 1 }
+		#set_country_flag = { flag = commonwealth_development_road days = 40 value = 1 }
 	}
 	remove_effect = {
 		FROM = {
