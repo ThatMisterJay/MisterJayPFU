@@ -66,3 +66,38 @@ music = {
 	volume = 0.65
 }
 
+music = {
+	name = "superevent_god_save_the_king"
+	file = "audio/DSFU_songs/god_save_the_king.ogg"
+	volume = 1
+}
+
+music = {
+	name = "superevent_roads_to_moscow"
+	file = "audio/DSFU_songs/roads_to_moscow.ogg"
+	volume = 1
+}
+
+music = {
+	name = "superevent_PeaceInOurTime"
+	file = "audio/DSFU_songs/Chamberlain_PeaceInOurTime.ogg"
+	volume = 1
+}
+
+music = {
+	name = "superevent_sino_japanese_war"
+	file = "audio/DSFU_songs/sino_japanese_war.ogg"
+	volume = 1
+}
+
+music = {
+	name = "superevent_day_infamy"
+	file = "audio/DSFU_songs/Roosevelt_ADayWhichWillLiveInInf.ogg"
+	volume = 1
+}
+
+music = {
+	name = "superevent_danzig_or_war"
+	file = "audio/DSFU_songs/danzig_or_war.ogg"
+	volume = 1
+}

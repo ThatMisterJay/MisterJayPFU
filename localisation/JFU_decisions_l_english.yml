@@ -1,4 +1,6 @@
 ﻿l_english:
+    superevent_on:0 "Enable Superevents"
+    superevent_off:0 "Disable Superevents"
     force_soviet_peacedeal:0 "Make a Peacedeal with the Germans"
     annex_canada_idea:0 "Annexed Canada"
     annex_british_raj_idea:0 "Annexed British Raj"

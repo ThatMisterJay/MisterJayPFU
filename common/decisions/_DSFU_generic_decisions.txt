@@ -368,6 +368,36 @@ complete_effect = {
 
 }
 
+propaganda_efforts = {
+
+  superevent_on = {
+
+    visible = {
+      has_country_flag = no_super_events
+    }
+
+    complete_effect = {
+      clr_country_flag = no_super_events
+    }
+
+  }
+
+  superevent_off = {
+
+    visible = {
+      NOT = {
+        has_country_flag = no_super_events
+      }
+    }
+
+    complete_effect = {
+      set_country_flag = no_super_events
+    }
+
+  }
+
+}
+
 military_staff_cat = {
 
   staff_college = {

@@ -1,0 +1,71 @@
+music_station = "base_music"
+
+music = {
+	song = "superevent_roads_to_moscow"
+
+	chance = {
+		modifier = {
+			factor = 100
+			has_country_flag = DSFU_barb
+		}
+	}
+
+}
+music = {
+	song = "superevent_PeaceInOurTime"
+
+	chance = {
+		modifier = {
+			factor = 100
+			has_country_flag = DSFU_munich
+		}
+	}
+
+}
+
+music = {
+	song = "superevent_day_infamy"
+
+	chance = {
+		modifier = {
+			factor = 100
+			has_country_flag = DSFU_day_of_infamy
+		}
+	}
+
+}
+
+music = {
+	song = "superevent_god_save_the_king"
+
+	chance = {
+		modifier = {
+			factor = 100
+			has_country_flag = ENG_death_of_george
+		}
+	}
+
+}
+
+music = {
+	song = "superevent_danzig_or_war"
+
+	chance = {
+		modifier = {
+			factor = 100
+			has_country_flag = DSFU_second_ww
+		}
+	}
+
+}
+music = {
+	song = "superevent_sino_japanese_war"
+
+	chance = {
+		modifier = {
+			factor = 100
+			has_country_flag = DSFU_second_sino_japanese_war
+		}
+	}
+
+}

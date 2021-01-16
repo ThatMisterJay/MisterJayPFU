@@ -4,6 +4,7 @@
 
 add_namespace = super
 
+
 country_event = {		#Super Event DONE
 	id = super.1
 	title = super.1.t
@@ -18,11 +19,15 @@ country_event = {		#Super Event DONE
 	option = {
 		name = super.1.a
     every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = no_super_events
+				}
+			}
       set_country_flag = Super_Event_Visible
       set_country_flag = ENG_death_of_george
-			sound_effect = "superev_god_save_the_king"
+      play_song = "superevent_god_save_the_king"
 		}
-
 	}
 }
 
@@ -40,9 +45,14 @@ country_event = {		#munich
 	option = {
 		name = super.2.a
     every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = no_super_events
+				}
+			}
       set_country_flag = Super_Event_Visible
       set_country_flag = DSFU_munich
-			sound_effect = "superev_PeaceInOurTime"
+			play_song = "superevent_PeaceInOurTime"
 		}
 
 	}
@@ -62,9 +72,14 @@ country_event = {		#ww2
 	option = {
 		name = super.3.a
     every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = no_super_events
+				}
+			}
       set_country_flag = Super_Event_Visible
       set_country_flag = DSFU_second_ww
-			sound_effect = "superev_danzig_or_war"
+			play_song = "superevent_danzig_or_war"
 		}
 	}
 }
@@ -83,9 +98,14 @@ country_event = {		#jap-allies war
 	option = {
 		name = super.4.a
     every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = no_super_events
+				}
+			}
       set_country_flag = Super_Event_Visible
       set_country_flag = DSFU_day_of_infamy
-			sound_effect = "superev_ADayWhichWillLiveInInfamy"
+			play_song = "superevent_day_infamy"
 		}
 	}
 }
@@ -104,9 +124,14 @@ country_event = {		#barb
 	option = {
 		name = super.5.a
     every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = no_super_events
+				}
+			}
       set_country_flag = Super_Event_Visible
       set_country_flag = DSFU_barb
-			sound_effect = "superev_roads_to_moscow"
+			play_song = "superevent_roads_to_moscow"
 		}
 
 	}
@@ -126,9 +151,14 @@ country_event = {		#china war
 	option = {
 		name = super.6.a
     every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = no_super_events
+				}
+			}
       set_country_flag = Super_Event_Visible
       set_country_flag = DSFU_second_sino_japanese_war
-			sound_effect = "superev_sino_japanese_war"
+			play_song = "superevent_sino_japanese_war"
 		}
 	}
 }
